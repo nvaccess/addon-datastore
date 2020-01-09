@@ -60,7 +60,7 @@ Use GitHub actions (or other integrations) to automate construction of the data 
   - For storage of meta-data about addons "in the store"
   - This repository acts as a back-end database, but is more transparent.
   - Since our needs are simple, preconfigured "views" of the data will suffice.
-- NV Access server [To provide the endpoint for "available Addons" meta-data]
+- NV Access server \[To provide the endpoint for "available Addons" meta-data\]
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
 
@@ -116,7 +116,7 @@ This work flow requires addon authors to fork the 'NVDA-Addon-submission' reposi
   - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
   - Problem: Likely requires a lot more development effort to implement, something must be "watching" for new releases.
   - Problem: Addon authors often have multiple addons, but can only fork the addon-template once.
-- Require that addon authors set a topic on their addon like "nvda-addon", releases are automatically added as PR's.
+- ~Require that addon authors set a topic on their addon like "nvda-addon", releases are automatically added as PR's.~ Ruled out:
   - Problem: Likely requires a lot more development effort to create, something must be "watching" for new releases.
   - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
 
