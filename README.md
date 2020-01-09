@@ -112,12 +112,13 @@ Process:
 ### Concerns
 This work flow requires addon authors to fork the 'NVDA-Addon-submission' repository in order to submit a PR. Instead several alternatives to this step are possible:
 - File an issue (using a template for "Add addon version" or "Remove addon version") which includes a link to the commit that should be added or removed. Automation can create the PR automatically from this and close the issue.
-- Require that addon repositories are forked from the addon template. Github lets you get all forks, from these we can watch for new releases and create PR's automatically
-  - There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
-  - Likely requires a lot more development effort to create, something must be "watching" for new releases.
+- ~Require that addon repositories are forked from the addon template. Github lets you get all forks, from these we can watch for new releases and create PR's automatically~. This is ruled out due to:
+  - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
+  - Problem: Likely requires a lot more development effort to implement, something must be "watching" for new releases.
+  - Problem: Addon authors often have multiple addons, but can only fork the addon-template once.
 - Require that addon authors set a topic on their addon like "nvda-addon", releases are automatically added as PR's.
-  - Likely requires a lot more development effort to create, something must be "watching" for new releases.
-  - There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
+  - Problem: Likely requires a lot more development effort to create, something must be "watching" for new releases.
+  - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
 
 ### Other notes
 - By using a git repository and and PR process, `git blame` and `git log` can be used to get more context about addons listed in the store. For instance:
