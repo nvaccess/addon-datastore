@@ -22,14 +22,14 @@ With the right infrastructure, we can automate many checks and reduce the burden
 This proposal does not intend to restrict Addon authors from developing, publishing, and distributing Addons outside of this store.
 NVDA will still allow local installation from a `*.nvda-addon` file.
 
-## To Long; Didn't Read for Addon authors
+## Too Long; Didn't Read for Addon authors
 With this proposal if an addon author wishes to submit their addon to be visible in this addon store they will need to:
 - Store their addon on Github in an open (not private) repository.
 - Create an issue on the `addon-store-submission` repository for each addon version they want to make available.
 - Paste into the issue description a link to the commit or github release.
 - Wait for it to be reviewed and accepted or participate in review actions and resubmit the new version.
 
-## To Long; Didn't Read for Addon reviewers
+## Too Long; Didn't Read for Addon reviewers
 As an Addon reviewer you will:
 - Look at pending PR's on the `addon-store-submission` repository.
 - These will include a link to the addon version being reviewed.
