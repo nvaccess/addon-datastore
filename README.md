@@ -22,6 +22,21 @@ With the right infrastructure, we can automate many checks and reduce the burden
 This proposal does not intend to restrict Addon authors from developing, publishing, and distributing Addons outside of this store.
 NVDA will still allow local installation from a `*.nvda-addon` file.
 
+## To Long; Didn't Read for Addon authors
+With this proposal if an addon author wishes to submit their addon to be visible in this addon store they will need to:
+- Store their addon on Github in an open (not private) repository.
+- Create an issue on the `addon-store-submission` repository for each addon version they want to make available.
+- Paste into the issue description a link to the commit or github release.
+- Wait for it to be reviewed and accepted or participate in review actions and resubmit the new version.
+
+## To Long; Didn't Read for Addon reviewers
+As an Addon reviewer you will:
+- Look at pending PR's on the `addon-store-submission` repository.
+- These will include a link to the addon version being reviewed.
+- Follow the review process (yet to be documented here).
+- Either 'approve' the PR, or 'request changes' while providing feedback and close the PR.
+- When approving the PR, press the merge button to finalise the submision.
+
 ## Considerations
 
 - Submissions and reviews should be easy to find and get the status of.
@@ -111,7 +126,9 @@ Process:
 
 ### Concerns
 This work flow requires addon authors to fork the 'NVDA-Addon-submission' repository in order to submit a PR. Instead several alternatives to this step are possible:
-- File an issue (using a template for "Add addon version" or "Remove addon version") which includes a link to the commit that should be added or removed. Automation can create the PR automatically from this and close the issue.
+- File an issue (using a template for "Add addon version" or "Remove addon version") which includes a link to the commit that should be added or removed.
+  - Automation can create the PR automatically from this and close the issue.
+  - If this approach is taken, the commit ID could be automatically determined from a git tag (created either manually with git or via the GitHub release process).
 - ~Require that addon repositories are forked from the addon template. Github lets you get all forks, from these we can watch for new releases and create PR's automatically~. This is ruled out due to:
   - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
   - Problem: Likely requires a lot more development effort to implement, something must be "watching" for new releases.
