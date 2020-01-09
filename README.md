@@ -20,7 +20,7 @@ Later, I suggest a new thread to agree on a "addon review check list".
 With the right infrastructure, we can automate many checks and reduce the burden on reviewers.
 
 This proposal does not intend to restrict Addon authors from developing, publishing, and distributing Addons outside of this store.
-NVDA will still allow local installation from a `*.addon` file.
+NVDA will still allow local installation from a `*.nvda-addon` file.
 
 ## Considerations
 
@@ -87,7 +87,7 @@ This is important to stop the possibility of a malicious author changing an addo
 
 Pre-requisites:
 - An addon must be stored on GitHub in a public repository
-- The commit which will be submitted must be a valid NVDA `*.addon` file if zipped and renamed.
+- The commit which will be submitted must be a valid NVDA `*.nvda-addon` file if zipped and renamed.
 
 Process:
 1. Addon author creates a new Pull Request (PR) on the 'NVDA-Addon-submission' repository. In most cases this could be done with the web editor:
