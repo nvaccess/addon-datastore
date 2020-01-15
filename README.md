@@ -119,7 +119,7 @@ Process:
      - Check manifest validity
      - Provide links to relevant diffs
      - Check to see if the GitHub user submitting the PR is a maintainer of the Addon version being submitted.
-   - On Appveyor CI, install most recently supported version of NVDA supported by addon, install the addon, restart NVDA and check for errors. If the add-on contains an `installTasks.py` file with an `onInstall()` function which may require input at installation, the `installTasks` file may be skypped to avoid false errors.
+   - Suggestion: On Appveyor CI, install most recently supported version of NVDA supported by addon, install the addon, restart NVDA and check for errors. 
    - Review is done according to some published review check list (so that everyone knows what to expect)
    - Automation and human process can be decided later, likely in an iterative way.
 1. When the PR is merged, the Addon becomes available in the store.
