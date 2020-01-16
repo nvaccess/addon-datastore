@@ -67,19 +67,19 @@ Use GitHub actions (or other integrations) to automate construction of the data 
 
 ## Infrastructure
 
-- 'NVDA-Addon-submission' GitHub Repository
+- `NVDA-Addon-submission` GitHub Repository
   - For Addon authors / reviewers.
   - Where new Addon versions are submitted
   - Where reviews of Addon submissions happen
-- 'NVDA-Addon-store-data' GitHub Repository
+- `NVDA-Addon-store-data` GitHub Repository
   - For storage of meta-data about addons "in the store"
   - This repository acts as a back-end database, but is more transparent.
   - Since our needs are simple, preconfigured "views" of the data will suffice.
-- NV Access server \[To provide the endpoint for "available Addons" meta-data\]
+- NV Access server - To provide the endpoint for "available Addons" meta-data
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
 
-## 'NVDA-Addon-submission' GitHub Repository
+## `NVDA-Addon-submission` GitHub Repository
 
 Essentially this repository holds references to all the accepted versions of Addons which are included in the store. A reference to an old version of an addon remains until it is explicitly removed or becomes invalid, allowing delivery to older versions of NVDA, or as a fall back in case the newer version is revoked after a critical bug is found.
 Addons versions are submitted by submitting a pull request, adding the commit for that version to a file that describes the GitHub repository for the addon.
@@ -87,11 +87,12 @@ Addons versions are submitted by submitting a pull request, adding the commit fo
 ### Layout
 
 Root directory of repository:
- - readme.md - A guide for submission
- - addons/owner1/repo1.commits
- - addons/owner1/repo2.commits
- - addons/owner2/repo3.commits
- - addons/nvaccess/nvda-ocr.commits
+ - `readme.md` - A guide for submission
+ - `addons/owner1/repo1.commits`
+ - `addons/owner1/repo2.commits`
+ - `addons/owner2/repo3.commits`
+
+Example for the NV Access addon, 'NVDA - OCR': `addons/nvaccess/nvda-ocr.commits`
 
 Contents of a `*.commits` file, is a (newline separated) list of git SHAs, one for each commit which could be available in the store.
 This is intentionally a very simple format to maximise the ease of editing, and minimise the risk of format corruption.
@@ -105,37 +106,55 @@ Pre-requisites:
 - The commit which will be submitted must be a valid NVDA `*.nvda-addon` file if zipped and renamed.
 
 Process:
-1. Addon author creates a new Pull Request (PR) on the 'NVDA-Addon-submission' repository. This could be done with the web editor, though screen reader users may be more comfortable making it locally with their chosen editor or using a provided template:
-   1. Find or create a file: `addons/owner/repo.commits`
-   1. To submit a new version, add the SHA of the commit to the file
-   1. For no longer supported addon versions, remove the SHA of the commit.
-1. A bot posts a link to the addon version that is added or removed
-   - The URL is built from 'owner', 'repo', 'commit'
-   - The file path gives the owner and repo parts
-   - The changed lines give the commits
-   - This allows the reviewer to browse the source online or download the addon with, see (in suffix) heading "Example of bot message for 'NVDA-Addon-submission' PR" for an example message.
+1. A PR is created on the `NVDA-Addon-submission` repository
+   - It adds/removes the SHA of the commit (for the submitted version) to the appropriate `addons/owner/repo.commits` file.
+   - Refer to 'Creating the submission PR' below
+1. A bot adds a comment in the PR with links to the addon versions that are added or removed
+   - NOTE: the URL for this link can be is built from 'owner', 'repo', 'commit' of the lines added / removed. 
+   - This allows the reviewer to browse the source online or download the addon with, see (in suffix) heading "Example of bot message for `NVDA-Addon-submission` PR" for an example message.
 1. A review is performed (resulting in: request changes, merge, close)
-   - A bot may perform some automated checks or provide helpful information, for instance:
-     - Check manifest validity
-     - Provide links to relevant diffs
-     - Check to see if the GitHub user submitting the PR is a maintainer of the Addon version being submitted.
-   - Suggestion: On Appveyor CI, install most recently supported version of NVDA supported by addon, install the addon, restart NVDA and check for errors. 
-   - Review is done according to some published review check list (so that everyone knows what to expect)
-   - Automation and human process can be decided later, likely in an iterative way.
+   - A bot may perform some automated checks or provide helpful information, refer to 'automated review ideas' below
+   - Manual review is done according to some published review check list (so that everyone knows what to expect)
+   - Automated and human process can be decided later, we can address these details as they come up and improve upon the process
 1. When the PR is merged, the Addon becomes available in the store.
 
+### Creating the submission PR
+To simplify the initial implementation of this process the PR will need to be created manually, later we can streamline this, and automate only requiring the addon author to paste a link in a new issue.
+
+A new Pull Request (PR) is created on the `NVDA-Addon-submission` repository.
+   1. Find or create a file: `addons/owner/repo.commits`
+      - Example: `addons/nvaccess/nvda-ocr.commits`
+      - Where 'owner' is the username or organisation that owns the addon GitHub repository. E.G. for `nvda-ocr` it is `nvaccess`
+      - Where 'repo' is the name of the repository. E.G. `nvda-ocr`
+      - NOTE: creating the file means this is an entirely new submission
+   1. To submit a new version, add the SHA of the commit to the file
+   1. For no longer supported addon versions, remove the SHA of the commit.
+This could be done with the web editor, though screen reader users may be more comfortable making the changes locally with their chosen editor.
+
+Because this requires addon authors to fork the `NVDA-Addon-submission` repository, this is a little cumbersome.
+To streamline this process, we could use GitHub issues.
+- The addon author would pick from two issue templates:
+  - "Add addon version"
+  - "Remove addon version"
+- In the template they would paste a link to the commit or tag that should be added or removed.
+- Automation creates the PR automatically from this and closes the issue.
+- NOTE: In this approach it is safe to use a git tag, because the commit ID can be determined from the tag. The commit is then used in the PR and the rest of the process is the same.
+
+### Automated review ideas
+Several suggestions for automated review ideas to streamline the process.
+- Check manifest validity
+- Provide links to relevant diffs
+- Check to see if the GitHub user submitting the PR is a maintainer of the Addon version being submitted.
+- Consider using CI (Appveyor) to check the addon installs cleanly:
+  - Install NVDA (the most recent version supported by the addon)
+  - Install the addon
+  - Restart NVDA and check for errors
+
 ### Concerns
-This work flow requires addon authors to fork the 'NVDA-Addon-submission' repository in order to submit a PR. Instead several alternatives to this step are possible:
-- File an issue (using a template for "Add addon version" or "Remove addon version") which includes a link to the commit that should be added or removed.
-  - Automation can create the PR automatically from this and close the issue.
-  - If this approach is taken, the commit ID could be automatically determined from a git tag (created either manually with git or via the GitHub release process).
-- ~Require that addon repositories are forked from the addon template. Github lets you get all forks, from these we can watch for new releases and create PR's automatically~. This is ruled out due to:
-  - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
-  - Problem: Likely requires a lot more development effort to implement, something must be "watching" for new releases.
-  - Problem: Addon authors often have multiple addons, but can only fork the addon-template once.
-- ~Require that addon authors set a topic on their addon like "nvda-addon", releases are automatically added as PR's.~ Ruled out:
-  - Problem: Likely requires a lot more development effort to create, something must be "watching" for new releases.
-  - Problem: There is no "opt-in" step from the Addon author to submit a release to the store. They can not decide timing, or skip certain releases.
+This approach requires that an addon repository is already a valid (and installable) addon once it is zipped. Most addons require build steps.
+ - Can github actions be used to run these steps and produce a certifiable build artifact?
+   - If we can certify the source for a commit, and the source for the github actions that produces the artifact, then the artifact itself is certified?
+   - If this is true we can provide this action along with the addon-template.
 
 ### Other notes
 - By using a git repository and and PR process, `git blame` and `git log` can be used to get more context about addons listed in the store. For instance:
@@ -144,13 +163,13 @@ This work flow requires addon authors to fork the 'NVDA-Addon-submission' reposi
   - How often does this addon have updates accepted
 - GitHub allows assigning reviews to reviewers
 
-## 'NVDA-Addon-store-data' GitHub Repository
+## `NVDA-Addon-store-data` GitHub Repository
 
 Holds meta-data about addons accepted to the store.
 
 Using a separate repository for this data store separates concerns, gives greater flexibility for managing permissions, makes it easier to verify changes (eg in a PR, or via automation), and simplifies the commit history (no automation commits "updating data store")
 
-The exact implementation details for this repository are not exposed to users, because on one side the 'NVDA-Addon-submission' repository feeds data in and the NV Access server is on the other side fetching and providing data to NVDA or a web based store.
+The exact implementation details for this repository are not exposed to users, because on one side the `NVDA-Addon-submission` repository feeds data in and the NV Access server is on the other side fetching and providing data to NVDA or a web based store.
 This means that changing the layout or implementation of this repository does not cause wide breaking changes to the process and it can be updated independently.
 Since the details of this repository don't really matter too much they don't need to be concrete at this point, however I'll give a brief overview of the current plan.
 
@@ -161,10 +180,10 @@ For each version of NVDA, the meta-data of the most recent (highest version numb
 ### Layout
 
 Root directory of repository:
-- /NVDA API Version/addon-1-ID/release.json
-- /NVDA API Version/addon-1-ID/pre-rel.json
-- /NVDA API Version/addon-2-ID/release.json
-- /NVDA API Version/all.json
+- `/NVDA API Version/addon-1-ID/release.json`
+- `/NVDA API Version/addon-1-ID/pre-rel.json`
+- `/NVDA API Version/addon-2-ID/release.json`
+- `/NVDA API Version/all.json`
 
 Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
@@ -177,7 +196,7 @@ The simplicity of this is that the NV Access server can just forward these files
 ### How does data arrive
 For the sake of a simple explanation, optimisations and minor details will be omitted from this description.
 
-A GitHub Action is created to respond to a new commit on the 'NVDA-Addon-submission' repository. For each commit in each `*.commits` file in the 'NVDA-Addon-submission' repository, the manifest for the addon is fetched.
+A GitHub Action is created to respond to a new commit on the `NVDA-Addon-submission` repository. For each commit in each `*.commits` file in the `NVDA-Addon-submission` repository, the manifest for the addon is fetched.
 
 Addons manifests that support each NVDA API version are found.
 For each NVDA API version the most recent (based on version number) release and pre-release addon manifest is kept.
@@ -186,7 +205,7 @@ These remaining manifest files are used to reconstruct the data in the repositor
 
 ## Suffix
 
-### Example of bot message for 'NVDA-Addon-submission' PR.
+### Example of bot message for `NVDA-Addon-submission` PR.
 
 ```
 Added Version.
