@@ -105,7 +105,7 @@ Pre-requisites:
 - The commit which will be submitted must be a valid NVDA `*.nvda-addon` file if zipped and renamed.
 
 Process:
-1. Addon author creates a new Pull Request (PR) on the 'NVDA-Addon-submission' repository. In most cases this could be done with the web editor:
+1. Addon author creates a new Pull Request (PR) on the 'NVDA-Addon-submission' repository. This could be done with the web editor, though screen reader users may be more comfortable making it locally with their chosen editor or using a provided template:
    1. Find or create a file: `addons/owner/repo.commits`
    1. To submit a new version, add the SHA of the commit to the file
    1. For no longer supported addon versions, remove the SHA of the commit.
@@ -119,7 +119,7 @@ Process:
      - Check manifest validity
      - Provide links to relevant diffs
      - Check to see if the GitHub user submitting the PR is a maintainer of the Addon version being submitted.
-   - On Appveyor CI, install most recently supported version of NVDA supported by addon, install the addon, restart NVDA and check for errors.
+   - Suggestion: On Appveyor CI, install most recently supported version of NVDA supported by addon, install the addon, restart NVDA and check for errors. 
    - Review is done according to some published review check list (so that everyone knows what to expect)
    - Automation and human process can be decided later, likely in an iterative way.
 1. When the PR is merged, the Addon becomes available in the store.
@@ -150,7 +150,7 @@ Holds meta-data about addons accepted to the store.
 
 Using a separate repository for this data store separates concerns, gives greater flexibility for managing permissions, makes it easier to verify changes (eg in a PR, or via automation), and simplifies the commit history (no automation commits "updating data store")
 
-The the exact implementation details for this repository are not exposed to users, because on one side the 'NVDA-Addon-submission' repository feeds data in and the NV Access server is on the other side fetching and providing data to NVDA or a web based store.
+The exact implementation details for this repository are not exposed to users, because on one side the 'NVDA-Addon-submission' repository feeds data in and the NV Access server is on the other side fetching and providing data to NVDA or a web based store.
 This means that changing the layout or implementation of this repository does not cause wide breaking changes to the process and it can be updated independently.
 Since the details of this repository don't really matter too much they don't need to be concrete at this point, however I'll give a brief overview of the current plan.
 
