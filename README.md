@@ -166,8 +166,15 @@ Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
 - The `pre-rel.json` and `release.json` contain the information necessary for a store entry.
 - The contents of `all.data` is all (pre-release and release) data for this NVDA API version together.
+- The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
+- The file will include translations (if available) for the displayable metadata.
 
 The simplicity of this is that the NV Access server can just forward these files on directly when asked "what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X". Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated away from GitHub for some reason.
+
+### Questions
+- Should the `_ds` be stored in another repository?
+- Rather than another repository, `_ds` could be available only on a particular branch.
+- 
 
 ## Suffix
 
