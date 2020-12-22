@@ -6,7 +6,7 @@ Inspiration has been taken from [Windows Package Manager Community repo](https:/
 A highly automated process would be ideal, and we can keep the ideas in mind to work in that direction.
 
 The main goal of this is to enable an "NVDA addon store" accessible from within NVDA itself.
-In this proposal the word "store" is used to refer to the system used to store metadata about addon releses and API's to access this data.
+In this proposal the word "store" is used to refer to the system used to store metadata about add-on releases and APIs to access this data.
 Aims:
 - Enable any necessary, API, process, or infrastructure to support users to browse, search, install and update Addons for NVDA.
 - A secure and robust provision of addon-metadata.
@@ -112,7 +112,7 @@ For a full description of the schema see:` _tools/addonVersion_schema.json`
 
 Process to add a new NVDA-addon version:
 1. Fork the `NVDA-Addon-submission` repository
-1. On a new branch, copy the `_template_addon_relese.json` file. 
+1. On a new branch, copy the `_template_addon_release.json` file. 
    - Rename / move the file to `<publisher>/<addonName>/<version>.json`
    - `<publisher>` is the name of the add-on developer, E.G. "nvaccess"
    - `<addonName>` is the name of the add-on, E.G. "nv-speech-player"
