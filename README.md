@@ -64,7 +64,7 @@ As an Addon reviewer you will:
 - GitHub is where much of the NVDA development ecosystem is already based.
 - Handles all the of the CRUD ([create, read, update, delete](https://en.wikipedia.org/wiki/CRUD)) for users, authentication is handled, and we can determine how a user relates to an addon repository and what their permissions are for that repository. Are they actually an owner / maintainer?
 - GitHub has a review system that allows for proposing changes and discussing these changes. We can leverage this for a store submission and review process.
-- GitHub PR's provided a atomic view of a store submission.
+- GitHub PR's provided an atomic view of a store submission.
 - Interested parties can 'watch' PR's they care about without being subjected to the noise from PR's they don't care about.
 - The result (open / merged / closed) of the PR is clear.
 - GitHub allows us to manage permissions for accepting reviews more easily.
