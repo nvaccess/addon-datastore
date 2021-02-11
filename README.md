@@ -71,7 +71,7 @@ As an Addon reviewer you will:
 
 ## Infrastructure
 
-- `NVDA-Addon-submission` GitHub Repository
+- `addon-store-submission` GitHub Repository
   - For Addon authors / reviewers.
   - Where new Addon versions are submitted
   - Where reviews of Addon submissions happen
@@ -82,7 +82,7 @@ As an Addon reviewer you will:
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
 
-## `NVDA-Addon-submission` GitHub Repository
+## `addon-store-submission` GitHub Repository
 
 Essentially this repository holds metadata about all the accepted versions of Addons which are included in the store.
 Metadata about old versions of an addon remains until it is explicitly removed or becomes invalid, allowing delivery to older versions of NVDA, or as a fall back in case the newer version is revoked after a critical bug is found.
@@ -111,13 +111,13 @@ For a full description of the schema see:` _tools/addonVersion_schema.json`
 - Familiarity with Git, including working with branches.
 
 Process to add a new NVDA-addon version:
-1. Fork the `NVDA-Addon-submission` repository
+1. Fork the `addon-store-submission` repository
 1. On a new branch, copy the `_template_addon_release.json` file. 
    - Rename / move the file to `<publisher>/<addonName>/<version>.json`
    - `<publisher>` is the name of the add-on developer, E.G. "nvaccess"
    - `<addonName>` is the name of the add-on, E.G. "nv-speech-player"
    - `<version>` is the add-on version in the form: `Major.Minor.Patch` E.G. "2.4.1"
-1. Create a PR on `NVDA-Addon-submission` repository
+1. Create a PR on `addon-store-submission` repository
 1. Automated checks for common issues will complete.
 1. A review is performed (resulting in: request changes, approval)
    - Conducted by an NVDA add-on reviewer.
