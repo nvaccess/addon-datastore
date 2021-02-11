@@ -135,7 +135,7 @@ Many of these can be automated.
 - The version number from the file name is valid and matches the version in the manifest.
 
 ### Concerns
-- With this ID scheme many add-ons will need to change their ID. Will require previously saved config to be moved to a new section?
+- With this ID scheme many add-ons will need to change their ID. Will this require previously saved user config to be moved to a new section of the config file?
 
 ### Other notes
 - By using a git repository and and PR process, `git blame` and `git log` can be used to get more context about addons listed in the store. For instance:
@@ -146,21 +146,25 @@ Many of these can be automated.
 
 ## API data generation details
 
-Github actions can be configured to run a commit modifies a certain path, E.G. `addons/`.
-This can regenerate the required views of the data, and commit it the `_ds` path.
-A second Github action can be configured to run when there is a commit to the `_ds` path, which will then trigger a Webhook to notify the API server of the changes.
+The NV Access server will be configured to respond to a Webhook to pull from this repository and run code to transform
+the data.
+This can regenerate the required views of the data for the exposed API's
 
 ### Overview
 
-For each version of NVDA, the meta-data of the most recent (the highest version number) of each Addon is automatically added, based on the data in 'NVDA-Addon-submission'.
+For each version of NVDA, the meta-data of the most recent (the highest version number) of each Addon is automatically
+added, based on the data in 'addon-store-submission'.
 
-### Layout
+Code for this will be stored in the `_tools` folder. This will enable interested parties to generate the same view of
+the data locally.
 
-Root directory of repository:
-- `/_ds/NVDA API Version/addon-1-ID/release.json`
-- `/_ds/NVDA API Version/addon-1-ID/pre-rel.json`
-- `/_ds/NVDA API Version/addon-2-ID/release.json`
-- `/_ds/NVDA API Version/all.json`
+### Data views
+
+Required transformations of the data:
+- `/NVDA API Version/addon-1-ID/release.json`
+- `/NVDA API Version/addon-1-ID/pre-rel.json`
+- `/NVDA API Version/addon-2-ID/release.json`
+- `/NVDA API Version/all.json`
 
 Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
@@ -169,12 +173,10 @@ Notes:
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
-The simplicity of this is that the NV Access server can just forward these files on directly when asked "what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X". Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated away from GitHub for some reason.
-
-### Questions
-- Should the `_ds` be stored in another repository?
-- Rather than another repository, `_ds` could be available only on a particular branch.
-- 
+The simplicity of this is that the NV Access server can just forward these files on directly when asked
+"what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X".
+Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
+away from GitHub for some reason.
 
 ## Suffix
 
