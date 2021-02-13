@@ -8,12 +8,13 @@ import argparse
 import typing
 import os
 import sys
+import zipfile
 import json
 import urllib.request
 from jsonschema import validate, exceptions
-
 sys.path.append(os.path.dirname(__file__))
 import sha256
+from addonManifest import AddonManifest
 del sys.path[-1]
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
@@ -36,7 +37,7 @@ def validateJson(data):
 def downloadAddon(url):
 	assert url.startswith("https"), "add-on url should start with https"
 	assert url.endswith(".nvda-addon"), "add-on url should ends with .nvda-addon"
-	destPath = os.path.join(os.path.dirname(__file__), url.split("/")[-1])
+	destPath = os.path.join(os.path.dirname(__file__), "addon.nvda-addon")
 	remote = urllib.request.urlopen(url)
 	if remote.code != 200:
 		raise RuntimeError("Download failed with code %d" % remote.code)
@@ -59,6 +60,27 @@ def validateSha256(destPath, data):
 		sha256Addon = sha256.sha256_checksum(f)
 		assert sha256Addon == data["sha256"], f"Please, set sha256 to {sha256Addon} in json file"
 
+def getAddonManifest(destPath):
+	expandedPath = destPath.split(".")[-1]
+	with zipfile.ZipFile(destPath, "r") as z:
+		for info in z.infolist():
+			z.extract(info, expandedPath)
+	filePath = os.path.join(expandedPath, "manifest.ini")
+	manifest = AddonManifest(filePath)
+	return manifest
+
+def validateManifest(manifest, data, filename):
+	summary = manifest["summary"]
+	assert summary == data["name"], f"Please, set name to {summary} in json file"
+	description = manifest["description"]
+	assert description == data["description"], f"Please, set description to {description} in json file"
+	#url = manifest["url"]
+	#assert url == data["homepage"], f"Please, set homepage to {url} in json file"
+	name = manifest["name"]
+	assert name == os.path.dirname(filename), f"Please, place jsonfile in {name} folder"
+	version = manifest["version"]
+	assert version == os.path.splitext(os.path.basename(filename))[0], f"Please, rename jsonfile to {version}.json"
+
 
 def main():
 	parser = argparse.ArgumentParser()
@@ -72,6 +94,8 @@ def main():
 	url = data["URL"]
 	destPath = downloadAddon(url=url)
 	validateSha256(destPath=destPath, data=data)
+	manifest = getAddonManifest(destPath=destPath)
+	validateManifest(manifest=manifest, data=data, filename=args.file)
 
 if __name__ == '__main__':
 	main()
