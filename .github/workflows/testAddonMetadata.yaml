@@ -28,7 +28,7 @@ jobs:
       run: pip install jsonschema
     - name: Test number of files
       run: |
-        files = ${{ github.event.head_commit.files }}
+        "files = ${{ github.event.head_commit.files }}"
         len = len(files)
         print(str(len))
       shell: python
