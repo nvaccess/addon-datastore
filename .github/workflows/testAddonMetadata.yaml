@@ -35,7 +35,7 @@ jobs:
           if (context.payload.pull_request.files_changed === 1) { return }
           const diff_url = context.payload.pull_request.diff_url
           const result = await github.request(diff_url)
-          return result
+          return result.data
     - name: show diff url
       run: |
         import subprocess
