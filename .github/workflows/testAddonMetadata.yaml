@@ -31,7 +31,7 @@ jobs:
         import subprocess
         proc = subprocess.Popen('git diff-tree --no-commit-id --name-only -r ${{ github.sha }}', stdout=subprocess.PIPE)
         output = proc.stdout.read()
-        print output
+        print(output)
         
     - name: Validate json file
       run: python _tools\validate.py _tools\21.02.json
