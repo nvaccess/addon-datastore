@@ -26,12 +26,7 @@ jobs:
         architecture: x86
     - name: Install dependencies
       run: pip install jsonschema
-    - name: 
-      run: |
-        import subprocess
-        proc = subprocess.Popen('git diff-tree --no-commit-id --name-only -r ${{ github.sha }}', stdout=subprocess.PIPE)
-        output = proc.stdout.read()
-        print(output)
-        
-    - name: Validate json file
-      run: python _tools\validate.py _tools\21.02.json
+    - name: View context attributes
+      uses: actions/github-script@v3
+      with:
+        script: console.log(context.payload)
