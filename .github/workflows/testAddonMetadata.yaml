@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: pip install jsonschema
     - name: Determine changed file
-      id changedFile
+      id: changedFile
       uses: actions/github-script@v3
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
