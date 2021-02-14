@@ -43,4 +43,4 @@ jobs:
         diffUrl = "${{steps.set-result.outputs.result}}"
         file = diffUrl.split(" ")[1][2:]
         subprocess.call(f"_tools/validate.py {file}")
-        
+      shell: python
