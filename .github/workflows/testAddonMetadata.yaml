@@ -27,4 +27,4 @@ jobs:
     - name: Install dependencies
       run: pip install jsonschema
     - name: Validate json file
-      run: python _tools\validate.py ._tools\21.02.json
+      run: python _tools\validate.py _tools\21.02.json
