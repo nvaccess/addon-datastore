@@ -38,4 +38,9 @@ jobs:
           return result
         result-encoding: string
     - name: show diff url
-      run: console.log("${{steps.set-result.outputs.result}}")
+      run: |
+        import subprocess
+        diffUrl = "${{steps.set-result.outputs.result}}"
+        file = diffUrl.split(" ")[1][2:]
+        subprocess.call(f"_tools/validate.py {file}")
+        
