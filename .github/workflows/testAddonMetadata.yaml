@@ -26,11 +26,12 @@ jobs:
         architecture: x86
     - name: Install dependencies
       run: pip install jsonschema
-    - name: Test number of files
+    - name: 
       run: |
-        files = ${{ github.event.files }}
-        len = len(files)
-        print(str(len))
-      shell: python
+        import subprocess
+        proc = subprocess.Popen('git diff-tree --no-commit-id --name-only -r ${{ github.sha }}', stdout=subprocess.PIPE)
+        output = proc.stdout.read()
+        print output
+        
     - name: Validate json file
       run: python _tools\validate.py _tools\21.02.json
