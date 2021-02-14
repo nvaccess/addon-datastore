@@ -18,6 +18,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
+        fetch-depth: 0
         submodules: true
     - name: Set up Python 3.7 x86
       uses: actions/setup-python@v2
@@ -31,16 +32,6 @@ jobs:
       uses: actions/github-script@v3
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          if (context.payload.pull_request.files_changed === 1) { return }
-          const diff_url = context.payload.pull_request.diff_url
-          const result = await github.request(diff_url)
-          return result.data
-    - name: show diff url
-      run: |
-        import subprocess
-        diffUrl = "${{steps.changedFile.outputs.result}}"
-        fileStart = diffUrl.split("diff --git a/")[1]
-        file = fileStart.split(" b")[0]
-        print(file)
-      shell: python
+        script: return context.payload.pull_request.files_changed
+    - name: Get diff
+      run: git diff -U0 origin/master...HEAD -- addon/. > pr.diff
