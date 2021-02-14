@@ -35,7 +35,7 @@ jobs:
         script: return context.payload.pull_request.files_changed
     - name: Get diff
       run: |
-        if "${{steps.changedFileNumber.outputs.result}}" != 1:
+        "if ${{steps.changedFileNumber.outputs.result}} != 1":
           print("This is not an add-on submission")
           return
         git diff -U0 origin/master...HEAD -- addons/. > pr.diff
