@@ -13,10 +13,12 @@ import zipfile
 import json
 import urllib.request
 from jsonschema import validate, exceptions
+
 sys.path.append(os.path.dirname(__file__))
 import sha256
 from addonManifest import AddonManifest
 del sys.path[-1]
+
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
 DOWNLOAD_BLOCK_SIZE = 8192 # 8 kb
@@ -72,6 +74,7 @@ def getAddonManifest(destPath):
 	return manifest
 
 def validateManifest(manifest, data, filename):
+	assert manifest.errors == None, manifest._errors
 	summary = manifest["summary"]
 	assert summary == data["name"], f"Please, set name to {summary} in json file"
 	description = manifest["description"]
