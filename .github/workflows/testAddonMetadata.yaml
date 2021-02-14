@@ -35,7 +35,9 @@ jobs:
           if (context.payload.pull_request.files_changed === 1) { return }
           const diff_url = context.payload.pull_request.diff_url
           const result = await github.request(diff_url)
-          return result.split(" ")[1].substring(2)
+          const fileStartSubstring = result.substring(7)
+          const fileEnd = result.split(" ")[1]
+          const file = result.substring(fileStart, fileEnd)
         result-encoding: string
     - name: Validate metadata
       run: python _tools/validate.py ${{steps.changedFile.outputs.result}}
