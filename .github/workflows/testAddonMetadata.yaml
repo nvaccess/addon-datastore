@@ -40,6 +40,6 @@ jobs:
     - name: show diff url
       run: |
         import subprocess
-        diffUrl = "${{steps.set-result.outputs.result}}"
+        diffUrl = "${{steps.changedFile.outputs.result}}"
         print(diffUrl)
       shell: python
