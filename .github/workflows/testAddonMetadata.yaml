@@ -40,7 +40,6 @@ jobs:
       run: |
         import subprocess
         diffUrl = "${{steps.changedFile.outputs.result}}"
-        print(diffUrl)
         file = diffUrl.split("diff --git a/")[1].split()[0]
-        subprocess.call(f"_tools/validate.py {file}")
+        print(file)
       shell: python
