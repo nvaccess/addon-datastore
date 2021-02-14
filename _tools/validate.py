@@ -8,6 +8,7 @@ import argparse
 import typing
 import os
 import sys
+import tempfile
 import zipfile
 import json
 import urllib.request
@@ -19,6 +20,7 @@ del sys.path[-1]
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
 DOWNLOAD_BLOCK_SIZE = 8192 # 8 kb
+TEMP_DIR = tempfile.gettempdir()
 
 def getAddonMetadata(jsonFile):
 	with open(jsonFile) as f:
@@ -37,7 +39,7 @@ def validateJson(data):
 def downloadAddon(url):
 	assert url.startswith("https"), "add-on url should start with https"
 	assert url.endswith(".nvda-addon"), "add-on url should ends with .nvda-addon"
-	destPath = os.path.join(os.path.dirname(__file__), "addon.nvda-addon")
+	destPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
 	remote = urllib.request.urlopen(url)
 	if remote.code != 200:
 		raise RuntimeError("Download failed with code %d" % remote.code)
@@ -61,7 +63,7 @@ def validateSha256(destPath, data):
 		assert sha256Addon == data["sha256"], f"Please, set sha256 to {sha256Addon} in json file"
 
 def getAddonManifest(destPath):
-	expandedPath = destPath.split(".")[-1]
+	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
 	with zipfile.ZipFile(destPath, "r") as z:
 		for info in z.infolist():
 			z.extract(info, expandedPath)
