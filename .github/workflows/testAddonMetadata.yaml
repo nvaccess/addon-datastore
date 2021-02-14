@@ -36,7 +36,6 @@ jobs:
           const diff_url = context.payload.pull_request.diff_url
           const result = await github.request(diff_url)
           return result
-        result-encoding: string
     - name: show diff url
       run: |
         import subprocess
