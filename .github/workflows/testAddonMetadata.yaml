@@ -27,11 +27,15 @@ jobs:
         architecture: x86
     - name: Install dependencies
       run: pip install jsonschema
-    - name: Determine changed file
-      id: changedFile
+    - name: Determine number of changed files
+      id: changedFileNumber
       uses: actions/github-script@v3
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: return context.payload.pull_request.files_changed
     - name: Get diff
-      run: git diff -U0 origin/master...HEAD -- addon/. > pr.diff
+      run: |
+        if ${{steps.changedFileNumber.outputs.result}} != 1:
+          print("This is not an add-on submission")
+          return
+        git diff -U0 origin/master...HEAD -- addons/. > pr.diff
