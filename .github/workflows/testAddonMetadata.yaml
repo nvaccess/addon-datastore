@@ -40,6 +40,7 @@ jobs:
       run: |
         import subprocess
         diffUrl = "${{steps.changedFile.outputs.result}}"
-        file = diffUrl.split("diff --git a/")[1].split()[0]
+        fileStart = diffUrl.split("diff --git a/")[1]
+        file = fileStart.split(" b")[0]
         print(file)
       shell: python
