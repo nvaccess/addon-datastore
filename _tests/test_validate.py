@@ -23,8 +23,9 @@ class TestValidate(unittest.TestCase):
 		self.data = None
 
 	def test_validateJson(self):
-
-		self.data["description"] = 20
-		self.assertRaise(validate.validateJson(self.data), exceptions.ValidateError)
-		assert(validate.validateJson(self.data))
+		data = self.data
+		data["description"] = 20
+		with self.assertRaises(exceptions.ValidateError):
+			validate.validateJson(data)
+		assert(validate.ValidateJson(self.data)
 
