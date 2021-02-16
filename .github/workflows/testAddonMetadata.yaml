@@ -34,4 +34,3 @@ jobs:
         git diff -U0 origin/master...HEAD -- addons/. > pr.diff
     - name: Test
       run: python -m tox
-      shell: python
