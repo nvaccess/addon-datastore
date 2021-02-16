@@ -23,7 +23,5 @@ class TestValidate(unittest.TestCase):
 		self.data = None
 
 	def test_validateJson(self):
-		data = self.data
-		data["description"] = 20
 		assert(validate.validateJson(self.data))
 
