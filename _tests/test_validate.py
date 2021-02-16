@@ -17,6 +17,6 @@ def getTemplateData():
 class TestValidate(unittest.TestCase):
 
 	def test_validateJson(self):
-		data = defTemplateData()
+		data = getTemplateData()
 		with self.assertRaises(exceptions.ValidationError):
 			validate.validateJson(data)
