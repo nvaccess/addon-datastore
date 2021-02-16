@@ -2,6 +2,7 @@ import unittest
 import os
 import json
 from _tools import validate
+from . import SOURCE_DIR
 
 class TestValidate(unittest.TestCase):
 
