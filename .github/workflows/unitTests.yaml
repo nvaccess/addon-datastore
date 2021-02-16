@@ -1,4 +1,4 @@
-name: Check submitted NVDA add-on
+name: Unit tests
 
 on:
   pull_request:
@@ -7,9 +7,9 @@ on:
 
 jobs:
 
-  checkMetadata:
+  unitTests
   
-    name: Check metadata
+    name: Unit tests
   
     runs-on: windows-latest
 
@@ -26,11 +26,6 @@ jobs:
         python-version: 3.7
         architecture: x86
     - name: Install dependencies
-      run: |
-        pip install jsonschema
-        pip install tox
-    - name: Write diff to text file
-      run: |
-        git diff -U0 origin/master...HEAD -- addons/. > pr.diff
+      run: pip install tox
     - name: Test
       run: python -m tox
