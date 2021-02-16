@@ -16,10 +16,10 @@ def getTemplateData():
 
 class TestValidate(unittest.TestCase):
 
-	def setup(self):
+	def setUp(self):
 		self.data = getTemplateData()
 
-	def teardown(self):
+	def tearDown(self):
 		self.data = None
 
 	def test_validateJson(self):
