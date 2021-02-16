@@ -35,8 +35,10 @@ def validateJson(data):
 	try:
 		validate(instance=data, schema=schema)
 		print("Add-on metadata matches json schema")
+		return True
 	except exceptions.ValidationError as err:
 		print(f"Add-on metadata is not valid: {err}")
+		return False
 
 def downloadAddon(url):
 	assert url.startswith("https"), "add-on url should start with https"
@@ -63,6 +65,7 @@ def validateSha256(destPath, data):
 	with open(destPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
 		assert sha256Addon == data["sha256"], f"Please, set sha256 to {sha256Addon} in json file"
+		return True
 
 def getAddonManifest(destPath):
 	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
@@ -85,6 +88,7 @@ def validateManifest(manifest, data, filename):
 	assert name == os.path.dirname(filename), f"Please, place jsonfile in {name} folder"
 	version = manifest["version"]
 	assert version == os.path.splitext(os.path.basename(filename))[0], f"Please, rename jsonfile to {version}.json"
+	return True
 
 
 def main():
