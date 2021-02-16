@@ -27,5 +27,5 @@ class TestValidate(unittest.TestCase):
 		data["description"] = 20
 		with self.assertRaises(exceptions.ValidateError):
 			validate.validateJson(data)
-		assert(validate.ValidateJson(self.data)
+		assert(validate.ValidateJson(self.data))
 
