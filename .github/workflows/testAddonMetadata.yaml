@@ -30,5 +30,6 @@ jobs:
     - name: Write diff to text file
       run: |
         git diff -U0 origin/master...HEAD -- addons/. > pr.diff
-        python _tools\validate.py _tools\21.02.json
-        
+    - name: Test
+      run: tox
+      shell: python
