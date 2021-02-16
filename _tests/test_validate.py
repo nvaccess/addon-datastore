@@ -4,18 +4,18 @@ import json
 from _tools import validate
 from . import SOURCE_DIR
 
+TEMPLATE_FILE = os.path.join(SOURCE_DIR, "_tools", "21.02.json")
+JSONSCHEMA = validate.JSONSCHEMA
+
+
+def getTemplateData():
+	with open(TEMPLATE_FILE) as f:
+		data = json.load(f)
+	return data
+
 class TestValidate(unittest.TestCase):
 
-	def setUp(self):
-		self.jsonschema = validate.JSON_SCHEMA
-		self.template = os.path.join(SOURCE_DIR, "_tools", "21.02.json")
-		self.data = json.load(self.template)
-
-	def tearDown(self):
-		self.jsonschema = None
-		self.template = None
-		self.data = None
-
-	def test_getAddonMetadata(self):
-		data = validate.getAddonMetadata(self.template)
-		self.assertTrue(isinstance(data, dict))
+	def test_validateJson(self):
+		data = defTemplateData()
+		with self.assertRaises(exceptions.ValidationError):
+			validate.validateJson(data)
