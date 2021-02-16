@@ -23,6 +23,6 @@ class TestValidate(unittest.TestCase):
 		self.data = None
 
 	def test_validateJson(self):
-		self.data.description = 20
-		self.assertIsNone(validate.validateJson(data))
+		self.data["description"] = 20
+		self.assertIsNone(validate.validateJson(self.data))
 
