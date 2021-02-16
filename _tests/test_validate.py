@@ -3,9 +3,10 @@ import os
 import json
 from _tools import validate
 from . import SOURCE_DIR
+from jsonschema import exceptions
 
 TEMPLATE_FILE = os.path.join(SOURCE_DIR, "_tools", "21.02.json")
-JSONSCHEMA = validate.JSONSCHEMA
+JSONSCHEMA = validate.JSON_SCHEMA
 
 
 def getTemplateData():
