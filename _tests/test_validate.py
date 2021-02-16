@@ -23,5 +23,5 @@ class TestValidate(unittest.TestCase):
 		self.data = None
 
 	def test_validateJson(self):
-		assert(validate.validateJson(self.data))
+		self.assertTrue(validate.validateJson(self.data))
 
