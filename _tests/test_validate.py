@@ -16,6 +16,13 @@ def getTemplateData():
 
 class TestValidate(unittest.TestCase):
 
+	def setup(self):
+		self.data = getTemplateData()
+
+	def teardown(self):
+		self.data = None
+
 	def test_validateJson(self):
-		data = getTemplateData()
+		self.data.description = 20
 		self.assertIsNone(validate.validateJson(data))
+
