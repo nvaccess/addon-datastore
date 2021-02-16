@@ -26,8 +26,9 @@ jobs:
         python-version: 3.7
         architecture: x86
     - name: Install dependencies
-      run: pip install jsonschema
-      pip install tox
+      run: |
+        pip install jsonschema
+        pip install tox
     - name: Write diff to text file
       run: |
         git diff -U0 origin/master...HEAD -- addons/. > pr.diff
