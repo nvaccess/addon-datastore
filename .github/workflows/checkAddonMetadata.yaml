@@ -33,4 +33,4 @@ jobs:
       run: |
         with open("pr.diff") as f:
           print(f.read)
-      shell: python-
+      shell: python
