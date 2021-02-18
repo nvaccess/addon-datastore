@@ -25,7 +25,7 @@ jobs:
         script: |
           const filesChanged = context.payload.pull_request.changed_files
           if (filesChanged !== 1) {
-            throw new(Error("This is not an add-on))"
+            throw new(Error("This is not an add-on"))
           }
     - name: Checkout repo to validate metadata
       uses: actions/checkout@v2
