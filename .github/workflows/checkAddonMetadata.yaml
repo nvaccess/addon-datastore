@@ -35,5 +35,5 @@ jobs:
           diff = f.readlines()
           if len(diff) > 1:
             file = diff[0].split("\t")[-1].strip()
-            print(file + len(diff))
+            print(file + str(len(diff)))
       shell: python
