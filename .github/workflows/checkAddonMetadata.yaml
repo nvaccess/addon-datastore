@@ -26,15 +26,12 @@ jobs:
     - name: Install dependencies
       run: |
         pip install jsonschema
-        pip install tox
     - name: Write diff to text file
       run: |
         git diff --numstat origin/master...HEAD > pr.diff
     - name: Validate metadata
       run: |
         with open("pr.diff") as f:
-            if len(f.readlines()) > 1:
-                raise
-                
-    -name: Checkout 
-                
+          if len(f.readlines()) > 1:
+            raise
+      shell: python
