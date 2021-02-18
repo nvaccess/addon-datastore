@@ -32,5 +32,5 @@ jobs:
       run: tox
     - name: Lint with flake8
       run: |
-        git diff -U0 origin/master...HEAD -- addon/. > flake8.diff
+        git diff -U0 origin/master...HEAD > flake8.diff
         type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
