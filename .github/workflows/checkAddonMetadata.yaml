@@ -18,16 +18,29 @@ jobs:
       with:
         fetch-depth: 0
         submodules: true
-        path: main
     - name: Determine files changed
       uses: actions/github-script@v3
       with:
         script: |
           const filesChanged = context.payload.pull_request.changed_files
           if (filesChanged !== 1) {
-            throw new(Error("This is not an add-on"))
+            throw "This is not an add-on"
           }
+    - name: Determine file changed
+      run: git diff --numstat main...HEAD > pr.diff
     - name: Checkout repo to validate metadata
       uses: actions/checkout@v2
       with:
         path: validate
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+        architecture: 'x86'
+    - name: Script
+      run: |
+        import subprocess
+        with open("pr.diff") as f:
+          changedFile = f.read().split("\t")[-1]
+        subprocess.call(f"python validate/_validate/validate.py {changedFile}")
+      shell: python
