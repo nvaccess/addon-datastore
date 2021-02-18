@@ -18,22 +18,8 @@ jobs:
       with:
         fetch-depth: 0
         submodules: true
-    - name: Set up Python 3.7 x86
-      uses: actions/setup-python@v2
+        path: main
+    - name: View context attributes
+      uses: actions/github-script@v3
       with:
-        python-version: 3.7
-        architecture: x86
-    - name: Install dependencies
-      run: |
-        pip install jsonschema
-    - name: Write diff to text file
-      run: |
-        git diff --numstat origin/master...HEAD > pr.diff
-    - name: Validate metadata
-      run: |
-        with open("pr.diff") as f:
-          diff = f.readlines()
-          if len(diff) > 1:
-            file = diff[0].split("\t")[-1].strip()
-            print(file + str(len(diff)))
-      shell: python
+        script: console.log(context)
