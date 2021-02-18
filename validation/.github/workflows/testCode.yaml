@@ -18,6 +18,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
+        fetch-depth: 0
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
@@ -30,4 +31,6 @@ jobs:
     - name: Test with tox
       run: tox
     - name: Lint with flake8
-      run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      run: |
+        git diff -U0 origin/master...HEAD -- addon/. > flake8.diff
+        type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
