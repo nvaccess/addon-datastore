@@ -26,17 +26,13 @@ class TestValidate(unittest.TestCase):
 	def setUp(self):
 		self.data = getAddonData()
 		self.manifest = getAddonManifest()
-		self.badValue = 20
 
 	def tearDown(self):
 		self.data = None
 		self.manifest = None
-		self.badValue = None
 
 	def test_getAddonMetadata(self):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
-		self.data["description"] = self.badValue
-		self.assertNotEqual(validate.getAddonMetadata(JSON_FILE), self.data)
 
 	def test_validateJson(self):
 		self.assertTrue(validate.validateJson(self.data))
@@ -46,7 +42,3 @@ class TestValidate(unittest.TestCase):
 
 	def test_validateManifest(self):
 		self.assertTrue(validate.validateManifest(self.manifest, self.data, JSON_FILE))
-
-
-if __name__ == '__main__':
-	main()
