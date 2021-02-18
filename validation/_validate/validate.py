@@ -5,7 +5,6 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import argparse
-import typing
 import os
 import sys
 import tempfile
@@ -81,12 +80,13 @@ def validateManifest(manifest, data, filename):
 	assert summary == data["name"], f"Please, set name to {summary} in json file"
 	description = manifest["description"]
 	assert description == data["description"], f"Please, set description to {description} in json file"
-	#url = manifest["url"]
-	#assert url == data["homepage"], f"Please, set homepage to {url} in json file"
+	url = manifest["url"]
+	assert url == data["homepage"], f"Please, set homepage to {url} in json file"
 	name = manifest["name"]
 	assert name == os.path.basename(os.path.dirname(filename)), f"Please, place jsonfile in {name} folder"
 	version = manifest["version"]
 	assert version == os.path.splitext(os.path.basename(filename))[0], f"Please, rename jsonfile to {version}.json"
+	print("Add-on metadata matches manifest")
 	return True
 
 

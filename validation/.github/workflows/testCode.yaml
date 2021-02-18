@@ -1,33 +1,41 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
 name: Test code
 
 on:
+  push:
+    branches: [ $default-branch ]
   pull_request:
-    branches:
-      - master
+    branches: [ $default-branch ]
 
 jobs:
-
   testCode:
-  
-    name: Test code
-  
+
     runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+        architecture: x86
 
     steps:
-    
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-        submodules: true
-    - name: Set up Python 3.7 x86
+    - uses: actions/checkout@v2
+    with:
+      submodules: true
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
-        architecture: x86
+        python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        pip install jsonschema
-        pip install tox
-    - name: Run tox
-      run: python -m tox
+        python -m pip install --upgrade pip
+        python -m pip install flake8 tox
+    - name: Lint with flake8
+    - name: Lint
+      run: |
+        git diff -U0 origin/master...HEAD > flake8.diff
+        type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
+    - name: Test with tox
+      run: tox
+    - name: Validate json
+      run: python _validate\validate.py clipContentsDesigner\13.0.json
