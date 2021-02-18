@@ -9,8 +9,6 @@ jobs:
 
   checkMetadata:
   
-    name: Check metadata
-  
     runs-on: windows-latest
 
     steps:
@@ -31,6 +29,12 @@ jobs:
         pip install tox
     - name: Write diff to text file
       run: |
-        git diff -U0 origin/master...HEAD -- addons/. > pr.diff
-    - name: Test
-      run: python -m tox
+        git diff --numstat origin/master...HEAD > pr.diff
+    - name: Validate metadata
+      run: |
+        with open("pr.diff") as f:
+            if len(f.readlines()) > 1:
+                raise
+                
+    -name: Checkout 
+                
