@@ -34,3 +34,5 @@ jobs:
       run: |
         git diff -U0 origin/main...HEAD > flake8.diff
         type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
+    - name: Validate add-on
+      run: python _validate\validate.py clipContentsDesigner\13.0.json
