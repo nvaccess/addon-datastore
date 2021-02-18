@@ -22,16 +22,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-        # architecture: x86
+        architecture: x86
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install tox
-    # - name: Lint with flake8
-      # run: |
-        # git diff -U0 origin/master...HEAD > flake8.diff
-        # type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
-    - name: Test with tox
-      run: tox
-    - name: Validate json
-      run: python _validate\validate.py clipContentsDesigner\13.0.json
