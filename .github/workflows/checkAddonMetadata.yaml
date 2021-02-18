@@ -32,6 +32,6 @@ jobs:
     - name: Validate metadata
       run: |
         with open("pr.diff") as f:
-          if len(f.readlines()) > 1:
-            raise
-      shell: python
+          if len(f.readlines()) > 2:
+            raise ValueError("Metadata not valid")
+      shell: python-
