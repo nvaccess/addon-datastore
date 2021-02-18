@@ -19,7 +19,9 @@ jobs:
         fetch-depth: 0
         submodules: true
         path: main
-    - name: View context attributes
+    - name: Determine files changed
       uses: actions/github-script@v3
       with:
-        script: console.log(context)
+        script: |
+          const filesChanged = context.payload.pull_request.changed_files
+          if (filesChanged !== 1) {throw "This is not an add-on"}
