@@ -15,8 +15,6 @@ jobs:
     
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        submodules: true
     - name: Determine files changed
       uses: actions/github-script@v3
       id: getMetadata
@@ -43,6 +41,7 @@ jobs:
       with:
         repository: nvdaes/validateNvdaAddonMetadata
         path: validateNvdaAddonMetadata
+        submodules: true
     - name: Set up Python 3.7 x86
       uses: actions/setup-python@v2
       with:
