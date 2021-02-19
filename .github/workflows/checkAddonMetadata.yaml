@@ -32,8 +32,10 @@ jobs:
           const changedFiles = result.data
           if (changedFiles.length === 1) {
             const filename = changedFiles[0].filename
-            if (filename.startsWith("addons") && filename.endsWith(".json")) {
+            if (filename.startsWith("addons") && filename.endsWith(".json") && filename.split("/").length === 4) {
               return filename
+            } else {
+              throw error "This is not an add-on"
             }
           }
     - name: Checkout validate repo
@@ -47,6 +49,8 @@ jobs:
         python-version: 3.7
         architecture: x86
     - name: Install dependencies
-      run: pip install jsonschema
+      run: |
+        python -m pip install --upgrade pip
+        pip install jsonschema
     - name: Validate metadata
       run: python validateNvdaAddonMetadata/_validate/validate.py ${{steps.getMetadata.outputs.result}}
