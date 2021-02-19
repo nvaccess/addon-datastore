@@ -27,6 +27,6 @@ jobs:
           const repo = context.repo.repo
           const number = context.issue.number
           restSubfix = "/files"
-          const url = restPrefix + owner + repo + "/pulls/" + number + restSubfix
+          const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
           const files =await github.request(url)
           console.log(files)
