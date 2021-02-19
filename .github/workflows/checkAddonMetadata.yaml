@@ -28,5 +28,11 @@ jobs:
           const number = context.issue.number
           restSubfix = "/files"
           const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
-          const files =await github.request(url)
-          console.log(files)
+          result files =await github.request(url)
+          const changedFiles = result.data
+          if (data.length === 1) {
+            return result.data[0
+          } else {
+            console.log(result.data[0]
+          }
+          
