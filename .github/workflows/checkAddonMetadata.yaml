@@ -30,7 +30,7 @@ jobs:
           const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
           result = await github.request(url)
           const changedFiles = result.data
-          if (changedFiles.length === 1) && changedFiles[0].filename.startsWith("addons") {
+          if (changedFiles.length === 1 && changedFiles[0].filename.startsWith("addons") ) {
             return changedFiles[0]
           } else {
             console.log(changedFiles[0])
