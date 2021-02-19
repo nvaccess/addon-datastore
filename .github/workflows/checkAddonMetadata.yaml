@@ -32,7 +32,4 @@ jobs:
           const changedFiles = result.data
           if (changedFiles.length === 1) {
             return changedFiles[0]
-          } else {
-            console.log(changedFiles[0])
           }
-          
