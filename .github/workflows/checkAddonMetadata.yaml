@@ -16,10 +16,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0
         submodules: true
     - name: Determine files changed
       uses: actions/github-script@v3
+      id: getMetadata
       with:
         script: |
           const restPrefix = "GET /repos/"
@@ -37,3 +37,18 @@ jobs:
             }
           }
           throw "This is not an add-on"
+        result-encoding: string
+    - Checkout validate repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvdaes/validateNvdaAddonMetadata
+        path: validate
+    - name: Set up Python 3.7 x86
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        architecture: x86
+    - name: Install dependencies
+      run: pip install jsonschema
+    - name: Validate
+      run: python "validate/_validate/validate.py ${{steps.getMetadata.outputs.result}}"
