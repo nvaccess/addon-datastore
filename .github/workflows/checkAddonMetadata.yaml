@@ -32,11 +32,8 @@ jobs:
           const changedFiles = result.data
           if (changedFiles.length === 1) {
             const filename = changedFiles[0].filename
-            if (filename.startsWith("addons") && filename.endsWith(".json") && filename.split("/").length === 3) {
-              return filename
-            } else { console.log(filename) }
+            console.log(filename)
           }
-          #throw "This is not an add-on"
     - name: Checkout validate repo
       uses: actions/checkout@v2
       with:
