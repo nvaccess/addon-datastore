@@ -9,8 +9,6 @@ jobs:
 
   checkMetadata:
   
-    name: Check metadata
-  
     runs-on: windows-latest
 
     steps:
@@ -20,15 +18,13 @@ jobs:
       with:
         fetch-depth: 0
         submodules: true
-    - name: Set up Python 3.7 x86
-      uses: actions/setup-python@v2
+    - name: Determine files changed
+      uses: actions/github-script@v3
       with:
-        python-version: 3.7
-        architecture: x86
-    - name: Install dependencies
-      run: pip install jsonschema
-    - name: Write diff to text file
-      run: |
-        git diff -U0 origin/master...HEAD -- addons/. > pr.diff
-        python _tools\validate.py _tools\21.02.json
-        
+        script: |
+          const restPrefix = "GET /repos/:owner/:repo/pulls/"
+          const number = context.pull_request.number
+          restSubfix = "/files"
+          const url = restPrefix + number + restSubfix
+          const files =await github.request(url)
+          console.log(files)
