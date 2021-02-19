@@ -37,8 +37,15 @@ jobs:
             }
           }
           throw "This is not an add-on"
-    - Checkout validate repo
+    - name: Checkout validate repo
       uses: actions/checkout@v2
       with:
         repository: nvdaes/validateNvdaAddonMetadata
         path: validateNvdaAddonMetadata
+    - name: Set up Python 3.7 x86
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        architecture: x86
+    - name: Install dependencies
+      run: pip install jsonschema
