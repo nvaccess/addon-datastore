@@ -35,6 +35,8 @@ jobs:
             } else {
               throw "This is not an add-on"
             }
+          } else {
+            throw "Please, send just one file"
           }
     - name: Checkout validate repo
       uses: actions/checkout@v2
