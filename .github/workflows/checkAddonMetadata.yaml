@@ -50,5 +50,3 @@ jobs:
         architecture: x86
     - name: Install dependencies
       run: pip install jsonschema
-    - name: Validate
-      run: python "validate/_validate/validate.py ${{steps.getMetadata.outputs.result}}"
