@@ -30,9 +30,9 @@ jobs:
           const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
           result files =await github.request(url)
           const changedFiles = result.data
-          if (data.length === 1) {
-            return result.data[0]
+          if (changedFiles.length === 1) {
+            return changedFiles[0]
           } else {
-            console.log(result.data[0])
+            console.log(changedFiles[0])
           }
           
