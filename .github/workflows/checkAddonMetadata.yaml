@@ -49,4 +49,4 @@ jobs:
     - name: Install dependencies
       run: pip install jsonschema
     - name: Validate metadata
-      run: validateNvdaAddonMetadata/_validate/validate.py ${{steps.getMetadata.outputs.result}}
+      run: python validateNvdaAddonMetadata/_validate/validate.py ${{steps.getMetadata.outputs.result}}
