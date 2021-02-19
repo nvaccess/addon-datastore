@@ -37,3 +37,8 @@ jobs:
             }
           }
           throw "This is not an add-on"
+    - Checkout validate repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvdaes/validateNvdaAddonMetadata
+        path: validate
