@@ -35,7 +35,7 @@ jobs:
             if (filename.startsWith("addons") && filename.endsWith(".json") && filename.split("/").length === 4) {
               return filename
             } else {
-              throw Error "This is not an add-on"
+              throw "This is not an add-on"
             }
           }
     - name: Checkout validate repo
