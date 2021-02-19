@@ -36,7 +36,8 @@ jobs:
               return filename
             }
           }
-          throw "This is not an add-on"
+          console.log(filename)
+          #throw "This is not an add-on"
     - name: Checkout validate repo
       uses: actions/checkout@v2
       with:
