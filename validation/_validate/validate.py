@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2020 NV Access Limited
+# Copyright (C) 2021 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,10 +60,14 @@ def _downloadAddon(url):
 			local.write(block)
 	return destPath
 
+jsonContentErrors = []
+
 def validateSha256(destPath, data):
 	with open(destPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
-		assert sha256Addon == data["sha256"], f"Please, set sha256 to {sha256Addon} in json file"
+		if sha256Addon != data["sha256"]:
+			jsonContentErrors.append(f"Please, set sha256 to {sha256Addon} in json file")
+			return False	
 		return True
 
 def _getAddonManifest(destPath):
@@ -75,17 +79,25 @@ def _getAddonManifest(destPath):
 	manifest = AddonManifest(filePath)
 	return manifest
 
-def validateManifest(manifest, data, filename):
+def validateJsonContent(manifest, data, filename):
 	summary = manifest["summary"]
-	assert summary == data["name"], f"Please, set name to {summary} in json file"
+	if summary != data["name"]:
+		jsonContentErrors.append(f"Please, set name to {summary} in json file")
 	description = manifest["description"]
-	assert description == data["description"], f"Please, set description to {description} in json file"
+	if description != data["description"]:
+		jsonContentErrors.append("Please, set description to {description} in json file")
 	url = manifest["url"]
-	assert url == data["homepage"], f"Please, set homepage to {url} in json file"
+	if url != data["homepage"]:
+		jsonContentErrors.append(f"Please, set homepage to {url} in json file")
 	name = manifest["name"]
-	assert name == os.path.basename(os.path.dirname(filename)), f"Please, place jsonfile in {name} folder"
+	if name != os.path.basename(os.path.dirname(filename)):
+		jsonContentErrors.append(f"Please, place jsonfile in {name} folder")
 	version = manifest["version"]
-	assert version == os.path.splitext(os.path.basename(filename))[0], f"Please, rename jsonfile to {version}.json"
+	if version != os.path.splitext(os.path.basename(filename))[0]:
+		jsonContentErrors.append(f"Please, rename jsonfile to {version}.json")
+	if len(jsonContentErrors) >= 1:
+		print(jsonContentErrors.join("\r\n"))
+		return False
 	print("Add-on metadata matches manifest")
 	return True
 
@@ -103,7 +115,7 @@ def main():
 	destPath = _downloadAddon(url=url)
 	validateSha256(destPath=destPath, data=data)
 	manifest = _getAddonManifest(destPath=destPath)
-	validateManifest(manifest=manifest, data=data, filename=args.file)
+	validateJsonContent(manifest=manifest, data=data, filename=args.file)
 
 if __name__ == '__main__':
 	main()
