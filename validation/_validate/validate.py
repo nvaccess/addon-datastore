@@ -60,15 +60,16 @@ def _downloadAddon(url):
 			local.write(block)
 	return destPath
 
-jsonContentErrors = []
+jsonContentsErrors = []
 
 def validateSha256(destPath, data):
 	with open(destPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
-		if sha256Addon != data["sha256"]:
-			jsonContentErrors.append(f"Please, set sha256 to {sha256Addon} in json file")
-			return False	
+	if sha256Addon == data["sha256"]:
+		print("sha256 is valid")
 		return True
+	jsonContentsErrors.append(f"Set sha256 to {sha256Addon} in json file")
+	return False	
 
 def _getAddonManifest(destPath):
 	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
@@ -79,27 +80,32 @@ def _getAddonManifest(destPath):
 	manifest = AddonManifest(filePath)
 	return manifest
 
-def validateJsonContent(manifest, data, filename):
+def validateManifest(manifest, data, filename):
+	manifestErrors = []
 	summary = manifest["summary"]
 	if summary != data["name"]:
-		jsonContentErrors.append(f"Please, set name to {summary} in json file")
+		manifestErrors.append(f"Set name to {summary} in json file")
 	description = manifest["description"]
 	if description != data["description"]:
-		jsonContentErrors.append("Please, set description to {description} in json file")
+		manifestErrors.append("Set description to {description} in json file")
 	url = manifest["url"]
 	if url != data["homepage"]:
-		jsonContentErrors.append(f"Please, set homepage to {url} in json file")
+		manifestErrors.append(f"Set homepage to {url} in json file")
 	name = manifest["name"]
 	if name != os.path.basename(os.path.dirname(filename)):
-		jsonContentErrors.append(f"Please, place jsonfile in {name} folder")
+		manifestErrors.append(f"Place jsonfile in {name} folder")
 	version = manifest["version"]
 	if version != os.path.splitext(os.path.basename(filename))[0]:
-		jsonContentErrors.append(f"Please, rename jsonfile to {version}.json")
-	if len(jsonContentErrors) >= 1:
-		print(jsonContentErrors.join("\r\n"))
+		manifestErrors.append(f"Rename jsonfile to {version}.json")
+	if len(manifestErrors) >= 1:
+		jsonContentsErrors.extend(manifestErrors)
 		return False
 	print("Add-on metadata matches manifest")
 	return True
+
+def showJsonContentsErrors():
+	if len(jsonContentsErrors) >= 1:
+		raise ValueError("\r\n".join(jsonContentsErrors))
 
 
 def main():
@@ -115,7 +121,7 @@ def main():
 	destPath = _downloadAddon(url=url)
 	validateSha256(destPath=destPath, data=data)
 	manifest = _getAddonManifest(destPath=destPath)
-	validateJsonContent(manifest=manifest, data=data, filename=args.file)
-
+	validateManifest(manifest=manifest, data=data, filename=args.file)
+	showJsonContentsErrors()
 if __name__ == '__main__':
 	main()
