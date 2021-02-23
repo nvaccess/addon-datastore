@@ -23,14 +23,13 @@ JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json"
 DOWNLOAD_BLOCK_SIZE = 8192 # 8 kb
 TEMP_DIR = tempfile.gettempdir()
 
-validationErrors = []
 
 def getAddonMetadata(filename):
 	with open(filename) as f:
 		data = json.load(f)
-		return data
+	return data
 
-def validateJson(data):
+def getJsonschemaErrors(data):
 	errors = []
 	with open(JSON_SCHEMA) as f:
 		schema = json.load(f)
@@ -62,7 +61,7 @@ def _downloadAddon(url):
 			local.write(block)
 	return destPath
 
-def validateSha256(destPath, data):
+def getSha256Errors(destPath, data):
 	errors = []
 	with open(destPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
@@ -79,35 +78,35 @@ def _getAddonManifest(destPath):
 	manifest = AddonManifest(filePath)
 	return manifest
 
-def validateSummary(manifest, data):
+def getSummaryErrors(manifest, data):
 	errors = []
 	summary = manifest["summary"]
 	if summary != data["name"]:
 		errors.append(f"name must be set to {summary} in json file")
-		return errors
+	return errors
 
-def validateDescription(manifest, data):
+def getDescriptionErrors(manifest, data):
 	errors = []
 	description = manifest["description"]
 	if description != data["description"]:
 		errors.append("description must be set to {description} in json file")
-   return errors
+	return errors
 
-def validateUrl(manifest, data):
+def getUrlErrors(manifest, data):
 	errors = []
-		url = manifest["url"]
+	url = manifest["url"]
 	if url != data["homepage"]:
 		errors.append(f"homepage must be set to {url} in json file")
 	return errors
 
-def validateName(manifest, filename):
+def getNameErrors(manifest, filename):
 	errors = []
 	name = manifest["name"]
 	if name != os.path.basename(os.path.dirname(filename)):
 		errors.append(f"json file must be placed in {name} folder")
 	return errors
 
-def validateVersion(manifest, filename):
+def getVersionErrors(manifest, filename):
 	errors = []
 	version = manifest["version"]
 	if version != os.path.splitext(os.path.basename(filename))[0]:
@@ -122,17 +121,17 @@ def main():
 		help="The json (.json) file containing add-on metadata."
 	)
 	args = parser.parse_args()
-    filename = args.file
+	filename = args.file
 	data = getAddonMetadata(filename=filename)
-	validateJson(data=data)
+	getJsonschemaErrors(data=data)
 	url = data["URL"]
 	destPath = _downloadAddon(url=url)
-	validateSha256(destPath=destPath, data=data)
+	getSha256Errors(destPath=destPath, data=data)
 	manifest = _getAddonManifest(destPath=destPath)
-	validateSummary(manifest=manifest, data=data)
-	validateDescription(manifest=manifest, data=data)
-	validateUrl(manifest=manifest, data=data)
-	validateName(manifest=manifest, filename=filename)
-	validateVersion(manifest=manifest, filename=filename)
+	getSummaryErrors(manifest=manifest, data=data)
+	getDescriptionErrors(manifest=manifest, data=data)
+	getUrlErrors(manifest=manifest, data=data)
+	getNameErrors(manifest=manifest, filename=filename)
+	getVersionErrors(manifest=manifest, filename=filename)
 if __name__ == '__main__':
 	main()
