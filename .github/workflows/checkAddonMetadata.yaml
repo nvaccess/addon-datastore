@@ -24,9 +24,9 @@ jobs:
           const owner = context.repo.owner
           const repo = context.repo.repo
           const number = context.issue.number
-          restSubfix = "/files"
+          const restSubfix = "/files"
           const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
-          result = await github.request(url)
+          const result = await github.request(url)
           const changedFiles = result.data
           if (changedFiles.length === 1) {
             const filename = changedFiles[0].filename
