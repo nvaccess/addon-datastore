@@ -123,15 +123,17 @@ def main():
 	args = parser.parse_args()
 	filename = args.file
 	data = getAddonMetadata(filename=filename)
-	getJsonschemaErrors(data=data)
+	errors = []
+	errors.extend(getJsonschemaErrors(data=data))
 	url = data["URL"]
 	destPath = _downloadAddon(url=url)
-	getSha256Errors(destPath=destPath, data=data)
+	errors.extend(getSha256Errors(destPath=destPath, data=data))
 	manifest = _getAddonManifest(destPath=destPath)
-	getSummaryErrors(manifest=manifest, data=data)
-	getDescriptionErrors(manifest=manifest, data=data)
-	getUrlErrors(manifest=manifest, data=data)
-	getNameErrors(manifest=manifest, filename=filename)
-	getVersionErrors(manifest=manifest, filename=filename)
+	errors.extend(getSummaryErrors(manifest=manifest, data=data))
+	errors.extend(getDescriptionErrors(manifest=manifest, data=data))
+	errors.extend(getUrlErrors(manifest=manifest, data=data))
+	errors.extend(getNameErrors(manifest=manifest, filename=filename))
+	errors.extend(getVersionErrors(manifest=manifest, filename=filename))
+	return errors
 if __name__ == '__main__':
 	main()
