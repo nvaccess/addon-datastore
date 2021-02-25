@@ -38,8 +38,8 @@ def validateJson(data):
 
 def getDownloadUrlErrors(url):
 	errors = []
-	if not url.startswith("https"):
-		errors.append("add-on download url must start with https")
+	if not url.startswith("https://"):
+		errors.append("add-on download url must start with https://")
 	if not url.endswith(".nvda-addon"):
 		errors.append("add-on download url must end with .nvda-addon")
 	return errors
@@ -87,14 +87,14 @@ def getSummaryErrors(manifest, data):
 	errors = []
 	summary = manifest["summary"]
 	if summary != data["name"]:
-		errors.append(ERROR_SUMMARY = f"name must be set to {summary} in json file")
+		errors.append(f"name must be set to {summary} in json file")
 	return errors
 
 def getDescriptionErrors(manifest, data):
 	errors = []
 	description = manifest["description"]
 	if description != data["description"]:
-		errors.append("description must be set to {description} in json file")
+		errors.append(f"description must be set to {description} in json file")
 	return errors
 
 def getUrlErrors(manifest, data):
