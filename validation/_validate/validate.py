@@ -23,26 +23,28 @@ JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json"
 DOWNLOAD_BLOCK_SIZE = 8192 # 8 kb
 TEMP_DIR = tempfile.gettempdir()
 
-
 def getAddonMetadata(filename):
 	with open(filename) as f:
 		data = json.load(f)
 	return data
 
-def getJsonschemaErrors(data):
-	errors = []
+def validateJson(data):
 	with open(JSON_SCHEMA) as f:
 		schema = json.load(f)
 	try:
 		validate(instance=data, schema=schema)
 	except exceptions.ValidationError as err:
-		errors.append(err)
-	finally:
-		return errors
+		raise err
+
+def getDownloadUrlErrors(url):
+	errors = []
+	if not url.startswith("https"):
+		errors.append("add-on url must start with https")
+	if not url.endswith(".nvda-addon"):
+		errors.append("add-on url must end with .nvda-addon")
+	return errors
 
 def _downloadAddon(url):
-	assert url.startswith("https"), "add-on url should start with https"
-	assert url.endswith(".nvda-addon"), "add-on url should ends with .nvda-addon"
 	destPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
 	remote = urllib.request.urlopen(url)
 	if remote.code != 200:
@@ -75,14 +77,17 @@ def _getAddonManifest(destPath):
 		for info in z.infolist():
 			z.extract(info, expandedPath)
 	filePath = os.path.join(expandedPath, "manifest.ini")
-	manifest = AddonManifest(filePath)
-	return manifest
+	try:
+		manifest = AddonManifest(filePath)
+		return manifest
+	except Exception as err:
+		raise err
 
 def getSummaryErrors(manifest, data):
 	errors = []
 	summary = manifest["summary"]
 	if summary != data["name"]:
-		errors.append(f"name must be set to {summary} in json file")
+		errors.append(ERROR_SUMMARY = f"name must be set to {summary} in json file")
 	return errors
 
 def getDescriptionErrors(manifest, data):
@@ -123,17 +128,24 @@ def main():
 	args = parser.parse_args()
 	filename = args.file
 	data = getAddonMetadata(filename=filename)
+	validateJson(data=data)
 	errors = []
-	errors.extend(getJsonschemaErrors(data=data))
-	url = data["URL"]
+	url = data["url"]
+	errors.extend(getDownloadUrlErrors(url))
+	if len(errors) > 0:
+		print("\r\n".join(errors))
+		raise
 	destPath = _downloadAddon(url=url)
-	errors.extend(getSha256Errors(destPath=destPath, data=data))
 	manifest = _getAddonManifest(destPath=destPath)
+	errors.extend(getSha256Errors(destPath=destPath, data=data))
 	errors.extend(getSummaryErrors(manifest=manifest, data=data))
 	errors.extend(getDescriptionErrors(manifest=manifest, data=data))
 	errors.extend(getUrlErrors(manifest=manifest, data=data))
 	errors.extend(getNameErrors(manifest=manifest, filename=filename))
 	errors.extend(getVersionErrors(manifest=manifest, filename=filename))
-	return errors
+	if len(errors) > 0:
+		print("\r\n".join(errors))
+		raise
+	print("Congratulations: manifest, metadata and file path are valid")
 if __name__ == '__main__':
 	main()
