@@ -32,5 +32,5 @@ jobs:
       run: tox
     - name: Lint with flake8
       run: |
-        git diff -U0 origin/main...HEAD > flake8.diff
-        type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
