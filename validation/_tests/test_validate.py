@@ -41,6 +41,8 @@ class TestValidate(unittest.TestCase):
 
 	def test_validateJson(self):
 		validate.validateJson(self.data)
+		del self.data["description"]
+		validate.validateJson(self.data)
 
 	def test_getDownloadUrlErrors(self):
 		url = self.data["URL"]
@@ -55,11 +57,6 @@ class TestValidate(unittest.TestCase):
 		url = self.badValue + ".nvda-addon"
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 1)
-
-	def test_getAddonManifest(self):
-		path = os.path.join(ADDON_PATH, "manifest.ini")
-		manifest = validate.getAddonManifest(path)
-		self.assertEqual(manifest, self.manifest)
 
 	def test_getSummaryErrors(self):
 		errors = validate.getSummaryErrors(self.manifest, self.data)
