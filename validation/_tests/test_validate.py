@@ -56,9 +56,9 @@ class TestValidate(unittest.TestCase):
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 1)
 
-	def test_getManifest(self):
+	def test_getAddonManifest(self):
 		path = os.path.join(ADDON_PATH, "manifest.ini")
-		manifest = validate.getManifest(path)
+		manifest = validate.getAddonManifest(path)
 		self.assertEqual(manifest, self.manifest)
 
 	def test_getSummaryErrors(self):
