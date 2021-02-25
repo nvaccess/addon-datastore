@@ -50,14 +50,14 @@ class TestValidate(unittest.TestCase):
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertNotEqual(len(errors), 0)
 
-	def test_getSummaryErrors(self
+	def test_getSummaryErrors(self):
 		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
 		self.data["name"] = self.badValue
 		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertNotEqual(len(errors), 0)
 
-	def test_getDescriptionErrors(self
+	def test_getDescriptionErrors(self):
 		errors = validate.getDescriptionErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
         self.data["description"] = self.badValue
