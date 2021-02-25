@@ -39,7 +39,7 @@ class TestValidate(unittest.TestCase):
 	def test_getAddonMetadata(self):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
 
-	def test_getDownloadUrlErrors(self
+	def test_getDownloadUrlErrors(self):
 		url = self.data["URL"]
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 0)
