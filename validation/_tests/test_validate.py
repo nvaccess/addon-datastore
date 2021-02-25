@@ -38,7 +38,7 @@ class TestValidate(unittest.TestCase):
 
 	def test_getAddonMetadata(self):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
-        
+		
 	def test_validateJson(self):
 		validate.validateJson(self.data)
 
@@ -48,8 +48,14 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(len(errors), 0)
 		url = self.badValue
 		errors = validate.getDownloadUrlErrors(url)
-		self.assertNotEqual(len(errors), 0)
-
+		self.assertEqual(len(errors), 2)
+		url = "https://" + self.badValue
+		errors = validate.getDownloadUrlErrors(url)
+		self.assertEqual(len(errors), 1)
+		url = self.badValue + ".nvda-addon"
+		errors = validate.getDownloadUrlErrors(url)
+		self.assertEqual(len(errors), 1)
+        
 	def test_getSummaryErrors(self):
 		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
@@ -60,7 +66,7 @@ class TestValidate(unittest.TestCase):
 	def test_getDescriptionErrors(self):
 		errors = validate.getDescriptionErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
-        self.data["description"] = self.badValue
+		self.data["description"] = self.badValue
 		errors = validate.getDescriptionErrors(self.manifest, self.data)
 		self.assertNotEqual(len(errors), 0)
 
