@@ -80,7 +80,14 @@ class TestValidate(unittest.TestCase):
 	def test_getNameErrors(self):
 		errors = validate.getNameErrors(self.manifest, JSON_FILE)
 		self.assertEqual(len(errors), 0)
-		filename = os.path.join(ADDON_PATH, self.badValue)
+		filename = os.path.join(TOP_DIR, self.badValue)
 		errors = validate.getNameErrors(self.manifest, filename)
+		self.assertNotEqual(len(errors), 0)
+
+	def test_getVersionErrors(self):
+		errors = validate.getVersionErrors(self.manifest, JSON_FILE)
+		self.assertEqual(len(errors), 0)
+		filename = os.path.join(ADDON_PATH, self.badValue)
+		errors = validate.getVersionErrors(self.manifest, filename)
 		self.assertNotEqual(len(errors), 0)
 
