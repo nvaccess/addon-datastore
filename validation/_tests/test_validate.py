@@ -40,11 +40,11 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
 
 	def test_getDownloadUrlErrors(self
-		errors = validate.getDownloadUrlErrors(self.data["URL"])
+		url = self.data["URL"]
+		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 0)
-		data = self.data
-		data["URL"] = self.badValue
-		errors = validate.getDownloadUrlErrors(data[URL])
+		url = self.badValue
+		errors = validate.getDownloadUrlErrors(url
 		self.assertNotEqual(len(errors), 0)
 
 	def test_getSummaryErrors(self
