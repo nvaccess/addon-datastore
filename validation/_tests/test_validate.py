@@ -3,6 +3,7 @@
 import unittest
 import os
 import json
+from jsonschema import exceptions
 from _validate import validate, addonManifest
 
 
@@ -41,8 +42,10 @@ class TestValidate(unittest.TestCase):
 
 	def test_validateJson(self):
 		validate.validateJson(self.data)
-		self.data["description"] = 3
-		validate.validateJson(self.data)
+		self.badValue = 3
+		self.data["description"] = self.badValue
+		with self.assertRaises(exceptions.ValidationError):
+			validate.validateJson(self.data)
 
 	def test_getDownloadUrlErrors(self):
 		url = self.data["URL"]
