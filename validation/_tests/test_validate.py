@@ -56,6 +56,13 @@ class TestValidate(unittest.TestCase):
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 1)
 
+	def test_getSha256Errors(self):
+		errors = validate.getSha256Errors(MANIFEST_FILE, self.data)
+		self.assertEqual(len(errors), 1)			
+		self.data["sha256"] = self.badValue
+		errors = validate.getSha256Errors(MANIFEST_FILE, self.data)
+		self.assertNotEqual(len(errors), 1)			
+
 	def test_getSummaryErrors(self):
 		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
