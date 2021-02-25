@@ -71,7 +71,7 @@ def getSha256Errors(destPath, data):
 		errors.append(f"sha256 must be set to {sha256Addon} in json file")
 	return errors
 
-def _getAddonManifest(destPath):
+def getAddonManifest(destPath):
 	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
 	with zipfile.ZipFile(destPath, "r") as z:
 		for info in z.infolist():
@@ -136,7 +136,7 @@ def main():
 		print("\r\n".join(errors))
 		raise ValueError("URL is not valid")
 	destPath = _downloadAddon(url=url)
-	manifest = _getAddonManifest(destPath=destPath)
+	manifest = getAddonManifest(destPath=destPath)
 	errors.extend(getSha256Errors(destPath=destPath, data=data))
 	errors.extend(getSummaryErrors(manifest=manifest, data=data))
 	errors.extend(getDescriptionErrors(manifest=manifest, data=data))
@@ -147,5 +147,6 @@ def main():
 		print("\r\n".join(errors))
 		raise ValueError("Json file is not valid")
 	print("Congratulations: manifest, metadata and file path are valid")
+
 if __name__ == '__main__':
 	main()
