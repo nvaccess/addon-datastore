@@ -39,9 +39,9 @@ def validateJson(data):
 def getDownloadUrlErrors(url):
 	errors = []
 	if not url.startswith("https"):
-		errors.append("add-on url must start with https")
+		errors.append("add-on download url must start with https")
 	if not url.endswith(".nvda-addon"):
-		errors.append("add-on url must end with .nvda-addon")
+		errors.append("add-on download url must end with .nvda-addon")
 	return errors
 
 def _downloadAddon(url):
@@ -130,11 +130,11 @@ def main():
 	data = getAddonMetadata(filename=filename)
 	validateJson(data=data)
 	errors = []
-	url = data["url"]
+	url = data["URL"]
 	errors.extend(getDownloadUrlErrors(url))
 	if len(errors) > 0:
 		print("\r\n".join(errors))
-		raise
+		raise ValueError("URL is not valid")
 	destPath = _downloadAddon(url=url)
 	manifest = _getAddonManifest(destPath=destPath)
 	errors.extend(getSha256Errors(destPath=destPath, data=data))
@@ -145,7 +145,7 @@ def main():
 	errors.extend(getVersionErrors(manifest=manifest, filename=filename))
 	if len(errors) > 0:
 		print("\r\n".join(errors))
-		raise
+		raise ValueError("Json file is not valid")
 	print("Congratulations: manifest, metadata and file path are valid")
 if __name__ == '__main__':
 	main()
