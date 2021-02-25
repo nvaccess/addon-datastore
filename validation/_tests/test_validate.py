@@ -41,7 +41,7 @@ class TestValidate(unittest.TestCase):
 
 	def test_validateJson(self):
 		validate.validateJson(self.data)
-		del self.data["description"]
+		self.data["description"] = 3
 		validate.validateJson(self.data)
 
 	def test_getDownloadUrlErrors(self):
