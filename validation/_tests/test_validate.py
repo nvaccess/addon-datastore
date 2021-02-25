@@ -38,6 +38,9 @@ class TestValidate(unittest.TestCase):
 
 	def test_getAddonMetadata(self):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
+        
+	def test_validateJson(self):
+		validate.validateJson(self.data)
 
 	def test_getDownloadUrlErrors(self):
 		url = self.data["URL"]
@@ -50,16 +53,14 @@ class TestValidate(unittest.TestCase):
 	def test_getSummaryErrors(self
 		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
-		data = self.data
-		data["name"] = self.badValue
-		errors = validate.getSummaryErrors(self.manifest, data)
+		self.data["name"] = self.badValue
+		errors = validate.getSummaryErrors(self.manifest, self.data)
 		self.assertNotEqual(len(errors), 0)
 
 	def test_getDescriptionErrors(self
 		errors = validate.getDescriptionErrors(self.manifest, self.data)
 		self.assertEqual(len(errors), 0)
-		data = self.data
-		data["description"] = self.badValue
-		errors = validate.getDescriptionErrors(self.manifest, data)
+        self.data["description"] = self.badValue
+		errors = validate.getDescriptionErrors(self.manifest, self.data)
 		self.assertNotEqual(len(errors), 0)
 
