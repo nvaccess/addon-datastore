@@ -44,7 +44,7 @@ class TestValidate(unittest.TestCase):
 		errors = validate.getDownloadUrlErrors(url)
 		self.assertEqual(len(errors), 0)
 		url = self.badValue
-		errors = validate.getDownloadUrlErrors(url
+		errors = validate.getDownloadUrlErrors(url)
 		self.assertNotEqual(len(errors), 0)
 
 	def test_getSummaryErrors(self
