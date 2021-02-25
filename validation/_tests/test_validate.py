@@ -57,8 +57,8 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(len(errors), 1)
 
 	def test_getManifest(self):
-		path = os.path.join(ADDON_PATH, "manifest.ini)
-		manifest =validate.getManifest(path)
+		path = os.path.join(ADDON_PATH, "manifest.ini")
+		manifest = validate.getManifest(path)
 		self.assertEqual(manifest, self.manifest)
 
 	def test_getSummaryErrors(self):
