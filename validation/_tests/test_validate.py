@@ -41,8 +41,6 @@ class TestValidate(unittest.TestCase):
 
 	def test_validateJson(self):
 		validate.validateJson(self.data)
-		del self.data["description"]
-		validate.validateJson(self.data)
 
 	def test_getDownloadUrlErrors(self):
 		url = self.data["URL"]
@@ -70,5 +68,12 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(len(errors), 0)
 		self.data["description"] = self.badValue
 		errors = validate.getDescriptionErrors(self.manifest, self.data)
+		self.assertNotEqual(len(errors), 0)
+
+	def test_getNameErrors(self):
+		errors = validate.getNameErrors(self.manifest, JSON_FILE)
+		self.assertEqual(len(errors), 0)
+		filename = os.path.join(ADDON_PATH, self.badValue)
+		errors = validate.getNameErrors(self.manifest, filename)
 		self.assertNotEqual(len(errors), 0)
 
