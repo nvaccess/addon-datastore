@@ -13,6 +13,7 @@ ADDON_PATH = os.path.join(SOURCE_DIR, "clipContentsDesigner")
 JSON_FILE = os.path.join(ADDON_PATH, "13.0.json")
 MANIFEST_FILE = os.path.join(ADDON_PATH, "manifest.ini")
 
+
 def getAddonData():
 	with open(JSON_FILE) as f:
 		data = json.load(f)
@@ -28,19 +29,38 @@ class TestValidate(unittest.TestCase):
 	def setUp(self):
 		self.data = getAddonData()
 		self.manifest = getAddonManifest()
+		self.badValue = "Test"
 
 	def tearDown(self):
 		self.data = None
 		self.manifest = None
+		self.badValue = None
 
 	def test_getAddonMetadata(self):
 		self.assertEqual(validate.getAddonMetadata(JSON_FILE), self.data)
 
-	def test_validateJson(self):
-		self.assertTrue(validate.validateJson(self.data))
+	def test_getDownloadUrlErrors(self
+		errors = validate.getDownloadUrlErrors(self.data)
+		self.assertEqual(len(errors), 0)
+		data = self.data
+		data["URL"] = self.badValue
+		errors = validate.getDownloadUrlErrors(data)
+		self.assertNotEqual(len(errors), 0)
 
-	def test_validateSha256(self):
-		self.assertTrue(validate.validateSha256(MANIFEST_FILE, self.data))
 
-	def test_validateManifest(self):
-		self.assertTrue(validate.validateManifest(self.manifest, self.data, JSON_FILE))
+	def test_getSummaryErrors(self
+		errors = validate.getSummaryErrors(self.manifest, self.data)
+		self.assertEqual(len(errors), 0)
+		data = self.data
+		data["name"] = self.badValue
+		errors = validate.getSummaryErrors(self.manifest, data)
+		self.assertNotEqual(len(errors), 0)
+
+	def test_getDescriptionErrors(self
+		errors = validate.getDescriptionErrors(self.manifest, self.data)
+		self.assertEqual(len(errors), 0)
+		data = self.data
+		data["description"] = self.badValue
+		errors = validate.getDescriptionErrors(self.manifest, data)
+		self.assertNotEqual(len(errors), 0)
+
