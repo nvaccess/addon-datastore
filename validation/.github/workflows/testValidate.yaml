@@ -19,6 +19,6 @@ jobs:
         python-version: 3.8
         architecture: x86
     - name: Test validate
-      run: runValidate.bat clipContentsDesigner\13.0.json
+      run: runvalidate.bat clipContentsDesigner\13.0.json
       shell: cmd
       
