@@ -1,4 +1,4 @@
 @echo off
-rem validate <clipContentsDesigner\13.0.json>
+rem validate <file.json>
 
-call "%~dp0\venvUtils\venvCmd.bat" py %1
+call "%~dp0\venvUtils\venvCmd.bat" py "%~dp0\_validate\validate.py" %1
