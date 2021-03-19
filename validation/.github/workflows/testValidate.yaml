@@ -18,6 +18,8 @@ jobs:
       with:
         python-version: 3.8
         architecture: x86
+    - name: Install wheel
+      run: pip install wheel
     - name: Test validate
       run: runvalidate.bat clipContentsDesigner\13.0.json
       shell: cmd
