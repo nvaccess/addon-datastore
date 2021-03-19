@@ -7,13 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
-  testValidate
+  testValidate:
 
     runs-on: windows-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
