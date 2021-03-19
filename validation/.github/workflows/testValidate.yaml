@@ -20,3 +20,5 @@ jobs:
         architecture: x86
     - name: Test validate
       run: testValidate.bat
+      shell: cmd
+      
