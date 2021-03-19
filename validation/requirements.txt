@@ -1,10 +1,12 @@
 # Dependencies
 
 # Requirements for validate
-wheel
 git+git://github.com/DiffSK/configobj@3e2f4cc#egg=configobj
 jsonschema
 
 # Requirements for linting
 flake8 ~= 3.7.7
 flake8-tabs == 2.1.0
+
+# Requirements for testing
+tox
