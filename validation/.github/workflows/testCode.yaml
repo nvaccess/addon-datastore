@@ -33,4 +33,7 @@ jobs:
     - name: Validate metadata
       run: runvalidate clipContentsDesigner\13.0.json
       shell: cmd
+    - name: Get sha256
+      run: runsha clipContentsDesigner\13.0.json
+      shell: cmd
       
