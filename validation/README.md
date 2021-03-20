@@ -7,15 +7,28 @@ It performs the following checks:
 - Ensures that metadata conforms to the ]addonVersion_schema.json file](https://github.com/nvdaes/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
 - Ensures that certain metadata match the appropriate values of the add-on manifest file.
 
+## Dependencies ##
+
+* [Python](https://www.python.org/). This has been tested with versions 3.8 and 3.9, 32 bit, but other versions may work too.
+
 ## Usage ##
 
 To validate metadata locally:
 
+From the command line (cmd):
+
 1. Clone this repo: `git clone https://github.com/nvdaes/validateNvdaAddonMetadata`
-1. Install [jsonschema](https://pypi.org/project/jsonschema): `pip install jsonschema`
-1. From the repo folder, _validate subfolder: `python validate.py <addonMetadataFile.json>`
+1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
 
 To run unit tests:
 
 1. Install [tox](https://pypi.org/project/tox): `pip install tox`
 1. Run tox: `tox`
+
+To lint source code (Python files):
+
+1. From the repo folder, run: `runlint`
+
+To get the sha256 of a file, run:
+
+runsha <path\to\filename>

@@ -12,7 +12,7 @@ from _validate import validate, addonManifest
 
 
 JSON_SCHEMA = validate.JSON_SCHEMA
-TOP_DIR = os.path.dirname(__file__)
+TOP_DIR = os.path.abspath(os.path.dirname(__file__))
 SOURCE_DIR = os.path.dirname(TOP_DIR)
 ADDON_PATH = os.path.join(SOURCE_DIR, "clipContentsDesigner")
 JSON_FILE = os.path.join(ADDON_PATH, "13.0.json")

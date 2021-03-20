@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 
-import os
-import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), "include", "configobj", "src", "configobj"))
-from include.configobj.src.configobj import ConfigObj
-del sys.path[-1]
+from configobj import ConfigObj
 from io import StringIO
 
 class AddonManifest(ConfigObj):
