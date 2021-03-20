@@ -28,3 +28,7 @@ To run unit tests:
 To lint source code (Python files):
 
 1. From the repo folder, run: `runlint`
+
+To get the sha256 of a file, run:
+
+runsha <path\to\filename>
