@@ -1,0 +1,236 @@
+{
+    "examples": [
+        {
+            "name": "My addon",
+            "description": "Makes doing XYZ easier",
+            "homepage": "https://github.com/nvaccess/addon-store-submission",
+            "minNVDAVersion": {
+                "major": 2019,
+                "minor": 3,
+                "patch": 0
+            },
+            "lastTestedVersion": {
+                "major": 2020,
+                "minor": 4,
+                "patch": 0
+            },
+            "channel": "beta",
+            "URL": "https://github.com/nvaccess/addon-store-submission/releases/download/v0.1.0/myAddon.nvda-addon",
+            "sha256": "69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82",
+            "sourceURL": "https://github.com/nvaccess/addon-store-submission/",
+            "license": "GPL v2",
+            "licenseURL": "https://github.com/nvaccess/addon-store-submission/license.MD"
+        }
+    ],
+    "required": [
+        "name",
+        "description",
+        "minNVDAVersion",
+        "lastTestedVersion",
+        "channel",
+        "URL",
+        "sha256",
+        "sourceURL",
+        "license",
+        "licenseURL"
+    ],
+    "type": "object",
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "default": "",
+            "description": "The name that will be displayed in English for the addon.",
+            "examples": [
+                "My addon"
+            ],
+            "title": "The display name (en) of the addon",
+            "type": "string"
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "default": "",
+            "description": "The English description of the addon that will be displayed for the addon.",
+            "examples": [
+                "Makes doing XYZ easier"
+            ],
+            "title": "The description (en) of the addon",
+            "type": "string"
+        },
+        "homepage": {
+            "$id": "#/properties/homepage",
+            "default": "",
+            "description": "If the addon has a homepage where users can get more information about the addon, you can specify it here.",
+            "examples": [
+                "https://github.com/nvaccess/addon-store-submission"
+            ],
+            "title": "The homepage URL for the addon.",
+            "type": "string"
+        },
+        "minNVDAVersion": {
+            "$id": "#/properties/minNVDAVersion",
+            "default": {},
+            "description": "The addon will not work with versions of NVDA prior to this version.",
+            "examples": [
+                {
+                    "major": 2019,
+                    "minor": 3,
+                    "patch": 0
+                }
+            ],
+            "required": [
+                "major",
+                "minor",
+                "patch"
+            ],
+            "title": "The minNVDAVersion required for the addon",
+            "type": "object",
+            "properties": {
+                "major": {
+                    "$id": "#/properties/minNVDAVersion/properties/major",
+                    "default": 0,
+                    "description": "'major' in major.minor.patch",
+                    "examples": [
+                        2019
+                    ],
+                    "title": "The 'major' part of the version number.",
+                    "type": "integer"
+                },
+                "minor": {
+                    "$id": "#/properties/minNVDAVersion/properties/minor",
+                    "default": 0,
+                    "description": "The 'minor' part in major.minor.patch",
+                    "examples": [
+                        3
+                    ],
+                    "title": "The 'minor' part of the version number.",
+                    "type": "integer"
+                },
+                "patch": {
+                    "$id": "#/properties/minNVDAVersion/properties/patch",
+                    "default": 0,
+                    "description": "The 'patch' part in major.minor.patch",
+                    "examples": [
+                        0
+                    ],
+                    "title": "The 'patch' part of the version number.",
+                    "type": "integer"
+                }
+            }
+        },
+        "lastTestedVersion": {
+            "$id": "#/properties/lastTestedVersion",
+            "type": "object",
+            "title": "The lastTestedVersion schema",
+            "description": "The add-on has been tested up to and including this version of NVDA",
+            "default": {},
+            "examples": [
+                {
+                    "major": 2020,
+                    "minor": 4,
+                    "patch": 0
+                }
+            ],
+            "required": [
+                "major",
+                "minor",
+                "patch"
+            ],
+            "properties": {
+                "major": {
+                    "$id": "#/properties/lastTestedVersion/properties/major",
+                    "default": 0,
+                    "description": "'major' in major.minor.patch",
+                    "examples": [
+                        2020
+                    ],
+                    "title": "The 'major' part of the version number.",
+                    "type": "integer"
+                },
+                "minor": {
+                    "$id": "#/properties/lastTestedVersion/properties/minor",
+                    "default": 0,
+                    "description": "The 'minor' part in major.minor.patch",
+                    "examples": [
+                        4
+                    ],
+                    "title": "The 'minor' part of the version number.",
+                    "type": "integer"
+                },
+                "patch": {
+                    "$id": "#/properties/lastTestedVersion/properties/patch",
+                    "default": 0,
+                    "description": "The 'patch' part in major.minor.patch",
+                    "examples": [
+                        0
+                    ],
+                    "title": "The 'patch' part of the version number.",
+                    "type": "integer"
+                }
+            }
+        },
+        "channel": {
+            "$id": "#/properties/channel",
+            "default": "",
+            "description": "Used to define pre-release (beta) add-ons. Should be either 'stable' or 'beta'",
+            "examples": [
+                "beta"
+            ],
+            "title": "The channel for the addon",
+            "enum": [
+                "stable",
+                "beta"
+            ],
+            "type": "string"
+        },
+        "URL": {
+            "$id": "#/properties/URL",
+            "default": "",
+            "description": "To allow directly downloading the *.nvda-addon file. The URL should remain valid indefinetly. GitHub release URL's are recommended.",
+            "examples": [
+                "https://github.com/nvaccess/addon-store-submission/releases/download/v0.1.0/myAddon.nvda-addon"
+            ],
+            "title": "The URL to download the add-on.",
+            "type": "string"
+        },
+        "sha256": {
+            "$id": "#/properties/sha256",
+            "default": "",
+            "description": "Use the python script '_tools/genSha256.py' to generate this value.",
+            "examples": [
+                "69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82"
+            ],
+            "title": "The sha256 for the *.nvda-addon file.",
+            "type": "string"
+        },
+        "sourceURL": {
+            "$id": "#/properties/sourceURL",
+            "default": "",
+            "description": "Allows reviewers to inspect the source code for common issues.",
+            "examples": [
+                "https://github.com/nvaccess/addon-store-submission/"
+            ],
+            "title": "The URL for the add-on source",
+            "type": "string"
+        },
+        "license": {
+            "$id": "#/properties/license",
+            "default": "",
+            "description": "The short name of the license.",
+            "examples": [
+                "GPL v2"
+            ],
+            "title": "The short name of the license for the addon",
+            "type": "string"
+        },
+        "licenseURL": {
+            "$id": "#/properties/licenseURL",
+            "default": "",
+            "description": "A URL to the full license for the addon.",
+            "examples": [
+                "https://github.com/nvaccess/addon-store-submission/license.MD"
+            ],
+            "title": "The licenseURL schema",
+            "type": "string"
+        }
+    }
+}
