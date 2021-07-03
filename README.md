@@ -86,19 +86,18 @@ Addons versions are submitted by submitting a pull request, adding a file for th
 
 Root directory of repository:
  - `readme.md` - A guide for submission
- - `addons/publisher1/addon1/majorVersion.minorVersion.patch.json`
- - `addons/publisher1/addon2/majorVersion.minorVersion.patch.json`
- - `addons/publisher2/addon3/majorVersion.minorVersion.patch.json`
+ - `addons/addon1/majorVersion.minorVersion.patch.json`
+ - `addons/addon2/majorVersion.minorVersion.patch.json`
+ - `addons/addon3/majorVersion.minorVersion.patch.json`
 
-Note: `publisher.addonName` will become the add-on ID, and must be unique and match the add-on ID from the addon manifest.
+Note: `addonName` come the add-on ID, and must be unique and match the add-on ID from the addon manifest.
 
 Example for the NV Access addon, 'NVDA - OCR':
 - Filename: `addons/nvaccess/nvda-ocr/1.6.0.json`
 - add-on ID `nvaccess.nvda-ocr`
 
 ### Metadata format
-For a full description of the schema see:` _tools/addonVersion_schema.json`
-- This includes an example of the file contents.
+For a full description of the schema see:` _tools/addonVersion_schema.json` which includes an example of the file contents.
 
 ### Submitting an Addon version
 
@@ -109,29 +108,22 @@ For a full description of the schema see:` _tools/addonVersion_schema.json`
 Process to add a new NVDA-addon version:
 1. Fork the `addon-store-submission` repository
 1. On a new branch, copy the `_template_addon_release.json` file. 
-   - Rename / move the file to `<publisher>/<addonName>/<version>.json`
-   - `<publisher>` is the name of the add-on developer, E.G. "nvaccess"
-   - `<addonName>` is the name of the add-on, E.G. "nv-speech-player"
+   - Rename / move the file to `addons/<addonID>/<version>.json`
+   - `<addonID>` is the ID of the add-on. This should match the `name` field in the add-on manifest, E.G. "nv-speech-player"
    - `<version>` is the add-on version in the form: `Major.Minor.Patch` E.G. "2.4.1"
-1. Create a PR on `addon-store-submission` repository
-1. Automated checks for common issues will complete.
-1. A review is performed (resulting in: request changes, approval)
-   - Conducted by an NVDA add-on reviewer.
-   - Manual review is done according to some published review check list (so that everyone knows what to expect)
-1. The PR is merged, the add-on becomes available in the store.
+1. Fill out the template.
+1. Create a PR to merge your branch into master on the `addon-store-submission` repository
+1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
+3. When the PR is merged the add-on becomes available in the store.
 
 
-### Checked during review
-Many of these can be automated.
+### Automated checks
 - Each modified file conforms to the schema
 - Download URL is valid
-- File from URL matches Sha256
+- File from URL matches Sha256 in metadata
 - Version number matches add-on manifest.
-- The file ID (`<publisher>.<addonName>`) matches the manifest 'name' field
+- The file ID (`<addonName>`) matches the manifest `name` field
 - The version number from the file name is valid and matches the version in the manifest.
-
-### Concerns
-- With this ID scheme many add-ons will need to change their ID. Will this require previously saved user config to be moved to a new section of the config file?
 
 ### Other notes
 - By using a git repository and and PR process, `git blame` and `git log` can be used to get more context about addons listed in the store. For instance:
@@ -142,20 +134,20 @@ Many of these can be automated.
 
 ## API data generation details
 
-The NV Access server will be configured to respond to a Webhook to pull from this repository and run code to transform
-the data.
-This can regenerate the required views of the data for the exposed API's
+GitHub actions will be used to respond to commits and to transform the data into the required views.
+These views of the data will be committed by the GitHub Action to a `views` branch.
 
 ### Overview
 
 For each version of NVDA, the meta-data of the most recent (the highest version number) of each Addon is automatically
 added, based on the data in 'addon-store-submission'.
 
-Code for this will be stored in the `_tools` folder. This will enable interested parties to generate the same view of
-the data locally.
+Code for this will be stored in the `_tools` folder.
+This will enable interested parties to generate the same view of the data locally.
+This code will have automated tests.
 
 ### Data views
-
+The following views will only be available on a `views` branch, and located in a `views` folder.
 Required transformations of the data:
 - `/NVDA API Version/addon-1-ID/release.json`
 - `/NVDA API Version/addon-1-ID/pre-rel.json`
