@@ -4,7 +4,7 @@ This is an "action repository" to validate metadata of add-ons sent to the NVDA'
 
 It performs the following checks:
 
-- Ensures that metadata conforms to the ]addonVersion_schema.json file](https://github.com/nvdaes/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
+- Ensures that metadata conforms to the ]addonVersion_schema.json file](https://github.com/nvaccess/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
 - Ensures that certain metadata match the appropriate values of the add-on manifest file.
 
 ## Dependencies ##
@@ -17,7 +17,7 @@ To validate metadata locally:
 
 From the command line (cmd):
 
-1. Clone this repo: `git clone https://github.com/nvdaes/validateNvdaAddonMetadata`
+1. Clone this repo: `git clone https://github.com/nvaccess/validateNvdaAddonMetadata.git`
 1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
 
 To run unit tests:
