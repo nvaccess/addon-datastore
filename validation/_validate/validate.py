@@ -5,30 +5,54 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import argparse
+import enum
 import os
-import sys
 import tempfile
+import typing
 import zipfile
 import json
 import urllib.request
 from jsonschema import validate, exceptions
-
-sys.path.append(os.path.dirname(__file__))
-import sha256
-from addonManifest import AddonManifest
-del sys.path[-1]
+from . import sha256
+from .addonManifest import AddonManifest
 
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
-DOWNLOAD_BLOCK_SIZE = 8192 # 8 kb
 TEMP_DIR = tempfile.gettempdir()
 
-def getAddonMetadata(filename):
+JsonObjT = typing.Dict[str, typing.Any]
+
+
+@enum.unique
+class ValidationErrorMessage(enum.Enum):
+	URL_MISSING_HTTPS = "Add-on download url must start with https://"
+	URL_MISSING_ADDON_EXT = "Add-on download url must end with .nvda-addon"
+	URL_DOWNLOAD_ERROR = "Download of addon failed"
+	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
+	NAME = "Submission 'name' must be set to {} in json file"
+	DESC = "Submission 'description' must be set to {} in json file"
+	HOMEPAGE = "Submission 'homepage' must be set to {} in json file"
+	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
+	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
+
+
+ErrorGenerator = typing.Generator[str, None, None]
+
+
+def getAddonMetadata(filename: str) -> JsonObjT:
+	"""Loads addon submission metadata json file and returns as object.
+	Raises if the metadata does not conform to the schema.
+	"""
 	with open(filename) as f:
-		data = json.load(f)
+		data: JsonObjT = json.load(f)
+	_validateJson(data)
 	return data
 
-def validateJson(data):
+
+def _validateJson(data: JsonObjT) -> None:
+	""" Ensure that the loaded metadata conforms to the schema.
+	Raise error if not
+	"""
 	with open(JSON_SCHEMA) as f:
 		schema = json.load(f)
 	try:
@@ -36,44 +60,61 @@ def validateJson(data):
 	except exceptions.ValidationError as err:
 		raise err
 
-def getDownloadUrlErrors(url):
-	errors = []
-	if not url.startswith("https://"):
-		errors.append("add-on download url must start with https://")
-	if not url.endswith(".nvda-addon"):
-		errors.append("add-on download url must end with .nvda-addon")
-	return errors
 
-def _downloadAddon(url):
-	destPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
+def checkDownloadUrlFormat(url: str) -> ErrorGenerator:
+	"""Check for common errors with download URL string.
+	It must be a:
+	- HTTPS URL
+	- Pointing to a '.nvda-addon' file.
+	Raise on failure
+	"""
+	if not url.startswith("https://"):
+		yield ValidationErrorMessage.URL_MISSING_HTTPS.value
+	if not url.endswith(".nvda-addon"):
+		yield ValidationErrorMessage.URL_MISSING_ADDON_EXT.value
+
+
+def downloadAddon(url: str, destPath: str) -> ErrorGenerator:
+	"""Download the addon file, save as destPath
+	Raise on failure.
+	"""
+	DOWNLOAD_BLOCK_SIZE = 8192  # 8 kb
 	remote = urllib.request.urlopen(url)
 	if remote.code != 200:
-		raise RuntimeError("Download failed with code %d" % remote.code)
+		yield ValidationErrorMessage.URL_DOWNLOAD_ERROR.value
+		raise RuntimeError(f"Unable to download from {url}, HTTP response status code: {remote.code}")
 	size = int(remote.headers["content-length"])
 	with open(destPath, "wb") as local:
 		read = 0
-		chunk=DOWNLOAD_BLOCK_SIZE
+		chunk = DOWNLOAD_BLOCK_SIZE
 		while True:
-			if size -read <chunk:
-				chunk =size -read
+			remainingSize = size - read
+			if remainingSize < chunk:
+				chunk = remainingSize
 			block = remote.read(chunk)
 			if not block:
 				break
 			read += len(block)
 			local.write(block)
-	return destPath
+	return
 
-def getSha256Errors(destPath, data):
-	errors = []
-	with open(destPath, "rb") as f:
+
+def checkSha256(addonPath: str, expectedSha: str) -> ErrorGenerator:
+	"""Calculate the hash (SHA256) of the *.nvda-addon
+	Return an error if it does not match the expected.
+	"""
+	with open(addonPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
-	if sha256Addon != data["sha256"]:
-		errors.append(f"sha256 must be set to {sha256Addon} in json file")
-	return errors
+	if sha256Addon.upper() != expectedSha.upper():
+		yield ValidationErrorMessage.CHECKSUM_FAILURE.value.format(sha256Addon)
 
-def _getAddonManifest(destPath):
+
+def getAddonManifest(addonPath: str) -> AddonManifest:
+	""" Extract manifest.ini from *.nvda-addon and parse.
+	Raise on error.
+	"""
 	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
-	with zipfile.ZipFile(destPath, "r") as z:
+	with zipfile.ZipFile(addonPath, "r") as z:
 		for info in z.infolist():
 			z.extract(info, expandedPath)
 	filePath = os.path.join(expandedPath, "manifest.ini")
@@ -83,40 +124,82 @@ def _getAddonManifest(destPath):
 	except Exception as err:
 		raise err
 
-def getSummaryErrors(manifest, data):
-	errors = []
+
+def checkSummaryMatchesName(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+	""" The submission Name must match the *.nvda-addon manifest summary field.
+	"""
 	summary = manifest["summary"]
-	if summary != data["name"]:
-		errors.append(f"name must be set to {summary} in json file")
-	return errors
+	if summary != submission["name"]:
+		yield ValidationErrorMessage.NAME.value.format(summary)
 
-def getDescriptionErrors(manifest, data):
-	errors = []
+
+def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+	""" The submission description must match the *.nvda-addon manifest description field."""
 	description = manifest["description"]
-	if description != data["description"]:
-		errors.append(f"description must be set to {description} in json file")
-	return errors
+	if description != submission["description"]:
+		yield ValidationErrorMessage.DESC.value.format(description)
 
-def getUrlErrors(manifest, data):
-	errors = []
-	url = manifest["url"]
-	if url != data["homepage"]:
-		errors.append(f"homepage must be set to {url} in json file")
-	return errors
 
-def getNameErrors(manifest, filename):
-	errors = []
-	name = manifest["name"]
-	if name != os.path.basename(os.path.dirname(filename)):
-		errors.append(f"json file must be placed in {name} folder")
-	return errors
+def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+	""" The submission homepage must match the *.nvda-addon manifest url field.
+	"""
+	if manifest["url"] != submission["homepage"]:
+		yield ValidationErrorMessage.HOMEPAGE.value.format(manifest['url'])
 
-def getVersionErrors(manifest, filename):
-	errors = []
-	version = manifest["version"]
-	if version != os.path.splitext(os.path.basename(filename))[0]:
-		errors.append(f"jsonfile should be named {version}.json")
-	return errors
+
+def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> ErrorGenerator:
+	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
+	"""
+	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
+		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(manifest['name'])
+
+
+def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ErrorGenerator:
+	"""Check submitted json file name matches the *.nvda-addon manifest name field.
+	"""
+	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
+		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
+
+
+def validateSubmission(submissionFilePath: str) -> ErrorGenerator:
+	try:
+		submissionData = getAddonMetadata(filename=submissionFilePath)
+		print("Submission JSON validated with schema.")
+
+		urlErrors = list(checkDownloadUrlFormat(submissionData["URL"]))
+		if urlErrors:
+			# if there are errors in the URL validation can not continue
+			yield from urlErrors
+			raise ValueError(submissionData["URL"])
+		print("Addon URL passes format requirements")
+
+		addonDestPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
+		yield from downloadAddon(url=submissionData["URL"], destPath=addonDestPath)
+		print("Addon downloaded successfully")
+
+		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
+		if checksumErrors:
+			yield from checksumErrors
+		else:
+			print("Sha256 matches")
+
+		manifest = getAddonManifest(addonDestPath)
+		yield from checkSummaryMatchesName(manifest, submissionData)
+		yield from checkDescriptionMatches(manifest, submissionData)
+		yield from checkUrlMatchesHomepage(manifest, submissionData)
+		yield from checkNameMatchesPath(manifest, submissionFilePath)
+		yield from checkVersionMatchesFilename(manifest, submissionFilePath)
+
+	except Exception as e:
+		yield f"Fatal error, unable to continue: {e}"
+
+
+def outputResult(errors: ErrorGenerator):
+	errors = list(errors)
+	if len(errors) > 0:
+		print("\r\n".join(errors))
+		raise ValueError("Submission not valid")
+	print("Congratulations: manifest, metadata and file path are valid")
 
 
 def main():
@@ -127,26 +210,10 @@ def main():
 	)
 	args = parser.parse_args()
 	filename = args.file
-	data = getAddonMetadata(filename=filename)
-	validateJson(data=data)
-	errors = []
-	url = data["URL"]
-	errors.extend(getDownloadUrlErrors(url))
-	if len(errors) > 0:
-		print("\r\n".join(errors))
-		raise ValueError("URL is not valid")
-	destPath = _downloadAddon(url=url)
-	manifest = _getAddonManifest(destPath=destPath)
-	errors.extend(getSha256Errors(destPath=destPath, data=data))
-	errors.extend(getSummaryErrors(manifest=manifest, data=data))
-	errors.extend(getDescriptionErrors(manifest=manifest, data=data))
-	errors.extend(getUrlErrors(manifest=manifest, data=data))
-	errors.extend(getNameErrors(manifest=manifest, filename=filename))
-	errors.extend(getVersionErrors(manifest=manifest, filename=filename))
-	if len(errors) > 0:
-		print("\r\n".join(errors))
-		raise ValueError("Json file is not valid")
-	print("Congratulations: manifest, metadata and file path are valid")
+
+	errors = validateSubmission(filename)
+	outputResult(errors)
+
 
 if __name__ == '__main__':
 	main()

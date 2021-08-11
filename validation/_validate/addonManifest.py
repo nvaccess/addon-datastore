@@ -3,10 +3,11 @@
 from configobj import ConfigObj
 from io import StringIO
 
+
 class AddonManifest(ConfigObj):
 	""" Add-on manifest file. It contains metadata about an NVDA add-on package. """
 	configspec = ConfigObj(StringIO(
-	"""
+		"""
 # NVDA Add-on Manifest configuration specification
 # Add-on unique name
 name = string()
@@ -52,9 +53,14 @@ docFileName = string(default=None)
 		@param translatedInput: translated manifest input
 		@type translatedInput: file-like object
 		"""
-		super(AddonManifest, self).__init__(input, configspec=self.configspec, encoding='utf-8', default_encoding='utf-8')
+		super(AddonManifest, self).__init__(
+			input,
+			configspec=self.configspec,
+			encoding='utf-8',
+			default_encoding='utf-8'
+		)
 		self._errors = None
-		if True != self._validateApiVersionRange():
+		if not self._validateApiVersionRange():
 			self._errors = "Constraint not met: minimumNVDAVersion ({}) <= lastTestedNVDAVersion ({})".format(
 				self.get("minimumNVDAVersion"),
 				self.get("lastTestedNVDAVersion")
@@ -62,10 +68,10 @@ docFileName = string(default=None)
 		self._translatedConfig = None
 		if translatedInput is not None:
 			self._translatedConfig = ConfigObj(translatedInput, encoding='utf-8', default_encoding='utf-8')
-			for k in ('summary','description'):
-				val=self._translatedConfig.get(k)
+			for k in ('summary', 'description'):
+				val = self._translatedConfig.get(k)
 				if val:
-					self[k]=val
+					self[k] = val
 
 	@property
 	def errors(self):

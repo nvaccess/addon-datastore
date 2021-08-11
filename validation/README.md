@@ -1,34 +1,53 @@
 # Validate NVDA add-on metadata ##
 
-This is an "action repository" to validate metadata of add-ons sent to the NVDA's add-on store.
+This is a "GitHub Action" repository.
+The Action aims to validate the metadata of add-ons submitted to
+[NVDA's add-on store](https://github.com/nvaccess/addon-store-submission).
 
-It performs the following checks:
+- Check that the added metadata:
+  - Conforms with the
+  [addonVersion_schema.json file](https://github.com/nvaccess/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
+  - File has the correct path and name: `addon1/majorVersion.minorVersion.patch.json`
+  - Download URL is valid:
+    - Must start with "https://" and end with".nvda-addon"
+    - The `*.nvda-addon` file can be downloaded
+  - The Sha256 of the downloaded `*.nvda-addon` file matches.
+- Check data matches the addon's manifest file.
+  - The manifest exists in the downloaded `*.nvda-addon` file and can be loaded by the `AddonManifest` class. 
+  - The submission addonName matches the manifest summary field
+  - The submission description matches the manifest description field
+  - The homepage URL matches the manifest URL field
+  - The addon versions match.
 
-- Ensures that metadata conforms to the ]addonVersion_schema.json file](https://github.com/nvdaes/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
-- Ensures that certain metadata match the appropriate values of the add-on manifest file.
+If all is valid, "Congratulations: manifest, metadata and file path are valid" is printed.
 
 ## Dependencies ##
 
-* [Python](https://www.python.org/). This has been tested with versions 3.8 and 3.9, 32 bit, but other versions may work too.
+* [Python](https://www.python.org/).
+  - This has been tested with versions 3.8 and 3.9, 32 bit, but other versions may work too.
 
-## Usage ##
+## Local Usage ##
+To try validating an addon submission on your own machine.
 
-To validate metadata locally:
-
-From the command line (cmd):
+From cmd.exe:
 
 1. Clone this repo: `git clone https://github.com/nvdaes/validateNvdaAddonMetadata`
 1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
 
-To run unit tests:
+## Run unit tests:
+To test the scripts used in this action, you can run the unit tests.
 
 1. Install [tox](https://pypi.org/project/tox): `pip install tox`
-1. Run tox: `tox`
+1. `tox`
 
-To lint source code (Python files):
+## Python linting:
+To keep a consistent style within the Python files of this Action, linting is used:
+1. Use cmd.exe
+1. `cd` to the repo folder
+1. `runlint`
 
-1. From the repo folder, run: `runlint`
+## Calculate a hash (sha256)
 
-To get the sha256 of a file, run:
-
-runsha <path\to\filename>
+To get the sha256 of a file:
+1. Use cmd.exe
+1. `runsha <path\to\filename>`
