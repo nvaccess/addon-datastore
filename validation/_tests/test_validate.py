@@ -129,21 +129,22 @@ class TestValidate(unittest.TestCase):
 			[expectedErrorMessage.format(actualSha)]
 		)
 
-	def test_checkSummaryMatchesName_valid(self):
+	def test_checkSummaryMatchesDisplayName_valid(self):
 		errors = list(
-			validate.checkSummaryMatchesName(self.manifest, self.submissionData)
+			validate.checkSummaryMatchesDisplayName(self.manifest, self.submissionData)
 		)
 		self.assertEqual(errors, [])
 
-	def test_checkSummaryMatchesName_invalid(self):
-		self.submissionData["name"] = "notCorrect"
+	def test_checkSummaryMatchesDisplayName_invalid(self):
+		badDisplayName = "bad display Name"
+		self.submissionData["displayName"] = badDisplayName
 		errors = list(
-			validate.checkSummaryMatchesName(self.manifest, self.submissionData)
+			validate.checkSummaryMatchesDisplayName(self.manifest, self.submissionData)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.NAME.value
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(self.manifest["summary"])]
+			[expectedErrorMessage.format(self.manifest["summary"], badDisplayName)]
 		)
 
 	def test_checkDescriptionMatches_valid(self):
@@ -153,14 +154,15 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(errors, [])
 
 	def test_checkDescriptionMatches_invalid(self):
-		self.submissionData["description"] = "incorrect"
+		badDesc = "bad description"
+		self.submissionData["description"] = badDesc
 		errors = list(
 			validate.checkDescriptionMatches(self.manifest, self.submissionData)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.DESC.value
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(self.manifest["description"])]
+			[expectedErrorMessage.format(self.manifest["description"], badDesc)]
 		)
 
 	def test_checkNameMatchesPath_valid(self):

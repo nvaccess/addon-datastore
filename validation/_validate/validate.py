@@ -29,9 +29,9 @@ class ValidationErrorMessage(enum.Enum):
 	URL_MISSING_ADDON_EXT = "Add-on download url must end with .nvda-addon"
 	URL_DOWNLOAD_ERROR = "Download of addon failed"
 	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
-	NAME = "Submission 'name' must be set to {} in json file"
-	DESC = "Submission 'description' must be set to {} in json file"
-	HOMEPAGE = "Submission 'homepage' must be set to {} in json file"
+	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
+	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
+	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
 	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
 	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
 
@@ -125,19 +125,19 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 		raise err
 
 
-def checkSummaryMatchesName(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
 	""" The submission Name must match the *.nvda-addon manifest summary field.
 	"""
 	summary = manifest["summary"]
-	if summary != submission["name"]:
-		yield ValidationErrorMessage.NAME.value.format(summary)
+	if summary != submission["displayName"]:
+		yield ValidationErrorMessage.NAME.value.format(summary, submission["displayName"])
 
 
 def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
 	""" The submission description must match the *.nvda-addon manifest description field."""
 	description = manifest["description"]
 	if description != submission["description"]:
-		yield ValidationErrorMessage.DESC.value.format(description)
+		yield ValidationErrorMessage.DESC.value.format(description, submission["description"])
 
 
 def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
@@ -184,7 +184,7 @@ def validateSubmission(submissionFilePath: str) -> ErrorGenerator:
 			print("Sha256 matches")
 
 		manifest = getAddonManifest(addonDestPath)
-		yield from checkSummaryMatchesName(manifest, submissionData)
+		yield from checkSummaryMatchesDisplayName(manifest, submissionData)
 		yield from checkDescriptionMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
 		yield from checkNameMatchesPath(manifest, submissionFilePath)
