@@ -1,7 +1,8 @@
 {
     "examples": [
         {
-            "name": "My addon",
+            "displayName": "My addon",
+            "publisher": "easyAddonTech",
             "description": "Makes doing XYZ easier",
             "homepage": "https://github.com/nvaccess/addon-store-submission",
             "minNVDAVersion": {
@@ -23,7 +24,8 @@
         }
     ],
     "required": [
-        "name",
+        "displayName",
+        "publisher",
         "description",
         "minNVDAVersion",
         "lastTestedVersion",
@@ -36,14 +38,24 @@
     ],
     "type": "object",
     "properties": {
-        "name": {
-            "$id": "#/properties/name",
+        "displayName": {
+            "$id": "#/properties/displayName",
             "default": "",
             "description": "The name that will be displayed in English for the addon.",
             "examples": [
                 "My addon"
             ],
             "title": "The display name (en) of the addon",
+            "type": "string"
+        },
+        "publisher": {
+            "$id": "#/properties/publisher",
+            "default": "",
+            "description": "The name of the individual, group, or company responsible for the addon.",
+            "examples": [
+                "NV Access"
+            ],
+            "title": "The publisher name for the addon",
             "type": "string"
         },
         "description": {
