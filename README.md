@@ -21,7 +21,7 @@ This allows reviews or security audits to rely on a release continuing to match 
 
 ### Human review process / code audit
 - About review process [conversation on the addons mailing list](https://nvda-addons.groups.io/g/nvda-addons/topic/69393202#10878) has been about reviewing Addons.
-- NV Access this does not intend to require a human review before the add-on release is accepted to the store. 
+- NV Access does not intend to require a human review before the add-on release is accepted to the store. 
 - Source code reviews or audits can exist outside of the store and are outside the scope of this proposal.
 - User reviews reviews of add-ons are also outside the scope of this proposal.
 
@@ -31,7 +31,7 @@ NVDA will still allow local installation from a `*.nvda-addon` file.
 
 ## Too Long; Didn't Read for Addon authors
 With this proposal if an addon author wishes to submit their addon to be visible in this addon store they will need to:
-- Copy and fille out the metadata template
+- Copy and file out the metadata template
 - Create a pull request to merge the branch to master of this repository.
 
 ## Too Long; Didn't Read for Addon reviewers
@@ -90,11 +90,11 @@ Root directory of repository:
  - `addons/addon2/majorVersion.minorVersion.patch.json`
  - `addons/addon3/majorVersion.minorVersion.patch.json`
 
-Note: `addonName` come the add-on ID, and must be unique and match the add-on ID from the addon manifest.
+Note: `addonName` is the add-on ID, and must be unique and match the add-on ID from the addon manifest.
 
 Example for the NV Access addon, 'NVDA - OCR':
-- Filename: `addons/nvaccess/nvda-ocr/1.6.0.json`
-- add-on ID `nvaccess.nvda-ocr`
+- Filename: `addons/nvda-ocr/1.6.0.json`
+- add-on ID `nvda-ocr`
 
 ### Metadata format
 For a full description of the schema see:` _tools/addonVersion_schema.json` which includes an example of the file contents.
