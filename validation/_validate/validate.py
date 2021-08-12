@@ -13,8 +13,14 @@ import zipfile
 import json
 import urllib.request
 from jsonschema import validate, exceptions
-from . import sha256
-from .addonManifest import AddonManifest
+
+import sys
+# To allow this module to be run as a script by runValidate.bat
+sys.path.append(os.path.dirname(__file__))
+# E402 module level import not at top of file
+import sha256  # noqa:E402
+from addonManifest import AddonManifest   # noqa:E402
+del sys.path[-1]
 
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
@@ -205,13 +211,22 @@ def outputResult(errors: ErrorGenerator):
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument(
+		"--dry-run",
+		action="store_true",
+		default=False,
+	)
+	parser.add_argument(
 		dest="file",
 		help="The json (.json) file containing add-on metadata."
 	)
+
 	args = parser.parse_args()
 	filename = args.file
 
-	errors = validateSubmission(filename)
+	if not args.dry_run:
+		errors = validateSubmission(filename)
+	else:
+		errors = iter(())
 	outputResult(errors)
 
 
