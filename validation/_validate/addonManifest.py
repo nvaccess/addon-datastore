@@ -53,7 +53,7 @@ docFileName = string(default=None)
 		@param translatedInput: translated manifest input
 		@type translatedInput: file-like object
 		"""
-		super(AddonManifest, self).__init__(
+		super().__init__(
 			input,
 			configspec=self.configspec,
 			encoding='utf-8',

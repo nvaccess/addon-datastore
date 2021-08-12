@@ -42,7 +42,7 @@ class ValidationErrorMessage(enum.Enum):
 	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
 
 
-ErrorGenerator = typing.Generator[str, None, None]
+ValidationErrorGenerator = typing.Generator[str, None, None]
 
 
 def getAddonMetadata(filename: str) -> JsonObjT:
@@ -67,7 +67,7 @@ def _validateJson(data: JsonObjT) -> None:
 		raise err
 
 
-def checkDownloadUrlFormat(url: str) -> ErrorGenerator:
+def checkDownloadUrlFormat(url: str) -> ValidationErrorGenerator:
 	"""Check for common errors with download URL string.
 	It must be a:
 	- HTTPS URL
@@ -80,7 +80,7 @@ def checkDownloadUrlFormat(url: str) -> ErrorGenerator:
 		yield ValidationErrorMessage.URL_MISSING_ADDON_EXT.value
 
 
-def downloadAddon(url: str, destPath: str) -> ErrorGenerator:
+def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 	"""Download the addon file, save as destPath
 	Raise on failure.
 	"""
@@ -105,7 +105,7 @@ def downloadAddon(url: str, destPath: str) -> ErrorGenerator:
 	return
 
 
-def checkSha256(addonPath: str, expectedSha: str) -> ErrorGenerator:
+def checkSha256(addonPath: str, expectedSha: str) -> ValidationErrorGenerator:
 	"""Calculate the hash (SHA256) of the *.nvda-addon
 	Return an error if it does not match the expected.
 	"""
@@ -131,7 +131,7 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 		raise err
 
 
-def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	""" The submission Name must match the *.nvda-addon manifest summary field.
 	"""
 	summary = manifest["summary"]
@@ -139,35 +139,35 @@ def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT
 		yield ValidationErrorMessage.NAME.value.format(summary, submission["displayName"])
 
 
-def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	""" The submission description must match the *.nvda-addon manifest description field."""
 	description = manifest["description"]
 	if description != submission["description"]:
 		yield ValidationErrorMessage.DESC.value.format(description, submission["description"])
 
 
-def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ErrorGenerator:
+def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	""" The submission homepage must match the *.nvda-addon manifest url field.
 	"""
 	if manifest["url"] != submission["homepage"]:
 		yield ValidationErrorMessage.HOMEPAGE.value.format(manifest['url'])
 
 
-def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> ErrorGenerator:
+def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
 	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
 	"""
 	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(manifest['name'])
 
 
-def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ErrorGenerator:
+def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
 	"""Check submitted json file name matches the *.nvda-addon manifest name field.
 	"""
 	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
 
 
-def validateSubmission(submissionFilePath: str) -> ErrorGenerator:
+def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
 	try:
 		submissionData = getAddonMetadata(filename=submissionFilePath)
 		print("Submission JSON validated with schema.")
@@ -200,7 +200,7 @@ def validateSubmission(submissionFilePath: str) -> ErrorGenerator:
 		yield f"Fatal error, unable to continue: {e}"
 
 
-def outputResult(errors: ErrorGenerator):
+def outputResult(errors: ValidationErrorGenerator):
 	errors = list(errors)
 	if len(errors) > 0:
 		print("\r\n".join(errors))

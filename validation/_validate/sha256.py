@@ -35,7 +35,7 @@ def main():
 	)
 	args = parser.parse_args()
 	checksum = sha256_checksum(args.file)
-	print("Sha256:" + '\t' + checksum)
+	print(f"Sha256:\t {checksum}")
 
 
 if __name__ == '__main__':
