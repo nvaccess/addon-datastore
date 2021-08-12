@@ -31,7 +31,7 @@ jobs:
       run: runlint
       shell: cmd
     - name: Validate metadata
-      run: validateNvdaAddonMetadata/runvalidate  --dry-run validateNvdaAddonMetadata/_test/testData/addons/fake/13.0.json
+      run: runvalidate --dry-run _test/testData/addons/fake/13.0.json
       shell: cmd
     - name: Get sha256
       run: runsha _tests\testData\fake.nvda-addon
