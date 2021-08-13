@@ -33,7 +33,8 @@ jobs:
           const result = await github.request(url)
           const changedFiles = result.data
           var addonFileName
-          for (filename of changedFiles) {
+          for (fileData of changedFiles) {
+            const filename = fileData.filename
             if (filename.startsWith("addons")) {
               if (Boolean(addonFileName)){
                 throw "Please submit addon releases individually. One file at a time."
