@@ -52,9 +52,9 @@ jobs:
         repository: nvaccess/validateNvdaAddonMetadata
         path: validateNvdaAddonMetadata
         submodules: true
-    - name: Install dependencies
+    - name: Install validateNvdaAddonMetadata dependencies
       run: |
         python -m pip install --upgrade wheel
-        pip install -r requirements.txt
+        pip install -r validateNvdaAddonMetadata/requirements.txt
     - name: Validate metadata
       run: validateNvdaAddonMetadata/runvalidate ${{steps.getMetadata.outputs.result}}
