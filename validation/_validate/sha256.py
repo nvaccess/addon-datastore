@@ -11,6 +11,7 @@ import typing
 #: The read size for each chunk read from the file, prevents memory overuse with large files.
 BLOCK_SIZE = 65536
 
+
 def sha256_checksum(binaryReadModeFile: typing.BinaryIO, blockSize: int = BLOCK_SIZE):
 	"""
 	:param binaryReadModeFile: An open file (mode=='rb'). Calculate its sha256 hash.
@@ -24,6 +25,7 @@ def sha256_checksum(binaryReadModeFile: typing.BinaryIO, blockSize: int = BLOCK_
 		sha256.update(block)
 	return sha256.hexdigest()
 
+
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument(
@@ -33,7 +35,8 @@ def main():
 	)
 	args = parser.parse_args()
 	checksum = sha256_checksum(args.file)
-	print("Sha256:"+ '\t' + checksum)
+	print(f"Sha256:\t {checksum}")
+
 
 if __name__ == '__main__':
 	main()

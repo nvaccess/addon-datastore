@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [3.8, 3.9]
+        python-version: [3.8]
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -31,9 +31,9 @@ jobs:
       run: runlint
       shell: cmd
     - name: Validate metadata
-      run: runvalidate clipContentsDesigner\13.0.json
+      run: runvalidate --dry-run _test/testData/addons/fake/13.0.json
       shell: cmd
     - name: Get sha256
-      run: runsha clipContentsDesigner\13.0.json
+      run: runsha _tests\testData\fake.nvda-addon
       shell: cmd
       
