@@ -31,7 +31,7 @@ To try validating an addon submission on your own machine.
 
 From cmd.exe:
 
-1. Clone this repo: `git clone https://github.com/nvdaes/validateNvdaAddonMetadata`
+1. Clone this repo: `git clone https://github.com/nvaccess/validateNvdaAddonMetadata.git`
 1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
 
 ## Run unit tests:
