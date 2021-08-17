@@ -1,0 +1,61 @@
+name: Check submitted NVDA add-on
+
+on:
+  pull_request:
+    branches:
+      - master
+      - removeTools
+    paths:
+      - addons/**
+
+jobs:
+
+  checkMetadata:
+  
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+    steps:
+    
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Determine files changed
+      uses: actions/github-script@v4
+      id: getMetadata
+      with:
+        script: |
+          const restPrefix = "GET /repos/"
+          const owner = context.repo.owner
+          const repo = context.repo.repo
+          const number = context.issue.number
+          const restSubfix = "/files"
+          const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
+          const result = await github.request(url)
+          const changedFiles = result.data
+          var addonFileName
+          for (fileData of changedFiles) {
+            const filename = fileData.filename
+            if (filename.startsWith("addons")) {
+              if (Boolean(addonFileName)){
+                throw "Please submit addon releases individually. One file at a time."
+              }
+              addonFileName = filename
+            }
+            else {
+              throw "Non-addon-submission files updated"
+            }
+          }
+          return addonFileName
+    - name: Checkout validate repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvaccess/validateNvdaAddonMetadata
+        path: validateNvdaAddonMetadata
+        submodules: true
+    - name: Install validateNvdaAddonMetadata dependencies
+      run: |
+        python -m pip install --upgrade wheel
+        pip install -r validateNvdaAddonMetadata/requirements.txt
+    - name: Validate metadata
+      run: validateNvdaAddonMetadata/runvalidate ${{steps.getMetadata.outputs.result}}
