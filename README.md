@@ -11,8 +11,10 @@ Aims:
 - Enable any necessary, API, process, or infrastructure to support users to browse, search, install and update Addons for NVDA.
 - A secure and robust provision of addon-metadata.
 - No intention of supporting paid addons at this stage.
-- Transparent process, to make it simple (for developers) to understand the current state of the store or the state of a submission of a new / updated addon.
+- Transparent process, to make it simple (for developers) to understand the current state of the
+  Add-on Store, or the state of a submission of a new / updated addon.
 - Faster release process for add-ons, by-passing human review.
+- Non-subjective review process for add-ons.
 
 ### About security 
 Ensuring that an add-on is safe to run is a difficult challenge that isn't addressed here.
@@ -82,8 +84,8 @@ You are welcome to review code / UX of addons and provide that feedback directly
   - This repository acts as a back-end database, it is open and easy to inspect.
   - Since our needs are simple, preconfigured "views" of the data will suffice.
 - `nvaccess/validateNvdaAddonMetadata` GitHub Repository
-  - Location of the metadata / submission schema
-  - Location tools used to test the metadata
+  - Metadata / submission schema.
+  - Tools used to validate the submission.
 - NV Access server - To provide the endpoint for "available Addons" meta-data
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
@@ -141,14 +143,14 @@ See https://github.com/nvaccess/validateNvdaAddonMetadata
 - By using a git repository and PR process, `git blame` and `git log` can be used to get more
   context about addons listed in the store.
   For instance:
-  - When was the addon accepted
-  - What did the review look like
-  - How often is the add-on have updated
+  - When was the addon accepted?
+  - What did the review look like?
+  - How often is the add-on updated?
 - GitHub allows assigning reviews to reviewers
 
 ## API data generation details
 
-GitHub actions will be used to respond to commits and to transform the data into the required views.
+Triggered by a new commit, a GitHub workflow transforms the data into the required views.
 These views of the data will be committed by the GitHub Action to a `views` branch.
 
 ### Overview
