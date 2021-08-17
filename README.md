@@ -47,9 +47,11 @@ You are welcome to review code / UX of addons and provide that feedback directly
 
 - Submissions and automated checks should be easy to find and get the status of.
 - Make it possible to automate many steps in the process.
-- Submitted add-on release data should be immutable.
-  No changing the addon on an external server and using the same URL.
-  An update requires a new release and a new submission.
+- The `.nvda-addon` file accessible via the download URL must continue to match the SHA.
+  NVDA will verify the file has not changed by comparing the checksum (SHA256).
+  This gives users certainty when installing a "known version" of an addon.
+  To update or make changes to an add-on, a new unique URL should be used, and a new add-on
+  submission made to the Add-on Store.
 - Allow addon authors to easily revoke a version if it is buggy / no longer supported.
   Removed releases are no longer presented in the store, halting new installations.
 - Enable support in the store for multiple versions of an Addon, based on NVDA version.
