@@ -54,7 +54,7 @@ You are welcome to review code / UX of addons and provide that feedback directly
   submission made to the Add-on Store.
 - Allow addon authors to easily revoke a version if it is buggy / no longer supported.
   Removed releases are no longer presented in the store, halting new installations.
-- Enable support in the store for multiple versions of an Addon, based on NVDA version.
+- Enable support in the store for multiple versions of an Addon, based on NVDA API version.
   - EG addon version 1.2.5 for NVDA 2019.3 and addon version 1.3.2 for NVDA 2020.1
 - Enable support in the store for 'beta' Addons, for instance:
   - Addons being developed against alpha / beta NVDA.
@@ -167,18 +167,18 @@ This code will have automated tests.
 ### Data views
 The following views will only be available on a `views` branch, and located in a `views` folder.
 Required transformations of the data:
-- `/NVDA Version/addon-1-ID/release.json`
-- `/NVDA Version/addon-1-ID/beta.json`
-- `/NVDA Version/addon-2-ID/release.json`
+- `/NVDA API Version/addon-1-ID/release.json`
+- `/NVDA API Version/addon-1-ID/beta.json`
+- `/NVDA API Version/addon-2-ID/release.json`
 
 Notes:
-- 'NVDA Version' will be something like '2019.3', there will be one folder for each NVDA Version.
+- 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
 - The `beta.json` and `release.json` contain the information necessary for a store entry.
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
 The simplicity of this is that the NV Access server can just forward these files on directly when asked
-"what are the latest Addons for NVDA Version X" or "What is the latest version of Addon-ID for NVDA Version X".
+"what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X".
 Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
 away from GitHub for some reason.
 
