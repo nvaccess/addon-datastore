@@ -167,13 +167,13 @@ This code will have automated tests.
 ### Data views
 The following views will only be available on a `views` branch, and located in a `views` folder.
 Required transformations of the data:
-- `/NVDA API Version/addon-1-ID/release.json`
+- `/NVDA API Version/addon-1-ID/stable.json`
 - `/NVDA API Version/addon-1-ID/beta.json`
-- `/NVDA API Version/addon-2-ID/release.json`
+- `/NVDA API Version/addon-2-ID/stable.json`
 
 Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
-- The `beta.json` and `release.json` contain the information necessary for a store entry.
+- The `beta.json` and `stable.json` contain the information necessary for a store entry.
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
