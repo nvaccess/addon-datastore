@@ -1,0 +1,28 @@
+# https://github.com/nvaccess/transformAddonDataToViews/actions/workflows/transformAndPush.yml
+
+name: trigger transform to views
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  trigger:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+    environment: transformationAndDeployment
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Install SSH Client and set deploy key
+        uses: webfactory/ssh-agent@v0.5.3  # https://github.com/webfactory/ssh-agent
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}  # set in environment: transformationAndDeployment
+      # https://docs.github.com/en/rest/reference/repos#create-a-repository-dispatch-event
+      - name: send repository_dispatch event
+        run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/nvaccess/transformAddonDataToViews/dispatches \
+            -d '{"event_type":"trigger_transform"}'
