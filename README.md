@@ -179,8 +179,9 @@ Notes:
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
-The simplicity of this is that the NV Access server can just forward these files on directly when asked
-"what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X".
+The idea is to eliminate the need for the NV Access server to read and process the data on demand.
+When an NVDA client asks "What are the latest Addons for NVDA API Version X" we can concatenate all the required json files that match `/NVDA API Version/*/stable.json`.
+Similarly, to fetch "What is the latest version of Addon-ID for NVDA API Version X", we can just return the data found at `/NVDA API Version/addon-ID/stable.json`.
 Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
 away from GitHub for some reason.
 
