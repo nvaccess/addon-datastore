@@ -56,12 +56,12 @@ You are welcome to review code / UX of addons and provide that feedback directly
   submission made to the Add-on Store.
 - Allow addon authors to easily revoke a version if it is buggy / no longer supported.
   Removed releases are no longer presented in the store, halting new installations.
-- Enable support in the store for multiple versions of an Addon, based on NVDA version.
+- Enable support in the store for multiple versions of an Addon, based on NVDA API version.
   - EG addon version 1.2.5 for NVDA 2019.3 and addon version 1.3.2 for NVDA 2020.1
-- Enable support in the store for 'pre-release' Addons, for instance:
+- Enable support in the store for 'beta' Addons, for instance:
   - Addons being developed against alpha / beta NVDA.
   - Addons that want early feedback from end users.
-  - End users can choose "show me pre-release addons"
+  - End users can choose "show me beta addons"
 
 ## Overview
 
@@ -169,15 +169,13 @@ This code will have automated tests.
 ### Data views
 The following views will only be available on a [views branch](https://github.com/nvaccess/addon-store-submission/tree/views) and located in a `views` folder.
 Required transformations of the data:
-- `/NVDA API Version/addon-1-ID/release.json`
-- `/NVDA API Version/addon-1-ID/pre-rel.json`
-- `/NVDA API Version/addon-2-ID/release.json`
-- `/NVDA API Version/all.json`
+- `/NVDA API Version/addon-1-ID/stable.json`
+- `/NVDA API Version/addon-1-ID/beta.json`
+- `/NVDA API Version/addon-2-ID/stable.json`
 
 Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
-- The `pre-rel.json` and `release.json` contain the information necessary for a store entry.
-- The contents of `all.data` is all (pre-release and release) data for this NVDA API version together.
+- The `beta.json` and `stable.json` contain the information necessary for a store entry.
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
@@ -190,4 +188,4 @@ away from GitHub for some reason.
 
 ### Terminology: Addon version vs Addon release
 
-Since this proposal supports pre-release addons, I have tried to avoid using the term "addon release", instead favouring "addon version".
+Since this proposal supports beta addons, I have tried to avoid using the term "addon release", instead favouring "addon version".
