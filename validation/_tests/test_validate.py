@@ -7,18 +7,23 @@
 import unittest
 from mock import patch
 import os
+import shutil
 import json
 from jsonschema import exceptions
 from _validate import validate, addonManifest
 
 
+VALID_ADDON_ID = "fake"
+VALID_ADDON_VER = '13.0'
+
 JSON_SCHEMA = validate.JSON_SCHEMA
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
 SOURCE_DIR = os.path.dirname(TOP_DIR)
 TEST_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testData')
-ADDON_PACKAGE = os.path.join(TEST_DATA_PATH, 'fake.nvda-addon')
+ADDON_PACKAGE = os.path.join(TEST_DATA_PATH, f'{VALID_ADDON_ID}.nvda-addon')
 ADDON_SUBMISSIONS_DIR = os.path.join(TEST_DATA_PATH, 'addons')
-VALID_SUBMISSION_JSON_FILE = os.path.join(ADDON_SUBMISSIONS_DIR, 'fake', '13.0.json')
+GEN_ADDON_SUBMISSIONS_DIR = os.path.join(TEST_DATA_PATH, 'gen', 'addons')  # generated at run time data
+VALID_SUBMISSION_JSON_FILE = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f'{VALID_ADDON_VER}.json')
 MANIFEST_FILE = os.path.join(TEST_DATA_PATH, 'manifest.ini')
 
 
@@ -43,6 +48,7 @@ class TestValidate(unittest.TestCase):
 	def tearDown(self):
 		self.submissionData = None
 		self.manifest = None
+		shutil.rmtree(GEN_ADDON_SUBMISSIONS_DIR, ignore_errors=True)
 
 	def test_validateJson_validDoesNotRaise(self):
 		validate._validateJson(self.submissionData)
@@ -182,13 +188,27 @@ class TestValidate(unittest.TestCase):
 			[expectedErrorMessage.format(self.manifest['name'])]
 		)
 
-	def test_checkVersionMatchesFilename_valid(self):
+	def test_checkVersion_valid(self):
+		"""No error when manifest version, submission file name, and submission contents all agree.
+
+		Manifest considered source of truth.
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonVersionField` within the submission JSON data
+		"""
 		errors = list(
 			validate.checkVersionMatchesFilename(self.manifest, VALID_SUBMISSION_JSON_FILE)
 		)
 		self.assertEqual(errors, [])
 
 	def test_checkVersionMatchesFilename_invalid(self):
+		""" Error expected when fileName does not match manifest version
+
+		Manifest considered source of truth.
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonVersionField` within the submission JSON data
+		"""
 		filename = os.path.join(ADDON_SUBMISSIONS_DIR, "fake", "12.2.json")
 		errors = list(
 			validate.checkVersionMatchesFilename(self.manifest, filename)
@@ -197,6 +217,39 @@ class TestValidate(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[expectedErrorMessage.format(self.manifest['version'])]
+		)
+
+	def test_checkVersionMatches_invalidJSONData(self):
+		""" Error expected when JSON data 'addonVersion' does not match manifest version.
+
+		Manifest considered source of truth.
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonVersionField` within the submission JSON data
+		"""
+		# use valid file as template, replace the addon version with mismatching data and write out to new
+		# generated submission folder.
+		with open(VALID_SUBMISSION_JSON_FILE) as f:
+			data: validate.JsonObjT = json.load(f)
+		data['addonVersion'] = {
+			"major": 12,
+			"minor": 2,
+			"patch": 0
+		}
+		genSubmissionPath = os.path.join(GEN_ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID)
+		os.makedirs(genSubmissionPath, exist_ok=True)
+
+		genSubmissionJsonFile = os.path.join(genSubmissionPath, f'{VALID_ADDON_VER}.json')
+		with open(genSubmissionJsonFile, 'x') as f:
+			json.dump(data, f)
+
+		errors = list(
+			validate.checkVersionMatchesFilename(self.manifest, genSubmissionJsonFile)
+		)
+		expectedErrorMessage = "Addon version in submission data does not match manifest value: {}"
+		self.assertEqual(
+			[expectedErrorMessage.format(self.manifest['version'])],
+			errors
 		)
 
 	def test_output_errorRaises(self):
