@@ -117,6 +117,7 @@ class TestValidate(unittest.TestCase):
 			ADDON_PACKAGE,
 			expectedSha=sha.lower()
 		)
+		self.assertEqual(list(errors), [])
 
 	def test_checkSha256_invalid(self):
 		errors = validate.checkSha256(
