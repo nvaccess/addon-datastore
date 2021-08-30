@@ -186,18 +186,18 @@ def parseVersionStr(ver: str) -> typing.Dict[str, int]:
 	return version
 
 
-def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
+def checkVersions(
+		manifest: AddonManifest,
+		submissionFilePath: str,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
 	"""Check submitted json file name matches the *.nvda-addon manifest name field.
 	"""
 	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
 
-	if os.path.exists(submissionFilePath):
-		submission = getAddonMetadata(submissionFilePath)
-		_validateJson(submission)
-
-		if parseVersionStr(manifest['version']) != submission['addonVersion']:
-			yield ValidationErrorMessage.VERSION.value.format(manifest['version'])
+	if parseVersionStr(manifest['version']) != submission['addonVersion']:
+		yield ValidationErrorMessage.VERSION.value.format(manifest['version'])
 
 
 def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
@@ -227,7 +227,7 @@ def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
 		yield from checkDescriptionMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
 		yield from checkNameMatchesPath(manifest, submissionFilePath)
-		yield from checkVersionMatchesFilename(manifest, submissionFilePath)
+		yield from checkVersions(manifest, submissionFilePath, submissionData)
 
 	except Exception as e:
 		yield f"Fatal error, unable to continue: {e}"

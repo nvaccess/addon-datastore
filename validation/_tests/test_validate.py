@@ -7,7 +7,6 @@
 import unittest
 from mock import patch
 import os
-import shutil
 import json
 from jsonschema import exceptions
 from _validate import validate, addonManifest
@@ -22,7 +21,6 @@ SOURCE_DIR = os.path.dirname(TOP_DIR)
 TEST_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testData')
 ADDON_PACKAGE = os.path.join(TEST_DATA_PATH, f'{VALID_ADDON_ID}.nvda-addon')
 ADDON_SUBMISSIONS_DIR = os.path.join(TEST_DATA_PATH, 'addons')
-GEN_ADDON_SUBMISSIONS_DIR = os.path.join(TEST_DATA_PATH, 'gen', 'addons')  # generated at run time data
 VALID_SUBMISSION_JSON_FILE = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f'{VALID_ADDON_VER}.json')
 MANIFEST_FILE = os.path.join(TEST_DATA_PATH, 'manifest.ini')
 
@@ -48,7 +46,6 @@ class TestValidate(unittest.TestCase):
 	def tearDown(self):
 		self.submissionData = None
 		self.manifest = None
-		shutil.rmtree(GEN_ADDON_SUBMISSIONS_DIR, ignore_errors=True)
 
 	def test_validateJson_validDoesNotRaise(self):
 		validate._validateJson(self.submissionData)
@@ -197,7 +194,7 @@ class TestValidate(unittest.TestCase):
 		- `addonVersionField` within the submission JSON data
 		"""
 		errors = list(
-			validate.checkVersionMatchesFilename(self.manifest, VALID_SUBMISSION_JSON_FILE)
+			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
 		self.assertEqual(errors, [])
 
@@ -211,7 +208,7 @@ class TestValidate(unittest.TestCase):
 		"""
 		filename = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, "12.2.json")
 		errors = list(
-			validate.checkVersionMatchesFilename(self.manifest, filename)
+			validate.checkVersions(self.manifest, filename, self.submissionData)
 		)
 		expectedVersion = self.manifest['version']
 		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
@@ -228,26 +225,15 @@ class TestValidate(unittest.TestCase):
 		- Submission file name '<addonID>/<version>.json'
 		- `addonVersionField` within the submission JSON data
 		"""
-		# use valid file as template, replace the addon version with mismatching data and write out to new
-		# generated submission folder.
-		with open(VALID_SUBMISSION_JSON_FILE) as f:
-			data: validate.JsonObjT = json.load(f)
-		data['addonVersion'] = {
+		self.submissionData['addonVersion'] = {
 			"major": 12,
 			"minor": 2,
 			"patch": 0
 		}
-		genSubmissionPath = os.path.join(GEN_ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID)
-		os.makedirs(genSubmissionPath, exist_ok=True)
-
-		genSubmissionJsonFile = os.path.join(genSubmissionPath, f'{VALID_ADDON_VER}.json')
-		with open(genSubmissionJsonFile, 'x') as f:
-			json.dump(data, f)
-
+		submissionPath = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f'{VALID_ADDON_VER}.json')
 		expectedVersion = self.manifest['version']
-
 		errors = list(
-			validate.checkVersionMatchesFilename(self.manifest, genSubmissionJsonFile)
+			validate.checkVersions(self.manifest, submissionPath, self.submissionData)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.VERSION.value
 		self.assertEqual(
@@ -268,7 +254,7 @@ class TestValidate(unittest.TestCase):
 		expectedVersion = "13.2.1"
 		self.manifest['version'] = expectedVersion
 		errors = list(
-			validate.checkVersionMatchesFilename(self.manifest, VALID_SUBMISSION_JSON_FILE)
+			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
 
 		fileNameError = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
