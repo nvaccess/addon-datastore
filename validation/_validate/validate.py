@@ -38,6 +38,7 @@ class ValidationErrorMessage(enum.Enum):
 	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
 	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
 	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
+	VERSION = "Addon version in submission data does not match manifest value: {}"
 	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
 	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
 	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
@@ -190,6 +191,13 @@ def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str
 	"""
 	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
+
+	if os.path.exists(submissionFilePath):
+		submission = getAddonMetadata(submissionFilePath)
+		_validateJson(submission)
+
+		if parseVersionStr(manifest['version']) != submission['addonVersion']:
+			yield ValidationErrorMessage.VERSION.value.format(manifest['version'])
 
 
 def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
