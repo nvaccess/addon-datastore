@@ -169,16 +169,30 @@ class TestValidate(unittest.TestCase):
 			[expectedErrorMessage.format(self.manifest["description"], badDesc)]
 		)
 
-	def test_checkNameMatchesPath_valid(self):
+	def test_checkAddonId_valid(self):
+		"""No error when manifest 'name', submission file path, and submission contents all agree.
+
+		Manifest 'name' considered source of truth for addonID
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonId` within the submission JSON data
+		"""
 		errors = list(
-			validate.checkNameMatchesPath(self.manifest, VALID_SUBMISSION_JSON_FILE)
+			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE)
 		)
 		self.assertEqual(errors, [])
 
-	def test_checkNameMatchesPath_invalid(self):
+	def test_checkAddonId_invalidPath(self):
+		""" Error when submission path does not include correct addon ID
+
+		Manifest 'name' considered source of truth for addonID
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonId` within the submission JSON data
+		"""
 		filename = os.path.join(TOP_DIR, "invalid")
 		errors = list(
-			validate.checkNameMatchesPath(self.manifest, filename)
+			validate.checkAddonId(self.manifest, filename)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
 		self.assertEqual(

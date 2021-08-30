@@ -155,7 +155,7 @@ def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> Va
 		yield ValidationErrorMessage.HOMEPAGE.value.format(manifest['url'])
 
 
-def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
+def checkAddonId(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
 	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
 	"""
 	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
@@ -226,7 +226,7 @@ def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
 		yield from checkSummaryMatchesDisplayName(manifest, submissionData)
 		yield from checkDescriptionMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
-		yield from checkNameMatchesPath(manifest, submissionFilePath)
+		yield from checkAddonId(manifest, submissionFilePath)
 		yield from checkVersions(manifest, submissionFilePath, submissionData)
 
 	except Exception as e:
