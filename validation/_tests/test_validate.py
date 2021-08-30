@@ -178,7 +178,7 @@ class TestValidate(unittest.TestCase):
 		- `addonId` within the submission JSON data
 		"""
 		errors = list(
-			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE)
+			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
 		self.assertEqual(errors, [])
 
@@ -192,7 +192,7 @@ class TestValidate(unittest.TestCase):
 		"""
 		filename = os.path.join(TOP_DIR, "invalid")
 		errors = list(
-			validate.checkAddonId(self.manifest, filename)
+			validate.checkAddonId(self.manifest, filename, self.submissionData)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
 		self.assertEqual(
