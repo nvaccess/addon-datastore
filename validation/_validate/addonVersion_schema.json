@@ -1,6 +1,12 @@
 {
     "examples": [
         {
+            "addonId": "easyAddonTech.XYZ",
+            "addonVersion": {
+                "major": 21,
+                "minor": 6,
+                "patch": 0
+            },
             "displayName": "My addon",
             "publisher": "easyAddonTech",
             "description": "Makes doing XYZ easier",
@@ -24,6 +30,8 @@
         }
     ],
     "required": [
+        "addonId",
+        "addonVersion",
         "displayName",
         "publisher",
         "description",
@@ -38,6 +46,69 @@
     ],
     "type": "object",
     "properties": {
+        "addonId": {
+            "$id": "#/properties/addonId",
+            "default": "",
+            "description": "The ID for the addon, matches the name field in the addon manifest and the folder name for the submission.",
+            "examples": [
+                "easyAddonTech.XYZ"
+            ],
+            "title": "The ID for the addon",
+            "type": "string"
+        },
+        "addonVersion": {
+            "$id": "#/properties/addonVersion",
+            "default": {},
+            "description": "The addon version being released. Must match the version in the addon manifest and the file name for the submission.",
+            "examples": [
+                {
+                    "major": 21,
+                    "minor": 6,
+                    "patch": 0
+                }
+            ],
+            "required": [
+                "major",
+                "minor",
+                "patch"
+            ],
+            "title": "The addon version",
+            "type": "object",
+            "properties": {
+                "major": {
+                    "$id": "#/properties/addonVersion/properties/major",
+                    "default": 0,
+                    "description": "'major' in major.minor.patch",
+                    "examples": [
+                        21,
+                        2019,
+                        2021
+                    ],
+                    "title": "The 'major' part of the version number.",
+                    "type": "integer"
+                },
+                "minor": {
+                    "$id": "#/properties/addonVersion/properties/minor",
+                    "default": 0,
+                    "description": "The 'minor' part in major.minor.patch",
+                    "examples": [
+                        3
+                    ],
+                    "title": "The 'minor' part of the version number.",
+                    "type": "integer"
+                },
+                "patch": {
+                    "$id": "#/properties/addonVersion/properties/patch",
+                    "default": 0,
+                    "description": "The 'patch' part in major.minor.patch",
+                    "examples": [
+                        0
+                    ],
+                    "title": "The 'patch' part of the version number.",
+                    "type": "integer"
+                }
+            }
+        },
         "displayName": {
             "$id": "#/properties/displayName",
             "default": "",
