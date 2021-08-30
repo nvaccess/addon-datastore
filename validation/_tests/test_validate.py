@@ -310,3 +310,74 @@ class Validate_End2End(unittest.TestCase):
 				'HTTP response status code: 404'
 			]
 		)
+
+
+class test_parseVersionString(unittest.TestCase):
+
+	def test_single(self):
+		self.assertEqual(
+			{
+				"major": 24,
+				"minor": 0,
+				"patch": 0,
+			},
+			validate.parseVersionStr("24")
+		)
+
+	def test_double(self):
+		self.assertEqual(
+			{
+				"major": 24,
+				"minor": 6,
+				"patch": 0,
+			},
+			validate.parseVersionStr("24.6")
+		)
+
+	def test_triple(self):
+		self.assertEqual(
+			{
+				"major": 24,
+				"minor": 6,
+				"patch": 1,
+			},
+			validate.parseVersionStr("24.6.1")
+		)
+
+
+class test_versionRegex(unittest.TestCase):
+
+	def test_versionMajorMinorPatch_valid(self):
+		ver = "23.5.1"
+		matches = validate.VERSION_PARSE.match(ver)
+		self.assertTrue(matches)
+		groups = list(x for x in matches.groups() if x)
+		self.assertEqual(
+			['23', '5', '1'],
+			groups
+		)
+
+	def test_versionMajorMinor_valid(self):
+		ver = "6.0"
+		matches = validate.VERSION_PARSE.match(ver)
+		self.assertTrue(matches)
+		groups = list(x for x in matches.groups() if x)
+		self.assertEqual(
+			['6', '0'],
+			groups
+		)
+
+	def test_versionMajor_valid(self):
+		ver = "1"
+		matches = validate.VERSION_PARSE.match(ver)
+		self.assertTrue(matches)
+		groups = list(x for x in matches.groups() if x)
+		self.assertEqual(
+			['1'],
+			groups
+		)
+
+	def test_NonDotSep_invalid(self):
+		ver = f"{3},{2},{1}"
+		matches = validate.VERSION_PARSE.match(ver)
+		self.assertFalse(matches)

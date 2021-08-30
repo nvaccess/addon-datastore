@@ -7,6 +7,7 @@
 import argparse
 import enum
 import os
+import re
 import tempfile
 import typing
 import zipfile
@@ -158,6 +159,30 @@ def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> Va
 	"""
 	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(manifest['name'])
+
+
+VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
+
+
+def parseVersionStr(ver: str) -> typing.Dict[str, int]:
+
+	matches = VERSION_PARSE.match(ver)
+	if not matches:
+		return {
+			"major": 0,
+			"minor": 0,
+			"patch": 0
+		}
+
+	groups = list(x for x in matches.groups() if x)
+	groups.extend([0, 0])  # ensure there are enough elements (smallest match is a single value)
+	version = {
+		"major": int(groups[0]),
+		"minor": int(groups[1]),
+		"patch": int(groups[2])
+	}
+
+	return version
 
 
 def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
