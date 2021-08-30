@@ -246,10 +246,37 @@ class TestValidate(unittest.TestCase):
 		errors = list(
 			validate.checkVersionMatchesFilename(self.manifest, genSubmissionJsonFile)
 		)
-		expectedErrorMessage = "Addon version in submission data does not match manifest value: {}"
+		expectedErrorMessage = validate.ValidationErrorMessage.VERSION.value
 		self.assertEqual(
 			[expectedErrorMessage.format(self.manifest['version'])],
 			errors
+		)
+
+	def test_checkVersionMatches_invalidJSONDataAndFileName(self):
+		""" Error expected when JSON data 'addonVersion' does not match manifest version.
+
+		Manifest considered source of truth.
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonVersionField` within the submission JSON data
+		"""
+		# update the manifest version so that both the submission file name, and it's contents are considered
+		# invalid.
+		expectedVersion = "13.2.1"
+		self.manifest['version'] = expectedVersion
+		errors = list(
+			validate.checkVersionMatchesFilename(self.manifest, VALID_SUBMISSION_JSON_FILE)
+		)
+
+		fileNameError = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
+		versionError = validate.ValidationErrorMessage.VERSION.value
+
+		self.assertEqual(
+			errors,
+			[
+				fileNameError.format(expectedVersion),
+				versionError.format(expectedVersion)
+			]
 		)
 
 	def test_output_errorRaises(self):
