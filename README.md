@@ -157,6 +157,8 @@ See https://github.com/nvaccess/validateNvdaAddonMetadata
 Triggered by a new commit, a GitHub workflow, [transformAddonDataToViews](https://github.com/nvaccess/transformAddonDataToViews), transforms the data into the required views.
 These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views).
 
+Successful transformation status: [![.github/workflows/transformDataToViews.yml](https://github.com/nvaccess/addon-store-submission/actions/workflows/transformDataToViews.yml/badge.svg?branch=main)](https://github.com/nvaccess/addon-store-submission/actions/workflows/transformDataToViews.yml)
+
 ### Overview
 
 For each version of NVDA, the meta-data of the most recent (the highest version number) of each Addon is automatically
