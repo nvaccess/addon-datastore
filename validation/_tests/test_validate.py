@@ -209,14 +209,15 @@ class TestValidate(unittest.TestCase):
 		- Submission file name '<addonID>/<version>.json'
 		- `addonVersionField` within the submission JSON data
 		"""
-		filename = os.path.join(ADDON_SUBMISSIONS_DIR, "fake", "12.2.json")
+		filename = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, "12.2.json")
 		errors = list(
 			validate.checkVersionMatchesFilename(self.manifest, filename)
 		)
+		expectedVersion = self.manifest['version']
 		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(self.manifest['version'])]
+			[expectedErrorMessage.format(expectedVersion)]
 		)
 
 	def test_checkVersionMatches_invalidJSONData(self):
@@ -243,12 +244,14 @@ class TestValidate(unittest.TestCase):
 		with open(genSubmissionJsonFile, 'x') as f:
 			json.dump(data, f)
 
+		expectedVersion = self.manifest['version']
+
 		errors = list(
 			validate.checkVersionMatchesFilename(self.manifest, genSubmissionJsonFile)
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.VERSION.value
 		self.assertEqual(
-			[expectedErrorMessage.format(self.manifest['version'])],
+			[expectedErrorMessage.format(expectedVersion)],
 			errors
 		)
 
