@@ -200,6 +200,47 @@ class TestValidate(unittest.TestCase):
 			[expectedErrorMessage.format(self.manifest['name'])]
 		)
 
+	def test_checkAddonId_invalidJSONData(self):
+		""" Error when submission does not include correct addonId
+
+		Manifest 'name' considered source of truth for addonID
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonId` within the submission JSON data
+		"""
+		self.submissionData['addonId'] = "invalid"
+		errors = list(
+			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
+		)
+		expectedErrorMessage = "AddonId incorrect in submitted, expected: {}"
+		self.assertEqual(
+			[expectedErrorMessage.format(VALID_ADDON_ID)],
+			errors
+		)
+
+	def test_checkAddonId_invalidJSONDataAndPath(self):
+		""" Error when submission does not include correct addonId and file path does not include the addonID
+
+		Manifest 'name' considered source of truth for addonID
+		Must match:
+		- Submission file name '<addonID>/<version>.json'
+		- `addonId` within the submission JSON data
+		"""
+		expectedAddonId = "valid"
+		self.manifest['name'] = expectedAddonId
+		errors = list(
+			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
+		)
+		pathMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
+		addonIdMessage = "AddonId incorrect in submitted, expected: {}"
+		self.assertEqual(
+			[
+				pathMessage.format(expectedAddonId),
+				addonIdMessage.format(expectedAddonId),
+			],
+			errors
+		)
+
 	def test_checkVersion_valid(self):
 		"""No error when manifest version, submission file name, and submission contents all agree.
 
