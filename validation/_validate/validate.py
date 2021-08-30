@@ -39,6 +39,7 @@ class ValidationErrorMessage(enum.Enum):
 	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
 	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
 	VERSION = "Addon version in submission data does not match manifest value: {}"
+	ID = "AddonId incorrect in submitted, expected: {}"
 	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
 	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
 	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
@@ -162,8 +163,11 @@ def checkAddonId(
 ) -> ValidationErrorGenerator:
 	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
 	"""
-	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
-		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(manifest['name'])
+	expectedName = manifest["name"]
+	if expectedName != os.path.basename(os.path.dirname(submissionFilePath)):
+		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(expectedName)
+	if expectedName != submission['addonId']:
+		yield ValidationErrorMessage.ID.value.format(expectedName)
 
 
 VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
