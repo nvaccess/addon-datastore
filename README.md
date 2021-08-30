@@ -155,7 +155,7 @@ See https://github.com/nvaccess/validateNvdaAddonMetadata
 ## API data generation details
 
 Triggered by a new commit, a GitHub workflow, [transformAddonDataToViews](https://github.com/nvaccess/transformAddonDataToViews), transforms the data into the required views.
-These views of the data is committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views).
+These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views).
 
 ### Overview
 
@@ -167,7 +167,7 @@ This will enable interested parties to generate the same view of the data locall
 This code will have automated tests.
 
 ### Data views
-The following views will only be available on a [views branch](https://github.com/nvaccess/addon-store-submission/tree/views) and located in a `views` folder.
+The following views will only be available on the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views) and located in a `views` folder.
 Required transformations of the data:
 - `/NVDA API Version/addon-1-ID/stable.json`
 - `/NVDA API Version/addon-1-ID/beta.json`
@@ -179,9 +179,9 @@ Notes:
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
-The idea is to eliminate the need for the NV Access server to read and process the data on demand.
-When an NVDA client asks "What are the latest Addons for NVDA API Version X" we can concatenate all the required json files that match `/NVDA API Version/*/stable.json`.
-Similarly, to fetch "What is the latest version of Addon-ID for NVDA API Version X", we can just return the data found at `/NVDA API Version/addon-ID/stable.json`.
+This simplifies the processing on the hosting (E.G NV Access) server.
+To fetch the latest add-ons for `<NVDA API Version X>`, the server can concatenate the appropriate JSON files that match a glob: `/<NVDA API Version X>/*/stable.json`.
+Similarly, to fetch the latest version of an add-on with `<Addon-ID>` for `<NVDA API Version X>`. The server can return the data at `/<NVDA API Version X>/<addon-ID>/stable.json`.
 Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
 away from GitHub for some reason.
 
