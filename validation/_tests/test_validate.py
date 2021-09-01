@@ -208,13 +208,14 @@ class TestValidate(unittest.TestCase):
 		- Submission file name '<addonID>/<version>.json'
 		- `addonId` within the submission JSON data
 		"""
-		self.submissionData['addonId'] = "invalid"
+		invalidID = "invalid"
+		self.submissionData['addonId'] = invalidID
 		errors = list(
 			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-		expectedErrorMessage = "AddonId incorrect in submitted, expected: {}"
+		expectedErrorMessage = validate.ValidationErrorMessage.ID.value
 		self.assertEqual(
-			[expectedErrorMessage.format(VALID_ADDON_ID)],
+			[expectedErrorMessage.format(VALID_ADDON_ID, invalidID)],
 			errors
 		)
 
@@ -232,11 +233,11 @@ class TestValidate(unittest.TestCase):
 			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
 		pathMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
-		addonIdMessage = "AddonId incorrect in submitted, expected: {}"
+		addonIdMessage = validate.ValidationErrorMessage.ID.value
 		self.assertEqual(
 			[
 				pathMessage.format(expectedAddonId),
-				addonIdMessage.format(expectedAddonId),
+				addonIdMessage.format(expectedAddonId, "fake"),
 			],
 			errors
 		)
@@ -293,7 +294,7 @@ class TestValidate(unittest.TestCase):
 		)
 		expectedErrorMessage = validate.ValidationErrorMessage.VERSION.value
 		self.assertEqual(
-			[expectedErrorMessage.format(expectedVersion)],
+			[expectedErrorMessage.format(expectedVersion, "12.2.0")],
 			errors
 		)
 
@@ -320,7 +321,7 @@ class TestValidate(unittest.TestCase):
 			errors,
 			[
 				fileNameError.format(expectedVersion),
-				versionError.format(expectedVersion)
+				versionError.format(expectedVersion, "13.0.0")
 			]
 		)
 

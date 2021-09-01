@@ -38,11 +38,12 @@ class ValidationErrorMessage(enum.Enum):
 	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
 	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
 	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
-	VERSION = "Addon version in submission data does not match manifest value: {}"
-	ID = "AddonId incorrect in submitted, expected: {}"
+	VERSION = "Submission data 'addonVersion' field does not match 'version' field in addon manifest {} vs {}"
+	ID = "Submission data 'addonId' field does not match 'name' field in addon manifest {} vs {}"
+
 	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
-	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
-	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
+	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in a folder matching the addonId/name '{}'"
+	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named '{}.json'"
 
 
 ValidationErrorGenerator = typing.Generator[str, None, None]
@@ -164,10 +165,11 @@ def checkAddonId(
 	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
 	"""
 	expectedName = manifest["name"]
-	if expectedName != os.path.basename(os.path.dirname(submissionFilePath)):
+	idInPath = os.path.basename(os.path.dirname(submissionFilePath))
+	if expectedName != idInPath:
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(expectedName)
 	if expectedName != submission['addonId']:
-		yield ValidationErrorMessage.ID.value.format(expectedName)
+		yield ValidationErrorMessage.ID.value.format(expectedName, submission['addonId'])
 
 
 VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
@@ -201,11 +203,15 @@ def checkVersions(
 ) -> ValidationErrorGenerator:
 	"""Check submitted json file name matches the *.nvda-addon manifest name field.
 	"""
-	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
-		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
+	expectedVersion = manifest['version']
+	if expectedVersion != os.path.splitext(os.path.basename(submissionFilePath))[0]:
+		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(expectedVersion)
 
-	if parseVersionStr(manifest['version']) != submission['addonVersion']:
-		yield ValidationErrorMessage.VERSION.value.format(manifest['version'])
+	if parseVersionStr(expectedVersion) != submission['addonVersion']:
+		yield ValidationErrorMessage.VERSION.value.format(
+			expectedVersion,
+			".".join(str(x) for x in submission['addonVersion'].values())
+		)
 
 
 def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
