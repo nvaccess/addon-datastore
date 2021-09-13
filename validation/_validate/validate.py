@@ -38,7 +38,7 @@ class ValidationErrorMessage(enum.Enum):
 	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
 	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
 	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
-	VERSION = "Submission data 'addonVersion' field does not match 'version' field in addon manifest {} vs {}"
+	VERSION = "Submission data 'addonVersionName' field does not match 'version' field in addon manifest {} vs {}"
 	ID = "Submission data 'addonId' field does not match 'name' field in addon manifest {} vs {}"
 
 	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
@@ -207,10 +207,10 @@ def checkVersions(
 	if expectedVersion != os.path.splitext(os.path.basename(submissionFilePath))[0]:
 		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(expectedVersion)
 
-	if parseVersionStr(expectedVersion) != submission['addonVersion']:
+	if parseVersionStr(expectedVersion) != submission['addonVersionNumber']:
 		yield ValidationErrorMessage.VERSION.value.format(
 			expectedVersion,
-			".".join(str(x) for x in submission['addonVersion'].values())
+			".".join(str(x) for x in submission['addonVersionNumber'].values())
 		)
 
 

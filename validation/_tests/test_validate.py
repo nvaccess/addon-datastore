@@ -307,7 +307,7 @@ class validate_checkVersions(unittest.TestCase):
 	def test_JsonDoesntMatchManifest(self):
 		""" Error expected when JSON data 'addonVersion' does not match manifest version.
 		"""
-		self.submissionData['addonVersion'] = {
+		self.submissionData['addonVersionNumber'] = {
 			"major": 12,
 			"minor": 2,
 			"patch": 0
