@@ -5,7 +5,7 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import unittest
-from mock import patch
+from unittest.mock import patch
 import os
 import json
 from jsonschema import exceptions
@@ -255,7 +255,7 @@ class TestValidate(unittest.TestCase):
 		)
 		self.assertEqual(errors, [])
 
-	def test_checkVersionMatchesFilename_invalid(self):
+	def test_checkVersionMatches_invalidFilename(self):
 		""" Error expected when fileName does not match manifest version
 
 		Manifest considered source of truth.
