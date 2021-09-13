@@ -79,7 +79,7 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 		)
 		self.assertEqual(
 			errors,
-			[validate.ValidationErrorMessage.URL_MISSING_HTTPS.value]
+			["Add-on download url must start with https://"]
 		)
 
 	def test_missingExt(self):
@@ -89,7 +89,7 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 		)
 		self.assertEqual(
 			errors,
-			[validate.ValidationErrorMessage.URL_MISSING_ADDON_EXT.value]
+			["Add-on download url must end with .nvda-addon"]
 		)
 
 	def test_missingHTTPsAndExt(self):
@@ -100,8 +100,8 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				validate.ValidationErrorMessage.URL_MISSING_HTTPS.value,
-				validate.ValidationErrorMessage.URL_MISSING_ADDON_EXT.value,
+				"Add-on download url must start with https://",
+				"Add-on download url must end with .nvda-addon",
 			]
 		)
 
@@ -131,11 +131,9 @@ class Validate_checkSha256(unittest.TestCase):
 			expectedSha='abc'
 		)
 		errors = list(errors)
-		expectedErrorMessage = validate.ValidationErrorMessage.CHECKSUM_FAILURE.value
-		actualSha = self.validSha.lower()
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(actualSha)]
+			[f"Sha256 of .nvda-addon at URL is: {self.validSha.lower()}"]
 		)
 
 
@@ -160,10 +158,12 @@ class Validate_checkSummaryMatchesDisplayName(unittest.TestCase):
 		errors = list(
 			validate.checkSummaryMatchesDisplayName(self.manifest, self.submissionData)
 		)
-		expectedErrorMessage = validate.ValidationErrorMessage.NAME.value
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(self.manifest["summary"], badDisplayName)]
+			[
+				f"Submission 'displayName' must be set to '{self.manifest['summary']}' in json file."
+				f" Instead got: '{badDisplayName}'"
+			]
 		)
 
 
@@ -188,10 +188,12 @@ class Validate_checkDescriptionMatches(unittest.TestCase):
 		errors = list(
 			validate.checkDescriptionMatches(self.manifest, self.submissionData)
 		)
-		expectedErrorMessage = validate.ValidationErrorMessage.DESC.value
 		self.assertEqual(
 			errors,
-			[expectedErrorMessage.format(self.manifest["description"], badDesc)]
+			[
+				f"Submission 'description' must be set to '{self.manifest['description']}' in json file."
+				f" Instead got: '{badDesc}'"
+			]
 		)
 
 
@@ -216,7 +218,11 @@ class Validate_checkAddonId(unittest.TestCase):
 		errors = list(
 			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-		self.assertEqual(errors, [])
+		self.assertEqual(
+			[  # expected errors
+			],
+			errors
+		)
 
 	def test_invalidPath(self):
 		""" Error when submission path does not include correct addon ID
@@ -225,10 +231,14 @@ class Validate_checkAddonId(unittest.TestCase):
 		errors = list(
 			validate.checkAddonId(self.manifest, filename, self.submissionData)
 		)
-		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
 		self.assertEqual(
-			errors,
-			[expectedErrorMessage.format(self.manifest['name'])]
+			[  # expected errors
+				(  # invalidPathError
+					"Submitted json file must be placed in a folder matching"
+					f" the addonId/name '{self.manifest['name']}'"
+				),
+			],
+			errors
 		)
 
 	def test_invalidJSONData(self):
@@ -239,9 +249,14 @@ class Validate_checkAddonId(unittest.TestCase):
 		errors = list(
 			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-		expectedErrorMessage = validate.ValidationErrorMessage.ID.value
+
 		self.assertEqual(
-			[expectedErrorMessage.format(VALID_ADDON_ID, invalidID)],
+			[  # expected errors
+				(  # idMismatchError
+					"Submission data 'addonId' field does not match 'name' field"
+					f" in addon manifest: {VALID_ADDON_ID} vs {invalidID}"
+				)
+			],
 			errors
 		)
 
@@ -253,18 +268,22 @@ class Validate_checkAddonId(unittest.TestCase):
 		errors = list(
 			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-		pathMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value
-		addonIdMessage = validate.ValidationErrorMessage.ID.value
+
 		self.assertEqual(
-			[
-				pathMessage.format(expectedAddonId),
-				addonIdMessage.format(expectedAddonId, "fake"),
+			[  # expected errors
+				(  # submissionPathIncorrect
+					f"Submitted json file must be placed in a folder matching the addonId/name '{expectedAddonId}'"
+				),
+				(  # idMismatch
+					"Submission data 'addonId' field does not match 'name' field"
+					f" in addon manifest: {expectedAddonId} vs {'fake'}"
+				),
 			],
 			errors
 		)
 
 
-class validate_checkVersions(unittest.TestCase):
+class validate_checkVersions_old(unittest.TestCase):
 	"""Tests for the checkVersions function.
 
 		Manifest considered source of truth.
@@ -284,11 +303,10 @@ class validate_checkVersions(unittest.TestCase):
 	def test_valid(self):
 		"""No error when manifest version, submission file name, and submission contents all agree.
 		"""
-
 		errors = list(
 			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-		self.assertEqual(errors, [])
+		self.assertEqual([], errors)
 
 	def test_invalidFilename(self):
 		""" Error expected when fileName does not match manifest version
@@ -298,10 +316,13 @@ class validate_checkVersions(unittest.TestCase):
 			validate.checkVersions(self.manifest, filename, self.submissionData)
 		)
 		expectedVersion = self.manifest['version']
-		expectedErrorMessage = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
 		self.assertEqual(
+			[  # expected errors
+				(  # invalidFilename
+					f"Submitted json file should be named '{expectedVersion}.json'"
+				),
+			],
 			errors,
-			[expectedErrorMessage.format(expectedVersion)]
 		)
 
 	def test_JsonDoesntMatchManifest(self):
@@ -317,9 +338,13 @@ class validate_checkVersions(unittest.TestCase):
 		errors = list(
 			validate.checkVersions(self.manifest, submissionPath, self.submissionData)
 		)
-		expectedErrorMessage = validate.ValidationErrorMessage.VERSION.value
 		self.assertEqual(
-			[expectedErrorMessage.format(expectedVersion, "12.2.0")],
+			[  # expected errors
+				(  # versionMismatch
+					"Submission data 'addonVersionName' field does not match 'version'"
+					f" field in addon manifest {expectedVersion} vs {'12.2.0'}"
+				),
+			],
 			errors
 		)
 
@@ -333,16 +358,17 @@ class validate_checkVersions(unittest.TestCase):
 		errors = list(
 			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
 		)
-
-		fileNameError = validate.ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value
-		versionError = validate.ValidationErrorMessage.VERSION.value
-
 		self.assertEqual(
-			errors,
-			[
-				fileNameError.format(expectedVersion),
-				versionError.format(expectedVersion, "13.0.0")
-			]
+			[  # expected errors
+				(  # fileNameError
+					f"Submitted json file should be named '{expectedVersion}.json'"
+				),
+				(  # versionError
+					"Submission data 'addonVersionName' field does not match 'version' field"
+					f" in addon manifest {expectedVersion} vs {'13.0.0'}"
+				),
+			],
+			errors
 		)
 
 
