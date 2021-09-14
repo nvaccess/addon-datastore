@@ -191,6 +191,57 @@ def parseVersionStr(ver: str) -> typing.Dict[str, int]:
 	return version
 
 
+def _formatVersionString(versionValues: typing.Iterable) -> str:
+	versionValues = list(versionValues)
+	assert 1 < len(versionValues) < 4
+	return ".".join(
+		str(x) for x in versionValues
+	)
+
+
+def checkSubmissionFilenameMatchesVersionNumber(
+		submissionFilePath: str,
+		submission: JsonObjT,
+) -> ValidationErrorGenerator:
+	versionFromPath: str = os.path.splitext(os.path.basename(submissionFilePath))[0]
+	versionNumber: JsonObjT = submission['addonVersionNumber']
+	formattedVersionNumber = _formatVersionString(versionNumber.values())
+	if versionFromPath != formattedVersionNumber:
+		# yield f"Submitted json file should be named '{formattedVersionNumber}.json'"
+		yield (
+			"Submission filename and versionNumber mismatch error:"
+			f" versionNumberField: {formattedVersionNumber}"
+			f" version from submission filename: {versionFromPath}"
+			f" expected submission filename: {formattedVersionNumber}.json"
+		)
+
+
+def checkParsedVersionNameMatchesVersionNumber(
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	versionNumber: JsonObjT = submission['addonVersionNumber']
+	versionName: str = submission['addonVersionName']
+	parsedVersion = parseVersionStr(versionName)
+	if parsedVersion != versionNumber:
+		yield (
+			"Warning: submission data 'addonVersionName' and 'addonVersionNumber' mismatch."
+			f"  Unable to parse: {versionName} and match with {_formatVersionString(versionNumber.values())}"
+		)
+
+
+def checkManifestVersionMatchesVersionName(
+		manifest: AddonManifest,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	manifestVersion: str = manifest["version"]
+	addonVersionName: str = submission["addonVersionName"]
+	if manifestVersion != addonVersionName:
+		yield (
+			"Submission data 'addonVersionName' field does not match 'version' field in"
+			f" addon manifest: {manifestVersion} vs addonVersionName: {addonVersionName}"
+		)
+
+
 def checkVersions(
 		manifest: AddonManifest,
 		submissionFilePath: str,
@@ -198,16 +249,12 @@ def checkVersions(
 ) -> ValidationErrorGenerator:
 	"""Check submitted json file name matches the *.nvda-addon manifest name field.
 	"""
-	expectedVersion = manifest['version']
-	if expectedVersion != os.path.splitext(os.path.basename(submissionFilePath))[0]:
-		yield f"Submitted json file should be named '{expectedVersion}.json'"
-
-	if parseVersionStr(expectedVersion) != submission['addonVersionNumber']:
-		formatedVersionNumber = ".".join(str(x) for x in submission['addonVersionNumber'].values())
-		yield (
-			"Submission data 'addonVersionName' field does not match 'version' field in"
-			f" addon manifest {expectedVersion} vs {formatedVersionNumber}"
-		)
+	yield from checkSubmissionFilenameMatchesVersionNumber(
+		submissionFilePath,
+		submission
+	)
+	yield from checkManifestVersionMatchesVersionName(manifest, submission)
+	yield from checkParsedVersionNameMatchesVersionNumber(submission)
 
 
 def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:

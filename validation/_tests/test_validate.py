@@ -3,7 +3,7 @@
 # Copyright (C) 2021 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
-
+from dataclasses import dataclass
 import unittest
 from unittest.mock import patch
 import os
@@ -13,7 +13,6 @@ from _validate import validate, addonManifest
 
 
 VALID_ADDON_ID = "fake"
-VALID_ADDON_VER = '13.0'
 
 JSON_SCHEMA = validate.JSON_SCHEMA
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -21,7 +20,7 @@ SOURCE_DIR = os.path.dirname(TOP_DIR)
 TEST_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testData')
 ADDON_PACKAGE = os.path.join(TEST_DATA_PATH, f'{VALID_ADDON_ID}.nvda-addon')
 ADDON_SUBMISSIONS_DIR = os.path.join(TEST_DATA_PATH, 'addons')
-VALID_SUBMISSION_JSON_FILE = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f'{VALID_ADDON_VER}.json')
+VALID_SUBMISSION_JSON_FILE = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, '13.0.0.json')
 MANIFEST_FILE = os.path.join(TEST_DATA_PATH, 'manifest.ini')
 
 
@@ -283,13 +282,28 @@ class Validate_checkAddonId(unittest.TestCase):
 		)
 
 
-class validate_checkVersions_old(unittest.TestCase):
+@dataclass
+class VersionNumber:
+	major: int = 0
+	minor: int = 0
+	patch: int = 0
+
+
+class Validate_checkVersions(unittest.TestCase):
 	"""Tests for the checkVersions function.
 
-		Manifest considered source of truth.
-		Must match:
-		- Submission file name '<addonID>/<version>.json'
-		- `addonVersionField` within the submission JSON data
+		The following are considered:
+		- A: Submission file name '<addonID>/<version>.json'
+		- B: `addonVersionNumber` field within the submission JSON data
+		- C: `addonVersionName` field within the submission JSON data
+		- D: Manifest addon version name
+
+		Constraints:
+		- The submission file name (A) must be a string representation of the `addonVersionNumber` field (B)
+			(fully qualified) eg '21.3.0.json'
+		- The `addonVersionName` field (C) must match the manifest version name (D)
+		- The `addonVersionName` field can be parsed as 2 or 3 digits,
+			which match the `addonVersionNumber` field (B)
 	"""
 	def setUp(self):
 		self.submissionData = getValidAddonSubmission()
@@ -300,73 +314,192 @@ class validate_checkVersions_old(unittest.TestCase):
 		self.submissionData = None
 		self.manifest = None
 
-	def test_valid(self):
-		"""No error when manifest version, submission file name, and submission contents all agree.
+	@staticmethod
+	def _getVersionString(version: VersionNumber):
+		return f"{version.major}.{version.minor}.{version.patch}"
+
+	def _setupVersions(
+			self,
+			submissionFileNameVer: str,
+			versionNum: VersionNumber,
+			versionName: str,
+			manifestVersion: str
+	):
+		"""Mutate instance variables for testing convenience
 		"""
+		self.fileName = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f"{submissionFileNameVer}.json")
+		self.submissionData["addonVersionNumber"]["major"] = versionNum.major
+		self.submissionData["addonVersionNumber"]["minor"] = versionNum.minor
+		self.submissionData["addonVersionNumber"]["patch"] = versionNum.patch
+		self.submissionData["addonVersionName"] = versionName
+		self.manifest["version"] = manifestVersion
+
+	def test_valid(self):
+		"""No error when:
+			- manifest version matches submission addonVersionName
+			- submission file name matches submission addonVersionNumber (fully qualified)
+			- submission addonVersionName can be parsed and matches addonVersionNumber
+		"""
+		versionName = "13.6.5"
+		self._setupVersions(
+			submissionFileNameVer=versionName,
+			versionNum=VersionNumber(13, 6, 5),
+			versionName=versionName,
+			manifestVersion=versionName
+		)
 		errors = list(
-			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
 		)
 		self.assertEqual([], errors)
 
-	def test_invalidFilename(self):
-		""" Error expected when fileName does not match manifest version
+	def test_fileNameMustMatchVerNum(self):
+		""" Error expected when fileName is not a fully qualified (trailing zero's included),
+		dot separated representation of the addonVersionNumber: eg '21.3.0.json'
 		"""
-		filename = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, "12.2.json")
-		errors = list(
-			validate.checkVersions(self.manifest, filename, self.submissionData)
+		versionName = "13.06"
+		self._setupVersions(
+			submissionFileNameVer=versionName,  # expect "13.6.0"
+			versionNum=VersionNumber(13, 6),
+			versionName=versionName,
+			manifestVersion=versionName
 		)
-		expectedVersion = self.manifest['version']
-		self.assertEqual(
-			[  # expected errors
-				(  # invalidFilename
-					f"Submitted json file should be named '{expectedVersion}.json'"
-				),
-			],
-			errors,
-		)
-
-	def test_JsonDoesntMatchManifest(self):
-		""" Error expected when JSON data 'addonVersion' does not match manifest version.
-		"""
-		self.submissionData['addonVersionNumber'] = {
-			"major": 12,
-			"minor": 2,
-			"patch": 0
-		}
-		submissionPath = os.path.join(ADDON_SUBMISSIONS_DIR, VALID_ADDON_ID, f'{VALID_ADDON_VER}.json')
-		expectedVersion = self.manifest['version']
 		errors = list(
-			validate.checkVersions(self.manifest, submissionPath, self.submissionData)
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
 		)
 		self.assertEqual(
 			[  # expected errors
-				(  # versionMismatch
-					"Submission data 'addonVersionName' field does not match 'version'"
-					f" field in addon manifest {expectedVersion} vs {'12.2.0'}"
-				),
+				'Submission filename and versionNumber mismatch error:'
+				' versionNumberField: 13.6.0'
+				' version from submission filename: 13.06'
+				' expected submission filename: 13.6.0.json'
 			],
 			errors
 		)
 
-	def test_invalidJSONDataAndFileName(self):
-		""" Error expected when JSON data 'addonVersion' does not match manifest version.
+	def test_fileNameMustUseFullyQualifiedVersion(self):
+		"""Error expected when fileName is not a fully qualified (trailing zero's included),
+		dot separated representation of the addonVersionNumber: eg '21.3.0.json'
 		"""
-		# update the manifest version so that both the submission file name, and it's contents are considered
-		# invalid.
-		expectedVersion = "13.2.1"
-		self.manifest['version'] = expectedVersion
+		versionName = "13.6"
+		self._setupVersions(
+			submissionFileNameVer=versionName,  # expect "13.6.0"
+			versionNum=VersionNumber(13, 6),
+			versionName=versionName,
+			manifestVersion=versionName
+		)
 		errors = list(
-			validate.checkVersions(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
 		)
 		self.assertEqual(
 			[  # expected errors
-				(  # fileNameError
-					f"Submitted json file should be named '{expectedVersion}.json'"
-				),
-				(  # versionError
+				'Submission filename and versionNumber mismatch error:'
+				' versionNumberField: 13.6.0'
+				' version from submission filename: 13.6'
+				' expected submission filename: 13.6.0.json'
+			],
+			errors
+		)
+
+	def test_dateBasedVersionNameValid(self):
+		""" Date based version in manifest is ok. Add-ons use this scheme.
+		"""
+		self._setupVersions(
+			submissionFileNameVer='13.6.0',
+			versionNum=VersionNumber(13, 6),
+			versionName="13.06",
+			manifestVersion="13.06"
+		)
+		errors = list(
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
+		)
+		self.assertEqual(
+			[],
+			errors,
+		)
+
+	def test_dateBasedWithPatchVersionNameValid(self):
+		""" Date based version in manifest is ok. Add-ons use this scheme.
+		"""
+		self._setupVersions(
+			submissionFileNameVer='13.6.5',
+			versionNum=VersionNumber(13, 6, 5),
+			versionName="13.06.5",
+			manifestVersion="13.06.5"
+		)
+		errors = list(
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
+		)
+		self.assertEqual(
+			[],
+			errors
+		)
+
+	def test_unparseableVersionName(self):
+		""" Error when versionName include characters unable to be parsed to numeric form.
+		These situations will need to be considered manually.
+		"""
+		self._setupVersions(
+			submissionFileNameVer='13.6.0',
+			versionNum=VersionNumber(13, 6),
+			versionName="13.06-NG",
+			manifestVersion="13.06-NG"
+		)
+		errors = list(
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
+		)
+		self.assertEqual(
+			[  # expected errors
+				(
+					"Warning: submission data 'addonVersionName' and 'addonVersionNumber' "
+					'mismatch.  Unable to parse: 13.06-NG and match with 13.6.0'
+				)
+			],
+			errors
+		)
+
+	def test_nonNumericVersionName(self):
+		""" Error when versionName include characters unable to be parsed to numeric form.
+		These situations will need to be considered manually.
+		"""
+		versionName = "June Release '21"
+		self._setupVersions(
+			submissionFileNameVer='13.6.0',
+			versionNum=VersionNumber(13, 6),
+			versionName=versionName,
+			manifestVersion=versionName
+		)
+		errors = list(
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
+		)
+		self.assertEqual(
+			[  # expected errors
+				(
+					"Warning: submission data 'addonVersionName' and 'addonVersionNumber' "
+					"mismatch.  Unable to parse: June Release '21 and match with 13.6.0"
+				)
+			],
+			errors
+		)
+
+	def test_versionNameMustMatchManifest(self):
+		""" Ensure there is no mistake with the release submission, the submission addonVersionName must match
+		the version field from the manifest.
+		"""
+		self._setupVersions(
+			submissionFileNameVer="12.2.0",
+			versionNum=VersionNumber(12, 2),
+			versionName="12.2",
+			manifestVersion="13.2"
+		)
+		errors = list(
+			validate.checkVersions(self.manifest, self.fileName, self.submissionData)
+		)
+		self.assertEqual(
+			[  # expected errors
+				(
 					"Submission data 'addonVersionName' field does not match 'version' field"
-					f" in addon manifest {expectedVersion} vs {'13.0.0'}"
-				),
+					" in addon manifest: 13.2 vs addonVersionName: 12.2"
+				)
 			],
 			errors
 		)
