@@ -1,0 +1,67 @@
+{
+	"type": "array",
+	"items": { "$ref": "#/$defs/NVDAVersionInfo" },
+	"$defs": {
+		"NVDAVersionInfo": {
+			"examples": [
+				{
+					"NVDAVersion": "2019.3",
+					"apiVer": "2019.3",
+					"backCompatTo": "2019.3"
+				},
+				{
+					"NVDAVersion": "2020.1",
+					"apiVer": "2020.1",
+					"backCompatTo": "2019.3"
+				},
+				{
+					"NVDAVersion": "2020.1.1",
+					"apiVer": "2020.1",
+					"backCompatTo": "2019.3"
+				},
+				{
+					"NVDAVersion": "2021.1",
+					"apiVer": "2021.1",
+					"backCompatTo": "2021.1"
+				}
+			],
+			"required": [
+				"NVDAVersion",
+				"apiVer",
+				"backCompatTo"
+			],
+			"properties": {
+				"NVDAVersion": {
+					"$id": "#/$defs/NVDAVersionInfo/properties/NVDAVersion",
+					"type": "string",
+					"description": "The NVDA version (major.minor[.patch]).",
+					"title": "The NVDA version number",
+					"examples": [
+						"2020.1",
+						"2021.1.1"
+					]
+				},
+				"apiVer": {
+					"$id": "#/$defs/NVDAVersionInfo/properties/apiVer",
+					"type": "string",
+					"description": "The NVDA API version that this NVDA version uses (major.minor[.patch]).",
+					"title": "The NVDA API version number",
+					"examples": [
+						"2020.1",
+						"2021.1.1"
+					]
+				},
+				"backCompatTo": {
+					"$id": "#/$defs/NVDAVersionInfo/properties/backCompatTo",
+					"type": "string",
+					"description": "The NVDA API version that this NVDA version is backwards compatible to (major.minor[.patch]).",
+					"title": "The backwards compatibility API version",
+					"examples": [
+						"2020.1",
+						"2021.1.1"
+					]
+				}
+			}
+		}
+	}
+}
