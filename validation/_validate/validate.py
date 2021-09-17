@@ -5,8 +5,8 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import argparse
-import enum
 import os
+import re
 import tempfile
 import typing
 import zipfile
@@ -27,19 +27,6 @@ JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json"
 TEMP_DIR = tempfile.gettempdir()
 
 JsonObjT = typing.Dict[str, typing.Any]
-
-
-@enum.unique
-class ValidationErrorMessage(enum.Enum):
-	URL_MISSING_HTTPS = "Add-on download url must start with https://"
-	URL_MISSING_ADDON_EXT = "Add-on download url must end with .nvda-addon"
-	URL_DOWNLOAD_ERROR = "Download of addon failed"
-	CHECKSUM_FAILURE = "Sha256 of .nvda-addon at URL is: {}"
-	NAME = "Submission 'displayName' must be set to '{}' in json file. Instead got: '{}'"
-	DESC = "Submission 'description' must be set to '{}' in json file. Instead got: '{}'"
-	HOMEPAGE = "Submission 'homepage' must be set to '{}' in json file"
-	SUBMISSION_DIR_ADDON_NAME = "Submitted json file must be placed in {} folder."
-	SUBMISSION_DIR_ADDON_VER = "Submitted json file should be named {}.json"
 
 
 ValidationErrorGenerator = typing.Generator[str, None, None]
@@ -75,9 +62,9 @@ def checkDownloadUrlFormat(url: str) -> ValidationErrorGenerator:
 	Raise on failure
 	"""
 	if not url.startswith("https://"):
-		yield ValidationErrorMessage.URL_MISSING_HTTPS.value
+		yield "Add-on download url must start with https://"
 	if not url.endswith(".nvda-addon"):
-		yield ValidationErrorMessage.URL_MISSING_ADDON_EXT.value
+		yield "Add-on download url must end with .nvda-addon"
 
 
 def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
@@ -87,7 +74,7 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 	DOWNLOAD_BLOCK_SIZE = 8192  # 8 kb
 	remote = urllib.request.urlopen(url)
 	if remote.code != 200:
-		yield ValidationErrorMessage.URL_DOWNLOAD_ERROR.value
+		yield "Download of addon failed"
 		raise RuntimeError(f"Unable to download from {url}, HTTP response status code: {remote.code}")
 	size = int(remote.headers["content-length"])
 	with open(destPath, "wb") as local:
@@ -112,7 +99,7 @@ def checkSha256(addonPath: str, expectedSha: str) -> ValidationErrorGenerator:
 	with open(addonPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
 	if sha256Addon.upper() != expectedSha.upper():
-		yield ValidationErrorMessage.CHECKSUM_FAILURE.value.format(sha256Addon)
+		yield f"Sha256 of .nvda-addon at URL is: {sha256Addon}"
 
 
 def getAddonManifest(addonPath: str) -> AddonManifest:
@@ -136,35 +123,138 @@ def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT
 	"""
 	summary = manifest["summary"]
 	if summary != submission["displayName"]:
-		yield ValidationErrorMessage.NAME.value.format(summary, submission["displayName"])
+		yield (
+			f"Submission 'displayName' must be set to '{summary}' in json file."
+			f" Instead got: '{submission['displayName']}'"
+		)
 
 
 def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	""" The submission description must match the *.nvda-addon manifest description field."""
 	description = manifest["description"]
 	if description != submission["description"]:
-		yield ValidationErrorMessage.DESC.value.format(description, submission["description"])
+		yield (
+			f"Submission 'description' must be set to '{description}' in json file."
+			f" Instead got: '{submission['description']}'"
+		)
 
 
 def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	""" The submission homepage must match the *.nvda-addon manifest url field.
 	"""
 	if manifest["url"] != submission["homepage"]:
-		yield ValidationErrorMessage.HOMEPAGE.value.format(manifest['url'])
+		yield f"Submission 'homepage' must be set to '{manifest['url']}' in json file"
 
 
-def checkNameMatchesPath(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
+def checkAddonId(
+		manifest: AddonManifest,
+		submissionFilePath: str,
+		submission: JsonObjT,
+) -> ValidationErrorGenerator:
 	"""  The submitted json file must be placed in a folder matching the *.nvda-addon manifest name field.
 	"""
-	if manifest["name"] != os.path.basename(os.path.dirname(submissionFilePath)):
-		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_NAME.value.format(manifest['name'])
+	expectedName = manifest["name"]
+	idInPath = os.path.basename(os.path.dirname(submissionFilePath))
+	if expectedName != idInPath:
+		yield (
+			"Submitted json file must be placed in a folder matching"
+			f" the addonId/name '{expectedName}'"
+		)
+	if expectedName != submission['addonId']:
+		yield (
+			"Submission data 'addonId' field does not match 'name' field in addon manifest:"
+			f" {expectedName} vs {submission['addonId']}"
+		)
 
 
-def checkVersionMatchesFilename(manifest: AddonManifest, submissionFilePath: str) -> ValidationErrorGenerator:
+VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
+
+
+def parseVersionStr(ver: str) -> typing.Dict[str, int]:
+
+	matches = VERSION_PARSE.match(ver)
+	if not matches:
+		return {
+			"major": 0,
+			"minor": 0,
+			"patch": 0
+		}
+
+	groups = list(x for x in matches.groups() if x)
+	groups.extend([0, 0])  # ensure there are enough elements (smallest match is a single value)
+	version = {
+		"major": int(groups[0]),
+		"minor": int(groups[1]),
+		"patch": int(groups[2])
+	}
+
+	return version
+
+
+def _formatVersionString(versionValues: typing.Iterable) -> str:
+	versionValues = list(versionValues)
+	assert 1 < len(versionValues) < 4
+	return ".".join(
+		str(x) for x in versionValues
+	)
+
+
+def checkSubmissionFilenameMatchesVersionNumber(
+		submissionFilePath: str,
+		submission: JsonObjT,
+) -> ValidationErrorGenerator:
+	versionFromPath: str = os.path.splitext(os.path.basename(submissionFilePath))[0]
+	versionNumber: JsonObjT = submission['addonVersionNumber']
+	formattedVersionNumber = _formatVersionString(versionNumber.values())
+	if versionFromPath != formattedVersionNumber:
+		# yield f"Submitted json file should be named '{formattedVersionNumber}.json'"
+		yield (
+			"Submission filename and versionNumber mismatch error:"
+			f" versionNumberField: {formattedVersionNumber}"
+			f" version from submission filename: {versionFromPath}"
+			f" expected submission filename: {formattedVersionNumber}.json"
+		)
+
+
+def checkParsedVersionNameMatchesVersionNumber(
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	versionNumber: JsonObjT = submission['addonVersionNumber']
+	versionName: str = submission['addonVersionName']
+	parsedVersion = parseVersionStr(versionName)
+	if parsedVersion != versionNumber:
+		yield (
+			"Warning: submission data 'addonVersionName' and 'addonVersionNumber' mismatch."
+			f"  Unable to parse: {versionName} and match with {_formatVersionString(versionNumber.values())}"
+		)
+
+
+def checkManifestVersionMatchesVersionName(
+		manifest: AddonManifest,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	manifestVersion: str = manifest["version"]
+	addonVersionName: str = submission["addonVersionName"]
+	if manifestVersion != addonVersionName:
+		yield (
+			"Submission data 'addonVersionName' field does not match 'version' field in"
+			f" addon manifest: {manifestVersion} vs addonVersionName: {addonVersionName}"
+		)
+
+
+def checkVersions(
+		manifest: AddonManifest,
+		submissionFilePath: str,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
 	"""Check submitted json file name matches the *.nvda-addon manifest name field.
 	"""
-	if manifest['version'] != os.path.splitext(os.path.basename(submissionFilePath))[0]:
-		yield ValidationErrorMessage.SUBMISSION_DIR_ADDON_VER.value.format(manifest['version'])
+	yield from checkSubmissionFilenameMatchesVersionNumber(
+		submissionFilePath,
+		submission
+	)
+	yield from checkManifestVersionMatchesVersionName(manifest, submission)
+	yield from checkParsedVersionNameMatchesVersionNumber(submission)
 
 
 def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
@@ -193,8 +283,8 @@ def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
 		yield from checkSummaryMatchesDisplayName(manifest, submissionData)
 		yield from checkDescriptionMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
-		yield from checkNameMatchesPath(manifest, submissionFilePath)
-		yield from checkVersionMatchesFilename(manifest, submissionFilePath)
+		yield from checkAddonId(manifest, submissionFilePath, submissionData)
+		yield from checkVersions(manifest, submissionFilePath, submissionData)
 
 	except Exception as e:
 		yield f"Fatal error, unable to continue: {e}"
