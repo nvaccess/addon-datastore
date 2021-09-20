@@ -47,9 +47,10 @@ jobs:
         python -m pip install --upgrade pip
         cd transform
         pip install -r requirements.txt
-        cd src
-        python -m transform ../NVDAVersions.json ../../data/addons ../../views/views/en
-        cd ../../views
+        python -m src.transform NVDAVersions.json ../data/addons ../views/views/en
+        copy NVDAVersions.json  ../views/NVDAVersions.json
+        copy ./docs/output.md  ../views/output.md
+        cd ../views
         git remote set-url origin git@github.com:nvaccess/addon-store-submission.git
         git config user.name github-actions
         git config user.email github-actions@github.com
