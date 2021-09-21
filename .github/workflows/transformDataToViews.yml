@@ -38,10 +38,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x86
-    - name: Install SSH Client and set deploy key
-      uses: webfactory/ssh-agent@v0.5.3  # https://github.com/webfactory/ssh-agent
-      with:
-        ssh-private-key: ${{ secrets.DEPLOY_KEY }}
     - name: Run transformation and push
       run: |
         python -m pip install --upgrade pip
