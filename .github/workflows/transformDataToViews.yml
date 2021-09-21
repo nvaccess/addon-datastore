@@ -42,7 +42,7 @@ jobs:
         python -m pip install --upgrade pip
         cd transform
         pip install -r requirements.txt
-        python -m src.transform NVDAVersions.json ../data/addons ../views/views/en
+        python -m src.transform --log-level DEBUG NVDAVersions.json ../data/addons ../views/views/en
         copy NVDAVersions.json  ../views/NVDAVersions.json
         copy ./docs/output.md  ../views/output.md
         cd ../views
