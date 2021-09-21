@@ -46,7 +46,6 @@ jobs:
         copy NVDAVersions.json  ../views/NVDAVersions.json
         copy ./docs/output.md  ../views/output.md
         cd ../views
-        git remote set-url origin git@github.com:nvaccess/addon-store-submission.git
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
