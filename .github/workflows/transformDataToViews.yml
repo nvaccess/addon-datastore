@@ -1,0 +1,54 @@
+# https://github.com/nvaccess/transformAddonDataToViews/
+
+name: Transform NVDA addons to views
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths:
+      - addons/**
+
+jobs:
+  transformAndPush:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+    steps:
+    - name: Checkout addon data
+      uses: actions/checkout@v2
+      with:
+        repository: nvaccess/addon-store-submission
+        path: data
+    - name: Checkout views branch into separate folder
+      uses: actions/checkout@v2
+      with:
+        repository: nvaccess/addon-store-submission
+        path: views
+        ref: views
+    - name: Checkout transformation repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvaccess/transformAddonDataToViews
+        path: transform
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x86
+    - name: Run transformation and push
+      run: |
+        python -m pip install --upgrade pip
+        cd transform
+        pip install -r requirements.txt
+        python -m src.transform NVDAVersions.json ../data/addons ../views/views/en
+        copy NVDAVersions.json  ../views/NVDAVersions.json
+        copy ./docs/output.md  ../views/output.md
+        cd ../views
+        git remote set-url origin git@github.com:nvaccess/addon-store-submission.git
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "$(date)"
+        git push
