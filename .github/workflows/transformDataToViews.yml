@@ -47,6 +47,7 @@ jobs:
       run: |
         copy ./transform/NVDAVersions.json ./views/NVDAVersions.json
         copy ./transform/docs/output.md ./views/output.md
+        copy ./data/readme.md ./views/readme.md
     - name: Commit and push
       run: |
         cd views
