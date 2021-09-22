@@ -33,6 +33,8 @@ The checksum allows NVDA to ensure that addon releases are immutable.
 ### Non-exclusivity
 This proposal does not intend to restrict add-on authors from developing, publishing, and distributing an add-on outside this store.
 NVDA will still allow local installation from a `*.nvda-addon` file.
+The data hosted here is distributed under the [ODC-PDDL](https://opendatacommons.org/licenses/pddl/1-0/) license.
+A plain language summary can be found [here](https://opendatacommons.org/licenses/pddl/summary/).
 
 ## Too Long; Didn't Read for Addon authors
 With this proposal if an addon author wishes to submit their addon to be visible in this addon store they will need to:
@@ -54,12 +56,12 @@ You are welcome to review code / UX of addons and provide that feedback directly
   submission made to the Add-on Store.
 - Allow addon authors to easily revoke a version if it is buggy / no longer supported.
   Removed releases are no longer presented in the store, halting new installations.
-- Enable support in the store for multiple versions of an Addon, based on NVDA version.
+- Enable support in the store for multiple versions of an Addon, based on NVDA API version.
   - EG addon version 1.2.5 for NVDA 2019.3 and addon version 1.3.2 for NVDA 2020.1
-- Enable support in the store for 'pre-release' Addons, for instance:
+- Enable support in the store for 'beta' Addons, for instance:
   - Addons being developed against alpha / beta NVDA.
   - Addons that want early feedback from end users.
-  - End users can choose "show me pre-release addons"
+  - End users can choose "show me beta addons"
 
 ## Overview
 
@@ -152,8 +154,9 @@ See https://github.com/nvaccess/validateNvdaAddonMetadata
 
 ## API data generation details
 
-Triggered by a new commit, a GitHub workflow transforms the data into the required views.
-These views of the data will be committed by the GitHub Action to a `views` branch.
+Triggered by a new commit to the `master` branch, a GitHub workflow, [transformAddonDataToViews](https://github.com/nvaccess/transformAddonDataToViews), transforms the data into the required views.
+These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views).
+
 
 ### Overview
 
@@ -165,22 +168,21 @@ This will enable interested parties to generate the same view of the data locall
 This code will have automated tests.
 
 ### Data views
-The following views will only be available on a `views` branch, and located in a `views` folder.
+The following views will only be available on the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views) and located in a `views` folder.
 Required transformations of the data:
-- `/NVDA API Version/addon-1-ID/release.json`
-- `/NVDA API Version/addon-1-ID/pre-rel.json`
-- `/NVDA API Version/addon-2-ID/release.json`
-- `/NVDA API Version/all.json`
+- `/NVDA API Version/addon-1-ID/stable.json`
+- `/NVDA API Version/addon-1-ID/beta.json`
+- `/NVDA API Version/addon-2-ID/stable.json`
 
 Notes:
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
-- The `pre-rel.json` and `release.json` contain the information necessary for a store entry.
-- The contents of `all.data` is all (pre-release and release) data for this NVDA API version together.
+- The `beta.json` and `stable.json` contain the information necessary for a store entry.
 - The contents for each addon will include all the technical details required for NVDA to download, verify file integrity, and install.
 - The file will include translations (if available) for the displayable metadata.
 
-The simplicity of this is that the NV Access server can just forward these files on directly when asked
-"what are the latest Addons for NVDA API Version X" or "What is the latest version of Addon-ID for NVDA API Version X".
+This simplifies the processing on the hosting (E.G NV Access) server.
+To fetch the latest add-ons for `<NVDA API Version X>`, the server can concatenate the appropriate JSON files that match a glob: `/<NVDA API Version X>/*/stable.json`.
+Similarly, to fetch the latest version of an add-on with `<Addon-ID>` for `<NVDA API Version X>`. The server can return the data at `/<NVDA API Version X>/<addon-ID>/stable.json`.
 Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
 away from GitHub for some reason.
 
@@ -188,4 +190,4 @@ away from GitHub for some reason.
 
 ### Terminology: Addon version vs Addon release
 
-Since this proposal supports pre-release addons, I have tried to avoid using the term "addon release", instead favouring "addon version".
+Since this proposal supports beta addons, I have tried to avoid using the term "addon release", instead favouring "addon version".
