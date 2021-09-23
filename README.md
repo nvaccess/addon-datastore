@@ -1,4 +1,4 @@
-# Add on Store
+# Add-on Store
 
 The intention the add-on store is to improve the end-to-end process and supporting infrastructure for hosting Addons.
 This is the current plan from NV Access, work is ongoing.
