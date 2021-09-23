@@ -12,6 +12,8 @@ on:
 jobs:
   transformAndPush:
     runs-on: windows-latest
+    env:
+      COMMIT_FORMAT: "Auto-generated from %h (%s)"
     strategy:
       matrix:
         python-version: [ 3.8 ]
@@ -51,10 +53,10 @@ jobs:
     - name: Commit and push
       run: |
         cd data
-        Set-Variable -Name "commitMsg" -Value "$(git log ${{ github.sha }} --pretty=reference -1)"
+        Set-Variable -Name "commitMsg" -Value $(git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1)
         cd ../views
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Auto-generated from $(commitMsg)"
+        git commit -m "$commitMsg"
         git push
