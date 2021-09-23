@@ -49,9 +49,11 @@ jobs:
         copy ./transform/docs/output.md ./views/output.md
     - name: Commit and push
       run: |
-        cd views
+        cd data
+        Set-Variable -Name "commitMsg" -Value "$(git log ${{ github.sha }} --pretty=reference -1)"
+        cd ../views
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "$(date)"
+        git commit -m "Auto-generated from $(commitMsg)"
         git push
