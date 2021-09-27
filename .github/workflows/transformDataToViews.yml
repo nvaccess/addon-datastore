@@ -44,7 +44,7 @@ jobs:
         python -m pip install --upgrade pip
         cd transform
         pip install -r requirements.txt
-       # empty the views git folder directory 
+        # empty the views git folder directory 
         Remove-Item ../views/views/en/ -Recurse
         python -m src.transform --loglevel DEBUG NVDAVersions.json ../data/addons ../views/views/en
     - name: Copy files
