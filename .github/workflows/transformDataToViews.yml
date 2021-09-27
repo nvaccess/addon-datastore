@@ -34,7 +34,6 @@ jobs:
       with:
         repository: nvaccess/transformAddonDataToViews
         path: transform
-        ref: add-transformation-code
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
