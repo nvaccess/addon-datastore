@@ -50,7 +50,7 @@ jobs:
         python -m src.transform --loglevel DEBUG NVDAVersions.json ../data/addons ../views/views/en
     - name: Copy files
       run: |
-        copy ./transform/NVDAVersions.json ./views/NVDAVersions.json
+        copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
         copy ./transform/docs/output.md ./views/output.md
         copy ./data/readme.md ./views/readme.md
     - name: Commit and push
