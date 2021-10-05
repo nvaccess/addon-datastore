@@ -6,7 +6,7 @@ The following subdirectories and files are created:
 - `/NVDA API Version/addon-1-ID/stable.json`
 - `/NVDA API Version/addon-1-ID/beta.json`
 - `/NVDA API Version/addon-2-ID/stable.json`
-eg: `/2020.3/nvdaOCR/stable.json`
+eg: `/2020.3.0/nvdaOCR/stable.json`
 
 ## Output file data
 Each addon file is the addon data taken from input that is the latest compatible version, with the given requirements `(NVDA API Version, addon-ID, stable|beta)`.

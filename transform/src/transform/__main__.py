@@ -3,7 +3,7 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 """
-Usage: python -m transform {nvdaVersionsPath} {inputPath} {outputPath} [logLevel]
+Usage: python -m transform {nvdaAPIVersionsPath} {inputPath} {outputPath} [logLevel]
 """
 import argparse
 import logging
@@ -14,8 +14,8 @@ log = logging.getLogger()
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-	dest="nvdaVersionsPath",
-	help="The path to the NVDAVersions.json, see README for full usage."
+	dest="nvdaAPIVersionsPath",
+	help="The path to the nvdaAPIVersions.json, see README for full usage."
 )
 parser.add_argument(
 	dest="sourceDir",
@@ -37,4 +37,4 @@ args = parser.parse_args()
 handler = logging.StreamHandler(sys.stdout)  # always log to stdout
 log.setLevel(args.loglevel)
 log.addHandler(handler)
-runTransformation(args.nvdaVersionsPath, args.sourceDir, args.outputDir)
+runTransformation(args.nvdaAPIVersionsPath, args.sourceDir, args.outputDir)

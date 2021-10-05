@@ -1,0 +1,121 @@
+{
+	"type": "object",
+	"additionalProperties": true,
+	"examples": [
+		{
+			"addonId": "nvdaocr",
+			"addonVersionNumber": {
+				"major": 1,
+				"minor": 3,
+				"patch": 2
+			},
+			"minNVDAVersion": {
+				"major": 2019,
+				"minor": 3,
+				"patch": 0
+			},
+			"lastTestedVersion": {
+				"major": 2020,
+				"minor": 4,
+				"patch": 0
+			},
+			"channel": "stable"
+		}
+	],
+	"required": [
+		"addonId",
+		"addonVersionNumber",
+		"minNVDAVersion",
+		"lastTestedVersion",
+		"channel"
+	],
+	"properties": {
+		"addonId": {
+			"$id": "#/properties/addonId",
+			"default": "",
+			"examples": [
+				"easyAddonTech.XYZ"
+			],
+			"title": "The ID for the addon",
+			"type": "string"
+		},
+		"addonVersionNumber": {
+			"$ref": "#/$defs/canonicalVersion",
+			"title": "The addon version number",
+			"description": "Pure numerical representation of the version being released."
+		},
+		"minNVDAVersion": {
+			"$ref": "#/$defs/canonicalVersion",
+			"description": "The addon will not work with versions of NVDA prior to this version.",
+			"title": "The minNVDAVersion required for the addon"
+		},
+		"lastTestedVersion": {
+			"$ref": "#/$defs/canonicalVersion",
+			"title": "The lastTestedVersion schema",
+			"description": "The add-on has been tested up to and including this version of NVDA"
+		},
+		"channel": {
+			"$id": "#/properties/channel",
+			"default": "",
+			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable' or 'beta'",
+			"examples": [
+				"beta"
+			],
+			"title": "The channel for the addon",
+			"enum": [
+				"stable",
+				"beta"
+			],
+			"type": "string"
+		}
+	},
+	"$defs": {
+		"canonicalVersion": {
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"major": 21,
+					"minor": 6,
+					"patch": 0
+				}
+			],
+			"required": [
+				"major",
+				"minor",
+				"patch"
+			],
+			"properties": {
+				"major": {
+					"default": 0,
+					"description": "'major' in major.minor.patch",
+					"examples": [
+						21,
+						2019,
+						2021
+					],
+					"title": "The 'major' part of the version number.",
+					"type": "integer"
+				},
+				"minor": {
+					"default": 0,
+					"description": "The 'minor' part in major.minor.patch",
+					"examples": [
+						3
+					],
+					"title": "The 'minor' part of the version number.",
+					"type": "integer"
+				},
+				"patch": {
+					"default": 0,
+					"description": "The 'patch' part in major.minor.patch",
+					"examples": [
+						0
+					],
+					"title": "The 'patch' part of the version number.",
+					"type": "integer"
+				}
+			}
+		}
+	}
+}

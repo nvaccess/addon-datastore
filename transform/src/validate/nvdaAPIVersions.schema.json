@@ -1,0 +1,78 @@
+{
+	"type": "array",
+	"items": { "$ref": "#/$defs/nvdaAPIVersionInfo" },
+	"$defs": {
+		"nvdaAPIVersionInfo": {
+			"required": [
+				"description",
+				"apiVer",
+				"backCompatTo"
+			],
+			"properties": {
+				"description": {
+					"$id": "#/$defs/nvdaAPIVersionInfo/properties/description",
+					"type": "string",
+					"title": "A description of the API version",
+					"example": "2021.1"
+				},
+				"apiVer": {
+					"$id": "#/$defs/nvdaAPIVersionInfo/properties/apiVer",
+					"$ref": "#/$defs/canonicalVersion",
+					"title": "The NVDA API version number"
+				},
+				"backCompatTo": {
+					"$id": "#/$defs/nvdaAPIVersionInfo/properties/backCompatTo",
+					"$ref": "#/$defs/canonicalVersion",
+					"title": "The API version this is backwards compatible to"
+				}
+			}
+		},
+		"canonicalVersion": {
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"major": 21,
+					"minor": 6,
+					"patch": 0
+				}
+			],
+			"required": [
+				"major",
+				"minor",
+				"patch"
+			],
+			"properties": {
+				"major": {
+					"default": 0,
+					"description": "'major' in major.minor.patch",
+					"examples": [
+						21,
+						2019,
+						2021
+					],
+					"title": "The 'major' part of the version number.",
+					"type": "integer"
+				},
+				"minor": {
+					"default": 0,
+					"description": "The 'minor' part in major.minor.patch",
+					"examples": [
+						3
+					],
+					"title": "The 'minor' part of the version number.",
+					"type": "integer"
+				},
+				"patch": {
+					"default": 0,
+					"description": "The 'patch' part in major.minor.patch",
+					"examples": [
+						0
+					],
+					"title": "The 'patch' part of the version number.",
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
