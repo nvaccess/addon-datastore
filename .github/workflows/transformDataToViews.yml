@@ -13,7 +13,7 @@ jobs:
   transformAndPush:
     runs-on: windows-latest
     env:
-      COMMIT_FORMAT: "Auto-generated from %h (%s)"
+      COMMIT_FORMAT: "Generated from %h%n%nCommit message:%n%s%n%b"
     strategy:
       matrix:
         python-version: [ 3.8 ]
@@ -56,10 +56,10 @@ jobs:
     - name: Commit and push
       run: |
         cd data
-        Set-Variable -Name "commitMsg" -Value $(git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1)
+        git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > ../commitMsg.txt
         cd ../views
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "$commitMsg"
+        git commit -F ../commitMsg.txt
         git push
