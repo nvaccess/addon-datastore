@@ -12,6 +12,11 @@ on:
 jobs:
   transformAndPush:
     runs-on: windows-latest
+    env:
+      # this is a git '--pretty=format' string
+      # %h is SHA, %n is newline,
+      # %s is commit message subject, %b is commit message body
+      COMMIT_FORMAT: "Generated from %h%n%nCommit message:%n%s%n%b"
     strategy:
       matrix:
         python-version: [ 3.8 ]
@@ -37,18 +42,27 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x86
-    - name: Run transformation and push
+    - name: Install requirements and run transformation
       run: |
         python -m pip install --upgrade pip
         cd transform
         pip install -r requirements.txt
-        python -m src.transform NVDAVersions.json ../data/addons ../views/views/en
-        copy NVDAVersions.json  ../views/NVDAVersions.json
-        copy ./docs/output.md  ../views/output.md
+        # empty the views git folder directory 
+        Try { Remove-Item ../views/views/en/ -Recurse -ErrorAction stop }
+        Catch [System.Management.Automation.ItemNotFoundException] { $null }
+        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../data/addons ../views/views/en
+    - name: Copy files
+      run: |
+        copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
+        copy ./transform/docs/output.md ./views/output.md
+        copy ./data/readme.md ./views/readme.md
+    - name: Commit and push
+      run: |
+        cd data
+        git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > ../commitMsg.txt
         cd ../views
-        git remote set-url origin git@github.com:nvaccess/addon-store-submission.git
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "$(date)"
+        git commit -F ../commitMsg.txt
         git push
