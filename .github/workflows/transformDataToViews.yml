@@ -13,6 +13,9 @@ jobs:
   transformAndPush:
     runs-on: windows-latest
     env:
+      # this is a git '--pretty=format' string
+      # %h is SHA, %n is newline,
+      # %s is commit message subject, %b is commit message body
       COMMIT_FORMAT: "Generated from %h%n%nCommit message:%n%s%n%b"
     strategy:
       matrix:
