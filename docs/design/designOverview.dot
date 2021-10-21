@@ -3,8 +3,8 @@
 digraph G {
 	rankdir=LR;
 
-	/* Entities */
-	submission [label="addon-store-submission:master", shape="rect", href="https://github.com/nvaccess/addon-store-submission/tree/master"]
+	/* Production repos */
+	submission [label="addon-store-submission:master", shape="rect", href="https://github.com/nvaccess/addon-store-submission"]
 	views [label="addon-store-submission:views", shape="rect", href="https://github.com/nvaccess/addon-store-submission/tree/views"]
 	transform [label="transformAddonDataToViews", shape="rect", href="https://github.com/nvaccess/transformAddonDataToViews"]
 	server [label="NV Access server", shape="rect", href="https://github.com/nvaccess/nvaccessServer"]
