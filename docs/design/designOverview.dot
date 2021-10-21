@@ -1,0 +1,21 @@
+/* uses graphViz https://graphviz.org/doc/info/lang.html */
+
+digraph G {
+	rankdir=LR;
+
+	/* Entities */
+	submission [label="addon-store-submission:master", shape="rect", href="https://github.com/nvaccess/addon-store-submission/tree/master"]
+	views [label="addon-store-submission:views", shape="rect", href="https://github.com/nvaccess/addon-store-submission/tree/views"]
+	transform [label="transformAddonDataToViews", shape="rect", href="https://github.com/nvaccess/transformAddonDataToViews"]
+	server [label="addonStoreAPI", shape="rect", href="https://github.com/nvaccess/addonStoreAPI"]
+	validate [label="validateNvdaAddonMetadata", shape="rect", href="https://github.com/nvaccess/validateNvdaAddonMetadata"]
+	NVDA [label="NVDA", shape="rect", href="https://github.com/nvaccess/nvda"]
+
+	/* Relationships */
+	submission -> transform[dir="both", label="validated data is transformed"]
+	transform -> views[label="transformed data is stored"]
+	submission -> validate[dir="both", label="data is validated first"]
+	views -> server[label="server is notified of newly transformed data"]
+	server -> views[label="server updates cache of transformed data"]
+	server -> NVDA[dir="both", label="NVDA fetches transformed data from the server"]
+}
