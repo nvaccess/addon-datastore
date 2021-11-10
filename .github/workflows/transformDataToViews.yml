@@ -1,4 +1,4 @@
-# https://github.com/nvaccess/transformAddonDataToViews/
+# https://github.com/nvaccess/addon-datastore-transform/
 
 name: Transform NVDA addons to views
 
@@ -24,18 +24,18 @@ jobs:
     - name: Checkout addon data
       uses: actions/checkout@v2
       with:
-        repository: nvaccess/addon-store-submission
+        repository: nvaccess/addon-datastore
         path: data
     - name: Checkout views branch into separate folder
       uses: actions/checkout@v2
       with:
-        repository: nvaccess/addon-store-submission
+        repository: nvaccess/addon-datastore
         path: views
         ref: views
     - name: Checkout transformation repo
       uses: actions/checkout@v2
       with:
-        repository: nvaccess/transformAddonDataToViews
+        repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
