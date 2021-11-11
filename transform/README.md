@@ -1,10 +1,10 @@
-# transformAddonDataToViews
-This repository primarily exists to transform data from [nvaccess/addon-store-submission:master](https://github.com/nvaccess/addon-store-submission) to views located at [nvaccess/addon-store-submission:views](https://github.com/nvaccess/addon-store-submission/tree/views).
+# addon-datastore-transform
+This repository primarily exists to transform data from [nvaccess/addon-datastore:master](https://github.com/nvaccess/addon-datastore) to views located at [nvaccess/addon-datastore:views](https://github.com/nvaccess/addon-datastore/tree/views).
 
 ## Overview
 
 For each version of NVDA, the meta-data of the most recent (the highest version number) of each add-on is automatically
-added, based on the data in `addon-store-submission`.
+added, based on the data in `addon-datastore`.
 
 ## Setup
 ```sh
@@ -25,10 +25,10 @@ This allows us to list which versions an addon is compatible for.
 Expects a directory.
 
 #### Input file structure
-As this repo consumes data from `nvaccess/addon-store-submission`, see [nvaccess/addon-store-submission README layout](https://github.com/nvaccess/addon-store-submission/blob/master/README.md#layout).
+As this repo consumes data from `nvaccess/addon-datastore`, see [nvaccess/addon-datastore README layout](https://github.com/nvaccess/addon-datastore/blob/master/README.md#layout).
 
 #### Input file data
-The expected input schema for each file can be found at [nvaccess/validateNvdaAddonMetadata](https://github.com/nvaccess/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
+The expected input schema for each file can be found at [nvaccess/addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation/blob/main/_validate/addonVersion_schema.json).
 
 ### outputPath
 Expects a path to a non-existent directory.
