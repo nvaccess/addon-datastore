@@ -11,7 +11,7 @@
 			"displayName": "My addon",
 			"publisher": "easyAddonTech",
 			"description": "Makes doing XYZ easier",
-			"homepage": "https://github.com/nvaccess/addon-store-submission",
+			"homepage": "https://github.com/nvaccess/addon-datastore",
 			"minNVDAVersion": {
 				"major": 2019,
 				"minor": 3,
@@ -23,11 +23,11 @@
 				"patch": 0
 			},
 			"channel": "beta",
-			"URL": "https://github.com/nvaccess/addon-store-submission/releases/download/v0.1.0/myAddon.nvda-addon",
+			"URL": "https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon",
 			"sha256": "69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82",
-			"sourceURL": "https://github.com/nvaccess/addon-store-submission/",
+			"sourceURL": "https://github.com/nvaccess/addon-datastore/",
 			"license": "GPL v2",
-			"licenseURL": "https://github.com/nvaccess/addon-store-submission/license.MD"
+			"licenseURL": "https://github.com/nvaccess/addon-datastore/license.MD"
 		}
 	],
 	"title": "Root",
@@ -116,7 +116,7 @@
 			"default": "",
 			"description": "If the addon has a homepage where users can get more information about the addon, you can specify it here.",
 			"examples": [
-				"https://github.com/nvaccess/addon-store-submission"
+				"https://github.com/nvaccess/addon-datastore"
 			],
 			"pattern": "^https:.*",
 			"title": "The homepage URL for the addon.",
@@ -167,7 +167,7 @@
 			"default": "",
 			"description": "To allow directly downloading the *.nvda-addon file. The URL should remain valid indefinetly. GitHub release URL's are recommended.",
 			"examples": [
-				"https://github.com/nvaccess/addon-store-submission/releases/download/v0.1.0/myAddon.nvda-addon"
+				"https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon"
 			],
 			"title": "The URL to download the add-on.",
 			"type": "string"
@@ -187,7 +187,7 @@
 			"default": "",
 			"description": "Allows reviewers to inspect the source code for common issues.",
 			"examples": [
-				"https://github.com/nvaccess/addon-store-submission/"
+				"https://github.com/nvaccess/addon-datastore/"
 			],
 			"title": "The URL for the add-on source",
 			"type": "string"
@@ -207,7 +207,7 @@
 			"default": "",
 			"description": "A URL to the full license for the addon.",
 			"examples": [
-				"https://github.com/nvaccess/addon-store-submission/license.MD"
+				"https://github.com/nvaccess/addon-datastore/license.MD"
 			],
 			"title": "The licenseURL schema",
 			"type": "string"

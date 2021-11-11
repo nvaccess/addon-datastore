@@ -2,11 +2,11 @@
 
 This is a "GitHub Action" repository.
 The Action aims to validate the metadata of add-ons submitted to
-[NVDA's add-on store](https://github.com/nvaccess/addon-store-submission).
+[NVDA's add-on store](https://github.com/nvaccess/addon-datastore).
 
 - Check that the added metadata:
   - Conforms with the
-  [addonVersion_schema.json file](https://github.com/nvaccess/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
+  [addonVersion_schema.json file](https://github.com/nvaccess/addon-datastore-validation/blob/main/_validate/addonVersion_schema.json).
   - File has the correct path and name: `addon1/majorVersion.minorVersion.patch.json`
   - Download URL is valid:
     - Must start with "https://" and end with".nvda-addon"
@@ -31,7 +31,7 @@ To try validating an addon submission on your own machine.
 
 From cmd.exe:
 
-1. Clone this repo: `git clone https://github.com/nvaccess/validateNvdaAddonMetadata.git`
+1. Clone this repo: `git clone https://github.com/nvaccess/addon-datastore-validation.git`
 1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
 
 ## Run unit tests:
