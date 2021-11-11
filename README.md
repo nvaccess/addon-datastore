@@ -82,19 +82,19 @@ You are welcome to review code / UX of add-ons and provide that feedback directl
 
 ## Infrastructure
 
-- `addon-store-submission` GitHub Repository
+- `addon-datastore` GitHub Repository
   - Authors submit new add-on versions.
   - The "source of truth" for add-on releases.
   - This repository acts as a back-end database, it is open and easy to inspect.
   - Since our needs are simple, preconfigured "views" of the data will suffice.
-- `nvaccess/validateNvdaAddonMetadata` GitHub Repository
+- `nvaccess/addon-datastore-validation` GitHub Repository
   - Metadata / submission schema.
   - Tools used to validate the submission.
 - NV Access server - To provide the endpoint for "available add-ons" meta-data
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
 
-## `addon-store-submission` GitHub Repository
+## `addon-datastore` GitHub Repository
 
 Essentially this repository holds metadata about all the accepted versions of add-ons which are included in the store.
 Metadata about old versions of an add-on remains until it is explicitly removed or becomes invalid.
@@ -119,7 +119,7 @@ Example for the NV Access add-on, 'NVDA - OCR':
 
 ### Metadata format
 For a full description of the schema see the
-[_validate/addonVersion_schema.json file](https://github.com/nvaccess/validateNvdaAddonMetadata/blob/main/_validate/addonVersion_schema.json).
+[_validate/addonVersion_schema.json file](https://github.com/nvaccess/addon-datastore-validation/blob/main/_validate/addonVersion_schema.json).
 It includes an example of the file contents.
 
 ### Submitting an add-on version
@@ -129,19 +129,19 @@ It includes an example of the file contents.
 - Familiarity with Git, including working with branches.
 
 Process to add a new NVDA add-on version:
-1. Fork the `addon-store-submission` repository
+1. Fork the `addon-datastore` repository
 1. On a new branch, copy the `_template_addon_release.json` file. 
    - Rename / move the file to `addons/<addonID>/<version>.json`
    - `<addonID>` is the ID of the add-on. This should match the `name` field in the add-on manifest, E.G. "nv-speech-player"
    - `<version>` is the add-on version in the form: `Major.Minor.Patch` E.G. "2.4.1"
 1. Fill out the template.
-1. Create a PR to merge your branch into master on the `addon-store-submission` repository
+1. Create a PR to merge your branch into master on the `addon-datastore` repository
 1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
 3. When the PR is merged the add-on becomes available in the store.
 
 
 ### Automated checks
-See https://github.com/nvaccess/validateNvdaAddonMetadata
+See https://github.com/nvaccess/addon-datastore-validation
 
 ### Other notes
 - By using a git repository and PR process, `git blame` and `git log` can be used to get more
@@ -154,14 +154,14 @@ See https://github.com/nvaccess/validateNvdaAddonMetadata
 
 ## API data generation details
 
-Triggered by a new commit to the `master` branch, [a GitHub workflow](./.github/workflows/transformDataToViews.yml), [transformAddonDataToViews](https://github.com/nvaccess/transformAddonDataToViews), transforms the data into the required views.
+Triggered by a new commit to the `master` branch, [a GitHub workflow](./.github/workflows/transformDataToViews.yml), [addon-datastore-transform](https://github.com/nvaccess/addon-datastore-transform), transforms the data into the required views.
 
 For each NVDA API version and channel, the add-on metadata with the highest version number is written.
 
-These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views).
+These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-datastore/tree/views).
 
 ### Data views
-The following views will only be available on the [views branch](https://github.com/nvaccess/addon-store-submission/tree/views) and located in a `views` folder.
+The following views will only be available on the [views branch](https://github.com/nvaccess/addon-datastore/tree/views) and located in a `views` folder.
 Required transformations of the data:
 - `/NVDA API Version/addon-1-ID/stable.json`
 - `/NVDA API Version/addon-1-ID/beta.json`

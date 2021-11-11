@@ -50,12 +50,12 @@ jobs:
     - name: Checkout validate repo
       uses: actions/checkout@v2
       with:
-        repository: nvaccess/validateNvdaAddonMetadata
-        path: validateNvdaAddonMetadata
+        repository: nvaccess/addon-datastore-validation
+        path: addon-datastore-validation
         submodules: true
-    - name: Install validateNvdaAddonMetadata dependencies
+    - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
-        pip install -r validateNvdaAddonMetadata/requirements.txt
+        pip install -r addon-datastore-validation/requirements.txt
     - name: Validate metadata
-      run: validateNvdaAddonMetadata/runvalidate ${{steps.getMetadata.outputs.result}}
+      run: addon-datastore-validation/runvalidate ${{steps.getMetadata.outputs.result}}
