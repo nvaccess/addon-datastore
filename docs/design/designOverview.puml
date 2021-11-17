@@ -1,0 +1,29 @@
+/' 
+A PlantUML sequence diagram: https://plantuml.com/sequence-diagram
+'/
+@startuml addonStoreOverview
+actor "Addon Author" as author
+participant "addon-datastore\nGitHub repo" as datastoreGH
+participant "addon-datastore-validation" as validation
+database "addon-datastore" as datastore
+participant "addon-datastore-transform" as transform
+database "addon-datastore:views" as views
+participant "addon-datastore-api" as api
+entity nvaccessServer as server
+actor NVDA
+
+api -> server : api is deployed \n to server
+
+author -> datastoreGH :  Author opens PR adding \n addon metadata
+datastoreGH -> validation : metadata is validated
+validation -> datastore : valid metadata \n is stored
+
+datastore --> datastoreGH : push to repo triggers \n GH transform action
+datastoreGH -> transform : stored metadata \n is transformed
+transform -> views : transformed metadata \n is stored
+views --> datastoreGH : push to repo triggers \n GH webhook
+datastoreGH --> server : GH webhook to notifies \n server of updated data 
+
+server <-> views : server updates cache \n of transformed data
+NVDA <-> server : NVDA fetches transformed \n data from server
+@enduml
