@@ -19,7 +19,11 @@ actor NVDA
 
 /'
 Relationships, formatted as follows:
-entityNickname -> entityNickname : label for relationship
+entityNickname arrowType entityNickname : label for relationship
+Arrows which indicate relationships:
+->  Right pointing arrow
+<-> Bi-directional arrow
+--> Right pointing arrow with dotted line
 '/
 api -> server : api is deployed \n to server
 
