@@ -3,7 +3,7 @@ A PlantUML sequence diagram: https://plantuml.com/sequence-diagram
 '/
 @startuml addonStoreOverview
 actor "Addon Author" as author
-participant "addon-datastore\nGitHub repo" as datastoreGH
+participant "addon-datastore \n GitHub repo" as datastoreGH
 participant "addon-datastore-validation" as validation
 database "addon-datastore" as datastore
 participant "addon-datastore-transform" as transform
