@@ -65,6 +65,8 @@ You are welcome to review code / UX of add-ons and provide that feedback directl
 
 ## Overview
 
+[Addon store system design diagram](./docs/design/designOverview.svg) ([PlantUML markup](./docs/design/designOverview.puml))
+
 - Use GitHub pull requests for store submissions.
 - Use GitHub for storage of meta-data for add-ons available from the store.
 - Use GitHub actions (or other integrations) to automate construction of the data store, and as many of the metadata checks as possible.
