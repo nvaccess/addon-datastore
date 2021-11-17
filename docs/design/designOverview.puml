@@ -2,6 +2,11 @@
 A PlantUML sequence diagram: https://plantuml.com/sequence-diagram
 '/
 @startuml addonStoreOverview
+
+/'
+Entities, formatted as follows:
+entityType "display name" as entityNickname
+'/
 actor "Addon Author" as author
 participant "addon-datastore \n GitHub repo" as datastoreGH
 participant "addon-datastore-validation" as validation
@@ -12,6 +17,10 @@ participant "addon-datastore-api" as api
 entity nvaccessServer as server
 actor NVDA
 
+/'
+Relationships, formatted as follows:
+entityNickname -> entityNickname : label for relationship
+'/
 api -> server : api is deployed \n to server
 
 author -> datastoreGH :  Author opens PR adding \n addon metadata
