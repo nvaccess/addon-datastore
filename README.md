@@ -65,6 +65,8 @@ You are welcome to review code / UX of add-ons and provide that feedback directl
 
 ## Overview
 
+[Addon store system design diagram](./docs/design/designOverview.svg) ([PlantUML markup](./docs/design/designOverview.puml))
+
 - Use GitHub pull requests for store submissions.
 - Use GitHub for storage of meta-data for add-ons available from the store.
 - Use GitHub actions (or other integrations) to automate construction of the data store, and as many of the metadata checks as possible.
@@ -174,10 +176,31 @@ Notes:
 - The file will include translations (if available) for the displayable metadata.
 
 This simplifies the processing on the hosting (E.G NV Access) server.
-To fetch the latest add-ons for `<NVDA API Version X>`, the server can concatenate the appropriate JSON files that match a glob: `/<NVDA API Version X>/*/stable.json`.
-Similarly, to fetch the latest version of an add-on with `<Addon-ID>` for `<NVDA API Version X>`. The server can return the data at `/<NVDA API Version X>/<addon-ID>/stable.json`.
-Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated
-away from GitHub for some reason.
+
+## NV Access Add-on Store endpoints
+
+Using the NV Access server as the endpoint for this is important in case the implementation has to change or be migrated away from GitHub for some reason.
+
+### `GET` All
+Get a complete list of the latest add-on releases.
+Includes both stable and beta versions
+
+- Format: `https://www.nvaccess.org/addonStore/<language>/all/<NVDA API Version>.json`
+- Example: <https://www.nvaccess.org/addonStore/en/all/2021.2.0.json>
+
+### `GET` All stable
+Get a complete list of the latest stable add-on releases.
+Includes only stable versions
+
+- Format: `https://www.nvaccess.org/addonStore/<language>/stable/<NVDA API Version>.json`
+- Example: <https://www.nvaccess.org/addonStore/en/stable/2021.2.0.json>
+
+### `GET` All beta
+Get a complete list of the latest beta add-on releases.
+Includes only beta versions
+
+- Format: `https://www.nvaccess.org/addonStore/<language>/beta/<NVDA API Version>.json`
+- Example: <https://www.nvaccess.org/addonStore/en/beta/2021.2.0.json>
 
 ## Suffix
 
