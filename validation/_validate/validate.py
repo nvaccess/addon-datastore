@@ -7,9 +7,7 @@
 import argparse
 import os
 import re
-import tempfile
 import typing
-import zipfile
 import json
 import urllib.request
 from jsonschema import validate, exceptions
@@ -20,12 +18,11 @@ sys.path.append(os.path.dirname(__file__))
 # E402 module level import not at top of file
 import sha256  # noqa:E402
 from addonManifest import AddonManifest   # noqa:E402
+from createJson import getAddonManifest, TEMP_DIR  # noqa:E402
 del sys.path[-1]
 
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
-TEMP_DIR = tempfile.gettempdir()
-
 JsonObjT = typing.Dict[str, typing.Any]
 
 
@@ -100,22 +97,6 @@ def checkSha256(addonPath: str, expectedSha: str) -> ValidationErrorGenerator:
 		sha256Addon = sha256.sha256_checksum(f)
 	if sha256Addon.upper() != expectedSha.upper():
 		yield f"Sha256 of .nvda-addon at URL is: {sha256Addon}"
-
-
-def getAddonManifest(addonPath: str) -> AddonManifest:
-	""" Extract manifest.ini from *.nvda-addon and parse.
-	Raise on error.
-	"""
-	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
-	with zipfile.ZipFile(addonPath, "r") as z:
-		for info in z.infolist():
-			z.extract(info, expandedPath)
-	filePath = os.path.join(expandedPath, "manifest.ini")
-	try:
-		manifest = AddonManifest(filePath)
-		return manifest
-	except Exception as err:
-		raise err
 
 
 def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
