@@ -1,0 +1,70 @@
+name: Send json file
+
+on:
+  issues:
+    types: 
+      - opened
+      - reopened
+      - edited
+
+jobs:
+  check-addon:
+    name: Check add-on
+    runs-on: windows-latest
+    steps:
+    - name: Get data
+      id: get-data
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const title = context.payload.issue.title
+          core.setOutput('title', title)
+          const number = "#" + context.payload.issue.number
+          core.setOutput('number', number)
+          const body = context.payload.issue.body   
+          const downloadUrl = body.split("### Download URL")[1].split("###")[0].trim()
+          core.setOutput('downloadUrl', downloadUrl)
+          const sourceUrl = body.split("### Source URL")[1].split("###")[0].trim()
+          core.setOutput('sourceUrl', sourceUrl)
+          const releaseChannel = body.split("### Channel")[1].split("###")[0].trim()
+          if (releaseChannel === "- [x] This is a stable release") {
+            channel = "stable"
+          } else {
+            channel = "beta"
+          }
+          core.setOutput('channel', channel)
+          const publisher = context.payload.sender.login
+          core.setOutput('publisher', publisher)
+    - name: Checkout validate repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvdaes/addon-datastore-validation
+        submodules: true
+    - name: Checkout datastore repo
+      uses: actions/checkout@v2
+      with:
+        repository: nvdaes/addon-datastore
+        path: datastore
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Download add-on
+      run: curl --location --output addon.nvda-addon ${{ steps.get-data.outputs.downloadUrl }}
+    - name: Create json file
+      run: runcreatejson addon.nvda-addon datastore/addons ${{ steps.get-data.outputs.channel }} ${{ steps.get-data.outputs.publisher }} ${{ steps.get-data.outputs.sourceUrl }} ${{ steps.get-data.outputs.downloadUrl }}
+      shell: cmd
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{secrets.PR_TOKEN }}
+        path: datastore
+        commit-message: ${{ steps.get-data.outputs.title }}
+        body: Closes issue ${{ steps.get-data.outputs.number }}
+    - name: Enable Pull Request Automerge
+      if: steps.cpr.outputs.pull-request-operation == 'created'
+      uses: peter-evans/enable-pull-request-automerge@v1
+      with:
+        token: ${{ secrets.PR_TOKEN }}
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}

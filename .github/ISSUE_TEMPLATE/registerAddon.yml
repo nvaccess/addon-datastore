@@ -1,0 +1,35 @@
+name: Addon registration
+description: Add an NVDA add-on to addons-datastore
+title: "[Submit add-on]: "
+labels: [enhancement]
+assignees: 
+- nvaccess
+body:
+- type: markdown
+  attributes:
+    value: |
+      Submit an NVDA add-on to datastore. Provide download and source URL, and indicate if it's a stable add-on or not.
+- type: input
+  id: download-url
+  attributes:
+    label: Download URL
+    description: The URL to download the add-on. It must start with https and end with -nvda-addon.
+    placeholder: https://github.com/username/addon/releases/releaseNumber/download/addonName.nvda-addon
+  validations:
+    required: true
+- type: input
+  id: source-url
+  attributes:
+    label: Source URL
+    description: The URL to review the source code of the submitted add-on.
+    placeholder: https://github.com/username/repo/
+  validations:
+    required: true
+- type: checkboxes
+  id: channel
+  attributes:
+    label: Channel
+    description: Channel for this release (maybe stable or beta)
+    options:
+      - label: This is a stable release
+        required: false
