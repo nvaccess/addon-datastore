@@ -40,6 +40,9 @@ jobs:
               if (Boolean(addonFileName)){
                 throw "Please submit addon releases individually. One file at a time."
               }
+              if (fileData.status === "modified") {
+                throw "Submitted add-ons cannot be modified"
+              }
               addonFileName = filename
             }
             else {
@@ -47,17 +50,6 @@ jobs:
             }
           }
           return addonFileName
-    - name: Check publisher
-      uses: actions/github-script@v5
-      id: getPublisher
-      with:
-        script: |
-          const diff_url = context.payload.pull_request.diff_url
-          const result = await github.request(diff_url)
-          const diff = result.data
-          if (diff.search(/-\s+"publisher":/) !== -1) {
-            throw "Publishers don't match"
-          }
     - name: Checkout validate repo
       uses: actions/checkout@v3
       with:
