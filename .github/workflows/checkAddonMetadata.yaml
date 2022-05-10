@@ -19,9 +19,9 @@ jobs:
     steps:
     
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Determine files changed
-      uses: actions/github-script@v4
+      uses: actions/github-script@v6
       id: getMetadata
       with:
         script: |
@@ -48,7 +48,7 @@ jobs:
           }
           return addonFileName
     - name: Checkout validate repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-validation
         path: addon-datastore-validation
