@@ -26,16 +26,22 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install tox
     - name: Test with tox
+      # Run automated/unit tests
       run: tox
     - name: Lint with flake8
+      # Check code with the linter
       run: runlint
       shell: cmd
     - name: Validate metadata
+      # E2E: test to check the script can be run, no need to actually test the file.
+      # The internal checks are coverred with unit tests.
       run: runvalidate --dry-run _test/testData/addons/fake/13.0.json
       shell: cmd
     - name: Get sha256
+      # E2E: test to check the script can be run
       run: runsha _tests\testData\fake.nvda-addon
       shell: cmd
     - name: Generate json file
+      # E2E: test to check the script can be run
       run: runcreatejson _tests\testData\fake.nvda-addon stable fakepublisher https://github.com/fake/ https://github.com/fake.nvda-addon
       shell: cmd

@@ -285,6 +285,7 @@ def main():
 		"--dry-run",
 		action="store_true",
 		default=False,
+		help="Ensures the correct arguments are passed, doesn't run checks, exists with success."
 	)
 	parser.add_argument(
 		dest="file",
