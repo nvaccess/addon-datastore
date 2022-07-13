@@ -6,18 +6,15 @@
 
 import json
 import argparse
-import tempfile
-import zipfile
 from dataclasses import dataclass
 import os
 import sys
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
+from manifestLoader import getAddonManifest  # noqa:E402
 import sha256  # noqa:E402
-from addonManifest import AddonManifest  # noqa:E402
 del sys.path[-1]
 
-TEMP_DIR = tempfile.gettempdir()
 VALID_JSON = os.path.join(
 	os.path.dirname(__file__), "..", "_tests", "testData", "addons", "fake", "13.0.0.json"
 )
@@ -28,22 +25,6 @@ class Version:
 	major: int = 0
 	minor: int = 0
 	patch: int = 0
-
-
-def getAddonManifest(addonPath: str) -> AddonManifest:
-	""" Extract manifest.ini from *.nvda-addon and parse.
-	Raise on error.
-	"""
-	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
-	with zipfile.ZipFile(addonPath, "r") as z:
-		for info in z.infolist():
-			z.extract(info, expandedPath)
-	filePath = os.path.join(expandedPath, "manifest.ini")
-	try:
-		manifest = AddonManifest(filePath)
-		return manifest
-	except Exception as err:
-		raise err
 
 
 def getSha256(addonPath: str) -> str:
@@ -66,10 +47,11 @@ def getVersionNumber(ver: str) -> Version:
 
 
 def getFullQualifiedName(version: Version) -> str:
-	versionParts = []
-	versionParts.append(str(version.major))
-	versionParts.append(str(version.minor))
-	versionParts.append(str(version.patch))
+	versionParts = [
+		str(version.major),
+		str(version.minor),
+		str(version.patch)
+	]
 	stringVersion = ".".join(versionParts)
 	return stringVersion
 
@@ -79,7 +61,7 @@ def generateJsonFile(
 		publisher: str, sourceUrl: str, url: str
 ) -> None:
 	manifest = getAddonManifest(addonPath)
-	sha256 = getSha256(addonPath)
+	shaVal = getSha256(addonPath)
 	addonId = manifest["name"]
 	addonDisplayName = manifest["summary"]
 	addonDescription = manifest["description"]
@@ -109,14 +91,14 @@ def generateJsonFile(
 	data["lastTestedVersion"]["major"] = lastTestedVersion.major
 	data["lastTestedVersion"]["minor"] = lastTestedVersion.minor
 	data["lastTestedVersion"]["patch"] = lastTestedVersion.patch
-	data["sha256"] = sha256
+	data["sha256"] = shaVal
 	data["channel"] = channel
 	data["publisher"] = publisher
 	data["sourceURL"] = sourceUrl
-	dir = os.path.join(parentDir, addonId)
-	if not os.path.isdir(dir):
-		os.makedirs(dir)
-	filePath = os.path.join(dir, filename)
+	addonDir = os.path.join(parentDir, addonId)
+	if not os.path.isdir(addonDir):
+		os.makedirs(addonDir)
+	filePath = os.path.join(addonDir, filename)
 	with open(filePath, "wt") as f:
 		json.dump(data, f, indent="\t")
 	print(f"Json file is in {dir}/{filename}.")

@@ -4,21 +4,21 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-import argparse
-import os
-import re
-import typing
-import json
-import urllib.request
-from jsonschema import validate, exceptions
 
 import sys
-# To allow this module to be run as a script by runValidate.bat
-sys.path.append(os.path.dirname(__file__))
+import os
+import re
+import urllib.request
+import typing
+import argparse
+import json
+from jsonschema import validate, exceptions
+
+sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runValidate.bat
 # E402 module level import not at top of file
 import sha256  # noqa:E402
 from addonManifest import AddonManifest   # noqa:E402
-from createJson import getAddonManifest, TEMP_DIR  # noqa:E402
+from manifestLoader import getAddonManifest, TEMP_DIR  # noqa:E402
 del sys.path[-1]
 
 
