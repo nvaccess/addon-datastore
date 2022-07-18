@@ -108,7 +108,7 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 class Validate_checkSha256(unittest.TestCase):
 	"""Tests for the checkSha256 function
 	"""
-	validSha = "12ABBF6BAC89FC24602245F4B8B750BCF2B72AFDF2DF54A0B07467FF4983F872"
+	validSha = "755B4A427551C8FB6A8FF46D77752BC8198D4553E5A60B488520B1C77DB2FD11"
 
 	def test_valid(self):
 		errors = validate.checkSha256(
@@ -560,8 +560,7 @@ class Validate_End2End(unittest.TestCase):
 				'Fatal error, unable to continue: Unable to download from '
 				# note this the mocked urlopen function actually fetches from ADDON_PACKAGE
 				'https://github.com/'
-				'nvdaes/clipContentsDesigner/releases/download/13.0/'
-				'clipContentsDesigner-13.0.nvda-addon, '
+				'nvaccess/dont/use/this/address/fake.nvda-addon, '
 				'HTTP response status code: 404'
 			]
 		)
