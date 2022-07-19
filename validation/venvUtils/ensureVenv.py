@@ -127,6 +127,7 @@ def ensureVenvAndRequirements():
 
 if __name__ == '__main__':
 	# Ensure we are not inside an already active Python virtual environment.
+	print(f"Python version {sys.version}")
 	virtualEnv = os.getenv("VIRTUAL_ENV")
 	if virtualEnv:
 		print(

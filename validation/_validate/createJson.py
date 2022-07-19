@@ -10,10 +10,9 @@ from dataclasses import dataclass
 import os
 import sys
 
-from _validate.addonManifest import AddonManifest
-
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
+from addonManifest import AddonManifest  # noqa:E402
 from manifestLoader import getAddonManifest  # noqa:E402
 import sha256  # noqa:E402
 del sys.path[-1]
@@ -67,14 +66,14 @@ def generateJsonFile(
 		licenseUrl=licenseUrl,
 	)
 
-	filePath = _outputFilePath(data, parentDir)
+	filePath = buildOutputFilePath(data, parentDir)
 
 	with open(filePath, "wt") as f:
 		json.dump(data, f, indent="\t")
 	print(f"Wrote json file: {filePath}")
 
 
-def _outputFilePath(data, parentDir):
+def buildOutputFilePath(data, parentDir):
 	addonDir = os.path.join(parentDir, data["addonId"])
 	versionNumber = Version(**data["addonVersionNumber"])
 	canonicalVersionString = ".".join(
@@ -124,34 +123,42 @@ def _createDictMatchingJsonSchema(
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument(
+		"-f",
 		dest="file",
 		help="The add-on (nvda-addon) file to create json from manifest."
 	)
 	parser.add_argument(
+		"--dir",
 		dest="parentDir",
 		help="Parent directory to store the json file."
 	)
 	parser.add_argument(
+		"--channel",
 		dest="channel",
 		help="The channel for this release."
 	)
 	parser.add_argument(
+		"--publisher",
 		dest="publisher",
 		help="The publisher for this submission."
 	)
 	parser.add_argument(
+		"--sourceUrl",
 		dest="sourceUrl",
 		help="The URL to review source code."
 	)
 	parser.add_argument(
+		"--url",
 		dest="url",
 		help="URL to download the add-on."
 	)
 	parser.add_argument(
+		"--licName",
 		dest="licenseName",
 		help="Name of the license used with the add-on. E.G. 'GPL v2'"
 	)
 	parser.add_argument(
+		"--licUrl",
 		dest="licenseUrl",
 		help="URL to read the license in full. E.G. 'https://www.gnu.org/licenses/gpl-2.0.html'"
 	)
