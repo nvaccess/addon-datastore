@@ -1,10 +1,12 @@
-name: Addon registration
-description: Add an NVDA add-on to addons-datastore
+name: Add-on registration
+description: Add an NVDA add-on to add-ons datastore
 title: "[Submit add-on]: "
 labels: [enhancement]
 assignees: 
 - nvaccess
 body:
+# Docs on using issue forms:
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
 - type: markdown
   attributes:
     value: |
@@ -13,8 +15,16 @@ body:
   id: download-url
   attributes:
     label: Download URL
-    description: The URL to download the add-on. It must start with https and end with -nvda-addon.
-    placeholder: https://github.com/username/addon/releases/releaseNumber/download/addonName.nvda-addon
+    description: The URL to download the add-on. It must start with 'https' and end with 'nvda-addon'.
+    placeholder: https://github.com/userName/addonName/releases/releaseNumber/download/addonName.nvda-addon
+  validations:
+    required: true
+- type: input
+  id: publisher
+  attributes:
+    label: Publisher
+    description: The author of the addon (individual, group name, or organisation).
+    placeholder: Author Name
   validations:
     required: true
 - type: input
@@ -25,11 +35,26 @@ body:
     placeholder: https://github.com/username/repo/
   validations:
     required: true
-- type: checkboxes
+- type: dropdown
   id: channel
   attributes:
     label: Channel
-    description: Channel for this release (maybe stable or beta)
+    description: Channel for this add-on release.
+    multiple: false
     options:
-      - label: This is a stable release
-        required: false
+      - stable
+      - beta
+  validations:
+    required: true
+- type: input
+  id: license-name
+  attributes:
+    label: License Name
+    description: What license is this add-on released under?
+    value: GPL v2
+- type: input
+  id: license-url
+  attributes:
+    label: License URL
+    description: What is the URL to allow reading the license is this add-on released under?
+    value: https://www.gnu.org/licenses/gpl-2.0.html
