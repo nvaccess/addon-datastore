@@ -10,6 +10,8 @@ from dataclasses import dataclass
 import os
 import sys
 
+import typing
+
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
 from addonManifest import AddonManifest  # noqa:E402
@@ -73,7 +75,7 @@ def generateJsonFile(
 	print(f"Wrote json file: {filePath}")
 
 
-def buildOutputFilePath(data, parentDir):
+def buildOutputFilePath(data, parentDir) -> os.PathLike:
 	addonDir = os.path.join(parentDir, data["addonId"])
 	versionNumber = Version(**data["addonVersionNumber"])
 	canonicalVersionString = ".".join(
@@ -82,7 +84,7 @@ def buildOutputFilePath(data, parentDir):
 	if not os.path.isdir(addonDir):
 		os.makedirs(addonDir)
 	filePath = os.path.join(addonDir, f'{canonicalVersionString}.json')
-	return filePath
+	return typing.cast(os.PathLike, filePath)
 
 
 def _createDictMatchingJsonSchema(
@@ -94,7 +96,7 @@ def _createDictMatchingJsonSchema(
 		url: str,
 		licenseName: str,
 		licenseUrl: str,
-):
+) -> typing.Dict[str, str]:
 	return {  # see _validate/addonVersion_schema.json
 		"addonId": manifest["name"],
 		"displayName": manifest["summary"],
