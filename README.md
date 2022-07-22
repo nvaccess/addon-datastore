@@ -38,7 +38,7 @@ A plain language summary can be found [here](https://opendatacommons.org/license
 
 ## Too Long; Didn't Read for add-on authors
 With this proposal if an add-on author wishes to submit their add-on to be visible in this add-on store they will need to:
-- Copy and file out the metadata template
+- Copy and fill out the metadata template
 - Create a pull request to merge the branch to master of this repository.
 
 ## Too Long; Didn't Read for add-on reviewers
