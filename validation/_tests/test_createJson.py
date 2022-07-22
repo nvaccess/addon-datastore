@@ -44,7 +44,7 @@ class IntegrationTestCreateJson(unittest.TestCase):
 	"""
 	def setUp(self):
 		self.outputDir = os.path.join(OUTPUT_DATA_PATH, "createJsonOutput")
-		self.maxDiff = None
+		self.maxDiff = None  # Permit unittest.TestCase (base class) to calculate diffs of any lengths.
 		if os.path.isdir(self.outputDir):
 			shutil.rmtree(self.outputDir)
 
