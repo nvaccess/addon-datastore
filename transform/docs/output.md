@@ -8,6 +8,12 @@ The following subdirectories and files are created:
 - `/NVDA API Version/addon-2-ID/stable.json`
 eg: `/2020.3.0/nvdaOCR/stable.json`
 
+Where `NVDA API Version` may be:
+- `2022.1.0`: A major release.
+- `2022.1.3`: A patch release.
+
+The system differentiates patch releases from major releases to cater to the (very unlikely) event of requireing a breaking change or introduction to the NVDA add-on API.
+
 ## Output file data
 Each addon file is the addon data taken from input that is the latest compatible version, with the given requirements `(NVDA API Version, addon-ID, stable|beta)`.
 The transformed data file content will be the same as the input.
