@@ -58,10 +58,10 @@ You are welcome to review code / UX of add-ons and provide that feedback directl
   Removed releases are no longer presented in the store, halting new installations.
 - Enable support in the store for multiple versions of an add-on, based on NVDA API version.
   - EG add-on version 1.2.5 for NVDA 2019.3 and add-on version 1.3.2 for NVDA 2020.1
-- Enable support in the store for 'beta' add-ons, for instance:
-  - add-ons being developed against alpha / beta NVDA.
-  - add-ons that want early feedback from end users.
-  - End users can choose "show me beta add-ons"
+- Enable support in the store for 'beta' and 'dev' add-ons, for instance:
+  - 'dev' add-ons are being developed against alpha / beta / rc NVDA, these would only be offered to alpha / beta / rc NVDA users.
+  - 'beta' add-ons are from authors who want early feedback from end users, signaling that not all edge cases are handled.
+  - End users of NVDA can select "show pre-release add-ons"
 
 ## Overview
 
