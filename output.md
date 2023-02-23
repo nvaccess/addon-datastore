@@ -15,7 +15,7 @@ Where `NVDA API Version` may be:
 The system differentiates patch releases from major releases to cater to the (very unlikely) event of requireing a breaking change or introduction to the NVDA add-on API.
 
 ## Output file data
-Each addon file is the addon data taken from input that is the latest compatible version, with the given requirements `(NVDA API Version, addon-ID, stable|beta)`.
+Each addon file is the addon data taken from input that is the latest compatible version, with the given requirements `(NVDA API Version, addon-ID, stable|beta|dev)`.
 The transformed data file content will be the same as the input.
 The contents for each addon file includes all the technical details required for NVDA to download, verify file integrity, and install.
 It also contains the information necessary for a store entry.
