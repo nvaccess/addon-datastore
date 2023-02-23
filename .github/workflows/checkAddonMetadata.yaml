@@ -40,8 +40,8 @@ jobs:
               if (Boolean(addonFileName)){
                 throw "Please submit addon releases individually. One file at a time."
               }
-              if (fileData.status === "modified") {
-                throw "Submitted add-ons cannot be modified"
+              if (fileData.status != "added") {
+                throw "Modifications to submitted add-ons will not be auto-approved"
               }
               addonFileName = filename
             }
