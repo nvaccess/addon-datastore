@@ -67,7 +67,11 @@ class Test_getLatestAddons(unittest.TestCase):
 		stableAddon.channel = "stable"
 		stableAddon.pathToData = "stable-path"  # unique identifier for addon metadata version
 		self.assertDictEqual(getLatestAddons([betaAddon, stableAddon], nvdaAPIVersions), {
-			V_2020_2: {"beta": {betaAddon.addonId: betaAddon}, "stable": {stableAddon.addonId: stableAddon}},
+			V_2020_2: {
+				"beta": {betaAddon.addonId: betaAddon},
+				"stable": {stableAddon.addonId: stableAddon},
+				"dev": {}
+			},
 		})
 
 	def test_addon_order_irrelevant(self):
@@ -121,13 +125,13 @@ class Test_getLatestAddons(unittest.TestCase):
 		addon.channel = "stable"
 		self.assertDictEqual(getLatestAddons([addon], nvdaAPIVersions), {
 			# nvdaAPIVersion.backCompatTo < addon.lastTestedVersion
-			V_2021_1: {"stable": {addon.addonId: addon}, "beta": {}},
+			V_2021_1: {"stable": {addon.addonId: addon}, "beta": {}, "dev": {}},
 
 			# nvdaAPIVersion.backCompatTo == addon.lastTestedVersion
-			V_2021_2: {"stable": {addon.addonId: addon}, "beta": {}},
+			V_2021_2: {"stable": {addon.addonId: addon}, "beta": {}, "dev": {}},
 
 			# nvdaAPIVersion.backCompatTo > addon.lastTestedVersion
-			V_2022_1: {"stable": {}, "beta": {}},
+			V_2022_1: {"stable": {}, "beta": {}, "dev": {}},
 		})
 
 	def test_same_addon_version_throws(self):
@@ -152,11 +156,11 @@ class Test_getLatestAddons(unittest.TestCase):
 		addon.channel = "stable"
 		self.assertDictEqual(getLatestAddons([addon], nvdaAPIVersions), {
 			# addon.minNvdaAPIVersion > nvdaAPIVersion.apiVer
-			V_2020_3: {"stable": {}, "beta": {}},
+			V_2020_3: {"stable": {}, "beta": {}, "dev": {}},
 
 			# addon.minNvdaAPIVersion == nvdaAPIVersion.apiVer
-			V_2021_1: {"stable": {addon.addonId: addon}, "beta": {}},
+			V_2021_1: {"stable": {addon.addonId: addon}, "beta": {}, "dev": {}},
 
 			# addon.minNvdaAPIVersion < nvdaAPIVersion.apiVer
-			V_2021_2: {"stable": {addon.addonId: addon}, "beta": {}},
+			V_2021_2: {"stable": {addon.addonId: addon}, "beta": {}, "dev": {}},
 		})

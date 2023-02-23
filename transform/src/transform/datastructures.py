@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Dict, Literal, NamedTuple
 
 # These values are validated using runtime validation -> see addon_data.schema.json
-AddonChannels = Literal["beta", "stable"]
+AddonChannels = Literal["beta", "stable", "dev"]
 
 
 class MajorMinorPatch(NamedTuple):
@@ -39,4 +39,4 @@ WriteableAddons = Dict[MajorMinorPatch, AddonChannelDict]
 
 
 def generateAddonChannelDict() -> AddonChannelDict:
-	return {"beta": {}, "stable": {}}
+	return {"beta": {}, "stable": {}, "dev": {}}

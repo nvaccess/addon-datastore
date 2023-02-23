@@ -57,14 +57,15 @@
 		"channel": {
 			"$id": "#/properties/channel",
 			"default": "",
-			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable' or 'beta'",
+			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable', 'beta' or 'dev'",
 			"examples": [
 				"beta"
 			],
 			"title": "The channel for the addon",
 			"enum": [
 				"stable",
-				"beta"
+				"beta",
+				"dev"
 			],
 			"type": "string"
 		}
