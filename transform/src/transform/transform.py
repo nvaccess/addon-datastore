@@ -1,4 +1,4 @@
-# Copyright (C) 2021 NV Access Limited
+# Copyright (C) 2021-2023 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -6,7 +6,12 @@ import glob
 import json
 import logging
 from pathlib import Path
-from typing import Dict, Iterable, Tuple
+from typing import (
+	Dict,
+	Iterable,
+	Set,
+	Tuple,
+)
 from .datastructures import (
 	Addon,
 	generateAddonChannelDict,
@@ -79,7 +84,13 @@ def writeAddons(addonDir: str, addons: WriteableAddons) -> None:
 	Given a unique mapping of (nvdaAPIVersion, channel) -> addon, write the addons to file.
 	Throws a ValidationError and exits if writeable data does not match expected schema.
 	"""
-	for nvdaAPIVersion in addons:
+	latestAddonWritePaths: Set[str] = set()
+	for nvdaAPIVersion in sorted(addons.keys(), reverse=True):
+		# To generate the 'latest view',
+		# check each api version, starting with the latest.
+		# For a given 'latest' addon write path,
+		# store the path when the path is first encountered.
+		# This ensures the latest path is returned.
 		for channel in addons[nvdaAPIVersion]:
 			for addonName in addons[nvdaAPIVersion][channel]:
 				addon = addons[nvdaAPIVersion][channel][addonName]
@@ -90,6 +101,14 @@ def writeAddons(addonDir: str, addons: WriteableAddons) -> None:
 				with open(f"{addonWritePath}/{channel}.json", "w") as newAddonFile:
 					validateJson(addonData, JSONSchemaPaths.ADDON_DATA)
 					json.dump(addonData, newAddonFile)
+
+				latestAddonWriteDir = f"{addonDir}/latest/{addonName}"
+				Path(latestAddonWriteDir).mkdir(parents=True, exist_ok=True)
+				latestAddonWritePath = f"{latestAddonWriteDir}/{channel}.json"
+				if latestAddonWritePath not in latestAddonWritePaths:
+					latestAddonWritePaths.add(latestAddonWritePath)
+					with open(latestAddonWritePath, "w") as latestAddonFile:
+						json.dump(addonData, latestAddonFile)
 
 
 def readAddons(addonDir: str) -> Iterable[Addon]:

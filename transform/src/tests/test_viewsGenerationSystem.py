@@ -176,4 +176,7 @@ class TestTransformation(unittest.TestCase):
 			ExpectedAddonVersion('2020.4.0/oldNewAddon/stable.json', '13.0.0'),
 			ExpectedAddonVersion('2020.4.0/betaStableAddon/stable.json', '0.0.1'),
 			ExpectedAddonVersion('2020.4.0/betaStableAddon/beta.json', '0.0.2'),
+			ExpectedAddonVersion('latest/betaStableAddon/beta.json', '0.0.2'),
+			ExpectedAddonVersion('latest/betaStableAddon/stable.json', '0.0.1'),
+			ExpectedAddonVersion('latest/oldNewAddon/stable.json', '13.0.0'),
 		)
