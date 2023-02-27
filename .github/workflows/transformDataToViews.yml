@@ -1,6 +1,6 @@
 # https://github.com/nvaccess/addon-datastore-transform/
 
-name: Transform NVDA addons to views
+name: Transform NVDA addons to views-staging
 
 on:
   workflow_dispatch:
@@ -26,12 +26,12 @@ jobs:
       with:
         repository: nvaccess/addon-datastore
         path: data
-    - name: Checkout views branch into separate folder
+    - name: Checkout views staging branch into separate folder
       uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore
         path: views
-        ref: views
+        ref: views-staging
     - name: Checkout transformation repo
       uses: actions/checkout@v3
       with:
