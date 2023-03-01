@@ -139,7 +139,18 @@ Process to add a new NVDA add-on version:
 1. Fill out the template.
 1. Create a PR to merge your branch into master on the `addon-datastore` repository
 1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
-3. When the PR is merged the add-on becomes available in the store.
+1. When the PR is merged the add-on becomes available in the store.
+
+### Converting an add-on manifest to a valid submission:
+1. Fork the `addon-datastore` repository
+1. Install requirements to python environment:
+`pip install requests configobj`
+1. Convert an add-on hosted at `addonUrl` to a json file:
+`python convertAddonManifest.py [addonId] [stable|beta|dev] [addonUrl]`
+1. Edit the auto-generated json file as required.
+1. Create a PR to merge your branch into master on the `addon-datastore` repository
+1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
+1. When the PR is merged the add-on becomes available in the store.
 
 
 ### Automated checks
