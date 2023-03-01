@@ -129,26 +129,30 @@ def createNewAddonJSON(addonId: str, channel: str, url: str, sha256: str, manife
 
 
 	return {
-		"displayName": manifest['summary'] + " (legacy)",
+		"displayName": manifest['summary'],
 		"publisher": manifest["author"],
 		"description": manifest["description"],
-		"homepage": None,
+		"homepage": manifest.get("url"),
 		"addonId": addonId,
 		"addonVersionName": manifest["version"],
 		"addonVersionNumber": addonVersionNumber._asdict(),
 		"minNVDAVersion": minimumNVDAVersion._asdict(),
 		"lastTestedVersion": lastTestedNVDAVersion._asdict(),
 		"channel": channel,
-		"URL": url, # from get PHP
-		"sha256": sha256, # from URL get PHP download 
-		"sourceURL": "https://addons.nvda-project.org/",
+		"URL": url,
+		"sha256": sha256,
+		"sourceURL": manifest.get("url", default=""),
 		"license": "unknown",
 		"licenseURL": None,
 	}
 
 
 def downloadAddonManifest(url: str) -> Tuple[configobj.ConfigObj, str]:
-	response = get(url, headers={"Accept": "*/*", "User-Agent": f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"})
+	response = get(url, headers={
+		"Accept": "*/*",
+		"User-Agent": f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+		}
+	)
 
 	with tempfile.TemporaryFile() as outfile:
 		outfile.write(response.content)

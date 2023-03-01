@@ -147,6 +147,7 @@ Process to add a new NVDA add-on version:
 `pip install requests configobj`
 1. Convert an add-on hosted at `addonUrl` to a json file:
 `python convertAddonManifest.py [addonId] [stable|beta|dev] [addonUrl]`
+1. Edit the auto-generated json file as required.
 1. Create a PR to merge your branch into master on the `addon-datastore` repository
 1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
 1. When the PR is merged the add-on becomes available in the store.
