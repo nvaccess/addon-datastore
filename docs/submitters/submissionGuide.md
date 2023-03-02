@@ -16,9 +16,9 @@ You can create this manually, or generate this from an add-on manifest file.
 
 ### Manual file creation
 On a new branch, copy the `_template_addon_release.json` file. 
-	- Rename and move the file to `addons/<addonID>/<version>.json`
-	- `<addonID>` is the ID of the add-on. This should match the `name` field in the add-on manifest, e.g. "speechPlayer"
-	- `<version>` is the add-on version in the form: `Major.Minor.Patch` e.g. "2.4.1"
+- Rename and move the file to `addons/<addonID>/<version>.json`
+- `<addonID>` is the ID of the add-on. This should match the `name` field in the add-on manifest, e.g. "speechPlayer"
+- `<version>` is the add-on version in the form: `Major.Minor.Patch` e.g. "2.4.1"
 
 ### Generating from an add-on manifest
 1. Install requirements to python environment:
