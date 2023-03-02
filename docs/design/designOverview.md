@@ -124,7 +124,7 @@ The `addonslist` parameter generates a list of list of add-ons using the same lo
 The addonIds are generated to match the legacy naming schema.
 For example, dev channel add-ons are named `addonId-dev` in the `addonslist`.
 
-- Link: `https://www.nvaccess.org/addonStore/legacy?addonslist`
+- Link: <https://www.nvaccess.org/addonStore/legacy?addonslist>
 
 #### `file` end-point
 The addonId supplied to the file parameter is fetched from the `addonslist`, returning the latest add-on version for that addonId.
