@@ -37,7 +37,7 @@ Aims:
 
 ## Overview
 
-[Addon store system design diagram](./docs/design/designOverview.svg) ([PlantUML markup](./docs/design/designOverview.puml))
+[Addon store system design diagram](./designOverview.svg) ([PlantUML markup](./designOverview.puml))
 
 ### Why GitHub Pull Requests?
 - GitHub is where much of the NVDA development ecosystem is already based.
@@ -66,7 +66,7 @@ Aims:
 
 ## API data generation details
 
-Triggered by a new commit to the `master` branch, [a GitHub workflow](./.github/workflows/transformDataToViews.yml), [addon-datastore-transform](https://github.com/nvaccess/addon-datastore-transform), transforms the data into the required views.
+Triggered by a new commit to the `master` branch, [a GitHub workflow](../../.github/workflows/transformDataToViews.yml), [addon-datastore-transform](https://github.com/nvaccess/addon-datastore-transform), transforms the data into the required views.
 
 For each NVDA API version and channel, the add-on metadata with the highest version number is written.
 
