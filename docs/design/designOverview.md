@@ -44,9 +44,9 @@ Aims:
 - Handles all the of the CRUD ([create, read, update, delete](https://en.wikipedia.org/wiki/CRUD))
   for users, authentication is handled, and we can determine how a user relates to an add-on
   repository and what their permissions are for that repository.
-- GitHub PR's keep a record of the outcomes of automated checks.
+- GitHub PRs keep a record of the outcomes of automated checks.
   They also facilitate discussion should there be any confusion or disagreement with the outcome.
-- GitHub PR's provided an atomic view of a store submission.
+- GitHub PRs provided an atomic view of a store submission.
 - The status (open / merged / closed) of the PR is clear.
 
 ## Infrastructure

@@ -124,7 +124,7 @@ Example:
 ### URL
 To allow directly downloading the *.nvda-addon file.
 The URL should remain valid indefinitely.
-GitHub release URL's are recommended.
+GitHub release URLs are recommended.
 
 Example: `"https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon"`
 
