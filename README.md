@@ -58,10 +58,10 @@ You are welcome to review code / UX of add-ons and provide that feedback directl
   Removed releases are no longer presented in the store, halting new installations.
 - Enable support in the store for multiple versions of an add-on, based on NVDA API version.
   - EG add-on version 1.2.5 for NVDA 2019.3 and add-on version 1.3.2 for NVDA 2020.1
-- Enable support in the store for 'beta' add-ons, for instance:
-  - add-ons being developed against alpha / beta NVDA.
-  - add-ons that want early feedback from end users.
-  - End users can choose "show me beta add-ons"
+- Enable support in the store for 'beta' and 'dev' add-ons, for instance:
+  - 'dev' add-ons are being developed against alpha / beta / rc NVDA, these would only be offered to alpha / beta / rc NVDA users.
+  - 'beta' add-ons are from authors who want early feedback from end users, signaling that not all edge cases are handled.
+  - End users of NVDA can select "show pre-release add-ons"
 
 ## Overview
 
@@ -139,7 +139,18 @@ Process to add a new NVDA add-on version:
 1. Fill out the template.
 1. Create a PR to merge your branch into master on the `addon-datastore` repository
 1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
-3. When the PR is merged the add-on becomes available in the store.
+1. When the PR is merged the add-on becomes available in the store.
+
+### Converting an add-on manifest to a valid submission:
+1. Fork the `addon-datastore` repository
+1. Install requirements to python environment:
+`pip install requests configobj`
+1. Convert an add-on hosted at `addonUrl` to a json file:
+`python convertAddonManifest.py [addonId] [stable|beta|dev] [addonUrl]`
+1. Edit the auto-generated json file as required.
+1. Create a PR to merge your branch into master on the `addon-datastore` repository
+1. Automated checks for common issues will complete. Either giving feedback or merging the PR.
+1. When the PR is merged the add-on becomes available in the store.
 
 
 ### Automated checks
