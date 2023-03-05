@@ -22,7 +22,7 @@ jobs:
           //
           const issueTitle = context.payload.issue.title
           core.setOutput('issueTitle', issueTitle)
-          const issueNumber = "#" + context.payload.issue.number
+          const issueNumber = context.payload.issue.number
           core.setOutput('issueNumber', issueNumber)
           // Knowing the submitter may be helpful
           // const issueSubmitter = context.payload.sender.login
@@ -77,12 +77,17 @@ jobs:
         token: ${{secrets.PR_ACCESS_TOKEN }}
         path: datastore
         title: ${{ steps.get-data.outputs.issueTitle }}
-        branch-suffix: short-commit-hash
+        branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         commit-message: ${{ steps.get-data.outputs.issueTitle }}
-        body: Closes issue ${{ steps.get-data.outputs.issueNumber }}
+        body: "Closes issue #${{ steps.get-data.outputs.issueNumber }}"
     - name: Enable Pull Request Automerge
       if: steps.cpr.outputs.pull-request-operation == 'created'
       uses: peter-evans/enable-pull-request-automerge@v2
       with:
         token: ${{ secrets.PR_ACCESS_TOKEN }}
         pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+    - name: Close Issue
+      uses: peter-evans/close-issue@v2
+      with:
+        issue-number: ${{ steps.get-data.outputs.issueNumber }}
+        comment: Auto-closing issue
