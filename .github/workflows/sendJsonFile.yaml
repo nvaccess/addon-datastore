@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Get data
       id: get-data
-      uses: actions/github-script@v5
+      uses: actions/github-script@v6
       with:
         script: |
           // Allow identifying the issue later.
@@ -34,7 +34,6 @@ jobs:
           const channelMd = "### Channel"
           const licenseMd = "### License Name"
           const licenseUrlMd = "### License URL"
-          const publisherMd = "### Publisher"
           //
           // collect variables from issue form
           //
@@ -45,42 +44,45 @@ jobs:
           core.setOutput('sourceUrl', sourceUrl)
           const releaseChannel = body.split(channelMd)[1].split(header3Prefix)[0].trim()
           core.setOutput('releaseChannel', releaseChannel)
-          const publisher = body.split(publisherMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('publisher', publisher)
           const licenseName = body.split(licenseMd)[1].split(header3Prefix)[0].trim()
           core.setOutput('licenseName', licenseName)
           const licenseUrl = body.split(licenseUrlMd)[1].split(header3Prefix)[0].trim()
           core.setOutput('licenseUrl', licenseUrl)
     - name: Checkout validate repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-validation
         submodules: true
+        path: validation
     - name: Checkout datastore repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
-        repository: nvaccess/addon-datastore
+        repository: nvdaes/addon-datastore
+        ref: master
         path: datastore
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
     - name: Download add-on
       run: curl --location --output addon.nvda-addon ${{ steps.get-data.outputs.downloadUrl }}
     - name: Create json file
-      run: runcreatejson -f addon.nvda-addon --dir datastore/addons --channel=${{ steps.get-data.outputs.releaseChannel }} --publisher=${{ steps.get-data.outputs.publisher }} --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} --url=${{ steps.get-data.outputs.downloadUrl }} --licName=${{ steps.get-data.outputs.licenseName }} --licUrl=${{ steps.get-data.outputs.licenseUrl }}
+      run: |
+        validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ steps.get-data.outputs.releaseChannel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} --url=${{ steps.get-data.outputs.downloadUrl }} --licName="${{ steps.get-data.outputs.licenseName }}" --licUrl=${{ steps.get-data.outputs.licenseURL }}
       shell: cmd
     - name: Create Pull Request
       id: cpr
-      uses: peter-evans/create-pull-request@v3
+      uses: peter-evans/create-pull-request@v4
       with:
-        token: ${{secrets.PR_TOKEN }}
+        token: ${{secrets.PR_ACCESS_TOKEN }}
         path: datastore
+        title: ${{ steps.get-data.outputs.issueTitle }}
+        branch-suffix: short-commit-hash
         commit-message: ${{ steps.get-data.outputs.issueTitle }}
         body: Closes issue ${{ steps.get-data.outputs.issueNumber }}
     - name: Enable Pull Request Automerge
       if: steps.cpr.outputs.pull-request-operation == 'created'
-      uses: peter-evans/enable-pull-request-automerge@v1
+      uses: peter-evans/enable-pull-request-automerge@v2
       with:
-        token: ${{ secrets.PR_TOKEN }}
+        token: ${{ secrets.PR_ACCESS_TOKEN }}
         pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
