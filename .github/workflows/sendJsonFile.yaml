@@ -12,61 +12,32 @@ jobs:
     name: Check add-on
     runs-on: windows-latest
     steps:
-    - name: Get data
-      id: get-data
-      uses: actions/github-script@v6
-      with:
-        script: |
-          // Allow identifying the issue later.
-          // setOutput exposes the variable for access at later stages via steps.get-data.outputs
-          //
-          const issueTitle = context.payload.issue.title
-          core.setOutput('issueTitle', issueTitle)
-          const issueNumber = context.payload.issue.number
-          core.setOutput('issueNumber', issueNumber)
-          // Knowing the submitter may be helpful
-          // const issueSubmitter = context.payload.sender.login
-          //
-          // Field headers, Md == Markdown
-          const header3Prefix = "###"
-          const dlTitleMd = "### Download URL"
-          const sourceUrlMd = "### Source URL"
-          const channelMd = "### Channel"
-          const licenseMd = "### License Name"
-          const licenseUrlMd = "### License URL"
-          //
-          // collect variables from issue form
-          //
-          const body = context.payload.issue.body   
-          const downloadUrl = body.split(dlTitleMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('downloadUrl', downloadUrl)
-          const sourceUrl = body.split(sourceUrlMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('sourceUrl', sourceUrl)
-          const releaseChannel = body.split(channelMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('releaseChannel', releaseChannel)
-          const licenseName = body.split(licenseMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('licenseName', licenseName)
-          const licenseUrl = body.split(licenseUrlMd)[1].split(header3Prefix)[0].trim()
-          core.setOutput('licenseUrl', licenseUrl)
-    - name: Checkout validate repo
-      uses: actions/checkout@v3
-      with:
-        repository: nvaccess/addon-datastore-validation
-        submodules: true
-        path: validation
     - name: Checkout datastore repo
       uses: actions/checkout@v3
       with:
         repository: nvdaes/addon-datastore
         ref: master
         path: datastore
+    - name: Get data
+      id: get-data
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const script = require('./datastore/getData.js')
+          script({context, core})
+    - name: Checkout validate repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        submodules: true
+        path: validation
     - name: Set up Python 3.8
       uses: actions/setup-python@v4
       with:
         python-version: 3.8
     - name: Download add-on
       run: curl --location --output addon.nvda-addon ${{ steps.get-data.outputs.downloadUrl }}
-    - name: Create json file
+    - name: Open submission from issue template
       run: |
         validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ steps.get-data.outputs.releaseChannel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} --url=${{ steps.get-data.outputs.downloadUrl }} --licName="${{ steps.get-data.outputs.licenseName }}" --licUrl=${{ steps.get-data.outputs.licenseURL }}
       shell: cmd
