@@ -28,10 +28,9 @@ On a new branch, copy the `_template_addon_release.json` file.
 	- `addonID` is the ID of the add-on. This should match the `name` field in the add-on manifest, e.g. "speechPlayer"
 	- `stable|beta|dev` are the channel options, choose one of these.
 	- `addonUrl` is where the addon file is hosted.
-1. Edit the auto-generated json file as required.
 
 ## Filling out the template
-
+Edit the manually created or auto-generated JSON file as required.
 ### addonId
 The ID for the addon.
 This should match the name field in the addon manifest and the folder name for the submission.
@@ -163,7 +162,7 @@ It includes an example of the file contents.
 1. Create a PR to merge your branch into master on the `addon-datastore` repository
 1. Automated checks to validate the submission will complete.
 Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
-GitHub requires manual approval for the automated checks to run on an author's the first submission to the repository.
+GitHub requires manual approval for the automated checks to run on an author's first submission to the repository.
 1. If the checks pass, the PR should be merged automatically.
 However, a human review process may be required.
 1. When the PR is merged the add-on becomes available in the store.

@@ -1,13 +1,13 @@
 # Add-on Store
 
-The add-on store is a data pipeline of submitting, validating and transforming add-on data to views.
+The addon-datastore repository is a data pipeline of submitting, validating and transforming add-on data to views.
 These views are hosted on the NV Access server and will become available in the NVDA add-on store.
 
 ### Guide for submitters
-[Read the submission guide](./docs/submitters/submissionGuide.md)
+Add-on authors who wish to have their add-on distributed through the add-on store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
 
 ### Design overview
-[Read the design overview](./docs/submitters/designOverview.md)
+For an overview of the whole add-on store, read [the design overview](./docs/submitters/designOverview.md).
 
 ### About security 
 Ensuring that an add-on is safe to run is a difficult challenge that isn't addressed here.
