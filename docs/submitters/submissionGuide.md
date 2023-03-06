@@ -21,16 +21,20 @@ On a new branch, copy the `_template_addon_release.json` file.
 - `<version>` is the add-on version in the form: `Major.Minor.Patch` e.g. "2.4.1"
 
 ### Generating from an add-on manifest
-1. Install requirements to python environment:
+1. Install requirements to python environment, if they are not already installed:
 `pip install requests configobj`
-1. Convert an add-on to a json file:
+1. Generate a JSON file from an add-on manifest
 `python convertAddonManifest.py [addonId] [stable|beta|dev] [addonUrl]`
 	- `addonID` is the ID of the add-on. This should match the `name` field in the add-on manifest, e.g. "speechPlayer"
 	- `stable|beta|dev` are the channel options, choose one of these.
-	- `addonUrl` is where the addon file is hosted.
+	- `addonUrl` is where the add-on file is hosted.
+	This should be a static link that will always return the same file and the same add-on version.
+	GitHub release URLs are preferred.
+	Example: https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon
 
 ## Filling out the template
 Edit the manually created or auto-generated JSON file as required.
+
 ### addonId
 The ID for the addon.
 This should match the name field in the addon manifest and the folder name for the submission.
@@ -97,7 +101,9 @@ If the addon has a homepage where users can get more information about the addon
 Example: `"https://github.com/nvaccess/addon-datastore"`
 
 ### minNVDAVersion
-The addon will not work with versions of NVDA prior to this version.
+The add-on will not work with versions of NVDA prior to this version.
+Must be a valid NVDA API version.
+Valid NVDA API versions are listed in [nvdaAPIVersions.json](https://github.com/nvaccess/addon-datastore-transform/blob/main/nvdaAPIVersions.json).
 
 Example:
 ```json
@@ -110,6 +116,8 @@ Example:
 
 ### lastTestedVersion
 The add-on has been tested up to and including this version of NVDA.
+Must be a valid NVDA API version.
+Valid NVDA API versions are listed in [nvdaAPIVersions.json](https://github.com/nvaccess/addon-datastore-transform/blob/main/nvdaAPIVersions.json).
 
 Example:
 ```json
