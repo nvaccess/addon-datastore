@@ -3,6 +3,9 @@
 The addon-datastore repository is a data pipeline of submitting, validating and transforming add-on data to views.
 These views are hosted on the NV Access server and will become available in the NVDA add-on store.
 
+The add-on store is a planned NVDA feature, which allows browsing, installing and updating add-ons from within NVDA.
+The current work in progress can be tracked in this pull request: https://github.com/nvaccess/nvda/pull/13985
+
 ### Guide for submitters
 Add-on authors who wish to have their add-on distributed through the add-on store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
 

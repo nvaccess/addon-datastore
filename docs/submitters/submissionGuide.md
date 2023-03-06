@@ -38,21 +38,20 @@ Edit the manually created or auto-generated JSON file as required.
 ### addonId
 The ID for the addon.
 This should match the name field in the addon manifest and the folder name for the submission.
-The convention is a camelCaseName.
+The suggested convention is a camelCaseName.
 
 Example: `easyAddonTech`
 
 ### channel
 Should be `"stable", "beta" or "dev"`.
 
-**Stable:** Offered to users of any compatible version of NVDA.
+**Stable:** Suggested for add-on versions which are stable, and have been tested with a stable version of NVDA.
 
-**Beta**: Allows add-on authors to target a stable NVDA release and get feedback from early adopter users before publishing add-on as stable.
-Offered to users of any compatible version of NVDA.
+**Beta**: Suggested for getting add-on feedback from early adopter users before publishing an add-on as stable.
+Suggested for testing with stable, beta or rc NVDA releases.
 
-**Dev**: Not offered to users of stable NVDA, only pre-release NVDA.
-This includes alpha, beta, rc, try, or dev builds.
-This channel can be used for developing add-ons against the newest unreleased additions to NVDA, or to stay up to date with compatibility breaking changes in an API breaking release cycle.
+**Dev**: This channel is suggested to be used with any preview or pre-release version of NVDA.
+This is useful for testing compatibility breaking changes in an API breaking release cycle, and unreleased additions to the NVDA API.
 
 ### addonVersionNumber
 The version of the add-on, as a major-minor-patch dictionary.
