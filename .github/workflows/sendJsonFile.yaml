@@ -44,18 +44,18 @@ jobs:
       id: cpr
       uses: peter-evans/create-pull-request@v4
       with:
-        token: ${{secrets.PR_ACCESS_TOKEN }}
+        token: ${{secrets.GITHUB_TOKEN }}
         path: datastore
         title: ${{ steps.get-data.outputs.issueTitle }}
         branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         commit-message: ${{ steps.get-data.outputs.issueTitle }}
         body: "Closes issue #${{ steps.get-data.outputs.issueNumber }}"
         author: github-actions <github-actions@github.com>
-    - name: Enable Pull Request Automerge
+    - name: Enable Pull Request Auto-Merge
       if: steps.cpr.outputs.pull-request-operation == 'created'
       uses: peter-evans/enable-pull-request-automerge@v2
       with:
-        token: ${{ secrets.PR_ACCESS_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
     - name: Close Issue
       uses: peter-evans/close-issue@v2
