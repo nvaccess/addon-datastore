@@ -3,14 +3,12 @@ name: Send json file
 on:
   issues:
     types: 
-      - opened
-      - reopened
-      - edited
+      - labeled
 
 jobs:
   check-addon:
     name: Check add-on
-    if: contains(github.event.issues.labels.*.name, 'autoSubmissionFromIssue')
+    if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
