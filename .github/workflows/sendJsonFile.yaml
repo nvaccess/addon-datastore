@@ -10,6 +10,7 @@ on:
 jobs:
   check-addon:
     name: Check add-on
+    if: contains(github.event.issues.labels.*.name, 'autoSubmissionFromIssue')
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
@@ -23,8 +24,8 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const script = require('./datastore/getData.js')
-          script({context, core})
+          const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
+          setOutputFromIssue({context, core})
     - name: Checkout validate repo
       uses: actions/checkout@v3
       with:
