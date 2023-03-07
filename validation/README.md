@@ -17,7 +17,8 @@ The Action aims to validate the metadata of add-ons submitted to
   - The submission addonName matches the manifest summary field
   - The submission description matches the manifest description field
   - The homepage URL matches the manifest URL field
-  - The addon versions match.
+  - The addon versions match
+  - The last tested & minimum required versions are valid NVDA API versions.
 
 If all is valid, "Congratulations: manifest, metadata and file path are valid" is printed.
 
@@ -32,7 +33,7 @@ To try validating an addon submission on your own machine.
 From cmd.exe:
 
 1. Clone this repo: `git clone https://github.com/nvaccess/addon-datastore-validation.git`
-1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json>`
+1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json> <pathToFileWithAPIVersions.json>`
 
 ## Run unit tests:
 To test the scripts used in this action, you can run the unit tests.

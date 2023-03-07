@@ -39,6 +39,14 @@ def getAddonMetadata(filename: str) -> JsonObjT:
 	return data
 
 
+def getExistingVersions(verFilename: str) -> typing.List[str]:
+	"""Loads API versions file and returns list of versions formatted as strings.
+	"""
+	with open(verFilename) as f:
+		data: JsonObjT = json.load(f)
+	return [_formatVersionString(version["apiVer"].values()) for version in data]
+
+
 def _validateJson(data: JsonObjT) -> None:
 	""" Ensure that the loaded metadata conforms to the schema.
 	Raise error if not
@@ -223,6 +231,20 @@ def checkManifestVersionMatchesVersionName(
 		)
 
 
+def checkLastTestedVersionExist(submission: JsonObjT, verFilename: str) -> ValidationErrorGenerator:
+	lastTestedVersion: JsonObjT = submission['lastTestedVersion']
+	formattedLastTestedVersion: str = _formatVersionString(lastTestedVersion.values())
+	if formattedLastTestedVersion not in getExistingVersions(verFilename):
+		yield f"Last tested version error: {formattedLastTestedVersion} doesn't exist"
+
+
+def checkMinRequiredVersionExist(submission: JsonObjT, verFilename: str) -> ValidationErrorGenerator:
+	minRequiredVersion: JsonObjT = submission["minNVDAVersion"]
+	formattedMinRequiredVersion: str = _formatVersionString(minRequiredVersion.values())
+	if formattedMinRequiredVersion not in getExistingVersions(verFilename):
+		yield f"Minimum required version error: {formattedMinRequiredVersion} doesn't exist"
+
+
 def checkVersions(
 		manifest: AddonManifest,
 		submissionFilePath: str,
@@ -238,7 +260,7 @@ def checkVersions(
 	yield from checkParsedVersionNameMatchesVersionNumber(submission)
 
 
-def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
+def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationErrorGenerator:
 	try:
 		submissionData = getAddonMetadata(filename=submissionFilePath)
 		print("Submission JSON validated with schema.")
@@ -259,6 +281,9 @@ def validateSubmission(submissionFilePath: str) -> ValidationErrorGenerator:
 			yield from checksumErrors
 		else:
 			print("Sha256 matches")
+
+		yield from checkLastTestedVersionExist(submissionData, verFilename)
+		yield from checkMinRequiredVersionExist(submissionData, verFilename)
 
 		manifest = getAddonManifest(addonDestPath)
 		yield from checkSummaryMatchesDisplayName(manifest, submissionData)
@@ -291,12 +316,17 @@ def main():
 		dest="file",
 		help="The json (.json) file containing add-on metadata."
 	)
+	parser.add_argument(
+		dest="APIVersions",
+		help="The JSON file containing valid NVDA API versions."
+	)
 
 	args = parser.parse_args()
 	filename = args.file
+	verFilename = args.APIVersions
 
 	if not args.dry_run:
-		errors = validateSubmission(filename)
+		errors = validateSubmission(filename, verFilename)
 	else:
 		errors = iter(())
 	outputResult(errors)
