@@ -15,7 +15,7 @@ body:
   id: download-url
   attributes:
     label: Download URL
-    description: The URL to download the add-on. It must start with 'https' and end with 'nvda-addon'.
+    description: The URL to download the add-on. It must start with 'https' and end with 'nvda-addon'. This URL should always download the same file of the same add-on version.
     placeholder: https://github.com/userName/addonName/releases/releaseNumber/download/addonName.nvda-addon
   validations:
     required: true
