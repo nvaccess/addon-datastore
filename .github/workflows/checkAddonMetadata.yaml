@@ -11,7 +11,9 @@ on:
 jobs:
 
   checkMetadata:
-  
+    permissions:
+      pull-requests: write
+      contents: write
     runs-on: windows-latest
     strategy:
       matrix:
@@ -68,3 +70,7 @@ jobs:
         path: transform
     - name: Validate metadata
       run: addon-datastore-validation/runvalidate ${{steps.getMetadata.outputs.result}} ./transform/nvdaAPIVersions.json
+    - name: Enable Pull Request Auto-Merge
+      uses: peter-evans/enable-pull-request-automerge@v2
+      with:
+        pull-request-number:  ${{ github.event.pull_request.number }}
