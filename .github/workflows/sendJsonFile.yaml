@@ -50,4 +50,4 @@ jobs:
         git config user.email github-actions@github.com
         git add .
         git commit -m "${{ steps.get-data.outputs.issueTitle }}" -m "Closes #${{ steps.get-data.outputs.issueNumber }}"
-        git push
+        git push --set-upstream origin
