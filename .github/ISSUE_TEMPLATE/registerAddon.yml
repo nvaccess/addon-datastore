@@ -1,0 +1,53 @@
+name: Add-on registration
+description: Add an NVDA add-on to add-ons datastore
+title: "[Submit add-on]: "
+labels: [autoSubmissionFromIssue]
+assignees: 
+- nvaccess
+body:
+# Docs on using issue forms:
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+- type: markdown
+  attributes:
+    value: |
+      Submit an NVDA add-on to datastore. Provide download and source URL, and indicate if it's a stable add-on or not.
+- type: input
+  id: download-url
+  attributes:
+    label: Download URL
+    description: The URL to download the add-on. It must start with 'https' and end with 'nvda-addon'. This URL should always download the same file of the same add-on version.
+    placeholder: https://github.com/userName/addonName/releases/releaseNumber/download/addonName.nvda-addon
+  validations:
+    required: true
+- type: input
+  id: source-url
+  attributes:
+    label: Source URL
+    description: The URL to review the source code of the submitted add-on.
+    placeholder: https://github.com/username/repo/
+  validations:
+    required: true
+- type: dropdown
+  id: channel
+  attributes:
+    label: Channel
+    description: Channel for this add-on release.
+    multiple: false
+    options:
+      - stable
+      - beta
+      - dev
+  validations:
+    required: true
+- type: input
+  id: license-name
+  attributes:
+    label: License Name
+    description: What license is this add-on released under?
+    value: GPL v2
+- type: input
+  id: license-url
+  attributes:
+    label: License URL
+    description: The URL for the license of this add-on
+    value: https://www.gnu.org/licenses/gpl-2.0.html
