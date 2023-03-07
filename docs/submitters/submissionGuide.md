@@ -8,20 +8,17 @@ If an add-on author wishes to submit their add-on to be visible in this add-on s
 - Familiarity with GitHub
 - Familiarity with Git, including working with branches.
 
-## Set up
-Fork the `addon-datastore` repository
-
 ## Create an add-on version file for submission
 You can create this manually, or generate this by submitting an issue.
 
 ### Submit from an issue form
-Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
-Fill out and submit the issue form.
-
-A PR should automatically open.
-If the PR fails to auto-merge, re-submit the auto-generated JSON file by following the "Manual file creation" steps.
+1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
+1. Fill out and submit the issue form.
+1. A PR should automatically open.
+1. If the PR fails to auto-merge, re-submit the auto-generated JSON file by following the "Manual file creation" steps.
 
 ### Manual file creation
+1. Fork the `addon-datastore` repository
 1. On a new branch, copy the `_template_addon_release.json` file. 
 	- Rename and move the file to `addons/<addonID>/<version>.json`
 	- `<addonID>` is the ID of the add-on. This should match the `name` field in the add-on manifest, e.g. "speechPlayer"
