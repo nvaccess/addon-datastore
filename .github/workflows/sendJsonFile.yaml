@@ -51,6 +51,7 @@ jobs:
         branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         commit-message: ${{ steps.get-data.outputs.issueTitle }}
         body: "Closes issue #${{ steps.get-data.outputs.issueNumber }}"
+        author: github-actions <github-actions@github.com>
     - name: Enable Pull Request Automerge
       if: steps.cpr.outputs.pull-request-operation == 'created'
       uses: peter-evans/enable-pull-request-automerge@v2
