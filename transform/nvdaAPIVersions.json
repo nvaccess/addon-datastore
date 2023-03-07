@@ -1,9 +1,35 @@
 [
 	{
-		"description": "NVDA 2019.2 and earlier",
+		"description": "NVDA 2018.4 and earlier",
 		"apiVer": {
 			"major": 0,
 			"minor": 0,
+			"patch": 0
+		},
+		"backCompatTo": {
+			"major": 0,
+			"minor": 0,
+			"patch": 0
+		}
+	},
+	{
+		"description": "NVDA 2019.1",
+		"apiVer": {
+			"major": 2019,
+			"minor": 1,
+			"patch": 0
+		},
+		"backCompatTo": {
+			"major": 0,
+			"minor": 0,
+			"patch": 0
+		}
+	},
+	{
+		"description": "NVDA 2019.2",
+		"apiVer": {
+			"major": 2019,
+			"minor": 2,
 			"patch": 0
 		},
 		"backCompatTo": {
