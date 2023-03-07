@@ -10,7 +10,7 @@ The current work in progress can be tracked in this pull request: https://github
 Add-on authors who wish to have their add-on distributed through the add-on store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
 
 ### Design overview
-For an overview of the whole add-on store, read [the design overview](./docs/submitters/designOverview.md).
+For an overview of the whole add-on store, read [the design overview](./docs/design/designOverview.md).
 
 ### About security 
 Ensuring that an add-on is safe to run is a difficult challenge that isn't addressed here.
