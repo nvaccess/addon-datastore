@@ -7,6 +7,9 @@ on:
 
 jobs:
   check-addon:
+    permissions:
+      pull-requests: write
+      contents: write
     name: Check add-on
     if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
@@ -44,7 +47,6 @@ jobs:
       id: cpr
       uses: peter-evans/create-pull-request@v4
       with:
-        token: ${{secrets.GITHUB_TOKEN }}
         path: datastore
         title: ${{ steps.get-data.outputs.issueTitle }}
         branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
@@ -55,7 +57,6 @@ jobs:
       if: steps.cpr.outputs.pull-request-operation == 'created'
       uses: peter-evans/enable-pull-request-automerge@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
         pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
     - name: Close Issue
       uses: peter-evans/close-issue@v2
