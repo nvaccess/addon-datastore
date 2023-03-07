@@ -17,7 +17,7 @@ jobs:
     - name: Checkout datastore repo
       uses: actions/checkout@v3
       with:
-        repository: nvaccess/addon-datastore
+        repository: nvdaes/addon-datastore
         ref: master
         path: datastore
     - name: Get data
@@ -51,7 +51,7 @@ jobs:
         title: ${{ steps.get-data.outputs.issueTitle }}
         branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         commit-message: ${{ steps.get-data.outputs.issueTitle }}
-        body: "Closes #${{ steps.get-data.outputs.issueNumber }}"
+        body: "Closes issue #${{ steps.get-data.outputs.issueNumber }}"
         author: github-actions <github-actions@github.com>
     - name: Enable Pull Request Auto-Merge
       if: steps.cpr.outputs.pull-request-operation == 'created'
