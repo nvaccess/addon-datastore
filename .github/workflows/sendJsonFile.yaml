@@ -45,8 +45,6 @@ jobs:
     - name: Commit and push
       run: |
         cd datastore
-        git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > ../commitMsg.txt
-        cd ../views
         git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
         git config user.name github-actions
         git config user.email github-actions@github.com
