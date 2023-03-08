@@ -4,14 +4,15 @@ on:
   pull_request:
     branches:
       - master
-      - removeTools
     paths:
       - addons/**
 
 jobs:
 
   checkMetadata:
-  
+    permissions:
+      pull-requests: write
+      contents: write
     runs-on: windows-latest
     strategy:
       matrix:
@@ -68,3 +69,8 @@ jobs:
         path: transform
     - name: Validate metadata
       run: addon-datastore-validation/runvalidate ${{steps.getMetadata.outputs.result}} ./transform/nvdaAPIVersions.json
+    - name: Merge Pull Request
+      uses: juliangruber/merge-pull-request-action@v1
+      with:
+        number: ${{ github.event.pull_request.number }}
+        method: squash
