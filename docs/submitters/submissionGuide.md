@@ -17,7 +17,6 @@ You can create this manually, or generate this by submitting an issue.
 1. Soon after, a link will be posted in the comments of your issue.
 This link opens a pull request with your automatically generated submission.
 GitHub actions requires an author to manually submit a PR for it to be auto-approved.
-1. If the PR fails to auto-merge, re-submit the auto-generated JSON file by following the "Manual file creation" steps.
 
 ### Manual file creation
 1. Fork the `addon-datastore` repository
