@@ -4,14 +4,12 @@ on:
   pull_request:
     branches:
       - master
-      - removeTools
     paths:
       - addons/**
 
 jobs:
 
   checkMetadata:
-  
     runs-on: windows-latest
     strategy:
       matrix:

@@ -7,6 +7,10 @@ on:
 
 jobs:
   check-addon:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     name: Check add-on
     if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
@@ -14,7 +18,7 @@ jobs:
     - name: Checkout datastore repo
       uses: actions/checkout@v3
       with:
-        repository: nvdaes/addon-datastore
+        repository: nvaccess/addon-datastore
         ref: master
         path: datastore
     - name: Get data
@@ -40,25 +44,19 @@ jobs:
       run: |
         validation\runcreatejson -f addon.nvda-addon --dir datastore\addons --channel=${{ steps.get-data.outputs.releaseChannel }} --publisher=${{ github.event.sender.login }} --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} --url=${{ steps.get-data.outputs.downloadUrl }} --licName="${{ steps.get-data.outputs.licenseName }}" --licUrl=${{ steps.get-data.outputs.licenseURL }}
       shell: cmd
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v4
+    - name: Commit and push
+      run: |
+        cd datastore
+        git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "${{ steps.get-data.outputs.issueTitle }}" -m "Closes #${{ steps.get-data.outputs.issueNumber }}"
+        git push --set-upstream origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+    - name: Add comment
+      uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
       with:
-        token: ${{secrets.PR_ACCESS_TOKEN }}
-        path: datastore
-        title: ${{ steps.get-data.outputs.issueTitle }}
-        branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
-        commit-message: ${{ steps.get-data.outputs.issueTitle }}
-        body: "Closes issue #${{ steps.get-data.outputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
-    - name: Enable Pull Request Automerge
-      if: steps.cpr.outputs.pull-request-operation == 'created'
-      uses: peter-evans/enable-pull-request-automerge@v2
-      with:
-        token: ${{ secrets.PR_ACCESS_TOKEN }}
-        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-    - name: Close Issue
-      uses: peter-evans/close-issue@v2
-      with:
-        issue-number: ${{ steps.get-data.outputs.issueNumber }}
-        comment: Auto-closing issue
+        issue-number: ${{ github.event.issue.number }}
+        body: |
+          Submission has been prepared.
+          Use [this link](https://github.com/nvaccess/addon-datastore/pull/new/${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}) to create a pull request submission from this issue.
