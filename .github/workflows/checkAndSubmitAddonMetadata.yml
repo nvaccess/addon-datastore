@@ -1,37 +1,40 @@
 name: Check submitted NVDA add-on
 
 on:
-  pull_request:
-    branches:
-      - master
-    paths:
-      - addons/**
+  workflow_call:
+    inputs:
+      pullRequestNumber:
+        required: true
+        type: string
+      headRef:
+        required: true
+        type: string
 
 jobs:
-
   checkMetadata:
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [ 3.8 ]
     steps:
-    
     - name: Checkout code
       uses: actions/checkout@v3
+      with:
+        ref: ${{ inputs.headRef }}
     - name: Determine files changed
       uses: actions/github-script@v6
       id: getMetadata
+      env:
+        pullRequestNumber: ${{ inputs.pullRequestNumber }}
       with:
         script: |
-          const restPrefix = "GET /repos/"
-          const owner = context.repo.owner
-          const repo = context.repo.repo
-          const number = context.issue.number
-          const restSubfix = "/files"
-          const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
+          const url = "GET /repos/nvaccess/addon-datastore/pulls/" + process.env.pullRequestNumber + "/files" 
           const result = await github.request(url)
-          const changedFiles = result.data
           var addonFileName
+          const changedFiles = result.data
           for (fileData of changedFiles) {
             const filename = fileData.filename
             if (filename.startsWith("addons")) {
@@ -58,11 +61,17 @@ jobs:
       run: |
         python -m pip install --upgrade wheel
         pip install -r addon-datastore-validation/requirements.txt
-    # TODO: consider migrating nvdaAPIVersions.json to this repo, or its own repo
     - name: Checkout transformation repo for nvdaAPIVersions.json
       uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: addon-datastore-validation/runvalidate ${{steps.getMetadata.outputs.result}} ./transform/nvdaAPIVersions.json
+      run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json
+    - name: Merge Pull Request
+      uses: juliangruber/merge-pull-request-action@v1
+      with:
+        number: ${{ inputs.pullRequestNumber }}
+  call-workflow:
+    needs: checkMetadata
+    uses: ./.github/workflows/transformDataToViews.yml
