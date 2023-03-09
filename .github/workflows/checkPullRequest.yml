@@ -1,0 +1,14 @@
+name: Check submitted NVDA add-on
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - addons/**
+
+jobs:
+  call-workflow-passing-data:
+    uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
+    with:
+      pullRequestUrl: https://github.com/nvaccess/addon-datastore/pull/${{ github.event.pull_request.number }}

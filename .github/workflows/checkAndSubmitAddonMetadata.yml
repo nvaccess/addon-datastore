@@ -1,21 +1,22 @@
 name: Check submitted NVDA add-on
 
 on:
-  pull_request:
-    branches:
-      - master
-    paths:
-      - addons/**
+  workflow_call:
+    inputs:
+      pullRequestUrl:
+        required: true
+        type: string
 
 jobs:
-
   checkMetadata:
+    permissions:
+      contents: write
+      pull-requests: write
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [ 3.8 ]
     steps:
-    
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Determine files changed
@@ -23,13 +24,7 @@ jobs:
       id: getMetadata
       with:
         script: |
-          const restPrefix = "GET /repos/"
-          const owner = context.repo.owner
-          const repo = context.repo.repo
-          const number = context.issue.number
-          const restSubfix = "/files"
-          const url = restPrefix + owner + "/" + repo + "/pulls/" + number + restSubfix
-          const result = await github.request(url)
+          const result = await github.request(context.inputs.pullRequestUrl)
           const changedFiles = result.data
           var addonFileName
           for (fileData of changedFiles) {
@@ -58,11 +53,18 @@ jobs:
       run: |
         python -m pip install --upgrade wheel
         pip install -r addon-datastore-validation/requirements.txt
-    # TODO: consider migrating nvdaAPIVersions.json to this repo, or its own repo
     - name: Checkout transformation repo for nvdaAPIVersions.json
       uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: addon-datastore-validation/runvalidate ${{steps.getMetadata.outputs.result}} ./transform/nvdaAPIVersions.json
+      run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json
+    - name: Enable Pull Request auto-merge
+      if: steps.cpr.outputs.pull-request-operation == 'created'
+      uses: peter-evans/enable-pull-request-automerge@v2
+      with:
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+  call-workflow:
+    needs: checkMetadata
+    uses: ./.github/workflows/transformDataToViews.yml
