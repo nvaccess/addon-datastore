@@ -3,7 +3,7 @@ name: Check submitted NVDA add-on
 on:
   workflow_call:
     inputs:
-      pullRequestUrl:
+      pullRequestNumber:
         required: true
         type: string
 
@@ -23,11 +23,11 @@ jobs:
       uses: actions/github-script@v6
       id: getMetadata
       env:
-        pullRequestUrl: ${{ inputs.pullRequestUrl }}
+        pullRequestNumber: ${{ inputs.pullRequestNumber }}
       with:
         script: |
-          const result = await github.request(process.env.pullRequestUrl)
-          const changedFiles = result.data
+          const url = "GET /repos/nvacesss/addon-datstore/pulls/" + process.env.pullRequestNumber + "/files" 
+          const result = await github.request(url)
           var addonFileName
           for (fileData of changedFiles) {
             const filename = fileData.filename

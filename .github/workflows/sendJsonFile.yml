@@ -66,4 +66,4 @@ jobs:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
-      pullRequestUrl: ${{ needs.check-addon.steps.cpr.outputs.pull-request-url }}
+      pullRequestNumber: ${{ needs.check-addon.steps.cpr.outputs.pull-request-number }}
