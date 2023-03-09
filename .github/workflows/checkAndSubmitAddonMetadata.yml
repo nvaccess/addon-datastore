@@ -24,7 +24,7 @@ jobs:
       id: getMetadata
       with:
         script: |
-          const result = await github.request(context.inputs.pullRequestUrl)
+          const result = await github.request(${{ inputs.pullRequestUrl }})
           const changedFiles = result.data
           var addonFileName
           for (fileData of changedFiles) {
