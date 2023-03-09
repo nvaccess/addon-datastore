@@ -26,7 +26,7 @@ jobs:
         pullRequestUrl: ${{ inputs.pullRequestUrl }}
       with:
         script: |
-          const result = await github.request(process.ENV.pullRequestUrl)
+          const result = await github.request(process.env.pullRequestUrl)
           const changedFiles = result.data
           var addonFileName
           for (fileData of changedFiles) {
