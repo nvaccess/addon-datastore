@@ -14,9 +14,7 @@ You can create this manually, or generate this by submitting an issue.
 ### Submit from an issue form
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
 1. Fill out and submit the issue form.
-1. Soon after, a link will be posted in the comments of your issue.
-This link opens a pull request with your automatically generated submission.
-GitHub actions requires an author to manually submit a PR for it to be auto-approved.
+1. TODO
 
 ### Manual file creation
 1. Fork the `addon-datastore` repository

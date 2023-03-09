@@ -3,11 +3,7 @@
 name: Transform NVDA addons to views
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ master ]
-    paths:
-      - addons/**
+  workflow_call:
 
 jobs:
   transformAndPush:

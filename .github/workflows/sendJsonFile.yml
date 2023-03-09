@@ -1,0 +1,73 @@
+name: Send json file
+
+on:
+  issues:
+    types: 
+      - labeled
+
+jobs:
+  check-addon:
+    outputs:
+      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+      headRef: ${{ steps.cpr.outputs.pull-request-head-sha }}
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    name: Check add-on
+    if: github.event.label.name == 'autoSubmissionFromIssue'
+    runs-on: windows-latest
+    steps:
+    - name: Checkout datastore repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore
+        ref: master
+        path: datastore
+    - name: Get data
+      id: get-data
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
+          setOutputFromIssue({context, core})
+    - name: Checkout validate repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        submodules: true
+        path: validation
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+    - name: Download add-on
+      run: curl --location --output addon.nvda-addon ${{ steps.get-data.outputs.downloadUrl }}
+    - name: Create JSON submission from issue
+      run: |
+        validation\runcreatejson ^
+        -f addon.nvda-addon ^
+        --dir datastore\addons ^
+        --channel=${{ steps.get-data.outputs.releaseChannel }} ^
+        --publisher=${{ github.event.sender.login }} ^
+        --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} ^
+        --url=${{ steps.get-data.outputs.downloadUrl }} ^
+        --licName="${{ steps.get-data.outputs.licenseName }}" ^
+        --licUrl=${{ steps.get-data.outputs.licenseURL }} ^
+      shell: cmd
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v4
+      with:
+        path: datastore
+        title: ${{ steps.get-data.outputs.issueTitle }}
+        branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        commit-message: ${{ steps.get-data.outputs.issueTitle }}
+        body: "Closes #${{ steps.get-data.outputs.issueNumber }}"
+        author: github-actions <github-actions@github.com>
+  call-workflow-passing-data:
+    needs: check-addon
+    uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
+    with:
+      pullRequestNumber: ${{ needs.check-addon.outputs.pullRequestNumber }}
+      headRef: ${{ needs.check-addon.outputs.headRef }}
