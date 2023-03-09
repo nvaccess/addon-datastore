@@ -7,6 +7,8 @@ on:
 
 jobs:
   check-addon:
+    outputs:
+      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
     permissions:
       contents: write
       issues: write
@@ -66,4 +68,4 @@ jobs:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
-      pullRequestNumber: ${{ needs.check-addon.steps.cpr.outputs.pull-request-number }}
+      pullRequestNumber: ${{ needs.check-addon.outputs.pullRequestNumber }}
