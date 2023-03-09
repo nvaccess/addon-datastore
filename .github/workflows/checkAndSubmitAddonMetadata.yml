@@ -22,9 +22,11 @@ jobs:
     - name: Determine files changed
       uses: actions/github-script@v6
       id: getMetadata
+      env:
+        pullRequestUrl: ${{ inputs.pullRequestUrl }}
       with:
         script: |
-          const result = await github.request('${{ inputs.pullRequestUrl }}'')
+          const result = await github.request(process.ENV.pullRequestUrl)
           const changedFiles = result.data
           var addonFileName
           for (fileData of changedFiles) {
