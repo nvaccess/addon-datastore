@@ -67,7 +67,13 @@ jobs:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json
+      run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json ./validateErrors.txt
+    - name: Post validation errors as comment
+      if: failure()
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        pull-request-number: ${{ inputs.pullRequestNumber }}
+        body-file: ./validateErrors.txt
     - name: Merge branch to master
       uses: everlytic/branch-merge@1.1.2
       with:
