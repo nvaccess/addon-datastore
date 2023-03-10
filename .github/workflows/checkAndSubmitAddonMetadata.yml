@@ -57,6 +57,7 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         path: addon-datastore-validation
         submodules: true
+        branch: outputValdiationErros
     - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
