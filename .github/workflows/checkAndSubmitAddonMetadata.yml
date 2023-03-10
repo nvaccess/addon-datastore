@@ -68,12 +68,12 @@ jobs:
         path: transform
     - name: Validate metadata
       run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json
-    - name: Merge staging -> uat
-      uses: devmasx/merge-branch@v1.4.0
+    - name: Merge branch to master
+      uses: everlytic/branch-merge@1.1.2
       with:
-        type: now
-        from_branch: $${ inputs.headRef }}
+        source_ref: ${{ inputs.headRef }}
         target_branch: master
+        commit_message_template: '[Automated] Merged ${{ steps.getMetadata.outputs.result }} (${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
     needs: checkMetadata
     uses: ./.github/workflows/transformDataToViews.yml
