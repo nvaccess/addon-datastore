@@ -73,7 +73,7 @@ jobs:
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
       with:
-        pull-request-number: ${{ inputs.pullRequestNumber }}
+        issue-number: ${{ inputs.pullRequestNumber }}
         body-file: ./validateErrors.txt
     - name: Merge branch to master
       uses: everlytic/branch-merge@1.1.2
