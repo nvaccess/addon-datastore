@@ -54,7 +54,7 @@ def generateJsonFile(
 		sourceUrl: str,
 		url: str,
 		licenseName: str,
-		licenseUrl: str,
+		licenseUrl: typing.Optional[str],
 ) -> None:
 	manifest = getAddonManifest(addonPath)
 	data = _createDictMatchingJsonSchema(
@@ -95,7 +95,7 @@ def _createDictMatchingJsonSchema(
 		sourceUrl: str,
 		url: str,
 		licenseName: str,
-		licenseUrl: str,
+		licenseUrl: typing.Optional[str],
 ) -> typing.Dict[str, str]:
 	return {  # see _validate/addonVersion_schema.json
 		"addonId": manifest["name"],
@@ -103,7 +103,8 @@ def _createDictMatchingJsonSchema(
 		"URL": url,
 		"description": manifest["description"],
 		"sha256": sha,
-		"homepage": manifest["url"],
+		# Optional field
+		"homepage": manifest.get("url"),
 		"addonVersionName": manifest["version"],
 		"addonVersionNumber": dataclasses.asdict(
 			getVersionNumber(manifest["version"])
@@ -127,42 +128,51 @@ def main():
 	parser.add_argument(
 		"-f",
 		dest="file",
-		help="The add-on (nvda-addon) file to create json from manifest."
+		help="The add-on (nvda-addon) file to create json from manifest.",
+		required=True,
 	)
 	parser.add_argument(
 		"--dir",
 		dest="parentDir",
-		help="Parent directory to store the json file."
+		help="Parent directory to store the json file.",
+		required=True,
 	)
 	parser.add_argument(
 		"--channel",
 		dest="channel",
-		help="The channel for this release."
+		help="The channel for this release.",
+		required=True,
 	)
 	parser.add_argument(
 		"--publisher",
 		dest="publisher",
-		help="The publisher for this submission."
+		help="The publisher for this submission.",
+		required=True,
 	)
 	parser.add_argument(
 		"--sourceUrl",
 		dest="sourceUrl",
-		help="The URL to review source code."
+		help="The URL to review source code.",
+		required=True,
 	)
 	parser.add_argument(
 		"--url",
 		dest="url",
-		help="URL to download the add-on."
+		help="URL to download the add-on.",
+		required=True,
 	)
 	parser.add_argument(
 		"--licName",
 		dest="licenseName",
-		help="Name of the license used with the add-on. E.G. 'GPL v2'"
+		help="Name of the license used with the add-on. E.G. 'GPL v2'",
+		required=True,
 	)
 	parser.add_argument(
 		"--licUrl",
 		dest="licenseUrl",
-		help="URL to read the license in full. E.G. 'https://www.gnu.org/licenses/gpl-2.0.html'"
+		help="URL to read the license in full. E.G. 'https://www.gnu.org/licenses/gpl-2.0.html'",
+		default=None,
+		required=False,
 	)
 	args = parser.parse_args()
 	generateJsonFile(
@@ -173,7 +183,8 @@ def main():
 		sourceUrl=args.sourceUrl,
 		url=args.url,
 		licenseName=args.licenseName,
-		licenseUrl=args.licenseUrl,
+		# Convert the case --licUrl='' to --licUrl=None
+		licenseUrl=args.licenseUrl if args.licenseUrl else None,
 	)
 
 
