@@ -33,6 +33,7 @@ Descriptions for the fields of JSON schema can be found in [jsonMetadata.md](./j
 Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
 1. If the checks pass, the PR should be merged automatically.
 1. If the checks fail, a comment should be added to the pull request outlining the failure.
-You may need to update your add-on manifest and resubmit the issue form.
+To address the issues, resubmit the issue form or manual pull request.
+You may need to also update your add-on manifest.
 Descriptions for the fields of JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 1. When the PR is merged the add-on becomes available in the store.
