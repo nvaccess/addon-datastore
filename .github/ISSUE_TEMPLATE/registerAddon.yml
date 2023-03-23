@@ -27,6 +27,13 @@ body:
     placeholder: https://github.com/username/repo/
   validations:
     required: true
+- type: input
+  id: publisher
+  attributes:
+    label: Publisher
+    description: The name of the individual, group, or company responsible for the addon.
+  validations:
+    required: true
 - type: dropdown
   id: channel
   attributes:
@@ -43,8 +50,10 @@ body:
   id: license-name
   attributes:
     label: License Name
-    description: What license is this add-on released under?
+    description: The license that this add-on is released under.
     value: GPL v2
+  validations:
+    required: true
 - type: input
   id: license-url
   attributes:

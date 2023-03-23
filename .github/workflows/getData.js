@@ -13,6 +13,7 @@ module.exports = ({context, core}) => {
 	const header3Prefix = "###"
 	const dlTitleMd = "### Download URL"
 	const sourceUrlMd = "### Source URL"
+	const publisherMd = "### Publisher"
 	const channelMd = "### Channel"
 	const licenseMd = "### License Name"
 	const licenseUrlMd = "### License URL"
@@ -24,6 +25,8 @@ module.exports = ({context, core}) => {
 	core.setOutput('downloadUrl', downloadUrl)
 	const sourceUrl = body.split(sourceUrlMd)[1].split(header3Prefix)[0].trim()
 	core.setOutput('sourceUrl', sourceUrl)
+	const publisherUrl = body.split(publisherMd)[1].split(header3Prefix)[0].trim()
+	core.setOutput('publisher', publisherUrl)
 	const releaseChannel = body.split(channelMd)[1].split(header3Prefix)[0].trim()
 	core.setOutput('releaseChannel', releaseChannel)
 	const licenseName = body.split(licenseMd)[1].split(header3Prefix)[0].trim()
