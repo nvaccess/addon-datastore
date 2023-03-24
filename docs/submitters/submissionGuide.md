@@ -1,21 +1,20 @@
 # Submission Guide
-
-If an add-on author wishes to submit their add-on to be visible in this add-on store they will need to:
-- Copy and fill out the metadata template
-- Create a pull request to merge the branch to master of this repository.
+If your add-on was hosted on [addonFiles](https://github.com/nvaccess/addonFiles) please read the [migrating to datastore guide](./migratingFromAddonFiles.md).
 
 ## Pre-requisites:
-- Familiarity with GitHub
-- Familiarity with Git, including working with branches.
+Familiarity with GitHub
 
 ## Create an add-on version file for submission
+Each submission to the addon-datastore is structured as a JSON file, containing all the metadata needed for the NVDA add-on store.
 You can create this manually, or generate this by submitting an issue.
+Descriptions for the fields of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 
 ### Submit from an issue form
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
 1. Fill out and submit the issue form.
+
 This will create an issue with a summary of your submission.
-The form and your add-on's manifest are used to create a JSON file.
+The issue form and the add-on's manifest are used to create a JSON file.
 This JSON file is submitted as a pull request to the repository.
 
 ### Manual file creation
@@ -31,9 +30,14 @@ Descriptions for the fields of JSON schema can be found in [jsonMetadata.md](./j
 ## After submitting your add-on version file
 1. Automated checks are ran to validate the submission.
 Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
-1. If the checks pass, the PR should be merged automatically.
 1. If the checks fail, a comment should be added to the pull request outlining the failure.
 To address the issues, resubmit the issue form or manual pull request.
 You may need to also update your add-on manifest.
-Descriptions for the fields of JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
-1. When the PR is merged the add-on becomes available in the store.
+Descriptions for the fields of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
+1. If the checks pass, the PR should be merged automatically.
+The add-on should soon become available in the store.
+
+## Registering an add-on in the translation system
+Optional.
+Some authors may wish to include their add-on in the translations system.
+To do this, follow the steps to register the add-on in [mrconfig](https://github.com/nvaccess/mrconfig/blob/master/readme.md#steps-for-addon-authors).
