@@ -13,6 +13,7 @@ import typing
 import argparse
 import json
 from jsonschema import validate, exceptions
+from _validate.majorMinorPatch import MajorMinorPatch
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runValidate.bat
 # E402 module level import not at top of file
@@ -232,6 +233,32 @@ def checkManifestVersionMatchesVersionName(
 		)
 
 
+def checkMinNVDAVersionMatches(
+		manifest: AddonManifest,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	manifestMinimumNVDAVersion = MajorMinorPatch.getFromStr(manifest["minimumNVDAVersion"])
+	minNVDAVersion = MajorMinorPatch(**submission["minNVDAVersion"])
+	if manifestMinimumNVDAVersion != minNVDAVersion:
+		yield (
+			"Submission data 'minNVDAVersion' field does not match 'minNVDAVersion' field in"
+			f" addon manifest: {manifestMinimumNVDAVersion} vs minNVDAVersion: {minNVDAVersion}"
+		)
+
+
+def checkLastTestedNVDAVersionMatches(
+		manifest: AddonManifest,
+		submission: JsonObjT
+) -> ValidationErrorGenerator:
+	manifestLastTestedNVDAVersion = MajorMinorPatch.getFromStr(manifest["lastTestedNVDAVersion"])
+	lastTestedVersion = MajorMinorPatch(**submission["lastTestedVersion"])
+	if manifestLastTestedNVDAVersion != lastTestedVersion:
+		yield (
+			"Submission data 'lastTestedVersion' field does not match 'lastTestedNVDAVersion' field in"
+			f" addon manifest: {manifestLastTestedNVDAVersion} vs lastTestedVersion: {lastTestedVersion}"
+		)
+
+
 def checkLastTestedVersionExist(submission: JsonObjT, verFilename: str) -> ValidationErrorGenerator:
 	lastTestedVersion: JsonObjT = submission['lastTestedVersion']
 	formattedLastTestedVersion: str = _formatVersionString(lastTestedVersion.values())
@@ -291,6 +318,8 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		yield from checkDescriptionMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
 		yield from checkAddonId(manifest, submissionFilePath, submissionData)
+		yield from checkMinNVDAVersionMatches(manifest, submissionData)
+		yield from checkLastTestedNVDAVersionMatches(manifest, submissionData)
 		yield from checkVersions(manifest, submissionFilePath, submissionData)
 
 	except Exception as e:

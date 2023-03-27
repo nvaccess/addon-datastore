@@ -400,6 +400,69 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		)
 
 
+class Validate_checkMinNVDAVersionMatches(unittest.TestCase):
+	"""Tests for the checkMinNVDAVersionMatches function.
+	"""
+	def setUp(self):
+		self.submissionData = getValidAddonSubmission()
+		self.manifest = getAddonManifest()
+
+	def tearDown(self):
+		self.submissionData = None
+		self.manifest = None
+
+	def test_valid(self):
+		errors = list(
+			validate.checkMinNVDAVersionMatches(self.manifest, self.submissionData)
+		)
+		self.assertEqual(errors, [])
+
+	def test_invalid(self):
+		self.manifest["minimumNVDAVersion"] = "1999.1.0"
+		errors = list(
+			validate.checkMinNVDAVersionMatches(self.manifest, self.submissionData)
+		)
+		self.assertEqual(
+			errors,
+			[
+				"Submission data 'minNVDAVersion' field does not match 'minNVDAVersion' field "
+				'in addon manifest: 1999.1.0 vs minNVDAVersion: 2022.1.0'
+			]
+		)
+
+
+class Validate_checkLastTestedNVDAVersionMatches(unittest.TestCase):
+	"""Tests for the checkLastTestedNVDAVersionMatches function.
+	"""
+	def setUp(self):
+		self.submissionData = getValidAddonSubmission()
+		self.manifest = getAddonManifest()
+
+	def tearDown(self):
+		self.submissionData = None
+		self.manifest = None
+
+	def test_valid(self):
+		errors = list(
+			validate.checkLastTestedNVDAVersionMatches(self.manifest, self.submissionData)
+		)
+		self.assertEqual(errors, [])
+
+	def test_invalid(self):
+		self.manifest["lastTestedNVDAVersion"] = "9999.1.0"
+		errors = list(
+			validate.checkLastTestedNVDAVersionMatches(self.manifest, self.submissionData)
+		)
+		self.assertEqual(
+			errors,
+			[
+				"Submission data 'lastTestedVersion' field does not match "
+				"'lastTestedNVDAVersion' field in addon manifest: 9999.1.0 vs "
+				'lastTestedVersion: 2023.1.0'
+			]
+		)
+
+
 class Validate_checkVersions(unittest.TestCase):
 	"""Tests for the checkVersions function.
 
@@ -424,10 +487,6 @@ class Validate_checkVersions(unittest.TestCase):
 	def tearDown(self):
 		self.submissionData = None
 		self.manifest = None
-
-	@staticmethod
-	def _getVersionString(version: VersionNumber):
-		return f"{version.major}.{version.minor}.{version.patch}"
 
 	def _setupVersions(
 			self,

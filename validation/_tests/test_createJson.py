@@ -81,38 +81,6 @@ class IntegrationTestCreateJson(unittest.TestCase):
 		self.assertDictEqual(actualJson, expectedJson)
 
 
-class Test_getVersionNumber(unittest.TestCase):
-	def test_tripleDigitVersion_isValid(self):
-		""" Canonical version (major, minor, patch) expected.
-		"""
-		versionNumber = createJson.getVersionNumber("1.2.3")
-		self.assertEqual(versionNumber.major, 1)
-		self.assertEqual(versionNumber.minor, 2)
-		self.assertEqual(versionNumber.patch, 3)
-
-	def test_doubleDigitVersion_isValid(self):
-		"""patch is optional, assumed to be zero.
-		"""
-		versionNumber = createJson.getVersionNumber("1.02")
-		self.assertEqual(versionNumber.major, 1)
-		self.assertEqual(versionNumber.minor, 2)
-		self.assertEqual(versionNumber.patch, 0)
-
-	def test_singleDigitVersion_raises(self):
-		with self.assertRaises(ValueError, msg="Single digit version numbers are expected to be an error."):
-			createJson.getVersionNumber("1")
-
-	def test_tooManyValues_raises(self):
-		with self.assertRaises(ValueError, msg="More than three parts is expected as an error."):
-			createJson.getVersionNumber("1.2.3.4")
-
-	def test_versionWithNonDigit(self):
-		with self.assertRaises(
-			ValueError,
-			msg="Non-digit chars in version number expected as an error."):
-			createJson.getVersionNumber("1.2.3a")
-
-
 class Test_buildOutputFilePath(unittest.TestCase):
 	def setUp(self) -> None:
 		self.outputDir = os.path.join(OUTPUT_DATA_PATH, "test_buildOutputFilePath")
