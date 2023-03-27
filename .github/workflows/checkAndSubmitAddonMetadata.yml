@@ -31,7 +31,7 @@ jobs:
         pullRequestNumber: ${{ inputs.pullRequestNumber }}
       with:
         script: |
-          getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
+          getAddonFilename = require('./addon-datastore/.github/workflows/checkFilesChanged.js')
           return getAddonFilename()
     - name: Post file check errors as comment
       if: failure()
