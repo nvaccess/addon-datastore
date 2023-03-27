@@ -32,7 +32,9 @@ jobs:
       with:
         script: |
           const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-          return await getAddonFilename()
+          const url = "GET /repos/nvaccess/addon-datastore/pulls/" + process.env.pullRequestNumber + "/files" 
+          const result = await github.request(url)
+          return getAddonFilename(result.data)
     - name: Post file check errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
