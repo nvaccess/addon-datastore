@@ -31,7 +31,7 @@ jobs:
         pullRequestNumber: ${{ inputs.pullRequestNumber }}
       with:
         script: |
-          return require('./datastore/.github/workflows/checkFilesChanged.js')
+          return require('./.github/workflows/checkFilesChanged.js')
     - name: Post file check errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
