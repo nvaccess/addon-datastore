@@ -23,7 +23,7 @@ jobs:
       with:
         repository: nvaccess/addon-datastore
         path: data
-        fetch-depth: 0
+        ref: master
     - name: Checkout views branch into separate folder
       uses: actions/checkout@v3
       with:
