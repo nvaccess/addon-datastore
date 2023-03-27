@@ -69,13 +69,14 @@ Example: `"Makes doing XYZ easier"`
 ### homepage
 Optional.
 If the addon has a homepage where users can get more information about the addon, you can specify it here.
-Must match the url in the addon manifest and the file name for the submission.
+Must match the url in the addon manifest.
 
 Example: `"https://github.com/nvaccess/addon-datastore"`
 
 ### minNVDAVersion
 The add-on will not work with versions of NVDA prior to this version.
 Must be a valid NVDA API version.
+Must match the minimumNVDAVersion in the addon manifest.
 Valid NVDA API versions are listed in [nvdaAPIVersions.json](https://github.com/nvaccess/addon-datastore-transform/blob/main/nvdaAPIVersions.json).
 
 Example:
@@ -90,6 +91,7 @@ Example:
 ### lastTestedVersion
 The add-on has been tested up to and including this version of NVDA.
 Must be a valid NVDA API version.
+Must match the lastTestedNVDAVersion in the addon manifest.
 Valid NVDA API versions are listed in [nvdaAPIVersions.json](https://github.com/nvaccess/addon-datastore-transform/blob/main/nvdaAPIVersions.json).
 
 Example:
