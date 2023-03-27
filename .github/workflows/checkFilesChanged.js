@@ -1,8 +1,5 @@
-module.exports = await getAddonFileName()
-
-const url = "GET /repos/nvaccess/addon-datastore/pulls/" + process.env.pullRequestNumber + "/files" 
-
-async function getAddonFileName() {
+module.exports = async function() {
+	const url = "GET /repos/nvaccess/addon-datastore/pulls/" + process.env.pullRequestNumber + "/files" 
 	const result = await github.request(url)
 	var addonFileName
 	const changedFiles = result.data

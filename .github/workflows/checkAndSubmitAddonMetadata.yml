@@ -31,7 +31,8 @@ jobs:
         pullRequestNumber: ${{ inputs.pullRequestNumber }}
       with:
         script: |
-          return require('./.github/workflows/checkFilesChanged.js')
+          getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
+          return getAddonFilename()
     - name: Post file check errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
