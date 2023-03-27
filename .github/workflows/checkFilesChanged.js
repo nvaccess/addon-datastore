@@ -21,7 +21,7 @@ function getAddonFileName(changedFiles) {
 		}
 		else {
 			errMsg = "Non-addon-submission files updated. This will not be auto-approved."
-			fs.writeFile('./validationErrors.md', errMsg, , (e) => console.log(e))
+			fs.writeFile('./validationErrors.md', errMsg, (e) => console.log(e))
 			throw errMsg
 		}
 	}
