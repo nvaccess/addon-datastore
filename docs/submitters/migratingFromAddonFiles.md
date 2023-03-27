@@ -15,4 +15,5 @@ and the add-on ID for all the submission files in the folder.
 #### Renaming add-on ID
 1. [Submit the new add-on to this repository](./submissionGuide.md).
 1. Update the [community add-ons website](https://addons.nvda-project.org/) to use the new add-on ID.
+Ask for help in [nvda-addon's mailing list](https://nvda-addons.groups.io/).
 1. Consider deleting the legacy add-on submission in this repository.
