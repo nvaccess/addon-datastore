@@ -1,4 +1,6 @@
-module.exports = async function() {
+module.exports = getAddonFileName
+
+async function getAddonFileName() {
 	const url = "GET /repos/nvaccess/addon-datastore/pulls/" + process.env.pullRequestNumber + "/files" 
 	const result = await github.request(url)
 	var addonFileName
