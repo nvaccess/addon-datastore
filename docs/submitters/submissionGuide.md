@@ -12,10 +12,17 @@ Descriptions for the fields of the JSON schema can be found in [jsonMetadata.md]
 ### Submit from an issue form
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
 1. Fill out and submit the issue form.
-
 This will create an issue with a summary of your submission.
 The issue form and the add-on's manifest are used to create a JSON file.
 This JSON file is submitted as a pull request to the repository.
+1. Automated checks are ran to validate the submission.
+Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
+1. If the checks fail, a comment should be added to the pull request outlining the failure.
+To address the issues, resubmit the issue form.
+You may need to also update your add-on manifest.
+Descriptions for the fields of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
+1. If the checks pass, the PR should be merged automatically.
+The add-on should soon become available in the store.
 
 ### Manual file creation
 1. Fork the `addon-datastore` repository
@@ -26,14 +33,12 @@ This JSON file is submitted as a pull request to the repository.
 1. Fill out the template.
 Descriptions for the fields of JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 1. Create a PR to merge your branch into master on the `addon-datastore` repository.
-
-## After submitting your add-on version file
 1. Automated checks are ran to validate the submission.
 Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
-1. If the checks fail, a comment should be added to the pull request outlining the failure.
-To address the issues, resubmit the issue form or manual pull request.
+1. If the checks fail, the PR will not be automatically merged.
+You can check [the GitHub actions log](https://github.com/nvaccess/addon-datastore/actions/workflows/checkPullRequest.yml?query=event%3Apull_request+is%3Afailure) to find more information on the failure.
+To address the issues, update the pull request.
 You may need to also update your add-on manifest.
-Descriptions for the fields of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 1. If the checks pass, the PR should be merged automatically.
 The add-on should soon become available in the store.
 
