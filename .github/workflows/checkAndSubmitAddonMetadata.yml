@@ -55,7 +55,8 @@ jobs:
     - name: Validate metadata
       run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json ./validationErrors.md
     - name: Post validation errors as comment
-      if: failure()
+      # Pull requests from forks cannot have comments posted to them
+      if: failure() && !(github.event.pull_request && github.event.pull_request.head.repo.fork)
       uses: peter-evans/create-or-update-comment@v2
       with:
         issue-number: ${{ inputs.pullRequestNumber }}
