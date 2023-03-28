@@ -13,13 +13,13 @@ import typing
 import argparse
 import json
 from jsonschema import validate, exceptions
-from _validate.majorMinorPatch import MajorMinorPatch
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runValidate.bat
 # E402 module level import not at top of file
 import sha256  # noqa:E402
 from addonManifest import AddonManifest   # noqa:E402
 from manifestLoader import getAddonManifest, TEMP_DIR  # noqa:E402
+from majorMinorPatch import MajorMinorPatch  # noqa:E402
 del sys.path[-1]
 
 
@@ -332,7 +332,7 @@ def outputResult(errors: ValidationErrorGenerator, errorFilePath: typing.Optiona
 		print("\r\n".join(errors))
 		if errorFilePath:
 			with open(errorFilePath, "w") as errorFile:
-				errorFile.write("Validation Errors:\n" + "\n- ".join(errors))
+				errorFile.write("Validation Errors:\n- " + "\n- ".join(errors))
 		raise ValueError("Submission not valid")
 	print("Congratulations: manifest, metadata and file path are valid")
 

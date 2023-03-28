@@ -16,6 +16,7 @@ sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as 
 # E402 module level import not at top of file
 from addonManifest import AddonManifest  # noqa:E402
 from manifestLoader import getAddonManifest  # noqa:E402
+from majorMinorPatch import MajorMinorPatch  # noqa:E402
 import sha256  # noqa:E402
 del sys.path[-1]
 
