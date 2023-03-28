@@ -10,7 +10,6 @@ import os
 import sys
 
 import typing
-from .majorMinorPatch import MajorMinorPatch
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
