@@ -67,9 +67,8 @@ The English description of the addon that will be displayed for the addon.
 Example: `"Makes doing XYZ easier"`
 
 ### homepage
-Optional.
 If the addon has a homepage where users can get more information about the addon, you can specify it here.
-Must match the url in the addon manifest.
+Must match the url in the addon manifest, which is optional.
 
 Example: `"https://github.com/nvaccess/addon-datastore"`
 
