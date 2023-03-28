@@ -24,6 +24,8 @@ jobs:
       uses: actions/checkout@v3
       with:
         ref: ${{ inputs.headRef }}
+    - name: Create validation errors file
+      run: echo "" > validationErrors.md
     - name: Determine files changed
       uses: actions/github-script@v6
       id: getMetadata
