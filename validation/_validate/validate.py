@@ -201,7 +201,7 @@ def checkSubmissionFilenameMatchesVersionNumber(
 		# yield f"Submitted json file should be named '{formattedVersionNumber}.json'"
 		yield (
 			"Submission filename and versionNumber mismatch error:"
-			f" versionNumberField: {formattedVersionNumber}"
+			f" addonVersionNumber: {formattedVersionNumber}"
 			f" version from submission filename: {versionFromPath}"
 			f" expected submission filename: {formattedVersionNumber}.json"
 		)

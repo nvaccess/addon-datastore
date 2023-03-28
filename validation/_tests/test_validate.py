@@ -539,7 +539,7 @@ class Validate_checkVersions(unittest.TestCase):
 		self.assertEqual(
 			[  # expected errors
 				'Submission filename and versionNumber mismatch error:'
-				' versionNumberField: 13.6.0'
+				' addonVersionNumber: 13.6.0'
 				' version from submission filename: 13.06'
 				' expected submission filename: 13.6.0.json'
 			],
@@ -563,7 +563,7 @@ class Validate_checkVersions(unittest.TestCase):
 		self.assertEqual(
 			[  # expected errors
 				'Submission filename and versionNumber mismatch error:'
-				' versionNumberField: 13.6.0'
+				' addonVersionNumber: 13.6.0'
 				' version from submission filename: 13.6'
 				' expected submission filename: 13.6.0.json'
 			],
