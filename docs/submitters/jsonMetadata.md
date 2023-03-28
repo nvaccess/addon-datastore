@@ -46,6 +46,7 @@ Example:
 
 ### addonVersionName
 The addon version being released.
+Should be in the form "<major>.<minor>.<patch>".
 Must match the version in the addon manifest and the file name for the submission.
 
 Example: `21.6.0`.
