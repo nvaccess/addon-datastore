@@ -77,6 +77,10 @@ def _createDictMatchingJsonSchema(
 		licenseName: str,
 		licenseUrl: typing.Optional[str],
 ) -> typing.Dict[str, str]:
+	homepage = manifest.get("url")
+	if homepage == 'None':
+		# The config default is None which is parsed by configobj as a string not a NoneType
+		homepage = None
 	return {  # see _validate/addonVersion_schema.json
 		"addonId": manifest["name"],
 		"displayName": manifest["summary"],
@@ -84,7 +88,7 @@ def _createDictMatchingJsonSchema(
 		"description": manifest["description"],
 		"sha256": sha,
 		# Optional field
-		"homepage": manifest.get("url"),
+		"homepage": homepage,
 		"addonVersionName": manifest["version"],
 		"addonVersionNumber": dataclasses.asdict(
 			MajorMinorPatch.getFromStr(manifest["version"])
