@@ -94,7 +94,7 @@ Metadata about old versions of an add-on remains until it is explicitly removed 
 This allows delivery to older versions of NVDA.
 If a newer add-on release is removed (in response to a critical bug being found) NVDA can fall back
 on a prior add-on release.
-Add-ons versions are submitted by submitting a pull request, adding a file for that version of the add-on.
+Add-ons versions are submitted via an issue form, which opens a pull request adding the JSON metadata file for that version of the add-on.
 
 ## NV Access Add-on Store endpoints
 
