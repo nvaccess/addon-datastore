@@ -3,7 +3,6 @@ This repository primarily exists to transform data from [nvaccess/addon-datastor
 
 For each NVDA version that needs to be supported by the add-on store, an entry must be added to [`nvdaAPIVersions.json`](https://github.com/nvaccess/addon-datastore-transform/blob/main/nvdaAPIVersions.json).
 This includes patch versions.
-Pre-release versions of NVDA are not supported yet.
 
 ## Overview
 

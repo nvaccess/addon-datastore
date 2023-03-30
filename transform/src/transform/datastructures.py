@@ -5,6 +5,8 @@
 from dataclasses import dataclass
 from typing import Dict, Literal, NamedTuple
 
+from requests.structures import CaseInsensitiveDict
+
 # These values are validated using runtime validation -> see addon_data.schema.json
 AddonChannels = Literal["beta", "stable", "dev"]
 
@@ -39,4 +41,11 @@ WriteableAddons = Dict[MajorMinorPatch, AddonChannelDict]
 
 
 def generateAddonChannelDict() -> AddonChannelDict:
-	return {"beta": {}, "stable": {}, "dev": {}}
+	# Identical add-on IDs may have different casing
+	# due to legacy add-on submissions.
+	# This can be removed when old submissions are given updated casing.
+	return {
+		"beta": CaseInsensitiveDict(),
+		"stable": CaseInsensitiveDict(),
+		"dev": CaseInsensitiveDict(),
+	}

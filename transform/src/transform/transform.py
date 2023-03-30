@@ -105,8 +105,14 @@ def writeAddons(addonDir: str, addons: WriteableAddons) -> None:
 				latestAddonWriteDir = f"{addonDir}/latest/{addonName}"
 				Path(latestAddonWriteDir).mkdir(parents=True, exist_ok=True)
 				latestAddonWritePath = f"{latestAddonWriteDir}/{channel}.json"
-				if latestAddonWritePath not in latestAddonWritePaths:
-					latestAddonWritePaths.add(latestAddonWritePath)
+				# paths are case insensitive
+				# Identical add-on IDs may have different casing
+				# due to legacy add-on submissions.
+				# This can be removed when old submissions are given updated casing.
+				caseInsensitiveLatestAddonPath = latestAddonWritePath.lower()
+				if caseInsensitiveLatestAddonPath not in latestAddonWritePaths:
+					log.error(f"Latest version: {addonName} {channel} {nvdaAPIVersion}")
+					latestAddonWritePaths.add(caseInsensitiveLatestAddonPath)
 					with open(latestAddonWritePath, "w") as latestAddonFile:
 						json.dump(addonData, latestAddonFile)
 
