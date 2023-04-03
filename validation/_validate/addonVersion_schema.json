@@ -7,7 +7,7 @@
 				"minor": 6,
 				"patch": 0
 			},
-			"addonVersionName": "21.06",
+			"addonVersionName": "21.6.0",
 			"displayName": "My addon",
 			"publisher": "easyAddonTech",
 			"description": "Makes doing XYZ easier",
@@ -78,7 +78,12 @@
 			"title": "The addon version name",
 			"description": "The addon version being released. Must match the version in the addon manifest and the file name for the submission.",
 			"type": "string",
-			"default": ""
+			"default": "",
+			"examples": [
+				"21.6.0",
+				"21.6",
+				"21.06"
+			]
 		},
 		"displayName": {
 			"$id": "#/properties/displayName",
