@@ -46,10 +46,10 @@ Example:
 
 ### addonVersionName
 The addon version being released.
-Should be in the form "`<major>.<minor>.<patch>`".
-Must match the version in the addon manifest and the file name for the submission.
+Should be in the form "`<major>.<minor>.<patch>`" or "`<major>.<minor>`".
+Must match the version in the addon manifest.
 
-Example: `21.6.0`.
+Examples: `21.6.0`, `21.6`, `21.06`.
 
 ### displayName
 The name that will be displayed in English for the addon.
