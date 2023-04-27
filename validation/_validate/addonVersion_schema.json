@@ -216,6 +216,16 @@
 			],
 			"title": "The licenseURL schema",
 			"type": "string"
+		},
+		"legacy": {
+			"$id": "#/properties/legacy",
+			"default": false,
+			"description": "Boolean indicating if the add-on should be marked as legacy.",
+			"examples": [
+				true
+			],
+			"title": "The legacy schema",
+			"type": "boolean"
 		}
 	},
 	"$defs": {
