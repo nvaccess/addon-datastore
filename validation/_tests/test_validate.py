@@ -418,7 +418,7 @@ class Validate_checkMinNVDAVersionMatches(unittest.TestCase):
 		self.assertEqual(errors, [])
 
 	def test_invalid(self):
-		self.manifest["minimumNVDAVersion"] = "1999.1.0"
+		self.manifest["minimumNVDAVersion"] = (1999, 1, 0)
 		errors = list(
 			validate.checkMinNVDAVersionMatches(self.manifest, self.submissionData)
 		)
@@ -449,7 +449,7 @@ class Validate_checkLastTestedNVDAVersionMatches(unittest.TestCase):
 		self.assertEqual(errors, [])
 
 	def test_invalid(self):
-		self.manifest["lastTestedNVDAVersion"] = "9999.1.0"
+		self.manifest["lastTestedNVDAVersion"] = (9999, 1, 0)
 		errors = list(
 			validate.checkLastTestedNVDAVersionMatches(self.manifest, self.submissionData)
 		)

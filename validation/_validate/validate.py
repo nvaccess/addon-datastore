@@ -17,7 +17,7 @@ from jsonschema import validate, exceptions
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runValidate.bat
 # E402 module level import not at top of file
 import sha256  # noqa:E402
-from addonManifest import AddonManifest   # noqa:E402
+from addonManifest import AddonManifest  # noqa:E402
 from manifestLoader import getAddonManifest, TEMP_DIR  # noqa:E402
 from majorMinorPatch import MajorMinorPatch  # noqa:E402
 del sys.path[-1]
@@ -241,7 +241,7 @@ def checkMinNVDAVersionMatches(
 		manifest: AddonManifest,
 		submission: JsonObjT
 ) -> ValidationErrorGenerator:
-	manifestMinimumNVDAVersion = MajorMinorPatch.getFromStr(manifest["minimumNVDAVersion"])
+	manifestMinimumNVDAVersion = MajorMinorPatch(*manifest["minimumNVDAVersion"])
 	minNVDAVersion = MajorMinorPatch(**submission["minNVDAVersion"])
 	if manifestMinimumNVDAVersion != minNVDAVersion:
 		yield (
@@ -254,7 +254,7 @@ def checkLastTestedNVDAVersionMatches(
 		manifest: AddonManifest,
 		submission: JsonObjT
 ) -> ValidationErrorGenerator:
-	manifestLastTestedNVDAVersion = MajorMinorPatch.getFromStr(manifest["lastTestedNVDAVersion"])
+	manifestLastTestedNVDAVersion = MajorMinorPatch(*manifest["lastTestedNVDAVersion"])
 	lastTestedVersion = MajorMinorPatch(**submission["lastTestedVersion"])
 	if manifestLastTestedNVDAVersion != lastTestedVersion:
 		yield (

@@ -52,7 +52,9 @@ class IntegrationTestCreateJson(unittest.TestCase):
 		# Values used must match the manifest files:
 		# - '_tests / testData / manifest.ini'
 		# - '_tests/testData/fake.nvda-addon' (unzip)
+		manifest = getAddonManifest()
 		createJson.generateJsonFile(
+			manifest,
 			ADDON_PACKAGE,
 			self.outputDir,
 			channel="stable",

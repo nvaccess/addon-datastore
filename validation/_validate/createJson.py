@@ -9,7 +9,11 @@ import argparse
 import os
 import sys
 
-import typing
+from typing import (
+	Dict,
+	Optional,
+	cast,
+)
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
@@ -27,6 +31,7 @@ def getSha256(addonPath: str) -> str:
 
 
 def generateJsonFile(
+		manifest: AddonManifest,
 		addonPath: str,
 		parentDir: str,
 		channel: str,
@@ -34,9 +39,8 @@ def generateJsonFile(
 		sourceUrl: str,
 		url: str,
 		licenseName: str,
-		licenseUrl: typing.Optional[str],
+		licenseUrl: Optional[str],
 ) -> None:
-	manifest = getAddonManifest(addonPath)
 	data = _createDictMatchingJsonSchema(
 		manifest=manifest,
 		sha=getSha256(addonPath),
@@ -64,7 +68,7 @@ def buildOutputFilePath(data, parentDir) -> os.PathLike:
 	if not os.path.isdir(addonDir):
 		os.makedirs(addonDir)
 	filePath = os.path.join(addonDir, f'{canonicalVersionString}.json')
-	return typing.cast(os.PathLike, filePath)
+	return cast(os.PathLike, filePath)
 
 
 def _createDictMatchingJsonSchema(
@@ -75,9 +79,14 @@ def _createDictMatchingJsonSchema(
 		sourceUrl: str,
 		url: str,
 		licenseName: str,
-		licenseUrl: typing.Optional[str],
-) -> typing.Dict[str, str]:
+		licenseUrl: Optional[str],
+) -> Dict[str, str]:
 	"""Refer to _validate/addonVersion_schema.json"""
+	try:
+		addonVersionNumber = MajorMinorPatch.getFromStr(manifest["version"])
+	except ValueError:
+		manifest._errors = f"Manifest version invalid {addonVersionNumber}"
+		raise
 	addonData = {
 		"addonId": manifest["name"],
 		"displayName": manifest["summary"],
@@ -85,14 +94,12 @@ def _createDictMatchingJsonSchema(
 		"description": manifest["description"],
 		"sha256": sha,
 		"addonVersionName": manifest["version"],
-		"addonVersionNumber": dataclasses.asdict(
-			MajorMinorPatch.getFromStr(manifest["version"])
-		),
+		"addonVersionNumber": dataclasses.asdict(addonVersionNumber),
 		"minNVDAVersion": dataclasses.asdict(
-			MajorMinorPatch.getFromStr(manifest["minimumNVDAVersion"])
+			MajorMinorPatch(*manifest["minimumNVDAVersion"])
 		),
 		"lastTestedVersion": dataclasses.asdict(
-			MajorMinorPatch.getFromStr(manifest["lastTestedNVDAVersion"])
+			MajorMinorPatch(*manifest["lastTestedNVDAVersion"])
 		),
 		"channel": channel,
 		"publisher": publisher,
@@ -125,6 +132,12 @@ def main():
 		dest="parentDir",
 		help="Parent directory to store the json file.",
 		required=True,
+	)
+	parser.add_argument(
+		"--output",
+		dest="errorOutputFile",
+		help="The text file to output errors from the validation, if any.",
+		default=None,
 	)
 	parser.add_argument(
 		"--channel",
@@ -164,7 +177,17 @@ def main():
 		required=False,
 	)
 	args = parser.parse_args()
+
+	manifest = getAddonManifest(args.file)
+	if manifest.errors:
+		errorFilePath: Optional[str] = args.errorOutputFile
+		if errorFilePath:
+			with open(errorFilePath, "w") as errorFile:
+				errorFile.write(f"Validation Errors:\n{manifest.errors}")
+		raise ValueError(f"Invalid manifest file: {manifest.errors}")
+
 	generateJsonFile(
+		manifest=manifest,
 		addonPath=args.file,
 		parentDir=args.parentDir,
 		channel=args.channel,
