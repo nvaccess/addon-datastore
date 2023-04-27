@@ -1,5 +1,6 @@
 {
-	"displayName": "Accessibility enhancements for Mush Client. (legacy)",
+	"displayName": "Accessibility enhancements for Mush Client.",
+	"legacy": true,
 	"publisher": "Nick Stockton <nstockton@gmail.com>",
 	"description": "\nThis add-on provides the following accessibility improvements for Mush Client:\n1.  The NVDA navigator object is now automaticly set to the output window of Mush Client in order to make reviewing output easier.\n2.  Two new hotkeys (NVDA-8 and NVDA-9) toggle the \"speech interrupt for typed characters\" and \"speech interrupt for enter key\" settings respectively.\n3.  Additionally, NVDA-Enter and numbpad-Enter will set the position of the NVDA navigator object to the last line of text in the output window and speak it.\n4.  The \"report Dynamic Content Changes\", \"caret moves review cursor\", \"speech interrupt for typed characters\", and \"speech interrupt for enter key\" settings are now automaticly saved to a separate configuration file when the Mush Client window loses focus and restored when it receives focus again.\nNote: since most people will be using Mush Client with a speech plugin for auto-speaking incoming text, NVDA's \"report Dynamic Content Changes\" setting is disabled by default to avoid speaking incoming lines twice.  If you want to turn on the automatic speaking of incoming lines by NVDA, toggle this setting on with the NVDA-5 hotkey.\n",
 	"addonId": "mush",
