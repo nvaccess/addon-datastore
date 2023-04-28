@@ -41,19 +41,19 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-validation
-        path: addon-datastore-validation
+        path: validation
         submodules: true
     - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
-        pip install -r addon-datastore-validation/requirements.txt
+        pip install -r validation/requirements.txt
     - name: Checkout transformation repo for nvdaAPIVersions.json
       uses: actions/checkout@v3
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: addon-datastore-validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json ./validationErrors.md
+      run: validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json ./validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
