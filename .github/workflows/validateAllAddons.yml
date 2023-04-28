@@ -2,6 +2,9 @@ name: Check all submitted NVDA add-ons
 
 on:
   workflow_dispatch:
+  schedule:
+    # perform once a month at the very start of the month
+    - cron: '0 0 1 * *'
 
 jobs:
   checkMetadata:
