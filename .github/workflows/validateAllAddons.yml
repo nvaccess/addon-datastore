@@ -44,4 +44,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: validationErrors
-        body-file: ./validationErrors.md
+        path: ./validationErrors.md
