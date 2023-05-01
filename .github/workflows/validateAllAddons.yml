@@ -1,0 +1,47 @@
+name: Check all submitted NVDA add-ons
+
+on:
+  workflow_dispatch:
+  schedule:
+    # perform once a month at the very start of the month
+    - cron: '0 0 1 * *'
+
+jobs:
+  checkMetadata:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ inputs.headRef }}
+    - name: Create validation errors file
+      run: echo "" > validationErrors.md
+    - name: Checkout validate repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        path: validation
+        submodules: true
+    - name: Install addon-datastore-validation dependencies
+      run: |
+        python -m pip install --upgrade wheel
+        pip install -r validation/requirements.txt
+    - name: Checkout transformation repo for nvdaAPIVersions.json
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-transform
+        path: transform
+    - name: Validate all add-ons metadata
+      run: validation/runvalidate ./addons/*/*.json ./transform/nvdaAPIVersions.json ./validationErrors.md
+    - name: Upload validation errors as artifact
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: validationErrors
+        body-file: ./validationErrors.md
