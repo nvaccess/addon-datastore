@@ -675,18 +675,6 @@ class Validate_checkVersions(unittest.TestCase):
 		)
 
 
-class Validate_outputResult(unittest.TestCase):
-
-	def test_output_errorRaises(self):
-		singleErrorGen = ("error string" for _ in range(1))
-		with self.assertRaises(ValueError):
-			validate.outputResult(singleErrorGen)
-
-	def test_output_noError(self):
-		noErrorGen = ("error string" for _ in range(0))
-		validate.outputResult(noErrorGen)
-
-
 class Validate_End2End(unittest.TestCase):
 
 	class OpenUrlResult:
@@ -724,7 +712,7 @@ class Validate_End2End(unittest.TestCase):
 			validate.validateSubmission(VALID_SUBMISSION_JSON_FILE, VERSIONS_FILE)
 		)
 		self.assertEqual(
-			list(errors),
+			errors,
 			[
 				'Download of addon failed',
 				'Fatal error, unable to continue: Unable to download from '

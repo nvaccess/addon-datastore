@@ -1,17 +1,25 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2021 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2021-2023 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-
-import sys
+import argparse
+from glob import glob
+import json
 import os
 import re
+import sys
+from typing import (
+	Any,
+	Dict,
+	Generator,
+	Iterable,
+	List,
+	Optional,
+)
 import urllib.request
-import typing
-import argparse
-import json
+
 from jsonschema import validate, exceptions
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runValidate.bat
@@ -24,10 +32,10 @@ del sys.path[-1]
 
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
-JsonObjT = typing.Dict[str, typing.Any]
+JsonObjT = Dict[str, Any]
 
 
-ValidationErrorGenerator = typing.Generator[str, None, None]
+ValidationErrorGenerator = Generator[str, None, None]
 
 
 def getAddonMetadata(filename: str) -> JsonObjT:
@@ -40,7 +48,7 @@ def getAddonMetadata(filename: str) -> JsonObjT:
 	return data
 
 
-def getExistingVersions(verFilename: str) -> typing.List[str]:
+def getExistingVersions(verFilename: str) -> List[str]:
 	"""Loads API versions file and returns list of versions formatted as strings.
 	"""
 	with open(verFilename) as f:
@@ -165,7 +173,7 @@ def checkAddonId(
 VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
 
 
-def parseVersionStr(ver: str) -> typing.Dict[str, int]:
+def parseVersionStr(ver: str) -> Dict[str, int]:
 
 	matches = VERSION_PARSE.match(ver)
 	if not matches:
@@ -186,7 +194,7 @@ def parseVersionStr(ver: str) -> typing.Dict[str, int]:
 	return version
 
 
-def _formatVersionString(versionValues: typing.Iterable) -> str:
+def _formatVersionString(versionValues: Iterable) -> str:
 	versionValues = list(versionValues)
 	assert 1 < len(versionValues) < 4
 	return ".".join(
@@ -295,24 +303,23 @@ def checkVersions(
 def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationErrorGenerator:
 	try:
 		submissionData = getAddonMetadata(filename=submissionFilePath)
-		print("Submission JSON validated with schema.")
+
+		if submissionData.get("legacy"):
+			# Legacy add-ons do not need a valid manifest or metadata
+			return None
 
 		urlErrors = list(checkDownloadUrlFormat(submissionData["URL"]))
 		if urlErrors:
 			# if there are errors in the URL validation can not continue
 			yield from urlErrors
 			raise ValueError(submissionData["URL"])
-		print("Addon URL passes format requirements")
 
 		addonDestPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
 		yield from downloadAddon(url=submissionData["URL"], destPath=addonDestPath)
-		print("Addon downloaded successfully")
 
 		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
 		if checksumErrors:
 			yield from checksumErrors
-		else:
-			print("Sha256 matches")
 
 		yield from checkLastTestedVersionExist(submissionData, verFilename)
 		yield from checkMinRequiredVersionExist(submissionData, verFilename)
@@ -330,15 +337,12 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		yield f"Fatal error, unable to continue: {e}"
 
 
-def outputResult(errors: ValidationErrorGenerator, errorFilePath: typing.Optional[str] = None):
-	errors = list(errors)
+def outputErrors(addonFileName: str, errors: List[str], errorFilePath: Optional[str] = None):
 	if len(errors) > 0:
 		print("\r\n".join(errors))
 		if errorFilePath:
-			with open(errorFilePath, "w") as errorFile:
-				errorFile.write("Validation Errors:\n- " + "\n- ".join(errors))
-		raise ValueError("Submission not valid")
-	print("Congratulations: manifest, metadata and file path are valid")
+			with open(errorFilePath, "a") as errorFile:
+				errorFile.write(f"Validation Errors for {addonFileName}:\n- " + "\n- ".join(errors) + "\n\n")
 
 
 def main():
@@ -350,8 +354,8 @@ def main():
 		help="Ensures the correct arguments are passed, doesn't run checks, exists with success."
 	)
 	parser.add_argument(
-		dest="file",
-		help="The json (.json) file containing add-on metadata."
+		dest="filePathGlob",
+		help="The json (.json) files containing add-on metadata. e.g. addons/*/*.json."
 	)
 	parser.add_argument(
 		dest="APIVersions",
@@ -364,13 +368,25 @@ def main():
 	)
 
 	args = parser.parse_args()
-	filename = args.file
-	verFilename = args.APIVersions
-	errorOutputFile = args.errorOutputFile
+	addonFiles: List[str] = glob(args.filePathGlob)
+	verFilename: str = args.APIVersions
+	errorOutputFile: str = args.errorOutputFile
+	if os.path.exists(errorOutputFile):
+		os.remove(errorOutputFile)
 
 	if not args.dry_run:
-		errors = validateSubmission(filename, verFilename)
-		outputResult(errors, errorOutputFile)
+		anyErrors = False
+		for filename in addonFiles:
+			print(f"Validating {filename}")
+			errors = list(validateSubmission(filename, verFilename))
+			if errors:
+				anyErrors = True
+				outputErrors(filename, errors, errorOutputFile)
+		if anyErrors:
+			print(f"Validation errors for {args.filePathGlob} in {errorOutputFile}")
+			raise ValueError(f"Validation errors for {args.filePathGlob} in {errorOutputFile}")
+		else:
+			print(f"No validation errors for {args.filePathGlob}")
 
 
 if __name__ == '__main__':
