@@ -38,7 +38,7 @@ jobs:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate all add-ons metadata
-      run: validation/runvalidate ./addons/*/*.json ./transform/nvdaAPIVersions.json ./validationErrors.md
+      run: validation/runvalidate ./addons/*/*.json ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Upload validation errors as artifact
       if: failure()
       uses: actions/upload-artifact@v3
