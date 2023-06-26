@@ -1,4 +1,8 @@
 # Dependencies
+flake8==3.9.2
+# flake8-tabs version 2.3.2 gives spurious errors:
+# "ET113 (flake8-tabs) use of alignment as indentation, but option continuation-style=hanging does not permit this"
+flake8-tabs==2.2.2
 
 # Requirements for validate
 git+https://github.com/DiffSK/configobj@3e2f4cc#egg=configobj

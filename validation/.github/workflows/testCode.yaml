@@ -30,18 +30,14 @@ jobs:
       run: tox
     - name: Lint with flake8
       # Check code with the linter
-      run: runlint
-      shell: cmd
+      run: .\runlint.ps1
     - name: Validate metadata
       # E2E: test to check the script can be run, no need to actually test the file.
       # The internal checks are covered with unit tests.
-      run: runvalidate --dry-run _test/testData/addons/fake/13.0.json
-      shell: cmd
+      run: .\runvalidate.ps1 --dry-run _test/testData/addons/fake/13.0.json _tests\testData\nvdaAPIVersions.json
     - name: Get sha256
       # E2E: test to check the script can be run
-      run: runsha _tests\testData\fake.nvda-addon
-      shell: cmd
+      run: .\runsha.ps1 _tests\testData\fake.nvda-addon
     - name: Generate json file
       # E2E: test to check the script can be run
-      run: runcreatejson -f _tests\testData\fake.nvda-addon --dir _tests\testOutput/test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"
-      shell: cmd
+      run: .\runcreatejson.ps1 -f _tests\testData\fake.nvda-addon --dir _tests\testOutput\test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"

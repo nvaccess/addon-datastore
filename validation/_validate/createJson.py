@@ -8,6 +8,7 @@ import json
 import argparse
 import os
 import sys
+import zipfile
 
 from typing import (
 	Dict,
@@ -177,10 +178,17 @@ def main():
 		required=False,
 	)
 	args = parser.parse_args()
+	errorFilePath: Optional[str] = args.errorOutputFile
 
-	manifest = getAddonManifest(args.file)
+	try:
+		manifest = getAddonManifest(args.file)
+	except zipfile.BadZipFile as e:
+		if errorFilePath:
+			with open(errorFilePath, "w") as errorFile:
+				errorFile.write(f"Validation Errors:\n{e}")
+		raise
+
 	if manifest.errors:
-		errorFilePath: Optional[str] = args.errorOutputFile
 		if errorFilePath:
 			with open(errorFilePath, "w") as errorFile:
 				errorFile.write(f"Validation Errors:\n{manifest.errors}")

@@ -362,6 +362,7 @@ def main():
 		help="The JSON file containing valid NVDA API versions."
 	)
 	parser.add_argument(
+		"--output",
 		dest="errorOutputFile",
 		help="The text file to output errors from the validation, if any.",
 		default=None,
@@ -371,7 +372,7 @@ def main():
 	addonFiles: List[str] = glob(args.filePathGlob)
 	verFilename: str = args.APIVersions
 	errorOutputFile: str = args.errorOutputFile
-	if os.path.exists(errorOutputFile):
+	if errorOutputFile and os.path.exists(errorOutputFile):
 		os.remove(errorOutputFile)
 
 	if not args.dry_run:
