@@ -43,19 +43,21 @@ jobs:
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Download add-on
-      run: curl --location --output addon.nvda-addon ${{ steps.get-data.outputs.downloadUrl }}
+      # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
+      run: curl --location --output addon.nvda-addon "${{ steps.get-data.outputs.downloadUrl }}"
     - name: Create JSON submission from issue
+      # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
       run: |
         validation/runcreatejson `
         -f addon.nvda-addon `
         --dir datastore\addons `
         --output .\validationErrors.md `
-        --channel=${{ steps.get-data.outputs.releaseChannel }} `
-        --publisher="${{ steps.get-data.outputs.publisher }}" `
-        --sourceUrl=${{ steps.get-data.outputs.sourceUrl }} `
-        --url=${{ steps.get-data.outputs.downloadUrl }} `
-        --licName="${{ steps.get-data.outputs.licenseName }}" `
-        --licUrl=${{ steps.get-data.outputs.licenseURL }}
+        --channel='"${{ steps.get-data.outputs.releaseChannel }}"' `
+        --publisher='"${{ steps.get-data.outputs.publisher }}"' `
+        --sourceUrl='"${{ steps.get-data.outputs.sourceUrl }}"' `
+        --url='"${{ steps.get-data.outputs.downloadUrl }}"' `
+        --licName='"${{ steps.get-data.outputs.licenseName }}"' `
+        --licUrl='"${{ steps.get-data.outputs.licenseURL }}"'
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
