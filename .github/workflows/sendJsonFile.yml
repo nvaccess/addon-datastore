@@ -36,7 +36,6 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         submodules: true
         path: validation
-        ref: convertPs
     - name: Set up Python 3.8
       uses: actions/setup-python@v4
       with:
