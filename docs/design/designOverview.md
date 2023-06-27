@@ -115,6 +115,14 @@ Channel can be: all, dev, stable or beta.
 - Format: `https://www.nvaccess.org/addonStore/<language>/<channel>/latest.json`
 - Example: <https://www.nvaccess.org/addonStore/en/all/latest.json>
 
+### `GET` cacheHash
+Returns a hash used for cache breaking.
+This hash will change whenever new add-on data is available.
+The hash should match the latest commit hash of the [views branch](https://github.com/nvaccess/addon-datastore/commits/views).
+
+- <https://www.nvaccess.org/addonStore/cacheHash.json>
+- Example return value: `"5fcf12f"`
+
 ### Legacy
 This endpoint mirrors the legacy [get.php, from the addonFiles repository](https://github.com/nvaccess/addonFiles/blob/master/get.php).
 
