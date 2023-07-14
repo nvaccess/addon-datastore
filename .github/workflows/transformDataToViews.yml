@@ -44,9 +44,9 @@ jobs:
         cd transform
         pip install -r requirements.txt
         # empty the views git folder directory 
-        Try { Remove-Item ../views/views/en/ -Recurse -ErrorAction stop }
+        Try { Remove-Item ../views/views/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../data/addons ../views/views/en
+        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../data/addons ../views/views
     - name: Copy files
       run: |
         copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json

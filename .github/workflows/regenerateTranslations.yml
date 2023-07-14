@@ -1,0 +1,51 @@
+name: Regenerate translations for all add-ons
+
+on:
+  workflow_dispatch:
+
+jobs:
+  regenerateTranslations:
+    permissions:
+      contents: write
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        path: datastore
+    - name: Create validation errors file
+      run: echo "" > validationErrors.md
+    - name: Checkout validate repo
+      uses: actions/checkout@v3
+      with:
+        repository: nvaccess/addon-datastore-validation
+        path: validation
+        submodules: true
+    - name: Install addon-datastore-validation dependencies
+      run: |
+        python -m pip install --upgrade wheel
+        pip install -r validation/requirements.txt
+    - name: Regenerate translations
+      run: |
+        validation/regenerateTranslations `
+        --dir datastore\addons `
+        --output validationErrors.md
+    - name: Commit & Push changes
+      uses: actions-js/push@v1.4
+      with:
+        message: '[Automated] Regenerate translations ${date}'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        directory: datastore
+        branch: master
+    - name: Upload validation errors as artifact
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: validationErrors
+        path: validationErrors.md
+  call-workflow:
+    needs: regenerateTranslations
+    uses: ./.github/workflows/transformDataToViews.yml
