@@ -38,13 +38,13 @@ jobs:
       with:
         message: '[Automated] Regenerate translations ${date}'
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        directory: datastore
     - name: Upload validation errors as artifact
       if: failure()
       uses: actions/upload-artifact@v3
       with:
         name: validationErrors
         path: validationErrors.md
-        directory: datastore
   call-workflow:
     needs: regenerateTranslations
     uses: ./.github/workflows/transformDataToViews.yml
