@@ -27,7 +27,14 @@
 			"sha256": "69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82",
 			"sourceURL": "https://github.com/nvaccess/addon-datastore/",
 			"license": "GPL v2",
-			"licenseURL": "https://github.com/nvaccess/addon-datastore/license.MD"
+			"licenseURL": "https://github.com/nvaccess/addon-datastore/license.MD",
+			"translations": [
+				{
+					"language": "de",
+					"displayName": "Mein Addon",
+					"description": "erleichtert das Durchführen von xyz"
+				}
+			]
 		}
 	],
 	"title": "Root",
@@ -48,7 +55,8 @@
 		"URL",
 		"sha256",
 		"sourceURL",
-		"license"
+		"license",
+		"translations"
 	],
 	"properties": {
 		"addonId": {
@@ -66,6 +74,7 @@
 			"title": "The addon version number",
 			"description": "Pure numerical representation of the version being released.",
 			"default": {},
+			"type": "object",
 			"examples": [
 				{
 					"major": 21,
@@ -226,6 +235,25 @@
 			],
 			"title": "Mark add-on as legacy",
 			"type": "boolean"
+		},
+		"translations": {
+			"$id": "#/properties/translations",
+			"default": [],
+			"description": "A collections of translations generated from localized add-on manifests",
+			"examples": [
+				[
+					{
+						"language": "de",
+						"displayName": "Mein Addon",
+						"description": "erleichtert das Durchführen von xyz"
+					}
+				]
+			],
+			"title": "Translations",
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/translation"
+			}
 		}
 	},
 	"$defs": {
@@ -273,6 +301,52 @@
 					],
 					"title": "The 'patch' part of the version number.",
 					"type": "integer"
+				}
+			}
+		},
+		"translation": {
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"language": "de",
+					"displayName": "Mein Addon",
+					"description": "erleichtert das Durchführen von xyz"
+				}
+			],
+			"required": [
+				"language",
+				"displayName",
+				"description"
+			],
+			"properties": {
+				"language": {
+					"default": "",
+					"description": "Language code supported by NVDA",
+					"examples": [
+						"de",
+						"pt_BR"
+					],
+					"title": "Language code",
+					"type": "string"
+				},
+				"displayName": {
+					"default": "",
+					"description": "The translated name that will be displayed for the addon.",
+					"examples": [
+						"Mein Addon"
+					],
+					"title": "Translated display name",
+					"type": "string"
+				},
+				"description": {
+					"default": "",
+					"description": "Translated description that will be displayed for the addon.",
+					"examples": [
+						"erleichtert das Durchführen von xyz"
+					],
+					"title": "The translated description",
+					"type": "string"
 				}
 			}
 		}

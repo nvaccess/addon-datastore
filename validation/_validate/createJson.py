@@ -19,7 +19,7 @@ from typing import (
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
 from addonManifest import AddonManifest  # noqa:E402
-from manifestLoader import getAddonManifest  # noqa:E402
+from manifestLoader import getAddonManifest, getAddonManifestLocalizations  # noqa:E402
 from majorMinorPatch import MajorMinorPatch  # noqa:E402
 import sha256  # noqa:E402
 del sys.path[-1]
@@ -116,6 +116,16 @@ def _createDictMatchingJsonSchema(
 		addonData["homepage"] = homepage
 	if licenseUrl:
 		addonData["licenseURL"] = licenseUrl
+
+	addonData["translations"] = []
+	for langCode, manifest in getAddonManifestLocalizations(manifest):
+		addonData["translations"].append(
+			{
+				"language": langCode,
+				"displayName": manifest["summary"],
+				"description": manifest["description"],
+			}
+		)
 
 	return addonData
 
