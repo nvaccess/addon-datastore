@@ -36,7 +36,7 @@ jobs:
     - name: Commit & Push changes
       uses: actions-js/push@v1.4
       with:
-        message: '[Automated] Regenerate translations ${date}'
+        message: "[Automated] Regenerate translations"
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: datastore
         branch: master
