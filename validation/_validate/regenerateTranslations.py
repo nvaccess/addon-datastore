@@ -17,7 +17,7 @@ from typing import (
 
 sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
 # E402 module level import not at top of file
-from manifestLoader import getAddonManifest, getAddonManifestLocalizations, TEMP_DIR  # noqa:E402
+from manifestLoader import getAddonManifest, getAddonManifestLocalizations  # noqa:E402
 del sys.path[-1]
 
 
@@ -27,8 +27,7 @@ def regenerateJsonFile(filePath: str, errorFilePath: Optional[str]) -> None:
 	if addonData.get("legacy"):
 		return
 	addonData["translations"] = []
-	addonFilePath = os.path.join(TEMP_DIR, "addon.nvda-addon")
-	urlretrieve(addonData["URL"], addonFilePath)
+	addonFilePath, _ = urlretrieve(addonData["URL"])
 	manifest = getAddonManifest(addonFilePath)
 	if manifest.errors:
 		if errorFilePath:

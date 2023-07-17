@@ -5,6 +5,7 @@
 from glob import glob
 import os
 import pathlib
+import shutil
 from typing import Generator, Tuple
 import zipfile
 from addonManifest import AddonManifest
@@ -16,11 +17,14 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 	""" Extract manifest.ini from *.nvda-addon and parse.
 	Raise on error.
 	"""
-	expandedPath = os.path.join(TEMP_DIR, "nvda-addon")
+	extractDir = os.path.join(TEMP_DIR, "tempAddon")
+	if pathlib.Path(extractDir).exists():
+		shutil.rmtree(extractDir)
+	pathlib.Path(extractDir).mkdir()
 	with zipfile.ZipFile(addonPath, "r") as z:
 		for info in z.infolist():
-			z.extract(info, expandedPath)
-	filePath = os.path.join(expandedPath, "manifest.ini")
+			z.extract(info, extractDir)
+	filePath = os.path.join(extractDir, "manifest.ini")
 	try:
 		manifest = AddonManifest(filePath)
 		return manifest

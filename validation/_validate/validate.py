@@ -315,6 +315,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 			raise ValueError(submissionData["URL"])
 
 		addonDestPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
+		os.remove(addonDestPath)
 		yield from downloadAddon(url=submissionData["URL"], destPath=addonDestPath)
 
 		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
