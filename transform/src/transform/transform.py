@@ -141,14 +141,14 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: Set[
 						translatedAddonData["description"] = addonData["description"]
 					Path(addonWritePath).mkdir(parents=True, exist_ok=True)
 					with open(f"{addonWritePath}/{channel}.json", "w") as newAddonFile:
-						validateJson(addonData, JSONSchemaPaths.ADDON_DATA)
-						json.dump(addonData, newAddonFile)
+						validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
+						json.dump(translatedAddonData, newAddonFile)
 					if addLatest:
 						latestAddonWritePath = f"{addonDir}/{lang}/latest/{addonName}"
 						Path(latestAddonWritePath).mkdir(parents=True, exist_ok=True)
 						with open(f"{latestAddonWritePath}/{channel}.json", "w") as newAddonFile:
-							validateJson(addonData, JSONSchemaPaths.ADDON_DATA)
-							json.dump(addonData, newAddonFile)
+							validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
+							json.dump(translatedAddonData, newAddonFile)
 
 
 def readAddons(addonDir: str) -> Iterable[Addon]:
