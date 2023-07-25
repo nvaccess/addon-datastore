@@ -119,7 +119,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: Set[
 				# Identical add-on IDs may have different casing
 				# due to legacy add-on submissions.
 				# This can be removed when old submissions are given updated casing.
-				caseInsensitiveLatestAddonForChannel = f"{addonName.lower()}-{channel}"
+				caseInsensitiveLatestAddonForChannel = f"{addonName.lower()}-{channel}".casefold()
 				addLatest = caseInsensitiveLatestAddonForChannel not in writtenLatestAddonForChannel
 				if addLatest:
 					log.error(f"Latest version: {addonName} {channel} {nvdaAPIVersion}")
@@ -131,12 +131,17 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: Set[
 				translatedAddonData = addonData.copy()
 				for lang in supportedLanguages:
 					addonWritePath = f"{addonDir}/{lang}/{str(nvdaAPIVersion)}/{addonName}"
+					langWithoutLocale = lang.split("_")[0]
 					if lang in addonTranslations:
 						# update with translated version
 						translatedAddonData["displayName"] = addonTranslations[lang]["displayName"]
 						translatedAddonData["description"] = addonTranslations[lang]["description"]
+					elif langWithoutLocale in addonTranslations:
+						# fallback to lang without locale translated version
+						translatedAddonData["displayName"] = addonTranslations[langWithoutLocale]["displayName"]
+						translatedAddonData["description"] = addonTranslations[langWithoutLocale]["description"]
 					else:
-						# update with english
+						# fallback and update to english
 						translatedAddonData["displayName"] = addonData["displayName"]
 						translatedAddonData["description"] = addonData["description"]
 					Path(addonWritePath).mkdir(parents=True, exist_ok=True)
