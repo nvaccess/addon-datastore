@@ -16,7 +16,7 @@ jobs:
       COMMIT_FORMAT: "Generated from %h%n%nCommit message:%n%s%n%b"
     strategy:
       matrix:
-        python-version: [ 3.8 ]
+        python-version: [ 3.11 ]
     steps:
     - name: Checkout addon data
       uses: actions/checkout@v3
