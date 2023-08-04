@@ -1,6 +1,8 @@
 # Submission Guide
 If your add-on was hosted on [addonFiles](https://github.com/nvaccess/addonFiles) please read the [migrating to datastore guide](./migratingFromAddonFiles.md).
 
+Submitted add-ons should comply with the the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md)
+
 ## Background
 Submitting an add-on version is done via a GitHub issue form.
 A JSON metadata file is generated from the issue form and the add-on's manifest.
