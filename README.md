@@ -1,16 +1,16 @@
 # Add-on Store
 
 The addon-datastore repository is a data pipeline of submitting, validating and transforming add-on data to views.
-These views are hosted on the NV Access server and are available in the NVDA add-on store.
+These views are hosted on the NV Access server and are available in the NVDA Add-on Store.
 
 Please note: the NVDA project including the Add-on Store has a [Citizen and Contributor Code of Conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
 NV Access expects that all contributors and other community members will read and abide by the rules set out in this document while participating in the project or contributing add-ons.
 
 ### Guide for submitters
-Add-on authors who wish to have their add-on distributed through the add-on store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
+Add-on authors who wish to have their add-on distributed through the Add-on Store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
 
 ### Design overview
-For an overview of the whole add-on store, read [the design overview](./docs/design/designOverview.md).
+For an overview of the whole Add-on Store, read [the design overview](./docs/design/designOverview.md).
 
 ### About security 
 Ensuring that an add-on is safe to run is a difficult challenge that isn't addressed here.
