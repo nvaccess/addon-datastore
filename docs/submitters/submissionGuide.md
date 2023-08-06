@@ -1,6 +1,8 @@
 # Submission Guide
 If your add-on was hosted on [addonFiles](https://github.com/nvaccess/addonFiles) please read the [migrating to datastore guide](./migratingFromAddonFiles.md).
 
+Submitted add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md)
+
 ## Background
 Submitting an add-on version is done via a GitHub issue form.
 A JSON metadata file is generated from the issue form and the add-on's manifest.
@@ -9,7 +11,7 @@ When the issue form is submitted, the JSON file is generated and submitted as a 
 
 Automated validation checks are run against the pull request.
 If there are validation errors, they will be commented on the pull request.
-Otherwise, the pull request will be merged, the issue will be closed and the add-on will become available in the add-on store.
+Otherwise, the pull request will be merged, the issue will be closed and the add-on will become available in the Add-on Store.
 
 ## Steps to submit an add-on
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).

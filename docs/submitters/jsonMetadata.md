@@ -1,5 +1,5 @@
 ## JSON Metadata Schema details
-Each submission to the addon-datastore is structured as a JSON file, containing all the metadata needed for the NVDA add-on store.
+Each submission to the addon-datastore is structured as a JSON file, containing all the metadata needed for the NVDA Add-on Store.
 
 For a full description of the schema see the
 [_validate/addonVersion_schema.json file](https://github.com/nvaccess/addon-datastore-validation/blob/main/_validate/addonVersion_schema.json).
