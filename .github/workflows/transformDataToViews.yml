@@ -6,6 +6,10 @@ on:
   workflow_call:
   workflow_dispatch:
 
+concurrency:
+  group: transform
+  cancel-in-progress: true
+
 jobs:
   transformAndPush:
     runs-on: windows-latest
