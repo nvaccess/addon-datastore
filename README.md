@@ -22,7 +22,7 @@ The checksum allows NVDA to ensure that add-on releases are immutable.
 - NV Access doesn't require a manual review of the add-on (code or user experience) itself before the add-on submission.
 - You are welcome to review code / UX of add-ons and provide that feedback directly to add-on authors.
 - The SHA256 checksum of the `.nvda-addon` prevents undetected changes.
-- Add-ons should comply with the the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
+- Add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
 Add-ons which are malicious or otherwise break the code of conduct can be removed by:
   - Opening a pull request to remove the submitted add-on metadata
   - Sending an email to info@nvaccess.org
