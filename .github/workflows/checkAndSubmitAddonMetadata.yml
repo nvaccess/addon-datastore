@@ -3,6 +3,9 @@ name: Check submitted NVDA add-on
 on:
   workflow_call:
     inputs:
+      issueNumber:
+        required: true
+        type: string
       pullRequestNumber:
         required: true
         type: string
@@ -11,11 +14,49 @@ on:
         type: string
 
 jobs:
-  checkMetadata:
+  verifySubmitter:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
     permissions:
       contents: write
       pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Check if submitter is registered
+        id: checkReg
+        run: if ($(jq '. | .[\"${{ github.actor_id }}\"] | length' submitters.json) -eq 0) {throw "Submitter not registered"}
+      - name: Add submitter to JSON file
+        if: failure()
+        run: |
+          $(jq '. += {\"${{ github.actor_id }}\": \"${{ github.actor }}\"}' submitters.json) | echo > submitters.json
+      - name: Create submitter approval PR
+        if: failure()
+        id: addSubmitterPR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Add ${{ github.actor }} as an approved submitter
+          branch: addSubmitter${{ github.actor }}
+          commit-message: Add ${{ github.actor }} as an approved submitter
+          body: "Created from #${{ inputs.issueNumber }}"
+          author: github-actions <github-actions@github.com>
+      - name: Post submitter registration message
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ inputs.issueNumber }}
+          body: |
+            Welcome to the add-on store submission process.
+            As this is your first submission, you will need manual approval as a submitter.
+            Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
+  checkMetadata:
     runs-on: windows-latest
+    permissions:
+      issues: write
+      pull-requests: write
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -58,8 +99,29 @@ jobs:
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
       with:
-        issue-number: ${{ inputs.pullRequestNumber }}
+        issue-number: ${{ inputs.issueNumber }}
         body-file: ./validationErrors.md
+    - name: Close pull request
+      if: failure()
+      uses: peter-evans/close-pull@v3
+      with:
+        pull-request-number: ${{ inputs.pullRequestNumber }}
+        delete-branch: true
+    - name: Close issue
+      if: failure()
+      uses: peter-evans/close-issue@v3
+      with:
+        issue-number: ${{ inputs.issueNumber }}
+  mergeToMaster:
+    needs: [checkMetadata, verifySubmitter]
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    steps:
     - name: Merge branch to master
       uses: everlytic/branch-merge@1.1.2
       with:
@@ -67,5 +129,5 @@ jobs:
         target_branch: master
         commit_message_template: '[Automated] Merged ${{ steps.getMetadata.outputs.result }} (#${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
-    needs: checkMetadata
+    needs: mergeToMaster
     uses: ./.github/workflows/transformDataToViews.yml
