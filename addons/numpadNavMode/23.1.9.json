@@ -1,0 +1,81 @@
+{
+	"addonId": "numpadNavMode",
+	"displayName": "Numpad Nav Mode",
+	"URL": "https://github.com/opensourcesys/numpadNavMode/releases/download/v23.1.9/numpadNavMode-23.1.9.nvda-addon",
+	"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles..",
+	"sha256": "2ebcf5edbb7420f7b2a0ef82adbddb70f8776a30b5b991312df52c91295b7212",
+	"addonVersionName": "23.1.9",
+	"addonVersionNumber": {
+		"major": 23,
+		"minor": 1,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Luke Davis (Open Source Systems)",
+	"sourceURL": "https://github.com/opensourcesys/numpadNavMode",
+	"license": "GPL v2",
+	"homepage": "https://github.com/opensourcesys/numpadNavMode/blob/master/readme.md",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "bg",
+			"displayName": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0440\u0435\u0436\u0438\u043c \u043d\u0430 \u0446\u0438\u0444\u0440\u043e\u0432\u0438\u044f \u0431\u043b\u043e\u043a",
+			"description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u043f\u0440\u0435\u0432\u043a\u043b\u044e\u0447\u0432\u0430\u043d\u0435 \u043d\u0430 \u0446\u0438\u0444\u0440\u043e\u0432\u0430\u0442\u0430 \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430 \u043c\u0435\u0436\u0434\u0443 \u0440\u0435\u0436\u0438\u043c\u0430 \u043d\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043d\u0430 NVDA \u0438 \u0440\u0435\u0436\u0438\u043c\u0430 \u043d\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043d\u0430 Windows.\n\u041e\u0441\u043e\u0431\u0435\u043d\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e, \u0430\u043a\u043e \u043f\u0440\u0435\u043c\u0438\u043d\u0430\u0432\u0430\u0442\u0435 \u043e\u0442 JAWS. \u0418\u043b\u0438 \u0437\u0430 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u0438 \u043d\u0430 \u043b\u0430\u043f\u0442\u043e\u043f\u0438, \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0449\u0438 \u043b\u0430\u043f\u0442\u043e\u043f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u043d\u0430\u0442\u0430 \u043f\u043e\u0434\u0440\u0435\u0434\u0431\u0430, \u043d\u043e \u043a\u043e\u0438\u0442\u043e \u0438\u043c\u0430\u0442 \u0446\u0438\u0444\u0440\u043e\u0432\u0430 \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430 \u0438 \u0438\u0441\u043a\u0430\u0442 \u0434\u0430 \u044f \u0438\u0437\u043f\u043e\u043b\u0437\u0432\u0430\u0442 \u0437\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u0441\u044a\u0441 \u0441\u0442\u0440\u0435\u043b\u043a\u0438 \u0438 \u0442.\u043d.\n\u0414\u043e\u0431\u0430\u0432\u043a\u0430\u0442\u0430 \u0441\u044a\u0449\u043e \u0442\u0430\u043a\u0430 \u0434\u0430\u0432\u0430 \u043a\u043e\u043d\u0442\u0440\u043e\u043b \u0432\u044a\u0440\u0445\u0443 \u0441\u044a\u0441\u0442\u043e\u044f\u043d\u0438\u0435\u0442\u043e \u043d\u0430 Num Lock \u043f\u0440\u0438 \u0441\u0442\u0430\u0440\u0442\u0438\u0440\u0430\u043d\u0435 \u043d\u0430 NVDA \u0438\u043b\u0438 \u043f\u0440\u0438 \u043f\u0440\u043e\u043c\u044f\u043d\u0430 \u043d\u0430 \u043a\u043e\u043d\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0438\u044f \u043f\u0440\u043e\u0444\u0438\u043b."
+		},
+		{
+			"language": "de",
+			"displayName": "Navigationsmodus \u00fcber den Nummernblock",
+			"description": "Schaltet den Nummernblock zwischen dem Navigationsmodus von NVDA und Windows um.\nBesonders n\u00fctzlich bei der Umstellung von JAWS; oder f\u00fcr Laptop-Benutzer, die den Laptop-Modus bevorzugen, aber einen Nummernblock haben und ihn f\u00fcr Pfeiltasten, etc. verwenden m\u00f6chten.\nDie NVDA-Erweiterung erm\u00f6glicht auch die Kontrolle \u00fcber den Status des Nummernblocks beim Starten von NVDA oder beim Wechsel des Profils..."
+		},
+		{
+			"language": "es",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permite alternar el bloque num\u00e9rico entre el modo de navegaci\u00f3n de NVDA y el modo de navegaci\u00f3n de Windows.\nEspecialmente \u00fatil si se migra desde Jaws, o para usuarios de port\u00e1tiles que prefieren el modo port\u00e1til, pero que tienen un bloque num\u00e9rico y quieren usarlo para pulsar las flechas, etc.\nEl complemento tambi\u00e9n da control del estado del bloqueo num\u00e9rico al arrancar NVDA o cuando se cargan perfiles."
+		},
+		{
+			"language": "fi",
+			"displayName": "Laskinn\u00e4pp\u00e4imist\u00f6n navigointitila",
+			"description": "Mahdollistaa laskinn\u00e4pp\u00e4imist\u00f6n vaihtamisen NVDA- ja Windows-navigointitilojen v\u00e4lill\u00e4.\nErityisen hy\u00f6dyllist\u00e4 JAWSista siirrytt\u00e4ess\u00e4 tai kannettavien tietokoneiden k\u00e4ytt\u00e4jille, jotka k\u00e4ytt\u00e4v\u00e4t mieluummin kannettavan n\u00e4pp\u00e4imist\u00f6asettelua, mutta joilla on laskinn\u00e4pp\u00e4imist\u00f6 ja haluavat k\u00e4ytt\u00e4\u00e4 sit\u00e4 nuolin\u00e4pp\u00e4imi\u00e4 varten jne.\nLis\u00e4osa voi my\u00f6s hallita Numlockin tilaa NVDA:ta k\u00e4ynnistett\u00e4ess\u00e4 tai profiilia vaihdettaessa."
+		},
+		{
+			"language": "fr",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permet de basculer le pav\u00e9 num\u00e9rique entre le mode de navigation NVDA et le mode de navigation Windows.\nParticuli\u00e8rement utile si la migration est \u00e0 partir de Jaws ; ou pour les utilisateurs d'ordinateurs portables pr\u00e9f\u00e9rant le mode ordinateur portable, mais qui a un pav\u00e9 num\u00e9rique et qui souhaite l'utiliser pour les touches fl\u00e9ch\u00e9es, etc.\nL'extension donne \u00e9galement le contr\u00f4le de l'\u00e9tat du verrouillage num\u00e9rique lors du d\u00e9marrage de NVDA ou des changements de profils."
+		},
+		{
+			"language": "gl",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permite cambiar o bloque num\u00e9rico entre o modo de navegaci\u00f3n de NVDA e o modo de navegaci\u00f3n de Windows.\nEspecialmente \u00fatil se se migra dende Jaws, ou para usuarios de port\u00e1tiles que prefiren o modo port\u00e1til, pero que te\u00f1en un bloque num\u00e9rico e queren usalo para premer as frechas, etc.\nO complemento tam\u00e9n da o control do estado do bloqueo num\u00e9rico ao arrancar o NVDA ou cando se cargan perfiles."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Modo Numpad Nav",
+			"description": "Permite alternar o numpad entre o modo de navega\u00e7\u00e3o NVDA, e o modo de navega\u00e7\u00e3o Windows.\nEspecialmente \u00fatil se migrar de jaws; ou para utilizadores de port\u00e1teis que preferem o modo port\u00e1til, mas que t\u00eam um numpad e o querem utilizar para teclas de setas, etc.\nO extra tamb\u00e9m d\u00e1 o controlo do estado do numlock ao iniciar o NVDA ou ao alterar perfis..."
+		},
+		{
+			"language": "ro",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permite comutarea blocului numeric \u00eentre modurile de navigare Windows \u0219i NVDA.\nEste util \u00een special \u00een cazul \u00een care utilizatorii migreaz\u0103 de la JAWS sau pentru utilizatorii care prefer\u0103 modul de laptop \u0219i ale c\u0103ror laptop-uri au tastaturi cu bloc numeric, pe care utilizatorii poate vor s\u0103 o foloseasc\u0103 pe post de taste s\u0103ge\u021bi, etc.\nSuplimentul ofer\u0103 \u0219i controlul st\u0103rii blocului numeric la pornirea NVDA sau la modificarea profilurilor.."
+		},
+		{
+			"language": "tr",
+			"displayName": "Say\u0131sal Tu\u015f Tak\u0131m\u0131 gezinme Modu",
+			"description": "NVDA gezinme modu ile Windows gezinme modu aras\u0131nda say\u0131sal tu\u015f tak\u0131m\u0131n\u0131n de\u011fi\u015ftirilmesine izin verir.\n\u00d6zellikle daha \u00f6nce Jaws kullananlar i\u00e7in kullan\u0131\u015fl\u0131d\u0131r; veya diz\u00fcst\u00fc bilgisayar modunu tercih eden ancak say\u0131sal tu\u015f tak\u0131m\u0131na sahip olan ve onu ok tu\u015flar\u0131 vb. i\u00e7in kullanmak isteyen diz\u00fcst\u00fc bilgisayar kullan\u0131c\u0131lar\u0131 i\u00e7in.\nEklenti ayr\u0131ca, NVDA'y\u0131 ba\u015flat\u0131rken veya profilleri de\u011fi\u015ftirirken Numara kilidi tu\u015funun durumunun kontrol\u00fcn\u00fc sa\u011flar."
+		},
+		{
+			"language": "uk",
+			"displayName": "\u0420\u0435\u0436\u0438\u043c \u043d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457 \u0437\u0430 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043e\u044e \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0457 \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0438",
+			"description": "\u0414\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043f\u0435\u0440\u0435\u043c\u0438\u043a\u0430\u0442\u0438 \u0446\u0438\u0444\u0440\u043e\u0432\u0443 \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0443 \u043c\u0456\u0436 \u0440\u0435\u0436\u0438\u043c\u043e\u043c \u043d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457 NVDA \u0442\u0430 \u0440\u0435\u0436\u0438\u043c\u043e\u043c \u043d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457 Windows.\n\u041e\u0441\u043e\u0431\u043b\u0438\u0432\u043e \u043a\u043e\u0440\u0438\u0441\u043d\u043e, \u044f\u043a\u0449\u043e \u0432\u0438 \u043f\u0435\u0440\u0435\u0445\u043e\u0434\u0438\u0442\u0435 \u0437 Jaws; \u0430\u0431\u043e \u0434\u043b\u044f \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0456\u0432 \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0456\u0432, \u044f\u043a\u0456 \u0432\u0456\u0434\u0434\u0430\u044e\u0442\u044c \u043f\u0435\u0440\u0435\u0432\u0430\u0433\u0443 \u0440\u0435\u0436\u0438\u043c\u0443 \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0430, \u0430\u043b\u0435 \u043c\u0430\u044e\u0442\u044c \u0446\u0438\u0444\u0440\u043e\u0432\u0443 \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0443 \u0456 \u0445\u043e\u0447\u0443\u0442\u044c \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0457\u0457 \u0434\u043b\u044f \u043a\u043b\u0430\u0432\u0456\u0448 \u0437\u0456 \u0441\u0442\u0440\u0456\u043b\u043a\u0430\u043c\u0438 \u0442\u043e\u0449\u043e.\n\u0414\u043e\u0434\u0430\u0442\u043e\u043a \u0442\u0430\u043a\u043e\u0436 \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044e\u0432\u0430\u0442\u0438 \u0441\u0442\u0430\u043d numlock \u043f\u0440\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0443 NVDA \u0430\u0431\u043e \u0437\u043c\u0456\u043d\u0456 \u043f\u0440\u043e\u0444\u0456\u043b\u044e."
+		}
+	]
+}
