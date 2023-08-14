@@ -93,5 +93,7 @@ jobs:
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
       issueNumber: ${{ needs.check-addon.outputs.issueNumber }}
+      issueAuthorId: ${{ github.event.issue.user.id }}
+      issueAuthorName: ${{ github.event.issue.user.login }}
       pullRequestNumber: ${{ needs.check-addon.outputs.pullRequestNumber }}
       headRef: ${{ needs.check-addon.outputs.headRef }}

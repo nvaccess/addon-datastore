@@ -6,6 +6,12 @@ on:
       issueNumber:
         required: true
         type: string
+      issueAuthorId:
+        required: true
+        type: string
+      issueAuthorName:
+        required: true
+        type: string
       pullRequestNumber:
         required: true
         type: string
@@ -72,7 +78,7 @@ jobs:
             | sed -r "s|addons/(.*)/.*\.json|\1|g"
           )
           jqCode="
-          . | .[\"${{ github.actor_id }}\"]
+          . | .[\"${{ inputs.issueAuthorId }}\"]
           | select(
             .trustedSubmitter
             or (
@@ -95,8 +101,8 @@ jobs:
             | sed -r "s|addons/(.*)/.*\.json|\1|g"
           )
           jqCode="
-          .[\"${{ github.actor_id }}\"].addons += [\"$addonId\"]
-          | .[\"${{ github.actor_id }}\"].githubName = \"${{ github.actor }}\"
+          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"$addonId\"]
+          | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
           "
 
           mv submitters.json submitters.old.json
@@ -109,9 +115,9 @@ jobs:
         id: addSubmitterPR
         uses: peter-evans/create-pull-request@v4
         with:
-          title: Add ${{ github.actor }} as an approved submitter
-          branch: addSubmitter${{ github.actor }}
-          commit-message: Add ${{ github.actor }} as an approved submitter
+          title: Add ${{ inputs.issueAuthorName }} as an approved submitter
+          branch: addSubmitter${{ inputs.issueAuthorName }}
+          commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter
           body: "Created from #${{ inputs.issueNumber }}"
           author: github-actions <github-actions@github.com>
       - name: Post submitter registration message
