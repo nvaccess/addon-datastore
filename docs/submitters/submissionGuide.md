@@ -19,6 +19,7 @@ If you do not maintain the submitted add-on's repository, it is expected that yo
 
 If you submit many add-ons you may be granted trusted submitter status, which allows you to publish/submit for all add-ons.
 It is expected that trusted submitters do not abuse this process.
+Granting and removing trusted submitter status of publishers will be decided and handled entirely by NV access.
 
 Submitters which abuse the submission process will have their submitter approval revoked.
 Please report any issues with submitted add-ons to <info@nvaccess.org>.
