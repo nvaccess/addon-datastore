@@ -14,8 +14,46 @@ on:
         type: string
 
 jobs:
-  verifySubmitter:
+  getAddonFilename:
     runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    outputs:
+      addonFileName: ${{ steps.getMetadata.outputs.result }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.headRef }}
+      - name: Create validation errors file
+        run: echo "" > validationErrors.md
+      - name: Determine files changed
+        uses: actions/github-script@v6
+        id: getMetadata
+        env:
+          pullRequestNumber: ${{ inputs.pullRequestNumber }}
+        with:
+          script: |
+            const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
+            const result = await github.request(url)
+            return getAddonFilename(result.data)
+      - name: Post validation errors as comment
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ inputs.issueNumber }}
+          body-file: ./validationErrors.md
+  verifySubmitter:
+    # jq for windows has issues parsing multiline strings (e.g. CRLF),
+    # use linux instead.
+    runs-on: ubuntu-latest
+    needs: [getAddonFilename]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -26,13 +64,46 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Check if submitter is registered
+      - name: Check if submitter is trusted to submit for this add-on or any add-on ID
         id: checkReg
-        run: if ($(jq '. | .[\"${{ github.actor_id }}\"] | length' submitters.json) -eq 0) {throw "Submitter not registered"}
-      - name: Add submitter to JSON file
+        run: |
+          addonId=$(
+            echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
+            | sed -r "s|addons/(.*)/.*\.json|\1|g"
+          )
+          jqCode="
+          . | .[\"${{ github.actor_id }}\"]
+          | select(
+            .trustedSubmitter
+            or (
+              .addons
+              | index(\"$addonId\")
+            )
+          )
+          "
+
+          jq -e "$jqCode" submitters.json
+          # -e only sets the exit status of jq to 0 if there is "truthy" output.
+          # If no valid result is produced, i.e. no submitter is found, jq exits with status 4.
+          # If there is a different error, a different non-zero exit code is used.
+          exit $? # Exit with the same exit code as jq
+      - name: Add add-on ID and submitter to JSON file
         if: failure()
         run: |
-          $(jq '. += {\"${{ github.actor_id }}\": \"${{ github.actor }}\"}' submitters.json) | echo > submitters.json
+          addonId=$(
+            echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
+            | sed -r "s|addons/(.*)/.*\.json|\1|g"
+          )
+          jqCode="
+          .[\"${{ github.actor_id }}\"].addons += [\"$addonId\"]
+          | .[\"${{ github.actor_id }}\"].githubName = \"${{ github.actor }}\"
+          "
+
+          mv submitters.json submitters.old.json
+          jq -e "$jqCode" submitters.old.json > submitters.json
+          jqExitCode=$?
+          rm submitters.old.json
+          exit $jqExitCode
       - name: Create submitter approval PR
         if: failure()
         id: addSubmitterPR
@@ -54,8 +125,7 @@ jobs:
             Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
   checkMetadata:
     runs-on: windows-latest
-    outputs:
-      addonFileName: ${{ steps.getMetadata.outputs.result }}
+    needs: [getAddonFilename]
     permissions:
       issues: write
       pull-requests: write
@@ -69,17 +139,6 @@ jobs:
         ref: ${{ inputs.headRef }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
-    - name: Determine files changed
-      uses: actions/github-script@v6
-      id: getMetadata
-      env:
-        pullRequestNumber: ${{ inputs.pullRequestNumber }}
-      with:
-        script: |
-          const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-          const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
-          const result = await github.request(url)
-          return getAddonFilename(result.data)
     - name: Checkout validate repo
       uses: actions/checkout@v3
       with:
@@ -96,7 +155,7 @@ jobs:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: validation/runvalidate ${{ steps.getMetadata.outputs.result }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+      run: validation/runvalidate ${{ needs.getAddonFilename.outputs.addonFileName }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
@@ -115,7 +174,7 @@ jobs:
       with:
         issue-number: ${{ inputs.issueNumber }}
   mergeToMaster:
-    needs: [checkMetadata, verifySubmitter]
+    needs: [getAddonFilename, checkMetadata, verifySubmitter]
     permissions:
       contents: write
       pull-requests: write
@@ -129,7 +188,7 @@ jobs:
       with:
         source_ref: ${{ inputs.headRef }}
         target_branch: master
-        commit_message_template: '[Automated] Merged ${{ needs.checkMetadata.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
+        commit_message_template: '[Automated] Merged ${{ needs.getAddonFilename.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
     needs: mergeToMaster
     uses: ./.github/workflows/transformDataToViews.yml
