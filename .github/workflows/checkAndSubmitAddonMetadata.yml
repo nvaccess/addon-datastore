@@ -198,3 +198,106 @@ jobs:
   call-workflow:
     needs: mergeToMaster
     uses: ./.github/workflows/transformDataToViews.yml
+
+  createReviewComment:
+    # jq for windows has issues parsing multiline strings (e.g. CRLF),
+    # use linux instead.
+    runs-on: ubuntu-latest
+    needs: [getAddonFilename]
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    permissions:
+      contents: write
+      discussions: write
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Get add-on version
+      id: getAddonIdAndVersion
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
+          const addonId = addonFilename.split('/')[1]
+          core.setOutput('addonId', addonId)
+          const addonVersion = addonFilename.split('/')[2].replace('.json', '')
+          core.setOutput('addonVersion', addonVersion)
+    - name: Check if discussion for this add-on exists
+      id: checkDiscussion
+      run: |
+        addonId=$(
+          echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
+          | sed -r "s|addons/(.*)/.*\.json|\1|g"
+        )
+        jqCode="
+        . | .[\"$addonId\"]
+        "
+        jq -e "$jqCode" discussions.json
+        # -e only sets the exit status of jq to 0 if there is "truthy" output.
+        # If no valid result is produced, i.e. no add-on id is found, jq exits with status 4.
+        # If there is a different error, a different non-zero exit code is used.
+        exit $? # Exit with the same exit code as jq
+
+    - name: Create review comment
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs')
+          const contents = fs.readFileSync('discussions.json')
+          const data = JSON.parse(contents)
+          const addonId = "${{ steps.getAddonIdAndVersion.outputs.addonId }}"
+          const addonVersion = "${{ steps.getAddonIdAndVersion.outputs.addonVersion }}"
+          const discussionId = data[addonId]["discussionId"]
+          const mutation = `mutation {
+            addDiscussionComment(input: {body: "${addonVersion}", discussionId: "${discussionId}", clientMutationId: "GitHub Script action"}) {
+              clientMutationId
+              comment {
+                body
+            }
+            }
+          }`;
+          github.graphql(mutation)
+    - name: Create discussion for add-on id
+      id: createDiscussion
+      if: failure()
+      uses: abirismyname/create-discussion@v1.1.0
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      with:
+        repository-id: 'MDEwOlJlcG9zaXRvcnkyMzI4MTU5NTQ='
+        category-id: 'DIC_kwDODeB9Us4CaB4B'
+        title: Reviews for ${{ steps.getAddonIdAndVersion.outputs.addonId }} add-on
+        body: |
+          Version ${{ steps.getAddonIdAndVersion.outputs.addonVersion }}
+    - name: Add add-on ID and discussion data to json file
+      if: failure()
+      run: |
+        addonId=$(
+          echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
+          | sed -r "s|addons/(.*)/.*\.json|\1|g"
+        )
+        discussionId=$(
+          echo ${{ steps.createDiscussion.outputs.discussion-id }}
+        )
+        discussionUrl=$(
+          echo ${{ steps.createDiscussion.outputs.discussion-url }}
+        )
+        jqCode="
+        .[\"$addonId\"].discussionId = \"$discussionId\"
+        | .[\"$addonId\"].discussionUrl = \"$discussionUrl\"
+        "
+  
+        mv discussions.json discussions.old.json
+        jq -e "$jqCode" discussions.old.json > discussions.json
+        jqExitCode=$?
+        rm discussions.old.json
+        exit $jqExitCode
+    - name: Commit and push
+      if: failure()
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Update discussions.json"
+        git push
