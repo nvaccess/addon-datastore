@@ -302,7 +302,7 @@ class validate_getExistingVersions(unittest.TestCase):
 		formattedVersions = list(validate.getExistingVersions(self.verFilename))
 		self.assertEqual(
 			formattedVersions,
-			["0.0.0", "2022.1.0", "2023.1.0"]
+			["0.0.0", "2022.1.0", "2023.1.0", "2024.1.0"]
 		)
 
 
@@ -352,6 +352,29 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 			["Last tested version error: 9999.3.0 doesn't exist"]
 		)
 
+	def test_validExperimental(self):
+		self.submissionData["lastTestedVersion"]["major"] = 2024
+		self.submissionData["lastTestedVersion"]["minor"] = 1
+		self.submissionData["lastTestedVersion"]["patch"] = 0
+		self.submissionData["channel"] = "beta"
+		self.assertEqual(
+			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
+			[]
+		)
+
+	def test_invalidExperimental(self):
+		self.submissionData["lastTestedVersion"]["major"] = 2024
+		self.submissionData["lastTestedVersion"]["minor"] = 1
+		self.submissionData["lastTestedVersion"]["patch"] = 0
+		self.submissionData["channel"] = "stable"
+		self.assertEqual(
+			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
+			[
+				"Last tested version error: 2024.1.0 is not stable yet. "
+				"Please submit add-on using the beta or dev channel."
+			]
+		)
+
 
 class validate_checkMinRequiredVersionExists(unittest.TestCase):
 	"""Test for the checkMinRequiredVersionExists function."""
@@ -397,6 +420,29 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
 			["Minimum required version error: 9999.3.0 doesn't exist"]
+		)
+
+	def test_validExperimental(self):
+		self.submissionData["minNVDAVersion"]["major"] = 2024
+		self.submissionData["minNVDAVersion"]["minor"] = 1
+		self.submissionData["minNVDAVersion"]["patch"] = 0
+		self.submissionData["channel"] = "beta"
+		self.assertEqual(
+			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
+			[]
+		)
+
+	def test_invalidExperimental(self):
+		self.submissionData["minNVDAVersion"]["major"] = 2024
+		self.submissionData["minNVDAVersion"]["minor"] = 1
+		self.submissionData["minNVDAVersion"]["patch"] = 0
+		self.submissionData["channel"] = "stable"
+		self.assertEqual(
+			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
+			[
+				"Minimum required version error: 2024.1.0 is not stable yet. "
+				"Please submit add-on using the beta or dev channel."
+			]
 		)
 
 
