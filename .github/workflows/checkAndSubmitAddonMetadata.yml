@@ -278,15 +278,38 @@ jobs:
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
+    - name: Add discussion URL to metadata
+      run: |
+        addonFilename=$(
+          echo ${{ needs.getAddonFilename.outputs.addonFileName }}
+        )
+        discussionUrl=$(
+          echo ${{ steps.createDiscussion.outputs.discussion-url }}
+        )
+        jqCode="
+        .[\"discussionUrl\"] = \"$discussionUrl\"
+        "
+  
+        mv $addonFilename $addonFilename.old.json
+        jq -e "$jqCode" $addonFilename.old.json > $addonFilename
+        jqExitCode=$?
+        rm $addonFilename.old.json
+        exit $jqExitCode
     - name: Commit and push
-      if: ${{ steps.checkDiscussion.outcome }} == 'failure'
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
         git commit -m "Update discussions.json"
         git push
-
+    - name: Commit and push
+      if: ${{ steps.checkDiscussion.outcome }} == 'failure'
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Update metadata and discussions.json"
+        git push
   mergeToMaster:
     needs: [getAddonFilename, checkMetadata, verifySubmitter]
     permissions:
