@@ -194,14 +194,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       ref: ${{ inputs.headRef }}
-    - name: Get add-on id and version
-      id: getAddonIdAndVersion
+    - name: Get add-on name and version
+      id: getAddonNameAndVersion
       uses: actions/github-script@v6
       with:
         script: |
           const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
-          const addonId = addonFilename.split('/')[1]
-          core.setOutput('addonName', addonId)
+          const addonName = addonFilename.split('/')[1]
+          core.setOutput('addonName', addonName)
           const addonVersion = addonFilename.split('/')[2].replace('.json', '')
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
@@ -229,9 +229,9 @@ jobs:
       with:
         repository-id: $GITHUB_REPOSITORY_ID
         category-id: 'DIC_kwDODeB9Us4CaB4B'
-        title: Reviews for ${{ steps.getAddonIdAndVersion.outputs.addonName }} add-on
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
-          Community add-on reviews for {{ steps.getAddonIdAndVersion.outputs.addonName }}.
+          Community add-on reviews for {{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
           Reviews for specific versions of the add-on can be added in response to automated comments for each version.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
@@ -243,8 +243,8 @@ jobs:
           const fs = require('fs')
           const contents = fs.readFileSync('discussions.json')
           const data = JSON.parse(contents)
-          const addonId = "${{ steps.getAddonIdAndVersion.outputs.addonId }}"
-          const addonVersion = "${{ steps.getAddonIdAndVersion.outputs.addonVersion }}"
+          const addonName = "${{ steps.getAddonNameAndVersion.outputs.addonId }}"
+          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
           const discussionId = data[addonId]["discussionId"]
           const mutation = `mutation {
             addDiscussionComment(input: {body: "Reviews for version ${addonVersion}", discussionId: "${discussionId}", clientMutationId: "GitHub Script action"}) {
