@@ -179,6 +179,7 @@ jobs:
       uses: peter-evans/close-issue@v3
       with:
         issue-number: ${{ inputs.issueNumber }}
+
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
@@ -199,9 +200,9 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
-          const addonName = addonFilename.split('/')[1]
+          const addonName = ${{ needs.getAddonFilename.steps.getMetadata.addonId }}
           core.setOutput('addonName', addonName)
+          const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
           const addonVersion = addonFilename.split('/')[2].replace('.json', '')
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
@@ -227,16 +228,15 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
-        repository-id: $GITHUB_REPOSITORY_ID
+        repository-id: ${{ github.repository_id }}
         category-id: 'DIC_kwDODeB9Us4CaB4B'
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
-          Community add-on reviews for {{ steps.getAddonNameAndVersion.outputs.addonName }}.
+          Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
           Reviews for specific versions of the add-on can be added in response to automated comments for each version.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
     - name: Create review comment
-      if: ${{ steps.checkDiscussion.outcome }} == 'success'
       uses: actions/github-script@v6
       with:
         script: |
@@ -300,16 +300,9 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Update discussions.json"
+        git commit -m "update discussion URL"
         git push
-    - name: Commit and push
-      if: ${{ steps.checkDiscussion.outcome }} == 'failure'
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-        git commit -m "Update metadata and discussions.json"
-        git push
+
   mergeToMaster:
     needs: [getAddonFilename, checkMetadata, verifySubmitter]
     permissions:
