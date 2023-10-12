@@ -184,7 +184,7 @@ jobs:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    needs: [checkMetadata]
+    needs: [checkMetadata, getAddonFilename]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -193,8 +193,9 @@ jobs:
       discussions: write
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-      ref: ${{ inputs.headRef }}
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ inputs.headRef }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
       uses: actions/github-script@v6
@@ -223,15 +224,15 @@ jobs:
         # If no valid result is produced, i.e. no add-on id is found, jq exits with status 4.
         # If there is a different error, a different non-zero exit code is used.
         exit $? # Exit with the same exit code as jq
-
+        continue-on-error: true
     - name: Create discussion for add-on id
       id: createDiscussion
-      if: ${{ steps.checkDiscussion.outcome }} == 'failure'
+      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure' || 
       uses: abirismyname/create-discussion@v1.1.0
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
-        repository-id: ${{ github.repository_id }}
+        repository-id: 'MDEwOlJlcG9zaXRvcnkyMzI4MTU5NTQ='
         category-id: 'DIC_kwDODeB9Us4CaB4B'
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
@@ -239,27 +240,8 @@ jobs:
           Please use threaded replies and avoid email responses.
           Reviews for specific versions of the add-on can be added in response to automated comments for each version.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
-    - name: Create review comment
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const fs = require('fs')
-          const contents = fs.readFileSync('discussions.json')
-          const data = JSON.parse(contents)
-          const addonName = "${{ steps.getAddonNameAndVersion.outputs.addonId }}"
-          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
-          const discussionId = data[addonId]["discussionId"]
-          const mutation = `mutation {
-            addDiscussionComment(input: {body: "Reviews for version ${addonVersion}", discussionId: "${discussionId}", clientMutationId: "GitHub Script action"}) {
-              clientMutationId
-              comment {
-                body
-            }
-            }
-          }`;
-          github.graphql(mutation)
     - name: Add add-on ID and discussion data to json file
-      if: ${{ steps.checkDiscussion.outcome }} == 'failure'
+      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure'
       run: |
         addonId=$(
           echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
@@ -281,16 +263,40 @@ jobs:
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
+    - name: Create review comment
+      id: createComment
+      if: always()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs')
+          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
+          const contents = fs.readFileSync('discussions.json')
+          const data = JSON.parse(contents)
+          const addonName = $ {{ steps.getAddonNameAndVersion.outputs.addonName }}
+          const discussionId = data[addonName]["discussionId"]
+          const mutation = `mutation {
+            addDiscussionComment(input: {body: "Reviews for version ${addonVersion}", discussionId: "${discussionId}", clientMutationId: "GitHub Script action"}) {
+              clientMutationId
+              comment {
+                body
+                url
+              }
+            }`;
+          github.graphql(mutation)
+          const url= https
+          core.setOutput('url', url)
     - name: Add discussion URL to metadata
+      if: always()
       run: |
         addonFilename=$(
           echo ${{ needs.getAddonFilename.outputs.addonFileName }}
         )
-        discussionUrl=$(
-          echo ${{ steps.createDiscussion.outputs.discussion-url }}
+        reviewUrl=$(
+          echo ${{ steps.createComment.outputs.url }}
         )
         jqCode="
-        .[\"discussionUrl\"] = \"$discussionUrl\"
+        .[\"reviewUrl\"] = \"$reviewUrl\"
         "
   
         mv $addonFilename $addonFilename.old.json
@@ -299,6 +305,7 @@ jobs:
         rm $addonFilename.old.json
         exit $jqExitCode
     - name: Commit and push
+      if: always()
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
