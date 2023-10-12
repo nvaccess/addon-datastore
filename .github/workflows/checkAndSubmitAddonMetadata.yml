@@ -200,9 +200,12 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const addonName = ${{ needs.getAddonFilename.steps.getMetadata.addonId }}
-          core.setOutput('addonName', addonName)
+          const fs = require('fs')
           const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
+          const contents = fs.readFileSync(addonFilename)
+          const metadata = JSON.parse(contents)
+          const addonName = metadata.addonId
+          core.setOutput('addonName', addonName)
           const addonVersion = addonFilename.split('/')[2].replace('.json', '')
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
