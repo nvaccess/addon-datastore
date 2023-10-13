@@ -211,6 +211,7 @@ jobs:
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
+      continue-on-error: true
       run: |
         addonId=$(
           echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
@@ -224,15 +225,14 @@ jobs:
         # If no valid result is produced, i.e. no add-on id is found, jq exits with status 4.
         # If there is a different error, a different non-zero exit code is used.
         exit $? # Exit with the same exit code as jq
-        continue-on-error: true
     - name: Create discussion for add-on id
       id: createDiscussion
-      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure' || 
+      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure')
       uses: abirismyname/create-discussion@v1.1.0
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
-        repository-id: 'MDEwOlJlcG9zaXRvcnkyMzI4MTU5NTQ='
+        repository-id: $GITHUB_REPOSITORY_ID
         category-id: 'DIC_kwDODeB9Us4CaB4B'
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
@@ -273,18 +273,24 @@ jobs:
           const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
           const contents = fs.readFileSync('discussions.json')
           const data = JSON.parse(contents)
-          const addonName = $ {{ steps.getAddonNameAndVersion.outputs.addonName }}
+          const addonName = "${{ steps.getAddonNameAndVersion.outputs.addonName }}"
           const discussionId = data[addonName]["discussionId"]
           const mutation = `mutation {
-            addDiscussionComment(input: {body: "Reviews for version ${addonVersion}", discussionId: "${discussionId}", clientMutationId: "GitHub Script action"}) {
+            addDiscussionComment(
+              input: {
+                body: "Reviews for version ${addonVersion}",
+                discussionId: "${discussionId}",
+                clientMutationId: "GitHub Script action"
+              }
+            ) {
               clientMutationId
               comment {
                 body
                 url
               }
             }`;
-          github.graphql(mutation)
-          const url= https
+          const response =github.graphql(mutation)
+          const url = response.comment.url
           core.setOutput('url', url)
     - name: Add discussion URL to metadata
       if: always()
