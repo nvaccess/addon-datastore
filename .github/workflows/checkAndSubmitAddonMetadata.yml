@@ -225,6 +225,29 @@ jobs:
         # If no valid result is produced, i.e. no add-on id is found, jq exits with status 4.
         # If there is a different error, a different non-zero exit code is used.
         exit $? # Exit with the same exit code as jq
+    - name: Get category id
+      id: getCatId
+      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure')
+      uses: actions/github-script@v6
+      with:
+        result-encoding: string
+        script: |
+          const query = `query($owner:String!, $name:String!) {
+            repository(owner:$owner, name:$name){
+              discussionCategories(first: 1) {
+                  nodes {
+                    id
+                  }
+                }
+              }
+            }`;
+            const variables = {
+              owner: context.repo.owner,
+              name: context.repo.repo
+            }
+            const result = await github.graphql(query, variables)
+            const catId = result.discussionCategories.nodes[0].id
+            return catId
     - name: Create discussion for add-on id
       id: createDiscussion
       if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure')
@@ -233,7 +256,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
         repository-id: $GITHUB_REPOSITORY_ID
-        category-id: 'DIC_kwDODeB9Us4CaB4B'
+        category-id: ${{ steps.getCatId.outputs.result }}
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
