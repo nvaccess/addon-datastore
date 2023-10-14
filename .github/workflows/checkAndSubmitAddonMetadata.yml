@@ -33,7 +33,7 @@ jobs:
       addonFileName: ${{ steps.getMetadata.outputs.result }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.headRef }}
       - name: Create validation errors file
@@ -69,7 +69,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Check if submitter is trusted to submit for this add-on or any add-on ID
         id: checkReg
         run: |
@@ -113,7 +113,7 @@ jobs:
       - name: Create submitter approval PR
         if: failure()
         id: addSubmitterPR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           title: Add ${{ inputs.issueAuthorName }} as an approved submitter
           branch: addSubmitter${{ inputs.issueAuthorName }}
@@ -140,13 +140,13 @@ jobs:
         python-version: [ 3.11 ]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{ inputs.headRef }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
@@ -156,7 +156,7 @@ jobs:
         python -m pip install --upgrade wheel
         pip install -r validation/requirements.txt
     - name: Checkout transformation repo for nvdaAPIVersions.json
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
@@ -181,6 +181,7 @@ jobs:
         issue-number: ${{ inputs.issueNumber }}
 
   createReviewComment:
+    continue-on-error: true
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
@@ -196,6 +197,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: ${{ inputs.headRef }}
+        fetch-depth: 0
     - name: Get add-on name and version
       id: getAddonNameAndVersion
       uses: actions/github-script@v6
@@ -211,11 +213,9 @@ jobs:
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
-      continue-on-error: true
       run: |
         addonId=$(
-          echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
-          | sed -r "s|addons/(.*)/.*\.json|\1|g"
+          echo ${{ steps.getAddonNameAndVersion.outputs.addonName }} \
         )
         jqCode="
         . | .[\"$addonId\"]
@@ -225,38 +225,40 @@ jobs:
         # If no valid result is produced, i.e. no add-on id is found, jq exits with status 4.
         # If there is a different error, a different non-zero exit code is used.
         exit $? # Exit with the same exit code as jq
-    - name: Get category id
-      id: getCatId
-      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure')
+    - name: Get repository and category id
+      id: getRepoAndCatId
+      if: failure() && steps.checkDiscussion.outcome == 'failure'
       uses: actions/github-script@v6
       with:
-        result-encoding: string
         script: |
           const query = `query($owner:String!, $name:String!) {
             repository(owner:$owner, name:$name){
-              discussionCategories(first: 1) {
+                id
+                discussionCategories(first: 1) {
                   nodes {
                     id
                   }
                 }
               }
             }`;
-            const variables = {
+          const variables = {
               owner: context.repo.owner,
               name: context.repo.repo
             }
             const result = await github.graphql(query, variables)
-            const catId = result.discussionCategories.nodes[0].id
-            return catId
+            const repoId = result.repository.id
+            core.setOutput('repoId', repoId)
+            const catId = result.repository.discussionCategories.nodes[0].id
+            core.setOutput('catId', catId)
     - name: Create discussion for add-on id
       id: createDiscussion
-      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure')
+      if: failure() && steps.checkDiscussion.outcome == 'failure'
       uses: abirismyname/create-discussion@v1.1.0
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
-        repository-id: $GITHUB_REPOSITORY_ID
-        category-id: ${{ steps.getCatId.outputs.result }}
+        repository-id: "${{ steps.getRepoAndCatId.outputs.repoId}}"
+        category-id: "${{ steps.getRepoAndCatId.outputs.catId }}"
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
@@ -264,12 +266,11 @@ jobs:
           Reviews for specific versions of the add-on can be added in response to automated comments for each version.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
     - name: Add add-on ID and discussion data to json file
-      if: (${{ success() }} || ${{ failure() }}) && (${{ steps.checkDiscussion.outcome }} == 'failure'
+      if: failure() && steps.checkDiscussion.outcome == 'failure'
       run: |
         addonId=$(
-          echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
-          | sed -r "s|addons/(.*)/.*\.json|\1|g"
-        )
+          echo ${{ steps.getAddonNameAndVersion.outputs.addonName }} \
+         )
         discussionId=$(
           echo ${{ steps.createDiscussion.outputs.discussion-id }}
         )
@@ -298,6 +299,7 @@ jobs:
           const data = JSON.parse(contents)
           const addonName = "${{ steps.getAddonNameAndVersion.outputs.addonName }}"
           const discussionId = data[addonName]["discussionId"]
+          console.log(`${discussionId}`)
           const mutation = `mutation {
             addDiscussionComment(
               input: {
@@ -308,12 +310,12 @@ jobs:
             ) {
               clientMutationId
               comment {
-                body
                 url
               }
+            }
             }`;
-          const response =github.graphql(mutation)
-          const url = response.comment.url
+          const response = await github.graphql(mutation)
+          const url = response.addDiscussionComment.comment.url
           core.setOutput('url', url)
     - name: Add discussion URL to metadata
       if: always()
@@ -335,15 +337,21 @@ jobs:
         exit $jqExitCode
     - name: Commit and push
       if: always()
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
         git commit -m "update discussion URL"
+        git checkout -b updateDiscussionUrl
+        gh pr checkout ${{ inputs.pullRequestNumber }}
+        git pull
+        git merge updateDiscussionUrl
         git push
 
   mergeToMaster:
-    needs: [getAddonFilename, checkMetadata, verifySubmitter]
+    needs: [getAddonFilename, checkMetadata, verifySubmitter, createReviewComment]
     permissions:
       contents: write
       pull-requests: write
@@ -355,7 +363,7 @@ jobs:
     - name: Merge branch to master
       uses: everlytic/branch-merge@1.1.2
       with:
-        source_ref: ${{ inputs.headRef }}
+        source_ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
         target_branch: master
         commit_message_template: '[Automated] Merged ${{ needs.getAddonFilename.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
