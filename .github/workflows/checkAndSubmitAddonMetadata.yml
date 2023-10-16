@@ -196,8 +196,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-        ref: ${{ inputs.headRef }}
-        fetch-depth: 0
+        ref: ${{ inputs.authorIssueName }}${{inputs.pullRequestNumber }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
       uses: actions/github-script@v6
@@ -207,7 +206,9 @@ jobs:
           const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName }}
           const contents = fs.readFileSync(addonFilename)
           const metadata = JSON.parse(contents)
-          const addonName = metadata.addonId
+          const addonId = metadata.addonId
+          core.setOutput('addonId', addonId)
+          const addonName = metadata.displayName
           core.setOutput('addonName', addonName)
           const addonVersion = addonFilename.split('/')[2].replace('.json', '')
           core.setOutput('addonVersion', addonVersion)
@@ -215,7 +216,7 @@ jobs:
       id: checkDiscussion
       run: |
         addonId=$(
-          echo ${{ steps.getAddonNameAndVersion.outputs.addonName }} \
+          echo ${{ steps.getAddonNameAndVersion.outputs.addonId }}
         )
         jqCode="
         . | .[\"$addonId\"]
@@ -231,7 +232,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const query = `query($owner:String!, $name:String!) {
+            const query = `query($owner:String!, $name:String!) {
             repository(owner:$owner, name:$name){
                 id
                 discussionCategories(first: 1) {
@@ -241,7 +242,7 @@ jobs:
                 }
               }
             }`;
-          const variables = {
+            const variables = {
               owner: context.repo.owner,
               name: context.repo.repo
             }
@@ -257,9 +258,9 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
       with:
-        repository-id: "${{ steps.getRepoAndCatId.outputs.repoId}}"
+        repository-id: "${{ steps.getRepoAndCatId.outputs.repoId }}"
         category-id: "${{ steps.getRepoAndCatId.outputs.catId }}"
-        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on (${{ steps.getAddonNameAndVersion.outputs.addonId }})
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
@@ -269,7 +270,7 @@ jobs:
       if: failure() && steps.checkDiscussion.outcome == 'failure'
       run: |
         addonId=$(
-          echo ${{ steps.getAddonNameAndVersion.outputs.addonName }} \
+          echo ${{ steps.getAddonNameAndVersion.outputs.addonId }}
          )
         discussionId=$(
           echo ${{ steps.createDiscussion.outputs.discussion-id }}
@@ -297,8 +298,8 @@ jobs:
           const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
           const contents = fs.readFileSync('discussions.json')
           const data = JSON.parse(contents)
-          const addonName = "${{ steps.getAddonNameAndVersion.outputs.addonName }}"
-          const discussionId = data[addonName]["discussionId"]
+          const addonId = "${{ steps.getAddonNameAndVersion.outputs.addonId }}"
+          const discussionId = data[addonId]["discussionId"]
           console.log(`${discussionId}`)
           const mutation = `mutation {
             addDiscussionComment(
@@ -337,17 +338,12 @@ jobs:
         exit $jqExitCode
     - name: Commit and push
       if: always()
-      env:
-        GH_TOKEN: ${{ github.token }}
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
         git commit -m "update discussion URL"
-        git checkout -b updateDiscussionUrl
-        gh pr checkout ${{ inputs.pullRequestNumber }}
         git pull
-        git merge updateDiscussionUrl
         git push
 
   mergeToMaster:
