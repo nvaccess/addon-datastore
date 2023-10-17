@@ -202,8 +202,9 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const setAddonNameAndVersion = require('./getAddonNameAndVersion.js')
-          setAddonNameAndVersion({context, core})
+          const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
+          const addonFilename = ${{ needs.getAddonFilename.outputs.addonFileName}}
+          setAddonNameAndVersion({core}, addonFilename)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
       run: |
@@ -224,7 +225,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const setRepoCatAndId = require('./getRepoCatAndId.js')
+          const setRepoCatAndId = require('./.github/workflows/getRepoCatAndId.js')
           setRepoCatAndId({context, github, core})
     - name: Create discussion for add-on id
       id: createDiscussion
@@ -269,8 +270,10 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const createComment = require('./createComment.js')
-          createComment({context, github, core})
+          const createComment = require('./.github/workflows/createComment.js')
+          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
+          const addonId = "${{ steps.getAddonNameAndVersion.outputs.addonId }}"
+          createComment({context, github, core}, addonVersion, addonId)
     - name: Add discussion URL to metadata
       if: always()
       run: |
