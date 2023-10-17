@@ -210,7 +210,7 @@ jobs:
           core.setOutput('addonId', addonId)
           const addonName = metadata.displayName
           core.setOutput('addonName', addonName)
-          const addonVersion = addonFilename.split('/')[2].replace('.json', '')
+          const addonVersion = metadata.addonVersionName
           core.setOutput('addonVersion', addonVersion)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
