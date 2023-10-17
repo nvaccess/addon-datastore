@@ -224,25 +224,8 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const query = `query($owner:String!, $name:String!) {
-            repository(owner:$owner, name:$name){
-              id
-              discussionCategories(first: 1) {
-                nodes {
-                  id
-                }
-              }
-            }
-          }`;
-          const variables = {
-            owner: context.repo.owner,
-            name: context.repo.repo
-          }
-          const result = await github.graphql(query, variables)
-          const repoId = result.repository.id
-          core.setOutput('repoId', repoId)
-          const catId = result.repository.discussionCategories.nodes[0].id
-          core.setOutput('catId', catId)
+          const setRepoCatAndId = require('./getRepoCatAndId.js')
+          setRepoCatAndId({context, github, core})
     - name: Create discussion for add-on id
       id: createDiscussion
       if: failure() && steps.checkDiscussion.outcome == 'failure'
@@ -286,30 +269,8 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const fs = require('fs')
-          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
-          const contents = fs.readFileSync('discussions.json')
-          const data = JSON.parse(contents)
-          const addonId = "${{ steps.getAddonNameAndVersion.outputs.addonId }}"
-          const discussionId = data[addonId]["discussionId"]
-          console.log(`${discussionId}`)
-          const mutation = `mutation {
-            addDiscussionComment(
-              input: {
-                body: "Reviews for version ${addonVersion}",
-                discussionId: "${discussionId}",
-                clientMutationId: "GitHub Script action"
-              }
-            ) {
-              clientMutationId
-              comment {
-                url
-              }
-            }
-            }`;
-          const response = await github.graphql(mutation)
-          const url = response.addDiscussionComment.comment.url
-          core.setOutput('url', url)
+          const createComment = require('./createComment.js')
+          createComment({context, github, core})
     - name: Add discussion URL to metadata
       if: always()
       run: |
