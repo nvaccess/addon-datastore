@@ -183,7 +183,7 @@ jobs:
   createReviewComment:
     continue-on-error: true
     concurrency:
-      group: ${{ needs.getAddonFilename.outputs.addonFileName }}
+      group: "${{ needs.getAddonFilename.outputs.addonFileName }}.split('/')[1]"
       cancel-in-progress: true
 
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
