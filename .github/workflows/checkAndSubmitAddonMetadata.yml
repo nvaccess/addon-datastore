@@ -20,7 +20,7 @@ on:
         type: string
 
 jobs:
-  getAddonFilename:
+  getAddonId:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -30,7 +30,8 @@ jobs:
       pull-requests: write
       issues: write
     outputs:
-      addonFileName: ${{ steps.getMetadata.outputs.result }}
+      addonId: ${{ steps.getAddonId.outputs.result }}
+      addonFileName: ${{ steps.getAddonFileName.outputs.result }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -38,9 +39,9 @@ jobs:
           ref: ${{ inputs.headRef }}
       - name: Create validation errors file
         run: echo "" > validationErrors.md
-      - name: Determine files changed
+      - name: Determine add-on file name
         uses: actions/github-script@v6
-        id: getMetadata
+        id: getAddonFileName
         env:
           pullRequestNumber: ${{ inputs.pullRequestNumber }}
         with:
@@ -49,6 +50,19 @@ jobs:
             const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
             const result = await github.request(url)
             return getAddonFilename(result.data)
+      - name: Determine add-on ID
+        uses: actions/github-script@v6
+        id: getAddonId
+        env:
+          pullRequestNumber: ${{ inputs.pullRequestNumber }}
+        with:
+          script: |
+            const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
+            const result = await github.request(url)
+            const addonFileName = getAddonFilename(result.data)
+            const addonIdRegex = RegExp("addons/(.*)/.*\.json")
+            return addonIdRegex.exec(addonFileName)[1]
       - name: Post validation errors as comment
         if: failure()
         uses: peter-evans/create-or-update-comment@v2
@@ -59,7 +73,7 @@ jobs:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    needs: [getAddonFilename]
+    needs: [getAddonId]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -73,17 +87,13 @@ jobs:
       - name: Check if submitter is trusted to submit for this add-on or any add-on ID
         id: checkReg
         run: |
-          addonId=$(
-            echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
-            | sed -r "s|addons/(.*)/.*\.json|\1|g"
-          )
           jqCode="
           . | .[\"${{ inputs.issueAuthorId }}\"]
           | select(
             .trustedSubmitter
             or (
               .addons
-              | index(\"$addonId\")
+              | index(\"${{ needs.getAddonId.outputs.addonId }}\")
             )
           )
           "
@@ -96,12 +106,8 @@ jobs:
       - name: Add add-on ID and submitter to JSON file
         if: failure()
         run: |
-          addonId=$(
-            echo ${{ needs.getAddonFilename.outputs.addonFileName }} \
-            | sed -r "s|addons/(.*)/.*\.json|\1|g"
-          )
           jqCode="
-          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"$addonId\"]
+          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
           | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
           "
 
@@ -115,9 +121,9 @@ jobs:
         id: addSubmitterPR
         uses: peter-evans/create-pull-request@v4
         with:
-          title: Add ${{ inputs.issueAuthorName }} as an approved submitter
-          branch: addSubmitter${{ inputs.issueAuthorName }}
-          commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter
+          title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
+          branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonId }}
+          commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
           body: "Created from #${{ inputs.issueNumber }}"
           author: github-actions <github-actions@github.com>
       - name: Post submitter registration message
@@ -127,11 +133,12 @@ jobs:
           issue-number: ${{ inputs.issueNumber }}
           body: |
             Welcome to the add-on store submission process.
-            As this is your first submission, you will need manual approval as a submitter.
+            As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
+            If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
             Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
   checkMetadata:
     runs-on: windows-latest
-    needs: [getAddonFilename]
+    needs: [getAddonId]
     permissions:
       issues: write
       pull-requests: write
@@ -161,7 +168,7 @@ jobs:
         repository: nvaccess/addon-datastore-transform
         path: transform
     - name: Validate metadata
-      run: validation/runvalidate ${{ needs.getAddonFilename.outputs.addonFileName }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+      run: validation/runvalidate ${{ needs.getAddonId.outputs.addonFileName }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
@@ -180,7 +187,7 @@ jobs:
       with:
         issue-number: ${{ inputs.issueNumber }}
   mergeToMaster:
-    needs: [getAddonFilename, checkMetadata, verifySubmitter]
+    needs: [getAddonId, checkMetadata, verifySubmitter]
     permissions:
       contents: write
       pull-requests: write
@@ -194,7 +201,7 @@ jobs:
       with:
         source_ref: ${{ inputs.headRef }}
         target_branch: master
-        commit_message_template: '[Automated] Merged ${{ needs.getAddonFilename.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
+        commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
     needs: mergeToMaster
     uses: ./.github/workflows/transformDataToViews.yml
