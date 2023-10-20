@@ -8,13 +8,11 @@ on:
 jobs:
   check-addon:
     outputs:
-      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      headRef: ${{ steps.cpr.outputs.pull-request-head-sha }}
+      headRef: ${{ steps.get-data.outputs.issueTitle }}
       issueNumber: ${{ steps.get-data.outputs.issueNumber }}
     permissions:
       contents: write
       issues: write
-      pull-requests: write
     name: Check add-on
     if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
@@ -78,16 +76,16 @@ jobs:
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v4
-      with:
-        path: datastore
-        title: ${{ steps.get-data.outputs.issueTitle }}
-        branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
-        commit-message: ${{ steps.get-data.outputs.issueTitle }}
-        body: "Closes #${{ steps.get-data.outputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
+    - name: Create branch
+      id: cb
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m ${{ steps.get-data.outputs.issueTitle }}
+        git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        git pull
+        git push
   call-workflow-passing-data:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
@@ -95,5 +93,5 @@ jobs:
       issueNumber: ${{ needs.check-addon.outputs.issueNumber }}
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
-      pullRequestNumber: ${{ needs.check-addon.outputs.pullRequestNumber }}
+      issueTitle: ${{ github.event.issue.title }}
       headRef: ${{ needs.check-addon.outputs.headRef }}

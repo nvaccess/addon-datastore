@@ -12,7 +12,7 @@ on:
       issueAuthorName:
         required: true
         type: string
-      pullRequestNumber:
+      issueTitle:
         required: true
         type: string
       headRef:
@@ -27,7 +27,6 @@ jobs:
         python-version: [ 3.11 ]
     permissions:
       contents: write
-      pull-requests: write
       issues: write
     outputs:
       addonId: ${{ steps.getAddonId.outputs.result }}
@@ -43,22 +42,22 @@ jobs:
         uses: actions/github-script@v6
         id: getAddonFileName
         env:
-          pullRequestNumber: ${{ inputs.pullRequestNumber }}
+          headRef: ${{ inputs.headRef }}
         with:
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.headRef + "/files" 
             const result = await github.request(url)
             return getAddonFilename(result.data)
       - name: Determine add-on ID
         uses: actions/github-script@v6
         id: getAddonId
         env:
-          pullRequestNumber: ${{ inputs.pullRequestNumber }}
+          headRef: ${{ inputs.headRef }}
         with:
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.headRef + "/files" 
             const result = await github.request(url)
             const addonFileName = getAddonFilename(result.data)
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
@@ -138,7 +137,7 @@ jobs:
             Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
   checkMetadata:
     runs-on: windows-latest
-    needs: [getAddonId]
+    needs: [getAddonId, verifySubmitter]
     permissions:
       issues: write
       pull-requests: write
@@ -149,7 +148,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-        ref: ${{ inputs.headRef }}
+        fetch-depth: 0
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
@@ -167,36 +166,54 @@ jobs:
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
+    - name: Merge headRef
+      run: |
+        git merge ${{ inputs.headRef }}
     - name: Validate metadata
       run: validation/runvalidate ${{ needs.getAddonId.outputs.addonFileName }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
-    - name: Post validation errors as comment
-      if: failure()
-      uses: peter-evans/create-or-update-comment@v2
-      with:
-        issue-number: ${{ inputs.issueNumber }}
-        body-file: ./validationErrors.md
-    - name: Close pull request
-      if: failure()
-      uses: peter-evans/close-pull@v3
-      with:
-        pull-request-number: ${{ inputs.pullRequestNumber }}
-        delete-branch: true
     - name: Close issue
       if: failure()
       uses: peter-evans/close-issue@v3
       with:
         issue-number: ${{ inputs.issueNumber }}
+        body-file: ./validationErrors.md
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v4
+      with:
+        add-paths: |
+          ${{ needs.getAddonId.outputs.addonFileName }}
+        title: ${{ inputs.issueTitle }}
+        branch: ${{ inputs.headRef }}
+        commit-message: ${{ inputs.issueTitle }}
+        body: "Closes #${{ inputs.issueNumber }}"
+        author: github-actions <github-actions@github.com>
+        delete-branch: true
 
+  mergeToMaster:
+    needs: [getAddonId, checkMetadata]
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    steps:
+    - name: Merge branch to master
+      uses: everlytic/branch-merge@1.1.2
+      with:
+        source_ref: ${{ inputs.headRef }}
+        target_branch: master
+        commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
+        
   createReviewComment:
     continue-on-error: true
-    concurrency:
-      group: ${{ needs.getAddonId.outputs.addonId }}
-      cancel-in-progress: true
 
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    needs: [checkMetadata, getAddonId]
+    needs: [getAddonId, mergeToMaster]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -206,8 +223,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
       uses: actions/github-script@v6
@@ -313,23 +328,7 @@ jobs:
         git pull
         git push
 
-  mergeToMaster:
-    needs: [getAddonId, checkMetadata, verifySubmitter]
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: [ 3.11 ]
-    steps:
-    - name: Merge branch to master
-      uses: everlytic/branch-merge@1.1.2
-      with:
-        source_ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-        target_branch: master
-        commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
   call-workflow:
-    needs: mergeToMaster
+    needs: [createReviewComment]
     uses: ./.github/workflows/transformDataToViews.yml
 
