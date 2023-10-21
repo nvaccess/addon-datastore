@@ -15,9 +15,6 @@ on:
       issueTitle:
         required: true
         type: string
-      headRef:
-        required: true
-        type: string
 
 jobs:
   getAddonId:
@@ -29,37 +26,35 @@ jobs:
       contents: write
       issues: write
     outputs:
-      addonId: ${{ steps.getAddonId.outputs.result }}
       addonFileName: ${{ steps.getAddonFileName.outputs.result }}
+      addonId: ${{ steps.getAddonId.outputs.result }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.headRef }}
-      - name: Create validation errors file
-        run: echo "" > validationErrors.md
       - name: Determine add-on file name
         uses: actions/github-script@v6
         id: getAddonFileName
         env:
-          headRef: ${{ inputs.headRef }}
+          issueAuthorName: ${{ inputs.issueAuthorName }}
+          issueNumber: ${{ inputs.issueNumber }}
         with:
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.headRef + "/files" 
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.issueAuthorName + process.env.issueNumber
             const result = await github.request(url)
-            return getAddonFilename(result.data)
+            return getAddonFilename(result.data.files)
       - name: Determine add-on ID
         uses: actions/github-script@v6
         id: getAddonId
         env:
-          headRef: ${{ inputs.headRef }}
+          issueAuthorName: ${{ inputs.issueAuthorName }}
+          issueNumber: ${{ inputs.issueNumber }}
         with:
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.headRef + "/files" 
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.issueAuthorName + process.env.issueNumber
             const result = await github.request(url)
-            const addonFileName = getAddonFilename(result.data)
+            const addonFileName = getAddonFilename(result.data.files)
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
       - name: Post validation errors as comment
@@ -135,63 +130,33 @@ jobs:
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
             Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
-  checkMetadata:
+  createPullRequest:
     runs-on: windows-latest
-    needs: [getAddonId, verifySubmitter]
+    needs: [verifySubmitter]
     permissions:
-      issues: write
+      contents: write
       pull-requests: write
-    strategy:
-      matrix:
-        python-version: [ 3.11 ]
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - name: Create validation errors file
-      run: echo "" > validationErrors.md
-    - name: Checkout validate repo
-      uses: actions/checkout@v4
-      with:
-        repository: nvaccess/addon-datastore-validation
-        path: validation
-        submodules: true
-    - name: Install addon-datastore-validation dependencies
-      run: |
-        python -m pip install --upgrade wheel
-        pip install -r validation/requirements.txt
-    - name: Checkout transformation repo for nvdaAPIVersions.json
-      uses: actions/checkout@v4
-      with:
-        repository: nvaccess/addon-datastore-transform
-        path: transform
-    - name: Merge headRef
-      run: |
-        git merge ${{ inputs.headRef }}
-    - name: Validate metadata
-      run: validation/runvalidate ${{ needs.getAddonId.outputs.addonFileName }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
-    - name: Close issue
-      if: failure()
-      uses: peter-evans/close-issue@v3
-      with:
-        issue-number: ${{ inputs.issueNumber }}
-        body-file: ./validationErrors.md
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v4
-      with:
-        add-paths: |
-          ${{ needs.getAddonId.outputs.addonFileName }}
-        title: ${{ inputs.issueTitle }}
-        branch: ${{ inputs.headRef }}
-        commit-message: ${{ inputs.issueTitle }}
-        body: "Closes #${{ inputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
-        delete-branch: true
-
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Update branch
+        run: |
+          git fetch origin
+          git merge origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: ${{ inputs.issueTitle }}
+          branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+          commit-message: ${{ inputs.issueTitle }}
+          body: "Closes #${{ inputs.issueNumber }}"
+          author: github-actions <github-actions@github.com>
+          delete-branch: true
   mergeToMaster:
-    needs: [getAddonId, checkMetadata]
+    needs: [getAddonId, createPullRequest]
     permissions:
       contents: write
       pull-requests: write
@@ -200,12 +165,12 @@ jobs:
       matrix:
         python-version: [ 3.11 ]
     steps:
-    - name: Merge branch to master
-      uses: everlytic/branch-merge@1.1.2
-      with:
-        source_ref: ${{ inputs.headRef }}
-        target_branch: master
-        commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} (#${{ inputs.pullRequestNumber }}) into master'
+      - name: Merge branch to master
+        uses: everlytic/branch-merge@1.1.2
+        with:
+          source_ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+          target_branch: master
+          commit_message_template: '[Automated] Merged ${{ inputs.addonFileName }} into master'
         
   createReviewComment:
     continue-on-error: true

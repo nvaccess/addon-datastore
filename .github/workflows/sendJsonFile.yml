@@ -7,9 +7,6 @@ on:
 
 jobs:
   check-addon:
-    outputs:
-      headRef: ${{ steps.get-data.outputs.issueTitle }}
-      issueNumber: ${{ steps.get-data.outputs.issueNumber }}
     permissions:
       contents: write
       issues: write
@@ -18,9 +15,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
-        ref: master
         path: datastore
     - name: Get data
       id: get-data
@@ -30,7 +26,7 @@ jobs:
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
           setOutputFromIssue({context, core})
     - name: Checkout validate repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-validation
         submodules: true
@@ -76,22 +72,40 @@ jobs:
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
+    - name: Checkout transformation repo for nvdaAPIVersions.json
+      uses: actions/checkout@v4
+      with:
+        repository: nvaccess/addon-datastore-transform
+        path: transform
+    - name: Validate metadata
+      id: getAddonFileName
+      run: |
+        cd datastore
+        git add .
+        $addonFileName = git diff --cached --name-only
+        $addonFileName = $addonFileName.trim()
+        echo $addonFileName
+        cd ..
+        validation/runvalidate ./datastore/$addonFileName ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+    - name: Close issue
+      if: failure()
+      uses: peter-evans/close-issue@v3
+      with:
+        issue-number: ${{ steps.get-data.outputs.issueNumber }}
     - name: Create branch
       id: cb
       run: |
+        cd datastore
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add .
-        git commit -m ${{ steps.get-data.outputs.issueTitle }}
+        git commit -m "Submit add-on"
         git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
-        git pull
-        git push
+        git push origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
   call-workflow-passing-data:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
-      issueNumber: ${{ needs.check-addon.outputs.issueNumber }}
+      issueNumber: "${{ github.event.issue.number }}"
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
       issueTitle: ${{ github.event.issue.title }}
-      headRef: ${{ needs.check-addon.outputs.headRef }}
