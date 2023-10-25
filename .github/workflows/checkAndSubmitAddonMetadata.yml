@@ -51,12 +51,6 @@ jobs:
             const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
-      - name: Post validation errors as comment
-        if: failure()
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body-file: ./validationErrors.md
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
@@ -127,60 +121,74 @@ jobs:
   createPullRequest:
     runs-on: windows-latest
     needs: [verifySubmitter]
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
     permissions:
       contents: write
       pull-requests: write
     outputs:
       pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          ref: master
-      - name: Update branch
-        run: |
-          git fetch origin
-          git merge origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-      - name: Create pull request
-        id: cpr
-        uses: peter-evans/create-pull-request@v5
-        with:
-          title: ${{ inputs.issueTitle }}
-          branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-          commit-message: ${{ inputs.issueTitle }}
-          body: "Closes #${{ inputs.issueNumber }}"
-          author: github-actions <github-actions@github.com>
-          delete-branch: true
-      - name: Checkout transformation repo for nvdaAPIVersions.json
-        uses: actions/checkout@v4
-        with:
-          repository: nvaccess/addon-datastore-transform
-          path: transform
-      - name: Get add-on filename
-        id: getAddonFileName
-        env:
-          pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
-            const result = await github.request(url)
-            const addonFileName = getAddonFilename(result.data)
-            core.setOutput('addonFilename' addonFilename)
-      - name: Validate metadata
-        run: |
-          validation/runvalidate ${{ steps.getAddonFilename.outputs.addonFilename }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
-      - name: Post validation errors as comment
-        if: failure()
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body-file: ./validationErrors.md
-      - name: Close issue
-        if: failure()
-        uses: peter-evans/close-issue@v3
-        with:
-          issue-number: ${{ inputs.issueNumber }}
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        ref: master
+    - name: Update branch
+      run: |
+        git fetch origin
+        git merge origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+    - name: Create pull request
+      id: cpr
+      uses: peter-evans/create-pull-request@v5
+      with:
+        title: ${{ inputs.issueTitle }}
+        branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+        commit-message: ${{ inputs.issueTitle }}
+        body: "Closes #${{ inputs.issueNumber }}"
+        author: github-actions <github-actions@github.com>
+        delete-branch: true
+    - name: Checkout validate repo
+      uses: actions/checkout@v4
+      with:
+        repository: nvaccess/addon-datastore-validation
+        path: validation
+        submodules: true
+    - name: Install addon-datastore-validation dependencies
+      run: |
+        python -m pip install --upgrade wheel
+        pip install -r validation/requirements.txt
+    - name: Checkout transformation repo for nvdaAPIVersions.json
+      uses: actions/checkout@v4
+      with:
+        repository: nvaccess/addon-datastore-transform
+        path: transform
+    - name: Get add-on filename
+      id: getAddonFileName
+      env:
+        pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
+          const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files"
+          const result = await github.request(url)
+          const addonFileName = getAddonFilename(result.data)
+          core.setOutput('addonFileName', addonFileName)
+    - name: Validate metadata
+      run: |
+        validation/runvalidate ${{ steps.getAddonFilename.outputs.addonFilename }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+    - name: Post validation errors as comment
+      if: failure()
+      uses: peter-evans/create-or-update-comment@v2
+      with:
+        issue-number: ${{ inputs.issueNumber }}
+        body-file: ./validationErrors.md
+    - name: Close issue
+      if: failure()
+      uses: peter-evans/close-issue@v3
+      with:
+        issue-number: ${{ inputs.issueNumber }}
   mergeToMaster:
     needs: [getAddonId, createPullRequest]
     permissions:
