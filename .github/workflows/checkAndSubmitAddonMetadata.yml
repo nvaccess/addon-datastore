@@ -151,6 +151,36 @@ jobs:
           body: "Closes #${{ inputs.issueNumber }}"
           author: github-actions <github-actions@github.com>
           delete-branch: true
+      - name: Checkout transformation repo for nvdaAPIVersions.json
+        uses: actions/checkout@v4
+        with:
+          repository: nvaccess/addon-datastore-transform
+          path: transform
+      - name: Get add-on filename
+        id: getAddonFileName
+        env:
+          pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files" 
+            const result = await github.request(url)
+            const addonFileName = getAddonFilename(result.data)
+            core.setOutput('addonFilename' addonFilename)
+      - name: Validate metadata
+        run: |
+          validation/runvalidate ${{ steps.getAddonFilename.outputs.addonFilename }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+      - name: Post validation errors as comment
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ inputs.issueNumber }}
+          body-file: ./validationErrors.md
+      - name: Close issue
+        if: failure()
+        uses: peter-evans/close-issue@v3
+        with:
+          issue-number: ${{ inputs.issueNumber }}
   mergeToMaster:
     needs: [getAddonId, createPullRequest]
     permissions:
