@@ -238,7 +238,7 @@ jobs:
         echo "$jqStatus"
     - name: Get repository and category id
       id: getRepoAndCatId
-      if: ${{ ! steps.checkDiscussion.outputs.jqStatus }}
+      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
       uses: actions/github-script@v6
       with:
         script: |
@@ -246,7 +246,7 @@ jobs:
           setRepoCatAndId({context, github, core})
     - name: Create discussion for add-on id
       id: createDiscussion
-      if: ${{ ! steps.checkDiscussion.outputs.jqStatus }}
+      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
       uses: abirismyname/create-discussion@v1.1.0
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
@@ -260,7 +260,7 @@ jobs:
           Reviews for specific versions of the add-on can be added in response to automated comments for each version.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
     - name: Add add-on ID and discussion data to json file
-      if: ${{ ! steps.checkDiscussion.outputs.jqStatus }}
+      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
       run: |
         addonId=$(
           echo ${{ needs.getAddonId.outputs.addonId }}
