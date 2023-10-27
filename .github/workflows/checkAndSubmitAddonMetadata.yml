@@ -253,7 +253,7 @@ jobs:
       with:
         repository-id: "${{ steps.getRepoAndCatId.outputs.repoId }}"
         category-id: "${{ steps.getRepoAndCatId.outputs.catId }}"
-        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on (${{ needs.getAddonId.outputs.addonId }})
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} add-on (${{ fromJSON(needs.getAddonId.outputs.addonId )}})
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
