@@ -305,7 +305,7 @@ jobs:
         "
   
         mv $addonFilename $addonFilename.old.json
-        jq -e "$jqCode" $addonFilename.old.json > $addonFilename
+        jq -e -a "$jqCode" $addonFilename.old.json > $addonFilename
         jqExitCode=$?
         rm $addonFilename.old.json
         exit $jqExitCode
