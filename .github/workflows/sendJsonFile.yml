@@ -7,22 +7,16 @@ on:
 
 jobs:
   check-addon:
-    outputs:
-      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      headRef: ${{ steps.cpr.outputs.pull-request-head-sha }}
-      issueNumber: ${{ steps.get-data.outputs.issueNumber }}
     permissions:
       contents: write
       issues: write
-      pull-requests: write
     name: Check add-on
     if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
-        ref: master
         path: datastore
     - name: Get data
       id: get-data
@@ -32,7 +26,7 @@ jobs:
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
           setOutputFromIssue({context, core})
     - name: Checkout validate repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-validation
         submodules: true
@@ -78,22 +72,21 @@ jobs:
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v4
-      with:
-        path: datastore
-        title: ${{ steps.get-data.outputs.issueTitle }}
-        branch: ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
-        commit-message: ${{ steps.get-data.outputs.issueTitle }}
-        body: "Closes #${{ steps.get-data.outputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
+    - name: Create branch
+      id: cb
+      run: |
+        cd datastore
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        git add .
+        git commit -m "Submit add-on"
+        git push origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
   call-workflow-passing-data:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
-      issueNumber: ${{ needs.check-addon.outputs.issueNumber }}
+      issueNumber: "${{ github.event.issue.number }}"
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
-      pullRequestNumber: ${{ needs.check-addon.outputs.pullRequestNumber }}
-      headRef: ${{ needs.check-addon.outputs.headRef }}
+      issueTitle: ${{ github.event.issue.title }}
