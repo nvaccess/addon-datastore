@@ -47,6 +47,7 @@ jobs:
         uses: actions/github-script@v6
         id: getAddonId
         with:
+          result-encoding: string
           script: |
             const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
@@ -66,6 +67,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
       - name: Check if submitter is trusted to submit for this add-on or any add-on ID
         id: checkReg
         run: |
@@ -136,8 +139,10 @@ jobs:
         ref: master
     - name: Update branch
       run: |
-        git fetch origin
-        git merge origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+        git fetch origin ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git cherry-pick origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Create pull request
       id: cpr
       uses: peter-evans/create-pull-request@v5
@@ -233,7 +238,7 @@ jobs:
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
       run: |
-        jqStatus=$(jq 'has(${{ needs.getAddonId.outputs.addonId }})' discussions.json)
+        jqStatus=$(jq 'has("${{ needs.getAddonId.outputs.addonId }}")' discussions.json)
         echo "jqStatus=$jqStatus" >> "$GITHUB_OUTPUT"
         echo "$jqStatus"
     - name: Get repository and category id
@@ -253,7 +258,7 @@ jobs:
       with:
         repository-id: "${{ steps.getRepoAndCatId.outputs.repoId }}"
         category-id: "${{ steps.getRepoAndCatId.outputs.catId }}"
-        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ fromJSON(needs.getAddonId.outputs.addonId )}})
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
@@ -289,7 +294,7 @@ jobs:
         script: |
           const createComment = require('./.github/workflows/createComment.js')
           const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
-          const addonId = ${{ needs.getAddonId.outputs.addonId }}
+          const addonId = "${{ needs.getAddonId.outputs.addonId }}"
           createComment({context, github, core}, addonVersion, addonId)
     - name: Add discussion URL to metadata
       if: always()
