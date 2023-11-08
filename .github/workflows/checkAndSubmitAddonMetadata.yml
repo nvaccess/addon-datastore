@@ -130,6 +130,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     outputs:
       pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
@@ -153,6 +154,12 @@ jobs:
         body: "Closes #${{ inputs.issueNumber }}"
         author: github-actions <github-actions@github.com>
         delete-branch: true
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ steps.cpr.outputs.pull-request-head-sha }}
+    - name: Create validation errors file
+      run: echo "" > validationErrors.md
     - name: Checkout validate repo
       uses: actions/checkout@v4
       with:
@@ -189,6 +196,11 @@ jobs:
       with:
         issue-number: ${{ inputs.issueNumber }}
         body-file: ./validationErrors.md
+    - name: Close pull request
+      if: failure()
+      uses: peter-evans/close-pull@v3
+      with:
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
     - name: Close issue
       if: failure()
       uses: peter-evans/close-issue@v3
