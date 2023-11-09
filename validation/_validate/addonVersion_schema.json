@@ -34,8 +34,10 @@
 					"displayName": "Mein Addon",
 					"description": "erleichtert das Durchführen von xyz"
 				}
-			]
+			],
+			"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
 		}
+
 	],
 	"title": "Root",
 	"type": "object",
@@ -253,6 +255,16 @@
 			"type": "array",
 			"items": {
 				"$ref": "#/$defs/translation"
+			},
+			"reviewUrl": {
+				"$id": "#/properties/reviewUrl",
+				"default": "",
+				"description": "A URL to the discussion comment to review the add-on version.",
+				"examples": [
+					"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
+				],
+				"title": "The URL of the discussion comment",
+				"type": "string"
 			}
 		}
 	},
