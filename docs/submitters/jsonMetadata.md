@@ -135,3 +135,9 @@ Optional.
 A URL to the full license for the addon.
 
 Example: `"https://github.com/nvaccess/addon-datastore/license.MD"`
+
+### reviewUrl
+Optional.
+A URL to the discussion comment to review the add-on version.
+
+Example: `"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"`
