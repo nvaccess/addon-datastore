@@ -1,0 +1,29 @@
+{
+	"addonId": "AIContentDescriber",
+	"displayName": "AI Content Describer",
+	"URL": "https://github.com/cartertemm/AI-content-describer/releases/download/v2023.11.23/AIContentDescriber-2023.11.23.nvda-addon",
+	"description": "This add-on makes it possible to describe the focus object, navigator object, or screen using the popular GPT4 vision artificial intelegence LLM.\nThough content descriptions are quite detailed, they may not always be completely accurate or reflect real world information.\nTo begin, head to https://platform.openai.com/account/api-keys and create an account, then create a key for interacting with the API. See add-on documentation for more information on this.\nThen, choose the \"AI content describer\" category from NVDA's settings dialog and enter your API key.\nPress NVDA+shift+i to pop up a menu asking how you wish to describe based on the current position, or NVDA+shift+u to describe the navigator object, or NVDA+shift+y for an image that has been copied to the clipboard such as in windows explorer. Other keystrokes are customizable from the input gestures dialog.",
+	"sha256": "25a233f75a21c53bf4e8870abe4d74728bde630d7e85fc7d20037fbde7fe7b4a",
+	"addonVersionName": "2023.11.23",
+	"addonVersionNumber": {
+		"major": 2023,
+		"minor": 11,
+		"patch": 23
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Carter Temm",
+	"sourceURL": "https://github.com/cartertemm/AI-content-describer",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": []
+}
