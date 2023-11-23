@@ -54,7 +54,7 @@ jobs:
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
       - name: Parse spaces and special characters from addonID for branch names
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: getAddonIdParsed
         with:
           result-encoding: string
