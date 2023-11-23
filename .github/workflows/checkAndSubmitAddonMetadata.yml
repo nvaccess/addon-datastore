@@ -60,8 +60,7 @@ jobs:
           result-encoding: string
           script: |
             const addonId = "${{ steps.getAddonId.outputs.result }}"
-            const addonIdParsed = addonId.replace(/[^a-zA-Z0-9]/g, "")
-            return addonIdParsed
+            return addonId.replace(/[^a-zA-Z0-9]/g, "")
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
