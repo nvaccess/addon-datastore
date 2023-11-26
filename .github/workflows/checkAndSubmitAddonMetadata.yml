@@ -28,6 +28,7 @@ jobs:
     outputs:
       addonFileName: ${{ steps.getAddonFileName.outputs.result }}
       addonId: ${{ steps.getAddonId.outputs.result }}
+      addonIdParsed: ${{ steps.getAddonIdParsed.outputs.result }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -52,6 +53,14 @@ jobs:
             const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
+      - name: Parse spaces and special characters from addonID for branch names
+        uses: actions/github-script@v7
+        id: getAddonIdParsed
+        with:
+          result-encoding: string
+          script: |
+            const addonId = "${{ steps.getAddonId.outputs.result }}"
+            return addonId.replace(/[^a-zA-Z0-9]/g, "")
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
@@ -107,7 +116,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
-          branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonId }}
+          branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonIdParsed }}
           commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
           body: "Created from #${{ inputs.issueNumber }}"
           author: github-actions <github-actions@github.com>
