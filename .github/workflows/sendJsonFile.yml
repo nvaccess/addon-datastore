@@ -43,7 +43,7 @@ jobs:
         # https://blog.gitguardian.com/github-actions-security-cheat-sheet/
         url: ${{ steps.get-data.outputs.downloadUrl }}
       # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
-      run: curl --location --output addon.nvda-addon "$env:url"
+      run: curl --location --output addon.nvda-addon "$env:url" 2> validationErrors.md
     - name: Create JSON submission from issue
       env:
         # transfer user input to env variables to escape any code
