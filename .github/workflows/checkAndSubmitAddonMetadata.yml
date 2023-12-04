@@ -283,7 +283,7 @@ jobs:
         body: |
           Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
           Please use threaded replies and avoid email responses.
-          Reviews for specific versions of the add-on can be added in response to automated comments for each version.
+          You can specify the add-on version and other info that you consider relevant in your comment.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
     - name: Add add-on ID and discussion data to json file
       if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
@@ -307,16 +307,6 @@ jobs:
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
-    - name: Create review comment
-      id: createComment
-      if: always()
-      uses: actions/github-script@v6
-      with:
-        script: |
-          const createComment = require('./.github/workflows/createComment.js')
-          const addonVersion = "${{ steps.getAddonNameAndVersion.outputs.addonVersion }}"
-          const addonId = "${{ needs.getAddonId.outputs.addonId }}"
-          createComment({context, github, core}, addonVersion, addonId)
     - name: Add discussion URL to metadata
       if: always()
       run: |
@@ -324,7 +314,7 @@ jobs:
           echo ${{ needs.getAddonId.outputs.addonFileName }}
         )
         reviewUrl=$(
-          echo ${{ steps.createComment.outputs.url }}
+          echo ${{ steps.createDiscussion.outputs.discussion-url }}
         )
         jqCode="
         .[\"reviewUrl\"] = \"$reviewUrl\"
