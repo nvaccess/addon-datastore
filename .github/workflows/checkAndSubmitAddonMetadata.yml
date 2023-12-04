@@ -313,11 +313,14 @@ jobs:
         addonFilename=$(
           echo ${{ needs.getAddonId.outputs.addonFileName }}
         )
+        addonId=$(
+          echo ${{ needs.getAddonId.outputs.addonId }}
+        )
         reviewUrl=$(
-          echo ${{ steps.createDiscussion.outputs.discussion-url }}
+          jq ".\"$addonId\".discussionUrl" discussions.json
         )
         jqCode="
-        .[\"reviewUrl\"] = \"$reviewUrl\"
+        .[\"reviewUrl\"] = $reviewUrl
         "
   
         mv $addonFilename $addonFilename.old.json
