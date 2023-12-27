@@ -1,66 +1,67 @@
 {
-	"addonId": "EnhancedDictionaries",
-	"displayName": "Enhanced dictionaries processing for NVDA",
-	"URL": "https://github.com/marlon-sousa/EnhancedDictionaries/releases/download/1.4.1/EnhancedDictionaries-1.4.1.nvda-addon",
-	"description": "This addon introduces better dictionaries handling for NVDA.\nIt is now possible to use profile specific dictionaries, which eenables better productivity by allowing you to use different dictionaries for different applications and scenarius.",
-	"sha256": "6608fb66f7704a26b03391a1639b18892b5e150a88427baa4247a5cf62b290d9",
-	"addonVersionName": "1.4.1",
-	"addonVersionNumber": {
-		"major": 1,
-		"minor": 4,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2022,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2023,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Marlon Sousa",
-	"sourceURL": "https://github.com/marlon-sousa/EnhancedDictionaries",
-	"license": "MIT License",
-	"homepage": "https://github.com/marlon-sousa/EnhancedDictionaries",
-	"licenseURL": "https://github.com/marlon-sousa/EnhancedDictionaries/blob/master/LICENSE",
-	"translations": [
-		{
-			"language": "es",
-			"displayName": "Procesamiento de diccionarios m\u00e1s avanzado para NVDA",
-			"description": "Este complemento introduce mejoras en el procesamiento de diccionarios en NVDA.\nAhora puedes usar diccionarios espec\u00edficos para cada perfil, lo que te permite una mayor productividad al posibilitar que diversos diccionarios sean usados en diferentes aplicaciones o para diferentes prop\u00f3sitos."
-		},
-		{
-			"language": "fr",
-			"displayName": "Traitement des dictionnaires plus avanc\u00e9s pour NVDA",
-			"description": "Cette extension introduit des am\u00e9liorations dans le traitement des dictionnaires dans NVDA.\nMaintenant, vous pouvez utiliser des dictionnaires sp\u00e9cifiques pour chaque profil, ce qui vous permet une plus grande productivit\u00e9 en permettant \u00e0 divers dictionnaires d'\u00eatre utilis\u00e9s dans diff\u00e9rentes applications ou \u00e0 des fins diff\u00e9rentes."
-		},
-		{
-			"language": "hr",
-			"displayName": "Pobolj\u0161ana obrada rje\u010dnika za NVDA",
-			"description": "Ovaj dodatak uvodi bolje rukovanje rje\u010dnicima za NVDA.\\n\nSada je mogu\u0107e koristiti rje\u010dnike specifi\u010dne za profil, \u0161to omogu\u0107uje bolju produktivnost dopu\u0161taju\u0107i vam kori\u0161tenje razli\u010ditih rje\u010dnika za razli\u010dite aplikacije i scenarije."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Processamento avan\u00e7ado de dicion\u00e1rios para NVDA",
-			"description": "Este addon introduz melhorias no processamento de dicion\u00e1rios no NVDA. Agora \u00e9 poss\u00edvel usar dicion\u00e1rios espec\u00edficos para cada perfil, o que habilita maior produtividade ao permitir que diferentes dicion\u00e1rios sejam usados em diferentes aplica\u00e7\u00f5es ou para diferentes finalidades"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Processamento avan\u00e7ado de dicion\u00e1rios para o NVDA",
-			"description": "Este extra introduz melhorias no processamento de dicion\u00e1rios no NVDA. Agora, \u00e9 poss\u00edvel usar dicion\u00e1rios espec\u00edficos para cada perfil, o que permite uma maior produtividade ao possibilitar que dicion\u00e1rios diversos sejam usados em diferentes aplica\u00e7\u00f5es ou para finalidades diferenciadas."
-		},
-		{
-			"language": "tr",
-			"displayName": "NVDA i\u00e7in geli\u015ftirilmi\u015f s\u00f6zl\u00fckler i\u015fleme",
-			"description": "Bu eklenti, NVDA'n\u0131n s\u00f6zl\u00fck i\u015flemesinde iyile\u015ftirmeler sunar.\nArt\u0131k her profil i\u00e7in \u00f6zel s\u00f6zl\u00fckler kullanabilirsiniz, bu da farkl\u0131 s\u00f6zl\u00fcklerin farkl\u0131 uygulamalarda veya farkl\u0131 ama\u00e7larla kullan\u0131lmas\u0131na izin vererek daha fazla \u00fcretkenlik elde etmenizi sa\u011flar."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u0420\u043e\u0437\u0448\u0438\u0440\u0435\u043d\u0430 \u043e\u0431\u0440\u043e\u0431\u043a\u0430 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0456\u0432 \u0434\u043b\u044f NVDA",
-			"description": "\u0426\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u043f\u043e\u043a\u0440\u0430\u0449\u0443\u0454 \u0440\u043e\u0431\u043e\u0442\u0443 \u0437\u0456 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0430\u043c\u0438 \u0434\u043b\u044f NVDA.\n\u0422\u0435\u043f\u0435\u0440 \u043c\u043e\u0436\u043d\u0430 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0438 \u0434\u043b\u044f \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0444\u0456\u043b\u044e, \u0449\u043e \u043f\u0456\u0434\u0432\u0438\u0449\u0443\u0454 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0438\u0432\u043d\u0456\u0441\u0442\u044c, \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u044e\u0447\u0438 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0440\u0456\u0437\u043d\u0456 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0438 \u0434\u043b\u044f \u0440\u0456\u0437\u043d\u0438\u0445 \u043f\u0440\u043e\u0433\u0440\u0430\u043c \u0442\u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0457\u0432."
-		}
-	]
+  "addonId": "EnhancedDictionaries",
+  "displayName": "Enhanced dictionaries processing for NVDA",
+  "URL": "https://github.com/marlon-sousa/EnhancedDictionaries/releases/download/1.4.1/EnhancedDictionaries-1.4.1.nvda-addon",
+  "description": "This addon introduces better dictionaries handling for NVDA.\nIt is now possible to use profile specific dictionaries, which eenables better productivity by allowing you to use different dictionaries for different applications and scenarius.",
+  "sha256": "6608fb66f7704a26b03391a1639b18892b5e150a88427baa4247a5cf62b290d9",
+  "addonVersionName": "1.4.1",
+  "addonVersionNumber": {
+    "major": 1,
+    "minor": 4,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2022,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2023,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Marlon Sousa",
+  "sourceURL": "https://github.com/marlon-sousa/EnhancedDictionaries",
+  "license": "MIT License",
+  "homepage": "https://github.com/marlon-sousa/EnhancedDictionaries",
+  "licenseURL": "https://github.com/marlon-sousa/EnhancedDictionaries/blob/master/LICENSE",
+  "translations": [
+    {
+      "language": "es",
+      "displayName": "Procesamiento de diccionarios m\u00e1s avanzado para NVDA",
+      "description": "Este complemento introduce mejoras en el procesamiento de diccionarios en NVDA.\nAhora puedes usar diccionarios espec\u00edficos para cada perfil, lo que te permite una mayor productividad al posibilitar que diversos diccionarios sean usados en diferentes aplicaciones o para diferentes prop\u00f3sitos."
+    },
+    {
+      "language": "fr",
+      "displayName": "Traitement des dictionnaires plus avanc\u00e9s pour NVDA",
+      "description": "Cette extension introduit des am\u00e9liorations dans le traitement des dictionnaires dans NVDA.\nMaintenant, vous pouvez utiliser des dictionnaires sp\u00e9cifiques pour chaque profil, ce qui vous permet une plus grande productivit\u00e9 en permettant \u00e0 divers dictionnaires d'\u00eatre utilis\u00e9s dans diff\u00e9rentes applications ou \u00e0 des fins diff\u00e9rentes."
+    },
+    {
+      "language": "hr",
+      "displayName": "Pobolj\u0161ana obrada rje\u010dnika za NVDA",
+      "description": "Ovaj dodatak uvodi bolje rukovanje rje\u010dnicima za NVDA.\\n\nSada je mogu\u0107e koristiti rje\u010dnike specifi\u010dne za profil, \u0161to omogu\u0107uje bolju produktivnost dopu\u0161taju\u0107i vam kori\u0161tenje razli\u010ditih rje\u010dnika za razli\u010dite aplikacije i scenarije."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Processamento avan\u00e7ado de dicion\u00e1rios para NVDA",
+      "description": "Este addon introduz melhorias no processamento de dicion\u00e1rios no NVDA. Agora \u00e9 poss\u00edvel usar dicion\u00e1rios espec\u00edficos para cada perfil, o que habilita maior produtividade ao permitir que diferentes dicion\u00e1rios sejam usados em diferentes aplica\u00e7\u00f5es ou para diferentes finalidades"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Processamento avan\u00e7ado de dicion\u00e1rios para o NVDA",
+      "description": "Este extra introduz melhorias no processamento de dicion\u00e1rios no NVDA. Agora, \u00e9 poss\u00edvel usar dicion\u00e1rios espec\u00edficos para cada perfil, o que permite uma maior produtividade ao possibilitar que dicion\u00e1rios diversos sejam usados em diferentes aplica\u00e7\u00f5es ou para finalidades diferenciadas."
+    },
+    {
+      "language": "tr",
+      "displayName": "NVDA i\u00e7in geli\u015ftirilmi\u015f s\u00f6zl\u00fckler i\u015fleme",
+      "description": "Bu eklenti, NVDA'n\u0131n s\u00f6zl\u00fck i\u015flemesinde iyile\u015ftirmeler sunar.\nArt\u0131k her profil i\u00e7in \u00f6zel s\u00f6zl\u00fckler kullanabilirsiniz, bu da farkl\u0131 s\u00f6zl\u00fcklerin farkl\u0131 uygulamalarda veya farkl\u0131 ama\u00e7larla kullan\u0131lmas\u0131na izin vererek daha fazla \u00fcretkenlik elde etmenizi sa\u011flar."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u0420\u043e\u0437\u0448\u0438\u0440\u0435\u043d\u0430 \u043e\u0431\u0440\u043e\u0431\u043a\u0430 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0456\u0432 \u0434\u043b\u044f NVDA",
+      "description": "\u0426\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u043f\u043e\u043a\u0440\u0430\u0449\u0443\u0454 \u0440\u043e\u0431\u043e\u0442\u0443 \u0437\u0456 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0430\u043c\u0438 \u0434\u043b\u044f NVDA.\n\u0422\u0435\u043f\u0435\u0440 \u043c\u043e\u0436\u043d\u0430 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0438 \u0434\u043b\u044f \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0444\u0456\u043b\u044e, \u0449\u043e \u043f\u0456\u0434\u0432\u0438\u0449\u0443\u0454 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0438\u0432\u043d\u0456\u0441\u0442\u044c, \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u044e\u0447\u0438 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0440\u0456\u0437\u043d\u0456 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0438 \u0434\u043b\u044f \u0440\u0456\u0437\u043d\u0438\u0445 \u043f\u0440\u043e\u0433\u0440\u0430\u043c \u0442\u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0457\u0432."
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2234"
 }
