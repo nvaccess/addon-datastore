@@ -1,186 +1,187 @@
 {
-	"addonId": "dayOfTheWeek",
-	"displayName": "Day of the week",
-	"URL": "https://github.com/abdel792/dayOfTheWeek/releases/download/v23.12.29-beta/dayOfTheWeek-20231229.0.1.nvda-addon",
-	"description": "With this add-on, you'll be able to find the day of the week corresponding to a chosen date.",
-	"sha256": "c9b157214959c06ca5f2ea0d1398a929ce6bd1a71a817d9d9ee2bba6691ec526",
-	"addonVersionName": "20231229.0.1",
-	"addonVersionNumber": {
-		"major": 20231229,
-		"minor": 0,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2019,
-		"minor": 3,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "beta",
-	"publisher": "abdel792",
-	"sourceURL": "https://github.com/abdel792/dayOfTheWeek/",
-	"license": "GPL v2",
-	"homepage": "https://github.com/abdel792/dayOfTheWeek",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "\u064a\u0648\u0645\u064f \u0627\u0644\u0623\u0633\u0628\u0648\u0639",
-			"description": "\u0645\u0639 \u0647\u0630\u0647 \u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0629, \u0633\u062a\u062a\u0645\u0643\u0651\u064e\u0646\u0648\u0646 \u0645\u0646  \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u064a\u0648\u0645 \u0627\u0644\u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0630\u064a \u064a\u062a\u0646\u0627\u0633\u0628 \u0645\u0639 \u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u062e\u062a\u0627\u0631."
-		},
-		{
-			"language": "bg",
-			"displayName": "\u0414\u0435\u043d \u043e\u0442 \u0441\u0435\u0434\u043c\u0438\u0446\u0430\u0442\u0430",
-			"description": "\u0421 \u0442\u0430\u0437\u0438 \u0434\u043e\u0431\u0430\u0432\u043a\u0430 \u0449\u0435 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u0430 \u043d\u0430\u043c\u0435\u0440\u0438\u0442\u0435 \u0434\u0435\u043d\u044f \u043e\u0442 \u0441\u0435\u0434\u043c\u0438\u0446\u0430\u0442\u0430, \u0441\u044a\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0430\u0449 \u043d\u0430 \u043f\u043e\u0441\u043e\u0447\u0435\u043d\u0430 \u043e\u0442 \u0432\u0430\u0441 \u0434\u0430\u0442\u0430."
-		},
-		{
-			"language": "da",
-			"displayName": "Ugedag",
-			"description": "Med dette tilf\u00f8jelsesprogram kan du finde den ugedag, som svarer til en valgt dato."
-		},
-		{
-			"language": "de",
-			"displayName": "Wochentag",
-			"description": "Mit dieser Erweiterung ermitteln Sie den jeweiligen Wochentag aus dem angegebenen Datum."
-		},
-		{
-			"language": "de_CH",
-			"displayName": "Wochentag",
-			"description": "Mit dieser Erweiterung ermitteln Sie den jeweiligen Wochentag aus dem angegebenen Datum."
-		},
-		{
-			"language": "es",
-			"displayName": "D\u00eda de la semana",
-			"description": "Con este complemento, podr\u00e1s encontrar el d\u00eda de la semana correspondiente a una fecha elegida."
-		},
-		{
-			"language": "fa",
-			"displayName": "\u0631\u0648\u0632\u0650 \u0647\u0641\u062a\u0647",
-			"description": "\u0628\u0627 \u0627\u06cc\u0646 \u0627\u0641\u0632\u0648\u0646\u0647\u060c \u0645\u06cc\u062a\u0648\u0627\u0646\u06cc\u062f \u0631\u0648\u0632\u0650 \u0647\u0641\u062a\u0647\u200c\u06cc \u0645\u062a\u0646\u0627\u0638\u0631 \u0628\u0627 \u06cc\u06a9 \u062a\u0627\u0631\u06cc\u062e\u0650 \u0627\u0646\u062a\u062e\u0627\u0628\u200c\u0634\u062f\u0647 \u0631\u0627 \u067e\u06cc\u062f\u0627 \u06a9\u0646\u06cc\u062f."
-		},
-		{
-			"language": "fi",
-			"displayName": "Viikonp\u00e4iv\u00e4",
-			"description": "T\u00e4ll\u00e4 lis\u00e4osalla on mahdollista selvitt\u00e4\u00e4 valittua p\u00e4iv\u00e4m\u00e4\u00e4r\u00e4\u00e4 vastaava viikonp\u00e4iv\u00e4."
-		},
-		{
-			"language": "fr",
-			"displayName": "Jour de la semaine",
-			"description": "Avec cette extension vous serez en mesure de trouver le jour de la semaine correspondant \u00e0 une date choisie."
-		},
-		{
-			"language": "gl",
-			"displayName": "D\u00eda da semana",
-			"description": "Con este complemento, poder\u00e1s atopar o d\u00eda da semana correspondente a unha data escollida."
-		},
-		{
-			"language": "he",
-			"displayName": "\u05d9\u05d5\u05dd \u05d1\u05e9\u05d1\u05d5\u05e2",
-			"description": "\u05ea\u05d5\u05e1\u05e3 \u05d6\u05d4 \u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05d3\u05e2\u05ea \u05de\u05d4\u05d5 \u05d4\u05d9\u05d5\u05dd \u05d1\u05e9\u05d1\u05d5\u05e2 \u05e9\u05dc \u05ea\u05d0\u05e8\u05d9\u05da \u05de\u05e1\u05d5\u05d9\u05d9\u05dd."
-		},
-		{
-			"language": "hi",
-			"displayName": "\u0938\u092a\u094d\u0924\u093e\u0939 \u0915\u093e \u0926\u093f\u0928",
-			"description": "\u0907\u0938 \u0910\u0921-\u0911\u0928 \u0915\u0940 \u092e\u0926\u0926 \u0938\u0947, \u0906\u092a \u090f\u0915 \u091a\u0941\u0928\u0940 \u0939\u0941\u0908 \u0924\u093e\u0930\u0940\u0916 \u0915\u0947 \u0905\u0928\u0941\u0930\u0942\u092a \u0938\u092a\u094d\u0924\u093e\u0939 \u0915\u093e \u0926\u093f\u0928 \u092a\u093e \u0938\u0915\u0947\u0902\u0917\u0947."
-		},
-		{
-			"language": "hr",
-			"displayName": "Dan u tjednu",
-			"description": "S ovim dodatkom je mogu\u0107e na\u0107i dan u tjednu za odre\u0111eni datum."
-		},
-		{
-			"language": "hu",
-			"displayName": "A h\u00e9t napja",
-			"description": "Ezzel a kieg\u00e9sz\u00edt\u0151vel meghat\u00e1rozhatja egy kiv\u00e1lasztott d\u00e1tumhoz tartoz\u00f3 napj\u00e1t a h\u00e9tnek."
-		},
-		{
-			"language": "it",
-			"displayName": "Giorno della Settimana",
-			"description": "Componente che permette di conoscere l'effettivo giorno di una settimana in base alla data"
-		},
-		{
-			"language": "ka",
-			"displayName": "\u10d9\u10d5\u10d8\u10e0\u10d8\u10e1 \u10d3\u10e6\u10d4",
-			"description": "\u10d0\u10db \u10d3\u10d0\u10db\u10d0\u10e2\u10d4\u10d1\u10d8\u10e1 \u10e1\u10d0\u10e8\u10e3\u10d0\u10da\u10d4\u10d1\u10d8\u10d7, \u10e8\u10d4\u10d2\u10d8\u10eb\u10da\u10d8\u10d0\u10d7 \u10d8\u10de\u10dd\u10d5\u10dd\u10d7 \u10d9\u10d5\u10d8\u10e0\u10d8\u10e1 \u10d3\u10e6\u10d4, \u10e0\u10dd\u10db\u10d4\u10da\u10d8\u10ea \u10e8\u10d4\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d4\u10d1\u10d0 \u10d0\u10e0\u10e9\u10d4\u10e3\u10da \u10d7\u10d0\u10e0\u10d8\u10e6\u10e1."
-		},
-		{
-			"language": "ko",
-			"displayName": "Day of the week",
-			"description": "\uc774 \uc560\ub4dc\uc628\uc740 \uc120\ud0dd\ud55c \ub0a0\uc9dc\uc5d0 \ub300\ud55c \uc694\uc77c\uc744 \ucc3e\uc744 \uc218 \uc788\uac8c \ud574\uc90d\ub2c8\ub2e4."
-		},
-		{
-			"language": "lt",
-			"displayName": "Savait\u0117s diena",
-			"description": "\u0160io papildinio d\u0117ka J\u016bs gal\u0117site rasti savait\u0117s dien\u0105, atitinkan\u010di\u0105 pasirinkt\u0105 dat\u0105."
-		},
-		{
-			"language": "ne",
-			"displayName": "\u0939\u092a\u094d\u0924\u093e\u0915\u094b \u092c\u093e\u0930",
-			"description": "\u092f\u094b \u0909\u092a-\u0915\u0930\u094d\u092e\u0940\u0915\u094b \u0938\u0939\u092f\u094b\u0917\u0932\u0947 \u0924\u092a\u093e\u0907 \u0906\u092b\u0942\u0932\u0947 \u091a\u093e\u0939\u0947\u0915\u094b \u092e\u093f\u0924\u093f \u0915\u0941\u0928 \u092c\u093e\u0930\u092e\u093e \u092a\u0930\u094d\u091b \u092d\u0928\u0947\u0930 \u091c\u093e\u0928\u094d\u0928 \u0938\u0915\u094d\u0928\u0941 \u0939\u0941\u0928\u0947\u091b\u00a0\u0964"
-		},
-		{
-			"language": "pl",
-			"displayName": "dzie\u0144 tygodnia",
-			"description": "Za pomoc\u0105 tego dodatku, mo\u017cna znale\u017a\u0107 dzie\u0144 tygodnia odpowiadaj\u0105cy konkretnej dacie."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Dia da semana",
-			"description": "Com esse complemento, ser\u00e1 capaz de encontrar o dia da semana correspondente a uma data escolhida."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Dia da semana",
-			"description": "Com este extra, ser\u00e1 capaz de encontrar o dia da semana de uma data escolhida."
-		},
-		{
-			"language": "ro",
-			"displayName": "Day of the week",
-			"description": "Cu acest supliment ve\u021bi putea g\u0103si ziua s\u0103pt\u0103m\u00e2nii corespunz\u0103toare unei date alese."
-		},
-		{
-			"language": "ru",
-			"displayName": "\u0414\u0435\u043d\u044c \u043d\u0435\u0434\u0435\u043b\u0438",
-			"description": "\u042d\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c \u0434\u0435\u043d\u044c \u043d\u0435\u0434\u0435\u043b\u0438, \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0439 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0439 \u0434\u0430\u0442\u0435."
-		},
-		{
-			"language": "sk",
-			"displayName": "De\u0148 v t\u00fd\u017edni",
-			"description": "M\u00f4\u017eete zisti\u0165, na ktor\u00fd de\u0148 v t\u00fd\u017edni pripad\u00e1 zadan\u00fd d\u00e1tum."
-		},
-		{
-			"language": "sl",
-			"displayName": "Day of the week",
-			"description": "S tem dodatkom boste lahko na\u0161li dan v tednu, ki ustreza izbranemu datumu."
-		},
-		{
-			"language": "sr",
-			"displayName": "dan u nedelji",
-			"description": "sa ovim dodatkom , mo\u017eete da prona\u0111ete dan u nedelji koji odgovara izabranom datumu"
-		},
-		{
-			"language": "tr",
-			"displayName": "Bu tarih hangi g\u00fcn...",
-			"description": "Se\u00e7ilen tarihe tekab\u00fcl eden g\u00fcn\u00fc \u00f6\u011frenmenizi sa\u011flar."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u0414\u0435\u043d\u044c \u0442\u0438\u0436\u043d\u044f",
-			"description": "\u0417 \u0446\u0438\u043c \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u043c \u0432\u0438 \u0437\u043d\u0430\u0442\u0438\u043c\u0435\u0442\u0435, \u043d\u0430 \u044f\u043a\u0438\u0439 \u0434\u0435\u043d\u044c \u0442\u0438\u0436\u043d\u044f \u043f\u0440\u0438\u043f\u0430\u0434\u0430\u0454 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0432\u0430\u043c \u0434\u0430\u0442\u0430."
-		},
-		{
-			"language": "vi",
-			"displayName": "Ng\u00e0y c\u1ee7a tu\u1ea7n",
-			"description": "V\u1edbi add-on n\u00e0y, b\u1ea1n s\u1ebd t\u00ecm \u0111\u01b0\u1ee3c ng\u00e0y trong tu\u1ea7n c\u1eafn c\u1ee9 theo ng\u00e0y \u0111\u00e3 ch\u1ecdn."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "\u67d0\u5929\u661f\u671f\u51e0",
-			"description": "\u501f\u52a9\u6b64\u63d2\u4ef6\uff0c\u60a8\u53ef\u4ee5\u627e\u5230\u4e0e\u6240\u9009\u65e5\u671f\u5bf9\u5e94\u7684\u661f\u671f\u3002"
-		}
-	]
+  "addonId": "dayOfTheWeek",
+  "displayName": "Day of the week",
+  "URL": "https://github.com/abdel792/dayOfTheWeek/releases/download/v23.12.29-beta/dayOfTheWeek-20231229.0.1.nvda-addon",
+  "description": "With this add-on, you'll be able to find the day of the week corresponding to a chosen date.",
+  "sha256": "c9b157214959c06ca5f2ea0d1398a929ce6bd1a71a817d9d9ee2bba6691ec526",
+  "addonVersionName": "20231229.0.1",
+  "addonVersionNumber": {
+    "major": 20231229,
+    "minor": 0,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2019,
+    "minor": 3,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "beta",
+  "publisher": "abdel792",
+  "sourceURL": "https://github.com/abdel792/dayOfTheWeek/",
+  "license": "GPL v2",
+  "homepage": "https://github.com/abdel792/dayOfTheWeek",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "\u064a\u0648\u0645\u064f \u0627\u0644\u0623\u0633\u0628\u0648\u0639",
+      "description": "\u0645\u0639 \u0647\u0630\u0647 \u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0627\u0644\u0628\u0631\u0645\u062c\u064a\u0629, \u0633\u062a\u062a\u0645\u0643\u0651\u064e\u0646\u0648\u0646 \u0645\u0646  \u0627\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u064a\u0648\u0645 \u0627\u0644\u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0630\u064a \u064a\u062a\u0646\u0627\u0633\u0628 \u0645\u0639 \u0627\u0644\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u062e\u062a\u0627\u0631."
+    },
+    {
+      "language": "bg",
+      "displayName": "\u0414\u0435\u043d \u043e\u0442 \u0441\u0435\u0434\u043c\u0438\u0446\u0430\u0442\u0430",
+      "description": "\u0421 \u0442\u0430\u0437\u0438 \u0434\u043e\u0431\u0430\u0432\u043a\u0430 \u0449\u0435 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u0430 \u043d\u0430\u043c\u0435\u0440\u0438\u0442\u0435 \u0434\u0435\u043d\u044f \u043e\u0442 \u0441\u0435\u0434\u043c\u0438\u0446\u0430\u0442\u0430, \u0441\u044a\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0430\u0449 \u043d\u0430 \u043f\u043e\u0441\u043e\u0447\u0435\u043d\u0430 \u043e\u0442 \u0432\u0430\u0441 \u0434\u0430\u0442\u0430."
+    },
+    {
+      "language": "da",
+      "displayName": "Ugedag",
+      "description": "Med dette tilf\u00f8jelsesprogram kan du finde den ugedag, som svarer til en valgt dato."
+    },
+    {
+      "language": "de",
+      "displayName": "Wochentag",
+      "description": "Mit dieser Erweiterung ermitteln Sie den jeweiligen Wochentag aus dem angegebenen Datum."
+    },
+    {
+      "language": "de_CH",
+      "displayName": "Wochentag",
+      "description": "Mit dieser Erweiterung ermitteln Sie den jeweiligen Wochentag aus dem angegebenen Datum."
+    },
+    {
+      "language": "es",
+      "displayName": "D\u00eda de la semana",
+      "description": "Con este complemento, podr\u00e1s encontrar el d\u00eda de la semana correspondiente a una fecha elegida."
+    },
+    {
+      "language": "fa",
+      "displayName": "\u0631\u0648\u0632\u0650 \u0647\u0641\u062a\u0647",
+      "description": "\u0628\u0627 \u0627\u06cc\u0646 \u0627\u0641\u0632\u0648\u0646\u0647\u060c \u0645\u06cc\u062a\u0648\u0627\u0646\u06cc\u062f \u0631\u0648\u0632\u0650 \u0647\u0641\u062a\u0647\u200c\u06cc \u0645\u062a\u0646\u0627\u0638\u0631 \u0628\u0627 \u06cc\u06a9 \u062a\u0627\u0631\u06cc\u062e\u0650 \u0627\u0646\u062a\u062e\u0627\u0628\u200c\u0634\u062f\u0647 \u0631\u0627 \u067e\u06cc\u062f\u0627 \u06a9\u0646\u06cc\u062f."
+    },
+    {
+      "language": "fi",
+      "displayName": "Viikonp\u00e4iv\u00e4",
+      "description": "T\u00e4ll\u00e4 lis\u00e4osalla on mahdollista selvitt\u00e4\u00e4 valittua p\u00e4iv\u00e4m\u00e4\u00e4r\u00e4\u00e4 vastaava viikonp\u00e4iv\u00e4."
+    },
+    {
+      "language": "fr",
+      "displayName": "Jour de la semaine",
+      "description": "Avec cette extension vous serez en mesure de trouver le jour de la semaine correspondant \u00e0 une date choisie."
+    },
+    {
+      "language": "gl",
+      "displayName": "D\u00eda da semana",
+      "description": "Con este complemento, poder\u00e1s atopar o d\u00eda da semana correspondente a unha data escollida."
+    },
+    {
+      "language": "he",
+      "displayName": "\u05d9\u05d5\u05dd \u05d1\u05e9\u05d1\u05d5\u05e2",
+      "description": "\u05ea\u05d5\u05e1\u05e3 \u05d6\u05d4 \u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05d3\u05e2\u05ea \u05de\u05d4\u05d5 \u05d4\u05d9\u05d5\u05dd \u05d1\u05e9\u05d1\u05d5\u05e2 \u05e9\u05dc \u05ea\u05d0\u05e8\u05d9\u05da \u05de\u05e1\u05d5\u05d9\u05d9\u05dd."
+    },
+    {
+      "language": "hi",
+      "displayName": "\u0938\u092a\u094d\u0924\u093e\u0939 \u0915\u093e \u0926\u093f\u0928",
+      "description": "\u0907\u0938 \u0910\u0921-\u0911\u0928 \u0915\u0940 \u092e\u0926\u0926 \u0938\u0947, \u0906\u092a \u090f\u0915 \u091a\u0941\u0928\u0940 \u0939\u0941\u0908 \u0924\u093e\u0930\u0940\u0916 \u0915\u0947 \u0905\u0928\u0941\u0930\u0942\u092a \u0938\u092a\u094d\u0924\u093e\u0939 \u0915\u093e \u0926\u093f\u0928 \u092a\u093e \u0938\u0915\u0947\u0902\u0917\u0947."
+    },
+    {
+      "language": "hr",
+      "displayName": "Dan u tjednu",
+      "description": "S ovim dodatkom je mogu\u0107e na\u0107i dan u tjednu za odre\u0111eni datum."
+    },
+    {
+      "language": "hu",
+      "displayName": "A h\u00e9t napja",
+      "description": "Ezzel a kieg\u00e9sz\u00edt\u0151vel meghat\u00e1rozhatja egy kiv\u00e1lasztott d\u00e1tumhoz tartoz\u00f3 napj\u00e1t a h\u00e9tnek."
+    },
+    {
+      "language": "it",
+      "displayName": "Giorno della Settimana",
+      "description": "Componente che permette di conoscere l'effettivo giorno di una settimana in base alla data"
+    },
+    {
+      "language": "ka",
+      "displayName": "\u10d9\u10d5\u10d8\u10e0\u10d8\u10e1 \u10d3\u10e6\u10d4",
+      "description": "\u10d0\u10db \u10d3\u10d0\u10db\u10d0\u10e2\u10d4\u10d1\u10d8\u10e1 \u10e1\u10d0\u10e8\u10e3\u10d0\u10da\u10d4\u10d1\u10d8\u10d7, \u10e8\u10d4\u10d2\u10d8\u10eb\u10da\u10d8\u10d0\u10d7 \u10d8\u10de\u10dd\u10d5\u10dd\u10d7 \u10d9\u10d5\u10d8\u10e0\u10d8\u10e1 \u10d3\u10e6\u10d4, \u10e0\u10dd\u10db\u10d4\u10da\u10d8\u10ea \u10e8\u10d4\u10d4\u10e1\u10d0\u10d1\u10d0\u10db\u10d4\u10d1\u10d0 \u10d0\u10e0\u10e9\u10d4\u10e3\u10da \u10d7\u10d0\u10e0\u10d8\u10e6\u10e1."
+    },
+    {
+      "language": "ko",
+      "displayName": "Day of the week",
+      "description": "\uc774 \uc560\ub4dc\uc628\uc740 \uc120\ud0dd\ud55c \ub0a0\uc9dc\uc5d0 \ub300\ud55c \uc694\uc77c\uc744 \ucc3e\uc744 \uc218 \uc788\uac8c \ud574\uc90d\ub2c8\ub2e4."
+    },
+    {
+      "language": "lt",
+      "displayName": "Savait\u0117s diena",
+      "description": "\u0160io papildinio d\u0117ka J\u016bs gal\u0117site rasti savait\u0117s dien\u0105, atitinkan\u010di\u0105 pasirinkt\u0105 dat\u0105."
+    },
+    {
+      "language": "ne",
+      "displayName": "\u0939\u092a\u094d\u0924\u093e\u0915\u094b \u092c\u093e\u0930",
+      "description": "\u092f\u094b \u0909\u092a-\u0915\u0930\u094d\u092e\u0940\u0915\u094b \u0938\u0939\u092f\u094b\u0917\u0932\u0947 \u0924\u092a\u093e\u0907 \u0906\u092b\u0942\u0932\u0947 \u091a\u093e\u0939\u0947\u0915\u094b \u092e\u093f\u0924\u093f \u0915\u0941\u0928 \u092c\u093e\u0930\u092e\u093e \u092a\u0930\u094d\u091b \u092d\u0928\u0947\u0930 \u091c\u093e\u0928\u094d\u0928 \u0938\u0915\u094d\u0928\u0941 \u0939\u0941\u0928\u0947\u091b\u00a0\u0964"
+    },
+    {
+      "language": "pl",
+      "displayName": "dzie\u0144 tygodnia",
+      "description": "Za pomoc\u0105 tego dodatku, mo\u017cna znale\u017a\u0107 dzie\u0144 tygodnia odpowiadaj\u0105cy konkretnej dacie."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Dia da semana",
+      "description": "Com esse complemento, ser\u00e1 capaz de encontrar o dia da semana correspondente a uma data escolhida."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Dia da semana",
+      "description": "Com este extra, ser\u00e1 capaz de encontrar o dia da semana de uma data escolhida."
+    },
+    {
+      "language": "ro",
+      "displayName": "Day of the week",
+      "description": "Cu acest supliment ve\u021bi putea g\u0103si ziua s\u0103pt\u0103m\u00e2nii corespunz\u0103toare unei date alese."
+    },
+    {
+      "language": "ru",
+      "displayName": "\u0414\u0435\u043d\u044c \u043d\u0435\u0434\u0435\u043b\u0438",
+      "description": "\u042d\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c \u0434\u0435\u043d\u044c \u043d\u0435\u0434\u0435\u043b\u0438, \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0439 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u043e\u0439 \u0434\u0430\u0442\u0435."
+    },
+    {
+      "language": "sk",
+      "displayName": "De\u0148 v t\u00fd\u017edni",
+      "description": "M\u00f4\u017eete zisti\u0165, na ktor\u00fd de\u0148 v t\u00fd\u017edni pripad\u00e1 zadan\u00fd d\u00e1tum."
+    },
+    {
+      "language": "sl",
+      "displayName": "Day of the week",
+      "description": "S tem dodatkom boste lahko na\u0161li dan v tednu, ki ustreza izbranemu datumu."
+    },
+    {
+      "language": "sr",
+      "displayName": "dan u nedelji",
+      "description": "sa ovim dodatkom , mo\u017eete da prona\u0111ete dan u nedelji koji odgovara izabranom datumu"
+    },
+    {
+      "language": "tr",
+      "displayName": "Bu tarih hangi g\u00fcn...",
+      "description": "Se\u00e7ilen tarihe tekab\u00fcl eden g\u00fcn\u00fc \u00f6\u011frenmenizi sa\u011flar."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u0414\u0435\u043d\u044c \u0442\u0438\u0436\u043d\u044f",
+      "description": "\u0417 \u0446\u0438\u043c \u0434\u043e\u0434\u0430\u0442\u043a\u043e\u043c \u0432\u0438 \u0437\u043d\u0430\u0442\u0438\u043c\u0435\u0442\u0435, \u043d\u0430 \u044f\u043a\u0438\u0439 \u0434\u0435\u043d\u044c \u0442\u0438\u0436\u043d\u044f \u043f\u0440\u0438\u043f\u0430\u0434\u0430\u0454 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0432\u0430\u043c \u0434\u0430\u0442\u0430."
+    },
+    {
+      "language": "vi",
+      "displayName": "Ng\u00e0y c\u1ee7a tu\u1ea7n",
+      "description": "V\u1edbi add-on n\u00e0y, b\u1ea1n s\u1ebd t\u00ecm \u0111\u01b0\u1ee3c ng\u00e0y trong tu\u1ea7n c\u1eafn c\u1ee9 theo ng\u00e0y \u0111\u00e3 ch\u1ecdn."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "\u67d0\u5929\u661f\u671f\u51e0",
+      "description": "\u501f\u52a9\u6b64\u63d2\u4ef6\uff0c\u60a8\u53ef\u4ee5\u627e\u5230\u4e0e\u6240\u9009\u65e5\u671f\u5bf9\u5e94\u7684\u661f\u671f\u3002"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2207"
 }
