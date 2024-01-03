@@ -1,0 +1,41 @@
+{
+	"addonId": "snippetsForNVDA",
+	"displayName": "Text snippet handling features for NVDA",
+	"URL": "https://github.com/thgcode/snippetsForNVDA/releases/download/1.0.5/snippetsForNVDA-1.0.5.nvda-addon",
+	"description": "This addon provides text snippet handling features to NVDA, including snippet memory slots and more.\nTo use the snippet memory slots function:\nSelect some text.\nPress NVDA+CONTROL+numeric keys to copy the selected text to a memory slot.\nPress NVDA+CONTROL+SHIFT+numeric keys once  to hear the content of this memory slot.\nPress NVDA+CONTROL+SHIFT+numeric keys twice quickly to paste the content of this memory slot to the running application.",
+	"sha256": "8291231e83c994d0ffbe4c87d614dcc938ec9268394042c4baf512d2c5757bb1",
+	"addonVersionName": "1.0.5",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "SnippetsForNVDA contributors",
+	"sourceURL": "https://github.com/thgcode/snippetsForNVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thgcode/snippetsForNVDA",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Recursos de manipula\u00e7\u00e3o de blocos de texto para o NVDA",
+			"description": "Este complemento oferece recursos de manipula\u00e7\u00e3o de blocos de texto para o NVDA, incluindo a mem\u00f3ria de blocos de texto e muito mais.\nPara usar a funcionalidade de mem\u00f3ria de blocos de texto:\nSelecione um texto.\nPressione NVDA+CONTROL+alguma tecla num\u00e9rica para armazenar o texto nessa posi\u00e7\u00e3o de mem\u00f3ria.\nPressione NVDA+CONTROL+SHIFT+alguma tecla num\u00e9rica uma vez para ouvir o conte\u00fado armazenado nessa posi\u00e7\u00e3o de mem\u00f3ria.\nPressione NVDA+CONTROL+SHIFT+alguma tecla num\u00e9rica duas vezes rapidamente para colar o conte\u00fado dessa posi\u00e7\u00e3o de mem\u00f3ria no aplicativo em execu\u00e7\u00e3o."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "NVDA\u7684\u6587\u672c\u5757\u5904\u7406\u529f\u80fd",
+			"description": "\u8be5\u63d2\u4ef6\u4e3aNVDA\u63d0\u4f9b\u4e86\u6587\u672c\u5757\u5904\u7406\u529f\u80fd\uff0c\u6bd4\u5982\u6587\u672c\u7247\u6bb5\u6682\u5b58\u533a\u3002\n\u8981\u4f7f\u7528\u6587\u672c\u6682\u5b58\u533a\u529f\u80fd\uff1a\n\u5148\u9009\u62e9\u4e00\u90e8\u5206\u6587\u672c\uff0c\u7136\u540e\u6309 NVDA + CONTROL + \u5927\u952e\u76d8\u6570\u5b57\uff08 1 \u5230 0\uff09\uff0c\u5c06\u6240\u9009\u6587\u672c\u590d\u5236\u5230\u6682\u5b58\u533a\u3002\n\u6309 NVDA + CONTROL + SHIFT +\u5927\u952e\u76d8\u6570\u5b57\uff0c\u5373\u53ef\u542c\u5230\u76f8\u5e94\u6682\u5b58\u533a\u4e2d\u7684\u5185\u5bb9\u3002\n\u8fde\u6309\u4e24\u6b21 NVDA + CONTROL + SHIFT + \u5927\u952e\u76d8\u76f8\u5e94\u6570\u5b57\uff0c\u5c06\u8be5\u6682\u5b58\u533a\u7684\u5185\u5bb9\u7c98\u8d34\u5230\u53ef\u8f93\u5165\u6587\u672c\u7684\u4f4d\u7f6e\u3002"
+		}
+	]
+}
