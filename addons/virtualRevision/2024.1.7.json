@@ -1,176 +1,177 @@
 {
-	"addonId": "virtualRevision",
-	"displayName": "Virtual Review",
-	"URL": "https://github.com/ruifontes/virtualReview/releases/download/2024.01.07/virtualRevision-2024.01.07.nvda-addon",
-	"description": "Provides a simple reviewable dialog of the text of the currently focused window.",
-	"sha256": "b5892493d198c52b194155a5eb87d69b50980fd041d3824fc52f37168fa1298a",
-	"addonVersionName": "2024.01.07",
-	"addonVersionNumber": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 7
-	},
-	"minNVDAVersion": {
-		"major": 2019,
-		"minor": 3,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "beta",
-	"publisher": "Rui Fontes",
-	"sourceURL": "https://github.com/ruifontes/virtualReview",
-	"license": "GPL v2",
-	"homepage": "https://github.com/ruifontes/virtualReview",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "Virtual Review",
-			"description": "Provides a simple reviewable dialog of the text of the currently focused window."
-		},
-		{
-			"language": "bg",
-			"displayName": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u0435\u043d \u043f\u0440\u0435\u0433\u043b\u0435\u0434",
-			"description": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u044f \u043e\u043f\u0440\u043e\u0441\u0442\u0435\u043d \u0437\u0430 \u043f\u0440\u0435\u0433\u043b\u0435\u0436\u0434\u0430\u043d\u0435 \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446 \u0441 \u0442\u0435\u043a\u0441\u0442\u0430 \u043e\u0442 \u0442\u0435\u043a\u0443\u0449\u043e \u0444\u043e\u043a\u0443\u0441\u0438\u0440\u0430\u043d\u0438\u044f \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446."
-		},
-		{
-			"language": "da",
-			"displayName": "Virtuelt gennemsyn",
-			"description": "Giver en simpel dialog med teksten fra vinduet i fokus til gennemsyn."
-		},
-		{
-			"language": "de",
-			"displayName": "Virtuelle Ansicht",
-			"description": "\u00d6ffnet einen Dialog, der den Text des aktuellen Fensters enth\u00e4lt."
-		},
-		{
-			"language": "de_CH",
-			"displayName": "Virtuelle Darstellung",
-			"description": "\u00d6ffnet einen Dialog, der den Text des aktuellen Fensters enth\u00e4lt."
-		},
-		{
-			"language": "es",
-			"displayName": "Virtual Review",
-			"description": "Proporciona un di\u00e1logo simple y revisable del texto de la ventana actualmente enfocada."
-		},
-		{
-			"language": "fa",
-			"displayName": "\u0628\u0627\u0632\u0628\u06cc\u0646\u06cc\u0650 \u0645\u062c\u0627\u0632\u06cc",
-			"description": "\u06cc\u06a9 \u067e\u0646\u062c\u0631\u0647\u200c\u06cc \u0633\u0627\u062f\u0647\u200c\u06cc \u0642\u0627\u0628\u0644\u0650 \u0628\u0627\u0632\u0628\u06cc\u0646\u06cc\u060c \u0627\u0632 \u0645\u062a\u0646\u0650 \u067e\u0646\u062c\u0631\u0647\u200c\u06cc \u0641\u0639\u0644\u06cc\u0650 \u062f\u0631 \u062a\u06cc\u0631\u0631\u0633 \u0641\u0631\u0627\u0647\u0645 \u0645\u06cc\u200c\u06a9\u0646\u062f."
-		},
-		{
-			"language": "fi",
-			"displayName": "Virtuaalitarkastelu",
-			"description": "Tarjoaa nykyisen ikkunan sis\u00e4lt\u00e4m\u00e4n tekstin yksinkertaisessa tarkasteltavassa valintaikkunassa."
-		},
-		{
-			"language": "fr",
-			"displayName": "R\u00e9vision Virtuelle",
-			"description": "Fournit un simple dialogue visualisable contenant le texte de la fen\u00eatre actuellement en avant-plan."
-		},
-		{
-			"language": "gl",
-			"displayName": "Virtual Review",
-			"description": "Proporciona un di\u00e1logo simple e revisable do texto da vent\u00e1 actualmente enfocada."
-		},
-		{
-			"language": "he",
-			"displayName": "\u05e1\u05e7\u05d9\u05e8\u05d4 \u05d5\u05d9\u05e8\u05d8\u05d5\u05d0\u05dc\u05d9\u05ea",
-			"description": "\u05de\u05e1\u05e4\u05e7 \u05ea\u05d9\u05d1\u05ea \u05d3\u05d5-\u05e9\u05d9\u05d7 \u05e4\u05e9\u05d5\u05d8\u05d4 \u05dc\u05d1\u05d3\u05d9\u05e7\u05d4 \u05e9\u05dc \u05d4\u05d8\u05e7\u05e1\u05d8 \u05e9\u05dc \u05d4\u05d7\u05dc\u05d5\u05df \u05e9\u05de\u05de\u05d5\u05e7\u05d3 \u05db\u05e8\u05d2\u05e2."
-		},
-		{
-			"language": "hr",
-			"displayName": "Virtualni pregled",
-			"description": "Pru\u017ea jednostavni dijalog za pregled teksta trenuta\u010dno fokusiranog prozora."
-		},
-		{
-			"language": "hu",
-			"displayName": "Virtu\u00e1lis \u00e1ttekint\u0151",
-			"description": "Egy mez\u0151ben megjelen\u00edti a f\u00f3kuszban l\u00e9v\u0151 ablak sz\u00f6veges tartalm\u00e1t a k\u00f6nnyebb \u00e1ttekint\u00e9shez."
-		},
-		{
-			"language": "it",
-			"displayName": "Virtual Review",
-			"description": "Fornisce un metodo semplice per poter esaminare il testo contenuto nella finestra focalizzata."
-		},
-		{
-			"language": "lt",
-			"displayName": "Virtuali per\u017ei\u016bra",
-			"description": "Paruo\u0161ia paprast\u0105 per\u017ei\u016bros dialogo lang\u0105 su \u017eidinyje esan\u010dio lango tekstu."
-		},
-		{
-			"language": "ne",
-			"displayName": "Virtual Review",
-			"description": "Provides a simple reviewable dialog of the text of the currently focused window."
-		},
-		{
-			"language": "nl",
-			"displayName": "Virtual Review",
-			"description": "Biedt een eenvoudig leesbaar dialoogvenster met de tekst van het venster dat momenteel focus heeft."
-		},
-		{
-			"language": "pl",
-			"displayName": "Virtual Review",
-			"description": "Wprowadza uproszczony przegl\u0105d wskazanego okna dialogowego w polu edycyjnym."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Explora\u00e7\u00e3o Virtual",
-			"description": "Fornece uma caixa de di\u00e1logo simples e explor\u00e1vel do texto da janela atualmente focalizada."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Revis\u00e3o Virtual",
-			"description": "Fornece uma p\u00e1gina de leitura simples da janela sob o foco."
-		},
-		{
-			"language": "ro",
-			"displayName": "Virtual Review",
-			"description": "Permite afi\u0219area textului unei ferestre active \u00eentr-o fereastr\u0103 virtual\u0103 pentru a u\u0219ura navigarea."
-		},
-		{
-			"language": "ru",
-			"displayName": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440",
-			"description": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043f\u0440\u043e\u0441\u0442\u043e\u0439 \u0434\u0438\u0430\u043b\u043e\u0433, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0439 \u0442\u0435\u043a\u0441\u0442 \u0442\u0435\u043a\u0443\u0449\u0435\u0433\u043e \u043e\u043a\u043d\u0430 \u0432 \u0444\u043e\u043a\u0443\u0441\u0435 \u0434\u043b\u044f \u0443\u0434\u043e\u0431\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430."
-		},
-		{
-			"language": "sk",
-			"displayName": "Virtualiz\u00e1cia okna",
-			"description": "Otvor\u00ed nov\u00fd dial\u00f3g, v ktorom bude text aktu\u00e1lneho okna na r\u00fdchle prezretie."
-		},
-		{
-			"language": "sl",
-			"displayName": "Navidezni Pregled",
-			"description": "Oskrbi preprosto okno za pregled besedila v oknu, ki je v \u017eari\u0161\u010du."
-		},
-		{
-			"language": "sr",
-			"displayName": "Virtual Review",
-			"description": "Pru\u017ea jednostavan prozor za lak\u0161i pregled teksta trenutno fokusiranog prozora."
-		},
-		{
-			"language": "ta",
-			"displayName": "\u0ba8\u0bbf\u0b95\u0bb0\u0bcd\u0ba8\u0bbf\u0bb2\u0bc8\u0b9a\u0bcd \u0b9a\u0bc0\u0bb0\u0bbe\u0baf\u0bcd\u0bb5\u0bc1",
-			"description": "\u0b8e\u0bb3\u0bbf\u0baf \u0b9a\u0bc0\u0bb0\u0bbe\u0baf\u0bcd\u0bb5\u0bbf\u0bb1\u0bcd\u0b95\u0bbe\u0b95, \u0ba4\u0bb1\u0bcd\u0baa\u0bcb\u0ba4\u0bc8\u0baf \u0b9a\u0bbe\u0bb3\u0bb0\u0ba4\u0bcd\u0ba4\u0bbf\u0ba9\u0bcd \u0b89\u0bb0\u0bc8\u0baf\u0bc8 \u0b92\u0bb0\u0bc1 \u0b89\u0bb0\u0bc8\u0baf\u0bbe\u0b9f\u0bb2\u0bcd \u0baa\u0bc6\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0ba4\u0bbf\u0bb1\u0b95\u0bcd\u0b95\u0bbf\u0bb1\u0ba4\u0bc1"
-		},
-		{
-			"language": "tr",
-			"displayName": "Sanal \u0130nceleme",
-			"description": "Odaklanan penceredeki metnin incelenebilmesi i\u00e7in bir ileti\u015fim kutusu a\u00e7ar."
-		},
-		{
-			"language": "uk",
-			"displayName": "Virtual Review",
-			"description": "Provides a simple reviewable dialog of the text of the currently focused window."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "\u865a\u62df\u6d4f\u89c8",
-			"description": "\u63d0\u4f9b\u5f53\u524d\u805a\u7126\u7a97\u53e3\u6587\u672c\u7684\u7b80\u5355\u53ef\u67e5\u770b\u7684\u5bf9\u8bdd\u6846\u3002"
-		}
-	]
+  "addonId": "virtualRevision",
+  "displayName": "Virtual Review",
+  "URL": "https://github.com/ruifontes/virtualReview/releases/download/2024.01.07/virtualRevision-2024.01.07.nvda-addon",
+  "description": "Provides a simple reviewable dialog of the text of the currently focused window.",
+  "sha256": "b5892493d198c52b194155a5eb87d69b50980fd041d3824fc52f37168fa1298a",
+  "addonVersionName": "2024.01.07",
+  "addonVersionNumber": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 7
+  },
+  "minNVDAVersion": {
+    "major": 2019,
+    "minor": 3,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "beta",
+  "publisher": "Rui Fontes",
+  "sourceURL": "https://github.com/ruifontes/virtualReview",
+  "license": "GPL v2",
+  "homepage": "https://github.com/ruifontes/virtualReview",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "Virtual Review",
+      "description": "Provides a simple reviewable dialog of the text of the currently focused window."
+    },
+    {
+      "language": "bg",
+      "displayName": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u0435\u043d \u043f\u0440\u0435\u0433\u043b\u0435\u0434",
+      "description": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u044f \u043e\u043f\u0440\u043e\u0441\u0442\u0435\u043d \u0437\u0430 \u043f\u0440\u0435\u0433\u043b\u0435\u0436\u0434\u0430\u043d\u0435 \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446 \u0441 \u0442\u0435\u043a\u0441\u0442\u0430 \u043e\u0442 \u0442\u0435\u043a\u0443\u0449\u043e \u0444\u043e\u043a\u0443\u0441\u0438\u0440\u0430\u043d\u0438\u044f \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446."
+    },
+    {
+      "language": "da",
+      "displayName": "Virtuelt gennemsyn",
+      "description": "Giver en simpel dialog med teksten fra vinduet i fokus til gennemsyn."
+    },
+    {
+      "language": "de",
+      "displayName": "Virtuelle Ansicht",
+      "description": "\u00d6ffnet einen Dialog, der den Text des aktuellen Fensters enth\u00e4lt."
+    },
+    {
+      "language": "de_CH",
+      "displayName": "Virtuelle Darstellung",
+      "description": "\u00d6ffnet einen Dialog, der den Text des aktuellen Fensters enth\u00e4lt."
+    },
+    {
+      "language": "es",
+      "displayName": "Virtual Review",
+      "description": "Proporciona un di\u00e1logo simple y revisable del texto de la ventana actualmente enfocada."
+    },
+    {
+      "language": "fa",
+      "displayName": "\u0628\u0627\u0632\u0628\u06cc\u0646\u06cc\u0650 \u0645\u062c\u0627\u0632\u06cc",
+      "description": "\u06cc\u06a9 \u067e\u0646\u062c\u0631\u0647\u200c\u06cc \u0633\u0627\u062f\u0647\u200c\u06cc \u0642\u0627\u0628\u0644\u0650 \u0628\u0627\u0632\u0628\u06cc\u0646\u06cc\u060c \u0627\u0632 \u0645\u062a\u0646\u0650 \u067e\u0646\u062c\u0631\u0647\u200c\u06cc \u0641\u0639\u0644\u06cc\u0650 \u062f\u0631 \u062a\u06cc\u0631\u0631\u0633 \u0641\u0631\u0627\u0647\u0645 \u0645\u06cc\u200c\u06a9\u0646\u062f."
+    },
+    {
+      "language": "fi",
+      "displayName": "Virtuaalitarkastelu",
+      "description": "Tarjoaa nykyisen ikkunan sis\u00e4lt\u00e4m\u00e4n tekstin yksinkertaisessa tarkasteltavassa valintaikkunassa."
+    },
+    {
+      "language": "fr",
+      "displayName": "R\u00e9vision Virtuelle",
+      "description": "Fournit un simple dialogue visualisable contenant le texte de la fen\u00eatre actuellement en avant-plan."
+    },
+    {
+      "language": "gl",
+      "displayName": "Virtual Review",
+      "description": "Proporciona un di\u00e1logo simple e revisable do texto da vent\u00e1 actualmente enfocada."
+    },
+    {
+      "language": "he",
+      "displayName": "\u05e1\u05e7\u05d9\u05e8\u05d4 \u05d5\u05d9\u05e8\u05d8\u05d5\u05d0\u05dc\u05d9\u05ea",
+      "description": "\u05de\u05e1\u05e4\u05e7 \u05ea\u05d9\u05d1\u05ea \u05d3\u05d5-\u05e9\u05d9\u05d7 \u05e4\u05e9\u05d5\u05d8\u05d4 \u05dc\u05d1\u05d3\u05d9\u05e7\u05d4 \u05e9\u05dc \u05d4\u05d8\u05e7\u05e1\u05d8 \u05e9\u05dc \u05d4\u05d7\u05dc\u05d5\u05df \u05e9\u05de\u05de\u05d5\u05e7\u05d3 \u05db\u05e8\u05d2\u05e2."
+    },
+    {
+      "language": "hr",
+      "displayName": "Virtualni pregled",
+      "description": "Pru\u017ea jednostavni dijalog za pregled teksta trenuta\u010dno fokusiranog prozora."
+    },
+    {
+      "language": "hu",
+      "displayName": "Virtu\u00e1lis \u00e1ttekint\u0151",
+      "description": "Egy mez\u0151ben megjelen\u00edti a f\u00f3kuszban l\u00e9v\u0151 ablak sz\u00f6veges tartalm\u00e1t a k\u00f6nnyebb \u00e1ttekint\u00e9shez."
+    },
+    {
+      "language": "it",
+      "displayName": "Virtual Review",
+      "description": "Fornisce un metodo semplice per poter esaminare il testo contenuto nella finestra focalizzata."
+    },
+    {
+      "language": "lt",
+      "displayName": "Virtuali per\u017ei\u016bra",
+      "description": "Paruo\u0161ia paprast\u0105 per\u017ei\u016bros dialogo lang\u0105 su \u017eidinyje esan\u010dio lango tekstu."
+    },
+    {
+      "language": "ne",
+      "displayName": "Virtual Review",
+      "description": "Provides a simple reviewable dialog of the text of the currently focused window."
+    },
+    {
+      "language": "nl",
+      "displayName": "Virtual Review",
+      "description": "Biedt een eenvoudig leesbaar dialoogvenster met de tekst van het venster dat momenteel focus heeft."
+    },
+    {
+      "language": "pl",
+      "displayName": "Virtual Review",
+      "description": "Wprowadza uproszczony przegl\u0105d wskazanego okna dialogowego w polu edycyjnym."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Explora\u00e7\u00e3o Virtual",
+      "description": "Fornece uma caixa de di\u00e1logo simples e explor\u00e1vel do texto da janela atualmente focalizada."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Revis\u00e3o Virtual",
+      "description": "Fornece uma p\u00e1gina de leitura simples da janela sob o foco."
+    },
+    {
+      "language": "ro",
+      "displayName": "Virtual Review",
+      "description": "Permite afi\u0219area textului unei ferestre active \u00eentr-o fereastr\u0103 virtual\u0103 pentru a u\u0219ura navigarea."
+    },
+    {
+      "language": "ru",
+      "displayName": "\u0412\u0438\u0440\u0442\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440",
+      "description": "\u041f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043f\u0440\u043e\u0441\u0442\u043e\u0439 \u0434\u0438\u0430\u043b\u043e\u0433, \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0439 \u0442\u0435\u043a\u0441\u0442 \u0442\u0435\u043a\u0443\u0449\u0435\u0433\u043e \u043e\u043a\u043d\u0430 \u0432 \u0444\u043e\u043a\u0443\u0441\u0435 \u0434\u043b\u044f \u0443\u0434\u043e\u0431\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430."
+    },
+    {
+      "language": "sk",
+      "displayName": "Virtualiz\u00e1cia okna",
+      "description": "Otvor\u00ed nov\u00fd dial\u00f3g, v ktorom bude text aktu\u00e1lneho okna na r\u00fdchle prezretie."
+    },
+    {
+      "language": "sl",
+      "displayName": "Navidezni Pregled",
+      "description": "Oskrbi preprosto okno za pregled besedila v oknu, ki je v \u017eari\u0161\u010du."
+    },
+    {
+      "language": "sr",
+      "displayName": "Virtual Review",
+      "description": "Pru\u017ea jednostavan prozor za lak\u0161i pregled teksta trenutno fokusiranog prozora."
+    },
+    {
+      "language": "ta",
+      "displayName": "\u0ba8\u0bbf\u0b95\u0bb0\u0bcd\u0ba8\u0bbf\u0bb2\u0bc8\u0b9a\u0bcd \u0b9a\u0bc0\u0bb0\u0bbe\u0baf\u0bcd\u0bb5\u0bc1",
+      "description": "\u0b8e\u0bb3\u0bbf\u0baf \u0b9a\u0bc0\u0bb0\u0bbe\u0baf\u0bcd\u0bb5\u0bbf\u0bb1\u0bcd\u0b95\u0bbe\u0b95, \u0ba4\u0bb1\u0bcd\u0baa\u0bcb\u0ba4\u0bc8\u0baf \u0b9a\u0bbe\u0bb3\u0bb0\u0ba4\u0bcd\u0ba4\u0bbf\u0ba9\u0bcd \u0b89\u0bb0\u0bc8\u0baf\u0bc8 \u0b92\u0bb0\u0bc1 \u0b89\u0bb0\u0bc8\u0baf\u0bbe\u0b9f\u0bb2\u0bcd \u0baa\u0bc6\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0ba4\u0bbf\u0bb1\u0b95\u0bcd\u0b95\u0bbf\u0bb1\u0ba4\u0bc1"
+    },
+    {
+      "language": "tr",
+      "displayName": "Sanal \u0130nceleme",
+      "description": "Odaklanan penceredeki metnin incelenebilmesi i\u00e7in bir ileti\u015fim kutusu a\u00e7ar."
+    },
+    {
+      "language": "uk",
+      "displayName": "Virtual Review",
+      "description": "Provides a simple reviewable dialog of the text of the currently focused window."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "\u865a\u62df\u6d4f\u89c8",
+      "description": "\u63d0\u4f9b\u5f53\u524d\u805a\u7126\u7a97\u53e3\u6587\u672c\u7684\u7b80\u5355\u53ef\u67e5\u770b\u7684\u5bf9\u8bdd\u6846\u3002"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2374"
 }
