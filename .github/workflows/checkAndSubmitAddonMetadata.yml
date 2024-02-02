@@ -33,7 +33,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Determine add-on file name
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: getAddonFileName
         env:
           issueAuthorName: ${{ inputs.issueAuthorName }}
@@ -45,7 +45,7 @@ jobs:
             const result = await github.request(url)
             return getAddonFilename(result.data.files)
       - name: Determine add-on ID
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: getAddonId
         with:
           result-encoding: string
@@ -188,7 +188,7 @@ jobs:
       id: getAddonFileName
       env:
         pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
@@ -250,7 +250,7 @@ jobs:
         ref: ${{ github.ref }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')

@@ -20,7 +20,7 @@ jobs:
         path: datastore
     - name: Get data
       id: get-data
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
