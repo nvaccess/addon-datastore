@@ -64,11 +64,11 @@ jobs:
         --dir datastore\addons `
         --output .\validationErrors.md `
         --channel=""$env:channel"" `
-        --publisher="""$env:publisher""" `
-        --sourceUrl="""$env:sourceUrl""" `
-        --url="""$env:url""" `
-        --licName="""$env:licName""" `
-        --licUrl="""$env:licUrl"""
+        --publisher=""$env:publisher"" `
+        --sourceUrl=""$env:sourceUrl"" `
+        --url=""$env:url"" `
+        --licName=""$env:licName"" `
+        --licUrl=""$env:licUrl""
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v2
