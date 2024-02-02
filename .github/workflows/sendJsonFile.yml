@@ -51,12 +51,12 @@ jobs:
       env:
         # transfer user input to env variables to escape any code
         # https://blog.gitguardian.com/github-actions-security-cheat-sheet/
-        channel: ${{ toJSON(steps.get-data.outputs.releaseChannel) }}
-        publisher: ${{ steps.get-data.outputs.publisher }}
-        sourceUrl: ${{ steps.get-data.outputs.sourceUrl }}
-        url: ${{ steps.get-data.outputs.downloadUrl }}
-        licName: ${{ steps.get-data.outputs.licenseName }}
-        licUrl: ${{ steps.get-data.outputs.licenseURL }}
+        channel: ${{ fromJSON(steps.get-data.outputs.releaseChannel) }}
+        publisher: ${{ fromJSON(steps.get-data.outputs.publisher) }}
+        sourceUrl: ${{ fromJSON(steps.get-data.outputs.sourceUrl) }}
+        url: ${{ fromJSON(steps.get-data.outputs.downloadUrl) }}
+        licName: ${{ fromJSON(steps.get-data.outputs.licenseName) }}
+        licUrl: ${{ fromJSON(steps.get-data.outputs.licenseURL) }}
       # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
       run: |
         validation/runcreatejson `
