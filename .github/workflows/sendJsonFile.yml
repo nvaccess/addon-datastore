@@ -63,7 +63,7 @@ jobs:
         -f addon.nvda-addon `
         --dir datastore\addons `
         --output .\validationErrors.md `
-        --channel="""fromJSON($env:channel)""" `
+        --channel=""$env:channel"" `
         --publisher="""$env:publisher""" `
         --sourceUrl="""$env:sourceUrl""" `
         --url="""$env:url""" `
