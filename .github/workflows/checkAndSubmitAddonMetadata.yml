@@ -226,11 +226,10 @@ jobs:
         python-version: [ 3.11 ]
     steps:
       - name: Merge branch to master
-        uses: everlytic/branch-merge@1.1.2
-        with:
-          source_ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-          target_branch: master
-          commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh merge ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b [Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }}) -m
         
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
