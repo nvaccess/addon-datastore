@@ -17,13 +17,13 @@ jobs:
         python-version: [ 3.11 ]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{ inputs.headRef }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
@@ -33,7 +33,7 @@ jobs:
         python -m pip install --upgrade wheel
         pip install -r validation/requirements.txt
     - name: Checkout transformation repo for nvdaAPIVersions.json
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
@@ -41,7 +41,7 @@ jobs:
       run: validation/runvalidate ./addons/*/*.json ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Upload validation errors as artifact
       if: failure()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: validationErrors
         path: ./validationErrors.md
