@@ -71,7 +71,7 @@ jobs:
         --licUrl=""$env:licUrl""
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v2
+      uses: peter-evans/create-or-update-comment@v4
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
