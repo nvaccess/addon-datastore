@@ -33,7 +33,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Determine add-on file name
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: getAddonFileName
         env:
           issueAuthorName: ${{ inputs.issueAuthorName }}
@@ -45,7 +45,7 @@ jobs:
             const result = await github.request(url)
             return getAddonFilename(result.data.files)
       - name: Determine add-on ID
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         id: getAddonId
         with:
           result-encoding: string
@@ -113,7 +113,7 @@ jobs:
       - name: Create submitter approval PR
         if: failure()
         id: addSubmitterPR
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
           branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonIdParsed }}
@@ -122,7 +122,7 @@ jobs:
           author: github-actions <github-actions@github.com>
       - name: Post submitter registration message
         if: failure()
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ inputs.issueNumber }}
           body: |
@@ -155,7 +155,7 @@ jobs:
         git cherry-pick origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Create pull request
       id: cpr
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v6
       with:
         title: ${{ inputs.issueTitle }}
         branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
@@ -164,7 +164,7 @@ jobs:
         author: github-actions <github-actions@github.com>
         delete-branch: true
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{ steps.cpr.outputs.pull-request-head-sha }}
     - name: Create validation errors file
@@ -188,7 +188,7 @@ jobs:
       id: getAddonFileName
       env:
         pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
@@ -201,7 +201,7 @@ jobs:
         validation/runvalidate ${{ steps.getAddonFilename.outputs.addonFilename }} ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v2
+      uses: peter-evans/create-or-update-comment@v4
       with:
         issue-number: ${{ inputs.issueNumber }}
         body-file: ./validationErrors.md
@@ -225,12 +225,13 @@ jobs:
       matrix:
         python-version: [ 3.11 ]
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Merge branch to master
-        uses: everlytic/branch-merge@1.1.2
-        with:
-          source_ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-          target_branch: master
-          commit_message_template: '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr merge ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})' -m
         
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
@@ -250,7 +251,7 @@ jobs:
         ref: ${{ github.ref }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')

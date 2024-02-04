@@ -20,7 +20,7 @@ jobs:
         path: datastore
     - name: Get data
       id: get-data
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         script: |
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
@@ -32,7 +32,7 @@ jobs:
         submodules: true
         path: validation
     - name: Set up Python 3.11
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.11
     - name: Create validation errors file
@@ -63,15 +63,15 @@ jobs:
         -f addon.nvda-addon `
         --dir datastore\addons `
         --output .\validationErrors.md `
-        --channel="""$env:channel""" `
-        --publisher="""$env:publisher""" `
-        --sourceUrl="""$env:sourceUrl""" `
-        --url="""$env:url""" `
-        --licName="""$env:licName""" `
-        --licUrl="""$env:licUrl"""
+        --channel=""$env:channel"" `
+        --publisher=""$env:publisher"" `
+        --sourceUrl=""$env:sourceUrl"" `
+        --url=""$env:url"" `
+        --licName=""$env:licName"" `
+        --licUrl=""$env:licUrl""
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v2
+      uses: peter-evans/create-or-update-comment@v4
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
