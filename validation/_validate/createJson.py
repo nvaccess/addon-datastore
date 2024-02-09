@@ -88,25 +88,30 @@ def _createDictMatchingJsonSchema(
 	except ValueError:
 		manifest._errors = f"Manifest version invalid {addonVersionNumber}"
 		raise
-	addonData = {
-		"addonId": manifest["name"],
-		"displayName": manifest["summary"],
-		"URL": url,
-		"description": manifest["description"],
-		"sha256": sha,
-		"addonVersionName": manifest["version"],
-		"addonVersionNumber": dataclasses.asdict(addonVersionNumber),
-		"minNVDAVersion": dataclasses.asdict(
-			MajorMinorPatch(*manifest["minimumNVDAVersion"])
-		),
-		"lastTestedVersion": dataclasses.asdict(
-			MajorMinorPatch(*manifest["lastTestedNVDAVersion"])
-		),
-		"channel": channel,
-		"publisher": publisher,
-		"sourceURL": sourceUrl,
-		"license": licenseName,
-	}
+
+	try:
+		addonData = {
+			"addonId": manifest["name"],
+			"displayName": manifest["summary"],
+			"URL": url,
+			"description": manifest["description"],
+			"sha256": sha,
+			"addonVersionName": manifest["version"],
+			"addonVersionNumber": dataclasses.asdict(addonVersionNumber),
+			"minNVDAVersion": dataclasses.asdict(
+				MajorMinorPatch(*manifest["minimumNVDAVersion"])
+			),
+			"lastTestedVersion": dataclasses.asdict(
+				MajorMinorPatch(*manifest["lastTestedNVDAVersion"])
+			),
+			"channel": channel,
+			"publisher": publisher,
+			"sourceURL": sourceUrl,
+			"license": licenseName,
+		}
+	except KeyError as e:
+		manifest._errors = f"Manifest missing required key '{e.args[0]}'."
+		raise
 
 	# Add optional fields
 	homepage = manifest.get("url")
