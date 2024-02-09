@@ -124,13 +124,17 @@ def _createDictMatchingJsonSchema(
 
 	addonData["translations"] = []
 	for langCode, manifest in getAddonManifestLocalizations(manifest):
-		addonData["translations"].append(
-			{
-				"language": langCode,
-				"displayName": manifest["summary"],
-				"description": manifest["description"],
-			}
-		)
+		try:
+			addonData["translations"].append(
+				{
+					"language": langCode,
+					"displayName": manifest["summary"],
+					"description": manifest["description"],
+				}
+			)
+		except KeyError as e:
+			manifest._errors = f"Translation for {langCode} missing required key '{e.args[0]}'."
+			raise
 
 	return addonData
 
