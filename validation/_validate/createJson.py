@@ -213,18 +213,30 @@ def main():
 				errorFile.write(f"Validation Errors:\n{manifest.errors}")
 		raise ValueError(f"Invalid manifest file: {manifest.errors}")
 
-	generateJsonFile(
-		manifest=manifest,
-		addonPath=args.file,
-		parentDir=args.parentDir,
-		channel=args.channel,
-		publisher=args.publisher,
-		sourceUrl=args.sourceUrl,
-		url=args.url,
-		licenseName=args.licenseName,
-		# Convert the case --licUrl='' to --licUrl=None
-		licenseUrl=args.licenseUrl if args.licenseUrl else None,
-	)
+	try:
+		generateJsonFile(
+			manifest=manifest,
+			addonPath=args.file,
+			parentDir=args.parentDir,
+			channel=args.channel,
+			publisher=args.publisher,
+			sourceUrl=args.sourceUrl,
+			url=args.url,
+			licenseName=args.licenseName,
+			# Convert the case --licUrl='' to --licUrl=None
+			licenseUrl=args.licenseUrl if args.licenseUrl else None,
+		)
+	except Exception as e:
+		if manifest.errors:
+			if errorFilePath:
+				with open(errorFilePath, "w") as errorFile:
+					errorFile.write(f"Validation Errors:\n{manifest.errors}")
+			raise ValueError(f"Invalid manifest file: {manifest.errors}")
+		else:
+			if errorFilePath:
+				with open(errorFilePath, "w") as errorFile:
+					errorFile.write(f"Validation Errors:\n{e}")
+			raise
 
 
 if __name__ == '__main__':
