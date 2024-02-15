@@ -1,0 +1,36 @@
+{
+	"addonId": "TemporarySkip",
+	"displayName": "TemporarySkip",
+	"URL": "https://github.com/yncat/temporarySkip/releases/download/v1.0.1/TemporarySkip-1.0.1.nvda-addon",
+	"description": "This add-on allows you to register phrases that you want to ignore temporarily. The phrases are not spoken until you cancel it.\nThis add-on extends NVDA's built-in start / end marker feature. Start selecting text with NVDA+F9, move the review cursor to determine the selection and press NVDA+F11 (instead of F10!) to ignore the selected phrase.\nSelecting the previously ignored text and pressing the same command will make NVDA read it again.\nPress NVDA+Shift+F11 to clear all of the ignored text and revert everything to default.",
+	"sha256": "c65995b36f39eef64d51f33b068716504a85369b43780dd0ff6291919e8a1dff",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2023,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Yukio Nozawa",
+	"sourceURL": "https://github.com/yncat/temporarySkip",
+	"license": "GPL v2",
+	"homepage": "https://addons.nvda-project.org",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "TemporarySkip",
+			"description": "\u3053\u306e\u30a2\u30c9\u30aa\u30f3\u3092\u4f7f\u7528\u3059\u308b\u3068\u3001\u4e00\u6642\u7684\u306b\u7121\u8996\u3057\u305f\u3044\u30d5\u30ec\u30fc\u30ba\u3092\u767b\u9332\u3067\u304d\u307e\u3059\u3002\u767b\u9332\u3057\u305f\u30d5\u30ec\u30fc\u30ba\u306f\u3001\u89e3\u9664\u3059\u308b\u307e\u3067\u8aad\u307f\u4e0a\u3052\u3089\u308c\u306a\u304f\u306a\u308a\u307e\u3059\u3002\n\u3053\u306e\u30a2\u30c9\u30aa\u30f3\u306f\u3001NVDA\u306b\u642d\u8f09\u3055\u308c\u3066\u3044\u308b\u958b\u59cb\u4f4d\u7f6e/\u7d42\u4e86\u4f4d\u7f6e\u30de\u30fc\u30ab\u30fc\u306e\u6a5f\u80fd\u3092\u62e1\u5f35\u3057\u307e\u3059\u3002 NVDA+F9 \u3067\u958b\u59cb\u4f4d\u7f6e\u3092\u9078\u629e\u3057\u3001\u30ec\u30d3\u30e5\u30fc\u30ab\u30fc\u30bd\u30eb\u3092\u79fb\u52d5\u3057\u3066\u9078\u629e\u7bc4\u56f2\u3092\u6c7a\u3081\u3066\u304b\u3089\u3001 NVDA+F11 \u3092\u62bc\u3059\u3068\u3001\u9078\u629e\u3057\u305f\u30d5\u30ec\u30fc\u30ba\u3092\u8aad\u307f\u98db\u3070\u3059\u3088\u3046\u306b\u306a\u308a\u307e\u3059\u3002 F10 \u3092\u62bc\u3059\u4ee3\u308f\u308a\u306b F11 \u3092\u62bc\u3059\u611f\u3058\u3067\u3059\uff01\n\u7121\u8996\u3057\u305f\u306e\u3068\u540c\u3058\u30c6\u30ad\u30b9\u30c8\u3092\u9078\u629e\u3057\u3066\u3082\u30461\u56de\u540c\u3058\u30b3\u30de\u30f3\u30c9\u3092\u62bc\u3059\u3068\u3001\u305d\u306e\u30d5\u30ec\u30fc\u30ba\u3092\u518d\u3073\u8aad\u3080\u3088\u3046\u306b\u306a\u308a\u307e\u3059\u3002\nNVDA+Shift+F11 \u3067\u3001\u7121\u8996\u3057\u3066\u3044\u305f\u30d5\u30ec\u30fc\u30ba\u3092\u5168\u3066\u89e3\u9664\u3057\u3066\u3001\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u72b6\u614b\u306b\u623b\u308a\u307e\u3059\u3002"
+		}
+	]
+}
