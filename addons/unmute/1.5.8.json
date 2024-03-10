@@ -1,0 +1,76 @@
+{
+	"addonId": "unmute",
+	"displayName": "Unmute Windows audio",
+	"URL": "https://github.com/grisov/Unmute/releases/download/v1.5.8/unmute-1.5.8.nvda-addon",
+	"description": "When NVDA starts, this add-on checks the status of the Windows sound system and, if the sound is turned off, turns it on.",
+	"sha256": "b55759cc9ebf5581832adfa6a976d32874ae08a0968e8d60e78f5abbced87175",
+	"addonVersionName": "1.5.8",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 8
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Oleksandr Gryshchenko",
+	"sourceURL": "https://github.com/grisov/Unmute",
+	"license": "GPL v2",
+	"homepage": "https://github.com/grisov/unmute",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Unmute Windows audio",
+			"description": "Cuando NVDA se inicia, este complemento comprueba el estado del sistema de sonido de Windows y, si el sonido est\u00e1 desactivado, lo activa."
+		},
+		{
+			"language": "gl",
+			"displayName": "Unmute Windows audio",
+			"description": "Cando NVDA se inicia, este complemento comproba o estado do sistema de son de Windows e, se o son est\u00e1 desactivado, act\u00edvao."
+		},
+		{
+			"language": "it",
+			"displayName": "Unmute Windows audio",
+			"description": "Controlla all'avvio di NVDA lo stato del sistema audio di Windows, se il volume \u00e8 disattivato verr\u00e0 riattivato."
+		},
+		{
+			"language": "pl",
+			"displayName": "Unmute Windows audio",
+			"description": "Gdy NVDA si\u0119 uruchamia, ten dodatek sprawdza stan d\u017awi\u0119ku Windows i je\u015bli d\u017awi\u0119k jest wyciszony, w\u0142\u0105cza go."
+		},
+		{
+			"language": "ru",
+			"displayName": "\u0410\u0432\u0442\u043e\u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0437\u0432\u0443\u043a\u0430",
+			"description": "\u041f\u0440\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0435 NVDA \u044d\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442 \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435 \u0437\u0432\u0443\u043a\u043e\u0432\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b Windows \u0438, \u0435\u0441\u043b\u0438 \u0437\u0432\u0443\u043a \u0432\u044b\u043a\u043b\u044e\u0447\u0435\u043d, \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0435\u0433\u043e."
+		},
+		{
+			"language": "tr",
+			"displayName": "Windows sesini a\u00e7",
+			"description": "NVDA ba\u015flad\u0131\u011f\u0131nda, bu eklenti Windows ses sisteminin durumunu kontrol eder ve ses kapal\u0131ysa ya da belirlenen seviyenin alt\u0131ndaysa a\u00e7ar ve belirlenmi\u015f seviyeye getirir."
+		},
+		{
+			"language": "uk",
+			"displayName": "\u0410\u0432\u0442\u043e\u0443\u0432\u0456\u043c\u043a\u043d\u0435\u043d\u043d\u044f \u0437\u0432\u0443\u043a\u0443 Windows",
+			"description": "\u041a\u043e\u043b\u0438 NVDA \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0454\u0442\u044c\u0441\u044f, \u0446\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454 \u0441\u0442\u0430\u043d \u0437\u0432\u0443\u043a\u043e\u0432\u043e\u0457 \u0441\u0438\u0441\u0442\u0435\u043c\u0438 Windows \u0456, \u044f\u043a\u0449\u043e \u0437\u0432\u0443\u043a \u0432\u0438\u043c\u043a\u043d\u0435\u043d\u043e, \u0432\u043c\u0438\u043a\u0430\u0454 \u0439\u043e\u0433\u043e."
+		},
+		{
+			"language": "vi",
+			"displayName": "B\u1eadt \u00e2m thanh c\u1ee7a Windows",
+			"description": "Khi kh\u1edfi \u0111\u1ed9ng NVDA, add-on n\u00e0y s\u1ebd ki\u1ec3m tra tr\u1ea1ng th\u00e1i h\u1ec7 th\u1ed1ng \u00e2m thanh c\u1ee7a Windows. N\u1ebfu n\u00f3 b\u1ecb t\u1eaft th\u00ec b\u1eadt l\u00ean."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "\u53d6\u6d88\u7cfb\u7edf\u9759\u97f3",
+			"description": "\u5f53 NVDA \u542f\u52a8\u65f6\uff0c\u6b64\u63d2\u4ef6\u4f1a\u68c0\u67e5 Windows \u7cfb\u7edf\u58f0\u97f3\u72b6\u6001\uff0c\u5982\u679c\u5df2\u9759\u97f3\uff0c\u5219\u5c06\u5176\u6253\u5f00\u3002"
+		}
+	]
+}
