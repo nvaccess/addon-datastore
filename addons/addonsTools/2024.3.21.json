@@ -1,76 +1,77 @@
 {
-	"addonId": "addonsTools",
-	"displayName": "Tools for managing add-ons",
-	"URL": "https://github.com/ruifontes/addonsTools/releases/download/2024.03.21/addonsTools-2024.03.21.nvda-addon",
-	"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t",
-	"sha256": "87fe7b3f9361d06deed25869d6efeb148a8a039b61ce1c7c3ae6380928c54460",
-	"addonVersionName": "2024.03.21",
-	"addonVersionNumber": {
-		"major": 2024,
-		"minor": 3,
-		"patch": 21
-	},
-	"minNVDAVersion": {
-		"major": 2023,
-		"minor": 2,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Rui Fontes",
-	"sourceURL": "https://github.com/ruifontes/addonsTools",
-	"license": "GPL v2",
-	"homepage": "https://github.com/ruifontes/addonsTools",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "de",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "en",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "fr",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "it",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "pt",
-			"displayName": "Ferramentas para gerir extras",
-			"description": "Conjunto de ferramentas para gerir extras n\u00e3o dispon\u00edveis na loja de extras do NVDA:\n\t* Empacotador de extras: Para criar um ficheiro de c\u00f3pia de seguran\u00e7a de um extra ou para enviar um extra modificado para algu\u00e9m testar ou utilizar;\n\t* Instalador m\u00faltiplo: Permite selecionar extras de uma pasta e instalar todos de uma vez;\n\t* Fazer/restaurar Backups: Permite fazer backup e restaurar algumas prefer\u00eancias do NVDA, como configura\u00e7\u00f5es, perfis e dicion\u00e1rios;\n\t* Documenta\u00e7\u00e3o dos extras: permite abrir o ficheiro de documenta\u00e7\u00e3o.\n\t"
-		},
-		{
-			"language": "ru",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		},
-		{
-			"language": "tr",
-			"displayName": "Eklentileri y\u00f6netmek i\u00e7in ara\u00e7lar",
-			"description": "NVDA eklenti ma\u011fazas\u0131nda bulunmayan eklentileri y\u00f6netmek i\u00e7in bir dizi ara\u00e7:\n\t* Eklenti paketleyici: Bir eklenti yedekleme dosyas\u0131 olu\u015fturmak, de\u011fi\u015ftirilmi\u015f bir eklentiyi test etmesi veya kullanmas\u0131 i\u00e7in birine g\u00f6ndermek i\u00e7in kullan\u0131l\u0131r;\n\t* \u00c7oklu y\u00fckleyici: Bir klas\u00f6rden eklentilerin se\u00e7ilmesine ve t\u00fcm\u00fcn\u00fcn ayn\u0131 anda y\u00fcklenmesine olanak tan\u0131r;\n\t* Yedekleme Yap/Yede\u011fi geri Y\u00fckle: Yap\u0131land\u0131rmalar, profiller ve s\u00f6zl\u00fckler gibi baz\u0131 NVDA tercihlerinin yedeklenmesine ve geri y\u00fcklenmesine izin verir;\n\t* Eklenti belgeleri: Yard\u0131m dosyalar\u0131n\u0131 a\u00e7ar.\n\t"
-		},
-		{
-			"language": "uk",
-			"displayName": "Tools for managing add-ons",
-			"description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
-		}
-	]
+  "addonId": "addonsTools",
+  "displayName": "Tools for managing add-ons",
+  "URL": "https://github.com/ruifontes/addonsTools/releases/download/2024.03.21/addonsTools-2024.03.21.nvda-addon",
+  "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t",
+  "sha256": "87fe7b3f9361d06deed25869d6efeb148a8a039b61ce1c7c3ae6380928c54460",
+  "addonVersionName": "2024.03.21",
+  "addonVersionNumber": {
+    "major": 2024,
+    "minor": 3,
+    "patch": 21
+  },
+  "minNVDAVersion": {
+    "major": 2023,
+    "minor": 2,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Rui Fontes",
+  "sourceURL": "https://github.com/ruifontes/addonsTools",
+  "license": "GPL v2",
+  "homepage": "https://github.com/ruifontes/addonsTools",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "de",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "en",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "fr",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "it",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "pt",
+      "displayName": "Ferramentas para gerir extras",
+      "description": "Conjunto de ferramentas para gerir extras n\u00e3o dispon\u00edveis na loja de extras do NVDA:\n\t* Empacotador de extras: Para criar um ficheiro de c\u00f3pia de seguran\u00e7a de um extra ou para enviar um extra modificado para algu\u00e9m testar ou utilizar;\n\t* Instalador m\u00faltiplo: Permite selecionar extras de uma pasta e instalar todos de uma vez;\n\t* Fazer/restaurar Backups: Permite fazer backup e restaurar algumas prefer\u00eancias do NVDA, como configura\u00e7\u00f5es, perfis e dicion\u00e1rios;\n\t* Documenta\u00e7\u00e3o dos extras: permite abrir o ficheiro de documenta\u00e7\u00e3o.\n\t"
+    },
+    {
+      "language": "ru",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    },
+    {
+      "language": "tr",
+      "displayName": "Eklentileri y\u00f6netmek i\u00e7in ara\u00e7lar",
+      "description": "NVDA eklenti ma\u011fazas\u0131nda bulunmayan eklentileri y\u00f6netmek i\u00e7in bir dizi ara\u00e7:\n\t* Eklenti paketleyici: Bir eklenti yedekleme dosyas\u0131 olu\u015fturmak, de\u011fi\u015ftirilmi\u015f bir eklentiyi test etmesi veya kullanmas\u0131 i\u00e7in birine g\u00f6ndermek i\u00e7in kullan\u0131l\u0131r;\n\t* \u00c7oklu y\u00fckleyici: Bir klas\u00f6rden eklentilerin se\u00e7ilmesine ve t\u00fcm\u00fcn\u00fcn ayn\u0131 anda y\u00fcklenmesine olanak tan\u0131r;\n\t* Yedekleme Yap/Yede\u011fi geri Y\u00fckle: Yap\u0131land\u0131rmalar, profiller ve s\u00f6zl\u00fckler gibi baz\u0131 NVDA tercihlerinin yedeklenmesine ve geri y\u00fcklenmesine izin verir;\n\t* Eklenti belgeleri: Yard\u0131m dosyalar\u0131n\u0131 a\u00e7ar.\n\t"
+    },
+    {
+      "language": "uk",
+      "displayName": "Tools for managing add-ons",
+      "description": "Set of tools to manage add-ons not available on NVDA add-ons store:\n\t* Add-on packager: To create a add-on backup file or to send a modified add-on to someone test or use;\n\t* Multiple installer: Allows to select add-ons from a folder and install all at once;\n\t* Make/restore Backups: Allow to backup and restore some NVDA preferences, such as configurations, profiles and dictionaries;\n\t* Add-ons documentation: allow to open the documentation file.\n\t"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2558"
 }
