@@ -1,106 +1,107 @@
 {
-	"addonId": "proxy",
-	"displayName": "Proxy support",
-	"URL": "https://github.com/nvda-es/nvda-proxy-support/releases/download/v1.4/proxy-1.4.nvda-addon",
-	"description": "This add-on allows NVDA connecting to the Internet through a proxy server.",
-	"sha256": "1570d80984a7a5947bf731ecbf7dfc5d8e354f8a416a1de51d5eba0a299b3cd7",
-	"addonVersionName": "1.4",
-	"addonVersionNumber": {
-		"major": 1,
-		"minor": 4,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2022,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "jmdaweb",
-	"sourceURL": "https://github.com/nvda-es/nvda-proxy-support",
-	"license": "GPL v2",
-	"homepage": "https://github.com/nvda-es/nvda-proxy-support",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "bg",
-			"displayName": "\u041f\u043e\u0434\u0434\u0440\u044a\u0436\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u043a\u0441\u0438",
-			"description": "\u0422\u0430\u0437\u0438 \u0434\u043e\u0431\u0430\u0432\u043a\u0430 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u043d\u0430 NVDA \u0434\u0430 \u0441\u0435 \u0441\u0432\u044a\u0440\u0437\u0432\u0430 \u0441 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u0447\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0438 \u0441\u044a\u0440\u0432\u044a\u0440."
-		},
-		{
-			"language": "de",
-			"displayName": "Proxy-Unterst\u00fctzung",
-			"description": "Diese NVDA-Erweiterung erm\u00f6glicht eine Verbindung mit dem Internet \u00fcber einen Proxy-Server."
-		},
-		{
-			"language": "es",
-			"displayName": "Soporte proxy",
-			"description": "Este complemento permite conectar NVDA a Internet a trav\u00e9s de un servidor \nproxy."
-		},
-		{
-			"language": "fi",
-			"displayName": "V\u00e4lityspalvelimen tuki",
-			"description": "T\u00e4m\u00e4n lis\u00e4osan avulla NVDA voi muodostaa internet-yhteyden v\u00e4lityspalvelimen kautta."
-		},
-		{
-			"language": "fr",
-			"displayName": "Support proxy",
-			"description": "Cette extension permet \u00e0 NVDA de se connecter \u00e0 Internet via un serveur proxy."
-		},
-		{
-			"language": "gl",
-			"displayName": "Soporte para proxy",
-			"description": "Este complemento permite a NVDA conectarse a internet a trav\u00e9s dun servidor proxy."
-		},
-		{
-			"language": "hr",
-			"displayName": "Podr\u0161ka za posrednika",
-			"description": "Ovaj dodatak omogu\u0107uje NVDA \u010dita\u010du povezivanje na internet putem posredni\u010dkog poslu\u017eitelja."
-		},
-		{
-			"language": "it",
-			"displayName": "Supporto proxy",
-			"description": "Questo componente aggiuntivo consente a NVDA di connettersi a Internet tramite un server proxy."
-		},
-		{
-			"language": "pl",
-			"displayName": "Proxy support",
-			"description": "Ten dodatek umo\u017cliwia NVDA \u0142\u0105czenie si\u0119 z Internetem za po\u015brednictwem serwera proxy."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Soporte proxy",
-			"description": "Este extra permite ligar o NVDA \u00e0 Internet atrav\u00e9s de um servidor proxy."
-		},
-		{
-			"language": "ro",
-			"displayName": "Asisten\u021b\u0103 pentru proxy",
-			"description": "Acest supliment permite conectarea la Internet a NVDA printr-un server proxy."
-		},
-		{
-			"language": "ru",
-			"displayName": "\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u043f\u0440\u043e\u043a\u0441\u0438",
-			"description": "\u042d\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 NVDA \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0430\u0442\u044c\u0441\u044f \u043a \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0443 \u0447\u0435\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0438-\u0441\u0435\u0440\u0432\u0435\u0440."
-		},
-		{
-			"language": "tr",
-			"displayName": "Proxy deste\u011fi",
-			"description": "Bu eklenti, NVDA'n\u0131n bir proxy sunucusu arac\u0131l\u0131\u011f\u0131yla \u0130nternet'e ba\u011flanmas\u0131n\u0131 sa\u011flar."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u041f\u0456\u0434\u0442\u0440\u0438\u043c\u043a\u0430 \u043f\u0440\u043e\u043a\u0441\u0456",
-			"description": "\u0426\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u0454 NVDA \u043f\u0456\u0434\u043a\u043b\u044e\u0447\u0430\u0442\u0438\u0441\u044f \u0434\u043e \u0456\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0443 \u0447\u0435\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0456-\u0441\u0435\u0440\u0432\u0435\u0440."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "\u4ee3\u7406\u652f\u6301",
-			"description": "\u8be5\u63d2\u4ef6\u53ef\u4ee5\u4f7f NVDA \u901a\u8fc7\u4ee3\u7406\u670d\u52a1\u5668\u8fde\u63a5\u5230\u4e92\u8054\u7f51\u3002"
-		}
-	]
+  "addonId": "proxy",
+  "displayName": "Proxy support",
+  "URL": "https://github.com/nvda-es/nvda-proxy-support/releases/download/v1.4/proxy-1.4.nvda-addon",
+  "description": "This add-on allows NVDA connecting to the Internet through a proxy server.",
+  "sha256": "1570d80984a7a5947bf731ecbf7dfc5d8e354f8a416a1de51d5eba0a299b3cd7",
+  "addonVersionName": "1.4",
+  "addonVersionNumber": {
+    "major": 1,
+    "minor": 4,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2022,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "jmdaweb",
+  "sourceURL": "https://github.com/nvda-es/nvda-proxy-support",
+  "license": "GPL v2",
+  "homepage": "https://github.com/nvda-es/nvda-proxy-support",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "bg",
+      "displayName": "\u041f\u043e\u0434\u0434\u0440\u044a\u0436\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u043a\u0441\u0438",
+      "description": "\u0422\u0430\u0437\u0438 \u0434\u043e\u0431\u0430\u0432\u043a\u0430 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u043d\u0430 NVDA \u0434\u0430 \u0441\u0435 \u0441\u0432\u044a\u0440\u0437\u0432\u0430 \u0441 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u0447\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0438 \u0441\u044a\u0440\u0432\u044a\u0440."
+    },
+    {
+      "language": "de",
+      "displayName": "Proxy-Unterst\u00fctzung",
+      "description": "Diese NVDA-Erweiterung erm\u00f6glicht eine Verbindung mit dem Internet \u00fcber einen Proxy-Server."
+    },
+    {
+      "language": "es",
+      "displayName": "Soporte proxy",
+      "description": "Este complemento permite conectar NVDA a Internet a trav\u00e9s de un servidor \nproxy."
+    },
+    {
+      "language": "fi",
+      "displayName": "V\u00e4lityspalvelimen tuki",
+      "description": "T\u00e4m\u00e4n lis\u00e4osan avulla NVDA voi muodostaa internet-yhteyden v\u00e4lityspalvelimen kautta."
+    },
+    {
+      "language": "fr",
+      "displayName": "Support proxy",
+      "description": "Cette extension permet \u00e0 NVDA de se connecter \u00e0 Internet via un serveur proxy."
+    },
+    {
+      "language": "gl",
+      "displayName": "Soporte para proxy",
+      "description": "Este complemento permite a NVDA conectarse a internet a trav\u00e9s dun servidor proxy."
+    },
+    {
+      "language": "hr",
+      "displayName": "Podr\u0161ka za posrednika",
+      "description": "Ovaj dodatak omogu\u0107uje NVDA \u010dita\u010du povezivanje na internet putem posredni\u010dkog poslu\u017eitelja."
+    },
+    {
+      "language": "it",
+      "displayName": "Supporto proxy",
+      "description": "Questo componente aggiuntivo consente a NVDA di connettersi a Internet tramite un server proxy."
+    },
+    {
+      "language": "pl",
+      "displayName": "Proxy support",
+      "description": "Ten dodatek umo\u017cliwia NVDA \u0142\u0105czenie si\u0119 z Internetem za po\u015brednictwem serwera proxy."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Soporte proxy",
+      "description": "Este extra permite ligar o NVDA \u00e0 Internet atrav\u00e9s de um servidor proxy."
+    },
+    {
+      "language": "ro",
+      "displayName": "Asisten\u021b\u0103 pentru proxy",
+      "description": "Acest supliment permite conectarea la Internet a NVDA printr-un server proxy."
+    },
+    {
+      "language": "ru",
+      "displayName": "\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u043f\u0440\u043e\u043a\u0441\u0438",
+      "description": "\u042d\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 NVDA \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0430\u0442\u044c\u0441\u044f \u043a \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0443 \u0447\u0435\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0438-\u0441\u0435\u0440\u0432\u0435\u0440."
+    },
+    {
+      "language": "tr",
+      "displayName": "Proxy deste\u011fi",
+      "description": "Bu eklenti, NVDA'n\u0131n bir proxy sunucusu arac\u0131l\u0131\u011f\u0131yla \u0130nternet'e ba\u011flanmas\u0131n\u0131 sa\u011flar."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u041f\u0456\u0434\u0442\u0440\u0438\u043c\u043a\u0430 \u043f\u0440\u043e\u043a\u0441\u0456",
+      "description": "\u0426\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u0454 NVDA \u043f\u0456\u0434\u043a\u043b\u044e\u0447\u0430\u0442\u0438\u0441\u044f \u0434\u043e \u0456\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0443 \u0447\u0435\u0440\u0435\u0437 \u043f\u0440\u043e\u043a\u0441\u0456-\u0441\u0435\u0440\u0432\u0435\u0440."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "\u4ee3\u7406\u652f\u6301",
+      "description": "\u8be5\u63d2\u4ef6\u53ef\u4ee5\u4f7f NVDA \u901a\u8fc7\u4ee3\u7406\u670d\u52a1\u5668\u8fde\u63a5\u5230\u4e92\u8054\u7f51\u3002"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2821"
 }
