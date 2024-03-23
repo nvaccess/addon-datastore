@@ -1,76 +1,77 @@
 {
-	"addonId": "commandHelper",
-	"displayName": "Command Helper",
-	"URL": "https://github.com/javidominguez/commandHelper/releases/download/2024.1.0/commandHelper-2024.1.0.nvda-addon",
-	"description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations.",
-	"sha256": "99b5db60de93068c0a2fbd2a9632b840c024f8630b03a80cdb051ac3e0e03f33",
-	"addonVersionName": "2024.1.0",
-	"addonVersionNumber": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2023,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Javi Dominguez",
-	"sourceURL": "https://github.com/javidominguez/commandHelper/",
-	"license": "GPL v2",
-	"homepage": "https://github.com/javidominguez/commandHelper/",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "\u0645\u0633\u0627\u0639\u062f \u0644\u0644\u0623\u0648\u0627\u0645\u0631",
-			"description": "\u0623\u062f\u0627\u0629 \u0625\u0636\u0627\u0641\u064a\u0629 \u0644 NVDA \u062a\u0648\u0641\u0631 \u0637\u0631\u064a\u0642\u0629 \u0628\u062f\u064a\u0644\u0629 \u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u0646\u0635\u064a\u0629 \u0644\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u064a\u062c\u062f\u0648\u0646 \u0635\u0639\u0648\u0628\u0629 \u0641\u064a \u0627\u0644\u0636\u063a\u0637 \u0639\u0644\u0649 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0645\u0641\u0627\u062a\u064a\u062d \u0645\u0639\u0642\u062f\u0629."
-		},
-		{
-			"language": "es",
-			"displayName": "Ayudante de \u00f3rdenes",
-			"description": "Proporciona un m\u00e9todo alternativo de ejecutar scripts para personas que tienen dificultades al pulsar combinaciones de teclado complicadas."
-		},
-		{
-			"language": "fr",
-			"displayName": "Assistant de commandes",
-			"description": "Fournit une autre m\u00e9thode d'ex\u00e9cution de scripts pour les personnes qui ont des difficult\u00e9s \u00e0 appuyer sur des combinaisons de touches compliqu\u00e9es."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Ajuda de comandos",
-			"description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Ajuda de comandos",
-			"description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations."
-		},
-		{
-			"language": "tr",
-			"displayName": "Komut Yard\u0131mc\u0131s\u0131",
-			"description": "Karma\u015f\u0131k tu\u015f kombinasyonlar\u0131na basmakta zorluk \u00e7eken ki\u015filer i\u00e7in komutlar\u0131 y\u00fcr\u00fctmek i\u00e7in alternatif bir y\u00f6ntem sa\u011flar."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u041f\u043e\u043c\u0456\u0447\u043d\u0438\u043a \u0434\u043b\u044f \u043a\u043e\u043c\u0430\u043d\u0434",
-			"description": "\u041d\u0430\u0434\u0430\u0454 \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043c\u0435\u0442\u043e\u0434 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0457\u0432 \u0434\u043b\u044f \u043b\u044e\u0434\u0435\u0439, \u044f\u043a\u0456 \u043c\u0430\u044e\u0442\u044c \u0442\u0440\u0443\u0434\u043d\u043e\u0449\u0456 \u0437 \u043d\u0430\u0442\u0438\u0441\u043a\u0430\u043d\u043d\u044f\u043c \u0441\u043a\u043b\u0430\u0434\u043d\u0438\u0445 \u043a\u043e\u043c\u0431\u0456\u043d\u0430\u0446\u0456\u0439 \u043a\u043b\u0430\u0432\u0456\u0448."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "\u6307\u4ee4\u534f\u52a9\u5458",
-			"description": "\u63d0\u4f9b\u53e6\u4e00\u4e2a\u65b9\u6cd5\u6765\u6267\u884c\u6307\u4ee4\uff0c\u597d\u8ba9\u4e0d\u65b9\u4fbf\u6309\u590d\u6742\u6309\u952e\u7684\u4eba\u4f7f\u7528\u3002"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "\u6307\u4ee4\u5354\u52a9\u54e1",
-			"description": "\u63d0\u4f9b\u53e6\u4e00\u500b\u65b9\u6cd5\u4f86\u57f7\u884c\u6307\u4ee4\uff0c\u597d\u8b93\u4e0d\u65b9\u4fbf\u6309\u8907\u96dc\u6309\u9375\u7684\u4eba\u4f7f\u7528\u3002"
-		}
-	]
+  "addonId": "commandHelper",
+  "displayName": "Command Helper",
+  "URL": "https://github.com/javidominguez/commandHelper/releases/download/2024.1.0/commandHelper-2024.1.0.nvda-addon",
+  "description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations.",
+  "sha256": "99b5db60de93068c0a2fbd2a9632b840c024f8630b03a80cdb051ac3e0e03f33",
+  "addonVersionName": "2024.1.0",
+  "addonVersionNumber": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2023,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Javi Dominguez",
+  "sourceURL": "https://github.com/javidominguez/commandHelper/",
+  "license": "GPL v2",
+  "homepage": "https://github.com/javidominguez/commandHelper/",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "\u0645\u0633\u0627\u0639\u062f \u0644\u0644\u0623\u0648\u0627\u0645\u0631",
+      "description": "\u0623\u062f\u0627\u0629 \u0625\u0636\u0627\u0641\u064a\u0629 \u0644 NVDA \u062a\u0648\u0641\u0631 \u0637\u0631\u064a\u0642\u0629 \u0628\u062f\u064a\u0644\u0629 \u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0628\u0631\u0627\u0645\u062c \u0627\u0644\u0646\u0635\u064a\u0629 \u0644\u0644\u0623\u0634\u062e\u0627\u0635 \u0627\u0644\u0630\u064a\u0646 \u064a\u062c\u062f\u0648\u0646 \u0635\u0639\u0648\u0628\u0629 \u0641\u064a \u0627\u0644\u0636\u063a\u0637 \u0639\u0644\u0649 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0645\u0641\u0627\u062a\u064a\u062d \u0645\u0639\u0642\u062f\u0629."
+    },
+    {
+      "language": "es",
+      "displayName": "Ayudante de \u00f3rdenes",
+      "description": "Proporciona un m\u00e9todo alternativo de ejecutar scripts para personas que tienen dificultades al pulsar combinaciones de teclado complicadas."
+    },
+    {
+      "language": "fr",
+      "displayName": "Assistant de commandes",
+      "description": "Fournit une autre m\u00e9thode d'ex\u00e9cution de scripts pour les personnes qui ont des difficult\u00e9s \u00e0 appuyer sur des combinaisons de touches compliqu\u00e9es."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Ajuda de comandos",
+      "description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Ajuda de comandos",
+      "description": "Provides a alternative method for executing scripts for people who have difficulty pressing complicated key combinations."
+    },
+    {
+      "language": "tr",
+      "displayName": "Komut Yard\u0131mc\u0131s\u0131",
+      "description": "Karma\u015f\u0131k tu\u015f kombinasyonlar\u0131na basmakta zorluk \u00e7eken ki\u015filer i\u00e7in komutlar\u0131 y\u00fcr\u00fctmek i\u00e7in alternatif bir y\u00f6ntem sa\u011flar."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u041f\u043e\u043c\u0456\u0447\u043d\u0438\u043a \u0434\u043b\u044f \u043a\u043e\u043c\u0430\u043d\u0434",
+      "description": "\u041d\u0430\u0434\u0430\u0454 \u0430\u043b\u044c\u0442\u0435\u0440\u043d\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u043c\u0435\u0442\u043e\u0434 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u043d\u044f \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0457\u0432 \u0434\u043b\u044f \u043b\u044e\u0434\u0435\u0439, \u044f\u043a\u0456 \u043c\u0430\u044e\u0442\u044c \u0442\u0440\u0443\u0434\u043d\u043e\u0449\u0456 \u0437 \u043d\u0430\u0442\u0438\u0441\u043a\u0430\u043d\u043d\u044f\u043c \u0441\u043a\u043b\u0430\u0434\u043d\u0438\u0445 \u043a\u043e\u043c\u0431\u0456\u043d\u0430\u0446\u0456\u0439 \u043a\u043b\u0430\u0432\u0456\u0448."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "\u6307\u4ee4\u534f\u52a9\u5458",
+      "description": "\u63d0\u4f9b\u53e6\u4e00\u4e2a\u65b9\u6cd5\u6765\u6267\u884c\u6307\u4ee4\uff0c\u597d\u8ba9\u4e0d\u65b9\u4fbf\u6309\u590d\u6742\u6309\u952e\u7684\u4eba\u4f7f\u7528\u3002"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "\u6307\u4ee4\u5354\u52a9\u54e1",
+      "description": "\u63d0\u4f9b\u53e6\u4e00\u500b\u65b9\u6cd5\u4f86\u57f7\u884c\u6307\u4ee4\uff0c\u597d\u8b93\u4e0d\u65b9\u4fbf\u6309\u8907\u96dc\u6309\u9375\u7684\u4eba\u4f7f\u7528\u3002"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2355"
 }
