@@ -1,156 +1,157 @@
 {
-	"addonId": "reportSymbols",
-	"displayName": "Report Symbols",
-	"URL": "https://github.com/nvdaes/reportSymbols/releases/download/20.0.0/reportSymbols-20.0.0.nvda-addon",
-	"description": "Allows to listen the typed symbols (non alphanumeric or blank characters), even when the speaking of characters is turned off.",
-	"sha256": "d3c4fa5ba801847d96b2c1da9d47e2b7339389863a08c79f08c3fa9cfdeb7cb6",
-	"addonVersionName": "20.0.0",
-	"addonVersionNumber": {
-		"major": 20,
-		"minor": 0,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2023,
-		"minor": 2,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "nvdaes",
-	"sourceURL": "https://github.com/nvdaes/reportSymbols/releases/tag/20.0.0",
-	"license": "GPL v2",
-	"homepage": "https://github.com/nvdaes/reportSymbols",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"translations": [
-		{
-			"language": "bg",
-			"displayName": "\u0421\u044a\u043e\u0431\u0449\u0430\u0432\u0430\u043d\u0435 \u043d\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u0438\u0442\u0435",
-			"description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u0434\u0430 \u043f\u0440\u043e\u0441\u043b\u0443\u0448\u0432\u0430\u0442\u0435 \u0432\u044a\u0432\u0435\u0436\u0434\u0430\u043d\u0438\u0442\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u0438 (\u043d\u0435 \u0431\u0443\u043a\u0432\u0435\u043d\u043e-\u0446\u0438\u0444\u0440\u043e\u0432\u0438\u0442\u0435 \u0438\u043b\u0438 \u043f\u0440\u0430\u0437\u043d\u0438\u0442\u0435 \u0437\u043d\u0430\u0446\u0438), \u0434\u043e\u0440\u0438 \u043a\u043e\u0433\u0430\u0442\u043e \u043e\u043f\u0446\u0438\u044f\u0442\u0430 \"\u0418\u0437\u0433\u043e\u0432\u0430\u0440\u044f\u0439 \u0432\u044a\u0432\u0435\u0434\u0435\u043d\u0438\u0442\u0435 \u0431\u0443\u043a\u0432\u0438 \u0438\u043b\u0438 \u0437\u043d\u0430\u0446\u0438\" \u0435 \u0438\u0437\u043a\u043b\u044e\u0447\u0435\u043d\u0430."
-		},
-		{
-			"language": "da",
-			"displayName": "Opl\u00e6s symboler",
-			"description": "Giver dig mulighed for at h\u00f8re de ikke-alfa-numeriske tegn, du skriver, selv hvis opl\u00e6sning af tegn er sl\u00e5et fra."
-		},
-		{
-			"language": "de",
-			"displayName": "Symbol-Ansagen",
-			"description": "Erm\u00f6glicht das Anh\u00f6ren der getippten Symbole (keine alphanumerische Zeichen oder Leerzeichen), auch wenn das Sprechen von Zeichen ausgeschaltet ist."
-		},
-		{
-			"language": "de_CH",
-			"displayName": "Symbol-Ansagen",
-			"description": "Erm\u00f6glicht das Anh\u00f6ren der getippten Symbole (keine alphanumerische Zeichen oder Leerzeichen), auch wenn das Sprechen von Zeichen ausgeschaltet ist."
-		},
-		{
-			"language": "es",
-			"displayName": "Report Symbols",
-			"description": "Permite escuchar los s\u00edmbolos tecleados (caracteres no alfanum\u00e9ricos o en blanco), incluso cuando la verbalizaci\u00f3n de caracteres est\u00e9 desactivada."
-		},
-		{
-			"language": "fa",
-			"displayName": "\u0627\u0639\u0644\u0627\u0645\u0650 \u0646\u0645\u0627\u062f\u0647\u0627",
-			"description": "\u0627\u0645\u06a9\u0627\u0646\u0650 \u0634\u0646\u06cc\u062f\u0646\u0650 \u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u062a\u0627\u06cc\u067e\u200c\u0634\u062f\u0647 (\u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u063a\u06cc\u0631 \u0627\u0644\u0641\u0628\u0627\u200c\u0639\u062f\u062f\u06cc \u0648 \u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u062e\u0627\u0644\u06cc) \u0631\u0627\u060c \u062d\u062a\u06cc \u062f\u0631 \u0635\u0648\u0631\u062a\u06cc \u06a9\u0647 \u062e\u0648\u0627\u0646\u062f\u0646\u0650 \u0646\u0648\u06cc\u0633\u0647\u200c\u0647\u0627 \u063a\u06cc\u0631\u0641\u0639\u0627\u0644 \u0628\u0627\u0634\u062f \u0641\u0631\u0627\u0647\u0645 \u0645\u06cc\u06a9\u0646\u062f."
-		},
-		{
-			"language": "fi",
-			"displayName": "Puhu symbolit",
-			"description": "Mahdollistaa kirjoitettujen symbolien (ei-aakkosnumeeristen ja tyhj\u00e4merkkien) kuulemisen, vaikka merkkien puhuminen on poistettu k\u00e4yt\u00f6st\u00e4."
-		},
-		{
-			"language": "fr",
-			"displayName": "Report Symbols",
-			"description": "Permet d'entendre les symboles \u00e9crits (caract\u00e8res non alphanum\u00e9riques ou blancs), m\u00eame si la verbalisation des caract\u00e8res \u00e9crits est d\u00e9sactiv\u00e9e."
-		},
-		{
-			"language": "gl",
-			"displayName": "Report Symbols",
-			"description": "Permite escoitar os s\u00edmbolos tecleados (car\u00e1cteres non alfanum\u00e9ricos ou en branco), incluso cando a fala de car\u00e1cteres estea desactivada."
-		},
-		{
-			"language": "he",
-			"displayName": "\u05d3\u05d9\u05d5\u05d5\u05d7 \u05e1\u05de\u05dc\u05d9\u05dd",
-			"description": "\u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05d4\u05d0\u05d6\u05d9\u05df \u05dc\u05e1\u05de\u05dc\u05d9\u05dd \u05e9\u05d4\u05d5\u05e7\u05dc\u05d3\u05d5 (\u05dc\u05d0 \u05ea\u05d5\u05d5\u05d9\u05dd \u05d0\u05dc\u05e4\u05d0\u05e0\u05d5\u05de\u05e8\u05d9\u05d9\u05dd), \u05d2\u05dd \u05db\u05d0\u05e9\u05e8 \u05d4\u05d3\u05d9\u05d1\u05d5\u05e8 \u05e2\u05dc \u05ea\u05d5\u05d5\u05d9\u05dd \u05db\u05d1\u05d5\u05d9."
-		},
-		{
-			"language": "hr",
-			"displayName": "Javi znakove",
-			"description": "Omogu\u0107uje slu\u0161anje utipkanih znakova (nealfanumeri\u010dkih znakova ili praznih znakova), \u010dak i kad je izgovaranje utipkanih znakova isklju\u010deno."
-		},
-		{
-			"language": "hu",
-			"displayName": "Karakterbejelent\u0151",
-			"description": "A be\u00edrt karakterek meghallgat\u00e1sa (nem alfanumerikus, vagy \u00fcres karakterek), akkor is, ha a karakterek bemond\u00e1sa ki van kapcsolva."
-		},
-		{
-			"language": "it",
-			"displayName": "Report Symbols",
-			"description": "Consente la lettura dei simboli digitati (caratteri non alfanumerici), anche quando la lettura caratteri digitati \u00e8 disattivata."
-		},
-		{
-			"language": "lt",
-			"displayName": "Report Symbols",
-			"description": "Leid\u017eia i\u0161klausyti para\u0161ytus simbolius (ne raidinius ir ne skaitinius arba tu\u0161\u010dius ra\u0161menis), net jeigu ir i\u0161jungtas \u012fvedam\u0173 simboli\u0173 tarimas."
-		},
-		{
-			"language": "pl",
-			"displayName": "Report Symbols",
-			"description": "Wymawia wpisywane znaki (niealfanumeryczne lub puste), nawet wtedy, kiedy echo znak\u00f3w jest wy\u0142\u0105czone."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Informar S\u00edmbolos",
-			"description": "Permite ouvir os s\u00edmbolos digitados (caracteres n\u00e3o alfanum\u00e9ricos ou invis\u00edveis/em branco), mesmo quando a fala de caracteres est\u00e1 desativada."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Anunciar s\u00edmbolos",
-			"description": "Permite ouvir os s\u00edmbolos digitados (caracteres n\u00e3o alfanum\u00e9ricos ou invis\u00edveis), mesmo quando  a op\u00e7\u00e3o \"Anunciar caracteres\" est\u00e1 desactivada."
-		},
-		{
-			"language": "ro",
-			"displayName": "Report Symbols",
-			"description": "\u00ce\u021bi permite s\u0103 ascul\u021bi simbolurile scrise (caracterele non-alphanumerice), chiar dac\u0103 citirea caracterelor este dezactivat\u0103."
-		},
-		{
-			"language": "ru",
-			"displayName": "Report Symbols",
-			"description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043f\u0440\u043e\u0441\u043b\u0443\u0448\u0438\u0432\u0430\u0442\u044c \u043d\u0430\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (\u043d\u0435 \u0431\u0443\u043a\u0432\u0435\u043d\u043d\u043e-\u0446\u0438\u0444\u0440\u043e\u0432\u044b\u0435 \u0438\u043b\u0438 \u043f\u0443\u0441\u0442\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b), \u0434\u0430\u0436\u0435 \u0435\u0441\u043b\u0438 \u043f\u0440\u043e\u0438\u0437\u043d\u043e\u0448\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u043e."
-		},
-		{
-			"language": "sk",
-			"displayName": "\u010c\u00edta\u0165 nap\u00edsan\u00e9 symboly",
-			"description": "Umo\u017e\u0148uje oznamova\u0165 nap\u00edsan\u00e9 znaky (medzeri a pr\u00e1zdne riadky) aj v pr\u00edpade, ak je vypnut\u00e9 \u010d\u00edtanie nap\u00edsan\u00fdch znakov."
-		},
-		{
-			"language": "sl",
-			"displayName": "Sporo\u010danje Simbolov",
-			"description": "Dovoljuje poslu\u0161ati natipkane simbole (nealfanumeri\u010dne ali prazne znake) tudi, ko je pripovedovanje znakov izklju\u010deno."
-		},
-		{
-			"language": "sr",
-			"displayName": "Prijavljivanje simbola",
-			"description": "Dozvoljava slu\u0161anje ukucanih simbola(znakovi koji nisu alfanumeri\u010dki), \u010dak i kada je izgovor ukucanih znakova isklju\u010den."
-		},
-		{
-			"language": "tr",
-			"displayName": "Sembolleri Bildir",
-			"description": "Karakterlerin konu\u015fmas\u0131 kapal\u0131 olsa bile, yaz\u0131lan sembollerin (alfanumerik olmayan veya bo\u015f karakterler) dinlenmesini sa\u011flar."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u041f\u0440\u043e\u043c\u043e\u0432\u043b\u044f\u043d\u043d\u044f \u0441\u0438\u043c\u0432\u043e\u043b\u0456\u0432",
-			"description": "\u0414\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043f\u0440\u043e\u0441\u043b\u0443\u0445\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0432\u0432\u0435\u0434\u0435\u043d\u0456 \u0441\u0438\u043c\u0432\u043e\u043b\u0438 (\u043d\u0435\u0430\u043b\u044c\u0444\u0430\u043d\u0443\u043c\u0435\u0440\u0438\u0447\u043d\u0456 \u0447\u0438 \u043f\u043e\u0440\u043e\u0436\u043d\u0456 \u0441\u0438\u043c\u0432\u043e\u043b\u0438), \u043d\u0430\u0432\u0456\u0442\u044c \u044f\u043a\u0449\u043e \u0432 NVDA \u0432\u0438\u043c\u043a\u043d\u0435\u043d\u043e \u043e\u0437\u0432\u0443\u0447\u0435\u043d\u043d\u044f \u0432\u0432\u0435\u0434\u0435\u043d\u0438\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u0456\u0432."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "\u8bfb\u51fa\u7b26\u53f7",
-			"description": "\u5373\u4f7f NVDA \u7684\u201c\u8bfb\u51fa\u8f93\u5165\u5b57\u7b26\u201d\u529f\u80fd\u5df2\u5173\u95ed\u4e5f\u53ef\u4ee5\u8bfb\u51fa\u952e\u5165\u7684\u7b26\u53f7\uff08\u975e\u5b57\u6bcd\u6570\u5b57\u6216\u7a7a\u767d\u5b57\u7b26\uff09\u3002"
-		}
-	]
+  "addonId": "reportSymbols",
+  "displayName": "Report Symbols",
+  "URL": "https://github.com/nvdaes/reportSymbols/releases/download/20.0.0/reportSymbols-20.0.0.nvda-addon",
+  "description": "Allows to listen the typed symbols (non alphanumeric or blank characters), even when the speaking of characters is turned off.",
+  "sha256": "d3c4fa5ba801847d96b2c1da9d47e2b7339389863a08c79f08c3fa9cfdeb7cb6",
+  "addonVersionName": "20.0.0",
+  "addonVersionNumber": {
+    "major": 20,
+    "minor": 0,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2023,
+    "minor": 2,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "nvdaes",
+  "sourceURL": "https://github.com/nvdaes/reportSymbols/releases/tag/20.0.0",
+  "license": "GPL v2",
+  "homepage": "https://github.com/nvdaes/reportSymbols",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "translations": [
+    {
+      "language": "bg",
+      "displayName": "\u0421\u044a\u043e\u0431\u0449\u0430\u0432\u0430\u043d\u0435 \u043d\u0430 \u0441\u0438\u043c\u0432\u043e\u043b\u0438\u0442\u0435",
+      "description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u0434\u0430 \u043f\u0440\u043e\u0441\u043b\u0443\u0448\u0432\u0430\u0442\u0435 \u0432\u044a\u0432\u0435\u0436\u0434\u0430\u043d\u0438\u0442\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u0438 (\u043d\u0435 \u0431\u0443\u043a\u0432\u0435\u043d\u043e-\u0446\u0438\u0444\u0440\u043e\u0432\u0438\u0442\u0435 \u0438\u043b\u0438 \u043f\u0440\u0430\u0437\u043d\u0438\u0442\u0435 \u0437\u043d\u0430\u0446\u0438), \u0434\u043e\u0440\u0438 \u043a\u043e\u0433\u0430\u0442\u043e \u043e\u043f\u0446\u0438\u044f\u0442\u0430 \"\u0418\u0437\u0433\u043e\u0432\u0430\u0440\u044f\u0439 \u0432\u044a\u0432\u0435\u0434\u0435\u043d\u0438\u0442\u0435 \u0431\u0443\u043a\u0432\u0438 \u0438\u043b\u0438 \u0437\u043d\u0430\u0446\u0438\" \u0435 \u0438\u0437\u043a\u043b\u044e\u0447\u0435\u043d\u0430."
+    },
+    {
+      "language": "da",
+      "displayName": "Opl\u00e6s symboler",
+      "description": "Giver dig mulighed for at h\u00f8re de ikke-alfa-numeriske tegn, du skriver, selv hvis opl\u00e6sning af tegn er sl\u00e5et fra."
+    },
+    {
+      "language": "de",
+      "displayName": "Symbol-Ansagen",
+      "description": "Erm\u00f6glicht das Anh\u00f6ren der getippten Symbole (keine alphanumerische Zeichen oder Leerzeichen), auch wenn das Sprechen von Zeichen ausgeschaltet ist."
+    },
+    {
+      "language": "de_CH",
+      "displayName": "Symbol-Ansagen",
+      "description": "Erm\u00f6glicht das Anh\u00f6ren der getippten Symbole (keine alphanumerische Zeichen oder Leerzeichen), auch wenn das Sprechen von Zeichen ausgeschaltet ist."
+    },
+    {
+      "language": "es",
+      "displayName": "Report Symbols",
+      "description": "Permite escuchar los s\u00edmbolos tecleados (caracteres no alfanum\u00e9ricos o en blanco), incluso cuando la verbalizaci\u00f3n de caracteres est\u00e9 desactivada."
+    },
+    {
+      "language": "fa",
+      "displayName": "\u0627\u0639\u0644\u0627\u0645\u0650 \u0646\u0645\u0627\u062f\u0647\u0627",
+      "description": "\u0627\u0645\u06a9\u0627\u0646\u0650 \u0634\u0646\u06cc\u062f\u0646\u0650 \u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u062a\u0627\u06cc\u067e\u200c\u0634\u062f\u0647 (\u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u063a\u06cc\u0631 \u0627\u0644\u0641\u0628\u0627\u200c\u0639\u062f\u062f\u06cc \u0648 \u0646\u0645\u0627\u062f\u0647\u0627\u06cc \u062e\u0627\u0644\u06cc) \u0631\u0627\u060c \u062d\u062a\u06cc \u062f\u0631 \u0635\u0648\u0631\u062a\u06cc \u06a9\u0647 \u062e\u0648\u0627\u0646\u062f\u0646\u0650 \u0646\u0648\u06cc\u0633\u0647\u200c\u0647\u0627 \u063a\u06cc\u0631\u0641\u0639\u0627\u0644 \u0628\u0627\u0634\u062f \u0641\u0631\u0627\u0647\u0645 \u0645\u06cc\u06a9\u0646\u062f."
+    },
+    {
+      "language": "fi",
+      "displayName": "Puhu symbolit",
+      "description": "Mahdollistaa kirjoitettujen symbolien (ei-aakkosnumeeristen ja tyhj\u00e4merkkien) kuulemisen, vaikka merkkien puhuminen on poistettu k\u00e4yt\u00f6st\u00e4."
+    },
+    {
+      "language": "fr",
+      "displayName": "Report Symbols",
+      "description": "Permet d'entendre les symboles \u00e9crits (caract\u00e8res non alphanum\u00e9riques ou blancs), m\u00eame si la verbalisation des caract\u00e8res \u00e9crits est d\u00e9sactiv\u00e9e."
+    },
+    {
+      "language": "gl",
+      "displayName": "Report Symbols",
+      "description": "Permite escoitar os s\u00edmbolos tecleados (car\u00e1cteres non alfanum\u00e9ricos ou en branco), incluso cando a fala de car\u00e1cteres estea desactivada."
+    },
+    {
+      "language": "he",
+      "displayName": "\u05d3\u05d9\u05d5\u05d5\u05d7 \u05e1\u05de\u05dc\u05d9\u05dd",
+      "description": "\u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05d4\u05d0\u05d6\u05d9\u05df \u05dc\u05e1\u05de\u05dc\u05d9\u05dd \u05e9\u05d4\u05d5\u05e7\u05dc\u05d3\u05d5 (\u05dc\u05d0 \u05ea\u05d5\u05d5\u05d9\u05dd \u05d0\u05dc\u05e4\u05d0\u05e0\u05d5\u05de\u05e8\u05d9\u05d9\u05dd), \u05d2\u05dd \u05db\u05d0\u05e9\u05e8 \u05d4\u05d3\u05d9\u05d1\u05d5\u05e8 \u05e2\u05dc \u05ea\u05d5\u05d5\u05d9\u05dd \u05db\u05d1\u05d5\u05d9."
+    },
+    {
+      "language": "hr",
+      "displayName": "Javi znakove",
+      "description": "Omogu\u0107uje slu\u0161anje utipkanih znakova (nealfanumeri\u010dkih znakova ili praznih znakova), \u010dak i kad je izgovaranje utipkanih znakova isklju\u010deno."
+    },
+    {
+      "language": "hu",
+      "displayName": "Karakterbejelent\u0151",
+      "description": "A be\u00edrt karakterek meghallgat\u00e1sa (nem alfanumerikus, vagy \u00fcres karakterek), akkor is, ha a karakterek bemond\u00e1sa ki van kapcsolva."
+    },
+    {
+      "language": "it",
+      "displayName": "Report Symbols",
+      "description": "Consente la lettura dei simboli digitati (caratteri non alfanumerici), anche quando la lettura caratteri digitati \u00e8 disattivata."
+    },
+    {
+      "language": "lt",
+      "displayName": "Report Symbols",
+      "description": "Leid\u017eia i\u0161klausyti para\u0161ytus simbolius (ne raidinius ir ne skaitinius arba tu\u0161\u010dius ra\u0161menis), net jeigu ir i\u0161jungtas \u012fvedam\u0173 simboli\u0173 tarimas."
+    },
+    {
+      "language": "pl",
+      "displayName": "Report Symbols",
+      "description": "Wymawia wpisywane znaki (niealfanumeryczne lub puste), nawet wtedy, kiedy echo znak\u00f3w jest wy\u0142\u0105czone."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Informar S\u00edmbolos",
+      "description": "Permite ouvir os s\u00edmbolos digitados (caracteres n\u00e3o alfanum\u00e9ricos ou invis\u00edveis/em branco), mesmo quando a fala de caracteres est\u00e1 desativada."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Anunciar s\u00edmbolos",
+      "description": "Permite ouvir os s\u00edmbolos digitados (caracteres n\u00e3o alfanum\u00e9ricos ou invis\u00edveis), mesmo quando  a op\u00e7\u00e3o \"Anunciar caracteres\" est\u00e1 desactivada."
+    },
+    {
+      "language": "ro",
+      "displayName": "Report Symbols",
+      "description": "\u00ce\u021bi permite s\u0103 ascul\u021bi simbolurile scrise (caracterele non-alphanumerice), chiar dac\u0103 citirea caracterelor este dezactivat\u0103."
+    },
+    {
+      "language": "ru",
+      "displayName": "Report Symbols",
+      "description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u043f\u0440\u043e\u0441\u043b\u0443\u0448\u0438\u0432\u0430\u0442\u044c \u043d\u0430\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b (\u043d\u0435 \u0431\u0443\u043a\u0432\u0435\u043d\u043d\u043e-\u0446\u0438\u0444\u0440\u043e\u0432\u044b\u0435 \u0438\u043b\u0438 \u043f\u0443\u0441\u0442\u044b\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u044b), \u0434\u0430\u0436\u0435 \u0435\u0441\u043b\u0438 \u043f\u0440\u043e\u0438\u0437\u043d\u043e\u0448\u0435\u043d\u0438\u0435 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u043e."
+    },
+    {
+      "language": "sk",
+      "displayName": "\u010c\u00edta\u0165 nap\u00edsan\u00e9 symboly",
+      "description": "Umo\u017e\u0148uje oznamova\u0165 nap\u00edsan\u00e9 znaky (medzeri a pr\u00e1zdne riadky) aj v pr\u00edpade, ak je vypnut\u00e9 \u010d\u00edtanie nap\u00edsan\u00fdch znakov."
+    },
+    {
+      "language": "sl",
+      "displayName": "Sporo\u010danje Simbolov",
+      "description": "Dovoljuje poslu\u0161ati natipkane simbole (nealfanumeri\u010dne ali prazne znake) tudi, ko je pripovedovanje znakov izklju\u010deno."
+    },
+    {
+      "language": "sr",
+      "displayName": "Prijavljivanje simbola",
+      "description": "Dozvoljava slu\u0161anje ukucanih simbola(znakovi koji nisu alfanumeri\u010dki), \u010dak i kada je izgovor ukucanih znakova isklju\u010den."
+    },
+    {
+      "language": "tr",
+      "displayName": "Sembolleri Bildir",
+      "description": "Karakterlerin konu\u015fmas\u0131 kapal\u0131 olsa bile, yaz\u0131lan sembollerin (alfanumerik olmayan veya bo\u015f karakterler) dinlenmesini sa\u011flar."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u041f\u0440\u043e\u043c\u043e\u0432\u043b\u044f\u043d\u043d\u044f \u0441\u0438\u043c\u0432\u043e\u043b\u0456\u0432",
+      "description": "\u0414\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043f\u0440\u043e\u0441\u043b\u0443\u0445\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u0432\u0432\u0435\u0434\u0435\u043d\u0456 \u0441\u0438\u043c\u0432\u043e\u043b\u0438 (\u043d\u0435\u0430\u043b\u044c\u0444\u0430\u043d\u0443\u043c\u0435\u0440\u0438\u0447\u043d\u0456 \u0447\u0438 \u043f\u043e\u0440\u043e\u0436\u043d\u0456 \u0441\u0438\u043c\u0432\u043e\u043b\u0438), \u043d\u0430\u0432\u0456\u0442\u044c \u044f\u043a\u0449\u043e \u0432 NVDA \u0432\u0438\u043c\u043a\u043d\u0435\u043d\u043e \u043e\u0437\u0432\u0443\u0447\u0435\u043d\u043d\u044f \u0432\u0432\u0435\u0434\u0435\u043d\u0438\u0445 \u0441\u0438\u043c\u0432\u043e\u043b\u0456\u0432."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "\u8bfb\u51fa\u7b26\u53f7",
+      "description": "\u5373\u4f7f NVDA \u7684\u201c\u8bfb\u51fa\u8f93\u5165\u5b57\u7b26\u201d\u529f\u80fd\u5df2\u5173\u95ed\u4e5f\u53ef\u4ee5\u8bfb\u51fa\u952e\u5165\u7684\u7b26\u53f7\uff08\u975e\u5b57\u6bcd\u6570\u5b57\u6216\u7a7a\u767d\u5b57\u7b26\uff09\u3002"
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2297"
 }
