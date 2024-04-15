@@ -74,6 +74,7 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             Security analysis has failed for this add-on.
+            [See GitHub workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
             Please, contact NV Access for more details.
       - name: Close issue
         if: failure()
