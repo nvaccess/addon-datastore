@@ -13,9 +13,8 @@ Add-on authors who wish to have their add-on distributed through the Add-on Stor
 For an overview of the whole Add-on Store, read [the design overview](./docs/design/designOverview.md).
 
 ### About security 
-Ensuring that an add-on is safe to run is a difficult challenge that isn't addressed here.
-However, the metadata for a new submission (add-on release) can be confirmed to match its manifest description.
-Additionally:
+Add-ons are run at user's own risk, add-ons in the add-on store do not undergo human security audits.
+The add-on store includes the following security measures:
 
 - Add-on file integrity can be enforced via a SHA256 checksum.
   - The checksum allows NVDA to ensure that add-on releases are immutable.
