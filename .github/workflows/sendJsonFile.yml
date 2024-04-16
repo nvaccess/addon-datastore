@@ -85,11 +85,11 @@ jobs:
         git add .
         git commit -m "Submit add-on"
         git push origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
-  call-workflow-passing-data:
+    - name: Upload add-on
+      uses: actions/upload-artifact@v4
+      with:
+        name: addon
+        path: addon.nvda-addon
+  codeQL-analysis:
     needs: check-addon
-    uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
-    with:
-      issueNumber: "${{ github.event.issue.number }}"
-      issueAuthorId: ${{ github.event.issue.user.id }}
-      issueAuthorName: ${{ github.event.issue.user.login }}
-      issueTitle: ${{ github.event.issue.title }}
+    uses: ./.github/workflows/codeql-analysis.yml
