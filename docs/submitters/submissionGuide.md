@@ -8,9 +8,11 @@ Submitting an add-on version is done via a GitHub issue form.
 A JSON metadata file is generated from the issue form and the add-on's manifest.
 A detailed description of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 When the issue form is submitted, the JSON file is generated and submitted as a pull request to the repository.
-Security analysis is performedfor the submitted add-on.
-If there are detected vulnerabilities, a link to a GitHub workflow will be shown in the issue. You can open this link and download artifacts containing the results of the analysis.
-Unzip artifacts and open the .sarif file in your preferred editor. Then, you can search properties like "region" to investigate where vulnerabilities are located in your code.
+Security analysis is performed for the submitted add-on.
+If there are detected vulnerabilities, a link to a GitHub workflow will be shown in the issue.
+You can open this link and download artifacts containing the results of the analysis.
+Unzip artifacts and open the .sarif file in your preferred editor.
+For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component/).
 
 Automated validation checks are run against the pull request.
 If there are validation errors, they will be commented on the pull request.
@@ -45,4 +47,3 @@ The add-on should soon become available in the store.
 Optional.
 Some authors may wish to include their add-on in the translations system.
 To do this, follow the steps to register the add-on in [mrconfig](https://github.com/nvaccess/mrconfig/blob/master/readme.md#steps-for-addon-authors).
-for 
