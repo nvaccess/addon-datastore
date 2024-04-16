@@ -13,6 +13,9 @@ If there are detected vulnerabilities, a link to a GitHub workflow will be shown
 You can open this link and download artifacts containing the results of the analysis.
 Unzip artifacts and open the .sarif file in your preferred editor.
 For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component/).
+NV Access will determine whether or not the detection should prevent the add-on from being accepted.
+Please review the warnings and consider whether you want to fix this in the add-on.
+If you can provide more context on the failure in the submission, please do.
 
 Automated validation checks are run against the pull request.
 If there are validation errors, they will be commented on the pull request.
