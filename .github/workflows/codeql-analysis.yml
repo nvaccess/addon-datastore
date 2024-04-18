@@ -76,16 +76,3 @@ jobs:
             Security analysis has failed for this add-on.
             [See GitHub workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
             Please, contact NV Access for more details.
-      - name: Close issue
-        if: failure()
-        uses: peter-evans/close-issue@v3
-        with:
-          issue-number: ${{ github.event.issue.number }}
-  call-workflow-passing-data:
-    needs: analyze
-    uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
-    with:
-      issueNumber: "${{ github.event.issue.number }}"
-      issueAuthorId: ${{ github.event.issue.user.id }}
-      issueAuthorName: ${{ github.event.issue.user.login }}
-      issueTitle: ${{ github.event.issue.title }}
