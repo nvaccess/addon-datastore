@@ -215,8 +215,11 @@ jobs:
       uses: peter-evans/close-issue@v3
       with:
         issue-number: ${{ inputs.issueNumber }}
+  codeQL-analysis:
+    needs: createPullRequest
+    uses: ./.github/workflows/codeql-analysis.yml
   mergeToMaster:
-    needs: [getAddonId, createPullRequest]
+    needs: [getAddonId, createPullRequest, codeQL-analysis]
     permissions:
       contents: write
       pull-requests: write
