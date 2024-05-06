@@ -9,17 +9,16 @@ name: CodeQL security analysis
 
 on:
   workflow_call:
-
 jobs:
   analyze:
     name: Analyze add-on
     runs-on: windows-latest
     permissions:
       actions: read
-      contents: read
+      contents: write
       security-events: write
       issues: write
-
+      pull-requests: write
     strategy:
       fail-fast: false
       matrix:
@@ -27,11 +26,9 @@ jobs:
         language: ['javascript', 'python']
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
         # Learn more about CodeQL language support at https://git.io/codeql-language-support
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
@@ -52,6 +49,10 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
+      - name: Download add-on again
+        uses: actions/download-artifact@v4
+        with:
+          name: addon
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
@@ -76,3 +77,15 @@ jobs:
             Security analysis has failed for this add-on.
             [See GitHub workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
             Please, contact NV Access for more details.
+      - name: Create pull request
+        id: cpr
+        if: failure()
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: trustedAddons.json
+          title: Add trusted add-on (${{ github.event.issue.title }})
+          branch: trustedAddon${{ github.event.issue.number }}
+          commit-message: Add trusted add-on
+          body: "This add-on needs to be reviewed by NV Access due to security analysis failure"
+          author: github-actions <github-actions@github.com>
+          delete-branch: true
