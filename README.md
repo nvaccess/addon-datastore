@@ -24,7 +24,8 @@ The add-on store includes the following security measures:
 
 ### Human review process / code audit
 - NV Access doesn't require a manual review of the add-on (code or user experience) itself before the add-on submission.
-- NV Access manually maintains a list of approved submitters with permission to submit an add-on to the store
+- NV Access manually maintains a list of approved submitters with permission to submit an add-on to the store.
+The process NV Access follows is described [here](./docs/dev/submissionReview.md#approving-an-author-to-submit-to-a-particular-add-on-id-for-the-first-time).
 - You are welcome to review code / UX of add-ons and provide that feedback directly to add-on authors.
 - The SHA256 checksum of the `.nvda-addon` prevents undetected changes.
 - Add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
