@@ -49,6 +49,10 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
+      - name: Download add-on metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7

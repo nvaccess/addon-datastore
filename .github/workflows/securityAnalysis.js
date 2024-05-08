@@ -1,14 +1,12 @@
 module.exports = ({github, core}, path) => {
   const fs = require('fs');
-  const crypto = require('crypto');
-  const addon = fs.readFileSync('addon.nvda-addon');
-  const hash = crypto.createHash('sha256');
-  hash.update(addon);
-  const hex = hash.digest('hex');
-  console.log(hex);
-  const trustedAddons = fs.readFileSync('trustedAddons.json');
-  const trustedAddonsData = JSON.parse(trustedAddons);
-  if (trustedAddonsData.trustedAddons.includes(hex)) {
+  const addonMetadataContents = fs.readFileSync('addonMetadata.json');
+  const addonMetadata = JSON.parse(addonMetadataContents);
+  const addonId = addonMetadata.addonId;
+  const sha256 = addonMetadata.sha256;
+  const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
+  const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
+  if (reviewedAddonsData.addonId !== undefined && reviewedAddonsData.addonId.includes(sha256)) {
     core.info('Analysis skipped');
    return
   }
@@ -19,9 +17,12 @@ module.exports = ({github, core}, path) => {
   if (results.length === 0) {
     core.info("Security analysis succeeded");
   } else {
-    trustedAddonsData.trustedAddons.push(hex);
-    const stringified = JSON.stringify(trustedAddonsData, null, 2);
-    fs.writeFileSync('trustedAddons.json', stringified);
+    if (reviewedAddonsData.addonId === undefined) {
+      reviewedAddonsData.id = [];
+	}
+    reviewedAddonsData.addonId.push(sha256);
+    const stringified = JSON.stringify(reviewedAddonsData, null, 2);
+    fs.writeFileSync('reviewedAddons.json', stringified);
     core.setFailed("Security analysis failed");
   }
 };

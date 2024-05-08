@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
       - name: Determine add-on file name
         uses: actions/github-script@v7
         id: getAddonFileName
@@ -62,11 +64,8 @@ jobs:
             const addonId = "${{ steps.getAddonId.outputs.result }}"
             return addonId.replace(/[^a-zA-Z0-9]/g, "")
       - name: Copy add-on metadata file  
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
-            await exec.exec('copy', [addonFileName, 'addonMetadata.json'])
+        run: |
+          Copy-Item ${{ steps.getAddonFileName.outputs.result }} addonMetadata.json
       - name: Upload add-on
         uses: actions/upload-artifact@v4
         with:
