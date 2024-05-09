@@ -83,9 +83,9 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: trustedAddons.json
-          title: Add trusted add-on (${{ github.event.issue.title }})
-          branch: trustedAddon${{ github.event.issue.number }}
-          commit-message: Add trusted add-on
+          title: Add reviewed add-on (${{ github.event.issue.title }})
+          branch: reviewedAddon${{ github.event.issue.number }}
+          commit-message: Add reviewed add-on (${{ github.event.issue.title }})
           body: "This add-on needs to be reviewed by NV Access due to security analysis failure"
           author: github-actions <github-actions@github.com>
           delete-branch: true
