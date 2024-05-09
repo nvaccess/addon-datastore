@@ -68,6 +68,7 @@ jobs:
         with:
           name: results-${{ matrix.language }}
           path: results/*.sarif
+          overwrite: true
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
