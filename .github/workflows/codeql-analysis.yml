@@ -76,8 +76,9 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             Security analysis has failed for this add-on.
-            [See GitHub workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            Please, contact NV Access for more details.
+            Please, don't close this issue.
+            You can open this link and [download artifacts containing the results of the analysis](${{ steps.uploadResults.outputs.artifact-url }}). Unzip artifacts and open the .sarif file in your preferred editor. For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component). NV Access will determine whether or not the detection should prevent the add-on from being accepted. Please review the warnings and consider whether you want to fix this in the add-on. If you can provide more context on the failure in the submission, please do.
+            See the [submission guide](https://github.com/nvaccess/addon-datastore/blob/master/docs/submitters/submissionGuide.md) for more details.
       - name: Create pull request
         id: cpr
         if: failure()
