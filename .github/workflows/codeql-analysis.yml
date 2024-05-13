@@ -75,9 +75,9 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: reviewedAddons.json
-          title: Add reviewed add-on (${{ github.event.issue.title }})
+          title: Add reviewed add-on (${{ setSecurityAnalysisStatus.outputs.addonId }})
           branch: reviewedAddon${{ github.event.issue.number }}
-          commit-message: Add reviewed add-on (${{ github.event.issue.title }})
+          commit-message: Add reviewed add-on (${{ setSecurityAnalysisStatus.outputs.addonId }})
           body: "This add-on needs to be reviewed by NV Access due to security analysis failure"
           author: github-actions <github-actions@github.com>
           delete-branch: true
@@ -167,6 +167,3 @@ jobs:
             You can open this link and [download artifacts containing the results of the analysis](${{ steps.uploadResults.outputs.artifact-url }}).
             Unzip artifacts and open the .sarif file in your preferred editor.
             For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component).
-            Please, don't close this issue.
-            Your add-on will be accepted soon.
-

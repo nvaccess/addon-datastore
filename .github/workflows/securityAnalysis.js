@@ -3,6 +3,7 @@ module.exports = ({core}, path) => {
   const addonMetadataContents = fs.readFileSync('addonMetadata.json');
   const addonMetadata = JSON.parse(addonMetadataContents);
   const addonId = addonMetadata.addonId;
+  core.setOutput('addonId', addonId);
   const sha256 = addonMetadata.sha256;
   const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
   const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
