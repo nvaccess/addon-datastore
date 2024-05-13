@@ -75,9 +75,9 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           add-paths: reviewedAddons.json
-          title: Add reviewed add-on (${{ setSecurityAnalysisStatus.outputs.addonId }})
+          title: Add reviewed add-on (${{ steps.setSecurityAnalysisStatus.outputs.addonId }})
           branch: reviewedAddon${{ github.event.issue.number }}
-          commit-message: Add reviewed add-on (${{ setSecurityAnalysisStatus.outputs.addonId }})
+          commit-message: Add reviewed add-on (${{ steps.setSecurityAnalysisStatus.outputs.addonId }})
           body: "This add-on needs to be reviewed by NV Access due to security analysis failure"
           author: github-actions <github-actions@github.com>
           delete-branch: true
