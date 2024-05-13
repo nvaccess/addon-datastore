@@ -8,7 +8,7 @@ module.exports = ({core}, path) => {
   const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
   if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(sha256)) {
     core.info('Analysis skipped');
-   return;
+    return;
   }
   const contents = fs.readFileSync(path);
   const data = JSON.parse(contents);
@@ -20,7 +20,7 @@ module.exports = ({core}, path) => {
   }
   if (reviewedAddonsData[addonId] === undefined) {
     reviewedAddonsData[addonId] = [];
-	}
+  }
   reviewedAddonsData[addonId].push(sha256);
   const stringified = JSON.stringify(reviewedAddonsData, null, 2);
   fs.writeFileSync('reviewedAddons.json', stringified);
