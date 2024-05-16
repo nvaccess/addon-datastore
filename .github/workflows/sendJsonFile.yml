@@ -98,6 +98,3 @@ jobs:
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
       issueTitle: ${{ github.event.issue.title }}
-  codeQL-analysis:
-    needs: check-addon
-    uses: ./.github/workflows/codeql-analysis.yml

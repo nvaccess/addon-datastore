@@ -9,17 +9,16 @@ name: CodeQL security analysis
 
 on:
   workflow_call:
-
 jobs:
-  analyze:
-    name: Analyze add-on
+  analyzeExcludingWarnings:
+    name: Analyze add-on excluding warnings
     runs-on: windows-latest
     permissions:
       actions: read
-      contents: read
+      contents: write
       security-events: write
       issues: write
-
+      pull-requests: write
     strategy:
       fail-fast: false
       matrix:
@@ -27,31 +26,33 @@ jobs:
         language: ['javascript', 'python']
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
         # Learn more about CodeQL language support at https://git.io/codeql-language-support
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
           name: addon
       - name: Unzip add-on
         run: |
-          Move addon.nvda-addon addon.zip
+          Copy-Item addon.nvda-addon addon.zip
           Expand-Archive addon.zip
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
-          config-file: ./.github/codeql/codeql-config.yml
+          config-file: ./.github/codeql/codeql-config-excluding-warnings.yml
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
           output: results
+      - name: Download add-on metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
@@ -67,6 +68,19 @@ jobs:
         with:
           name: results-${{ matrix.language }}
           path: results/*.sarif
+          overwrite: true
+      - name: Create pull request
+        id: cpr
+        if: failure()
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: reviewedAddons.json
+          title: Add reviewed add-on (${{ steps.setSecurityAnalysisStatus.outputs.addonId }})
+          branch: reviewedAddon${{ github.event.issue.number }}
+          commit-message: Add reviewed add-on (${{ steps.setSecurityAnalysisStatus.outputs.addonId }})
+          body: "This add-on needs to be reviewed by NV Access due to security analysis failure"
+          author: github-actions <github-actions@github.com>
+          delete-branch: true
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -74,5 +88,82 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             Security analysis has failed for this add-on.
-            [See GitHub workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            Please, contact NV Access for more details.
+            You can open this link and [download artifacts containing the results of the analysis](${{ steps.uploadResults.outputs.artifact-url }}).
+            Unzip artifacts and open the .sarif file in your preferred editor.
+            For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component).
+            NV Access will determine whether or not the detection should prevent the add-on from being accepted.
+            Please review the warnings and consider fixing this in the add-on.
+            If you can provide more context on the failure in the submission, please do.
+            See the [submission guide](https://github.com/nvaccess/addon-datastore/blob/master/docs/submitters/submissionGuide.md) for more details.
+            Please, don't close this issue.
+            Wait until #${{ steps.cpr.outputs.pull-request-number }} is merged.
+  analyze:
+    name: Analyze add-on
+    needs: analyzeExcludingWarnings
+    continue-on-error: true
+    runs-on: windows-latest
+    permissions:
+      actions: read
+      security-events: write
+      issues: write
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ 3.11 ]
+        language: ['javascript', 'python']
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # Learn more about CodeQL language support at https://git.io/codeql-language-support
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Download add-on
+        uses: actions/download-artifact@v4
+        with:
+          name: addon
+      - name: Unzip add-on
+        run: |
+          Copy-Item addon.nvda-addon addon.zip
+          Expand-Archive addon.zip
+      # Initializes the CodeQL tools for scanning.
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          config-file: ./.github/codeql/codeql-config.yml
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          output: results
+      - name: Download add-on metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: addonMetadata
+      - name: Set security analysis status
+        id: setSecurityAnalysisStatus
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
+            const path = 'results/${{ matrix.language }}.sarif'
+            setSecurityAnalysisStatus({core}, path)
+      - name: Upload results
+        id: uploadResults
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.language }}
+          path: results/*.sarif
+          overwrite: true
+      - name: Warn if analysis fails
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Security analysis has reported warnings for this add-on.
+            This won't prevent its acceptance to the store, but you may want to review warnings to improve the quality of your code for future versions.
+            You can open this link and [download artifacts containing the results of the analysis](${{ steps.uploadResults.outputs.artifact-url }}).
+            Unzip artifacts and open the .sarif file in your preferred editor.
+            For example, you can use [Microsoft's Sarif web based reader](https://microsoft.github.io/sarif-web-component).
