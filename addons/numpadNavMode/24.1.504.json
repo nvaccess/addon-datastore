@@ -1,0 +1,86 @@
+{
+	"addonId": "numpadNavMode",
+	"displayName": "Numpad Nav Mode",
+	"URL": "https://github.com/opensourcesys/numpadNavMode/releases/download/v24.1.504-dev/numpadNavMode-24.1.504.nvda-addon",
+	"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+	"sha256": "0b70ec0058be0bfe174763871e3f05ddf2634e97d784669a9edeb863c774973b",
+	"addonVersionName": "24.1.504",
+	"addonVersionNumber": {
+		"major": 24,
+		"minor": 1,
+		"patch": 504
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2024,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Luke Davis",
+	"sourceURL": "https://github.com/opensourcesys/numpadNavMode",
+	"license": "GPL v2",
+	"homepage": "https://github.com/opensourcesys/numpadNavMode/blob/master/readme.md",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "bg",
+			"displayName": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0440\u0435\u0436\u0438\u043c \u043d\u0430 \u0446\u0438\u0444\u0440\u043e\u0432\u0438\u044f \u0431\u043b\u043e\u043a (Numpad Nav Mode)",
+			"description": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u043f\u0440\u0435\u0432\u043a\u043b\u044e\u0447\u0432\u0430\u043d\u0435 \u043d\u0430 \u0446\u0438\u0444\u0440\u043e\u0432\u0430\u0442\u0430 \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430 \u043c\u0435\u0436\u0434\u0443 \u0440\u0435\u0436\u0438\u043c\u0430 \u043d\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043d\u0430 NVDA \u0438 \u0440\u0435\u0436\u0438\u043c\u0430 \u043d\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043d\u0430 Windows.\n\u041e\u0441\u043e\u0431\u0435\u043d\u043e \u043f\u043e\u043b\u0435\u0437\u043d\u043e, \u0430\u043a\u043e \u043f\u0440\u0435\u043c\u0438\u043d\u0430\u0432\u0430\u0442\u0435 \u043e\u0442 JAWS. \u0418\u043b\u0438 \u0437\u0430 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u0438 \u043d\u0430 \u043b\u0430\u043f\u0442\u043e\u043f\u0438, \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0449\u0438 \u043b\u0430\u043f\u0442\u043e\u043f \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u043d\u0430\u0442\u0430 \u043f\u043e\u0434\u0440\u0435\u0434\u0431\u0430, \u043d\u043e \u043a\u043e\u0438\u0442\u043e \u0438\u043c\u0430\u0442 \u0446\u0438\u0444\u0440\u043e\u0432\u0430 \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u0430 \u0438 \u0438\u0441\u043a\u0430\u0442 \u0434\u0430 \u044f \u0438\u0437\u043f\u043e\u043b\u0437\u0432\u0430\u0442 \u0437\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u0441\u044a\u0441 \u0441\u0442\u0440\u0435\u043b\u043a\u0438 \u0438 \u0442.\u043d.\n\u0414\u043e\u0431\u0430\u0432\u043a\u0430\u0442\u0430 \u0441\u044a\u0449\u043e \u0442\u0430\u043a\u0430 \u0434\u0430\u0432\u0430 \u043a\u043e\u043d\u0442\u0440\u043e\u043b \u0432\u044a\u0440\u0445\u0443 \u0441\u044a\u0441\u0442\u043e\u044f\u043d\u0438\u0435\u0442\u043e \u043d\u0430 Num Lock \u043f\u0440\u0438 \u0441\u0442\u0430\u0440\u0442\u0438\u0440\u0430\u043d\u0435 \u043d\u0430 NVDA \u0438\u043b\u0438 \u043f\u0440\u0438 \u043f\u0440\u043e\u043c\u044f\u043d\u0430 \u043d\u0430 \u043a\u043e\u043d\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0438\u044f \u043f\u0440\u043e\u0444\u0438\u043b."
+		},
+		{
+			"language": "de",
+			"displayName": "Navigationsmodus \u00fcber den Nummernblock",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles."
+		},
+		{
+			"language": "es",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permite alternar el bloque num\u00e9rico entre el modo de navegaci\u00f3n de NVDA y el modo de navegaci\u00f3n de Windows.\nEspecialmente \u00fatil si se migra desde Jaws, o para usuarios de port\u00e1tiles que prefieren el modo port\u00e1til, pero que tienen un bloque num\u00e9rico y quieren usarlo para pulsar las flechas, etc.\nEl complemento tambi\u00e9n da control del estado del bloqueo num\u00e9rico al arrancar NVDA o cuando se cambia de perfil."
+		},
+		{
+			"language": "fi",
+			"displayName": "Laskinn\u00e4pp\u00e4imist\u00f6n navigointitila",
+			"description": "Mahdollistaa laskinn\u00e4pp\u00e4imist\u00f6n vaihtamisen NVDA- ja Windows-navigointitilojen v\u00e4lill\u00e4.\nT\u00e4m\u00e4 on eritt\u00e4in hy\u00f6dyllist\u00e4 JAWSista siirrytt\u00e4ess\u00e4 tai kannettavien tietokoneiden k\u00e4ytt\u00e4jille, jotka k\u00e4ytt\u00e4v\u00e4t mieluummin kannettavan n\u00e4pp\u00e4imist\u00f6asettelua mutta joilla on laskinn\u00e4pp\u00e4imist\u00f6 ja haluavat k\u00e4ytt\u00e4\u00e4 sit\u00e4 nuolin\u00e4pp\u00e4imi\u00e4 varten jne.\nLis\u00e4osa voi my\u00f6s hallita Numlockin tilaa NVDA:ta k\u00e4ynnistett\u00e4ess\u00e4 tai profiilia vaihdettaessa."
+		},
+		{
+			"language": "fr",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permet de basculer le pav\u00e9 num\u00e9rique entre le mode de navigation NVDA et le mode de navigation Windows.\nParticuli\u00e8rement utile si la migration est \u00e0 partir de Jaws ; ou pour les utilisateurs d'ordinateurs portables pr\u00e9f\u00e9rant le mode ordinateur portable, mais qui disposent d'un pav\u00e9 num\u00e9rique et souhaitent l'utiliser pour les touches fl\u00e9ch\u00e9es, etc.\nL'extension permet \u00e9galement de contr\u00f4ler l'\u00e9tat du verrouillage num\u00e9rique lors du d\u00e9marrage de NVDA ou des changements de profils."
+		},
+		{
+			"language": "gl",
+			"displayName": "Numpad Nav Mode",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Modo Numpad Nav",
+			"description": "Permite alternar o teclado num\u00e9rico entre o modo de navega\u00e7\u00e3o NVDA e o modo de navega\u00e7\u00e3o Windows.\nEspecialmente \u00fatil se estiver a migrar do Jaws; ou para utilizadores de port\u00e1teis que preferem o modo port\u00e1til, mas que t\u00eam um teclado num\u00e9rico e o querem usar para as teclas de setas, etc.\nO add-on tamb\u00e9m permite controlar o estado do numlock ao iniciar o NVDA ou ao mudar de perfil."
+		},
+		{
+			"language": "ro",
+			"displayName": "Numpad Nav Mode",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles."
+		},
+		{
+			"language": "tr",
+			"displayName": "Say\u0131sal Tu\u015f Tak\u0131m\u0131 gezinme Modu",
+			"description": "Say\u0131sal tu\u015f tak\u0131m\u0131n\u0131n NVDA gezinme modu ile Windows gezinme modu aras\u0131nda ge\u00e7i\u015f yapmas\u0131na olanak sa\u011flar.\n\u00d6zellikle Jaws'tan ge\u00e7i\u015f yap\u0131l\u0131yorsa kullan\u0131\u015fl\u0131d\u0131r. Ayr\u0131ca diz\u00fcst\u00fc bilgisayar modunu tercih eden ancak say\u0131sal tu\u015f tak\u0131m\u0131na sahip olan ve bunu ok tu\u015flar\u0131 vb. i\u00e7in kullanmak isteyen diz\u00fcst\u00fc bilgisayar kullan\u0131c\u0131lar\u0131 i\u00e7in de faydal\u0131d\u0131r.\nEklenti ayn\u0131 zamanda NVDA'y\u0131 ba\u015flat\u0131rken veya profilleri de\u011fi\u015ftirirken Numara kilidi durumunun kontrol\u00fcn\u00fc de sa\u011flar."
+		},
+		{
+			"language": "uk",
+			"displayName": "\u0420\u0435\u0436\u0438\u043c \u043d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457 \u0437\u0430 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043e\u044e \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0457 \u043a\u043b\u0430\u0432\u0456\u0430\u0442\u0443\u0440\u0438",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "\u6570\u5b57\u952e\u76d8\u6a21\u5f0f\u5207\u6362",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles."
+		}
+	]
+}
