@@ -284,7 +284,8 @@ jobs:
           body: |
             VirusTotal has flagged this add-on as malicious.
             You can open this link and [download artifacts containing the results of the analysis](${{ steps.uploadResults.outputs.artifact-url }}).
-            If you think this is a false positive or want more details, contact NV Access.
+            Please contact the flagged security vendors to get them to review and unflag the false positive.
+            Please ask here or email info@nvaccess.org if you need assistance with this process.
   codeQL-analysis:
     needs: [createPullRequest, virusTotal-analysis]
     uses: ./.github/workflows/codeql-analysis.yml
