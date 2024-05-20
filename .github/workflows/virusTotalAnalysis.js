@@ -6,6 +6,8 @@ module.exports = ({core}) => {
   const addonId = addonMetadata.addonId;
   core.setOutput('addonId', addonId);
   const sha256 = addonMetadata.sha256;
+  const analysisUrl = `https://www.virustotal.com/gui/file/${sha256}`;
+  core.setOutput('analysisUrl', analysisUrl);
   const falsePositiveAddonsContents = fs.readFileSync('falsePositiveAddons.json');
   const falsePositiveAddonsData = JSON.parse(falsePositiveAddonsContents);
   if (falsePositiveAddonsData[addonId] !== undefined && falsePositiveAddonsData[addonId].includes(sha256)) {
