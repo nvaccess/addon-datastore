@@ -21,7 +21,9 @@ The add-on store includes the following security measures:
 - [Code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) can detect vulnerabilities in Python and JavaScript code included in submitted add-ons.
   - NV Access can manage [code scanning alerts](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts), available from the Code scanning link from the [Security page](https://github.com/nvaccess/addon-datastore/security).
 - [Virus Total CLI](https://virustotal.github.io/vt-cli) is used to scan submitted add-ons.
-If malicious content is detected, the add-on will need to be manually approved by NV Access and won't be automatically included in the store.
+If malicious content is detected, the add-on will not be automatically included in the store.
+Please contact the flagged security vendors to get them to review and unflag the false positive. 
+Please email info@nvaccess.org if you need assistance with this process.
 
 
 ### Human review process / code audit
