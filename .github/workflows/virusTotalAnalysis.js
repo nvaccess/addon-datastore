@@ -6,7 +6,6 @@ module.exports = ({core}) => {
   const addonId = addonMetadata.addonId;
   core.setOutput('addonId', addonId);
   const sha256 = addonMetadata.sha256;
-  // const sha256 = '42335e36a209d39905414f0cbc71aa692338e3bf63efce8bc68d6949d2994ccd';
   const falsePositiveAddonsContents = fs.readFileSync('falsePositiveAddons.json');
   const falsePositiveAddonsData = JSON.parse(falsePositiveAddonsContents);
   if (falsePositiveAddonsData[addonId] !== undefined && falsePositiveAddonsData[addonId].includes(sha256)) {
