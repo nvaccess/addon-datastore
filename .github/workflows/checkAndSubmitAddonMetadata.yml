@@ -269,8 +269,8 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: virusTotalManualApproval
-          path: falsePositiveAddons.json
+          name: manualApproval
+          path: reviewedAddons.json
           overwrite: true
       - name: Warn if analysis fails
         if: failure()
@@ -307,7 +307,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
-          add-paths: "*Addons.json"
+          add-paths: reviewedAddons.json
           title: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
           branch: reviewedAddon${{ github.event.issue.number }}
           commit-message: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})

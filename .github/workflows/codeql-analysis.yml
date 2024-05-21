@@ -73,7 +73,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: CodeQLManualApproval
+          name: manualApproval
           path: reviewedAddons.json
       - name: Warn if analysis fails
         if: failure()
