@@ -75,6 +75,7 @@ jobs:
         with:
           name: manualApproval
           path: reviewedAddons.json
+          overwrite: true
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4

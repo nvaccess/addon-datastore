@@ -5,8 +5,7 @@ module.exports = ({core}) => {
   const addonMetadata = JSON.parse(addonMetadataContents);
   const addonId = addonMetadata.addonId;
   core.setOutput('addonId', addonId);
-  // const sha256 = addonMetadata.sha256;
-  const sha256 = '42335e36a209d39905414f0cbc71aa692338e3bf63efce8bc68d6949d2994ccd';
+  const sha256 = addonMetadata.sha256;
   const analysisUrl = `https://www.virustotal.com/gui/file/${sha256}`;
   core.setOutput('analysisUrl', analysisUrl);
   const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
