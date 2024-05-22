@@ -235,7 +235,7 @@ jobs:
       matrix:
         python-version: [ 3.11 ]
     permissions:
-      contents: write
+      contents: read
       issues: write
     env:
       API_KEY: ${{ secrets.virusTotalApiKey }}
