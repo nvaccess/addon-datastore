@@ -236,7 +236,6 @@ jobs:
         python-version: [ 3.11 ]
     permissions:
       contents: write
-      pull-requests: write
       issues: write
     env:
       API_KEY: ${{ secrets.virusTotalApiKey }}
