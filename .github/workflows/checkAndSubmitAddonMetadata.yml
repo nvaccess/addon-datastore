@@ -18,6 +18,7 @@ on:
     secrets:
       virusTotalApiKey:
         required: true
+
 jobs:
   getAddonId:
     runs-on: windows-latest
@@ -310,7 +311,9 @@ jobs:
           title: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
           branch: reviewedAddon${{ github.event.issue.number }}
           commit-message: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
-          body: "This add-on needs to be reviewed by NV Access due to analysis failure"
+          body: |
+          This add-on needs to be reviewed by NV Access due to analysis failure.
+          Review ${{ inputs.issueNumber }} for more information.
           author: github-actions <github-actions@github.com>
           delete-branch: true
       - name: Request to keep issue opened
