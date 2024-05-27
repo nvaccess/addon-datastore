@@ -7,7 +7,7 @@ module.exports = ({context, core}) => {
 	const issueNumber = context.payload.issue.number
 	core.setOutput('issueNumber', issueNumber)
 	// Knowing the submitter may be helpful
-	// const issueSubmitter = context.payload.sender.login
+	// const issueSubmitter = context.payload.issue.user.login
 	//
 	// Field headers, Md == Markdown
 	const header3Prefix = "###"
