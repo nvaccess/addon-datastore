@@ -81,10 +81,10 @@ jobs:
         cd datastore
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout -b ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        git checkout -b ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
         git add .
         git commit -m "Submit add-on"
-        git push origin ${{ github.event.sender.login }}${{ steps.get-data.outputs.issueNumber }}
+        git push origin ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
     - name: Upload add-on
       uses: actions/upload-artifact@v4
       with:
