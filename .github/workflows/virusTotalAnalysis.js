@@ -15,7 +15,7 @@ module.exports = ({core}) => {
     core.info('VirusTotal analysis skipped');
     return;
   }
-  exec(`vt file ${sha256} -k ${process.env.API_KEY} --format json`, (err, stdout, stderr) => {
+  exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
     console.log(`err: ${err}`);
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
