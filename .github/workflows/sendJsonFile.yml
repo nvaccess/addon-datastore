@@ -95,8 +95,8 @@ jobs:
       run: choco install vt-cli
     - name: Scan add-on with VirusTotal
       env:
-        API_KEY: ${{ secrets.virusTotalApiKey }}
-      run: vt scan file -k $env:API_KEY addon.nvda-addon
+        VT_API_KEY: ${{ secrets.VT_API_KEY }}
+      run: vt scan file -k $env:VT_API_KEY addon.nvda-addon
   call-workflow-passing-data:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
@@ -106,4 +106,4 @@ jobs:
       issueAuthorName: ${{ github.event.issue.user.login }}
       issueTitle: ${{ github.event.issue.title }}
     secrets:
-      virusTotalApiKey: ${{ secrets.virusTotalApiKey }}
+      VT_API_KEY: ${{ secrets.VT_API_KEY }}
