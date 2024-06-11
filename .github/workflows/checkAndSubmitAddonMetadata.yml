@@ -15,6 +15,9 @@ on:
       issueTitle:
         required: true
         type: string
+    secrets:
+      virusTotalApiKey:
+        required: true
 
 jobs:
   getAddonId:
@@ -225,11 +228,103 @@ jobs:
       uses: peter-evans/close-issue@v3
       with:
         issue-number: ${{ inputs.issueNumber }}
-  codeQL-analysis:
+
+  virusTotal-analysis:
     needs: createPullRequest
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    permissions:
+      contents: read
+      issues: write
+    env:
+      API_KEY: ${{ secrets.virusTotalApiKey }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Download add-on metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: addonMetadata
+      - name: Install virusTotal
+        run: choco install vt-cli
+      - name: Set Virus Total analysis status
+        id: setVirusTotalAnalysisStatus
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
+            setVirusTotalAnalysisStatus({core})
+      - name: Upload results
+        id: uploadResults
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: VirusTotal
+          path: vt.json
+          overwrite: true
+      - name: Upload manual approval
+        id: uploadManualApproval
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: manualApproval
+          path: reviewedAddons.json
+          overwrite: true
+      - name: Warn if analysis fails
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ inputs.issueNumber }}
+          body: |
+            VirusTotal has flagged this add-on as malicious.
+            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.analysisUrl }}).
+            Please contact the flagged security vendors to get them to review and unflag the false positive.
+            Please ask here or email info@nvaccess.org if you need assistance with this process.
+  codeQL-analysis:
+    needs: [createPullRequest]
     uses: ./.github/workflows/codeql-analysis.yml
+  createManualApproval:
+    needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
+    if: ${{ always() && contains(join(needs.*.result, ','), 'failure') }}
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: reviewedAddons.json
+          title: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
+          branch: reviewedAddon${{ github.event.issue.number }}
+          commit-message: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
+          body: |
+            This add-on needs to be reviewed by NV Access due to analysis failure.
+            Review ${{ inputs.issueNumber }} for more information.
+          author: github-actions <github-actions@github.com>
+          delete-branch: true
+      - name: Request to keep issue opened
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ inputs.issueNumber }}
+          body: |
+            Please, don't close this issue.
+            Wait until #${{ steps.cpr.outputs.pull-request-number }} is merged.
   mergeToMaster:
-    needs: [getAddonId, createPullRequest, codeQL-analysis]
+    needs: [getAddonId, createPullRequest, codeQL-analysis, virusTotal-analysis]
     permissions:
       contents: write
       pull-requests: write
