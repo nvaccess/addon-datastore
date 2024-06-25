@@ -23,13 +23,13 @@ module.exports = ({core}, globPattern) => {
     }
     // Write vtScanUrl to file
     addonMetadata.vtScanUrl = vtScanUrl;
-    stringified = JSON.stringify(addonMetadata);
+    stringified = JSON.stringify(addonMetadata, null, 2);
     fs.writeFileSync(file, stringified);
     // Store the latest vtScanUrl for single file analysis
     core.setOutput('vtScanUrl', vtScanUrl);
     if (apiUsageCount >= 200) {
       core.info('VirusTotal API usage limit reached');
-      return;
+      throw new Error('VirusTotal API usage limit reached');
     }
     apiUsageCount++;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {

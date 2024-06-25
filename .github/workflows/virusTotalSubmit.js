@@ -12,7 +12,7 @@ module.exports = ({core}, globPattern) => {
     const sha256 = addonMetadata.sha256;
     if (apiUsageCount >= 200) {
       core.info('VirusTotal API usage limit reached');
-      return;
+      throw new Error('VirusTotal API usage limit reached');
     }
     apiUsageCount++;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
@@ -43,7 +43,11 @@ module.exports = ({core}, globPattern) => {
             return;
           }
         })
+        // Sleep 20 seconds to avoid rate limiting
+        sleep(20 * 1000);
       })
     });
+    // Sleep 20 seconds to avoid rate limiting
+    sleep(20 * 1000);
   });
 };
