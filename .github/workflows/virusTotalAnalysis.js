@@ -4,6 +4,7 @@ module.exports = ({core}, globPattern) => {
   const fs = require('fs');
   const { exec } = require('child_process');
   files = glob.globSync(globPattern);
+  const apiUsageCount = 0;
   files.forEach(file => {
     const addonMetadataContents = fs.readFileSync(file);
     const addonMetadata = JSON.parse(addonMetadataContents);
@@ -26,10 +27,19 @@ module.exports = ({core}, globPattern) => {
     fs.writeFileSync(file, stringified);
     // Store the latest vtScanUrl for single file analysis
     core.setOutput('vtScanUrl', vtScanUrl);
+    if (apiUsageCount >= 200) {
+      core.info('VirusTotal API usage limit reached');
+      return;
+    }
+    apiUsageCount++;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
-      console.log(`err: ${err}`);
-      console.log(`stdout: ${stdout}`);
-      console.log(`stderr: ${stderr}`);
+      if (stderr !== '' || err !== null) {
+        console.log(`err: ${err}`);
+        console.log(`stdout: ${stdout}`);
+        console.log(`stderr: ${stderr}`);
+        core.setFailed('Failed to get VirusTotal analysis');
+        return;
+      }
       const vtData = JSON.parse(stdout);
       fs.writeFileSync('vt.json', stdout);
       const stats = vtData[0]["last_analysis_stats"];
@@ -47,4 +57,6 @@ module.exports = ({core}, globPattern) => {
       core.setFailed('VirusTotal analysis failed');
     });
   });
+  // Sleep 20 seconds to avoid rate limiting
+  sleep(20 * 1000);
 };

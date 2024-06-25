@@ -3,12 +3,18 @@ const glob = require('glob');
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
   const { exec } = require('child_process');
-  files = glob.globSync(globPattern);
+  const files = glob.globSync(globPattern);
+  const apiUsageCount = 0;
   files.forEach(file => {
     const addonMetadataContents = fs.readFileSync(file);
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
+    if (apiUsageCount >= 200) {
+      core.info('VirusTotal API usage limit reached');
+      return;
+    }
+    apiUsageCount++;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
       if (stderr === '' || err === null || addonMetadata.vtScanUrl !== undefined) {
         // File has been scanned before
@@ -27,6 +33,7 @@ module.exports = ({core}, globPattern) => {
           return;
         }
         // scan downloaded file
+        apiUsageCount++;
         exec(`vt scan file -k ${process.env.VT_API_KEY} ${addonId}.nvda-addon`, (err, stdout, stderr) => {
           if (stderr !== '' || err !== null) {
             console.log(`err: ${err}`);
