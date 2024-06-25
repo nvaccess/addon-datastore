@@ -3,8 +3,8 @@ const glob = require('glob');
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
   const { exec } = require('child_process');
-  var files = glob.globSync(globPattern);
-  const apiUsageCount = 0;
+  const files = glob.globSync(globPattern);
+  var apiUsageCount = 0;
   files.forEach(file => {
     const addonMetadataContents = fs.readFileSync(file);
     const addonMetadata = JSON.parse(addonMetadataContents);

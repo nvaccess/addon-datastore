@@ -10,7 +10,7 @@ jobs:
         matrix:
           python-version: [ 3.11 ]
       permissions:
-        contents: read
+        contents: write
       env:
         VT_API_KEY: ${{ secrets.VT_API_KEY }}
       steps:
