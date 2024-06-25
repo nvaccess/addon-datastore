@@ -60,6 +60,6 @@ module.exports = ({core}, globPattern) => {
       fs.writeFileSync('reviewedAddons.json', stringified);
       core.setFailed('VirusTotal analysis failed');
     });
-    await sleep(20 * 1000);
+    sleep(20 * 1000);
   });
 };
