@@ -8,17 +8,24 @@ module.exports = ({core}, globPattern) => {
     const addonMetadataContents = fs.readFileSync(file);
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
-    core.setOutput('addonId', addonId);
     const sha256 = addonMetadata.sha256;
-    const analysisUrl = `https://www.virustotal.com/gui/file/${sha256}`;
-    console.log(analysisUrl);
-    core.setOutput('analysisUrl', analysisUrl);
+    const vtScanUrl = `https://www.virustotal.com/gui/file/${sha256}`;
     const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
     const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
     if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(sha256)) {
-      core.info('VirusTotal analysis skipped');
+      core.info('VirusTotal analysis skipped, already performed');
       return;
     }
+    if (addonMetadata.vtScanUrl !== undefined) {
+      core.info('VirusTotal analysis skipped, already performed');
+      return;
+    }
+    // Write vtScanUrl to file
+    addonMetadata.vtScanUrl = vtScanUrl;
+    stringified = JSON.stringify(addonMetadata);
+    fs.writeFileSync(file, stringified);
+    // Store the latest vtScanUrl for single file analysis
+    core.setOutput('vtScanUrl', vtScanUrl);
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);

@@ -30,6 +30,16 @@ jobs:
             script: |
               const virusTotalSubmit = require('./.github/workflows/virusTotalSubmit.js')
               virusTotalSubmit({core}, "./addons/*/*.json")
+        - name: Commit and push updated VT urls
+          if: always()
+          run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add .
+            git commit -m "update VT review URLs"
+            git branch -u origin/master
+            git pull
+            git push
         - name: Set Virus Total analysis status
           id: setVirusTotalAnalysisStatus
           uses: actions/github-script@v7
