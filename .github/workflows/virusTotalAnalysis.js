@@ -1,5 +1,9 @@
 const glob = require('glob');
 
+function sleep(n) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, n);
+}
+
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
   const { exec } = require('child_process');
@@ -56,7 +60,6 @@ module.exports = ({core}, globPattern) => {
       fs.writeFileSync('reviewedAddons.json', stringified);
       core.setFailed('VirusTotal analysis failed');
     });
+    await sleep(20 * 1000);
   });
-  // Sleep 20 seconds to avoid rate limiting
-  sleep(20 * 1000);
 };

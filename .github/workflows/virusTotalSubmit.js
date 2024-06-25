@@ -1,5 +1,9 @@
 const glob = require('glob');
 
+function sleep(n) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, n);
+}
+
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
   const { exec } = require('child_process');
