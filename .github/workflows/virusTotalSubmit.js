@@ -10,7 +10,7 @@ module.exports = ({core}, globPattern) => {
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
-      if ((stderr === '' || err === null) && addonMetadata.vtScanUrl !== undefined) {
+      if (stderr === '' || err === null || addonMetadata.vtScanUrl !== undefined) {
         // File has been scanned before
         return;
       }

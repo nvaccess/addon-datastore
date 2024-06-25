@@ -30,6 +30,14 @@ jobs:
             script: |
               const virusTotalSubmit = require('./.github/workflows/virusTotalSubmit.js')
               virusTotalSubmit({core}, "./addons/*/*.json")
+        - name: Set Virus Total analysis status
+          if: always()
+          id: setVirusTotalAnalysisStatus
+          uses: actions/github-script@v7
+          with:
+            script: |
+              const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
+              setVirusTotalAnalysisStatus({core}, "./addons/*/*.json")
         - name: Commit and push updated VT urls
           if: always()
           run: |
@@ -40,13 +48,6 @@ jobs:
             git branch -u origin/master
             git pull
             git push
-        - name: Set Virus Total analysis status
-          id: setVirusTotalAnalysisStatus
-          uses: actions/github-script@v7
-          with:
-            script: |
-              const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
-              setVirusTotalAnalysisStatus({core}, "./addons/*/*.json")
         - name: Upload results
           id: uploadResults
           if: failure()
