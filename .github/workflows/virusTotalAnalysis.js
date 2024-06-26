@@ -45,7 +45,7 @@ module.exports = ({core}, globPattern) => {
         return;
       }
       const vtData = JSON.parse(stdout);
-      fs.writeFileSync('vt.json', stdout);
+      fs.appendFileSync('vt.json', stdout);
       const stats = vtData[0]["last_analysis_stats"];
       const malicious = stats.malicious;
       if (malicious === 0) {
