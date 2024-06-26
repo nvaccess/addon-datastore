@@ -263,7 +263,17 @@
 				"examples": [
 					"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
 				],
-				"title": "The URL of the discussion comment",
+				"title": "Discussion comment URL",
+				"type": "string"
+			},
+			"vtScanUrl": {
+				"$id": "#/properties/vtScanUrl",
+				"default": "",
+				"description": "A URL to the Virus Total scan for the add-on version.",
+				"examples": [
+					"https://www.virustotal.com/gui/file/3fda88d598e9747b2dfadfdfb8930a737c0049e9782392bffcd59ef668821547"
+				],
+				"title": "VirusTotal scan URL",
 				"type": "string"
 			}
 		}
