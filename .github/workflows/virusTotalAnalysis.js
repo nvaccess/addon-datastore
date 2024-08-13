@@ -21,10 +21,6 @@ module.exports = ({core}, globPattern) => {
       core.info('VirusTotal analysis skipped, already performed');
       return;
     }
-    if (addonMetadata.vtScanUrl !== undefined) {
-      core.info('VirusTotal analysis skipped, already performed');
-      return;
-    }
     // Write vtScanUrl to file
     addonMetadata.vtScanUrl = vtScanUrl;
     stringified = JSON.stringify(addonMetadata, null, 2);
