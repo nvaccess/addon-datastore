@@ -20,7 +20,7 @@ module.exports = ({core}, globPattern) => {
     }
     apiUsageCount++;
     exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
-      if (stderr === '' || err === null || addonMetadata.vtScanUrl !== undefined) {
+      if (stderr !== '' || err !== null) {
         // File has been scanned before
         return;
       }
