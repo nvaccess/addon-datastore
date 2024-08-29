@@ -18,7 +18,7 @@ The add-on store includes the following security measures:
 
 - Add-on file integrity can be enforced via a SHA256 checksum.
   - The checksum allows NVDA to ensure that add-on releases are immutable.
-- [Code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) can detect vulnerabilities in Python and JavaScript code included in submitted add-ons.
+- [Code scanning with CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) can detect vulnerabilities in Python code included in submitted add-ons.
   - NV Access can manage [code scanning alerts](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts), available from the Code scanning link from the [Security page](https://github.com/nvaccess/addon-datastore/security).
 - [Virus Total](https://www.virustotal.com/) is used to scan submitted add-ons.
 If malicious content is detected, the add-on will not be automatically included in the store.
