@@ -10,7 +10,6 @@ module.exports = ({core}, globPattern) => {
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
-    const hash = crypto.createHash('sha256');
     exec(
       `curl --fail --silent --show-error --location --output "${addonId}.nvda-addon" "${addonMetadata.URL}"`,
       // increase maxBuffer size to 10GB
@@ -32,6 +31,8 @@ module.exports = ({core}, globPattern) => {
         })
         return;
       }
+      const hash = crypto.createHash('sha256');
+      hash.write("")
       // if hash mismatches, delete the file
       hash.setEncoding('hex');
       const fileStream = fs.createReadStream(`${addonId}.nvda-addon`);
@@ -40,8 +41,9 @@ module.exports = ({core}, globPattern) => {
       });
       fileStream.on('end', () => {
         const fileHash = hash.digest('hex');
+        hash.end();
         if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
-          console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file`);
+          console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file "${file}"`);
           exec(`rm "${file}"`, (err, stdout, stderr) => {
             if (stderr !== '' || err !== null) {
               console.log(`err: ${err}`);

@@ -42,9 +42,13 @@ jobs:
         git commit -m "Delete invalid downloads"
     - name: create PR for deleting invalid downloads
       if: always()
-      run: gh pr create -B ${{ github.ref_name }} -H delInvalidDownloads${{ github.run_number }} --title 'Delete invalid add-ons' --body 'Delete add-ons with invalid download links or invalid file hashes'
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: peter-evans/create-pull-request@v6
+      with:
+        title: Delete invalid add-ons
+        branch: delInvalidDownloads${{ github.run_number }}
+        commit-message: Delete invalid add-ons
+        body: "Delete add-ons with invalid download links or invalid file hashes"
+        author: github-actions <github-actions@github.com>
     - name: Checkout validate repo
       uses: actions/checkout@v4
       with:
