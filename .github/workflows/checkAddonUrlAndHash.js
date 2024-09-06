@@ -27,7 +27,7 @@ module.exports = ({core}, globPattern) => {
             console.log(`err: ${err}`);
             console.log(`stdout: ${stdout}`);
             console.log(`stderr: ${stderr}`);
-            core.setFailed('Failed to delete add-on file');
+            core.setFailed(`Failed to delete add-on file: ${file}`);
             return;
           }
         })
@@ -45,13 +45,23 @@ module.exports = ({core}, globPattern) => {
       fileStream.on('end', () => {
         const fileHash = hash.digest('hex');
         hash.end();
+        // delete downloaded file
+        exec(`rm "${downloadFileName}"`, (err, stdout, stderr) => {
+          if (stderr !== '' || err !== null) {
+            console.log(`err: ${err}`);
+            console.log(`stdout: ${stdout}`);
+            console.log(`stderr: ${stderr}`);
+            console.error(`Failed to delete downloaded add-on file for ${file}`);
+            return;
+          }
+        })
         if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
           console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file "${file}"`);
           exec(`rm "${file}"`, (err, stdout, stderr) => {
             if (stderr !== '' || err !== null) {
               console.log(`err: ${err}`);
               console.log(`stderr: ${stderr}`);
-              core.setFailed('Failed to delete add-on file');
+              core.setFailed(`Failed to delete add-on file: ${file}`);
               return;
             }
           })
