@@ -1,6 +1,5 @@
 const glob = require('glob');
 const crypto = require('crypto');
-const hash = crypto.createHash('sha256');
 
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
@@ -11,6 +10,7 @@ module.exports = ({core}, globPattern) => {
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
+    const hash = crypto.createHash('sha256');
     exec(`curl --fail --silent --show-error --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`, (err, stdout, stderr) => {
       if (stderr !== '' || err !== null) {
         console.log(`err: ${err}`);
