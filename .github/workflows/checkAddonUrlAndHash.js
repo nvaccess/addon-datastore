@@ -26,6 +26,7 @@ module.exports = ({core}, globPattern) => {
             return;
           }
         })
+        return;
       }
       // if hash mismatches, delete the file
       hash.setEncoding('hex');
@@ -39,12 +40,12 @@ module.exports = ({core}, globPattern) => {
           exec(`rm ${file}`, (err, stdout, stderr) => {
             if (stderr !== '' || err !== null) {
               console.log(`err: ${err}`);
-              console.log(`stdout: ${stdout}`);
               console.log(`stderr: ${stderr}`);
               core.setFailed('Failed to delete add-on file');
               return;
             }
           })
+          return;
         }
       })
     });
