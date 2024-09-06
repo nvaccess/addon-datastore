@@ -1,6 +1,6 @@
 const glob = require('glob');
 const crypto = require('crypto');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
