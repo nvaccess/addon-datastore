@@ -37,7 +37,7 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout delInvalidDownloads
+        git checkout -b delInvalidDownloads
         git add ./addons/*/*.json
         git commit -m "Delete invalid downloads"
         git push
