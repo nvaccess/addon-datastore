@@ -85,7 +85,8 @@ jobs:
         git pull
         git add .
         git commit -m "Submit add-on"
-        git push origin ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
+        # Force push to the branch, as we may need to be handling a resubmission attempt
+        git push -f origin ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
     - name: Upload add-on
       uses: actions/upload-artifact@v4
       with:
