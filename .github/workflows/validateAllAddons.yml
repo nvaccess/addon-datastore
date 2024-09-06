@@ -40,7 +40,6 @@ jobs:
         git checkout -b delInvalidDownloads
         git add ./addons/*/*.json
         git commit -m "Delete invalid downloads"
-        git push
     - name: create PR for deleting invalid downloads
       run: gh pr create -B master -H delInvalidDownloads --title 'Delete invalid add-ons' --body 'Delete add-ons with invalid download links or invalid file hashes'
       env:
