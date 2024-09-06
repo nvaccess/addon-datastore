@@ -37,12 +37,12 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout -b delInvalidDownloads
+        git checkout -b delInvalidDownloads${{ github.run_number }}
         git add ./addons/*/*.json
         git commit -m "Delete invalid downloads"
     - name: create PR for deleting invalid downloads
       if: always()
-      run: gh pr create -B master -H delInvalidDownloads --title 'Delete invalid add-ons' --body 'Delete add-ons with invalid download links or invalid file hashes'
+      run: gh pr create -B master -H delInvalidDownloads${{ github.run_number }} --title 'Delete invalid add-ons' --body 'Delete add-ons with invalid download links or invalid file hashes'
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Checkout validate repo
