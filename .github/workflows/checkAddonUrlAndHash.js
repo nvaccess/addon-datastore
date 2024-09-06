@@ -11,7 +11,7 @@ module.exports = ({core}, globPattern) => {
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
-    exec(`curl --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`, (err, stdout, stderr) => {
+    exec(`curl --fail --silent --show-error --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`, (err, stdout, stderr) => {
       if (stderr !== '' || err !== null) {
         console.log(`err: ${err}`);
         console.log(`stdout: ${stdout}`);
