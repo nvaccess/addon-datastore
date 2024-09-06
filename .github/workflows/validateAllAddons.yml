@@ -23,7 +23,7 @@ jobs:
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install addon download validation dependencies
-      run: npm install glob crypto
+      run: npm install glob crypto uuid
     - name: Delete add-ons with invalid downloads
       if: always()
       id: deleteInvalidDownloads
@@ -47,6 +47,7 @@ jobs:
         title: Delete invalid add-ons
         branch: delInvalidDownloads${{ github.run_number }}
         commit-message: Delete invalid add-ons
+        base: ${{ github.ref_name }}
         body: "Delete add-ons with invalid download links or invalid file hashes"
         author: github-actions <github-actions@github.com>
     - name: Checkout validate repo

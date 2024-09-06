@@ -1,5 +1,6 @@
 const glob = require('glob');
 const crypto = require('crypto');
+const uuidv4 = require('uuid/v4');
 
 module.exports = ({core}, globPattern) => {
   const fs = require('fs');
@@ -10,8 +11,9 @@ module.exports = ({core}, globPattern) => {
     const addonMetadata = JSON.parse(addonMetadataContents);
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
+    const downloadFileName = `${uuidv4()}.nvda-addon`;
     exec(
-      `curl --fail --silent --show-error --location --output "${addonId}.nvda-addon" "${addonMetadata.URL}"`,
+      `curl --fail --silent --show-error --location --output "${downloadFileName}" "${addonMetadata.URL}"`,
       // increase maxBuffer size to 10GB
       { maxBuffer: 1024 * 1024 * 1024 * 10 },
       (err, stdout, stderr) => {
@@ -35,7 +37,7 @@ module.exports = ({core}, globPattern) => {
       hash.write("")
       // if hash mismatches, delete the file
       hash.setEncoding('hex');
-      const fileStream = fs.createReadStream(`${addonId}.nvda-addon`);
+      const fileStream = fs.createReadStream(downloadFileName);
       fileStream.on('data', chunk => {
         hash.update(chunk);
       });
