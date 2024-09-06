@@ -40,7 +40,8 @@ module.exports = ({core}, globPattern) => {
       });
       fileStream.on('end', () => {
         const fileHash = hash.digest('hex');
-        if (fileHash !== sha256) {
+        if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
+          console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file`);
           exec(`rm "${file}"`, (err, stdout, stderr) => {
             if (stderr !== '' || err !== null) {
               console.log(`err: ${err}`);
