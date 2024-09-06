@@ -9,9 +9,9 @@ module.exports = ({core}, globPattern) => {
   files.forEach(file => {
     const addonMetadataContents = fs.readFileSync(file);
     const addonMetadata = JSON.parse(addonMetadataContents);
-    const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
     const downloadFileName = `${uuidv4()}.nvda-addon`;
+    // if download fails, delete the addon data file
     exec(
       `curl --fail --silent --show-error --location --output "${downloadFileName}" "${addonMetadata.URL}"`,
       // increase maxBuffer size to 10GB
@@ -33,9 +33,10 @@ module.exports = ({core}, globPattern) => {
         })
         return;
       }
+
+      // if hash mismatches, delete the addon data file
       const hash = crypto.createHash('sha256');
       hash.write("")
-      // if hash mismatches, delete the file
       hash.setEncoding('hex');
       const fileStream = fs.createReadStream(downloadFileName);
       fileStream.on('data', chunk => {

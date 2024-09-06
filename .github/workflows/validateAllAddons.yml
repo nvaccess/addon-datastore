@@ -32,14 +32,6 @@ jobs:
         script: |
           const checkAddonUrlAndHash = require('./.github/workflows/checkAddonUrlAndHash.js')
           checkAddonUrlAndHash({core}, "./addons/*/*.json")
-    - name: Commit and push changes
-      if: always()
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git checkout -b delInvalidDownloads${{ github.run_number }}
-        git add ./addons/*/*.json
-        git commit -m "Delete invalid downloads"
     - name: create PR for deleting invalid downloads
       if: always()
       uses: peter-evans/create-pull-request@v6
@@ -47,9 +39,9 @@ jobs:
         title: Delete invalid add-ons
         branch: delInvalidDownloads${{ github.run_number }}
         commit-message: Delete invalid add-ons
-        base: ${{ github.ref_name }}
         body: "Delete add-ons with invalid download links or invalid file hashes"
         author: github-actions <github-actions@github.com>
+        add-paths: 'addons/*/*.json'
     - name: Checkout validate repo
       uses: actions/checkout@v4
       with:
