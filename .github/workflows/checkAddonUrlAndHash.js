@@ -12,7 +12,7 @@ module.exports = ({core}, globPattern) => {
     const sha256 = addonMetadata.sha256;
     const hash = crypto.createHash('sha256');
     exec(
-      `curl --fail --silent --show-error --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`,
+      `curl --fail --silent --show-error --location --output "${addonId}.nvda-addon" "${addonMetadata.URL}"`,
       // increase maxBuffer size to 10GB
       { maxBuffer: 1024 * 1024 * 1024 * 10 },
       (err, stdout, stderr) => {
@@ -21,7 +21,7 @@ module.exports = ({core}, globPattern) => {
         console.log(`stdout: ${stdout}`);
         console.log(`stderr: ${stderr}`);
         // delete file if download failed
-        exec(`rm ${file}`, (err, stdout, stderr) => {
+        exec(`rm "${file}"`, (err, stdout, stderr) => {
           if (stderr !== '' || err !== null) {
             console.log(`err: ${err}`);
             console.log(`stdout: ${stdout}`);
@@ -41,7 +41,7 @@ module.exports = ({core}, globPattern) => {
       fileStream.on('end', () => {
         const fileHash = hash.digest('hex');
         if (fileHash !== sha256) {
-          exec(`rm ${file}`, (err, stdout, stderr) => {
+          exec(`rm "${file}"`, (err, stdout, stderr) => {
             if (stderr !== '' || err !== null) {
               console.log(`err: ${err}`);
               console.log(`stderr: ${stderr}`);
