@@ -11,7 +11,11 @@ module.exports = ({core}, globPattern) => {
     const addonId = addonMetadata.addonId;
     const sha256 = addonMetadata.sha256;
     const hash = crypto.createHash('sha256');
-    exec(`curl --fail --silent --show-error --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`, (err, stdout, stderr) => {
+    exec(
+      `curl --fail --silent --show-error --location --output ${addonId}.nvda-addon "${addonMetadata.URL}"`,
+      // increase maxBuffer size to 10GB
+      { maxBuffer: 1024 * 1024 * 1024 * 10 },
+      (err, stdout, stderr) => {
       if (stderr !== '' || err !== null) {
         console.log(`err: ${err}`);
         console.log(`stdout: ${stdout}`);
