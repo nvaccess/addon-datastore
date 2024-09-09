@@ -15,7 +15,7 @@ function removeMetadataFile({core}, metadataFile) {
   })
 }
 
-function removeDownloadedAddonFile(downloadFileName) {
+function removeDownloadedAddonFile(downloadFileName, metadataFile) {
   exec(`rm "${downloadFileName}"`, (err, stdout, stderr) => {
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
@@ -40,7 +40,7 @@ function checkDownloadedAddonHash({core}, downloadFileName, sha256) {
     const fileHash = hash.digest('hex');
     hash.end();
     // delete downloaded file
-    removeDownloadedAddonFile(downloadFileName);
+    removeDownloadedAddonFile(downloadFileName, metadataFile);
     if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
       console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file "${metadataFile}"`);
       removeMetadataFile({core}, metadataFile);
