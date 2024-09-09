@@ -27,7 +27,7 @@ function removeDownloadedAddonFile(downloadFileName, metadataFile) {
   })
 }
 
-function checkDownloadedAddonHash({core}, downloadFileName, sha256) {
+function checkDownloadedAddonHash({core}, downloadFileName, metadataFile, sha256) {
   // if hash mismatches, delete the addon data file
   const hash = crypto.createHash('sha256');
   hash.write("")
@@ -59,7 +59,7 @@ function checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha
     return;
   }
 
-  checkDownloadedAddonHash({core}, downloadFileName, sha256);
+  checkDownloadedAddonHash({core}, downloadFileName, metadataFile, sha256);
 }
 
 function checkMetadataFile({core}, metadataFile) {
