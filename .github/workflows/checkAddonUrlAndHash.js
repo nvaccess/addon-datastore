@@ -49,7 +49,7 @@ function checkDownloadedAddonHash({core}, downloadFileName, sha256) {
   });
 }
 
-function checkMetadataDownloadResult({core}, metadataFile, sha256, err, stdout, stderr) {
+function checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha256, err, stdout, stderr) {
   if (stderr !== '' || err !== null) {
     console.log(`err: ${err}`);
     console.log(`stdout: ${stdout}`);
@@ -73,7 +73,7 @@ function checkMetadataFile({core}, metadataFile) {
     // increase maxBuffer size to 10GB
     { maxBuffer: 1024 * 1024 * 1024 * 10 },
     (err, stdout, stderr) => {
-      checkMetadataDownloadResult({core}, metadataFile, sha256, err, stdout, stderr);
+      checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha256, err, stdout, stderr);
   });
 }
 
