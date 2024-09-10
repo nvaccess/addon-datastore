@@ -60,7 +60,7 @@ function checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
     // delete file if download failed
-    strippedStderr = stderr.replace("\n", "  ");
+    strippedStderr = stderr.replace("\n", "  ").replace("\r", "");
     removeMetadataFile({core}, metadataFile, `Download failed: ${strippedStderr}`); 
     return;
   }
