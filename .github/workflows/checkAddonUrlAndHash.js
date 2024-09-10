@@ -11,6 +11,7 @@ function removeMetadataFile({core}, metadataFile, reason) {
     // stdout is garbage here, so we don't use it
     metadataFileNormalised = metadataFile.replace(/\\/g, '/');
     core._PRBodyString += `| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
+    core.setOutput("PRBodyString", core._PRBodyString);
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
       console.log(`stderr: ${stderr}`);
@@ -87,5 +88,4 @@ module.exports = ({core}, globPattern) => {
   metadataFiles.forEach(metadataFile => {
     checkMetadataFile({core}, metadataFile);
   });
-  core.setOutput("PRBodyString", core._PRBodyString);
 };
