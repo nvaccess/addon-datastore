@@ -39,7 +39,7 @@ jobs:
         title: Delete add-ons with invalid downloads
         branch: delInvalidDownloads${{ github.run_number }}
         commit-message: Delete invalid add-ons
-        body: "Delete add-ons with invalid download links or invalid file hashes"
+        body: "${{ steps.deleteInvalidDownloads.outputs.PRBodyString }}"
         author: github-actions <github-actions@github.com>
         add-paths: 'addons/*/*.json'
     - name: Checkout validate repo

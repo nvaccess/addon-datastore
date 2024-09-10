@@ -3,9 +3,13 @@ const crypto = require('crypto');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const { exec } = require('child_process');
+const PROJECT_URL = "https://github.com/nvaccess/addon-datastore/blob/master/";
 
-function removeMetadataFile({core}, metadataFile) {
+function removeMetadataFile({core}, metadataFile, reason) {
+  console.log(`Deleting file "${metadataFile}" because ${reason}`);
   exec(`rm "${metadataFile}"`, (err, stdout, stderr) => {
+    metadataFileNormalised = metadataFile.replace(/\\/g, '/');
+    core._PRBodyString = core._PRBodyString.concat(`| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`);
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
       console.log(`stderr: ${stderr}`);
@@ -42,8 +46,7 @@ function checkDownloadedAddonHash({core}, downloadFileName, metadataFile, sha256
     // delete downloaded file
     removeDownloadedAddonFile(downloadFileName, metadataFile);
     if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
-      console.log(`Hash mismatch: ${fileHash} !== ${sha256}, deleting file "${metadataFile}"`);
-      removeMetadataFile({core}, metadataFile);
+      removeMetadataFile({core}, metadataFile, `Hash mismatch ${fileHash} !== ${sha256}"`);
       return;
     }
   });
@@ -55,7 +58,7 @@ function checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
     // delete file if download failed
-    removeMetadataFile({core}, metadataFile);
+    removeMetadataFile({core}, metadataFile, `Download failed: ${stderr}`); 
     return;
   }
 
@@ -78,8 +81,10 @@ function checkMetadataFile({core}, metadataFile) {
 }
 
 module.exports = ({core}, globPattern) => {
+  core._PRBodyString = "| File | Reason |\n|---|---|\n";
   const metadataFiles = glob.globSync(globPattern);
   metadataFiles.forEach(metadataFile => {
     checkMetadataFile({core}, metadataFile);
   });
+  core.setOutput("PRBodyString", core._PRBodyString);
 };
