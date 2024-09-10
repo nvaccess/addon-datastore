@@ -10,7 +10,7 @@ function removeMetadataFile({core}, metadataFile, reason) {
   exec(`rm "${metadataFile}"`, (err, stdout, stderr) => {
     // stdout is garbage here, so we don't use it
     metadataFileNormalised = metadataFile.replace(/\\/g, '/');
-    core._PRBodyString += `| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
+    core._PRBodyString += `| [${metadataFileNormalised.replace("addons/", "")}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
     core.setOutput("PRBodyString", core._PRBodyString);
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
@@ -48,7 +48,7 @@ function checkDownloadedAddonHash({core}, downloadFileName, metadataFile, sha256
     // delete downloaded file
     removeDownloadedAddonFile(downloadFileName, metadataFile);
     if (fileHash.toLowerCase() !== sha256.toLowerCase()) {
-      removeMetadataFile({core}, metadataFile, `Hash mismatch ${fileHash} !== ${sha256}"`);
+      removeMetadataFile({core}, metadataFile, `Hash mismatch ${fileHash} (actual) != ${sha256} (expected)`);
       return;
     }
   });
