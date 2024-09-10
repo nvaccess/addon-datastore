@@ -8,6 +8,7 @@ const PROJECT_URL = "https://github.com/nvaccess/addon-datastore/blob/master/";
 function removeMetadataFile({core}, metadataFile, reason) {
   console.log(`Deleting file "${metadataFile}" because ${reason}`);
   exec(`rm "${metadataFile}"`, (err, stdout, stderr) => {
+    // stdout is garbage here, so we don't use it
     metadataFileNormalised = metadataFile.replace(/\\/g, '/');
     core._PRBodyString += `| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
     if (stderr !== '' || err !== null) {
