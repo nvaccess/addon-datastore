@@ -9,7 +9,7 @@ function removeMetadataFile({core}, metadataFile, reason) {
   console.log(`Deleting file "${metadataFile}" because ${reason}`);
   exec(`rm "${metadataFile}"`, (err, stdout, stderr) => {
     metadataFileNormalised = metadataFile.replace(/\\/g, '/');
-    core._PRBodyString = core._PRBodyString.concat(`| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`);
+    core._PRBodyString += `| [${metadataFileNormalised}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
       console.log(`stderr: ${stderr}`);
