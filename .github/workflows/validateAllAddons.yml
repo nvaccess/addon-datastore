@@ -23,7 +23,7 @@ jobs:
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install addon download validation dependencies
-      run: npm install glob crypto uuid
+      run: npm install glob uuid
     - name: Delete add-ons with invalid downloads
       if: always()
       id: deleteInvalidDownloads
