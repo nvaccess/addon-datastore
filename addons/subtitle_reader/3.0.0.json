@@ -1,71 +1,72 @@
 {
-	"addonId": "subtitle_reader",
-	"displayName": "\u5b57\u5e55\u95b1\u8b80\u5668",
-	"URL": "https://github.com/maxe-hsieh/subtitle_reader/releases/download/%E4%BA%BA%E7%94%9F%E6%9C%80%E6%A3%92%E7%9A%84%E6%B6%88%E9%81%A3/subtitle_reader.nvda-addon",
-	"description": "\u7576\u7126\u9ede\u4f4d\u65bc\u7db2\u9801\u4e0a\u7684\u5f71\u7247\u64ad\u653e\u5668\u6642\uff0c\u8b93 NVDA \u8b80\u51fa\u5b57\u5e55\u3002",
-	"sha256": "30d65c61056458c3b0ee3694771562879a07fbecd6bb2ea9cfea27f8b1053cfc",
-	"addonVersionName": "3.0",
-	"addonVersionNumber": {
-		"major": 3,
-		"minor": 0,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2019,
-		"minor": 2,
-		"patch": 1
-	},
-	"lastTestedVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "\u798f\u6069",
-	"sourceURL": "https://github.com/maxe-hsieh/subtitle_reader",
-	"license": "GPL v3",
-	"homepage": "https://github.com/maxe-hsieh/subtitle_reader",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "\u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a Subtitle",
-			"description": "\u062f\u0639\u0645 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0635\u0627\u062d\u0628\u0629 Subtitle  \u0644\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a \u0627\u0644\u0623\u0646\u062a\u0631\u0646\u062a \u0628\u0633\u062a\u062e\u062f\u0627\u0645 NVDA"
-		},
-		{
-			"language": "en",
-			"displayName": "Subtitle Reader",
-			"description": "Support NVDA read subtitle When the focus is on the web video player. "
-		},
-		{
-			"language": "es",
-			"displayName": "Lector de subt\u00edtulos",
-			"description": "soporta la lectura de subt\u00edtulos con NVDA cuando el foco est\u00e1 en el reproductor de video."
-		},
-		{
-			"language": "fi",
-			"displayName": "Tekstityksenlukija",
-			"description": "Lukee tekstitykset, kun kohdistus on verkkopohjaisessa videosoittimessa."
-		},
-		{
-			"language": "it",
-			"displayName": "Lettore Sottotitoli",
-			"description": "Il lettore sottotitoli funziona al meglio quando Nvda ha il focus sul player video."
-		},
-		{
-			"language": "ja",
-			"displayName": "Subtitle Reader",
-			"description": "\u30a6\u30a7\u30d6\u52d5\u753b\u30d7\u30ec\u30a4\u30e4\u30fc\u306b\u30d5\u30a9\u30fc\u30ab\u30b9\u3057\u3066\u3044\u308b\u6642\u306bNVDA\u306e\u5b57\u5e55\u8aad\u307f\u4e0a\u3052\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002"
-		},
-		{
-			"language": "tr",
-			"displayName": "Altyaz\u0131 Okuyucu",
-			"description": "Odak web video oynat\u0131c\u0131s\u0131nda oldu\u011funda NVDA'n\u0131n altyaz\u0131y\u0131 okumas\u0131n\u0131 destekler."
-		},
-		{
-			"language": "uk",
-			"displayName": "\u0427\u0438\u0442\u0430\u0447 \u0441\u0443\u0431\u0442\u0438\u0442\u0440\u0456\u0432",
-			"description": "\u041f\u0456\u0434\u0442\u0440\u0438\u043c\u0443\u0454 \u0447\u0438\u0442\u0430\u043d\u043d\u044f \u0441\u0443\u0431\u0442\u0438\u0442\u0440\u0456\u0432 \u0437\u0430 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043e\u044e NVDA, \u043a\u043e\u043b\u0438 \u0444\u043e\u043a\u0443\u0441 \u043f\u0435\u0440\u0435\u0431\u0443\u0432\u0430\u0454 \u043d\u0430 \u0432\u0456\u0434\u0435\u043e\u043f\u043b\u0435\u0454\u0440\u0456 \u043d\u0430 \u0441\u0430\u0439\u0442\u0456."
-		}
-	]
+  "addonId": "subtitle_reader",
+  "displayName": "\u5b57\u5e55\u95b1\u8b80\u5668",
+  "URL": "https://github.com/maxe-hsieh/subtitle_reader/releases/download/%E4%BA%BA%E7%94%9F%E6%9C%80%E6%A3%92%E7%9A%84%E6%B6%88%E9%81%A3/subtitle_reader.nvda-addon",
+  "description": "\u7576\u7126\u9ede\u4f4d\u65bc\u7db2\u9801\u4e0a\u7684\u5f71\u7247\u64ad\u653e\u5668\u6642\uff0c\u8b93 NVDA \u8b80\u51fa\u5b57\u5e55\u3002",
+  "sha256": "30d65c61056458c3b0ee3694771562879a07fbecd6bb2ea9cfea27f8b1053cfc",
+  "addonVersionName": "3.0",
+  "addonVersionNumber": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2019,
+    "minor": 2,
+    "patch": 1
+  },
+  "lastTestedVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "\u798f\u6069",
+  "sourceURL": "https://github.com/maxe-hsieh/subtitle_reader",
+  "license": "GPL v3",
+  "homepage": "https://github.com/maxe-hsieh/subtitle_reader",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "\u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a Subtitle",
+      "description": "\u062f\u0639\u0645 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u062a\u0631\u062c\u0645\u0627\u062a \u0627\u0644\u0645\u0635\u0627\u062d\u0628\u0629 Subtitle  \u0644\u0641\u064a\u062f\u064a\u0648\u0647\u0627\u062a \u0627\u0644\u0623\u0646\u062a\u0631\u0646\u062a \u0628\u0633\u062a\u062e\u062f\u0627\u0645 NVDA"
+    },
+    {
+      "language": "en",
+      "displayName": "Subtitle Reader",
+      "description": "Support NVDA read subtitle When the focus is on the web video player. "
+    },
+    {
+      "language": "es",
+      "displayName": "Lector de subt\u00edtulos",
+      "description": "soporta la lectura de subt\u00edtulos con NVDA cuando el foco est\u00e1 en el reproductor de video."
+    },
+    {
+      "language": "fi",
+      "displayName": "Tekstityksenlukija",
+      "description": "Lukee tekstitykset, kun kohdistus on verkkopohjaisessa videosoittimessa."
+    },
+    {
+      "language": "it",
+      "displayName": "Lettore Sottotitoli",
+      "description": "Il lettore sottotitoli funziona al meglio quando Nvda ha il focus sul player video."
+    },
+    {
+      "language": "ja",
+      "displayName": "Subtitle Reader",
+      "description": "\u30a6\u30a7\u30d6\u52d5\u753b\u30d7\u30ec\u30a4\u30e4\u30fc\u306b\u30d5\u30a9\u30fc\u30ab\u30b9\u3057\u3066\u3044\u308b\u6642\u306bNVDA\u306e\u5b57\u5e55\u8aad\u307f\u4e0a\u3052\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002"
+    },
+    {
+      "language": "tr",
+      "displayName": "Altyaz\u0131 Okuyucu",
+      "description": "Odak web video oynat\u0131c\u0131s\u0131nda oldu\u011funda NVDA'n\u0131n altyaz\u0131y\u0131 okumas\u0131n\u0131 destekler."
+    },
+    {
+      "language": "uk",
+      "displayName": "\u0427\u0438\u0442\u0430\u0447 \u0441\u0443\u0431\u0442\u0438\u0442\u0440\u0456\u0432",
+      "description": "\u041f\u0456\u0434\u0442\u0440\u0438\u043c\u0443\u0454 \u0447\u0438\u0442\u0430\u043d\u043d\u044f \u0441\u0443\u0431\u0442\u0438\u0442\u0440\u0456\u0432 \u0437\u0430 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043e\u044e NVDA, \u043a\u043e\u043b\u0438 \u0444\u043e\u043a\u0443\u0441 \u043f\u0435\u0440\u0435\u0431\u0443\u0432\u0430\u0454 \u043d\u0430 \u0432\u0456\u0434\u0435\u043e\u043f\u043b\u0435\u0454\u0440\u0456 \u043d\u0430 \u0441\u0430\u0439\u0442\u0456."
+    }
+  ],
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/4280"
 }
