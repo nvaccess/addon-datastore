@@ -22,6 +22,26 @@ jobs:
         ref: ${{ inputs.headRef }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
+    - name: Install addon download validation dependencies
+      run: npm install glob uuid
+    - name: Delete add-ons with invalid downloads
+      if: always()
+      id: deleteInvalidDownloads
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const checkAddonUrlAndHash = require('./.github/workflows/checkAddonUrlAndHash.js')
+          checkAddonUrlAndHash({core}, "./addons/*/*.json")
+    - name: Create PR for deleting invalid downloads
+      if: always()
+      uses: peter-evans/create-pull-request@v6
+      with:
+        title: Delete add-ons with invalid downloads
+        branch: delInvalidDownloads${{ github.run_number }}
+        commit-message: Delete invalid add-ons
+        body: "${{ steps.deleteInvalidDownloads.outputs.PRBodyString }}"
+        author: github-actions <github-actions@github.com>
+        add-paths: 'addons/*/*.json'
     - name: Checkout validate repo
       uses: actions/checkout@v4
       with:
