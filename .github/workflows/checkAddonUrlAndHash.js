@@ -8,7 +8,7 @@ const PROJECT_URL = "https://github.com/nvaccess/addon-datastore/blob/master/";
 function removeMetadataFile({core}, metadataFile, reason) {
   console.log(`Deleting file "${metadataFile}" because ${reason}`);
   // normalise the Windows-style path to be usable for the URL in the PR body
-  const metadataFileNormalised = metadataFile.replace(/\\/g, '/');
+  const metadataFileNormalised = metadataFile.replaceAll('\\', '/');
   core._PRBodyString += `| [${metadataFileNormalised.replace("addons/", "")}](${PROJECT_URL}${metadataFileNormalised}) | ${reason} |\n`;
   core.setOutput("PRBodyString", core._PRBodyString);
   exec(`rm "${metadataFile}"`, (err, stdout, stderr) => {
@@ -61,7 +61,7 @@ function checkMetadataDownloadResult({core}, metadataFile, downloadFileName, sha
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
     // strip newlines and carriage returns from stderr to avoid breaking the markdown table
-    const strippedStderr = stderr.replace("\n", "  ").replace("\r", "");
+    const strippedStderr = stderr.replaceAll("\n", "  ").replaceAll("\r", "");
     removeMetadataFile({core}, metadataFile, `Download failed: ${strippedStderr}`); 
     return;
   }
