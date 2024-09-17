@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2022-2023 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2024 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
+
+from time import gmtime, mktime
 import dataclasses
 import json
 import argparse
@@ -29,6 +31,10 @@ def getSha256(addonPath: str) -> str:
 	with open(addonPath, "rb") as f:
 		sha256Addon = sha256.sha256_checksum(f)
 	return sha256Addon
+
+
+def getCurrentTime() -> int:
+	return int(mktime(gmtime()) * 1000)  # Milliseconds
 
 
 def generateJsonFile(
@@ -121,6 +127,7 @@ def _createDictMatchingJsonSchema(
 		addonData["homepage"] = homepage
 	if licenseUrl:
 		addonData["licenseURL"] = licenseUrl
+	addonData["submissionTime"] = getCurrentTime()
 
 	addonData["translations"] = []
 	for langCode, manifest in getAddonManifestLocalizations(manifest):

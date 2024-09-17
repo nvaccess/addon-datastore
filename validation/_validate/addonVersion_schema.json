@@ -35,9 +35,9 @@
 					"description": "erleichtert das Durchführen von xyz"
 				}
 			],
-			"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
+			"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248",
+			"submissionTime": 1723523492363
 		}
-
 	],
 	"title": "Root",
 	"type": "object",
@@ -265,6 +265,16 @@
 				],
 				"title": "Discussion comment URL",
 				"type": "string"
+			},
+			"submissionTime": {
+				"$id": "#/properties/submissionTime",
+				"default": 0,
+				"description": "Timestamp in milliseconds, corresponding to the submission time of the add-on",
+				"examples": [
+					1723523492363
+				],
+				"title": "Submission time",
+				"type": "number"
 			},
 			"vtScanUrl": {
 				"$id": "#/properties/vtScanUrl",

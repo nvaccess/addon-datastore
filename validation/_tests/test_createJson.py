@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2022 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2024 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,7 @@ class IntegrationTestCreateJson(unittest.TestCase):
 			del expectedJson["sha256-comment"]  # remove explanatory comment
 		with open(actualJsonPath) as actualFile:
 			actualJson = json.load(actualFile)
+			del actualJson["submissionTime"]  # remove submission time
 
 		self.assertDictEqual(actualJson, expectedJson)
 
