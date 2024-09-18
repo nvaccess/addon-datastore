@@ -62,7 +62,7 @@ function getVirusTotalAnalysisIfRequired({core}, metadataFile) {
     core.info('VirusTotal analysis skipped, already performed');
     return;
   }
-  if (apiUsageCount >= 10) {
+  if (core._apiUsageCount >= 10) {
     core.info('VirusTotal API usage limit reached');
     throw new Error('VirusTotal API usage limit reached');
   }

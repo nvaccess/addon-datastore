@@ -58,16 +58,16 @@ function submitAddonIfNotScanned({core}, metadataFile) {
   countAPIUsageAndWait({core});
   // Check if file has been scanned before
   exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
-    console.debug(`stdout: ${stdout}`);
-    console.debug(`stderr: ${stderr}`);
-    console.debug(`err: ${err}`);
+    core.debug(`stdout: ${stdout}`);
+    core.debug(`stderr: ${stderr}`);
+    core.debug(`err: ${err}`);
     try {
       const vtData = JSON.parse(stdout);
-      console.debug(`Add-on file ${metadataFile} already submitted, results: ${vtData}`);
+      core.debug(`Add-on file ${metadataFile} already submitted, results: ${vtData}`);
       return;
     } catch (e) {
-      console.debug(`Add-on file ${metadataFile} has not been scanned before`);
-       // File has not been scanned before,
+      core.debug(`Add-on file ${metadataFile} has not been scanned before`);
+      // File has not been scanned before,
       // download and submit add-on file
       downloadAndSubmitAddon({core}, addonMetadata);
     }
