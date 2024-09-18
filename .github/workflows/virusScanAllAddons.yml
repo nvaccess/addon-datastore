@@ -23,7 +23,7 @@ jobs:
         - name: Install Node.js
           uses: actions/setup-node@v2
         - name: Install glob
-          run: npm install glob
+          run: npm install glob uuid
         - name: Submit add-ons with VirusTotal
           uses: actions/github-script@v7
           with:
