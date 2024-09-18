@@ -19,7 +19,12 @@ function countAPIUsageAndWait({core}) {
 function submitAddon({core}, addonMetadata, downloadFileName) {
   countAPIUsageAndWait({core});
   // scan downloaded file
-  exec(`vt scan file -k ${process.env.VT_API_KEY} ${downloadFileName}`, (err, stdout, stderr) => {
+  exec(
+    `vt scan file -k ${process.env.VT_API_KEY} ${downloadFileName}`,
+    // increase maxBuffer size to 10GB as add-on files can be large
+    { maxBuffer: 1024 * 1024 * 1024 * 10 },
+    (err, stdout, stderr) => {
+    removeDownloadedAddonFile(downloadFileName, addonMetadata.URL);
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);
@@ -31,10 +36,26 @@ function submitAddon({core}, addonMetadata, downloadFileName) {
 }
 
 
+function removeDownloadedAddonFile(downloadFileName, metadataFile) {
+  exec(`rm "${downloadFileName}"`, (err, stdout, stderr) => {
+    // stdout is garbage here, so we don't use it
+    if (stderr !== '' || err !== null) {
+      console.log(`err: ${err}`);
+      console.log(`stderr: ${stderr}`);
+      console.error(`Failed to delete downloaded add-on file for ${metadataFile}`);
+      return;
+    }
+  })
+}
+
 function downloadAndSubmitAddon({core}, addonMetadata) {
   // We need a unique name otherwise we could overwrite files
   const downloadFileName = `${uuidv4()}.nvda-addon`;
-  exec(`curl --fail --silent --show-error --location --output "${downloadFileName}" "${addonMetadata.URL}"`, (err, stdout, stderr) => {
+  exec(
+    `curl --fail --silent --show-error --location --output "${downloadFileName}" "${addonMetadata.URL}"`,
+    // increase maxBuffer size to 10GB as add-on files can be large
+    { maxBuffer: 1024 * 1024 * 1024 * 10 },
+    (err, stdout, stderr) => {
     if (stderr !== '' || err !== null) {
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);
