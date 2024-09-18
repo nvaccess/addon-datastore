@@ -23,7 +23,7 @@ module.exports = ({core}, path) => {
     reviewedAddonsData[addonId] = [];
   }
   reviewedAddonsData[addonId].push(sha256);
-  const stringified = JSON.stringify(reviewedAddonsData, null, 2);
+  const stringified = JSON.stringify(reviewedAddonsData, null, "\t");
   fs.writeFileSync('reviewedAddons.json', stringified);
   core.setFailed("Security analysis failed");
 };
