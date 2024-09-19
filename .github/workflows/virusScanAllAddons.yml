@@ -38,16 +38,16 @@ jobs:
             script: |
               const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
               setVirusTotalAnalysisStatus({core}, "./addons/*/*.json")
-        - name: Commit and push updated VT urls
+        - name: Create PR for updated VT urls
           if: always()
-          run: |
-            git config user.name github-actions
-            git config user.email github-actions@github.com
-            git add ./addons/*/*.json
-            git commit -m "update VT review URLs"
-            git branch -u origin/master
-            git pull
-            git push
+          uses: peter-evans/create-pull-request@v6
+          with:
+            title: Add VirusTotal review URLs
+            branch: addVTURLs${{ github.run_number }}
+            commit-message: Add VirusTotal review URLs
+            body: "Add VirusTotal review URLs to add-ons"
+            author: github-actions <github-actions@github.com>
+            add-paths: 'addons/*/*.json'
         - name: Upload results
           id: uploadResults
           if: failure()
