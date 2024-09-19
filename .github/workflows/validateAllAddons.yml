@@ -43,6 +43,7 @@ jobs:
         author: github-actions <github-actions@github.com>
         add-paths: 'addons/*/*.json'
     - name: Normalize JSON files with jq
+      shell: bash
       run: |
         for file in $(find ./addons -name '*.json'); do
           jq --tab . $file > $file.tmp
