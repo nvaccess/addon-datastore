@@ -141,3 +141,9 @@ Optional.
 A URL to the discussion comment to review the add-on version.
 
 Example: `"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"`
+
+### submissionTime
+Optional.
+Timestamp of the add-on submission in milliseconds.
+
+Example: `1726667579000`
