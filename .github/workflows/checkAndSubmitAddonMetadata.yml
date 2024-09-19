@@ -119,7 +119,7 @@ jobs:
           "
 
           mv submitters.json submitters.old.json
-          jq -e "$jqCode" submitters.old.json > submitters.json
+          jq -e --tab "$jqCode" submitters.old.json > submitters.json
           jqExitCode=$?
           rm submitters.old.json
           exit $jqExitCode
@@ -409,7 +409,7 @@ jobs:
         "
 
         mv discussions.json discussions.old.json
-        jq -e "$jqCode" discussions.old.json > discussions.json
+        jq -e --tab "$jqCode" discussions.old.json > discussions.json
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
@@ -423,7 +423,7 @@ jobs:
           echo ${{ needs.getAddonId.outputs.addonId }}
         )
         reviewUrl=$(
-          jq ".\"$addonId\".discussionUrl" discussions.json
+          jq --tab ".\"$addonId\".discussionUrl" discussions.json
         )
         vtScanUrl=$(
           echo ${{ needs.virusTotal-analysis.outputs.vtScanUrl }}
@@ -436,10 +436,10 @@ jobs:
         "
 
         mv $addonFilename $addonFilename.old.json
-        jq -e -a "$jqReviewCode" $addonFilename.old.json > $addonFilename
+        jq -e --tab "$jqReviewCode" $addonFilename.old.json > $addonFilename
         jqReviewExitCode=$?
         mv $addonFilename $addonFilename.old.json
-        jq -e -a "$jqVTCode" $addonFilename.old.json > $addonFilename
+        jq -e --tab "$jqVTCode" $addonFilename.old.json > $addonFilename
         jqVTExitCode=$?
         rm $addonFilename.old.json
         exit !(( $jqVTExitCode || $jqReviewExitCode ))
