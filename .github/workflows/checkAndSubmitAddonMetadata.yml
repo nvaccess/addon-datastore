@@ -119,7 +119,7 @@ jobs:
           "
 
           mv submitters.json submitters.old.json
-          jq -e "$jqCode" submitters.old.json > submitters.json
+          jq -e --tab "$jqCode" submitters.old.json > submitters.json
           jqExitCode=$?
           rm submitters.old.json
           exit $jqExitCode
@@ -401,7 +401,7 @@ jobs:
         "
   
         mv discussions.json discussions.old.json
-        jq -e "$jqCode" discussions.old.json > discussions.json
+        jq -e --tab "$jqCode" discussions.old.json > discussions.json
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
@@ -422,7 +422,7 @@ jobs:
         "
   
         mv $addonFilename $addonFilename.old.json
-        jq -e -a "$jqCode" $addonFilename.old.json > $addonFilename
+        jq -e --tab "$jqCode" $addonFilename.old.json > $addonFilename
         jqExitCode=$?
         rm $addonFilename.old.json
         exit $jqExitCode
