@@ -46,8 +46,8 @@ jobs:
       shell: bash
       run: |
         for file in $(find ./addons -name '*.json'); do
-          jq --tab . $file > $file.tmp
-          mv $file.tmp $file
+          jq --tab . "$file" > "$file.tmp"
+          mv "$file.tmp" "$file"
         done
     - name: Create PR for normalizing files
       if: always()
