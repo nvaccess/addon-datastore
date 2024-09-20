@@ -1,92 +1,92 @@
 {
-  "addonId": "speechLogger",
-  "displayName": "Speech Logger",
-  "URL": "https://github.com/opensourcesys/speechLogger/releases/download/v24.1.503-dev/speechLogger-24.1.503.nvda-addon",
-  "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all.",
-  "sha256": "e0ad4cf098b226586c6f0b675fd90f174d59373603303bb4e4aba352b11b5e85",
-  "addonVersionName": "24.1.503",
-  "addonVersionNumber": {
-    "major": 24,
-    "minor": 1,
-    "patch": 503
-  },
-  "minNVDAVersion": {
-    "major": 2019,
-    "minor": 3,
-    "patch": 0
-  },
-  "lastTestedVersion": {
-    "major": 2024,
-    "minor": 1,
-    "patch": 0
-  },
-  "channel": "dev",
-  "publisher": "Luke Davis",
-  "sourceURL": "https://github.com/opensourcesys/speechLogger",
-  "license": "GPL v2",
-  "homepage": "https://github.com/opensourcesys/speechLogger/blob/master/readme.md",
-  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-  "translations": [
-    {
-      "language": "bg",
-      "displayName": "\u041f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0438\u0440\u0430\u043d\u0435 \u043d\u0430 \u0440\u0435\u0447\u0442\u0430",
-      "description": "\u041f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0438\u0440\u0430 \u0440\u0435\u0447\u0435\u0432\u0438 \u0444\u0440\u0430\u0437\u0438 \u0432\u044a\u0432 \u0444\u0430\u0439\u043b. \u041c\u043e\u0436\u0435 \u0441\u044a\u0449\u043e \u0442\u0430\u043a\u0430 \u0434\u0430 \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0438\u0440\u0430 \u0440\u0435\u0447\u0442\u0430 \u043e\u0442 \u043e\u0442\u0434\u0430\u043b\u0435\u0447\u0435\u043d\u0430 \u0441\u0435\u0441\u0438\u044f \u043d\u0430 NVDA \u043e\u0442 \u0434\u043e\u0431\u0430\u0432\u043a\u0430\u0442\u0430 NVDA Remote \u0432 \u0441\u044a\u0449\u0438\u044f \u0438\u043b\u0438 \u0434\u0440\u0443\u0433 \u0444\u0430\u0439\u043b. \u041f\u043e \u0438\u0437\u0431\u043e\u0440 \u0432\u043a\u043b\u044e\u0447\u0432\u0430 \u0440\u0435\u0447\u0442\u0430 \u043e\u0442 \u0444\u0443\u043d\u043a\u0446\u0438\u044f\u0442\u0430 \"\u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u0435 \u043d\u0430 \u0432\u0441\u0438\u0447\u043a\u043e\"."
-    },
-    {
-      "language": "de",
-      "displayName": "Sprachausgabenverlauf aufzeichnen",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    },
-    {
-      "language": "es",
-      "displayName": "Speech Logger",
-      "description": "Registra mensajes de voz en un archivo despu\u00e9s de que el usuario pulse un atajo de teclado. Tambi\u00e9n puede registrar la voz de una sesi\u00f3n remota del complemento NVDA Remote al mismo o a otro archivo. Incluye opcionalmente la voz del modo verbalizar todo."
-    },
-    {
-      "language": "fi",
-      "displayName": "Puhelokin tallennin",
-      "description": "Tallentaa puhekatkelmat tiedostoon, kun k\u00e4ytt\u00e4j\u00e4 painaa tallennuksen aloittavaa n\u00e4pp\u00e4inkomentoa. Voi tallentaa my\u00f6s NVDA:n et\u00e4istunnon puheen NVDA-et\u00e4k\u00e4ytt\u00f6-lis\u00e4osasta samaan tai eri tiedostoon. Sis\u00e4lt\u00e4\u00e4 valinnaisesti jatkuvan luvun puheen."
-    },
-    {
-      "language": "fr",
-      "displayName": "Speech Logger",
-      "description": "Enregistre les messages de la parole dans un fichier, apr\u00e8s que l'utilisateur a appuy\u00e9 sur une touche de lancement. Vous pouvez \u00e9galement enregistrer la parole d'une session distante NVDA \u00e0 partir de l'extension NVDA Remote, dans le m\u00eame fichier ou un autre. Inclut \u00e9ventuellement la parole Dire tout."
-    },
-    {
-      "language": "gl",
-      "displayName": "Speech Logger",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    },
-    {
-      "language": "hr",
-      "displayName": "Zapisnik govora",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    },
-    {
-      "language": "pt_BR",
-      "displayName": "Speech Logger",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    },
-    {
-      "language": "pt_PT",
-      "displayName": "Registador de Discursos",
-      "description": "Regista as express\u00f5es de voz num ficheiro, depois de o utilizador premir uma tecla de in\u00edcio. Tamb\u00e9m pode registar o discurso da sess\u00e3o remota do NVDA a partir do suplemento NVDA Remote, no mesmo ou noutro ficheiro. Opcionalmente, inclui o discurso do say-all."
-    },
-    {
-      "language": "ro",
-      "displayName": "Speech Logger",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    },
-    {
-      "language": "tr",
-      "displayName": "Konu\u015fma Kaydedici",
-      "description": "Kullan\u0131c\u0131 bir ba\u015flatma tu\u015funa bast\u0131ktan sonra konu\u015fma ifadelerini bir dosyaya kaydeder. NVDA Remote eklentisinden gelen NVDA uzak oturum konu\u015fmas\u0131n\u0131 da ayn\u0131 veya ba\u015fka bir dosyaya kaydedebilir. \u0130ste\u011fe ba\u011fl\u0131 olarak T\u00fcm\u00fcn\u00fc seslendir'den gelen konu\u015fmay\u0131 da i\u00e7erir."
-    },
-    {
-      "language": "uk",
-      "displayName": "\u0417\u0430\u043f\u0438\u0441\u0443\u0432\u0430\u0447 \u043c\u043e\u0432\u043b\u0435\u043d\u043d\u044f",
-      "description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
-    }
-  ],
-  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2636"
+	"addonId": "speechLogger",
+	"displayName": "Speech Logger",
+	"URL": "https://github.com/opensourcesys/speechLogger/releases/download/v24.1.503-dev/speechLogger-24.1.503.nvda-addon",
+	"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all.",
+	"sha256": "e0ad4cf098b226586c6f0b675fd90f174d59373603303bb4e4aba352b11b5e85",
+	"addonVersionName": "24.1.503",
+	"addonVersionNumber": {
+		"major": 24,
+		"minor": 1,
+		"patch": 503
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Luke Davis",
+	"sourceURL": "https://github.com/opensourcesys/speechLogger",
+	"license": "GPL v2",
+	"homepage": "https://github.com/opensourcesys/speechLogger/blob/master/readme.md",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "bg",
+			"displayName": "Протоколиране на речта",
+			"description": "Протоколира речеви фрази във файл. Може също така да протоколира речта от отдалечена сесия на NVDA от добавката NVDA Remote в същия или друг файл. По избор включва речта от функцията \"прочитане на всичко\"."
+		},
+		{
+			"language": "de",
+			"displayName": "Sprachausgabenverlauf aufzeichnen",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		},
+		{
+			"language": "es",
+			"displayName": "Speech Logger",
+			"description": "Registra mensajes de voz en un archivo después de que el usuario pulse un atajo de teclado. También puede registrar la voz de una sesión remota del complemento NVDA Remote al mismo o a otro archivo. Incluye opcionalmente la voz del modo verbalizar todo."
+		},
+		{
+			"language": "fi",
+			"displayName": "Puhelokin tallennin",
+			"description": "Tallentaa puhekatkelmat tiedostoon, kun käyttäjä painaa tallennuksen aloittavaa näppäinkomentoa. Voi tallentaa myös NVDA:n etäistunnon puheen NVDA-etäkäyttö-lisäosasta samaan tai eri tiedostoon. Sisältää valinnaisesti jatkuvan luvun puheen."
+		},
+		{
+			"language": "fr",
+			"displayName": "Speech Logger",
+			"description": "Enregistre les messages de la parole dans un fichier, après que l'utilisateur a appuyé sur une touche de lancement. Vous pouvez également enregistrer la parole d'une session distante NVDA à partir de l'extension NVDA Remote, dans le même fichier ou un autre. Inclut éventuellement la parole Dire tout."
+		},
+		{
+			"language": "gl",
+			"displayName": "Speech Logger",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		},
+		{
+			"language": "hr",
+			"displayName": "Zapisnik govora",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Speech Logger",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Registador de Discursos",
+			"description": "Regista as expressões de voz num ficheiro, depois de o utilizador premir uma tecla de início. Também pode registar o discurso da sessão remota do NVDA a partir do suplemento NVDA Remote, no mesmo ou noutro ficheiro. Opcionalmente, inclui o discurso do say-all."
+		},
+		{
+			"language": "ro",
+			"displayName": "Speech Logger",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		},
+		{
+			"language": "tr",
+			"displayName": "Konuşma Kaydedici",
+			"description": "Kullanıcı bir başlatma tuşuna bastıktan sonra konuşma ifadelerini bir dosyaya kaydeder. NVDA Remote eklentisinden gelen NVDA uzak oturum konuşmasını da aynı veya başka bir dosyaya kaydedebilir. İsteğe bağlı olarak Tümünü seslendir'den gelen konuşmayı da içerir."
+		},
+		{
+			"language": "uk",
+			"displayName": "Записувач мовлення",
+			"description": "Logs speech utterances to a file, after the user presses an initiating key. Can also log NVDA remote session speech from the NVDA Remote add-on, to the same or another file. Optionally includes speech from say-all."
+		}
+	],
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2636"
 }
