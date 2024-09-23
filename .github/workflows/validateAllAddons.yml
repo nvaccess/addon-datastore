@@ -64,6 +64,7 @@ jobs:
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
+        ref: utf8
         submodules: true
     - name: Install addon-datastore-validation dependencies
       run: |
