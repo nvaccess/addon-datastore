@@ -7,12 +7,15 @@ Please note: the NVDA project including the Add-on Store has a [Citizen and Cont
 NV Access expects that all contributors and other community members will read and abide by the rules set out in this document while participating in the project or contributing add-ons.
 
 ## Guide for submitters
+
 Add-on authors who wish to have their add-on distributed through the Add-on Store should refer to [the submission guide](./docs/submitters/submissionGuide.md).
 
 ## Design overview
+
 For an overview of the whole Add-on Store, read [the design overview](./docs/design/designOverview.md).
 
 ### About security 
+
 Add-ons are run at user's own risk, add-ons in the add-on store do not undergo human security audits.
 The add-on store includes the following security measures:
 
@@ -37,6 +40,7 @@ Add-ons which are malicious or otherwise break the code of conduct can be remove
   - Sending an email to <info@nvaccess.org>
 
 ## Non-exclusivity
+
 This system does not restrict add-on authors from developing, publishing, and distributing an add-on outside this store.
 NVDA will still allow local installation from a `*.nvda-addon` file.
 The data hosted here is distributed under the [ODC-PDDL](https://opendatacommons.org/licenses/pddl/1-0/) license.
