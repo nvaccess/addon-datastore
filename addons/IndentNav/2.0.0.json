@@ -1,117 +1,117 @@
 {
-  "addonId": "IndentNav",
-  "displayName": "IndentNav",
-  "URL": "https://github.com/mltony/nvda-indent-nav/releases/download/v2.0/IndentNav-2.0.nvda-addon",
-  "description": "Indentation Navigation addon.\nIt allows NVDA users to navigate by indentation level or offset of lines or paragraphs.\nIn browsers it allows to quickly find paragraphs with the same offset from the left edge of the screen, such as first level comments in a hierarchical tree of comments.\nAlso while editing source code in many programming languages, it allows to jump between the lines of the same indentation level, as well as quickly find lines with greater or lesser indentation level.",
-  "sha256": "cf704481a811e8c4d022fc5974c3a8e552255881e826595f5ca48d703085c3b5",
-  "addonVersionName": "2.0",
-  "addonVersionNumber": {
-    "major": 2,
-    "minor": 0,
-    "patch": 0
-  },
-  "minNVDAVersion": {
-    "major": 2019,
-    "minor": 2,
-    "patch": 0
-  },
-  "lastTestedVersion": {
-    "major": 2024,
-    "minor": 1,
-    "patch": 0
-  },
-  "channel": "stable",
-  "publisher": "Tony Malykh",
-  "sourceURL": "https://github.com/mltony/nvda-indent-nav/",
-  "license": "GPL v2",
-  "homepage": "https://github.com/mltony/nvda-indent-nav",
-  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-  "translations": [
-    {
-      "language": "bg",
-      "displayName": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u043e\u0442\u0441\u0442\u044a\u043f\u0438",
-      "description": "\u0414\u043e\u0431\u0430\u0432\u043a\u0430 \u0437\u0430 \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u043e\u0442\u0441\u0442\u044a\u043f\u0438.\n\u0422\u0430\u0437\u0438 \u0434\u043e\u0431\u0430\u0432\u043a\u0430 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u043d\u0430 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u0438\u0442\u0435 \u043d\u0430 NVDA \u0434\u0430 \u0441\u0435 \u043f\u0440\u0438\u0434\u0432\u0438\u0436\u0432\u0430\u0442 \u043f\u043e \u043d\u0438\u0432\u043e\u0442\u043e \u043d\u0430 \u043e\u0442\u0441\u0442\u044a\u043f\u0430 \u0438\u043b\u0438 \u043f\u043e \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d \u0431\u0440\u043e\u0439 \u0440\u0435\u0434\u043e\u0432\u0435 \u0438\u043b\u0438 \u0430\u0431\u0437\u0430\u0446\u0438.\n\u0412 \u0431\u0440\u0430\u0443\u0437\u044a\u0440\u0438\u0442\u0435 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u0431\u044a\u0440\u0437\u043e \u0434\u0430 \u0441\u0435 \u043d\u0430\u043c\u0435\u0440\u044f\u0442 \u0430\u0431\u0437\u0430\u0446\u0438 \u0441\u044a\u0441 \u0441\u044a\u0449\u043e\u0442\u043e \u043e\u0442\u043c\u0435\u0441\u0442\u0432\u0430\u043d\u0435 \u043e\u0442 \u043b\u0435\u0432\u0438\u044f \u043a\u0440\u0430\u0439 \u043d\u0430 \u0435\u043a\u0440\u0430\u043d\u0430, \u043a\u0430\u0442\u043e \u043a\u043e\u043c\u0435\u043d\u0442\u0430\u0440\u0438 \u043e\u0442 \u043f\u044a\u0440\u0432\u043e \u043d\u0438\u0432\u043e \u0432 \u0439\u0435\u0440\u0430\u0440\u0445\u0438\u0447\u043d\u043e\u0442\u043e \u0434\u044a\u0440\u0432\u043e \u043d\u0430 \u043a\u043e\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0442\u0435.\n\u0421\u044a\u0449\u043e \u0442\u0430\u043a\u0430, \u0434\u043e\u043a\u0430\u0442\u043e \u0440\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0430\u0442\u0435 \u0438\u0437\u0445\u043e\u0434\u0435\u043d \u043a\u043e\u0434 \u043d\u0430 \u043c\u043d\u043e\u0433\u043e \u0435\u0437\u0438\u0446\u0438 \u0437\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0438\u0440\u0430\u043d\u0435, \u0442\u043e\u0439 \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u0432\u0430 \u0434\u0430 \u043f\u0440\u0435\u0441\u043a\u0430\u0447\u0430\u0442\u0435 \u043c\u0435\u0436\u0434\u0443 \u0440\u0435\u0434\u043e\u0432\u0435\u0442\u0435 \u0441\u044a\u0441 \u0441\u044a\u0449\u043e\u0442\u043e \u043d\u0438\u0432\u043e \u043d\u0430 \u043e\u0442\u0441\u0442\u044a\u043f, \u043a\u0430\u043a\u0442\u043e \u0438 \u0434\u0430 \u043d\u0430\u043c\u0438\u0440\u0430\u0442\u0435 \u0431\u044a\u0440\u0437\u043e \u0440\u0435\u0434\u043e\u0432\u0435 \u0441 \u043f\u043e-\u0433\u043e\u043b\u044f\u043c\u043e \u0438\u043b\u0438 \u043f\u043e-\u043c\u0430\u043b\u043a\u043e \u043d\u0438\u0432\u043e \u043d\u0430 \u043e\u0442\u0441\u0442\u044a\u043f."
-    },
-    {
-      "language": "da",
-      "displayName": "Indrykningsnavigation",
-      "description": "Tilf\u00f8jelsespakke til indrykningssnavigation. Denne tilf\u00f8jelse  giver NVDA-brugere mulighed for at navigere efter indrykningsniveau eller forskydning af linjer eller afsnit. I browsere g\u00f8r denne pakke det muligt at finde afsnit med samme forskydning fra sk\u00e6rmens venstre kant som f.eks. kommentarer p\u00e5 f\u00f8rste niveau i et hierarkisk tr\u00e6 med kommentarer. Dette er ogs\u00e5 nyttigt, n\u00e5r du redigerer kildekoden i forhold til mange programmeringssprog, hvor pakken kan s\u00e6tte dig i stand til at springe mellem linjerne p\u00e5 samme indrykningsniveau og hurtigt finde linjer med st\u00f8rre eller mindre indrykningsniveauer."
-    },
-    {
-      "language": "de",
-      "displayName": "IndentNav",
-      "description": "Navigation nach Einr\u00fcckungsebene\nDiese Erweiterung erm\u00f6glicht die Navigation im Text nach der Einr\u00fcckungsebene oder dem Abstand von Zeilen und Abs\u00e4tzen.  In Browsern erm\u00f6glicht diese Erweiterung das schnelle Auffinden von Abs\u00e4tzen mit gleichem Abstand zum linken Bildschirmrand, wie z.B. Kommentare der ersten Ebene in einem hierarchischen Kommentarbaum.  Auch beim Editieren von Quellcode in vielen Programmiersprachen erlaubt Indentnav zwischen den Zeilen der gleichen Einr\u00fcckungsebene zu springen, sowie schnell Zeilen mit niedrigerer oder h\u00f6herer Einr\u00fcckungsebene zu finden."
-    },
-    {
-      "language": "es",
-      "displayName": "IndentNav",
-      "description": "Complemento de navegaci\u00f3n por sangr\u00eda.\nPermite a los usuarios de NVDA navegar por nivel de sangr\u00eda o desplazamiento de l\u00edneas y p\u00e1rrafos.\nEn los navegadores, permite encontrar p\u00e1rrafos r\u00e1pidamente con el mismo desplazamiento desde el borde izquierdo de la pantalla, como los comentarios de primer nivel en una vista jer\u00e1rquica de comentarios.\nAdem\u00e1s, al editar el c\u00f3digo fuente de muchos lenguajes de programaci\u00f3n, permite saltar entre l\u00edneas con el mismo nivel de sangr\u00eda, as\u00ed como encontrar l\u00edneas con m\u00e1s o menos nivel de sangr\u00eda."
-    },
-    {
-      "language": "fi",
-      "displayName": "IndentNav",
-      "description": "Sisennysnavigoinnin lis\u00e4osa.\nSen avulla NVDA:n k\u00e4ytt\u00e4j\u00e4t voivat siirty\u00e4 sisennystason, rivipoikkeamien tai kappaleiden mukaan.\nSelaimissa on mahdollista etsi\u00e4 nopeasti kappaleita, jotka alkavat ruudun vasemmasta reunasta katsottuna samasta kohdasta, kuten esim. ensimm\u00e4isen tason kommentit hierarkkisessa kommenttipuussa.\nLis\u00e4ksi se mahdollistaa useiden ohjelmointikielien l\u00e4hdekoodia muokattaessa siirtymisen samalla sisennystasolla olevien rivien v\u00e4lill\u00e4 sek\u00e4 sellaisten rivien nopean etsimisen, joilla on suurempi tai pienempi sisennystaso."
-    },
-    {
-      "language": "fr",
-      "displayName": "IndentNav",
-      "description": "Module compl\u00e9mentaire de navigation par indentation.\nCe module compl\u00e9mentaire permet aux utilisateurs de NVDA de naviguer par niveau d'indentation ou par d\u00e9calage de lignes ou de paragraphes.\n Dans les navigateurs, il permet de trouver rapidement des paragraphes ayant le m\u00eame d\u00e9calage par rapport au bord gauche de l'\u00e9cran, tels que des commentaires de premier niveau dans un arbre hi\u00e9rarchique de commentaires.\nAussi lors de l'\u00e9dition du code source dans de nombreux langages de programmation, il permet de sauter entre les lignes du m\u00eame niveau d'indentation, ainsi que de trouver rapidement des lignes avec un niveau d'indentation plus ou moins \u00e9lev\u00e9."
-    },
-    {
-      "language": "gl",
-      "displayName": "IndentNav",
-      "description": "Complemento para a navegaci\u00f3n por indentaci\u00f3n.\nPermite aos usuarios moverse por nivel de indentaci\u00f3n ou sangrado de li\u00f1as ou par\u00e1grafos.\nEn navegadores permite atopar par\u00e1grafos co mesmo desprazamento dende o bordo esquerdo da pantalla, como comentarios de primeiro nivel nunha \u00e1rbore xer\u00e1rquica de comentarios.\nTam\u00e9n ao editar c\u00f3digo en varias linguaxes de programaci\u00f3n, permite saltar entre as li\u00f1as co mesmo nivel de indentaci\u00f3n, as\u00ed como atopar li\u00f1as con maior ou menor nivel de indentaci\u00f3n."
-    },
-    {
-      "language": "he",
-      "displayName": "IndentNav",
-      "description": "\u05ea\u05d5\u05e1\u05e3 \u05d6\u05d4 \u05de\u05d0\u05e4\u05e9\u05e8 \u05dc\u05e0\u05d5\u05d5\u05d8 \u05d1\u05e7\u05dc\u05d5\u05ea \u05d1\u05d9\u05df \u05e8\u05de\u05d5\u05ea \u05db\u05e0\u05d9\u05e1\u05d4 \u05e9\u05d5\u05e0\u05d5\u05ea \u05e9\u05dc \u05e4\u05d9\u05e1\u05e7\u05d0\u05d5\u05ea \u05d5\u05e9\u05d5\u05e8\u05d5\u05ea.\u05db\u05da \u05dc\u05de\u05e9\u05dc \u05d1\u05de\u05e1\u05de\u05db\u05d9\u05dd \u05d0\u05d5 \u05d1\u05d2\u05dc\u05d9\u05e9\u05d4 \u05d1\u05d0\u05d9\u05e0\u05d8\u05e8\u05e0\u05d8 \u05ea\u05d5\u05db\u05dc\u05d5 \u05dc\u05e0\u05d5\u05d5\u05d8 \u05dc\u05e4\u05d9\u05e1\u05e7\u05d4 \u05e9\u05e8\u05de\u05ea \u05d4\u05db\u05e0\u05d9\u05e1\u05d4 \u05e9\u05dc\u05d4 \u05d6\u05d4\u05d4 \u05dc\u05d6\u05d5 \u05e9\u05d0\u05ea\u05dd \u05de\u05e6\u05d5\u05d9\u05d9\u05dd \u05d1\u05d4. \u05d4\u05d3\u05d1\u05e8 \u05e9\u05d9\u05de\u05d5\u05e9\u05d9 \u05de\u05d0\u05d5\u05d3 \u05db\u05e9\u05de\u05d3\u05d5\u05d1\u05e8 \u05dc\u05de\u05e9\u05dc \u05d1\u05e0\u05d9\u05d5\u05d5\u05d8 \u05d1\u05d9\u05df \u05ea\u05e9\u05d5\u05d1\u05d5\u05ea \u05dc\u05e9\u05d0\u05dc\u05d5\u05ea \u05d0\u05d5 \u05de\u05d9\u05d3\u05e2 \u05d0\u05d7\u05e8 \u05d1\u05d5 \u05d9\u05e9 \u05d4\u05e7\u05e4\u05d3\u05d4 \u05e2\u05dc \u05db\u05e0\u05d9\u05e1\u05d4 \u05d1\u05e8\u05de\u05d5\u05ea \u05de\u05e9\u05ea\u05e0\u05d5\u05ea \u05d5\u05d4\u05db\u05e0\u05d9\u05e1\u05d4 \u05d4\u05d9\u05d0 \u05d1\u05e2\u05dc\u05ea \u05de\u05e9\u05de\u05e2\u05d5\u05ea.\u05db\u05da \u05d2\u05dd \u05d1\u05e2\u05d5\u05e8\u05db\u05d9 \u05e7\u05d5\u05d3 \u05ea\u05d5\u05db\u05dc\u05d5 \u05dc\u05e0\u05d5\u05d5\u05d8 \u05dc\u05e9\u05d5\u05e8\u05d5\u05ea \u05d1\u05d0\u05d5\u05ea\u05d4 \u05e8\u05de\u05ea \u05db\u05e0\u05d9\u05e1\u05d4 \u05d0\u05d5 \u05dc\u05e9\u05d5\u05e8\u05d5\u05ea \u05d1\u05e8\u05de\u05d5\u05ea \u05d2\u05d3\u05d5\u05dc\u05d5\u05ea \u05d0\u05d5 \u05e0\u05de\u05d5\u05db\u05d5\u05ea \u05de\u05d6\u05d5 \u05e9\u05d0\u05ea\u05dd \u05de\u05e6\u05d5\u05d9\u05d9\u05dd \u05d1\u05d4."
-    },
-    {
-      "language": "hr",
-      "displayName": "Kretanje po uvlakama",
-      "description": "Dodatak za kretanje po uvlakama.\nOmogu\u0107uje NVDA korisnicima kretanje po razinama uvla\u010denja redaka ili po odmacima redaka ili po odlomcima.\nU preglednicima omogu\u0107uje brzo pronala\u017eenje odlomaka s istim odmakom od lijevog ruba ekrana, poput komentara prve razine u hijerarhijskom stablu komentara.\nTako\u0111er, tijekom ure\u0111ivanja izvornog koda programskih jezika, omogu\u0107uje kretanje izme\u0111u redaka iste razine uvla\u010denja, kao i brzo pronala\u017eenje redaka s ve\u0107om ili manjom uvlakom."
-    },
-    {
-      "language": "it",
-      "displayName": "IndentNav",
-      "description": "Componente aggiuntivo Indentation Navigation.\nConsente agli utenti di NVDA di navigare per livelli di rientri, oppure per gruppi di righe o anche per paragrafi.\nNei browser permette di trovare rapidamente i paragrafi basandosi sulla medesima distanza dal bordo sinistro dello schermo, per esempio in una visualizzazione ad albero di commenti, ci si potr\u00e0 spostare solo tra i commenti del primo livello della gerarchia.\nAnche quando si modifica il codice sorgente di molti linguaggi di programmazione, consente di passare velocemente tra le righe dello stesso livello di rientro, oppure individuare le righe con un livello di rientro pi\u00f9 grande o pi\u00f9 piccolo."
-    },
-    {
-      "language": "pt_BR",
-      "displayName": "IndentNav \u2014 Navega\u00e7\u00e3o por Recuo",
-      "description": "Complemento de Navega\u00e7\u00e3o por Recuo (indenta\u00e7\u00e3o).\nPermite aos usu\u00e1rios do NVDA navegar por n\u00edvel de recuo \u2014 endenta\u00e7\u00e3o \u2014 ou deslocamento de linhas ou par\u00e1grafos.\nEm navegadores, permite localizar rapidamente os par\u00e1grafos com o mesmo deslocamento da borda esquerda da tela, como coment\u00e1rios de primeiro n\u00edvel em uma \u00e1rvore hier\u00e1rquica de coment\u00e1rios.\nAl\u00e9m disso, ao editar o c\u00f3digo fonte em muitas linguagens de programa\u00e7\u00e3o, permite saltar entre as linhas do mesmo n\u00edvel de recuo, bem como encontrar rapidamente linhas com maior ou menor n\u00edvel de recuo."
-    },
-    {
-      "language": "pt_PT",
-      "displayName": "IndentNav",
-      "description": "Addon de navega\u00e7\u00e3o por indenta\u00e7\u00e3o.\nPermite aos utilizadores do NVDA navegar por n\u00edvel de indenta\u00e7\u00e3o ou compensa\u00e7\u00e3o de linhas ou par\u00e1grafos.\nNos navegadores, permite encontrar rapidamente par\u00e1grafos com o mesmo deslocamento a partir da borda esquerda do ecr\u00e3, como coment\u00e1rios de primeiro n\u00edvel numa \u00e1rvore hier\u00e1rquica de coment\u00e1rios.\nAl\u00e9m disso, ao editar o c\u00f3digo-fonte, em muitas linguagens de programa\u00e7\u00e3o, permite saltar entre as linhas do mesmo n\u00edvel de indenta\u00e7\u00e3o, bem como localizar rapidamente as linhas com maior ou menor n\u00edvel de indenta\u00e7\u00e3o."
-    },
-    {
-      "language": "ro",
-      "displayName": "IndentNav",
-      "description": "Supliment pentru indentarea navig\u0103rii.\nAcesta permite utilizatorilor NVDA s\u0103 navigheze dup\u0103 nivel de indentare sau offset de linii sau paragrafe"
-    },
-    {
-      "language": "sk",
-      "displayName": "Navig\u00e1cia po odsadeniach",
-      "description": "Doplnok na lep\u0161iu navig\u00e1ciu po odsadeniach.\nUmo\u017e\u0148uje r\u00fdchly skok na odsaden\u00e9 riadky a odseky alebo na \u010dasti s rovnak\u00fdm odsaden\u00fdm.\nV re\u017eime prehliadania m\u00f4\u017eete napr\u00edklad r\u00fdchlo sk\u00e1ka\u0165 po odsekoch s rovnak\u00fdm odsaden\u00edm, zv\u00e4\u010d\u0161a koment\u00e1roch prvej \u00farovne.\nPri programovan\u00ed m\u00f4\u017eete sk\u00e1ka\u0165 na riadky s rovnak\u00fdm odsaden\u00edm, pr\u00edpadne sk\u00e1ka\u0165 len po riadkoch s v\u00e4\u010d\u0161\u00edm alebo men\u0161\u00edm odsaden\u00edm."
-    },
-    {
-      "language": "sr",
-      "displayName": "Navigacija kroz podvu\u010den tekst",
-      "description": "Dodatak za navigaciju kroz podvu\u010den tekst.\nDozvoljava NVDA korisnicima navigaciju po nivoima podvla\u010denja ili po udvajanjima redova.\nU pretra\u017eiva\u010dima dozvoljava pronala\u017eenje pasusa sa istim nivoom podvla\u010denja od ekrana, kao \u0161to su prvi komentari u nivou hierarhije.\nTako\u0111e u toku ure\u0111ivanja izvornog koda u puno programskih jezika, dozvoljava pomeranje na redove sa istim nivoom uvla\u010denja, kao i brzo pronala\u017eenje redova sa manjim ili ve\u0107im uvla\u010denjem."
-    },
-    {
-      "language": "uk",
-      "displayName": "\u041d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044f \u0437\u0430 \u0432\u0456\u0434\u0441\u0442\u0443\u043f\u0430\u043c\u0438",
-      "description": "\u0414\u043e\u0434\u0430\u0442\u043e\u043a \u041d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044f \u0437\u0430 \u0432\u0456\u0434\u0441\u0442\u0443\u043f\u0430\u043c\u0438.\n\u0414\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447\u0430\u043c NVDA \u0437\u0434\u0456\u0439\u0441\u043d\u044e\u0432\u0430\u0442\u0438 \u043d\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044e \u0437\u0430 \u0440\u0456\u0432\u043d\u0435\u043c \u0432\u0456\u0434\u0441\u0442\u0443\u043f\u0443 \u0430\u0431\u043e \u0437\u043c\u0456\u0449\u0435\u043d\u043d\u044f\u043c \u0440\u044f\u0434\u043a\u0456\u0432 \u0447\u0438 \u0430\u0431\u0437\u0430\u0446\u0456\u0432.\n\u0423 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430\u0445 \u0434\u0430\u0454 \u043c\u043e\u0436\u043b\u0438\u0432\u0456\u0441\u0442\u044c \u0448\u0432\u0438\u0434\u043a\u043e \u0437\u043d\u0430\u0445\u043e\u0434\u0438\u0442\u0438 \u0430\u0431\u0437\u0430\u0446\u0438 \u0437 \u043e\u0434\u043d\u0430\u043a\u043e\u0432\u0438\u043c \u0437\u043c\u0456\u0449\u0435\u043d\u043d\u044f\u043c \u0432\u0456\u0434 \u043b\u0456\u0432\u043e\u0433\u043e \u043a\u0440\u0430\u044e \u0435\u043a\u0440\u0430\u043d\u0430, \u043d\u0430\u043f\u0440\u0438\u043a\u043b\u0430\u0434 \u043a\u043e\u043c\u0435\u043d\u0442\u0430\u0440\u0456 \u043f\u0435\u0440\u0448\u043e\u0433\u043e \u0440\u0456\u0432\u043d\u044f \u0432 \u0456\u0454\u0440\u0430\u0440\u0445\u0456\u0447\u043d\u043e\u043c\u0443 \u0434\u0435\u0440\u0435\u0432\u0456 \u043a\u043e\u043c\u0435\u043d\u0442\u0430\u0440\u0456\u0432.\n\u0422\u0430\u043a\u043e\u0436 \u043f\u0456\u0434 \u0447\u0430\u0441 \u0440\u0435\u0434\u0430\u0433\u0443\u0432\u0430\u043d\u043d\u044f \u0432\u0438\u0445\u0456\u0434\u043d\u043e\u0433\u043e \u043a\u043e\u0434\u0443 \u043d\u0430 \u0431\u0430\u0433\u0430\u0442\u044c\u043e\u0445 \u043c\u043e\u0432\u0430\u0445 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0443\u0432\u0430\u043d\u043d\u044f \u0446\u0435\u0439 \u0434\u043e\u0434\u0430\u0442\u043e\u043a \u0434\u043e\u0437\u0432\u043e\u043b\u044f\u0454 \u043f\u0435\u0440\u0435\u0445\u043e\u0434\u0438\u0442\u0438 \u043c\u0456\u0436 \u0440\u044f\u0434\u043a\u0430\u043c\u0438 \u043e\u0434\u043d\u043e\u0433\u043e \u0440\u0456\u0432\u043d\u044f \u0432\u0456\u0434\u0441\u0442\u0443\u043f\u0443, \u0430 \u0442\u0430\u043a\u043e\u0436 \u0448\u0432\u0438\u0434\u043a\u043e \u0437\u043d\u0430\u0445\u043e\u0434\u0438\u0442\u0438 \u0440\u044f\u0434\u043a\u0438 \u0437 \u0431\u0456\u043b\u044c\u0448\u0438\u043c \u0447\u0438 \u043c\u0435\u043d\u0448\u0438\u043c \u0440\u0456\u0432\u043d\u0435\u043c \u0432\u0456\u0434\u0441\u0442\u0443\u043f\u0443."
-    },
-    {
-      "language": "zh_CN",
-      "displayName": "\u7f29\u8fdb\u5bfc\u822a",
-      "description": "\u7f29\u8fdb\u5bfc\u822a\u63d2\u4ef6\u3002\n\u6b64\u63d2\u4ef6\u5141\u8bb8 nvda \u7528\u6237\u6309\u7f29\u8fdb\u7ea7\u522b\u6216\u884c\u6216\u6bb5\u843d\u7684\u504f\u79fb\u91cf\u8fdb\u884c\u6d4f\u89c8\u3002\n\u5728\u6d4f\u89c8\u5668\u4e2d, \u53ef\u4ee5\u4ece\u5c4f\u5e55\u7684\u5de6\u8fb9\u7f18\u5feb\u901f\u67e5\u627e\u5177\u6709\u76f8\u540c\u504f\u79fb\u91cf\u7684\u6bb5\u843d, \u4f8b\u5982\u5206\u5c42\u6ce8\u91ca\u6811\u4e2d\u7684\u7b2c\u4e00\u7ea7\u6ce8\u91ca\u3002\n\u6b64\u5916, \u5728\u8bb8\u591a\u7f16\u7a0b\u8bed\u8a00\u4e2d\u7f16\u8f91\u6e90\u4ee3\u7801\u65f6, \u8fd8\u5141\u8bb8\u5728\u76f8\u540c\u7f29\u8fdb\u7ea7\u522b\u7684\u884c\u4e4b\u95f4\u8df3\u8f6c, \u5e76\u5feb\u901f\u67e5\u627e\u5177\u6709\u8f83\u5927\u6216\u8f83\u5c0f\u7f29\u8fdb\u7ea7\u522b\u7684\u884c\u3002"
-    }
-  ],
-  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/3288"
+	"addonId": "IndentNav",
+	"displayName": "IndentNav",
+	"URL": "https://github.com/mltony/nvda-indent-nav/releases/download/v2.0/IndentNav-2.0.nvda-addon",
+	"description": "Indentation Navigation addon.\nIt allows NVDA users to navigate by indentation level or offset of lines or paragraphs.\nIn browsers it allows to quickly find paragraphs with the same offset from the left edge of the screen, such as first level comments in a hierarchical tree of comments.\nAlso while editing source code in many programming languages, it allows to jump between the lines of the same indentation level, as well as quickly find lines with greater or lesser indentation level.",
+	"sha256": "cf704481a811e8c4d022fc5974c3a8e552255881e826595f5ca48d703085c3b5",
+	"addonVersionName": "2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Tony Malykh",
+	"sourceURL": "https://github.com/mltony/nvda-indent-nav/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mltony/nvda-indent-nav",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [
+		{
+			"language": "bg",
+			"displayName": "Навигация по отстъпи",
+			"description": "Добавка за навигация по отстъпи.\nТази добавка позволява на потребителите на NVDA да се придвижват по нивото на отстъпа или по определен брой редове или абзаци.\nВ браузърите позволява бързо да се намерят абзаци със същото отместване от левия край на екрана, като коментари от първо ниво в йерархичното дърво на коментарите.\nСъщо така, докато редактирате изходен код на много езици за програмиране, той позволява да прескачате между редовете със същото ниво на отстъп, както и да намирате бързо редове с по-голямо или по-малко ниво на отстъп."
+		},
+		{
+			"language": "da",
+			"displayName": "Indrykningsnavigation",
+			"description": "Tilføjelsespakke til indrykningssnavigation. Denne tilføjelse  giver NVDA-brugere mulighed for at navigere efter indrykningsniveau eller forskydning af linjer eller afsnit. I browsere gør denne pakke det muligt at finde afsnit med samme forskydning fra skærmens venstre kant som f.eks. kommentarer på første niveau i et hierarkisk træ med kommentarer. Dette er også nyttigt, når du redigerer kildekoden i forhold til mange programmeringssprog, hvor pakken kan sætte dig i stand til at springe mellem linjerne på samme indrykningsniveau og hurtigt finde linjer med større eller mindre indrykningsniveauer."
+		},
+		{
+			"language": "de",
+			"displayName": "IndentNav",
+			"description": "Navigation nach Einrückungsebene\nDiese Erweiterung ermöglicht die Navigation im Text nach der Einrückungsebene oder dem Abstand von Zeilen und Absätzen.  In Browsern ermöglicht diese Erweiterung das schnelle Auffinden von Absätzen mit gleichem Abstand zum linken Bildschirmrand, wie z.B. Kommentare der ersten Ebene in einem hierarchischen Kommentarbaum.  Auch beim Editieren von Quellcode in vielen Programmiersprachen erlaubt Indentnav zwischen den Zeilen der gleichen Einrückungsebene zu springen, sowie schnell Zeilen mit niedrigerer oder höherer Einrückungsebene zu finden."
+		},
+		{
+			"language": "es",
+			"displayName": "IndentNav",
+			"description": "Complemento de navegación por sangría.\nPermite a los usuarios de NVDA navegar por nivel de sangría o desplazamiento de líneas y párrafos.\nEn los navegadores, permite encontrar párrafos rápidamente con el mismo desplazamiento desde el borde izquierdo de la pantalla, como los comentarios de primer nivel en una vista jerárquica de comentarios.\nAdemás, al editar el código fuente de muchos lenguajes de programación, permite saltar entre líneas con el mismo nivel de sangría, así como encontrar líneas con más o menos nivel de sangría."
+		},
+		{
+			"language": "fi",
+			"displayName": "IndentNav",
+			"description": "Sisennysnavigoinnin lisäosa.\nSen avulla NVDA:n käyttäjät voivat siirtyä sisennystason, rivipoikkeamien tai kappaleiden mukaan.\nSelaimissa on mahdollista etsiä nopeasti kappaleita, jotka alkavat ruudun vasemmasta reunasta katsottuna samasta kohdasta, kuten esim. ensimmäisen tason kommentit hierarkkisessa kommenttipuussa.\nLisäksi se mahdollistaa useiden ohjelmointikielien lähdekoodia muokattaessa siirtymisen samalla sisennystasolla olevien rivien välillä sekä sellaisten rivien nopean etsimisen, joilla on suurempi tai pienempi sisennystaso."
+		},
+		{
+			"language": "fr",
+			"displayName": "IndentNav",
+			"description": "Module complémentaire de navigation par indentation.\nCe module complémentaire permet aux utilisateurs de NVDA de naviguer par niveau d'indentation ou par décalage de lignes ou de paragraphes.\n Dans les navigateurs, il permet de trouver rapidement des paragraphes ayant le même décalage par rapport au bord gauche de l'écran, tels que des commentaires de premier niveau dans un arbre hiérarchique de commentaires.\nAussi lors de l'édition du code source dans de nombreux langages de programmation, il permet de sauter entre les lignes du même niveau d'indentation, ainsi que de trouver rapidement des lignes avec un niveau d'indentation plus ou moins élevé."
+		},
+		{
+			"language": "gl",
+			"displayName": "IndentNav",
+			"description": "Complemento para a navegación por indentación.\nPermite aos usuarios moverse por nivel de indentación ou sangrado de liñas ou parágrafos.\nEn navegadores permite atopar parágrafos co mesmo desprazamento dende o bordo esquerdo da pantalla, como comentarios de primeiro nivel nunha árbore xerárquica de comentarios.\nTamén ao editar código en varias linguaxes de programación, permite saltar entre as liñas co mesmo nivel de indentación, así como atopar liñas con maior ou menor nivel de indentación."
+		},
+		{
+			"language": "he",
+			"displayName": "IndentNav",
+			"description": "תוסף זה מאפשר לנווט בקלות בין רמות כניסה שונות של פיסקאות ושורות.כך למשל במסמכים או בגלישה באינטרנט תוכלו לנווט לפיסקה שרמת הכניסה שלה זהה לזו שאתם מצויים בה. הדבר שימושי מאוד כשמדובר למשל בניווט בין תשובות לשאלות או מידע אחר בו יש הקפדה על כניסה ברמות משתנות והכניסה היא בעלת משמעות.כך גם בעורכי קוד תוכלו לנווט לשורות באותה רמת כניסה או לשורות ברמות גדולות או נמוכות מזו שאתם מצויים בה."
+		},
+		{
+			"language": "hr",
+			"displayName": "Kretanje po uvlakama",
+			"description": "Dodatak za kretanje po uvlakama.\nOmogućuje NVDA korisnicima kretanje po razinama uvlačenja redaka ili po odmacima redaka ili po odlomcima.\nU preglednicima omogućuje brzo pronalaženje odlomaka s istim odmakom od lijevog ruba ekrana, poput komentara prve razine u hijerarhijskom stablu komentara.\nTakođer, tijekom uređivanja izvornog koda programskih jezika, omogućuje kretanje između redaka iste razine uvlačenja, kao i brzo pronalaženje redaka s većom ili manjom uvlakom."
+		},
+		{
+			"language": "it",
+			"displayName": "IndentNav",
+			"description": "Componente aggiuntivo Indentation Navigation.\nConsente agli utenti di NVDA di navigare per livelli di rientri, oppure per gruppi di righe o anche per paragrafi.\nNei browser permette di trovare rapidamente i paragrafi basandosi sulla medesima distanza dal bordo sinistro dello schermo, per esempio in una visualizzazione ad albero di commenti, ci si potrà spostare solo tra i commenti del primo livello della gerarchia.\nAnche quando si modifica il codice sorgente di molti linguaggi di programmazione, consente di passare velocemente tra le righe dello stesso livello di rientro, oppure individuare le righe con un livello di rientro più grande o più piccolo."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "IndentNav — Navegação por Recuo",
+			"description": "Complemento de Navegação por Recuo (indentação).\nPermite aos usuários do NVDA navegar por nível de recuo — endentação — ou deslocamento de linhas ou parágrafos.\nEm navegadores, permite localizar rapidamente os parágrafos com o mesmo deslocamento da borda esquerda da tela, como comentários de primeiro nível em uma árvore hierárquica de comentários.\nAlém disso, ao editar o código fonte em muitas linguagens de programação, permite saltar entre as linhas do mesmo nível de recuo, bem como encontrar rapidamente linhas com maior ou menor nível de recuo."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "IndentNav",
+			"description": "Addon de navegação por indentação.\nPermite aos utilizadores do NVDA navegar por nível de indentação ou compensação de linhas ou parágrafos.\nNos navegadores, permite encontrar rapidamente parágrafos com o mesmo deslocamento a partir da borda esquerda do ecrã, como comentários de primeiro nível numa árvore hierárquica de comentários.\nAlém disso, ao editar o código-fonte, em muitas linguagens de programação, permite saltar entre as linhas do mesmo nível de indentação, bem como localizar rapidamente as linhas com maior ou menor nível de indentação."
+		},
+		{
+			"language": "ro",
+			"displayName": "IndentNav",
+			"description": "Supliment pentru indentarea navigării.\nAcesta permite utilizatorilor NVDA să navigheze după nivel de indentare sau offset de linii sau paragrafe"
+		},
+		{
+			"language": "sk",
+			"displayName": "Navigácia po odsadeniach",
+			"description": "Doplnok na lepšiu navigáciu po odsadeniach.\nUmožňuje rýchly skok na odsadené riadky a odseky alebo na časti s rovnakým odsadeným.\nV režime prehliadania môžete napríklad rýchlo skákať po odsekoch s rovnakým odsadením, zväčša komentároch prvej úrovne.\nPri programovaní môžete skákať na riadky s rovnakým odsadením, prípadne skákať len po riadkoch s väčším alebo menším odsadením."
+		},
+		{
+			"language": "sr",
+			"displayName": "Navigacija kroz podvučen tekst",
+			"description": "Dodatak za navigaciju kroz podvučen tekst.\nDozvoljava NVDA korisnicima navigaciju po nivoima podvlačenja ili po udvajanjima redova.\nU pretraživačima dozvoljava pronalaženje pasusa sa istim nivoom podvlačenja od ekrana, kao što su prvi komentari u nivou hierarhije.\nTakođe u toku uređivanja izvornog koda u puno programskih jezika, dozvoljava pomeranje na redove sa istim nivoom uvlačenja, kao i brzo pronalaženje redova sa manjim ili većim uvlačenjem."
+		},
+		{
+			"language": "uk",
+			"displayName": "Навігація за відступами",
+			"description": "Додаток Навігація за відступами.\nДозволяє користувачам NVDA здійснювати навігацію за рівнем відступу або зміщенням рядків чи абзаців.\nУ браузерах дає можливість швидко знаходити абзаци з однаковим зміщенням від лівого краю екрана, наприклад коментарі першого рівня в ієрархічному дереві коментарів.\nТакож під час редагування вихідного коду на багатьох мовах програмування цей додаток дозволяє переходити між рядками одного рівня відступу, а також швидко знаходити рядки з більшим чи меншим рівнем відступу."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "缩进导航",
+			"description": "缩进导航插件。\n此插件允许 nvda 用户按缩进级别或行或段落的偏移量进行浏览。\n在浏览器中, 可以从屏幕的左边缘快速查找具有相同偏移量的段落, 例如分层注释树中的第一级注释。\n此外, 在许多编程语言中编辑源代码时, 还允许在相同缩进级别的行之间跳转, 并快速查找具有较大或较小缩进级别的行。"
+		}
+	],
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/3288"
 }

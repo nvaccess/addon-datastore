@@ -42,6 +42,23 @@ jobs:
         body: "${{ steps.deleteInvalidDownloads.outputs.PRBodyString }}"
         author: github-actions <github-actions@github.com>
         add-paths: 'addons/*/*.json'
+    - name: Normalize JSON files with jq
+      shell: bash
+      run: |
+        for file in ./addons/*/*.json; do
+            jq --tab . "${file}" > "${file}.tmp"
+            mv "${file}.tmp" "${file}"
+        done
+    - name: Create PR for normalizing files
+      if: always()
+      uses: peter-evans/create-pull-request@v6
+      with:
+        title: Normalize JSON files
+        branch: normJSON${{ github.run_number }}
+        commit-message: Normalize JSON files
+        body: "Use tabs and unicode encoding for JSON files"
+        author: github-actions <github-actions@github.com>
+        add-paths: 'addons/*/*.json'
     - name: Checkout validate repo
       uses: actions/checkout@v4
       with:
