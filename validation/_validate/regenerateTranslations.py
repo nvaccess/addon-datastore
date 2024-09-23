@@ -22,7 +22,7 @@ del sys.path[-1]
 
 
 def regenerateJsonFile(filePath: str, errorFilePath: Optional[str]) -> None:
-	with open(filePath) as f:
+	with open(filePath, encoding="utf-8") as f:
 		addonData = json.load(f)
 	if addonData.get("legacy"):
 		return
@@ -44,7 +44,7 @@ def regenerateJsonFile(filePath: str, errorFilePath: Optional[str]) -> None:
 			}
 		)
 	
-	with open(filePath, "wt") as f:
+	with open(filePath, "wt", encoding="utf-8") as f:
 		json.dump(addonData, f, indent="\t")
 	print(f"Wrote json file: {filePath}")
 

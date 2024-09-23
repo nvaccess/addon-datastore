@@ -32,7 +32,7 @@ OUTPUT_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testOutput')
 
 
 def getAddonManifest():
-	with open(MANIFEST_FILE) as f:
+	with open(MANIFEST_FILE, encoding="utf-8") as f:
 		manifest = addonManifest.AddonManifest(f)
 	return manifest
 
@@ -74,10 +74,10 @@ class IntegrationTestCreateJson(unittest.TestCase):
 	def _assertJsonFilesEqual(self, actualJsonPath: str, expectedJsonPath: str):
 
 		# Not equal, how are they different?
-		with open(VALID_JSON) as expectedFile:
+		with open(VALID_JSON, encoding="utf-8") as expectedFile:
 			expectedJson = json.load(expectedFile)
 			del expectedJson["sha256-comment"]  # remove explanatory comment
-		with open(actualJsonPath) as actualFile:
+		with open(actualJsonPath, encoding="utf-8") as actualFile:
 			actualJson = json.load(actualFile)
 			del actualJson["submissionTime"]  # remove submission time
 

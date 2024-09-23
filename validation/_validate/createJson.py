@@ -61,7 +61,7 @@ def generateJsonFile(
 
 	filePath = buildOutputFilePath(data, parentDir)
 
-	with open(filePath, "wt") as f:
+	with open(filePath, "wt", encoding="utf-8") as f:
 		json.dump(data, f, indent="\t")
 	print(f"Wrote json file: {filePath}")
 

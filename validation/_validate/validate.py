@@ -42,7 +42,7 @@ def getAddonMetadata(filename: str) -> JsonObjT:
 	"""Loads addon submission metadata json file and returns as object.
 	Raises if the metadata does not conform to the schema.
 	"""
-	with open(filename) as f:
+	with open(filename, encoding="utf-8") as f:
 		data: JsonObjT = json.load(f)
 	_validateJson(data)
 	return data
@@ -51,7 +51,7 @@ def getAddonMetadata(filename: str) -> JsonObjT:
 def getExistingVersions(verFilename: str) -> List[str]:
 	"""Loads API versions file and returns list of versions formatted as strings.
 	"""
-	with open(verFilename) as f:
+	with open(verFilename, encoding="utf-8") as f:
 		data: List[JsonObjT] = json.load(f)
 	return [_formatVersionString(version["apiVer"].values()) for version in data]
 
@@ -59,7 +59,7 @@ def getExistingVersions(verFilename: str) -> List[str]:
 def getExistingStableVersions(verFilename: str) -> List[str]:
 	"""Loads API versions file and returns list of stable versions formatted as strings.
 	"""
-	with open(verFilename) as f:
+	with open(verFilename, encoding="utf-8") as f:
 		data: List[JsonObjT] = json.load(f)
 	return [
 		_formatVersionString(version["apiVer"].values())
@@ -72,7 +72,7 @@ def _validateJson(data: JsonObjT) -> None:
 	""" Ensure that the loaded metadata conforms to the schema.
 	Raise error if not
 	"""
-	with open(JSON_SCHEMA) as f:
+	with open(JSON_SCHEMA, encoding="utf-8") as f:
 		schema = json.load(f)
 	try:
 		validate(instance=data, schema=schema)

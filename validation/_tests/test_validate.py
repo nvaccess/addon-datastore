@@ -26,13 +26,13 @@ VERSIONS_FILE = os.path.join(TEST_DATA_PATH, 'nvdaAPIVersions.json')
 
 
 def getValidAddonSubmission() -> validate.JsonObjT:
-	with open(VALID_SUBMISSION_JSON_FILE) as f:
+	with open(VALID_SUBMISSION_JSON_FILE, encoding="utf-8") as f:
 		submission = json.load(f)
 	return submission
 
 
 def getAddonManifest():
-	with open(MANIFEST_FILE) as f:
+	with open(MANIFEST_FILE, encoding="utf-8") as f:
 		manifest = addonManifest.AddonManifest(f)
 	return manifest
 
