@@ -104,7 +104,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: Set[
 			for addonName in addons[nvdaAPIVersion][channel]:
 				addon = addons[nvdaAPIVersion][channel][addonName]
 				addonWritePath = f"{addonDir}/en/{str(nvdaAPIVersion)}/{addonName}"
-				with open(addon.pathToData, "r") as oldAddonFile:
+				with open(addon.pathToData, "r", encoding="utf-8") as oldAddonFile:
 					addonData: Dict = json.load(oldAddonFile)
 					if "translations" in addonData:
 						del addonData["translations"]
@@ -163,7 +163,7 @@ def readAddons(addonDir: str) -> Iterable[Addon]:
 	Skips addons and logs errors if the naming schema or json schema do not match what is expected.
 	"""
 	for fileName in glob.glob(f"{addonDir}/**/*.json"):
-		with open(fileName, "r") as addonFile:
+		with open(fileName, "r", encoding="utf-8") as addonFile:
 			addonData = json.load(addonFile)
 		try:
 			validateJson(addonData, JSONSchemaPaths.ADDON_DATA)
