@@ -8,7 +8,7 @@ function sleep(sleepTimeMs) {
 
 
 module.exports = ({core}) => {
-    if (core._apiUsageCount >= process.env.VT_API_LIMIT) {
+    if (core._apiUsageCount >= Number(process.env.VT_API_LIMIT)) {
         core.info("VirusTotal API usage limit reached");
         throw new Error("VirusTotal API usage limit reached");
     }
