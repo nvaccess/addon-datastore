@@ -28,7 +28,9 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);
       console.log(`stderr: ${stderr}`);
-      core.setFailed("Failed to get VirusTotal analysis");
+      if (core._isSingleFileAnalysis) {
+        core.setFailed("Failed to get VirusTotal analysis");
+      }
       return;
     }
     writeVTScanUrl({core}, metadataFile, addonMetadata);
@@ -47,7 +49,9 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
     reviewedAddonsData[addonMetadata.addonId].push(addonMetadata.sha256);
     stringified = JSON.stringify(reviewedAddonsData, null, "\t");
     fs.writeFileSync("reviewedAddons.json", stringified);
-    core.setFailed("VirusTotal analysis failed");
+    if (core._isSingleFileAnalysis) {
+      core.setFailed("VirusTotal analysis failed");
+    }
   });
 }
 
@@ -80,6 +84,7 @@ module.exports = ({core}, globPattern) => {
   var metadataFiles = glob.globSync(globPattern);
   // Count API usages to adhere to rate limiting
   core._apiUsageCount = 0;
+  core._isSingleFileAnalysis = metadataFiles.length == 1;
   metadataFiles.forEach(metadataFile => {
     getVirusTotalAnalysisIfRequired({core}, metadataFile);
   });
