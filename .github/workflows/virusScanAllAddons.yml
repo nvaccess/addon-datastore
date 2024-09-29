@@ -1,0 +1,68 @@
+name: Scan a batch of submitted add-ons with Virus Total
+
+on:
+  workflow_dispatch:
+
+jobs:
+  virusTotal-analysis:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.11 ]
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      VT_API_KEY: ${{ secrets.VT_API_KEY }}
+      VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.headRef }}
+      - name: Install virusTotal
+        run: choco install vt-cli
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+      - name: Install npm dependencies
+        run: npm install glob uuid
+      - name: Submit add-ons with VirusTotal
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const virusTotalSubmit = require('./.github/workflows/virusTotalSubmit.js')
+            virusTotalSubmit({core}, "./addons/*/*.json")
+      - name: Set Virus Total analysis status
+        if: always()
+        id: setVirusTotalAnalysisStatus
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
+            setVirusTotalAnalysisStatus({core}, "./addons/*/*.json")
+      - name: Create PR for updated VT urls
+        if: always()
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: Add VirusTotal review URLs
+          branch: addVTURLs${{ github.run_number }}
+          commit-message: Add VirusTotal review URLs
+          body: "Add VirusTotal review URLs to add-ons"
+          author: github-actions <github-actions@github.com>
+          add-paths: 'addons/*/*.json'
+      - name: Upload results
+        id: uploadResults
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: VirusTotal
+          path: vt.json
+          overwrite: true
+      - name: Upload manual approval
+        id: uploadManualApproval
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: manualApproval
+          path: reviewedAddons.json
+          overwrite: true

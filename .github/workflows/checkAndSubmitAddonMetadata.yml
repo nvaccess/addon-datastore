@@ -66,7 +66,7 @@ jobs:
           script: |
             const addonId = "${{ steps.getAddonId.outputs.result }}"
             return addonId.replace(/[^a-zA-Z0-9]/g, "")
-      - name: Copy add-on metadata file  
+      - name: Copy add-on metadata file
         run: |
           Copy-Item ${{ steps.getAddonFileName.outputs.result }} addonMetadata.json
       - name: Upload add-on
@@ -155,6 +155,7 @@ jobs:
       issues: write
     outputs:
       pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+      addonFileName: ${{ steps.getAddonFileName.outputs.addonFileName }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -188,6 +189,7 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         path: validation
         submodules: true
+        ref: addVtScanUrl
     - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
@@ -240,6 +242,9 @@ jobs:
       issues: write
     env:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
+      VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
+    outputs:
+      vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -247,6 +252,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+      - name: Install glob
+        run: npm install glob
       - name: Install virusTotal
         run: choco install vt-cli
       - name: Set Virus Total analysis status
@@ -255,7 +264,7 @@ jobs:
         with:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
-            setVirusTotalAnalysisStatus({core})
+            setVirusTotalAnalysisStatus({core}, "${{ needs.createPullRequest.outputs.getAddonFileName }}")
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -279,7 +288,7 @@ jobs:
           issue-number: ${{ inputs.issueNumber }}
           body: |
             VirusTotal has flagged this add-on as malicious.
-            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.analysisUrl }}).
+            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
             Please contact the flagged security vendors to get them to review and unflag the false positive.
             Please ask here or email info@nvaccess.org if you need assistance with this process.
   codeQL-analysis:
@@ -313,7 +322,7 @@ jobs:
           commit-message: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
           body: |
             This add-on needs to be reviewed by NV Access due to analysis failure.
-            Review ${{ inputs.issueNumber }} for more information.
+            Review #${{ inputs.issueNumber }} for more information.
           author: github-actions <github-actions@github.com>
           delete-branch: true
       - name: Request to keep issue opened
@@ -340,12 +349,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh pr merge ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})' -m
-        
+
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    needs: [getAddonId, mergeToMaster]
+    needs: [getAddonId, mergeToMaster, virusTotal-analysis]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -399,13 +408,13 @@ jobs:
         .[\"$addonId\"].discussionId = \"$discussionId\"
         | .[\"$addonId\"].discussionUrl = \"$discussionUrl\"
         "
-  
+
         mv discussions.json discussions.old.json
         jq -e --tab "$jqCode" discussions.old.json > discussions.json
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
-    - name: Add discussion URL to metadata
+    - name: Add discussion and VT scan URL to metadata
       if: always()
       run: |
         addonFilename=$(
@@ -415,17 +424,26 @@ jobs:
           echo ${{ needs.getAddonId.outputs.addonId }}
         )
         reviewUrl=$(
-          jq ".\"$addonId\".discussionUrl" discussions.json
+          jq --tab ".\"$addonId\".discussionUrl" discussions.json
         )
-        jqCode="
+        vtScanUrl=$(
+          echo ${{ needs.virusTotal-analysis.outputs.vtScanUrl }}
+        )
+        jqReviewCode="
         .[\"reviewUrl\"] = $reviewUrl
         "
-  
+        jqVTCode="
+        .[\"reviewUrl\"] = $reviewUrl
+        "
+
         mv $addonFilename $addonFilename.old.json
-        jq -e --tab "$jqCode" $addonFilename.old.json > $addonFilename
-        jqExitCode=$?
+        jq -e --tab "$jqReviewCode" $addonFilename.old.json > $addonFilename
+        jqReviewExitCode=$?
+        mv $addonFilename $addonFilename.old.json
+        jq -e --tab "$jqVTCode" $addonFilename.old.json > $addonFilename
+        jqVTExitCode=$?
         rm $addonFilename.old.json
-        exit $jqExitCode
+        exit !(( $jqVTExitCode || $jqReviewExitCode ))
     - name: Commit and push
       if: always()
       run: |
