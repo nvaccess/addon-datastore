@@ -1,6 +1,9 @@
 name: Scan a batch of submitted add-ons with Virus Total
 
 on:
+  # Every weekday at 9am AEST
+  schedule:
+    - cron: '0 23 * * 1-5'
   workflow_dispatch:
 
 jobs:
