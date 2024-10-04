@@ -443,7 +443,7 @@ jobs:
         jq -e --tab "$jqVTCode" $addonFilename.old.json > $addonFilename
         jqVTExitCode=$?
         rm $addonFilename.old.json
-        exit !(( $jqVTExitCode || $jqReviewExitCode ))
+        exit $(( $jqVTExitCode || $jqReviewExitCode ))
     - name: Commit and push
       if: always()
       run: |
