@@ -255,7 +255,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
       - name: Install glob
-        run: npm install glob
+        run: npm install glob uuid
       - name: Install virusTotal
         run: choco install vt-cli
       - name: Set Virus Total analysis status
