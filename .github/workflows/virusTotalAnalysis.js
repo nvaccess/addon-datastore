@@ -2,6 +2,7 @@ const glob = require("glob");
 const fs = require("fs");
 const { exec } = require("child_process");
 const countAPIUsageAndWait = require("./virusTotalAPISleepAndCount");
+const virusTotalSubmit = require("./virusTotalSubmit");
 
 
 function writeVTScanUrl({core}, metadataFile, addonMetadata) {
@@ -25,12 +26,15 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
   countAPIUsageAndWait({core});
   exec(`vt file ${addonMetadata.sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
     if (stderr !== "" || err !== null) {
+      console.error(`Failed to get VirusTotal analysis for ${addonMetadata.addonId}, submitting for scanning`);
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);
       console.log(`stderr: ${stderr}`);
       if (core._isSingleFileAnalysis) {
         core.setFailed("Failed to get VirusTotal analysis");
       }
+      virusTotalSubmit({core}, addonMetadata);
+      getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddonsData);
       return;
     }
     writeVTScanUrl({core}, metadataFile, addonMetadata);

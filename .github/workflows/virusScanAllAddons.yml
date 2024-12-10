@@ -55,6 +55,7 @@ jobs:
           author: github-actions <github-actions@github.com>
           add-paths: 'addons/*/*.json'
       - name: Merge PR
+        if: steps.cpr.outputs.pull-request-operation == 'created'
         run: gh pr merge --merge --auto "${{ steps.cpr.outputs.pull-request-number }}"
       - name: Upload results
         id: uploadResults
