@@ -78,12 +78,12 @@ function submitAddonIfNotScanned({core}, metadataFile) {
   const addonMetadataContents = fs.readFileSync(metadataFile);
   const addonMetadata = JSON.parse(addonMetadataContents);
   const sha256 = addonMetadata.sha256;
-  countAPIUsageAndWait({core});
   // Check if add-on has been scanned before through VirusTotal.
   if (addonMetadata.vtScanUrl !== undefined) {
     core.info("VirusTotal analysis skipped, already performed");
     return;
   }
+  countAPIUsageAndWait({core});
   // Check if file has been scanned before
   exec(`vt file ${sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
     core.debug(`stdout: ${stdout}`);
