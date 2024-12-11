@@ -33,7 +33,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
       if (core._isSingleFileAnalysis) {
         core.setFailed("Failed to get VirusTotal analysis");
       }
-      virusTotalSubmit({core}, addonMetadata);
+      virusTotalSubmit({core}, metadataFile);
       getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddonsData);
       return;
     }
