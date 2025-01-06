@@ -10,7 +10,8 @@ import shutil
 import json
 from _validate import (
 	createJson,
-	addonManifest
+	addonManifest,
+	manifestLoader
 )
 
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -110,3 +111,19 @@ class Test_buildOutputFilePath(unittest.TestCase):
 			"1.2.0.json",
 			msg="Name of the output file should be named based on version number"
 		)
+
+
+class Test_normalizeLanguage(unittest.TestCase):
+	"""Set of unit tests for `manifestLoader.normalizeLanguage`."""
+
+	def test_normalization_no_country_info(self):
+		"""Makes sure that if no country info is provided language is normalized to lower case."""
+		self.assertEqual("en", manifestLoader.normalizeLanguage("en"))
+		self.assertEqual("en", manifestLoader.normalizeLanguage("EN"))
+		self.assertEqual("kmr", manifestLoader.normalizeLanguage("kmr"))
+
+	def test_underscore_used_as_separator_after_normalization(self):
+		"""Ensures that underscore is used to separate country info from language.
+		Also implicitly test the fact that country code is converted to upper case."""
+		self.assertEqual("pt_BR", manifestLoader.normalizeLanguage("pt_BR"))
+		self.assertEqual("pt_BR", manifestLoader.normalizeLanguage("pt-BR"))

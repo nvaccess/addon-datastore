@@ -47,6 +47,22 @@ def getAddonManifestLocalizations(
 		languageCode = pathlib.Path(translationFile).parent.name
 		try:
 			translatedManifest = AddonManifest(translationFile)
-			yield languageCode, translatedManifest
+			yield normalizeLanguage(languageCode), translatedManifest
 		except Exception:
 			print(f"Error in {translationFile}")
+
+
+def normalizeLanguage(lang: str) -> str:
+	"""
+	Normalizes a language-dialect string  into a standard form we can deal with.
+	Converts any dash to underline, and makes sure that language is lowercase and dialect is uppercase.
+	Based on NVDA`s `languageHandler` module.
+	:param lang: A language code.
+	:return: A normalized language code.
+	"""
+	lang = lang.replace("-", "_")
+	ld = lang.split("_")
+	ld[0] = ld[0].lower()
+	if len(ld) >= 2:
+		ld[1] = ld[1].upper()
+	return "_".join(ld)
