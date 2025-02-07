@@ -104,23 +104,23 @@ Using the NV Access server as the endpoint for this is important in case the imp
 Get a complete list of the latest add-on releases given an NVDA API version, channel and language.
 Channel can be: all, dev, stable or beta.
 
-- Format: `https://www.nvaccess.org/addonStore/<language>/<channel>/<NVDA API Version>.json`
-- Example: <https://www.nvaccess.org/addonStore/en/all/2021.2.0.json>
+- Format: `https://addonStore.nvaccess.org/<language>/<channel>/<NVDA API Version>.json`
+- Example: <https://addonStore.nvaccess.org/en/all/2021.2.0.json>
 
 
 ### `GET` latest
 Get a complete list of the latest add-on releases for any NVDA API version, given a channel and language.
 Channel can be: all, dev, stable or beta.
 
-- Format: `https://www.nvaccess.org/addonStore/<language>/<channel>/latest.json`
-- Example: <https://www.nvaccess.org/addonStore/en/all/latest.json>
+- Format: `https://addonStore.nvaccess.org/<language>/<channel>/latest.json`
+- Example: <https://addonStore.nvaccess.org/en/all/latest.json>
 
 ### `GET` cacheHash
 Returns a hash used for cache breaking.
 This hash will change whenever new add-on data is available.
 The hash should match the latest commit hash of the [views branch](https://github.com/nvaccess/addon-datastore/commits/views).
 
-- <https://www.nvaccess.org/addonStore/cacheHash.json>
+- <https://addonStore.nvaccess.org/cacheHash.json>
 - Example return value: `"5fcf12f"`
 
 ### Legacy
@@ -132,13 +132,13 @@ The `addonslist` parameter generates a list of list of add-ons using the same lo
 The addonIds are generated to match the legacy naming schema.
 For example, dev channel add-ons are named `addonId-dev` in the `addonslist`.
 
-- Link: <https://www.nvaccess.org/addonStore/legacy?addonslist>
+- Link: <https://addonStore.nvaccess.org/legacy?addonslist>
 
 #### `file` end-point
 The addonId supplied to the file parameter is fetched from the `addonslist`, returning the latest add-on version for that addonId.
 `addonId` is case insensitive.
 
-- Format: `https://www.nvaccess.org/addonStore/legacy?file=<addonId>`
+- Format: `https://addonStore.nvaccess.org/legacy?file=<addonId>`
 
 ### Other notes
 - By using a git repository and PR process, `git blame` and `git log` can be used to get more
