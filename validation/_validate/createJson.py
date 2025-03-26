@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (C) 2022-2024 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,9 +91,8 @@ def _createDictMatchingJsonSchema(
 	"""Refer to _validate/addonVersion_schema.json"""
 	try:
 		addonVersionNumber = MajorMinorPatch.getFromStr(manifest["version"])
-	except ValueError:
-		manifest._errors = f"Manifest version invalid {addonVersionNumber}"
-		raise
+	except ValueError as e:
+		raise ValueError(f"Manifest version invalid {addonVersionNumber}") from e
 
 	try:
 		addonData = {
@@ -116,8 +115,7 @@ def _createDictMatchingJsonSchema(
 			"license": licenseName,
 		}
 	except KeyError as e:
-		manifest._errors = f"Manifest missing required key '{e.args[0]}'."
-		raise
+		raise KeyError(f"Manifest missing required key '{e.args[0]}'.") from e
 
 	# Add optional fields
 	homepage = manifest.get("url")
@@ -140,8 +138,7 @@ def _createDictMatchingJsonSchema(
 				}
 			)
 		except KeyError as e:
-			manifest._errors = f"Translation for {langCode} missing required key '{e.args[0]}'."
-			raise
+			raise KeyError(f"Translation for {langCode} missing required key '{e.args[0]}'.") from e
 
 	return addonData
 
