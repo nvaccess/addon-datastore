@@ -35,7 +35,7 @@ jobs:
       - name: Unzip add-on
         run: |
           Copy-Item addon.nvda-addon addon.zip
-          7z x addon.zip -y
+          7z x addon.zip -oaddon -y
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
@@ -116,7 +116,7 @@ jobs:
       - name: Unzip add-on
         run: |
           Copy-Item addon.nvda-addon addon.zip
-          7z x addon.zip -y
+          7z x addon.zip -oaddon -y
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
