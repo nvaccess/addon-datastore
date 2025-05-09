@@ -369,7 +369,7 @@ def outputErrors(addonFileName: str, errors: List[str], errorFilePath: Optional[
 	if len(errors) > 0:
 		print("\r\n".join(errors))
 		if errorFilePath:
-			with open(errorFilePath, "a") as errorFile:
+			with open(errorFilePath, "a", encoding="utf-8") as errorFile:
 				errorFile.write(f"Validation Errors for {addonFileName}:\n- " + "\n- ".join(errors) + "\n\n")
 
 
