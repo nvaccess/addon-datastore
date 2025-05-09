@@ -189,7 +189,6 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         path: validation
         submodules: true
-        ref: addVtScanUrl
     - name: Install addon-datastore-validation dependencies
       run: |
         python -m pip install --upgrade wheel
