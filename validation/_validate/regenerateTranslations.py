@@ -45,7 +45,7 @@ def regenerateJsonFile(filePath: str, errorFilePath: Optional[str]) -> None:
 		)
 	
 	with open(filePath, "wt", encoding="utf-8") as f:
-		json.dump(addonData, f, indent="\t")
+		json.dump(addonData, f, indent="\t", ensure_ascii=False)
 	print(f"Wrote json file: {filePath}")
 
 
