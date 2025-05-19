@@ -1,0 +1,22 @@
+{
+  "addonId": "SpeakDecoratedText",
+  "displayName": "SpeakDecoratedText",
+  "repository_url": "https://github.com/Abdullahashraf32/SpeakDecoratedText",
+  "addon_url": "https://github.com/Abdullahashraf32/SpeakDecoratedText/releases/download/v1.0/SpeakDecoratedText-1.0.nvda-addon",
+  "addon_version": "1.0",
+  "status": "stable",
+  "minimumNVDAVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 2
+  },
+  "summary": "SpeakDecoratedText is an NVDA add-on that enables screen readers to read stylized or decorated Unicode text which are not spoken at all by NVDA screen reader. It also provides tools for cleaning Arabic text to improve readability. It makes the unreadable decorated or fancy Unicode text readable by converting it into plain ASCII. It cleans Arabic text by removing diacritics, kashida and unnecessary symbols and converting the unreadable parts to readable ones. It enables the user to restore previously converted text to avoid losing information after processing. You can press NVDA + Shift + Z to convert selected decorated (Latin-based) text. You can press NVDA + Shift + A to clean the selected Arabic text to improve its readability. Finally, you can press NVDA + Shift + H to restore the last converted text from history; you have the option to restore only the last three copied texts. This add-on is especially helpful for visually impaired users who encounter texts that are not spoken at all by the NVDA screen reader due to heavy styling or fancy Unicode formatting. SpeakDecoratedText transforms such inaccessible content into readable and understandable text.",
+  "author": "Abdullah Ashraf",
+  "license": "MIT",
+  "homepage": "https://cerulean-nougat-eec1f7.netlify.app/"
+}
