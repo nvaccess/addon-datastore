@@ -25,7 +25,7 @@ If all is valid, "Congratulations: manifest, metadata and file path are valid" i
 ## Dependencies ##
 
 * [Python](https://www.python.org/).
-  - Tested with: 3.8, 32 bit
+  - Tested with: 3.11, 32 bit
 
 ## Local Usage ##
 To try validating an addon submission on your own machine.
