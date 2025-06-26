@@ -126,7 +126,7 @@ jobs:
           path: results.sarif
           overwrite: true
       - name: Warn if analysis fails
-        if: failure() 
+        if: failure()
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
