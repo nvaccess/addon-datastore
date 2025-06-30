@@ -74,6 +74,7 @@ jobs:
         with:
           name: addonMetadata
           path: addonMetadata.json
+
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
@@ -126,7 +127,7 @@ jobs:
       - name: Create submitter approval PR
         if: failure()
         id: addSubmitterPR
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
           branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonIdParsed }}
@@ -143,6 +144,7 @@ jobs:
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
             Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
+
   createPullRequest:
     runs-on: windows-latest
     needs: [verifySubmitter]
@@ -169,7 +171,7 @@ jobs:
         git cherry-pick origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Create pull request
       id: cpr
-      uses: peter-evans/create-pull-request@v6
+      uses: peter-evans/create-pull-request@v7
       with:
         title: ${{ inputs.issueTitle }}
         branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
@@ -290,12 +292,14 @@ jobs:
             You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
             Please contact the flagged security vendors to get them to review and unflag the false positive.
             Please ask here or email info@nvaccess.org if you need assistance with this process.
+
   codeQL-analysis:
     needs: [createPullRequest]
     uses: ./.github/workflows/codeql-analysis.yml
+
   createManualApproval:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
-    if: ${{ always() && contains(join(needs.*.result, ','), 'failure') }}
+    if: ${{ always() && (contains(needs.virusTotal-analysis.result, 'failure') || contains(needs.codeQL-analysis.result, 'failure')) }}
     runs-on: windows-latest
     strategy:
       matrix:
@@ -313,7 +317,7 @@ jobs:
           merge-multiple: true
       - name: Create pull request
         id: cpr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           add-paths: reviewedAddons.json
           title: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
@@ -331,6 +335,7 @@ jobs:
           body: |
             Please, don't close this issue.
             Wait until #${{ steps.cpr.outputs.pull-request-number }} is merged.
+
   mergeToMaster:
     needs: [getAddonId, createPullRequest, codeQL-analysis, virusTotal-analysis]
     permissions:
