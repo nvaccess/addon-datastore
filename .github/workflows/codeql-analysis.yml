@@ -26,6 +26,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
+          languages: python
           config-file: ./.github/codeql/codeql-config-excluding-warnings.yml
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
@@ -98,6 +99,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
+          languages: python
           config-file: ./.github/codeql/codeql-config.yml
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
