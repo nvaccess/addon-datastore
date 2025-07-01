@@ -180,6 +180,13 @@ def checkAddonId(
 			"Submission data 'addonId' field does not match 'name' field in addon manifest:"
 			f" {expectedName} vs {submission['addonId']}"
 		)
+	if not re.match(r"^[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9]$", expectedName):
+		yield (
+			"Submission data 'addonId' field does not match the expected format:"
+			" must start and end with a letter, and contain only letters,"
+			" numbers, and hyphens. "
+			f"ID: {submission['addonId']}"
+		)
 
 
 VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
