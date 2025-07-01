@@ -36,7 +36,8 @@ Please report any issues with submitted add-ons to <info@nvaccess.org>.
 1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new/choose).
 1. Fill out and submit the issue form.
 This will create an issue with a summary of your submission, and generate a pull request to submit your add-on to the store.
-1. If this is your first submission of this add-on, manual approval will be required to be added to the approved submitters list for the add-on.
+1. If this is your first submission of this add-on, [manual approval](#approval-process) will be required to be added to the approved submitters list for the add-on.
+You do not need to do anything if you are the maintainer of the add-on you submitted.
 1. Automated checks are ran on the pull request to validate the submission.
 Refer to [addon-datastore-validation](https://github.com/nvaccess/addon-datastore-validation) for more information on automated checks.
 1. If the checks fail, a comment should be added to the issue outlining the failure.
