@@ -44,7 +44,7 @@ jobs:
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results.sarif'
+            const path = 'results/python.sarif'
             setSecurityAnalysisStatus({core}, path)
       - name: Upload results
         id: uploadResults
@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: results-excluding-warnings
-          path: results.sarif
+          path: results/python.sarif
       - name: Upload manual approval
         id: uploadManualApproval
         if: failure()
@@ -117,15 +117,15 @@ jobs:
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results.sarif'
+            const path = 'results/python.sarif'
             setSecurityAnalysisStatus({core}, path)
       - name: Upload results
         id: uploadResults
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: results
-          path: results.sarif
+          name: results-warnings
+          path: results/python.sarif
           overwrite: true
       - name: Warn if analysis fails
         if: failure()
