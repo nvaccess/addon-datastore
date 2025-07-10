@@ -224,6 +224,22 @@ class Validate_checkAddonId(unittest.TestCase):
 			errors
 		)
 
+	@patch('os.path.basename', return_value="valid1-Addon_id")
+	def test_valid_withSymbols(self, mock_basename):
+		""" Error when submission does not include correct addonId format
+		"""
+		self.submissionData['addonId'] = "valid1-Addon_id"
+		self.manifest['name'] = "valid1-Addon_id"
+		errors = list(
+			validate.checkAddonId(self.manifest, VALID_SUBMISSION_JSON_FILE, self.submissionData)
+		)
+
+		self.assertEqual(
+			[  # expected errors
+			],
+			errors
+		)
+
 	def test_invalidPath(self):
 		""" Error when submission path does not include correct addon ID
 		"""
@@ -296,7 +312,7 @@ class Validate_checkAddonId(unittest.TestCase):
 			[  # expected errors
 				"Submission data 'addonId' field does not match the expected format:"
 				" must start and end with a letter, and contain only letters,"
-				" numbers, and hyphens. "
+				" numbers, underscores, and hyphens. "
 				"ID: invalid addon id"
 			],
 			errors
@@ -316,7 +332,7 @@ class Validate_checkAddonId(unittest.TestCase):
 			[  # expected errors
 				"Submission data 'addonId' field does not match the expected format:"
 				" must start and end with a letter, and contain only letters,"
-				" numbers, and hyphens. "
+				" numbers, underscores, and hyphens. "
 				"ID: 1invalid-addon-id"
 			],
 			errors
