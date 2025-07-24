@@ -19,6 +19,7 @@ jobs:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
       VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
       BRANCH_NAME: addVTURLs${{ github.run_number }}
+      BATCH_SIZE: 100
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -50,7 +51,7 @@ jobs:
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             const fs = require('fs')
             const addonsWithoutVT = fs.readFileSync('addonsWithoutVT.txt', 'utf-8').split('\n').filter(Boolean)
-            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, 10))
+            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, ${{ env.BATCH_SIZE }}))
       - name: Create PR for updated VT urls
         shell: bash
         run: |
