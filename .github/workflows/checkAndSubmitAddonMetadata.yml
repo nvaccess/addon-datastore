@@ -44,6 +44,7 @@ jobs:
           issueAuthorName: ${{ inputs.issueAuthorName }}
           issueNumber: ${{ inputs.issueNumber }}
         with:
+          result-encoding: string
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
             const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.issueAuthorName + process.env.issueNumber
@@ -363,7 +364,7 @@ jobs:
       with:
         script: |
           const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
-          const addonFilename = ${{ needs.getAddonId.outputs.addonFileName }}
+          const addonFilename = "${{ needs.getAddonId.outputs.addonFileName }}"
           setAddonNameAndVersion({core}, addonFilename)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
@@ -409,7 +410,7 @@ jobs:
       if: always()
       run: |
         addonFilename=$(
-          echo ${{ needs.getAddonId.outputs.addonFileName }}
+          echo "${{ needs.getAddonId.outputs.addonFileName }}"
         )
         addonId=$(
           echo ${{ needs.getAddonId.outputs.addonId }}
