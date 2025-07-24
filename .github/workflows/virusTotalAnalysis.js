@@ -31,9 +31,9 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
       console.log(`stdout: ${stdout}`);
       console.log(`stderr: ${stderr}`);
       if (core._isSingleFileAnalysis) {
-        core.setFailed("Failed to get VirusTotal analysis");
+        core.setFailed(`Failed to get VirusTotal analysis for ${metadataFile}`);
       }
-      virusTotalSubmit({core}, metadataFile);
+      virusTotalSubmit({core}, [metadataFile]);
       getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddonsData);
       return;
     }
@@ -44,7 +44,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
     const stats = vtData[0]["last_analysis_stats"];
     const malicious = stats.malicious;
     if (malicious === 0) {
-      core.info("VirusTotal analysis succeeded");
+      core.info(`VirusTotal analysis succeeded for ${metadataFile}`);
       return;
     }
     if (reviewedAddonsData[addonMetadata.addonId] === undefined) {
@@ -54,7 +54,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
     stringified = JSON.stringify(reviewedAddonsData, null, "\t");
     fs.writeFileSync("reviewedAddons.json", stringified);
     if (core._isSingleFileAnalysis) {
-      core.setFailed("VirusTotal analysis failed");
+      core.setFailed(`VirusTotal analysis failed for ${metadataFile}`);
     }
   });
 }
@@ -73,19 +73,18 @@ function getVirusTotalAnalysisIfRequired({core}, metadataFile) {
   const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
   // Check if add-on has been flagged before through VirusTotal.
   if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(sha256)) {
-    core.info("VirusTotal analysis skipped, already performed");
+    core.info(`VirusTotal analysis skipped, already performed for ${metadataFile}`);
     return;
   }
   // Check if add-on has been scanned before through VirusTotal.
   if (addonMetadata.vtScanUrl !== undefined) {
-    core.info("VirusTotal analysis skipped, already performed");
+    core.info(`VirusTotal analysis skipped, already performed for ${metadataFile}`);
     return;
   }
   getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddonsData);
 }
 
-module.exports = ({core}, globPattern) => {
-  var metadataFiles = glob.globSync(globPattern);
+module.exports = ({core}, metadataFiles) => {
   // Count API usages to adhere to rate limiting
   core._apiUsageCount = 0;
   core._isSingleFileAnalysis = metadataFiles.length == 1;
