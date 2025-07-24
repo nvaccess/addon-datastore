@@ -41,6 +41,7 @@ jobs:
               echo "$file" >> addonsWithoutVT.txt
             fi
           done
+          wc -l addonsWithoutVT.txt | awk '{print "Total add-ons without VT URLs: " $1}'
       - name: Set Virus Total analysis status
         id: setVirusTotalAnalysisStatus
         uses: actions/github-script@v7
@@ -49,7 +50,7 @@ jobs:
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             const fs = require('fs')
             const addonsWithoutVT = fs.readFileSync('addonsWithoutVT.txt', 'utf-8').split('\n').filter(Boolean)
-            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, 100))
+            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, 10))
       - name: Create PR for updated VT urls
         shell: bash
         run: |
