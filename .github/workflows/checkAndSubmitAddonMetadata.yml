@@ -265,7 +265,7 @@ jobs:
         with:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
-            setVirusTotalAnalysisStatus({core}, ["${{ needs.createPullRequest.outputs.getAddonFileName }}"])
+            setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonFilename.outputs.getAddonFileName }}"])
       - name: Upload results
         id: uploadResults
         if: failure()
