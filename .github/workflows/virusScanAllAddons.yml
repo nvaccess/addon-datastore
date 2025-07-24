@@ -49,7 +49,7 @@ jobs:
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             const fs = require('fs')
             const addonsWithoutVT = fs.readFileSync('addonsWithoutVT.txt', 'utf-8').split('\n').filter(Boolean)
-            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, 5))
+            setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, 100))
       - name: Create PR for updated VT urls
         shell: bash
         run: |
@@ -63,7 +63,7 @@ jobs:
           --base ${{ github.ref }} \
           --head ${{ env.BRANCH_NAME }} \
           --body "Add VirusTotal review URLs to add-ons"
-          gh pr merge --merge --auto "${{ env.BRANCH_NAME }}"
+          gh pr merge --merge "${{ env.BRANCH_NAME }}"
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Upload results
