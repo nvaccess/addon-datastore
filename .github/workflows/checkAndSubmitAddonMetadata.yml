@@ -44,6 +44,7 @@ jobs:
           issueAuthorName: ${{ inputs.issueAuthorName }}
           issueNumber: ${{ inputs.issueNumber }}
         with:
+          result-encoding: string
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
             const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.issueAuthorName + process.env.issueNumber
@@ -55,7 +56,7 @@ jobs:
         with:
           result-encoding: string
           script: |
-            const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
+            const addonFileName = "${{ steps.getAddonFileName.outputs.result }}"
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
       - name: Parse spaces and special characters from addonID for branch names
@@ -66,14 +67,11 @@ jobs:
           script: |
             const addonId = "${{ steps.getAddonId.outputs.result }}"
             return addonId.replace(/[^a-zA-Z0-9]/g, "")
-      - name: Copy add-on metadata file
-        run: |
-          Copy-Item ${{ steps.getAddonFileName.outputs.result }} addonMetadata.json
       - name: Upload add-on
         uses: actions/upload-artifact@v4
         with:
           name: addonMetadata
-          path: addonMetadata.json
+          path: ${{ steps.getAddonFileName.outputs.result }}
 
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
@@ -147,7 +145,7 @@ jobs:
 
   createPullRequest:
     runs-on: windows-latest
-    needs: [verifySubmitter]
+    needs: [getAddonId, verifySubmitter]
     strategy:
       matrix:
         python-version: [ 3.11 ]
@@ -157,7 +155,6 @@ jobs:
       issues: write
     outputs:
       pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      addonFileName: ${{ steps.getAddonFileName.outputs.addonFileName }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -200,21 +197,9 @@ jobs:
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
-    - name: Get add-on filename
-      id: getAddonFileName
-      env:
-        pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
-      uses: actions/github-script@v7
-      with:
-        script: |
-          const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-          const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/pulls/" + process.env.pullRequestNumber + "/files"
-          const result = await github.request(url)
-          const addonFileName = getAddonFilename(result.data)
-          core.setOutput('addonFileName', addonFileName)
     - name: Validate metadata
       run: |
-        validation/runvalidate "${{ steps.getAddonFilename.outputs.addonFilename }}" ./transform/nvdaAPIVersions.json --output ./validationErrors.md
+        validation/runvalidate "${{ needs.getAddonId.outputs.addonFileName }}" ./transform/nvdaAPIVersions.json --output ./validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v4
@@ -233,7 +218,7 @@ jobs:
         issue-number: ${{ inputs.issueNumber }}
 
   virusTotal-analysis:
-    needs: createPullRequest
+    needs: [getAddonId]
     runs-on: windows-latest
     strategy:
       matrix:
@@ -253,6 +238,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
+          path: ${{ needs.getAddonId.outputs.addonFileName }}
       - name: Install Node.js
         uses: actions/setup-node@v2
       - name: Install glob
@@ -265,7 +251,7 @@ jobs:
         with:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
-            setVirusTotalAnalysisStatus({core}, ["${{ needs.createPullRequest.outputs.getAddonFileName }}"])
+            setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -294,8 +280,10 @@ jobs:
             Please ask here or email info@nvaccess.org if you need assistance with this process.
 
   codeQL-analysis:
-    needs: [createPullRequest]
+    needs: [getAddonId]
     uses: ./.github/workflows/codeql-analysis.yml
+    with:
+      addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
 
   createManualApproval:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
@@ -376,7 +364,7 @@ jobs:
       with:
         script: |
           const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
-          const addonFilename = ${{ needs.getAddonId.outputs.addonFileName }}
+          const addonFilename = "${{ needs.getAddonId.outputs.addonFileName }}"
           setAddonNameAndVersion({core}, addonFilename)
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
@@ -422,7 +410,7 @@ jobs:
       if: always()
       run: |
         addonFilename=$(
-          echo ${{ needs.getAddonId.outputs.addonFileName }}
+          echo "${{ needs.getAddonId.outputs.addonFileName }}"
         )
         addonId=$(
           echo ${{ needs.getAddonId.outputs.addonId }}

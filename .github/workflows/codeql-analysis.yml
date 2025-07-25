@@ -2,6 +2,11 @@ name: CodeQL security analysis
 
 on:
   workflow_call:
+    inputs:
+      addonFileName:
+        required: true
+        type: string
+
 jobs:
   analyzeExcludingWarnings:
     name: Analyze add-on excluding warnings
@@ -38,14 +43,15 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
+          path: ${{ inputs.addonFileName }}
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, path)
+            const resultsPath = 'results/python.sarif'
+            setSecurityAnalysisStatus({core}, ${{ inputs.addonFileName }}, resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -111,6 +117,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
+          path: ${{ inputs.addonFileName }}
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7

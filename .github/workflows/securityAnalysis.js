@@ -1,9 +1,8 @@
-module.exports = ({core}, path) => {
+module.exports = ({core}, addonMetadataPath, resultsPath) => {
   const fs = require('fs');
-  const addonMetadataContents = fs.readFileSync('addonMetadata.json');
+  const addonMetadataContents = fs.readFileSync(addonMetadataPath);
   const addonMetadata = JSON.parse(addonMetadataContents);
   const addonId = addonMetadata.addonId;
-  core.setOutput('addonId', addonId);
   const sha256 = addonMetadata.sha256;
   const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
   const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
@@ -11,7 +10,7 @@ module.exports = ({core}, path) => {
     core.info('Analysis skipped');
     return;
   }
-  const contents = fs.readFileSync(path);
+  const contents = fs.readFileSync(resultsPath);
   const data = JSON.parse(contents);
   const runs = data.runs[0];
   const results = runs.results;
