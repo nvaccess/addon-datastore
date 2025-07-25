@@ -6,6 +6,9 @@ on:
       addonFileName:
         required: true
         type: string
+      branchName:
+        required: true
+        type: string
 
 jobs:
   analyzeExcludingWarnings:
@@ -19,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branchName }}
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
@@ -39,10 +44,6 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
-      - name: Download add-on metadata
-        uses: actions/download-artifact@v4
-        with:
-          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
@@ -92,6 +93,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branchName }}
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
@@ -112,18 +115,14 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
-      - name: Download add-on metadata
-        uses: actions/download-artifact@v4
-        with:
-          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, path)
+            const resultsPath = 'results/python.sarif'
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()

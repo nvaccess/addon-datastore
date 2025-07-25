@@ -19,6 +19,9 @@ on:
       VT_API_KEY:
         required: true
 
+env:
+  branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+
 jobs:
   getAddonId:
     runs-on: windows-latest
@@ -36,7 +39,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+          ref: ${{ env.branchName }}
       - name: Determine add-on file name
         uses: actions/github-script@v7
         id: getAddonFileName
@@ -47,7 +50,7 @@ jobs:
           result-encoding: string
           script: |
             const getAddonFilename = require('./.github/workflows/checkFilesChanged.js')
-            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + process.env.issueAuthorName + process.env.issueNumber
+            const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + "${{ env.branchName }}"
             const result = await github.request(url)
             return getAddonFilename(result.data.files)
       - name: Determine add-on ID
@@ -234,10 +237,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Download add-on metadata
-        uses: actions/download-artifact@v4
         with:
-          name: addonMetadata
+          ref: ${{ env.branchName }}
       - name: Install Node.js
         uses: actions/setup-node@v2
       - name: Install glob
@@ -283,6 +284,7 @@ jobs:
     uses: ./.github/workflows/codeql-analysis.yml
     with:
       addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
+      branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
 
   createManualApproval:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
