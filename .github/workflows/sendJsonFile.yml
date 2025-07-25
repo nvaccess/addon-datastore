@@ -98,7 +98,7 @@ jobs:
       env:
         VT_API_KEY: ${{ secrets.VT_API_KEY }}
       run: vt scan file -k $env:VT_API_KEY addon.nvda-addon
-  call-workflow-passing-data:
+  call-workflow:
     needs: check-addon
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:

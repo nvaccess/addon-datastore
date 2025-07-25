@@ -26,7 +26,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile, reviewedAddo
   countAPIUsageAndWait({core});
   exec(`vt file ${addonMetadata.sha256} -k ${process.env.VT_API_KEY} --format json`, (err, stdout, stderr) => {
     if (stderr !== "" || err !== null) {
-      console.error(`Failed to get VirusTotal analysis for ${addonMetadata.addonId}, submitting for scanning`);
+      console.error(`Failed to get VirusTotal analysis for ${metadataFile}, submitting for scanning`);
       console.log(`err: ${err}`);
       console.log(`stdout: ${stdout}`);
       console.log(`stderr: ${stderr}`);
