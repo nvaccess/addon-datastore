@@ -56,7 +56,7 @@ jobs:
         with:
           result-encoding: string
           script: |
-            const addonFileName = ${{ steps.getAddonFileName.outputs.result }}
+            const addonFileName = "${{ steps.getAddonFileName.outputs.result }}"
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
       - name: Parse spaces and special characters from addonID for branch names
