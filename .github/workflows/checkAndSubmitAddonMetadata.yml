@@ -221,7 +221,7 @@ jobs:
         issue-number: ${{ inputs.issueNumber }}
 
   virusTotal-analysis:
-    needs: createPullRequest
+    needs: [createPullRequest, getAddonId]
     runs-on: windows-latest
     strategy:
       matrix:
