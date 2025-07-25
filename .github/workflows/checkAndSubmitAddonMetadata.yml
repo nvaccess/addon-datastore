@@ -238,7 +238,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
-          path: ${{ needs.getAddonId.outputs.addonFileName }}
       - name: Install Node.js
         uses: actions/setup-node@v2
       - name: Install glob

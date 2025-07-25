@@ -43,7 +43,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
-          path: ${{ inputs.addonFileName }}
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
@@ -51,7 +50,7 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, ${{ inputs.addonFileName }}, resultsPath)
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -117,7 +116,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: addonMetadata
-          path: ${{ inputs.addonFileName }}
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
