@@ -1,9 +1,14 @@
 name: Scan a batch of submitted add-ons with Virus Total
 
 on:
-  # Every day at 9am AEST
+  # Every day at 6pm UTC.
+  # 6 hours is max job length.
+  # API limits reset at midnight.
+  # This ensures API usage doesn't spill over across days,
+  # and minimizes preventing new submissions from being 
+  # scanned due to API limits being reached.
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 18 * * *'
   workflow_dispatch:
 
 jobs:
