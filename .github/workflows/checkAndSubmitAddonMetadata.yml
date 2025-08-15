@@ -284,6 +284,9 @@ jobs:
     environment:
       # Require a manual deployment approval if security analysis fails
       name: securityReview
+    steps:
+      - name: Confirm approval
+        run: echo "Manual approval performed"
 
   mergeToMaster:
     needs: [getAddonId, createPullRequest, requireManualApproval]
