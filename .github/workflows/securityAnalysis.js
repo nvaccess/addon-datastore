@@ -6,6 +6,9 @@ module.exports = ({core}, addonMetadataPath, resultsPath, testType) => {
   const data = JSON.parse(contents);
   const runs = data.runs[0];
   const results = runs.results;
+  if (testType !== "errors" && testType !== "warnings") {
+    core.setFailed(`Invalid test type: ${testType}`);
+  }
   if (addonMetadata.scanResults === undefined) {
     addonMetadata.scanResults = {};
   }
