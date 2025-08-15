@@ -24,7 +24,7 @@ jobs:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
       VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
       BRANCH_NAME: addVTURLs${{ github.run_number }}
-      BATCH_SIZE: 100
+      BATCH_SIZE: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,11 +39,11 @@ jobs:
         uses: actions/setup-node@v4
       - name: Install npm dependencies
         run: npm install glob uuid
-      - name: Get add-on filenames without vtScanUrl
+      - name: Get add-on filenames without scanResults
         shell: bash
         run: |
           for file in ./addons/*/*.json; do
-            if (jq -r '.vtScanUrl' "$file" | grep -q 'null\|""'); then
+            if (jq -r '.scanResults' "$file" | grep -q 'null\|""'); then
               echo "$file" >> addonsWithoutVT.txt
             fi
           done
@@ -63,29 +63,13 @@ jobs:
           git add addons
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git commit -m "Add VirusTotal review URLs"
+          git commit -m "Add VirusTotal results"
           git push --set-upstream origin ${{ env.BRANCH_NAME }}
           gh pr create \
-          --title "Add VirusTotal review URLs" \
+          --title "Add VirusTotal results" \
           --base ${{ github.ref }} \
           --head ${{ env.BRANCH_NAME }} \
-          --body "Add VirusTotal review URLs to add-ons"
+          --body "Add VirusTotal results to add-ons"
           gh pr merge --merge "${{ env.BRANCH_NAME }}"
         env:
           GH_TOKEN: ${{ github.token }}
-      - name: Upload results
-        id: uploadResults
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: VirusTotal
-          path: vt.json
-          overwrite: true
-      - name: Upload manual approval
-        id: uploadManualApproval
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: manualApproval
-          path: reviewedAddons.json
-          overwrite: true

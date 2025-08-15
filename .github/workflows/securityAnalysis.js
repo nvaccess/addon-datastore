@@ -1,28 +1,20 @@
-module.exports = ({core}, addonMetadataPath, resultsPath) => {
+module.exports = ({core}, addonMetadataPath, resultsPath, testType) => {
   const fs = require('fs');
   const addonMetadataContents = fs.readFileSync(addonMetadataPath);
   const addonMetadata = JSON.parse(addonMetadataContents);
-  const addonId = addonMetadata.addonId;
-  const sha256 = addonMetadata.sha256;
-  const reviewedAddonsContents = fs.readFileSync('reviewedAddons.json');
-  const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
-  if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(sha256)) {
-    core.info('Analysis skipped');
-    return;
-  }
   const contents = fs.readFileSync(resultsPath);
   const data = JSON.parse(contents);
   const runs = data.runs[0];
   const results = runs.results;
+  if (addonMetadata.scanResults === undefined) {
+    addonMetadata.scanResults = {};
+  }
+  addonMetadata.scanResults[`codeQL-${testType}`] = results;
+  const stringified = JSON.stringify(addonMetadata, null, "\t");
+  fs.writeFileSync(addonMetadataPath, stringified + "\n");
   if (results.length === 0) {
     core.info("Security analysis succeeded");
-    return;
+  } else {
+    core.setFailed("Security analysis failed");
   }
-  if (reviewedAddonsData[addonId] === undefined) {
-    reviewedAddonsData[addonId] = [];
-  }
-  reviewedAddonsData[addonId].push(sha256);
-  const stringified = JSON.stringify(reviewedAddonsData, null, "\t");
-  fs.writeFileSync('reviewedAddons.json', stringified);
-  core.setFailed("Security analysis failed");
 };

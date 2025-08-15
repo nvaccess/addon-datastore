@@ -252,22 +252,13 @@ jobs:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
-      - name: Upload results
-        id: uploadResults
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: VirusTotal
-          path: vt.json
-          overwrite: true
-      - name: Upload manual approval
-        id: uploadManualApproval
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: manualApproval
-          path: reviewedAddons.json
-          overwrite: true
+      - name: Commit scanned add-ons results
+        run: |
+          git add addons
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add VirusTotal results"
+          git push --set-upstream origin ${{ env.branchName }}
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -286,44 +277,13 @@ jobs:
       addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
       branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
 
-  createManualApproval:
+  requireManualApproval:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
     if: ${{ always() && (contains(needs.virusTotal-analysis.result, 'failure') || contains(needs.codeQL-analysis.result, 'failure')) }}
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: [ 3.11 ]
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          merge-multiple: true
-      - name: Create pull request
-        id: cpr
-        uses: peter-evans/create-pull-request@v7
-        with:
-          add-paths: reviewedAddons.json
-          title: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
-          branch: reviewedAddon${{ github.event.issue.number }}
-          commit-message: Add reviewed add-on (${{ needs.getAddonId.outputs.addonId }})
-          body: |
-            This add-on needs to be reviewed by NV Access due to analysis failure.
-            Review #${{ inputs.issueNumber }} for more information.
-          author: github-actions <github-actions@github.com>
-          delete-branch: true
-      - name: Request to keep issue opened
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body: |
-            Please, don't close this issue.
-            Wait until #${{ steps.cpr.outputs.pull-request-number }} is merged.
+    runs-on: ubuntu-latest
+    environment:
+      # Require a manual deployment approval if security analysis fails
+      name: securityReview
 
   mergeToMaster:
     needs: [getAddonId, createPullRequest, codeQL-analysis, virusTotal-analysis]

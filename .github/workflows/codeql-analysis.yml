@@ -51,7 +51,15 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath, "errors")
+      - name: Commit scanned add-ons results
+        if: always()
+        run: |
+          git add ${{ inputs.addonFileName }}
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add CodeQL error results"
+          git push --set-upstream origin ${{ inputs.branchName }}
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -59,14 +67,6 @@ jobs:
         with:
           name: results-excluding-warnings
           path: results/python.sarif
-      - name: Upload manual approval
-        id: uploadManualApproval
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: manualApproval
-          path: reviewedAddons.json
-          overwrite: true
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -122,7 +122,16 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath, "warnings")
+      - name: Commit scanned add-ons results
+        if: always()
+        run: |
+          git pull
+          git add ${{ inputs.addonFileName }}
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add CodeQL warnings results"
+          git push --set-upstream origin ${{ inputs.branchName }}
       - name: Upload results
         id: uploadResults
         if: failure()
