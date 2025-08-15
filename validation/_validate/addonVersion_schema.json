@@ -255,37 +255,51 @@
 			"type": "array",
 			"items": {
 				"$ref": "#/$defs/translation"
-			},
-			"reviewUrl": {
-				"$id": "#/properties/reviewUrl",
-				"default": "",
-				"description": "A URL to the discussion comment to review the add-on version.",
-				"examples": [
-					"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
-				],
-				"title": "Discussion comment URL",
-				"type": "string"
-			},
-			"submissionTime": {
-				"$id": "#/properties/submissionTime",
-				"default": 0,
-				"description": "Timestamp in milliseconds, corresponding to the submission time of the add-on",
-				"examples": [
-					1723523492363
-				],
-				"title": "Submission time",
-				"type": "number"
-			},
-			"vtScanUrl": {
-				"$id": "#/properties/vtScanUrl",
-				"default": "",
-				"description": "A URL to the Virus Total scan for the add-on version.",
-				"examples": [
-					"https://www.virustotal.com/gui/file/3fda88d598e9747b2dfadfdfb8930a737c0049e9782392bffcd59ef668821547"
-				],
-				"title": "VirusTotal scan URL",
-				"type": "string"
 			}
+		},
+		"reviewUrl": {
+			"$id": "#/properties/reviewUrl",
+			"default": "",
+			"description": "A URL to the discussion comment to review the add-on version.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
+			],
+			"title": "Discussion comment URL",
+			"type": "string"
+		},
+		"submissionTime": {
+			"$id": "#/properties/submissionTime",
+			"default": 0,
+			"description": "Timestamp in milliseconds, corresponding to the submission time of the add-on",
+			"examples": [
+				1723523492363
+			],
+			"title": "Submission time",
+			"type": "number"
+		},
+		"vtScanUrl": {
+			"$id": "#/properties/vtScanUrl",
+			"default": "",
+			"description": "A URL to the Virus Total scan for the add-on version.",
+			"examples": [
+				"https://www.virustotal.com/gui/file/3fda88d598e9747b2dfadfdfb8930a737c0049e9782392bffcd59ef668821547"
+			],
+			"title": "VirusTotal scan URL",
+			"type": "string"
+		},
+		"scanResults": {
+			"$id": "#/properties/scanResults",
+			"default": {},
+			"description": "Results from dynamic and static code scanning.",
+			"examples": [
+				{
+					"virusTotal": {},
+					"codeQL-warnings": {},
+					"codeQL-errors": {}
+				}
+			],
+			"title": "Scan results",
+			"type": "object"
 		}
 	},
 	"$defs": {
