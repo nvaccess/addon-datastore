@@ -258,6 +258,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Add VirusTotal results"
+          git pull --rebase
           git push --set-upstream origin ${{ env.branchName }}
       - name: Warn if analysis fails
         if: failure()
@@ -409,7 +410,7 @@ jobs:
         git add .
         git commit -m "update discussion URL"
         git branch -u origin/master
-        git pull
+        git pull --rebase
         git push
 
   call-workflow:

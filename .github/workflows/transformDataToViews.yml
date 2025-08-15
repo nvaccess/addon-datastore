@@ -65,4 +65,5 @@ jobs:
         git config user.email github-actions@github.com
         git add .
         git commit -F ../commitMsg.txt
+        git pull --rebase
         git push

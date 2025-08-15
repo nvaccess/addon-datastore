@@ -59,6 +59,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Add CodeQL error results"
+          git pull --rebase
           git push --set-upstream origin ${{ inputs.branchName }}
       - name: Upload results
         id: uploadResults
@@ -126,11 +127,11 @@ jobs:
       - name: Commit scanned add-ons results
         if: always()
         run: |
-          git pull --rebase
           git add ${{ inputs.addonFileName }}
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Add CodeQL warnings results"
+          git pull --rebase
           git push --set-upstream origin ${{ inputs.branchName }}
       - name: Upload results
         id: uploadResults
