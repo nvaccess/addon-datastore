@@ -42,17 +42,16 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
     const vtData = JSON.parse(stdout);
     const stats = vtData[0]["last_analysis_stats"];
     const malicious = stats.malicious;
-    if (malicious === 0) {
-      core.info(`VirusTotal analysis succeeded for ${metadataFile}`);
-      return;
-    }
     if (addonMetadata.scanResults === undefined) {
       addonMetadata.scanResults = {};
     }
     addonMetadata.scanResults.virusTotal = vtData;
     stringified = JSON.stringify(addonMetadata, null, "\t");
     fs.writeFileSync(metadataFile, stringified + "\n");
-    if (core._isSingleFileAnalysis) {
+    if (malicious === 0) {
+      core.info(`VirusTotal analysis succeeded for ${metadataFile}`);
+    }
+    else if (core._isSingleFileAnalysis) {
       core.setFailed(`VirusTotal analysis failed for ${metadataFile}`);
     }
   });
