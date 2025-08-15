@@ -279,14 +279,15 @@ jobs:
 
   requireManualApproval:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
-    if: ${{ always() && (contains(needs.virusTotal-analysis.result, 'failure') || contains(needs.codeQL-analysis.result, 'failure')) }}
+    if: ${{ always() && (needs.virusTotal-analysis.result == 'failure' || needs.codeQL-analysis.result == 'failure') }}
     runs-on: ubuntu-latest
     environment:
       # Require a manual deployment approval if security analysis fails
       name: securityReview
 
   mergeToMaster:
-    needs: [getAddonId, createPullRequest, codeQL-analysis, virusTotal-analysis]
+    needs: [getAddonId, createPullRequest, requireManualApproval]
+    if: ${{ always() && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
     permissions:
       contents: write
       pull-requests: write
