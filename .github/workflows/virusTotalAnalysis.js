@@ -19,7 +19,7 @@ function writeVTScanUrl({core}, metadataFile, addonMetadata) {
 function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
   /*
   Get the VirusTotal analysis for the add-on file.
-  store the results in the metadata file and the scan URL in the add-on metadata file.
+  Store the results in the metadata file and the scan URL in the add-on metadata file.
   If Virus total fails to scan the add-on, fail the job.
   */
   countAPIUsageAndWait({core});
