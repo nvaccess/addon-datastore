@@ -72,7 +72,7 @@ function getVirusTotalAnalysisIfRequired({core}, metadataFile) {
   const reviewedAddonsContents = fs.readFileSync("reviewedAddons.json");
   const reviewedAddonsData = JSON.parse(reviewedAddonsContents);
   // Check if add-on has been flagged before through VirusTotal.
-  if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(sha256)) {
+  if (reviewedAddonsData[addonId] !== undefined && reviewedAddonsData[addonId].includes(addonMetadata.sha256)) {
     core.info(`VirusTotal analysis skipped, already performed for ${metadataFile}`);
     return;
   }
