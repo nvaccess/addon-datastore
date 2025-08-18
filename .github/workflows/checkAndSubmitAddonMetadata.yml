@@ -27,7 +27,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: write
       issues: write
@@ -83,7 +83,7 @@ jobs:
     needs: [getAddonId]
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: write
       pull-requests: write
@@ -151,7 +151,7 @@ jobs:
     needs: [getAddonId, verifySubmitter]
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: write
       pull-requests: write
@@ -225,7 +225,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: read
       issues: write
@@ -292,7 +292,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: write
       issues: write
@@ -333,7 +333,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -350,7 +350,7 @@ jobs:
     needs: [getAddonId, mergeToMaster, virusTotal-analysis]
     strategy:
       matrix:
-        python-version: [ 3.11 ]
+        python-version: [ 3.13 ]
     permissions:
       contents: write
       discussions: write
