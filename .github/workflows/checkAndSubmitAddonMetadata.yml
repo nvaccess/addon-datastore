@@ -227,7 +227,7 @@ jobs:
       matrix:
         python-version: [ 3.13 ]
     permissions:
-      contents: write
+      contents: read
       issues: write
     env:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
@@ -242,8 +242,8 @@ jobs:
           ref: ${{ env.branchName }}
       - name: Install Node.js
         uses: actions/setup-node@v4
-      - name: Install glob
-        run: npm install glob uuid
+      - name: Install npm dependencies
+        run: npm install uuid
       - name: Install virusTotal
         run: choco install vt-cli
       - name: Set Virus Total analysis status
@@ -253,14 +253,6 @@ jobs:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
-      - name: Commit scanned add-ons results
-        run: |
-          git add addons
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git commit -m "Add VirusTotal results"
-          git pull --rebase
-          git push --set-upstream origin ${{ env.branchName }}
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -284,6 +276,10 @@ jobs:
     if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.branchName }}
       - name: Collate analysis results into add-on metadata
         run: |
           jq --argjson codeQLwarnings "${{ needs.codeQL-analysis.outputs.warningsJSON }}" \
@@ -300,8 +296,7 @@ jobs:
               }' \
              addons/${{ needs.getAddonId.outputs.addonFileName }} > tmp.json
           mv tmp.json addons/${{ needs.getAddonId.outputs.addonFileName }}
-
-      - name: Commit add-ons metadata
+      - name: Commit add-on metadata
         run: |
           git add ${{ needs.getAddonId.outputs.addonFileName }}
           git config user.name "github-actions"
@@ -441,7 +436,7 @@ jobs:
         git add .
         git commit -m "update discussion URL"
         git branch -u origin/master
-        git pull --rebase
+        git pull
         git push
 
   call-workflow:

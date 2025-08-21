@@ -1,4 +1,3 @@
-const glob = require("glob");
 const fs = require("fs");
 const { exec } = require("child_process");
 const countAPIUsageAndWait = require("./virusTotalAPISleepAndCount");
@@ -7,12 +6,12 @@ const virusTotalSubmit = require("./virusTotalSubmit");
 
 function writeVTScanUrl({core}, metadataFile, addonMetadata) {
   const vtScanUrl = `https://www.virustotal.com/gui/file/${addonMetadata.sha256}`;
-  addonMetadata.vtScanUrl = vtScanUrl;
-  stringified = JSON.stringify(addonMetadata, null, "\t");
   if (core._isSingleFileAnalysis) {
     core.setOutput("vtScanUrl", vtScanUrl);
   }
   else {
+    addonMetadata.vtScanUrl = vtScanUrl;
+    stringified = JSON.stringify(addonMetadata, null, "\t");
     fs.writeFileSync(metadataFile, stringified + "\n");
   }
 }
@@ -44,15 +43,15 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
     const vtData = JSON.parse(stdout);
     const stats = vtData[0]["last_analysis_stats"];
     const malicious = stats.malicious;
-    if (addonMetadata.scanResults === undefined) {
-      addonMetadata.scanResults = {};
-    }
-    addonMetadata.scanResults.virusTotal = vtData;
-    stringified = JSON.stringify(addonMetadata, null, "\t");
     if (core._isSingleFileAnalysis) {
       core.setOutput("vtResults", vtData);
     }
     else {
+      if (addonMetadata.scanResults === undefined) {
+        addonMetadata.scanResults = {};
+      }
+      addonMetadata.scanResults.virusTotal = vtData;
+      stringified = JSON.stringify(addonMetadata, null, "\t");
       fs.writeFileSync(metadataFile, stringified + "\n");
     }
     if (malicious === 0) {
@@ -80,7 +79,7 @@ function getVirusTotalAnalysisIfRequired({core}, metadataFile) {
   }
   // Check if add-on has had results saved before through VirusTotal.
   if (addonMetadata.scanResults !== undefined && addonMetadata.scanResults.virusTotal !== undefined) {
-    core.info(`VirusTotal analysis skipped, already performed for ${metadataFile}`);
+    core.info(`VirusTotal results fetch skipped, already performed for ${metadataFile}`);
     return;
   }
   getVirusTotalAnalysis({core}, addonMetadata, metadataFile);

@@ -38,7 +38,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
       - name: Install npm dependencies
-        run: npm install glob uuid
+        run: npm install uuid
       - name: Get add-on filenames without scan results
         shell: bash
         run: |

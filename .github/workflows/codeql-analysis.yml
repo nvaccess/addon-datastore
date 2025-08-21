@@ -23,7 +23,7 @@ jobs:
     runs-on: windows-latest
     permissions:
       actions: read
-      contents: write
+      contents: read
       security-events: write
       issues: write
     outputs:
@@ -60,7 +60,7 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
+            setSecurityAnalysisStatus({core}, resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -125,7 +125,7 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
+            setSecurityAnalysisStatus({core}, resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
