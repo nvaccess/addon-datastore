@@ -1,4 +1,4 @@
-name: Scan a batch of submitted add-ons with Virus Total
+name: Scan a batch of add-ons
 
 on:
   # Every day at 6pm UTC.
@@ -140,7 +140,7 @@ jobs:
           git pull --rebase
           git push --set-upstream origin ${{ env.branchName }}
 
-   pull-request:
+  pull-request:
     needs: codeQL-analysis
     runs-on: windows-latest
     permissions:
