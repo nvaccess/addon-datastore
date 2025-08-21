@@ -282,10 +282,10 @@ jobs:
           ref: ${{ env.branchName }}
       - name: Collate analysis results into add-on metadata
         run: |
-          jq --argjson codeQLwarnings "${{ needs.codeQL-analysis.outputs.warningsJSON }}" \
-             --argjson codeQLerrors "${{ needs.codeQL-analysis.outputs.errorsJSON }}" \
-             --argjson vtResults "${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}" \
-             --arg vtScanUrl "${{ needs.virusTotal-analysis.outputs.vtScanUrl }}" \
+          jq --argjson codeQLwarnings '${{ needs.codeQL-analysis.outputs.warningsJSON }}' \
+             --argjson codeQLerrors '${{ needs.codeQL-analysis.outputs.errorsJSON }}' \
+             --argjson vtResults '${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}' \
+             --arg vtScanUrl '${{ needs.virusTotal-analysis.outputs.vtScanUrl }}' \
              '. + {
                 vtScanUrl: $vtScanUrl,
                 scanResults: {
