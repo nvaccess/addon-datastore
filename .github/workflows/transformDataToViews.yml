@@ -23,17 +23,17 @@ jobs:
         python-version: [ 3.13 ]
     steps:
     - name: Checkout addon data
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: data
         ref: master
     - name: Checkout views branch into separate folder
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: views
         ref: views
     - name: Checkout transformation repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform

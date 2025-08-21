@@ -15,7 +15,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout datastore repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: datastore
     - name: Get data
@@ -26,7 +26,7 @@ jobs:
           const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
           setOutputFromIssue({context, core})
     - name: Checkout validate repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-validation
         submodules: true
