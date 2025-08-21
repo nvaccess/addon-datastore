@@ -84,6 +84,7 @@ jobs:
         run: npm install uuid
       - name: Get add-on filenames without scan results
         shell: bash
+        id: getAddonsWithoutCodeQL
         run: |
           for file in ./addons/*/*.json; do
             if (jq -r '.scanResults | ."codeQL-errors"' "$file" | grep -q 'null\|""'); then
