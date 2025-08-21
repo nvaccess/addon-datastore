@@ -294,8 +294,8 @@ jobs:
                   "virusTotal": $vtResults
                 }
               }' \
-             addons/${{ needs.getAddonId.outputs.addonFileName }} > tmp.json
-          mv tmp.json addons/${{ needs.getAddonId.outputs.addonFileName }}
+             ${{ needs.getAddonId.outputs.addonFileName }} > tmp.json
+          mv tmp.json ${{ needs.getAddonId.outputs.addonFileName }}
       - name: Commit add-on metadata
         run: |
           git add ${{ needs.getAddonId.outputs.addonFileName }}
