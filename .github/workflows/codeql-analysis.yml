@@ -9,6 +9,13 @@ on:
       branchName:
         required: true
         type: string
+    outputs:
+      warningsJSON:
+        description: "The JSON from CodeQL warnings"
+        value: ${{ jobs.analyzeExcludingWarnings.outputs.codeQLResults }}
+      errorsJSON:
+        description: "The JSON from CodeQL errors"
+        value: ${{ jobs.analyze.outputs.codeQLResults }}
 
 jobs:
   analyzeExcludingWarnings:
@@ -19,6 +26,8 @@ jobs:
       contents: write
       security-events: write
       issues: write
+    outputs:
+      codeQLResults: ${{ steps.setSecurityAnalysisStatus.outputs.codeQLResults }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -51,16 +60,7 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath, "errors")
-      - name: Commit scanned add-ons results
-        if: always()
-        run: |
-          git add ${{ inputs.addonFileName }}
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git commit -m "Add CodeQL error results"
-          git pull --rebase
-          git push --set-upstream origin ${{ inputs.branchName }}
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -91,6 +91,8 @@ jobs:
       actions: read
       security-events: write
       issues: write
+    outputs:
+      codeQLResults: ${{ steps.setSecurityAnalysisStatus.outputs.codeQLResults }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -123,16 +125,7 @@ jobs:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
             const resultsPath = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath, "warnings")
-      - name: Commit scanned add-ons results
-        if: always()
-        run: |
-          git add ${{ inputs.addonFileName }}
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git commit -m "Add CodeQL warnings results"
-          git pull --rebase
-          git push --set-upstream origin ${{ inputs.branchName }}
+            setSecurityAnalysisStatus({core}, "${{ inputs.addonFileName }}", resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()

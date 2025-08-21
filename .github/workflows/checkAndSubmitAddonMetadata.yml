@@ -234,6 +234,7 @@ jobs:
       VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
     outputs:
       vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
+      vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -278,8 +279,38 @@ jobs:
       addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
       branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
 
-  requireManualApproval:
+  commitScanResults:
     needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collate analysis results into add-on metadata
+        run: |
+          jq --argjson codeQLwarnings "${{ needs.codeQL-analysis.outputs.warningsJSON }}" \
+             --argjson codeQLerrors "${{ needs.codeQL-analysis.outputs.errorsJSON }}" \
+             --argjson vtResults "${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}" \
+             --arg vtScanUrl "${{ needs.virusTotal-analysis.outputs.vtScanUrl }}" \
+             '. + {
+                vtScanUrl: $vtScanUrl,
+                scanResults: {
+                  codeQL-warnings: $codeQLwarnings,
+                  codeQL-errors: $codeQLerrors,
+                  virusTotal: $vtResults
+                }
+              }' \
+             addons/${{ needs.getAddonId.outputs.addonFileName }} > tmp.json
+          mv tmp.json addons/${{ needs.getAddonId.outputs.addonFileName }}
+
+      - name: Commit add-ons metadata
+        run: |
+          git add ${{ needs.getAddonId.outputs.addonFileName }}
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add code analysis results"
+          git push --set-upstream origin ${{ env.branchName }}
+
+  requireManualApproval:
+    needs: [commitScanResults, virusTotal-analysis, codeQL-analysis]
     if: ${{ always() && (needs.virusTotal-analysis.result == 'failure' || needs.codeQL-analysis.result == 'failure') }}
     runs-on: ubuntu-latest
     environment:
