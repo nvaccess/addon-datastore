@@ -11,19 +11,18 @@ on:
     - cron: '0 18 * * *'
   workflow_dispatch:
 
+env:
+  BRANCH_NAME: addScanResults${{ github.run_number }}
+
 jobs:
   virusTotal-analysis:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: [ 3.13 ]
     permissions:
       contents: write
       pull-requests: write
     env:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
       VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
-      BRANCH_NAME: addVTresults${{ github.run_number }}
       BATCH_SIZE: 10
     steps:
       - name: Checkout repository
@@ -43,7 +42,7 @@ jobs:
         shell: bash
         run: |
           for file in ./addons/*/*.json; do
-            if (jq -r '.scanResults | .virusTotal' "$file" | grep -q 'null\|""'); then
+            if (jq -r '.scanResults.virusTotal' "$file" | grep -q '^null\|""$'); then
               echo "$file" >> addonsWithoutVT.txt
             fi
           done
@@ -57,7 +56,7 @@ jobs:
             const fs = require('fs')
             const addonsWithoutVT = fs.readFileSync('addonsWithoutVT.txt', 'utf-8').split('\n').filter(Boolean)
             setVirusTotalAnalysisStatus({core}, addonsWithoutVT.slice(0, ${{ env.BATCH_SIZE }}))
-      - name: Create PR for updated VT urls
+      - name: Push updated VT urls
         shell: bash
         run: |
           git add addons
@@ -66,11 +65,96 @@ jobs:
           git commit -m "Add VirusTotal results"
           git pull --rebase
           git push --set-upstream origin ${{ env.BRANCH_NAME }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  codeQL-analysis-prep:
+    runs-on: windows-latest
+    outputs:
+      addonsWithoutCodeQL: ${{ steps.getAddonsWithoutCodeQL.outputs.addonsWithoutCodeQL }}
+    env:
+      BATCH_SIZE: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCH_NAME }}
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+      - name: Install npm dependencies
+        run: npm install uuid
+      - name: Get add-on filenames without scan results
+        shell: bash
+        run: |
+          for file in ./addons/*/*.json; do
+            if (jq -r '.scanResults | ."codeQL-errors"' "$file" | grep -q 'null\|""'); then
+              echo "$file" >> addonsWithoutCodeQL.txt
+            fi
+          done
+          wc -l addonsWithoutCodeQL.txt | awk '{print "Total add-ons without scan results: " $1}'
+          # take the first batch of lines
+          head -n ${{ env.BATCH_SIZE }} addonsWithoutCodeQL.txt > addonsWithoutCodeQL_batch.txt
+          # Create JSON list of file names, single line string
+
+          jq -R . < addonsWithoutCodeQL_batch.txt | jq -s -c . > addonsWithoutCodeQL.json
+          # Store as GitHub output
+          echo "addonsWithoutCodeQL=$(cat addonsWithoutCodeQL.json)" >> $GITHUB_OUTPUT
+
+  codeQL-analysis:
+    needs: codeQL-analysis-prep
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        addonFileName: ${{ fromJson(needs.codeQL-analysis-prep.outputs.addonsWithoutCodeQL) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCH_NAME }}
+      - name: Set CodeQL analysis status
+        id: analysis
+        uses: ./.github/workflows/codeql-analysis.yml
+        with:
+          addonFileName: ${{ matrix.addonFileName }}
+          branchName: ${{ env.BRANCH_NAME }}
+      - name: Collate analysis results into add-on metadata
+        run: |
+          jq --argjson codeQLwarnings '${{ steps.analysis.outputs.warningsJSON }}' \
+             --argjson codeQLerrors '${{ steps.analysis.outputs.errorsJSON }}' \
+             '. + {
+                scanResults: {
+                  "codeQL-warnings": $codeQLwarnings,
+                  "codeQL-errors": $codeQLerrors
+                }
+              }' \
+             ${{ matrix.addonFileName }} > tmp.json
+          mv tmp.json ${{ matrix.addonFileName }}
+      - name: Commit add-on metadata
+        run: |
+          git add ${{ matrix.addonFileName }}
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add codeQL analysis results for ${{ matrix.addonFileName }}"
+          git pull --rebase
+          git push --set-upstream origin ${{ env.branchName }}
+
+   pull-request:
+    needs: codeQL-analysis
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Open pr and merge
+        shell: bash
+        run: |
           gh pr create \
-          --title "Add VirusTotal results" \
-          --base ${{ github.ref }} \
-          --head ${{ env.BRANCH_NAME }} \
-          --body "Add VirusTotal results to add-ons"
-          gh pr merge --merge "${{ env.BRANCH_NAME }}"
+            --title "Add scanning results" \
+            --base ${{ github.ref }} \
+            --head ${{ env.BRANCH_NAME }} \
+            --body "Add scanning results to add-ons"
+            gh pr merge --merge "${{ env.BRANCH_NAME }}"
         env:
           GH_TOKEN: ${{ github.token }}
