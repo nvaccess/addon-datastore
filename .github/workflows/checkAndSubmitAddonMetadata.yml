@@ -37,7 +37,7 @@ jobs:
       addonIdParsed: ${{ steps.getAddonIdParsed.outputs.result }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ env.branchName }}
       - name: Determine add-on file name
@@ -90,7 +90,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.ref }}
       - name: Check if submitter is trusted to submit for this add-on or any add-on ID
@@ -160,7 +160,7 @@ jobs:
       pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: master
     - name: Update branch
@@ -180,13 +180,13 @@ jobs:
         author: github-actions <github-actions@github.com>
         delete-branch: true
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: ${{ steps.cpr.outputs.pull-request-head-sha }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
@@ -196,7 +196,7 @@ jobs:
         python -m pip install --upgrade wheel
         pip install -r validation/requirements.txt
     - name: Checkout transformation repo for nvdaAPIVersions.json
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-transform
         path: transform
@@ -237,11 +237,11 @@ jobs:
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ env.branchName }}
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
       - name: Install glob
         run: npm install glob uuid
       - name: Install virusTotal
@@ -332,7 +332,7 @@ jobs:
         python-version: [ 3.13 ]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Merge branch to master
         env:
           GH_TOKEN: ${{ github.token }}
@@ -352,7 +352,7 @@ jobs:
       discussions: write
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         ref: ${{ github.ref }}
     - name: Get add-on name and version

@@ -13,13 +13,13 @@ jobs:
         python-version: [ 3.13 ]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: datastore
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
