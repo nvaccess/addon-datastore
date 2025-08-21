@@ -289,9 +289,9 @@ jobs:
              '. + {
                 vtScanUrl: $vtScanUrl,
                 scanResults: {
-                  codeQL-warnings: $codeQLwarnings,
-                  codeQL-errors: $codeQLerrors,
-                  virusTotal: $vtResults
+                  "codeQL-warnings": $codeQLwarnings,
+                  "codeQL-errors": $codeQLerrors,
+                  "virusTotal": $vtResults
                 }
               }' \
              addons/${{ needs.getAddonId.outputs.addonFileName }} > tmp.json
