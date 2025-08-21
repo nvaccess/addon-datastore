@@ -78,7 +78,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
-          ref: ${{ env.BRANCH_NAME }}
+          ref: ${{ github.ref }}
       - name: Install Node.js
         uses: actions/setup-node@v4
       - name: Install npm dependencies
@@ -101,7 +101,8 @@ jobs:
           echo "addonsWithoutCodeQL=$(cat addonsWithoutCodeQL.json)" >> $GITHUB_OUTPUT
 
   codeQL-analysis:
-    needs: codeQL-analysis-prep
+    # Require virusTotal analysis to run first to prevent merge conflicts to add-on metadata
+    needs: [codeQL-analysis-prep, virusTotal-analysis]
     runs-on: windows-latest
     permissions:
       contents: write
