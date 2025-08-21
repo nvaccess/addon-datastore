@@ -436,7 +436,6 @@ jobs:
         git add .
         git commit -m "update discussion URL"
         git branch -u origin/master
-        git pull
         git push
 
   call-workflow:

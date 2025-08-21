@@ -63,7 +63,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Add VirusTotal results"
-          git pull --rebase
           git push --set-upstream origin ${{ env.BRANCH_NAME }}
         env:
           GH_TOKEN: ${{ github.token }}
