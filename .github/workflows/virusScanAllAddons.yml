@@ -67,82 +67,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
-  codeQL-analysis-prep:
-    runs-on: windows-latest
-    outputs:
-      addonsWithoutCodeQL: ${{ steps.getAddonsWithoutCodeQL.outputs.addonsWithoutCodeQL }}
-    env:
-      BATCH_SIZE: 10
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ github.ref }}
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-      - name: Install npm dependencies
-        run: npm install uuid
-      - name: Get add-on filenames without scan results
-        shell: bash
-        id: getAddonsWithoutCodeQL
-        run: |
-          for file in ./addons/*/*.json; do
-            if (jq -r '.scanResults | ."codeQL-errors"' "$file" | grep -q 'null\|""'); then
-              echo "$file" >> addonsWithoutCodeQL.txt
-            fi
-          done
-          wc -l addonsWithoutCodeQL.txt | awk '{print "Total add-ons without scan results: " $1}'
-          # take the first batch of lines
-          head -n ${{ env.BATCH_SIZE }} addonsWithoutCodeQL.txt > addonsWithoutCodeQL_batch.txt
-          # Create JSON list of file names, single line string
-
-          jq -R . < addonsWithoutCodeQL_batch.txt | jq -s -c . > addonsWithoutCodeQL.json
-          # Store as GitHub output
-          echo "addonsWithoutCodeQL=$(cat addonsWithoutCodeQL.json)" >> $GITHUB_OUTPUT
-
-  codeQL-analysis:
-    # Require virusTotal analysis to run first to prevent merge conflicts to add-on metadata
-    needs: [codeQL-analysis-prep, virusTotal-analysis]
-    runs-on: windows-latest
-    permissions:
-      contents: write
-    strategy:
-      matrix:
-        addonFileName: ${{ fromJson(needs.codeQL-analysis-prep.outputs.addonsWithoutCodeQL) }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ env.BRANCH_NAME }}
-      - name: Set CodeQL analysis status
-        id: analysis
-        uses: ./.github/workflows/codeql-analysis.yml
-        with:
-          addonFileName: ${{ matrix.addonFileName }}
-          branchName: ${{ env.BRANCH_NAME }}
-      - name: Collate analysis results into add-on metadata
-        run: |
-          jq --argjson codeQLwarnings '${{ steps.analysis.outputs.warningsJSON }}' \
-             --argjson codeQLerrors '${{ steps.analysis.outputs.errorsJSON }}' \
-             '. + {
-                scanResults: {
-                  "codeQL-warnings": $codeQLwarnings,
-                  "codeQL-errors": $codeQLerrors
-                }
-              }' \
-             ${{ matrix.addonFileName }} > tmp.json
-          mv tmp.json ${{ matrix.addonFileName }}
-      - name: Commit add-on metadata
-        run: |
-          git add ${{ matrix.addonFileName }}
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git commit -m "Add codeQL analysis results for ${{ matrix.addonFileName }}"
-          git pull --rebase
-          git push --set-upstream origin ${{ env.branchName }}
-
   pull-request:
-    needs: codeQL-analysis
+    needs: virusTotal-analysis
     runs-on: windows-latest
     permissions:
       contents: write
