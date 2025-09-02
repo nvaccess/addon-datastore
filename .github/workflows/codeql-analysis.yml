@@ -12,10 +12,10 @@ on:
     outputs:
       warningsJSON:
         description: "The JSON from CodeQL warnings"
-        value: ${{ jobs.analyzeExcludingWarnings.outputs.codeQLResults }}
+        value: ${{ jobs.analyze.outputs.codeQLResults }}
       errorsJSON:
         description: "The JSON from CodeQL errors"
-        value: ${{ jobs.analyze.outputs.codeQLResults }}
+        value: ${{ jobs.analyzeExcludingWarnings.outputs.codeQLResults }}
 
 jobs:
   analyzeExcludingWarnings:

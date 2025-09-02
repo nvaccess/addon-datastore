@@ -8,8 +8,7 @@ function writeVTScanUrl({core}, metadataFile, addonMetadata) {
   const vtScanUrl = `https://www.virustotal.com/gui/file/${addonMetadata.sha256}`;
   if (core._isSingleFileAnalysis) {
     core.setOutput("vtScanUrl", vtScanUrl);
-  }
-  else {
+  } else {
     addonMetadata.vtScanUrl = vtScanUrl;
     stringified = JSON.stringify(addonMetadata, null, "\t");
     fs.writeFileSync(metadataFile, stringified + "\n");
@@ -45,8 +44,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
     const malicious = stats.malicious;
     if (core._isSingleFileAnalysis) {
       core.setOutput("vtResults", vtData);
-    }
-    else {
+    } else {
       if (addonMetadata.scanResults === undefined) {
         addonMetadata.scanResults = {};
       }
@@ -56,8 +54,7 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
     }
     if (malicious === 0) {
       core.info(`VirusTotal analysis succeeded for ${metadataFile}`);
-    }
-    else if (core._isSingleFileAnalysis) {
+    } else if (core._isSingleFileAnalysis) {
       core.setFailed(`VirusTotal analysis failed for ${metadataFile}`);
     }
   });
