@@ -1,4 +1,3 @@
-const glob = require("glob");
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const { exec } = require("child_process");
