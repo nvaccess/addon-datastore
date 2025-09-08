@@ -23,7 +23,7 @@ jobs:
     env:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
       VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
-      BATCH_SIZE: 10
+      BATCH_SIZE: 300
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
