@@ -282,12 +282,12 @@ jobs:
           ref: ${{ env.branchName }}
       - name: Collate analysis results into add-on metadata
         run: |
-          codeQLWarningsEscaped=$(echo '${{ needs.codeQL-analysis.outputs.warningsJSON }}' | sed "s/'/\\\'/g")
-          codeQLErrorsEscaped=$(echo '${{ needs.codeQL-analysis.outputs.errorsJSON }}' | sed "s/'/\\\'/g")
-          vtResultsEscaped=$(echo '${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}' | sed "s/'/\\\'/g")
-          jq --argjson codeQLWarnings "$codeQLWarningsEscaped" \
-             --argjson codeQLErrors "$codeQLErrorsEscaped" \
-             --argjson vtResults "$vtResultsEscaped" \
+          cat <<EOF > vtResults.json
+          ${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}
+          EOF
+          jq --argjson codeQLWarnings '${{ needs.codeQL-analysis.outputs.warningsJSON }}' \
+             --argjson codeQLErrors '${{ needs.codeQL-analysis.outputs.errorsJSON }}' \
+             --argjson vtResults "$(cat vtResults.json)" \
              --arg vtScanUrl '${{ needs.virusTotal-analysis.outputs.vtScanUrl }}' \
              '. + {
                 vtScanUrl: $vtScanUrl,

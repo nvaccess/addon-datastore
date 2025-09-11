@@ -39,7 +39,8 @@ function getVirusTotalAnalysis({core}, addonMetadata, metadataFile) {
     }
     writeVTScanUrl({core}, metadataFile, addonMetadata);
     // Append the VirusTotal analysis to the file for an artifact
-    const vtData = JSON.parse(stdout);
+    // Escape backticks in the JSON so it can be embedded in a GitHub output
+    const vtData = JSON.parse(stdout.replace(/`/g, "\\`"));
     const stats = vtData[0]["last_analysis_stats"];
     const malicious = stats.malicious;
     if (core._isSingleFileAnalysis) {
