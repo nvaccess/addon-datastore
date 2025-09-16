@@ -347,6 +347,7 @@ jobs:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
+    if: ${{ always() && needs.mergeToMaster.result == 'success' }}
     needs: [getAddonId, mergeToMaster, virusTotal-analysis]
     strategy:
       matrix:
