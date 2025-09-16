@@ -221,7 +221,7 @@ jobs:
         issue-number: ${{ inputs.issueNumber }}
 
   virusTotal-analysis:
-    needs: [getAddonId]
+    needs: [getAddonId, createPullRequest]
     runs-on: windows-latest
     strategy:
       matrix:
@@ -265,7 +265,7 @@ jobs:
             Please ask here or email info@nvaccess.org if you need assistance with this process.
 
   codeQL-analysis:
-    needs: [getAddonId]
+    needs: [getAddonId, createPullRequest]
     uses: ./.github/workflows/codeql-analysis.yml
     with:
       addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
