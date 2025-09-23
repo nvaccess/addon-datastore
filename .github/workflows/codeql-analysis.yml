@@ -2,6 +2,21 @@ name: CodeQL security analysis
 
 on:
   workflow_call:
+    inputs:
+      addonFileName:
+        required: true
+        type: string
+      branchName:
+        required: true
+        type: string
+    outputs:
+      warningsJSON:
+        description: "The JSON from CodeQL warnings"
+        value: ${{ jobs.analyze.outputs.codeQLResults }}
+      errorsJSON:
+        description: "The JSON from CodeQL errors"
+        value: ${{ jobs.analyzeExcludingWarnings.outputs.codeQLResults }}
+
 jobs:
   analyzeExcludingWarnings:
     name: Analyze add-on excluding warnings
@@ -11,9 +26,13 @@ jobs:
       contents: read
       security-events: write
       issues: write
+    outputs:
+      codeQLResults: ${{ steps.setSecurityAnalysisStatus.outputs.codeQLResults }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.branchName }}
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
@@ -34,18 +53,14 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
-      - name: Download add-on metadata
-        uses: actions/download-artifact@v4
-        with:
-          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, path)
+            const resultsPath = 'results/python.sarif'
+            setSecurityAnalysisStatus({core}, resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()
@@ -53,14 +68,6 @@ jobs:
         with:
           name: results-excluding-warnings
           path: results/python.sarif
-      - name: Upload manual approval
-        id: uploadManualApproval
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: manualApproval
-          path: reviewedAddons.json
-          overwrite: true
       - name: Warn if analysis fails
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -84,9 +91,13 @@ jobs:
       actions: read
       security-events: write
       issues: write
+    outputs:
+      codeQLResults: ${{ steps.setSecurityAnalysisStatus.outputs.codeQLResults }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.branchName }}
       - name: Download add-on
         uses: actions/download-artifact@v4
         with:
@@ -107,18 +118,14 @@ jobs:
         uses: github/codeql-action/analyze@v3
         with:
           output: results
-      - name: Download add-on metadata
-        uses: actions/download-artifact@v4
-        with:
-          name: addonMetadata
       - name: Set security analysis status
         id: setSecurityAnalysisStatus
         uses: actions/github-script@v7
         with:
           script: |
             const setSecurityAnalysisStatus = require('./.github/workflows/securityAnalysis.js')
-            const path = 'results/python.sarif'
-            setSecurityAnalysisStatus({core}, path)
+            const resultsPath = 'results/python.sarif'
+            setSecurityAnalysisStatus({core}, resultsPath)
       - name: Upload results
         id: uploadResults
         if: failure()

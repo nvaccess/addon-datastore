@@ -1,4 +1,3 @@
-const glob = require("glob");
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const { exec } = require("child_process");
@@ -103,8 +102,7 @@ function submitAddonIfNotScanned({core}, metadataFile) {
 }
 
 
-module.exports = ({core}, globPattern) => {
-  const metadataFiles = glob.globSync(globPattern);
+module.exports = ({core}, metadataFiles) => {
   // Count API usages to adhere to rate limiting
   core._apiUsageCount = 0;
   metadataFiles.forEach(metadataFile => {
