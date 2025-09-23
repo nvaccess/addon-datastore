@@ -14,7 +14,6 @@ echo >> "$REPORT_FILE"
 echo "## Frequency Table: Add-ons by Number of Malicious Flags" >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
 
-
 # Frequency table: group by malicious count, count, and sort numerically
 find ./addons -name "*.json" -print0 | xargs -0 jq -r '.scanResults.virusTotal[0].last_analysis_stats.malicious // 0' \
   | sort -n \
@@ -24,8 +23,6 @@ find ./addons -name "*.json" -print0 | xargs -0 jq -r '.scanResults.virusTotal[0
 echo >> "$REPORT_FILE"
 echo "## Add-ons Flagged as Malicious" >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
-
-
 # List all flagged add-ons with link and count, then sort numerically descending by malicious count
 TMP_FLAGGED=$(mktemp)
 find ./addons -name "*.json" -print0 | xargs -0 jq -r -s '
