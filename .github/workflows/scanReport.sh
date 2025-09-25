@@ -23,14 +23,16 @@ find ./addons -name "*.json" -print0 | xargs -0 jq -r '.scanResults.virusTotal[0
 echo >> "$REPORT_FILE"
 echo "## Add-ons Flagged as Malicious" >> "$REPORT_FILE"
 echo >> "$REPORT_FILE"
+echo "| Add-on | Version | Malicious | Suspicious |" >> "$REPORT_FILE"
+echo "|---|---|---|---|" >> "$REPORT_FILE"
 # List all flagged add-ons with link and count, then sort numerically descending by malicious count
 TMP_FLAGGED=$(mktemp)
 find ./addons -name "*.json" -print0 | xargs -0 jq -r -s '
   [
-    .[] | {id: .addonId, version: .addonVersionName, vt: .vtScanUrl, malicious: (.scanResults.virusTotal[0].last_analysis_stats.malicious // 0)}
+    .[] | {id: .addonId, version: .addonVersionName, vt: .vtScanUrl, malicious: (.scanResults.virusTotal[0].last_analysis_stats.malicious // 0), suspicious: (.scanResults.virusTotal[0].last_analysis_stats.suspicious // 0)}
   ] |
   map(select(.malicious > 0)) |
-  .[] | (.malicious|tostring) + "\t- [" + .id + "](" + (.vt // "") + ") " + (.version // "?") + " - Malicious: " + (.malicious|tostring)
+  .[] | (.malicious|tostring) + "\t| [" + .id + "](" + (.vt // "") + ") | " + (.version // "?") + " | " + (.malicious|tostring) + " | " + (.suspicious|tostring) + " |"
 ' > "$TMP_FLAGGED"
 sort -r -n -k1,1 "$TMP_FLAGGED" | cut -f2- >> "$REPORT_FILE"
 rm "$TMP_FLAGGED"
