@@ -1,0 +1,17 @@
+name: Create a report of VirusTotal scan results
+
+on:
+  workflow_dispatch:
+
+jobs:
+  createReport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Create report
+        run: .github/workflows/scanReport.sh scanReport.md
+
+      - name: Add report to GitHub step summary
+        run: cat scanReport.md >> $GITHUB_STEP_SUMMARY
