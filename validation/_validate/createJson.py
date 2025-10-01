@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
@@ -9,27 +7,39 @@ import dataclasses
 import json
 import argparse
 import os
-import sys
+from typing import cast
 import zipfile
 
-from typing import (
-	Dict,
-	Optional,
-	cast,
-)
+from .addonManifest import AddonManifest, ApiVersionT
+from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
+from .majorMinorPatch import MajorMinorPatch
+from .sha256 import sha256_checksum
 
-sys.path.append(os.path.dirname(__file__))  # To allow this module to be run as a script by runcreatejson.bat
-# E402 module level import not at top of file
-from addonManifest import AddonManifest  # noqa:E402
-from manifestLoader import getAddonManifest, getAddonManifestLocalizations  # noqa:E402
-from majorMinorPatch import MajorMinorPatch  # noqa:E402
-import sha256  # noqa:E402
-del sys.path[-1]
+
+@dataclasses.dataclass
+class AddonData:
+	addonId: str
+	displayName: str
+	URL: str
+	description: str
+	sha256: str
+	addonVersionName: str
+	addonVersionNumber: dict[str, int]
+	minNVDAVersion: dict[str, int]
+	lastTestedVersion: dict[str, int]
+	channel: str
+	publisher: str
+	sourceURL: str
+	license: str
+	homepage: str | None
+	licenseURL: str | None
+	submissionTime: int
+	translations: list[dict[str, str]]
 
 
 def getSha256(addonPath: str) -> str:
 	with open(addonPath, "rb") as f:
-		sha256Addon = sha256.sha256_checksum(f)
+		sha256Addon = sha256_checksum(f)
 	return sha256Addon
 
 
@@ -38,17 +48,17 @@ def getCurrentTime() -> int:
 
 
 def generateJsonFile(
-		manifest: AddonManifest,
-		addonPath: str,
-		parentDir: str,
-		channel: str,
-		publisher: str,
-		sourceUrl: str,
-		url: str,
-		licenseName: str,
-		licenseUrl: Optional[str],
+	manifest: AddonManifest,
+	addonPath: str,
+	parentDir: str,
+	channel: str,
+	publisher: str,
+	sourceUrl: str,
+	url: str,
+	licenseName: str,
+	licenseUrl: str | None,
 ) -> None:
-	data = _createDictMatchingJsonSchema(
+	data = _createDataclassMatchingJsonSchema(
 		manifest=manifest,
 		sha=getSha256(addonPath),
 		channel=channel,
@@ -62,83 +72,79 @@ def generateJsonFile(
 	filePath = buildOutputFilePath(data, parentDir)
 
 	with open(filePath, "wt", encoding="utf-8") as f:
-		json.dump(data, f, indent="\t", ensure_ascii=False)
+		json.dump(dataclasses.asdict(data), f, indent="\t", ensure_ascii=False)
 	print(f"Wrote json file: {filePath}")
 
 
-def buildOutputFilePath(data, parentDir) -> os.PathLike:
-	addonDir = os.path.join(parentDir, data["addonId"])
-	versionNumber = MajorMinorPatch(**data["addonVersionNumber"])
-	canonicalVersionString = ".".join(
-		(str(i) for i in dataclasses.astuple(versionNumber))
-	)
+def buildOutputFilePath(data: AddonData, parentDir: str) -> os.PathLike[str]:
+	addonDir = os.path.join(parentDir, data.addonId)
+	versionNumber = MajorMinorPatch(**data.addonVersionNumber)
+	canonicalVersionString = ".".join((str(i) for i in dataclasses.astuple(versionNumber)))
 	if not os.path.isdir(addonDir):
 		os.makedirs(addonDir)
-	filePath = os.path.join(addonDir, f'{canonicalVersionString}.json')
-	return cast(os.PathLike, filePath)
+	filePath = os.path.join(addonDir, f"{canonicalVersionString}.json")
+	return cast(os.PathLike[str], filePath)
 
 
-def _createDictMatchingJsonSchema(
-		manifest: AddonManifest,
-		sha: str,
-		channel: str,
-		publisher: str,
-		sourceUrl: str,
-		url: str,
-		licenseName: str,
-		licenseUrl: Optional[str],
-) -> Dict[str, str]:
+def _createDataclassMatchingJsonSchema(
+	manifest: AddonManifest,
+	sha: str,
+	channel: str,
+	publisher: str,
+	sourceUrl: str,
+	url: str,
+	licenseName: str,
+	licenseUrl: str | None,
+) -> AddonData:
 	"""Refer to _validate/addonVersion_schema.json"""
 	try:
-		addonVersionNumber = MajorMinorPatch.getFromStr(manifest["version"])
+		addonVersionNumber = MajorMinorPatch.getFromStr(cast(str, manifest["version"]))
 	except ValueError as e:
-		raise ValueError(f"Manifest version invalid {addonVersionNumber}") from e
+		raise ValueError(f"Manifest version invalid {manifest['version']}") from e
 
-	try:
-		addonData = {
-			"addonId": manifest["name"],
-			"displayName": manifest["summary"],
-			"URL": url,
-			"description": manifest["description"],
-			"sha256": sha,
-			"addonVersionName": manifest["version"],
-			"addonVersionNumber": dataclasses.asdict(addonVersionNumber),
-			"minNVDAVersion": dataclasses.asdict(
-				MajorMinorPatch(*manifest["minimumNVDAVersion"])
-			),
-			"lastTestedVersion": dataclasses.asdict(
-				MajorMinorPatch(*manifest["lastTestedNVDAVersion"])
-			),
-			"channel": channel,
-			"publisher": publisher,
-			"sourceURL": sourceUrl,
-			"license": licenseName,
-		}
-	except KeyError as e:
-		raise KeyError(f"Manifest missing required key '{e.args[0]}'.") from e
+	for key in ("name", "summary", "description", "minimumNVDAVersion", "lastTestedNVDAVersion", "version"):
+		if key not in manifest:
+			raise KeyError(f"Manifest missing required key '{key}'.")
 
 	# Add optional fields
-	homepage = manifest.get("url")
-	if homepage and homepage != 'None':
-		# The config default is None
-		# which is parsed by configobj as a string not a NoneType
-		addonData["homepage"] = homepage
-	if licenseUrl:
-		addonData["licenseURL"] = licenseUrl
-	addonData["submissionTime"] = getCurrentTime()
+	homepage: str | None = manifest.get("url")  # type: ignore[reportUnknownMemberType]
+	if not homepage or homepage == "None":
+		homepage = None
 
-	addonData["translations"] = []
+	translations: list[dict[str, str]] = []
 	for langCode, manifest in getAddonManifestLocalizations(manifest):
 		try:
-			addonData["translations"].append(
+			translations.append(
 				{
 					"language": langCode,
-					"displayName": manifest["summary"],
-					"description": manifest["description"],
-				}
+					"displayName": cast(str, manifest["summary"]),
+					"description": cast(str, manifest["description"]),
+				},
 			)
 		except KeyError as e:
 			raise KeyError(f"Translation for {langCode} missing required key '{e.args[0]}'.") from e
+
+	addonData = AddonData(
+		addonId=cast(str, manifest["name"]),
+		displayName=cast(str, manifest["summary"]),
+		URL=url,
+		description=cast(str, manifest["description"]),
+		sha256=sha,
+		addonVersionName=cast(str, manifest["version"]),
+		addonVersionNumber=dataclasses.asdict(addonVersionNumber),
+		minNVDAVersion=dataclasses.asdict(MajorMinorPatch(*cast(tuple[int], manifest["minimumNVDAVersion"]))),
+		lastTestedVersion=dataclasses.asdict(
+			MajorMinorPatch(*cast(ApiVersionT, manifest["lastTestedNVDAVersion"])),
+		),
+		channel=channel,
+		publisher=publisher,
+		sourceURL=sourceUrl,
+		license=licenseName,
+		homepage=homepage,
+		licenseURL=licenseUrl,
+		submissionTime=getCurrentTime(),
+		translations=translations,
+	)
 
 	return addonData
 
@@ -201,7 +207,7 @@ def main():
 		required=False,
 	)
 	args = parser.parse_args()
-	errorFilePath: Optional[str] = args.errorOutputFile
+	errorFilePath: str | None = args.errorOutputFile
 
 	try:
 		manifest = getAddonManifest(args.file)
@@ -243,5 +249,5 @@ def main():
 			raise
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	main()

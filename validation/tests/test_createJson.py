@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-# Copyright (C) 2022-2024 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -8,28 +6,24 @@ import unittest
 import os
 import shutil
 import json
-from _validate import (
-	createJson,
-	addonManifest,
-	manifestLoader
-)
+from _validate import createJson, addonManifest, manifestLoader
 
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
 SOURCE_DIR = os.path.dirname(TOP_DIR)
-INPUT_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testData')
+INPUT_DATA_PATH = os.path.join(SOURCE_DIR, "tests", "testData")
 VALID_JSON = os.path.join(
 	INPUT_DATA_PATH,
 	"addons",
 	"fake",
-	"13.0.0.json"
+	"13.0.0.json",
 )  # json file available in testData/fake
-ADDON_PACKAGE = os.path.join(INPUT_DATA_PATH, 'fake.nvda-addon')
-MANIFEST_FILE = os.path.join(INPUT_DATA_PATH, 'manifest.ini')
+ADDON_PACKAGE = os.path.join(INPUT_DATA_PATH, "fake.nvda-addon")
+MANIFEST_FILE = os.path.join(INPUT_DATA_PATH, "manifest.ini")
 ADDON_CHANNEL = "testChannel"
 ADDON_PUBLISHER = "testPublisher"
 ADDON_SOURCE_URL = "https://example.com/"
 
-OUTPUT_DATA_PATH = os.path.join(SOURCE_DIR, '_tests', 'testOutput')
+OUTPUT_DATA_PATH = os.path.join(SOURCE_DIR, "tests", "testOutput")
 
 
 def getAddonManifest():
@@ -39,10 +33,11 @@ def getAddonManifest():
 
 
 class IntegrationTestCreateJson(unittest.TestCase):
-	""" Integration tests.
+	"""Integration tests.
 	- The JSON file is created (written to the filesystem).
 	- The output is then loaded and checked for correctness.
 	"""
+
 	def setUp(self):
 		self.outputDir = os.path.join(OUTPUT_DATA_PATH, "createJsonOutput")
 		self.maxDiff = None  # Permit unittest.TestCase (base class) to calculate diffs of any lengths.
@@ -51,8 +46,8 @@ class IntegrationTestCreateJson(unittest.TestCase):
 
 	def test_contentsMatchesExampleFile(self):
 		# Values used must match the manifest files:
-		# - '_tests / testData / manifest.ini'
-		# - '_tests/testData/fake.nvda-addon' (unzip)
+		# - 'tests / testData / manifest.ini'
+		# - 'tests/testData/fake.nvda-addon' (unzip)
 		manifest = getAddonManifest()
 		createJson.generateJsonFile(
 			manifest,
@@ -66,14 +61,10 @@ class IntegrationTestCreateJson(unittest.TestCase):
 			licenseUrl="https://www.gnu.org/licenses/gpl-2.0.html",
 		)
 		actualJsonPath = os.path.join(self.outputDir, "fake", "13.0.0.json")
-		self.assertTrue(
-			os.path.isfile(actualJsonPath),
-			f"Failed to create json file: {actualJsonPath}"
-		)
+		self.assertTrue(os.path.isfile(actualJsonPath), f"Failed to create json file: {actualJsonPath}")
 		self._assertJsonFilesEqual(actualJsonPath=actualJsonPath, expectedJsonPath=VALID_JSON)
 
 	def _assertJsonFilesEqual(self, actualJsonPath: str, expectedJsonPath: str):
-
 		# Not equal, how are they different?
 		with open(VALID_JSON, encoding="utf-8") as expectedFile:
 			expectedJson = json.load(expectedFile)
@@ -93,15 +84,26 @@ class Test_buildOutputFilePath(unittest.TestCase):
 
 	def test_validVersion(self):
 		outputFilePath = createJson.buildOutputFilePath(
-			data={
-				"addonId": "testId",
-				"addonVersionNumber": {
-					"major": 1,
-					"minor": 2,
-					"patch": 0,
-				}
-			},
-			parentDir=self.outputDir
+			data=createJson.AddonData(
+				addonId="addonId",
+				displayName="Addon name",
+				URL="https://example.com",
+				description="Addon description",
+				sha256="sha256checksum",
+				addonVersionName="1.2.0",
+				addonVersionNumber={"major": 1, "minor": 2, "patch": 0},
+				minNVDAVersion={"major": 2023, "minor": 1, "patch": 0},
+				lastTestedVersion={"major": 2023, "minor": 2, "patch": 0},
+				channel="stable",
+				publisher="Name of addon author or organisation",
+				sourceURL="https://example.com",
+				license="GPL v2",
+				homepage="https://example.com",
+				licenseURL="https://www.gnu.org/licenses/gpl-2.0.html",
+				submissionTime=createJson.getCurrentTime(),
+				translations=[],
+			),
+			parentDir=self.outputDir,
 		)
 
 		dir, filename = os.path.split(outputFilePath)
@@ -109,7 +111,7 @@ class Test_buildOutputFilePath(unittest.TestCase):
 		self.assertEqual(
 			filename,
 			"1.2.0.json",
-			msg="Name of the output file should be named based on version number"
+			msg="Name of the output file should be named based on version number",
 		)
 
 

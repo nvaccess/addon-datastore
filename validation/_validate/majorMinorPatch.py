@@ -1,4 +1,4 @@
-# Copyright (C) 2023 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2023-2025 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,7 @@ class MajorMinorPatch:
 		return cls(
 			major=int(versionParts[0]),
 			minor=int(versionParts[1]),
-			patch=0 if len(versionParts) == 2 else int(versionParts[2])
+			patch=0 if len(versionParts) == 2 else int(versionParts[2]),
 		)
 
 	def __str__(self) -> str:

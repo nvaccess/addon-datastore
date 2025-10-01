@@ -1,0 +1,118 @@
+[build-system]
+requires = ["setuptools~=72.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "addon-datastore-validation"
+dynamic = ["version"]
+description = "Add-on datastore validation"
+maintainers = [
+	{name = "NV Access", email = "info@nvaccess.org"},
+]
+requires-python = ">=3.13.0, <3.14"
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: GNU General Public License v3",
+	"Programming Language :: Python :: 3",
+	"Topic :: Accessibility",
+]
+readme = "readme.md"
+license = {file = "LICENSE"}
+dependencies = [
+	"configobj",
+	"jsonschema==4.25.1",
+]
+
+[project.urls]
+Homepage = "https://www.nvaccess.org/"
+Repository = "https://github.com/nvaccess/addon-datastore-validation.git"
+Issues = "https://github.com/nvaccess/addon-datastore-validation/issues"
+
+[tool.pyright]
+venvPath = ".venv"
+venv = "."
+pythonPlatform = "Windows"
+typeCheckingMode = "strict"
+
+include = [
+	"**/*.py",
+]
+
+exclude = [
+	".git",
+	"__pycache__",
+	".venv",
+]
+
+# While exclude tells pyright not to scan files in the first instance,
+# it will still analyse files included by other files.
+ignore = [
+	# We do not care about errors in our dependencies.
+	".venv",
+]
+
+# General config
+analyzeUnannotatedFunctions = true
+deprecateTypingAliases = true
+
+# Stricter typing
+strictParameterNoneValue = true
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+
+# ignore configobj
+reportMissingTypeStubs = false
+
+[tool.uv]
+default-groups = "all"
+python-preference = "only-system"
+environments = ["sys_platform == 'win32'"]
+required-version = ">=0.8"
+
+[tool.setuptools]
+package-dir = {"" = "_validate"}
+
+[tool.uv.sources]
+configobj = { git = "https://github.com/DiffSK/configobj", rev = "8be54629ee7c26acb5c865b74c76284e80f3aa31" }
+
+[dependency-groups]
+lint = [
+	"ruff==0.13.0",
+	"pre-commit==4.3.0",
+	"pyright==1.1.405",
+]
+
+unit-tests = [
+	# Creating XML unit test reports
+	"unittest-xml-reporting==3.2.0",
+]
+
+[tool.ruff]
+line-length = 110
+
+include = [
+	"*.py",
+]
+
+exclude = [
+	".git",
+	"__pycache__",
+	"build",
+	"output",
+	".venv",
+]
+
+[tool.ruff.format]
+indent-style = "tab"
+line-ending = "lf"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint]
+ignore = [
+	# indentation contains tabs
+	"W191",
+]

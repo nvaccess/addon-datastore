@@ -8,36 +8,38 @@ on:
 
 jobs:
   testCode:
-
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [3.13]
     steps:
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-        architecture: x86
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install tox
-    - name: Test with tox
+        architecture: x64
+    - name: Run unit tests
+      shell: cmd
       # Run automated/unit tests
-      run: tox
-    - name: Lint with flake8
+      run: .\rununittests.bat
+    - name: Lint
+      shell: cmd
       # Check code with the linter
-      run: .\runlint.ps1
+      run: .\runlint.bat
     - name: Validate metadata
+      shell: cmd
       # E2E: test to check the script can be run, no need to actually test the file.
       # The internal checks are covered with unit tests.
-      run: .\runvalidate.ps1 --dry-run _test/testData/addons/fake/13.0.json _tests\testData\nvdaAPIVersions.json
+      run: .\runvalidate.bat --dry-run _test/testData/addons/fake/13.0.json tests\testData\nvdaAPIVersions.json
     - name: Get sha256
+      shell: cmd
       # E2E: test to check the script can be run
-      run: .\runsha.ps1 _tests\testData\fake.nvda-addon
+      run: .\runsha.bat tests\testData\fake.nvda-addon
     - name: Generate json file
+      shell: cmd
       # E2E: test to check the script can be run
-      run: .\runcreatejson.ps1 -f _tests\testData\fake.nvda-addon --dir _tests\testOutput\test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"
+      run: .\runcreatejson.bat -f tests\testData\fake.nvda-addon --dir tests\testOutput\test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"

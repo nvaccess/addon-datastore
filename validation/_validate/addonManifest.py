@@ -1,32 +1,25 @@
-#!/usr/bin/env python
-
-# Copyright (C) 2022-2023 NV Access Limited
+# Copyright (C) 2022-2025 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-import os
-import sys
-from typing import (
-	Optional,
-	TextIO,
-	Tuple,
-)
-from io import StringIO
+from io import StringIO, TextIOBase
+from typing import Any, cast
 
 from configobj import ConfigObj
 from configobj.validate import Validator, ValidateError
 
-sys.path.append(os.path.dirname(__file__))
-# E402 module level import not at top of file
-from majorMinorPatch import MajorMinorPatch  # noqa:E402
-del sys.path[-1]
+from .majorMinorPatch import MajorMinorPatch
+
+ApiVersionT = tuple[int, int, int]  # major, minor, patch
 
 
 class AddonManifest(ConfigObj):
 	"""From the NVDA addonHandler module. Should be kept in sync.
-	Add-on manifest file. It contains metadata about an NVDA add-on package. """
-	configspec = ConfigObj(StringIO(
-		"""
+	Add-on manifest file. It contains metadata about an NVDA add-on package."""
+
+	configspec = ConfigObj(
+		StringIO(
+			"""
 		# NVDA Add-on Manifest configuration specification
 		# Add-on unique name
 		# Suggested convention is lowerCamelCase.
@@ -66,56 +59,59 @@ class AddonManifest(ConfigObj):
 		# "0.0.0" is also valid.
 		# The final integer can be left out, and in that case will default to 0. E.g. 2019.1
 
-		"""
-	))
+		""",
+		),
+	)
 
-	def __init__(self, input: TextIO, translatedInput: Optional[TextIO] = None):
-		""" Constructs an L{AddonManifest} instance from manifest string data
-		@param input: data to read the manifest information
-		@param translatedInput: translated manifest input
+	def __init__(self, input: str | TextIOBase, translatedInput: str | None = None):
 		"""
-		super().__init__(
+		Constructs an :class:`AddonManifest` instance from manifest string data.
+
+		:param input: data to read the manifest information. Can be a filename or a file-like object.
+		:param translatedInput: translated manifest input
+		"""
+		super().__init__(  # type: ignore[reportUnknownMemberType]
 			input,
 			configspec=self.configspec,
-			encoding='utf-8',
-			default_encoding='utf-8',
+			encoding="utf-8",
+			default_encoding="utf-8",
 		)
-		self._errors: Optional[str] = None
-		val = Validator({"apiVersion": validate_apiVersionString})
-		result = self.validate(val, copy=True, preserve_errors=True)
+		self._errors: str | None = None
+		validator = Validator({"apiVersion": validate_apiVersionString})
+		result = self.validate(validator, copy=True, preserve_errors=True)  # type: ignore[reportUnknownMemberType]
 		if result is not True:
 			self._errors = result
 		elif self._validateApiVersionRange() is not True:
 			self._errors = "Constraint not met: minimumNVDAVersion ({}) <= lastTestedNVDAVersion ({})".format(
-				self.get("minimumNVDAVersion"),
-				self.get("lastTestedNVDAVersion")
+				cast(ApiVersionT, self.get("minimumNVDAVersion")),  # type: ignore[reportUnknownMemberType]
+				cast(ApiVersionT, self.get("lastTestedNVDAVersion")),  # type: ignore[reportUnknownMemberType]
 			)
 		self._translatedConfig = None
 		if translatedInput is not None:
-			self._translatedConfig = ConfigObj(translatedInput, encoding='utf-8', default_encoding='utf-8')
-			for key in ('summary', 'description'):
-				val = self._translatedConfig.get(key)
+			self._translatedConfig = ConfigObj(translatedInput, encoding="utf-8", default_encoding="utf-8")
+			for key in ("summary", "description"):
+				val: str = self._translatedConfig.get(key)  # type: ignore[reportUnknownMemberType]
 				if val:
 					self[key] = val
 
 	@property
-	def errors(self) -> str:
+	def errors(self) -> str | None:
 		return self._errors
 
 	def _validateApiVersionRange(self) -> bool:
-		lastTested = self.get("lastTestedNVDAVersion")
-		minRequiredVersion = self.get("minimumNVDAVersion")
+		lastTested = cast(ApiVersionT, self.get("lastTestedNVDAVersion"))  # type: ignore[reportUnknownMemberType]
+		minRequiredVersion = cast(ApiVersionT, self.get("minimumNVDAVersion"))  # type: ignore[reportUnknownMemberType]
 		return minRequiredVersion <= lastTested
 
 
-def validate_apiVersionString(value: str) -> Tuple[int, int, int]:
+def validate_apiVersionString(value: str | Any) -> ApiVersionT:
 	"""From the NVDA addonHandler module. Should be kept in sync."""
 	if not value or value == "None":
 		return (0, 0, 0)
 	if not isinstance(value, str):
 		raise ValidateError(
 			"Expected an apiVersion in the form of a string. "
-			f"e.g. '2019.1.0' instead of {value} (type {type(value)})"
+			f"e.g. '2019.1.0' instead of {value} (type {type(value)})",
 		)
 	try:
 		versionParsed = MajorMinorPatch.getFromStr(value)

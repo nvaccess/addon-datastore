@@ -1,20 +1,22 @@
-# Copyright (C) 2022 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
+from collections.abc import Generator
 from glob import glob
 import os
 import pathlib
 import shutil
-from typing import Generator, Tuple
-import zipfile
-from addonManifest import AddonManifest
 import tempfile
+import zipfile
+
+from .addonManifest import AddonManifest
+
 TEMP_DIR = tempfile.gettempdir()
 
 
 def getAddonManifest(addonPath: str) -> AddonManifest:
-	""" Extract manifest.ini from *.nvda-addon and parse.
+	"""Extract manifest.ini from *.nvda-addon and parse.
 	Raise on error.
 	"""
 	extractDir = os.path.join(TEMP_DIR, "tempAddon")
@@ -33,9 +35,9 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 
 
 def getAddonManifestLocalizations(
-		manifest: AddonManifest
-) -> Generator[Tuple[str, AddonManifest], None, None]:
-	""" Extract data from translated manifest.ini from *.nvda-addon and parse.
+	manifest: AddonManifest,
+) -> Generator[tuple[str, AddonManifest], None, None]:
+	"""Extract data from translated manifest.ini from *.nvda-addon and parse.
 	Raise on error.
 	"""
 	if manifest.filename is None:

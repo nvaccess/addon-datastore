@@ -1,11 +1,9 @@
-#!/usr/bin/env python
-
-# Copyright (C) 2020 NV Access Limited
+# Copyright (C) 2020-2025 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-import hashlib
 import argparse
+import hashlib
 import typing
 
 #: The read size for each chunk read from the file, prevents memory overuse with large files.
@@ -19,9 +17,9 @@ def sha256_checksum(binaryReadModeFile: typing.BinaryIO, blockSize: int = BLOCK_
 	:return: The Sha256 hex digest.
 	"""
 	sha256 = hashlib.sha256()
-	assert binaryReadModeFile.readable() and binaryReadModeFile.mode == 'rb'
+	assert binaryReadModeFile.readable() and binaryReadModeFile.mode == "rb"
 	f = binaryReadModeFile
-	for block in iter(lambda: f.read(blockSize), b''):
+	for block in iter(lambda: f.read(blockSize), b""):
 		sha256.update(block)
 	return sha256.hexdigest()
 
@@ -29,14 +27,14 @@ def sha256_checksum(binaryReadModeFile: typing.BinaryIO, blockSize: int = BLOCK_
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument(
-		type=argparse.FileType('rb'),
+		type=argparse.FileType("rb"),
 		dest="file",
-		help="The NVDA addon (*.nvda-addon) to use when computing the sha256."
+		help="The NVDA addon (*.nvda-addon) to use when computing the sha256.",
 	)
 	args = parser.parse_args()
 	checksum = sha256_checksum(args.file)
 	print(f"Sha256:\t {checksum}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	main()
