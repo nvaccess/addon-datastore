@@ -112,13 +112,13 @@ def _createDataclassMatchingJsonSchema(
 		homepage = None
 
 	translations: list[dict[str, str]] = []
-	for langCode, manifest in getAddonManifestLocalizations(manifest):
+	for langCode, translatedManifest in getAddonManifestLocalizations(manifest):
 		try:
 			translations.append(
 				{
 					"language": langCode,
-					"displayName": cast(str, manifest["summary"]),
-					"description": cast(str, manifest["description"]),
+					"displayName": cast(str, translatedManifest["summary"]),
+					"description": cast(str, translatedManifest["description"]),
 				},
 			)
 		except KeyError as e:
