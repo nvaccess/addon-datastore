@@ -63,7 +63,7 @@ jobs:
       run: |
         validation/runcreatejson `
         -f ..\addon.nvda-addon `
-        --dir datastore\addons `
+        --dir ..\datastore\addons `
         --output .\validationErrors.md `
         --channel=""$env:channel"" `
         --publisher=""$env:publisher"" `

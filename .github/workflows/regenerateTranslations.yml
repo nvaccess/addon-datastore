@@ -29,7 +29,7 @@ jobs:
     - name: Regenerate translations
       run: |
         validation/regenerateTranslations `
-        --dir datastore\addons `
+        --dir ..\datastore\addons `
         --output validationErrors.md
     - name: Commit & Push changes
       uses: actions-js/push@v1.4
