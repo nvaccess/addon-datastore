@@ -62,7 +62,7 @@ jobs:
       # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
       run: |
         validation/runcreatejson `
-        -f addon.nvda-addon `
+        -f ..\addon.nvda-addon `
         --dir datastore\addons `
         --output .\validationErrors.md `
         --channel=""$env:channel"" `
