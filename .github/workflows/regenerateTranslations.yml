@@ -24,14 +24,12 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         path: validation
         submodules: true
-    - name: Install addon-datastore-validation dependencies
-      run: |
-        python -m pip install --upgrade wheel
-        pip install -r validation/requirements.txt
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
     - name: Regenerate translations
       run: |
         validation/regenerateTranslations `
-        --dir datastore\addons `
+        --dir ..\datastore\addons `
         --output validationErrors.md
     - name: Commit & Push changes
       uses: actions-js/push@v1.4

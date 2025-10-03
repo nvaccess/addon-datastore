@@ -1,17 +1,17 @@
 {
-	"addonId": "uTubeDownload",
-	"displayName": "uTubeDownload",
-	"URL": "https://github.com/chaichaimee/uTubeDownload/releases/download/v2025.11/uTubeDownload-v2025.11.nvda-addon",
-	"description": "An add-on that allows you to download audio, video, and image files from YouTube.com, with features supporting queue, resume, and download section.",
-	"sha256": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
-	"addonVersionName": "2025.11",
+	"addonId": "Battery_Check",
+	"displayName": "Monitoreo de batería",
+	"URL": "https://github.com/Reyes2005/Battery_Check/releases/download/v1.2/Battery_Check-1.2.nvda-addon",
+	"description": "La función de este addon es monitorear la batería del sistema y emitir un aviso al esta llegar al 100%.",
+	"sha256": "a77e137f7f5e03cbe4b87f6c6d03d421ed447721e44695124294d0888237e0b4",
+	"addonVersionName": "1.2",
 	"addonVersionNumber": {
-		"major": 2025,
-		"minor": 11,
+		"major": 1,
+		"minor": 2,
 		"patch": 0
 	},
 	"minNVDAVersion": {
-		"major": 2022,
+		"major": 2024,
 		"minor": 4,
 		"patch": 0
 	},
@@ -21,76 +21,44 @@
 		"patch": 0
 	},
 	"channel": "stable",
-	"publisher": "chaichaimee",
-	"sourceURL": "https://github.com/chaichaimee/uTubeDownload",
+	"publisher": "Ángel Reyes",
+	"sourceURL": "https://github.com/Reyes2005/Battery_Check/",
 	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/uTubeDownload",
+	"homepage": "https://github.com/reyes2005/battery_check/",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1759465555000,
-	"translations": [
-		{
-			"language": "de",
-			"displayName": "uTubeDownload",
-			"description": "Ein Add-on, mit dem Sie Audio-, Video- und Bilddateien von YouTube.com herunterladen können, mit Funktionen für Warteschlange, Fortsetzen und Teil-Downloads."
-		},
-		{
-			"language": "en",
-			"displayName": "uTubeDownload",
-			"description": "An add-on that allows you to download audio, video, and image files from YouTube.com, with features supporting queue, resume, and download section."
-		},
-		{
-			"language": "es",
-			"displayName": "uTubeDownload",
-			"description": "Un complemento que permite descargar archivos de audio, vídeo e imagen desde YouTube.com, con funciones de cola, reanudación y descarga por secciones."
-		},
-		{
-			"language": "fr",
-			"displayName": "uTubeDownload",
-			"description": "Un module complémentaire qui permet de télécharger des fichiers audio, vidéo et image depuis YouTube.com, avec des fonctions de file d’attente, de reprise et de téléchargement par section."
-		},
-		{
-			"language": "ru",
-			"displayName": "uTubeDownload",
-			"description": "Дополнение, позволяющее загружать аудио-, видео- и графические файлы с YouTube.com, поддерживающее очередь, возобновление и загрузку отдельных частей."
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
+	"submissionTime": 1759465518000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a77e137f7f5e03cbe4b87f6c6d03d421ed447721e44695124294d0888237e0b4",
 	"scanResults": {
 		"codeQL-warnings": [],
 		"codeQL-errors": [],
 		"virusTotal": [
 			{
-				"_id": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
+				"_id": "a77e137f7f5e03cbe4b87f6c6d03d421ed447721e44695124294d0888237e0b4",
 				"_type": "file",
 				"bundle_info": {
 					"extensions": {
-						"bat": 1,
-						"exe": 3,
 						"html": 1,
-						"ini": 6,
-						"mo": 5,
-						"po": 5,
-						"py": 5,
-						"wav": 2
+						"ini": 1,
+						"md": 1,
+						"py": 3
 					},
 					"file_types": {
 						"HTML": 1,
-						"Portable Executable": 3,
-						"directory": 17,
-						"unknown": 24
+						"unknown": 5
 					},
-					"highest_datetime": "2025-09-25 15:24:02",
-					"lowest_datetime": "2022-01-09 02:33:42",
-					"num_children": 45,
+					"highest_datetime": "2025-10-02 22:57:20",
+					"lowest_datetime": "2025-08-06 16:57:06",
+					"num_children": 6,
 					"type": "ZIP",
-					"uncompressed_size": 86735382
+					"uncompressed_size": 14152
 				},
 				"filecondis": {
-					"dhash": "0000000000070400",
-					"raw_md5": "f07d3b6ef8e368e5a3634d36621f7ca3"
+					"dhash": "7878787829000000",
+					"raw_md5": "eb8b30b5dc8110f71922079e47ba4ce0"
 				},
-				"first_submission_date": 1758792325,
-				"last_analysis_date": 1759465583,
+				"first_submission_date": 1759465562,
+				"last_analysis_date": 1759465562,
 				"last_analysis_results": {
 					"ALYac": {
 						"category": "undetected",
@@ -207,7 +175,7 @@
 					"Bkav": {
 						"category": "undetected",
 						"engine_name": "Bkav",
-						"engine_update": "20251003",
+						"engine_update": "20251002",
 						"engine_version": "2.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -237,7 +205,7 @@
 						"result": null
 					},
 					"ClamAV": {
-						"category": "timeout",
+						"category": "undetected",
 						"engine_name": "ClamAV",
 						"engine_update": "20251002",
 						"engine_version": "1.4.3.0",
@@ -263,13 +231,13 @@
 					"Cynet": {
 						"category": "undetected",
 						"engine_name": "Cynet",
-						"engine_update": "20251003",
+						"engine_update": "20251002",
 						"engine_version": "4.0.3.4",
 						"method": "blacklist",
 						"result": null
 					},
 					"DeepInstinct": {
-						"category": "undetected",
+						"category": "type-unsupported",
 						"engine_name": "DeepInstinct",
 						"engine_update": "20251002",
 						"engine_version": "5.0.0.8",
@@ -293,7 +261,7 @@
 						"result": null
 					},
 					"Elastic": {
-						"category": "undetected",
+						"category": "type-unsupported",
 						"engine_name": "Elastic",
 						"engine_update": "20250929",
 						"engine_version": "4.0.229",
@@ -336,7 +304,7 @@
 						"category": "undetected",
 						"engine_name": "Google",
 						"engine_update": "20251003",
-						"engine_version": "1759462238",
+						"engine_version": "1759464050",
 						"method": "blacklist",
 						"result": null
 					},
@@ -471,7 +439,7 @@
 					"Rising": {
 						"category": "undetected",
 						"engine_name": "Rising",
-						"engine_update": "20251003",
+						"engine_update": "20251002",
 						"engine_version": "25.0.0.28",
 						"method": "blacklist",
 						"result": null
@@ -575,7 +543,7 @@
 					"TrendMicro-HouseCall": {
 						"category": "undetected",
 						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20251003",
+						"engine_update": "20251002",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -632,7 +600,7 @@
 						"category": "undetected",
 						"engine_name": "Webroot",
 						"engine_update": "20250227",
-						"engine_version": "1.10.0.2",
+						"engine_version": "1.9.0.8",
 						"method": "blacklist",
 						"result": null
 					},
@@ -707,15 +675,15 @@
 					"harmless": 0,
 					"malicious": 0,
 					"suspicious": 0,
-					"timeout": 1,
-					"type-unsupported": 8,
-					"undetected": 67
+					"timeout": 0,
+					"type-unsupported": 10,
+					"undetected": 66
 				},
-				"last_modification_date": 1759465666,
-				"last_submission_date": 1759465583,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+				"last_modification_date": 1759465631,
+				"last_submission_date": 1759465562,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
 				"magika": "ZIP",
-				"md5": "2e29fc67c4904cce4e859510c1408eb8",
+				"md5": "13c8796ff75c8a368b8b0e257941cd5a",
 				"meaningful_name": "addon.nvda-addon",
 				"names": [
 					"addon.nvda-addon"
@@ -726,28 +694,15 @@
 					"issues_count": 0
 				},
 				"reputation": 0,
-				"sandbox_verdicts": {
-					"Zenbox": {
-						"category": "harmless",
-						"confidence": 94,
-						"malware_classification": [
-							"CLEAN"
-						],
-						"sandbox_name": "Zenbox"
-					}
-				},
-				"sha1": "7198dcf47d4b1441a931fe10bfed8f8b1fd87d6d",
-				"sha256": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
-				"size": 41293518,
-				"ssdeep": "786432:zGLKJY1oYUocz0kTwHkEZi7iw1tett6QUX8KOwNVx4qIbk1mkMzH:YGmgo1j/A7U0X87RqIbzkMzH",
+				"sha1": "ec7ec25f3a4676127b3a4b148e97acc70617e964",
+				"sha256": "a77e137f7f5e03cbe4b87f6c6d03d421ed447721e44695124294d0888237e0b4",
+				"size": 6775,
+				"ssdeep": "192:X3mIBEP58Bbi2QU20w1Z/Uo3Gnay8TopgPzZ:1W6Be2QUJa5+ay8L1",
 				"tags": [
-					"long-sleeps",
-					"contains-pe",
-					"detect-debug-environment",
 					"zip"
 				],
-				"times_submitted": 2,
-				"tlsh": "T1C5973384CDD1AC0CD7BE6A375CB39B24A23135CBA48F8953683AD1455E279DCABB3407",
+				"times_submitted": 1,
+				"tlsh": "T1DAE17D438926183DEC1B00BCDB1B1A48905CA6A0341DFB4B3D5DE4CC8415BA38E7768E",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
@@ -766,9 +721,9 @@
 					"zip"
 				],
 				"unique_sources": 1,
-				"vhash": "34813f684368718fcc8ae4630723ce15"
+				"vhash": "a0af53a1c32fdaefa3923791e28643dd"
 			}
 		]
 	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6224"
+	"reviewUrl": null
 }

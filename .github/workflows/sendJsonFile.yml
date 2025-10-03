@@ -31,6 +31,8 @@ jobs:
         repository: nvaccess/addon-datastore-validation
         submodules: true
         path: validation
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
     - name: Set up Python 3.13
       uses: actions/setup-python@v5
       with:
@@ -60,8 +62,8 @@ jobs:
       # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
       run: |
         validation/runcreatejson `
-        -f addon.nvda-addon `
-        --dir datastore\addons `
+        -f ..\addon.nvda-addon `
+        --dir ..\datastore\addons `
         --output .\validationErrors.md `
         --channel=""$env:channel"" `
         --publisher=""$env:publisher"" `

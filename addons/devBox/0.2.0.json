@@ -1,101 +1,70 @@
 {
-	"addonId": "uTubeDownload",
-	"displayName": "uTubeDownload",
-	"URL": "https://github.com/chaichaimee/uTubeDownload/releases/download/v2025.11/uTubeDownload-v2025.11.nvda-addon",
-	"description": "An add-on that allows you to download audio, video, and image files from YouTube.com, with features supporting queue, resume, and download section.",
-	"sha256": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
-	"addonVersionName": "2025.11",
+	"addonId": "devBox",
+	"displayName": "Dev Box",
+	"URL": "https://github.com/addonWorkshop/devBox/releases/download/v0.2.0-dev/devBox-0.2.0.nvda-addon",
+	"description": "Adds useful features for developers (consecutive spaces folding, diff indication and more).\nAlso could be useful for users who work with text.",
+	"sha256": "38ab267d69f686188a0b080d1ca9415f9f60222eeedbdd7e32a14243d02faa53",
+	"addonVersionName": "0.2.0",
 	"addonVersionNumber": {
-		"major": 2025,
-		"minor": 11,
+		"major": 0,
+		"minor": 2,
 		"patch": 0
 	},
 	"minNVDAVersion": {
-		"major": 2022,
+		"major": 2024,
 		"minor": 4,
 		"patch": 0
 	},
 	"lastTestedVersion": {
-		"major": 2025,
-		"minor": 3,
+		"major": 2026,
+		"minor": 1,
 		"patch": 0
 	},
-	"channel": "stable",
-	"publisher": "chaichaimee",
-	"sourceURL": "https://github.com/chaichaimee/uTubeDownload",
+	"channel": "dev",
+	"publisher": "addonWorkshop",
+	"sourceURL": "https://github.com/addonWorkshop/devBox",
 	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/uTubeDownload",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1759465555000,
-	"translations": [
-		{
-			"language": "de",
-			"displayName": "uTubeDownload",
-			"description": "Ein Add-on, mit dem Sie Audio-, Video- und Bilddateien von YouTube.com herunterladen können, mit Funktionen für Warteschlange, Fortsetzen und Teil-Downloads."
-		},
-		{
-			"language": "en",
-			"displayName": "uTubeDownload",
-			"description": "An add-on that allows you to download audio, video, and image files from YouTube.com, with features supporting queue, resume, and download section."
-		},
-		{
-			"language": "es",
-			"displayName": "uTubeDownload",
-			"description": "Un complemento que permite descargar archivos de audio, vídeo e imagen desde YouTube.com, con funciones de cola, reanudación y descarga por secciones."
-		},
-		{
-			"language": "fr",
-			"displayName": "uTubeDownload",
-			"description": "Un module complémentaire qui permet de télécharger des fichiers audio, vidéo et image depuis YouTube.com, avec des fonctions de file d’attente, de reprise et de téléchargement par section."
-		},
-		{
-			"language": "ru",
-			"displayName": "uTubeDownload",
-			"description": "Дополнение, позволяющее загружать аудио-, видео- и графические файлы с YouTube.com, поддерживающее очередь, возобновление и загрузку отдельных частей."
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
+	"submissionTime": 1759080836000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/38ab267d69f686188a0b080d1ca9415f9f60222eeedbdd7e32a14243d02faa53",
 	"scanResults": {
 		"codeQL-warnings": [],
 		"codeQL-errors": [],
 		"virusTotal": [
 			{
-				"_id": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
+				"_id": "38ab267d69f686188a0b080d1ca9415f9f60222eeedbdd7e32a14243d02faa53",
 				"_type": "file",
 				"bundle_info": {
 					"extensions": {
-						"bat": 1,
-						"exe": 3,
+						"css": 1,
 						"html": 1,
-						"ini": 6,
-						"mo": 5,
-						"po": 5,
-						"py": 5,
+						"ini": 1,
+						"md": 1,
+						"py": 7,
 						"wav": 2
 					},
 					"file_types": {
 						"HTML": 1,
-						"Portable Executable": 3,
-						"directory": 17,
-						"unknown": 24
+						"unknown": 12
 					},
-					"highest_datetime": "2025-09-25 15:24:02",
-					"lowest_datetime": "2022-01-09 02:33:42",
-					"num_children": 45,
+					"highest_datetime": "2025-09-28 17:33:08",
+					"lowest_datetime": "2025-09-28 17:31:30",
+					"num_children": 13,
 					"type": "ZIP",
-					"uncompressed_size": 86735382
+					"uncompressed_size": 265497
 				},
 				"filecondis": {
-					"dhash": "0000000000070400",
-					"raw_md5": "f07d3b6ef8e368e5a3634d36621f7ca3"
+					"dhash": "0000080e0f0c0800",
+					"raw_md5": "0b6976dea2e12f8c60e9340b7ea88554"
 				},
-				"first_submission_date": 1758792325,
-				"last_analysis_date": 1759465583,
+				"first_submission_date": 1759080855,
+				"last_analysis_date": 1759080855,
 				"last_analysis_results": {
 					"ALYac": {
 						"category": "undetected",
 						"engine_name": "ALYac",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "2.0.0.10",
 						"method": "blacklist",
 						"result": null
@@ -103,15 +72,15 @@
 					"APEX": {
 						"category": "type-unsupported",
 						"engine_name": "APEX",
-						"engine_update": "20251002",
-						"engine_version": "6.702",
+						"engine_update": "20250925",
+						"engine_version": "6.701",
 						"method": "blacklist",
 						"result": null
 					},
 					"AVG": {
 						"category": "undetected",
 						"engine_name": "AVG",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -127,7 +96,7 @@
 					"AhnLab-V3": {
 						"category": "undetected",
 						"engine_name": "AhnLab-V3",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "3.28.0.10568",
 						"method": "blacklist",
 						"result": null
@@ -143,7 +112,7 @@
 					"Antiy-AVL": {
 						"category": "undetected",
 						"engine_name": "Antiy-AVL",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "3.0",
 						"method": "blacklist",
 						"result": null
@@ -151,7 +120,7 @@
 					"Arcabit": {
 						"category": "undetected",
 						"engine_name": "Arcabit",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2025.0.0.23",
 						"method": "blacklist",
 						"result": null
@@ -159,7 +128,7 @@
 					"Avast": {
 						"category": "undetected",
 						"engine_name": "Avast",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -167,15 +136,15 @@
 					"Avast-Mobile": {
 						"category": "undetected",
 						"engine_name": "Avast-Mobile",
-						"engine_update": "20251002",
-						"engine_version": "251002-00",
+						"engine_update": "20250928",
+						"engine_version": "250928-00",
 						"method": "blacklist",
 						"result": null
 					},
 					"Avira": {
 						"category": "undetected",
 						"engine_name": "Avira",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "8.3.3.22",
 						"method": "blacklist",
 						"result": null
@@ -191,7 +160,7 @@
 					"BitDefender": {
 						"category": "undetected",
 						"engine_name": "BitDefender",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "7.2",
 						"method": "blacklist",
 						"result": null
@@ -205,9 +174,9 @@
 						"result": null
 					},
 					"Bkav": {
-						"category": "undetected",
+						"category": "failure",
 						"engine_name": "Bkav",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -215,7 +184,7 @@
 					"CAT-QuickHeal": {
 						"category": "undetected",
 						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20251002",
+						"engine_update": "20250927",
 						"engine_version": "22.00",
 						"method": "blacklist",
 						"result": null
@@ -223,7 +192,7 @@
 					"CMC": {
 						"category": "undetected",
 						"engine_name": "CMC",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2.4.2022.1",
 						"method": "blacklist",
 						"result": null
@@ -231,15 +200,15 @@
 					"CTX": {
 						"category": "undetected",
 						"engine_name": "CTX",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2024.8.29.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"ClamAV": {
-						"category": "timeout",
+						"category": "undetected",
 						"engine_name": "ClamAV",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "1.4.3.0",
 						"method": "blacklist",
 						"result": null
@@ -247,7 +216,7 @@
 					"CrowdStrike": {
 						"category": "undetected",
 						"engine_name": "CrowdStrike",
-						"engine_update": "20231026",
+						"engine_update": "20230417",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -255,7 +224,7 @@
 					"Cylance": {
 						"category": "type-unsupported",
 						"engine_name": "Cylance",
-						"engine_update": "20251002",
+						"engine_update": "20250925",
 						"engine_version": "3.0.0.0",
 						"method": "blacklist",
 						"result": null
@@ -263,15 +232,15 @@
 					"Cynet": {
 						"category": "undetected",
 						"engine_name": "Cynet",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "4.0.3.4",
 						"method": "blacklist",
 						"result": null
 					},
 					"DeepInstinct": {
-						"category": "undetected",
+						"category": "type-unsupported",
 						"engine_name": "DeepInstinct",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "5.0.0.8",
 						"method": "blacklist",
 						"result": null
@@ -279,7 +248,7 @@
 					"DrWeb": {
 						"category": "undetected",
 						"engine_name": "DrWeb",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "7.0.72.9030",
 						"method": "blacklist",
 						"result": null
@@ -287,23 +256,23 @@
 					"ESET-NOD32": {
 						"category": "undetected",
 						"engine_name": "ESET-NOD32",
-						"engine_update": "20251003",
-						"engine_version": "31961",
+						"engine_update": "20250928",
+						"engine_version": "31936",
 						"method": "blacklist",
 						"result": null
 					},
 					"Elastic": {
-						"category": "undetected",
+						"category": "type-unsupported",
 						"engine_name": "Elastic",
-						"engine_update": "20250929",
-						"engine_version": "4.0.229",
+						"engine_update": "20250925",
+						"engine_version": "4.0.228",
 						"method": "blacklist",
 						"result": null
 					},
 					"Emsisoft": {
 						"category": "undetected",
 						"engine_name": "Emsisoft",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2024.8.0.61147",
 						"method": "blacklist",
 						"result": null
@@ -311,7 +280,7 @@
 					"F-Secure": {
 						"category": "undetected",
 						"engine_name": "F-Secure",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "18.10.1547.307",
 						"method": "blacklist",
 						"result": null
@@ -319,7 +288,7 @@
 					"Fortinet": {
 						"category": "undetected",
 						"engine_name": "Fortinet",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "7.0.30.0",
 						"method": "blacklist",
 						"result": null
@@ -327,23 +296,23 @@
 					"GData": {
 						"category": "undetected",
 						"engine_name": "GData",
-						"engine_update": "20251003",
-						"engine_version": "GD:27.42009AVA:64.29914",
+						"engine_update": "20250928",
+						"engine_version": "GD:27.41959AVA:64.29887",
 						"method": "blacklist",
 						"result": null
 					},
 					"Google": {
 						"category": "undetected",
 						"engine_name": "Google",
-						"engine_update": "20251003",
-						"engine_version": "1759462238",
+						"engine_update": "20250928",
+						"engine_version": "1759073449",
 						"method": "blacklist",
 						"result": null
 					},
 					"Gridinsoft": {
 						"category": "undetected",
 						"engine_name": "Gridinsoft",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.0.226.174",
 						"method": "blacklist",
 						"result": null
@@ -351,7 +320,7 @@
 					"Ikarus": {
 						"category": "undetected",
 						"engine_name": "Ikarus",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "6.4.16.0",
 						"method": "blacklist",
 						"result": null
@@ -359,7 +328,7 @@
 					"Jiangmin": {
 						"category": "undetected",
 						"engine_name": "Jiangmin",
-						"engine_update": "20251002",
+						"engine_update": "20250927",
 						"engine_version": "16.0.100",
 						"method": "blacklist",
 						"result": null
@@ -367,23 +336,23 @@
 					"K7AntiVirus": {
 						"category": "undetected",
 						"engine_name": "K7AntiVirus",
-						"engine_update": "20251003",
-						"engine_version": "14.10.57204",
+						"engine_update": "20250927",
+						"engine_version": "14.9.57162",
 						"method": "blacklist",
 						"result": null
 					},
 					"K7GW": {
 						"category": "undetected",
 						"engine_name": "K7GW",
-						"engine_update": "20251003",
-						"engine_version": "14.10.57204",
+						"engine_update": "20250928",
+						"engine_version": "14.9.57163",
 						"method": "blacklist",
 						"result": null
 					},
 					"Kaspersky": {
 						"category": "undetected",
 						"engine_name": "Kaspersky",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "22.0.1.28",
 						"method": "blacklist",
 						"result": null
@@ -391,7 +360,7 @@
 					"Kingsoft": {
 						"category": "undetected",
 						"engine_name": "Kingsoft",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "None",
 						"method": "blacklist",
 						"result": null
@@ -399,7 +368,7 @@
 					"Lionic": {
 						"category": "undetected",
 						"engine_name": "Lionic",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "8.16",
 						"method": "blacklist",
 						"result": null
@@ -407,7 +376,7 @@
 					"Malwarebytes": {
 						"category": "undetected",
 						"engine_name": "Malwarebytes",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "3.1.0.166",
 						"method": "blacklist",
 						"result": null
@@ -415,7 +384,7 @@
 					"MaxSecure": {
 						"category": "undetected",
 						"engine_name": "MaxSecure",
-						"engine_update": "20251001",
+						"engine_update": "20250926",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -423,7 +392,7 @@
 					"McAfeeD": {
 						"category": "undetected",
 						"engine_name": "McAfeeD",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.2.0.10275",
 						"method": "blacklist",
 						"result": null
@@ -431,7 +400,7 @@
 					"MicroWorld-eScan": {
 						"category": "undetected",
 						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "14.0.409.0",
 						"method": "blacklist",
 						"result": null
@@ -439,7 +408,7 @@
 					"Microsoft": {
 						"category": "undetected",
 						"engine_name": "Microsoft",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.1.25080.5",
 						"method": "blacklist",
 						"result": null
@@ -447,7 +416,7 @@
 					"NANO-Antivirus": {
 						"category": "undetected",
 						"engine_name": "NANO-Antivirus",
-						"engine_update": "20251003",
+						"engine_update": "20250925",
 						"engine_version": "1.0.170.26895",
 						"method": "blacklist",
 						"result": null
@@ -455,7 +424,7 @@
 					"Paloalto": {
 						"category": "type-unsupported",
 						"engine_name": "Paloalto",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "0.9.0.1003",
 						"method": "blacklist",
 						"result": null
@@ -463,7 +432,7 @@
 					"Panda": {
 						"category": "undetected",
 						"engine_name": "Panda",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "4.6.4.2",
 						"method": "blacklist",
 						"result": null
@@ -471,7 +440,7 @@
 					"Rising": {
 						"category": "undetected",
 						"engine_name": "Rising",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "25.0.0.28",
 						"method": "blacklist",
 						"result": null
@@ -479,7 +448,7 @@
 					"SUPERAntiSpyware": {
 						"category": "undetected",
 						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "5.6.0.1032",
 						"method": "blacklist",
 						"result": null
@@ -487,7 +456,7 @@
 					"Sangfor": {
 						"category": "undetected",
 						"engine_name": "Sangfor",
-						"engine_update": "20250929",
+						"engine_update": "20250926",
 						"engine_version": "2.22.3.0",
 						"method": "blacklist",
 						"result": null
@@ -503,7 +472,7 @@
 					"Skyhigh": {
 						"category": "undetected",
 						"engine_name": "Skyhigh",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "v2021.2.0+4045",
 						"method": "blacklist",
 						"result": null
@@ -511,7 +480,7 @@
 					"Sophos": {
 						"category": "undetected",
 						"engine_name": "Sophos",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "3.2.1.0",
 						"method": "blacklist",
 						"result": null
@@ -519,7 +488,7 @@
 					"Symantec": {
 						"category": "undetected",
 						"engine_name": "Symantec",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.22.0.0",
 						"method": "blacklist",
 						"result": null
@@ -535,15 +504,15 @@
 					"TACHYON": {
 						"category": "undetected",
 						"engine_name": "TACHYON",
-						"engine_update": "20251003",
-						"engine_version": "2025-10-03.01",
+						"engine_update": "20250928",
+						"engine_version": "2025-09-28.02",
 						"method": "blacklist",
 						"result": null
 					},
 					"Tencent": {
 						"category": "undetected",
 						"engine_name": "Tencent",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -559,7 +528,7 @@
 					"TrellixENS": {
 						"category": "undetected",
 						"engine_name": "TrellixENS",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "6.0.6.653",
 						"method": "blacklist",
 						"result": null
@@ -567,7 +536,7 @@
 					"TrendMicro": {
 						"category": "undetected",
 						"engine_name": "TrendMicro",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -575,15 +544,15 @@
 					"TrendMicro-HouseCall": {
 						"category": "undetected",
 						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
 					},
 					"Trustlook": {
-						"category": "undetected",
+						"category": "failure",
 						"engine_name": "Trustlook",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -591,7 +560,7 @@
 					"VBA32": {
 						"category": "undetected",
 						"engine_name": "VBA32",
-						"engine_update": "20251002",
+						"engine_update": "20250926",
 						"engine_version": "5.4.0",
 						"method": "blacklist",
 						"result": null
@@ -599,7 +568,7 @@
 					"VIPRE": {
 						"category": "undetected",
 						"engine_name": "VIPRE",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "6.0.0.35",
 						"method": "blacklist",
 						"result": null
@@ -607,7 +576,7 @@
 					"Varist": {
 						"category": "undetected",
 						"engine_name": "Varist",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "6.6.1.3",
 						"method": "blacklist",
 						"result": null
@@ -615,7 +584,7 @@
 					"ViRobot": {
 						"category": "undetected",
 						"engine_name": "ViRobot",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "2014.3.20.0",
 						"method": "blacklist",
 						"result": null
@@ -623,8 +592,8 @@
 					"VirIT": {
 						"category": "undetected",
 						"engine_name": "VirIT",
-						"engine_update": "20251002",
-						"engine_version": "9.5.1054",
+						"engine_update": "20250926",
+						"engine_version": "9.5.1050",
 						"method": "blacklist",
 						"result": null
 					},
@@ -632,22 +601,22 @@
 						"category": "undetected",
 						"engine_name": "Webroot",
 						"engine_update": "20250227",
-						"engine_version": "1.10.0.2",
+						"engine_version": "1.9.0.8",
 						"method": "blacklist",
 						"result": null
 					},
 					"Xcitium": {
 						"category": "undetected",
 						"engine_name": "Xcitium",
-						"engine_update": "20251002",
-						"engine_version": "38086",
+						"engine_update": "20250927",
+						"engine_version": "38075",
 						"method": "blacklist",
 						"result": null
 					},
 					"Yandex": {
 						"category": "undetected",
 						"engine_name": "Yandex",
-						"engine_update": "20251002",
+						"engine_update": "20250928",
 						"engine_version": "5.5.2.24",
 						"method": "blacklist",
 						"result": null
@@ -655,23 +624,23 @@
 					"Zillya": {
 						"category": "undetected",
 						"engine_name": "Zillya",
-						"engine_update": "20251002",
-						"engine_version": "2.0.0.5458",
+						"engine_update": "20250926",
+						"engine_version": "2.0.0.5454",
 						"method": "blacklist",
 						"result": null
 					},
 					"ZoneAlarm": {
 						"category": "undetected",
 						"engine_name": "ZoneAlarm",
-						"engine_update": "20251003",
-						"engine_version": "6.19-108464051",
+						"engine_update": "20250928",
+						"engine_version": "6.19-108463946",
 						"method": "blacklist",
 						"result": null
 					},
 					"Zoner": {
 						"category": "undetected",
 						"engine_name": "Zoner",
-						"engine_update": "20251003",
+						"engine_update": "20250928",
 						"engine_version": "2.2.2.0",
 						"method": "blacklist",
 						"result": null
@@ -687,35 +656,35 @@
 					"huorong": {
 						"category": "undetected",
 						"engine_name": "huorong",
-						"engine_update": "20251002",
-						"engine_version": "0cf341b:0cf341b:1ea32ee:1ea32ee",
+						"engine_update": "20250928",
+						"engine_version": "b8bcc1f:b8bcc1f:8989230:8989230",
 						"method": "blacklist",
 						"result": null
 					},
 					"tehtris": {
 						"category": "type-unsupported",
 						"engine_name": "tehtris",
-						"engine_update": "20251003",
-						"engine_version": "v0.1.4",
+						"engine_update": "20250928",
+						"engine_version": null,
 						"method": "blacklist",
 						"result": null
 					}
 				},
 				"last_analysis_stats": {
 					"confirmed-timeout": 0,
-					"failure": 0,
+					"failure": 2,
 					"harmless": 0,
 					"malicious": 0,
 					"suspicious": 0,
-					"timeout": 1,
-					"type-unsupported": 8,
-					"undetected": 67
+					"timeout": 0,
+					"type-unsupported": 10,
+					"undetected": 64
 				},
-				"last_modification_date": 1759465666,
-				"last_submission_date": 1759465583,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+				"last_modification_date": 1759081040,
+				"last_submission_date": 1759080855,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
 				"magika": "ZIP",
-				"md5": "2e29fc67c4904cce4e859510c1408eb8",
+				"md5": "47d85359bf1c0290839d8c1276d40703",
 				"meaningful_name": "addon.nvda-addon",
 				"names": [
 					"addon.nvda-addon"
@@ -726,28 +695,15 @@
 					"issues_count": 0
 				},
 				"reputation": 0,
-				"sandbox_verdicts": {
-					"Zenbox": {
-						"category": "harmless",
-						"confidence": 94,
-						"malware_classification": [
-							"CLEAN"
-						],
-						"sandbox_name": "Zenbox"
-					}
-				},
-				"sha1": "7198dcf47d4b1441a931fe10bfed8f8b1fd87d6d",
-				"sha256": "c32c46e4442101686b23c6725305a17d6f7300da8d84a419263f21d431853e2d",
-				"size": 41293518,
-				"ssdeep": "786432:zGLKJY1oYUocz0kTwHkEZi7iw1tett6QUX8KOwNVx4qIbk1mkMzH:YGmgo1j/A7U0X87RqIbzkMzH",
+				"sha1": "2b2daab4f0f80d4e2245920b3cd9e33ff42c140e",
+				"sha256": "38ab267d69f686188a0b080d1ca9415f9f60222eeedbdd7e32a14243d02faa53",
+				"size": 128296,
+				"ssdeep": "3072:ryj+9qkdZ0QaJ0sufsdu//locxs1tsTl3bXqFNLT85M8dF/bV72ac:rc+/datucCWelbXmq5tFjV2J",
 				"tags": [
-					"long-sleeps",
-					"contains-pe",
-					"detect-debug-environment",
 					"zip"
 				],
-				"times_submitted": 2,
-				"tlsh": "T1C5973384CDD1AC0CD7BE6A375CB39B24A23135CBA48F8953683AD1455E279DCABB3407",
+				"times_submitted": 1,
+				"tlsh": "T182C3122A4B5148C3ED89D3B3BAA225D766CA30C8439A5E07EC462D5F0B28B15C7CFD5D",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
@@ -766,9 +722,9 @@
 					"zip"
 				],
 				"unique_sources": 1,
-				"vhash": "34813f684368718fcc8ae4630723ce15"
+				"vhash": "67f44330c75e0f0fe7c60c17dc408d16"
 			}
 		]
 	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6224"
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/4953"
 }
