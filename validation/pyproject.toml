@@ -79,9 +79,9 @@ configobj = { git = "https://github.com/DiffSK/configobj", rev = "8be54629ee7c26
 
 [dependency-groups]
 lint = [
-	"ruff==0.13.0",
+	"ruff==0.13.3",
 	"pre-commit==4.3.0",
-	"pyright==1.1.405",
+	"pyright==1.1.406",
 ]
 
 unit-tests = [
