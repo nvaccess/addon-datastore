@@ -289,7 +289,8 @@ jobs:
       - name: Collate analysis results into add-on metadata
         run: |
           echo "$(cat vtResults.json)" >> $GITHUB_STEP_SUMMARY
-          jq --argjson codeQLWarnings '${{ needs.codeQL-analysis.outputs.warningsJSON }}' \
+          jq --tab \
+             --argjson codeQLWarnings '${{ needs.codeQL-analysis.outputs.warningsJSON }}' \
              --argjson codeQLErrors '${{ needs.codeQL-analysis.outputs.errorsJSON }}' \
              --argjson vtResults "$(cat vtResults.json)" \
              --arg vtScanUrl '${{ needs.virusTotal-analysis.outputs.vtScanUrl }}' \
