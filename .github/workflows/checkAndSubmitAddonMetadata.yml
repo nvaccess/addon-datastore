@@ -200,7 +200,7 @@ jobs:
         path: transform
     - name: Validate metadata
       run: |
-        validation/runvalidate "../${{ needs.getAddonId.outputs.addonFileName }}" ./transform/nvdaAPIVersions.json --output ../validationErrors.md
+        validation/runvalidate "../${{ needs.getAddonId.outputs.addonFileName }}" ../transform/nvdaAPIVersions.json --output ../validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v4
