@@ -64,7 +64,7 @@ jobs:
         validation/runcreatejson `
         -f ..\addon.nvda-addon `
         --dir ..\datastore\addons `
-        --output .\validationErrors.md `
+        --output ..\validationErrors.md `
         --channel=""$env:channel"" `
         --publisher=""$env:publisher"" `
         --sourceUrl=""$env:sourceUrl"" `
