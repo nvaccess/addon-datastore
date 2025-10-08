@@ -380,6 +380,9 @@ def main():
 	if errorOutputFile and os.path.exists(errorOutputFile):
 		os.remove(errorOutputFile)
 
+	if not addonFiles:
+		raise ValueError(f"No files found matching: {args.filePathGlob}")
+
 	if not args.dry_run:
 		anyErrors = False
 		for filename in addonFiles:
