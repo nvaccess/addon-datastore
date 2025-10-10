@@ -89,7 +89,7 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 class Validate_checkSha256(unittest.TestCase):
 	"""Tests for the checkSha256 function"""
 
-	validSha = "e27fa778cb99f83ececeb0bc089033929eab5a2fa475ce63e68f50b03b6ab585"
+	validSha = "50a8011a807665bcb8fdd177c276fef3b3f7f754796c5990ebe14e80c28b14ef"
 
 	def test_valid(self):
 		errors = validate.checkSha256(ADDON_PACKAGE, expectedSha=self.validSha.upper())
@@ -148,6 +148,32 @@ class Validate_checkDescriptionMatches(unittest.TestCase):
 			[
 				f"Submission 'description' must be set to '{self.manifest['description']}' in json file."
 				f" Instead got: '{badDesc}'",
+			],
+		)
+
+
+class Validate_checkChangelogMatches(unittest.TestCase):
+	def setUp(self):
+		self.submissionData = getValidAddonSubmission()
+		self.manifest = getAddonManifest()
+
+	def test_valid(self):
+		errors = list(
+			validate.checkChangelogMatches(self.manifest, self.submissionData),
+		)
+		self.assertEqual(errors, [])
+
+	def test_invalid(self):
+		badChangelog = "bad changelog"
+		self.submissionData["changelog"] = badChangelog
+		errors = list(
+			validate.checkChangelogMatches(self.manifest, self.submissionData),
+		)
+		self.assertEqual(
+			errors,
+			[
+				f"Submission 'changelog' must be set to '{self.manifest['changelog']}' in json file"
+				f" instead of {badChangelog}",
 			],
 		)
 
