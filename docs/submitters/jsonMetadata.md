@@ -148,7 +148,6 @@ Timestamp of the add-on submission in milliseconds.
 
 Example: `1726667579000`
 
-
 ### Changelog
 
 Optional.
@@ -156,6 +155,7 @@ Optional.
 Changes between the previous version to the current version.
 
 Example:
+
 ```markdown
 # New features
 * First.
