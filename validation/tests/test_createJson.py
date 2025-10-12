@@ -99,7 +99,6 @@ class Test_buildOutputFilePath(unittest.TestCase):
 				sourceURL="https://example.com",
 				license="GPL v2",
 				homepage="https://example.com",
-				changelog="""Changes for this add-on version""",
 				licenseURL="https://www.gnu.org/licenses/gpl-2.0.html",
 				submissionTime=createJson.getCurrentTime(),
 				translations=[],

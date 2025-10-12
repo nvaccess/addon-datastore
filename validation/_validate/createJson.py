@@ -32,10 +32,9 @@ class AddonData:
 	sourceURL: str
 	license: str
 	homepage: str | None
-	changelog: str | None
 	licenseURL: str | None
 	submissionTime: int
-	translations: list[dict[str, str | None]]
+	translations: list[dict[str, str]]
 
 
 def getSha256(addonPath: str) -> str:
@@ -109,31 +108,17 @@ def _createDataclassMatchingJsonSchema(
 
 	# Add optional fields
 	homepage: str | None = manifest.get("url")  # type: ignore[reportUnknownMemberType]
-	if homepage == "None":
-		# The config default is None
-		# which is parsed by configobj as a string not a NoneType
+	if not homepage or homepage == "None":
 		homepage = None
-	changelog: str | None = manifest.get("changelog")  # type: ignore[reportUnknownMemberType]
-	if changelog == "None":
-		# The config default is None
-		# which is parsed by configobj as a string not a NoneType
-		changelog = None
-	translations: list[dict[str, str | None]] = []
-	for langCode, translatedManifest in getAddonManifestLocalizations(manifest):
-		# Add optional translated changelog.
-		translatedChangelog: str | None = translatedManifest.get("changelog")  # type: ignore[reportUnknownMemberType]
-		if translatedChangelog == "None":
-			# The config default is None
-			# which is parsed by configobj as a string not a NoneType
-			translatedChangelog = None
 
+	translations: list[dict[str, str]] = []
+	for langCode, translatedManifest in getAddonManifestLocalizations(manifest):
 		try:
 			translations.append(
 				{
 					"language": langCode,
 					"displayName": cast(str, translatedManifest["summary"]),
 					"description": cast(str, translatedManifest["description"]),
-					"changelog": translatedChangelog,
 				},
 			)
 		except KeyError as e:
@@ -156,7 +141,6 @@ def _createDataclassMatchingJsonSchema(
 		sourceURL=sourceUrl,
 		license=licenseName,
 		homepage=homepage,
-		changelog=changelog,
 		licenseURL=licenseUrl,
 		submissionTime=getCurrentTime(),
 		translations=translations,

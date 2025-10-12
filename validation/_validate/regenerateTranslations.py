@@ -23,23 +23,13 @@ def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:
 			with open(errorFilePath, "w") as errorFile:
 				errorFile.write(f"Validation Errors:\n{manifest.errors}")
 		return
-	changelog = manifest.get("changelog")  # type: ignore[reportUnknownMemberType]
-	if changelog == "None":
-		# The config default is None
-		# which is parsed by configobj as a string not a NoneType
-		changelog = None
+
 	for langCode, manifest in getAddonManifestLocalizations(manifest):
-		translatedChangelog = manifest.get("changelog")  # type: ignore[reportUnknownMemberType]
-		if translatedChangelog == "None":
-			# The config default is None
-			# which is parsed by configobj as a string not a NoneType
-			translatedChangelog = None
 		addonData["translations"].append(
 			{
 				"language": langCode,
 				"displayName": manifest["summary"],
 				"description": manifest["description"],
-				"changelog": translatedChangelog,
 			},
 		)
 

@@ -28,13 +28,11 @@
 			"sourceURL": "https://github.com/nvaccess/addon-datastore/",
 			"license": "GPL v2",
 			"licenseURL": "https://github.com/nvaccess/addon-datastore/license.MD",
-			"changelog": "New features",
 			"translations": [
 				{
 					"language": "de",
 					"displayName": "Mein Addon",
-					"description": "erleichtert das Durchführen von xyz",
-					"changelog": "Neue Funktionen"
+					"description": "erleichtert das Durchführen von xyz"
 				}
 			],
 			"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248",
@@ -230,16 +228,6 @@
 			"title": "The URL of the license",
 			"type": "string"
 		},
-		"changelog": {
-			"$id": "#/properties/changelog",
-			"default": "",
-			"description": "Changes between the previous and the current version",
-			"examples": [
-				"New feature"
-			],
-			"title": "Add-on changelog (en)",
-			"type": "string"
-		},
 		"legacy": {
 			"$id": "#/properties/legacy",
 			"default": false,
@@ -259,8 +247,7 @@
 					{
 						"language": "de",
 						"displayName": "Mein Addon",
-						"description": "erleichtert das Durchführen von xyz",
-						"changelog": "Neue Funktionen"
+						"description": "erleichtert das Durchführen von xyz"
 					}
 				]
 			],
@@ -370,8 +357,7 @@
 				{
 					"language": "de",
 					"displayName": "Mein Addon",
-					"description": "erleichtert das Durchführen von xyz",
-					"changelog": "Neue Funktionen"
+					"description": "erleichtert das Durchführen von xyz"
 				}
 			],
 			"required": [
@@ -406,15 +392,6 @@
 						"erleichtert das Durchführen von xyz"
 					],
 					"title": "The translated description",
-					"type": "string"
-				},
-				"changelog": {
-					"default": "",
-					"description": "Translated description of changes between the previous and this add-on version",
-					"examples": [
-						"Neue Funktionen"
-					],
-					"title": "The translated changelog",
 					"type": "string"
 				}
 			}
