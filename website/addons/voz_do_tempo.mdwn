@@ -4,7 +4,7 @@
 Voz do Tempo is a spoken clock add-on for NVDA. It announces the current time using natural recorded voice clips.
 
 * **Download (stable):** [Voz do Tempo 1.0.10][download-stable] — NVDA 2019.3 or later  
-  SHA-256: 6AC38A2D67EBFA6585EE194BC74668591D82E5EFDBECD1188E1D2C7065AE4B88
+  SHA-256: 44DBB808F8D5286F716BE59616EC064D9F9F277AB304009B014151A4D4E2B82E
 * **Source / homepage:** [GitHub][homepage]
 * **License:** GPL-2.0-or-later
 * **Author:** Ederson Bononi (<ederson.bononi@gmail.com>)
@@ -17,7 +17,7 @@ Voz do Tempo is a spoken clock add-on for NVDA. It announces the current time us
 * Greetings (“good morning”, “good afternoon”, “good evening/night”).
 * Hourly and half-hour **chimes** before automatic announcements.
 * **Quiet hours** (do-not-disturb) with configurable start/end times.
-* Default hotkey: **Ctrl+Shift+V**.
+* Default hotkey: **Ctrl+Shift+V or nvda+shift+v**.
 
 ## Settings
 
@@ -26,11 +26,14 @@ Options include greetings, 24h/12h, abbreviated style (12h), say “half past”
 
 ## Changelog
 
+* **1.10.1**
+  * Administrative repack for NVDA Add-on Store submission (no functional changes from 1.0.10).
+
 * **1.0.10**
   * Fix: automatic announcements no longer trigger early at :59. Now fires exactly at minute 00 (and 00/30 if configured), with ~2s tolerance and debounce.
 * **1.0.9**
   * Grammar: in 24-hour mode, 00:00–00:59 now says “**é zero hora …**” (singular).
 
 [homepage]: https://github.com/eramosbo30/voz_do_tempo
-[download-stable]: https://github.com/eramosbo30/voz_do_tempo/releases/download/v1.0.10/voz_do_tempo-1.0.10.nvda-addon
+[download-stable]: https://github.com/eramosbo30/voz_do_tempo/releases/download/v1.10.1/voz_do_tempo-1.10.1.nvda-addon
 
