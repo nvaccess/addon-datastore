@@ -53,5 +53,49 @@
 			"displayName": "uTubeDownload",
 			"description": "Дополнение, позволяющее загружать аудио-, видео- и графические файлы с YouTube.com, поддерживающее очередь, возобновление и загрузку отдельных частей."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2bd0d2f228444942d1acf7e3ca68c5682368cf412fd98c563b175922686d21a2",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "2bd0d2f228444942d1acf7e3ca68c5682368cf412fd98c563b175922686d21a2",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "e00bf85d0ab09ffa8d8165a6df2ee9cc"
+				},
+				"first_submission_date": 1761190428,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1761190500,
+				"last_submission_date": 1761190428,
+				"md5": "bcd6e641c6dbfa086ed5781bd1326327",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9e8f35b7d4562491a61867837cc99e136a1780c9",
+				"sha256": "2bd0d2f228444942d1acf7e3ca68c5682368cf412fd98c563b175922686d21a2",
+				"size": 41515045,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
