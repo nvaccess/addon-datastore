@@ -6,8 +6,10 @@ import argparse
 import glob
 import json
 from urllib.request import urlretrieve
+from typing import cast
 
 from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
+from .validate import parseConfigValue
 
 
 def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:
@@ -23,15 +25,16 @@ def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:
 			with open(errorFilePath, "w") as errorFile:
 				errorFile.write(f"Validation Errors:\n{manifest.errors}")
 		return
-
 	for langCode, manifest in getAddonManifestLocalizations(manifest):
-		addonData["translations"].append(
-			{
-				"language": langCode,
-				"displayName": manifest["summary"],
-				"description": manifest["description"],
-			},
-		)
+		translatedChangelog: str | None = parseConfigValue(manifest, "changelog")
+		translation: dict[str, str] = {
+			"language": langCode,
+			"displayName": cast(str, manifest["summary"]),
+			"description": cast(str, manifest["description"]),
+		}
+		if translatedChangelog is not None:
+			translation["changelog"] = translatedChangelog
+		addonData["translations"].append(translation)
 
 	with open(filePath, "wt", encoding="utf-8") as f:
 		json.dump(addonData, f, indent="\t", ensure_ascii=False)

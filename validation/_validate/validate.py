@@ -134,16 +134,23 @@ def checkDescriptionMatches(manifest: AddonManifest, submission: JsonObjT) -> Va
 		)
 
 
+def checkChangelogMatches(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
+	"""The submission changelog must match the *.nvda-addon manifest changelog field."""
+	changelog = parseConfigValue(manifest, "changelog")
+	if changelog != submission.get("changelog"):
+		yield (
+			f"Submission 'changelog' must be set to '{changelog}' in json file."
+			f" Instead got: '{submission.get('changelog')}'"
+		)
+
+
 def checkUrlMatchesHomepage(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
 	"""The submission homepage must match the *.nvda-addon manifest url field."""
-	manifestUrl = manifest.get("url")  # type: ignore[reportUnknownMemberType]
-	if manifestUrl == "None":
-		# The config default is None which is parsed by configobj as a string not a NoneType
-		manifestUrl = None
+	manifestUrl = parseConfigValue(manifest, "url")
 	if manifestUrl != submission.get("homepage"):
 		yield (
-			f"Submission 'homepage' must be set to '{manifest.get('url')}' "  # type: ignore[reportUnknownMemberType]
-			f"in json file instead of {submission.get('homepage')}"
+			f"Submission 'homepage' must be set to '{manifestUrl}' in json file."
+			f" Instead got: {submission.get('homepage')}"
 		)
 
 
@@ -169,6 +176,19 @@ def checkAddonId(
 			" numbers, underscores, and hyphens. "
 			f"ID: {submission['addonId']}"
 		)
+
+
+def parseConfigValue(manifest: AddonManifest, configKey: str) -> str | None:
+	"""Converts a "None" config value to None.
+	:param manifest: An add-on manifest.
+	:param configKey: A key of an add-on manifest.
+	:return: The parsed value for the provided config key.
+	"""
+	configValue = manifest.get(configKey)  # type: ignore[reportUnknownMemberType]
+	if configValue == "None":
+		# The config default is None which is parsed by configobj as a string not a NoneType
+		configValue = None
+	return configValue  # type: ignore[reportUnknownMemberType]
 
 
 VERSION_PARSE = re.compile(r"^(\d+)(?:$|(?:\.(\d+)$)|(?:\.(\d+)\.(\d+)$))")
@@ -332,6 +352,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		manifest = getAddonManifest(addonDestPath)
 		yield from checkSummaryMatchesDisplayName(manifest, submissionData)
 		yield from checkDescriptionMatches(manifest, submissionData)
+		yield from checkChangelogMatches(manifest, submissionData)
 		yield from checkUrlMatchesHomepage(manifest, submissionData)
 		yield from checkAddonId(manifest, submissionFilePath, submissionData)
 		yield from checkMinNVDAVersionMatches(manifest, submissionData)

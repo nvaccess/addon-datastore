@@ -31,6 +31,9 @@ class AddonManifest(ConfigObj):
 		# Long description with further information and instructions
 		description = string(default=None)
 
+		# Document changes between the previous and the current versions.
+		changelog = string(default=None)
+
 		# Name of the author or entity that created the add-on
 		author = string()
 
@@ -89,8 +92,8 @@ class AddonManifest(ConfigObj):
 		self._translatedConfig = None
 		if translatedInput is not None:
 			self._translatedConfig = ConfigObj(translatedInput, encoding="utf-8", default_encoding="utf-8")
-			for key in ("summary", "description"):
-				val: str = self._translatedConfig.get(key)  # type: ignore[reportUnknownMemberType]
+			for key in ("summary", "description", "changelog"):
+				val: str | None = self._translatedConfig.get(key)  # type: ignore[reportUnknownMemberType]
 				if val:
 					self[key] = val
 

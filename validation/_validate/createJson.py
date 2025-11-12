@@ -14,6 +14,7 @@ from .addonManifest import AddonManifest, ApiVersionT
 from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
 from .majorMinorPatch import MajorMinorPatch
 from .sha256 import sha256_checksum
+from .validate import parseConfigValue
 
 
 @dataclasses.dataclass
@@ -32,6 +33,7 @@ class AddonData:
 	sourceURL: str
 	license: str
 	homepage: str | None
+	changelog: str | None
 	licenseURL: str | None
 	submissionTime: int
 	translations: list[dict[str, str]]
@@ -118,20 +120,22 @@ def _createDataclassMatchingJsonSchema(
 			raise KeyError(f"Manifest missing required key '{key}'.")
 
 	# Add optional fields
-	homepage: str | None = manifest.get("url")  # type: ignore[reportUnknownMemberType]
-	if not homepage or homepage == "None":
-		homepage = None
-
+	homepage: str | None = parseConfigValue(manifest, "url")
+	changelog: str | None = parseConfigValue(manifest, "changelog")
 	translations: list[dict[str, str]] = []
 	for langCode, translatedManifest in getAddonManifestLocalizations(manifest):
+		# Add optional translated changelog.
+		translatedChangelog: str | None = parseConfigValue(translatedManifest, "changelog")
+
 		try:
-			translations.append(
-				{
-					"language": langCode,
-					"displayName": cast(str, translatedManifest["summary"]),
-					"description": cast(str, translatedManifest["description"]),
-				},
-			)
+			translation: dict[str, str] = {
+				"language": langCode,
+				"displayName": cast(str, translatedManifest["summary"]),
+				"description": cast(str, translatedManifest["description"]),
+			}
+			if translatedChangelog is not None:
+				translation["changelog"] = translatedChangelog
+			translations.append(translation)
 		except KeyError as e:
 			raise KeyError(f"Translation for {langCode} missing required key '{e.args[0]}'.") from e
 
@@ -152,6 +156,7 @@ def _createDataclassMatchingJsonSchema(
 		sourceURL=sourceUrl,
 		license=licenseName,
 		homepage=homepage,
+		changelog=changelog,
 		licenseURL=licenseUrl,
 		submissionTime=getCurrentTime(),
 		translations=translations,
