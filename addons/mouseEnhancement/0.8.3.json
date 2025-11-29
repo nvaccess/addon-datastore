@@ -1,0 +1,45 @@
+{
+	"addonId": "mouseEnhancement",
+	"displayName": "Mouse Enhancement",
+	"URL": "https://github.com/hwf1324/mouseEnhancement/releases/download/v0.8.3/mouseEnhancement-0.8.3.nvda-addon",
+	"description": "This add-on provides enhancement to mouse functionality in NVDA.\n\nFor example:\nFixed mouse tracking in Electron app (Only 2024.4 or later).\nElectron apps, such as VS Code.\nExperimental fix for mouse tracking in WinUI apps.\nWinUI applications: e.g. Windows Terminal, PowerToys v0.86.0 and higher, some applications that come with Windows, etc.\nAutomatically update the mouse object.",
+	"sha256": "dcecd9e29cde96fc4d81b3502ef855f8262ade433b786860b2c09f5b6dda37fe",
+	"addonVersionName": "0.8.3",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 8,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "hwf1324",
+	"sourceURL": "https://github.com/hwf1324/mouseEnhancement",
+	"license": "GPL v2",
+	"homepage": "https://github.com/hwf1324/mouseEnhancement",
+	"changelog": "* Disable the `Intermediate D3D Window` window class rule, as Chrome also uses this window class.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1764460247000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Покращення миші",
+			"description": "Цей додаток покращує функціональність миші в NVDA.\n\nНаприклад:\nВиправлено відстеження миші в додатку Electron (тільки 2024.4 або пізніші версії).\nДодатки Electron, такі як VS Code.\nЕкспериментальне виправлення відстеження миші в додатках WinUI.\nДодатки WinUI: наприклад, Windows Terminal, PowerToys v0.86.0 і новіші версії, деякі додатки, що входять до складу Windows, тощо.\nАвтоматичне оновлення об'єкта миші.",
+			"changelog": "* Disable the `Intermediate D3D Window` window class rule, as Chrome also uses this window class."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "鼠标增强",
+			"description": "该插件增强了 NVDA 中的鼠标功能。\n\n例如：\n修复 Electron 应用中的鼠标导航（仅 2024.4 或更高版本）。\nElectron 应用，例如 VS Code。\n实验性修复 WinUI 应用中的鼠标导航。\nWinUI 应用：例如 Windows 终端，PowerToys v0.86.0 及更高版本，Windows 预装的某些应用程序等。\n自动更新鼠标对象。",
+			"changelog": "* 禁用 `Intermediate D3D Window` 窗口类规则，因为 Chrome 也使用这个窗口类。"
+		}
+	]
+}
