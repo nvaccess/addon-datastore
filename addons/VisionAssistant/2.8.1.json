@@ -1,0 +1,57 @@
+{
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v2.8.1/VisionAssistant-2.8.1.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nFeatures:\n- Smart Translator (NVDA+Ctrl+Shift+T/Y)\n- Smart Dictation (NVDA+Ctrl+Shift+S)\n- Text Refiner (NVDA+Ctrl+Shift+R)\n- Vision & Screen Analysis (NVDA+Ctrl+Shift+V/O)\n- Document QA (NVDA+Ctrl+Shift+D)\n- CAPTCHA Solver (NVDA+Ctrl+Shift+C)\n- Audio Transcription (NVDA+Ctrl+Shift+A)\n- File Selection & OCR (NVDA+Ctrl+Shift+F)\n- Status Reporting (NVDA+Ctrl+Shift+I)",
+	"sha256": "7f4562ef49ca9d7df9c30267211eff42075aecb1b47fc5880c981b1181c381a7",
+	"addonVersionName": "2.8.1",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 8,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 2.8\n*   **Added Italian translation.**\n*   **Status Reporting:** Added a new command (`NVDA+Control+Shift+I`) to announce the current status.\n*   **HTML Export:** \"Save Content\" now saves as formatted HTML.\n*   **Settings UI:** Improved layout with accessible grouping.\n*   **New Models:** Added `gemini-flash-latest` and `gemini-flash-lite-latest`.\n*   **Languages:** Added **Nepali**.\n*   **Refine Menu Logic:** Fixed a bug where commands failed in non-English interfaces.\n*   **Dictation:** Improved silence detection.\n*   **Update Settings:** Auto-update check is now disabled by default.\n*   **Code Cleanup.**",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1765612085000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nFonctionnalités :\n- Traducteur intelligent (NVDA+Ctrl+Maj+T/Y)\n- Dictée intelligente (NVDA+Ctrl+Maj+S)\n- Assistant de texte (NVDA+Ctrl+Maj+R)\n- Analyse de la vision et de l'écran (NVDA+Ctrl+Shift+V/O)\n- Questions/réponses sur les documents (NVDA+Ctrl+Maj+D)\n- Résolution de CAPTCHAs (NVDA+Ctrl+Maj+C)\n- Transcription audio (NVDA+Ctrl+Maj+A)\n- Choix de fichiers et OCR (NVDA+Ctrl+Maj+F)\n- Annonce de l'état (NVDA+Ctrl+Maj+I)",
+			"changelog": "## Changes for 2.8\n*   **Added Italian translation.**\n*   **Status Reporting:** Added a new command (`NVDA+Control+Shift+I`) to announce the current status.\n*   **HTML Export:** \"Save Content\" now saves as formatted HTML.\n*   **Settings UI:** Improved layout with accessible grouping.\n*   **New Models:** Added `gemini-flash-latest` and `gemini-flash-lite-latest`.\n*   **Languages:** Added **Nepali**.\n*   **Refine Menu Logic:** Fixed a bug where commands failed in non-English interfaces.\n*   **Dictation:** Improved silence detection.\n*   **Update Settings:** Auto-update check is now disabled by default.\n*   **Code Cleanup.**"
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nFeatures:\n- Smart Translator (NVDA+Ctrl+Shift+T/Y)\n- Smart Dictation (NVDA+Ctrl+Shift+S)\n- Text Refiner (NVDA+Ctrl+Shift+R)\n- Vision & Screen Analysis (NVDA+Ctrl+Shift+V/O)\n- Document QA (NVDA+Ctrl+Shift+D)\n- CAPTCHA Solver (NVDA+Ctrl+Shift+C)\n- Audio Transcription (NVDA+Ctrl+Shift+A)\n- File Selection & OCR (NVDA+Ctrl+Shift+F)\n- Status Reporting (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 2.8\n*   **Added Italian translation.**\n*   **Status Reporting:** Added a new command (`NVDA+Control+Shift+I`) to announce the current status.\n*   **HTML Export:** \"Save Content\" now saves as formatted HTML.\n*   **Settings UI:** Improved layout with accessible grouping.\n*   **New Models:** Added `gemini-flash-latest` and `gemini-flash-lite-latest`.\n*   **Languages:** Added **Nepali**.\n*   **Refine Menu Logic:** Fixed a bug where commands failed in non-English interfaces.\n*   **Dictation:** Improved silence detection.\n*   **Update Settings:** Auto-update check is now disabled by default.\n*   **Code Cleanup.**"
+		},
+		{
+			"language": "ru",
+			"displayName": "VisionAssistant (Визуальный помощник Pro)",
+			"description": "Продвинутый ИИ-помощник для NVDA, использующий модели Gemini.\nВозможности:\n- Умный переводчик (NVDA+Ctrl+Shift+T/Y)\n- Умная диктовка (NVDA+Ctrl+Shift+S)\n- Улучшение текста (NVDA+Ctrl+Shift+R)\n- Анализ изображений и экрана (NVDA+Ctrl+Shift+V/O)\n- Вопрос-ответ по документам (NVDA+Ctrl+Shift+D)\n- Решение CAPTCHA (NVDA+Ctrl+Shift+C)\n- Расшифровка аудио (NVDA+Ctrl+Shift+A)\n- Выбор файла и распознавание текста (OCR) (NVDA+Ctrl+Shift+F)\n- Отчёт о состоянии (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Изменения в версии 2.8\n*   **Добавлен итальянский перевод.**\n*   **Отчёт о состоянии:** Добавлена новая команда (`NVDA+Control+Shift+I`) для озвучивания текущего статуса.\n*   **Экспорт в HTML:** \"Сохранить содержимое\" теперь сохраняет в виде форматированного HTML.\n*   **Интерфейс настроек:** Улучшена компоновка с доступной группировкой.\n*   **Новые модели:** Добавлены `gemini-flash-latest` и `gemini-flash-lite-latest`.\n*   **Языки:** Добавлен **непальский**.\n*   **Логика меню улучшения:** Исправлена ошибка, из-за которой команды не работали в неанглийских интерфейсах.\n*   **Диктовка:** Улучшено определение тишины.\n*   **Настройки обновлений:** Автопроверка обновлений теперь по умолчанию отключена.\n*   **Рефакторинг кода.**"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nFeatures:\n- Smart Translator (NVDA+Ctrl+Shift+T/Y)\n- Smart Dictation (NVDA+Ctrl+Shift+S)\n- Text Refiner (NVDA+Ctrl+Shift+R)\n- Vision & Screen Analysis (NVDA+Ctrl+Shift+V/O)\n- Document QA (NVDA+Ctrl+Shift+D)\n- CAPTCHA Solver (NVDA+Ctrl+Shift+C)\n- Audio Transcription (NVDA+Ctrl+Shift+A)\n- File Selection & OCR (NVDA+Ctrl+Shift+F)\n- Status Reporting (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 2.8\n*   **Added Italian translation.**\n*   **Status Reporting:** Added a new command (`NVDA+Control+Shift+I`) to announce the current status.\n*   **HTML Export:** \"Save Content\" now saves as formatted HTML.\n*   **Settings UI:** Improved layout with accessible grouping.\n*   **New Models:** Added `gemini-flash-latest` and `gemini-flash-lite-latest`.\n*   **Languages:** Added **Nepali**.\n*   **Refine Menu Logic:** Fixed a bug where commands failed in non-English interfaces.\n*   **Dictation:** Improved silence detection.\n*   **Update Settings:** Auto-update check is now disabled by default.\n*   **Code Cleanup.**"
+		}
+	]
+}
