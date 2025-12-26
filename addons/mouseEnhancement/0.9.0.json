@@ -1,0 +1,45 @@
+{
+	"addonId": "mouseEnhancement",
+	"displayName": "Mouse Enhancement",
+	"URL": "https://github.com/hwf1324/mouseEnhancement/releases/download/v0.9.0/mouseEnhancement-0.9.0.nvda-addon",
+	"description": "This add-on provides enhancement to mouse functionality in NVDA.\n\nFor example:\nFixed mouse tracking in Electron app (Only 2024.4 or later).\nElectron apps, such as VS Code.\nExperimental fix for mouse tracking in WinUI apps.\nWinUI applications: e.g. Windows Terminal, PowerToys v0.86.0 and higher, some applications that come with Windows, etc.\nAutomatically update the mouse object.",
+	"sha256": "f1a17648ec761b58691cac07d7cc710af7c4df4ee07e3ef59e419be0d6223b60",
+	"addonVersionName": "0.9.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "hwf1324",
+	"sourceURL": "https://github.com/hwf1324/mouseEnhancement",
+	"license": "GPL v2",
+	"homepage": "https://github.com/hwf1324/mouseEnhancement",
+	"changelog": "* Refactored Electron UIA-related components:\n  * Utilized the `IUIAutomation.ElementFromPointBuildCache` method to retrieve UIA elements from coordinates for creating redirected mouse objects.\n  * Simultaneously employed `IUIAutomationCondition` to exclude UIA elements with an empty `Name` attribute, resolving certain issues encountered during mouse navigation in VS Code.\n    * For example it is now possible to read the text on the hover panel.\n* Add a mouse move event delay parameter when mouse objects are automatically updated only during core cycles, as an experimental implementation of <https://github.com/nvaccess/nvda/issues/19372>.\n* Report information on the Tree Style Tab extension tab when the mouse moves.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1766757515000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Покращення миші",
+			"description": "Цей додаток покращує функціональність миші в NVDA.\n\nНаприклад:\nВиправлено відстеження миші в додатку Electron (тільки 2024.4 або пізніші версії).\nДодатки Electron, такі як VS Code.\nЕкспериментальне виправлення відстеження миші в додатках WinUI.\nДодатки WinUI: наприклад, Windows Terminal, PowerToys v0.86.0 і новіші версії, деякі додатки, що входять до складу Windows, тощо.\nАвтоматичне оновлення об'єкта миші.",
+			"changelog": "* Refactored Electron UIA-related components:\n  * Utilized the `IUIAutomation.ElementFromPointBuildCache` method to retrieve UIA elements from coordinates for creating redirected mouse objects.\n  * Simultaneously employed `IUIAutomationCondition` to exclude UIA elements with an empty `Name` attribute, resolving certain issues encountered during mouse navigation in VS Code.\n    * For example it is now possible to read the text on the hover panel.\n* Add a mouse move event delay parameter when mouse objects are automatically updated only during core cycles, as an experimental implementation of <https://github.com/nvaccess/nvda/issues/19372>.\n* Report information on the Tree Style Tab extension tab when the mouse moves."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "鼠标增强",
+			"description": "该插件增强了 NVDA 中的鼠标功能。\n\n例如：\n修复 Electron 应用中的鼠标导航（仅 2024.4 或更高版本）。\nElectron 应用，例如 VS Code。\n实验性修复 WinUI 应用中的鼠标导航。\nWinUI 应用：例如 Windows 终端，PowerToys v0.86.0 及更高版本，Windows 预装的某些应用程序等。\n自动更新鼠标对象。",
+			"changelog": "* 重构 Electron UIA 相关部分：\n  * 使用 `IUIAutomation.ElementFromPointBuildCache` 方法从坐标获取 UIA 元素，用于创建重定向的鼠标对象。\n  * 同时使用 `IUIAutomationCondition` 排除 `Name` 属性为空字符串的 UIA 元素，以修复鼠标导航 VS Code 时的一些问题。\n    * 例如现在可以读取悬浮面板上的文本。\n* 在仅限核心周期自动更新鼠标对象时添加鼠标移动事件延迟参数，作为 <https://github.com/nvaccess/nvda/issues/19372> 的实验性实现。\n* 在鼠标移动时报告 Tree Style Tab 扩展上标签页的信息。"
+		}
+	]
+}
