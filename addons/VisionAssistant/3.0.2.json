@@ -1,0 +1,818 @@
+{
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v3.0.2/VisionAssistant-3.0.2.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nFeatures:\n- Smart Translator (NVDA+Ctrl+Shift+T/Y)\n- Smart Dictation (NVDA+Ctrl+Shift+S)\n- Text Refiner (NVDA+Ctrl+Shift+R)\n- Vision & Screen Analysis (NVDA+Ctrl+Shift+V/O)\n- Document QA (NVDA+Ctrl+Shift+D)\n- CAPTCHA Solver (NVDA+Ctrl+Shift+C)\n- Audio Transcription (NVDA+Ctrl+Shift+A)\n- File Selection & OCR (NVDA+Ctrl+Shift+F)\n- Status Reporting (NVDA+Ctrl+Shift+I)",
+	"sha256": "9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
+	"addonVersionName": "3.0.2",
+	"addonVersionNumber": {
+		"major": 3,
+		"minor": 0,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1765994477000,
+	"translations": [
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nویژگی‌ها:\n- مترجمِ هوشمند (NVDA+Ctrl+Shift+T/Y)\n- تایپِ صوتیِ هوشمند (NVDA+Ctrl+Shift+S)\n- پالایش‌کننده‌ی متن (NVDA+Ctrl+Shift+R)\n- تحلیلِ بصری و صفحه نمایش (NVDA+Ctrl+Shift+V/O)\n- پرسش و پاسخ از سند (NVDA+Ctrl+Shift+D)\n- حل‌کننده‌ی کپچا (NVDA+Ctrl+Shift+C)\n- رونویسیِ فایل صوتی (NVDA+Ctrl+Shift+A)\n- انتخابِ فایل و OCR (NVDA+Ctrl+Shift+F)\n- اعلامِ وضعیت (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nFonctionnalités :\n- Traducteur intelligent (NVDA+Ctrl+Maj+T/Y)\n- Dictée intelligente (NVDA+Ctrl+Maj+S)\n- Assistant de texte (NVDA+Ctrl+Maj+R)\n- Analyse de la vision et de l'écran (NVDA+Ctrl+Shift+V/O)\n- Questions/réponses sur les documents (NVDA+Ctrl+Maj+D)\n- Résolution de CAPTCHAs (NVDA+Ctrl+Maj+C)\n- Transcription audio (NVDA+Ctrl+Maj+A)\n- Choix de fichiers et OCR (NVDA+Ctrl+Maj+F)\n- Annonce de l'état (NVDA+Ctrl+Maj+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nFeatures:\n- Smart Translator (NVDA+Ctrl+Shift+T/Y)\n- Smart Dictation (NVDA+Ctrl+Shift+S)\n- Text Refiner (NVDA+Ctrl+Shift+R)\n- Vision & Screen Analysis (NVDA+Ctrl+Shift+V/O)\n- Document QA (NVDA+Ctrl+Shift+D)\n- CAPTCHA Solver (NVDA+Ctrl+Shift+C)\n- Audio Transcription (NVDA+Ctrl+Shift+A)\n- File Selection & OCR (NVDA+Ctrl+Shift+F)\n- Status Reporting (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Vision Assistant Pro",
+			"description": "Um assistente de IA avançado para o NVDA utilizando modelos Gemini.\nRecursos:\n- Tradutor Inteligente (NVDA+Ctrl+Shift+T/Y)\n- Ditado Inteligente (NVDA+Ctrl+Shift+S)\n- Refinador de Texto (NVDA+Ctrl+Shift+R)\n- Análise de Visão e Tela (NVDA+Ctrl+Shift+V/O)\n- Perguntas e Respostas sobre Documentos (NVDA+Ctrl+Shift+D)\n- Solucionador de CAPTCHA (NVDA+Ctrl+Shift+C)\n- Transcrição de Áudio (NVDA+Ctrl+Shift+A)\n- Seleção de Arquivo e OCR (NVDA+Ctrl+Shift+F)\n- Relatório de Status (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "ru",
+			"displayName": "VisionAssistant (Визуальный помощник Pro)",
+			"description": "Дополнение VisionAssistant - это продвинутый ИИ-помощник для NVDA, использующий модели Gemini.\nВозможности:\n- Умный переводчик (NVDA+Ctrl+Shift+T/Y)\n- Умная диктовка (NVDA+Ctrl+Shift+S)\n- Улучшение текста (NVDA+Ctrl+Shift+R)\n- Анализ изображений и экрана (NVDA+Ctrl+Shift+V/O)\n- Вопрос-ответ по документам (NVDA+Ctrl+Shift+D)\n- Решение CAPTCHA (NVDA+Ctrl+Shift+C)\n- Расшифровка аудио (NVDA+Ctrl+Shift+A)\n- Выбор файла и распознавание текста (OCR) (NVDA+Ctrl+Shift+F)\n- Отчёт о состоянии (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nÖzellikler:\n- Akıllı Çeviri (NVDA+Ctrl+Shift+T/Y)\n- Akıllı Dikte (NVDA+Ctrl+Shift+S)\n- Metin İyileştirici (NVDA+Ctrl+Shift+R)\n- Görüntü ve Ekran Analizi (NVDA+Ctrl+Shift+V/O)\n- Belge Soru-Cevap (NVDA+Ctrl+Shift+D)\n- CAPTCHA Çözücü (NVDA+Ctrl+Shift+C)\n- Ses Transkripsiyonu (NVDA+Ctrl+Shift+A)\n- Dosya Seçimi ve OCR (NVDA+Ctrl+Shift+F)\n- Durum Bildirimi (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений AI-асистент для NVDA з використанням моделей Gemini.\nМожливості:\n- Розумний перекладач (NVDA+Ctrl+Shift+T/Y)\n- Розумне диктування (NVDA+Ctrl+Shift+S)\n- Вдосконалення тексту (NVDA+Ctrl+Shift+R)\n- Аналіз зображень і екрана (NVDA+Ctrl+Shift+V/O)\n- Питання-відповіді по документах (NVDA+Ctrl+Shift+D)\n- Розв’язувач CAPTCHA (NVDA+Ctrl+Shift+C)\n- Аудіо транскрипція (NVDA+Ctrl+Shift+A)\n- Вибір файлів та OCR (NVDA+Ctrl+Shift+F)\n- Звіт про стан (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "Trợ lý AI nâng cao dành cho NVDA sử dụng mô hình Gemini.\nTính năng:\n- Dịch thông minh (NVDA+Ctrl+Shift+T/Y)\n- Chuyển đổi chính tả thông minh (NVDA+Ctrl+Shift+S)\n- Tinh chỉnh văn bản (NVDA+Ctrl+Shift+R)\n- Phân tích hình ảnh & màn hình (NVDA+Ctrl+Shift+V/O)\n- Hỏi đáp tài liệu (NVDA+Ctrl+Shift+D)\n- Giải CAPTCHA (NVDA+Ctrl+Shift+C)\n- Phiên âm âm thanh (NVDA+Ctrl+Shift+A)\n- Chọn file & OCR (NVDA+Ctrl+Shift+F)\n- Đọc trạng thái (NVDA+Ctrl+Shift+I)",
+			"changelog": "## Changes for 3.0.2\n*   **Batch OCR:** Added support for selecting and processing multiple images or PDF files simultaneously. The files are now processed in alphabetical order.\n*   **Compatibility Fix:** Bundled the `markdown` library within the add-on to resolve startup errors (ModuleNotFoundError) on NVDA 2024.3+ and ensure stability across all versions.\n*   **Code Safety:** Implemented a safer import mechanism to prevent conflicts with other add-ons or NVDA's internal libraries.\n*   **Translation:** Fixed an issue where the \"Custom:\" prefix in the Refine menu was not translatable."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 7,
+						"ini": 9,
+						"md": 9,
+						"mo": 8,
+						"po": 8,
+						"py": 34,
+						"txt": 2
+					},
+					"file_types": {
+						"HTML": 7,
+						"unknown": 77
+					},
+					"highest_datetime": "2025-12-17 17:58:20",
+					"lowest_datetime": "2025-12-17 17:57:46",
+					"num_children": 84,
+					"type": "ZIP",
+					"uncompressed_size": 877988
+				},
+				"filecondis": {
+					"dhash": "0000000c0e0f0200",
+					"raw_md5": "de78140e42af6c8c5e6dab7ef6d94b6e"
+				},
+				"first_submission_date": 1765994552,
+				"last_analysis_date": 1765994552,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20251217",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20251216",
+						"engine_version": "6.726",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20251217",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20251217",
+						"engine_version": "3.29.1.10604",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20251217",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20251217",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20251217",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20251217",
+						"engine_version": "251217-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20251217",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Baidu": {
+						"category": "undetected",
+						"engine_name": "Baidu",
+						"engine_update": "20190318",
+						"engine_version": "1.0.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20251217",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20251216",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "failure",
+						"engine_name": "Bkav",
+						"engine_update": "20251217",
+						"engine_version": "2.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20251216",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20251217",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20251217",
+						"engine_version": "1.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20251205",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20251217",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20251214",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20251217",
+						"engine_version": "7.0.72.9030",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20251217",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20251209",
+						"engine_version": "4.0.241",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20251217",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20251217",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20251217",
+						"engine_version": "7.0.30.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20251217",
+						"engine_version": "GD:27.42904AVA:64.30342",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20251217",
+						"engine_version": "1765990843",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20251217",
+						"engine_version": "1.0.231.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20251217",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20251217",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20251217",
+						"engine_version": "14.23.58015",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20251215",
+						"engine_version": "14.24.57988",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20251217",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20251217",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20251217",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20251217",
+						"engine_version": "3.1.0.185",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20251217",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20251217",
+						"engine_version": "1.2.0.10275",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20251217",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20251217",
+						"engine_version": "1.1.25110.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20251217",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20251217",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20251217",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20251217",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20251216",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20251215",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "type-unsupported",
+						"engine_name": "SentinelOne",
+						"engine_update": "20251013",
+						"engine_version": "7.4.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20251217",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20251217",
+						"engine_version": "3.3.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20251217",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20250124",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20251217",
+						"engine_version": "2025-12-17.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20251217",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20251125",
+						"engine_version": "4.0.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20251217",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20251217",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20251217",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "failure",
+						"engine_name": "Trustlook",
+						"engine_update": "20251217",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20251217",
+						"engine_version": "5.5.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20251217",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20251217",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20251217",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20251217",
+						"engine_version": "9.5.1107",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20251217",
+						"engine_version": "38272",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20251217",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20251217",
+						"engine_version": "2.0.0.5507",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20251217",
+						"engine_version": "6.21-110947197",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20251217",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20251217",
+						"engine_version": "c3db73c:c3db73c:5924d3c:5924d3c",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20251217",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 10,
+					"undetected": 63
+				},
+				"last_modification_date": 1765994715,
+				"last_submission_date": 1765994552,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "46435dfb798b630946bc960d62df7589",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"picklescan": {
+					"contains_invalid_pickle": false,
+					"globals": [],
+					"issues_count": 0
+				},
+				"reputation": 0,
+				"sha1": "8f3fcf06629edc80a598369cbd7a190e515d6141",
+				"sha256": "9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
+				"size": 280826,
+				"ssdeep": "6144:i5NqOurfEFk6ZEbte/ijBsfkZ/PwaIMd1xmLXJ0ugcOBaZQ31:iXUrfyQbA/asfkZ/PwaXdLkOuv+F",
+				"tags": [
+					"whl"
+				],
+				"times_submitted": 1,
+				"tlsh": "T10F541250CC0EA82BECB561FEF54A7A82B5AE1290704FB2173CBCD1D9695E3D84744BE4",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Wheel package",
+						"probability": 63.2
+					},
+					{
+						"file_type": "Python Zip Application",
+						"probability": 26.5
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 10.1
+					}
+				],
+				"type_description": "Python Wheel package",
+				"type_extension": "whl",
+				"type_tag": "whl",
+				"type_tags": [
+					"installer",
+					"python",
+					"whl"
+				],
+				"unique_sources": 1,
+				"vhash": "d2592c60f3c21068df1e4ecd165e639c"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+}
