@@ -1,0 +1,45 @@
+{
+	"addonId": "cliptboardContentEditor",
+	"displayName": "Cliptboard Content Editor",
+	"URL": "https://github.com/fauzan-january/cliptboard-content-editor/releases/download/v1.0.0/CliptboardContentEditor-1.0.0.nvda-addon",
+	"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: Ctrl+Alt+C opens the editor, Ctrl+Shift+Z restores the previous clipboard.",
+	"sha256": "e5830f10bdee2588948fd46d95f1f467fc6c458b0de86117cd7b386e7d407578",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/cliptboard-content-editor/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/fauzan-january/cliptboard-content-editor",
+	"changelog": "- Initial release.\n- Clipboard editor dialog with Read, Information, Find/Replace, Clear, Save, and Cancel.\n- Global shortcuts for opening the editor, reading clipboard, and showing information.\n- Clipboard backup (protect mode) with restore.\n- Configurable button visibility and shortcut behavior in settings.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1767552078000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Cliptboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: Ctrl+Alt+C opens the editor, Ctrl+Shift+Z restores the previous clipboard.",
+			"changelog": "- Initial release.\n- Clipboard editor dialog with Read, Information, Find/Replace, Clear, Save, and Cancel.\n- Global shortcuts for opening the editor, reading clipboard, and showing information.\n- Clipboard backup (protect mode) with restore.\n- Configurable button visibility and shortcut behavior in settings."
+		},
+		{
+			"language": "id",
+			"displayName": "Cliptboard Content Editor",
+			"description": "Mengedit teks clipboard saat ini melalui editor sederhana agar hasil tempel sesuai perubahan. Shortcut: Ctrl+Alt+C untuk membuka editor, Ctrl+Shift+Z untuk memulihkan clipboard sebelumnya.",
+			"changelog": "- Rilis awal.\n- Dialog editor clipboard dengan Read, Information, Find/Replace, Clear, Save, dan Cancel.\n- Shortcut global untuk membuka editor, membaca clipboard, dan menampilkan informasi.\n- Cadangan clipboard (protect mode) dengan pemulihan.\n- Pengaturan visibilitas tombol dan perilaku shortcut di settings."
+		}
+	]
+}
