@@ -47,5 +47,49 @@
 			"description": "Використовуйте потужність найсучаснішої технології Google Gemini AI для високоякісної генерації мови безпосередньо в NVDA. Цей додаток надає зручний діалог для перетворення тексту в природне мовлення.\n\nКлючові особливості:\n- Високоякісні голоси: вибирайте між Gemini Pro для преміум-якості, реалістичної мови та Gemini Flash для стандартної якості, чутливої генерації.\n- Режими одного та декількох голосів: легко генеруйте аудіо для одного голосу або створюйте динамічні діалоги з двома різними голосами. Просто відформатуйте текст за допомогою «ім'я голосу:», щоб призначити голоси.\n- Розширене керування голосом: точно налаштуйте вихід, регулюючи тембр для більш креативних або стабільних результатів, та надайте інструкції щодо стилю.\n- Доступний інтерфейс: всі елементи керування повністю доступні, включаючи складану панель для розширених налаштувань, щоб інтерфейс залишався чітким і простим у навігації.\n- Безперебійний робочий процес: додаток забезпечує миттєве відтворення аудіо після генерації та дозволяє зберегти отриманий файл .wav для подальшого використання.\n\nЩоб розпочати роботу, отримайте ключ API Gemini від Google AI Studio та введіть його в панелі налаштувань додатка, яка знаходиться в меню «Інструменти» NVDA.",
 			"changelog": "-Fix issue with SSL.\n- Fixing libraries that conflict with other add-ons.\n- Refactor codebase and fix dependency issues\n- Add \"Reinstall Libraries\" feature to replace google-genai on errors\n- New Feature: \"Talk With AI\" (Gemini Live)\n- New Feature: Added \"Grounding with Google Search\" in Talk With AI.\n- Update compatibility: require minimum NVDA 2024.1\n- Add Russian translation\n- Fix README file issues."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d8a4d0038dc54b285a47e5301c503815418f42a9ba28e99db3f7e978d2bed51e",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "d8a4d0038dc54b285a47e5301c503815418f42a9ba28e99db3f7e978d2bed51e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "9d016a7c88cece9a2b59d58a52527c63"
+				},
+				"first_submission_date": 1767780641,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1767780643,
+				"last_submission_date": 1767780641,
+				"md5": "ee8f43036b49939a9e5bd0f376cdd7bb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4e2d5bfb8d22a7f61469d3d20ca7665cc8bdaa1d",
+				"sha256": "d8a4d0038dc54b285a47e5301c503815418f42a9ba28e99db3f7e978d2bed51e",
+				"size": 442220,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
