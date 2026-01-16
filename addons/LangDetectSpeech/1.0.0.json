@@ -1,0 +1,67 @@
+{
+	"addonId": "LangDetectSpeech",
+	"displayName": "LangDetectSpeech",
+	"URL": "https://github.com/slohmaier/LangDetectSpeech/releases/download/v1.0.0/LangDetectSpeech-1.0.0.nvda-addon",
+	"description": "A lightweight NVDA addon that automatically detects the language of spoken text and switches to the appropriate synthesizer voice. Uses fast-langdetect (FastText-based) for efficient offline language detection across 176 languages.",
+	"sha256": "d595fcf86975a33374596547259ae36e335784edc32cfd0d99e4a99830e697fe",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2021,
+		"minor": 0,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Stefan Lohmaier",
+	"sourceURL": "https://github.com/slohmaier/LangDetectSpeech",
+	"license": "GPL v2",
+	"homepage": "https://github.com/slohmaier/LangDetectSpeech",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1768532037000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Spracherkennung",
+			"description": "Eine leichtgewichtige NVDA-Erweiterung, die automatisch die Sprache des gesprochenen Textes erkennt und zur passenden Synthesizer-Stimme wechselt. Verwendet fast-langdetect (FastText-basiert) für effiziente Offline-Spracherkennung in 176 Sprachen."
+		},
+		{
+			"language": "es",
+			"displayName": "Detección de idioma",
+			"description": "Un complemento ligero para NVDA que detecta automáticamente el idioma del texto hablado y cambia a la voz del sintetizador correspondiente. Utiliza fast-langdetect (basado en FastText) para una detección de idiomas eficiente sin conexión en 176 idiomas."
+		},
+		{
+			"language": "fr",
+			"displayName": "Détection de langue",
+			"description": "Une extension NVDA légère qui détecte automatiquement la langue du texte parlé et bascule vers la voix de synthèse appropriée. Utilise fast-langdetect (basé sur FastText) pour une détection linguistique hors ligne efficace dans 176 langues."
+		},
+		{
+			"language": "it",
+			"displayName": "Rilevamento lingua",
+			"description": "Un componente aggiuntivo leggero per NVDA che rileva automaticamente la lingua del testo parlato e passa alla voce del sintetizzatore appropriata. Utilizza fast-langdetect (basato su FastText) per un rilevamento linguistico offline efficiente in 176 lingue."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Detecção de idioma",
+			"description": "Um complemento leve para NVDA que detecta automaticamente o idioma do texto falado e alterna para a voz do sintetizador apropriada. Usa fast-langdetect (baseado em FastText) para detecção de idioma offline eficiente em 176 idiomas."
+		},
+		{
+			"language": "ru",
+			"displayName": "Определение языка",
+			"description": "Лёгкое дополнение для NVDA, которое автоматически определяет язык произносимого текста и переключается на соответствующий голос синтезатора. Использует fast-langdetect (на основе FastText) для эффективного автономного определения языка среди 176 языков."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "语言检测",
+			"description": "一个轻量级的 NVDA 插件，可自动检测语音文本的语言并切换到相应的合成器语音。使用 fast-langdetect（基于 FastText）在 176 种语言中进行高效的离线语言检测。"
+		}
+	]
+}
