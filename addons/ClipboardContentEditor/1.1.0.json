@@ -1,0 +1,45 @@
+{
+	"addonId": "ClipboardContentEditor",
+	"displayName": "Clipboard Content Editor",
+	"URL": "https://github.com/fauzan-january/clipboard-content-editor/releases/download/v1.1.0/ClipboardContentEditor-1.1.0.nvda-addon",
+	"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard.",
+	"sha256": "162c2001c38bcd8141951ba7fd52fb96494221e7dcd21b75d5ec9561a2e6fd5f",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/clipboard-content-editor/",
+	"license": "GPL v2",
+	"homepage": "https://fauzanaja.com/nvda-addon/",
+	"changelog": "- Global shortcuts are now standardized: NVDA+E opens the editor dialog, NVDA+Z restores clipboard backups, and NVDA+I announces clipboard character/word/line counts.\n- Global shortcuts can now be reassigned via NVDA Input Gestures.\n- The Clear feature has been removed entirely (button, shortcut, settings, and notifications) because you can clear text directly in the clipboard editor.\n- The Read feature has been removed entirely (button, shortcut, settings, and notifications) because NVDA already provides clipboard reading via NVDA+C.\n- A Find button was added before Replace, with separate enable/disable options and updated shortcuts (Alt+F for Find, Alt+R for Replace).\n- Replace now preserves case by default, matching the capitalization of the found text.\n- Checkbox labels were updated to \"Case sensitive\" and \"Find/Replace whole words only, not part of other words\".\n- The clipboard info message now reads \"Clipboard information: ...\".\n- Documentation now includes links to other available languages.\n- What's New information is now available in both the documentation and the installation dialog.\n- Development support information has been removed from the documentation and the installation dialog.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1768671966000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard.",
+			"changelog": "- Global shortcuts are now standardized: NVDA+E opens the editor dialog, NVDA+Z restores clipboard backups, and NVDA+I announces clipboard character/word/line counts.\n- Global shortcuts can now be reassigned via NVDA Input Gestures.\n- The Clear feature has been removed entirely (button, shortcut, settings, and notifications) because you can clear text directly in the clipboard editor.\n- The Read feature has been removed entirely (button, shortcut, settings, and notifications) because NVDA already provides clipboard reading via NVDA+C.\n- A Find button was added before Replace, with separate enable/disable options and updated shortcuts (Alt+F for Find, Alt+R for Replace).\n- Replace now preserves case by default, matching the capitalization of the found text.\n- Checkbox labels were updated to \"Case sensitive\" and \"Find/Replace whole words only, not part of other words\".\n- The clipboard info message now reads \"Clipboard information: ...\".\n- Documentation now includes links to other available languages.\n- What's New information is now available in both the documentation and the installation dialog.\n- Development support information has been removed from the documentation and the installation dialog."
+		},
+		{
+			"language": "id",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard.",
+			"changelog": "- Global shortcuts are now standardized: NVDA+E opens the editor dialog, NVDA+Z restores clipboard backups, and NVDA+I announces clipboard character/word/line counts.\n- Global shortcuts can now be reassigned via NVDA Input Gestures.\n- The Clear feature has been removed entirely (button, shortcut, settings, and notifications) because you can clear text directly in the clipboard editor.\n- The Read feature has been removed entirely (button, shortcut, settings, and notifications) because NVDA already provides clipboard reading via NVDA+C.\n- A Find button was added before Replace, with separate enable/disable options and updated shortcuts (Alt+F for Find, Alt+R for Replace).\n- Replace now preserves case by default, matching the capitalization of the found text.\n- Checkbox labels were updated to \"Case sensitive\" and \"Find/Replace whole words only, not part of other words\".\n- The clipboard info message now reads \"Clipboard information: ...\".\n- Documentation now includes links to other available languages.\n- What's New information is now available in both the documentation and the installation dialog.\n- Development support information has been removed from the documentation and the installation dialog."
+		}
+	]
+}
