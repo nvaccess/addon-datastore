@@ -28,5 +28,49 @@
 	"changelog": "Fix AttributeError in Browse Mode toggle script\n                   add line review commands\n                   changed how the phone number filter works",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1769511439000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1bf609aea99018f98852d145ff1542e03f717b2fd9333c4fce359335ebd37aeb",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "1bf609aea99018f98852d145ff1542e03f717b2fd9333c4fce359335ebd37aeb",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "3038383d1c180000",
+					"raw_md5": "b4a2a3fa137626768fa0c494b2f4abad"
+				},
+				"first_submission_date": 1769511459,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1769511462,
+				"last_submission_date": 1769511459,
+				"md5": "4987fc867298fad39a5f2448a6702ba4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "050c4c8adfe2ffe4507d4181a50fdcfb2e21ef19",
+				"sha256": "1bf609aea99018f98852d145ff1542e03f717b2fd9333c4fce359335ebd37aeb",
+				"size": 22590,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
