@@ -1,10 +1,10 @@
-name: Regenerate translations for all add-ons
+name: Regenerate json files for all add-ons
 
 on:
   workflow_dispatch:
 
 jobs:
-  regenerateTranslations:
+  regenerateJson:
     permissions:
       contents: write
     runs-on: windows-latest
@@ -13,37 +13,37 @@ jobs:
         python-version: [ 3.13 ]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         path: datastore
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Checkout validate repo
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         repository: nvaccess/addon-datastore-validation
         path: validation
         submodules: true
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v6
-    - name: Regenerate translations
+      uses: astral-sh/setup-uv@v7
+    - name: Regenerate json
       run: |
-        validation/regenerateTranslations `
+        validation/regenerateJson `
         --dir ..\datastore\addons `
         --output validationErrors.md
     - name: Commit & Push changes
       uses: actions-js/push@v1.4
       with:
-        message: "[Automated] Regenerate translations"
+        message: "[Automated] Regenerate json files"
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: datastore
         branch: master
     - name: Upload validation errors as artifact
       if: failure()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: validationErrors
         path: validationErrors.md
   call-workflow:
-    needs: regenerateTranslations
+    needs: regenerateJson
     uses: ./.github/workflows/transformDataToViews.yml
