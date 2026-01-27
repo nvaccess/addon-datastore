@@ -1,0 +1,32 @@
+{
+	"addonId": "audioVolumeControl",
+	"displayName": "Per-Application Volume Control",
+	"URL": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application/releases/download/2026-01-16/audioVolumeControl-2026.01.16.nvda-addon",
+	"description": "Control the volume of individual applications using keyboard shortcuts.\nPress Ctrl+NVDA+Y to open the volume control dialog and adjust volume per application.\nSupports precise volume control with multiple increment levels and real-time announcements.\n\nTested on NVDA 2025.3.2. Users may modify manifest.ini for other versions.\nContact: https://t.me/tierryt2021",
+	"sha256": "48de4535dac38a6fa4c75f5506ddc547b9c1632cf59e307bb40598f718901242",
+	"addonVersionName": "2026.01.16",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 16
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "JoaoDEVWHADS",
+	"sourceURL": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application",
+	"license": "GPL v2",
+	"homepage": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application",
+	"changelog": "Version 2026.01.16\n- Fixed update system with robust file handling\n- Vendorized pycaw library to avoid conflicts\n- Windows binary support for psutil\n- Improved dependency management\n- Uses NVDA built-in comtypes",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1769488096000,
+	"translations": []
+}
