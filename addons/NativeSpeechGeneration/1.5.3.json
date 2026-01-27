@@ -1,0 +1,51 @@
+{
+	"addonId": "NativeSpeechGeneration",
+	"displayName": "Native Speech Generation",
+	"URL": "https://github.com/muhammadGagah/native-speech-generation/releases/download/v1.5.3/NativeSpeechGeneration-1.5.3.nvda-addon",
+	"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Pro for premium, life-like speech and Gemini Flash for standard quality, responsive generation.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+	"sha256": "9cc181399d3a8ea850ecf55175dbb4e0a05342723710e0e72408878b283b8c7f",
+	"addonVersionName": "1.5.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/native-speech-generation",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/native-speech-generation/",
+	"changelog": "- Code Refactoring: Complies with NVDA coding standards (Tabs, CamelCase).\n- Optimized Update: Preserves library files to avoid redownloading data.\n- Improved UX: Restored device selection in \"Talk With AI\", better button states, and fixed dialog closing behavior.\n- Fix: Resolved namespace conflicts and ensured proper stream cancellation.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1769495384000,
+	"translations": [
+		{
+			"language": "id",
+			"displayName": "Native Speech Generation",
+			"description": "Manfaatkan kekuatan AI Gemini canggih dari Google untuk menghasilkan suara berkualitas tinggi langsung di dalam NVDA.\nAdd-on ini menyediakan dialog yang ramah pengguna untuk mengubah teks menjadi audio yang terdengar alami.\n\nFitur Utama:\n- Suara Berkualitas Tinggi: Pilih antara Gemini Pro untuk suara premium yang mirip dengan kehidupan nyata dan Gemini Flash untuk kualitas standar yang responsif.\n\n- Mode Satu dan Multi-Pembicara: Dengan mudah hasilkan audio untuk satu pembicara atau buat dialog dinamis dengan dua pembicara yang berbeda. Cukup format teks Anda dengan \"NamaPembicara:\" untuk menetapkan suara.\n\n- Kontrol Suara Lanjutan: Sesuaikan output dengan mengatur temperature untuk hasil yang lebih kreatif atau stabil, dan berikan instruksi gaya pembicara sesuai keinginan.\n\n- Antarmuka yang Dapat Diakses: Semua kontrol sepenuhnya dapat diakses, termasuk panel yang dapat diciutkan untuk pengaturan lanjutan agar antarmuka tetap bersih dan mudah dinavigasi.\n\n- Alur Kerja yang Lancar: Add-on ini menyediakan pemutaran audio instan setelah pembuatan dan memungkinkan Anda menyimpan file .wav yang dihasilkan untuk digunakan nanti.\nUntuk memulai, dapatkan kunci API Gemini dari Google AI Studio dan masukkan ke dalam panel pengaturan add-on, yang dapat ditemukan di menu Alat NVDA.",
+			"changelog": "- Refactoring Kode: Mematuhi standar pengkodean NVDA (Tab, CamelCase).\n- Pembaruan yang Dioptimalkan: Mempertahankan berkas pustaka untuk menghindari pengunduhan ulang data.\n- Peningkatan UX: Pemilihan perangkat dipulihkan di \"Bicara Dengan AI\", status tombol yang lebih baik, dan perilaku penutupan dialog yang diperbaiki.\n- Perbaikan: Menyelesaikan konflik ruang nama dan memastikan pembatalan aliran yang tepat.\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Нативная генерация речи",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Pro for premium, life-like speech and Gemini Flash for standard quality, responsive generation.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Code Refactoring: Complies with NVDA coding standards (Tabs, CamelCase).\n- Optimized Update: Preserves library files to avoid redownloading data.\n- Improved UX: Restored device selection in \"Talk With AI\", better button states, and fixed dialog closing behavior.\n- Fix: Resolved namespace conflicts and ensured proper stream cancellation.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Генерація природної мови",
+			"description": "Використовуйте потужність найсучаснішої технології Google Gemini AI для високоякісної генерації мови безпосередньо в NVDA. Цей додаток надає зручний діалог для перетворення тексту в природне мовлення.\n\nКлючові особливості:\n- Високоякісні голоси: вибирайте між Gemini Pro для преміум-якості, реалістичної мови та Gemini Flash для стандартної якості, чутливої генерації.\n- Режими одного та декількох голосів: легко генеруйте аудіо для одного голосу або створюйте динамічні діалоги з двома різними голосами. Просто відформатуйте текст за допомогою «ім'я голосу:», щоб призначити голоси.\n- Розширене керування голосом: точно налаштуйте вихід, регулюючи тембр для більш креативних або стабільних результатів, та надайте інструкції щодо стилю.\n- Доступний інтерфейс: всі елементи керування повністю доступні, включаючи складану панель для розширених налаштувань, щоб інтерфейс залишався чітким і простим у навігації.\n- Безперебійний робочий процес: додаток забезпечує миттєве відтворення аудіо після генерації та дозволяє зберегти отриманий файл .wav для подальшого використання.\n\nЩоб розпочати роботу, отримайте ключ API Gemini від Google AI Studio та введіть його в панелі налаштувань додатка, яка знаходиться в меню «Інструменти» NVDA.",
+			"changelog": "- Code Refactoring: Complies with NVDA coding standards (Tabs, CamelCase).\n- Optimized Update: Preserves library files to avoid redownloading data.\n- Improved UX: Restored device selection in \"Talk With AI\", better button states, and fixed dialog closing behavior.\n- Fix: Resolved namespace conflicts and ensured proper stream cancellation.\n"
+		}
+	]
+}
