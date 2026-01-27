@@ -7,4 +7,4 @@ set unitTestsPath=%here%\tests
 set testOutput=%here%\testOutput
 md %testOutput%
 
-call uv run --directory "%here%" python -m _validate.regenerateTranslations %*
+call uv run --directory "%here%" python -m _validate.regenerateJson %*

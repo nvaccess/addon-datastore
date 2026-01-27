@@ -60,7 +60,7 @@ def generateJsonFile(
 	licenseName: str,
 	licenseUrl: str | None,
 ) -> None:
-	data = _createDataclassMatchingJsonSchema(
+	data = createDataclassMatchingJsonSchema(
 		manifest=manifest,
 		sha=getSha256(addonPath),
 		channel=channel,
@@ -99,7 +99,7 @@ def buildOutputFilePath(data: AddonData, parentDir: str) -> os.PathLike[str]:
 	return cast(os.PathLike[str], filePath)
 
 
-def _createDataclassMatchingJsonSchema(
+def createDataclassMatchingJsonSchema(
 	manifest: AddonManifest,
 	sha: str,
 	channel: str,
