@@ -1,0 +1,37 @@
+{
+	"addonId": "TemporarySkip",
+	"displayName": "TemporarySkip",
+	"URL": "https://github.com/yncat/temporarySkip/releases/download/v1.0.4/TemporarySkip-1.0.4.nvda-addon",
+	"description": "This add-on allows you to register phrases that you want to ignore temporarily. The phrases are not spoken until you cancel it.\nThis add-on extends NVDA's built-in start / end marker feature. Start selecting text with NVDA+F9, move the review cursor to determine the selection and press NVDA+F11 (instead of F10!) to ignore the selected phrase.\nSelecting the previously ignored text and pressing the same command will make NVDA read it again.\nPress NVDA+Shift+F11 to clear all of the ignored text and revert everything to default.",
+	"sha256": "9086e5fd0bd939b6b8f6976d09479c8bd33d692206e067f5dd6b9b8c307ec70e",
+	"addonVersionName": "1.0.4",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Yukio Nozawa",
+	"sourceURL": "https://github.com/yncat/temporarySkip",
+	"license": "GPL v2",
+	"homepage": "https://github.com/yncat/temporarySkip",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1769529026000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "TemporarySkip",
+			"description": "このアドオンを使用すると、一時的に無視したいフレーズを登録できます。登録したフレーズは、解除するまで読み上げられなくなります。\nこのアドオンは、NVDAに搭載されている開始位置/終了位置マーカーの機能を拡張します。 NVDA+F9 で開始位置を選択し、レビューカーソルを移動して選択範囲を決めてから、 NVDA+F11 を押すと、選択したフレーズを読み飛ばすようになります。 F10 を押す代わりに F11 を押す感じです！\n無視したのと同じテキストを選択してもう1回同じコマンドを押すと、そのフレーズを再び読むようになります。\nNVDA+Shift+F11 で、無視していたフレーズを全て解除して、デフォルトの状態に戻ります。"
+		}
+	]
+}
