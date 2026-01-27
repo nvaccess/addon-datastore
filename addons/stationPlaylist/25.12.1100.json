@@ -95,50 +95,5 @@
 			"description": "StationPlaylist uygulamalarına yönelik desteği geliştirir. Ayrıca Studio uygulamasına her yerden global komutlar ekler.",
 			"changelog": "* NVDA 2025.3.2 or later is required.\n* Add-on settings screen is now available while using Creator, Remote VT, and Track Tool with different settings for each app.\n* In Studio (local and remote) and Track Tool, NVDA will announce labels for track properties, insert tracks dialog's search criteria controls (Studio), and Studio options dialog.\n* In local Studio, NVDA will be less verbose when performing library rescan from insert tracks dialog (Control+Shift+R).\n* In local Studio, NVDA will report library scan count regardless of \"beep for status announcements\" setting from add-on settings.\n* In Remote Studio, when closing options screen (Control+O) while cart explorer is active, it is no longer necessary to reenter Cart Explorer to view updated cart assignments.\n* Resolved several issues while using insert tracks dialog in Remote Studio, including NVDA saying \"scan start\" when pressing Control+Shift+R and verbose output for search results status.\n* In track list in Creator and Track Tool, pressing Alt+number row keys to change column sort order will cause NVDA to announce the new sort order based on the column selected.\n* In Track Tool, status bar content will be reported when performing read status bar command (NVDA+End/desktop layout, NVDA+Shift+End/laptop layout)."
 		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/d37e4b4b3ba9e4315719087722766aa090febf349c4c53a1d546097445e6cca3",
-	"scanResults": {
-		"codeQL-warnings": [],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "d37e4b4b3ba9e4315719087722766aa090febf349c4c53a1d546097445e6cca3",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "7afbc1e270bbfa84195ca11a6766299e"
-				},
-				"first_submission_date": 1765468969,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1765468970,
-				"last_submission_date": 1765468969,
-				"md5": "aedca2633340703f42bdef979059e687",
-				"names": [],
-				"reputation": 0,
-				"sha1": "5f165f474da87239bf45118682cb40c6cb667a99",
-				"sha256": "d37e4b4b3ba9e4315719087722766aa090febf349c4c53a1d546097445e6cca3",
-				"size": 751281,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2187"
+	]
 }
