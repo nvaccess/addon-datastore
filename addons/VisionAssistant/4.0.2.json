@@ -89,5 +89,189 @@
 			"description": "Trợ lý AI nâng cao cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thuật thông minh (T) / Dịch bộ nhớ tạm (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích Video trực tuyến (Shift+V)\n- Hỏi đáp tài liệu (D)\n- Nhận diện văn bản OCR (F)\n- Giải mã CAPTCHA (C)\n- Chuyển tệp âm thanh thành văn bản (A)\n- Soạn thảo giọng nói thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)",
 			"changelog": "## Những thay đổi cho phiên bản 4.0\n* **Trình đọc tài liệu nâng cao:** Trình xem PDF và hình ảnh mạnh mẽ mới, hỗ trợ chọn phạm vi trang, xử lý trong nền và điều hướng mượt mà bằng phím `Ctrl+PageUp/Down`.\n* **Trình đơn phụ mới:** Đã thêm trình đơn \"Vision Assistant\" vào menu Công cụ của NVDA để truy cập nhanh các tính năng, cài đặt và tài liệu.\n* **Tùy biến linh hoạt:** Bạn có thể chọn công cụ OCR và giọng đọc TTS ưa thích ngay trong bảng cài đặt.\n* **Hỗ trợ nhiều khóa API:** Cho phép nhập nhiều khóa API Gemini (mỗi dòng một khóa hoặc cách nhau bằng dấu phẩy) để đảm bảo hoạt động liên tục.\n* **Công cụ OCR thay thế:** Bổ sung công cụ OCR mới để đảm bảo nhận diện văn bản ổn định khi API Gemini đạt giới hạn hạn mức.\n* **Tự động luân chuyển khóa API:** Hệ thống tự động chuyển và ghi nhớ khóa API hoạt động nhanh nhất để vượt qua giới hạn hạn mức.\n* **Chuyển tài liệu thành âm thanh:** Tích hợp khả năng tạo và lưu tệp âm thanh chất lượng cao (WAV) từ các trang tài liệu trực tiếp trong trình đọc.\n* **Hỗ trợ story trên Instagram:** Đã thêm khả năng mô tả và phân tích Story trên Instagram bằng URL của chúng.\\n\n* **Hỗ trợ TikTok:** Giới thiệu hỗ trợ cho video TikTok, cho phép mô tả đầy đủ bằng hình ảnh và phiên âm âm thanh của clip.\\n\n* **Cải tiến hộp thoại cập nhật:** Giao diện mới hỗ trợ tiếp cận tốt hơn với khung văn bản có thể cuộn để đọc nội dung thay đổi rõ ràng hơn.\n* **Hợp nhất trạng thái & trải nghiệm:** Chuẩn hóa các hộp thoại chọn tệp và cải tiến lệnh 'L' để báo cáo tiến độ thời gian thực của các tác vụ chạy nền."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1be26ac4f464a1fcdcde717d78379a7b044e840708f70d5c04c1bce8e05f1b20",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 2887,
+								"startColumn": 20,
+								"endColumn": 45
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "2913bc0dd513cd37:1",
+					"primaryLocationStartColumnFingerprint": "11"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 2887,
+								"startColumn": 20,
+								"endColumn": 35
+							}
+						},
+						"message": {
+							"text": "instagram.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 2889,
+								"startColumn": 21,
+								"endColumn": 43
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "ecbb1fd672237310:1",
+					"primaryLocationStartColumnFingerprint": "12"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 2889,
+								"startColumn": 21,
+								"endColumn": 33
+							}
+						},
+						"message": {
+							"text": "tiktok.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 1
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "1be26ac4f464a1fcdcde717d78379a7b044e840708f70d5c04c1bce8e05f1b20",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "5fcbdd0aa28cd93e316ae899534407be"
+				},
+				"first_submission_date": 1769679991,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1769679993,
+				"last_submission_date": 1769679991,
+				"md5": "b46652fdc0e120701582052315df2d29",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3185bdee393e9701c9c33df9776302ddb5be4f7f",
+				"sha256": "1be26ac4f464a1fcdcde717d78379a7b044e840708f70d5c04c1bce8e05f1b20",
+				"size": 18289341,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
