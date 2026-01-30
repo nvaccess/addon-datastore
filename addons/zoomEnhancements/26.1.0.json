@@ -119,5 +119,49 @@
 			"description": "Додаток, мета якого — поліпшити досвід використання Zoom і NVDA",
 			"changelog": "* NVDA 2024.1 or later is required.\n* In NVDA settings, renamed 'Zoom Enhancement settings' to 'Zoom Enhancements'.\n* In add-on settings, individual alert report announcement checkboxes are now grouped under a checkable list.\n* Alerts reporting mode toggle command has changed from NVDA+Shift+A to NVDA+Ctrl+Shift+A to avoid conflict with laptop keyboard layout command for review cursor say all.\n* Cleaned up add-on source code using Ruff and Pyright."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/50eb1f8b03b0e7ac90eb183faf99475ae31342ecf8c53d406121f04729abb6ec",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "50eb1f8b03b0e7ac90eb183faf99475ae31342ecf8c53d406121f04729abb6ec",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000101c1d1c0800",
+					"raw_md5": "ee9b10a534f971d956c33844dea9c835"
+				},
+				"first_submission_date": 1769779666,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1769779668,
+				"last_submission_date": 1769779666,
+				"md5": "3bcca767738360822f7672451f480da2",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a5754ba50e5ccb6c881d06f201a00495eccb8ff0",
+				"sha256": "50eb1f8b03b0e7ac90eb183faf99475ae31342ecf8c53d406121f04729abb6ec",
+				"size": 138586,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
