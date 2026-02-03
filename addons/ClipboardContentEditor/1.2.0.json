@@ -1,0 +1,45 @@
+{
+	"addonId": "ClipboardContentEditor",
+	"displayName": "Clipboard Content Editor",
+	"URL": "https://github.com/fauzan-january/clipboard-content-editor/releases/download/v1.2.0/ClipboardContentEditor-1.2.0.nvda-addon",
+	"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+	"sha256": "74a47883306ee8108ee68d04db7c7c17180ed6724f6ffe2c63b813469801315c",
+	"addonVersionName": "1.2.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/clipboard-content-editor/",
+	"license": "GPL v2",
+	"homepage": "https://fauzanaja.com/nvda-addon/",
+	"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1770133895000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+			"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel."
+		},
+		{
+			"language": "id",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+			"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel."
+		}
+	]
+}
