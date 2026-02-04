@@ -119,5 +119,49 @@
 			"description": "Додаток, мета якого — поліпшити досвід використання Zoom і NVDA",
 			"changelog": "* Changed messages reported when toggling Zoom alerts reporting settings in custom alerts reporting mode.\n* NVDA will no longer announce public and private chats if alerts for these are disabled from the add-on settings.\n* NVDA will once again show public and private chat messages in the chat history list."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6efc7bd4919d1c9ef0d86b6f030690e1851c75c7308287615b525f378a57acf7",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "6efc7bd4919d1c9ef0d86b6f030690e1851c75c7308287615b525f378a57acf7",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000101c1d1c0800",
+					"raw_md5": "01b14836e5cd46029dddaf5eee6b0e2d"
+				},
+				"first_submission_date": 1770185583,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1770185584,
+				"last_submission_date": 1770185583,
+				"md5": "824a23a391d2b8ce4eb0b379ac1c7ea5",
+				"names": [],
+				"reputation": 0,
+				"sha1": "53c469ae215297169a9957f6601fcb280537bd91",
+				"sha256": "6efc7bd4919d1c9ef0d86b6f030690e1851c75c7308287615b525f378a57acf7",
+				"size": 136984,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
