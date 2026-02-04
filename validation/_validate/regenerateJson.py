@@ -42,7 +42,6 @@ def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:
 		addonData["license"],
 		addonData["licenseURL"],
 	)
-	submissionTime = addonData.get("submissionTime")
 	regeneratedAddonData = asdict(
 		regeneratedData,
 		# The JSON schema does not permit null values, but does contain optional keys.
@@ -50,10 +49,10 @@ def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:
 		# So we can safely delete all keys whose value is None as optional.
 		dict_factory=lambda args: dict(filter(lambda item: item[1] is not None, args)),
 	)
-	if submissionTime:
-		regeneratedAddonData["submissionTime"] = submissionTime
+	updatedData = ("changelog", "translations")
+	addonData.update({key: regeneratedAddonData[key] for key in updatedData if key in regeneratedAddonData})
 	with open(filePath, "wt", encoding="utf-8") as f:
-		json.dump(regeneratedAddonData, f, indent="\t", ensure_ascii=False)
+		json.dump(addonData, f, indent="\t", ensure_ascii=False)
 	print(f"Wrote json file: {filePath}")
 
 
