@@ -1,132 +1,140 @@
 {
-	"addonId": "CloudVision",
-	"displayName": "CloudVision",
-	"URL": "https://github.com/alekssamos/cloudvision/releases/download/v6.0.3/CloudVision.nvda-addon",
-	"description": "An extension for describing images by utilizing recent advances in AI technology. Press NVDA+Control+I to get a description of an object or selected file in Explorer, if you press twice quickly, a virtual viewer will open.",
-	"sha256": "199decbcc3cbdd9a4a11ee4d03989566636b9ab38683ab57bf8ca950ebbcd6a5",
-	"addonVersionName": "6.0.3",
+	"addonId": "numpadNavMode",
+	"displayName": "Numpad Nav Mode",
+	"URL": "https://github.com/josephsl/numpadNavMode/releases/download/26.1/numpadNavMode-26.1.nvda-addon",
+	"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+	"sha256": "8b22d0c6f80d6a9711033e4fdda1a9149095210695b7af248dabe227a20938df",
+	"addonVersionName": "26.1",
 	"addonVersionNumber": {
-		"major": 6,
-		"minor": 0,
-		"patch": 3
+		"major": 26,
+		"minor": 1,
+		"patch": 0
 	},
 	"minNVDAVersion": {
 		"major": 2019,
-		"minor": 1,
+		"minor": 3,
 		"patch": 0
 	},
 	"lastTestedVersion": {
 		"major": 2025,
-		"minor": 1,
-		"patch": 0
+		"minor": 3,
+		"patch": 2
 	},
 	"channel": "stable",
-	"publisher": "alekssamos",
-	"sourceURL": "https://github.com/alekssamos/cloudvision",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/josephsl/numpadNavMode",
 	"license": "GPL v2",
-	"homepage": "https://visionbot.ru/addon/",
+	"homepage": "https://github.com/opensourcesys/numpadNavMode/blob/master/readme.md",
+	"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker).",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1755797745000,
+	"submissionTime": 1770337041000,
 	"translations": [
 		{
-			"language": "ar",
-			"displayName": "CloudVision",
-			"description": "إضافة لوصف الصور باستخدام أحدث التقنيات في تكنولوجيا الذكاء الاصطناعي. اضغط على NVDA+Control+I للحصول على وصف لكائن أو ملف محدد في مستكشف الملفات FileExplorer، وإذا قمت بالضغط مرتين بسرعة، سيتم فتح نافذة افتراضية تحتوي على النتيجة."
+			"language": "bg",
+			"displayName": "Навигационен режим на цифровия блок (Numpad Nav Mode)",
+			"description": "Позволява превключване на цифровата клавиатура между режима на навигация на NVDA и режима на навигация на Windows.\nОсобено полезно, ако преминавате от JAWS. Или за потребители на лаптопи, предпочитащи лаптоп клавиатурната подредба, но които имат цифрова клавиатура и искат да я използват за навигация със стрелки и т.н.\nДобавката също така дава контрол върху състоянието на Num Lock при стартиране на NVDA или при промяна на конфигурационния профил.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
-			"language": "cs",
-			"displayName": "Cloud vision",
-			"description": "Doplněk pro rozpoznání obrázku, nebo objektu pod kurzorem pomocí klávesové zkratky nvda +ctrl +i z nejnovější AI technologií"
+			"language": "de",
+			"displayName": "Navigationsmodus über den Nummernblock",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
 			"language": "es",
-			"displayName": "Cloud vision",
-			"description": "Una extensión para describir imágenes mediante la utilización de avances recientes en tecnología de inteligencia artificial. Presiona NVDA+Control+I para obtener una descripción de un objeto o archivo seleccionado en el Explorador, si presionas dos veces rápidamente, se abrirá un visor virtual.C"
+			"displayName": "Numpad Nav Mode",
+			"description": "Permite alternar el bloque numérico entre el modo de navegación de NVDA y el modo de navegación de Windows.\nEspecialmente útil si se migra desde Jaws, o para usuarios de portátiles que prefieren el modo portátil, pero que tienen un bloque numérico y quieren usarlo para pulsar las flechas, etc.\nEl complemento también da control del estado del bloqueo numérico al arrancar NVDA o cuando se cambia de perfil.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
 			"language": "fi",
-			"displayName": "Pilvinäkö",
-			"description": "Lisäosa, joka kuvailee kuvia tekoälyn viimeaikaista kehitystä hyödyntäen. Paina NVDA+Ctrl+I saadaksesi kuvauksen objektista tai Resurssienhallinnassa valittuna olevasta tiedostosta. Kahdesti painettaessa kuvaus avataan erilliseen ikkunaan."
+			"displayName": "Laskinnäppäimistön navigointitila",
+			"description": "Mahdollistaa laskinnäppäimistön vaihtamisen NVDA- ja Windows-navigointitilojen välillä.\nTämä on erittäin hyödyllistä JAWSista siirryttäessä tai kannettavien tietokoneiden käyttäjille, jotka käyttävät mieluummin kannettavan näppäimistöasettelua mutta joilla on laskinnäppäimistö ja haluavat käyttää sitä nuolinäppäimiä varten jne.\nLisäosa voi myös hallita Numlockin tilaa NVDA:ta käynnistettäessä tai profiilia vaihdettaessa.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
-			"language": "hr",
-			"displayName": "CloudVision",
-			"description": "An extension for describing images by utilizing recent advances in AI technology. Press NVDA+Control+I to get a description of an object or selected file in Explorer, if you press twice quickly, a virtual viewer will open."
+			"language": "fr",
+			"displayName": "Numpad Nav Mode",
+			"description": "Permet de basculer le pavé numérique entre le mode de navigation NVDA et le mode de navigation Windows.\nParticulièrement utile si la migration est à partir de Jaws ; ou pour les utilisateurs d'ordinateurs portables préférant le mode ordinateur portable, mais qui disposent d'un pavé numérique et souhaitent l'utiliser pour les touches fléchées, etc.\nL'extension permet également de contrôler l'état du verrouillage numérique lors du démarrage de NVDA ou des changements de profils.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
-			"language": "hu",
-			"displayName": "CloudVision",
-			"description": "Egy bővítmény, amely leírást készít az aktuális objektum vizuális megjelenéséről,\nkétszeri gyors megnyomásra egy virtuális nézegető nyílik meg."
+			"language": "gl",
+			"displayName": "Numpad Nav Mode",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
-			"language": "pt_BR",
-			"displayName": "Cloud Vision",
-			"description": "Um complemento para descrever imagens usando os recentes avanços da Inteligência Artificial; Pressione NVDA+Control+I para obter uma descrição de um objeto ou arquivo selecionado no Explorer, se você pressionar duas vezes rapidamente, um visualizador virtual irá abrir."
+			"language": "pt_PT",
+			"displayName": "Modo Numpad Nav",
+			"description": "Permite alternar o teclado numérico entre o modo de navegação NVDA e o modo de navegação Windows.\nEspecialmente útil se estiver a migrar do Jaws; ou para utilizadores de portáteis que preferem o modo portátil, mas que têm um teclado numérico e o querem usar para as teclas de setas, etc.\nO add-on também permite controlar o estado do numlock ao iniciar o NVDA ou ao mudar de perfil.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
-			"language": "ru",
-			"displayName": "Cloud Vision",
-			"description": "Расширение Предоставляет описание того, как текущий объект навигатора выглядит визуально,\nесли нажать два раза быстро, откроется виртуальный просмотрщик."
+			"language": "ro",
+			"displayName": "Numpad Nav Mode",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
 			"language": "tr",
-			"displayName": "CloudVision",
-			"description": "AI teknolojisindeki son gelişmelerden yararlanarak görüntüleri tanımlamaya yönelik bir eklenti. Explorer'da bir nesnenin veya seçilen dosyanın açıklamasını almak için NVDA+Control+I tuşlarına basın, hızlıca iki kez basarsanız sanal bir görüntüleyici açılır."
+			"displayName": "Sayısal Tuş Takımı gezinme Modu",
+			"description": "Sayısal tuş takımının NVDA gezinme modu ile Windows gezinme modu arasında geçiş yapmasına olanak sağlar.\nÖzellikle Jaws'tan geçiş yapılıyorsa kullanışlıdır. Ayrıca dizüstü bilgisayar modunu tercih eden ancak sayısal tuş takımına sahip olan ve bunu ok tuşları vb. için kullanmak isteyen dizüstü bilgisayar kullanıcıları için de faydalıdır.\nEklenti aynı zamanda NVDA'yı başlatırken veya profilleri değiştirirken Numara kilidi durumunun kontrolünü de sağlar.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
 			"language": "uk",
-			"displayName": "CloudVision",
-			"description": "An extension for describing images by utilizing recent advances in AI technology. Press NVDA+Control+I to get a description of an object or selected file in Explorer, if you press twice quickly, a virtual viewer will open."
+			"displayName": "Режим навігації за допомогою цифрової клавіатури",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		},
 		{
 			"language": "zh_CN",
-			"displayName": "AI 视觉",
-			"description": "An extension for describing images by utilizing recent advances in AI technology. Press NVDA+Control+I to get a description of an object or selected file in Explorer, if you press twice quickly, a virtual viewer will open."
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "AI 視覺",
-			"description": "一個使用 AI 技術描述圖片的附加元件。 按下 NVDA+Control+I 來取得物件或檔案總管中選取的檔案之描述， 如果您快速按兩下，將開啟虛擬檢視視窗。"
+			"displayName": "数字键盘模式切换",
+			"description": "Allows switching the numpad between NVDA navigation mode, and Windows navigation mode.\nEspecially useful if migrating from Jaws; or for laptop users preferring laptop mode, but who have a numpad and want to use it for arrow keys, etc.\nThe add-on also gives control of numlock state when starting NVDA or changing profiles.",
+			"changelog": "* NVDA 2025.1 compatibility.\n* Made the add-on code more robust with help from Pyright (a Python static type checker)."
 		}
 	],
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/4695",
-	"vtScanUrl": "https://www.virustotal.com/gui/file/199decbcc3cbdd9a4a11ee4d03989566636b9ab38683ab57bf8ca950ebbcd6a5",
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8b22d0c6f80d6a9711033e4fdda1a9149095210695b7af248dabe227a20938df",
 	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
 		"virusTotal": [
 			{
-				"_id": "199decbcc3cbdd9a4a11ee4d03989566636b9ab38683ab57bf8ca950ebbcd6a5",
+				"_id": "8b22d0c6f80d6a9711033e4fdda1a9149095210695b7af248dabe227a20938df",
 				"_type": "file",
 				"bundle_info": {
 					"extensions": {
-						"html": 7,
-						"ini": 13,
-						"md": 7,
-						"mo": 12,
-						"po": 12,
-						"py": 56
+						"css": 1,
+						"html": 10,
+						"ini": 12,
+						"md": 10,
+						"mo": 11,
+						"po": 11,
+						"py": 1
 					},
 					"file_types": {
-						"HTML": 7,
-						"script": 1,
-						"unknown": 99
+						"HTML": 10,
+						"unknown": 46
 					},
-					"highest_datetime": "2025-08-21 17:10:36",
-					"lowest_datetime": "2025-08-21 17:09:06",
-					"num_children": 107,
+					"highest_datetime": "2026-02-05 17:06:06",
+					"lowest_datetime": "2026-02-05 15:26:42",
+					"num_children": 56,
 					"type": "ZIP",
-					"uncompressed_size": 712278
+					"uncompressed_size": 256255
 				},
 				"filecondis": {
-					"dhash": "0000000c0e0d0200",
-					"raw_md5": "aeb1f3171e8f240cdd79bf4fc0460e35"
+					"dhash": "0000181c1d1c0000",
+					"raw_md5": "ec8964b6703642045f58550b5da8b359"
 				},
-				"first_submission_date": 1755797771,
-				"last_analysis_date": 1755797771,
+				"first_submission_date": 1770337058,
+				"last_analysis_date": 1770337058,
 				"last_analysis_results": {
 					"ALYac": {
 						"category": "undetected",
 						"engine_name": "ALYac",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2.0.0.10",
 						"method": "blacklist",
 						"result": null
@@ -134,15 +142,15 @@
 					"APEX": {
 						"category": "type-unsupported",
 						"engine_name": "APEX",
-						"engine_update": "20250819",
-						"engine_version": "6.688",
+						"engine_update": "20260204",
+						"engine_version": "6.744",
 						"method": "blacklist",
 						"result": null
 					},
 					"AVG": {
 						"category": "undetected",
 						"engine_name": "AVG",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -158,8 +166,8 @@
 					"AhnLab-V3": {
 						"category": "undetected",
 						"engine_name": "AhnLab-V3",
-						"engine_update": "20250821",
-						"engine_version": "3.28.0.10568",
+						"engine_update": "20260205",
+						"engine_version": "3.29.1.10604",
 						"method": "blacklist",
 						"result": null
 					},
@@ -174,7 +182,7 @@
 					"Antiy-AVL": {
 						"category": "undetected",
 						"engine_name": "Antiy-AVL",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "3.0",
 						"method": "blacklist",
 						"result": null
@@ -182,7 +190,7 @@
 					"Arcabit": {
 						"category": "undetected",
 						"engine_name": "Arcabit",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2025.0.0.23",
 						"method": "blacklist",
 						"result": null
@@ -190,7 +198,7 @@
 					"Avast": {
 						"category": "undetected",
 						"engine_name": "Avast",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -198,16 +206,16 @@
 					"Avast-Mobile": {
 						"category": "undetected",
 						"engine_name": "Avast-Mobile",
-						"engine_update": "20250821",
-						"engine_version": "250821-00",
+						"engine_update": "20260205",
+						"engine_version": "260205-10",
 						"method": "blacklist",
 						"result": null
 					},
 					"Avira": {
 						"category": "undetected",
 						"engine_name": "Avira",
-						"engine_update": "20250821",
-						"engine_version": "8.3.3.22",
+						"engine_update": "20260205",
+						"engine_version": "8.3.3.24",
 						"method": "blacklist",
 						"result": null
 					},
@@ -222,7 +230,7 @@
 					"BitDefender": {
 						"category": "undetected",
 						"engine_name": "BitDefender",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "7.2",
 						"method": "blacklist",
 						"result": null
@@ -230,7 +238,7 @@
 					"BitDefenderFalx": {
 						"category": "type-unsupported",
 						"engine_name": "BitDefenderFalx",
-						"engine_update": "20250416",
+						"engine_update": "20251216",
 						"engine_version": "2.0.936",
 						"method": "blacklist",
 						"result": null
@@ -238,7 +246,7 @@
 					"Bkav": {
 						"category": "undetected",
 						"engine_name": "Bkav",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -246,7 +254,7 @@
 					"CAT-QuickHeal": {
 						"category": "undetected",
 						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20250820",
+						"engine_update": "20260205",
 						"engine_version": "22.00",
 						"method": "blacklist",
 						"result": null
@@ -254,7 +262,7 @@
 					"CMC": {
 						"category": "undetected",
 						"engine_name": "CMC",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2.4.2022.1",
 						"method": "blacklist",
 						"result": null
@@ -262,7 +270,7 @@
 					"CTX": {
 						"category": "undetected",
 						"engine_name": "CTX",
-						"engine_update": "20250821",
+						"engine_update": "20260206",
 						"engine_version": "2024.8.29.1",
 						"method": "blacklist",
 						"result": null
@@ -270,15 +278,15 @@
 					"ClamAV": {
 						"category": "undetected",
 						"engine_name": "ClamAV",
-						"engine_update": "20250821",
-						"engine_version": "1.4.3.0",
+						"engine_update": "20260205",
+						"engine_version": "1.5.1.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"CrowdStrike": {
 						"category": "undetected",
 						"engine_name": "CrowdStrike",
-						"engine_update": "20231026",
+						"engine_update": "20230417",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -286,7 +294,7 @@
 					"Cylance": {
 						"category": "type-unsupported",
 						"engine_name": "Cylance",
-						"engine_update": "20250813",
+						"engine_update": "20260205",
 						"engine_version": "3.0.0.0",
 						"method": "blacklist",
 						"result": null
@@ -294,7 +302,7 @@
 					"Cynet": {
 						"category": "undetected",
 						"engine_name": "Cynet",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "4.0.3.4",
 						"method": "blacklist",
 						"result": null
@@ -302,7 +310,7 @@
 					"DeepInstinct": {
 						"category": "type-unsupported",
 						"engine_name": "DeepInstinct",
-						"engine_update": "20250821",
+						"engine_update": "20260204",
 						"engine_version": "5.0.0.8",
 						"method": "blacklist",
 						"result": null
@@ -310,31 +318,31 @@
 					"DrWeb": {
 						"category": "undetected",
 						"engine_name": "DrWeb",
-						"engine_update": "20250821",
-						"engine_version": "7.0.69.6040",
+						"engine_update": "20260205",
+						"engine_version": "7.0.74.11120",
 						"method": "blacklist",
 						"result": null
 					},
 					"ESET-NOD32": {
 						"category": "undetected",
 						"engine_name": "ESET-NOD32",
-						"engine_update": "20250821",
-						"engine_version": "31731",
+						"engine_update": "20260205",
+						"engine_version": "18.2.18.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"Elastic": {
 						"category": "type-unsupported",
 						"engine_name": "Elastic",
-						"engine_update": "20250821",
-						"engine_version": "4.0.221",
+						"engine_update": "20260203",
+						"engine_version": "4.0.248",
 						"method": "blacklist",
 						"result": null
 					},
 					"Emsisoft": {
 						"category": "undetected",
 						"engine_name": "Emsisoft",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2024.8.0.61147",
 						"method": "blacklist",
 						"result": null
@@ -342,7 +350,7 @@
 					"F-Secure": {
 						"category": "undetected",
 						"engine_name": "F-Secure",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "18.10.1547.307",
 						"method": "blacklist",
 						"result": null
@@ -350,7 +358,7 @@
 					"Fortinet": {
 						"category": "undetected",
 						"engine_name": "Fortinet",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "7.0.30.0",
 						"method": "blacklist",
 						"result": null
@@ -358,31 +366,31 @@
 					"GData": {
 						"category": "undetected",
 						"engine_name": "GData",
-						"engine_update": "20250821",
-						"engine_version": "GD:27.41505AVA:64.29689",
+						"engine_update": "20260206",
+						"engine_version": "GD:27.43437AVA:64.30613",
 						"method": "blacklist",
 						"result": null
 					},
 					"Google": {
 						"category": "undetected",
 						"engine_name": "Google",
-						"engine_update": "20250821",
-						"engine_version": "1755795638",
+						"engine_update": "20260206",
+						"engine_version": "1770332447",
 						"method": "blacklist",
 						"result": null
 					},
 					"Gridinsoft": {
 						"category": "undetected",
 						"engine_name": "Gridinsoft",
-						"engine_update": "20250821",
-						"engine_version": "1.0.223.174",
+						"engine_update": "20260205",
+						"engine_version": "1.0.237.174",
 						"method": "blacklist",
 						"result": null
 					},
 					"Ikarus": {
 						"category": "undetected",
 						"engine_name": "Ikarus",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "6.4.16.0",
 						"method": "blacklist",
 						"result": null
@@ -390,7 +398,7 @@
 					"Jiangmin": {
 						"category": "undetected",
 						"engine_name": "Jiangmin",
-						"engine_update": "20250820",
+						"engine_update": "20260205",
 						"engine_version": "16.0.100",
 						"method": "blacklist",
 						"result": null
@@ -398,23 +406,23 @@
 					"K7AntiVirus": {
 						"category": "undetected",
 						"engine_name": "K7AntiVirus",
-						"engine_update": "20250821",
-						"engine_version": "14.2.56776",
+						"engine_update": "20260205",
+						"engine_version": "14.33.58506",
 						"method": "blacklist",
 						"result": null
 					},
 					"K7GW": {
 						"category": "undetected",
 						"engine_name": "K7GW",
-						"engine_update": "20250821",
-						"engine_version": "14.2.56774",
+						"engine_update": "20260205",
+						"engine_version": "14.33.58506",
 						"method": "blacklist",
 						"result": null
 					},
 					"Kaspersky": {
 						"category": "undetected",
 						"engine_name": "Kaspersky",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "22.0.1.28",
 						"method": "blacklist",
 						"result": null
@@ -422,7 +430,7 @@
 					"Kingsoft": {
 						"category": "undetected",
 						"engine_name": "Kingsoft",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "None",
 						"method": "blacklist",
 						"result": null
@@ -430,7 +438,7 @@
 					"Lionic": {
 						"category": "undetected",
 						"engine_name": "Lionic",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "8.16",
 						"method": "blacklist",
 						"result": null
@@ -438,15 +446,15 @@
 					"Malwarebytes": {
 						"category": "undetected",
 						"engine_name": "Malwarebytes",
-						"engine_update": "20250821",
-						"engine_version": "3.1.0.150",
+						"engine_update": "20260205",
+						"engine_version": "3.1.0.207",
 						"method": "blacklist",
 						"result": null
 					},
 					"MaxSecure": {
 						"category": "undetected",
 						"engine_name": "MaxSecure",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -454,15 +462,15 @@
 					"McAfeeD": {
 						"category": "undetected",
 						"engine_name": "McAfeeD",
-						"engine_update": "20250821",
-						"engine_version": "1.2.0.10275",
+						"engine_update": "20260206",
+						"engine_version": "1.2.0.13644",
 						"method": "blacklist",
 						"result": null
 					},
 					"MicroWorld-eScan": {
 						"category": "undetected",
 						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "14.0.409.0",
 						"method": "blacklist",
 						"result": null
@@ -470,15 +478,15 @@
 					"Microsoft": {
 						"category": "undetected",
 						"engine_name": "Microsoft",
-						"engine_update": "20250821",
-						"engine_version": "1.1.25070.4",
+						"engine_update": "20260205",
+						"engine_version": "1.1.25110.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"NANO-Antivirus": {
 						"category": "undetected",
 						"engine_name": "NANO-Antivirus",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "1.0.170.26895",
 						"method": "blacklist",
 						"result": null
@@ -486,7 +494,7 @@
 					"Paloalto": {
 						"category": "type-unsupported",
 						"engine_name": "Paloalto",
-						"engine_update": "20250821",
+						"engine_update": "20260206",
 						"engine_version": "0.9.0.1003",
 						"method": "blacklist",
 						"result": null
@@ -494,7 +502,7 @@
 					"Panda": {
 						"category": "undetected",
 						"engine_name": "Panda",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "4.6.4.2",
 						"method": "blacklist",
 						"result": null
@@ -502,7 +510,7 @@
 					"Rising": {
 						"category": "undetected",
 						"engine_name": "Rising",
-						"engine_update": "20250821",
+						"engine_update": "20260202",
 						"engine_version": "25.0.0.28",
 						"method": "blacklist",
 						"result": null
@@ -510,7 +518,7 @@
 					"SUPERAntiSpyware": {
 						"category": "undetected",
 						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "5.6.0.1032",
 						"method": "blacklist",
 						"result": null
@@ -518,7 +526,7 @@
 					"Sangfor": {
 						"category": "undetected",
 						"engine_name": "Sangfor",
-						"engine_update": "20250818",
+						"engine_update": "20260202",
 						"engine_version": "2.22.3.0",
 						"method": "blacklist",
 						"result": null
@@ -526,15 +534,15 @@
 					"SentinelOne": {
 						"category": "type-unsupported",
 						"engine_name": "SentinelOne",
-						"engine_update": "20250114",
-						"engine_version": "25.1.1.1",
+						"engine_update": "20251224",
+						"engine_version": "7.5.3.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"Skyhigh": {
 						"category": "undetected",
 						"engine_name": "Skyhigh",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "v2021.2.0+4045",
 						"method": "blacklist",
 						"result": null
@@ -542,15 +550,15 @@
 					"Sophos": {
 						"category": "undetected",
 						"engine_name": "Sophos",
-						"engine_update": "20250821",
-						"engine_version": "3.1.2.0",
+						"engine_update": "20260205",
+						"engine_version": "3.3.1.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"Symantec": {
 						"category": "undetected",
 						"engine_name": "Symantec",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "1.22.0.0",
 						"method": "blacklist",
 						"result": null
@@ -558,7 +566,7 @@
 					"SymantecMobileInsight": {
 						"category": "type-unsupported",
 						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20250124",
+						"engine_update": "20260123",
 						"engine_version": "2.0",
 						"method": "blacklist",
 						"result": null
@@ -566,15 +574,15 @@
 					"TACHYON": {
 						"category": "undetected",
 						"engine_name": "TACHYON",
-						"engine_update": "20250821",
-						"engine_version": "2025-08-21.02",
+						"engine_update": "20260205",
+						"engine_version": "2026-02-05.02",
 						"method": "blacklist",
 						"result": null
 					},
 					"Tencent": {
 						"category": "undetected",
 						"engine_name": "Tencent",
-						"engine_update": "20250821",
+						"engine_update": "20260206",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -582,15 +590,15 @@
 					"Trapmine": {
 						"category": "type-unsupported",
 						"engine_name": "Trapmine",
-						"engine_update": "20250819",
-						"engine_version": "4.0.4.0",
+						"engine_update": "20260203",
+						"engine_version": "4.0.9.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"TrellixENS": {
 						"category": "undetected",
 						"engine_name": "TrellixENS",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "6.0.6.653",
 						"method": "blacklist",
 						"result": null
@@ -598,7 +606,7 @@
 					"TrendMicro": {
 						"category": "undetected",
 						"engine_name": "TrendMicro",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -606,7 +614,7 @@
 					"TrendMicro-HouseCall": {
 						"category": "undetected",
 						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -614,7 +622,7 @@
 					"Trustlook": {
 						"category": "undetected",
 						"engine_name": "Trustlook",
-						"engine_update": "20250821",
+						"engine_update": "20260206",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -622,15 +630,15 @@
 					"VBA32": {
 						"category": "undetected",
 						"engine_name": "VBA32",
-						"engine_update": "20250821",
-						"engine_version": "5.4.0",
+						"engine_update": "20260205",
+						"engine_version": "5.5.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"VIPRE": {
 						"category": "undetected",
 						"engine_name": "VIPRE",
-						"engine_update": "20250821",
+						"engine_update": "20260204",
 						"engine_version": "6.0.0.35",
 						"method": "blacklist",
 						"result": null
@@ -638,7 +646,7 @@
 					"Varist": {
 						"category": "undetected",
 						"engine_name": "Varist",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "6.6.1.3",
 						"method": "blacklist",
 						"result": null
@@ -646,7 +654,7 @@
 					"ViRobot": {
 						"category": "undetected",
 						"engine_name": "ViRobot",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2014.3.20.0",
 						"method": "blacklist",
 						"result": null
@@ -654,8 +662,8 @@
 					"VirIT": {
 						"category": "undetected",
 						"engine_name": "VirIT",
-						"engine_update": "20250821",
-						"engine_version": "9.5.1023",
+						"engine_update": "20260205",
+						"engine_version": "9.5.1139",
 						"method": "blacklist",
 						"result": null
 					},
@@ -663,22 +671,22 @@
 						"category": "undetected",
 						"engine_name": "Webroot",
 						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
+						"engine_version": "1.10.0.2",
 						"method": "blacklist",
 						"result": null
 					},
 					"Xcitium": {
 						"category": "undetected",
 						"engine_name": "Xcitium",
-						"engine_update": "20250821",
-						"engine_version": "37976",
+						"engine_update": "20260205",
+						"engine_version": "38390",
 						"method": "blacklist",
 						"result": null
 					},
 					"Yandex": {
 						"category": "undetected",
 						"engine_name": "Yandex",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "5.5.2.24",
 						"method": "blacklist",
 						"result": null
@@ -686,23 +694,23 @@
 					"Zillya": {
 						"category": "undetected",
 						"engine_name": "Zillya",
-						"engine_update": "20250820",
-						"engine_version": "2.0.0.5429",
+						"engine_update": "20260205",
+						"engine_version": "2.0.0.5538",
 						"method": "blacklist",
 						"result": null
 					},
 					"ZoneAlarm": {
 						"category": "undetected",
 						"engine_name": "ZoneAlarm",
-						"engine_update": "20250821",
-						"engine_version": "6.19-108463007",
+						"engine_update": "20260205",
+						"engine_version": "6.22-112233682",
 						"method": "blacklist",
 						"result": null
 					},
 					"Zoner": {
 						"category": "undetected",
 						"engine_name": "Zoner",
-						"engine_update": "20250821",
+						"engine_update": "20260205",
 						"engine_version": "2.2.2.0",
 						"method": "blacklist",
 						"result": null
@@ -718,16 +726,16 @@
 					"huorong": {
 						"category": "undetected",
 						"engine_name": "huorong",
-						"engine_update": "20250821",
-						"engine_version": "07ccad9:07ccad9:68d4c7c:68d4c7c",
+						"engine_update": "20260205",
+						"engine_version": "4cb4b44:4cb4b44:fa65098:fa65098",
 						"method": "blacklist",
 						"result": null
 					},
 					"tehtris": {
 						"category": "type-unsupported",
 						"engine_name": "tehtris",
-						"engine_update": "20250821",
-						"engine_version": "v0.1.4",
+						"engine_update": "20260206",
+						"engine_version": null,
 						"method": "blacklist",
 						"result": null
 					}
@@ -742,25 +750,25 @@
 					"type-unsupported": 10,
 					"undetected": 66
 				},
-				"last_modification_date": 1755805008,
-				"last_submission_date": 1755797771,
+				"last_modification_date": 1770337134,
+				"last_submission_date": 1770337058,
 				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
 				"magika": "ZIP",
-				"md5": "59473369075cff43a4ff69b2fb70ed66",
+				"md5": "15fdcded17e76ac989f12fca34e3d2ff",
 				"meaningful_name": "addon.nvda-addon",
 				"names": [
 					"addon.nvda-addon"
 				],
 				"reputation": 0,
-				"sha1": "5284c3fa3334c9228b90504e174b891d838a5c7f",
-				"sha256": "199decbcc3cbdd9a4a11ee4d03989566636b9ab38683ab57bf8ca950ebbcd6a5",
-				"size": 243348,
-				"ssdeep": "6144:hR9lQqtGIx2JbHqSQOtxoiRxHR5AoQTaFDD+gc:hBQqFx2JDqSzxnxXQuFnc",
+				"sha1": "d201cd8e923e4b1dd7ff6e711bf11e0318c2e652",
+				"sha256": "8b22d0c6f80d6a9711033e4fdda1a9149095210695b7af248dabe227a20938df",
+				"size": 110745,
+				"ssdeep": "3072:pEPxn1srNnQaFBkAHPjOkxBJ7cLJ8n3BsHIcxY:pYnKrFQNwPPxco3F",
 				"tags": [
 					"zip"
 				],
 				"times_submitted": 1,
-				"tlsh": "T1473402229416C803FE6AA57EA755ACC2A2FD5292E00FD58336E490C85DF7BFDC219DC0",
+				"tlsh": "T104B30263B54E411FFDA38578B68B1E03A05E1205D94E2F8725E0B1DA6CAA3CD57CFCA0",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
@@ -779,8 +787,9 @@
 					"zip"
 				],
 				"unique_sources": 1,
-				"vhash": "4f3e0a50a07ba6479e59a5a3c1058962"
+				"vhash": "0ee9d01832f4102793b88b82a522b193"
 			}
 		]
-	}
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2630"
 }
