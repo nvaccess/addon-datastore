@@ -1,0 +1,31 @@
+{
+	"addonId": "scintillaIMECaretFix",
+	"displayName": "Scintilla IME Composition Caret Fix",
+	"URL": "https://github.com/keyang556/scintillaIMECaretFix/releases/download/1.1/scintillaIMECaretFix-1.1.nvda-addon",
+	"description": "Fixes NVDA failing to track caret movements within IME composition strings in Scintilla-based editors like Notepad++.\nWhen typing Chinese, Japanese, Korean or other characters with an IME, NVDA will now correctly announce caret position changes within the uncommitted composition string.",
+	"sha256": "8223582728085e66c25b6ae3ebdb751b919de69d2e443ae72ada7153f4f7ff51",
+	"addonVersionName": "1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/scintillaIMECaretFix",
+	"license": "GPL v2",
+	"changelog": "Version 1.1:\n- Updated build configuration for proper add-on packaging\n- Added Traditional Chinese localization for manifest\n- Improved documentation",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1770362173000,
+	"translations": []
+}
