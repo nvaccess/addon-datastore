@@ -77,5 +77,49 @@
 			"description": "This add-on significantly increases the efficiency and comfort of using Thunderbird with NVDA.\nFor more information, visit :\nhttps://www.rptools.org/NVDA-Thunderbird/get.php?pg=manual&v=g5&lang=en\nFor old releases, visit: \nhttps://www.rptools.org/ntbp/",
 			"changelog": "* Adds compatibility with NVDA 2026.1 x64.\n\t* link for full changelog"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/fe507ae0e0a79f418706bb94092a4b69657dc98c2d3c29a86cd3f11c635f0716",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "fe507ae0e0a79f418706bb94092a4b69657dc98c2d3c29a86cd3f11c635f0716",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070400",
+					"raw_md5": "5b410f2869ee4d472a02baaf3a05eff3"
+				},
+				"first_submission_date": 1770906006,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1770906008,
+				"last_submission_date": 1770906006,
+				"md5": "48c7e513210f0c166588f2bd90de767b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "85afe441f1d6cba90b2eabada6b6378270d38196",
+				"sha256": "fe507ae0e0a79f418706bb94092a4b69657dc98c2d3c29a86cd3f11c635f0716",
+				"size": 752135,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
