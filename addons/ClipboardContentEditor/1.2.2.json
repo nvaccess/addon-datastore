@@ -47,5 +47,49 @@
 			"description": "Редагує поточний текст у буфері обміну в простому редакторі, щоб вставлений вміст відображав зміни. Гарячі клавіші: NVDA+E відкриває редактор, NVDA+Z відновлює попередній буфер обміну, NVDA+I показує інформацію про буфер обміну.",
 			"changelog": "- Додано функцію **Зберегти як** (Ctrl+Shift+S) до редактора, що дозволяє зберігати вміст у форматі .txt або інших типах файлів.\n- Додано налаштування для ввімкнення або вимкнення звуків додатка.\n- Додано комплексний звуковий супровід до функцій «Інформація», «Відновити резервну копію» та «Замінити все» для забезпечення послідовних звукових сигналів.\n- Виправлено посилання «Читати [Мову]» в документації, щоб правильно відкривати HTML-файли замість відображення помилок про відсутність файлу або відкриття необроблених вихідних файлів.\n- Кнопки редактора тепер розташовані в строгому порядку для кращої навігації: Інформація -> Знайти -> Замінити -> Зберегти -> Зберегти як -> Скасувати."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/81820438989f32f42d6eafaebe0bb89b4189879381d4a8cee4fed48a588c384b",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "81820438989f32f42d6eafaebe0bb89b4189879381d4a8cee4fed48a588c384b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "30303c3c3d280000",
+					"raw_md5": "bbbf80d244b453188cec2df080057d69"
+				},
+				"first_submission_date": 1771421939,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1771421941,
+				"last_submission_date": 1771421939,
+				"md5": "32ba815ed538fbb6f0318aec286019ba",
+				"names": [],
+				"reputation": 0,
+				"sha1": "26f2303828d642dcafb996aa552203dad5cb5bff",
+				"sha256": "81820438989f32f42d6eafaebe0bb89b4189879381d4a8cee4fed48a588c384b",
+				"size": 34971,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
