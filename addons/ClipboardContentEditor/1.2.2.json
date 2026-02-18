@@ -1,0 +1,51 @@
+{
+	"addonId": "ClipboardContentEditor",
+	"displayName": "Clipboard Content Editor",
+	"URL": "https://github.com/fauzan-january/clipboard-content-editor/releases/download/v1.2.2/ClipboardContentEditor-1.2.2.nvda-addon",
+	"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+	"sha256": "81820438989f32f42d6eafaebe0bb89b4189879381d4a8cee4fed48a588c384b",
+	"addonVersionName": "1.2.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/clipboard-content-editor/",
+	"license": "GPL v2",
+	"homepage": "https://fauzanaja.com/nvda-addon/",
+	"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1771421920000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+			"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel."
+		},
+		{
+			"language": "id",
+			"displayName": "Clipboard Content Editor",
+			"description": "Edits the current clipboard text in a simple editor so pasted content reflects the changes. Shortcuts: NVDA+E opens the editor, NVDA+Z restores the previous clipboard, and NVDA+I shows clipboard info.",
+			"changelog": "- Added **Save As** feature (Ctrl+Shift+S) to the editor, allowing content to be saved as .txt or other file types.\n- Added a setting to enable or disable addon sounds.\n- Added comprehensive sound feedback to Information, Restore Backup, and Replace All features for consistent audio cues.\n- Fixed the \"Read in [Language]\" links in the documentation to correctly open the HTML files instead of showing file not found errors or opening raw source files.\n- The editor buttons are now strictly ordered for better navigation: Information -> Find -> Replace -> Save -> Save As -> Cancel."
+		},
+		{
+			"language": "uk",
+			"displayName": "Редактор вмісту буфера обміну",
+			"description": "Редагує поточний текст у буфері обміну в простому редакторі, щоб вставлений вміст відображав зміни. Гарячі клавіші: NVDA+E відкриває редактор, NVDA+Z відновлює попередній буфер обміну, NVDA+I показує інформацію про буфер обміну.",
+			"changelog": "- Додано функцію **Зберегти як** (Ctrl+Shift+S) до редактора, що дозволяє зберігати вміст у форматі .txt або інших типах файлів.\n- Додано налаштування для ввімкнення або вимкнення звуків додатка.\n- Додано комплексний звуковий супровід до функцій «Інформація», «Відновити резервну копію» та «Замінити все» для забезпечення послідовних звукових сигналів.\n- Виправлено посилання «Читати [Мову]» в документації, щоб правильно відкривати HTML-файли замість відображення помилок про відсутність файлу або відкриття необроблених вихідних файлів.\n- Кнопки редактора тепер розташовані в строгому порядку для кращої навігації: Інформація -> Знайти -> Замінити -> Зберегти -> Зберегти як -> Скасувати."
+		}
+	]
+}
