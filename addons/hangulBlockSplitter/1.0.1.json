@@ -1,0 +1,39 @@
+{
+	"addonId": "hangulBlockSplitter",
+	"displayName": "Hangul Block Splitter",
+	"URL": "https://github.com/VIPPotato/hangul-block-splitter-nvda/releases/download/v1.0.1/hangulBlockSplitter-1.0.1.nvda-addon",
+	"description": "Splits selected Hangul text or the Hangul block under cursor into Jamo, then reads, describes, or copies the result.",
+	"sha256": "e01642b5de6e6acc3d799db803fcccf13c1f3180051085a5f5dc8f02b30a58ff",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "VIPPotato",
+	"sourceURL": "https://github.com/VIPPotato/hangul-block-splitter-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/VIPPotato/hangul-block-splitter-nvda",
+	"changelog": "Added configurable default split scope (block/word/line) and default NVDA+ctrl+h copy gesture.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1771545962000,
+	"translations": [
+		{
+			"language": "ko",
+			"displayName": "한글 블록 분해기",
+			"description": "선택한 한글 텍스트나 커서 아래 한글 블록을 자모로 분해하고, 결과를 읽기·문자 설명·복사로 활용할 수 있게 해줍니다.",
+			"changelog": "Added configurable default split scope (block/word/line) and default NVDA+ctrl+h copy gesture."
+		}
+	]
+}
