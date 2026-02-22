@@ -1,0 +1,965 @@
+{
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v4.6/VisionAssistant-4.6.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
+	"sha256": "9d8318cd0ac97e07c974c1331b28ac37a0b7849a0a64068e7a6aed455e2a8ede",
+	"addonVersionName": "4.6",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 6,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 4.6\n* **Interactive Result Recall:** Added the **Space** key to the command layer, allowing users to instantly reopen the last AI response in a chat window for follow-up questions, even when \"Direct Output\" mode is active.\n* **Telegram Community Hub:** Added an \"Official Telegram Channel\" link to the NVDA Tools menu, providing a quick way to stay updated with the latest news, features, and releases.\n* **Enhanced Response Stability:** Optimized the core logic for Translation, OCR, and Vision features to ensure more reliable performance and a smoother experience when using direct speech output.\n* **Improved Interface Guidance:** Updated the settings descriptions and documentation to better explain the new recall system and how it works alongside the direct output settings.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1771772372000,
+	"translations": [
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nلایه‌ی فرمان‌ها: NVDA+Shift+V را بفشارید، سپس:\n- مترجمِ هوشمند (T)، ترجمه از کلیپ‌برد (Shift+T)؛\n- پالایش‌کننده‌ی متن (R)؛\n- توصیفِ پیمایشگر (V)، توصیف تمام صفحه (o)؛\n- تحلیلِ آنلاینِ ویدئو (Shift+V)؛\n- سندخوان (D)؛\n- OCRِ فایل (F)؛\n- حل‌کننده‌ی کپچا (C)؛\n- رونویسیِ فایلِ صوتی (A)؛\n- تایپِ صوتیِ هوشمند (S)؛\n- اعلامِ وضعیت (L)؛\n- بررسیِ بروزرسانی (U)\n- فراخوانیِ آخرین نتیجه (space)\n- راهنمای فرمان‌ها (H)\n",
+			"changelog": "## تغییراتِ نسخه‌ی ۴.۶\n* **فراخوانیِ تعاملیِ نتیجه:** کلید **Space** به لایه‌ی فرمان‌ها افزوده شد که به کاربران اجازه می‌دهد فوراً آخرین پاسخِ هوشِ مصنوعی را در پنجره‌ی گفتگو برای سؤالاتِ بعدی باز کنند، حتی زمانی که حالتِ «خروجیِ مستقیم» فعال است.\n* **مرکزِ انجمنِ تلگرام:** لینکِ «کانالِ رسمیِ افزونه در تلگرام» به منوی ابزارهای NVDA افزوده شد که راهی سریع برای به‌روز ماندن با آخرین اخبار، ویژگی‌ها و نسخه‌ها ارائه می‌کند.\n* **پایداریِ پیشرفته در پاسخگویی:** منطقِ اصلی برای ویژگی‌های ترجمه، OCR و بینایی بهینه شد تا از عملکردِ قابلِ اعتمادتر و تجربه‌ی روان‌تر هنگامِ استفاده از خروجیِ گفتارِ مستقیم اطمینان حاصل شود.\n* **راهنمای رابطِ کاربریِ بهبودیافته:** شرحِ تنظیمات و راهنما برای توضیحِ بهترِ سیستمِ جدیدِ فراخوان و نحوه‌ی عملکردِ آن در کنارِ تنظیماتِ خروجیِ مستقیم به روز شد."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Analyseur de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (L)\n- Vérification des mises à jour (U)\n",
+			"changelog": "## Changements pour la 4.6\n* **Rappel interactif du résultat :** Ajout de la touche **Espace** aux commandes séquentielles, permettant aux utilisateurs de rouvrir instantanément la dernière réponse de l'IA dans une fenêtre de discussion pour des questions de suivi, même lorsque le mode « Sortie directe » est actif.\n* **Hub communautaire Telegram :** Ajout d'un lien \"Canal Telegram officiel\" au menu Outils de NVDA, offrant un moyen rapide de rester informé des dernières nouvelles, fonctionnalités et versions.\n* **Stabilité de réponse améliorée :** Optimisation de la logique de base pour les fonctionnalités de traduction, d'OCR et de vision afin de garantir des performances plus fiables et une expérience plus fluide lors de l'utilisation de la sortie vocale directe.\n* **Amélioration des conseils dans l'interface :** Mise à jour des descriptions et de la documentation des paramètres pour mieux expliquer le nouveau système de rappel et son fonctionnement avec les paramètres de sortie directe."
+		},
+		{
+			"language": "id",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Terjemahkan yang ada di Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Secara Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR Berkas (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (L)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n",
+			"changelog": "## Perubahan untuk 4.6\n* **Pembukaan Ulang Hasil Interaktif:** Menambahkan tombol **Space** ke lapisan perintah, sehingga pengguna bisa langsung membuka kembali respons AI terakhir di jendela obrolan untuk pertanyaan lanjutan, termasuk saat mode \"Direct Output\" aktif.\n* **Pusat Komunitas Telegram:** Menambahkan tautan \"Official Telegram Channel\" ke menu Tools NVDA agar pengguna bisa cepat mengikuti berita, fitur, dan rilis terbaru.\n* **Stabilitas Respons Ditingkatkan:** Mengoptimalkan logika inti untuk fitur Terjemahan, OCR, dan Visi agar performa lebih andal serta pengalaman output suara langsung lebih mulus.\n* **Panduan Antarmuka Ditingkatkan:** Memperbarui deskripsi pengaturan dan dokumentasi agar sistem pembukaan hasil terbaru lebih mudah dipahami dan jelas kaitannya dengan pengaturan output langsung."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
+			"changelog": "## Changes for 4.6\n* **Interactive Result Recall:** Added the **Space** key to the command layer, allowing users to instantly reopen the last AI response in a chat window for follow-up questions, even when \"Direct Output\" mode is active.\n* **Telegram Community Hub:** Added an \"Official Telegram Channel\" link to the NVDA Tools menu, providing a quick way to stay updated with the latest news, features, and releases.\n* **Enhanced Response Stability:** Optimized the core logic for Translation, OCR, and Vision features to ensure more reliable performance and a smoother experience when using direct speech output.\n* **Improved Interface Guidance:** Updated the settings descriptions and documentation to better explain the new recall system and how it works alongside the direct output settings."
+		},
+		{
+			"language": "pl",
+			"displayName": "Vision Assistant Pro",
+			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Inteligentny tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Inteligentne dyktowanie (S)\n- Raportuj stan (L)\n- Sprawdź aktualizację (U)\n- pokaż ostatnią odpowiedź AI w trybie czatu. (Spacja)\n- Pomoc poleceń (H)\n",
+			"changelog": "## Zmiany w wersji 4.6\n* **Możliwość wymuszenia trybu interaktywnego czatu:** Dodano klawisz **Spacja** do warstwy poleceń, umożliwiający otwarcie ostatniej odpowiedzi AI w oknie czatu w celu zadawania dodatkowych pytań, nawet gdy aktywny jest tryb bezpośredni.\n* **Hub społeczności w Telegramie:** Dodano link do \"Oficjalnego kanału w Telegramie\" w menu Narzędzia NVDA, zapewniający szybki dostęp do najnowszych wiadomości o tym dodatku.\n* **Zwiększona stabilność odpowiedzi:** Zoptymalizowano główną logikę funkcji tłumaczenia, OCR i przetwarzania obrazu, aby zapewnić bardziej niezawodne działanie i płynniejsze korzystanie z bezpośredniego wyjścia mowy.\n* **Ulepszone wskazówki interfejsu:** Zaktualizowano opisy ustawień i dokumentację."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documento (D)\n- OCR de Arquivo (F)\n- Resolvedor de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (L)\n- Verificar Atualização (U)\n- Recuperar Último Resultado (Espaço),\n- Ajuda de Comandos (H),\n",
+			"changelog": "## Alterações na versão 4.6\n* **Recuperação Interativa de Resultados:** Adicionada a tecla **Espaço** à camada de comandos, permitindo que os usuários reabram instantaneamente a última resposta da IA em uma janela de chat para perguntas de acompanhamento, mesmo quando o modo \"Saída Direta\" estiver ativo.\n* **Central da Comunidade no Telegram:** Adicionado um link para o \"Canal Oficial no Telegram\" no menu Ferramentas do NVDA, oferecendo uma maneira rápida de se manter atualizado com as últimas notícias, recursos e lançamentos.\n* **Maior Estabilidade das Respostas:** Otimizada a lógica principal dos recursos de Tradução, OCR e Visão para garantir um desempenho mais confiável e uma experiência mais fluida ao utilizar saída direta por voz.\n* **Orientação de Interface Aprimorada:** Atualizadas as descrições das configurações e a documentação para explicar melhor o novo sistema de recuperação e como ele funciona em conjunto com as configurações de saída direta."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente de IA avançado para o NVDA que utiliza modelos Gemini.\nCamada de Comandos: Prima NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Aperfeiçoador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (L)\n- Verificar Atualizações (U)\n- Recordar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n",
+			"changelog": "## Alterações para a versão 4.6\n* **Recordação Interativa de Resultados:** Adicionada a tecla **Espaço** à camada de comandos, permitindo aos utilizadores reabrir instantaneamente a última resposta da IA numa janela de chat para questões de acompanhamento, mesmo quando o modo \"Saída Direta\" está ativo.\n* **Hub da Comunidade Telegram:** Adicionado um link para o \"Canal Oficial do Telegram\" no menu Ferramentas do NVDA, proporcionando uma forma rápida de se manter atualizado com as últimas novidades, funcionalidades e lançamentos.\n* **Maior Estabilidade das Respostas:** Otimizada a lógica principal das funcionalidades de Tradução, OCR e Visão, garantindo um desempenho mais fiável e uma experiência mais fluida ao utilizar a saída de voz direta.\n* **Melhoria na Orientação da Interface:** Atualizadas as descrições das definições e a documentação para explicar melhor o novo sistema de recordação e o seu funcionamento em conjunto com as definições de saída direta."
+		},
+		{
+			"language": "ru",
+			"displayName": "VisionAssistant (Визуальный помощник)",
+			"description": "Дополнение VisionAssistant  - это продвинутый ИИ-помощник для NVDA на базе моделей Gemini.\nКомандный слой: нажмите NVDA+Shift+V, затем:\nУмный перевод (T) / из буфера обмена (Shift+T).\nОбработка текста (R).\nОписать объект (V) / весь экран (O).\nАнализ онлайн-видео (Shift+V).\nЧтение документов (D).\nOCR файлов (F).\nРешение CAPTCHA (C).\nРасшифровка аудио (A).\nУмный ввод (S).\nСостояние (L).\nПроверка обновлений (U).\nПовтор последнего результата (Пробел).\nСправка по командам (H).\n",
+			"changelog": "## Что нового в версии 4.6\n* **Интерактивный повтор результатов:** Добавлена клавиша **Пробел** в командный слой, позволяющая мгновенно открывать последний ответ ИИ в окне чата для уточняющих вопросов, даже если активен режим «Прямой вывод».\n* **Telegram-канал сообщества:** Добавлена ссылка на «Официальный Telegram-канал» в меню «Сервис» NVDA для быстрого доступа к новостям, функциям и релизам.\n* **Повышенная стабильность ответов:** Оптимизирована базовая логика функций перевода, OCR и распознавания для более надежной работы при использовании прямого речевого вывода.\n* **Улучшенные подсказки в интерфейсе:** Обновлены описания в настройках и документация для пояснения работы новой системы повтора результатов совместно с режимом прямого вывода."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çeviri (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesneyi Betimle (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Sesi metne çevir (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (L)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk),\n- Komut Yardımı (H),\n",
+			"changelog": "## 4.6 için değişiklikler\n* **Etkileşimli Sonuç Geri Çağırma:** Komut katmanına **Boşluk** tuşu eklendi; bu sayede, \"Doğrudan Çıktı\" modu etkin olsa bile, kullanıcıların takip soruları için bir sohbet penceresindeki son YZ yanıtını anında yeniden açmasına olanak tanındı.\n* **Telegram Topluluk Merkezi:** NVDA Araçlar menüsüne, en son haberler, özellikler ve sürümlerle güncel kalmanın hızlı bir yolunu sağlayan bir \"Resmi Telegram Kanalı\" bağlantısı eklendi.\n* **Gelişmiş Yanıt Kararlılığı:** Doğrudan konuşma çıkışını kullanırken daha güvenilir performans ve daha sorunsuz bir deneyim sağlamak için Çeviri, OCR ve Görüntü özellikleri için temel mantık optimize edildi.\n* **Geliştirilmiş Arayüz Kılavuzu:** Yeni geri çağırma sistemini ve doğrudan çıkış ayarlarıyla birlikte nasıl çalıştığını daha iyi açıklamak için ayar açıklamaları ve belgeleri güncellendi."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n",
+			"changelog": "## Зміни для 4.6\n* **Інтерактивне відновлення результатів:** до шару команд додано клавішу **Пробіл**, що дозволяє користувачам миттєво відкривати останню відповідь ШІ у діалозі чату для подальших запитань, навіть якщо активний режим «Прямий вивід».\n* **Центр спільноти Telegram:** додано посилання «Офіційний канал Telegram» у меню інструментів NVDA, що забезпечує швидкий спосіб бути в курсі останніх новин, функцій і випусків.\n* **Покращена стабільність відгуку:** оптимізовано основну логіку для функцій перекладу, оптичного розпізнавання тексту та візуалізації, щоб забезпечити більш надійну роботу та більш плавну роботу під час використання прямого мовлення.\n* **Покращений інтерфейс: ** оновлено опис налаштувань і документацію, щоб краще пояснити нову систему показу та її роботу разом із налаштуваннями прямого виводу."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "Một trợ lý AI nâng cao dành cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thông minh (T) / Clipboard (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích video trực tuyến (Shift+V)\n- Trình đọc tài liệu (D)\n- OCR tệp (F)\n- Giải CAPTCHA (C)\n- Chuyển biên âm thanh (A)\n- Đọc chính tả thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)\n- Gọi lại kết quả cuối cùng (Space),\n- Trợ giúp lệnh (H),\n",
+			"changelog": "## Những thay đổi trong phiên bản 4.6\n* **Gọi lại kết quả tương tác:** Đã thêm phím **Space** vào lớp lệnh, cho phép người dùng mở lại ngay lập tức phản hồi cuối cùng của AI trong cửa sổ trò chuyện để đặt câu hỏi tiếp theo, ngay cả khi chế độ \"Đầu ra trực tiếp\" đang hoạt động.\n* **Cộng đồng Telegram:** Đã thêm liên kết \"Kênh Telegram chính thức\" vào menu Công cụ của NVDA, cung cấp một cách nhanh chóng để cập nhật những tin tức, tính năng và bản phát hành mới nhất.\n* **Tăng cường độ ổn định của phản hồi:** Tối ưu hóa logic cốt lõi cho các tính năng Dịch thuật, OCR và Thị giác để đảm bảo hiệu suất đáng tin cậy hơn và trải nghiệm mượt mà hơn khi sử dụng đầu ra giọng nói trực tiếp.\n* **Cải thiện hướng dẫn giao diện:** Đã cập nhật các mô tả cài đặt và tài liệu hướng dẫn để giải thích rõ hơn về hệ thống gọi lại mới và cách thức hoạt động của nó cùng với các cài đặt đầu ra trực tiếp."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vision Assistant Pro",
+			"description": "基于 Gemini 模型的高级 NVDA AI 助手。\n命令层：按 NVDA+Shift+V，然后按：\n- 智能翻译 (T) / 剪贴板 (Shift+T)\n- 文本润色 (R)\n- 描述对象 (V) / 全屏 (O)\n- 在线视频分析 (Shift+V)\n- 文档阅读器 (D)\n- 文件 OCR (F)\n- 验证码求解器 (C)\n- 音频转录 (A)\n- 智能听写 (S)\n- 播报状态 (L)\n- 检查更新 (U)\n- 调用上一次结果 (Space)\n- 命令帮助 (H)\n",
+			"changelog": "## 4.6 版本变更\n* **交互式结果调用：** 在命令层添加了 **空格键 (Space)**，允许用户在聊天窗口中立即重新打开上一次 AI 回复，以便进行后续提问，即便在“直接输出”模式下也有效。\n* **Telegram 社区中心：** 在 NVDA 工具菜单中添加了“Telegram 频道”链接，提供快速获取最新新闻、功能和发布信息的方式。\n* **增强响应稳定性：** 优化了翻译、OCR 和视觉功能的核心逻辑，确保更可靠的性能，并在使用直接语音输出时提供更流畅的体验。\n* **改进界面引导：** 更新了设置说明和文档，以更好地解释新的调用系统及其如何与直接输出设置配合工作。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9d8318cd0ac97e07c974c1331b28ac37a0b7849a0a64068e7a6aed455e2a8ede",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 3585,
+								"startColumn": 20,
+								"endColumn": 45
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "2913bc0dd513cd37:1",
+					"primaryLocationStartColumnFingerprint": "11"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 3585,
+								"startColumn": 20,
+								"endColumn": 35
+							}
+						},
+						"message": {
+							"text": "instagram.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 3587,
+								"startColumn": 21,
+								"endColumn": 43
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "ecbb1fd672237310:1",
+					"primaryLocationStartColumnFingerprint": "12"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 3587,
+								"startColumn": 21,
+								"endColumn": 33
+							}
+						},
+						"message": {
+							"text": "tiktok.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 1
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "9d8318cd0ac97e07c974c1331b28ac37a0b7849a0a64068e7a6aed455e2a8ede",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 1,
+						"exe": 1,
+						"h": 88,
+						"html": 11,
+						"ini": 13,
+						"lib": 2,
+						"md": 13,
+						"mo": 12,
+						"po": 12,
+						"py": 50,
+						"pyd": 2,
+						"txt": 3
+					},
+					"file_types": {
+						"HTML": 11,
+						"Portable Executable": 4,
+						"unknown": 206
+					},
+					"highest_datetime": "2026-02-22 14:51:00",
+					"lowest_datetime": "2026-02-22 14:50:34",
+					"num_children": 221,
+					"type": "ZIP",
+					"uncompressed_size": 48480210
+				},
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: Markdown (whl)\nVersion: 3.10\nDescription: Python implementation of John Gruber's Markdown.\n\nThe provided source code for the 'Markdown' package version 3.10 is a legitimate implementation of the Markdown specification. It includes standard parsing logic, extensions, and utility functions. The use of `yaml.unsafe_load` in `markdown/__main__.py` is a known security risk if processing untrusted YAML files, but this is a characteristic of the `PyYAML` library and its use in a command-line interface for configuration is not inherently malicious from the package's perspective. The surrounding files belong to an NVDA add-on named 'Vision Assistant Pro', which appears to be a legitimate accessibility tool integrating AI features. The `donate_dialog.py` script requests donations, a common practice for open-source projects, and `installTasks.py` modifies `sys.path` for internal module loading, which is a standard and appears safe in this context. No malicious or suspicious code logic was identified.",
+						"category": "code_insight",
+						"id": "9d8318cd0ac97e07c974c1331b28ac37a0b7849a0a64068e7a6aed455e2a8ede-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "04084bc6f354768bff168d80eba88ca4"
+				},
+				"first_submission_date": 1771772393,
+				"last_analysis_date": 1771772393,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260221",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260222",
+						"engine_version": "6.750",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260222",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260222",
+						"engine_version": "3.29.1.10604",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260222",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260222",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260222",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260222",
+						"engine_version": "260222-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260222",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Baidu": {
+						"category": "undetected",
+						"engine_name": "Baidu",
+						"engine_update": "20190318",
+						"engine_version": "1.0.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260222",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20251216",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260221",
+						"engine_version": "2.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260221",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260222",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260222",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260222",
+						"engine_version": "1.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260220",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260222",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260220",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260222",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260222",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260220",
+						"engine_version": "4.0.249",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260222",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260222",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260222",
+						"engine_version": "7.0.30.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260222",
+						"engine_version": "GD:27.43619AVA:64.30709",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "failure",
+						"engine_name": "Google",
+						"engine_update": "20260222",
+						"engine_version": "1771770653",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260222",
+						"engine_version": "1.0.238.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260222",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260221",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260222",
+						"engine_version": "14.37.58667",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260220",
+						"engine_version": "14.37.58652",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260222",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260222",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260222",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260222",
+						"engine_version": "3.1.0.209",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260220",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260222",
+						"engine_version": "1.2.0.13781",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260222",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260222",
+						"engine_version": "1.1.26010.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260222",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260222",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260222",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260222",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260222",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260220",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "type-unsupported",
+						"engine_name": "SentinelOne",
+						"engine_update": "20251224",
+						"engine_version": "7.5.3.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "failure",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260222",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260222",
+						"engine_version": "3.3.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260222",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260222",
+						"engine_version": "2026-02-22.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260222",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260203",
+						"engine_version": "4.0.9.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260222",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260222",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260222",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260222",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260220",
+						"engine_version": "5.5.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260222",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260222",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260222",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260220",
+						"engine_version": "9.5.1150",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260220",
+						"engine_version": "38428",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260222",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260220",
+						"engine_version": "2.0.0.5549",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260222",
+						"engine_version": "6.23-113518376",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260222",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260222",
+						"engine_version": "46a034f:46a034f:b97a070:b97a070",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260222",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 8,
+					"undetected": 65
+				},
+				"last_modification_date": 1771772564,
+				"last_submission_date": 1771772393,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"md5": "7db0e8e30c1fb82868c177fc70403e8e",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "5dc457a5a5f7ae70bd37a0d93ff56bad40a91d60",
+				"sha256": "9d8318cd0ac97e07c974c1331b28ac37a0b7849a0a64068e7a6aed455e2a8ede",
+				"size": 18471914,
+				"ssdeep": "393216:pdR/xRfdyC4v3wdZHOtIOLJB9B4MtgY7Xb65MgkeI1/uA:pzxRQC4vycIuJBzkYjirIz",
+				"tags": [
+					"whl",
+					"contains-pe"
+				],
+				"times_submitted": 1,
+				"tlsh": "T19C1733B6E4ADD25BDDB1E0FAE4A22F9371DF26AD118E705D622C40CBD4D7BC901825C2",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Wheel package",
+						"probability": 63.2
+					},
+					{
+						"file_type": "Python Zip Application",
+						"probability": 26.5
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 10.1
+					}
+				],
+				"type_description": "Python Wheel package",
+				"type_extension": "whl",
+				"type_tag": "whl",
+				"type_tags": [
+					"installer",
+					"python",
+					"whl"
+				],
+				"unique_sources": 1,
+				"vhash": "980e541f1338fbec60b0026aacd96165"
+			}
+		]
+	}
+}
