@@ -28,11 +28,15 @@ jobs:
     - name: Commit & Push changes
       run: |
         git add addons
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git commit -m "[Automated] Regenerate json files"
-        git pull --rebase
-        git push
+        if (git status --porcelain) {
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "[Automated] Regenerate json files"
+          git pull --rebase
+          git push
+        } else {
+          echo "No changes to commit; skipping commit and push."
+        }
     - name: Upload validation errors as artifact
       if: failure()
       uses: actions/upload-artifact@v6
