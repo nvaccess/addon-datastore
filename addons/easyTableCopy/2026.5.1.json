@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/latest/easyTableCopy-2026.5.1.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "69d806a6c2b052516520e2f96e81f626563512259adc6b1f47b362b71ea24a12",
+	"addonVersionName": "2026.5.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n* Fixed Excel vertical alignment (a problem occured after fixing ignorance of first empty cell issue) (A1-A2 merge) by removing nested paragraph tags from injected content.\n* Fixed: Resolved an issue where tables copied via \"Standard (Native)\" mode would shift to the left if the first cell was empty.\n* Added column-specific copying commands for desktop and Explorer (Copy Column 1, Column 2, Column 3, Columns 1-2, Columns 1-3, Columns 1 and 3)\n* Added universal Table Statistics command to announce row and column counts anywhere\n* Added universal Copy Current Cell command for quick cell content extraction\n* Added Copy Marked as Text command for web tables (copies marked rows as plain text)\n* Improved table structure detection for large web tables\n* Optimized performance for large tables with intelligent sampling\n* Enhanced context awareness: commands only work in appropriate contexts (web vs desktop)\n* Updated documentation with all new features (English and Turkish)\n* Fixed: Significantly improved the Reconstructed Copy engine and Column Selection logic to correctly handle complex table layouts.\n* Fixed: Resolved an issue where vertical cell merging (rowspan) caused data from adjacent columns to shift left, leading to misaligned data.\n* Added: Implemented a Virtual Matrix algorithm to track cell occupancy, ensuring that merged cells and spanned columns maintain their correct spatial coordinates during extraction.\n* Improved: Enhanced reliability when copying technical data tables from modern websites using advanced CSS grid and table structures.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1772169343000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n* Fixed Excel vertical alignment (a problem occured after fixing ignorance of first empty cell issue) (A1-A2 merge) by removing nested paragraph tags from injected content.\n* Fixed: Resolved an issue where tables copied via \"Standard (Native)\" mode would shift to the left if the first cell was empty.\n* Added column-specific copying commands for desktop and Explorer (Copy Column 1, Column 2, Column 3, Columns 1-2, Columns 1-3, Columns 1 and 3)\n* Added universal Table Statistics command to announce row and column counts anywhere\n* Added universal Copy Current Cell command for quick cell content extraction\n* Added Copy Marked as Text command for web tables (copies marked rows as plain text)\n* Improved table structure detection for large web tables\n* Optimized performance for large tables with intelligent sampling\n* Enhanced context awareness: commands only work in appropriate contexts (web vs desktop)\n* Updated documentation with all new features (English and Turkish)\n* Fixed: Significantly improved the Reconstructed Copy engine and Column Selection logic to correctly handle complex table layouts.\n* Fixed: Resolved an issue where vertical cell merging (rowspan) caused data from adjacent columns to shift left, leading to misaligned data.\n* Added: Implemented a Virtual Matrix algorithm to track cell occupancy, ensuring that merged cells and spanned columns maintain their correct spatial coordinates during extraction.\n* Improved: Enhanced reliability when copying technical data tables from modern websites using advanced CSS grid and table structures.\n"
+		}
+	]
+}
