@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/v2026.5.2/easyTableCopy-2026.5.2.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "dfe1dfd3e8280951e468b26fecf86c8bf64db439f96b8b0716d8a723e652cf6d",
+	"addonVersionName": "2026.5.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/surveyor123/EasyTableCopy/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n* Fixed column merging in Excel by implementing a structured HTML table engine for custom column selections.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1772262472000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n* Özel sütun seçimleri için yapılandırılmış bir HTML tablo motoru uygulanarak kopyalanan sütunların Excel'e yapıştırıldığında birleştirilmesi sorunu düzeltildi.\n"
+		}
+	]
+}
