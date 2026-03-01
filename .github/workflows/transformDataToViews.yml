@@ -1,5 +1,3 @@
-# https://github.com/nvaccess/addon-datastore-transform/
-
 name: Transform NVDA addons to views
 
 on:
@@ -25,18 +23,12 @@ jobs:
     - name: Checkout addon data
       uses: actions/checkout@v5
       with:
-        path: data
-        ref: master
+        submodules: true
     - name: Checkout views branch into separate folder
       uses: actions/checkout@v5
       with:
         path: views
         ref: views
-    - name: Checkout transformation repo
-      uses: actions/checkout@v5
-      with:
-        repository: nvaccess/addon-datastore-transform
-        path: transform
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
       with:
@@ -50,15 +42,14 @@ jobs:
         # empty the views git folder directory 
         Try { Remove-Item ../views/views/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../data/addons ../views/views
+        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../addons ../views/views
     - name: Copy files
       run: |
         copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
         copy ./transform/docs/output.md ./views/output.md
-        copy ./data/readme.md ./views/readme.md
+        copy ./readme.md ./views/readme.md
     - name: Commit and push
       run: |
-        cd data
         git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > ../commitMsg.txt
         cd ../views
         git config user.name github-actions
