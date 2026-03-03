@@ -13,7 +13,7 @@ module.exports = ({core}) => {
         core.setFailed("VirusTotal API usage limit reached");
         process.exit(1);
     }
-    // Sleep 20 seconds to avoid rate limiting
-    sleep(20 * 1000);
+    // Sleep 30 seconds to avoid rate limiting
+    sleep(30 * 1000);
     core._apiUsageCount++;
 }

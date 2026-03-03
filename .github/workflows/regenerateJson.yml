@@ -15,29 +15,28 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v6
       with:
-        path: datastore
+        submodules: true
     - name: Create validation errors file
       run: echo "" > validationErrors.md
-    - name: Checkout validate repo
-      uses: actions/checkout@v6
-      with:
-        repository: nvaccess/addon-datastore-validation
-        path: validation
-        submodules: true
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v7
     - name: Regenerate json
       run: |
         validation/regenerateJson `
-        --dir ..\datastore\addons `
+        --dir ..\addons `
         --output validationErrors.md
     - name: Commit & Push changes
-      uses: actions-js/push@v1.4
-      with:
-        message: "[Automated] Regenerate json files"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        directory: datastore
-        branch: master
+      run: |
+        git add addons
+        if (git status --porcelain) {
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "[Automated] Regenerate json files"
+          git pull --rebase
+          git push
+        } else {
+          echo "No changes to commit; skipping commit and push."
+        }
     - name: Upload validation errors as artifact
       if: failure()
       uses: actions/upload-artifact@v6

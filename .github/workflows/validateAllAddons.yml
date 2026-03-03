@@ -20,6 +20,7 @@ jobs:
       uses: actions/checkout@v5
       with:
         ref: ${{ inputs.headRef }}
+        submodules: true
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install addon download validation dependencies
@@ -59,19 +60,8 @@ jobs:
         body: "Use tabs and unicode encoding for JSON files"
         author: github-actions <github-actions@github.com>
         add-paths: 'addons/*/*.json'
-    - name: Checkout validate repo
-      uses: actions/checkout@v5
-      with:
-        repository: nvaccess/addon-datastore-validation
-        path: validation
-        submodules: true
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v6
-    - name: Checkout transformation repo for nvdaAPIVersions.json
-      uses: actions/checkout@v5
-      with:
-        repository: nvaccess/addon-datastore-transform
-        path: transform
     - name: Validate all add-ons metadata
       run: validation/runvalidate ../addons/*/*.json ../transform/nvdaAPIVersions.json --output ../validationErrors.md
     - name: Upload validation errors as artifact

@@ -14,23 +14,17 @@ jobs:
     if: github.event.label.name == 'autoSubmissionFromIssue'
     runs-on: windows-latest
     steps:
-    - name: Checkout datastore repo
+    - name: Checkout repo
       uses: actions/checkout@v5
       with:
-        path: datastore
+        submodules: true
     - name: Get data
       id: get-data
       uses: actions/github-script@v7
       with:
         script: |
-          const setOutputFromIssue = require('./datastore/.github/workflows/getData.js')
+          const setOutputFromIssue = require('./.github/workflows/getData.js')
           setOutputFromIssue({context, core})
-    - name: Checkout validate repo
-      uses: actions/checkout@v5
-      with:
-        repository: nvaccess/addon-datastore-validation
-        submodules: true
-        path: validation
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v6
     - name: Set up Python 3.13
@@ -40,6 +34,7 @@ jobs:
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Download add-on
+      id: download-addon
       env:
         # transfer user input to env variables
         # https://blog.gitguardian.com/github-actions-security-cheat-sheet/
@@ -47,8 +42,13 @@ jobs:
       # wrap all user input in quotations to prevent RCE e.g. www.example.com/&rm -rf
       run: curl --location --output addon.nvda-addon "$env:url" 2>> validationErrors.md
     - name: Add extra message if curl fails to validation errors
-      if: failure()
+      if: ${{ failure() && steps.download-addon.outcome == 'failure' }}
       run: echo "Error with downloading add-on from download URL" >> validationErrors.md
+    - name: Upload add-on
+      uses: actions/upload-artifact@v4
+      with:
+        name: addon
+        path: addon.nvda-addon
     - name: Create JSON submission from issue
       env:
         # transfer user input to env variables to escape any code
@@ -63,7 +63,7 @@ jobs:
       run: |
         validation/runcreatejson `
         -f ..\addon.nvda-addon `
-        --dir ..\datastore\addons `
+        --dir ..\addons `
         --output ..\validationErrors.md `
         --channel=""$env:channel"" `
         --publisher=""$env:publisher"" `
@@ -82,19 +82,13 @@ jobs:
       env:
         branchName: ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
       run: |
-        cd datastore
         git config user.name github-actions
         git config user.email github-actions@github.com
         git checkout -b ${{ env.branchName }}
-        git add .
+        git add addons
         git commit -m "Submit add-on"
         # Force push to the branch, as we may need to be handling a resubmission attempt
         git push -f origin ${{ env.branchName }}
-    - name: Upload add-on
-      uses: actions/upload-artifact@v4
-      with:
-        name: addon
-        path: addon.nvda-addon
     - name: Install VirusTotal
       run: choco install vt-cli
     - name: Scan add-on with VirusTotal
