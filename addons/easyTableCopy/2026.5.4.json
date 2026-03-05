@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.5.4/easyTableCopy-2026.5.4.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "20a17c8c20dcc204e8226ed4aa1bcd032347f1a1323aacacb9a759b0da747a86",
+	"addonVersionName": "2026.5.4",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n* Fix COM object leak: `shell.application` COM objects in `copy_explorer_content`, `_copy_columns_direct`, and `script_tableStats` are now explicitly released via `del shell` in `finally` blocks.\n* Fix duplicate node detection in tree traversal: `get_tree_hierarchy` was using `hash(item)` for visited-set deduplication, which is prone to collisions. Replaced with `id(item)` (memory address) for reliable identity checks within a session.\n* Refactor magic numbers into named constants: Hardcoded values like `300`, `200`, and `15` extracted into `CLIPBOARD_INITIAL_WAIT_MS`, `CLIPBOARD_RETRY_WAIT_MS`, and `CLIPBOARD_MAX_RETRIES`.\n* Fix `terminate` cleanup: Removed unnecessary `gc.collect()` call; now properly clears instance state on addon unload.\n* Added hierarchical TreeView copy support (e.g., Input Gestures) with root-to-bottom scanning and indentation.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1772686017000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n* COM nesnesi sızıntısı giderildi: `copy_explorer_content`, `_copy_columns_direct` ve `script_tableStats` fonksiyonlarında oluşturulan `shell.application` COM nesneleri artık `finally` bloğunda `del shell` ile açıkça serbest bırakılıyor.\n* Ağaç gezintisinde yinelenen düğüm tespiti düzeltildi: `get_tree_hierarchy` içinde ziyaret seti için kullanılan `hash(item)` çakışmalara yol açabiliyordu. Oturum içinde güvenilir kimlik karşılaştırması için `id(item)` (bellek adresi) kullanımına geçildi.\n* Sihirli sayılar adlandırılmış sabitlere taşındı: `300`, `200` ve `15` gibi sabit kodlanmış değerler `CLIPBOARD_INITIAL_WAIT_MS`, `CLIPBOARD_RETRY_WAIT_MS` ve `CLIPBOARD_MAX_RETRIES` adlarıyla tanımlandı.\n* `terminate` temizliği düzeltildi: Gereksiz `gc.collect()` çağrısı kaldırıldı; eklenti kaldırılırken örnek durumu artık doğru şekilde temizleniyor.\n* Hiyerarşik TreeView kopyalama desteği eklendi: Girdi hareketleri gibi ağaç görünümlerinde kökten alta tarama ve girintileme ile tam yapı kopyalanabiliyor.\n"
+		}
+	]
+}
