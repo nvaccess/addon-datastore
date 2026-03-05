@@ -1,0 +1,63 @@
+{
+	"addonId": "CustomLabels",
+	"displayName": "Custom Labels",
+	"URL": "https://github.com/kefaslungu/CustomLabels/releases/download/2026.02/CustomLabels-2026.02.nvda-addon",
+	"description": "An NVDA addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+	"sha256": "1ad260fddd92ef6ed166136cfb59aaf20dab5ae916255ec50df10379ba040a62",
+	"addonVersionName": "2026.02",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "Kefas Lungu",
+	"sourceURL": "https://github.com/kefaslungu/CustomLabels/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kefaslungu/CustomLabels",
+	"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1772699862000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Benutzerdefinierte Beschriftung",
+			"description": "Ermöglicht es Ihnen, unbeschriftete oder unklare Steuerelemente in Anwendungen mit eigenen Beschriftungen zu versehen. So können Sie Schaltflächen, Kontrollkästchen, Registerkarten und viele weitere Elemente eindeutig kennzeichnen, wenn NVDA sie nicht zuverlässig benennt. Die Beschriftungen werden pro Anwendung gespeichert und lassen sich zentral verwalten, exportieren oder löschen.\nMit NVDA+Strg+L können Sie jederzeit schnell eine Beschriftung setzen oder bearbeiten. Weitere Tastenkombinationen erlauben das Entfernen oder Überprüfen vorhandener Beschriftungen.\nÜbersetzung von BFW Würzburg ",
+			"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels)."
+		},
+		{
+			"language": "it",
+			"displayName": "Custom Labels",
+			"description": "Un addon per NVDA che consente di aggiungere etichette personalizzate per controlli che ne sono sprovvisti, nonché di modificare quelle esistenti.",
+			"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels)."
+		},
+		{
+			"language": "ru",
+			"displayName": "Custom Labels (Пользовательские метки)",
+			"description": "Это дополнение позволяет назначать пользовательские текстовые метки для неподписанных элементов управления и редактировать существующие.",
+			"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels)."
+		},
+		{
+			"language": "tr",
+			"displayName": "Özel Etiketler",
+			"description": "Etiketlenmemiş denetimler için özel etiketler eklemenizi ve mevcut etiketleri düzenlemenizi sağlayan bir NVDA eklentisi.",
+			"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels)."
+		},
+		{
+			"language": "uk",
+			"displayName": "Користувацькі мітки",
+			"description": "Додаток NVDA, що дозволяє додавати користувацькі мітки для елементів керування без міток та редагувати наявні.",
+			"changelog": "\n\t\t* Added support for NVDA 2026.1\n\t\t* Added Ukrainian, Russian, german and Turkish translations.\n\t\t* Improved control identification using original control name.\n\t\t* Fixed labels not working in web-based applications (Electron, WebView2).\n\t\t* Fixed all buttons getting the same label in some applications.\n\t\t* Added support for labelling editable text.\n\t\t* Added option to speak description for unlabelled controls, greatly improving accessibility in Java-based applications (Settings > Custom Labels)."
+		}
+	]
+}
