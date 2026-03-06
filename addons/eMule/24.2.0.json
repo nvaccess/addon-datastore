@@ -185,5 +185,49 @@
 			"description": "Cải thiện khả năng tiếp cận của eMule's với NVDA.\neMule là chương trình P2P để tìm kiếm và chia sẻ dữ liệu.\nXem thêm thông tin về eMule tại\nhttp://www.emule-project.net",
 			"changelog": "* Compatible with NVDA 2026.1."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/13e2fd548a53724d36ca93a62fef8dac390fa5104ef3a80919a253ecc346cb27",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "13e2fd548a53724d36ca93a62fef8dac390fa5104ef3a80919a253ecc346cb27",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000081c1e1d0400",
+					"raw_md5": "4ed97bf535cd3c8ea877f0bfc45a40a0"
+				},
+				"first_submission_date": 1772790903,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1772790904,
+				"last_submission_date": 1772790903,
+				"md5": "595f77c9476e8e18073daff564ffff0a",
+				"names": [],
+				"reputation": 0,
+				"sha1": "ae0ae66370667ed236e162b26fb41df8b94e2e0b",
+				"sha256": "13e2fd548a53724d36ca93a62fef8dac390fa5104ef3a80919a253ecc346cb27",
+				"size": 225650,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
