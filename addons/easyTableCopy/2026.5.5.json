@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.5.5/easyTableCopy-2026.5.5.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "a70fd4104cc8706ad0091f9358bfa8b1f5448ba62e42d5d373a1f5da62372d77",
+	"addonVersionName": "2026.5.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n* Added web list copy support: pressing the copy shortcut on a web list (bulleted or numbered) now opens a dedicated menu with two options.\n  - Copy List (With Formatting): uses the browser's native copy to preserve fonts, colors, and links.\n  - Copy List (Plain): builds a clean <ul><li> structure with each item on its own line in plain text.\n* Web context now correctly distinguishes real tables (TABLE, GRID, LISTGRID roles) from plain lists (LIST role), preventing lists from being treated as tables.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1773203770000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n* Web listesi kopyalama desteği eklendi: bir web listesinde (madde işaretli veya numaralı) kopyalama kısayoluna basıldığında iki seçenekli bir menü açılıyor.\n  - Listeyi Kopyala (Biçimli): yazı tiplerini, renkleri ve bağlantıları korumak için tarayıcının kendi kopyalama yöntemini kullanır.\n  - Listeyi Kopyala (Düz): temiz bir `<ul><li>` yapısı oluşturur; düz metinde her öğe ayrı satırda yer alır.\n* Web bağlamında artık gerçek tablolar (TABLE, GRID, LISTGRID rolleri) ile düz listeler (LIST rolü) doğru şekilde ayırt ediliyor; listelerin tablo olarak algılanmasının önüne geçildi.\n"
+		}
+	]
+}
