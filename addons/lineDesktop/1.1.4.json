@@ -52,5 +52,49 @@
 			"description": "增強 NVDA 對 Windows 上 LINE 電腦版應用程式的無障礙支援。\n提供對聊天列表、訊息、聯絡人和訊息輸入的改進導覽體驗。\n支援語音與視訊通話、來電處理、麥克風與相機狀態播報，以及 OCR 輔助文字閱讀。",
 			"changelog": "改善視訊通話處理與來電偵測。\n新增通話中麥克風與相機狀態播報功能。\n新增跳到通話視窗快速鍵（NVDA+Windows+F）。\n改善訊息複製閱讀的穩定性。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/948589a3a0e7e163b9a03a4d1930d3c229719c5cb20c8059c7d824bd2f5e7eee",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "948589a3a0e7e163b9a03a4d1930d3c229719c5cb20c8059c7d824bd2f5e7eee",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0c0000",
+					"raw_md5": "630f192738fe4119379ad11024a757ee"
+				},
+				"first_submission_date": 1773470326,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1773470327,
+				"last_submission_date": 1773470326,
+				"md5": "c580753e5e8254bbb60393ee76e09f9c",
+				"names": [],
+				"reputation": 0,
+				"sha1": "6d3b0432bab0e367694d6fad965fb535644c5497",
+				"sha256": "948589a3a0e7e163b9a03a4d1930d3c229719c5cb20c8059c7d824bd2f5e7eee",
+				"size": 117343,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
