@@ -1,0 +1,39 @@
+{
+	"addonId": "winFormsNet48Fixes",
+	"displayName": "WinForms .NET 4.8 Fixes",
+	"URL": "https://github.com/cary-rowen/winFormsNet48Fixes/releases/download/0.2.0/winFormsNet48Fixes-0.2.0.nvda-addon",
+	"description": "Consolidated accessibility fixes for .NET 4.8 WinForms applications, including ComboBox navigation and MenuItem checked state reporting.",
+	"sha256": "9ae202db2d6ebe8f7e4092a9bce6026e0bb2448e7e9bb277d48c8017653cb715",
+	"addonVersionName": "0.2.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 3
+	},
+	"channel": "stable",
+	"publisher": "Cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/winFormsNet48Fixes",
+	"license": "GPL v2",
+	"homepage": "https://github.com/cary-rowen/winFormsNet48Fixes",
+	"changelog": "### 0.2.0\n* Restored missing MenuItem description reporting by falling back to legacy properties.\n### 0.1.0\n* Initial release.\n* Fixed ComboBox selection reporting while collapsed (#17454).\n* Fixed ToolStripMenuItem missing checked state reporting (#19335).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1773598053000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "WinForms .NET 4.8 修复",
+			"description": "针对 .NET 4.8 WinForms 应用程序的辅助功能综合修复，包括读出组合框选中项改变，读出菜单项选中状态和辅助功能描述信息。",
+			"changelog": "### 0.2.0\n* Restored missing MenuItem description reporting by falling back to legacy properties.\n### 0.1.0\n* Initial release.\n* Fixed ComboBox selection reporting while collapsed (#17454).\n* Fixed ToolStripMenuItem missing checked state reporting (#19335)."
+		}
+	]
+}
