@@ -1,0 +1,32 @@
+{
+	"addonId": "IslamicPedia",
+	"displayName": "Islamic Pedia",
+	"URL": "https://github.com/fauzan-january/islamic-pedia-nvda-addon/releases/download/v1.1.0/IslamicPedia-1.1.0.nvda-addon",
+	"description": "Solusi lengkap kebutuhan Tunanetra Muslim: Jadwal Sholat, Arah Kiblat, Kalender Hijriyah, dan masih banyak fitur canggih lainnya dalam satu addon NVDA yang aksesibel.\nCara pakai: Tekan shortcut NVDA + SHIFT + I (masuk ke mode Islamic Pedia). Tekan B atau F1 untuk menampilkan bantuan dan daftar perintah penggunaan.",
+	"sha256": "d22efbf89079e0c34d6e3ce7e271dce7e853c0fb16662d4eb01fc0bc0e74950f",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/islamic-pedia-nvda-addon/",
+	"license": "GPL v2",
+	"homepage": "https://fauzanaja.com/nvda-addon/",
+	"changelog": "- Menambahkan fitur Kalkulator Zakat untuk menghitung 5 jenis zakat: Penghasilan, Maal (Harta/Tabungan), Emas, Perak, dan Fitrah.\n- Menambahkan shortcut Z untuk membuka Kalkulator Zakat (NVDA+Shift+I lalu Z).\n- Menambahkan input dinamis pada dialog Kalkulator Zakat yang berubah sesuai jenis zakat yang dipilih dari dropdown.\n- Menambahkan auto-fetch harga emas Antam Indonesia dari harga-emas.org saat dialog zakat dibuka, dengan fallback ke harga emas internasional jika gagal.\n- Menambahkan tombol Salin Hasil pada dialog Kalkulator Zakat yang muncul otomatis setelah ada hasil perhitungan.\n- Menambahkan pengaturan volume notifikasi (slider 0-100%) dengan live preview saat tombol test ditekan.\n- Menambahkan pemilihan perangkat audio output untuk notifikasi dengan fallback otomatis ke perangkat default.\n- Menambahkan grup Pengaturan Global di bagian atas tab Notifikasi.\n- Mengoptimalkan metode pemutaran audio notifikasi dari winsound ke waveOutOpen (WinMM) untuk file WAV.\n- Mengoptimalkan pengelolaan fokus dialog menggunakan pola standar NVDA (prePopup/postPopup).\n- Memperbaiki dialog pengaturan yang tidak langsung mendapat fokus saat pertama kali dibuka setelah restart NVDA.\n- Memperbaiki tombol Batal pada dialog pengaturan yang sebelumnya tidak memiliki handler.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1773550321000,
+	"translations": []
+}
