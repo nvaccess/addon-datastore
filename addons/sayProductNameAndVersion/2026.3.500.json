@@ -138,5 +138,49 @@
 			"displayName": "Say Application Name and Version",
 			"description": "Speak the name and version of the application you are currently focused on, by pressing NVDA+Shift+v.\nPressing twice will copy this information to the clipboard, to paste in bug reports, etc.\nPressing three times copies only the version.\nThe key can be remapped.\nRead help to find tips for hearing NVDA and Windows versions.\nPlease consider a small donation: https://www.paypal.me/LukeDavis734"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/63adca17c18dcb1d412ef285ee11462fada400f2a52561b2763f76092ce43822",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "63adca17c18dcb1d412ef285ee11462fada400f2a52561b2763f76092ce43822",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1e1c150800",
+					"raw_md5": "85d9986a2614c3bb73425d08038219d3"
+				},
+				"first_submission_date": 1773647108,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1773647110,
+				"last_submission_date": 1773647108,
+				"md5": "25c1f099545c5e704949b5f4a5b43918",
+				"names": [],
+				"reputation": 0,
+				"sha1": "625bed47d9d823ca40e672b00109b009a78e6a46",
+				"sha256": "63adca17c18dcb1d412ef285ee11462fada400f2a52561b2763f76092ce43822",
+				"size": 99204,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
