@@ -95,5 +95,49 @@
 			"description": "StationPlaylist uygulamalarına yönelik desteği geliştirir. Ayrıca Studio uygulamasına her yerden global komutlar ekler.",
 			"changelog": "* In Creator's playlist editor, resolved a regression from add-on version 26.01 where NVDA was sluggish when moving through date and hour combo boxes for multi-day playlists.\n* In local Studio 6.10 and later, pressing Control+Alt+End will perform Studio command (play last parts of the focused track) instead of announcing the last column."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/46a7cbfb8200c5d7fbcf8541f185490fb0b1bd8a9cd8214720136403efbb58e4",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "46a7cbfb8200c5d7fbcf8541f185490fb0b1bd8a9cd8214720136403efbb58e4",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070400",
+					"raw_md5": "d6a9f1a73daedf5d71de2c09b7ab5672"
+				},
+				"first_submission_date": 1774146397,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1774146400,
+				"last_submission_date": 1774146397,
+				"md5": "acd8627357a8c2cab07ae6c08cb17065",
+				"names": [],
+				"reputation": 0,
+				"sha1": "b79b84fe2b9123b25b739cb025485cf5b7934fb0",
+				"sha256": "46a7cbfb8200c5d7fbcf8541f185490fb0b1bd8a9cd8214720136403efbb58e4",
+				"size": 734784,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
