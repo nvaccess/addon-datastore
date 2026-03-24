@@ -1,4 +1,4 @@
-name: Test code
+name: Test validation code
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  testCode:
+  testAllCode:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -22,24 +22,36 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-    - name: Run unit tests
+    - name: Run unit tests for transform and validation
       shell: cmd
-      # Run automated/unit tests
       run: .\rununittests.bat
-    - name: Lint
-      shell: cmd
-      # Check code with the linter
-      run: .\runlint.bat
+    - name: Run pyright for validation
+      run: uv run --group lint --directory validation pyright --threads --level warning
+    - name: Run pyright for transform
+      run: uv run --group lint --directory transform pyright --threads --level warning
+  testValidationCode:
+    defaults:
+      run:
+        shell: cmd
+        working-directory: validation
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [3.13]
+    steps:
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
+    - name: Checkout code
+      uses: actions/checkout@v5
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x64
     - name: Validate metadata
-      shell: cmd
       # E2E: test to check the script can be run, no need to actually test the file.
       # The internal checks are covered with unit tests.
       run: .\runvalidate.bat --dry-run tests/testData/addons/fake/13.0.0.json tests/testData/nvdaAPIVersions.json
-    - name: Get sha256
-      shell: cmd
-      # E2E: test to check the script can be run
-      run: .\runsha.bat tests/testData/fake.nvda-addon
     - name: Generate json file
-      shell: cmd
       # E2E: test to check the script can be run
       run: .\runcreatejson.bat -f tests/testData/fake.nvda-addon --dir tests/testOutput/test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"
