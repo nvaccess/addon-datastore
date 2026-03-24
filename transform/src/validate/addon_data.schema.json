@@ -31,7 +31,7 @@
 	],
 	"properties": {
 		"addonId": {
-			"$id": "#/properties/addonId",
+			"$id": "urn:nvaccess:addon-datastore:transform:validate:addon_data:addonId",
 			"default": "",
 			"examples": [
 				"easyAddonTech.XYZ"
@@ -55,7 +55,7 @@
 			"description": "The add-on has been tested up to and including this version of NVDA"
 		},
 		"channel": {
-			"$id": "#/properties/channel",
+			"$id": "urn:nvaccess:addon-datastore:transform:validate:addon_data:channel",
 			"default": "",
 			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable', 'beta' or 'dev'",
 			"examples": [

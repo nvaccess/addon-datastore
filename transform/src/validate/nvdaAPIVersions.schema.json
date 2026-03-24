@@ -10,18 +10,18 @@
 			],
 			"properties": {
 				"description": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/description",
+					"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:description",
 					"type": "string",
 					"title": "A description of the API version",
 					"example": "2021.1"
 				},
 				"apiVer": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/apiVer",
+					"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:apiVer",
 					"$ref": "#/$defs/canonicalVersion",
 					"title": "The NVDA API version number"
 				},
 				"backCompatTo": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/backCompatTo",
+					"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:backCompatTo",
 					"$ref": "#/$defs/canonicalVersion",
 					"title": "The API version this is backwards compatible to"
 				}
