@@ -110,9 +110,11 @@ class TestTransformation(unittest.TestCase):
 		if Path(DATA_DIR._root.value).exists():
 			shutil.rmtree(DATA_DIR._root.value)
 
-	def runTransformation(self) -> subprocess.CompletedProcess:
+	def runTransformation(self, *, expectFailure: bool = False) -> subprocess.CompletedProcess:
 		"""
-		Runs the transformation and raises a CalledProcessError on failure.
+		Runs the transformation.
+		When expectFailure is False, raises AssertionError with rich diagnostics on failure.
+		When expectFailure is True, raises CalledProcessError on failure.
 		"""
 		command = (
 			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value}"
@@ -125,15 +127,14 @@ class TestTransformation(unittest.TestCase):
 			stdout=subprocess.PIPE,
 			stderr=subprocess.PIPE,
 		)
-		try:
-			transformProcess.check_returncode()  # Raise CalledProcessError if the exit code is non-zero.
-		except subprocess.CalledProcessError as err:
+		if transformProcess.returncode != 0:
 			stdout = (transformProcess.stdout or b"").decode("utf-8", errors="replace")
 			stderr = (transformProcess.stderr or b"").decode("utf-8", errors="replace")
 			debugContext = textwrap.dedent(
 				f"""
 
 				--- transform subprocess debug ---
+				exitCode: {transformProcess.returncode}
 				cwd: {TRANSFORM_ROOT}
 				command: {command}
 				nvdaAPIVersionsPath: {DATA_DIR.nvdaAPIVersionsPath.value}
@@ -145,13 +146,15 @@ class TestTransformation(unittest.TestCase):
 				{stderr}
 				--- end transform subprocess debug ---
 				""",
-			).encode("utf-8")
-			raise subprocess.CalledProcessError(
-				err.returncode,
-				err.cmd,
-				output=err.output,
-				stderr=(err.stderr or b"") + debugContext,
-			) from err
+			)
+			if expectFailure:
+				raise subprocess.CalledProcessError(
+					transformProcess.returncode,
+					command,
+					output=transformProcess.stdout,
+					stderr=transformProcess.stderr,
+				)
+			raise AssertionError(debugContext)
 		return transformProcess
 
 	def test_transform_empty(self):
@@ -168,7 +171,7 @@ class TestTransformation(unittest.TestCase):
 		# Make the folder before transform
 		Path(DATA_DIR.OUTPUT.value).mkdir(parents=True, exist_ok=True)
 		with self.assertRaises(subprocess.CalledProcessError) as transformError:
-			self.runTransformation()
+			self.runTransformation(expectFailure=True)
 
 		doubleEscapedDir = DATA_DIR.OUTPUT.value.replace(
 			"\\",
