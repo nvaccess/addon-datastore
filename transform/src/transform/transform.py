@@ -28,7 +28,7 @@ from src.validate.validate import (
 log = logging.getLogger()
 
 
-def _isAddonCompatible(addon: Addon, nvdaAPIVersion: VersionCompatibility) -> bool:
+def isAddonCompatible(addon: Addon, nvdaAPIVersion: VersionCompatibility) -> bool:
 	"""
 	Confirms that the addon has been tested with an API version that the nvdaAPIVersion is compatible with.
 	"""
@@ -78,7 +78,7 @@ def getLatestAddons(addons: Iterable[Addon], nvdaAPIVersions: Tuple[VersionCompa
 		for nvdaAPIVersion in nvdaAPIVersions:
 			addonsForVersionChannel = latestAddons[nvdaAPIVersion.apiVer][addon.channel]
 			if (
-				_isAddonCompatible(addon, nvdaAPIVersion)
+				isAddonCompatible(addon, nvdaAPIVersion)
 				and _isAddonNewer(addonsForVersionChannel, addon)
 			):
 				addonsForVersionChannel[addon.addonId] = addon
