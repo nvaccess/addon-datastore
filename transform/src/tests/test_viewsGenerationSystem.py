@@ -24,12 +24,14 @@ log = getLogger()
 
 versionNumRegex = re.compile(r"([0-9]+)\.([0-9]+)\.([0-9]+)")
 
+TRANSFORM_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
 
 class DATA_DIR(str, Enum):
 	_root = os.path.join(os.path.dirname(__file__), "test_data")
 	INPUT = os.path.join(_root, "input")
 	OUTPUT = os.path.join(_root, "output")
-	nvdaAPIVersionsPath = os.path.join(os.path.dirname(__file__), "..", "..", "..", "nvdaAPIVersions.json")
+	nvdaAPIVersionsPath = os.path.join(TRANSFORM_ROOT, "nvdaAPIVersions.json")
 
 
 @dataclass
@@ -108,11 +110,10 @@ class TestTransformation(unittest.TestCase):
 		"""
 		Runs the transformation and raises a CalledProcessError on failure.
 		"""
-		transformRoot = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 		transformProcess = subprocess.run(
 			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value} {DATA_DIR.INPUT.value} {DATA_DIR.OUTPUT.value}",
 			shell=True,
-			cwd=transformRoot,
+			cwd=TRANSFORM_ROOT,
 			stderr=subprocess.PIPE  # debugging note: comment this out to log stderr from the test process
 		)
 		transformProcess.check_returncode()  # Raise CalledProcessError if the exit code is non-zero.
