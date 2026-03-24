@@ -49,8 +49,11 @@ def generateAddonChannelDict() -> AddonChannelDict:
 	# Identical add-on IDs may have different casing
 	# due to legacy add-on submissions.
 	# This can be removed when old submissions are given updated casing.
-	return cast(AddonChannelDict, {
-		"beta": CaseInsensitiveDict(),
-		"stable": CaseInsensitiveDict(),
-		"dev": CaseInsensitiveDict(),
-	})
+	return cast(
+		AddonChannelDict,
+		{
+			"beta": CaseInsensitiveDict(),
+			"stable": CaseInsensitiveDict(),
+			"dev": CaseInsensitiveDict(),
+		},
+	)

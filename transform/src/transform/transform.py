@@ -62,7 +62,8 @@ def getSupportedLanguages(addons: WriteableAddons) -> set[str]:
 
 
 def getLatestAddons(
-	addons: Iterable[Addon], nvdaAPIVersions: tuple[VersionCompatibility, ...]
+	addons: Iterable[Addon],
+	nvdaAPIVersions: tuple[VersionCompatibility, ...],
 ) -> WriteableAddons:
 	"""
 	Given a set of addons and NVDA versions, create a dictionary mapping each nvdaAPIVersion and channel
