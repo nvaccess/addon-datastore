@@ -38,7 +38,6 @@ def MockAddon() -> Addon:
 	)
 
 
-
 class Test_isAddonCompatible(unittest.TestCase):
 	def test_valid_with_api(self):
 		"""Confirm an addon is compatible with a fully tested API"""
