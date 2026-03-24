@@ -4,7 +4,7 @@
 
 from dataclasses import dataclass
 from typing import (
-	cast
+	cast,
 	Literal,
 	NamedTuple,
 )
