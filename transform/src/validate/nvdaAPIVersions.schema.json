@@ -1,4 +1,5 @@
 {
+	"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:schema",
 	"type": "array",
 	"items": { "$ref": "#/$defs/nvdaAPIVersionInfo" },
 	"$defs": {
@@ -17,17 +18,18 @@
 				},
 				"apiVer": {
 					"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:apiVer",
-					"$ref": "#/$defs/canonicalVersion",
+					"$ref": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:canonicalVersion",
 					"title": "The NVDA API version number"
 				},
 				"backCompatTo": {
 					"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:backCompatTo",
-					"$ref": "#/$defs/canonicalVersion",
+					"$ref": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:canonicalVersion",
 					"title": "The API version this is backwards compatible to"
 				}
 			}
 		},
 		"canonicalVersion": {
+			"$id": "urn:nvaccess:addon-datastore:transform:validate:nvdaAPIVersions:canonicalVersion",
 			"default": {},
 			"type": "object",
 			"examples": [
