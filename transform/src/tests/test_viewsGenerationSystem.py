@@ -86,7 +86,7 @@ def write_addons(*addons: InputAddonVersion):
 	"""Write mock addon data to the input directory.
 	Arguments should be tuples of the form (path, addonDataBlob)"""
 	for addon in addons:
-		addonWritePath = os.path.join(DATA_DIR.INPUT, addon.path)
+		addonWritePath = os.path.join(DATA_DIR.INPUT.value, addon.path)
 		Path(os.path.dirname(addonWritePath)).mkdir(parents=True, exist_ok=True)
 		with open(addonWritePath, "w") as addonFile:
 			addonFile.write(addon.addonDataBlob)
@@ -146,9 +146,9 @@ class TestTransformation(unittest.TestCase):
 	def _assertAddonDataWritten(self, *expectedAddons: ExpectedAddonVersion):
 		"""Confirms that an addon is written to a path and the file contains an expected version.
 		Arguments should be tuples of the form (expectedPathToAddon, expectedAddonVersionStr)"""
-		self.assertEqual(len(glob.glob(f"{DATA_DIR.OUTPUT}/**/**.json", recursive=True)), len(expectedAddons))
+		self.assertEqual(len(glob.glob(f"{DATA_DIR.OUTPUT.value}/**/**.json", recursive=True)), len(expectedAddons))
 		for expectedAddon in expectedAddons:
-			fullPathToAddon = os.path.join(DATA_DIR.OUTPUT, expectedAddon.path)
+			fullPathToAddon = os.path.join(DATA_DIR.OUTPUT.value, expectedAddon.path)
 			self.assertTrue(Path(fullPathToAddon).exists())
 			with open(fullPathToAddon, "r") as expectedAddonFile:
 				addonData = json.load(expectedAddonFile)
