@@ -2,8 +2,7 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from src.transform.datastructures import Addon
-from unittest.mock import create_autospec, Mock
+from src.transform.datastructures import Addon, MajorMinorPatch
 
 
 def MockAddon() -> Addon:
@@ -11,4 +10,12 @@ def MockAddon() -> Addon:
 	An instance of a dataclass, e.g. Addon, can't be created without providing all the required fields.
 	This strategy is based on the discussion here: https://bugs.python.org/issue36580
 	"""
-	return Mock(spec=create_autospec(Addon))()
+	return Addon(
+		addonId="mock-addon",
+		addonVersion=MajorMinorPatch(0, 0, 0),
+		pathToData="mock-path",
+		channel="stable",
+		minNvdaAPIVersion=MajorMinorPatch(0, 0, 0),
+		lastTestedVersion=MajorMinorPatch(0, 0, 0),
+		translations=[],
+	)

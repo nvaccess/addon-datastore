@@ -109,7 +109,7 @@ class TestTransformation(unittest.TestCase):
 		Runs the transformation and raises a CalledProcessError on failure.
 		"""
 		transformProcess = subprocess.run(
-			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath} {DATA_DIR.INPUT} {DATA_DIR.OUTPUT}",
+			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value} {DATA_DIR.INPUT.value} {DATA_DIR.OUTPUT.value}",
 			shell=True,
 			stderr=subprocess.PIPE  # debugging note: comment this out to log stderr from the test process
 		)
@@ -135,7 +135,7 @@ class TestTransformation(unittest.TestCase):
 		with self.assertRaises(subprocess.CalledProcessError) as transformError:
 			self.runTransformation()
 
-		doubleEscapedDir = DATA_DIR.OUTPUT.replace('\\', '\\\\')  # stderr escapes all the backslashes twice
+		doubleEscapedDir = DATA_DIR.OUTPUT.value.replace('\\', '\\\\')  # stderr escapes all the backslashes twice
 		self.assertIn(
 			"FileExistsError: [WinError 183] Cannot create a file when that file already exists: "
 			f"'{doubleEscapedDir}'",
