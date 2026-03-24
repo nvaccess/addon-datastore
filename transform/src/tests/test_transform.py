@@ -1,4 +1,4 @@
-# Copyright (C) 2021 NV Access Limited
+# Copyright (C) 2021-2026 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -6,7 +6,6 @@ from copy import deepcopy
 
 from src.transform.datastructures import MajorMinorPatch, VersionCompatibility
 from src.transform.transform import getLatestAddons, _isAddonCompatible
-from src.tests.generateData import MockAddon
 import unittest
 
 V_2020_1 = MajorMinorPatch(2020, 1)
@@ -21,6 +20,23 @@ nvdaAPIVersion2020_3 = VersionCompatibility(V_2020_3, V_2020_1)
 nvdaAPIVersion2021_1 = VersionCompatibility(V_2021_1, V_2021_1)
 nvdaAPIVersion2021_2 = VersionCompatibility(V_2021_2, V_2021_1)
 nvdaAPIVersion2022_1 = VersionCompatibility(V_2022_1, V_2022_1)
+
+
+def MockAddon() -> Addon:
+	"""Mocks the creation of an Addon. Specific required data for testing should be overwritten.
+	An instance of a dataclass, e.g. Addon, can't be created without providing all the required fields.
+	This strategy is based on the discussion here: https://bugs.python.org/issue36580
+	"""
+	return Addon(
+		addonId="mock-addon",
+		addonVersion=MajorMinorPatch(0, 0, 0),
+		pathToData="mock-path",
+		channel="stable",
+		minNvdaAPIVersion=MajorMinorPatch(0, 0, 0),
+		lastTestedVersion=MajorMinorPatch(0, 0, 0),
+		translations=[],
+	)
+
 
 
 class Test_isAddonCompatible(unittest.TestCase):
