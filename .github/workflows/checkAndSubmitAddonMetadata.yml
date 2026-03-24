@@ -440,4 +440,3 @@ jobs:
     needs: [createReviewComment]
     if: ${{ always() && needs.createReviewComment.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
-

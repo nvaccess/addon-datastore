@@ -28,4 +28,3 @@ To try validating an addon submission on your own machine.
 From cmd.exe:
 
 1. From the repo folder, run: `runvalidate <pathToAddonMetadataFile.json> <pathToFileWithAPIVersions.json>`
-

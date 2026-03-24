@@ -25,7 +25,7 @@ The add-on store includes the following security measures:
   - NV Access can manage [code scanning alerts](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts), available from the Code scanning link from the [Security page](https://github.com/nvaccess/addon-datastore/security).
 - [Virus Total](https://www.virustotal.com/) is used to scan submitted add-ons.
 If malicious content is detected, the add-on will not be automatically included in the store.
-Please contact the flagged security vendors to get them to review and unflag the false positive. 
+Please contact the flagged security vendors to get them to review and unflag the false positive.
 Please email info@nvaccess.org if you need assistance with this process.
 
 ## Human review process / code audit

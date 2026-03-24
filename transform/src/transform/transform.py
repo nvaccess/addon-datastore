@@ -17,7 +17,7 @@ from .datastructures import (
 	generateAddonChannelDict,
 	MajorMinorPatch,
 	VersionCompatibility,
-	WriteableAddons
+	WriteableAddons,
 )
 from src.validate.validate import (
 	ValidationError,
@@ -60,7 +60,9 @@ def getSupportedLanguages(addons: WriteableAddons) -> Set[str]:
 	for apiVersion in addons:
 		for channel in addons[apiVersion]:
 			for addonId in addons[apiVersion][channel]:
-				supportedLanguages.update({t["language"] for t in addons[apiVersion][channel][addonId].translations})
+				supportedLanguages.update(
+					{t["language"] for t in addons[apiVersion][channel][addonId].translations}
+				)
 	return supportedLanguages
 
 
@@ -71,16 +73,12 @@ def getLatestAddons(addons: Iterable[Addon], nvdaAPIVersions: Tuple[VersionCompa
 	"""
 	uniqueApiVersions = set(nvdaAPIVersion.apiVer for nvdaAPIVersion in nvdaAPIVersions)
 	latestAddons: WriteableAddons = dict(
-		(nvdaAPIVersion, generateAddonChannelDict())
-		for nvdaAPIVersion in uniqueApiVersions
+		(nvdaAPIVersion, generateAddonChannelDict()) for nvdaAPIVersion in uniqueApiVersions
 	)
 	for addon in addons:
 		for nvdaAPIVersion in nvdaAPIVersions:
 			addonsForVersionChannel = latestAddons[nvdaAPIVersion.apiVer][addon.channel]
-			if (
-				_isAddonCompatible(addon, nvdaAPIVersion)
-				and _isAddonNewer(addonsForVersionChannel, addon)
-			):
+			if _isAddonCompatible(addon, nvdaAPIVersion) and _isAddonNewer(addonsForVersionChannel, addon):
 				addonsForVersionChannel[addon.addonId] = addon
 				log.error(f"added {addon.addonId} {addon.addonVersion}")
 			else:
@@ -138,8 +136,12 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: Set[
 						translatedAddonData["description"] = addonTranslations[lang]["description"]
 					elif langWithoutLocale in addonTranslations:
 						# fallback to lang without locale translated version
-						translatedAddonData["displayName"] = addonTranslations[langWithoutLocale]["displayName"]
-						translatedAddonData["description"] = addonTranslations[langWithoutLocale]["description"]
+						translatedAddonData["displayName"] = addonTranslations[langWithoutLocale][
+							"displayName"
+						]
+						translatedAddonData["description"] = addonTranslations[langWithoutLocale][
+							"description"
+						]
 					else:
 						# fallback and update to english
 						translatedAddonData["displayName"] = addonData["displayName"]
@@ -192,7 +194,8 @@ def readnvdaAPIVersionInfo(pathToFile: str) -> Tuple[VersionCompatibility]:
 		VersionCompatibility(
 			apiVer=MajorMinorPatch(**version["apiVer"]),
 			backCompatTo=MajorMinorPatch(**version["backCompatTo"]),
-		) for version in nvdaAPIVersionData
+		)
+		for version in nvdaAPIVersionData
 	)
 
 

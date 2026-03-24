@@ -19,7 +19,7 @@ class JSONSchemaPaths(str, Enum):
 
 
 def validateJson(data: JsonObjT, schemaPath: str) -> None:
-	""" Ensure that the loaded metadata conforms to the schema.
+	"""Ensure that the loaded metadata conforms to the schema.
 	Raise error if not.
 	"""
 	with open(schemaPath) as f:
