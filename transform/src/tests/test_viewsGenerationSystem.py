@@ -16,6 +16,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import textwrap
 from src.transform.datastructures import MajorMinorPatch
 import subprocess
 import unittest
@@ -113,13 +114,44 @@ class TestTransformation(unittest.TestCase):
 		"""
 		Runs the transformation and raises a CalledProcessError on failure.
 		"""
+		command = (
+			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value}"
+			f" {DATA_DIR.INPUT.value} {DATA_DIR.OUTPUT.value}"
+		)
 		transformProcess = subprocess.run(
-			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value} {DATA_DIR.INPUT.value} {DATA_DIR.OUTPUT.value}",
+			command,
 			shell=True,
 			cwd=TRANSFORM_ROOT,
-			stderr=subprocess.PIPE,  # debugging note: comment this out to log stderr from the test process
+			stdout=subprocess.PIPE,
+			stderr=subprocess.PIPE,
 		)
-		transformProcess.check_returncode()  # Raise CalledProcessError if the exit code is non-zero.
+		try:
+			transformProcess.check_returncode()  # Raise CalledProcessError if the exit code is non-zero.
+		except subprocess.CalledProcessError as err:
+			stdout = (transformProcess.stdout or b"").decode("utf-8", errors="replace")
+			stderr = (transformProcess.stderr or b"").decode("utf-8", errors="replace")
+			debugContext = textwrap.dedent(
+				f"""
+
+				--- transform subprocess debug ---
+				cwd: {TRANSFORM_ROOT}
+				command: {command}
+				nvdaAPIVersionsPath: {DATA_DIR.nvdaAPIVersionsPath.value}
+				inputPath: {DATA_DIR.INPUT.value}
+				outputPath: {DATA_DIR.OUTPUT.value}
+				stdout:
+				{stdout}
+				stderr:
+				{stderr}
+				--- end transform subprocess debug ---
+				"""
+			).encode("utf-8")
+			raise subprocess.CalledProcessError(
+				err.returncode,
+				err.cmd,
+				output=err.output,
+				stderr=(err.stderr or b"") + debugContext,
+			) from err
 		return transformProcess
 
 	def test_transform_empty(self):
