@@ -4,7 +4,7 @@
 
 from copy import deepcopy
 
-from src.transform.datastructures import MajorMinorPatch, VersionCompatibility
+from src.transform.datastructures import Addon, MajorMinorPatch, VersionCompatibility
 from src.transform.transform import getLatestAddons, _isAddonCompatible
 import unittest
 
