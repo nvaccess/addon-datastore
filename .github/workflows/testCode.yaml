@@ -3,8 +3,12 @@ name: Test validation code
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - addons/**
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - addons/**
 
 jobs:
   testAllCode:
