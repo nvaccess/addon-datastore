@@ -61,7 +61,7 @@ def getSupportedLanguages(addons: WriteableAddons) -> Set[str]:
 		for channel in addons[apiVersion]:
 			for addonId in addons[apiVersion][channel]:
 				supportedLanguages.update(
-					{t["language"] for t in addons[apiVersion][channel][addonId].translations}
+					{t["language"] for t in addons[apiVersion][channel][addonId].translations},
 				)
 	return supportedLanguages
 

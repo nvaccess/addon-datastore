@@ -144,7 +144,7 @@ class TestTransformation(unittest.TestCase):
 				stderr:
 				{stderr}
 				--- end transform subprocess debug ---
-				"""
+				""",
 			).encode("utf-8")
 			raise subprocess.CalledProcessError(
 				err.returncode,
@@ -171,7 +171,8 @@ class TestTransformation(unittest.TestCase):
 			self.runTransformation()
 
 		doubleEscapedDir = DATA_DIR.OUTPUT.value.replace(
-			"\\", "\\\\"
+			"\\",
+			"\\\\",
 		)  # stderr escapes all the backslashes twice
 		self.assertIn(
 			"FileExistsError: [WinError 183] Cannot create a file when that file already exists: "
@@ -184,7 +185,8 @@ class TestTransformation(unittest.TestCase):
 		"""Confirms that an addon is written to a path and the file contains an expected version.
 		Arguments should be tuples of the form (expectedPathToAddon, expectedAddonVersionStr)"""
 		self.assertEqual(
-			len(glob.glob(f"{DATA_DIR.OUTPUT.value}/**/**.json", recursive=True)), len(expectedAddons)
+			len(glob.glob(f"{DATA_DIR.OUTPUT.value}/**/**.json", recursive=True)),
+			len(expectedAddons),
 		)
 		for expectedAddon in expectedAddons:
 			fullPathToAddon = os.path.join(DATA_DIR.OUTPUT.value, expectedAddon.path)
