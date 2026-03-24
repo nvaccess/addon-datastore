@@ -108,9 +108,11 @@ class TestTransformation(unittest.TestCase):
 		"""
 		Runs the transformation and raises a CalledProcessError on failure.
 		"""
+		transformRoot = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 		transformProcess = subprocess.run(
 			f"python -m src.transform {DATA_DIR.nvdaAPIVersionsPath.value} {DATA_DIR.INPUT.value} {DATA_DIR.OUTPUT.value}",
 			shell=True,
+			cwd=transformRoot,
 			stderr=subprocess.PIPE  # debugging note: comment this out to log stderr from the test process
 		)
 		transformProcess.check_returncode()  # Raise CalledProcessError if the exit code is non-zero.
