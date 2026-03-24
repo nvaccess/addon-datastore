@@ -1,12 +1,12 @@
-name: Test validation code
+name: Test validation and transform code
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths-ignore:
       - addons/**
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     paths-ignore:
       - addons/**
 
