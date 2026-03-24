@@ -5,7 +5,7 @@
 from copy import deepcopy
 
 from src.transform.datastructures import Addon, MajorMinorPatch, VersionCompatibility
-from src.transform.transform import getLatestAddons, _isAddonCompatible
+from src.transform.transform import getLatestAddons, isAddonCompatible
 import unittest
 
 V_2020_1 = MajorMinorPatch(2020, 1)
@@ -44,28 +44,28 @@ class Test_isAddonCompatible(unittest.TestCase):
 		addon = MockAddon()
 		addon.minNvdaAPIVersion = V_2020_1
 		addon.lastTestedVersion = V_2020_2
-		self.assertTrue(_isAddonCompatible(addon, nvdaAPIVersion2020_2))
+		self.assertTrue(isAddonCompatible(addon, nvdaAPIVersion2020_2))
 
 	def test_valid_with_backwards_compatible_api(self):
 		"""Confirm an addon is compatible with a backwards compatible API"""
 		addon = MockAddon()
 		addon.minNvdaAPIVersion = V_2020_1
 		addon.lastTestedVersion = V_2020_2
-		self.assertTrue(_isAddonCompatible(addon, nvdaAPIVersion2020_3))
+		self.assertTrue(isAddonCompatible(addon, nvdaAPIVersion2020_3))
 
 	def test_not_valid_because_breaking_api(self):
 		"""Confirm an addon is not compatible with a breaking API"""
 		addon = MockAddon()
 		addon.minNvdaAPIVersion = V_2020_1
 		addon.lastTestedVersion = V_2020_2
-		self.assertFalse(_isAddonCompatible(addon, nvdaAPIVersion2021_1))
+		self.assertFalse(isAddonCompatible(addon, nvdaAPIVersion2021_1))
 
 	def test_not_valid_because_old_api(self):
 		"""Confirm an addon is not compatible with an old API"""
 		addon = MockAddon()
 		addon.minNvdaAPIVersion = V_2021_1
 		addon.lastTestedVersion = V_2021_2
-		self.assertFalse(_isAddonCompatible(addon, nvdaAPIVersion2020_3))
+		self.assertFalse(isAddonCompatible(addon, nvdaAPIVersion2020_3))
 
 
 class Test_getLatestAddons(unittest.TestCase):

@@ -29,7 +29,7 @@ parser.add_argument(
 parser.add_argument(
 	"--loglevel",
 	required=False,
-	help=f"The loglevel, one of {logging._nameToLevel}",
+	help=f"The loglevel, one of {list(logging.getLevelNamesMapping().keys())}",
 	dest="loglevel",
 	default=logging.WARNING,
 )

@@ -1,11 +1,10 @@
-# Copyright (C) 2021-2023 NV Access Limited
+# Copyright (C) 2021-2026 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 from dataclasses import dataclass
 from typing import (
-	Dict,
-	List,
+	cast
 	Literal,
 	NamedTuple,
 )
@@ -39,19 +38,19 @@ class Addon:
 	channel: AddonChannels
 	minNvdaAPIVersion: MajorMinorPatch
 	lastTestedVersion: MajorMinorPatch
-	translations: List[Dict[str, str]]
+	translations: list[dict[str, str]]
 
 
-AddonChannelDict = Dict[AddonChannels, Dict[str, Addon]]
-WriteableAddons = Dict[MajorMinorPatch, AddonChannelDict]
+AddonChannelDict = dict[AddonChannels, dict[str, Addon]]
+WriteableAddons = dict[MajorMinorPatch, AddonChannelDict]
 
 
 def generateAddonChannelDict() -> AddonChannelDict:
 	# Identical add-on IDs may have different casing
 	# due to legacy add-on submissions.
 	# This can be removed when old submissions are given updated casing.
-	return {
+	return cast(AddonChannelDict, {
 		"beta": CaseInsensitiveDict(),
 		"stable": CaseInsensitiveDict(),
 		"dev": CaseInsensitiveDict(),
-	}
+	})

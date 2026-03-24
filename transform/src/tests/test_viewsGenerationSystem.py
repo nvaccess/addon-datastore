@@ -1,4 +1,4 @@
-# Copyright (C) 2021 NV Access Limited
+# Copyright (C) 2021-2026 NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,9 +29,9 @@ TRANSFORM_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "
 
 
 class DATA_DIR(str, Enum):
-	_root = os.path.join(os.path.dirname(__file__), "test_data")
-	INPUT = os.path.join(_root, "input")
-	OUTPUT = os.path.join(_root, "output")
+	ROOT = os.path.join(os.path.dirname(__file__), "test_data")
+	INPUT = os.path.join(ROOT, "input")
+	OUTPUT = os.path.join(ROOT, "output")
 	nvdaAPIVersionsPath = os.path.join(TRANSFORM_ROOT, "nvdaAPIVersions.json")
 
 
@@ -56,12 +56,21 @@ def addonJson(path: str, channel: str, *, required: str, tested: str) -> InputAd
 	tested is the lastTestedVersion as a version string
 	"""
 	pathRegex = re.compile(r"^(?P<addonId>[A-z0-9]+)/(?P<version>[0-9]+\.[0-9]+\.[0-9]+)\.json$")
-	addonId = pathRegex.match(path).group("addonId")
-	addonVersionStr = pathRegex.match(path).group("version")
+	pathMatch = pathRegex.match(path)
+	if pathMatch is None:
+		raise ValueError(f"Invalid addon path format: {path}")
+	addonId = pathMatch.group("addonId")
+	addonVersionStr = pathMatch.group("version")
 
 	addonVersion = versionNumRegex.match(addonVersionStr)
 	minVersion = versionNumRegex.match(required)
 	testedVersion = versionNumRegex.match(tested)
+	if addonVersion is None:
+		raise ValueError(f"Invalid addon version format: {addonVersionStr}")
+	if minVersion is None:
+		raise ValueError(f"Invalid required version format: {required}")
+	if testedVersion is None:
+		raise ValueError(f"Invalid tested version format: {tested}")
 
 	return InputAddonVersion(
 		path,
@@ -102,15 +111,15 @@ class TestTransformation(unittest.TestCase):
 	@classmethod
 	def setUpClass(cls):
 		"""Empty the test data before the start of tests"""
-		if Path(DATA_DIR._root.value).exists():
-			shutil.rmtree(DATA_DIR._root.value)
+		if Path(DATA_DIR.ROOT.value).exists():
+			shutil.rmtree(DATA_DIR.ROOT.value)
 
 	def tearDown(self):
 		"""Empty the test data after each test"""
-		if Path(DATA_DIR._root.value).exists():
-			shutil.rmtree(DATA_DIR._root.value)
+		if Path(DATA_DIR.ROOT.value).exists():
+			shutil.rmtree(DATA_DIR.ROOT.value)
 
-	def runTransformation(self, *, expectFailure: bool = False) -> subprocess.CompletedProcess:
+	def runTransformation(self, *, expectFailure: bool = False) -> subprocess.CompletedProcess[bytes]:
 		"""
 		Runs the transformation.
 		When expectFailure is False, raises AssertionError with rich diagnostics on failure.
