@@ -29,7 +29,7 @@ class DATA_DIR(str, Enum):
 	_root = os.path.join(os.path.dirname(__file__), "test_data")
 	INPUT = os.path.join(_root, "input")
 	OUTPUT = os.path.join(_root, "output")
-	nvdaAPIVersionsPath = os.path.join(os.path.dirname(__file__), "..", "..", "nvdaAPIVersions.json")
+	nvdaAPIVersionsPath = os.path.join(os.path.dirname(__file__), "..", "..", "..", "nvdaAPIVersions.json")
 
 
 @dataclass
