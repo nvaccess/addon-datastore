@@ -55,7 +55,7 @@ def addonJson(path: str, channel: str, *, required: str, tested: str) -> InputAd
 	required is the minNVDAVersion as a version string
 	tested is the lastTestedVersion as a version string
 	"""
-	pathRegex = re.compile(r"^(?P<addonId>[A-z0-9]+)/(?P<version>[0-9]+\.[0-9]+\.[0-9]+)\.json$")
+	pathRegex = re.compile(r"^(?P<addonId>[A-Za-z0-9]+)/(?P<version>[0-9]+\.[0-9]+\.[0-9]+)\.json$")
 	pathMatch = pathRegex.match(path)
 	if pathMatch is None:
 		raise ValueError(f"Invalid addon path format: {path}")
