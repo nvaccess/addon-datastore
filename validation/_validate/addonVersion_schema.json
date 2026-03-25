@@ -1,0 +1,423 @@
+{
+	"examples": [
+		{
+			"addonId": "easyAddonTech.XYZ",
+			"addonVersionNumber": {
+				"major": 21,
+				"minor": 6,
+				"patch": 0
+			},
+			"addonVersionName": "21.6.0",
+			"displayName": "My addon",
+			"publisher": "easyAddonTech",
+			"description": "Makes doing XYZ easier",
+			"homepage": "https://github.com/nvaccess/addon-datastore",
+			"minNVDAVersion": {
+				"major": 2019,
+				"minor": 3,
+				"patch": 0
+			},
+			"lastTestedVersion": {
+				"major": 2020,
+				"minor": 4,
+				"patch": 0
+			},
+			"channel": "beta",
+			"URL": "https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon",
+			"sha256": "69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82",
+			"sourceURL": "https://github.com/nvaccess/addon-datastore/",
+			"license": "GPL v2",
+			"licenseURL": "https://github.com/nvaccess/addon-datastore/license.MD",
+			"changelog": "New features",
+			"translations": [
+				{
+					"language": "de",
+					"displayName": "Mein Addon",
+					"description": "erleichtert das Durchführen von xyz",
+					"changelog": "Neue Funktionen"
+				}
+			],
+			"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248",
+			"submissionTime": 1723523492363
+		}
+	],
+	"title": "Root",
+	"type": "object",
+	"description": "Information about an addon release",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/schema-addon-metadata-1.json",
+	"required": [
+		"addonId",
+		"addonVersionNumber",
+		"addonVersionName",
+		"displayName",
+		"publisher",
+		"description",
+		"minNVDAVersion",
+		"lastTestedVersion",
+		"channel",
+		"URL",
+		"sha256",
+		"sourceURL",
+		"license",
+		"translations"
+	],
+	"properties": {
+		"addonId": {
+			"$id": "#/properties/addonId",
+			"default": "",
+			"description": "The ID for the addon, matches the name field in the addon manifest and the folder name for the submission.",
+			"examples": [
+				"easyAddonTech.XYZ"
+			],
+			"title": "The ID for the addon",
+			"type": "string"
+		},
+		"addonVersionNumber": {
+			"$ref": "#/$defs/canonicalVersion",
+			"title": "The addon version number",
+			"description": "Pure numerical representation of the version being released.",
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"major": 21,
+					"minor": 6,
+					"patch": 0
+				}
+			]
+		},
+		"addonVersionName": {
+			"title": "The addon version name",
+			"description": "The addon version being released. Must match the version in the addon manifest and the file name for the submission.",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"21.6.0",
+				"21.6",
+				"21.06"
+			]
+		},
+		"displayName": {
+			"$id": "#/properties/displayName",
+			"default": "",
+			"description": "The name that will be displayed in English for the addon.",
+			"examples": [
+				"My addon"
+			],
+			"title": "The display name (en) of the addon",
+			"type": "string"
+		},
+		"publisher": {
+			"$id": "#/properties/publisher",
+			"default": "",
+			"description": "The name of the individual, group, or company responsible for the addon.",
+			"examples": [
+				"NV Access"
+			],
+			"title": "The publisher name for the addon",
+			"type": "string"
+		},
+		"description": {
+			"$id": "#/properties/description",
+			"default": "",
+			"description": "The English description of the addon that will be displayed for the addon.",
+			"examples": [
+				"Makes doing XYZ easier"
+			],
+			"title": "The description (en) of the addon",
+			"type": "string"
+		},
+		"homepage": {
+			"$id": "#/properties/homepage",
+			"default": "",
+			"description": "If the addon has a homepage where users can get more information about the addon, you can specify it here.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore"
+			],
+			"pattern": "^https:.*",
+			"title": "The homepage URL for the addon.",
+			"type": "string"
+		},
+		"minNVDAVersion": {
+			"$ref": "#/$defs/canonicalVersion",
+			"default": {},
+			"title": "The minNVDAVersion schema",
+			"description": "The addon will not work with versions of NVDA prior to this version.",
+			"examples": [
+				{
+					"major": 2019,
+					"minor": 3,
+					"patch": 0
+				}
+			]
+		},
+		"lastTestedVersion": {
+			"$ref": "#/$defs/canonicalVersion",
+			"title": "The lastTestedVersion schema",
+			"description": "The add-on has been tested up to and including this version of NVDA",
+			"default": {},
+			"examples": [
+				{
+					"major": 2020,
+					"minor": 4,
+					"patch": 0
+				}
+			]
+		},
+		"channel": {
+			"$id": "#/properties/channel",
+			"default": "",
+			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable', 'beta' or 'dev'",
+			"examples": [
+				"beta"
+			],
+			"title": "The channel for the addon",
+			"enum": [
+				"stable",
+				"beta",
+				"dev"
+			],
+			"type": "string"
+		},
+		"URL": {
+			"$id": "#/properties/URL",
+			"default": "",
+			"description": "To allow directly downloading the *.nvda-addon file. The URL should remain valid indefinetly. GitHub release URL's are recommended.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore/releases/download/v0.1.0/myAddon.nvda-addon"
+			],
+			"title": "The URL to download the add-on.",
+			"type": "string"
+		},
+		"sha256": {
+			"$id": "#/properties/sha256",
+			"default": "",
+			"description": "Use the python script '_tools/genSha256.py' to generate this value.",
+			"examples": [
+				"69D84CA8899800A5575CE31798293CD4FEBAB1D734A07C2E51E56A28E0DF8C82"
+			],
+			"title": "The sha256 for the *.nvda-addon file.",
+			"type": "string"
+		},
+		"sourceURL": {
+			"$id": "#/properties/sourceURL",
+			"default": "",
+			"description": "Allows reviewers to inspect the source code for common issues.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore/"
+			],
+			"title": "The URL for the add-on source",
+			"type": "string"
+		},
+		"license": {
+			"$id": "#/properties/license",
+			"default": "",
+			"description": "The short name of the license.",
+			"examples": [
+				"GPL v2"
+			],
+			"title": "The short name of the license for the addon",
+			"type": "string"
+		},
+		"licenseURL": {
+			"$id": "#/properties/licenseURL",
+			"default": "",
+			"description": "A URL to the full license for the addon.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore/license.MD"
+			],
+			"title": "The URL of the license",
+			"type": "string"
+		},
+		"changelog": {
+			"$id": "#/properties/changelog",
+			"default": "",
+			"description": "Changes between the previous and the current version",
+			"examples": [
+				"New feature"
+			],
+			"title": "Add-on changelog (en)",
+			"type": "string"
+		},
+		"legacy": {
+			"$id": "#/properties/legacy",
+			"default": false,
+			"description": "Legacy add-ons have invalid data or manifest. Legacy add-ons are not listed in the NVDA add-on store.",
+			"examples": [
+				true
+			],
+			"title": "Mark add-on as legacy",
+			"type": "boolean"
+		},
+		"translations": {
+			"$id": "#/properties/translations",
+			"default": [],
+			"description": "A collections of translations generated from localized add-on manifests",
+			"examples": [
+				[
+					{
+						"language": "de",
+						"displayName": "Mein Addon",
+						"description": "erleichtert das Durchführen von xyz",
+						"changelog": "Neue Funktionen"
+					}
+				]
+			],
+			"title": "Translations",
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/translation"
+			}
+		},
+		"reviewUrl": {
+			"$id": "#/properties/reviewUrl",
+			"default": "",
+			"description": "A URL to the discussion comment to review the add-on version.",
+			"examples": [
+				"https://github.com/nvaccess/addon-datastore/discussions/1942#discussioncomment-7453248"
+			],
+			"title": "Discussion comment URL",
+			"type": "string"
+		},
+		"submissionTime": {
+			"$id": "#/properties/submissionTime",
+			"default": 0,
+			"description": "Timestamp in milliseconds, corresponding to the submission time of the add-on",
+			"examples": [
+				1723523492363
+			],
+			"title": "Submission time",
+			"type": "number"
+		},
+		"vtScanUrl": {
+			"$id": "#/properties/vtScanUrl",
+			"default": "",
+			"description": "A URL to the Virus Total scan for the add-on version.",
+			"examples": [
+				"https://www.virustotal.com/gui/file/3fda88d598e9747b2dfadfdfb8930a737c0049e9782392bffcd59ef668821547"
+			],
+			"title": "VirusTotal scan URL",
+			"type": "string"
+		},
+		"scanResults": {
+			"$id": "#/properties/scanResults",
+			"default": {},
+			"description": "Results from dynamic and static code scanning.",
+			"examples": [
+				{
+					"virusTotal": {},
+					"codeQL-warnings": {},
+					"codeQL-errors": {}
+				}
+			],
+			"title": "Scan results",
+			"type": "object"
+		}
+	},
+	"$defs": {
+		"canonicalVersion": {
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"major": 21,
+					"minor": 6,
+					"patch": 0
+				}
+			],
+			"required": [
+				"major",
+				"minor",
+				"patch"
+			],
+			"properties": {
+				"major": {
+					"default": 0,
+					"description": "'major' in major.minor.patch",
+					"examples": [
+						21,
+						2019,
+						2021
+					],
+					"title": "The 'major' part of the version number.",
+					"type": "integer"
+				},
+				"minor": {
+					"default": 0,
+					"description": "The 'minor' part in major.minor.patch",
+					"examples": [
+						3
+					],
+					"title": "The 'minor' part of the version number.",
+					"type": "integer"
+				},
+				"patch": {
+					"default": 0,
+					"description": "The 'patch' part in major.minor.patch",
+					"examples": [
+						0
+					],
+					"title": "The 'patch' part of the version number.",
+					"type": "integer"
+				}
+			}
+		},
+		"translation": {
+			"default": {},
+			"type": "object",
+			"examples": [
+				{
+					"language": "de",
+					"displayName": "Mein Addon",
+					"description": "erleichtert das Durchführen von xyz",
+					"changelog": "Neue Funktionen"
+				}
+			],
+			"required": [
+				"language",
+				"displayName",
+				"description"
+			],
+			"properties": {
+				"language": {
+					"default": "",
+					"description": "Language code supported by NVDA",
+					"examples": [
+						"de",
+						"pt_BR"
+					],
+					"title": "Language code",
+					"type": "string"
+				},
+				"displayName": {
+					"default": "",
+					"description": "The translated name that will be displayed for the addon.",
+					"examples": [
+						"Mein Addon"
+					],
+					"title": "Translated display name",
+					"type": "string"
+				},
+				"description": {
+					"default": "",
+					"description": "Translated description that will be displayed for the addon.",
+					"examples": [
+						"erleichtert das Durchführen von xyz"
+					],
+					"title": "The translated description",
+					"type": "string"
+				},
+				"changelog": {
+					"default": "",
+					"description": "Translated description of changes between the previous and this add-on version",
+					"examples": [
+						"Neue Funktionen"
+					],
+					"title": "The translated changelog",
+					"type": "string"
+				}
+			}
+		}
+	}
+}
