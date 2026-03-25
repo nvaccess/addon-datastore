@@ -42,7 +42,9 @@ jobs:
         # empty the views git folder directory 
         Try { Remove-Item ../views/views/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        python -m src.transform --loglevel DEBUG nvdaAPIVersions.json ../addons ../views/views
+        python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../views/views
+      env:
+        logLevel: ${{ runner.debug && 'DEBUG' || 'INFO' }}
     - name: Copy files
       run: |
         copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
@@ -50,7 +52,7 @@ jobs:
         copy ./readme.md ./views/readme.md
     - name: Commit and push
       run: |
-        git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > ../commitMsg.txt
+        git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > commitMsg.txt
         cd views
         git config user.name github-actions
         git config user.email github-actions@github.com
