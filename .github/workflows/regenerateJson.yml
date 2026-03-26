@@ -56,6 +56,3 @@ jobs:
       with:
         name: validationErrors
         path: validationErrors.md
-  call-workflow:
-    needs: regenerateJson
-    uses: ./.github/workflows/transformDataToViews.yml
