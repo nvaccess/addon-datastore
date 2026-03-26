@@ -413,8 +413,12 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "update discussion URL"
-        git push --set-upstream origin ${{ env.branchName }}
+        if git diff --staged --quiet; then
+          echo "No staged changes; skipping commit and push."
+        else
+          git commit -m "update discussion URL"
+          git push --set-upstream origin ${{ env.branchName }}
+        fi
 
   mergeToMaster:
     needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, requireManualApproval]
