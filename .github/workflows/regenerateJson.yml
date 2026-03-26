@@ -31,10 +31,11 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: |
         $baseBranch = "${{ github.ref_name }}"
-        $headBranch = "regenJson${{ github.run_number }}"
+        $headBranch = "regenJson${{ github.run_id }}-${{ github.run_attempt }}"
 
         git add addons
-        if (git diff --staged --quiet) {
+        git diff --staged --quiet
+        if ($LASTEXITCODE -eq 0) {
           echo "No changes to commit; skipping PR creation."
         } else {
           git config user.name "github-actions"
@@ -43,12 +44,13 @@ jobs:
           git commit -m "[Automated] Regenerate json files"
           git push --set-upstream origin $headBranch
 
-          gh pr create `
-            --squash `
+          $prUrl = gh pr create `
             --base $baseBranch `
             --head $headBranch `
             --title "[Automated] Regenerate json files" `
             --body "Regenerated json files for add-ons. Triggered from workflow run ${{ github.run_id }}."
+
+          gh pr merge $prUrl --squash --delete-branch
         }
     - name: Upload validation errors as artifact
       if: failure()
