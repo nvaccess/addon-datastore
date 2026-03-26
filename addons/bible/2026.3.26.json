@@ -53,5 +53,49 @@
 			"displayName": "Біблія",
 			"description": "Цей додаток, призначений для зручного вивчення різних перекладів Біблії"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/0ab930c8dc2d6c1d56fbd57d6fac1f9487f47c1794f04943e461c4721741d61e",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "0ab930c8dc2d6c1d56fbd57d6fac1f9487f47c1794f04943e461c4721741d61e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000080d0c0800",
+					"raw_md5": "3be030aa32467d5e19acbf5e8f7e1d5d"
+				},
+				"first_submission_date": 1774518844,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1774518845,
+				"last_submission_date": 1774518844,
+				"md5": "a3f0a77f0c6301fff3d96d5f342ea6d9",
+				"names": [],
+				"reputation": 0,
+				"sha1": "b9b63906c66b4a064740d3b894a72b5690b4faae",
+				"sha256": "0ab930c8dc2d6c1d56fbd57d6fac1f9487f47c1794f04943e461c4721741d61e",
+				"size": 233780,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
