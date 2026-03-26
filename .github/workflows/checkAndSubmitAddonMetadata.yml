@@ -312,31 +312,12 @@ jobs:
       - name: Confirm approval
         run: echo "Manual approval performed"
 
-  mergeToMaster:
-    needs: [getAddonId, commitScanResults, createPullRequest, requireManualApproval]
-    if: ${{ always() && needs.commitScanResults.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        python-version: [ 3.13 ]
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
-      - name: Merge branch to master
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh pr merge ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})' -m
-
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    if: ${{ always() && needs.mergeToMaster.result == 'success' }}
-    needs: [getAddonId, mergeToMaster, virusTotal-analysis]
+    if: ${{ always() && needs.commitScanResults.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
+    needs: [getAddonId, requireManualApproval, commitScanResults, virusTotal-analysis]
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -347,7 +328,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v5
       with:
-        ref: ${{ github.ref }}
+        ref: ${{ env.branchName }}
     - name: Get add-on name and version
       id: getAddonNameAndVersion
       uses: actions/github-script@v7
@@ -433,11 +414,29 @@ jobs:
         git config user.email github-actions@github.com
         git add .
         git commit -m "update discussion URL"
-        git branch -u origin/master
-        git push
+        git push --set-upstream origin ${{ env.branchName }}
+
+  mergeToMaster:
+    needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, requireManualApproval]
+    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: [ 3.13 ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Merge branch to master
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr merge ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})' -m
 
   call-workflow:
-    needs: [createReviewComment]
-    if: ${{ always() && needs.createReviewComment.result == 'success' }}
+    needs: [mergeToMaster]
+    if: ${{ always() && needs.mergeToMaster.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
 
