@@ -58,5 +58,49 @@
 			"displayName": "xBlock",
 			"description": "Додаток для створення, редагування та зберігання фрагментів тексту для швидкої вставки в документи через діалогове вікно. Підтримує клавішу Enter для швидкої вставки.\nГаряча клавіша:\nWindows+F11 : відкрити налаштування xBlock"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8dd573bda1690a208cf13e3ae345a954a4a139cf082772cf0dfe7635251b23fd",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "8dd573bda1690a208cf13e3ae345a954a4a139cf082772cf0dfe7635251b23fd",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "303c3c343ca80000",
+					"raw_md5": "cc3cdc47a07e3309fb67fd5c3c24dacb"
+				},
+				"first_submission_date": 1774583595,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1774583596,
+				"last_submission_date": 1774583595,
+				"md5": "d10fe0e7a68dda68578c02191ac6dc03",
+				"names": [],
+				"reputation": 0,
+				"sha1": "7ad4a32deea81aa35deae3ee5609eef47d6cf093",
+				"sha256": "8dd573bda1690a208cf13e3ae345a954a4a139cf082772cf0dfe7635251b23fd",
+				"size": 43326,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
