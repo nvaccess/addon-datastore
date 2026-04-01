@@ -7,6 +7,7 @@ import json
 import logging
 from pathlib import Path
 from collections.abc import Iterable
+from typing import Any
 from .datastructures import (
 	Addon,
 	generateAddonChannelDict,
