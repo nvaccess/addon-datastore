@@ -29,6 +29,8 @@ jobs:
       with:
         path: views
         ref: views
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
       with:
@@ -36,12 +38,11 @@ jobs:
         architecture: x86
     - name: Install requirements and run transformation
       run: |
-        python -m pip install --upgrade pip
-        cd transform
+        uv sync
         # empty the views git folder directory
-        Try { Remove-Item ../views/views/ -Recurse -ErrorAction stop }
+        Try { Remove-Item views/views/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../views/views
+        uv run --directory transform python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../views/views
       env:
         logLevel: ${{ runner.debug && 'DEBUG' || 'INFO' }}
     - name: Copy files
