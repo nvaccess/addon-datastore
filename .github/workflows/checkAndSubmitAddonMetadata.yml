@@ -443,4 +443,3 @@ jobs:
     needs: [mergeToMaster]
     if: ${{ always() && needs.mergeToMaster.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
-
