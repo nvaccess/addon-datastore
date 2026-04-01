@@ -101,7 +101,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 				addon = addons[nvdaAPIVersion][channel][addonName]
 				addonWritePath = f"{addonDir}/en/{str(nvdaAPIVersion)}/{addonName}"
 				with open(addon.pathToData, "r", encoding="utf-8") as oldAddonFile:
-					addonData: dict[str, object] = json.load(oldAddonFile)
+					addonData: dict[str, Any] = json.load(oldAddonFile)
 					if "translations" in addonData:
 						del addonData["translations"]
 				Path(addonWritePath).mkdir(parents=True, exist_ok=True)
