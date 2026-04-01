@@ -45,7 +45,6 @@
 	"type": "object",
 	"description": "Information about an addon release",
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:schema",
 	"required": [
 		"addonId",
 		"addonVersionNumber",
@@ -64,7 +63,6 @@
 	],
 	"properties": {
 		"addonId": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:addonId",
 			"default": "",
 			"description": "The ID for the addon, matches the name field in the addon manifest and the folder name for the submission.",
 			"examples": [
@@ -74,7 +72,7 @@
 			"type": "string"
 		},
 		"addonVersionNumber": {
-			"$ref": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:canonicalVersion",
+			"$ref": "#/$defs/canonicalVersion",
 			"title": "The addon version number",
 			"description": "Pure numerical representation of the version being released.",
 			"default": {},
@@ -99,7 +97,6 @@
 			]
 		},
 		"displayName": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:displayName",
 			"default": "",
 			"description": "The name that will be displayed in English for the addon.",
 			"examples": [
@@ -109,7 +106,6 @@
 			"type": "string"
 		},
 		"publisher": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:publisher",
 			"default": "",
 			"description": "The name of the individual, group, or company responsible for the addon.",
 			"examples": [
@@ -119,7 +115,6 @@
 			"type": "string"
 		},
 		"description": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:description",
 			"default": "",
 			"description": "The English description of the addon that will be displayed for the addon.",
 			"examples": [
@@ -129,7 +124,6 @@
 			"type": "string"
 		},
 		"homepage": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:homepage",
 			"default": "",
 			"description": "If the addon has a homepage where users can get more information about the addon, you can specify it here.",
 			"examples": [
@@ -140,7 +134,7 @@
 			"type": "string"
 		},
 		"minNVDAVersion": {
-			"$ref": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:canonicalVersion",
+			"$ref": "#/$defs/canonicalVersion",
 			"default": {},
 			"title": "The minNVDAVersion schema",
 			"description": "The addon will not work with versions of NVDA prior to this version.",
@@ -153,7 +147,7 @@
 			]
 		},
 		"lastTestedVersion": {
-			"$ref": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:canonicalVersion",
+			"$ref": "#/$defs/canonicalVersion",
 			"title": "The lastTestedVersion schema",
 			"description": "The add-on has been tested up to and including this version of NVDA",
 			"default": {},
@@ -166,7 +160,6 @@
 			]
 		},
 		"channel": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:channel",
 			"default": "",
 			"description": "Used to define pre-release (beta) add-ons. Should be either 'stable', 'beta' or 'dev'",
 			"examples": [
@@ -181,7 +174,6 @@
 			"type": "string"
 		},
 		"URL": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:URL",
 			"default": "",
 			"description": "To allow directly downloading the *.nvda-addon file. The URL should remain valid indefinetly. GitHub release URL's are recommended.",
 			"examples": [
@@ -191,7 +183,6 @@
 			"type": "string"
 		},
 		"sha256": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:sha256",
 			"default": "",
 			"description": "Use the python script '_tools/genSha256.py' to generate this value.",
 			"examples": [
@@ -201,7 +192,6 @@
 			"type": "string"
 		},
 		"sourceURL": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:sourceURL",
 			"default": "",
 			"description": "Allows reviewers to inspect the source code for common issues.",
 			"examples": [
@@ -211,7 +201,6 @@
 			"type": "string"
 		},
 		"license": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:license",
 			"default": "",
 			"description": "The short name of the license.",
 			"examples": [
@@ -221,7 +210,6 @@
 			"type": "string"
 		},
 		"licenseURL": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:licenseURL",
 			"default": "",
 			"description": "A URL to the full license for the addon.",
 			"examples": [
@@ -231,7 +219,6 @@
 			"type": "string"
 		},
 		"changelog": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:changelog",
 			"default": "",
 			"description": "Changes between the previous and the current version",
 			"examples": [
@@ -241,7 +228,6 @@
 			"type": "string"
 		},
 		"legacy": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:legacy",
 			"default": false,
 			"description": "Legacy add-ons have invalid data or manifest. Legacy add-ons are not listed in the NVDA add-on store.",
 			"examples": [
@@ -251,7 +237,6 @@
 			"type": "boolean"
 		},
 		"translations": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:translations",
 			"default": [],
 			"description": "A collections of translations generated from localized add-on manifests",
 			"examples": [
@@ -267,11 +252,10 @@
 			"title": "Translations",
 			"type": "array",
 			"items": {
-				"$ref": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:translation"
+				"$ref": "#/$defs/translation"
 			}
 		},
 		"reviewUrl": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:reviewUrl",
 			"default": "",
 			"description": "A URL to the discussion comment to review the add-on version.",
 			"examples": [
@@ -281,7 +265,6 @@
 			"type": "string"
 		},
 		"submissionTime": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:submissionTime",
 			"default": 0,
 			"description": "Timestamp in milliseconds, corresponding to the submission time of the add-on",
 			"examples": [
@@ -291,7 +274,6 @@
 			"type": "number"
 		},
 		"vtScanUrl": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:vtScanUrl",
 			"default": "",
 			"description": "A URL to the Virus Total scan for the add-on version.",
 			"examples": [
@@ -301,7 +283,6 @@
 			"type": "string"
 		},
 		"scanResults": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:scanResults",
 			"default": {},
 			"description": "Results from dynamic and static code scanning.",
 			"examples": [
@@ -317,7 +298,6 @@
 	},
 	"$defs": {
 		"canonicalVersion": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:canonicalVersion",
 			"default": {},
 			"type": "object",
 			"examples": [
@@ -365,7 +345,6 @@
 			}
 		},
 		"translation": {
-			"$id": "urn:nvaccess:addon-datastore:validation:validate:addonVersion:translation",
 			"default": {},
 			"type": "object",
 			"examples": [
