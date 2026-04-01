@@ -14,7 +14,7 @@ Add-on authors who wish to have their add-on distributed through the Add-on Stor
 
 For an overview of the whole Add-on Store, read [the design overview](./docs/design/designOverview.md).
 
-### About security 
+### About security
 
 Add-ons are run at user's own risk, add-ons in the add-on store do not undergo human security audits.
 The add-on store includes the following security measures:
@@ -25,10 +25,11 @@ The add-on store includes the following security measures:
   - NV Access can manage [code scanning alerts](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/about-code-scanning-alerts), available from the Code scanning link from the [Security page](https://github.com/nvaccess/addon-datastore/security).
 - [Virus Total](https://www.virustotal.com/) is used to scan submitted add-ons.
 If malicious content is detected, the add-on will not be automatically included in the store.
-Please contact the flagged security vendors to get them to review and unflag the false positive. 
+Please contact the flagged security vendors to get them to review and unflag the false positive.
 Please email info@nvaccess.org if you need assistance with this process.
 
 ## Human review process / code audit
+
 - NV Access doesn't require a manual review of the add-on (code or user experience) itself before the add-on submission.
 - NV Access manually maintains a list of approved submitters with permission to submit an add-on to the store.
 The process NV Access follows is described [here](./docs/dev/submissionReview.md#approving-an-author-to-submit-to-a-particular-add-on-id-for-the-first-time).
@@ -50,3 +51,8 @@ A plain language summary can be found [here](https://opendatacommons.org/license
 
 - Status for latest submitted add-on: [![view submissions](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml/badge.svg)](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml)
 - Status for validating all submitted add-ons: [![view validation attempts](https://github.com/nvaccess/addon-datastore/actions/workflows/validateAllAddons.yml/badge.svg)](https://github.com/nvaccess/addon-datastore/actions/workflows/validateAllAddons.yml)
+
+## Dependencies
+
+* [Python](https://www.python.org/) 3.13, 64 bit
+* [uv](https://docs.astral.sh/uv/getting-started/installation/)
