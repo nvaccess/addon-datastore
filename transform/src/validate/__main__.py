@@ -13,11 +13,11 @@ Usage: python -m src.validate {pathToSchema} {pathToDataFile}
 parser = argparse.ArgumentParser()
 parser.add_argument(
 	dest="pathToSchema",
-	help="path to the jsonschema file"
+	help="path to the jsonschema file",
 )
 parser.add_argument(
 	dest="pathToDataFile",
-	help="The json (.json) file containing the file to be validated using the schema file"
+	help="The json (.json) file containing the file to be validated using the schema file",
 )
 
 args = parser.parse_args()
