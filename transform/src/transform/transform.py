@@ -80,9 +80,9 @@ def getLatestAddons(
 			addonsForVersionChannel = latestAddons[nvdaAPIVersion.apiVer][addon.channel]
 			if isAddonCompatible(addon, nvdaAPIVersion) and _isAddonNewer(addonsForVersionChannel, addon):
 				addonsForVersionChannel[addon.addonId] = addon
-				log.error(f"added {addon.addonId} {addon.addonVersion}")
+				log.debug(f"added {addon.addonId} {addon.addonVersion}")
 			else:
-				log.error(f"ignoring {addon.addonId} {addon.addonVersion}")
+				log.debug(f"ignoring {addon.addonId} {addon.addonVersion}")
 	return latestAddons
 
 
