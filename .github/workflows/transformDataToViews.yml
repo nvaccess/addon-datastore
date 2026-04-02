@@ -11,6 +11,9 @@ concurrency:
 jobs:
   transformAndPush:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     permissions:
       contents: write
       pull-requests: write
@@ -42,51 +45,50 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install requirements and run transformation
       run: |
+        set -euo pipefail
         uv sync
 
         # generate transformed data from this repository's addons metadata
-        Try { Remove-Item generated/ -Recurse -ErrorAction stop }
-        Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        uv run --directory transform python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../generated
+        rm -rf generated/
+        uv run --directory transform python -m src.transform --loglevel "${{ env.logLevel }}" nvdaAPIVersions.json ../addons ../generated
 
         # replace generated data directories in addonstore-views
-        Try { Remove-Item views/addons/ -Recurse -ErrorAction stop }
-        Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        Try { Remove-Item views/views/ -Recurse -ErrorAction stop }
-        Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        Copy-Item generated/addons views/addons -Recurse
-        Copy-Item generated/views views/views -Recurse
+        rm -rf views/addons/ views/views/
+        cp -R generated/addons views/addons
+        cp -R generated/views views/views
       env:
         logLevel: ${{ runner.debug && 'DEBUG' || 'INFO' }}
     - name: Copy files
       run: |
-        copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
-        copy ./transform/docs/output.md ./views/output.md
-        copy ./readme.md ./views/readme.md
+        set -euo pipefail
+        cp ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
+        cp ./transform/docs/output.md ./views/output.md
+        cp ./README.md ./views/README.md
     - name: Create PR and enable auto-merge
       env:
         GH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}
       run: |
+        set -euo pipefail
         git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > commitMsg.txt
         cd views
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        if (git diff --staged --quiet) {
-          Write-Host "No generated changes; skipping PR creation."
+        if git diff --staged --quiet; then
+          echo "No generated changes; skipping PR creation."
           exit 0
-        }
+        fi
 
-        $branchName = "transformViews${{ github.run_id }}-${{ github.run_attempt }}"
-        git checkout -b $branchName
+        branchName="transformViews${{ github.run_id }}-${{ github.run_attempt }}"
+        git checkout -b "$branchName"
         git commit -F ../commitMsg.txt
-        git push --set-upstream origin $branchName
+        git push --set-upstream origin "$branchName"
 
-        $prUrl = gh pr create `
-          --repo nvaccess/addonstore-views `
-          --base main `
-          --head $branchName `
-          --title "[Automated] Transform add-on data to views" `
-          --body-file ../commitMsg.txt
+        prUrl=$(gh pr create \
+          --repo nvaccess/addonstore-views \
+          --base main \
+          --head "$branchName" \
+          --title "[Automated] Transform add-on data to views" \
+          --body-file ../commitMsg.txt)
 
-        gh pr merge --repo nvaccess/addonstore-views --auto --squash --delete-branch $prUrl
+        gh pr merge --auto --squash --delete-branch "$prUrl"
