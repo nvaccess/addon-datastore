@@ -64,7 +64,7 @@ Example: `"NV Access"`
 
 ### description
 The English description of the addon that will be displayed for the addon.
-	
+
 Example: `"Makes doing XYZ easier"`
 
 ### homepage
@@ -164,4 +164,3 @@ Example:
 # Bug fixes
 * Fixed reported bug.
 ```
-
