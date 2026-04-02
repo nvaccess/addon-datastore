@@ -86,7 +86,9 @@ jobs:
 
         branchName="transformViews${{ github.run_id }}-${{ github.run_attempt }}"
         git checkout -b "$branchName"
-        git commit -F ../commitMsg.txt
+        # Temporarily suppress output during first commit as testing logs are too big.
+        # TODO: remove redirection once diffs are smaller.
+        git commit -F ../commitMsg.txt > /dev/null 2>&1
         git push --set-upstream origin "$branchName"
 
         prUrl=$(gh pr create \
