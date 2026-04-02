@@ -43,12 +43,19 @@ jobs:
     - name: Install requirements and run transformation
       run: |
         uv sync
-        # empty generated data directories
+
+        # generate transformed data from this repository's addons metadata
+        Try { Remove-Item generated/ -Recurse -ErrorAction stop }
+        Catch [System.Management.Automation.ItemNotFoundException] { $null }
+        uv run --directory transform python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../generated
+
+        # replace generated data directories in addonstore-views
         Try { Remove-Item views/addons/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
         Try { Remove-Item views/views/ -Recurse -ErrorAction stop }
         Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        uv run --directory transform python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../views
+        Copy-Item generated/addons views/addons -Recurse
+        Copy-Item generated/views views/views -Recurse
       env:
         logLevel: ${{ runner.debug && 'DEBUG' || 'INFO' }}
     - name: Copy files

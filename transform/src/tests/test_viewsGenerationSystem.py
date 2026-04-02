@@ -277,3 +277,51 @@ class TestTransformation(unittest.TestCase):
 				targetPath="addons/oldNewAddon/13.0.0/en.json",
 			),
 		)
+
+	def test_translation_view_symlink_points_to_translated_addon_data(self):
+		"""Confirms language-specific views symlink to translated addon data files."""
+		write_addons(
+			InputAddonVersion(
+				"UIANotificationSwitch/2026.1.0.json",
+				"""
+{
+	"addonId": "UIANotificationSwitch",
+	"displayName": "UIA Notification Switch",
+	"description": "English description",
+	"channel": "stable",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2019,
+		"minor": 1,
+		"patch": 0
+	},
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مفتاح إشعارات UIA",
+			"description": "وصف عربي"
+		}
+	]
+}
+""",
+			),
+		)
+		self.runTransformation()
+		self._assertAddonDataWritten(
+			ExpectedAddonVersion("addons/UIANotificationSwitch/2026.1.0/en.json", "2026.1.0"),
+			ExpectedAddonVersion("addons/UIANotificationSwitch/2026.1.0/ar.json", "2026.1.0"),
+			ExpectedAddonVersion(
+				"views/ar/2019.1.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+		)
