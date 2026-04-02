@@ -10,18 +10,15 @@
 			],
 			"properties": {
 				"description": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/description",
 					"type": "string",
 					"title": "A description of the API version",
 					"example": "2021.1"
 				},
 				"apiVer": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/apiVer",
 					"$ref": "#/$defs/canonicalVersion",
 					"title": "The NVDA API version number"
 				},
 				"backCompatTo": {
-					"$id": "#/$defs/nvdaAPIVersionInfo/properties/backCompatTo",
 					"$ref": "#/$defs/canonicalVersion",
 					"title": "The API version this is backwards compatible to"
 				}

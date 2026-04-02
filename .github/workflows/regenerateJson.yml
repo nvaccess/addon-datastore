@@ -7,6 +7,7 @@ jobs:
   regenerateJson:
     permissions:
       contents: write
+      pull-requests: write
     runs-on: windows-latest
     strategy:
       matrix:
@@ -25,17 +26,31 @@ jobs:
         validation/regenerateJson `
         --dir ..\addons `
         --output validationErrors.md
-    - name: Commit & Push changes
+    - name: Commit changes and open PR
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
+        $baseBranch = "${{ github.ref_name }}"
+        $headBranch = "regenJson${{ github.run_id }}-${{ github.run_attempt }}"
+
         git add addons
-        if (git status --porcelain) {
+        git diff --staged --quiet
+        if ($LASTEXITCODE -eq 0) {
+          echo "No changes to commit; skipping PR creation."
+        } else {
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+          git checkout -b $headBranch
           git commit -m "[Automated] Regenerate json files"
-          git pull --rebase
-          git push
-        } else {
-          echo "No changes to commit; skipping commit and push."
+          git push --set-upstream origin $headBranch
+
+          $prUrl = gh pr create `
+            --base $baseBranch `
+            --head $headBranch `
+            --title "[Automated] Regenerate json files" `
+            --body "Regenerated json files for add-ons. Triggered from workflow run ${{ github.run_id }}."
+
+          gh pr merge $prUrl --squash --delete-branch
         }
     - name: Upload validation errors as artifact
       if: failure()
@@ -43,6 +58,3 @@ jobs:
       with:
         name: validationErrors
         path: validationErrors.md
-  call-workflow:
-    needs: regenerateJson
-    uses: ./.github/workflows/transformDataToViews.yml
