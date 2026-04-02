@@ -324,4 +324,49 @@ class TestTransformation(unittest.TestCase):
 				"2026.1.0",
 				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
 			),
+			ExpectedAddonVersion(
+				"views/ar/2019.1.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/2019.2.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/2019.2.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/latest/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.1.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.1.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.2.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.2.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/latest/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
 		)
