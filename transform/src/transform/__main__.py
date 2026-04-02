@@ -5,6 +5,7 @@
 """
 Usage: python -m transform {nvdaAPIVersionsPath} {inputPath} {outputPath} [logLevel]
 """
+
 import argparse
 import logging
 import sys
@@ -15,20 +16,20 @@ log = logging.getLogger()
 parser = argparse.ArgumentParser()
 parser.add_argument(
 	dest="nvdaAPIVersionsPath",
-	help="The path to the nvdaAPIVersions.json, see README for full usage."
+	help="The path to the nvdaAPIVersions.json, see README for full usage.",
 )
 parser.add_argument(
 	dest="sourceDir",
-	help="The input directory, see README for full usage."
+	help="The input directory, see README for full usage.",
 )
 parser.add_argument(
 	dest="outputDir",
-	help="The output directory, see README for full usage."
+	help="The output directory, see README for full usage.",
 )
 parser.add_argument(
 	"--loglevel",
 	required=False,
-	help=f"The loglevel, one of {logging._nameToLevel}",
+	help=f"The loglevel, one of {list(logging.getLevelNamesMapping().keys())}",
 	dest="loglevel",
 	default=logging.WARNING,
 )
