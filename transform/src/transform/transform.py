@@ -107,14 +107,17 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 		translatedAddonData: dict[str, object] = baseAddonData.copy()
 		langWithoutLocale = lang.split("_")[0]
 		if lang in addonTranslations:
-			translatedAddonData["displayName"] = addonTranslations[lang]["displayName"]
-			translatedAddonData["description"] = addonTranslations[lang]["description"]
+			translation = addonTranslations[lang]
+			if "displayName" in translation:
+				translatedAddonData["displayName"] = translation["displayName"]
+			if "description" in translation:
+				translatedAddonData["description"] = translation["description"]
 		elif langWithoutLocale in addonTranslations:
-			translatedAddonData["displayName"] = addonTranslations[langWithoutLocale]["displayName"]
-			translatedAddonData["description"] = addonTranslations[langWithoutLocale]["description"]
-		else:
-			translatedAddonData["displayName"] = baseAddonData["displayName"]
-			translatedAddonData["description"] = baseAddonData["description"]
+			translation = addonTranslations[langWithoutLocale]
+			if "displayName" in translation:
+				translatedAddonData["displayName"] = translation["displayName"]
+			if "description" in translation:
+				translatedAddonData["description"] = translation["description"]
 		return translatedAddonData
 
 	def _createRelativeFileSymlink(*, targetPath: str, symlinkPath: str) -> None:
