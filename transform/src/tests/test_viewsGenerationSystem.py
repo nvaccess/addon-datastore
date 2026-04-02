@@ -104,7 +104,7 @@ def write_addons(*addons: InputAddonVersion):
 	for addon in addons:
 		addonWritePath = os.path.join(DATA_DIR.INPUT.value, addon.path)
 		Path(os.path.dirname(addonWritePath)).mkdir(parents=True, exist_ok=True)
-		with open(addonWritePath, "w") as addonFile:
+		with open(addonWritePath, "w", encoding="utf-8") as addonFile:
 			addonFile.write(addon.addonDataBlob)
 
 
