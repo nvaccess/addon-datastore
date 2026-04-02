@@ -1,7 +1,8 @@
 # Output
 
 The output for running the transformation is described as follows.
-This is written to a given directory, and removes existing json data from the directory in the process.
+This is written to a given directory that must be new/empty; the transformation creates this directory and fails if it already exists
+Callers are responsible for deleting any previous output directory before running the transformation.
 
 ## Output file structure
 
