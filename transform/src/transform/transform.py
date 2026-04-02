@@ -121,10 +121,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 		return translatedAddonData
 
 	def _createRelativeFileSymlink(*, targetPath: str, symlinkPath: str) -> None:
-		relativeTarget = os.path.relpath(
-			targetPath,
-			start=os.path.dirname(symlinkPath),
-		).replace(os.sep, "/")
+		relativeTarget = os.path.relpath(targetPath, start=os.path.dirname(symlinkPath))
 		symlink = Path(symlinkPath)
 		symlink.parent.mkdir(parents=True, exist_ok=True)
 		symlink.symlink_to(relativeTarget)

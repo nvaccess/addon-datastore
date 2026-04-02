@@ -6,6 +6,8 @@ The output is designed to be published from a single branch.
 For each NVDA version that needs to be supported by the add-on store, an entry must be added to [`nvdaAPIVersions.json`](./nvdaAPIVersions.json).
 This includes patch versions.
 
+This module should be run from linux, as symlinks are created for the server component.
+
 ## Overview
 
 For each version of NVDA, the meta-data of the most recent (the highest version number) of each add-on is automatically
