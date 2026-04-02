@@ -169,7 +169,9 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 						targetLanguage = "en"
 
 					translatedAddonPath = f"{translatedAddonDirPath}/{targetLanguage}.json"
-					versionedViewPath = f"{addonDir}/views/{lang}/{str(nvdaAPIVersion)}/{addonName}/{channel}.json"
+					versionedViewPath = (
+						f"{addonDir}/views/{lang}/{str(nvdaAPIVersion)}/{addonName}/{channel}.json"
+					)
 					_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=versionedViewPath)
 
 				# paths are case insensitive
