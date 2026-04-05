@@ -5,6 +5,7 @@
 import glob
 import json
 import logging
+import os
 from pathlib import Path
 from collections.abc import Iterable
 from typing import Any
@@ -79,18 +80,55 @@ def getLatestAddons(
 			addonsForVersionChannel = latestAddons[nvdaAPIVersion.apiVer][addon.channel]
 			if isAddonCompatible(addon, nvdaAPIVersion) and _isAddonNewer(addonsForVersionChannel, addon):
 				addonsForVersionChannel[addon.addonId] = addon
-				log.error(f"added {addon.addonId} {addon.addonVersion}")
+				log.debug(f"added {addon.addonId} {addon.addonVersion}")
 			else:
-				log.error(f"ignoring {addon.addonId} {addon.addonVersion}")
+				log.debug(f"ignoring {addon.addonId} {addon.addonVersion}")
 	return latestAddons
 
 
 def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[str]) -> None:
 	"""
-	Given a unique mapping of (nvdaAPIVersion, channel) -> addon, write the addons to file.
+	Given a unique mapping of (nvdaAPIVersion, channel) -> addon, write add-on files and views.
+
+	The output structure is:
+	- addons/{addonId}/{addonVersion}/{language}.json
+	- views/{language}/{nvdaAPIVersion}/{addonId}/{channel}.json (relative symlink)
+	- views/{language}/latest/{addonId}/{channel}.json (relative symlink)
+
+	Views are symlinked to add-on files to avoid duplicating data for each view projection.
 	Throws a ValidationError and exits if writeable data does not match expected schema.
 	"""
+
+	def _getTranslatedAddonData(
+		baseAddonData: dict[str, Any],
+		addonTranslations: dict[str, dict[str, str]],
+		lang: str,
+	) -> dict[str, object]:
+		translatedAddonData: dict[str, object] = baseAddonData.copy()
+		langWithoutLocale = lang.split("_")[0]
+		if lang in addonTranslations:
+			translation = addonTranslations[lang]
+			if "displayName" in translation:
+				translatedAddonData["displayName"] = translation["displayName"]
+			if "description" in translation:
+				translatedAddonData["description"] = translation["description"]
+		elif langWithoutLocale in addonTranslations:
+			translation = addonTranslations[langWithoutLocale]
+			if "displayName" in translation:
+				translatedAddonData["displayName"] = translation["displayName"]
+			if "description" in translation:
+				translatedAddonData["description"] = translation["description"]
+		return translatedAddonData
+
+	def _createRelativeFileSymlink(*, targetPath: str, symlinkPath: str) -> None:
+		relativeTarget = os.path.relpath(targetPath, start=os.path.dirname(symlinkPath))
+		symlink = Path(symlinkPath)
+		symlink.parent.mkdir(parents=True, exist_ok=True)
+		symlink.symlink_to(relativeTarget)
+
 	writtenLatestAddonForChannel: set[str] = set()
+	writtenTranslatedAddonPath: set[str] = set()
+	viewLanguages = {"en", *supportedLanguages}
 	for nvdaAPIVersion in sorted(addons.keys(), reverse=True):
 		# To generate the 'latest view',
 		# check each api version, starting with the latest.
@@ -100,18 +138,42 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 		for channel in addons[nvdaAPIVersion]:
 			for addonName in addons[nvdaAPIVersion][channel]:
 				addon = addons[nvdaAPIVersion][channel][addonName]
-				addonWritePath = f"{addonDir}/en/{str(nvdaAPIVersion)}/{addonName}"
 				with open(addon.pathToData, "r", encoding="utf-8") as oldAddonFile:
 					addonData: dict[str, Any] = json.load(oldAddonFile)
 					if "translations" in addonData:
 						del addonData["translations"]
-				Path(addonWritePath).mkdir(parents=True, exist_ok=True)
-				with open(f"{addonWritePath}/{channel}.json", "w") as newAddonFile:
-					validateJson(addonData, JSONSchemaPaths.ADDON_DATA)
-					json.dump(addonData, newAddonFile)
 
-				latestAddonWritePath = f"{addonDir}/en/latest/{addonName}"
-				Path(latestAddonWritePath).mkdir(parents=True, exist_ok=True)
+				addonVersion = str(addon.addonVersion)
+				translatedAddonDirPath = f"{addonDir}/addons/{addonName}/{addonVersion}"
+				if translatedAddonDirPath not in writtenTranslatedAddonPath:
+					writtenTranslatedAddonPath.add(translatedAddonDirPath)
+					addonTranslations: dict[str, dict[str, str]] = {
+						t["language"]: t for t in addon.translations
+					}
+					translatedLanguages = {"en", *addonTranslations.keys()}
+					for lang in translatedLanguages:
+						translatedAddonData = _getTranslatedAddonData(addonData, addonTranslations, lang)
+						Path(translatedAddonDirPath).mkdir(parents=True, exist_ok=True)
+						with open(f"{translatedAddonDirPath}/{lang}.json", "w") as newAddonFile:
+							validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
+							json.dump(translatedAddonData, newAddonFile)
+
+				addonTranslations: dict[str, dict[str, str]] = {t["language"]: t for t in addon.translations}
+				for lang in viewLanguages:
+					langWithoutLocale = lang.split("_")[0]
+					if lang in addonTranslations:
+						targetLanguage = lang
+					elif langWithoutLocale in addonTranslations:
+						targetLanguage = langWithoutLocale
+					else:
+						targetLanguage = "en"
+
+					translatedAddonPath = f"{translatedAddonDirPath}/{targetLanguage}.json"
+					versionedViewPath = (
+						f"{addonDir}/views/{lang}/{str(nvdaAPIVersion)}/{addonName}/{channel}.json"
+					)
+					_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=versionedViewPath)
+
 				# paths are case insensitive
 				# Identical add-on IDs may have different casing
 				# due to legacy add-on submissions.
@@ -121,40 +183,18 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 				if addLatest:
 					log.error(f"Latest version: {addonName} {channel} {nvdaAPIVersion}")
 					writtenLatestAddonForChannel.add(caseInsensitiveLatestAddonForChannel)
-					with open(f"{latestAddonWritePath}/{channel}.json", "w") as latestAddonFile:
-						json.dump(addonData, latestAddonFile)
+					for lang in viewLanguages:
+						langWithoutLocale = lang.split("_")[0]
+						if lang in addonTranslations:
+							targetLanguage = lang
+						elif langWithoutLocale in addonTranslations:
+							targetLanguage = langWithoutLocale
+						else:
+							targetLanguage = "en"
 
-				addonTranslations: dict[str, dict[str, str]] = {t["language"]: t for t in addon.translations}
-				translatedAddonData: dict[str, object] = addonData.copy()
-				for lang in supportedLanguages:
-					addonWritePath = f"{addonDir}/{lang}/{str(nvdaAPIVersion)}/{addonName}"
-					langWithoutLocale = lang.split("_")[0]
-					if lang in addonTranslations:
-						# update with translated version
-						translatedAddonData["displayName"] = addonTranslations[lang]["displayName"]
-						translatedAddonData["description"] = addonTranslations[lang]["description"]
-					elif langWithoutLocale in addonTranslations:
-						# fallback to lang without locale translated version
-						translatedAddonData["displayName"] = addonTranslations[langWithoutLocale][
-							"displayName"
-						]
-						translatedAddonData["description"] = addonTranslations[langWithoutLocale][
-							"description"
-						]
-					else:
-						# fallback and update to english
-						translatedAddonData["displayName"] = addonData["displayName"]
-						translatedAddonData["description"] = addonData["description"]
-					Path(addonWritePath).mkdir(parents=True, exist_ok=True)
-					with open(f"{addonWritePath}/{channel}.json", "w") as newAddonFile:
-						validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
-						json.dump(translatedAddonData, newAddonFile)
-					if addLatest:
-						latestAddonWritePath = f"{addonDir}/{lang}/latest/{addonName}"
-						Path(latestAddonWritePath).mkdir(parents=True, exist_ok=True)
-						with open(f"{latestAddonWritePath}/{channel}.json", "w") as newAddonFile:
-							validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
-							json.dump(translatedAddonData, newAddonFile)
+						translatedAddonPath = f"{translatedAddonDirPath}/{targetLanguage}.json"
+						latestViewPath = f"{addonDir}/views/{lang}/latest/{addonName}/{channel}.json"
+						_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=latestViewPath)
 
 
 def readAddons(addonDir: str) -> Iterable[Addon]:

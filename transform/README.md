@@ -1,9 +1,12 @@
 # Transforming data to views
 
-This repository primarily exists to transform data from [nvaccess/addon-datastore:master](https://github.com/nvaccess/addon-datastore) to views located at [nvaccess/addon-datastore:views](https://github.com/nvaccess/addon-datastore/tree/views).
+This repository transforms add-on metadata into an output data layout with add-on files and views.
+The output is designed to be published from a single branch.
 
 For each NVDA version that needs to be supported by the add-on store, an entry must be added to [`nvdaAPIVersions.json`](./nvdaAPIVersions.json).
 This includes patch versions.
+
+This module should be run from linux, as symlinks are created for the server component.
 
 ## Overview
 

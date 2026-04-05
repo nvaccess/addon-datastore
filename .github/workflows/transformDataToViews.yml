@@ -10,7 +10,13 @@ concurrency:
 
 jobs:
   transformAndPush:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    permissions:
+      contents: write
+      pull-requests: write
     env:
       # this is a git '--pretty=format' string
       # %h is SHA, %n is newline,
@@ -24,38 +30,72 @@ jobs:
       uses: actions/checkout@v5
       with:
         submodules: true
-    - name: Checkout views branch into separate folder
+    - name: Checkout addonstore-views repository
       uses: actions/checkout@v5
       with:
+        repository: nvaccess/addonstore-views
         path: views
-        ref: views
+        ref: main
+        token: ${{ secrets.VIEWS_PUSH_TOKEN }}
+    - name: Install system deps for lxml
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends \
+          libxml2-dev libxslt1-dev zlib1g-dev
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v6
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-        architecture: x86
     - name: Install requirements and run transformation
       run: |
+        set -euo pipefail
         uv sync
-        # empty the views git folder directory
-        Try { Remove-Item views/views/ -Recurse -ErrorAction stop }
-        Catch [System.Management.Automation.ItemNotFoundException] { $null }
-        uv run --directory transform python -m src.transform --loglevel ${{ env.logLevel }} nvdaAPIVersions.json ../addons ../views/views
+
+        # generate transformed data from this repository's addons metadata
+        rm -rf generated/
+        uv run --directory transform python -m src.transform --loglevel "${{ env.logLevel }}" nvdaAPIVersions.json ../addons ../generated
+
+        # replace generated data directories in addonstore-views
+        rm -rf views/addons/ views/views/
+        cp -R generated/addons views/addons
+        cp -R generated/views views/views
       env:
         logLevel: ${{ runner.debug && 'DEBUG' || 'INFO' }}
     - name: Copy files
       run: |
-        copy ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
-        copy ./transform/docs/output.md ./views/output.md
-        copy ./readme.md ./views/readme.md
-    - name: Commit and push
+        set -euo pipefail
+        cp ./transform/nvdaAPIVersions.json ./views/nvdaAPIVersions.json
+        cp ./transform/docs/output.md ./views/output.md
+        cp ./README.md ./views/README.md
+    - name: Create PR and enable auto-merge
+      env:
+        GH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}
       run: |
+        set -euo pipefail
         git log HEAD --pretty=format:"${{ env.COMMIT_FORMAT }}" -1 > commitMsg.txt
         cd views
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -F ../commitMsg.txt
-        git push
+        if git diff --staged --quiet; then
+          echo "No generated changes; skipping PR creation."
+          exit 0
+        fi
+
+        branchName="transformViews${{ github.run_id }}-${{ github.run_attempt }}"
+        git checkout -b "$branchName"
+        # TODO: Temporarily suppress output during first commit as testing logs are too big.
+        # Remove quiet and gpg sign flags later.
+        git commit --quiet --no-gpg-sign -F ../commitMsg.txt
+        git push --set-upstream origin "$branchName"
+
+        prUrl=$(gh pr create \
+          --repo nvaccess/addonstore-views \
+          --base main \
+          --head "$branchName" \
+          --title "[Automated] Transform add-on data to views" \
+          --body-file ../commitMsg.txt)
+
+        gh pr merge --auto --squash --delete-branch "$prUrl"
