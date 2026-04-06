@@ -1,0 +1,57 @@
+{
+	"addonId": "contactsManager",
+	"displayName": "Contacts Manager for NVDA",
+	"URL": "https://github.com/EdilbertoFonseca/contactsManager/releases/download/v2025.7.0/contactsManager-2025.7.0.nvda-addon",
+	"description": "Simple contacts manager for saving phone numbers, emails, and other contact details for personal or professional use.\n\nShortcut Windows+Alt+L.",
+	"sha256": "cb2c942c6a20b2f26d304ddded77241bb976440bc9001dfd2321bd8655e0cb29",
+	"addonVersionName": "2025.7.0",
+	"addonVersionNumber": {
+		"major": 2025,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 3,
+		"patch": 4
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Edilberto Fonseca",
+	"sourceURL": "https://github.com/EdilbertoFonseca/contactsManager/releases/tag/v2025.7.0",
+	"license": "GPL v2",
+	"homepage": "https://github.com/EdilbertoFonseca/contactsManager",
+	"changelog": "Introduces multiple enhancements to contact handling:\n\n- Directly open saved contacts in WhatsApp from the contact list.\n- Perform a search when Enter is pressed in the search field.\n- Intercept Ctrl+V on contact phone fields to paste only digits.\n\nDetails:\n\n- Direct WhatsApp Opening (Contact List): Pressing Enter on a contact in the list now opens that contact directly in WhatsApp.\n- Search Execution (Search Field): Pressing Enter in the search field now triggers the search action.\n\nClean Pasted Phone Input:\n\n- Binds EVTCHARHOOK for cell and landline inputs.\n- Adds `onPasteAndClean` to: Read the clipboard.\nStrip non-digit characters using a regex.\n- Set the cleaned value into the focused field (skipping default paste).\n- Allows non-paste keys to be processed normally via `event.Skip()`.\n\nAdditionally updates `addonversion` to 2025.7.0 and replaces the `addonchangelog` text.\nThe changelog now includes notes about opening contacts in WhatsApp, enabling pasting into number fields, and the Enter key functionality.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1775483130000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Gerenciador de contatos para NVDA",
+			"description": "Gerenciador de contatos simples para salvar números de telefone, e-mails e outros detalhes de contato para uso pessoal ou profissional.\n\nAtalho Windows+Alt+L.",
+			"changelog": "Introduces multiple enhancements to contact handling:\n\n- Directly open saved contacts in WhatsApp from the contact list.\n- Perform a search when Enter is pressed in the search field.\n- Intercept Ctrl+V on contact phone fields to paste only digits.\n\nDetails:\n\n- Direct WhatsApp Opening (Contact List): Pressing Enter on a contact in the list now opens that contact directly in WhatsApp.\n- Search Execution (Search Field): Pressing Enter in the search field now triggers the search action.\n\nClean Pasted Phone Input:\n\n- Binds EVTCHARHOOK for cell and landline inputs.\n- Adds `onPasteAndClean` to: Read the clipboard.\nStrip non-digit characters using a regex.\n- Set the cleaned value into the focused field (skipping default paste).\n- Allows non-paste keys to be processed normally via `event.Skip()`.\n\nAdditionally updates `addonversion` to 2025.7.0 and replaces the `addonchangelog` text.\nThe changelog now includes notes about opening contacts in WhatsApp, enabling pasting into number fields, and the Enter key functionality."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Gestor de contactos para NVDA",
+			"description": "Gestor simples de contactos para guardar números de telefone, e-mails e outros detalhes de contacto para uso pessoal ou profissional. \n\nAtalho Windows+Alt+L.",
+			"changelog": "Introduces multiple enhancements to contact handling:\n\n- Directly open saved contacts in WhatsApp from the contact list.\n- Perform a search when Enter is pressed in the search field.\n- Intercept Ctrl+V on contact phone fields to paste only digits.\n\nDetails:\n\n- Direct WhatsApp Opening (Contact List): Pressing Enter on a contact in the list now opens that contact directly in WhatsApp.\n- Search Execution (Search Field): Pressing Enter in the search field now triggers the search action.\n\nClean Pasted Phone Input:\n\n- Binds EVTCHARHOOK for cell and landline inputs.\n- Adds `onPasteAndClean` to: Read the clipboard.\nStrip non-digit characters using a regex.\n- Set the cleaned value into the focused field (skipping default paste).\n- Allows non-paste keys to be processed normally via `event.Skip()`.\n\nAdditionally updates `addonversion` to 2025.7.0 and replaces the `addonchangelog` text.\nThe changelog now includes notes about opening contacts in WhatsApp, enabling pasting into number fields, and the Enter key functionality."
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA için Kişi Yöneticisi",
+			"description": "Simple contacts manager for saving phone numbers, emails, and other contact details for personal or professional use.\n\nShortcut Windows+Alt+L.",
+			"changelog": "Introduces multiple enhancements to contact handling:\n\n- Directly open saved contacts in WhatsApp from the contact list.\n- Perform a search when Enter is pressed in the search field.\n- Intercept Ctrl+V on contact phone fields to paste only digits.\n\nDetails:\n\n- Direct WhatsApp Opening (Contact List): Pressing Enter on a contact in the list now opens that contact directly in WhatsApp.\n- Search Execution (Search Field): Pressing Enter in the search field now triggers the search action.\n\nClean Pasted Phone Input:\n\n- Binds EVTCHARHOOK for cell and landline inputs.\n- Adds `onPasteAndClean` to: Read the clipboard.\nStrip non-digit characters using a regex.\n- Set the cleaned value into the focused field (skipping default paste).\n- Allows non-paste keys to be processed normally via `event.Skip()`.\n\nAdditionally updates `addonversion` to 2025.7.0 and replaces the `addonchangelog` text.\nThe changelog now includes notes about opening contacts in WhatsApp, enabling pasting into number fields, and the Enter key functionality."
+		},
+		{
+			"language": "uk",
+			"displayName": "Менеджер контактів для NVDA",
+			"description": "Simple contacts manager for saving phone numbers, emails, and other contact details for personal or professional use.\n\nShortcut Windows+Alt+L.",
+			"changelog": "Introduces multiple enhancements to contact handling:\n\n- Directly open saved contacts in WhatsApp from the contact list.\n- Perform a search when Enter is pressed in the search field.\n- Intercept Ctrl+V on contact phone fields to paste only digits.\n\nDetails:\n\n- Direct WhatsApp Opening (Contact List): Pressing Enter on a contact in the list now opens that contact directly in WhatsApp.\n- Search Execution (Search Field): Pressing Enter in the search field now triggers the search action.\n\nClean Pasted Phone Input:\n\n- Binds EVTCHARHOOK for cell and landline inputs.\n- Adds `onPasteAndClean` to: Read the clipboard.\nStrip non-digit characters using a regex.\n- Set the cleaned value into the focused field (skipping default paste).\n- Allows non-paste keys to be processed normally via `event.Skip()`.\n\nAdditionally updates `addonversion` to 2025.7.0 and replaces the `addonchangelog` text.\nThe changelog now includes notes about opening contacts in WhatsApp, enabling pasting into number fields, and the Enter key functionality."
+		}
+	]
+}
