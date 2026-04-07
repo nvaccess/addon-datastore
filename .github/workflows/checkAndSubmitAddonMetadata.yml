@@ -346,7 +346,7 @@ jobs:
     - name: Create discussion for add-on id
       id: createDiscussion
       if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
-      uses: nvdaes/build-discussion@v1
+      uses: nvdaes/build-discussion@v2
       with:
         category-position: 1
         title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
