@@ -165,7 +165,9 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 						targetLanguage = "en"
 
 					translatedAddonPath = os.path.join(translatedAddonDirPath, f"{targetLanguage}.json")
-					versionedViewPath = os.path.join(addonDir, "views", lang, str(nvdaAPIVersion), addonName, f"{channel}.json")
+					versionedViewPath = os.path.join(
+						addonDir, "views", lang, str(nvdaAPIVersion), addonName, f"{channel}.json"
+					)
 					_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=versionedViewPath)
 
 				# paths are case insensitive
@@ -187,7 +189,9 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 							targetLanguage = "en"
 
 						translatedAddonPath = os.path.join(translatedAddonDirPath, f"{targetLanguage}.json")
-						latestViewPath = os.path.join(addonDir, "views", lang, "latest", addonName, f"{channel}.json")
+						latestViewPath = os.path.join(
+							addonDir, "views", lang, "latest", addonName, f"{channel}.json"
+						)
 						_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=latestViewPath)
 
 
