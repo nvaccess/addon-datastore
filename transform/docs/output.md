@@ -23,7 +23,7 @@ Symlink end views which point to translated files:
 
 Examples:
 
-- `/addons/nvdaOCR/2020.3.0/en.json`
+- `/addons/nvdaOCR/1.3.5/en.json`
 - `/views/en/2020.3.0/nvdaOCR/stable.json`
 
 Where `NVDA API Version` may be:

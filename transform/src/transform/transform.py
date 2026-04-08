@@ -106,18 +106,14 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 	) -> dict[str, object]:
 		translatedAddonData: dict[str, object] = baseAddonData.copy()
 		langWithoutLocale = lang.split("_")[0]
-		if lang in addonTranslations:
-			translation = addonTranslations[lang]
-			if "displayName" in translation:
-				translatedAddonData["displayName"] = translation["displayName"]
-			if "description" in translation:
-				translatedAddonData["description"] = translation["description"]
-		elif langWithoutLocale in addonTranslations:
-			translation = addonTranslations[langWithoutLocale]
-			if "displayName" in translation:
-				translatedAddonData["displayName"] = translation["displayName"]
-			if "description" in translation:
-				translatedAddonData["description"] = translation["description"]
+		translation = addonTranslations.get(lang)
+		if translation is None:
+			translation = addonTranslations.get(langWithoutLocale)
+		if translation is not None:
+			if (translatedDisplayName := translation.get("displayName")) is not None:
+				translatedAddonData["displayName"] = translatedDisplayName
+			if (translatedDescription := translation.get("description")) is not None:
+				translatedAddonData["description"] = translatedDescription
 		return translatedAddonData
 
 	def _createRelativeFileSymlink(*, targetPath: str, symlinkPath: str) -> None:
@@ -144,7 +140,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 						del addonData["translations"]
 
 				addonVersion = str(addon.addonVersion)
-				translatedAddonDirPath = f"{addonDir}/addons/{addonName}/{addonVersion}"
+				translatedAddonDirPath = os.path.join(addonDir, "addons", addonName, addonVersion)
 				if translatedAddonDirPath not in writtenTranslatedAddonPath:
 					writtenTranslatedAddonPath.add(translatedAddonDirPath)
 					addonTranslations: dict[str, dict[str, str]] = {
@@ -154,7 +150,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 					for lang in translatedLanguages:
 						translatedAddonData = _getTranslatedAddonData(addonData, addonTranslations, lang)
 						Path(translatedAddonDirPath).mkdir(parents=True, exist_ok=True)
-						with open(f"{translatedAddonDirPath}/{lang}.json", "w") as newAddonFile:
+						with open(os.path.join(translatedAddonDirPath, f"{lang}.json"), "w") as newAddonFile:
 							validateJson(translatedAddonData, JSONSchemaPaths.ADDON_DATA)
 							json.dump(translatedAddonData, newAddonFile)
 
@@ -168,10 +164,8 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 					else:
 						targetLanguage = "en"
 
-					translatedAddonPath = f"{translatedAddonDirPath}/{targetLanguage}.json"
-					versionedViewPath = (
-						f"{addonDir}/views/{lang}/{str(nvdaAPIVersion)}/{addonName}/{channel}.json"
-					)
+					translatedAddonPath = os.path.join(translatedAddonDirPath, f"{targetLanguage}.json")
+					versionedViewPath = os.path.join(addonDir, "views", lang, str(nvdaAPIVersion), addonName, f"{channel}.json")
 					_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=versionedViewPath)
 
 				# paths are case insensitive
@@ -192,8 +186,8 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 						else:
 							targetLanguage = "en"
 
-						translatedAddonPath = f"{translatedAddonDirPath}/{targetLanguage}.json"
-						latestViewPath = f"{addonDir}/views/{lang}/latest/{addonName}/{channel}.json"
+						translatedAddonPath = os.path.join(translatedAddonDirPath, f"{targetLanguage}.json")
+						latestViewPath = os.path.join(addonDir, "views", lang, "latest", addonName, f"{channel}.json")
 						_createRelativeFileSymlink(targetPath=translatedAddonPath, symlinkPath=latestViewPath)
 
 
@@ -203,7 +197,7 @@ def readAddons(addonDir: str) -> Iterable[Addon]:
 	Works as a generator to minimize memory usage, as such, each use of iteration should call readAddons.
 	Skips addons and logs errors if the naming schema or json schema do not match what is expected.
 	"""
-	for fileName in glob.glob(f"{addonDir}/**/*.json"):
+	for fileName in glob.glob(os.path.join(addonDir, "**", "*.json")):
 		with open(fileName, "r", encoding="utf-8") as addonFile:
 			addonData = json.load(addonFile)
 		try:
