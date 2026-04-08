@@ -69,7 +69,7 @@ Triggered by a new commit to the `master` branch, [a GitHub workflow](../../.git
 
 For each NVDA API version and channel, the add-on metadata with the highest version number is written.
 
-This transformed data is then committed by the GitHub Action to the data repository main branch.
+This transformed data is then committed by the GitHub Action to the [addonstore-views](https://github.com/nvaccess/addonstore-views) main branch.
 
 ### Data views
 
@@ -79,11 +79,10 @@ The generated data is stored in two top-level folders:
 - `views`: compatibility and latest projections as relative symlinks into `addons`.
 
 The following projected views are available in the `views` folder.
-Required transformations of the data:
 
-- `/views/<lang>/NVDA API Version/addon-1-ID/stable.json`
-- `/views/<lang>/NVDA API Version/addon-1-ID/beta.json`
-- `/views/<lang>/NVDA API Version/addon-2-ID/stable.json`
+The views folder is expected to have the following structure:
+
+`/views/<lang>/<NvdaAPIVersion>/<addonId>/<channel>.json`
 
 Notes:
 
@@ -124,15 +123,13 @@ Channel can be: all, dev, stable or beta.
 - Example: <https://addonStore.nvaccess.org/en/all/latest.json>
 
 ### `GET` cacheHash
+
 Returns a hash used for cache breaking.
 This hash will change whenever new add-on data is available.
-The hash should match the latest commit hash of the transformed data repository branch.
+For testing purposes, the hash should match the latest commit hash of the transformed [addonstore-views](https://github.com/nvaccess/addonstore-views) branch.
 
 - <https://addonStore.nvaccess.org/cacheHash.json>
 - Example return value: `"5fcf12f"`
-
-### Legacy
-This endpoint mirrors the legacy [get.php, from the addonFiles repository](https://github.com/nvaccess/addonFiles/blob/master/get.php).
 
 #### `addonslist` end-point
 

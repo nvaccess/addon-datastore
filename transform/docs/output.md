@@ -8,12 +8,18 @@ Callers are responsible for deleting any previous output directory before runnin
 
 The following subdirectories and files are created:
 
-- `/addons/addon-1-ID/addonVersion/en.json`
-- `/addons/addon-1-ID/addonVersion/ar.json` (when a translation exists)
-- `/views/en/NVDA API Version/addon-1-ID/stable.json`
-- `/views/en/NVDA API Version/addon-1-ID/beta.json`
-- `/views/en/NVDA API Version/addon-2-ID/stable.json`
-- `/views/ar/NVDA API Version/addon-1-ID/stable.json`
+Translated add-on files:
+
+- `/addons/addon-1-ID/<addonVersion>/en.json`
+- `/addons/addon-1-ID/<addonVersion>/ar.json` (when a translation exists)
+- `/addons/addon-2-ID/<addonVersion>/en.json`
+
+Symlink end views which point to translated files:
+
+- `/views/en/<NvdaAPIVersion>/addon-1-ID/stable.json`
+- `/views/en/<NvdaAPIVersion>/addon-1-ID/beta.json`
+- `/views/en/<NvdaAPIVersion>/addon-2-ID/stable.json`
+- `/views/ar/<NvdaAPIVersion>addon-1-ID/stable.json`
 
 Examples:
 
@@ -25,7 +31,7 @@ Where `NVDA API Version` may be:
 - `2022.1.0`: A major release.
 - `2022.1.3`: A patch release.
 
-The system differentiates patch releases from major releases to cater to the (very unlikely) event of requireing a breaking change or introduction to the NVDA add-on API.
+The system differentiates patch releases from major releases to cater to the (very unlikely) event of requiring a breaking change or introduction to the NVDA add-on API.
 
 ## Output file data
 

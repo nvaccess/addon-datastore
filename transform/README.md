@@ -1,6 +1,6 @@
 # Transforming data to views
 
-This repository transforms add-on metadata into an output data layout with add-on files and views.
+This module transforms add-on metadata into an output data layout with add-on files and views.
 The output is designed to be published from a single branch.
 
 For each NVDA version that needs to be supported by the add-on store, an entry must be added to [`nvdaAPIVersions.json`](./nvdaAPIVersions.json).
