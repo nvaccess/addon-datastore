@@ -1,0 +1,42 @@
+{
+	"addonId": "nvdaCoach",
+	"displayName": "NVDA Coach - Interactive Screen Reader Training",
+	"URL": "https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.5.1/nvdaCoach-1.5.1.nvda-addon",
+	"description": "An interactive, in-NVDA training system that teaches screen reader commands through guided, hands-on drills with real-time feedback. Built by an assistive technology instructor for absolute beginners.",
+	"sha256": "6ecab93d9253588b1af2fbda4b544599fb32132bdf12ba33eb957050c7efd6cd",
+	"addonVersionName": "1.5.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Tony Gebhard",
+	"sourceURL": "https://github.com/tonygeb23/nvdaCoach-",
+	"license": "GPL v2",
+	"homepage": "https://tonygebhard.me/NVDACoach",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1775995421000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "NVDACoach (Интерактивный тренажёр по скринридеру NVDA)",
+			"description": "\nNVDA Coach — это интерактивное обучающее дополнение для экранного диктора NVDA.\nОно помогает освоить команды NVDA через короткие практические упражнения.\nВместо чтения руководства вы отрабатываете навыки в реальном времени с голосовыми подсказками.\nДополнение разработано специально для новичков и тех, кто только начинает знакомство с экранными дикторами.\nДля начала работы нажмите NVDA+Shift+C.\nОткроется окно Тренера с приветствием и списком уроков.\nВыберите урок стрелками и нажмите Enter.\nКаждый урок состоит из последовательных шагов.\nДля шагов с командами переключитесь в другое окно выполните действие и вернитесь в окно Тренера с помощью NVDA+Shift+C.\nДля шагов со встроенным текстом практикуйтесь прямо в окне Тренера.\nВо время урока всегда доступны клавиши\n• Enter — переход к следующему шагу\n• F1 — повтор текущей инструкции\n• F2 — подсказка для текущего шага\n• F3 — пропуск текущего шага\n• Escape — остановка урока\nПосле завершения урока используйте Ctrl+N для следующего урока Ctrl+B для предыдущего и Ctrl+R для перезапуска.\nДополнение запоминает пройденные уроки и отмечает их в списке.\nПрогресс сохраняется в папке конфигурации NVDA.\nВ данный момент NVDA Coach включает шесть глав:\n• «Начало работы с NVDA».\n• «Чтение и перемещение по тексту».\n• «Режим обзора и навигация в интернете».\n• «Навигация по объектам».\n• «Настройка NVDA».\n• «Ваша клавиатура».\nДля уроков предусмотрены встроенные среды практики\n• живые тренировочные формы для отработки навигации по TAB и активации элементов\n• текстовая область для практики чтения и выделения прямо в окне Тренера\n• отдельная веб-страница для отработки навигации по заголовкам ссылкам и формам\nДополнение создано Тони Гебхардом инструктором по ассистивным технологиям.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA Eğitmeni - İnteraktif Ekran Okuyucu Eğitimi",
+			"description": "Ekran okuyucu komutlarını, gerçek zamanlı geri bildirimle birlikte rehberli, uygulamalı alıştırmalar yoluyla öğreten etkileşimli, NVDA içi bir eğitim sistemi. Tamamen yeni başlayanlar için yardımcı bir teknoloji eğitmeni tarafından tasarlandı."
+		}
+	]
+}
