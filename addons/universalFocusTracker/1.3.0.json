@@ -1,0 +1,41 @@
+{
+	"addonId": "universalFocusTracker",
+	"displayName": "Universal focus tracker",
+	"URL": "https://github.com/MuhimenAbuMawada/UniversalFocusTrackerNVDA-add-on/releases/download/V1.3/UniversalFocusTracker-V1.3.nvda-addon",
+	"description": "This add-on automatically moves the mouse cursor to the position of the NVDA object.\nIt's essential for keyboards without an Applications key and highly useful for trainers or presenters sharing their screens.\n\nNote: it doesn't work in popup menus, because it causes problems with focusing.",
+	"sha256": "a848283d5bd39e63c8f761f7b9f0e4eee72bfdb374d26f02c92fbd8540f3ccdf",
+	"addonVersionName": "1.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "muhimenNabeel",
+	"sourceURL": "https://github.com/MuhimenAbuMawada/UniversalFocusTrackerNVDA-add-on/archive/refs/tags/V1.3.zip",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1776421592000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مؤشِر تَتبُع التَركيز",
+			"description": "هَذِهِ الإِضَافَةُ تَقُومُ بِتَحْرِيكِ مُؤَشِّرِ المَاوُس تِلْقَائِيّاً إِلَى مَوْقِعِ عُنْصُرِ NVDA المُرَكَّزِ عَلَيْهِ.\nتُعْتَبَرُ ضَرُورِيَّةً لِلَوْحَاتِ المَفَاتِيحِ الَّتِي لَا تَحْتَوِي عَلَى مِفْتَاحِ التَّطْبِيقَاتِ (Applications key)، وَمُفِيدَةً جِدّاً لِلمُدَرِسين أَوْ مُقَدِّمِي العُرُوضِ الَّذِينَ يُشَارِكُونَ شَاشَاتِهِمْ.\n\nمُلَاحَظَة: الإِضَافَةُ لَا تَعْمَلُ فِي القَوَائِمِ المُنْبَثِقَةِ؛ مِثل (قائمة nvda, قائمة file, الخ), لِأَنَّ ذَلِكَ يُسَبِّب مَشاكِل مع التَّرْكِيزِ."
+		},
+		{
+			"language": "ru",
+			"displayName": "UniversalFocusTracker (Универсальное отслеживание фокуса)",
+			"description": "\nUniversal Focus Tracker автоматически перемещает указатель мыши в центр элемента, на котором находится фокус NVDA.\nДополнение работает как в обычных приложениях, так и в браузерах с режимом обзора.\nПри переключении между элементами мышь мгновенно следует за фокусом.\nПри перемещении курсора ввода указатель также перемещается за ним.\nДополнение игнорирует элементы меню и всплывающие окна для предотвращения конфликтов.\nВ настройках NVDA добавлена панель для включения или отключения отслеживания.\nФункция включена по умолчанию после установки.\n«Примечание»: дополнение не работает в контекстных меню, таких как меню NVDA или меню «Файл», «Система», «ATC», потому что движение указателя мыши вместе с NVDA в этих меню вызывает проблемы с фокусом.\n"
+		}
+	]
+}
