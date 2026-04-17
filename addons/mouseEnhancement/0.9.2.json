@@ -1,0 +1,45 @@
+{
+	"addonId": "mouseEnhancement",
+	"displayName": "Mouse Enhancement",
+	"URL": "https://github.com/hwf1324/mouseEnhancement/releases/download/v0.9.2/mouseEnhancement-0.9.2.nvda-addon",
+	"description": "This add-on provides enhancement to mouse functionality in NVDA.\n\nFor example:\nFixed mouse tracking in Electron app (Only 2024.4 or later).\nElectron apps, such as VS Code.\nExperimental fix for mouse tracking in WinUI apps.\nWinUI applications: e.g. Windows Terminal, PowerToys v0.86.0 and higher, some applications that come with Windows, etc.\nAutomatically update the mouse object.",
+	"sha256": "a743859824fd3545779b28517a013050833216cb44d13196eac154ab07b5ba25",
+	"addonVersionName": "0.9.2",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "hwf1324",
+	"sourceURL": "https://github.com/hwf1324/mouseEnhancement",
+	"license": "GPL v2",
+	"homepage": "https://github.com/hwf1324/mouseEnhancement",
+	"changelog": "* Add mouse tracking support for frameless windows in the Tauri framework.\n  * Thanks to @ryusei-48 for providing the patch reference.\n* Disabled the forced use of UIA implementation in the 飞书 module and fixed the character navigation in the edit box. Supported mouse tracking using redirection objects.\n* Update the Windows Terminal window class name rules.\n* Update add-on template.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1776447896000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Покращення миші",
+			"description": "Цей додаток покращує функціональність миші в NVDA.\n\nНаприклад:\nВиправлено відстеження миші в додатку Electron (тільки 2024.4 або пізніші версії).\nДодатки Electron, такі як VS Code.\nЕкспериментальне виправлення відстеження миші в додатках WinUI.\nДодатки WinUI: наприклад, Windows Terminal, PowerToys v0.86.0 і новіші версії, деякі додатки, що входять до складу Windows, тощо.\nАвтоматичне оновлення об'єкта миші.",
+			"changelog": "* Add mouse tracking support for frameless windows in the Tauri framework.\n  * Thanks to @ryusei-48 for providing the patch reference.\n* Disabled the forced use of UIA implementation in the 飞书 module and fixed the character navigation in the edit box. Supported mouse tracking using redirection objects.\n* Update the Windows Terminal window class name rules.\n* Update add-on template."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "鼠标增强",
+			"description": "该插件增强了 NVDA 中的鼠标功能。\n\n例如：\n修复 Electron 应用中的鼠标导航（仅 2024.4 或更高版本）。\nElectron 应用，例如 VS Code。\n实验性修复 WinUI 应用中的鼠标导航。\nWinUI 应用：例如 Windows 终端，PowerToys v0.86.0 及更高版本，Windows 预装的某些应用程序等。\n自动更新鼠标对象。",
+			"changelog": "* 添加 Tauri 框架中的无边框窗口的鼠标导航支持。\n  * 感谢 @ryusei-48 提出的补丁参考。\n* 禁用飞书模块的强制使用 UIA 实现，修复编辑框的字符导航。使用重定向对象的方式支持鼠标导航。\n* 更新 Windows 终端窗口类名规则。\n* 更新插件模板。"
+		}
+	]
+}
