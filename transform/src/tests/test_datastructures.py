@@ -25,7 +25,7 @@ class TestMajorMinorPatch(unittest.TestCase):
 		"""Confirm that versions as string always include the patch number, 0 by default.
 
 		Even if the patch isn't specified, it should be included
-		so that the output is consistent - e.g. /views/2021.1.3/stable.json"""
+		so that the output is consistent - e.g. /views/en/2021.1.3/addonId/stable.json"""
 		self.assertEqual(str(MajorMinorPatch(13, 2)), "13.2.0")
 
 	def test_fromDict(self):

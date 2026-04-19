@@ -45,6 +45,7 @@ class InputAddonVersion:
 class ExpectedAddonVersion:
 	path: str
 	addonVersion: str
+	targetPath: str | None = None
 
 
 def addonJson(path: str, channel: str, *, required: str, tested: str) -> InputAddonVersion:
@@ -103,7 +104,7 @@ def write_addons(*addons: InputAddonVersion):
 	for addon in addons:
 		addonWritePath = os.path.join(DATA_DIR.INPUT.value, addon.path)
 		Path(os.path.dirname(addonWritePath)).mkdir(parents=True, exist_ok=True)
-		with open(addonWritePath, "w") as addonFile:
+		with open(addonWritePath, "w", encoding="utf-8") as addonFile:
 			addonFile.write(addon.addonDataBlob)
 
 
@@ -203,6 +204,13 @@ class TestTransformation(unittest.TestCase):
 		for expectedAddon in expectedAddons:
 			fullPathToAddon = os.path.join(DATA_DIR.OUTPUT.value, expectedAddon.path)
 			self.assertTrue(Path(fullPathToAddon).exists())
+			if expectedAddon.targetPath is not None:
+				targetPath = os.path.join(DATA_DIR.OUTPUT.value, expectedAddon.targetPath)
+				self.assertTrue(os.path.islink(fullPathToAddon))
+				self.assertEqual(
+					os.path.normpath(os.path.realpath(fullPathToAddon)),
+					os.path.normpath(os.path.realpath(targetPath)),
+				)
 			with open(fullPathToAddon, "r") as expectedAddonFile:
 				addonData = json.load(expectedAddonFile)
 			addonVersion = MajorMinorPatch(**addonData["addonVersionNumber"])
@@ -224,12 +232,141 @@ class TestTransformation(unittest.TestCase):
 		)
 		self.runTransformation()
 		self._assertAddonDataWritten(
-			ExpectedAddonVersion("en/2020.2.0/oldNewAddon/stable.json", "2.1.0"),
-			ExpectedAddonVersion("en/2020.3.0/oldNewAddon/stable.json", "13.0.0"),  # overrides 2.1.0
-			ExpectedAddonVersion("en/2020.4.0/oldNewAddon/stable.json", "13.0.0"),
-			ExpectedAddonVersion("en/2020.4.0/betaStableAddon/stable.json", "0.0.1"),
-			ExpectedAddonVersion("en/2020.4.0/betaStableAddon/beta.json", "0.0.2"),
-			ExpectedAddonVersion("en/latest/betaStableAddon/beta.json", "0.0.2"),
-			ExpectedAddonVersion("en/latest/betaStableAddon/stable.json", "0.0.1"),
-			ExpectedAddonVersion("en/latest/oldNewAddon/stable.json", "13.0.0"),
+			ExpectedAddonVersion("addons/oldNewAddon/2.1.0/en.json", "2.1.0"),
+			ExpectedAddonVersion("addons/oldNewAddon/13.0.0/en.json", "13.0.0"),
+			ExpectedAddonVersion("addons/betaStableAddon/0.0.1/en.json", "0.0.1"),
+			ExpectedAddonVersion("addons/betaStableAddon/0.0.2/en.json", "0.0.2"),
+			ExpectedAddonVersion(
+				"views/en/2020.2.0/oldNewAddon/stable.json",
+				"2.1.0",
+				targetPath="addons/oldNewAddon/2.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2020.3.0/oldNewAddon/stable.json",
+				"13.0.0",
+				targetPath="addons/oldNewAddon/13.0.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2020.4.0/oldNewAddon/stable.json",
+				"13.0.0",
+				targetPath="addons/oldNewAddon/13.0.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2020.4.0/betaStableAddon/stable.json",
+				"0.0.1",
+				targetPath="addons/betaStableAddon/0.0.1/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2020.4.0/betaStableAddon/beta.json",
+				"0.0.2",
+				targetPath="addons/betaStableAddon/0.0.2/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/latest/betaStableAddon/beta.json",
+				"0.0.2",
+				targetPath="addons/betaStableAddon/0.0.2/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/latest/betaStableAddon/stable.json",
+				"0.0.1",
+				targetPath="addons/betaStableAddon/0.0.1/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/latest/oldNewAddon/stable.json",
+				"13.0.0",
+				targetPath="addons/oldNewAddon/13.0.0/en.json",
+			),
+		)
+
+	def test_translation_view_symlink_points_to_translated_addon_data(self):
+		"""Confirms language-specific views symlink to translated addon data files."""
+		write_addons(
+			InputAddonVersion(
+				"UIANotificationSwitch/2026.1.0.json",
+				"""
+{
+	"addonId": "UIANotificationSwitch",
+	"displayName": "UIA Notification Switch",
+	"description": "English description",
+	"channel": "stable",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2019,
+		"minor": 1,
+		"patch": 0
+	},
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مفتاح إشعارات UIA",
+			"description": "وصف عربي"
+		}
+	]
+}
+""",
+			),
+		)
+		self.runTransformation()
+		self._assertAddonDataWritten(
+			ExpectedAddonVersion("addons/UIANotificationSwitch/2026.1.0/en.json", "2026.1.0"),
+			ExpectedAddonVersion("addons/UIANotificationSwitch/2026.1.0/ar.json", "2026.1.0"),
+			ExpectedAddonVersion(
+				"views/ar/2019.1.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/2019.1.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/2019.2.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/2019.2.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/ar/latest/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/ar.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.1.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.1.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.2.0/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/2019.2.1/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
+			ExpectedAddonVersion(
+				"views/en/latest/UIANotificationSwitch/stable.json",
+				"2026.1.0",
+				targetPath="addons/UIANotificationSwitch/2026.1.0/en.json",
+			),
 		)

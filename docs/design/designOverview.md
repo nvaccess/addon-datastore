@@ -63,27 +63,34 @@ Aims:
   - While this is technically not necessary, it provides a good separation from implementation.
     If we wished to change our storage mechanism, we would not be breaking old versions of NVDA.
 
-
 ## API data generation details
 
-Triggered by a new commit to the `master` branch, [a GitHub workflow](../../.github/workflows/transformDataToViews.yml), [addon-datastore-transform](https://github.com/nvaccess/addon-datastore-transform), transforms the data into the required views.
+Triggered by a new commit to the `master` branch, [a GitHub workflow](../../.github/workflows/transformDataToViews.yml), and the [transform](../../transform/) module, transforms the data into add-on files and projected views.
 
 For each NVDA API version and channel, the add-on metadata with the highest version number is written.
 
-These views are then committed by the GitHub Action to the [views branch](https://github.com/nvaccess/addon-datastore/tree/views).
+This transformed data is then committed by the GitHub Action to the [addonstore-views](https://github.com/nvaccess/addonstore-views) main branch.
 
 ### Data views
-The following views will only be available on the [views branch](https://github.com/nvaccess/addon-datastore/tree/views) and located in a `views` folder.
-Required transformations of the data:
-- `/NVDA API Version/addon-1-ID/stable.json`
-- `/NVDA API Version/addon-1-ID/beta.json`
-- `/NVDA API Version/addon-2-ID/stable.json`
+
+The generated data is stored in two top-level folders:
+
+- `addons`: add-on data files by add-on version and language.
+- `views`: compatibility and latest projections as relative symlinks into `addons`.
+
+The following projected views are available in the `views` folder.
+
+The views folder is expected to have the following structure:
+
+`/views/<lang>/<NvdaAPIVersion>/<addonId>/<channel>.json`
 
 Notes:
+
 - 'NVDA API Version' will be something like '2019.3', there will be one folder for each NVDA API Version.
 - The `beta.json` and `stable.json` contain the information necessary for a store entry.
 - The contents for each add-on will include all the technical details required for NVDA to download, verify file integrity, and install.
-- The file will include translations (if available) for the displayable metadata.
+- View files are relative symlinks to files in `addons`.
+- Files use translations (if available) for displayable metadata.
 
 This simplifies the processing on the hosting (E.G NV Access) server.
 
@@ -116,15 +123,13 @@ Channel can be: all, dev, stable or beta.
 - Example: <https://addonStore.nvaccess.org/en/all/latest.json>
 
 ### `GET` cacheHash
+
 Returns a hash used for cache breaking.
 This hash will change whenever new add-on data is available.
-The hash should match the latest commit hash of the [views branch](https://github.com/nvaccess/addon-datastore/commits/views).
+For testing purposes, the hash should match the latest commit hash of the transformed [addonstore-views](https://github.com/nvaccess/addonstore-views) branch.
 
 - <https://addonStore.nvaccess.org/cacheHash.json>
 - Example return value: `"5fcf12f"`
-
-### Legacy
-This endpoint mirrors the legacy [get.php, from the addonFiles repository](https://github.com/nvaccess/addonFiles/blob/master/get.php).
 
 #### `addonslist` end-point
 
