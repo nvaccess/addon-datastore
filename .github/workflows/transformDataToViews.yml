@@ -2,6 +2,10 @@ name: Transform NVDA addons to views
 
 on:
   workflow_call:
+    secrets:
+      VIEWS_PUSH_TOKEN:
+        description: Token with access to nvaccess/addonstore-views
+        required: true
   workflow_dispatch:
 
 concurrency:
