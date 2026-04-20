@@ -102,4 +102,4 @@ jobs:
           --title "[Automated] Transform add-on data to views" \
           --body-file ../commitMsg.txt)
 
-        gh pr merge --auto --squash --delete-branch "$prUrl"
+        gh pr merge --admin --auto --squash --delete-branch "$prUrl"
