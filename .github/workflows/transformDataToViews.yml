@@ -58,7 +58,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install requirements and run transformation
       run: |
-        git pull
+        git pull --no-all
         set -euo pipefail
         uv sync
 
