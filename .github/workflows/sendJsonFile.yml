@@ -105,3 +105,4 @@ jobs:
       issueTitle: ${{ github.event.issue.title }}
     secrets:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
+      VIEWS_PUSH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}

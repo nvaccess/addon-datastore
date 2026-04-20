@@ -18,6 +18,8 @@ on:
     secrets:
       VT_API_KEY:
         required: true
+      VIEWS_PUSH_TOKEN:
+        required: true
 
 env:
   branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
@@ -443,3 +445,5 @@ jobs:
     needs: [mergeToMaster]
     if: ${{ always() && needs.mergeToMaster.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
+    secrets:
+      VIEWS_PUSH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}
