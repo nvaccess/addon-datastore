@@ -243,5 +243,49 @@
 			"displayName": "AbsoluteFileAndFolder",
 			"description": "集智慧過濾、最近歷史記錄和管理員執行功能於一體的終極檔案和資料夾快速存取管理工具。\n快捷鍵：\nWindows+Backspace\n單擊打開 AbsoluteFloder\n雙擊打開 AbsoluteFile"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/94d29fe18ef6cc57aa6440c138268f333151a78a8411ca7ff0a181f882ac5aaf",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "94d29fe18ef6cc57aa6440c138268f333151a78a8411ca7ff0a181f882ac5aaf",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00001c1c15180000",
+					"raw_md5": "f0806ca9d8d1d6ddf21387fcbdd085c5"
+				},
+				"first_submission_date": 1776729392,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1776729393,
+				"last_submission_date": 1776729392,
+				"md5": "0ca8b827710314bd14f54421adecbc31",
+				"names": [],
+				"reputation": 0,
+				"sha1": "43452298bfa8b70c60729cb78c18e4c3ca6f4a46",
+				"sha256": "94d29fe18ef6cc57aa6440c138268f333151a78a8411ca7ff0a181f882ac5aaf",
+				"size": 185766,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
