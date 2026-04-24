@@ -97,6 +97,11 @@ jobs:
       run: vt scan file -k $env:VT_API_KEY addon.nvda-addon
   call-workflow:
     needs: check-addon
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      discussions: write
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
       issueNumber: "${{ github.event.issue.number }}"

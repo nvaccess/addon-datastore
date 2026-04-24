@@ -443,6 +443,9 @@ jobs:
 
   call-workflow:
     needs: [mergeToMaster]
+    permissions:
+      contents: write
+      pull-requests: write
     if: ${{ always() && needs.mergeToMaster.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
     secrets:
