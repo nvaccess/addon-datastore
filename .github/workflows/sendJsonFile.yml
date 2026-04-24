@@ -98,10 +98,12 @@ jobs:
   call-workflow:
     needs: check-addon
     permissions:
+      actions: read
       contents: write
       issues: write
       pull-requests: write
       discussions: write
+      security-events: write
     uses: ./.github/workflows/checkAndSubmitAddonMetadata.yml
     with:
       issueNumber: "${{ github.event.issue.number }}"

@@ -256,6 +256,11 @@ jobs:
 
   codeQL-analysis:
     needs: [getAddonId, createPullRequest]
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      security-events: write
     uses: ./.github/workflows/codeql-analysis.yml
     with:
       addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
