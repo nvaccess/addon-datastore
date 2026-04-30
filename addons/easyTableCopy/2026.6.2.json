@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.6.2/easyTableCopy-2026.6.2.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "5fc50210307ab58d2f75209485524219cbd23a020ebd857ba97cb5e3a2ba855b",
+	"addonVersionName": "2026.6.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n- 2026.1 compatibility.\n- Plain copy now captures button and interactive element text\n- Buttons like \"Manage cookies\" or \"Do not share my personal information\" were silently dropped from plain-text output. get_cell_text() now recurses into all child nodes instead of filtering by CONTENT_ROLES.\n- Mark and copy selected items in web lists\nUse Ctrl+Alt+Space on any list item to mark/unmark it. Then open the list menu (Alt+NVDA+T) — a \"Copy Marked (N items)\" option appears when items are selected. Copies as <ul><li> HTML + plain text. Clears selection after copy.\n- List menu now shows \"Clear Selections\" when items are marked\nMirrors the existing table behavior. Accessible via menu item 9.\n- Mark feedback says \"item\" instead of \"row\" in list context\nscript_markRow detects LISTITEM role and announces \"Item Marked / Item Unmarked\" accordingly. Table rows still say \"Row\".\n- Update English and Turkish documentation to mention the new marking and copying web list items.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1777542592000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n- 2026.1 uyumluluğu.\n- Düz kopya artık buton ve etkileşimli öğe metinlerini de yakalar\n- \"Manage cookies\" veya \"Do not share my personal information\" gibi butonlar düz metin çıktısından sessizce düşüyordu. `get_cell_text()` artık `CONTENT_ROLES` filtresi yerine tüm alt düğümlere özyinelemeli olarak iniyor.\n- Web listelerinde öğe işaretleme ve kopyalama\nHerhangi bir liste öğesinde `Ctrl+Alt+Space` ile işaretle/işareti kaldır. Ardından liste menüsünü aç (`Alt+NVDA+T`) — öğe seçiliyken \"İşaretlileri Kopyala (N öğe)\" seçeneği belirir. `<ul><li>` HTML + düz metin olarak kopyalar. Kopyalamadan sonra seçimi temizler.\n- Öğe işaretliyken liste menüsünde \"Seçimleri Temizle\" gösterilir\nMevcut tablo davranışını yansıtır. Menü öğesi 9 üzerinden erişilebilir.\n- Liste bağlamında işaretleme geri bildirimi \"satır\" yerine \"öğe\" der\n`script_markRow`, `LISTITEM` rolünü algılar ve buna göre \"Öğe İşaretlendi / Öğe İşareti Kaldırıldı\" duyurur. Tablo satırları hâlâ \"Satır\" der.\n- Yeni eklenen web liste öğelerini işaretleme ve kopyalama özelliğinden bahsetmek için Türkçe ve İngilizce dokümantasyon güncellendi.\n\n"
+		}
+	]
+}
