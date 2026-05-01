@@ -1,0 +1,57 @@
+{
+	"addonId": "lineDesktop",
+	"displayName": "LINE Desktop Accessibility",
+	"URL": "https://github.com/keyang556/linedesktopnvda/releases/download/1.2.4/lineDesktop-1.2.4.nvda-addon",
+	"description": "Enhances NVDA accessibility support for LINE Desktop on Windows.\nProvides improved navigation for chat lists, messages, contacts, and message input.\nSupports calls, incoming call handling, OCR-assisted reading, message export reading, and AI image description with follow-up questions.",
+	"sha256": "ebc4ab5e48d3811b5aec5f6d55cf6b0761058bac608074a14137a6bab3de79d8",
+	"addonVersionName": "1.2.4",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "中央流行LINE NVDA無障礙應變指揮中心",
+	"sourceURL": "https://github.com/keyang556/linedesktopnvda",
+	"license": "GPL v2",
+	"homepage": "https://keyang556.github.io/linedesktopnvda/",
+	"changelog": "Added an AI image description dialog with a read-only transcript and follow-up questions.\nAdded settings for the image description service, API key, model, and prompt.\nCompleted translations and documentation for all supported languages.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1777618749000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "LINE Desktop Accessibility",
+			"description": "Enhances NVDA accessibility support for LINE Desktop on Windows.\nProvides improved navigation for chat lists, messages, contacts, and message input.\nSupports calls, incoming call handling, OCR-assisted reading, message export reading, and AI image description with follow-up questions.",
+			"changelog": "Added an AI image description dialog with a read-only transcript and follow-up questions.\nAdded settings for the image description service, API key, model, and prompt.\nCompleted translations and documentation for all supported languages."
+		},
+		{
+			"language": "ja",
+			"displayName": "LINE デスクトップ アクセシビリティ",
+			"description": "Windows版LINEデスクトップのNVDAアクセシビリティサポートを強化します。\nトークリスト、メッセージ、友だち、メッセージ入力のナビゲーションを改善します。\n通話、着信対応、OCRによる読み取り、メッセージ書き出し閲覧、追加質問に対応したAI画像説明をサポートします。",
+			"changelog": "読み取り専用の会話履歴と追加質問に対応したAI画像説明ダイアログを追加しました。\n画像説明サービス、API Key、モデル、プロンプトの設定を追加しました。\n対応するすべての言語の翻訳と説明ドキュメントを補完しました。"
+		},
+		{
+			"language": "th",
+			"displayName": "การเข้าถึง LINE Desktop",
+			"description": "เพิ่มการรองรับการเข้าถึงของ NVDA สำหรับ LINE Desktop บน Windows\nปรับปรุงการนำทางในรายการแชท ข้อความ รายชื่อติดต่อ และช่องป้อนข้อความ\nรองรับการโทร การจัดการสายเรียกเข้า การอ่านด้วย OCR โปรแกรมอ่านข้อความจากการส่งออก และการอธิบายรูปภาพด้วย AI พร้อมคำถามต่อเนื่อง",
+			"changelog": "เพิ่มหน้าต่างอธิบายรูปภาพด้วย AI พร้อมประวัติการสนทนาแบบอ่านอย่างเดียวและคำถามต่อเนื่อง\nเพิ่มการตั้งค่าบริการอธิบายรูปภาพ API Key โมเดล และพรอมต์\nเติมคำแปลและเอกสารของทุกภาษาที่รองรับให้ครบถ้วน"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "LINE 電腦版無障礙增強",
+			"description": "增強 NVDA 對 Windows 上 LINE 電腦版的無障礙支援。\n提供對聊天列表、訊息、聯絡人與訊息輸入的改進導覽體驗。\n支援通話、來電處理、OCR 輔助閱讀、訊息匯出閱讀，以及可追問的 AI 圖片描述。",
+			"changelog": "新增 AI 圖片描述對話視窗，支援唯讀對話紀錄與後續提問。\n新增圖片描述服務、API Key、模型與提示詞設定。\n補齊所有支援語言的翻譯與說明文件。"
+		}
+	]
+}
