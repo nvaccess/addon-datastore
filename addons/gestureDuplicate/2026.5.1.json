@@ -243,5 +243,49 @@
 			"displayName": "gestureDuplicate",
 			"description": "識別并管理 NVDA 配置中衝突的鍵盤快捷鍵\n熱鍵：\nShift+Windows+G\n單擊：檢查重複的輸入手勢\n雙擊：我的手勢管理\n三擊：清理配置"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/699143b371c54011d6f2068de45e30831656a21ba0e4136c61e7485c5df8762f",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "699143b371c54011d6f2068de45e30831656a21ba0e4136c61e7485c5df8762f",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000141c1d180000",
+					"raw_md5": "4cc83e90aeef0376712cfb1278ac08d2"
+				},
+				"first_submission_date": 1777700645,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1777700646,
+				"last_submission_date": 1777700645,
+				"md5": "2aa9332102163f6cdef64f5f0b6f5a3e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "27e65f67cc33e945d252080f9c7b83ea8655dac7",
+				"sha256": "699143b371c54011d6f2068de45e30831656a21ba0e4136c61e7485c5df8762f",
+				"size": 231106,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
