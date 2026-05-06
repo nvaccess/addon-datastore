@@ -1,0 +1,39 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.6.5/easyTableCopy-2026.6.5.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "35c890038dab51eb1075327643665282d495025967b553ff87b1b71d07ac69b7",
+	"addonVersionName": "2026.6.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n- `copy_web_list_formatted()`: Copies web lists (`<ul>`, `<nav>`, `<select>`) as an HTML table with reliable object-tree traversal. Solves the issue where native Ctrl+C fails in Chrome for navigation lists.\n- Secondary search for list objects in `script_tableMenu` using `focus` object, enabling detection of open `<select>` dropdowns where the caret-based `NVDAObjectAtStart` does not reach.\n- **`perform_marked_copy_manual`**: Now uses `self.marked_rows` directly instead of re-collecting all rows and filtering by identity. Fixes missing rows on dynamic pages (e.g., Tureng) where object identity differs between marking and copying.\n- **`copy_web_list_plain`**: Replaced recursive `collect()` with direct child iteration to avoid recursion limit errors on very large lists (1200+ items). Added IAccessible `accChild` fallback for display:none lists (IA2_STATE_OPAQUE).\n- **`on_menu_select` (item_id == 1)**: For `LIST`-role objects, now calls `copy_web_list_formatted` instead of `perform_native_copy`. This ensures formatting and reliability for web navigation lists.\n- **`script_tableMenu` (web context)**: Now also searches `focus` object for `LIST` role when caret-based search fails, improving dropdown list detection.\n- Marked rows copy now correctly copies all user-selected rows on dynamically updated tables (object identity mismatch resolved).\n- Potential recursion crash when copying extremely long web lists (e.g., 1233 items) – fixed by eliminating recursion in `copy_web_list_plain`.\n- Web lists with `display:none` (e.g., hidden `<select>` options) now copy correctly via IAccessible fallback.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778086430000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n- `copy_web_list_formatted()`: Web listelerini (`<ul>`, `<nav>`, `<select>`) güvenilir nesne ağacı taraması ile HTML tablosu olarak kopyalar. Chrome'da gezinme listelerinde yerel Ctrl+C'nin çalışmaması sorununu çözer.\n- `script_tableMenu` içinde `focus` nesnesi kullanılarak liste nesneleri için ikincil arama eklendi. Bu sayede, bakım tabanlı `NVDAObjectAtStart`'ın erişemediği açık `<select>` açılır listelerinin tespiti sağlanır.\n- **`perform_marked_copy_manual`**: Artık tüm satırları yeniden toplamak ve kimliğe göre filtrelemek yerine doğrudan `self.marked_rows` kullanır. İşaretleme ve kopyalama arasında nesne kimliğinin farklılaştığı dinamik sayfalarda (ör. Tureng) eksik satır kopyalanması sorununu giderir.\n- **`copy_web_list_plain`**: Çok büyük listelerde (1200+ öğe) özyineleme sınırı hatalarını önlemek için özyinelemeli `collect()` yerine doğrudan çocuk iterasyonu kullanır. `display:none` listeleri (IA2_STATE_OPAQUE) için IAccessible `accChild` yedek mekanizması eklendi.\n- **`on_menu_select` (item_id == 1)**: `LIST` rolündeki nesneler için artık `perform_native_copy` yerine `copy_web_list_formatted` çağrılır. Bu, web gezinme listelerinde biçimlendirme ve güvenilirlik sağlar.\n- **`script_tableMenu` (web bağlamı)**: Bakım tabanlı arama başarısız olduğunda artık `LIST` rolü için `focus` nesnesini de araştırarak açılır liste tespitini iyileştirir.\n- İşaretli satırların kopyalanması, dinamik olarak güncellenen tablolarda artık kullanıcının seçtiği tüm satırları doğru şekilde kopyalar (nesne kimliği uyuşmazlığı giderildi).\n- Çok uzun web listeleri (ör. 1233 öğe) kopyalanırken oluşabilecek özyineleme çökme riski – `copy_web_list_plain` içindeki özyineleme kaldırılarak düzeltildi.\n- `display:none` (ör. gizli `<select>` seçenekleri) içeren web listeleri artık IAccessible yedek mekanizması ile doğru şekilde kopyalanır.\n"
+		}
+	]
+}
