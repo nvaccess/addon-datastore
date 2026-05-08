@@ -1,0 +1,45 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.19.2/freeradio-2026.19.2.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "c95604e47b3890bcad636cb60af2850db488c44e27b7166b6fb358768efb5ba3",
+	"addonVersionName": "2026.19.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 19,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n**New feature: Station switch crossfade (BASS backend)**\n\nAdded a smooth crossfade transition when switching between stations. The new station begins playing immediately with no gap, and the previous station fades out gradually in the background once the new stream is confirmed active.\n\nThe transition mode can be configured in FreeRadio Settings under \"Station switch transition\":\n- **Instant cut** (default) — previous behavior, no crossfade\n- **Short crossfade** — 1-second fade-out\n- **Normal crossfade** — 2-second fade-out\n\nThis feature requires the BASS backend and has no performance impact when set to \"Instant cut\".\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778229838000,
+	"translations": [
+		{
+			"language": "pt",
+			"displayName": "freeRadio",
+			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+			"changelog": "\n**New feature: Station switch crossfade (BASS backend)**\n\nAdded a smooth crossfade transition when switching between stations. The new station begins playing immediately with no gap, and the previous station fades out gradually in the background once the new stream is confirmed active.\n\nThe transition mode can be configured in FreeRadio Settings under \"Station switch transition\":\n- **Instant cut** (default) — previous behavior, no crossfade\n- **Short crossfade** — 1-second fade-out\n- **Normal crossfade** — 2-second fade-out\n\nThis feature requires the BASS backend and has no performance impact when set to \"Instant cut\".\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "FreeRadio",
+			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+			"changelog": "\n**Yeni özellik: İstasyon değiştirirken çapraz geçiş (BASS arka ucu)**\n\nİstasyonları değiştirirken yumuşak bir çapraz geçiş seçeneği eklendi. Yeni istasyon, hiç boşluk olmadan hemen çalmaya başlar ve yeni akışın aktif olduğu onaylandıktan sonra önceki istasyon arka planda yavaş yavaş kaybolur.\n\nGeçiş modu FreeRadio Ayarlarında \"İstasyon değiştirirken çapraz geçiş\" altında yapılandırılabilir:\n- **Anında kesme** (varsayılan) — önceki davranış, çapraz geçiş yok\n- **Kısa süreli çapraz geçiş** — 1 saniyelik geçiş\n- **Normal çapraz geçiş** — 2 saniyelik geçiş\n\nBu özellik BASS arka ucunu gerektirir ve \"Anında kesme\" olarak ayarlandığında performansa hiçbir etkisi yoktur.\n"
+		}
+	]
+}
