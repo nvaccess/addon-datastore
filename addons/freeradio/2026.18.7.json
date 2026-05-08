@@ -1,0 +1,45 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.18.7/freeradio-2026.18.7.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "f96732468289902ca430f218148c86c903db98c85dbf0b4e2f6828e34de3369f",
+	"addonVersionName": "2026.18.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 18,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n- **Alt+R (Search Box Shortcut):** Now switches to the All Stations tab before focusing the search box. This ensures F3/F4 and Enter always operate on the search results list, regardless of which tab was active before.\n- **F3/F4 in Search Results:** Fixed: after pressing Alt+R and searching, F3/F4 now correctly navigate and play from the search results.\n- **Liked Songs – Remove Confirmation:** A confirmation dialog is now shown before removing a song from the Liked Songs list.\n- **Ctrl+Win+P Double/Triple Press – New Actions:** Added four new options to the double and triple press menus in settings: Open Liked Songs tab, Open addon settings, Announce currently playing station, Stop radio.\n- **Ctrl+Win+P Multi-Press Fix:** Fixed a bug where the double-press action would still execute when triple-pressing. Each press now cancels the previous pending action before scheduling its own, so only the intended action runs.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778223310000,
+	"translations": [
+		{
+			"language": "pt",
+			"displayName": "freeRadio",
+			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+			"changelog": "\n- **Alt+R (Atalho para a Caixa de Pesquisa):** Agora muda para a aba Todas as Estações antes de focar a caixa de pesquisa. Isso garante que F3/F4 e Enter operem sempre sobre a lista de resultados, independentemente da aba que estava ativa antes.\n- **F3/F4 nos Resultados de Pesquisa:** Corrigido: após pressionar Alt+R e pesquisar, F3/F4 agora navegam e reproduzem corretamente a partir dos resultados.\n- **Músicas Curtidas – Confirmação de Remoção:** Um diálogo de confirmação agora é exibido antes de remover uma música da lista de Músicas Curtidas.\n- **Ctrl+Win+P Duplo/Triplo – Novas Ações:** Quatro novas opções foram adicionadas aos menus de duplo e triplo clique nas configurações: Abrir aba de músicas curtidas, Abrir configurações do addon, Anunciar a estação em reprodução, Parar o rádio.\n- **Correção do Multi-Pressionamento do Ctrl+Win+P:** Corrigido um erro em que a ação de duplo pressionamento ainda era executada ao pressionar três vezes. Cada pressionamento agora cancela a ação pendente anterior antes de agendar a sua própria, garantindo que apenas a ação pretendida seja executada.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "FreeRadio",
+			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+			"changelog": "\n- **Alt+R (Arama Kutusu Kısayolu):** Arama kutusuna odaklanmadan önce artık Tüm İstasyonlar sekmesine geçiyor. Bu sayede önceden hangi sekme aktif olursa olsun, F3/F4 ve Enter her zaman arama sonuçları üzerinde çalışıyor.\n- **Arama Sonuçlarında F3/F4:** Düzeltildi: Alt+R ile arama yapıldıktan sonra F3/F4 artık arama sonuçlarını doğru şekilde geziyor ve çalıyor.\n- **Beğenilen Şarkılar – Silme Onayı:** Beğenilen Şarkılar listesinden bir şarkı silinmeden önce artık onay diyaloğu gösteriliyor.\n- **Ctrl+Win+P Çift/Üçlü Basış – Yeni Eylemler:** Ayarlardaki çift ve üçlü basış menülerine dört yeni seçenek eklendi: Beğenilen Şarkılar sekmesini aç, Eklenti ayarlarını aç, Çalmakta olan istasyonu duyur, Radyoyu durdur.\n- **Ctrl+Win+P Çoklu Basış Düzeltmesi:** Üçlü basıldığında çift basış eyleminin de çalıştığı hata düzeltildi. Her basış artık önceki bekleyen eylemi iptal ediyor, böylece yalnızca istenen eylem gerçekleşiyor.\n"
+		}
+	]
+}
