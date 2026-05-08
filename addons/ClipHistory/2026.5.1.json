@@ -1,0 +1,936 @@
+{
+	"addonId": "ClipHistory",
+	"displayName": "ClipboardHistory",
+	"URL": "https://github.com/chaichaimee/ClipHistory/releases/download/2026.5.1/ClipHistory-v2026.5.1.nvda-addon",
+	"description": "Easily browse and manage your clipboard history with quick access and instant\nHot Keys:\nWindows+V\nSingle : open ClipHistory Dialog\nDouble : Clear All ClipBoardHistory",
+	"sha256": "56ba8b9824458ca0cd1e10707ba78d83b44c7547f9007680c268e359a71befbf",
+	"addonVersionName": "2026.5.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/ClipHistory",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/ClipHistory",
+	"changelog": "\n* NVDA 2026.1 compatible.\nEnhanced Pinned Items: Now supports custom \"Display Names\" for long texts (over 50 words) and displays total character counts within the history list for better clarity.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778224856000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "ClipboardHistory",
+			"description": "تصفح وإدارة سجل الحافظة بسهولة مع وصول سريع وفوري\nمفاتيح الاختصار:\nWindows+V\nضغطة واحدة: فتح مربع حوار سجل الحافظة\nضغطة مزدوجة: مسح سجل الحافظة بالكامل"
+		},
+		{
+			"language": "bg",
+			"displayName": "ClipboardHistory",
+			"description": "Лесно преглеждайте и управлявайте хронологията на клипборда с бърз достъп\nГорещи клавиши:\nWindows+V\nЕднократно: отваряне на диалога за хронология\nДвукратно: изчистване на цялата хронология"
+		},
+		{
+			"language": "bn",
+			"displayName": "ClipboardHistory",
+			"description": "দ্রুত অ্যাক্সেস সহ আপনার ক্লিপবোর্ড ইতিহাস সহজেই ব্রাউজ এবং পরিচালনা করুন\nহট কী:\nWindows+V\nএকবার চাপুন: ক্লিপবোর্ড ইতিহাস ডায়ালগ খুলুন\nদুবার চাপুন: সমস্ত ক্লিপবোর্ড ইতিহাস মুছুন"
+		},
+		{
+			"language": "cs",
+			"displayName": "ClipboardHistory",
+			"description": "Snadné procházení a správa historie schránky s rychlým přístupem\nHorké klávesy:\nWindows+V\nJedno stisknutí: otevře dialog historie schránky\nDvojité stisknutí: vymaže celou historii schránky"
+		},
+		{
+			"language": "da",
+			"displayName": "ClipboardHistory",
+			"description": "Gennemse og administrer nemt din udklipsholderhistorik med hurtig adgang\nGenvejstaster:\nWindows+V\nEnkelt tryk: Åbn dialogboksen udklipsholderhistorik\nDobbelt tryk: Ryd hele udklipsholderhistorikken"
+		},
+		{
+			"language": "de",
+			"displayName": "ClipboardHistory",
+			"description": "Einfaches Durchsuchen und Verwalten des Zwischenablageverlaufs mit Schnellzugriff\nHotkeys:\nWindows+V\nEinmal drücken: Zwischenablageverlauf-Dialog öffnen\nZweimal drücken: Gesamten Verlauf löschen"
+		},
+		{
+			"language": "en",
+			"displayName": "ClipboardHistory",
+			"description": "Easily browse and manage your clipboard history with quick access and instant\nHot Keys:\nWindows+V\nSingle : open ClipHistory Dialog\nDouble : Clear All ClipBoardHistory"
+		},
+		{
+			"language": "es",
+			"displayName": "ClipboardHistory",
+			"description": "Navega y gestiona fácilmente el historial del portapapeles con acceso rápido\nTeclas rápidas:\nWindows+V\nUna pulsación: abrir diálogo de historial\nDos pulsaciones: borrar todo el historial del portapapeles"
+		},
+		{
+			"language": "fa",
+			"displayName": "ClipboardHistory",
+			"description": "مرور و مدیریت آسان تاریخچه حافظه موقت با دسترسی سریع\nکلیدهای میانبر:\nWindows+V\nیک‌بار فشردن: باز کردن کادر تاریخچه\nدوبار فشردن: پاکسازی تمام تاریخچه حافظه موقت"
+		},
+		{
+			"language": "fi",
+			"displayName": "ClipboardHistory",
+			"description": "Selaa ja hallitse leikepöydän historiaa helposti pikapääsyllä\nPikanäppäimet:\nWindows+V\nYksi painallus: avaa leikepöydän historiaikkuna\nKaksi painallusta: tyhjennä koko leikepöydän historia"
+		},
+		{
+			"language": "fr",
+			"displayName": "ClipboardHistory",
+			"description": "Parcourez et gérez facilement l'historique du presse-papiers avec un accès rapide\nRaccourcis :\nWindows+V\nSimple pression : ouvrir le dialogue de l'historique\nDouble pression : effacer tout l'historique du presse-papiers"
+		},
+		{
+			"language": "gl",
+			"displayName": "ClipboardHistory",
+			"description": "Navega e xestiona facilmente o historial do portapapeis con acceso rápido\nTeclas rápidas:\nWindows+V\nUnha pulsación: abrir o diálogo do historial\nDobre pulsación: borrar todo o historial do portapapeis"
+		},
+		{
+			"language": "he",
+			"displayName": "ClipboardHistory",
+			"description": "עיין ונהל בקלות את היסטוריית לוח הגזירים עם גישה מהירה\nמקשי קיצור:\nWindows+V\nלחיצה אחת: פתיחת דיאלוג היסטוריית הלוח\nלחיצה כפולה: ניקוי כל היסטוריית הלוח"
+		},
+		{
+			"language": "hi",
+			"displayName": "ClipboardHistory",
+			"description": "त्वरित पहुंच के साथ अपने क्लिपबोर्ड इतिहास को आसानी से ब्राउज़ और प्रबंधित करें\nहॉट कीज़:\nWindows+V\nएक बार: क्लिपबोर्ड इतिहास संवाद खोलें\nदो बार: सभी क्लिपबोर्ड इतिहास साफ़ करें"
+		},
+		{
+			"language": "hr",
+			"displayName": "ClipboardHistory",
+			"description": "Jednostavno pregledavajte i upravljajte poviješću međuspremnika uz brzi pristup\nPrečaci:\nWindows+V\nJedan pritisak: otvori dijaloški okvir povijesti\nDva pritiska: obriši cijelu povijest međuspremnika"
+		},
+		{
+			"language": "hu",
+			"displayName": "ClipboardHistory",
+			"description": "Vágólap előzmények böngészése és kezelése gyors hozzáféréssel\nGyorsbillentyűk:\nWindows+V\nEgyszeri megnyomás: Előzmények párbeszédablak megnyitása\nDupla megnyomás: Összes előzmény törlése"
+		},
+		{
+			"language": "id",
+			"displayName": "ClipboardHistory",
+			"description": "Jelajahi dan kelola riwayat papan klip dengan mudah melalui akses cepat\nTombol Cepat:\nWindows+V\nSekali tekan: buka Dialog Riwayat Papan Klip\nDua kali tekan: Hapus semua Riwayat Papan Klip"
+		},
+		{
+			"language": "it",
+			"displayName": "ClipboardHistory",
+			"description": "Sfoglia e gestisci facilmente la cronologia degli appunti con accesso rapido\nTasti di scelta rapida:\nWindows+V\nSingola pressione: apre la finestra cronologia\nDoppia pressione: cancella tutta la cronologia appunti"
+		},
+		{
+			"language": "ja",
+			"displayName": "ClipboardHistory",
+			"description": "クイックアクセスでクリップボードの履歴を簡単に閲覧・管理\nホットキー:\nWindows+V\n1回押し：クリップボード履歴ダイアログを開く\n2回押し：すべての履歴を消去"
+		},
+		{
+			"language": "kk",
+			"displayName": "ClipboardHistory",
+			"description": "Алмасу буферінің тарихын жылдам қол жеткізумен оңай қарап шығыңыз\nЫстық пернелер:\nWindows+V\nБір рет басу: Тарих терезесін ашу\nЕкі рет басу: Барлық тарихты тазалау"
+		},
+		{
+			"language": "ko",
+			"displayName": "ClipboardHistory",
+			"description": "빠른 액세스로 클립보드 기록을 쉽게 탐색하고 관리하세요.\n단축키:\nWindows+V\n한 번 누름: 클립보드 기록 대화상자 열기\n두 번 누름: 모든 클립보드 기록 지우기"
+		},
+		{
+			"language": "lo",
+			"displayName": "ClipboardHistory",
+			"description": "ທ່ອງເວັບ ແລະຈັດການປະຫວັດຄລິບບອດຂອງທ່ານໄດ້ຢ່າງງ່າຍດາຍດ້ວຍການເຂົ້າເຖິງທີ່ວ່ອງໄວ\nປຸ່ມລັດ:\nWindows+V\nກົດເທື່ອດຽວ: ເປີດໜ້າຕ່າງປະຫວັດຄລິບບອດ\nກົດສອງເທື່ອ: ລຶບປະຫວັດຄລິບບອດທັງໝົດ"
+		},
+		{
+			"language": "ms",
+			"displayName": "ClipboardHistory",
+			"description": "Semak imbas dan urus sejarah papan keratan anda dengan mudah dengan akses pantas\nKekunci Pintas:\nWindows+V\nSekali tekan: buka Dialog Sejarah Papan Keratan\nDua kali tekan: Kosongkan semua Sejarah Papan Keratan"
+		},
+		{
+			"language": "my",
+			"displayName": "ClipboardHistory",
+			"description": "ကလစ်ဘုတ်မှတ်တမ်းကို လျင်မြန်စွာ ဝင်ရောက်ကြည့်ရှုပြီး အလွယ်တကူ စီမံခန့်ခွဲပါ\nဖြတ်လမ်းခလုတ်များ-\nWindows+V\nတစ်ချက်နှိပ်- မှတ်တမ်းအကွက်ကိုဖွင့်ရန်\nနှစ်ချက်နှိပ်- မှတ်တမ်းအားလုံးကို ဖျက်ရန်"
+		},
+		{
+			"language": "pt",
+			"displayName": "ClipboardHistory",
+			"description": "Navegue e gira facilmente o histórico da área de transferência com acesso rápido\nTeclas de atalho:\nWindows+V\nUm toque: abrir o diálogo do histórico\nDois toques: limpar todo o histórico da área de transferência"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "ClipboardHistory",
+			"description": "Navegue e gerencie facilmente o histórico da área de transferência com acesso rápido\nTeclas de atalho:\nWindows+V\nUm toque: abrir o diálogo do histórico\nDois toques: limpar todo o histórico da área de transferência"
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "ClipboardHistory",
+			"description": "Navegue e gira facilmente o histórico da área de transferência com acesso rápido\nTeclas de atalho:\nWindows+V\nUm toque: abrir o diálogo do histórico\nDois toques: limpar todo o histórico da área de transferência"
+		},
+		{
+			"language": "ro",
+			"displayName": "ClipboardHistory",
+			"description": "Răsfoiți și gestionați cu ușurință istoricul clipboard-ului cu acces rapid\nTaste rapide:\nWindows+V\nO apăsare: deschide dialogul istoric clipboard\nDouă apăsări: șterge tot istoricul clipboard"
+		},
+		{
+			"language": "ru",
+			"displayName": "ClipboardHistory",
+			"description": "Удобный просмотр и управление историей буфера обмена с быстрым доступом\nГорячие клавиши:\nWindows+V\nОдно нажатие: открыть диалог истории\nДвойное нажатие: очистить всю историю буфера обмена"
+		},
+		{
+			"language": "si",
+			"displayName": "ClipboardHistory",
+			"description": "ඉක්මන් ප්‍රවේශය සමඟින් ඔබේ පසුරු පුවරු ඉතිහාසය පහසුවෙන් පිරික්සන්න සහ කළමනාකරණය කරන්න\nහොට් කී:\nWindows+V\nඑක් වරක්: පසුරු පුවරු ඉතිහාස සංවාදය විවෘත කරන්න\nදෙවරක්: සියලුම පසුරු පුවරු ඉතිහාසය මකන්න"
+		},
+		{
+			"language": "sk",
+			"displayName": "ClipboardHistory",
+			"description": "Jednoduché prehliadanie a správa histórie schránky s rýchlym prístupom\nHorúce klávesy:\nWindows+V\nJedno stlačenie: otvoriť dialóg histórie schránky\nDvojité stlačenie: vymazať celú históriu schránky"
+		},
+		{
+			"language": "ta",
+			"displayName": "ClipboardHistory",
+			"description": "விரைவான அணுகலுடன் உங்கள் கிளிப்போர்டு வரலாற்றை எளிதாக நிர்வகிக்கவும்\nவிசைப்பலகை குறுக்குவழிகள்:\nWindows+V\nஒரு முறை அழுத்தவும்: வரலாற்றைத் திறக்க\nஇருமுறை அழுத்தவும்: அனைத்து வரலாற்றையும் அழிக்க"
+		},
+		{
+			"language": "te",
+			"displayName": "ClipboardHistory",
+			"description": "త్వరిత ప్రాప్యతతో మీ క్లిప్‌బోర్డ్ చరిత్రను సులభంగా బ్రౌజ్ చేయండి మరియు నిర్వహించండి\nహాట్ కీలు:\nWindows+V\nఒకసారి నొక్కండి: క్లిప్‌బోర్డ్ చరిత్ర డైలాగ్‌ను తెరవండి\nరెండుసార్లు నొక్కండి: మొత్తం చరిత్రను క్లియర్ చేయండి"
+		},
+		{
+			"language": "th",
+			"displayName": "ClipboardHistory",
+			"description": "เรียกดูและจัดการประวัติคลิปบอร์ดของคุณได้อย่างง่ายดายด้วยการเข้าถึงที่รวดเร็ว\nปุ่มลัด:\nWindows+V\nกดครั้งเดียว: เปิดหน้าต่างประวัติคลิปบอร์ด\nกดสองครั้ง: ล้างประวัติคลิปบอร์ดทั้งหมด"
+		},
+		{
+			"language": "tk",
+			"displayName": "ClipboardHistory",
+			"description": "Gysga elýeterlilik bilen gysgyç taryhyny aňsatlyk bilen görüň we dolandyryň\nGisgyç düwmeleri:\nWindows+V\nBir gezek basmak: Taryh penjiresini açmak\nIki gezek basmak: Ähli taryhy arassalamak"
+		},
+		{
+			"language": "tl",
+			"displayName": "ClipboardHistory",
+			"description": "Madaling i-browse at pamahalaan ang iyong kasaysayan ng clipboard nang mabilis\nHot Keys:\nWindows+V\nIsang pindot: buksan ang ClipHistory Dialog\nDalawang pindot: Burahin lahat ng Kasaysayan ng Clipboard"
+		},
+		{
+			"language": "tr",
+			"displayName": "ClipboardHistory",
+			"description": "Hızlı erişim ile pano geçmişinizi kolayca tarayın ve yönetin\nKısayol Tuşları:\nWindows+V\nTek basış: Pano Geçmişi İletişim Kutusunu açar\nÇift basış: Tüm Pano Geçmişini temizler"
+		},
+		{
+			"language": "uk",
+			"displayName": "ClipboardHistory",
+			"description": "Зручний перегляд та керування історією буфера обміну зі швидким доступом\nГарячі клавіші:\nWindows+V\nОдне натискання: відкрити діалог історії\nПодвійне натискання: очистити всю історію буфера обміну"
+		},
+		{
+			"language": "ur",
+			"displayName": "ClipboardHistory",
+			"description": "فوری رسائی کے ساتھ اپنے کلپ بورڈ کی تاریخ کو آسانی سے براؤز اور منظم کریں\nہاٹ کیز:\nWindows+V\nایک بار دبائیں: کلپ بورڈ ہسٹری ڈائیلاگ کھولیں\nدو بار دبائیں: تمام ہسٹری صاف کریں"
+		},
+		{
+			"language": "uz",
+			"displayName": "ClipboardHistory",
+			"description": "Almashish buferi tarixini tezkor kirish orqali osongina ko'ring va boshqaring\nTezkor tugmalar:\nWindows+V\nBir marta bosish: Tarix oynasini ochish\nIkki marta bosish: Barcha tarixni tozalash"
+		},
+		{
+			"language": "vi",
+			"displayName": "ClipboardHistory",
+			"description": "Dễ dàng xem và quản lý lịch sử khay nhớ tạm với quyền truy cập nhanh\nPhím nóng:\nWindows+V\nNhấn một lần: mở hộp thoại lịch sử khay nhớ tạm\nNhấn hai lần: Xóa toàn bộ lịch sử khay nhớ tạm"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "ClipboardHistory",
+			"description": "通过快速访问轻松浏览和管理剪贴板历史记录\n热键：\nWindows+V\n单击：打开剪贴板历史对话框\n双击：清除所有剪贴板历史记录"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "ClipboardHistory",
+			"description": "透過快速存取輕鬆瀏覽和管理剪貼簿歷史記錄\n熱鍵：\nWindows+V\n按一下：開啟剪貼簿歷史對話框\n按兩下：清除所有剪貼簿歷史記錄"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/56ba8b9824458ca0cd1e10707ba78d83b44c7547f9007680c268e359a71befbf",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "56ba8b9824458ca0cd1e10707ba78d83b44c7547f9007680c268e359a71befbf",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 44,
+						"md": 6,
+						"mo": 43,
+						"po": 43,
+						"py": 3
+					},
+					"file_types": {
+						"XML": 6,
+						"directory": 96,
+						"unknown": 139
+					},
+					"highest_datetime": "2026-05-08 14:10:08",
+					"lowest_datetime": "2026-03-25 15:03:52",
+					"num_children": 241,
+					"type": "ZIP",
+					"uncompressed_size": 293569
+				},
+				"filecondis": {
+					"dhash": "00003c3c35280000",
+					"raw_md5": "1dd10cc3a25b9ea6e1555c7f9da685f6"
+				},
+				"first_submission_date": 1778224873,
+				"last_analysis_date": 1778224873,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260508",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260507",
+						"engine_version": "6.776",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260507",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260508",
+						"engine_version": "3.30.0.10666",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260508",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260508",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260507",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260507",
+						"engine_version": "260507-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260507",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260508",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20251216",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "failure",
+						"engine_name": "Bkav",
+						"engine_update": "20260507",
+						"engine_version": "8.2.1.147",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260507",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260508",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260508",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260507",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260507",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260507",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260506",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260508",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260508",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260507",
+						"engine_version": "4.0.261",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260508",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260507",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260505",
+						"engine_version": "7.0.30.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260508",
+						"engine_version": "GD:27.44468AVA:64.31196",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260508",
+						"engine_version": "1778216460",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260508",
+						"engine_version": "1.0.245.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260507",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260508",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260508",
+						"engine_version": "14.51.59437",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260508",
+						"engine_version": "14.51.59436",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260508",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260507",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260508",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260508",
+						"engine_version": "3.1.0.235",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260507",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260508",
+						"engine_version": "1.2.0.14532",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260508",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260508",
+						"engine_version": "1.1.26030.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260507",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260508",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260507",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260508",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260507",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260504",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260324",
+						"engine_version": "7.6.2.19",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260507",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260508",
+						"engine_version": "3.4.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260508",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260508",
+						"engine_version": "2026-05-08.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260508",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260504",
+						"engine_version": "4.0.12.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260507",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260508",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260508",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260508",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260507",
+						"engine_version": "5.6.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260507",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260508",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260508",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260507",
+						"engine_version": "9.5.1202",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260508",
+						"engine_version": "38631",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260508",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260507",
+						"engine_version": "2.0.0.5597",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260508",
+						"engine_version": "6.24-114820748",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260508",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260507",
+						"engine_version": "ab35cf2:ab35cf2:548b2e3:548b2e3",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260508",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1778224910,
+				"last_submission_date": 1778224873,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+				"magika": "XPI",
+				"md5": "00859cbbd9a4b9f4564fc0f84e59b948",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "b3c50a05d2613490640be29d6dbdb14553cdab5f",
+				"sha256": "56ba8b9824458ca0cd1e10707ba78d83b44c7547f9007680c268e359a71befbf",
+				"size": 159636,
+				"ssdeep": "3072:YP/IjmxIc3UJlIlQ1AYC/Mhmep+0FAzKLxLhcmWNhCEEzqux+vAg:YP/IanUJMQ1AYTo2rtmXEuux+vAg",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T12BF39D55A21F104BE16AD7FF7987023EE23C4085E17FAB4B0556A8C56CC939D0FEEA06",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "381af0661af812c75a1a26bc84c9ca8b"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8276"
+}
