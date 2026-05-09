@@ -1,0 +1,39 @@
+{
+	"addonId": "EnhancedClipboardReading",
+	"displayName": "Enhanced Clipboard Reading",
+	"URL": "https://github.com/nidza07/Enhanced-Clipboard-Reading/releases/download/2.0/EnhancedClipboardReading-2.0.nvda-addon",
+	"description": "Enhances the default NVDA+C command to read the clipboard with a configurable character limit instead of the hardcoded value of no more than 1023. If there is more text on the clipboard than the configured limit, presents the clipboard text in a browseable message for easier reviewing, instead of saying that the clipboard contains a large portion of text. A browseable message can also be opened at any time by pressing NVDA+C three times quickly, even if there is less text on the clipboard than the configured limit.",
+	"sha256": "ed3926fec874ff3b2bda462eb9379ef898104d204b07b6256ca3dea99be71a9a",
+	"addonVersionName": "2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Nikola Jović",
+	"sourceURL": "https://github.com/nidza07/Enhanced-Clipboard-Reading/",
+	"license": "GPL v3",
+	"homepage": "https://github.com/nidza07/Enhanced-Clipboard-Reading/",
+	"changelog": "- Fixed a bug which made it possible to open multiple browseable messages if repeatedly pressing NVDA+C beyond the third press.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.htmlhttps://github.com/nidza07/Enhanced-Clipboard-Reading/blob/main/LICENSE",
+	"submissionTime": 1778363948000,
+	"translations": [
+		{
+			"language": "sr",
+			"displayName": "Poboljšano čitanje privremene memorije",
+			"description": "Poboljšava podrazumevanu NVDA komandu NVDA+C za čitanje privremene memorije ograničenjem znakova koje se može podesiti umesto unapred definisane vrednosti koja ne može biti veća od 1023. Ako privremena memorija sadrži više teksta od podešenog ograničenja, prikazuje poruku u režimu pretraživanja radi lakšeg pregleda, umesto da izgovori da privremena memorija sadrži velik deo teksta. Poruka režima pretraživanja se takođe može otvoriti u bilo kom trenutku pritiskanjem NVDA+C brzo tri puta, čak i ako ima manje teksta u privremenoj memoriji od podešenog ograničenja.",
+			"changelog": "- Ispravljena greška koja je dozvoljavala da otvorite više poruka režima pretraživanja ako se više puta pritiska NVDA+C nakon trećeg pritiskanja."
+		}
+	]
+}
