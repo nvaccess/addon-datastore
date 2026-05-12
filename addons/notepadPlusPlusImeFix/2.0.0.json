@@ -1,0 +1,38 @@
+{
+	"addonId": "notepadPlusPlusImeFix",
+	"displayName": "Notepad++ IME composition fix",
+	"URL": "https://github.com/keyang556/NotepadPlusPlusInputCompositionFix/releases/download/2.0.0/notepadPlusPlusImeFix-2.0.0.nvda-addon",
+	"description": "Restores NVDA caret reporting for uncommitted IME composition text in 64-bit Notepad++ 8.3 and later.",
+	"sha256": "8a92b6f9888a570d20474892b4b1078607a48b1304199adece306586c94d44f4",
+	"addonVersionName": "2.0.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/NotepadPlusPlusInputCompositionFix/",
+	"license": "GPL v2",
+	"changelog": "Adds Traditional Chinese documentation and add-on metadata translations.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778578307000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "Notepad++ 組字區修正",
+			"description": "修正 NVDA 在 64 位元 Notepad++ 8.3 以上版本中，無法正確讀出尚未送出的輸入法組字區游標移動的問題。",
+			"changelog": "新增繁體中文說明文件與附加元件中繼資料翻譯。"
+		}
+	]
+}
