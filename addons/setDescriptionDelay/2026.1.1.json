@@ -1,0 +1,39 @@
+{
+	"addonId": "setDescriptionDelay",
+	"displayName": "Set Character Description Delay",
+	"URL": "https://github.com/Surveyor123/setDescriptionDelay/releases/download/v2026.1.1/setDescriptionDelay-2026.1.1.nvda-addon",
+	"description": "This add-on improves NVDA's delayed character description feature:\n\tAllows you to configure the announcement delay in milliseconds, offering more flexibility than the built-in option.\n\tWhen the delay is set to 0, the character description is announced immediately instead of the character itself.\n\tThe add-on is controlled entirely through NVDA's existing \"Delayed descriptions for characters on cursor movement\" checkbox in Voice settings.",
+	"sha256": "5691b55f57b4f43d5065cc82690096e7e7835e09413d2b4a5747fb26cb10ddae",
+	"addonVersionName": "2026.1.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/setDescriptionDelay",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/setDescriptionDelay",
+	"changelog": "\nFixed: Character descriptions no longer bleed into subsequent speech after switching away from character-by-character navigation. Previously, if you moved to a different object or application while a description was pending, the description would still be announced after the new object's name. This happened because NVDA cancels speech internally via SpeechManager.cancel() rather than speech.cancelSpeech() during focus and object navigation events, bypassing the add-on's timer cancellation entirely. The fix patches SpeechManager.cancel() directly and adds a generation counter so that any callback already queued in the wx event loop when cancellation occurs is silently discarded.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778657229000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Karakter Açıklama Gecikmesini Ayarla",
+			"description": "Bu eklenti, NVDA'nın gecikmeli karakter açıklaması özelliğini geliştirir:\n\\tYerleşik seçeneğe göre daha fazla esneklik sunarak duyuru gecikmesini milisaniye cinsinden yapılandırmanıza olanak tanır.\n\\tGecikme 0' olarak  ayarlandığında, karakterin kendisi yerine hemen karakter açıklaması duyurulur.\n\\tEklenti tamamen NVDA'nın konuşma ayarlarındaki mevcut \"İmleç hareket  ettiğinde imlecin üzerinde bulunan karakteri gecikmeli olarak açıkla\" onay kutusu aracılığıyla kontrol edilir.",
+			"changelog": "\nDüzeltildi: Karakter karakter gezinmeden başka bir nesneye veya uygulamaya geçildiğinde, bekleyen karakter açıklaması artık yeni nesnenin adından sonra okunmuyor. Sorunun nedeni şuydu: NVDA, odak ve nesne navigasyonu sırasında konuşmayı speech.cancelSpeech() yerine doğrudan SpeechManager.cancel() üzerinden iptal ediyordu; bu da eklentinin zamanlayıcı iptali mekanizmasını tamamen atlıyordu. Düzeltme kapsamında SpeechManager.cancel() de yamalandı ve bir nesil sayacı eklendi; böylece iptal gerçekleştiğinde wx olay kuyruğuna zaten girmiş olan geri çağrımlar sessizce görmezden geliniyor.\n"
+		}
+	]
+}
