@@ -48,5 +48,49 @@
 			"displayName": "NVDA SpeedTest",
 			"description": "Faça testes de velocidade de internet (download, upload e ping) de forma acessível, diretamente no NVDA. Histórico integrado, interface amigável e suporte a múltiplos idiomas."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/ca2014695a201ea0ec5405140128122fcfe3020b88555a07d29bb44f28c0774e",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "ca2014695a201ea0ec5405140128122fcfe3020b88555a07d29bb44f28c0774e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "1dda9f8febe1551ab9d178b17d76b8a8"
+				},
+				"first_submission_date": 1778647741,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1778647824,
+				"last_submission_date": 1778647741,
+				"md5": "cd7207032fe92ed7cf8dbec95a9390b3",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4845f5bfa497fb6addbd078f2c4fe11e00de57bf",
+				"sha256": "ca2014695a201ea0ec5405140128122fcfe3020b88555a07d29bb44f28c0774e",
+				"size": 1039071,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
