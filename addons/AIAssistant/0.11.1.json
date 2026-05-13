@@ -1,0 +1,32 @@
+{
+	"addonId": "AIAssistant",
+	"displayName": "AI assistant",
+	"URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.11.1/AIAssistant-0.11.1.nvda-addon",
+	"description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, and Gemini\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t\t",
+	"sha256": "6376b17014f66503e7aa3f8af30d53d0310cd1160148f92d036205bdc483d42e",
+	"addonVersionName": "0.11.1",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 11,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "AdilHusain Shaikh",
+	"sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"license": "GPL v2",
+	"homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"changelog": "\nAdded\n• API key encryption at rest via Windows DPAPI — Gemini and OpenAI keys are now encrypted instead of stored as plaintext (existing keys migrated automatically on save)\n• Add to current chat action for attaching chat without a token roundtrip\n• Describe focused NVDA object — captures the screen region of the currently focused element and describes it via AI (layer key: F)\n• Attach focused object image to chat — captures the focused element's image and opens a chat with it attached (layer key: Z)\nChanged\n• WebView UI migrated from JavaScript to TypeScript with Svelte 5 clean architecture for improved reliability\n• Protocol layer unified under a single canonical YAML spec across Python, Rust, and TypeScript for fewer cross-layer inconsistencies\nImproved\n• Streaming and state management performance through simplified reactivity chain\nFixed\n• Legacy EVENT_HOST_CLOSED naming aligned with canonical close_host spec\n\t\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778670593000,
+	"translations": []
+}
