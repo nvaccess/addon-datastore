@@ -1,0 +1,39 @@
+{
+	"addonId": "ime_expressive",
+	"displayName": "Chinese input method support for NVDA",
+	"URL": "https://github.com/nvdacn/ime_expressive/releases/download/2026.5.14/ime_expressive-2026.5.14.nvda-addon",
+	"description": "This add-on provides Chinese input method support for the NVDA screen reader.\nIt enhances the Chinese input experience in terms of input habits and efficiency for NVDA users.",
+	"sha256": "b3245c74436f46a4e53cdea902713075f2f4b07bfb65eac6907427fca7eb8279",
+	"addonVersionName": "2026.5.14",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 14
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cary-rowen <manchen_0528@outlook.com>, Chenfu <394434124@qq.com>, hwf1324 <1398969445@qq.com>",
+	"sourceURL": "https://github.com/nvdacn/ime_expressive",
+	"license": "GPL v2",
+	"homepage": "https://www.nvdacn.com",
+	"changelog": "### 2026.5.14\n\n* Fixed possible plugin errors when IME candidate indexes are out of range.\n* Improved Windows 11 modern IME event handling to avoid interfering with TextInputHost features such as emoji and clipboard history.\n* Improved stability when the add-on is reloaded or unloaded.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778689728000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "中文输入法支持",
+			"description": "该插件为 NVDA 屏幕阅读器提供中文输入法朗读支持。\n从输入习惯和效率方面增强了 NVDA 用户的中文输入体验。",
+			"changelog": "### 2026.5.14\n\n* 修复候选索引异常时可能导致插件报错的问题。\n* 改进 Windows 11 现代输入法事件处理，避免影响 emoji、剪贴板历史等 TextInputHost 功能。\n* 改进插件重载或卸载时的稳定性。"
+		}
+	]
+}
