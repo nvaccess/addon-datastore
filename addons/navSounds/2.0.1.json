@@ -1,0 +1,38 @@
+{
+	"addonId": "navSounds",
+	"displayName": "Navigation Sound Effects",
+	"URL": "https://github.com/ahmedthebest31/navsounds/releases/download/v2.0.1/navSounds_2.0.1.nvda-addon",
+	"description": "Provides navigation and keyboard typing sound effects. You can hear different sounds based on the roles and states of the elements you interact with. It also allows you to play different mechanical keyboard sounds as you type, with full customization options.",
+	"sha256": "4d7a6a0471ede04069c976b0ae032a8e2ac6483e855839f325191117b2b64bcd",
+	"addonVersionName": "2.0.1",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ahmed Samy",
+	"sourceURL": "https://github.com/ahmedthebest31/navsounds/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ahmedthebest31/navsounds/",
+	"changelog": "### Audio Engine & Core Fixes\n* **Seamless Device Switching**: Fixed critical audio loss when dynamically changing the NVDA output device.\n* **Memory Leak Elimination**: Resolved state retention and overlapping audio bugs during sound pack switching.\n* **Performance Optimization**: Moved all audio volume processing directly to the caching layer to minimize CPU overhead.\n* **Stable Playback Queue**: Implemented a thread-safe, single-task queue for highly stable, zero-latency playback.\n\n### Keyboard & Typing Enhancements\n* **Typing Spam Prevention**: Implemented a highly optimized 70ms debounce mechanism for typing sounds to prevent audio flooding.\n\n### Settings & Interface\n* **Volume Slider Persistence**: Resolved functionality and save-state persistence for the volume slider. (Note: Slider direction may still appear inverted in some RTL layouts).\n\n### Assets & Localization\n* **Asset Cleanup**: Removed the corrupted 'ios17' sound pack and standardized on 'VoiceOver' assets.\n* **Translation Updates**: Officially completed and merged extensive translation updates.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778653523000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "أصوات التنقل",
+			"description": "تشغيل أصوات عند الحركة"
+		}
+	]
+}
