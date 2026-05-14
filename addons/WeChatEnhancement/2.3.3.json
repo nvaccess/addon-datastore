@@ -1,0 +1,39 @@
+{
+	"addonId": "WeChatEnhancement",
+	"displayName": "PC WeChat Enhancement",
+	"URL": "https://github.com/cary-rowen/WeChatEnhancement/releases/download/2.3.3/WeChatEnhancement-2.3.3.nvda-addon",
+	"description": "Enhance the experience of using PC WeChat for NVDA users.",
+	"sha256": "55e9ded5a137efb3b671c9dbeca0b6d62a334320182fad68f95fd1e0adcc7bc0",
+	"addonVersionName": "2.3.3",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 3,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cary-Rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/WeChatEnhancement",
+	"license": "GPL v2",
+	"homepage": "https://www.nvdacn.com/",
+	"changelog": "### 2.3.3\n\n* Guard WeChat UIA event handlers with exception handling.\n* Use UIA RuntimeId as message identity.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778796959000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "PC 微信增强",
+			"description": "增强 NVDA 用户使用 PC 微信的体验。",
+			"changelog": "### 2.3.3\n\n* 为微信 UIA 事件入口增加异常保护，避免对象失效时中断事件链。\n* 使用 UIA RuntimeId 作为消息唯一标识，减少重复文本误判。"
+		}
+	]
+}
