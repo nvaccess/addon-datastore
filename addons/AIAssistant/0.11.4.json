@@ -1,0 +1,32 @@
+{
+	"addonId": "AIAssistant",
+	"displayName": "AI assistant",
+	"URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.11.5/AIAssistant-0.11.4.nvda-addon",
+	"description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, and Gemini\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t\t",
+	"sha256": "608782dcd50cc3005f21d468c65a0bb4519ec77c6931b9827d9b2b4d3e8c94a3",
+	"addonVersionName": "0.11.4",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 11,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "adilhusain Shaikh",
+	"sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"license": "GPL v2",
+	"homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"changelog": "\nChanged\n• Image carry-over from result actions — when \"Open Chat\" or \"Add to current chat\" is selected from an image description result, the screenshot is now included as a message seed in the conversation transcript alongside the description\n• Process-level idle timeout — the Rust UI host now exits automatically after 10 minutes without a command client, preventing orphaned processes if NVDA crashes\nFixed\n• NVDA announcing pipeline steps twice — removed duplicate speech announcements during use-case progress, ensuring each \"collecting context\" and progress event is spoken only once\n\t\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778731052000,
+	"translations": []
+}
