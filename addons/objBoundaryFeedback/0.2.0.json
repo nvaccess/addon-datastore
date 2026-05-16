@@ -1,0 +1,39 @@
+{
+	"addonId": "objBoundaryFeedback",
+	"displayName": "Object Boundary Feedback",
+	"URL": "https://github.com/cary-rowen/NVDA-objBoundaryFeedback/releases/download/v0.2.0/objBoundaryFeedback-0.2.0.nvda-addon",
+	"description": "Plays short tones when NVDA reaches common object, review cursor, browse mode, and text navigation boundaries.",
+	"sha256": "d4fa991b7b472e604f5532097abca0f863067348cfd9af3abb10b0ee38055ed5",
+	"addonVersionName": "0.2.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/NVDA-objBoundaryFeedback/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/cary-rowen/NVDA-objBoundaryFeedback",
+	"changelog": "### 0.2.0\n\n- Treat editable value changes as movement to avoid false boundary sounds in numeric and editable controls.\n- Added Simplified Chinese translation for the interface and documentation.\n- Refined documentation wording for covered boundary scenarios.\n- Append the settings panel naturally to NVDA settings categories.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778950674000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "对象边界反馈",
+			"description": "当 NVDA 到达常见对象、查看光标、浏览模式和文本导航边界时播放短提示音。",
+			"changelog": "### 0.2.0\n\n- 将可编辑控件的值变化视为移动，避免在数字和可编辑控件中误播放边界提示音。\n- 添加界面和文档的简体中文翻译。\n- 优化覆盖场景的文档表述。\n- 将设置面板自然追加到 NVDA 设置类别。"
+		}
+	]
+}
