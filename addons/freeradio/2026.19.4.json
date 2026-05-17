@@ -1,0 +1,742 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.19.4/freeradio-2026.19.4.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "53a4d73bbfd41aaa8b208d67bac66c3990d9922220ff2d60c4bf3d16724463ba",
+	"addonVersionName": "2026.19.4",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 19,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n**Focus management after item removal**\n- Favorites list: after deleting a station, focus and selection automatically move to the next item in the list. If the deleted station was the last one, focus moves to the previous item. If the list becomes empty, focus moves to the Play button.\n- Liked Songs list: same behaviour — after removing a song, focus stays on the next item, or moves to the Refresh button if the list is empty.\n**Delete key shortcut**\n- Pressing `Delete` while a station is selected in the Favorites list now triggers the Delete Station button (equivalent to clicking it), provided the button is enabled.\n- Pressing `Delete` while a song is selected in the Liked Songs list now triggers the Remove button, provided the button is enabled.\n- In both cases the key has no effect when no valid item is selected or the corresponding button is disabled.\n- Added a new \"Mute notifications\" checkbox to FreeRadio settings (unchecked by default).\n- When enabled, NVDA no longer announces station changes, playback state changes (play, pause, stop), or recording events (started, stopped, finished).\n- Error messages, favourites feedback, music recognition results, and update notifications are intentionally unaffected.\n- Added an unassigned script_toggleMuteNotifications input gesture that toggles the setting on the fly. Assign a key combination via NVDA's Input Gestures dialog under the FreeRadio category.\n- Two module-level helpers (_notify, _notify_on_demand) centralise the mute check, keeping call sites clean.\n**Changed: Search now filters by selected country automatically**\n- Search queries are now scoped to the selected country. When a country is chosen in the combo box, results are fetched from the API already filtered by that country rather than searching globally and filtering locally afterward.\n- The Search button has been removed. Results update automatically as you type (debounced, 500 ms delay), so a manual trigger is no longer needed.\n- Removed the Enter key and Alt+A shortcuts that previously triggered a manual search.\n- The search status message has been shortened. It now reads `\"query\": N in Country` instead of the previous `Search \"query\": N results (N in Country)`.\n- The key used for reordering favorites was changed from X to * (star).\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778995099000,
+	"translations": [
+		{
+			"language": "pt",
+			"displayName": "freeRadio",
+			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+			"changelog": "\n**Gestão do foco após remoção de itens**\n- Lista de favoritos: após eliminar uma estação, o foco e a seleção movem-se automaticamente para o item seguinte. Se a estação eliminada era a última, o foco vai para o item anterior. Se a lista ficar vazia, o foco vai para o botão Reproduzir.\n- Lista de Músicas de que Gostei: comportamento idêntico — após remover uma música, o foco permanece no item seguinte, ou vai para o botão Atualizar se a lista ficar vazia.\n**Atalho da tecla Delete**\n- Premir `Delete` com uma estação selecionada na lista de Favoritos ativa agora o botão Eliminar Estação (equivalente a clicar nele), desde que o botão esteja ativo.\n- Premir `Delete` com uma música selecionada na lista de Músicas de que Gostei ativa agora o botão Remover, desde que o botão esteja ativo.\n- Em ambos os casos, a tecla não tem efeito quando nenhum item válido está selecionado ou o botão correspondente está desativado.\n- Adicionada uma nova caixa de verificação \"Silenciar notificações\" nas definições do FreeRadio (desmarcada por predefinição).\n- Quando ativada, o NVDA deixa de anunciar mudanças de estação, alterações do estado de reprodução (reproduzir, pausar, parar) ou eventos de gravação (iniciada, parada, concluída).\n- Mensagens de erro, feedback de favoritos, resultados do reconhecimento musical e notificações de atualização não são afetados intencionalmente.\n- Adicionado um gesto de entrada script_toggleMuteNotifications não atribuído que alterna a definição em tempo real. Atribua uma combinação de teclas através do diálogo Gestos de Entrada do NVDA, na categoria FreeRadio.\n- Dois auxiliares ao nível do módulo (_notify, _notify_on_demand) centralizam a verificação de silenciamento, mantendo os pontos de chamada limpos.\n**Alterado: A pesquisa filtra agora automaticamente pelo país selecionado**\n- As pesquisas ficam agora limitadas ao país selecionado. Quando um país é escolhido na caixa de combinação, os resultados são obtidos da API já filtrados por esse país, em vez de pesquisar globalmente e filtrar localmente depois.\n- O botão Pesquisar foi removido. Os resultados atualizam automaticamente à medida que escreve (com debounce de 500 ms), pelo que um acionador manual já não é necessário.\n- Removidos os atalhos Enter e Alt+A que anteriormente acionavam uma pesquisa manual.\n- A mensagem de estado da pesquisa foi encurtada. Apresenta agora `\"consulta\": N em País` em vez do anterior `Pesquisar \"consulta\": N resultados (N em País)`.\n- A tecla utilizada para reordenar favoritos foi alterada de X para * (asterisco).\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "FreeRadio",
+			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+			"changelog": "\n**Öğe silindikten sonra odak yönetimi**\n- Favoriler listesi: bir istasyon silindiğinde odak ve seçim otomatik olarak listedeki bir sonraki öğeye taşınır. Silinen istasyon listedeki son öğeyse odak bir önceki öğeye geçer. Liste tamamen boşalırsa odak Oynat düğmesine taşınır.\n- Beğenilen Şarkılar listesi: aynı davranış — şarkı kaldırıldığında odak bir sonraki öğede kalır; liste boşalırsa odak Yenile düğmesine taşınır.\n**Delete tuşu kısayolu**\n- Favoriler listesinde bir istasyon seçiliyken `Delete` tuşuna basmak, düğme etkin durumdaysa İstasyonu Sil düğmesine tıklamakla eşdeğerdir.\n- Beğenilen Şarkılar listesinde bir şarkı seçiliyken `Delete` tuşuna basmak, düğme etkin durumdaysa Kaldır düğmesini tetikler.\n- Her iki durumda da geçerli bir öğe seçili değilse veya ilgili düğme devre dışıysa tuşun hiçbir etkisi olmaz.\n**Bildirimleri sessize al**\n- FreeRadio ayarlarına yeni bir \"Bildirimleri sessize al\" onay kutusu eklendi (varsayılan olarak işaretsiz).\n- Etkinleştirildiğinde NVDA; istasyon değişikliklerini, oynatma durumu değişikliklerini (oynat, duraklat, durdur) ve kayıt olaylarını (başladı, durdu, bitti) artık anons etmez.\n- Hata mesajları, favori geri bildirimleri, müzik tanıma sonuçları ve güncelleme bildirimleri kasıtlı olarak bu kapsam dışında tutulmuştur.\n- Ayarı anlık olarak değiştirmek için FreeRadio kategorisi altında NVDA'nın Girdi Hareketleri iletişim kutusundan atanabilecek, varsayılan kısayol tuşu bulunmayan bir `script_toggleMuteNotifications` girdi hareketi eklendi.\n- Sessizleştirme kontrolünü merkeze alan iki modül düzeyinde yardımcı fonksiyon (`_notify`, `_notify_on_demand`) eklendi; bu sayede ilgili çağrı noktaları sade kalmaktadır.\n**Değişti: Artık arama, seçilen ülkeye göre otomatik olarak filtreleniyor**\n- Arama sorguları artık seçilen ülkeyi kapsamaktadır. Birleşik giriş kutusunda bir ülke seçildiğinde, sonuçlar genel olarak arama yapıp daha sonra yerel olarak filtrelenmek yerine, zaten o ülke tarafından filtrelenmiş olan API'den getirilir.\n- Ara butonu kaldırıldı. Sonuçlar siz yazarken otomatik olarak güncellenir, dolayısıyla artık manuel tetiklemeye gerek kalmaz.\n- Daha önce manuel aramayı tetikleyen Enter tuşu ve Alt+A kısayolları kaldırıldı.\n- Arama durumu mesajı kısaltıldı. Artık önceki \"Arama \"sorgu\": N sonuç (Ülkede N)\" yerine \"\"sorgu\": Ülkede N\" yazıyor\n- Favorileri yeniden sıralamak için kullanılan tuş, X yerine  * (yıldız) olarak değiştirildi.\n"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/53a4d73bbfd41aaa8b208d67bac66c3990d9922220ff2d60c4bf3d16724463ba",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "53a4d73bbfd41aaa8b208d67bac66c3990d9922220ff2d60c4bf3d16724463ba",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"_pth": 2,
+						"cat": 2,
+						"css": 1,
+						"dll": 33,
+						"exe": 5,
+						"html": 4,
+						"ini": 3,
+						"md": 4,
+						"mo": 2,
+						"po": 2,
+						"py": 8,
+						"pyd": 40,
+						"txt": 2,
+						"zip": 2
+					},
+					"file_types": {
+						"Portable Executable": 78,
+						"ZIP": 2,
+						"unknown": 30
+					},
+					"highest_datetime": "2026-05-17 05:14:08",
+					"lowest_datetime": "2026-05-17 05:13:28",
+					"num_children": 110,
+					"type": "ZIP",
+					"uncompressed_size": 105263732
+				},
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "793b6212d55e8e3ed2fecde45ce18ebb"
+				},
+				"first_submission_date": 1778995128,
+				"last_analysis_date": 1778995128,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260516",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260516",
+						"engine_version": "6.779",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260515",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260517",
+						"engine_version": "3.30.0.10666",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260517",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260517",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260515",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260516",
+						"engine_version": "260515-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260517",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260517",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20251216",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "failure",
+						"engine_name": "Bkav",
+						"engine_update": "20260516",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260516",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260517",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260517",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260516",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260514",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260517",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260516",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260517",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260517",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260513",
+						"engine_version": "4.0.261",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260517",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260517",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260517",
+						"engine_version": "7.0.30.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260517",
+						"engine_version": "GD:27.44574AVA:64.31259",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260517",
+						"engine_version": "1778990503",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260517",
+						"engine_version": "1.0.245.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260516",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260512",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260517",
+						"engine_version": "14.52.59527",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260517",
+						"engine_version": "14.52.59527",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260517",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260516",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260516",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260517",
+						"engine_version": "3.1.0.235",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260515",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260517",
+						"engine_version": "1.2.0.14532",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260517",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260517",
+						"engine_version": "1.1.26030.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260517",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260517",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260516",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260517",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260516",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260515",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260324",
+						"engine_version": "7.6.2.19",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260516",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260516",
+						"engine_version": "3.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260516",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260517",
+						"engine_version": "2026-05-17.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260517",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260504",
+						"engine_version": "4.0.12.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260516",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260517",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260517",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "failure",
+						"engine_name": "Trustlook",
+						"engine_update": "20260517",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260515",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260516",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260517",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260516",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260515",
+						"engine_version": "9.5.1208",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260516",
+						"engine_version": "38653",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260517",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260515",
+						"engine_version": "2.0.0.5603",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260516",
+						"engine_version": "6.24-114820976",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260517",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260516",
+						"engine_version": "5fb5e6f:5fb5e6f:d24df83:d24df83",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260517",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 7,
+					"undetected": 65
+				},
+				"last_modification_date": 1778995277,
+				"last_submission_date": 1778995128,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "778384ec4dec21b301df5b4e6a3222eb",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "54259a5a1294351e0d6ca67c3f6bb2f189d88d9f",
+				"sha256": "53a4d73bbfd41aaa8b208d67bac66c3990d9922220ff2d60c4bf3d16724463ba",
+				"size": 45018478,
+				"ssdeep": "786432:Ts8GX6pFbKrbeFsYXUctSxUF9uMPREhNRnAp919DZx/xVhyE7oPl3DvPgSROxz/i:TsX6vzsYEctSxUD0Ap9LDHpVhH7oh3Bv",
+				"tags": [
+					"contains-pe",
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T160A7339AE4BD60CE581F243E9A9C6F158AF8073F79429EBED04CC709659F9D806D108F",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "2f4add0f73a87a07b9a94ef6ac40bf46"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+}
