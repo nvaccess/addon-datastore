@@ -1,0 +1,32 @@
+{
+	"addonId": "AIAssistant",
+	"displayName": "AI assistant",
+	"URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.11.6/AIAssistant-0.11.6.nvda-addon",
+	"description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, and Gemini\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t\t",
+	"sha256": "9c468f223f0eb93b9b3beedf05ebf01720e29f719c92ba7a6e2a0864ec1fb454",
+	"addonVersionName": "0.11.6",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 11,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Adilhusain Shaikh",
+	"sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"license": "GPL v2",
+	"homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"changelog": "\nImproved\n• Context pipeline refactored with explicit typed content requests — collectors now declare which request types they handle via typed dispatch instead of coarse profiles, making extraction more predictable and easier to extend\n• Image capture moved to the pipeline snapshot resolution phase on the NVDA main thread — image collectors only perform thread-safe preprocessing and encoding, eliminating potential race conditions with NVDA APIs\nChanged\n• Extraction snapshot resolution now follows a two-phase design: main-thread capture (Phase 1) followed by thread-safe collector dispatch (Phase 2), providing a cleaner separation between NVDA API access and post-processing\n\t\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779101009000,
+	"translations": []
+}
