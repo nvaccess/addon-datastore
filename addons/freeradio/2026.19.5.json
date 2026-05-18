@@ -1,0 +1,45 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.19.5/freeradio-2026.19.5.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "a257978c94148dbd7ccf7e2aac50022368e1b6481f7f546bc1e6f0baf5a5aa43",
+	"addonVersionName": "2026.19.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 19,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n- Change reorder favorite key to comma because * doesn't work for many keyboard layout.\n**Fixed**\n- `ctrl+win+r` and other hotkeys silently failing to reopen the station browser dialog after it had been hidden at least once.\n\n**Root cause:** NVDA maintains an internal popup counter that is incremented by `prePopup()` and decremented by `postPopup()`. `prePopup()` was called once when the dialog was first created, but none of the code paths that hide the dialog (`_on_close_btn`, `_on_window_close`, ESC key, Enter on Close button, Alt+K, `_force_destroy`) ever called `postPopup()`. The counter therefore grew by one on every open/hide cycle and never decreased. After enough cycles NVDA interpreted the accumulated count as \"another popup is already open\" and silently blocked subsequent `Show()` calls, causing the dialog to appear completely unresponsive to all hotkeys with no error logged.\n\n**Fix:** Added `gui.mainFrame.postPopup()` after every `self.Hide()` and `self.Destroy()` call in `radioDialog.py`. Added a matching `gui.mainFrame.prePopup()` in `_open_dialog()` (`__init__.py`) for the re-show path, so each `prePopup` is correctly paired with a `postPopup` for the full lifetime of the dialog.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779107096000,
+	"translations": [
+		{
+			"language": "pt",
+			"displayName": "freeRadio",
+			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+			"changelog": "\n- A tecla de atalho para reordenar favoritos foi alterada para vírgula (`,`), pois o `*` não funciona em muitos layouts de teclado.\n**Corrigido**\n- `ctrl+win+r` e outros atalhos falhando silenciosamente ao tentar reabrir o diálogo do navegador de estações após ele ter sido ocultado pelo menos uma vez.\n**Causa raiz:** O NVDA mantém um contador interno de popups que é incrementado por `prePopup()` e decrementado por `postPopup()`. O `prePopup()` era chamado uma vez quando o diálogo era criado pela primeira vez, mas nenhum dos caminhos de código que ocultam o diálogo (`_on_close_btn`, `_on_window_close`, tecla ESC, Enter no botão Fechar, Alt+K, `_force_destroy`) jamais chamava `postPopup()`. O contador, portanto, aumentava em um a cada ciclo de abertura/ocultação e nunca diminuía. Após ciclos suficientes, o NVDA interpretava a contagem acumulada como \"outro popup já está aberto\" e bloqueava silenciosamente as chamadas subsequentes de `Show()`, fazendo com que o diálogo parecesse completamente sem resposta a todos os atalhos, sem nenhum erro registrado.\n**Correção:** Adicionado `gui.mainFrame.postPopup()` após cada chamada de `self.Hide()` e `self.Destroy()` em `radioDialog.py`. Adicionado um `gui.mainFrame.prePopup()` correspondente em `_open_dialog()` (`__init__.py`) para o caminho de reexibição, de modo que cada `prePopup` seja corretamente emparelhado com um `postPopup` durante todo o ciclo de vida do diálogo.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "FreeRadio",
+			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+			"changelog": "\n- Sık kullanılanları yeniden sıralama kısayol tuşu, birçok klavye düzeninde çalışmayan `*` yerine virgül (`,`) olarak değiştirildi.\n**Düzeltildi**\n- `ctrl+win+r` ve diğer kısayol tuşlarının, istasyon tarayıcısı iletişim kutusu en az bir kez gizlendikten sonra onu yeniden açmak için sessiz seçimde başarısız olması.\n**Temel neden:** NVDA, `prePopup()` tarafından artırılan ve `postPopup()` tarafından azaltılan dahili bir açılır pencere sayacı tutar. `prePopup()` iletişim kutusu ilk oluşturulduğunda bir kez çağrılıyordu; ancak iletişim kutusunu gizleyen kod yollarından hiçbiri (`_on_close_btn`, `_on_window_close`, ESC tuşu, Kapat düğmesinde Enter, Alt+K, `_force_destroy`) hiçbir zaman `postPopup()` çağırmıyordu. Bu nedenle sayaç her açma/gizleme döngüsünde bir artıyor ve hiç azalmıyordu. Yeterli döngü sonrasında NVDA, biriken sayıyı \"başka bir açılır pencere zaten açık\" olarak yorumluyor ve sonraki `Show()` çağrılarını sessizce engelliyordu; bu da iletişim kutusunun hiçbir hata kaydedilmeksizin tüm kısayol tuşlarına tamamen yanıt vermez görünmesine yol açıyordu.\n**Düzeltme:** `radioDialog.py` dosyasındaki her `self.Hide()` ve `self.Destroy()` çağrısının ardından `gui.mainFrame.postPopup()` eklendi. Yeniden gösterme yolu için `__init__.py` dosyasındaki `_open_dialog()` fonksiyonuna eşleşen bir `gui.mainFrame.prePopup()` çağrısı eklendi; böylece her `prePopup`, iletişim kutusunun tüm ömrü boyunca doğru şekilde bir `postPopup` ile eşleştirilmiş oldu.\n"
+		}
+	]
+}
