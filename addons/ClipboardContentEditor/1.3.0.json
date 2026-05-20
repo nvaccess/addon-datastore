@@ -1,0 +1,57 @@
+{
+	"addonId": "ClipboardContentEditor",
+	"displayName": "Clipboard Content Editor",
+	"URL": "https://github.com/fauzan-january/clipboard-content-editor/releases/download/v1.3.0/ClipboardContentEditor-1.3.0.nvda-addon",
+	"description": "A powerful clipboard editor and manager for NVDA users. Review, analyze, edit, and manage clipboard content before pasting. Use Ctrl+Alt+C to activate the command layer and press F1 to show the list of available commands.",
+	"sha256": "6f63c4d91544cff0f0cb0d49033c3d3354261cb7066cb769b5ffc5d9df2d1c21",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Fauzan January",
+	"sourceURL": "https://github.com/fauzan-january/clipboard-content-editor/",
+	"license": "GPL v2",
+	"homepage": "https://fauzanaja.com/nvda-addon/",
+	"changelog": "- Added full compatibility for NVDA 2026.1 (Python 64-bit).\n- Refactored all global shortcuts into a unified Command Layer (Ctrl+Alt+C) to prevent conflicts. Press F1 after the command layer trigger to view all available commands.\n- Introduced an unlimited Clipboard History manager with complete CRUD capabilities (H in the command layer).\n- Added Append Mode (A in the command layer) to seamlessly collect multiple texts by concatenating new copies.\n- Restructured the Editor dialog by moving tools into a dedicated Tools menu.\n- Restored the ability to speak clipboard content without character limit (S in the command layer).\n- Added settings to configure the maximum Clipboard History size and override the addon's display language independently of NVDA.\n- Fixed a bug where the Editor dialog would freeze or hang after successfully saving a file via 'Save As...'.\n- Integrated a Development Support (PayPal donation) dialog into the installation flow.- Added paragraph counting to the Information feature (characters, words, lines, and paragraphs).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779250889000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "محرر محتوى الحافظة",
+			"description": "A powerful clipboard editor and manager for NVDA users. Review, analyze, edit, and manage clipboard content before pasting. Use Ctrl+Alt+C to activate the command layer and press F1 to show the list of available commands.",
+			"changelog": "- Added full compatibility for NVDA 2026.1 (Python 64-bit).\n- Refactored all global shortcuts into a unified Command Layer (Ctrl+Alt+C) to prevent conflicts. Press F1 after the command layer trigger to view all available commands.\n- Introduced an unlimited Clipboard History manager with complete CRUD capabilities (H in the command layer).\n- Added Append Mode (A in the command layer) to seamlessly collect multiple texts by concatenating new copies.\n- Restructured the Editor dialog by moving tools into a dedicated Tools menu.\n- Restored the ability to speak clipboard content without character limit (S in the command layer).\n- Added settings to configure the maximum Clipboard History size and override the addon's display language independently of NVDA.\n- Fixed a bug where the Editor dialog would freeze or hang after successfully saving a file via 'Save As...'.\n- Integrated a Development Support (PayPal donation) dialog into the installation flow.- Added paragraph counting to the Information feature (characters, words, lines, and paragraphs)."
+		},
+		{
+			"language": "en",
+			"displayName": "Clipboard Content Editor",
+			"description": "A powerful clipboard editor and manager for NVDA users. Review, analyze, edit, and manage clipboard content before pasting. Use Ctrl+Alt+C to activate the command layer and press F1 to show the list of available commands.",
+			"changelog": "- Added full compatibility for NVDA 2026.1 (Python 64-bit).\n- Refactored all global shortcuts into a unified Command Layer (Ctrl+Alt+C) to prevent conflicts. Press F1 after the command layer trigger to view all available commands.\n- Introduced an unlimited Clipboard History manager with complete CRUD capabilities (H in the command layer).\n- Added Append Mode (A in the command layer) to seamlessly collect multiple texts by concatenating new copies.\n- Restructured the Editor dialog by moving tools into a dedicated Tools menu.\n- Restored the ability to speak clipboard content without character limit (S in the command layer).\n- Added settings to configure the maximum Clipboard History size and override the addon's display language independently of NVDA.\n- Fixed a bug where the Editor dialog would freeze or hang after successfully saving a file via 'Save As...'.\n- Integrated a Development Support (PayPal donation) dialog into the installation flow.- Added paragraph counting to the Information feature (characters, words, lines, and paragraphs)."
+		},
+		{
+			"language": "id",
+			"displayName": "Clipboard Content Editor",
+			"description": "A powerful clipboard editor and manager for NVDA users. Review, analyze, edit, and manage clipboard content before pasting. Use Ctrl+Alt+C to activate the command layer and press F1 to show the list of available commands.",
+			"changelog": "- Added full compatibility for NVDA 2026.1 (Python 64-bit).\n- Refactored all global shortcuts into a unified Command Layer (Ctrl+Alt+C) to prevent conflicts. Press F1 after the command layer trigger to view all available commands.\n- Introduced an unlimited Clipboard History manager with complete CRUD capabilities (H in the command layer).\n- Added Append Mode (A in the command layer) to seamlessly collect multiple texts by concatenating new copies.\n- Restructured the Editor dialog by moving tools into a dedicated Tools menu.\n- Restored the ability to speak clipboard content without character limit (S in the command layer).\n- Added settings to configure the maximum Clipboard History size and override the addon's display language independently of NVDA.\n- Fixed a bug where the Editor dialog would freeze or hang after successfully saving a file via 'Save As...'.\n- Integrated a Development Support (PayPal donation) dialog into the installation flow.- Added paragraph counting to the Information feature (characters, words, lines, and paragraphs)."
+		},
+		{
+			"language": "uk",
+			"displayName": "Редактор вмісту буфера обміну",
+			"description": "A powerful clipboard editor and manager for NVDA users. Review, analyze, edit, and manage clipboard content before pasting. Use Ctrl+Alt+C to activate the command layer and press F1 to show the list of available commands.",
+			"changelog": "- Added full compatibility for NVDA 2026.1 (Python 64-bit).\n- Refactored all global shortcuts into a unified Command Layer (Ctrl+Alt+C) to prevent conflicts. Press F1 after the command layer trigger to view all available commands.\n- Introduced an unlimited Clipboard History manager with complete CRUD capabilities (H in the command layer).\n- Added Append Mode (A in the command layer) to seamlessly collect multiple texts by concatenating new copies.\n- Restructured the Editor dialog by moving tools into a dedicated Tools menu.\n- Restored the ability to speak clipboard content without character limit (S in the command layer).\n- Added settings to configure the maximum Clipboard History size and override the addon's display language independently of NVDA.\n- Fixed a bug where the Editor dialog would freeze or hang after successfully saving a file via 'Save As...'.\n- Integrated a Development Support (PayPal donation) dialog into the installation flow.- Added paragraph counting to the Information feature (characters, words, lines, and paragraphs)."
+		}
+	]
+}
