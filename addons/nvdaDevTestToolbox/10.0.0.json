@@ -1,0 +1,81 @@
+{
+	"addonId": "nvdaDevTestToolbox",
+	"displayName": "NVDA Dev & Test Toolbox",
+	"URL": "https://github.com/CyrilleB79/NVDA-Dev-Test-Toolbox/releases/download/V10.0/nvdaDevTestToolbox-10.0.nvda-addon",
+	"description": "A set of tools for NVDA developers and testers.",
+	"sha256": "ff64e3a71f7aeb6de851ca92ded7589fda3f53b06f26014d82974ca94333f889",
+	"addonVersionName": "10.0",
+	"addonVersionNumber": {
+		"major": 10,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cyrille Bougot",
+	"sourceURL": "https://github.com/CyrilleB79/NVDA-Dev-Test-Toolbox",
+	"license": "GPL v2",
+	"homepage": "https://github.com/CyrilleB79/NVDA-Dev-Test-Toolbox",
+	"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779269937000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Dev & Test-Toolbox für NVDA",
+			"description": "Eine Reihe von Tools für NVDA-Entwickler und -Tester.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "es",
+			"displayName": "Caja de herramientas de desarrollo y pruebas para NVDA",
+			"description": "Un conjunto de herramientas para desarrolladores y evaluadores de NVDA.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "fr",
+			"displayName": "NVDA Dev & Test Toolbox",
+			"description": "Un ensemble d'outils pour les développeurs et testeurs de NVDA.",
+			"changelog": "* Lecture de journal : lors de la journalisation des appels de fonction, les arguments et les valeurs de retour sont désormais également enregistrés. (avec la contribution de hwf1324)\n* Lecture de journal : lors de l'utilisation des commandes de navigation, certains messages ne sont plus annoncés comme tronqués ou vides.\n* Lors de l'annonce de la dernière erreur, certains messages ne sont plus annoncés sans interpolation (par exemple contenant \"%s\").\n* Correction d'erreurs avec NVDA 2019.2 : première utilisation de l'historique de la console Python, annonce des noms d'objets non-ASCII avec l'explorateur de propriétés d'objet.\n* Compatibilité avec NVDA 2026.1.\n"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Caixa de ferramentas de desenvolvimento e teste NVDA",
+			"description": "Um conjunto de ferramentas para desenvolvedores e testadores de NVDA.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "NVDA Dev &Test Toolbox",
+			"description": "Um conjunto de ferramentas para programadores e testadores do NVDA.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "NVDA Dev & Test Toolbox",
+			"description": "Набор инструментов для разработчиков и тестировщиков NVDA.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA Geliştirici ve Test Araç Kutusu",
+			"description": "NVDA geliştiricileri ve testçileri için bir dizi araç.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "NVDA Dev & Test Toolbox",
+			"description": "Набір інструментів для розробників і тестувальників NVDA.",
+			"changelog": "* Log reader: when logging function calls, arguments and return values are now logged too. (with the contribution of hwf1324).\n* Log reader: when using navigation commands, some messages are no longer reported as truncated or empty.\n* When reporting last error, some messages are no longer reported uninterpolated (e.g. containing \"%s\").\n* Fixed some errors with NVDA 2019.2: first usage of Python console history, reporting of non-ASCII object names with Object property explorer.\n* Compatibility with NVDA 2026.1.\n"
+		}
+	]
+}
