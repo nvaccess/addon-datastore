@@ -1,0 +1,39 @@
+{
+	"addonId": "BlueToothBatteryReport",
+	"displayName": "Bluetooth Battery Report",
+	"URL": "https://github.com/haitun001/BlueToothBatteryReport/releases/download/v0.4/BlueToothBatteryReport-0.4.nvda-addon",
+	"description": "Use NVDA+Control+Shift+B to report Bluetooth device battery levels.",
+	"sha256": "debc3d15b2fa1f3440558248887d5aa7c1aea4a62f5085ba757ab846f123699d",
+	"addonVersionName": "0.4",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "haitun",
+	"sourceURL": "https://github.com/haitun001/BlueToothBatteryReport",
+	"license": "GPL v2",
+	"homepage": "https://www.zxrjy.net/",
+	"changelog": "Changed the hotkey to NVDA+Shift+Ctrl+B to avoid possible conflicts, and added a Bluetooth Battery Report category in NVDA Settings with an option to filter devices by connection type.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779325539000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "蓝牙电量播报",
+			"description": "使用 NVDA+Control+Shift+B 播报蓝牙设备电量。",
+			"changelog": "将播报热键改为 NVDA+Shift+Ctrl+B，以避免可能的热键冲突。并在 NVDA 设置中新增 Bluetooth Battery Report 分类，提供按连接类型过滤设备的选项。"
+		}
+	]
+}
