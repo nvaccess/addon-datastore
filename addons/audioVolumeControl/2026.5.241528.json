@@ -1,0 +1,45 @@
+{
+	"addonId": "audioVolumeControl",
+	"displayName": "Per-Application Volume Control",
+	"URL": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application/releases/download/2026.05.241528/audioVolumeControl-2026.05.241528.nvda-addon",
+	"description": "Control the volume of individual applications using keyboard shortcuts.\nPress Ctrl+NVDA+Y to open the volume control dialog and adjust volume per application.\nSupports precise volume control with multiple increment levels and real-time announcements.\n\nTested on NVDA 2025.3.2. Users may modify manifest.ini for other versions.\nContact: https://t.me/tierryt2021",
+	"sha256": "221c52e929ec4adb8d60e3e5873f904a550270d051d56a2e4ab33fb8cf38f633",
+	"addonVersionName": "2026.05.241528",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 241528
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "JoaoDEVWHADS",
+	"sourceURL": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application",
+	"license": "GPL v2",
+	"homepage": "https://github.com/JoaoDEVWHADS/nvda-audio-volume-control-application",
+	"changelog": "Version 2026.01.16\n- Fixed update system with robust file handling\n- Vendorized pycaw library to avoid conflicts\n- Windows binary support for psutil\n- Improved dependency management\n- Uses NVDA built-in comtypes",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779640038000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Per-Application Volume Control",
+			"description": "Control the volume of individual applications using keyboard shortcuts.\nPress Ctrl+NVDA+Y to open the volume control dialog and adjust volume per application.\nSupports precise volume control with multiple increment levels and real-time announcements.\n\nTested on NVDA 2025.3.2. Users may modify manifest.ini for other versions.\nContact: https://t.me/tierryt2021",
+			"changelog": "Version 2026.01.16\n- Fixed update system with robust file handling\n- Vendorized pycaw library to avoid conflicts\n- Windows binary support for psutil\n- Improved dependency management\n- Uses NVDA built-in comtypes"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Per-Application Volume Control",
+			"description": "Control the volume of individual applications using keyboard shortcuts.\nPress Ctrl+NVDA+Y to open the volume control dialog and adjust volume per application.\nSupports precise volume control with multiple increment levels and real-time announcements.\n\nTested on NVDA 2025.3.2. Users may modify manifest.ini for other versions.\nContact: https://t.me/tierryt2021",
+			"changelog": "Version 2026.01.16\n- Fixed update system with robust file handling\n- Vendorized pycaw library to avoid conflicts\n- Windows binary support for psutil\n- Improved dependency management\n- Uses NVDA built-in comtypes"
+		}
+	]
+}
