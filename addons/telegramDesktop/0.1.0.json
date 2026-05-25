@@ -1,0 +1,44 @@
+{
+	"addonId": "telegramDesktop",
+	"displayName": "Telegram Desktop Accessibility",
+	"URL": "https://github.com/keyang556/tdesktopnvda/releases/download/0.1.0/telegramDesktop-0.1.0.nvda-addon",
+	"description": "Improves Telegram Desktop accessibility for NVDA users.\n\nThis release fixes chat list focus announcements when Telegram exposes a broken UIA selection container, and applies the same protection to the phone number country selection dialog.",
+	"sha256": "b421c2a4cefc65787737354022894c7033da0adb0266c2571a11dee93756d1b8",
+	"addonVersionName": "0.1.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/tdesktopnvda",
+	"license": "GPL v2",
+	"changelog": "Fixed chat list item focus speech in Telegram Desktop 6.8.x by avoiding a failing UIA selection container query.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1779693171000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Telegram 电脑版无障碍支持",
+			"description": "改善 Telegram 电脑版与 NVDA 配合使用时的无障碍体验。\n\n此版本修复 Telegram 暴露损坏的 UIA 选择容器时，会话列表焦点提示无法正常朗读的问题，并将同样的保护应用到电话号码国家/地区选择对话框。",
+			"changelog": "通过避开失败的 UIA 选择容器查询，修复 Telegram 电脑版 6.8.x 中会话列表项目的焦点朗读。"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "Telegram 電腦版無障礙支援",
+			"description": "改善 Telegram 電腦版與 NVDA 搭配使用時的無障礙體驗。\n\n此版本修正 Telegram 暴露損壞的 UIA 選取容器時，聊天室清單焦點提示無法正常朗讀的問題，並將同樣的保護套用到電話號碼國家/地區選擇對話框。",
+			"changelog": "透過避開失敗的 UIA 選取容器查詢，修正 Telegram 電腦版 6.8.x 中聊天室清單項目的焦點朗讀。"
+		}
+	]
+}
