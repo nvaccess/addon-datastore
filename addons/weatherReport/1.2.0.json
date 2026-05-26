@@ -26,5 +26,49 @@
 	"license": "GPL v2",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1779821239000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8acda61fee8a3799b3bc592ca635a4343ee110326f369b530a0fb5f2744b9de4",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "8acda61fee8a3799b3bc592ca635a4343ee110326f369b530a0fb5f2744b9de4",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "7878787849000000",
+					"raw_md5": "f25f5b51136e52c5392cb76524576169"
+				},
+				"first_submission_date": 1779821263,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1779821264,
+				"last_submission_date": 1779821263,
+				"md5": "933de9ce01818a4250016dc416b6a361",
+				"names": [],
+				"reputation": 0,
+				"sha1": "899e1df21433093a33df83aef0251f1cb05857f5",
+				"sha256": "8acda61fee8a3799b3bc592ca635a4343ee110326f369b530a0fb5f2744b9de4",
+				"size": 7573,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
