@@ -1,0 +1,45 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.6.7/easyTableCopy-2026.6.7.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "2a96a9b17e31bbd49f0b51494d1f632c2767a17839102be421ead456597c6955",
+	"addonVersionName": "2026.6.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n**Fix: Confirmation message not announced after list copy**\n- After successfully copying a list, NVDA would play the success beep but silently crash before speaking the \"List copied\" confirmation. The clipboard content was unaffected — only the spoken feedback was lost.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780049167000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n**Düzeltme: Liste kopyalandıktan sonra onay mesajının duyurulmaması**\n- Bir listeyi başarıyla kopyaladıktan sonra NVDA, başarılı bip sesi çıkarıyor ancak \"Liste kopyalandı\" onayını söylemeden önce sessizce hata veriyordu. Pano içeriği etkilenmiyor; yalnızca sözlü geri bildirim yapılmıyordu.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Легке копіювання таблиці",
+			"description": "EasyTableCopy — це доповнення NVDA, призначене для вирішення поширених проблем: копіювання таблиць з Інтернету або списків із Windows у документи (наприклад, Word, Excel або Outlook) без втрати форматування чи макета.",
+			"changelog": "\n**Виправлення: повідомлення про підтвердження не оголошувалося після копіювання списку**\n- Після успішного копіювання списку NVDA відтворить звуковий сигнал успішного завершення, але тихо завершить роботу перед тим, як промовить підтвердження «Список скопійовано». Вміст буфера обміну не вплинув — було втрачено лише голосовий відгук.\n"
+		}
+	]
+}
