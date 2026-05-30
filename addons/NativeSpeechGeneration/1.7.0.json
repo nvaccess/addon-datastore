@@ -1,0 +1,63 @@
+{
+	"addonId": "NativeSpeechGeneration",
+	"displayName": "Native Speech Generation",
+	"URL": "https://github.com/muhammadGagah/native-speech-generation/releases/download/v1.7.0/NativeSpeechGeneration-1.7.0.nvda-addon",
+	"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+	"sha256": "ea09604f13cc2139a5e18f8b9f2c5aa70114c82e8c44b962b5e8947685e8c2d7",
+	"addonVersionName": "1.7.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/native-speech-generation/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/native-speech-generation/",
+	"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780132577000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Natürliche Spracherzeugung",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "es",
+			"displayName": "Native Speech Generation",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "id",
+			"displayName": "Native Speech Generation",
+			"description": "Manfaatkan kekuatan AI Gemini mutakhir dari Google untuk menghasilkan ucapan berkualitas tinggi langsung di NVDA. Add-on ini menyediakan dialog yang mudah digunakan untuk mengubah teks menjadi audio yang terdengar alami.\n\nFitur Utama:\n- Suara Berkualitas Tinggi: Pilih Gemini Flash 3.1 Preview untuk audio pendek yang kuat dan berlatensi rendah, Gemini Flash 2.5 untuk pembuatan ucapan standar yang responsif, atau Gemini Pro 2.5 untuk ucapan premium yang lebih hidup.\n- Mode Satu dan Multi-Pembicara: Hasilkan audio untuk satu pembicara atau buat dialog dinamis dengan dua pembicara berbeda. Cukup format teks dengan \"NamaPembicara:\" untuk menetapkan suara.\n- Kontrol Suara Lanjutan: Sesuaikan output dengan mengatur temperatur untuk hasil yang lebih kreatif atau lebih stabil, dan tambahkan instruksi gaya khusus.\n- Antarmuka yang Aksesibel: Semua kontrol sepenuhnya dapat diakses, termasuk panel pengaturan lanjutan yang dapat diciutkan agar antarmuka tetap rapi dan mudah dinavigasi.\n- Alur Kerja yang Lancar: Add-on ini langsung memutar audio setelah dibuat dan memungkinkan Anda menyimpan file .wav yang dihasilkan untuk digunakan nanti.\n\nUntuk memulai, dapatkan kunci API Gemini dari Google AI Studio dan masukkan di panel pengaturan add-on yang tersedia di menu Alat NVDA.",
+			"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Нативная генерация речи",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Генерація природного мовлення",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Accessible Interface: All controls are fully accessible, including a collapsible panel for advanced settings to keep the interface clean and easy to navigate.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Compatibility: Added support for NVDA 2026.1.\n- Dependencies now use the latest verified library package for each supported NVDA runtime.\n- Added Gemini Flash 3.1 Preview as the default TTS model.\n- See changelog.md for full details.\n"
+		}
+	]
+}
