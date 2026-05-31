@@ -1,0 +1,968 @@
+{
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v6.1.0/VisionAssistant-6.1.0.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+	"sha256": "55926789e19af9ce150801bbe2c35714cc1ad120816cf1c1ea1ed072d1d0a0a8",
+	"addonVersionName": "6.1.0",
+	"addonVersionNumber": {
+		"major": 6,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780214020000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "de",
+			"displayName": "KI Assistent Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "es",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivo (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Gestionar/escanear etiquetas (Shift+L)\n- Explorador de UI (E)\n- Operador IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)",
+			"changelog": "## Cambios para la versión 6.1.0\n\n*   **Integración universal de IA local (Configurar IA local)**: Se añadió un nuevo botón **\"Configurar IA local\"** en la Configuración del proveedor personalizado. Los usuarios ahora pueden configurar automáticamente motores de IA local, incluyendo **Ollama**, **LM Studio**, **Jan.ai** y **KoboldCPP** de forma instantánea.\n*   **Omisión inteligente de proxy local**: Se reconstruyó la lógica de conexión con un mecanismo avanzado de omisión de proxy. El complemento ahora omite completamente los proxies del sistema Windows para conexiones de bucle local, garantizando conexiones estables con la IA local incluso cuando tu VPN/modo TUN está activo.\n*   **Cancelación de emergencia del Operador IA (Shift+A)**: Se añadió una función de parada/cancelación de seguridad muy solicitada. Presionar el comando del Operador IA (**Shift+A** dentro de la capa de comandos) mientras una operación autónoma está en curso detendrá inmediatamente el bucle y anunciará *\"Operador IA detenido.\"*\n*   **Etiquetado con IA ultraestable (v2)**: Se reemplazaron las coordenadas absolutas de pantalla por un sistema híbrido avanzado de **firma de objeto**. Las etiquetas se basan en identificadores programáticos (UIA **AutomationId** o Win32 **ControlID**) y coordenadas relativas a la ventana, siendo completamente resistentes al redimensionamiento, movimiento, cambio de monitor o escalado.\n*   **Migración automática de etiquetas sin interrupciones**: La actualización es completamente transparente. El complemento migrará automáticamente las etiquetas antiguas al nuevo formato de huella digital estable en segundo plano al primer enfoque, sin pérdida de datos."
+		},
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappeler le dernier résultat (Espace)\n- Aide des commandes (H)",
+			"changelog": "## Modifications pour la version 6.1.0\n\n*   **Intégration universelle de l'IA locale (configuration de l'IA locale)** : Ajout d'un nouveau bouton **\"Configurer l'IA locale\"** dans les paramètres du fournisseur personnalisé. Les utilisateurs peuvent désormais configurer automatiquement et instantanément les moteurs d'IA locaux, notamment **Ollama**, **LM Studio**, **Jan.ai** et **KoboldCPP**.\n*   **Contournement intelligent du proxy local** : la logique de connexion a été reconstruite avec un mécanisme avancé de contournement du proxy. L'extension est désormais suffisamment intelligente pour contourner complètement les proxys du système Windows pour les connexions locales de type loopback, garantissant ainsi des connexions IA locales stables même lorsque votre mode VPN/TUN est actif.\n*   **Annulation d'urgence de l'opérateur IA (Maj+A)** : Ajout d'un déclencheur de sécurité d'arrêt/annulation très demandé. Un appui sur la commande Opérateur AI (**Maj+A** à l'intérieur d'une commande séquentielle) pendant qu'une opération autonome est en cours d'exécution annulera instantanément la boucle et annoncera *\"Opérateur AI arrêté.\"*\n*   **Étiquetage IA ultra-stable (v2)** : Remplacement des clés de coordonnées absolues de l'écran par un système avancé et hybride de **Signature d'objet**. Les étiquettes s'appuient désormais sur des identifiants programmatiques (UIA **AutomationId** ou Win32 **ControlID**) et des coordonnées relatives aux fenêtres, ce qui rend vos étiquettes personnalisées totalement résistantes au redimensionnement, au déplacement, au changement de moniteur ou à la mise à l'échelle des fenêtres.\n*   **Migration automatique et transparente des étiquettes** : La mise à niveau est totalement transparente. L'extension migrera automatiquement vos anciennes étiquettes basées sur les coordonnées vers le nouveau format de signature stable en arrière-plan lors du premier focus, sans perte de données."
+		},
+		{
+			"language": "id",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (I)\n- Etichettatore oggetti (l) \n- Gestisci/scansiona etichette (Shift-l) \n- Operatore IA (Shift+A)\\n\n- Esplora interfaccia (e) \n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "pl",
+			"displayName": "Vision Assistant Pro",
+			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Dyktowanie (S)\n- Raportuj stan (I)\n- Oznacz obiekt (L)\n- Zarządzaj etykietami / Skanuj (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Pokaż ostatni wynik (Spacja)\n- Pomoc poleceń (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para NVDA usando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (I)\n- Rotular Objeto (L)\n- Gerenciar/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualizações (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+			"changelog": "## Alterações para 6.1.0\n\n*   **Integração Universal com IA Local (Configurar IA Local)**: Foi adicionado um novo botão **\"Configurar IA Local\"** nas configurações de Provedor Personalizado. Agora é possível configurar automaticamente mecanismos de IA locais, incluindo **Ollama**, **LM Studio**, **Jan.ai** e **KoboldCPP**, de forma instantânea.\n*   **Desvio Inteligente de Proxy Local**: A lógica de conexão foi reconstruída com um mecanismo avançado de desvio de proxy. O add-on agora é inteligente o suficiente para ignorar completamente os proxies do sistema Windows em conexões locais loopback, garantindo conexões estáveis com IA local mesmo quando VPN/TUN-mode estiver ativo.\n*   **Cancelamento de Emergência do Operador de IA (Shift+A)**: Foi adicionado um mecanismo de parada/cancelamento muito solicitado. Pressionar o comando do Operador de IA (**Shift+A** dentro da camada de comandos) enquanto uma operação autônoma estiver em execução interromperá instantaneamente o processo e anunciará *\"Operador de IA interrompido.\"*\n*   **Rotulagem por IA Ultraestável (v2)**: As chaves baseadas em coordenadas absolutas da tela foram substituídas por um avançado sistema híbrido de **Assinatura de Objeto**. Os rótulos agora utilizam identificadores programáticos (UIA **AutomationId** ou Win32 **ControlID**) e coordenadas relativas à janela, tornando os rótulos personalizados resistentes a redimensionamento de janela, movimentação, troca de monitor ou alteração de escala.\n*   **Migração Automática Transparente de Rótulos**: A atualização é completamente transparente. O add-on migrará automaticamente os antigos rótulos legados baseados em coordenadas para o novo formato estável em segundo plano ao receber o primeiro foco, sem qualquer perda de dados."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para o NVDA usando modelos Gemini.\nCamada de comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de UI (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+			"changelog": "## Alterações para 6.1.0\n\n*   **Integração Universal de IA Local (Configurar IA Local)**: Foi adicionado um novo botão **\"Configurar IA Local\"** nas definições de fornecedor personalizado. Os utilizadores podem agora configurar automaticamente motores de IA locais, incluindo **Ollama**, **LM Studio**, **Jan.ai** e **KoboldCPP**, de forma instantânea.\n*   **Desvio Inteligente de Proxy Local**: A lógica de ligação foi reconstruída com um mecanismo avançado de desvio de proxy. O add-on é agora suficientemente inteligente para ignorar completamente os proxies do sistema Windows em ligações locais loopback, garantindo ligações estáveis à IA local mesmo quando uma VPN/modo TUN está ativo.\n*   **Cancelamento de Emergência do Operador de IA (Shift+A)**: Foi adicionada uma funcionalidade de paragem/cancelamento muito solicitada. Premir o comando do Operador de IA (**Shift+A** dentro da camada de comandos) enquanto uma operação autónoma estiver em execução interrompe imediatamente o processo e anuncia *\"Operador de IA parado.\"*\n*   **Rotulagem por IA Ultraestável (v2)**: As chaves de coordenadas absolutas do ecrã foram substituídas por um sistema híbrido avançado de **Assinatura de Objetos**. Os rótulos passam agora a utilizar identificadores programáticos (UIA **AutomationId** ou Win32 **ControlID**) e coordenadas relativas à janela, tornando os rótulos personalizados completamente resistentes a redimensionamento de janelas, movimentação, mudança de monitor ou alteração de escala.\n*   **Migração Automática e Transparente de Rótulos**: A atualização é totalmente transparente. O add-on migra automaticamente os antigos rótulos baseados em coordenadas para o novo formato estável em segundo plano no primeiro foco, sem qualquer perda de dados."
+		},
+		{
+			"language": "ro",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un asistent AI avansat pentru NVDA care folosește modelele Gemini.\nStrat de comenzi: apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvitor CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (I)\n- Etichetează obiectul (L)\n- Gestionează/scanează etichetele (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Verifică actualizarea (U)\n- Reia ultimul rezultat (Spațiu)\n- Ajutor comenzi (H)",
+			"changelog": "## Modificări pentru 6.1.0\n\n*   **Integrare universală cu AI local (Configurează AI local)**: A fost adăugat un nou buton **„Configurează AI local”** în Setările furnizorului personalizat. Utilizatorii pot configura automat și instant motoare AI locale, inclusiv **Ollama**, **LM Studio**, **Jan.ai** și **KoboldCPP**.\n*   **Ocolire inteligentă a proxy-ului local**: Logica de conexiune a fost reconstruită cu un mecanism avansat de ocolire a proxy-ului. Add-on-ul poate acum ocoli complet proxy-urile de sistem Windows pentru conexiunile locale de tip loopback, asigurând conexiuni stabile cu AI local chiar și când VPN-ul sau proxy-ul în modul TUN este activ.\n*   **Anulare de urgență pentru AI Operator (Shift+A)**: A fost adăugat un declanșator de siguranță foarte cerut pentru oprire/anulare. Dacă apeși comanda AI Operator (**Shift+A** în stratul de comenzi) în timp ce rulează o operație autonomă, add-on-ul va opri instant bucla și va anunța *„AI Operator oprit.”*\n*   **Etichetare AI ultra-stabilă (v2)**: Cheile bazate pe coordonate absolute de ecran au fost înlocuite cu un sistem avansat, hibrid, de **Semnătură a obiectului**. Etichetele se bazează acum pe identificatori programatici (UIA **AutomationId** sau Win32 **ControlID**) și pe coordonate relative la fereastră, făcând etichetele tale personalizate rezistente la redimensionarea, mutarea sau scalarea ferestrei și la schimbarea monitorului.\n*   **Migrare automată fără întreruperi a etichetelor**: Actualizarea este complet transparentă. Add-on-ul va migra automat etichetele tale vechi, bazate pe coordonate moștenite, în noul format stabil de amprentă în fundal, la prima focalizare, fără pierdere de date."
+		},
+		{
+			"language": "ru",
+			"displayName": "Vision Assistant Pro (Визуальный помощник)",
+			"description": "Vision Assistant Pro — это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini..\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ онлайн-видео (Shift+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-Оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).",
+			"changelog": "## Изменения в версии 6.1.0\n\n*   **Универсальная интеграция локального ИИ (Настройка локального ИИ)**: Добавлена новая кнопка **«Setup Local AI»** в настройках пользовательского провайдера. Теперь пользователи могут автоматически настраивать локальные ИИ-движки, включая **Ollama**, **LM Studio**, **Jan.ai** и **KoboldCPP**, мгновенно.\n*   **Интеллектуальный обход локального прокси**: Переработана логика подключения с расширенным механизмом обхода прокси. Теперь дополнение достаточно умно, чтобы полностью обходить системные прокси Windows для локальных зацикленных соединений, обеспечивая стабильное подключение к локальному ИИ даже при активном VPN/TUN-режиме.\n*   **Аварийная остановка ИИ-Оператора (Shift+A)**: Добавлен долгожданный предохранитель остановки/отмены. Нажатие команды ИИ-Оператора (**Shift+A** внутри командного слоя**) во время выполнения автономной операции мгновенно прервет цикл и сообщит *«ИИ-Оператор остановлен»*.\n*   **Сверхстабильная ИИ-маркировка (v2)**: Заменил абсолютные координаты экрана на передовую гибридную систему **Object Signature** (сигнатуры объекта). Теперь метки полагаются на программные идентификаторы (UIA **AutomationId** или Win32 **ControlID**) и координаты относительно окна, что делает ваши пользовательские метки полностью устойчивыми к изменению размера окна, перемещению, переключению мониторов или масштабированию.\n*   **Бесшовная автоматическая миграция меток**: Обновление происходит полностью прозрачно. Дополнение автоматически перенесет ваши старые метки, основанные на координатах, в новый стабильный формат «отпечатков» в фоновом режиме при первом фокусе, без потери данных."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Tanımlama (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)",
+			"changelog": "## 6.1.0 Sürümündeki Değişiklikler\n\n*   **Evrensel Yerel YZ Entegrasyonu (Yerel YZ'yı Kur)**: Özel Sağlayıcı Ayarları'na yeni bir **“Yerel AI'yı Kur”** düğmesi eklendi. Kullanıcılar artık **Ollama**, **LM Studio**, **Jan.ai** ve **KoboldCPP** dahil olmak üzere yerel AI motorlarını anında otomatik olarak yapılandırabilir.\n*   **Akıllı Yerel Proxy Atlama**: Bağlantı mantığı, gelişmiş bir proxy atlama mekanizmasıyla yeniden oluşturuldu. Eklenti artık yerel loopback bağlantıları için Windows sistem proxy'lerini tamamen atlayacak kadar akıllıdır ve VPN/TUN modu etkin olsa bile istikrarlı yerel AI bağlantıları sağlar.\n*   **Yapay Zeka Operatörü Acil Durum İptali (Shift+A)**: Çok talep edilen bir durdurma/iptal güvenlik tetikleyicisi eklendi. Otonom bir işlem çalışırken AI Operatörü komutuna (komut katmanı içinde **Shift+A**) basıldığında döngü anında iptal edilir ve *\"AI Operatörü durduruldu\"* duyurusu yapılır.\n*   **Ultra Kararlı YZ Etiketleme (v2)**: Mutlak ekran koordinat anahtarları, gelişmiş, hibrit bir **Nesne İmzası** sistemi ile değiştirildi. Etiketler artık programlama tanımlayıcılarına (UIA **AutomationId** veya Win32 **ControlID**) ve pencereye göre koordinatlara dayanıyor; bu sayede özel etiketleriniz pencere boyutlandırma, taşıma, monitör değiştirme veya ölçeklendirmeye karşı tamamen dayanıklı hale geliyor.\n*   **Sorunsuz Otomatik Etiket Taşıma**: Yükseltme işlemi tamamen şeffaftır. Eklenti, ilk odaklandığında eski koordinat tabanlı etiketlerinizi arka planda yeni kararlı parmak izi formatına otomatik olarak taşır ve veri kaybı yaşanmaz."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.0\n\n*   **Universal Local AI Integration (Setup Local AI)**: Added a new **\"Setup Local AI\"** button in Custom Provider Settings. Users can now automatically configure local AI engines, including **Ollama**, **LM Studio**, **Jan.ai**, and **KoboldCPP** instantly.\n*   **Intelligent Local Proxy Bypass**: Rebuilt the connection logic with an advanced proxy bypass mechanism. The add-on is now smart enough to completely bypass Windows system proxies for local loopback connections, ensuring stable local AI connections even when your VPN/TUN-mode is active.\n*   **AI Operator Emergency Cancel (Shift+A)**: Added a highly requested stop/cancel safety trigger. Pressing the AI Operator command (**Shift+A** inside the command layer) while an autonomous operation is running will instantly abort the loop and announce *\"AI Operator stopped.\"*\n*   **Ultra-Stable AI Labeling (v2)**: Replaced absolute screen coordinate keys with an advanced, hybrid **Object Signature** system. Labels now rely on programmatic identifiers (UIA **AutomationId** or Win32 **ControlID**) and window-relative coordinates, making your custom labels completely resistant to window resizing, moving, monitor switching, or scaling.\n*   **Seamless Automatic Label Migration**: Upgrading is completely transparent. The add-on will automatically migrate your older legacy coordinate-based labels to the new stable fingerprint format in the background upon first focus, with zero data loss."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/55926789e19af9ce150801bbe2c35714cc1ad120816cf1c1ea1ed072d1d0a0a8",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5646,
+								"startColumn": 24,
+								"endColumn": 49
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "2913bc0dd513cd37:1",
+					"primaryLocationStartColumnFingerprint": "11"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5646,
+								"startColumn": 24,
+								"endColumn": 39
+							}
+						},
+						"message": {
+							"text": "instagram.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5648,
+								"startColumn": 25,
+								"endColumn": 47
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "ecbb1fd672237310:1",
+					"primaryLocationStartColumnFingerprint": "12"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5648,
+								"startColumn": 25,
+								"endColumn": 37
+							}
+						},
+						"message": {
+							"text": "tiktok.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 1
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "55926789e19af9ce150801bbe2c35714cc1ad120816cf1c1ea1ed072d1d0a0a8",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 2,
+						"exe": 1,
+						"h": 177,
+						"html": 16,
+						"ini": 17,
+						"lib": 4,
+						"md": 16,
+						"mo": 16,
+						"po": 16,
+						"py": 63,
+						"pyd": 4,
+						"typed": 1
+					},
+					"file_types": {
+						"HTML": 16,
+						"Portable Executable": 7,
+						"unknown": 312
+					},
+					"highest_datetime": "2026-05-31 07:45:00",
+					"lowest_datetime": "2026-05-31 07:44:30",
+					"num_children": 335,
+					"type": "ZIP",
+					"uncompressed_size": 98360083
+				},
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "51c2e71cae01395097a47e3712b307f1"
+				},
+				"first_submission_date": 1780214039,
+				"last_analysis_date": 1780214039,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260530",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260528",
+						"engine_version": "6.783",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260531",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260531",
+						"engine_version": "3.30.0.10666",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260531",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260531",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260531",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260530",
+						"engine_version": "260530-02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260531",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260531",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "timeout",
+						"engine_name": "Bkav",
+						"engine_update": "20260530",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260530",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260531",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260531",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260530",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260521",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260531",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260529",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260531",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260531",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260528",
+						"engine_version": "4.0.264",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260531",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260531",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260531",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260531",
+						"engine_version": "GD:27.44738AVA:64.31337",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "failure",
+						"engine_name": "Google",
+						"engine_update": "20260531",
+						"engine_version": "1780211324",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260531",
+						"engine_version": "1.0.247.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260530",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260530",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260531",
+						"engine_version": "14.54.59668",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260531",
+						"engine_version": "14.54.59668",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260531",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260530",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260531",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260531",
+						"engine_version": "3.1.0.235",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260529",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260531",
+						"engine_version": "1.2.0.14833",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260531",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260531",
+						"engine_version": "1.1.26040.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260531",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260531",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260531",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260531",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260530",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260529",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260324",
+						"engine_version": "7.6.2.19",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260530",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260530",
+						"engine_version": "3.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260530",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260531",
+						"engine_version": "2026-05-31.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260531",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260504",
+						"engine_version": "4.0.12.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260530",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260531",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260531",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260531",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260529",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260530",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260531",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260530",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260529",
+						"engine_version": "9.5.1218",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260530",
+						"engine_version": "38689",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260531",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260529",
+						"engine_version": "2.0.0.5611",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260530",
+						"engine_version": "6.25-116107201",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260531",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260530",
+						"engine_version": "1b762a9:1b762a9:afbe285:afbe285",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260531",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 2,
+					"type-unsupported": 7,
+					"undetected": 65
+				},
+				"last_modification_date": 1780214222,
+				"last_submission_date": 1780214039,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"md5": "d6cea758ad3302e60fc7f13a7a01f850",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "3cd18c4171ca351c3cbf099f571beba43b390216",
+				"sha256": "55926789e19af9ce150801bbe2c35714cc1ad120816cf1c1ea1ed072d1d0a0a8",
+				"size": 38171686,
+				"ssdeep": "786432:TxRQC4vycIuJBzkY8irI+mnH2hMwGWeaxgv3wFihLQx3JIa8:TxRQC4vqu/x7I+qHkMw3ejfw01Qxq",
+				"tags": [
+					"zip",
+					"contains-pe"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1798733A7C49DE28AECB2E4FEE0641F9372FF52AC804A744D652CD0CB59C3BD641896C5",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Zip Application",
+						"probability": 72.4
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 27.5
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+}
