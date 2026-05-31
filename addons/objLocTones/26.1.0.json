@@ -1,0 +1,32 @@
+{
+	"addonId": "objLocTones",
+	"displayName": "Object Location Tones",
+	"URL": "https://github.com/dbernaca/objLocationTones/releases/download/26.1.0/objLocTones-26.1.0.nvda-addon",
+	"description": "Announce location of objects via tones",
+	"sha256": "398892c91795fd215822db21107cd047a9680ffa6099539e983b3dfac81ef9f8",
+	"addonVersionName": "26.1.0",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Dalen",
+	"sourceURL": "https://github.com/dbernaca/objLocationTones",
+	"license": "GPL v2",
+	"homepage": "https://github.com/dbernaca/objLocationTones",
+	"changelog": "* NVDA 2026.1 compatibility\n* New feature: Automatically play an outline of a newly activated foreground object (activate in settings)\n* MIDI options in settings panel are disabled unless MIDI itself is enabled\n* Bug fixes regarding changes in Python 3.13 and upgrades in wxPython\n* Some code microoptimizations for better performance\n* MIDI events are not managed by main thread any longer\n* Add-on's configuration is now saved using atomic techniques and is very unlikely to be corrupted by mid-save power loss or filesystem mishaps",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780262915000,
+	"translations": []
+}
