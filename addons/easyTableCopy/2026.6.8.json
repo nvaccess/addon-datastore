@@ -41,5 +41,49 @@
 			"description": "EasyTableCopy — це доповнення NVDA, призначене для вирішення поширених проблем: копіювання таблиць з Інтернету або списків із Windows у документи (наприклад, Word, Excel або Outlook) без втрати форматування чи макета.",
 			"changelog": "\n* **Покращена обробка великих списків:** Копіювання елементів керування великими списками (зокрема `SysListView32`) тепер надійно витягує всі елементи, зберігаючи форматування таблиці. Це оновлення обходить попередні обмеження, спричинені віртуалізацією об’єктів, гарантуючи, що елементи поза межами видимої частини екрана більше не пропускаються.\n* **Надійний вибір стовпців:** Команди копіювання окремих стовпців оновлено для стабільної роботи у великих списках. Тепер ви можете копіювати певні стовпці з великих списків, не стикаючись із прихованими помилками або втратою даних.\n* **Стабільність 64-розрядної архітектури:** Вирішено проблему усічення покажчика пам'яті під час операцій Win32 API. Фонове витягнення даних тепер повністю стабільне та сумісне із сучасними 64-розрядними архітектурами NVDA.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0008181c1d1c0000",
+					"raw_md5": "baa2fa2211726dfc7cc2098a410bfee5"
+				},
+				"first_submission_date": 1780387542,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1780387588,
+				"last_submission_date": 1780387542,
+				"md5": "fe1b7a2dcf2134d454505cecc3d22488",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c7deaf148bf6a8923eb89ac4f429c00e57a97648",
+				"sha256": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+				"size": 72964,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
