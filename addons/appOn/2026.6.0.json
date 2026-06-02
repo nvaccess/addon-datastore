@@ -244,5 +244,49 @@
 			"displayName": "appOn",
 			"description": "使用直接路徑、快捷方式或 URI 啟動並激活各種應用程式，包括文字編輯器、多媒體播放器、瀏覽器和系統工具。\n快速鍵：\nALT+Windows+A ：打開 appOn 菜單中心"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/481f6f73eb24a809ef69fc020ea085fdd9419b2dca9d57c40ddfcdd2a5ee8961",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "481f6f73eb24a809ef69fc020ea085fdd9419b2dca9d57c40ddfcdd2a5ee8961",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00003c3c1d280000",
+					"raw_md5": "52241434ba9713ab87b3998c8ca1920b"
+				},
+				"first_submission_date": 1780366579,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1780366580,
+				"last_submission_date": 1780366579,
+				"md5": "bce2b7c0c7656d6be4d7da798147f838",
+				"names": [],
+				"reputation": 0,
+				"sha1": "66e7c9674a55493680e9857240884fc7055dc63c",
+				"sha256": "481f6f73eb24a809ef69fc020ea085fdd9419b2dca9d57c40ddfcdd2a5ee8961",
+				"size": 153176,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
