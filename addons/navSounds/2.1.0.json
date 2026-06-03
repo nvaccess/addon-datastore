@@ -1,0 +1,38 @@
+{
+	"addonId": "navSounds",
+	"displayName": "Navigation Sound Effects",
+	"URL": "https://github.com/ahmedthebest31/navsounds/releases/download/v2.1.0/navSounds_2.1.0.nvda-addon",
+	"description": "Provides navigation and keyboard typing sound effects. You can hear different sounds based on the roles and states of the elements you interact with. It also allows you to play different mechanical keyboard sounds as you type, with full customization options.",
+	"sha256": "785488b1795da775f855adef891a3116c238e6f139a1c5f84a3f0a883053f484",
+	"addonVersionName": "2.1.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ahmed Samy",
+	"sourceURL": "https://github.com/ahmedthebest31/navsounds/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ahmedthebest31/navsounds/",
+	"changelog": "\n## Version 2.1.0\n* Added mouse hover sound support with a customizable delay in the settings panel.\n* Implemented official support for web browser navigation (Browse Mode) in NVDA 2025.1+, with full backward compatibility for older versions.\n* Fixed audio queueing and freezing delays when rapidly navigating large folders using a 60ms debounce mechanism.\n* Fixed audio muting issues on dynamic elements like visited links and checkboxes.\n* Filtered out background structural elements to prevent spammy noise during mouse movement.\n* Updated Ukrainian and Vietnamese translations.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780496684000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "أصوات التنقل",
+			"description": "تشغيل أصوات عند الحركة"
+		}
+	]
+}
