@@ -8,7 +8,7 @@ Submitting an add-on version is done via a [GitHub issue form](https://github.co
 A JSON metadata file is generated from the issue form and the add-on's manifest.
 A detailed description of the JSON schema can be found in [jsonMetadata.md](./jsonMetadata.md).
 When the issue form is submitted, the JSON file is generated and submitted as a pull request to the repository.
-Security analysis is performed for the submitted add-on.
+VirusTotal is used to scan the submitted add-on for malicious content.
 NV Access will determine whether or not the detection should prevent the add-on from being accepted.
 
 Automated validation checks are run against the pull request.
@@ -23,7 +23,7 @@ It may take up to 2 weeks for approval for new add-ons.
 
 ## Steps to submit an add-on
 
-1. Select ["Add-on registration" from the new issue options](https://github.com/nvaccess/addon-datastore/issues/new?template=registerAddon.yml).
+1. Open the ["Add-on registration" issue form](https://github.com/nvaccess/addon-datastore/issues/new?template=registerAddon.yml).
 1. Fill out and submit the issue form.
 This will create an issue with a summary of your submission, and generate a pull request to submit your add-on to the store.
 1. If this is your first submission of this add-on, [manual approval](#approval-process) will be required to be added to the approved submitters list for the add-on.
