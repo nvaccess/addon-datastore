@@ -22,21 +22,20 @@ The process for reviewing pending first submissions is as follows:
    If this is not the case, tag the core maintainer in the submission to confirm they give permission for the submission.
    * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
 1. If it is clear that the submitter has permission to submit the add-on, merge the approval PR.
+   * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json)
 1. Relabel the original issue with `autoSubmissionFromIssue`
    * i.e. remove the label, save, add the label back, save.
    * This will resubmit the issue.
 
 ## Approving an add-on which was flagged as malicious
 
-An add-on may be flagged as malicious by CodeQL or VirusTotal.
+An add-on may be flagged as malicious by VirusTotal.
 If this happens, the submission process will be held, pending approval from NV Access.
 This is done using a [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
 
 ### Process for flagged add-ons
 
 1. A comment should appear on the GitHub issue with information on why the add-on was flagged.
-   * For CodeQL results, review the SARIF file.
-   * For VirusTotal results, review the VirusTotal link.
 1. Consider if the flagged content is a false positive.
 This may require discussion within NV Access or with the add-on contributor.
 1. Go to the failed submission in GitHub Actions.

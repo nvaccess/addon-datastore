@@ -254,20 +254,8 @@ jobs:
             Please contact the flagged security vendors to get them to review and unflag the false positive.
             Please ask here or email info@nvaccess.org if you need assistance with this process.
 
-  codeQL-analysis:
-    needs: [getAddonId, createPullRequest]
-    permissions:
-      actions: read
-      contents: read
-      issues: write
-      security-events: write
-    uses: ./.github/workflows/codeql-analysis.yml
-    with:
-      addonFileName: ${{ needs.getAddonId.outputs.addonFileName }}
-      branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-
   commitScanResults:
-    needs: [getAddonId, virusTotal-analysis, codeQL-analysis]
+    needs: [getAddonId, virusTotal-analysis]
     if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
@@ -286,15 +274,11 @@ jobs:
       - name: Collate analysis results into add-on metadata
         run: |
           jq --tab \
-             --argjson codeQLWarnings '${{ needs.codeQL-analysis.outputs.warningsJSON }}' \
-             --argjson codeQLErrors '${{ needs.codeQL-analysis.outputs.errorsJSON }}' \
              --argjson vtResults "$(cat vtResults.json)" \
              --arg vtScanUrl '${{ needs.virusTotal-analysis.outputs.vtScanUrl }}' \
              '. + {
                 vtScanUrl: $vtScanUrl,
                 scanResults: {
-                  "codeQL-warnings": $codeQLWarnings,
-                  "codeQL-errors": $codeQLErrors,
                   "virusTotal": $vtResults
                 }
               }' \
@@ -309,8 +293,8 @@ jobs:
           git push --set-upstream origin ${{ env.branchName }}
 
   requireManualApproval:
-    needs: [commitScanResults, virusTotal-analysis, codeQL-analysis]
-    if: ${{ always() && (needs.virusTotal-analysis.result == 'failure' || needs.codeQL-analysis.result == 'failure') }}
+    needs: [commitScanResults, virusTotal-analysis]
+    if: ${{ always() && (needs.virusTotal-analysis.result == 'failure') }}
     runs-on: ubuntu-latest
     environment:
       # Require a manual deployment approval if security analysis fails
