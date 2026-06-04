@@ -1,0 +1,38 @@
+{
+	"addonId": "prayerTimes",
+	"displayName": "prayer times",
+	"URL": "https://github.com/mesteranas/prayerTimes_nvda-addon/releases/download/V2.0/prayerTimes.nvda-addon",
+	"description": "An NVDA screen reader add-on that allows you to quickly get the current prayer times for Muslims anywhere on Earth.",
+	"sha256": "5feaf386589354fba61736230b223e55c63ea22306611a2e8276ad464b6f5390",
+	"addonVersionName": "2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mister Anas",
+	"sourceURL": "https://github.com/mesteranas/prayerTimes_nvda-addon/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mesteranas/prayerTimes_nvda-addon",
+	"changelog": "\n* Brought the add-on back to life\n* Redeveloped the add-on from scratch\n* Added the ability to automatically detect your current location, which is enabled by default\n\t* Note: This feature may not be perfectly accurate in all cases\n\t* For better accuracy, you can use a geographic location app on your phone and manually enter the latitude and longitude in the settings\n\t* You must disable the automatic location detection feature to manually edit these geographic coordinates\n* Removed the country and city selection fields due to inaccuracies\n* Changed the data provider to retrieve cleaner results\n* Results are now displayed inside a readable text field\n* Implemented data caching to provide instant results when checking prayer times again\n\t* This cache resets automatically when you restart NVDA or press OK in the settings dialog\n* Added German translation\n* Added README files for Arabic, English, and German\n* Minor bug fixes and performance improvements\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780570892000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Namaz Vakitleri",
+			"description": "NVDA Ekran okuyucusu için Namaz Vakitlerini söyleyen eklenti. NVDA+ALT+P kullanılabilir."
+		}
+	]
+}
