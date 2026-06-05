@@ -1,0 +1,83 @@
+{
+	"addonId": "siamSquare",
+	"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+	"URL": "https://github.com/chaichaimee/siamSquare/releases/download/2026.6.0/siamSquare-v2026.6.0.nvda-addon",
+	"description": "A Thai word repository containing over 30,000 Thai words with Thai definitions.\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary",
+	"sha256": "797a68deaa986f9154c385714302a324e7a7c8f45d9738e71573a83f6428f08a",
+	"addonVersionName": "2026.6.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/siamSquare",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/siamSquare",
+	"changelog": "Migrated to 44-file JSON sharding system, added two-tier dictionary (base + user), improved suggestion matching for Thai misspellings, fixed F2/F3 commands, added CapsLock support for Thai characters.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780650065000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+			"description": "A Thai word repository containing over 30,000 Thai words with Thai definitions.\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/797a68deaa986f9154c385714302a324e7a7c8f45d9738e71573a83f6428f08a",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "797a68deaa986f9154c385714302a324e7a7c8f45d9738e71573a83f6428f08a",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "55198514d2609002f2c9967ca2e835b0"
+				},
+				"first_submission_date": 1780650081,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1780650083,
+				"last_submission_date": 1780650081,
+				"md5": "17311160bac268620e93740121c69daf",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9c4c557b1aae3b125bddbe3ccc64e16249999a53",
+				"sha256": "797a68deaa986f9154c385714302a324e7a7c8f45d9738e71573a83f6428f08a",
+				"size": 1152311,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6800"
+}
