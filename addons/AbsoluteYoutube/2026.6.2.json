@@ -244,5 +244,49 @@
 			"displayName": "AbsoluteYoutube",
 			"description": "將 YouTube 影片下載為 MP3、MP4 和 WAV 格式，支援斷點續傳、剪輯裁剪、快照、短網址複製以及智慧失敗下載管理 - 為 NVDA 使用者提供快速且無障礙的體驗。\n既然可以立即獲取，為什麼還要浪費時間打開影片頁面呢？我們的最新更新引入了革命性的 Focus and Fetch 功能。只需將游標聚焦在任何影片連結上並立即觸發下載 - 無需再等待頁面載入。\n更新內容：\n切換立即下載模式\n下載列表管理器\n收藏頻道\n搜尋 YouTube\n快速鍵：\n- NVDA+Y\n單擊：下載 MP3\n雙擊：下載 MP4\n三擊：下載 WAV\n- CTRL+Shift+Y\n單擊：打開快顯功能表\n雙擊：打開目標資料夾\n三擊：搜尋影片\nNVDA+CTRL+Y：切換立即下載模式\nNVDA+Shift+Y：切換播放清單模式\n- ALT+Windows+Y：循環切換 MP3 音質"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/34a4942d1adbd8afc268bb9e5001b46330fd8745e87ffc56ded5c11978d1e55e",
+	"scanResults": {
+		"codeQL-warnings": [],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "34a4942d1adbd8afc268bb9e5001b46330fd8745e87ffc56ded5c11978d1e55e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000c0d0000",
+					"raw_md5": "f5543fe7eb11165376307c3af32db94c"
+				},
+				"first_submission_date": 1780823887,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1780823894,
+				"last_submission_date": 1780823887,
+				"md5": "742d967e5e958564453a8dbcc0868354",
+				"names": [],
+				"reputation": 0,
+				"sha1": "fae758006b61b49785a34c3149c41af09763c936",
+				"sha256": "34a4942d1adbd8afc268bb9e5001b46330fd8745e87ffc56ded5c11978d1e55e",
+				"size": 42040943,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
