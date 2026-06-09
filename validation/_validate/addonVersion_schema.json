@@ -284,12 +284,10 @@
 		},
 		"scanResults": {
 			"default": {},
-			"description": "Results from dynamic and static code scanning.",
+		"description": "Results from VirusTotal scanning.",
 			"examples": [
 				{
-					"virusTotal": {},
-					"codeQL-warnings": {},
-					"codeQL-errors": {}
+					"virusTotal": {}
 				}
 			],
 			"title": "Scan results",
