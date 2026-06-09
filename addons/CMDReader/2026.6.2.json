@@ -1,0 +1,58 @@
+{
+	"addonId": "CMDReader",
+	"displayName": "CMDReader",
+	"URL": "https://github.com/chaichaimee/CMDReader/releases/download/2026.6.2/CMDReader-v2026.6.2.nvda-addon",
+	"description": "Command Line Accessibility, Redefined.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line",
+	"sha256": "686b00b4b6a1e36c636d97b5a35a50f32a71081ffab4eb1351cb696d32899279",
+	"addonVersionName": "2026.6.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/CMDReader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/CMDReader",
+	"changelog": "- Fully compatible with Windows 11 25H2 and the modern Windows Terminal ecosystem. Re-architected text extraction using reliable UIA fallbacks to prevent silent output failures. Optimized performance via asynchronous background threading to eliminate NVDA core watchdog freezes. Fixed regular expression pattern compatibility errors for NVDA 2026.x (Python 3.13 engine). Implemented safe weak-reference object tracking to resolve dynamic window memory leaks.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780990007000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "CMDReader",
+			"description": "Barrierefreiheit auf der Befehlszeile, neu definiert.\nTastenkombinationen:\nCTRL+ALT+L : CMDReader-Logdatei öffnen\nCTRL+ALT+Pfeiltaste oben : Vorherige Zeile lesen\nCTRL+ALT+Pfeiltaste unten : Nächste Zeile lesen"
+		},
+		{
+			"language": "en",
+			"displayName": "CMDReader",
+			"description": "Command Line Accessibility, Redefined.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "es",
+			"displayName": "CMDReader",
+			"description": "Accesibilidad en la línea de comandos, redefinida.\nTeclas rápidas:\nCTRL+ALT+L : Abrir archivo de CMDReader\nCTRL+ALT+flecha arriba : Leer la línea anterior\nCTRL+ALT+flecha abajo : Leer la línea siguiente"
+		},
+		{
+			"language": "fr",
+			"displayName": "CMDReader",
+			"description": "L'accessibilité en ligne de commande, redéfinie.\nRaccourcis clavier :\nCTRL+ALT+L : Ouvrir le fichier CMDReader\nCTRL+ALT+flèche haut : Lire la ligne précédente\nCTRL+ALT+flèche bas : Lire la ligne suivante"
+		},
+		{
+			"language": "ru",
+			"displayName": "CMDReader",
+			"description": "Доступность командной строки в новом формате.\nГорячие клавиши:\nCTRL+ALT+L : Открыть лог-файл CMDReader\nCTRL+ALT+стрелка вверх : Прочитать предыдущую строку\nCTRL+ALT+стрелка вниз : Прочитать следующую строку"
+		}
+	]
+}
