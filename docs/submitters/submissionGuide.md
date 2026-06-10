@@ -52,4 +52,3 @@ Depending on your role, please refer to the appropriate documentation:
 
 * [Translation guide for add-on authors](../l10n/addOnAuthors.md): explains how to synchronize translations between the add-on and Crowdin.
 * [Translation guide for translators](../l10n/translators.md): Explains how to contribute translations through Crowdin.
-
