@@ -114,29 +114,6 @@ jobs:
           # If no valid result is produced, i.e. no submitter is found, jq exits with status 4.
           # If there is a different error, a different non-zero exit code is used.
           exit $? # Exit with the same exit code as jq
-      - name: Add add-on ID and submitter to JSON file
-        if: failure()
-        run: |
-          jqCode="
-          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
-          | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
-          "
-
-          mv submitters.json submitters.old.json
-          jq -e --tab "$jqCode" submitters.old.json > submitters.json
-          jqExitCode=$?
-          rm submitters.old.json
-          exit $jqExitCode
-      - name: Create submitter approval PR
-        if: failure()
-        id: addSubmitterPR
-        uses: peter-evans/create-pull-request@v7
-        with:
-          title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
-          branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonIdParsed }}
-          commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
-          body: "Created from #${{ inputs.issueNumber }}"
-          author: github-actions <github-actions@github.com>
       - name: Post submitter registration message
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -292,7 +269,7 @@ jobs:
           git commit -m "Add code analysis results"
           git push --set-upstream origin ${{ env.branchName }}
 
-  requireManualApproval:
+  requireSecurityManualApproval:
     needs: [commitScanResults, virusTotal-analysis]
     if: ${{ always() && (needs.virusTotal-analysis.result == 'failure') }}
     runs-on: ubuntu-latest
@@ -303,12 +280,54 @@ jobs:
       - name: Confirm approval
         run: echo "Manual approval performed"
 
+  requireSubmitterManualApproval:
+    needs: [getAddonId, verifySubmitter]
+    if: ${{ always() && (needs.verifySubmitter.result == 'failure') }}
+    runs-on: ubuntu-latest
+    environment:
+      # Require a manual deployment approval if manual approval is required for the submitter
+      name: submitterReview
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
+      - name: Add add-on ID and submitter to JSON file
+        if: failure()
+        run: |
+          jqCode="
+          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
+          | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
+          "
+
+          mv submitters.json submitters.old.json
+          jq -e --tab "$jqCode" submitters.old.json > submitters.json
+          jqExitCode=$?
+          rm submitters.old.json
+          exit $jqExitCode
+      - name: Commit submitters.json changes
+        run: |
+          git pull --set-upstream origin ${{ env.branchName }}
+          git add submitters.json
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
+          git push --set-upstream origin ${{ env.branchName }}
+
+  passesManualReview:
+    needs: [requireSecurityManualApproval, requireSubmitterManualApproval]
+    if: ${{ always() && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm manual review passed
+        run: echo "Passed manual review"
+
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    if: ${{ always() && needs.commitScanResults.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
-    needs: [getAddonId, requireManualApproval, commitScanResults, virusTotal-analysis]
+    if: ${{ always() && needs.commitScanResults.result == 'success' && (needs.passesManualReview.result == 'success' || needs.passesManualReview.result == 'skipped') }}
+    needs: [getAddonId, passesManualReview, commitScanResults, virusTotal-analysis]
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -401,6 +420,7 @@ jobs:
     - name: Commit and push
       if: always()
       run: |
+        git pull --set-upstream origin ${{ env.branchName }}
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
@@ -412,8 +432,8 @@ jobs:
         fi
 
   mergeToMaster:
-    needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, requireManualApproval]
-    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
+    needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, passesManualReview]
+    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && (needs.passesManualReview.result == 'success' || needs.passesManualReview.result == 'skipped') }}
     permissions:
       contents: write
       pull-requests: write
