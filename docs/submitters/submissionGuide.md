@@ -44,5 +44,7 @@ The add-on should soon become available in the store.
 
 ## Registering an add-on in the translation system
 
-Currently no working recommended system is available.
-Translations via Crowdin support is being added to [the Add-on Template](https://github.com/nvaccess/AddonTemplate) as a work in progress currently.
+Translations via Crowdin support has been added to [the Add-on Template](https://github.com/nvaccess/AddonTemplate).
+
+Please see the [add-on template Translation workflow section](https://github.com/nvaccess/AddonTemplate/#translation-workflow) for more details.
+
