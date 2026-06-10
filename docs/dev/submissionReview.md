@@ -18,12 +18,11 @@ This registration process ensures a specific add-on ID is only submitted by the 
 
 The process for reviewing pending first submissions is as follows:
 
-1. Open the referenced issue
+1. Open the referenced issue and related PR.
 1. Check the source code link in the referenced issue.
    * Ensure the submitter matches the repository ownership, or the submitter is a core maintainer for the project.
    If this is not the case, tag the core maintainer in the submission to confirm they give permission for the submission.
    * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
-1. If it is clear that the submitter has permission to submit the add-on, merge the approval PR.
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
 If the deployment review request has expired, re-run the job.
