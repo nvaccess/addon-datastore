@@ -235,6 +235,8 @@ jobs:
     needs: [getAddonId, virusTotal-analysis]
     if: ${{ always() }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -287,13 +289,17 @@ jobs:
     environment:
       # Require a manual deployment approval if manual approval is required for the submitter
       name: submitterReview
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
+      - name: Update branch
+        run: |
+          git pull --set-upstream origin ${{ env.branchName }}
       - name: Add add-on ID and submitter to JSON file
-        if: failure()
         run: |
           jqCode="
           .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
@@ -307,7 +313,6 @@ jobs:
           exit $jqExitCode
       - name: Commit submitters.json changes
         run: |
-          git pull --set-upstream origin ${{ env.branchName }}
           git add submitters.json
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
