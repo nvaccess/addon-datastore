@@ -128,7 +128,7 @@ jobs:
 
   createPullRequest:
     runs-on: windows-latest
-    needs: [getAddonId, verifySubmitter]
+    needs: [getAddonId]
     strategy:
       matrix:
         python-version: [ 3.13 ]
