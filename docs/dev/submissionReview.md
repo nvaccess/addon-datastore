@@ -25,7 +25,7 @@ The process for reviewing pending first submissions is as follows:
    * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
-If the deployment review request has expired, re-run the job.
+If the deployment review request has expired, close the PR and re-run the job.
 
 ## Approving an add-on which was flagged as malicious
 
@@ -38,4 +38,4 @@ An add-on may be flagged as malicious by VirusTotal.
 This may require discussion within NV Access or with the add-on contributor.
 1. Go to the failed submission in GitHub Actions.
 Approve or deny the `securityReview` deployment.
-If the deployment review request has expired, re-run the job.
+If the deployment review request has expired, close the PR and re-run the job.
