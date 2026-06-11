@@ -197,7 +197,6 @@ jobs:
     outputs:
       vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
-      vtKeySet: ${{ steps.checkVTKey.outcome == 'success' }}
     steps:
       - name: Check if VT_API_KEY is set
         id: checkVTKey
@@ -243,7 +242,7 @@ jobs:
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
-    if: ${{ always() && needs.virusTotal-analysis.outputs.vtKeySet == 'true' }}
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
