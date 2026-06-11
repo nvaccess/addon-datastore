@@ -439,7 +439,6 @@ jobs:
     - name: Commit and push
       if: always()
       run: |
-        git pull --rebase origin ${{ env.branchName }}
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
@@ -447,6 +446,7 @@ jobs:
           echo "No staged changes; skipping commit and push."
         else
           git commit -m "update discussion URL"
+          git pull --rebase origin ${{ env.branchName }}
           git push --set-upstream origin ${{ env.branchName }}
         fi
 
