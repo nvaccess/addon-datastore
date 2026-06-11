@@ -39,7 +39,7 @@ jobs:
       addonIdParsed: ${{ steps.getAddonIdParsed.outputs.result }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
       - name: Determine add-on file name
@@ -92,7 +92,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.ref }}
       - name: Check if submitter is trusted to submit for this add-on or any add-on ID
@@ -140,7 +140,7 @@ jobs:
       pullRequestNumber: ${{ steps.cpr.outputs.pullRequestNumber }}
     steps:
     - name: Checkout code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         ref: ${{ env.branchName }}
         submodules: true
@@ -206,7 +206,7 @@ jobs:
           echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
           exit 1
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
       - name: Install Node.js
@@ -249,7 +249,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
       - name: Update branch
@@ -355,7 +355,7 @@ jobs:
       discussions: write
     steps:
     - name: Checkout code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         ref: ${{ env.branchName }}
     - name: Get add-on name and version
@@ -462,7 +462,7 @@ jobs:
         python-version: [ 3.13 ]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Merge branch to master
         env:
           GH_TOKEN: ${{ github.token }}

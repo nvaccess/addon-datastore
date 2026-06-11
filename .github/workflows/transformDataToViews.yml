@@ -35,11 +35,11 @@ jobs:
         python-version: [ 3.13 ]
     steps:
     - name: Checkout addon data
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         submodules: true
     - name: Checkout addonstore-views repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         repository: nvaccess/addonstore-views
         path: views
