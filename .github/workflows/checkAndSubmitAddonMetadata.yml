@@ -252,22 +252,28 @@ jobs:
             setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
       - name: Warn if VT not set up correctly
         if: ${{ failure() && steps.checkVTKey.outcome == 'failure' }}
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body: |
-            VirusTotal is not configured for this repository.
-            Please approve the add-on submission manually or configure an API key.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal is not configured for this repository.
+          Please approve the add-on submission manually or configure an API key.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
       - name: Warn if analysis fails
         if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body: |
-            VirusTotal has flagged this add-on as malicious.
-            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
-            Please contact the flagged security vendors to get them to review and unflag the false positive.
-            Please ask here or email info@nvaccess.org if you need assistance with this process.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal has flagged this add-on as malicious.
+          You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
+          Please contact the flagged security vendors to get them to review and unflag the false positive.
+          Please ask here or email info@nvaccess.org if you need assistance with this process.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
