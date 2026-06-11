@@ -226,6 +226,7 @@ jobs:
       vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
       vtKeySet: ${{ env.VT_API_KEY != '' }}
+    steps:
       - name: Check if VT_API_KEY is set
         id: checkVTKey
         if: ${{ !env.VT_API_KEY }}
