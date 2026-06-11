@@ -89,7 +89,6 @@ jobs:
       id: cb
       env:
         branchName: ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
-      shell: pwsh
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com

@@ -137,33 +137,22 @@ jobs:
       pull-requests: write
       issues: write
     outputs:
-      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+      pullRequestNumber: ${{ steps.cpr.outputs.pullRequestNumber }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v5
       with:
-        ref: master
+        ref: ${{ env.branchName }}
         submodules: true
-    - name: Update branch
-      run: |
-        git fetch origin ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git cherry-pick origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Create pull request
       id: cpr
-      uses: peter-evans/create-pull-request@v7
-      with:
-        title: ${{ inputs.issueTitle }}
-        branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-        commit-message: ${{ inputs.issueTitle }}
-        body: "Closes #${{ inputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
-        delete-branch: true
-    - name: Checkout code
-      uses: actions/checkout@v5
-      with:
-        ref: ${{ steps.cpr.outputs.pull-request-head-sha }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      shell: pwsh
+      run: |
+        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "${{ inputs.issueTitle }}" --body "Closes #${{ inputs.issueNumber }}"
+        $prNumber = ($prUrl.TrimEnd('/') -split '/')[-1]
+        "pullRequestNumber=$prNumber" >> $env:GITHUB_OUTPUT
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install the latest version of uv
@@ -179,14 +168,19 @@ jobs:
         body-file: ./validationErrors.md
     - name: Close pull request
       if: failure()
-      uses: peter-evans/close-pull@v3
-      with:
-        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      shell: pwsh
+      run: |
+        if ("${{ steps.cpr.outputs.pullRequestNumber }}") {
+          gh pr close "${{ steps.cpr.outputs.pullRequestNumber }}"
+        }
     - name: Close issue
       if: failure()
-      uses: peter-evans/close-issue@v3
-      with:
-        issue-number: ${{ inputs.issueNumber }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
 
   virusTotal-analysis:
     needs: [getAddonId, createPullRequest]
@@ -457,7 +451,7 @@ jobs:
 
   mergeToMaster:
     needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, passesManualReview]
-    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && needs.passesManualReview.result == 'success'}}
+    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && needs.passesManualReview.result == 'success' }}
     permissions:
       contents: write
       pull-requests: write
@@ -472,7 +466,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr merge --squash ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+          gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
 
   call-workflow:
     needs: [mergeToMaster]
