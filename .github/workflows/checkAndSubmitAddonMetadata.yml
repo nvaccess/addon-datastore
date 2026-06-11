@@ -334,8 +334,8 @@ jobs:
           git push --set-upstream origin ${{ env.branchName }}
 
   passesManualReview:
-    needs: [requireSecurityManualApproval, requireSubmitterManualApproval]
-    if: ${{ always() && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
+    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, commitScanResults]
+    if: ${{ always() && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
       - name: Confirm manual review passed
@@ -345,8 +345,8 @@ jobs:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.passesManualReview.result == 'success' }}
-    needs: [getAddonId, passesManualReview, commitScanResults, virusTotal-analysis]
+    if: ${{ always() && needs.passesManualReview.result == 'success' }}
+    needs: [getAddonId, passesManualReview, virusTotal-analysis]
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -451,8 +451,8 @@ jobs:
         fi
 
   mergeToMaster:
-    needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, passesManualReview]
-    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && needs.passesManualReview.result == 'success' }}
+    needs: [getAddonId, createReviewComment, createPullRequest, passesManualReview]
+    if: ${{ always() && needs.createReviewComment.result == 'success' && needs.passesManualReview.result == 'success' }}
     permissions:
       contents: write
       pull-requests: write
