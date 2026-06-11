@@ -26,6 +26,7 @@ The process for reviewing pending first submissions is as follows:
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
 If the deployment review request has expired, close the PR and re-run the job.
+1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
 
 ## Approving an add-on which was flagged as malicious
 
@@ -39,3 +40,4 @@ This may require discussion within NV Access or with the add-on contributor.
 1. Go to the failed submission in GitHub Actions.
 Approve or deny the `securityReview` deployment.
 If the deployment review request has expired, close the PR and re-run the job.
+1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
