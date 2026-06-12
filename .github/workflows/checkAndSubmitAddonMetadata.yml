@@ -316,7 +316,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
-      - name: Update branch
+      - name: Update branch to avoid conflicts
         run: |
           git pull --rebase origin ${{ env.branchName }}
           git fetch origin master
@@ -366,8 +366,9 @@ jobs:
       uses: actions/checkout@v6
       with:
         ref: ${{ env.branchName }}
-    - name: Merge latest master into branch
+    - name: Update branch to avoid conflicts
       run: |
+        git pull --rebase origin ${{ env.branchName }}
         git fetch origin master
         git merge origin/master --no-edit
     - name: Get add-on name and version
