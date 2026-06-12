@@ -50,5 +50,5 @@ Translation support covers both user interface translations (`.po` files) and do
 
 Depending on your role, please refer to the appropriate documentation:
 
-* [Translation guide for add-on authors](../l10n/addOnAuthors.md): explains how to synchronize translations between the add-on and Crowdin.
-* [Translation guide for translators](../l10n/translators.md): Explains how to contribute translations through Crowdin.
+* [Translation guide for add-on authors](https://github.com/nvaccess/addonTemplate/docs/l10n/addOnAuthors.md): explains how to synchronize translations between the add-on and Crowdin.
+* [Translation guide for translators](https://github.com/nvaccess/addonTemplate/docs/l10n/addonTranslators.md): Explains how to contribute translations through Crowdin.
