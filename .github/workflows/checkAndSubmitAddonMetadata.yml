@@ -114,29 +114,6 @@ jobs:
           # If no valid result is produced, i.e. no submitter is found, jq exits with status 4.
           # If there is a different error, a different non-zero exit code is used.
           exit $? # Exit with the same exit code as jq
-      - name: Add add-on ID and submitter to JSON file
-        if: failure()
-        run: |
-          jqCode="
-          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
-          | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
-          "
-
-          mv submitters.json submitters.old.json
-          jq -e --tab "$jqCode" submitters.old.json > submitters.json
-          jqExitCode=$?
-          rm submitters.old.json
-          exit $jqExitCode
-      - name: Create submitter approval PR
-        if: failure()
-        id: addSubmitterPR
-        uses: peter-evans/create-pull-request@v7
-        with:
-          title: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
-          branch: addSubmitter${{ inputs.issueAuthorName }}${{ needs.getAddonId.outputs.addonIdParsed }}
-          commit-message: Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}
-          body: "Created from #${{ inputs.issueNumber }}"
-          author: github-actions <github-actions@github.com>
       - name: Post submitter registration message
         if: failure()
         uses: peter-evans/create-or-update-comment@v4
@@ -146,11 +123,12 @@ jobs:
             Welcome to the add-on store submission process.
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
-            Please wait until #${{ steps.addSubmitterPR.outputs.pull-request-number }} is merged.
+            Please wait until an NV Access team member can review the submission.
+            It may take up to 2 weeks for a team member to respond, depending on their availability.
 
   createPullRequest:
     runs-on: windows-latest
-    needs: [getAddonId, verifySubmitter]
+    needs: [getAddonId]
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -159,33 +137,22 @@ jobs:
       pull-requests: write
       issues: write
     outputs:
-      pullRequestNumber: ${{ steps.cpr.outputs.pull-request-number }}
+      pullRequestNumber: ${{ steps.cpr.outputs.pullRequestNumber }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
       with:
-        ref: master
+        ref: ${{ env.branchName }}
         submodules: true
-    - name: Update branch
-      run: |
-        git fetch origin ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git cherry-pick origin/${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
     - name: Create pull request
       id: cpr
-      uses: peter-evans/create-pull-request@v7
-      with:
-        title: ${{ inputs.issueTitle }}
-        branch: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-        commit-message: ${{ inputs.issueTitle }}
-        body: "Closes #${{ inputs.issueNumber }}"
-        author: github-actions <github-actions@github.com>
-        delete-branch: true
-    - name: Checkout code
-      uses: actions/checkout@v6
-      with:
-        ref: ${{ steps.cpr.outputs.pull-request-head-sha }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      shell: pwsh
+      run: |
+        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "${{ inputs.issueTitle }}" --body "Closes #${{ inputs.issueNumber }}"
+        $prNumber = ($prUrl.TrimEnd('/') -split '/')[-1]
+        "pullRequestNumber=$prNumber" >> $env:GITHUB_OUTPUT
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install the latest version of uv
@@ -201,14 +168,19 @@ jobs:
         body-file: ./validationErrors.md
     - name: Close pull request
       if: failure()
-      uses: peter-evans/close-pull@v3
-      with:
-        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      shell: pwsh
+      run: |
+        if ("${{ steps.cpr.outputs.pullRequestNumber }}") {
+          gh pr close "${{ steps.cpr.outputs.pullRequestNumber }}"
+        }
     - name: Close issue
       if: failure()
-      uses: peter-evans/close-issue@v3
-      with:
-        issue-number: ${{ inputs.issueNumber }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
 
   virusTotal-analysis:
     needs: [getAddonId, createPullRequest]
@@ -220,12 +192,19 @@ jobs:
       contents: read
       issues: write
     env:
-      VT_API_KEY: ${{ secrets.VT_API_KEY }}
-      VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
+      VT_API_KEY: ${{ secrets.VT_API_KEY || '' }}
+      VT_API_LIMIT: ${{ vars.VT_API_LIMIT || '50' }}
     outputs:
       vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
+      vtKeySet: ${{ env.VT_API_KEY != '' }}
     steps:
+      - name: Check if VT_API_KEY is set
+        id: checkVTKey
+        if: ${{ !env.VT_API_KEY }}
+        run: |
+          echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
+          exit 1
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -243,26 +222,45 @@ jobs:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
+      - name: Warn if VT not set up correctly
+        if: ${{ failure() && steps.checkVTKey.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal is not configured for this repository.
+          Please approve the add-on submission manually or configure an API key.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
       - name: Warn if analysis fails
-        if: failure()
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body: |
-            VirusTotal has flagged this add-on as malicious.
-            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
-            Please contact the flagged security vendors to get them to review and unflag the false positive.
-            Please ask here or email info@nvaccess.org if you need assistance with this process.
+        if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal has flagged this add-on as malicious.
+          You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
+          Please contact the flagged security vendors to get them to review and unflag the false positive.
+          Please ask here or email info@nvaccess.org if you need assistance with this process.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
-    if: ${{ always() }}
+    if: ${{ always() && needs.virusTotal-analysis.outputs.vtKeySet == 'true' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           ref: ${{ env.branchName }}
+      - name: Update branch
+        run: |
+          git pull --rebase origin ${{ env.branchName }}
       - name: Write vtResultsJSON to file to prevent line length syntax issues
         uses: actions/github-script@v7
         env:
@@ -290,9 +288,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Add code analysis results"
+          git pull --rebase origin ${{ env.branchName }}
           git push --set-upstream origin ${{ env.branchName }}
 
-  requireManualApproval:
+  requireSecurityManualApproval:
     needs: [commitScanResults, virusTotal-analysis]
     if: ${{ always() && (needs.virusTotal-analysis.result == 'failure') }}
     runs-on: ubuntu-latest
@@ -303,12 +302,57 @@ jobs:
       - name: Confirm approval
         run: echo "Manual approval performed"
 
+  requireSubmitterManualApproval:
+    needs: [getAddonId, verifySubmitter]
+    if: ${{ always() && (needs.verifySubmitter.result == 'failure') }}
+    runs-on: ubuntu-latest
+    environment:
+      # Require a manual deployment approval if manual approval is required for the submitter
+      name: submitterReview
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
+      - name: Update branch
+        run: |
+          git pull --rebase origin ${{ env.branchName }}
+      - name: Add add-on ID and submitter to JSON file
+        run: |
+          jqCode="
+          .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
+          | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
+          "
+
+          mv submitters.json submitters.old.json
+          jq -e --tab "$jqCode" submitters.old.json > submitters.json
+          jqExitCode=$?
+          rm submitters.old.json
+          exit $jqExitCode
+      - name: Commit submitters.json changes
+        run: |
+          git add submitters.json
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
+          git push --set-upstream origin ${{ env.branchName }}
+
+  passesManualReview:
+    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, commitScanResults]
+    if: ${{ always() && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm manual review passed
+        run: echo "Passed manual review"
+
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    if: ${{ always() && needs.commitScanResults.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
-    needs: [getAddonId, requireManualApproval, commitScanResults, virusTotal-analysis]
+    if: ${{ always() && needs.passesManualReview.result == 'success' }}
+    needs: [getAddonId, passesManualReview, virusTotal-analysis]
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -408,16 +452,17 @@ jobs:
           echo "No staged changes; skipping commit and push."
         else
           git commit -m "update discussion URL"
+          git pull --rebase origin ${{ env.branchName }}
           git push --set-upstream origin ${{ env.branchName }}
         fi
 
   mergeToMaster:
-    needs: [getAddonId, commitScanResults, createReviewComment, createPullRequest, requireManualApproval]
-    if: ${{ always() && needs.commitScanResults.result == 'success' && needs.createReviewComment.result == 'success' && (needs.requireManualApproval.result == 'success' || needs.requireManualApproval.result == 'skipped') }}
+    needs: [getAddonId, createReviewComment, createPullRequest, passesManualReview]
+    if: ${{ always() && needs.createReviewComment.result == 'success' && needs.passesManualReview.result == 'success' }}
     permissions:
       contents: write
       pull-requests: write
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -428,7 +473,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr merge --squash ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+          gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
 
   call-workflow:
     needs: [mergeToMaster]
