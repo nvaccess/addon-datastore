@@ -1,8 +1,16 @@
 # Submission review processes
 
-Guide for processing [pending add-ons](https://github.com/nvaccess/addon-datastore/actions?query=is%3Awaiting).
+Guide for processing [pending add-ons](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml?query=is%3Awaiting).
 If add-on needs manual review before processing happens, the submission process will be held, pending approval from NV Access.
 This is done using a [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
+
+Overall process:
+
+1. Go to the [pending add-ons list](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml?query=is%3Awaiting).
+1. Check the pending [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
+    1. If it is `submitterReview` perform [Process for first time submissions](#process-for-first-time-submissions).
+    1. If it is `securityReview` perform [Process for flagged add-ons](#process-for-flagged-add-ons).
+    1. If it is both, perform both steps.
 
 ## Approving an author to submit to a particular add-on ID for the first time
 
