@@ -77,6 +77,14 @@ jobs:
       with:
         issue-number: ${{ github.event.issue.number }}
         body-file: ./validationErrors.md
+    - name: Delete branch if it exists already
+      continue-on-error: true
+      env:
+        branchName: ${{ github.event.issue.user.login }}${{ steps.get-data.outputs.issueNumber }}
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git push origin --delete ${{ env.branchName }}
     - name: Create branch
       id: cb
       env:
@@ -87,8 +95,7 @@ jobs:
         git checkout -b ${{ env.branchName }}
         git add addons
         git commit -m "Submit add-on"
-        # Force push to the branch, as we may need to be handling a resubmission attempt
-        git push -f origin ${{ env.branchName }}
+        git push origin ${{ env.branchName }}
   call-workflow:
     needs: check-addon
     permissions:
