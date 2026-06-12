@@ -1,0 +1,39 @@
+{
+	"addonId": "openccConverter",
+	"displayName": "OpenCC Chinese Converter",
+	"URL": "https://github.com/linyuqing222/openccConverter/releases/download/v2.0.0/openccConverter-2.0.0.nvda-addon",
+	"description": "Offline Simplified/Traditional Chinese conversion.\nConverts the selected text or the clipboard text between Simplified and\nTraditional Chinese and speaks the result, which is also copied to the\nclipboard. The conversion direction is configurable in the add-on settings and\ncan be swapped on the fly. Everything runs fully offline using a bundled,\npure-Python OpenCC engine; no internet connection is required.",
+	"sha256": "9b8c5c6ab4aaf0299f856c321272ee0ec4d304424557f82402c3bef8d889891f",
+	"addonVersionName": "2.0.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Kevin Lin <kevin82222@gmail.com>",
+	"sourceURL": "https://github.com/linyuqing222/openccConverter",
+	"license": "GPL v2",
+	"homepage": "https://github.com/linyuqing222/openccConverter",
+	"changelog": "2.0.0 (2026-06-10)\n⚠ BREAKING CHANGES:\n- require NVDA 2024.1\nMiscellaneous:\n- require NVDA 2024.1",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781229810000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "OpenCC 中文簡繁轉換",
+			"description": "離線簡繁中文轉換。\n在簡體與正體中文之間轉換選取的文字或剪貼簿的文字並朗讀結果,結果也會複製到剪貼簿。\n轉換方向可在元件設定中切換,也可以即時交換。\n全部使用內建的純 Python OpenCC 引擎,完全離線運作,不需要網路連線。",
+			"changelog": "2.0.0 (2026-06-10)\n⚠ BREAKING CHANGES:\n- require NVDA 2024.1\nMiscellaneous:\n- require NVDA 2024.1"
+		}
+	]
+}
