@@ -192,12 +192,19 @@ jobs:
       contents: read
       issues: write
     env:
-      VT_API_KEY: ${{ secrets.VT_API_KEY }}
-      VT_API_LIMIT: ${{ vars.VT_API_LIMIT }}
+      VT_API_KEY: ${{ secrets.VT_API_KEY || '' }}
+      VT_API_LIMIT: ${{ vars.VT_API_LIMIT || '50' }}
     outputs:
       vtScanUrl: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
+      vtKeySet: ${{ env.VT_API_KEY != '' }}
     steps:
+      - name: Check if VT_API_KEY is set
+        id: checkVTKey
+        if: ${{ !env.VT_API_KEY }}
+        run: |
+          echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
+          exit 1
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -215,20 +222,34 @@ jobs:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
             setVirusTotalAnalysisStatus({core}, ["${{ needs.getAddonId.outputs.addonFileName }}"])
+      - name: Warn if VT not set up correctly
+        if: ${{ failure() && steps.checkVTKey.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal is not configured for this repository.
+          Please approve the add-on submission manually or configure an API key.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
       - name: Warn if analysis fails
-        if: failure()
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
-          body: |
-            VirusTotal has flagged this add-on as malicious.
-            You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
-            Please contact the flagged security vendors to get them to review and unflag the false positive.
-            Please ask here or email info@nvaccess.org if you need assistance with this process.
+        if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: pwsh
+        run: |
+          $body = @"
+          VirusTotal has flagged this add-on as malicious.
+          You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
+          Please contact the flagged security vendors to get them to review and unflag the false positive.
+          Please ask here or email info@nvaccess.org if you need assistance with this process.
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
-    if: ${{ always() }}
+    if: ${{ always() && needs.virusTotal-analysis.outputs.vtKeySet == 'true' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write

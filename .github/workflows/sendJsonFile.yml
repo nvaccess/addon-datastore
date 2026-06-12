@@ -96,12 +96,6 @@ jobs:
         git add addons
         git commit -m "Submit add-on"
         git push origin ${{ env.branchName }}
-    - name: Install VirusTotal
-      run: choco install vt-cli
-    - name: Scan add-on with VirusTotal
-      env:
-        VT_API_KEY: ${{ secrets.VT_API_KEY }}
-      run: vt scan file -k $env:VT_API_KEY addon.nvda-addon
   call-workflow:
     needs: check-addon
     permissions:
