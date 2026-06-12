@@ -1,0 +1,32 @@
+{
+	"addonId": "TextMarksTheSpot",
+	"displayName": "Text Marks the Spot",
+	"URL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot/releases/download/v1.0.5/TextMarksTheSpot-1.0.5.nvda-addon",
+	"description": "Get to the actual content on a web page without working so hard to find it. Hands off. Let the page load, listen for the short beeps, and you're at the start of the article. NVDA reads the first paragraph. Press Z to skim forward, Shift+Z to jump back to the start, NVDA+Z to turn the add-on off on a specific site. Runs locally, no network calls.",
+	"sha256": "ea6fb7076804f6795503dc2bfbdb360a10b42018b20b92c7160e61da99fba403",
+	"addonVersionName": "1.0.5",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Casey Mathews",
+	"sourceURL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"license": "GPL v2",
+	"homepage": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"changelog": "Better landings on common page types, a new Shift+Z gesture, and a refined Z key.\n\nNews articles: when the first line after the headline is a short tease and the real opening is below it, the cursor lands on the opening. News pages with a newsletter signup or comment box are no longer mistaken for forms.\n\nZ key: Z now scans forward from the cursor to the next real paragraph. It skips headings (NVDA's H already does that) and skips ads, menus, and share buttons. Says \"Nothing else to land on\" when there is nothing more to find.\n\nShift+Z: jump back to the place the add-on originally chose for you on this page. Useful after wandering with arrow keys or quick-nav letters when you want to start over.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781228523000,
+	"translations": []
+}
