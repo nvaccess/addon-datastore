@@ -1,0 +1,45 @@
+{
+	"addonId": "accessibleDiscord",
+	"displayName": "Accessible Discord",
+	"URL": "https://github.com/salmanf16/accessible-discord/releases/download/v1.0.1/accessible_discord.nvda-addon",
+	"description": "Announces voice channel events (join, leave, mute, deafen) and chat messages in Discord using a BetterDiscord companion plugin.",
+	"sha256": "6f7b29130e0f7d9c4aed2077c5c7a903f78ab57f3c7130c381c7a77652d3c9f0",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "salmanf16",
+	"sourceURL": "https://github.com/salmanf16/accessible-discord",
+	"license": "GPL v3",
+	"homepage": "https://github.com/salmanf16/accessible-discord",
+	"changelog": "- Fixed a bug where streaming general application windows or Chrome would falsely announce background games.\n- Refactored the NVDA addon into a modular package structure for better organization and performance.\n- Added speech announcements when active voice channel members start/stop streaming (including game name if recognized).\n- Added speech notifications when members join or leave your own stream.\n- Added a dedicated Accessible Discord category in NVDA Settings dialog to easily configure all preferences.\n- Full localization support including Arabic and French translations.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.txt",
+	"submissionTime": 1781229753000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "Accessible Discord",
+			"description": "إضافة لقارئ الشاشة NVDA مصممة لمساعدة المستخدمين المكفوفين وضِعاف البصر في متابعة ديسكورد بكل سهولة ويسر. تقوم الإضافة بنطق حركات القنوات الصوتية وتحديثاتها والرسائل النصية تلقائياً في الخلفية أو الواجهة. تتطلب تثبيت BetterDiscord لكي تعمل.",
+			"changelog": "ما الجديد في الإصدار 1.0.1:\n- تقسيم الكود وإعادة ترتيب ملفات الإضافة لتسريع الأداء وزيادة الاستقرار.\n- إضافة ميزة نطق بدء وإيقاف بث شاشات الأعضاء في القناة الصوتية مع نطق اسم اللعبة إذا كانت معروفة لديسكورد.\n- إضافة ميزة نطق انضمام ومغادرة الأعضاء لبثك الخاص.\n- إضافة فئة خاصة للإضافة داخل نافذة إعدادات NVDA للتحكم في جميع الخيارات بسهولة مع زر لتحميل/إعادة تثبيت BetterDiscord المساعد.\n- ترجمة كاملة لجميع الإعدادات ونصوص النطق باللغتين العربية والفرنسية.\n- إصلاح مشكلة الإبلاغ الخاطئ عن اسم الألعاب المفتوحة بالخلفية عند بث شاشات أو متصفحات عادية."
+		},
+		{
+			"language": "fr",
+			"displayName": "Accessible Discord",
+			"description": "Un module pour NVDA conçu pour aider les utilisateurs aveugles et malvoyants à suivre Discord en toute simplicité. Il annonce automatiquement les événements des salons vocaux (connexions, déconnexions, muet, sourdine) et les messages textuels en arrière-plan ou au premier plan. Nécessite l'installation de BetterDiscord pour fonctionner.",
+			"changelog": "Nouveautés de la version 1.0.1 :\n- Refactorisation du code du module en une structure plate directement dans globalPlugins pour de meilleures performances.\n- Ajout de l'annonce vocale lorsque les membres d'un salon vocal commencent ou arrêtent de diffuser (y compris le nom du jeu s'il est reconnu par Discord).\n- Ajout de notifications vocales lorsque des membres rejoignent ou quittent votre propre diffusion.\n- Ajout d'une catégorie dédiée Accessible Discord dans la boîte de dialogue des paramètres de NVDA pour configurer facilement toutes les préférences avec un bouton pour télécharger/réinstaller le compagnon BetterDiscord.\n- Prise en charge complète de la localisation pour l'arabe et le français.\n- Correction d'un bug où la diffusion de fenêtres d'applications générales ou de Chrome annonçait faussement des jeux en arrière-plan."
+		}
+	]
+}
