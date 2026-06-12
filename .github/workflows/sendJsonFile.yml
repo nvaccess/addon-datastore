@@ -16,8 +16,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v6
-      with:
-        submodules: true
     - name: Get data
       id: get-data
       uses: actions/github-script@v7

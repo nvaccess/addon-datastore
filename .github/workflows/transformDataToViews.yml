@@ -36,8 +36,6 @@ jobs:
     steps:
     - name: Checkout addon data
       uses: actions/checkout@v6
-      with:
-        submodules: true
     - name: Checkout addonstore-views repository
       uses: actions/checkout@v6
       with:

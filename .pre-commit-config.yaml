@@ -7,7 +7,6 @@ ci:
   autoupdate_schedule: monthly
   autoupdate_commit_msg: "Pre-commit auto-update"
   autofix_commit_msg: "Pre-commit auto-fix"
-  submodules: true
 
 exclude: addons/.*/.*\.json
 
