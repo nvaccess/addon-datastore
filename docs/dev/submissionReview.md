@@ -1,8 +1,16 @@
 # Submission review processes
 
-Guide for processing [pending add-ons](https://github.com/nvaccess/addon-datastore/actions?query=is%3Awaiting).
+Guide for processing [pending add-ons](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml?query=is%3Awaiting).
 If add-on needs manual review before processing happens, the submission process will be held, pending approval from NV Access.
 This is done using a [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
+
+Overall process:
+
+1. Go to the [pending add-ons list](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml?query=is%3Awaiting).
+1. Check the pending [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
+    1. If it is `submitterReview` perform [Process for first time submissions](#process-for-first-time-submissions).
+    1. If it is `securityReview` perform [Process for flagged add-ons](#process-for-flagged-add-ons).
+    1. If it is both, perform both steps.
 
 ## Approving an author to submit to a particular add-on ID for the first time
 
@@ -27,6 +35,9 @@ The process for reviewing pending first submissions is as follows:
 1. Approve or deny the `submitterReview` deploy environment.
 If the deployment review request has expired, close the PR and re-run the job.
 1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
+1. If the "merge to master" step fails due to merge conflicts in `submitters.json` or `discussions.json`, resolve them manually and merge.
+To avoid conflicts, wait until an add-on completes the "merge to master" step before approving the next add-on.
+This means waiting 2-5min between approvals.
 
 ## Approving an add-on which was flagged as malicious
 
