@@ -27,6 +27,9 @@ The process for reviewing pending first submissions is as follows:
 1. Approve or deny the `submitterReview` deploy environment.
 If the deployment review request has expired, close the PR and re-run the job.
 1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
+1. If the "merge to master" step fails due to merge conflicts in `submitters.json` or `discussions.json`, resolve them manually and merge.
+To avoid conflicts, wait until an add-on completes the "merge to master" step before approving the next add-on.
+This means waiting 2-5min between approvals.
 
 ## Approving an add-on which was flagged as malicious
 
