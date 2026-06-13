@@ -15,8 +15,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
-      with:
-        submodules: true
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install the latest version of uv
