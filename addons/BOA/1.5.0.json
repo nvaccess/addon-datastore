@@ -1,0 +1,32 @@
+{
+	"addonId": "BOA",
+	"displayName": "BOA: Better Office Accessibility",
+	"URL": "https://github.com/MisterK-Dev/BOA-Better-Office-Accessibility-with-NVDA/releases/download/v1.5.0/BOA-1.5.0.nvda-addon",
+	"description": "A powerful suite of accessibility enhancements for Microsoft Office, designed to vastly improve the screen reader experience for NVDA users.\nI recommend to check whats new for complete change log and help file for features. just given below some details for refference. now onwards i avoide updating description section.\nNew in v1.4.0:\n- Cell Monitor : Press NVDA+E, Shift+1 to 9 to map specific cells to memory slots. You can jump back and read them anytime using NVDA+E and the number.\n- Continuous Background Monitoring: Slotted cells are automatically monitored. If Excel triggers a recalculation or cell edit, BOA instantly announces the new value. Toggle manually with NVDA+E then M. Clear all with NVDA+E then Backspace.\n\nNew in v1.3.0:\n- Sheet Layout Analyzer: Press NVDA+E, L to instantly scan any Excel worksheet for Data Blocks, Hidden Tabs, Active Filters, Protected states, and Hidden Edge Borders.\n- Conditional Formatting Announcer: Automatically reads the dynamic visual color, font, and background shade of cells changed by Excel's Conditional Formatting rules.\n- Intelligent Accelerator Keys: The BOA Settings panel has been deeply integrated with NVDA's GUI architecture. Every single feature now has a unique, explicit Alt-key shortcut.\n\nNew in v1.2.0:\n- Lightning Fast App-Launch Caching: Core modules lazy-load exactly when you focus on Office, eliminating boot lag.\n- Enhanced Hidden Cell Tracker: Redesigned with 1D COM Math to instantly detect crossed hidden rows or columns without freezing NVDA.\n- Intelligent Process Tracking: Resolves false \"Sheet hidden\" alarms when reopening fresh workbooks.\n\nExcel Features:\n- Bulk Sheet Organizer (NVDA+Alt+C): Instantly reorder multiple sheets at once using a fully accessible dialog.\n- Quick Sheet Mover: Move the active sheet instantly via NVDA+Shift+Arrows (Left/Right) or Home/End.\n- Accessible Sheet Renaming: Bypasses the inaccessible Excel rename edit field with a reliable dialog.\n- Smart Selection Tracking: Accurately announces multi-cell range selections and deselections.\n\nPowerPoint Features:\n- Accessible Color Pickers: Enables NVDA to accurately read RGB and Hex values inside the Custom Color dialog.\n- Standard Color Grid Support: Intercepts arrow keys to read hidden color Hex codes from the inaccessible color hexagon.",
+	"sha256": "a28191e0c402e917debbaa8ef8a3c38d2c8f27e0b1c77d18d8c24ff63950449d",
+	"addonVersionName": "1.5.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "MisterK",
+	"sourceURL": "https://github.com/MisterK-Dev/BOA-Better-Office-Accessibility-with-NVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/MisterK-Dev/BOA-Better-Office-Accessibility-with-NVDA",
+	"changelog": "https://raw.githubusercontent.com/MisterK-Dev/BOA-Better-Office-Accessibility-with-NVDA/main/CHANGELOG.md",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781359537000,
+	"translations": []
+}
