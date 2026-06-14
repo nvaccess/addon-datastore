@@ -227,5 +227,47 @@
 			"description": "本附加元件可在使用瀏覽模式的文件中設定位置標記",
 			"changelog": "* Bookmarks will be stored in yaml files."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/7f46b0804a45272d54bf20b9abe0a522d635f131702561cdf4c4942e1ee47375",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "7f46b0804a45272d54bf20b9abe0a522d635f131702561cdf4c4942e1ee47375",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000080d0c0400",
+					"raw_md5": "0f84f9b8f8c1d3f24e84ae8079232722"
+				},
+				"first_submission_date": 1781447624,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1781447626,
+				"last_submission_date": 1781447624,
+				"md5": "8d73836bb4c37a5c33c01f807a7236c2",
+				"names": [],
+				"reputation": 0,
+				"sha1": "1d0d7292bc2e4efbee6e05a1af14497b09e4c9b7",
+				"sha256": "7f46b0804a45272d54bf20b9abe0a522d635f131702561cdf4c4942e1ee47375",
+				"size": 433622,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
