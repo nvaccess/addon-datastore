@@ -89,5 +89,47 @@
 			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
 			"changelog": "\n**HLS akışlarında (.m3u8) müzik tanıma düzeltmesi**\nDaha önce URL çözümleyici, HLS oynatma listesinden tek bir medya segmenti çıkarıp ffmpeg'e iletiyordu. Bu yöntem yalnızca ~6 saniyelik ses ürettiğinden Shazam parçayı tanıyamıyordu. HLS oynatma listesi URL'leri artık doğrudan ffmpeg'e aktarılmaktadır; ffmpeg segmentleri yerel olarak birleştirerek tanıma için gereken 12 saniyelik örneği üretmektedir.\n## FreeRadio — Yeni atanmamış kısayollar\n\nBu sürümde varsayılan olarak hiçbir tuşa atanmamış yeni girdi hareketleri eklenmiştir. Tuş atamak için NVDA'nın Girdi Hareketleri iletişim kutusunda FreeRadio kategorisini kullanabilirsiniz:\n- **BASS arka ucunu etkinleştir/devre dışı bırak** — BASS ses motorunu açar veya kapatır (değişikliğin geçerli olması için NVDA'nın yeniden başlatılması gerekmektedir).\n- **Bas artışını/Tiz artışını/Vokal artışını aç/kapat** — ayarlar iletişim kutusunu açmadan her bir EQ efektini hızlıca etkinleştirir ya da devre dışı bırakır. BASS arka ucu gerektirir.\n- **İstasyon geçiş efektini aç/kapat** — çapraz geçiş seçenekleri arasında geçiş yapar (anında kesme, kısa, normal).\n- **Parça değişikliği otomatik duyurusunu aç/kapat** — parça değiştiğinde ICY meta verilerinin otomatik olarak duyurulmasını etkinleştirir veya devre dışı bırakır.\n- **Parça değişikliği sesini değiştir** — parça değişikliği duyurusunu NVDA konuşması ile SAPI5 arasında değiştirir.\n- **Beğenilen şarkıları metin dosyasına kaydetmeyi aç/kapat** — beğenilen şarkıları kaydetme özelliğini etkinleştirir veya devre dışı bırakır.\n\nBu ayarların tamamı FreeRadio ayarlar iletişim kutusundan da ulaşılabilir durumdadır; kısayol tuşuyla yapılan değişiklikler iletişim kutusuna, iletişim kutusunda yapılan değişiklikler de kısayol tuşlarına anında yansır.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/26d46da109d909ca3d5fd1baf91e325097c82ae1a988d8fb641dbbde05dc3d58",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "26d46da109d909ca3d5fd1baf91e325097c82ae1a988d8fb641dbbde05dc3d58",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "9018baa991e8eda82480253acbc9f174"
+				},
+				"first_submission_date": 1781465385,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1781465391,
+				"last_submission_date": 1781465385,
+				"md5": "4b62fdbe30718504503ad6904c57ec70",
+				"names": [],
+				"reputation": 0,
+				"sha1": "91e7c65ffbda5820407d62b6d329dd6d141565b1",
+				"sha256": "26d46da109d909ca3d5fd1baf91e325097c82ae1a988d8fb641dbbde05dc3d58",
+				"size": 45439294,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
