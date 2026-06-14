@@ -125,5 +125,47 @@
 			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
 			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "27cd00864cb632cd3214931c29adc5ad"
+				},
+				"first_submission_date": 1781448076,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1781448117,
+				"last_submission_date": 1781448076,
+				"md5": "503d6873a836ab3f3bf74636e3b045b9",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9a4cafef026591d25445c191c806106b68c2b7f7",
+				"sha256": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+				"size": 38276233,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
