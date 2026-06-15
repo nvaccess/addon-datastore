@@ -173,5 +173,47 @@
 			"description": "这是一套功能强大的 Microsoft Office 无障碍增强组件，旨在极大地改善 NVDA 用户的屏幕阅读器体验。\n    \n    主要功能：\n    - 单元格监视器：保存和持续跟踪动态 Excel 单元格。\n    - 工作表布局分析器：即时扫描工作表中隐藏的标签页、保护状态和数据块。\n    - 批量工作表管理器和快速移动器：使用无障碍的对话框即时移动或重新排序多个工作表。\n    - PowerPoint 颜色选择器：在标准颜色网格中读取隐藏的十六进制和 RGB 代码。\n    \n    有关功能和快捷键的完整列表，请参阅附加组件帮助文档。",
 			"changelog": "## v1.6.1 新功能\n* **深度文件本地化**：修复了 Excel 增强模块（例如工作表布局分析器和快速工作表移动器）深处缺失的字符串翻译，确保 100% 的本地化覆盖率。\n* **扩展的翻译支持**：系统中添加了 7 种新语言（土耳其语、波兰语、韩语、乌克兰语、捷克语、乌尔都语和旁遮普语）。\n  *(注意：这些翻译由人工智能生成，因此可能存在少许翻译错误或不准确之处。)*"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9f2f96b74e698011ec58eeb624560d11f243d920d678c8111410ad3b13fffeed",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "9f2f96b74e698011ec58eeb624560d11f243d920d678c8111410ad3b13fffeed",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "03e0032baa363a08432e0e15c2f8d6f3"
+				},
+				"first_submission_date": 1781504987,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1781504988,
+				"last_submission_date": 1781504987,
+				"md5": "a0303010bf7d2b0267627c5a785df9e7",
+				"names": [],
+				"reputation": 0,
+				"sha1": "966ba192535ea58da1f442596e19c9c8e37b759b",
+				"sha256": "9f2f96b74e698011ec58eeb624560d11f243d920d678c8111410ad3b13fffeed",
+				"size": 964450,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
