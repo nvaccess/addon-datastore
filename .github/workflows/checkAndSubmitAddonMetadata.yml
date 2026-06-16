@@ -62,10 +62,10 @@ jobs:
         run: |
           if (Test-Path "./validationErrors.md") {
             gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+            gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
           } else {
-            gh issue comment "${{ inputs.issueNumber }}" --body "Submission validation failed before an error message file could be generated. Please check the workflow logs for details."
+            gh issue comment "${{ inputs.issueNumber }}" --body "Submission validation failed unexpectedly. Please wait for a staff member to respond. This may take up to 2 weeks."
           }
-          gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
       - name: Determine add-on ID
         uses: actions/github-script@v7
         id: getAddonId
