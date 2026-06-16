@@ -107,7 +107,7 @@ class Validate_downloadAndValidateAddon(unittest.TestCase):
 			with open(destPath, "wb") as f:
 				f.write(b"old-data")
 
-			with patch("_validate.validate.downloadAddon", return_value=[] ) as mock_download:
+			with patch("_validate.validate.downloadAddon", return_value=[]) as mock_download:
 				errors = list(
 					validate.downloadAndValidateAddon(
 						"https://example.com/fake.nvda-addon",
@@ -122,7 +122,9 @@ class Validate_downloadAndValidateAddon(unittest.TestCase):
 	def test_downloadErrorsPropagated(self):
 		with patch(
 			"_validate.validate.downloadAddon",
-			return_value=["Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404"],
+			return_value=[
+				"Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404"
+			],
 		):
 			errors = list(
 				validate.downloadAndValidateAddon(
