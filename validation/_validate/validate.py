@@ -355,10 +355,12 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		if os.path.exists(addonDestPath):
 			os.remove(addonDestPath)
 
-		downloadErrors = list(downloadAndValidateAddon(
-			url=submissionData["URL"],
-			addonDestPath=addonDestPath,
-		))
+		downloadErrors = list(
+			downloadAndValidateAddon(
+				url=submissionData["URL"],
+				addonDestPath=addonDestPath,
+			),
+		)
 		if downloadErrors:
 			# if there are errors in the download, the validation can not continue
 			raise ValueError(

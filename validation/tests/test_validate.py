@@ -123,7 +123,7 @@ class Validate_downloadAndValidateAddon(unittest.TestCase):
 		with patch(
 			"_validate.validate.downloadAddon",
 			return_value=[
-				"Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404"
+				"Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404",
 			],
 		):
 			errors = list(
