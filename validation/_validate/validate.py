@@ -84,7 +84,11 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 	Raise on failure.
 	"""
 	DOWNLOAD_BLOCK_SIZE = 8192  # 8 kb
-	remote = urllib.request.urlopen(url)
+	try:
+		remote = urllib.request.urlopen(url)
+	except Exception as e:
+		yield f"Unable to download from {url}, error: {e}"
+		raise RuntimeError(f"Unable to download from {url}, error: {e}") from e
 	if remote.code != 200:
 		yield "Download of addon failed"
 		raise RuntimeError(f"Unable to download from {url}, HTTP response status code: {remote.code}")
