@@ -361,7 +361,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		)
 		if downloadErrors:
 			raise ValueError(
-				f"Errors found when downloading and validating the add-on: {', '.join(downloadErrors)}"
+				f"Errors found when downloading and validating the add-on: {', '.join(downloadErrors)}",
 			)
 
 		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
