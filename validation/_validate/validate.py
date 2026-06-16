@@ -354,6 +354,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		addonDestPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
 		if os.path.exists(addonDestPath):
 			os.remove(addonDestPath)
+
 		downloadErrors = downloadAndValidateAddon(
 			url=submissionData["URL"],
 			addonDestPath=addonDestPath,
