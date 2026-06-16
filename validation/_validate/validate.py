@@ -90,6 +90,7 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 		return
 	if remote.code != 200:
 		yield f"Unable to download from {url}, HTTP response status code: {remote.code}"
+		return
 	size = int(remote.headers["content-length"])
 	with open(destPath, "wb") as local:
 		read = 0
