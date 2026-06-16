@@ -1,5 +1,5 @@
 module.exports = getAddonFileName
-const fs = require('fs')
+const fs = require("fs")
 
 function getAddonFileName(changedFiles) {
 	var addonFileName
@@ -8,21 +8,18 @@ function getAddonFileName(changedFiles) {
 		var errMsg
 		if (filename.startsWith("addons")) {
 			if (Boolean(addonFileName)){
-				errMsg = "Please submit addon releases individually. One file at a time."
-				fs.writeFileSync('./validationErrors.md', errMsg)
-				throw errMsg
+				throw "Multiple add-on files updated."
 			}
 			if (fileData.status != "added") {
-				errMsg = "Modifications to submitted add-ons will not be auto-approved"
-				fs.writeFileSync('./validationErrors.md', errMsg)
+				errMsg = "This is a modification of a previously submitted add-on version. Please submit a new add-on version instead of modifying an existing one."
+				// Ensure an error message is passed on to the user when this happens.
+				fs.writeFileSync("./validationErrors.md", errMsg)
 				throw errMsg
 			}
 			addonFileName = filename
 		}
 		else {
-			errMsg = "Non-addon-submission files updated. This will not be auto-approved."
-			fs.writeFileSync('./validationErrors.md', errMsg)
-			throw errMsg
+			throw "Non-addon-submission files updated."
 		}
 	}
 	return addonFileName

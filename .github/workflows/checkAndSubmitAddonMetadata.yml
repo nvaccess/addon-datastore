@@ -55,6 +55,13 @@ jobs:
             const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + "${{ env.branchName }}"
             const result = await github.request(url)
             return getAddonFilename(result.data.files)
+      - name: Handle error in get add-on file name
+        if: ${{ failure() && steps.getAddonFileName.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+          gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
       - name: Determine add-on ID
         uses: actions/github-script@v7
         id: getAddonId
