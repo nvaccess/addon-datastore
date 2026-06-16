@@ -336,8 +336,9 @@ def downloadAndValidateAddon(
 	"""
 	urlErrors = list(checkDownloadUrlFormat(url))
 	if urlErrors:
-		# if there are errors in the URL validation can not continue
 		yield from urlErrors
+		# if there are errors in the URL validation the download can not continue
+		return
 
 	if os.path.exists(addonDestPath):
 		os.remove(addonDestPath)
@@ -360,6 +361,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 			addonDestPath=addonDestPath,
 		)
 		if downloadErrors:
+			# if there are errors in the download, the validation can not continue
 			raise ValueError(f"Errors found when downloading and validating the add-on: {', '.join(downloadErrors)}")
 
 		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
