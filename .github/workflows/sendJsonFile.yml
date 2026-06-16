@@ -116,7 +116,6 @@ jobs:
       issueNumber: "${{ github.event.issue.number }}"
       issueAuthorId: ${{ github.event.issue.user.id }}
       issueAuthorName: ${{ github.event.issue.user.login }}
-      issueTitle: ${{ github.event.issue.title }}
     secrets:
       VT_API_KEY: ${{ secrets.VT_API_KEY }}
       VIEWS_PUSH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}
