@@ -1,4 +1,4 @@
-# Copyright (C) 2021-2025 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2021-2026 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -323,6 +323,23 @@ def checkVersions(
 	yield from checkParsedVersionNameMatchesVersionNumber(submission)
 
 
+def downloadAndValidateAddon(
+	url: str,
+	addonDestPath: str,
+) -> ValidationErrorGenerator:
+	"""Download the addon and validate the url.
+	Raise on failure.
+	"""
+	urlErrors = list(checkDownloadUrlFormat(url))
+	if urlErrors:
+		# if there are errors in the URL validation can not continue
+		yield from urlErrors
+
+	if os.path.exists(addonDestPath):
+		os.remove(addonDestPath)
+	yield from downloadAddon(url=url, destPath=addonDestPath)
+
+
 def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationErrorGenerator:
 	try:
 		submissionData = getAddonMetadata(filename=submissionFilePath)
@@ -331,16 +348,15 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 			# Legacy add-ons do not need a valid manifest or metadata
 			return None
 
-		urlErrors = list(checkDownloadUrlFormat(submissionData["URL"]))
-		if urlErrors:
-			# if there are errors in the URL validation can not continue
-			yield from urlErrors
-			raise ValueError(submissionData["URL"])
-
 		addonDestPath = os.path.join(TEMP_DIR, "addon.nvda-addon")
 		if os.path.exists(addonDestPath):
 			os.remove(addonDestPath)
-		yield from downloadAddon(url=submissionData["URL"], destPath=addonDestPath)
+		downloadErrors = downloadAndValidateAddon(
+			url=submissionData["URL"],
+			addonDestPath=addonDestPath,
+		)
+		if downloadErrors:
+			raise ValueError(f"Errors found when downloading and validating the add-on: {', '.join(downloadErrors)}")
 
 		checksumErrors = list(checkSha256(addonDestPath, expectedSha=submissionData["sha256"]))
 		if checksumErrors:
