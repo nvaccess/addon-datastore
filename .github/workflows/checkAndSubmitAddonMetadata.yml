@@ -60,7 +60,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+          if (Test-Path "./validationErrors.md") {
+            gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+          } else {
+            gh issue comment "${{ inputs.issueNumber }}" --body "Submission validation failed before an error message file could be generated. Please check the workflow logs for details."
+          }
           gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
       - name: Determine add-on ID
         uses: actions/github-script@v7
