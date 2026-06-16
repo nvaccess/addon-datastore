@@ -64,20 +64,20 @@ jobs:
       # E2E: test to check the script can be run, no need to actually test the file.
       # The internal checks are covered with unit tests.
       run: |
-        .\runvalidate.bat \
-        --dry-run \
-        tests/testData/addons/fake/13.0.0.json \
+        .\runvalidate.bat ^
+        --dry-run ^
+        tests/testData/addons/fake/13.0.0.json ^
         tests/testData/nvdaAPIVersions.json
     - name: Generate json file
       # E2E: test to check the script can be run
       run: |
-        .\runcreatejson.bat \
-        --dry-run \
-        -f tests/testData/fake.nvda-addon \
-        --dir tests/testOutput/test_runcreatejson \
-        --channel=stable \
-        --publisher=fakepublisher \
-        --sourceUrl=https://github.com/fake/ \
-        --url=https://github.com/fake.nvda-addon \
-        --licName="GPL v2" \
+        .\runcreatejson.bat ^
+        --dry-run ^
+        -f tests/testData/fake.nvda-addon ^
+        --dir tests/testOutput/test_runcreatejson ^
+        --channel=stable ^
+        --publisher=fakepublisher ^
+        --sourceUrl=https://github.com/fake/ ^
+        --url=https://github.com/fake.nvda-addon ^
+        --licName="GPL v2" ^
         --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"
