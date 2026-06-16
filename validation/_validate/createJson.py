@@ -228,7 +228,7 @@ def main():
 	errors = list(downloadAndValidateAddon(args.url, args.file))
 	if errors:
 		outputErrors(args.file, errors, errorFilePath)
-		raise ValueError(f"Unable to download and validate the add-on.")
+		raise ValueError("Unable to download and validate the add-on.")
 
 	try:
 		manifest = getAddonManifest(args.file)
