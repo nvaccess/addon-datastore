@@ -329,9 +329,7 @@ def downloadAndValidateAddon(
 	url: str,
 	addonDestPath: str,
 ) -> ValidationErrorGenerator:
-	"""Download the addon and validate the url.
-	Raise on failure.
-	"""
+	"""Download the add-on and validate the url."""
 	urlErrors = list(checkDownloadUrlFormat(url))
 	if urlErrors:
 		yield from urlErrors
