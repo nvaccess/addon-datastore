@@ -222,13 +222,22 @@ def main():
 		default=None,
 		required=False,
 	)
+	parser.add_argument(
+		"--dry-run",
+		dest="dryRun",
+		help="Whether to run the script without actually downloading the addon, instead using a local file.",
+		action="store_true",
+		default=False,
+		required=False,
+	)
 	args = parser.parse_args()
 	errorFilePath: str | None = args.errorOutputFile
 
-	errors = list(downloadAndValidateAddon(args.url, args.file))
-	if errors:
-		outputErrors(args.file, errors, errorFilePath)
-		raise ValueError("Unable to download and validate the add-on.")
+	if not args.dryRun:
+		errors = list(downloadAndValidateAddon(args.url, args.file))
+		if errors:
+			outputErrors(args.file, errors, errorFilePath)
+			raise ValueError("Unable to download and validate the add-on.")
 
 	try:
 		manifest = getAddonManifest(args.file)

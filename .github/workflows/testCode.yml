@@ -5,24 +5,30 @@ on:
     branches: [ master ]
     paths-ignore:
       - addons/**
+      - discussions.json
+      - submitters.json
   pull_request:
     branches: [ master ]
     paths-ignore:
       - addons/**
+      - discussions.json
+      - submitters.json
 
 jobs:
   testAllCode:
+    permissions:
+      contents: read
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [3.13]
     steps:
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v8
     - name: Checkout code
       uses: actions/checkout@v6
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
@@ -34,6 +40,8 @@ jobs:
     - name: Run pyright for transform
       run: uv run --group lint --directory transform pyright --threads --level warning
   testValidationCode:
+    permissions:
+      contents: read
     defaults:
       run:
         shell: cmd
@@ -44,18 +52,32 @@ jobs:
         python-version: [3.13]
     steps:
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v8
     - name: Checkout code
       uses: actions/checkout@v6
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
     - name: Validate metadata
       # E2E: test to check the script can be run, no need to actually test the file.
       # The internal checks are covered with unit tests.
-      run: .\runvalidate.bat --dry-run tests/testData/addons/fake/13.0.0.json tests/testData/nvdaAPIVersions.json
+      run: |
+        .\runvalidate.bat \
+        --dry-run \
+        tests/testData/addons/fake/13.0.0.json \
+        tests/testData/nvdaAPIVersions.json
     - name: Generate json file
       # E2E: test to check the script can be run
-      run: .\runcreatejson.bat -f tests/testData/fake.nvda-addon --dir tests/testOutput/test_runcreatejson --channel=stable --publisher=fakepublisher --sourceUrl=https://github.com/fake/ --url=https://github.com/fake.nvda-addon --licName="GPL v2" --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"
+      run: |
+        .\runcreatejson.bat \
+        --dry-run \
+        -f tests/testData/fake.nvda-addon \
+        --dir tests/testOutput/test_runcreatejson \
+        --channel=stable \
+        --publisher=fakepublisher \
+        --sourceUrl=https://github.com/fake/ \
+        --url=https://github.com/fake.nvda-addon \
+        --licName="GPL v2" \
+        --licUrl="https://www.gnu.org/licenses/gpl-2.0.html"

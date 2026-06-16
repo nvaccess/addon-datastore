@@ -1,4 +1,4 @@
-# Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2026 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -6,6 +6,7 @@ import unittest
 import os
 import shutil
 import json
+from unittest.mock import NonCallableMock, patch
 from _validate import createJson, addonManifest, manifestLoader
 
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -130,3 +131,53 @@ class Test_normalizeLanguage(unittest.TestCase):
 		Also implicitly test the fact that country code is converted to upper case."""
 		self.assertEqual("pt_BR", manifestLoader.normalizeLanguage("pt_BR"))
 		self.assertEqual("pt_BR", manifestLoader.normalizeLanguage("pt-BR"))
+
+
+class Test_main(unittest.TestCase):
+	def _buildArgv(self, licenseUrl: str | None = None) -> list[str]:
+		args = [
+			"createJson.py",
+			"-f",
+			ADDON_PACKAGE,
+			"--dir",
+			OUTPUT_DATA_PATH,
+			"--channel",
+			ADDON_CHANNEL,
+			"--publisher",
+			ADDON_PUBLISHER,
+			"--sourceUrl",
+			ADDON_SOURCE_URL,
+			"--url",
+			"https://example.com/fake.nvda-addon",
+			"--licName",
+			"GPL v2",
+		]
+		if licenseUrl is not None:
+			args.extend(["--licUrl", licenseUrl])
+		return args
+
+	def test_downloadValidationFailure(self):
+		with (
+			patch("sys.argv", self._buildArgv()),
+			patch("_validate.createJson.downloadAndValidateAddon", return_value=["download error"]),
+			patch("_validate.createJson.outputErrors") as mock_outputErrors,
+			patch("_validate.createJson.getAddonManifest") as mock_getManifest,
+		):
+			with self.assertRaisesRegex(ValueError, "Unable to download and validate the add-on"):
+				createJson.main()
+
+		mock_outputErrors.assert_called_once_with(ADDON_PACKAGE, ["download error"], None)
+		mock_getManifest.assert_not_called()
+
+	def test_licUrlEmptyStringBecomesNone(self):
+		manifest = NonCallableMock(errors=[])
+		with (
+			patch("sys.argv", self._buildArgv(licenseUrl="")),
+			patch("_validate.createJson.downloadAndValidateAddon", return_value=[]),
+			patch("_validate.createJson.getAddonManifest", return_value=manifest),
+			patch("_validate.createJson.generateJsonFile") as mock_generateJsonFile,
+		):
+			createJson.main()
+
+		mock_generateJsonFile.assert_called_once()
+		self.assertIsNone(mock_generateJsonFile.call_args.kwargs["licenseUrl"])
