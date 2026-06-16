@@ -80,8 +80,7 @@ def checkDownloadUrlFormat(url: str) -> ValidationErrorGenerator:
 
 
 def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
-	"""Download the addon file, save as destPath
-	"""
+	"""Download the addon file, save as destPath"""
 	DOWNLOAD_BLOCK_SIZE = 8192  # 8 kb
 	try:
 		remote = urllib.request.urlopen(url)
