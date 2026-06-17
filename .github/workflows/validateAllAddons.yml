@@ -18,8 +18,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
-      with:
-        ref: ${{ inputs.headRef }}
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install addon download validation dependencies
