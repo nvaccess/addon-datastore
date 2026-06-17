@@ -241,7 +241,7 @@ def main():
 
 	try:
 		manifest = getAddonManifest(args.file)
-	except zipfile.BadZipFile as e:
+	except zipfile.BadZipFile:
 		if errorFilePath:
 			outputErrors(["Add-on is not a valid zip file."], errorFilePath)
 		raise

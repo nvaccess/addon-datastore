@@ -315,7 +315,6 @@ def checkMinRequiredVersionExist(submission: JsonObjT, verFilename: str) -> Vali
 		yield f"Minimum required version error: {formattedMinRequiredVersion} is not stable yet, it is either in beta or alpha. "
 		"Please submit add-on using the beta or dev channel until the RC version is released. "
 		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
-		
 
 
 def checkVersions(
@@ -396,9 +395,9 @@ def outputErrors(errors: list[str], errorFilePath: str | None = None):
 		if errorFilePath:
 			with open(errorFilePath, "a", encoding="utf-8") as errorFile:
 				errorFile.write(
-					f"This add-on submission has validation errors. "
-					f"Please submit a new version with the errors fixed. "
-					f"Errors:\n- " + "\n- ".join(errors) + "\n\n"
+					"This add-on submission has validation errors. "
+					"Please submit a new version with the errors fixed. "
+					"Errors:\n- " + "\n- ".join(errors) + "\n\n",
 				)
 
 
