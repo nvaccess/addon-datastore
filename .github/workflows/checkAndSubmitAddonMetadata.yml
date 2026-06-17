@@ -316,7 +316,7 @@ jobs:
       - name: Confirm manual review passed
         run: echo "Passed manual review"
 
-  pushFurtherChanges:
+  pushFurtherChangesAndMerge:
     concurrency:
       # When modifying submitters.json or discussions.json,
       # we want to avoid merge conflicts by ensuring only one workflow can push changes at a time.
@@ -326,10 +326,11 @@ jobs:
     # use linux instead.
     runs-on: ubuntu-latest
     if: ${{ always() && needs.passesManualReview.result == 'success' }}
-    needs: [getAddonId, passesManualReview, requireSubmitterManualApproval, virusTotal-analysis]
+    needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, virusTotal-analysis]
     permissions:
       contents: write
       discussions: write
+      pull-requests: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
@@ -411,8 +412,7 @@ jobs:
         jqExitCode=$?
         rm discussions.old.json
         exit $jqExitCode
-    - name: Add discussion and VT scan URL to metadata
-      if: always()
+    - name: Add discussion URL to metadata
       run: |
         addonFilename=$(
           echo "${{ needs.getAddonId.outputs.addonFileName }}"
@@ -423,26 +423,15 @@ jobs:
         reviewUrl=$(
           jq --tab ".\"$addonId\".discussionUrl" discussions.json
         )
-        vtScanUrl=$(
-          echo ${{ needs.virusTotal-analysis.outputs.vtScanUrl }}
-        )
         jqReviewCode="
-        .[\"reviewUrl\"] = $reviewUrl
-        "
-        jqVTCode="
         .[\"reviewUrl\"] = $reviewUrl
         "
 
         mv $addonFilename $addonFilename.old.json
         jq -e --tab "$jqReviewCode" $addonFilename.old.json > $addonFilename
         jqReviewExitCode=$?
-        mv $addonFilename $addonFilename.old.json
-        jq -e --tab "$jqVTCode" $addonFilename.old.json > $addonFilename
-        jqVTExitCode=$?
         rm $addonFilename.old.json
-        exit $(( $jqVTExitCode || $jqReviewExitCode ))
     - name: Commit and push
-      if: always()
       run: |
         git add .
         if git diff --staged --quiet; then
@@ -452,34 +441,18 @@ jobs:
           git pull --rebase origin ${{ env.branchName }}
           git push --set-upstream origin ${{ env.branchName }}
         fi
-
-  mergeToMaster:
-    concurrency:
-      # When modifying submitters.json or discussions.json,
-      # we want to avoid merge conflicts by ensuring only one workflow can push changes at a time.
-      group: avoidMergeConflicts
-      queue: max
-    needs: [getAddonId, pushFurtherChanges, createPullRequest, passesManualReview]
-    if: ${{ always() && needs.pushFurtherChanges.result == 'success' && needs.passesManualReview.result == 'success' }}
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
-      - name: Merge branch to master
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+    - name: Merge branch to master
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
 
   call-workflow:
-    needs: [mergeToMaster]
+    needs: [pushFurtherChangesAndMerge]
     permissions:
       contents: write
       pull-requests: write
-    if: ${{ always() && needs.mergeToMaster.result == 'success' }}
+    if: ${{ always() && needs.pushFurtherChangesAndMerge.result == 'success' }}
     uses: ./.github/workflows/transformDataToViews.yml
     secrets:
       VIEWS_PUSH_TOKEN: ${{ secrets.VIEWS_PUSH_TOKEN }}
