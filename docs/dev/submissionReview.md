@@ -34,7 +34,9 @@ The process for reviewing pending first submissions is as follows:
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
 If the deployment review request has expired, close the PR and re-run the job.
-1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
+1. When rejecting, the rejection message(s) are provided to the user as the closing reason(s).
+The issue and PR will be closed.
+Make sure to clarify any further information on the issue.
 1. If the "merge to master" step fails due to merge conflicts in `submitters.json` or `discussions.json`, resolve them manually and merge.
 To avoid conflicts, wait until an add-on completes the "merge to master" step before approving the next add-on.
 This means waiting 2-5min between approvals.
@@ -51,4 +53,6 @@ This may require discussion within NV Access or with the add-on contributor.
 1. Go to the failed submission in GitHub Actions.
 Approve or deny the `securityReview` deployment.
 If the deployment review request has expired, close the PR and re-run the job.
-1. When rejecting, close the associated PR and issue manually, and provide feedback to the author on the issue.
+1. When rejecting, the rejection message(s) are provided to the user as the closing reason(s).
+The issue and PR will be closed.
+Make sure to clarify any further information on the issue.
