@@ -244,5 +244,47 @@
 			"displayName": "logViewer",
 			"description": "增強 NVDA 日誌檢視器的搜尋效率。添加書籤以檢查 NVDA 功能。\n快速鍵：\nCTRL+F ：打開搜尋對話方塊\nF3\n按一下：尋找下一個\n按兩下：複製錯誤日誌層級\nShift+F3 ：尋找上一個\nCTRL+F2 ：添加書籤\nF2 ：移動到日誌中的下一個書籤\nShift+F2 ：移動到日誌中的上一個書籤\nNVDA+CTRL+L ：打開舊日誌文件"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181c15180000",
+					"raw_md5": "b9e8457770311c5ac32af3296e0e6709"
+				},
+				"first_submission_date": 1781661325,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1781661327,
+				"last_submission_date": 1781661325,
+				"md5": "fa5adc03c1cd68712d969349721915c6",
+				"names": [],
+				"reputation": 0,
+				"sha1": "d42d155ba8f2570026341fa7082a731329901890",
+				"sha256": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+				"size": 207422,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
