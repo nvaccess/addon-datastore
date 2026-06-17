@@ -1,0 +1,32 @@
+{
+	"addonId": "TextMarksTheSpot",
+	"displayName": "Text Marks the Spot",
+	"URL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot/releases/download/v1.0.7/TextMarksTheSpot-1.0.7.nvda-addon",
+	"description": "Get to the actual content on a web page without working so hard to find it. Hands off. Let the page load, listen for the short beeps, and you're at the start of the article. NVDA reads the first paragraph. Press Z to skim forward, Shift+Z to jump back to the start, NVDA+Z to turn the add-on off on a specific site. Runs locally, no network calls.",
+	"sha256": "adf70aafcb36b196c84ff868e4b22f99daa94ae23cb902bf9b79ab9b34da465a",
+	"addonVersionName": "1.0.7",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Casey Mathews",
+	"sourceURL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"license": "GPL v2",
+	"homepage": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"changelog": "Better landings on blog posts and articles that don't mark where their main content begins.\n\nA lot of blogs and news sites never tell NVDA where the article starts, so the add-on used to get tangled up in the site menu, the comments, and the footer, and the cursor often landed partway down the post. Now, on a page with a single article and no marked main region, it reads just the article, skips the menu, comments, and footer, and lands on its real opening line.\n\nNow tested on NVDA 2026.2.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781729355000,
+	"translations": []
+}
