@@ -113,7 +113,7 @@ def createDataclassMatchingJsonSchema(
 	try:
 		addonVersionNumber = MajorMinorPatch.getFromStr(cast(str, manifest["version"]))
 	except ValueError as e:
-		raise ValueError(f"Manifest version invalid {manifest['version']}") from e
+		raise ValueError(f"Manifest value for 'version' is invalid {manifest['version']}") from e
 
 	for key in ("name", "summary", "description", "minimumNVDAVersion", "lastTestedNVDAVersion", "version"):
 		if key not in manifest:
@@ -236,21 +236,19 @@ def main():
 	if not args.dryRun:
 		errors = list(downloadAndValidateAddon(args.url, args.file))
 		if errors:
-			outputErrors(args.file, errors, errorFilePath)
+			outputErrors(errors, errorFilePath)
 			raise ValueError("Unable to download and validate the add-on.")
 
 	try:
 		manifest = getAddonManifest(args.file)
 	except zipfile.BadZipFile as e:
 		if errorFilePath:
-			with open(errorFilePath, "w") as errorFile:
-				errorFile.write(f"Validation Errors:\n{e}")
+			outputErrors(["Add-on is not a valid zip file."], errorFilePath)
 		raise
 
 	if manifest.errors:
 		if errorFilePath:
-			with open(errorFilePath, "w") as errorFile:
-				errorFile.write(f"Validation Errors:\n{manifest.errors}")
+			outputErrors([f"Add-on manifest has validation errors: {manifest.errors}."], errorFilePath)
 		raise ValueError(f"Invalid manifest file: {manifest.errors}")
 
 	try:
@@ -269,13 +267,11 @@ def main():
 	except Exception as e:
 		if manifest.errors:
 			if errorFilePath:
-				with open(errorFilePath, "w") as errorFile:
-					errorFile.write(f"Validation Errors:\n{manifest.errors}")
+				outputErrors([f"Add-on manifest has validation errors: {manifest.errors}."], errorFilePath)
 			raise ValueError(f"Invalid manifest file: {manifest.errors}")
 		else:
 			if errorFilePath:
-				with open(errorFilePath, "w") as errorFile:
-					errorFile.write(f"Validation Errors:\n{e}")
+				outputErrors([f"Validation Errors:\n{e}"], errorFilePath)
 			raise
 
 

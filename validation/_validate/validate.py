@@ -74,9 +74,9 @@ def checkDownloadUrlFormat(url: str) -> ValidationErrorGenerator:
 	Raise on failure
 	"""
 	if not url.startswith("https://"):
-		yield "Add-on download url must start with https://"
+		yield f"Add-on download url must start with https:// ({url})"
 	if not url.endswith(".nvda-addon"):
-		yield "Add-on download url must end with .nvda-addon"
+		yield f"Add-on download url must end with .nvda-addon ({url})"
 
 
 def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
@@ -113,7 +113,9 @@ def checkSha256(addonPath: str, expectedSha: str) -> ValidationErrorGenerator:
 	with open(addonPath, "rb") as f:
 		sha256Addon = sha256_checksum(f)
 	if sha256Addon.upper() != expectedSha.upper():
-		yield f"Sha256 of .nvda-addon at URL is: {sha256Addon}"
+		yield f"""Sha256 of the downloaded add-on from the download URL is: {sha256Addon}, expected: {expectedSha}.
+		This means the file downloaded from the provided URL does not match the original file.
+		The add-on downloaded from the provided URL must not be modified, it should always match the original file."""
 
 
 def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
@@ -168,7 +170,7 @@ def checkAddonId(
 		yield (f"Submitted json file must be placed in a folder matching the addonId/name '{expectedName}'")
 	if expectedName != submission["addonId"]:
 		yield (
-			"Submission data 'addonId' field does not match 'name' field in addon manifest:"
+			"Submission data 'addonId' field does not match 'name' field in add-on manifest:"
 			f" {expectedName} vs {submission['addonId']}"
 		)
 	if not re.match(r"^[A-Za-z][A-Za-z0-9\-_]*[A-Za-z0-9]$", expectedName):
@@ -228,7 +230,6 @@ def checkSubmissionFilenameMatchesVersionNumber(
 	versionNumber: dict[str, int] = submission["addonVersionNumber"]
 	formattedVersionNumber = _formatVersionString(cast(ApiVersionT, tuple(versionNumber.values())))
 	if versionFromPath != formattedVersionNumber:
-		# yield f"Submitted json file should be named '{formattedVersionNumber}.json'"
 		yield (
 			"Submission filename and versionNumber mismatch error:"
 			f" addonVersionNumber: {formattedVersionNumber}"
@@ -288,30 +289,33 @@ def checkLastTestedVersionExist(submission: JsonObjT, verFilename: str) -> Valid
 	lastTestedVersion: dict[str, int] = submission["lastTestedVersion"]
 	formattedLastTestedVersion: str = _formatVersionString(cast(ApiVersionT, lastTestedVersion.values()))
 	if formattedLastTestedVersion not in getExistingVersions(verFilename):
-		yield f"Last tested version error: {formattedLastTestedVersion} doesn't exist"
+		yield f"Last tested version error: {formattedLastTestedVersion} doesn't exist. "
+		"Please update the minimum required NVDA version to a valid version. "
+		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
 
 	elif submission["channel"] == "stable" and formattedLastTestedVersion not in getExistingStableVersions(
 		verFilename,
 	):
-		yield (
-			f"Last tested version error: {formattedLastTestedVersion} is not stable yet. "
-			+ "Please submit add-on using the beta or dev channel."
-		)
+		yield f"Last tested version error: {formattedLastTestedVersion} is not stable yet. "
+		"Please submit add-on using the beta or dev channel until the RC version is released. "
+		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
 
 
 def checkMinRequiredVersionExist(submission: JsonObjT, verFilename: str) -> ValidationErrorGenerator:
 	minRequiredVersion: dict[str, int] = submission["minNVDAVersion"]
 	formattedMinRequiredVersion: str = _formatVersionString(cast(ApiVersionT, minRequiredVersion.values()))
 	if formattedMinRequiredVersion not in getExistingVersions(verFilename):
-		yield f"Minimum required version error: {formattedMinRequiredVersion} doesn't exist"
+		yield f"Minimum required version error: {formattedMinRequiredVersion} doesn't exist. "
+		"Please update the minimum required NVDA version to a valid version. "
+		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
 
 	elif submission["channel"] == "stable" and formattedMinRequiredVersion not in getExistingStableVersions(
 		verFilename,
 	):
-		yield (
-			f"Minimum required version error: {formattedMinRequiredVersion} is not stable yet. "
-			+ "Please submit add-on using the beta or dev channel."
-		)
+		yield f"Minimum required version error: {formattedMinRequiredVersion} is not stable yet, it is either in beta or alpha. "
+		"Please submit add-on using the beta or dev channel until the RC version is released. "
+		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		
 
 
 def checkVersions(
@@ -386,12 +390,16 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		yield f"Fatal error, unable to continue: {e}"
 
 
-def outputErrors(addonFileName: str, errors: list[str], errorFilePath: str | None = None):
+def outputErrors(errors: list[str], errorFilePath: str | None = None):
 	if len(errors) > 0:
 		print("\r\n".join(errors))
 		if errorFilePath:
 			with open(errorFilePath, "a", encoding="utf-8") as errorFile:
-				errorFile.write(f"Validation Errors for {addonFileName}:\n- " + "\n- ".join(errors) + "\n\n")
+				errorFile.write(
+					f"This add-on submission has validation errors. "
+					f"Please submit a new version with the errors fixed. "
+					f"Errors:\n- " + "\n- ".join(errors) + "\n\n"
+				)
 
 
 def main():
@@ -434,7 +442,7 @@ def main():
 			errors = list(validateSubmission(filename, verFilename))
 			if errors:
 				anyErrors = True
-				outputErrors(filename, errors, errorOutputFile)
+				outputErrors(errors, errorOutputFile)
 		if anyErrors:
 			print(f"Validation errors for {args.filePathGlob} in {errorOutputFile}")
 			raise ValueError(f"Validation errors for {args.filePathGlob} in {errorOutputFile}")

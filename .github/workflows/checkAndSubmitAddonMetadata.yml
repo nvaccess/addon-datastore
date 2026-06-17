@@ -20,6 +20,7 @@ on:
 
 env:
   branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
+  jobFooter: "\n---\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
 jobs:
   getAddonId:
@@ -58,10 +59,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if (Test-Path "./validationErrors.md") {
+            echo "${{ env.jobFooter }}" >> ./validationErrors.md
             gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
             gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
           } else {
-            gh issue comment "${{ inputs.issueNumber }}" --body "Submission validation failed unexpectedly. Please wait for a staff member to respond. This may take up to 2 weeks."
+            echo "Submission validation failed unexpectedly. Please wait for a staff member to respond. This may take up to 2 weeks." >> message.txt
+            echo "${{ env.jobFooter }}" >> message.txt
+            gh issue comment "${{ inputs.issueNumber }}" --body-file ./message.txt
           }
       - name: Determine add-on ID
         uses: actions/github-script@v7
@@ -124,15 +128,16 @@ jobs:
           exit $? # Exit with the same exit code as jq
       - name: Post submitter registration message
         if: failure()
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ inputs.issueNumber }}
+        run: |
+            gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
+        env:
           body: |
-            Welcome to the add-on store submission process.
+            Welcome to the Add-on Store submission process.
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
             Please wait until an NV Access team member can review the submission.
             It may take up to 2 weeks for a team member to respond, depending on their availability.
+            ${{ env.jobFooter }}
 
   createPullRequest:
     runs-on: windows-latest
@@ -169,10 +174,9 @@ jobs:
         validation/runvalidate "../${{ needs.getAddonId.outputs.addonFileName }}" ../transform/nvdaAPIVersions.json --output ../validationErrors.md
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v4
-      with:
-        issue-number: ${{ inputs.issueNumber }}
-        body-file: ./validationErrors.md
+      run: |
+        echo "${{ env.jobFooter }}" >> ./validationErrors.md
+        gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
     - name: Close pull request
       if: failure()
       env:
@@ -181,6 +185,7 @@ jobs:
       run: |
         if ("${{ steps.cpr.outputs.pullRequestNumber }}") {
           gh pr close "${{ steps.cpr.outputs.pullRequestNumber }}"
+          git push origin --delete ${{ env.branchName }}
         }
     - name: Close issue
       if: failure()
@@ -249,8 +254,9 @@ jobs:
           $body = @"
           VirusTotal has flagged this add-on as malicious.
           You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
-          Please contact the flagged security vendors to get them to review and unflag the false positive.
-          Please ask here or email info@nvaccess.org if you need assistance with this process.
+          NV Access will review the results of the analysis and consider if it is likely a false positive or higher risk.
+          It is encouraged to contact the flagged security vendors to get them to review and unflag the false positive.
+          Please ask here or email <info@nvaccess.org> if you need assistance with this process.
           "@
           gh issue comment "${{ inputs.issueNumber }}" --body $body
 
@@ -357,6 +363,59 @@ jobs:
     steps:
       - name: Confirm manual review passed
         run: echo "Passed manual review"
+
+  failsManualReview:
+    needs: [createPullRequest, requireSecurityManualApproval, requireSubmitterManualApproval]
+    if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Fetch Rejection Comment
+        uses: actions/github-script@v9
+        id: fetchRejectionComment
+        with:
+          script: |
+            // Fetch the review history for the current workflow run
+            const response = await github.rest.actions.getApprovedProcessorReviewedHistoriesForWorkflowRun({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId
+            });
+
+            // Filter out the rejection entry/entries.
+            const rejectionEvents = response.data.filter(
+              review => review.state === 'rejected'
+            );
+
+            const rejectionReasons = [];
+            const reviewers = [];
+            for (const event of rejectionEvents) {
+              const reason = event.comment || "No reason provided.";
+              const reviewer = event.user.login;
+              rejectionReasons.push(`- ${reason}`);
+              reviewers.push(reviewer);
+            }
+            core.setOutput('rejectionReasons', rejectionReasons.join('\n'));
+            core.setOutput('reviewers', reviewers.join(', '));
+
+      - name: Post manual review failure comment amd close PR and issue
+        run: |
+          gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
+          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"
+          gh branch delete ${{ env.branchName }} --remote --force
+          gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          body: |
+            The submission did not pass the manual review process.
+            Reason for the rejection:
+
+            ${{ steps.fetchRejectionComment.outputs.rejectionReasons }}
+
+            Reviewers: ${{ steps.fetchRejectionComment.outputs.reviewers }}
+            ${{ env.jobFooter }}
 
   createReviewComment:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
@@ -492,6 +551,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+      - name: Comment on issue confirming successful submission
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $body = @"
+          The add-on submission has passed validation and has been accepted.
+          It should be available in the Add-on Store in the next few hours.
+          Thank you for your contribution!
+          ${{ env.jobFooter }}
+          "@
+          gh issue comment "${{ inputs.issueNumber }}" --body $body
 
   call-workflow:
     needs: [mergeToMaster]

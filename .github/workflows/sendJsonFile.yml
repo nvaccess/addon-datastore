@@ -5,6 +5,9 @@ on:
     types:
       - labeled
 
+env:
+  jobFooter: "\n---\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+
 jobs:
   check-addon:
     permissions:
@@ -26,9 +29,9 @@ jobs:
           const setOutputFromIssue = require('./.github/workflows/getData.js')
           setOutputFromIssue({context, core})
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v8.2.0
     - name: Set up Python 3.13
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: 3.13
     - name: Create validation errors file
@@ -58,10 +61,9 @@ jobs:
         & .\validation\runcreatejson.bat @runCreateJsonArgs
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v4
-      with:
-        issue-number: ${{ github.event.issue.number }}
-        body-file: ./validationErrors.md
+      run: |
+        echo "${{ env.jobFooter }}" >> validationErrors.md
+        gh issue comment "${{ github.event.issue.number }}" --body-file validationErrors.md
     - name: Delete branch if it exists already
       continue-on-error: true
       env:
