@@ -44,7 +44,7 @@ jobs:
         licName: ${{ steps.get-data.outputs.licenseName }}
         licUrl: ${{ steps.get-data.outputs.licenseURL }}
       run: |
-        $args = @(
+        $runCreateJsonArgs = @(
           '-f', '..\addon.nvda-addon',
           '--dir', '..\addons',
           '--output', '..\validationErrors.md',
@@ -55,7 +55,7 @@ jobs:
           '--licName', $env:licName,
           '--licUrl', $env:licUrl
         )
-        & validation/runcreatejson @args
+        & .\validation\runcreatejson.bat @runCreateJsonArgs
     - name: Post validation errors as comment
       if: failure()
       uses: peter-evans/create-or-update-comment@v4
