@@ -12,9 +12,6 @@ on:
       issueAuthorName:
         required: true
         type: string
-      issueTitle:
-        required: true
-        type: string
     secrets:
       VT_API_KEY:
         required: true
@@ -149,7 +146,7 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       shell: pwsh
       run: |
-        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "${{ inputs.issueTitle }}" --body "Closes #${{ inputs.issueNumber }}"
+        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "Publish ${{ needs.getAddonId.outputs.addonFileName }}" --body "Closes #${{ inputs.issueNumber }}"
         $prNumber = ($prUrl.TrimEnd('/') -split '/')[-1]
         "pullRequestNumber=$prNumber" >> $env:GITHUB_OUTPUT
     - name: Create validation errors file
