@@ -1,0 +1,40 @@
+{
+	"addonId": "NotepadPlusPlus",
+	"displayName": "Notepad++ accessibility for Python and C/C++ development (32 and 64 bits)",
+	"URL": "https://github.com/FrancoisLB/nvda_addon_npp_python_cpp/releases/download/4.2/nvda_addon_npp_python_cpp.nvda-addon",
+	"sha256": "f36f6d5a6289958a5be11dcde6f16985fbdd418cb5771bf4b497d47d02cfacc2",
+	"addonVersionName": "4.2",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "FrancoisLB",
+	"sourceURL": "https://github.com/FrancoisLB/nvda_addon_npp_python_cpp",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781790488000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Notepad++ accessibility for Python and C/C++ development (32 and 64 bits)",
+			"description": "# Notepad++ NVDA AppModule — version 4.2 #\n\n## Overview ##\nThis NVDA app module improves accessibility of the Notepad++ editor for\nblind or visually impaired developers working in Python or C/C++.\nCompatible with Notepad++ 32-bit and 64-bit on Windows 10/11.\n\nAutomatic language detection: Python (.py), C/C++/Arduino (.c .cpp .h .hpp .ino).\n\n## Keyboard Shortcuts ##\n\n### Current line information ###\n- F4: announces current line number\n- Ctrl+F4: announces current line indentation level\n\n### Code structure navigation ###\n- NVDA+F7: navigation dialog (lists functions, classes and bookmarks)\n- F7: move to next class declaration (Python and C/C++)\n- Shift+F7: move to previous class declaration\n- F8: move to next function/method declaration (Python and C/C++)\n- Shift+F8: move to previous function/method declaration\n- F9: move to if __name__ == '__main__' block (Python only)\n\n### Bookmark management ###\n- Ctrl+F2: toggle a bookmark on the current line\n- F2: go to next bookmark (circular navigation)\n- Shift+F2: go to previous bookmark (circular navigation)\n\n### Navigation by indentation level ###\n- Alt+Down: move to next more-indented line\n- Alt+Up: move to next less-indented line\n- Ctrl+Alt+Down: move to next line with same indentation\n- Ctrl+Alt+Up: move to previous line with same indentation\n- Alt+Home: first line of current indentation level\n- Alt+End: last line of current indentation level\n\n### Block selection ###\n- Ctrl+Shift+R: select current class\n- Ctrl+R: select current function/method\n\n### Code execution ###\n- Ctrl+F5: execute Python code in a terminal\n"
+		},
+		{
+			"language": "fr",
+			"displayName": "Accessibilité Notepad++ pour le développement Python et C/C++ (32 et 64 bits)",
+			"description": "# Module NVDA pour Notepad++ — version 4.2 #\n\n## Vue d'ensemble ##\nCe module NVDA améliore l'accessibilité de l'éditeur Notepad++ pour les\ndéveloppeurs aveugles ou malvoyants travaillant en Python ou C/C++.\nCompatible avec Notepad++ 32 bits et 64 bits sous Windows 10/11.\n\nDétection automatique du langage : Python (.py), C/C++/Arduino (.c .cpp .h .hpp .ino).\n\n## Raccourcis clavier ##\n\n### Information sur la ligne courante ###\n- F4 : annonce le numéro de la ligne courante\n- Ctrl+F4 : annonce le niveau d'indentation de la ligne courante\n\n### Navigation par structure de code ###\n- NVDA+F7 : fenêtre de navigation (liste fonctions, classes et signets)\n- F7 : aller à la déclaration de classe suivante (Python et C/C++)\n- Maj+F7 : aller à la déclaration de classe précédente\n- F8 : aller à la déclaration de fonction/méthode suivante (Python et C/C++)\n- Maj+F8 : aller à la déclaration de fonction/méthode précédente\n- F9 : aller au bloc if __name__ == '__main__' (Python uniquement)\n\n### Gestion des signets ###\n- Ctrl+F2 : poser ou retirer un signet sur la ligne courante\n- F2 : aller au signet suivant (navigation circulaire)\n- Maj+F2 : aller au signet précédent (navigation circulaire)\n\n### Navigation par niveau d'indentation ###\n- Alt+Bas : ligne suivante plus indentée\n- Alt+Haut : ligne précédente moins indentée\n- Ctrl+Alt+Bas : prochaine ligne de même indentation\n- Ctrl+Alt+Haut : ligne précédente de même indentation\n- Alt+Début : première ligne du niveau d'indentation courant\n- Alt+Fin : dernière ligne du niveau d'indentation courant\n\n### Sélection de blocs ###\n- Ctrl+Maj+R : sélectionner la classe courante\n- Ctrl+R : sélectionner la fonction/méthode courante\n\n### Exécution du code ###\n- Ctrl+F5 : exécuter le code Python dans un terminal\n"
+		}
+	]
+}
