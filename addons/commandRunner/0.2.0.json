@@ -1,0 +1,38 @@
+{
+	"addonId": "commandRunner",
+	"displayName": "Command runner for NVDA input gesture dialog",
+	"URL": "https://github.com/Surveyor123/commandRunner/releases/download/v0.2.0/commandRunner-0.2.0.nvda-addon",
+	"description": "Adds \"Run\" buttons to NVDA's Input Gestures dialog, so you can try out the command currently selected in the tree right away, without closing the dialog or having to remember its assigned key combination.\n\tFour buttons are provided (Run 1x, 2x, 3x and 4x), each running the command that many times in a row. This makes it easy to run commands whose behaviour changes depending on how many times in a row they are pressed, such as reporting the time on the first press and the date on the second.\n\tWorks both with NVDA's own built-in commands and with commands added by other add-ons. While a command runs, the dialog is briefly hidden, with speech muted around the hide/show so NVDA's own focus announcements don't interrupt or get mixed up with whatever the command itself reports.",
+	"sha256": "ded3094b4a48fa9a73bfdf09704befcf217d30a073053f4c2a2e9230c0ea84e6",
+	"addonVersionName": "0.2.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/commandRunner",
+	"license": "GPL v2",
+	"changelog": "\nAdded: Buttons to run the selected command 2, 3 or 4 times in a row, to test commands that behave differently on repeated presses.\nAdded: The selected command can now be NVDA's own built-in commands (previously only commands added by add-ons could be run).\nFixed: Speech is now muted while the dialog is briefly hidden and shown again to run a command, so NVDA's focus announcements no longer interrupt or get cut off by the command's own speech.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781784867000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "NVDA girdi hareketleri iletişim kutusu için komut çalıştırıcı",
+			"description": "Adds \"Run\" buttons to NVDA's Input Gestures dialog, so you can try out the command currently selected in the tree right away, without closing the dialog or having to remember its assigned key combination.\n\tFour buttons are provided (Run 1x, 2x, 3x and 4x), each running the command that many times in a row. This makes it easy to run commands whose behaviour changes depending on how many times in a row they are pressed, such as reporting the time on the first press and the date on the second.\n\tWorks both with NVDA's own built-in commands and with commands added by other add-ons. While a command runs, the dialog is briefly hidden, with speech muted around the hide/show so NVDA's own focus announcements don't interrupt or get mixed up with whatever the command itself reports.",
+			"changelog": "\nEklendi: Tekrarlanan basışlarda farklı davranan komutları test etmek için seçilen komutu art arda 2, 3 veya 4 kez çalıştıran düğmeler.\nEklendi: Seçilen komut artık NVDA'nın kendi yerleşik komutları olabilir (önceden yalnızca eklentiler tarafından eklenen komutlar çalıştırılabiliyordu).\nDüzeltildi: İletişim kutusu kısa bir süreliğine gizlenip bir komutu çalıştırmak için tekrar gösterilirken artık konuşma sessize alınıyor, böylece NVDA'nın odak duyuruları artık komutun kendi konuşmasını kesintiye uğratmıyor\n"
+		}
+	]
+}
