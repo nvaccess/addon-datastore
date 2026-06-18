@@ -1,0 +1,37 @@
+{
+	"addonId": "virtualNotesForNVDA",
+	"displayName": "Virtual Notes For NVDA (creates virtual notes to be read by NVDA)",
+	"URL": "https://github.com/juliano-lopes/virtual-notes-for-NVDA/releases/download/v1.4.0/virtualNotesForNVDA-1.4.0.nvda-addon",
+	"description": "\nThis add-on (Virtual Notes for NVDA) creates virtual notes that can be read by NVDA screen reader. Notes are persistent and saved automatically to disk.\n\nFor more information, tutorials, and updates, visit:\n* Official Website: https://julianolopes.com.br/complemento-notas-virtuais-para-o-nvda\n* Demonstration Video on YouTube: https://www.youtube.com/watch?v=yKJqS4imKHg\n\nHere are the available shortcuts:  \n* NVDA + Alt + A: Add selected text to memory as a new note. If no text is selected, it opens a dialog for manual entry, where you can use buttons to:\n  * Create a new note.\n  * Replace the current note.\n  * Add the typed text to the beginning of the current note.\n  * Insert the typed text right after the current line of the active note.\n  * Add the typed text to the end of the current note.\n  * Rename a voice note (if the active note is an audio note).\n* NVDA + Alt + V: Add a new note directly from the clipboard.\n* NVDA + Shift + Alt + A: Insert selected text as a new line right after the current line in the active note.\n* NVDA + Alt + J: Go to the previous note.\n* NVDA + Alt + L: Go to the next note.\n* NVDA + Alt + U: Announce/play the current note.\n* NVDA + CONTROL + SHIFT + U: Paste the current note to the current application.\n* NVDA + Alt + S: Replace the note in the current position (you need to select some text first).\n* NVDA + Alt + D: Delete the note in the current position.\n* NVDA + Alt + G: Record a voice note (16-bit 44.1 kHz Mono). Press again to stop recording.\n* NVDA + Shift + Alt + U: Pause or resume recording or playback of the current voice note.\n\nIf the current note contains multiple lines (like text copied from a text editor), you can use these shortcuts:  \n* NVDA + Alt + I: Move to the previous line of the current note.\n* NVDA + Alt + K: Move to the next line of the current note.\n* NVDA + Alt + O: Announce the current line of the current note.\n* NVDA + CONTROL + SHIFT + O: Paste the current line in the note to the current application.\n\nNote: The key positions mimic the arrow keys (I = up, L = right, K = down, and J = left).  \nAfter using a shortcut, a specific sound will play to indicate the action performed.\n\n",
+	"sha256": "f671eac19781ea43b262c2559fb8bb589a3774a54de55533cd73053d27abcd34",
+	"addonVersionName": "1.4.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Juliano Lopes",
+	"sourceURL": "https://github.com/juliano-lopes/virtual-notes-for-NVDA/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/juliano-lopes/virtual-notes-for-NVDA",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1781760160000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Notas Virtuais para o NVDA (cria notas virtuais para serem lidas pelo NVDA)",
+			"description": "\nEste complemento, Notas Virtuais para o NVDA (Virtual Notes for NVDA) adiciona textos à memória do computador que você pode utilizar como notas virtuais para serem lidas pelo leitor de telas NVDA. As notas são persistentes e salvas automaticamente no disco.\n\nPara mais informações, tutoriais e novidades, acesse:\n* Site Oficial: https://julianolopes.com.br/complemento-notas-virtuais-para-o-nvda\n* Vídeo de demonstração no YouTube: https://www.youtube.com/watch?v=yKJqS4imKHg\n\nAqui estão os atalhos disponíveis:  \n* NVDA + Alt + A: Adicionar o texto selecionado como uma nova nota. Se nenhum texto estiver selecionado, abre uma caixa de diálogo para digitação manual, onde é possível usar os botões para:\n  * Criar uma nova nota.\n  * Substituir a nota atual.\n  * Adicionar o texto digitado ao início da nota atual.\n  * Inserir o texto digitado logo após a linha ativa da nota.\n  * Adicionar o texto digitado ao final da nota atual.\n  * Renomear uma nota de voz (se a nota ativa for de áudio).\n* NVDA + Alt + V: Adicionar uma nova nota diretamente da área de transferência.\n* NVDA + Shift + Alt + A: Inserir o texto selecionado como uma nova linha logo após a linha ativa na nota atual.\n* NVDA + Alt + J: Ir para a nota anterior.\n* NVDA + Alt + L: Ir para a próxima nota.\n* NVDA + Alt + U: Anunciar ou reproduzir a nota atual.\n* NVDA + CONTROL + SHIFT + U: Colar a nota corrente no aplicativo atual.\n* NVDA + Alt + S: Substituir a nota na posição atual (é preciso selecionar algum texto primeiro).\n* NVDA + Alt + D: Excluir a nota da posição atual.\n* NVDA + Alt + G: Gravar uma nota de voz (16 bits 44.1 kHz Mono). Pressione novamente para parar a gravação.\n* NVDA + Shift + Alt + U: Pausar ou retomar a gravação ou reprodução da nota de voz atual.\n\nSe a nota atual contiver várias linhas (como texto copiado de um editor de texto), use os seguintes atalhos: \n* NVDA + Alt + I: Mover para a linha anterior da nota atual.\n* NVDA + Alt + K: Mover para a próxima linha da nota atual.\n* NVDA + Alt + O: Anunciar a linha atual da nota atual.\n* NVDA + CONTROL + SHIFT + O: Colar a linha atual da nota no aplicativo atual.\n\nNota: As posições das teclas são similares às setas do teclado (I = para cima, L = para a direita, K = para baixo e J = para a esquerda).  \nDepois de usar um atalho, um som específico será reproduzido para indicar a ação realizada.\n\n"
+		}
+	]
+}
