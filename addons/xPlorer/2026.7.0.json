@@ -239,5 +239,47 @@
 			"displayName": "xPlorer",
 			"description": "透過先進的自動化和無縫導航工具提升您的檔案總管體驗。\n快速鍵：\nNVDA+Shift+X : 打開 xPlorer 快顯功能表\nNVDA+Shift+z\n單擊 : 朗讀大小\n雙擊 : 壓縮為 Zip\nNVDA+Shift+C\n單擊 : 複製選取的檔案和資料夾名稱\n雙擊 : 從網址列複製目前資料夾路徑\nNVDA+Shift+R\n單擊 : Robo Copy (複製)\n雙擊 : Robo Paste (貼上)\n三擊 : Robo Remove (移除)\nNVDA+Shift+V\n單擊 : 複製內容\n雙擊 : 反向選取\nNVDA+Shift+F2 : 僅重新命名檔案"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/cb7760c4f07020417ac7733787290ac45db70f7f9f4b0bf730d09c9a766bd83f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "cb7760c4f07020417ac7733787290ac45db70f7f9f4b0bf730d09c9a766bd83f",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001c1d1c0000",
+					"raw_md5": "b85d43cc340e5f1dea7c6d6f87ed4317"
+				},
+				"first_submission_date": 1782290964,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1782290965,
+				"last_submission_date": 1782290964,
+				"md5": "d3844435c0066844aad159eb93ad737d",
+				"names": [],
+				"reputation": 0,
+				"sha1": "0cf71b837c583a730ade2b09b3472c52d8937841",
+				"sha256": "cb7760c4f07020417ac7733787290ac45db70f7f9f4b0bf730d09c9a766bd83f",
+				"size": 505162,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
