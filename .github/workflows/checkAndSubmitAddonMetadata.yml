@@ -374,6 +374,7 @@ jobs:
     permissions:
       contents: write
       issues: write
+      pull-requests: write
     steps:
       - name: Fetch Rejection Comment
         uses: actions/github-script@v9
