@@ -1,4 +1,4 @@
-# Copyright (C) 2021-2025 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2021-2026 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import NonCallableMock, patch
 import os
 import json
+import tempfile
 from jsonschema import exceptions
 from _validate import validate, addonManifest
 
@@ -82,6 +83,60 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 			[
 				"Add-on download url must start with https://",
 				"Add-on download url must end with .nvda-addon",
+			],
+		)
+
+
+class Validate_downloadAndValidateAddon(unittest.TestCase):
+	def test_invalidUrlStopsBeforeDownload(self):
+		with patch("_validate.validate.downloadAddon") as mock_download:
+			errors = list(validate.downloadAndValidateAddon("http://example.com", "dest.nvda-addon"))
+
+		self.assertEqual(
+			errors,
+			[
+				"Add-on download url must start with https://",
+				"Add-on download url must end with .nvda-addon",
+			],
+		)
+		mock_download.assert_not_called()
+
+	def test_existingDestinationFileRemovedBeforeDownload(self):
+		with tempfile.TemporaryDirectory() as tempDir:
+			destPath = os.path.join(tempDir, "addon.nvda-addon")
+			with open(destPath, "wb") as f:
+				f.write(b"old-data")
+
+			with patch("_validate.validate.downloadAddon", return_value=[]) as mock_download:
+				errors = list(
+					validate.downloadAndValidateAddon(
+						"https://example.com/fake.nvda-addon",
+						destPath,
+					),
+				)
+
+		self.assertEqual(errors, [])
+		self.assertFalse(os.path.exists(destPath))
+		mock_download.assert_called_once_with(url="https://example.com/fake.nvda-addon", destPath=destPath)
+
+	def test_downloadErrorsPropagated(self):
+		with patch(
+			"_validate.validate.downloadAddon",
+			return_value=[
+				"Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404",
+			],
+		):
+			errors = list(
+				validate.downloadAndValidateAddon(
+					"https://example.com/fake.nvda-addon",
+					"addon.nvda-addon",
+				),
+			)
+
+		self.assertEqual(
+			errors,
+			[
+				"Unable to download from https://example.com/fake.nvda-addon, HTTP response status code: 404",
 			],
 		)
 
@@ -715,12 +770,9 @@ class Validate_End2End(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				"Download of addon failed",
-				"Fatal error, unable to continue: Unable to download from "
-				# note this the mocked urlopen function actually fetches from ADDON_PACKAGE
-				"https://github.com/"
-				"nvaccess/dont/use/this/address/fake.nvda-addon, "
-				"HTTP response status code: 404",
+				"Fatal error, unable to continue: Errors found when downloading and validating "
+				"the add-on: Unable to download from https://github.com/nvaccess/dont/use/this/address/"
+				"fake.nvda-addon, HTTP response status code: 404",
 			],
 		)
 

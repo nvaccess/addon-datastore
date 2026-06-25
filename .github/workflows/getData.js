@@ -1,9 +1,6 @@
 module.exports = ({context, core}) => {
 	// Allow identifying the issue later.
 	// setOutput exposes the variable for access at later stages via steps.get-data.outputs
-	//
-	const issueTitle = context.payload.issue.title
-	core.setOutput('issueTitle', issueTitle)
 	const issueNumber = context.payload.issue.number
 	core.setOutput('issueNumber', issueNumber)
 	// Knowing the submitter may be helpful
