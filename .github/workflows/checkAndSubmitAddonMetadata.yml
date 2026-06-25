@@ -237,17 +237,23 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue comment "${{ inputs.issueNumber }}" --body "VirusTotal is not configured for this repository.
-          Please approve the add-on submission manually or configure an API key."
+          cat <<'EOF' > vt-not-set-up-correctly.md
+          VirusTotal is not configured for this repository.
+          Please approve the add-on submission manually or configure an API key.
+          EOF
+          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-not-set-up-correctly.md
       - name: Warn if analysis fails
         if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue comment "${{ inputs.issueNumber }}" --body "VirusTotal has flagged this add-on as malicious.
+          cat <<'EOF' > vt-analysis-failed.md
+          VirusTotal has flagged this add-on as malicious.
           You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
           Please contact the flagged security vendors to get them to review and unflag the false positive.
-          Please ask here or email info@nvaccess.org if you need assistance with this process."
+          Please ask here or email info@nvaccess.org if you need assistance with this process.
+          EOF
+          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
