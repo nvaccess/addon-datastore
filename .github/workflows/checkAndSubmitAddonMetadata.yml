@@ -12,9 +12,6 @@ on:
       issueAuthorName:
         required: true
         type: string
-      issueTitle:
-        required: true
-        type: string
     secrets:
       VT_API_KEY:
         required: true
@@ -55,6 +52,17 @@ jobs:
             const url = "GET /repos/" + process.env.GITHUB_REPOSITORY + "/compare/master..." + "${{ env.branchName }}"
             const result = await github.request(url)
             return getAddonFilename(result.data.files)
+      - name: Handle error in get add-on file name
+        if: ${{ failure() && steps.getAddonFileName.outcome == 'failure' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if (Test-Path "./validationErrors.md") {
+            gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+            gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
+          } else {
+            gh issue comment "${{ inputs.issueNumber }}" --body "Submission validation failed unexpectedly. Please wait for a staff member to respond. This may take up to 2 weeks."
+          }
       - name: Determine add-on ID
         uses: actions/github-script@v7
         id: getAddonId
@@ -149,7 +157,7 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       shell: pwsh
       run: |
-        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "${{ inputs.issueTitle }}" --body "Closes #${{ inputs.issueNumber }}"
+        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "Publish ${{ needs.getAddonId.outputs.addonFileName }}" --body "Closes #${{ inputs.issueNumber }}"
         $prNumber = ($prUrl.TrimEnd('/') -split '/')[-1]
         "pullRequestNumber=$prNumber" >> $env:GITHUB_OUTPUT
     - name: Create validation errors file

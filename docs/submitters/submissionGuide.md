@@ -44,5 +44,11 @@ The add-on should soon become available in the store.
 
 ## Registering an add-on in the translation system
 
-Currently no working recommended system is available.
-Translations via Crowdin support is being added to [the Add-on Template](https://github.com/nvaccess/AddonTemplate) as a work in progress currently.
+The [NVDA Add-on Template](https://github.com/nvaccess/addonTemplate) includes built-in support for Crowdin-based translation workflows.
+
+Translation support covers both user interface translations (`.po` files) and documentation translations (`.xliff` files).
+
+Depending on your role, please refer to the appropriate documentation:
+
+* [Translation guide for add-on authors](https://github.com/nvaccess/AddonTemplate/blob/master/docs/l10n/addonAuthors.md): explains how to synchronize translations between the add-on and Crowdin.
+* [Translation guide for translators](https://github.com/nvaccess/AddonTemplate/blob/master/docs/l10n/addonTranslators.md): Explains how to contribute translations through Crowdin.
