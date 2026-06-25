@@ -64,6 +64,7 @@ jobs:
       run: |
         echo "${{ env.jobFooter }}" >> validationErrors.md
         gh issue comment "${{ github.event.issue.number }}" --body-file validationErrors.md
+        gh issue close "${{ github.event.issue.number }}"
     - name: Delete branch if it exists already
       continue-on-error: true
       env:
