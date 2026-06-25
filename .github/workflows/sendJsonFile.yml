@@ -61,6 +61,8 @@ jobs:
         & .\validation\runcreatejson.bat @runCreateJsonArgs
     - name: Post validation errors as comment
       if: failure()
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "${{ env.jobFooter }}" >> validationErrors.md
         gh issue comment "${{ github.event.issue.number }}" --body-file validationErrors.md

@@ -131,6 +131,7 @@ jobs:
         run: |
             gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
         env:
+          GH_TOKEN: ${{ github.token }}
           body: |
             Welcome to the Add-on Store submission process.
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
@@ -177,6 +178,8 @@ jobs:
       run: |
         echo "${{ env.jobFooter }}" >> ./validationErrors.md
         gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
+      env:
+        GH_TOKEN: ${{ github.token }}
     - name: Close pull request
       if: failure()
       env:
@@ -400,7 +403,7 @@ jobs:
             core.setOutput('rejectionReasons', rejectionReasons.join('\n'));
             core.setOutput('reviewers', reviewers.join(', '));
 
-      - name: Post manual review failure comment amd close PR and issue
+      - name: Post manual review failure comment and close PR and issue
         run: |
           gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
           gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"

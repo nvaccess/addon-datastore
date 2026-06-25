@@ -113,9 +113,11 @@ def checkSha256(addonPath: str, expectedSha: str) -> ValidationErrorGenerator:
 	with open(addonPath, "rb") as f:
 		sha256Addon = sha256_checksum(f)
 	if sha256Addon.upper() != expectedSha.upper():
-		yield f"""Sha256 of the downloaded add-on from the download URL is: {sha256Addon}, expected: {expectedSha}.
-		This means the file downloaded from the provided URL does not match the original file.
-		The add-on downloaded from the provided URL must not be modified, it should always match the original file."""
+		yield (
+			f"Sha256 of the downloaded add-on from the download URL is: {sha256Addon}, expected: {expectedSha}.\n"
+			"This means the file downloaded from the provided URL does not match the original file.\n"
+			"The add-on downloaded from the provided URL must not be modified, it should always match the original file."
+		)
 
 
 def checkSummaryMatchesDisplayName(manifest: AddonManifest, submission: JsonObjT) -> ValidationErrorGenerator:
@@ -289,32 +291,40 @@ def checkLastTestedVersionExist(submission: JsonObjT, verFilename: str) -> Valid
 	lastTestedVersion: dict[str, int] = submission["lastTestedVersion"]
 	formattedLastTestedVersion: str = _formatVersionString(cast(ApiVersionT, lastTestedVersion.values()))
 	if formattedLastTestedVersion not in getExistingVersions(verFilename):
-		yield f"Last tested version error: {formattedLastTestedVersion} doesn't exist. "
-		"Please update the minimum required NVDA version to a valid version. "
-		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		yield (
+			f"Last tested version error: {formattedLastTestedVersion} doesn't exist. "
+			"Please update the last tested NVDA version to a valid version. "
+			"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		)
 
 	elif submission["channel"] == "stable" and formattedLastTestedVersion not in getExistingStableVersions(
 		verFilename,
 	):
-		yield f"Last tested version error: {formattedLastTestedVersion} is not stable yet. "
-		"Please submit add-on using the beta or dev channel until the RC version is released. "
-		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		yield (
+			f"Last tested version error: {formattedLastTestedVersion} is not stable yet. "
+			"Please submit add-on using the beta or dev channel until the RC version is released. "
+			"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		)
 
 
 def checkMinRequiredVersionExist(submission: JsonObjT, verFilename: str) -> ValidationErrorGenerator:
 	minRequiredVersion: dict[str, int] = submission["minNVDAVersion"]
 	formattedMinRequiredVersion: str = _formatVersionString(cast(ApiVersionT, minRequiredVersion.values()))
 	if formattedMinRequiredVersion not in getExistingVersions(verFilename):
-		yield f"Minimum required version error: {formattedMinRequiredVersion} doesn't exist. "
-		"Please update the minimum required NVDA version to a valid version. "
-		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		yield (
+			f"Minimum required version error: {formattedMinRequiredVersion} doesn't exist. "
+			"Please update the minimum required NVDA version to a valid version. "
+			"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		)
 
 	elif submission["channel"] == "stable" and formattedMinRequiredVersion not in getExistingStableVersions(
 		verFilename,
 	):
-		yield f"Minimum required version error: {formattedMinRequiredVersion} is not stable yet, it is either in beta or alpha. "
-		"Please submit add-on using the beta or dev channel until the RC version is released. "
-		"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		yield (
+			f"Minimum required version error: {formattedMinRequiredVersion} is not stable yet, it is either in beta or alpha. "
+			"Please submit add-on using the beta or dev channel until the RC version is released. "
+			"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+		)
 
 
 def checkVersions(
