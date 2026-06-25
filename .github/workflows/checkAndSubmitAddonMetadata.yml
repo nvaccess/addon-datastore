@@ -559,14 +559,13 @@ jobs:
       - name: Comment on issue confirming successful submission
         env:
           GH_TOKEN: ${{ github.token }}
+          body: |
+            The add-on submission has passed validation and has been accepted.
+            It should be available in the Add-on Store in the next few hours.
+            Thank you for your contribution!
+            ${{ env.jobFooter }}
         run: |
-          $body = @"
-          The add-on submission has passed validation and has been accepted.
-          It should be available in the Add-on Store in the next few hours.
-          Thank you for your contribution!
-          ${{ env.jobFooter }}
-          "@
-          gh issue comment "${{ inputs.issueNumber }}" --body $body
+          gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
 
   call-workflow:
     needs: [mergeToMaster]
