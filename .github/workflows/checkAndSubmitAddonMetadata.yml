@@ -24,7 +24,7 @@ env:
 
 jobs:
   getAddonId:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -41,7 +41,7 @@ jobs:
         with:
           ref: ${{ env.branchName }}
       - name: Determine add-on file name
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         id: getAddonFileName
         env:
           issueAuthorName: ${{ inputs.issueAuthorName }}
@@ -58,17 +58,17 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if (Test-Path "./validationErrors.md") {
+          if [ -f ./validationErrors.md ]; then
             echo "${{ env.jobFooter }}" >> ./validationErrors.md
             gh issue comment "${{ inputs.issueNumber }}" --body-file ./validationErrors.md
             gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
-          } else {
+          else
             echo "Submission validation failed unexpectedly. Please wait for a staff member to respond. This may take up to 2 weeks." >> message.txt
             echo "${{ env.jobFooter }}" >> message.txt
             gh issue comment "${{ inputs.issueNumber }}" --body-file ./message.txt
-          }
+          fi
       - name: Determine add-on ID
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         id: getAddonId
         with:
           result-encoding: string
@@ -77,7 +77,7 @@ jobs:
             const addonIdRegex = RegExp("addons/(.*)/.*\.json")
             return addonIdRegex.exec(addonFileName)[1]
       - name: Parse spaces and special characters from addonID for branch names
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         id: getAddonIdParsed
         with:
           result-encoding: string
@@ -85,7 +85,7 @@ jobs:
             const addonId = "${{ steps.getAddonId.outputs.result }}"
             return addonId.replace(/[^a-zA-Z0-9]/g, "")
       - name: Upload add-on
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: addonMetadata
           path: ${{ steps.getAddonFileName.outputs.result }}
@@ -141,7 +141,7 @@ jobs:
             ${{ env.jobFooter }}
 
   createPullRequest:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: [getAddonId]
     strategy:
       matrix:
@@ -161,18 +161,18 @@ jobs:
       id: cpr
       env:
         GH_TOKEN: ${{ github.token }}
-      shell: pwsh
       run: |
-        $prUrl = gh pr create --base master --head "${{ env.branchName }}" --title "Publish ${{ needs.getAddonId.outputs.addonFileName }}" --body "Closes #${{ inputs.issueNumber }}"
-        $prNumber = ($prUrl.TrimEnd('/') -split '/')[-1]
-        "pullRequestNumber=$prNumber" >> $env:GITHUB_OUTPUT
+        prUrl=$(gh pr create --base master --head "${{ env.branchName }}" --title "Publish ${{ needs.getAddonId.outputs.addonFileName }}" --body "Closes #${{ inputs.issueNumber }}")
+        prNumber="${prUrl%/}"
+        prNumber="${prNumber##*/}"
+        echo "pullRequestNumber=$prNumber" >> "$GITHUB_OUTPUT"
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v6
+      uses: astral-sh/setup-uv@v8.2.0
     - name: Validate metadata
       run: |
-        validation/runvalidate "../${{ needs.getAddonId.outputs.addonFileName }}" ../transform/nvdaAPIVersions.json --output ../validationErrors.md
+        uv run --directory validation python -m _validate.validate "../${{ needs.getAddonId.outputs.addonFileName }}" ../transform/nvdaAPIVersions.json --output ../validationErrors.md
     - name: Post validation errors as comment
       if: failure()
       run: |
@@ -184,12 +184,11 @@ jobs:
       if: failure()
       env:
         GH_TOKEN: ${{ github.token }}
-      shell: pwsh
       run: |
-        if ("${{ steps.cpr.outputs.pullRequestNumber }}") {
+        if [ -n "${{ steps.cpr.outputs.pullRequestNumber }}" ]; then
           gh pr close "${{ steps.cpr.outputs.pullRequestNumber }}"
           git push origin --delete ${{ env.branchName }}
-        }
+        fi
     - name: Close issue
       if: failure()
       env:
@@ -199,7 +198,7 @@ jobs:
 
   virusTotal-analysis:
     needs: [getAddonId, createPullRequest]
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: [ 3.13 ]
@@ -225,14 +224,18 @@ jobs:
         with:
           ref: ${{ env.branchName }}
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
       - name: Install npm dependencies
         run: npm install uuid
       - name: Install virusTotal
-        run: choco install vt-cli
+        run: |
+          curl -fsSL -o vt-cli.zip https://github.com/VirusTotal/vt-cli/releases/latest/download/Linux64.zip
+          unzip -q vt-cli.zip
+          chmod +x vt
+          sudo mv vt /usr/local/bin/vt
       - name: Set Virus Total analysis status
         id: setVirusTotalAnalysisStatus
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const setVirusTotalAnalysisStatus = require('./.github/workflows/virusTotalAnalysis.js')
@@ -241,27 +244,25 @@ jobs:
         if: ${{ failure() && steps.checkVTKey.outcome == 'failure' }}
         env:
           GH_TOKEN: ${{ github.token }}
-        shell: pwsh
         run: |
-          $body = @"
+          cat <<'EOF' > vt-not-set-up-correctly.md
           VirusTotal is not configured for this repository.
           Please approve the add-on submission manually or configure an API key.
-          "@
-          gh issue comment "${{ inputs.issueNumber }}" --body $body
+          EOF
+          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-not-set-up-correctly.md
       - name: Warn if analysis fails
         if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
         env:
           GH_TOKEN: ${{ github.token }}
-        shell: pwsh
         run: |
-          $body = @"
+          cat <<'EOF' > vt-analysis-failed.md
           VirusTotal has flagged this add-on as malicious.
           You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
           NV Access will review the results of the analysis and consider if it is likely a false positive or higher risk.
           It is encouraged to contact the flagged security vendors to get them to review and unflag the false positive.
           Please ask here or email <info@nvaccess.org> if you need assistance with this process.
-          "@
-          gh issue comment "${{ inputs.issueNumber }}" --body $body
+          EOF
+          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
@@ -278,7 +279,7 @@ jobs:
         run: |
           git pull --rebase origin ${{ env.branchName }}
       - name: Write vtResultsJSON to file to prevent line length syntax issues
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           vtResultsJSON: ${{ needs.virusTotal-analysis.outputs.vtResultsJSON }}
         with:
@@ -449,7 +450,7 @@ jobs:
         git merge origin/master --no-edit
     - name: Get add-on name and version
       id: getAddonNameAndVersion
-      uses: actions/github-script@v7
+      uses: actions/github-script@v9
       with:
         script: |
           const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
