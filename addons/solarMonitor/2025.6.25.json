@@ -1,0 +1,45 @@
+{
+	"addonId": "solarMonitor",
+	"displayName": "Solar Monitor",
+	"URL": "https://github.com/R1BQE/solarMonitor/releases/download/2025.6.25/solarMonitor-2025.6.25.nvda-addon",
+	"description": "Solar activity monitor for radio amateurs. Provides quick access to solar indices (SFI, K-index, X-ray, solar wind and more), HF band propagation conditions for 80-10 meters, and VHF propagation via a virtual keyboard interface designed for screen readers. No visual elements. Data from hamqsl.com.",
+	"sha256": "872a731dc84d7bd7eef79fe964744138057365b23844acb9bb16518233e22e68",
+	"addonVersionName": "2025.6.25",
+	"addonVersionNumber": {
+		"major": 2025,
+		"minor": 6,
+		"patch": 25
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 3
+	},
+	"channel": "stable",
+	"publisher": "R1BQE",
+	"sourceURL": "https://github.com/r1bqe/solarMonitor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/R1BQE/solarMonitor",
+	"changelog": "Initial release. Virtual interface with three pages: solar indices, HF band conditions, VHF conditions. Navigation with arrow keys, context descriptions on D key. English and Russian interface.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782381617000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "Solar Monitor",
+			"description": "Solar activity monitor for radio amateurs. Provides quick access to solar indices (SFI, K-index, X-ray, solar wind and more), HF band propagation conditions for 80-10 meters, and VHF propagation via a virtual keyboard interface designed for screen readers. No visual elements. Data from hamqsl.com.",
+			"changelog": "Initial release. Virtual interface with three pages: solar indices, HF band conditions, VHF conditions. Navigation with arrow keys, context descriptions on D key. English and Russian interface."
+		},
+		{
+			"language": "ru",
+			"displayName": "Монитор солнечной активности",
+			"description": "Монитор солнечной активности для радиолюбителей. Обеспечивает быстрый доступ к солнечным индексам (SFI, K-индекс, рентген, солнечный ветер и др.), условиям прохождения на КВ для диапазонов 80-10 метров, и УКВ условиям через виртуальный клавиатурный интерфейс для скринридеров. Без визуальных элементов. Данные с hamqsl.com.",
+			"changelog": "Первый выпуск. Виртуальный интерфейс с тремя страницами: солнечные индексы, прохождение на КВ, УКВ условия. Навигация стрелками, контекстные описания по клавише D. Интерфейс на английском и русском языках."
+		}
+	]
+}
