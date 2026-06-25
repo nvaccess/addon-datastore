@@ -431,6 +431,7 @@ jobs:
         jq -e --tab "$jqReviewCode" $addonFilename.old.json > $addonFilename
         jqReviewExitCode=$?
         rm $addonFilename.old.json
+        exit $jqReviewExitCode
     - name: Commit and push
       run: |
         git add .
