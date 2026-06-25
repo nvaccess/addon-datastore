@@ -1,4 +1,4 @@
-# Copyright (C) 2022-2025 Noelia Ruiz Martínez, NV Access Limited
+# Copyright (C) 2022-2026 Noelia Ruiz Martínez, NV Access Limited
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ from .addonManifest import AddonManifest, ApiVersionT
 from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
 from .majorMinorPatch import MajorMinorPatch
 from .sha256 import sha256_checksum
-from .validate import parseConfigValue
+from .validate import downloadAndValidateAddon, outputErrors, parseConfigValue
 
 
 @dataclasses.dataclass
@@ -170,7 +170,7 @@ def main():
 	parser.add_argument(
 		"-f",
 		dest="file",
-		help="The add-on (nvda-addon) file to create json from manifest.",
+		help="The add-on (nvda-addon) file to download to.",
 		required=True,
 	)
 	parser.add_argument(
@@ -222,8 +222,22 @@ def main():
 		default=None,
 		required=False,
 	)
+	parser.add_argument(
+		"--dry-run",
+		dest="dryRun",
+		help="Whether to run the script without actually downloading the addon, instead using a local file.",
+		action="store_true",
+		default=False,
+		required=False,
+	)
 	args = parser.parse_args()
 	errorFilePath: str | None = args.errorOutputFile
+
+	if not args.dryRun:
+		errors = list(downloadAndValidateAddon(args.url, args.file))
+		if errors:
+			outputErrors(args.file, errors, errorFilePath)
+			raise ValueError("Unable to download and validate the add-on.")
 
 	try:
 		manifest = getAddonManifest(args.file)
