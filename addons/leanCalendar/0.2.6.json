@@ -35,5 +35,47 @@
 			"description": "读出农历日期、节气、公历日期和时间详情，并提供可交互的万年历查询对话框。",
 			"changelog": "### 0.2.6\n\n* 修复详细农历播报，在当前节气为气时也会读出当前节气，避免跳过附近节气。\n* 多日节气倒计时增加分钟显示，剩余时间更精确。\n* 改进播报可读性，按语义行组织 F11 和详细 F12 输出，并保留换行前的标点。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/592177a7bdf6622fcac96f6ccf0595fa3103f190b0f3a539171003fdac142317",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "592177a7bdf6622fcac96f6ccf0595fa3103f190b0f3a539171003fdac142317",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001c0d0e0800",
+					"raw_md5": "2933e64930eb374f2930a9c57dff7c49"
+				},
+				"first_submission_date": 1782512872,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1782512873,
+				"last_submission_date": 1782512872,
+				"md5": "91db410dd50ebc015694b6c8d64c8463",
+				"names": [],
+				"reputation": 0,
+				"sha1": "76f6e05744486f5123b516ee276f1700b9afcdf1",
+				"sha256": "592177a7bdf6622fcac96f6ccf0595fa3103f190b0f3a539171003fdac142317",
+				"size": 142359,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
