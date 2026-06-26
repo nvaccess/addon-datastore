@@ -1,0 +1,44 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/0.9.7/polyglot-0.9.7.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "769772fb80112a1b9c0afa2a04d3f26e419005f8943c3ba7e95a0e67e3817ea7",
+	"addonVersionName": "0.9.7",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GPL v2",
+	"changelog": "### 0.9.7\n\n- Improved smart speech filtering to better preserve user content while avoiding auto-translation of NVDA speech metadata.\n- Simplified internal code by removing unused abstractions and redundant wrappers.\n- Added Vietnamese localization.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782511719000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 0.9.7\n\n- Improved smart speech filtering to better preserve user content while avoiding auto-translation of NVDA speech metadata.\n- Simplified internal code by removing unused abstractions and redundant wrappers.\n- Added Vietnamese localization."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 0.9.7\n\n- Improved smart speech filtering to better preserve user content while avoiding auto-translation of NVDA speech metadata.\n- Simplified internal code by removing unused abstractions and redundant wrappers.\n- Added Vietnamese localization."
+		}
+	]
+}
