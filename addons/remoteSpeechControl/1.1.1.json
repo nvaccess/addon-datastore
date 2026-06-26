@@ -1,0 +1,30 @@
+{
+	"addonId": "remoteSpeechControl",
+	"displayName": "Remote Speech Control",
+	"URL": "https://github.com/Ednunp/remoteSpeechControl/releases/download/v1.1.1/remoteSpeechControl-1.1.1.nvda-addon",
+	"description": "Three related features for NVDA Remote sessions. (1) Mutes local NVDA speech on a controlled machine while a remote keyboard is driving it; speech resumes the instant a real local keypress is detected. Both ends must have the same shared password configured, and the controlled user is prompted to consent unless they have pre-authorised it. (2) Optionally keeps the synth settings ring (rate, pitch, volume etc.) on the controller's local NVDA when in remote control mode, instead of forwarding those keys to the remote. (3) Optionally announces your own machine's battery status when you press NVDA's report-battery hotkey while controlling another machine, instead of the remote answering.",
+	"sha256": "664536a878cc22eaabdcf4dab2bebd73e1b54b54f650012d2c4029b4862d0874",
+	"addonVersionName": "1.1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ed",
+	"sourceURL": "https://github.com/Ednunp/remoteSpeechControl",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782491323000,
+	"translations": []
+}
