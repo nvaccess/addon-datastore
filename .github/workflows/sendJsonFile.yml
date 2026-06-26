@@ -5,6 +5,9 @@ on:
     types:
       - labeled
 
+env:
+  jobFooter: "\n---\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+
 jobs:
   check-addon:
     permissions:
@@ -56,10 +59,12 @@ jobs:
           --licUrl "$licUrl"
     - name: Post validation errors as comment
       if: failure()
-      uses: peter-evans/create-or-update-comment@v5
-      with:
-        issue-number: ${{ github.event.issue.number }}
-        body-file: ./validationErrors.md
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "${{ env.jobFooter }}" >> validationErrors.md
+        gh issue comment "${{ github.event.issue.number }}" --body-file validationErrors.md
+        gh issue close "${{ github.event.issue.number }}"
     - name: Delete branch if it exists already
       continue-on-error: true
       env:
