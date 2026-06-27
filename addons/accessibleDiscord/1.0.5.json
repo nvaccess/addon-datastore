@@ -41,5 +41,47 @@
 			"description": "Un module pour NVDA conçu pour aider les utilisateurs aveugles et malvoyants à suivre Discord en toute simplicité. Il annonce automatiquement les événements des salons vocaux (connexions, déconnexions, muet, sourdine) et les messages textuels en arrière-plan ou au premier plan. Nécessite l'installation de BetterDiscord pour fonctionner.",
 			"changelog": "Nouveautés de la version 1.0.1 :\n- Refactorisation du code du module en une structure plate directement dans globalPlugins pour de meilleures performances.\n- Ajout de l'annonce vocale lorsque les membres d'un salon vocal commencent ou arrêtent de diffuser (y compris le nom du jeu s'il est reconnu par Discord).\n- Ajout de notifications vocales lorsque des membres rejoignent ou quittent votre propre diffusion.\n- Ajout d'une catégorie dédiée Accessible Discord dans la boîte de dialogue des paramètres de NVDA pour configurer facilement toutes les préférences avec un bouton pour télécharger/réinstaller le compagnon BetterDiscord.\n- Prise en charge complète de la localisation pour l'arabe et le français.\n- Correction d'un bug où la diffusion de fenêtres d'applications générales ou de Chrome annonçait faussement des jeux en arrière-plan."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/35af7e1955de58cb829008ff36b5a1e611f333e51c25adcfe8fc1aef66bdfda6",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "35af7e1955de58cb829008ff36b5a1e611f333e51c25adcfe8fc1aef66bdfda6",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "30383c3c1d180000",
+					"raw_md5": "15892e49097b6e4b6c18cb29d7cc53c8"
+				},
+				"first_submission_date": 1782552157,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1782552159,
+				"last_submission_date": 1782552157,
+				"md5": "d70fcb3b2e671edacbeb56f1871241bd",
+				"names": [],
+				"reputation": 0,
+				"sha1": "275ee9155adf9c512045536f7ff84317bf32ef1c",
+				"sha256": "35af7e1955de58cb829008ff36b5a1e611f333e51c25adcfe8fc1aef66bdfda6",
+				"size": 27837,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
