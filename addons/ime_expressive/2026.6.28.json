@@ -1,0 +1,39 @@
+{
+	"addonId": "ime_expressive",
+	"displayName": "Chinese input method support for NVDA",
+	"URL": "https://github.com/nvdacn/ime_expressive/releases/download/2026.6.28/ime_expressive-2026.6.28.nvda-addon",
+	"description": "This add-on provides Chinese input method support for the NVDA screen reader.\nIt enhances the Chinese input experience in terms of input habits and efficiency for NVDA users.",
+	"sha256": "90a052f410d4df9fbbcd6dd6d8422262a5c3af00cc403b525f6ed68144820c0a",
+	"addonVersionName": "2026.6.28",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 6,
+		"patch": 28
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cary-rowen <manchen_0528@outlook.com>, Chenfu <394434124@qq.com>, hwf1324 <1398969445@qq.com>",
+	"sourceURL": "https://github.com/nvdacn/ime_expressive",
+	"license": "GPL v2",
+	"homepage": "https://www.nvdacn.com",
+	"changelog": "### 2026.6.28\n\n* Improved reliability when selecting IME candidates with number keys.\n* Fixed some missed or delayed speech in fast IME input scenarios.\n* Reduced unnecessary debug log noise during normal typing.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782659323000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "中文输入法支持",
+			"description": "该插件为 NVDA 屏幕阅读器提供中文输入法朗读支持。\n从输入习惯和效率方面增强了 NVDA 用户的中文输入体验。",
+			"changelog": "### 2026.6.28\n\n* 改进使用数字键选择输入法候选项时的可靠性。\n* 修复快速输入时可能漏读或延迟朗读的问题。\n* 减少正常输入时不必要的调试日志。"
+		}
+	]
+}
