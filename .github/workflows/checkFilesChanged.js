@@ -11,7 +11,7 @@ function getAddonFileName(changedFiles) {
 				throw "Multiple add-on files updated."
 			}
 			if (fileData.status != "added") {
-				errMsg = "This is a modification of a previously submitted add-on version. Please submit a new add-on version instead of modifying an existing one."
+				errMsg = "This is a resubmission of a previously submitted add-on version. This add-on version is already available in the Add-on Store. Please submit a new add-on version instead of modifying an existing one."
 				// Ensure an error message is passed on to the user when this happens.
 				fs.writeFileSync("./validationErrors.md", errMsg)
 				throw errMsg
