@@ -1,0 +1,48 @@
+{
+	"addonId": "nvdaMacroManager",
+	"displayName": "NVDA Macro Manager",
+	"URL": "https://github.com/m-enes-senovali/nvdaMacroManager/releases/download/v1.2.3/nvdaMacroManager-1.2.3.nvda-addon",
+	"description": "A high-performance, OS-level macro recording, editing, and playback engine.\nFeatures include Stealth Mode recording, multi-event IDE, custom shortcuts, and dynamic speed multipliers.",
+	"sha256": "649a033ee7f3b98ceba2895a72cb78009614bf75e666bf98322d9668d9519db6",
+	"addonVersionName": "1.2.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammet Enes Şenovalı",
+	"sourceURL": "https://github.com/m-enes-senovali/nvdaMacroManager",
+	"license": "GPL v2",
+	"homepage": "https://github.com/m-enes-senovali/nvdaMacroManager",
+	"changelog": "Added Clipboard Sharing feature to copy/import macros as Base64/Zlib text.\nFixed a critical bug where modifier keys (like Ctrl) could get stuck after macro playback.\nMigrated to the official NVDA AddonTemplate structure.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782725268000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "NVDA Macro Manager",
+			"description": "A high-performance, OS-level macro recording, editing, and playback engine.\nFeatures include Stealth Mode recording, multi-event IDE, custom shortcuts, and dynamic speed multipliers."
+		},
+		{
+			"language": "de",
+			"displayName": "NVDA Macro Manager",
+			"description": "A high-performance, OS-level macro recording, editing, and playback engine.\nFeatures include Stealth Mode recording, multi-event IDE, custom shortcuts, and dynamic speed multipliers."
+		},
+		{
+			"language": "es",
+			"displayName": "NVDA Macro Manager",
+			"description": "A high-performance, OS-level macro recording, editing, and playback engine.\nFeatures include Stealth Mode recording, multi-event IDE, custom shortcuts, and dynamic speed multipliers."
+		}
+	]
+}
