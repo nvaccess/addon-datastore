@@ -1,0 +1,38 @@
+{
+	"addonId": "navSounds",
+	"displayName": "Navigation Sound Effects",
+	"URL": "https://github.com/ahmedthebest31/navsounds/releases/download/v2.2.0/navSounds_2.2.0.nvda-addon",
+	"description": "NVDA add-on providing navigation and typing sound effects with customizable sound packs, browse mode support, and mouse hover feedback.",
+	"sha256": "a3403dff570626307e04ab4f2372f2d56c30a5df023b672a3c6e6d2ef7408f13",
+	"addonVersionName": "2.2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ahmed Samy",
+	"sourceURL": "https://github.com/ahmedthebest31/navsounds",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ahmedthebest31/navsounds/",
+	"changelog": "### Stability & Hardening\n* **Speech Crash Prevention**: Wrapped monkey-patching of getPropertiesSpeech in try/except to prevent addon conflicts from crashing NVDA.\n* **Safe Property Speech**: Fixed get_property2_speech to copy states instead of mutating in-place, with try/except guard.\n* **Graceful Failure**: All monkey-patch calls (browser interceptor, speech) now fail gracefully without disrupting NVDA.\n\n### Project Cleanup\n* **Dead Files Removed**: Deleted stale localizations.json and localizations.txt.\n* **Translation Fix**: Fixed hardcoded absolute paths in messages.pot to relative paths.\n* **Documentation**: Fixed broken markdown links in README and docs.\n* **Build Pipeline**: Added GitHub Actions workflow for automated builds and releases.\n* **Gitignore**: Added comprehensive .gitignore for build artifacts and cache files.\n\n### Settings & UI\n* **Conditional Visibility**: Typing sub-options now show/hide dynamically based on the keyboard typing sound toggle.\n* **Arrow Key Navigation**: Added play navigation sounds during arrow key navigation checkbox (enabled by default). When unchecked, sounds are suppressed during arrow key navigation.\n* **Clearer Labels**: Renamed say roles to say element roles and say states to say element states.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1782692250000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "أصوات التنقل",
+			"description": "تشغيل أصوات عند الحركة"
+		}
+	]
+}
