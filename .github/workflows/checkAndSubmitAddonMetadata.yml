@@ -236,6 +236,7 @@ jobs:
           cat <<'EOF' > vt-not-set-up-correctly.md
           VirusTotal is not configured for this repository.
           Please approve the add-on submission manually or configure an API key.
+          ${{ env.jobFooter }}
           EOF
           gh issue comment "${{ inputs.issueNumber }}" --body-file vt-not-set-up-correctly.md
       - name: Warn if analysis fails
@@ -249,6 +250,7 @@ jobs:
           NV Access will review the results of the analysis and consider if it is likely a false positive or higher risk.
           It is encouraged to contact the flagged security vendors to get them to review and unflag the false positive.
           Please ask here or email <info@nvaccess.org> if you need assistance with this process.
+          ${{ env.jobFooter }}
           EOF
           gh issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
 
@@ -515,7 +517,7 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
-        gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+        gh pr merge --auto --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:
         GH_TOKEN: ${{ github.token }}
