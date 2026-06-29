@@ -517,7 +517,7 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
-        gh pr merge --auto --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
+        gh pr merge --admin --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:
         GH_TOKEN: ${{ github.token }}
