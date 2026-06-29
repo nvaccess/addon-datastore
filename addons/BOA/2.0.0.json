@@ -173,5 +173,692 @@
 			"description": "மைக்ரோசாஃப்ட் ஆஃபீஸிற்கான சக்திவாய்ந்த அணுகல்தன்மை மேம்பாடுகளின் தொகுப்பு, NVDA பயனர்களுக்கான ஸ்கிரீன் ரீடர் அனுபவத்தை கணிசமாக மேம்படுத்த வடிவமைக்கப்பட்டுள்ளது. \n    \n    முக்கிய அம்சங்கள்:\n    - கலக் கண்காணிப்பி (Cell Monitor): டைனமிக் Excel கலங்களைச் சேமித்து தொடர்ந்து கண்காணிக்கவும்.\n    - தாள் லேஅவுட் அனலைசர் (Sheet Layout Analyzer): மறைக்கப்பட்ட தாவல்கள், பாதுகாக்கப்பட்ட நிலைகள் மற்றும் தரவு தொகுதிகளுக்கு பணித்தாள்களை உடனடியாக ஸ்கேன் செய்யவும்.\n    - Bulk Sheet Organizer & Quick Mover: அணுகக்கூடிய உரையாடல்களைப் பயன்படுத்தி பல தாள்களை உடனடியாக நகர்த்தவும் அல்லது மறுவரிசைப்படுத்தவும்.\n    - PowerPoint Color Pickers: நிலையான வண்ண கட்டங்களுக்குள் (standard color grids) மறைக்கப்பட்ட Hex மற்றும் RGB குறியீடுகளைப் படிக்கவும்.\n    \n    அம்சங்கள் மற்றும் குறுக்குவழிகளின் முழுமையான பட்டியலுக்கு ஆட்-ஆன் உதவி ஆவணத்தைப் பார்க்கவும்.",
 			"changelog": "### பதிப்பு 2.0.0\n#### புதிய அம்சங்கள்\n* **PowerPoint: முழுமையான ஆவண பகுப்பாய்வி (சோதனை முறை) (`NVDA+E`, பின்னர் `D`):** NVDA-இன் பேச்சு இயந்திரத்தை முடக்காமல் முழு விளக்கக்காட்சியையும் வரைபடமாக்கும் ஒரு மிக மேம்பட்ட, பின்னணியில் செயலாக்கப்படும் அணுகல் கருவி. இது ஆழமாக உலாவக்கூடிய மெய்நிகர் உள்ளடக்க அட்டவணையை வழங்குகிறது, வாசிப்பு வரிசை முரண்பாடுகளைக் கண்டறிகிறது (காட்சி வரிசை மற்றும் Z-வரிசை), \"அதிக உரை கொண்ட\" ஸ்லைடுகளைக் கொடியிடுகிறது, மேலும் SmartArt மற்றும் தரவு அட்டவணைகள் போன்ற சிக்கலான பொருட்களை வரைபடமாக்குகிறது.\n* **PowerPoint: ஸ்லைடு தளவமைப்பு பகுப்பாய்வி (சோதனை முறை) (`NVDA+E`, பின்னர் `L`):** தற்போதைய செயலில் உள்ள ஸ்லைடை உடனடியாக ஸ்கேன் செய்து அதன் இடஞ்சார்ந்த தளவமைப்பு மற்றும் அணுகல் கட்டுப்பாடுகளைப் புரிந்துகொள்கிறது, இது முற்றிலும் மென்மையான மற்றும் பதிலளிக்கக்கூடிய திரை வாசகர் அனுபவத்தை உறுதி செய்கிறது. அதாவது, எக்செல் தாள் தளவமைப்பு பகுப்பாய்வியைப் போன்ற தற்போதைய ஸ்லைடு பற்றிய விவரங்களை இங்கே பெறுவீர்கள்.\n* **PowerPoint: மொத்த ஸ்லைடு ஒழுங்கமைப்பாளர் (சோதனை முறை) (`NVDA+E`, பின்னர் `X`):** எக்செல் அம்சத்தைப் போலவே, இப்போது முற்றிலும் அணுகக்கூடிய உரையாடல் பெட்டியைப் பயன்படுத்தி ஒரே நேரத்தில் பல பவர்பாயிண்ட் ஸ்லைடுகளை உடனடியாக மறுவரிசைப்படுத்தலாம், நகர்த்தலாம் மற்றும் ஒழுங்கமைக்கலாம்.\n* **PowerPoint: வடிவ நகர்வு ஒலி முறை (சோதனை முறை):** பவர்பாயிண்ட் கேன்வாஸில் முப்பரிமாண (3D) இடஞ்சார்ந்த ஆடியோ குறிப்புகளை அறிமுகப்படுத்துகிறது. நீங்கள் ஒரு பொருளை நகர்த்தும்போது அதன் திசை மற்றும் எல்லை வரம்புகளைக் குறிக்கும் ஒலி பின்னூட்டத்தை வழங்குகிறது, இது இடஞ்சார்ந்த விழிப்புணர்வை கணிசமாக மேம்படுத்துகிறது. குறிப்பிட்டுள்ளபடி இது சோதனைக்குரியது மற்றும் மேம்படுத்த அல்லது அகற்ற பின்னூட்டங்களுக்காக காத்திருக்கிறது.\n* **Word: வடிவமைப்பு தணிக்கையாளர் (`NVDA+E`, பின்னர் `F`):** காட்சித் தரங்களை உறுதிப்படுத்த வடிவமைப்பு முரண்பாடுகளுக்காக உங்கள் வேர்ட் ஆவணத்தை ஸ்கேன் செய்கிறது.\n* **Word: ஆவண பகுப்பாய்வி (`NVDA+E`, பின்னர் `D`):** உங்கள் வேர்ட் ஆவணத்தின் கட்டமைப்புக் கண்ணோட்டத்தை உடனடியாகப் பெறலாம். *(பாலுக்கு ஒரு சிறப்பு பாராட்டு மற்றும் நன்றிகள்: இந்த அம்சம் அவரது சிறந்த \"வேர்ட் அக்சஸ்\" செருகுநிரலால் நேரடியாக ஈர்க்கப்பட்டது. இந்த இடத்தில் அவரது அடிப்படை பணிக்காக நாங்கள் பெரிதும் கடமைப்பட்டுள்ளோம்!)*\n* **Word: தானியங்கி அடிக்குறிப்பு அறிவிப்பாளர்:** உங்கள் தனிப்பயன் BOA அமைப்புகளைப் பொறுத்து, நீங்கள் படிக்கும்போது அடிக்குறிப்புகள் இப்போது தானாகவே வரியிலேயே அறிவிக்கப்படும். *(குறிப்பு: இறுதிக்குறிப்புகள் மற்றும் கருத்துகளுக்கான ஆதரவு எதிர்கால வெளியீட்டில் திட்டமிடப்பட்டுள்ளது).*\n* **Excel: பவர் எடிட்டர் (அணுகக்கூடிய ஃபார்முலா எடிட்டர்):** பிரம்மாண்டமான ஃபார்முலாக்களை மாற்றுவதற்கான ஒரு முழுமையான கேம்-சேஞ்சர்.\n  - **ஒற்றைத் தட்டல் `NVDA+E`, பின்னர் `F2`:** செயலில் உள்ள செல்லின் மூல ஃபார்முலா சரத்தை உடனடியாக அறிவிக்கிறது (அல்லது \"ஃபார்முலா இல்லை\" என்று அறிவிக்கிறது).\n  - **இரட்டைத் தட்டல் `NVDA+E`, பின்னர் `F2`:** பெரிய, உள்ளமைக்கப்பட்ட ஃபார்முலாக்களைப் பாதுகாப்பாக மாற்ற முழுமையாக அணுகக்கூடிய, பல வரி எடிட்டரைத் திறக்கிறது. எளிதாகப் படிக்க உள் `Enter` வரி இடைவெளிகளைச் சேர்க்கிறது, மேலும் `Ctrl+Enter` அதை மீண்டும் எக்செல் இல் சேமிக்கிறது.\n  - *பாதுகாப்பு சோதனைகள்:* ஃபார்முலாக்கள் உங்கள் தாளைப் பாதிக்கும் முன் தொடரியல் பிழைகளைப் பாதுகாப்பாகப் பிடிக்கிறது, மேலும் ஃபார்முலா உடைந்தால் உடனடியாக எச்சரிக்கக் கணக்கீட்டுக்குப் பிந்தைய பிழைகளைக் (`#NAME?` அல்லது `#DIV/0!` போன்றவை) கண்டறிகிறது.\n* **Excel: ஃபார்முலா தணிக்கை மற்றும் மதிப்பீடு:** முன்னோடிகள் மற்றும் சார்ந்திருப்பவைகளை நம்பகத்தன்மையுடன் கண்டறிய தனிப்பயன் குறுக்குவழிகளை (`NVDA+E`, பின்னர் `Shift+P` மற்றும் `NVDA+E`, பின்னர் `Shift+D`) சேர்த்துள்ளது. மேலும், எக்செல்-இன் சொந்த \"ஃபார்முலாவை மதிப்பிடு\" உரையாடல் இப்போது முழுமையாக அணுகக்கூடியது; நீங்கள் கணக்கீட்டின் மூலம் செல்லும்போது NVDA தானாகவே மதிப்பிடப்பட்ட முடிவுகளைப் படிக்கிறது!\n* **Excel: செல் மானிட்டர் புரோ மேம்பாடுகள்:** \n  - **ஸ்லாட் மேலாளர் உரையாடல் (`NVDA+E`, பின்னர் `Alt+M`):** உங்கள் செயலில் கண்காணிக்கப்படும் அனைத்து செல்களின் பட்டியலையும் கொண்ட உரையாடலைத் திறக்கிறது. அவற்றில் ஒன்றிற்கு உடனடியாகச் செல்ல `Enter` அழுத்தவும்.\n  - **வார்ப் பேக் (`NVDA+E`, பின்னர் `\\`):** ஒரு ஸ்லாட்டைச் சரிபார்த்த பிறகு, உடனடியாக உங்களை முந்தைய வேலை செல்லுக்குத் திருப்புகிறது.\n  - **நேரடி ஸ்லாட் ஜம்ப் (`Alt` + `ஸ்லாட் எண்`):** பிரீஃபிக்ஸை முழுமையாகத் தவிர்த்து, ஒதுக்கப்பட்ட செல் ஸ்லாட்டிற்கு உடனடியாகச் செல்லலாம்.\n* **உள்ளீட்டு சைகைகள் தனிப்பயனாக்கம்:** அனைத்து ஆபிஸ் பயன்பாடுகளிலும் உள்ள அனைத்து அம்சங்களும் சொந்த என்விடிஏ உள்ளீட்டு சைகைகள் உரையாடலுக்கு வெளிப்படையாகக் காட்டப்பட்டுள்ளன, இது ஒவ்வொரு விசைப்பலகை குறுக்குவழியையும் தனிப்பயனாக்க உங்களுக்கு முழு சுதந்திரத்தை வழங்குகிறது.\n\n#### UX/UI மேம்பாடுகள்\n* **ஒருங்கிணைந்த உலாவக்கூடிய அறிக்கைகள்:** செருகுநிரல் முழுவதும் ஒருங்கிணைந்த HTML அறிக்கையிடல் முறையை நாங்கள் ஏற்றுக்கொண்டுள்ளோம். எக்செல் நிபந்தனை வடிவமைப்பு அறிவிப்பாளர், தளவமைப்பு பகுப்பாய்விகள் மற்றும் ஆவண பகுப்பாய்விகள் போன்ற அம்சங்கள் இனி வெறும் உரைத் தொகுதிகளை மட்டும் பேசாது; அவற்றின் முடிவுகள் இப்போது ஒரு சொந்த, உலாவக்கூடிய HTML சாளரத்தில் திறக்கப்படுகின்றன, இது உங்கள் சொந்த வேகத்தில் தரவை மதிப்பாய்வு செய்ய அனுமதிக்கிறது.\n* **Excel: மேம்படுத்தப்பட்ட சார்ந்திருப்பவை/முன்னோடிகள் கண்காணிப்பு:** எக்செல்-இன் சொந்த ஃபார்முலா கண்டறிதல் குறுக்குவழிகளுக்கான (`நேரடி முன்னொடிகளுக்கு `Ctrl+[` மற்றும் `நேரடி சார்ந்திருப்பவைகளுக்கு `Ctrl+]`) பேச்சு வெளியீட்டை பெருமளவில் மேம்படுத்தியுள்ளது. எந்த செல்கள் தேர்ந்தெடுக்கப்பட்டன என்பதை NVDA இப்போது வெளிப்படையாக அறிவிக்கும்.\n* **Excel: இணைக்கப்பட்ட செல் ஆதரவு:** இணைக்கப்பட்ட செல்கள் இப்போது சரியாகக் கண்டறியப்பட்டு, இடைவெளி-தவிர்க்கும் செல் டிராக்கரால் வெளிப்படையாக அறிவிக்கப்படுகின்றன.\n\n#### பிழை திருத்தங்கள்\n* **Word: பட்டியல் உருப்படி இரட்டை வாசிப்பு:** குறிப்பிட்ட வேர்ட் காட்சிகளில் என்விடிஏ பத்தி பட்டியல் உருப்படிகளை இரட்டை வாசிப்பு செய்யும் பிழையைச் சரிசெய்ய தற்காலிகத் திருத்தம் செயல்படுத்தப்பட்டது.\n* **Excel: செல் மானிட்டர் உள்ளூர்மயமாக்கல் பிழை:** சமீபத்திய மொழிபெயர்ப்பு உள்ளூர்மயமாக்கல் புதுப்பிப்புகளால் ஏற்பட்ட அடிப்படை கண்காணிப்பு பிழைகள் தீர்க்கப்பட்டன."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/63de6d56f4bbc744cd5ded6eee632a53dc4774ac932bf8e1f5070140fff96bbb",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "63de6d56f4bbc744cd5ded6eee632a53dc4774ac932bf8e1f5070140fff96bbb",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 25,
+						"ini": 25,
+						"md": 25,
+						"mo": 24,
+						"po": 24,
+						"py": 35,
+						"pyc": 34
+					},
+					"file_types": {
+						"HTML": 25,
+						"unknown": 168
+					},
+					"highest_datetime": "2026-06-29 23:45:28",
+					"lowest_datetime": "2026-05-25 20:15:20",
+					"num_children": 193,
+					"type": "ZIP",
+					"uncompressed_size": 7178566
+				},
+				"contenthash": "1e95322fb35d796998dd0a78231e57a1",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "9b40e9a82372c903b2a314e3f6f90294"
+				},
+				"first_submission_date": 1782757464,
+				"last_analysis_date": 1782757464,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260629",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260628",
+						"engine_version": "6.793",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260629",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260629",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260629",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260629",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260629",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260629",
+						"engine_version": "260629-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260629",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260629",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260629",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260628",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260629",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260629",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260629",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260625",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260629",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260629",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260629",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260626",
+						"engine_version": "4.0.268",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260629",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260629",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260629",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260629",
+						"engine_version": "GD:27.45085AVA:64.31497",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260629",
+						"engine_version": "1782752479",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260629",
+						"engine_version": "1.0.249.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260629",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260628",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260629",
+						"engine_version": "14.60.59978",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260629",
+						"engine_version": "14.60.59979",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260629",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260629",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260629",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260629",
+						"engine_version": "3.1.0.239",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260629",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260629",
+						"engine_version": "1.2.0.15146",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260629",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260629",
+						"engine_version": "1.1.26050.11",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260629",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260629",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260629",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260629",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260627",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260629",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260623",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260629",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260629",
+						"engine_version": "3.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "timeout",
+						"engine_name": "Symantec",
+						"engine_update": "20260629",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260629",
+						"engine_version": "2026-06-29.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260629",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260604",
+						"engine_version": "4.0.12.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260629",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260629",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260629",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260629",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260629",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260629",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260629",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260629",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260629",
+						"engine_version": "9.5.1238",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260629",
+						"engine_version": "38769",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260629",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260626",
+						"engine_version": "2.0.0.5630",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260629",
+						"engine_version": "6.25-116107929",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260629",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260629",
+						"engine_version": "0462ace:0462ace:62cbabd:62cbabd",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260629",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 9,
+					"undetected": 64
+				},
+				"last_modification_date": 1782757569,
+				"last_submission_date": 1782757464,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "95e6baa152b817e02d796d54dc76c67e",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "c3c52abc735896314af36effd363ec3f6b83b0cf",
+				"sha256": "63de6d56f4bbc744cd5ded6eee632a53dc4774ac932bf8e1f5070140fff96bbb",
+				"size": 1990172,
+				"ssdeep": "24576:Hozxe87ZUI2ap0DwJ7QNUvfRtAqRCpnFSkIMetZ2BL1gblxECP+Bg6D4FIIQSPGx:Hohl2auMZhvhAFokGtofgMiwDtIQH",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1CB9533105F3E206BFA30D53EEBD5E58BB41EAD26C145F28BA5AE6DC44840FCC1F86685",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "cb6bb75bbd6300a1834ebee4e387c959"
+			}
+		]
+	}
 }
