@@ -6,7 +6,7 @@ on:
       - labeled
 
 env:
-  jobFooter: "\n---\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+  jobFooter: "\n\n---\n\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
 jobs:
   check-addon:

@@ -20,7 +20,7 @@ on:
 
 env:
   branchName: ${{ inputs.issueAuthorName }}${{ inputs.issueNumber }}
-  jobFooter: "\n---\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+  jobFooter: "\n\n---\n\n[Related GitHub Actions run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
 jobs:
   getAddonId:
@@ -511,6 +511,10 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git fetch origin master
+        git merge origin/master --no-edit
         gh pr merge --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:
