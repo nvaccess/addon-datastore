@@ -1,8 +1,9 @@
 # https://pre-commit.ci/
 # Configuration for Continuous Integration service
 ci:
+  # uv environment not set up in pre-commit.ci, so skip unit tests and pyright checks.
   # Pyright does not seem to work in pre-commit CI
-  skip: [pyright]
+  skip: [unitTest, pyright]
   autoupdate_schedule: monthly
   autoupdate_commit_msg: "Pre-commit auto-update"
   autofix_commit_msg: "Pre-commit auto-fix"
