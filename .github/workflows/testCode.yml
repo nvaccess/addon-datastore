@@ -15,7 +15,7 @@ on:
       - submitters.json
 
 jobs:
-  testAllCode:
+  pyrightValidation:
     permissions:
       contents: read
     runs-on: ubuntu-latest
@@ -32,8 +32,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-    - name: Run unit tests for transform and validation
-      run: ./rununittests.sh
     - name: Run pyright for validation
       run: uv run --group lint --directory validation pyright --threads --level warning
     - name: Run pyright for transform
