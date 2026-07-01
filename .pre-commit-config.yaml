@@ -1,7 +1,7 @@
 # https://pre-commit.ci/
 # Configuration for Continuous Integration service
 ci:
-  # Can't run Windows scons scripts on Linux.
+  # uv environment not set up in pre-commit.ci, so skip unit tests and pyright checks.
   # Pyright does not seem to work in pre-commit CI
   skip: [unitTest, pyright]
   autoupdate_schedule: monthly
@@ -100,7 +100,7 @@ repos:
   hooks:
     - id: unitTest
       name: unit tests
-      entry: ./rununittests.bat
+      entry: ./rununittests.sh
       language: script
       pass_filenames: false
-      types_or: [python, batch]
+      types: [python]
