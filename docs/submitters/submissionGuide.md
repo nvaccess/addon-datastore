@@ -27,7 +27,7 @@ This will create an issue with a summary of your submission, and generate a pull
 1. If this is your first submission of this add-on, manual approval will be required to be added to the approved submitters list for the add-on.
 You do not need to do anything if you are the maintainer of the add-on you submitted.
 Please wait for an NV Access staff member to review the submission, it may take up to 2 weeks.
-1. Automated checks are ran on the pull request to validate the submission.
+1. Automated checks are run on the pull request to validate the submission.
 Refer to [the validation section](#validation) for more information on automated checks.
 1. If the checks fail, a comment should be added to the issue outlining the failure.
 To address the issues, resubmit the issue form.
