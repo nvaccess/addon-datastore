@@ -416,7 +416,7 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 			[
 				"Last tested version error: 2018.3.0 doesn't exist. "
 				"Please update the last tested NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 
@@ -429,7 +429,7 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 			[
 				"Last tested version error: 9999.3.0 doesn't exist. "
 				"Please update the last tested NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 
@@ -492,7 +492,7 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 			[
 				"Minimum required version error: 2018.3.0 doesn't exist. "
 				"Please update the minimum required NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 
@@ -505,7 +505,7 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 			[
 				"Minimum required version error: 9999.3.0 doesn't exist. "
 				"Please update the minimum required NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 
