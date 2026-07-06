@@ -1,0 +1,32 @@
+{
+	"addonId": "referenceToneTuner",
+	"displayName": "Reference Tone Tuner",
+	"URL": "https://github.com/leandro-sds/Reference-Tone-Tuner/releases/download/2026.07.06/referenceToneTuner-2026.07.06.nvda-addon",
+	"description": "Afinador por tons de referência para violão/guitarra.\nUse as teclas 1 a 6 para tocar as cordas e afine de ouvido até coincidir.\nPressione F1 para ajuda, R para repetir em loop e A/D para ajustar o intervalo do loop.",
+	"sha256": "0a065584101ef481f11e60e7f57f46ff32bdceb54cfa2317f88c6ca26c43d532",
+	"addonVersionName": "2026.07.06",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Leandro Souza",
+	"sourceURL": "https://github.com/leandro-sds/Reference-Tone-Tuner",
+	"license": "GPL v2",
+	"homepage": "https://github.com/leandro-sds/Reference-Tone-Tuner",
+	"changelog": "* Novo: intervalo do loop agora é ajustável com as teclas A (aumentar) e D (diminuir), padrão de 2,0 segundos.\n* Correção: ao tocar uma corda/acorde único sem loop, a tecla Esc às vezes não fechava a janela na primeira tentativa.\n* Menos falas desnecessárias ao abrir a janela (intervalo do loop e atalho do R só são anunciados quando usados).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1783347952000,
+	"translations": []
+}
