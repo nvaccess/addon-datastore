@@ -351,7 +351,7 @@ jobs:
           approvalsJson="$(gh api \
             -H 'Accept: application/vnd.github+json' \
             "/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/approvals" \
-            2>/dev/null || true)"
+            2>/dev/null || echo '[]')"
 
           rejectionReasons="$(
             printf '%s' "$approvalsJson" | jq -r '
@@ -378,8 +378,8 @@ jobs:
       - name: Post manual review failure comment and close PR and issue
         run: |
           gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
-          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}" --delete-branch
           gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
+          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}" --delete-branch
         env:
           GH_TOKEN: ${{ github.token }}
           body: |
