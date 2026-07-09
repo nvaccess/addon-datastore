@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-hereOrig=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-here=$hereOrig
+here=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 validationUnitTestsPath="$here/validation/tests"
 transformUnitTestsPath="$here/transform/src/tests"

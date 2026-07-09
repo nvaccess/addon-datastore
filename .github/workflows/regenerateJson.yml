@@ -18,7 +18,7 @@ jobs:
       uses: astral-sh/setup-uv@v8.2.0
     - name: Regenerate json
       run: |
-        uv run --directory validation python -m _validate.regenerateJson \
+        uv run --directory validation -m _validate.regenerateJson \
           --dir ../addons \
           --output validationErrors.md
     - name: Commit changes and open PR

@@ -57,7 +57,7 @@ jobs:
       uses: astral-sh/setup-uv@v8.2.0
     - name: Validate all add-ons metadata
       run: |
-        uv run --directory validation python -m _validate.validate \
+        uv run --directory validation -m _validate.validate \
           ../addons/*/*.json \
           ../transform/nvdaAPIVersions.json \
           --output ../validationErrors.md
