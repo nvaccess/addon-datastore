@@ -333,37 +333,42 @@ jobs:
     if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure') }}
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: write
       issues: write
       pull-requests: write
     steps:
       - name: Fetch Rejection Comment
-        uses: actions/github-script@v9
+        env:
+          GH_TOKEN: ${{ github.token }}
         id: fetchRejectionComment
-        with:
-          script: |
-            // Fetch the review history for the current workflow run
-            const response = await github.rest.actions.getApprovedProcessorReviewedHistoriesForWorkflowRun({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              run_id: context.runId
-            });
+        run: |
+          approvalsJson="$(gh api \
+            -H 'Accept: application/vnd.github+json' \
+            "/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/approvals" \
+            2>/dev/null || true)"
 
-            // Filter out the rejection entry/entries.
-            const rejectionEvents = response.data.filter(
-              review => review.state === 'rejected'
-            );
+          rejectionReasons="$(
+            printf '%s' "$approvalsJson" | jq -r '
+              [ .[]? | select(.state == "rejected") | "- " + (.comment // "No reason provided.") ]
+              | if length == 0 then "- No reason provided." else join("\n") end
+            '
+          )"
 
-            const rejectionReasons = [];
-            const reviewers = [];
-            for (const event of rejectionEvents) {
-              const reason = event.comment || "No reason provided.";
-              const reviewer = event.user.login;
-              rejectionReasons.push(`- ${reason}`);
-              reviewers.push(reviewer);
-            }
-            core.setOutput('rejectionReasons', rejectionReasons.join('\n'));
-            core.setOutput('reviewers', reviewers.join(', '));
+          reviewers="$(
+            printf '%s' "$approvalsJson" | jq -r '
+              [ .[]? | select(.state == "rejected") | .user.login ]
+              | unique
+              | if length == 0 then "Unknown reviewer" else join(", ") end
+            '
+          )"
+
+          {
+            echo 'rejectionReasons<<EOF'
+            echo "$rejectionReasons"
+            echo 'EOF'
+            echo "reviewers=$reviewers"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Post manual review failure comment and close PR and issue
         run: |
