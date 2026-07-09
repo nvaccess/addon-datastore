@@ -201,16 +201,17 @@ jobs:
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
       vtKeySet: ${{ env.VT_API_KEY != '' }}
     steps:
+      # checkout of repo needed for posting comments to issues
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
       - name: Check if VT_API_KEY is set
         id: checkVTKey
         if: ${{ !env.VT_API_KEY }}
         run: |
           echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
           exit 1
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ env.branchName }}
       - name: Install Node.js
         uses: actions/setup-node@v6
       - name: Install npm dependencies
@@ -522,6 +523,9 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
+        git push --set-upstream origin ${{ env.branchName }}
+        # wait for a few seconds to ensure the PR is up to date before merging
+        sleep 3
         gh pr merge --admin --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:
