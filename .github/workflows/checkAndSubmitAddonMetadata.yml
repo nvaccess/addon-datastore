@@ -339,6 +339,10 @@ jobs:
       issues: write
       pull-requests: write
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
       - name: Fetch Rejection Comment
         env:
           GH_TOKEN: ${{ github.token }}
