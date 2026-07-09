@@ -379,7 +379,8 @@ jobs:
         run: |
           gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
           gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
-          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}" --delete-branch
+          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"
+          git push origin --delete "${{ env.branchName }}"
         env:
           GH_TOKEN: ${{ github.token }}
           body: |
