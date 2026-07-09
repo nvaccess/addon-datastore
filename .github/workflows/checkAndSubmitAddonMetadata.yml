@@ -378,8 +378,7 @@ jobs:
       - name: Post manual review failure comment and close PR and issue
         run: |
           gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
-          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"
-          gh branch delete ${{ env.branchName }} --remote --force
+          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}" --delete-branch
           gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
         env:
           GH_TOKEN: ${{ github.token }}
