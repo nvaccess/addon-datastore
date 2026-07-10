@@ -424,7 +424,12 @@ jobs:
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
       run: |
         jqCode="
-        .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
+        .[\"${{ inputs.issueAuthorId }}\"].addons |= (
+          (. // []) |
+          if index(\"${{ needs.getAddonId.outputs.addonId }}\") then .
+          else . + [\"${{ needs.getAddonId.outputs.addonId }}\"]
+          end
+        )
         | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
         "
 
@@ -437,8 +442,12 @@ jobs:
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
       run: |
         git add submitters.json
-        git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
-        git push --set-upstream origin ${{ env.branchName }}
+        if git diff --staged --quiet; then
+          echo "No changes to submitters.json; skipping commit and push."
+        else
+          git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
+          git push --set-upstream origin ${{ env.branchName }}
+        fi
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
       run: |
