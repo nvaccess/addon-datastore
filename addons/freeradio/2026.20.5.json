@@ -1,0 +1,75 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.5/freeradio-2026.20.5.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "a92c227aa97723634ed1d5a28a06a8293a0dcc66d701b2c29cf2809ae5d768f3",
+	"addonVersionName": "2026.20.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 20,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n### New Features\n\n- **Time-shift buffer**: Rewind and fast-forward live radio like a DVR, using a rolling ~10-minute buffer. Enable it from Settings or toggle it instantly with `Ctrl+Win+T`. Rewind 15 seconds with `Ctrl+Win+J`; fast-forward 15 seconds with `Ctrl+Win+K` — reaching the live edge automatically returns you to normal live playback.\n- Time-shift now supports **HLS (`.m3u8`) stations** in addition to plain HTTP/HTTPS and Shoutcast/Icecast (ICY) streams — segments are downloaded and reassembled into the same rewindable buffer.\n\n### Fixes\n\n- Fixed time-shift capture (and recording) failing with an SSL certificate error on stations whose server presents an expired or otherwise invalid TLS certificate.\n\n### Documentation\n\n- Added a full \"Time-Shift (Rewind Live Radio)\" section to the README, plus new shortcut and settings table entries.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1783660036000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a92c227aa97723634ed1d5a28a06a8293a0dcc66d701b2c29cf2809ae5d768f3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a92c227aa97723634ed1d5a28a06a8293a0dcc66d701b2c29cf2809ae5d768f3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "ecb6f62c429922d21b0de1aa97ab897e"
+				},
+				"first_submission_date": 1783660040,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1783660047,
+				"last_submission_date": 1783660040,
+				"md5": "c711ffb5abe2eac1709f4da48d7b361b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "f1f426ff3ba245735e02c1d450597ca7ae09f522",
+				"sha256": "a92c227aa97723634ed1d5a28a06a8293a0dcc66d701b2c29cf2809ae5d768f3",
+				"size": 45668743,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+}
