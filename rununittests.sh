@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+# Magic required
 hereOrig=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 here=$hereOrig
 
