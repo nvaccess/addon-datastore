@@ -38,18 +38,12 @@ As this repo consumes data from `nvaccess/addon-datastore`, see [nvaccess/addon-
 The expected input schema for each file can be found at [`addonVersion_schema.json`](../validation/_validate/addonVersion_schema.json).
 
 ### outputPath
+
 Expects a path to a non-existent directory.
 Will create the path to that directory.
 
 Writes the output data to this directory.
 [Output documentation](./docs/output.md) describes how the data is structured and what it is used for.
-
-## Run linting and tests
-[Tox](https://tox.readthedocs.io/) configures the environment, runs the tests and linting.
-
-```sh
-tox
-```
 
 ## Validating data files
 
