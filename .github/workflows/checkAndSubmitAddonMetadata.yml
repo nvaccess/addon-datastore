@@ -424,7 +424,12 @@ jobs:
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
       run: |
         jqCode="
-        .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
+        .[\"${{ inputs.issueAuthorId }}\"].addons |= (
+          (. // []) |
+          if index(\"${{ needs.getAddonId.outputs.addonId }}\") then .
+          else . + [\"${{ needs.getAddonId.outputs.addonId }}\"]
+          end
+        )
         | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
         "
 
