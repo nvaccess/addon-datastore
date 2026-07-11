@@ -1,0 +1,37 @@
+name: remove codeQl keys for add-ons metadata
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  removeCodeQl:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.13]
+    steps:
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v8.2.0
+    - name: Checkout code
+      uses: actions/checkout@v7
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v6
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x64
+    - name: Remove codeQl keys from add-ons metadata
+      run: |
+        ./remove-codeql-keys.sh
+        git add addons
+        if ! git diff --cached --quiet; then
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git commit -m "Remove CodeQL keys from add-ons metadata"
+          git push
+        fi
+      
