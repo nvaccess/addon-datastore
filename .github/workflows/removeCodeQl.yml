@@ -25,6 +25,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
         architecture: x64
     - name: Remove codeQl keys from add-ons metadata
+      shell: bash
       run: |
         ./remove-codeql-keys.sh
         git add addons
