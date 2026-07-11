@@ -1,968 +1,968 @@
 {
-  "addonId": "VisionAssistant",
-  "displayName": "Vision Assistant Pro",
-  "URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v6.1.1/VisionAssistant-6.1.1.nvda-addon",
-  "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-  "sha256": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
-  "addonVersionName": "6.1.1",
-  "addonVersionNumber": {
-    "major": 6,
-    "minor": 1,
-    "patch": 1
-  },
-  "minNVDAVersion": {
-    "major": 2025,
-    "minor": 1,
-    "patch": 0
-  },
-  "lastTestedVersion": {
-    "major": 2026,
-    "minor": 1,
-    "patch": 0
-  },
-  "channel": "stable",
-  "publisher": "Mahmood Hozhabri",
-  "sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-  "license": "GPL v2",
-  "homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-  "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats.",
-  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-  "submissionTime": 1780327131000,
-  "translations": [
-    {
-      "language": "ar",
-      "displayName": "Vision Assistant Pro",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "de",
-      "displayName": "KI Assistent Pro",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "es",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivo (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Gestionar/escanear etiquetas (Shift+L)\n- Explorador de UI (E)\n- Operador IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "fa",
-      "displayName": "دستیارِ حرفه‌ایِ بینایی",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "fr",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappeler le dernier résultat (Espace)\n- Aide des commandes (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "id",
-      "displayName": "Vision Assistant Pro",
-      "description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "it",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (I)\n- Etichettatore oggetti (l) \n- Gestisci/scansiona etichette (Shift-l) \n- Operatore IA (Shift+A)\\n\n- Esplora interfaccia (e) \n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "pl",
-      "displayName": "Vision Assistant Pro",
-      "description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Dyktowanie (S)\n- Raportuj stan (I)\n- Oznacz obiekt (L)\n- Zarządzaj etykietami / Skanuj (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Pokaż ostatni wynik (Spacja)\n- Pomoc poleceń (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "pt_BR",
-      "displayName": "Assistente de Visão Pro",
-      "description": "Um assistente avançado de IA para NVDA usando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (I)\n- Rotular Objeto (L)\n- Gerenciar/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualizações (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "pt_PT",
-      "displayName": "Assistente de Visão Pro",
-      "description": "Um assistente avançado de IA para o NVDA usando modelos Gemini.\nCamada de comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de UI (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "ro",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un asistent AI avansat pentru NVDA care folosește modelele Gemini.\nStrat de comenzi: apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvitor CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (I)\n- Etichetează obiectul (L)\n- Gestionează/scanează etichetele (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Verifică actualizarea (U)\n- Reia ultimul rezultat (Spațiu)\n- Ajutor comenzi (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "ru",
-      "displayName": "Vision Assistant Pro (Визуальный помощник)",
-      "description": "Vision Assistant Pro — это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini..\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ онлайн-видео (Shift+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-Оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "tr",
-      "displayName": "Profesyonel Görsel Asistan",
-      "description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Tanımlama (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "uk",
-      "displayName": "Vision Assistant Pro",
-      "description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "vi",
-      "displayName": "Vision Assistant Pro",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    },
-    {
-      "language": "zh_CN",
-      "displayName": "Vision Assistant Pro",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-      "changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
-    }
-  ],
-  "vtScanUrl": "https://www.virustotal.com/gui/file/20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
-  "scanResults": {
-    "codeQL-warnings": [
-      {
-        "ruleId": "py/incomplete-url-substring-sanitization",
-        "rule": {
-          "id": "py/incomplete-url-substring-sanitization",
-          "index": 4,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 5699,
-                "startColumn": 24,
-                "endColumn": 49
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "2913bc0dd513cd37:1",
-          "primaryLocationStartColumnFingerprint": "11"
-        },
-        "relatedLocations": [
-          {
-            "id": 1,
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 5699,
-                "startColumn": 24,
-                "endColumn": 39
-              }
-            },
-            "message": {
-              "text": "instagram.com"
-            }
-          }
-        ]
-      },
-      {
-        "ruleId": "py/incomplete-url-substring-sanitization",
-        "rule": {
-          "id": "py/incomplete-url-substring-sanitization",
-          "index": 4,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 5701,
-                "startColumn": 25,
-                "endColumn": 47
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "ecbb1fd672237310:1",
-          "primaryLocationStartColumnFingerprint": "12"
-        },
-        "relatedLocations": [
-          {
-            "id": 1,
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 5701,
-                "startColumn": 25,
-                "endColumn": 37
-              }
-            },
-            "message": {
-              "text": "tiktok.com"
-            }
-          }
-        ]
-      },
-      {
-        "ruleId": "py/overly-large-range",
-        "rule": {
-          "id": "py/overly-large-range",
-          "index": 5,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "Suspicious character range that overlaps with \\w in the same character class."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 1
-              },
-              "region": {
-                "startLine": 54,
-                "startColumn": 33,
-                "endColumn": 36
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "519eb9bd4ab56ccd:1",
-          "primaryLocationStartColumnFingerprint": "24"
-        }
-      }
-    ],
-    "codeQL-errors": [],
-    "virusTotal": [
-      {
-        "_id": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
-        "_type": "file",
-        "bundle_info": {
-          "extensions": {
-            "css": 1,
-            "dll": 2,
-            "exe": 1,
-            "h": 177,
-            "html": 16,
-            "ini": 17,
-            "lib": 4,
-            "md": 16,
-            "mo": 16,
-            "po": 16,
-            "py": 63,
-            "pyd": 4,
-            "typed": 1
-          },
-          "file_types": {
-            "HTML": 16,
-            "Portable Executable": 7,
-            "unknown": 312
-          },
-          "highest_datetime": "2026-06-01 15:15:24",
-          "lowest_datetime": "2026-06-01 15:14:56",
-          "num_children": 335,
-          "type": "ZIP",
-          "uncompressed_size": 98356816
-        },
-        "filecondis": {
-          "dhash": "0000000006070600",
-          "raw_md5": "d43788f5e985eb7b773f9127286e5da2"
-        },
-        "first_submission_date": 1780327150,
-        "last_analysis_date": 1780327150,
-        "last_analysis_results": {
-          "ALYac": {
-            "category": "undetected",
-            "engine_name": "ALYac",
-            "engine_update": "20260601",
-            "engine_version": "2.0.0.10",
-            "method": "blacklist",
-            "result": null
-          },
-          "APEX": {
-            "category": "type-unsupported",
-            "engine_name": "APEX",
-            "engine_update": "20260528",
-            "engine_version": "6.783",
-            "method": "blacklist",
-            "result": null
-          },
-          "AVG": {
-            "category": "undetected",
-            "engine_name": "AVG",
-            "engine_update": "20260601",
-            "engine_version": "23.9.8494.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Acronis": {
-            "category": "undetected",
-            "engine_name": "Acronis",
-            "engine_update": "20240328",
-            "engine_version": "1.2.0.121",
-            "method": "blacklist",
-            "result": null
-          },
-          "AhnLab-V3": {
-            "category": "undetected",
-            "engine_name": "AhnLab-V3",
-            "engine_update": "20260601",
-            "engine_version": "3.30.0.10666",
-            "method": "blacklist",
-            "result": null
-          },
-          "Alibaba": {
-            "category": "undetected",
-            "engine_name": "Alibaba",
-            "engine_update": "20190527",
-            "engine_version": "0.3.0.5",
-            "method": "blacklist",
-            "result": null
-          },
-          "Antiy-AVL": {
-            "category": "undetected",
-            "engine_name": "Antiy-AVL",
-            "engine_update": "20260601",
-            "engine_version": "3.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Arcabit": {
-            "category": "undetected",
-            "engine_name": "Arcabit",
-            "engine_update": "20260601",
-            "engine_version": "2025.0.0.23",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avast": {
-            "category": "undetected",
-            "engine_name": "Avast",
-            "engine_update": "20260601",
-            "engine_version": "23.9.8494.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avast-Mobile": {
-            "category": "undetected",
-            "engine_name": "Avast-Mobile",
-            "engine_update": "20260601",
-            "engine_version": "260601-00",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avira": {
-            "category": "undetected",
-            "engine_name": "Avira",
-            "engine_update": "20260601",
-            "engine_version": "8.3.3.24",
-            "method": "blacklist",
-            "result": null
-          },
-          "BitDefender": {
-            "category": "undetected",
-            "engine_name": "BitDefender",
-            "engine_update": "20260601",
-            "engine_version": "7.2",
-            "method": "blacklist",
-            "result": null
-          },
-          "BitDefenderFalx": {
-            "category": "type-unsupported",
-            "engine_name": "BitDefenderFalx",
-            "engine_update": "20260525",
-            "engine_version": "2.0.936",
-            "method": "blacklist",
-            "result": null
-          },
-          "Bkav": {
-            "category": "undetected",
-            "engine_name": "Bkav",
-            "engine_update": "20260601",
-            "engine_version": "8.2.40(8338)",
-            "method": "blacklist",
-            "result": null
-          },
-          "CAT-QuickHeal": {
-            "category": "undetected",
-            "engine_name": "CAT-QuickHeal",
-            "engine_update": "20260531",
-            "engine_version": "22.00",
-            "method": "blacklist",
-            "result": null
-          },
-          "CMC": {
-            "category": "undetected",
-            "engine_name": "CMC",
-            "engine_update": "20260601",
-            "engine_version": "2.4.2022.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "CTX": {
-            "category": "undetected",
-            "engine_name": "CTX",
-            "engine_update": "20260601",
-            "engine_version": "2024.8.29.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "ClamAV": {
-            "category": "timeout",
-            "engine_name": "ClamAV",
-            "engine_update": "20260601",
-            "engine_version": "1.5.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "CrowdStrike": {
-            "category": "undetected",
-            "engine_name": "CrowdStrike",
-            "engine_update": "20230417",
-            "engine_version": "1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Cylance": {
-            "category": "type-unsupported",
-            "engine_name": "Cylance",
-            "engine_update": "20260521",
-            "engine_version": "3.0.0.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Cynet": {
-            "category": "undetected",
-            "engine_name": "Cynet",
-            "engine_update": "20260601",
-            "engine_version": "4.0.3.4",
-            "method": "blacklist",
-            "result": null
-          },
-          "DeepInstinct": {
-            "category": "undetected",
-            "engine_name": "DeepInstinct",
-            "engine_update": "20260601",
-            "engine_version": "5.0.0.8",
-            "method": "blacklist",
-            "result": null
-          },
-          "DrWeb": {
-            "category": "undetected",
-            "engine_name": "DrWeb",
-            "engine_update": "20260601",
-            "engine_version": "7.0.75.2070",
-            "method": "blacklist",
-            "result": null
-          },
-          "ESET-NOD32": {
-            "category": "undetected",
-            "engine_name": "ESET-NOD32",
-            "engine_update": "20260601",
-            "engine_version": "18.2.18.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Elastic": {
-            "category": "undetected",
-            "engine_name": "Elastic",
-            "engine_update": "20260528",
-            "engine_version": "4.0.264",
-            "method": "blacklist",
-            "result": null
-          },
-          "Emsisoft": {
-            "category": "undetected",
-            "engine_name": "Emsisoft",
-            "engine_update": "20260601",
-            "engine_version": "2024.8.0.61147",
-            "method": "blacklist",
-            "result": null
-          },
-          "F-Secure": {
-            "category": "undetected",
-            "engine_name": "F-Secure",
-            "engine_update": "20260601",
-            "engine_version": "18.10.1547.307",
-            "method": "blacklist",
-            "result": null
-          },
-          "Fortinet": {
-            "category": "undetected",
-            "engine_name": "Fortinet",
-            "engine_update": "20260601",
-            "engine_version": "7.0.48.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "GData": {
-            "category": "undetected",
-            "engine_name": "GData",
-            "engine_update": "20260601",
-            "engine_version": "GD:27.44754AVA:64.31344",
-            "method": "blacklist",
-            "result": null
-          },
-          "Google": {
-            "category": "failure",
-            "engine_name": "Google",
-            "engine_update": "20260601",
-            "engine_version": "1780322461",
-            "method": "blacklist",
-            "result": null
-          },
-          "Gridinsoft": {
-            "category": "undetected",
-            "engine_name": "Gridinsoft",
-            "engine_update": "20260601",
-            "engine_version": "1.0.247.174",
-            "method": "blacklist",
-            "result": null
-          },
-          "Ikarus": {
-            "category": "failure",
-            "engine_name": "Ikarus",
-            "engine_update": "20260601",
-            "engine_version": "6.5.4.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Jiangmin": {
-            "category": "undetected",
-            "engine_name": "Jiangmin",
-            "engine_update": "20260531",
-            "engine_version": "16.0.100",
-            "method": "blacklist",
-            "result": null
-          },
-          "K7AntiVirus": {
-            "category": "undetected",
-            "engine_name": "K7AntiVirus",
-            "engine_update": "20260601",
-            "engine_version": "14.55.59679",
-            "method": "blacklist",
-            "result": null
-          },
-          "K7GW": {
-            "category": "undetected",
-            "engine_name": "K7GW",
-            "engine_update": "20260601",
-            "engine_version": "14.55.59681",
-            "method": "blacklist",
-            "result": null
-          },
-          "Kaspersky": {
-            "category": "undetected",
-            "engine_name": "Kaspersky",
-            "engine_update": "20260601",
-            "engine_version": "22.0.1.28",
-            "method": "blacklist",
-            "result": null
-          },
-          "Kingsoft": {
-            "category": "undetected",
-            "engine_name": "Kingsoft",
-            "engine_update": "20260601",
-            "engine_version": "None",
-            "method": "blacklist",
-            "result": null
-          },
-          "Lionic": {
-            "category": "undetected",
-            "engine_name": "Lionic",
-            "engine_update": "20260601",
-            "engine_version": "8.16",
-            "method": "blacklist",
-            "result": null
-          },
-          "Malwarebytes": {
-            "category": "undetected",
-            "engine_name": "Malwarebytes",
-            "engine_update": "20260601",
-            "engine_version": "3.1.0.235",
-            "method": "blacklist",
-            "result": null
-          },
-          "MaxSecure": {
-            "category": "undetected",
-            "engine_name": "MaxSecure",
-            "engine_update": "20260601",
-            "engine_version": "1.0.0.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "McAfeeD": {
-            "category": "undetected",
-            "engine_name": "McAfeeD",
-            "engine_update": "20260601",
-            "engine_version": "1.2.0.14833",
-            "method": "blacklist",
-            "result": null
-          },
-          "MicroWorld-eScan": {
-            "category": "undetected",
-            "engine_name": "MicroWorld-eScan",
-            "engine_update": "20260601",
-            "engine_version": "14.0.409.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Microsoft": {
-            "category": "undetected",
-            "engine_name": "Microsoft",
-            "engine_update": "20260601",
-            "engine_version": "1.1.26040.8",
-            "method": "blacklist",
-            "result": null
-          },
-          "NANO-Antivirus": {
-            "category": "undetected",
-            "engine_name": "NANO-Antivirus",
-            "engine_update": "20260601",
-            "engine_version": "1.0.170.26895",
-            "method": "blacklist",
-            "result": null
-          },
-          "Paloalto": {
-            "category": "type-unsupported",
-            "engine_name": "Paloalto",
-            "engine_update": "20260601",
-            "engine_version": "0.9.0.1003",
-            "method": "blacklist",
-            "result": null
-          },
-          "Panda": {
-            "category": "undetected",
-            "engine_name": "Panda",
-            "engine_update": "20260601",
-            "engine_version": "4.6.4.2",
-            "method": "blacklist",
-            "result": null
-          },
-          "Rising": {
-            "category": "undetected",
-            "engine_name": "Rising",
-            "engine_update": "20260601",
-            "engine_version": "25.0.0.28",
-            "method": "blacklist",
-            "result": null
-          },
-          "SUPERAntiSpyware": {
-            "category": "undetected",
-            "engine_name": "SUPERAntiSpyware",
-            "engine_update": "20260530",
-            "engine_version": "5.6.0.1032",
-            "method": "blacklist",
-            "result": null
-          },
-          "Sangfor": {
-            "category": "undetected",
-            "engine_name": "Sangfor",
-            "engine_update": "20260601",
-            "engine_version": "2.22.3.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "SentinelOne": {
-            "category": "undetected",
-            "engine_name": "SentinelOne",
-            "engine_update": "20260324",
-            "engine_version": "7.6.2.19",
-            "method": "blacklist",
-            "result": null
-          },
-          "Skyhigh": {
-            "category": "undetected",
-            "engine_name": "Skyhigh",
-            "engine_update": "20260601",
-            "engine_version": "v2021.2.0+4045",
-            "method": "blacklist",
-            "result": null
-          },
-          "Sophos": {
-            "category": "undetected",
-            "engine_name": "Sophos",
-            "engine_update": "20260531",
-            "engine_version": "3.5.1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Symantec": {
-            "category": "undetected",
-            "engine_name": "Symantec",
-            "engine_update": "20260601",
-            "engine_version": "1.22.0.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "SymantecMobileInsight": {
-            "category": "type-unsupported",
-            "engine_name": "SymantecMobileInsight",
-            "engine_update": "20260123",
-            "engine_version": "2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "TACHYON": {
-            "category": "undetected",
-            "engine_name": "TACHYON",
-            "engine_update": "20260601",
-            "engine_version": "2026-06-01.02",
-            "method": "blacklist",
-            "result": null
-          },
-          "Tencent": {
-            "category": "undetected",
-            "engine_name": "Tencent",
-            "engine_update": "20260601",
-            "engine_version": "1.0.0.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "Trapmine": {
-            "category": "type-unsupported",
-            "engine_name": "Trapmine",
-            "engine_update": "20260504",
-            "engine_version": "4.0.12.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrellixENS": {
-            "category": "undetected",
-            "engine_name": "TrellixENS",
-            "engine_update": "20260601",
-            "engine_version": "6.0.6.653",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrendMicro": {
-            "category": "undetected",
-            "engine_name": "TrendMicro",
-            "engine_update": "20260601",
-            "engine_version": "24.550.0.1002",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrendMicro-HouseCall": {
-            "category": "undetected",
-            "engine_name": "TrendMicro-HouseCall",
-            "engine_update": "20260601",
-            "engine_version": "24.550.0.1002",
-            "method": "blacklist",
-            "result": null
-          },
-          "Trustlook": {
-            "category": "undetected",
-            "engine_name": "Trustlook",
-            "engine_update": "20260601",
-            "engine_version": "1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "VBA32": {
-            "category": "undetected",
-            "engine_name": "VBA32",
-            "engine_update": "20260601",
-            "engine_version": "5.6.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "VIPRE": {
-            "category": "undetected",
-            "engine_name": "VIPRE",
-            "engine_update": "20260531",
-            "engine_version": "6.0.0.35",
-            "method": "blacklist",
-            "result": null
-          },
-          "Varist": {
-            "category": "undetected",
-            "engine_name": "Varist",
-            "engine_update": "20260601",
-            "engine_version": "6.6.1.3",
-            "method": "blacklist",
-            "result": null
-          },
-          "ViRobot": {
-            "category": "undetected",
-            "engine_name": "ViRobot",
-            "engine_update": "20260601",
-            "engine_version": "2014.3.20.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "VirIT": {
-            "category": "undetected",
-            "engine_name": "VirIT",
-            "engine_update": "20260601",
-            "engine_version": "9.5.1219",
-            "method": "blacklist",
-            "result": null
-          },
-          "Webroot": {
-            "category": "undetected",
-            "engine_name": "Webroot",
-            "engine_update": "20250227",
-            "engine_version": "1.10.0.2",
-            "method": "blacklist",
-            "result": null
-          },
-          "Xcitium": {
-            "category": "undetected",
-            "engine_name": "Xcitium",
-            "engine_update": "20260601",
-            "engine_version": "38693",
-            "method": "blacklist",
-            "result": null
-          },
-          "Yandex": {
-            "category": "undetected",
-            "engine_name": "Yandex",
-            "engine_update": "20260601",
-            "engine_version": "5.5.2.24",
-            "method": "blacklist",
-            "result": null
-          },
-          "Zillya": {
-            "category": "undetected",
-            "engine_name": "Zillya",
-            "engine_update": "20260529",
-            "engine_version": "2.0.0.5611",
-            "method": "blacklist",
-            "result": null
-          },
-          "ZoneAlarm": {
-            "category": "undetected",
-            "engine_name": "ZoneAlarm",
-            "engine_update": "20260601",
-            "engine_version": "6.25-116107206",
-            "method": "blacklist",
-            "result": null
-          },
-          "Zoner": {
-            "category": "undetected",
-            "engine_name": "Zoner",
-            "engine_update": "20260601",
-            "engine_version": "2.2.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "alibabacloud": {
-            "category": "undetected",
-            "engine_name": "alibabacloud",
-            "engine_update": "20250321",
-            "engine_version": "2.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "huorong": {
-            "category": "undetected",
-            "engine_name": "huorong",
-            "engine_update": "20260601",
-            "engine_version": "38cd6ab:38cd6ab:354651b:354651b",
-            "method": "blacklist",
-            "result": null
-          },
-          "tehtris": {
-            "category": "type-unsupported",
-            "engine_name": "tehtris",
-            "engine_update": "20260601",
-            "engine_version": null,
-            "method": "blacklist",
-            "result": null
-          }
-        },
-        "last_analysis_stats": {
-          "confirmed-timeout": 0,
-          "failure": 2,
-          "harmless": 0,
-          "malicious": 0,
-          "suspicious": 0,
-          "timeout": 1,
-          "type-unsupported": 7,
-          "undetected": 65
-        },
-        "last_modification_date": 1780327316,
-        "last_submission_date": 1780327150,
-        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-        "md5": "f6afeb595474c805353a4ba197933fe2",
-        "meaningful_name": "addon.nvda-addon",
-        "names": [
-          "addon.nvda-addon"
-        ],
-        "reputation": 0,
-        "sha1": "39ad323995b1d1d79160a3cfe16f1904d7592f17",
-        "sha256": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
-        "size": 38167919,
-        "ssdeep": "786432:JxRQC4vycIuJBzkYkirIemnH2hMwGWeaxgv3wFihXQx3JIag:JxRQC4vqu/xzIeqHkMw3ejfw0pQxa",
-        "tags": [
-          "zip",
-          "contains-pe"
-        ],
-        "times_submitted": 1,
-        "tlsh": "T1978733A7C8DAD245EDB2D4BEE0A41BA731FF52ECC04A744D652DD0CB59C3BDA02852C6",
-        "total_votes": {
-          "harmless": 0,
-          "malicious": 0
-        },
-        "trid": [
-          {
-            "file_type": "Python Zip Application",
-            "probability": 72.4
-          },
-          {
-            "file_type": "ZIP compressed archive",
-            "probability": 27.5
-          }
-        ],
-        "type_description": "ZIP",
-        "type_extension": "zip",
-        "type_tag": "zip",
-        "type_tags": [
-          "compressed",
-          "zip"
-        ],
-        "unique_sources": 1,
-        "vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
-      }
-    ]
-  },
-  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v6.1.1/VisionAssistant-6.1.1.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+	"sha256": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
+	"addonVersionName": "6.1.1",
+	"addonVersionNumber": {
+		"major": 6,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1780327131000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "de",
+			"displayName": "KI Assistent Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "es",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivo (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Gestionar/escanear etiquetas (Shift+L)\n- Explorador de UI (E)\n- Operador IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappeler le dernier résultat (Espace)\n- Aide des commandes (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "id",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (I)\n- Etichettatore oggetti (l) \n- Gestisci/scansiona etichette (Shift-l) \n- Operatore IA (Shift+A)\\n\n- Esplora interfaccia (e) \n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "pl",
+			"displayName": "Vision Assistant Pro",
+			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Dyktowanie (S)\n- Raportuj stan (I)\n- Oznacz obiekt (L)\n- Zarządzaj etykietami / Skanuj (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Pokaż ostatni wynik (Spacja)\n- Pomoc poleceń (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para NVDA usando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (I)\n- Rotular Objeto (L)\n- Gerenciar/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualizações (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para o NVDA usando modelos Gemini.\nCamada de comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de UI (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "ro",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un asistent AI avansat pentru NVDA care folosește modelele Gemini.\nStrat de comenzi: apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvitor CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (I)\n- Etichetează obiectul (L)\n- Gestionează/scanează etichetele (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Verifică actualizarea (U)\n- Reia ultimul rezultat (Spațiu)\n- Ajutor comenzi (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "ru",
+			"displayName": "Vision Assistant Pro (Визуальный помощник)",
+			"description": "Vision Assistant Pro — это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini..\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ онлайн-видео (Shift+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-Оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Tanımlama (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+			"changelog": "## Changes for 6.1.1\n\n*   **Gemma 4 Thinking Output Fix**: Fixed an issue with Gemma 4 models where the entire internal thought process was displayed as the final response, or where disabling thinking resulted in empty responses. The add-on now correctly isolates and extracts only the final clean text response.\n*   **Batch OCR from File Explorer**: You can now select multiple photos or PDFs directly in Windows File Explorer and extract text or analyze them in batch. The add-on will automatically filter and process only the supported file formats."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5699,
+								"startColumn": 24,
+								"endColumn": 49
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "2913bc0dd513cd37:1",
+					"primaryLocationStartColumnFingerprint": "11"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5699,
+								"startColumn": 24,
+								"endColumn": 39
+							}
+						},
+						"message": {
+							"text": "instagram.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5701,
+								"startColumn": 25,
+								"endColumn": 47
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "ecbb1fd672237310:1",
+					"primaryLocationStartColumnFingerprint": "12"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 5701,
+								"startColumn": 25,
+								"endColumn": 37
+							}
+						},
+						"message": {
+							"text": "tiktok.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 1
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 2,
+						"exe": 1,
+						"h": 177,
+						"html": 16,
+						"ini": 17,
+						"lib": 4,
+						"md": 16,
+						"mo": 16,
+						"po": 16,
+						"py": 63,
+						"pyd": 4,
+						"typed": 1
+					},
+					"file_types": {
+						"HTML": 16,
+						"Portable Executable": 7,
+						"unknown": 312
+					},
+					"highest_datetime": "2026-06-01 15:15:24",
+					"lowest_datetime": "2026-06-01 15:14:56",
+					"num_children": 335,
+					"type": "ZIP",
+					"uncompressed_size": 98356816
+				},
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "d43788f5e985eb7b773f9127286e5da2"
+				},
+				"first_submission_date": 1780327150,
+				"last_analysis_date": 1780327150,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260601",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260528",
+						"engine_version": "6.783",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260601",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260601",
+						"engine_version": "3.30.0.10666",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260601",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260601",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260601",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260601",
+						"engine_version": "260601-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260601",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260601",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260601",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260531",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260601",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260601",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260601",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260521",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260601",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260601",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260601",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260601",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260528",
+						"engine_version": "4.0.264",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260601",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260601",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260601",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260601",
+						"engine_version": "GD:27.44754AVA:64.31344",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "failure",
+						"engine_name": "Google",
+						"engine_update": "20260601",
+						"engine_version": "1780322461",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260601",
+						"engine_version": "1.0.247.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260601",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260531",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260601",
+						"engine_version": "14.55.59679",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260601",
+						"engine_version": "14.55.59681",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260601",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260601",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260601",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260601",
+						"engine_version": "3.1.0.235",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260601",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260601",
+						"engine_version": "1.2.0.14833",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260601",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260601",
+						"engine_version": "1.1.26040.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260601",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260601",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260601",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260601",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260530",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260601",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260324",
+						"engine_version": "7.6.2.19",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260601",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260531",
+						"engine_version": "3.5.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260601",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260601",
+						"engine_version": "2026-06-01.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260601",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260504",
+						"engine_version": "4.0.12.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260601",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260601",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260601",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260601",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260601",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260531",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260601",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260601",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260601",
+						"engine_version": "9.5.1219",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.10.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260601",
+						"engine_version": "38693",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260601",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260529",
+						"engine_version": "2.0.0.5611",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260601",
+						"engine_version": "6.25-116107206",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260601",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260601",
+						"engine_version": "38cd6ab:38cd6ab:354651b:354651b",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260601",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 7,
+					"undetected": 65
+				},
+				"last_modification_date": 1780327316,
+				"last_submission_date": 1780327150,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"md5": "f6afeb595474c805353a4ba197933fe2",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "39ad323995b1d1d79160a3cfe16f1904d7592f17",
+				"sha256": "20febe4f0024627babcc1e8b6eced0bcce1c7aad38f729a617f9c297b34876cc",
+				"size": 38167919,
+				"ssdeep": "786432:JxRQC4vycIuJBzkYkirIemnH2hMwGWeaxgv3wFihXQx3JIag:JxRQC4vqu/xzIeqHkMw3ejfw0pQxa",
+				"tags": [
+					"zip",
+					"contains-pe"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1978733A7C8DAD245EDB2D4BEE0A41BA731FF52ECC04A744D652DD0CB59C3BDA02852C6",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Zip Application",
+						"probability": 72.4
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 27.5
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
 }

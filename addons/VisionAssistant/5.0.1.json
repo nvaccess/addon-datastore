@@ -1,965 +1,965 @@
 {
-  "addonId": "VisionAssistant",
-  "displayName": "Vision Assistant Pro",
-  "URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v5.0.1/VisionAssistant-5.0.1.nvda-addon",
-  "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
-  "sha256": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
-  "addonVersionName": "5.0.1",
-  "addonVersionNumber": {
-    "major": 5,
-    "minor": 0,
-    "patch": 1
-  },
-  "minNVDAVersion": {
-    "major": 2025,
-    "minor": 1,
-    "patch": 0
-  },
-  "lastTestedVersion": {
-    "major": 2025,
-    "minor": 3,
-    "patch": 3
-  },
-  "channel": "stable",
-  "publisher": "Mahmood Hozhabri",
-  "sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-  "license": "GPL v2",
-  "homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-  "changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages.",
-  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-  "submissionTime": 1777459278000,
-  "translations": [
-    {
-      "language": "de",
-      "displayName": "KI Assistent Pro",
-      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
-      "changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages."
-    },
-    {
-      "language": "fa",
-      "displayName": "دستیارِ حرفه‌ایِ بینایی",
-      "description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nلایه‌ی فرمان‌ها: NVDA+Shift+V را بفشارید، سپس:\n- مترجمِ هوشمند (T)، ترجمه از کلیپ‌برد (Shift+T)؛\n- پالایش‌کننده‌ی متن (R)؛\n- توصیفِ پیمایشگر (V)، توصیف تمام صفحه (o)؛\n- تحلیلِ آنلاینِ ویدئو (Shift+V)؛\n- سندخوان (D)؛\n- OCRِ فایل (F)؛\n- حل‌کننده‌ی کپچا (C)؛\n- رونویسیِ فایلِ صوتی (A)؛\n- تایپِ صوتیِ هوشمند (S)؛\n- اعلامِ وضعیت (L)؛\n- بررسیِ بروزرسانی (U)\n- فراخوانیِ آخرین نتیجه (space)\n- راهنمای فرمان‌ها (H)\n",
-      "changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages."
-    },
-    {
-      "language": "fr",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Analyseur de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (L)\n- Vérification des mises à jour (U)\n",
-      "changelog": "## Changements de la version 5.0\n* **Architecture multi-fournisseurs** : Ajout de la prise en charge complète de **OpenAI**, **Groq** et **Mistral** aux côtés de Google Gemini. Les utilisateurs peuvent désormais choisir leur fournisseur d'IA préféré.\n* **Choix de modèle avancé** : Les utilisateurs de fournisseurs natifs (Gemini, OpenAI, etc.) peuvent désormais sélectionner des modèles spécifiques dans une liste déroulante pour différentes tâches (OCR, transcription vocale, synthese vocale).\n* **Configuration avancée des points de terminaison** : Les utilisateurs de fournisseurs personnalisés peuvent saisir manuellement des URL et des noms de modèles spécifiques pour un contrôle granulaire sur les serveurs locaux ou tiers.\n* **Visibilité des fonctionnalités intelligentes** : Le menu des paramètres et l'interface de lecture de document masquent désormais automatiquement les fonctionnalités non prises en charge (telles que TTS) en fonction du fournisseur sélectionné.\n* **Récupération de modèle dynamique** : L'extension récupère désormais la liste des modèles disponibles directement à partir de l'API du fournisseur, garantissant ainsi la compatibilité avec les nouveaux modèles dès leur sortie.\n* **OCR et traduction hybrides** : Optimisation de la logique pour utiliser Google Translate pour plus de rapidité lors de l'utilisation de Chrome OCR et de la traduction basée sur l'IA lors de l'utilisation des moteurs Gemini/Groq/OpenAI.\n* **\"Re-scan universel avec l'IA\"** : La fonction de nouvelle numérisation du Document Reader n'est plus limitée à Gemini. Il utilise désormais le fournisseur d’IA actuellement actif pour retraiter les pages."
-    },
-    {
-      "language": "id",
-      "displayName": "Vision Assistant Pro",
-      "description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Terjemahkan yang ada di Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Secara Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR Berkas (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (L)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n",
-      "changelog": "## Perubahan untuk 5.0\n* **Arsitektur Multi-Penyedia**: Menambahkan dukungan penuh untuk **OpenAI**, **Groq**, dan **Mistral** bersama dengan Google Gemini. Pengguna kini dapat memilih backend AI yang mereka inginkan.\n* **Perutean Model Lanjutan**: Pengguna penyedia bawaan (Gemini, OpenAI, dll.) kini dapat memilih model tertentu dari daftar dropdown untuk berbagai tugas (OCR, STT, TTS).\n* **Konfigurasi Titik Akhir Lanjutan**: Pengguna penyedia kustom dapat secara manual memasukkan URL dan nama model tertentu untuk kontrol seutuhnya atas server lokal atau pihak ketiga.\n* **Visibilitas Fitur Cerdas**: Menu pengaturan dan UI Pembaca Dokumen kini secara otomatis menyembunyikan fitur yang tidak didukung (seperti TTS) berdasarkan penyedia yang dipilih.\n* **Pengambilan Model Dinamis**: Add-on ini kini mengambil daftar model yang tersedia langsung dari API penyedia, memastikan kompatibilitas dengan model baru segera setelah dirilis.\n* **Hybrid OCR & Translation**: Mengoptimalkan logika untuk menggunakan Google Translate untuk kecepatan saat menggunakan Chrome OCR, dan terjemahan bertenaga AI saat menggunakan mesin Gemini/Groq/OpenAI.\n* **Universal \"Pindai ulang dengan AI\"**: Fitur pemindaian ulang Pembaca Dokumen tidak lagi terbatas pada Gemini. Sekarang menggunakan penyedia AI apa pun yang aktif untuk memproses ulang halaman."
-    },
-    {
-      "language": "it",
-      "displayName": "Vision Assistant Pro",
-      "description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (L)\n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),\n",
-      "changelog": "## Modifiche per 5.0\\n\n* **Architettura multi-provider**: aggiunto il supporto completo per **OpenAI**, **Groq** e **Mistral** insieme a Google Gemini. Gli utenti possono ora scegliere il backend AI preferito.\\n\n* **Instradamento avanzato dei modelli**: gli utenti di provider nativi (Gemini, OpenAI, ecc.) ora possono selezionare modelli specifici da un elenco a discesa per diverse attività (OCR, STT, TTS).\\n\n* **Configurazione endpoint avanzata**: gli utenti dei provider personalizzati possono inserire manualmente URL e nomi di modelli specifici per un controllo granulare su server locali o di terze parti.\\n\n* **Visibilità delle funzionalità intelligenti**: il menu delle impostazioni e l'interfaccia utente del lettore di documenti ora nascondono automaticamente le funzionalità non supportate (come TTS) in base al provider selezionato.\\n\n* **Recupero dinamico dei modelli**: il componente aggiuntivo ora recupera l'elenco dei modelli disponibili direttamente dall'API del provider, garantendo la compatibilità con i nuovi modelli non appena vengono rilasciati.\\n\n* **OCR e traduzione ibridi**: ottimizzata la logica per utilizzare Google Traduttore per aumentare la velocità quando si utilizza l'OCR di Chrome e la traduzione basata sull'intelligenza artificiale quando si utilizzano i motori Gemini/Groq/OpenAI.\\n\n* **\"Riscansione universale con AI\"**: la funzione di ri-scansione del lettore di documenti non è più limitata a Gemini. Ora utilizza qualsiasi provider di intelligenza artificiale attualmente attivo per rielaborare le pagine."
-    },
-    {
-      "language": "pl",
-      "displayName": "Vision Assistant Pro",
-      "description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Inteligentny tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Inteligentne dyktowanie (S)\n- Raportuj stan (L)\n- Sprawdź aktualizację (U)\n- pokaż ostatnią odpowiedź AI w trybie czatu. (Spacja)\n- Pomoc poleceń (H)\n",
-      "changelog": "## Zmiany w wersji 5.0\n* **Wielu dostawców**: Dodano pełną obsługę **OpenAI**, **Groq** i **Mistral** obok Google Gemini. Teraz można wybrać preferowany model AI.\n* **Przypisywanie modeli do zadań**: Użytkownicy natywnych dostawców (Gemini, OpenAI itp.) mogą teraz wybierać konkretne modele z listy rozwijanej dla różnych zadań (OCR, STT, TTS).\n* **Adresy usług**: Użytkownicy niestandardowych dostawców mogą ręcznie wprowadzać konkretne adresy URL i nazwy modeli np. dla skonfigurowania lokalnego modelu.\n* **Ukrywanie nieobsługiwanych funkcji**: Menu ustawień i interfejs czytnika dokumentów automatycznie ukrywają nieobsługiwane funkcje (np. TTS) na podstawie wybranego dostawcy.\n* **Pobieranie modeli z API**: Dodatek pobiera listę dostępnych modeli bezpośrednio z API dostawcy, co umożliwia obsługę nowych modeli natychmiast po ich wydaniu.\n* **Hybrydowe OCR i tłumaczenie**: Zoptymalizowano logikę, aby używać Tłumacza Google dla szybkości przy OCR Chrome oraz tłumaczenia opartego na AI przy silnikach Gemini/Groq/OpenAI.\n* **Ponowne skanowanie AI**: Funkcja ponownego skanowania w czytniku dokumentów nie jest już ograniczona do Gemini. Wykorzystuje teraz aktywnego dostawcę AI do ponownego przetwarzania stron."
-    },
-    {
-      "language": "pt_BR",
-      "displayName": "Assistente de Visão Pro",
-      "description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documento (D)\n- OCR de Arquivo (F)\n- Resolvedor de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (L)\n- Verificar Atualização (U)\n- Recuperar Último Resultado (Espaço),\n- Ajuda de Comandos (H),\n",
-      "changelog": "## Alterações para 5.0\n* **Arquitetura Multi-Provedor**: Suporte completo adicionado para **OpenAI**, **Groq** e **Mistral**, juntamente com o Google Gemini. Os usuários agora podem escolher seu backend de IA preferido.\n* **Roteamento Avançado de Modelos**: Usuários de provedores nativos (Gemini, OpenAI, etc.) agora podem selecionar modelos específicos a partir de uma lista suspensa para diferentes tarefas (OCR, STT, TTS).\n* **Configuração Avançada de Endpoint**: Usuários de provedores personalizados podem inserir manualmente URLs e nomes de modelos específicos para controle detalhado de servidores locais ou de terceiros.\n* **Visibilidade Inteligente de Recursos**: O menu de configurações e a interface do Document Reader agora ocultam automaticamente recursos não suportados (como TTS) com base no provedor selecionado.\n* **Busca Dinâmica de Modelos**: O addon agora busca a lista de modelos disponíveis diretamente da API do provedor, garantindo compatibilidade com novos modelos assim que são lançados.\n* **OCR & Tradução Híbrida**: Lógica otimizada para usar o Google Translate para maior velocidade ao utilizar OCR no Chrome, e tradução com suporte de IA quando usando os motores Gemini/Groq/OpenAI.\n* **\"Re-scan com IA\" Universal**: O recurso de re-scaneamento do Document Reader não está mais limitado ao Gemini. Ele agora utiliza qualquer provedor de IA ativo para reprocessar as páginas."
-    },
-    {
-      "language": "pt_PT",
-      "displayName": "Assistente de Visão Pro",
-      "description": "Um assistente de IA avançado para o NVDA que utiliza modelos Gemini.\nCamada de Comandos: Prima NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Aperfeiçoador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (L)\n- Verificar Atualizações (U)\n- Recordar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n",
-      "changelog": "## Alterações para a versão 5.0\n* **Arquitetura Multi-Fornecedor**: Adicionado suporte completo para **OpenAI**, **Groq** e **Mistral**, juntamente com o Google Gemini. Agora é possível escolher o backend de IA preferido.\n* **Encaminhamento Avançado de Modelos**: Utilizadores de fornecedores nativos (Gemini, OpenAI, etc.) podem selecionar modelos específicos numa lista suspensa para diferentes tarefas (OCR, STT, TTS).\n* **Configuração Avançada de Endpoint**: Utilizadores de fornecedores personalizados podem introduzir manualmente URLs e nomes de modelos específicos, permitindo controlo detalhado sobre servidores locais ou de terceiros.\n* **Visibilidade Inteligente de Funcionalidades**: O menu de definições e a interface do Leitor de Documentos ocultam automaticamente funcionalidades não suportadas (como TTS) com base no fornecedor selecionado.\n* **Obtenção Dinâmica de Modelos**: O addon passa a obter a lista de modelos disponíveis diretamente da API do fornecedor, garantindo compatibilidade com novos modelos assim que forem lançados.\n* **OCR e Tradução Híbridos**: Lógica otimizada para utilizar o Google Translate pela rapidez ao usar o OCR do Chrome, e tradução com IA ao utilizar motores Gemini/Groq/OpenAI.\n* **\"Reanalisar com IA\" Universal**: A funcionalidade de reanálise do Leitor de Documentos deixou de estar limitada ao Gemini. Agora utiliza o fornecedor de IA atualmente ativo para reprocessar páginas."
-    },
-    {
-      "language": "ru",
-      "displayName": "Vision Assistant Pro (Визуальный помощник)",
-      "description": "Vision Assistant Pro — это продвинутый многофункциональный AI-ассистент для NVDA. Он использует ведущие мировые AI-движки для обеспечения интеллектуального чтения с экрана, перевода, голосового ввода и анализа документов.\nКомандный слой: нажмите NVDA+Shift+V, затем:\nУмный перевод (T) / из буфера обмена (Shift+T).\nОбработка текста (R).\nОписание объекта (V) / всего экрана (O).\nАнализ онлайн-видео (Shift+V).\nЧтение документов (D).\nOCR файлов (F).\nРешение CAPTCHA (C).\nРасшифровка аудио (A).\nУмная диктовка (S).\nСостояние (L).\nПроверка обновлений (U).\nПовтор последнего результата (Пробел).\nСправка по командам (H).\n",
-      "changelog": "## Что нового в версии 5.0\n* **Мультипровайдерная архитектура**: Добавлена полная поддержка **OpenAI**, **Groq** и **Mistral** наряду с Google Gemini. Теперь пользователи могут выбирать предпочтительный ИИ-бэкенд.\n* **Расширенная маршрутизация моделей**: Пользователи нативных провайдеров (Gemini, OpenAI и др.) теперь могут выбирать конкретные модели из выпадающего списка для разных задач (OCR, STT, TTS).\n* **Расширенная конфигурация конечных точек**: Пользователи пользовательского провайдера могут вручную вводить конкретные URL и названия моделей для детального контроля над локальными или сторонними серверами.\n* **Интеллектуальная видимость функций**: Меню настроек и интерфейс средства чтения документов теперь автоматически скрывают неподдерживаемые функции (например, TTS) в зависимости от выбранного провайдера.\n* **Динамическая загрузка моделей**: Дополнение теперь загружает список доступных моделей напрямую из API провайдера, обеспечивая совместимость с новыми моделями сразу после их выпуска.\n* **Гибридный OCR и перевод**: Оптимизирована логика для использования Google Translate для скорости при использовании Chrome OCR и ИИ-перевода при использовании движков Gemini/Groq/OpenAI.\n* **Универсальное «Повторное сканирование с ИИ»**: Функция повторного сканирования в средстве чтения документов больше не ограничена Gemini. Теперь она использует любого активного ИИ-провайдера для повторной обработки страниц."
-    },
-    {
-      "language": "tr",
-      "displayName": "Profesyonel Görsel Asistan",
-      "description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çeviri (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesneyi Betimle (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Sesi metne çevir (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (L)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk),\n- Komut Yardımı (H),\n",
-      "changelog": "## 5.0 için Değişiklikler\n* **Çoklu Sağlayıcı Mimarisi**: Google Gemini’ye ek olarak **OpenAI**, **Groq** ve **Mistral** için tam destek eklendi. Kullanıcılar artık tercih ettikleri yapay zekâ arka ucunu seçebilir.\n* **Gelişmiş Model Yönlendirme**: Yerel sağlayıcı kullanıcıları (Gemini, OpenAI vb.) artık farklı görevler (OCR, STT, TTS) için açılır listeden belirli modelleri seçebilir.\n* **Gelişmiş Uç Nokta Yapılandırması**: Özel sağlayıcı kullanıcıları, yerel veya üçüncü taraf sunucular üzerinde ayrıntılı denetim için belirli URL’leri ve model adlarını manuel olarak girebilir.\n* **Akıllı Özellik Görünürlüğü**: Ayarlar menüsü ve Belge Okuyucu arayüzü, seçilen sağlayıcıya göre desteklenmeyen özellikleri (TTS gibi) otomatik olarak gizler.\n* **Dinamik Model Getirme**: Eklenti, mevcut model listesini doğrudan sağlayıcının API’sinden alır; böylece yeni modeller yayınlanır yayınlanmaz uyumluluk sağlanır.\n* **Hibrit OCR ve Çeviri**: Chrome OCR kullanılırken hız için Google Translate, Gemini/Groq/OpenAI motorları kullanılırken yapay zekâ destekli çeviri tercih edecek şekilde mantık optimize edildi.\n* **Evrensel “Yapay Zekâ ile Yeniden Tara”**: Belge Okuyucu’nun yeniden tarama özelliği artık yalnızca Gemini ile sınırlı değil; etkin olan herhangi bir yapay zekâ sağlayıcısını kullanır."
-    },
-    {
-      "language": "uk",
-      "displayName": "Vision Assistant Pro",
-      "description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n",
-      "changelog": "## Зміни для 5.0\n* **Багатопостачальна архітектура**: Додано повну підтримку **OpenAI**, **Groq** та **Mistral** поряд з Google Gemini. Тепер користувачі можуть вибрати бажаний бекенд для ШІ.\n* Розширена модель маршрутизації: Користувачі нативних постачальників (Gemini, OpenAI тощо) тепер можуть вибирати конкретні моделі зі списку, для різних завдань (OCR, STT, TTS).\n* Розширена конфігурація кінцевих точок: Користувачі можуть вручну вводити конкретні URL та назви моделей для детального контролю над локальними або сторонніми серверами.\n* Розумна видимість функцій: Меню налаштувань і інтерфейс Читача документів тепер автоматично приховує непідтримувані функції (наприклад, TTS) залежно від обраного постачальника.\n* Динамічне отримання моделей: Додаток тепер завантажує список доступних моделей безпосередньо з API постачальника, забезпечуючи сумісність з новими моделями, щойно вони з'являються.\n* Гібридне розпізнавання та переклад: Оптимізовано логіку використання Google Translate для пришвидшення роботи під час використання розпізнавання в Chrome і перекладу на основі штучного інтелекту під час використання движків Gemini/Groq/OpenAI.\n* **Універсальна функція «Повторне сканування зі штучним інтелектом »**: Функція повторного сканування в Читачі документів більше не обмежується Gemini. Тепер для повторної обробки сторінок використовується будь-який активний на даний момент постачальник ШІ."
-    },
-    {
-      "language": "vi",
-      "displayName": "Vision Assistant Pro",
-      "description": "Một trợ lý AI nâng cao dành cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thông minh (T) / Clipboard (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích video trực tuyến (Shift+V)\n- Trình đọc tài liệu (D)\n- OCR tệp (F)\n- Giải CAPTCHA (C)\n- Chuyển biên âm thanh (A)\n- Đọc chính tả thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)\n- Gọi lại kết quả cuối cùng (Space),\n- Trợ giúp lệnh (H),\n",
-      "changelog": "## Những thay đổi trong phiên bản 5.0\n* **Kiến trúc đa nhà cung cấp**: Bổ sung hỗ trợ đầy đủ cho **OpenAI**, **Groq**, và **Mistral** bên cạnh Google Gemini. Người dùng hiện có thể chọn backend AI ưa thích của mình.\n* **Định tuyến mô hình nâng cao**: Người dùng các nhà cung cấp gốc (Gemini, OpenAI, v.v.) hiện có thể chọn các mô hình cụ thể từ danh sách thả xuống cho các tác vụ khác nhau (OCR, STT, TTS).\n* **Cấu hình Endpoint nâng cao**: Người dùng nhà cung cấp tùy chỉnh có thể nhập thủ công các URL và tên mô hình cụ thể để kiểm soát chi tiết các máy chủ cục bộ hoặc bên thứ ba.\n* **Hiển thị tính năng thông minh**: Menu cài đặt và giao diện Trình đọc tài liệu giờ đây tự động ẩn các tính năng không được hỗ trợ (như TTS) dựa trên nhà cung cấp đã chọn.\n* **Tìm nạp mô hình động**: Add-on hiện tìm nạp danh sách mô hình có sẵn trực tiếp từ API của nhà cung cấp, đảm bảo khả năng tương thích với các mô hình mới ngay khi chúng được phát hành.\n* **Kết hợp OCR & Dịch thuật**: Tối ưu hóa logic để sử dụng Google Dịch nhằm tăng tốc độ khi dùng Chrome OCR, và dịch thuật bằng AI khi dùng các công cụ Gemini/Groq/OpenAI.\n* **\"Quét lại bằng AI\" toàn cầu**: Tính năng quét lại của Trình đọc tài liệu không còn bị giới hạn ở Gemini. Giờ đây, tính năng này sử dụng bất kỳ nhà cung cấp AI nào đang hoạt động để xử lý lại các trang."
-    },
-    {
-      "language": "zh_CN",
-      "displayName": "Vision Assistant Pro",
-      "description": "基于 AI 模型的高级 NVDA 智能助手。\n命令层：按 NVDA+Shift+V，然后按：\n- 智能翻译 (T) / 剪贴板 (Shift+T)\n- 文本润色 (R)\n- 描述对象 (V) / 全屏 (O)\n- 在线视频分析 (Shift+V)\n- 文档阅读器 (D)\n- 文件 OCR (F)\n- 验证码求解器 (C)\n- 音频转录 (A)\n- 智能听写 (S)\n- 播报状态 (L)\n- 检查更新 (U)\n- 调用上一次结果 (Space)\n- 命令帮助 (H)\n",
-      "changelog": "## 5.0 版本变更\n* **多提供商架构**：在 Google Gemini 的基础上，全面添加了对 **OpenAI**、**Groq** 和 **Mistral** 的支持。用户现在可以选择自己首选的 AI 后端。\n* **高级模型路由**：原生提供商（Gemini、OpenAI 等）的用户现在可以从下拉列表中为不同任务（OCR、STT、TTS）选择特定的模型。\n* **高级端点配置**：自定义提供商用户可以手动输入特定的 URL 和模型名称，从而对本地或第三方服务器进行精细控制。\n* **智能功能可见性**：设置菜单和文档阅读器界面现在会根据所选的提供商，自动隐藏不支持的功能（如 TTS）。\n* **动态模型获取**：插件现在直接从提供商的 API 获取可用模型列表，确保在新模型发布后第一时间兼容。\n* **混合 OCR 与翻译**：优化了逻辑，在使用 Chrome OCR 时采用 Google 翻译以保证速度，而在使用 Gemini/Groq/OpenAI 引擎时采用 AI 驱动的翻译。\n* **通用“使用 AI 重新扫描”**：文档阅读器的重新扫描功能不再局限于 Gemini。它现在利用当前活动的任何 AI 提供商来重新处理页面。"
-    }
-  ],
-  "vtScanUrl": "https://www.virustotal.com/gui/file/fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
-  "scanResults": {
-    "codeQL-warnings": [
-      {
-        "ruleId": "py/incomplete-url-substring-sanitization",
-        "rule": {
-          "id": "py/incomplete-url-substring-sanitization",
-          "index": 4,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 4956,
-                "startColumn": 24,
-                "endColumn": 49
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "2913bc0dd513cd37:1",
-          "primaryLocationStartColumnFingerprint": "11"
-        },
-        "relatedLocations": [
-          {
-            "id": 1,
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 4956,
-                "startColumn": 24,
-                "endColumn": 39
-              }
-            },
-            "message": {
-              "text": "instagram.com"
-            }
-          }
-        ]
-      },
-      {
-        "ruleId": "py/incomplete-url-substring-sanitization",
-        "rule": {
-          "id": "py/incomplete-url-substring-sanitization",
-          "index": 4,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 4958,
-                "startColumn": 25,
-                "endColumn": 47
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "ecbb1fd672237310:1",
-          "primaryLocationStartColumnFingerprint": "12"
-        },
-        "relatedLocations": [
-          {
-            "id": 1,
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 4958,
-                "startColumn": 25,
-                "endColumn": 37
-              }
-            },
-            "message": {
-              "text": "tiktok.com"
-            }
-          }
-        ]
-      },
-      {
-        "ruleId": "py/overly-large-range",
-        "rule": {
-          "id": "py/overly-large-range",
-          "index": 5,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "Suspicious character range that overlaps with \\w in the same character class."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 1
-              },
-              "region": {
-                "startLine": 54,
-                "startColumn": 33,
-                "endColumn": 36
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "519eb9bd4ab56ccd:1",
-          "primaryLocationStartColumnFingerprint": "24"
-        }
-      }
-    ],
-    "codeQL-errors": [],
-    "virusTotal": [
-      {
-        "_id": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
-        "_type": "file",
-        "bundle_info": {
-          "extensions": {
-            "css": 1,
-            "dll": 1,
-            "exe": 1,
-            "h": 89,
-            "html": 12,
-            "ini": 14,
-            "lib": 2,
-            "md": 14,
-            "mo": 13,
-            "po": 13,
-            "py": 50,
-            "pyd": 2,
-            "txt": 3,
-            "typed": 1
-          },
-          "file_types": {
-            "HTML": 12,
-            "Portable Executable": 4,
-            "unknown": 212
-          },
-          "highest_datetime": "2026-04-29 10:37:30",
-          "lowest_datetime": "2026-04-29 10:37:02",
-          "num_children": 228,
-          "type": "ZIP",
-          "uncompressed_size": 52430561
-        },
-        "crowdsourced_ai_results": [
-          {
-            "analysis": "Package: PyMuPDF (whl)\nVersion: 1.27.1\nDescription: A high performance Python library for data extraction, analysis, conversion & manipulation of PDF (and other) documents.\n\nThe provided source code is an NVDA (NonVisual Desktop Access) extension named 'Vision Assistant Pro'. It integrates multiple AI providers (Google Gemini, OpenAI, Mistral, and Groq) to offer accessibility features such as image description, document reading with OCR, smart translation, and voice dictation. The package bundles legitimate versions of the PyMuPDF and Python-Markdown libraries to support its document processing and formatting capabilities. \n\nKey findings include:\n1. **AI Integration**: The extension sends user-provided text, images, or audio to legitimate AI service endpoints for processing. API keys are stored in the standard NVDA configuration.\n2. **Functionality**: Features like CAPTCHA solving, video analysis (via third-party scrapers for direct links), and audio transcription are implemented using standard Python libraries and NVDA APIs.\n3. **System Interaction**: Uses 'ctypes' for Windows multimedia functions (audio recording) and 'subprocess' for MP3 encoding via a bundled 'lame.exe'. These are contextually appropriate for the 'Smart Dictation' feature.\n4. **Updates and Donations**: Includes a standard update manager that checks GitHub for new releases and a donation dialog that explains regional banking restrictions as the reason for accepting cryptocurrency or gift cards.\n5. **Security**: No evidence was found of unauthorized data exfiltration (e.g., SSH keys, environment variables), execution of unexpected shells, or malicious payload delivery.",
-            "category": "code_insight",
-            "id": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff-file-palm",
-            "source": "palm",
-            "verdict": "benign"
-          }
-        ],
-        "filecondis": {
-          "dhash": "0000000004070600",
-          "raw_md5": "0debe3ebb01d754a85bf39f151b709cc"
-        },
-        "first_submission_date": 1777459315,
-        "last_analysis_date": 1777459315,
-        "last_analysis_results": {
-          "ALYac": {
-            "category": "undetected",
-            "engine_name": "ALYac",
-            "engine_update": "20260429",
-            "engine_version": "2.0.0.10",
-            "method": "blacklist",
-            "result": null
-          },
-          "APEX": {
-            "category": "type-unsupported",
-            "engine_name": "APEX",
-            "engine_update": "20260428",
-            "engine_version": "6.774",
-            "method": "blacklist",
-            "result": null
-          },
-          "AVG": {
-            "category": "undetected",
-            "engine_name": "AVG",
-            "engine_update": "20260322",
-            "engine_version": "23.9.8494.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Acronis": {
-            "category": "undetected",
-            "engine_name": "Acronis",
-            "engine_update": "20240328",
-            "engine_version": "1.2.0.121",
-            "method": "blacklist",
-            "result": null
-          },
-          "AhnLab-V3": {
-            "category": "undetected",
-            "engine_name": "AhnLab-V3",
-            "engine_update": "20260429",
-            "engine_version": "3.30.0.10666",
-            "method": "blacklist",
-            "result": null
-          },
-          "Alibaba": {
-            "category": "undetected",
-            "engine_name": "Alibaba",
-            "engine_update": "20190527",
-            "engine_version": "0.3.0.5",
-            "method": "blacklist",
-            "result": null
-          },
-          "Antiy-AVL": {
-            "category": "undetected",
-            "engine_name": "Antiy-AVL",
-            "engine_update": "20260429",
-            "engine_version": "3.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Arcabit": {
-            "category": "undetected",
-            "engine_name": "Arcabit",
-            "engine_update": "20260429",
-            "engine_version": "2025.0.0.23",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avast": {
-            "category": "undetected",
-            "engine_name": "Avast",
-            "engine_update": "20260322",
-            "engine_version": "23.9.8494.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avast-Mobile": {
-            "category": "undetected",
-            "engine_name": "Avast-Mobile",
-            "engine_update": "20260429",
-            "engine_version": "260429-00",
-            "method": "blacklist",
-            "result": null
-          },
-          "Avira": {
-            "category": "undetected",
-            "engine_name": "Avira",
-            "engine_update": "20260428",
-            "engine_version": "8.3.3.24",
-            "method": "blacklist",
-            "result": null
-          },
-          "BitDefender": {
-            "category": "undetected",
-            "engine_name": "BitDefender",
-            "engine_update": "20260429",
-            "engine_version": "7.2",
-            "method": "blacklist",
-            "result": null
-          },
-          "BitDefenderFalx": {
-            "category": "type-unsupported",
-            "engine_name": "BitDefenderFalx",
-            "engine_update": "20251216",
-            "engine_version": "2.0.936",
-            "method": "blacklist",
-            "result": null
-          },
-          "Bkav": {
-            "category": "undetected",
-            "engine_name": "Bkav",
-            "engine_update": "20260429",
-            "engine_version": "2.0.0.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "CAT-QuickHeal": {
-            "category": "undetected",
-            "engine_name": "CAT-QuickHeal",
-            "engine_update": "20260428",
-            "engine_version": "22.00",
-            "method": "blacklist",
-            "result": null
-          },
-          "CMC": {
-            "category": "undetected",
-            "engine_name": "CMC",
-            "engine_update": "20260429",
-            "engine_version": "2.4.2022.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "CTX": {
-            "category": "undetected",
-            "engine_name": "CTX",
-            "engine_update": "20260429",
-            "engine_version": "2024.8.29.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "ClamAV": {
-            "category": "undetected",
-            "engine_name": "ClamAV",
-            "engine_update": "20260429",
-            "engine_version": "1.5.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "CrowdStrike": {
-            "category": "undetected",
-            "engine_name": "CrowdStrike",
-            "engine_update": "20251219",
-            "engine_version": "1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Cylance": {
-            "category": "type-unsupported",
-            "engine_name": "Cylance",
-            "engine_update": "20260423",
-            "engine_version": "3.0.0.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Cynet": {
-            "category": "undetected",
-            "engine_name": "Cynet",
-            "engine_update": "20260428",
-            "engine_version": "4.0.3.4",
-            "method": "blacklist",
-            "result": null
-          },
-          "DeepInstinct": {
-            "category": "undetected",
-            "engine_name": "DeepInstinct",
-            "engine_update": "20260429",
-            "engine_version": "5.0.0.8",
-            "method": "blacklist",
-            "result": null
-          },
-          "DrWeb": {
-            "category": "undetected",
-            "engine_name": "DrWeb",
-            "engine_update": "20260429",
-            "engine_version": "7.0.75.2070",
-            "method": "blacklist",
-            "result": null
-          },
-          "ESET-NOD32": {
-            "category": "undetected",
-            "engine_name": "ESET-NOD32",
-            "engine_update": "20260429",
-            "engine_version": "18.2.18.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Elastic": {
-            "category": "undetected",
-            "engine_name": "Elastic",
-            "engine_update": "20260428",
-            "engine_version": "4.0.258",
-            "method": "blacklist",
-            "result": null
-          },
-          "Emsisoft": {
-            "category": "undetected",
-            "engine_name": "Emsisoft",
-            "engine_update": "20260429",
-            "engine_version": "2024.8.0.61147",
-            "method": "blacklist",
-            "result": null
-          },
-          "F-Secure": {
-            "category": "undetected",
-            "engine_name": "F-Secure",
-            "engine_update": "20260428",
-            "engine_version": "18.10.1547.307",
-            "method": "blacklist",
-            "result": null
-          },
-          "Fortinet": {
-            "category": "undetected",
-            "engine_name": "Fortinet",
-            "engine_update": "20260429",
-            "engine_version": "7.0.30.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "GData": {
-            "category": "undetected",
-            "engine_name": "GData",
-            "engine_update": "20260429",
-            "engine_version": "GD:27.44361AVA:64.31136",
-            "method": "blacklist",
-            "result": null
-          },
-          "Google": {
-            "category": "failure",
-            "engine_name": "Google",
-            "engine_update": "20260429",
-            "engine_version": "1777449652",
-            "method": "blacklist",
-            "result": null
-          },
-          "Gridinsoft": {
-            "category": "undetected",
-            "engine_name": "Gridinsoft",
-            "engine_update": "20260429",
-            "engine_version": "1.0.244.174",
-            "method": "blacklist",
-            "result": null
-          },
-          "Ikarus": {
-            "category": "undetected",
-            "engine_name": "Ikarus",
-            "engine_update": "20260429",
-            "engine_version": "6.4.16.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Jiangmin": {
-            "category": "undetected",
-            "engine_name": "Jiangmin",
-            "engine_update": "20260428",
-            "engine_version": "16.0.100",
-            "method": "blacklist",
-            "result": null
-          },
-          "K7AntiVirus": {
-            "category": "undetected",
-            "engine_name": "K7AntiVirus",
-            "engine_update": "20260429",
-            "engine_version": "14.49.59347",
-            "method": "blacklist",
-            "result": null
-          },
-          "K7GW": {
-            "category": "undetected",
-            "engine_name": "K7GW",
-            "engine_update": "20260429",
-            "engine_version": "14.49.59348",
-            "method": "blacklist",
-            "result": null
-          },
-          "Kaspersky": {
-            "category": "undetected",
-            "engine_name": "Kaspersky",
-            "engine_update": "20260429",
-            "engine_version": "22.0.1.28",
-            "method": "blacklist",
-            "result": null
-          },
-          "Kingsoft": {
-            "category": "undetected",
-            "engine_name": "Kingsoft",
-            "engine_update": "20260429",
-            "engine_version": "None",
-            "method": "blacklist",
-            "result": null
-          },
-          "Lionic": {
-            "category": "undetected",
-            "engine_name": "Lionic",
-            "engine_update": "20260429",
-            "engine_version": "8.16",
-            "method": "blacklist",
-            "result": null
-          },
-          "Malwarebytes": {
-            "category": "undetected",
-            "engine_name": "Malwarebytes",
-            "engine_update": "20260429",
-            "engine_version": "3.1.0.231",
-            "method": "blacklist",
-            "result": null
-          },
-          "MaxSecure": {
-            "category": "undetected",
-            "engine_name": "MaxSecure",
-            "engine_update": "20260429",
-            "engine_version": "1.0.0.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "McAfeeD": {
-            "category": "undetected",
-            "engine_name": "McAfeeD",
-            "engine_update": "20260429",
-            "engine_version": "1.2.0.14532",
-            "method": "blacklist",
-            "result": null
-          },
-          "MicroWorld-eScan": {
-            "category": "undetected",
-            "engine_name": "MicroWorld-eScan",
-            "engine_update": "20260429",
-            "engine_version": "14.0.409.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Microsoft": {
-            "category": "undetected",
-            "engine_name": "Microsoft",
-            "engine_update": "20260429",
-            "engine_version": "1.1.26030.3008",
-            "method": "blacklist",
-            "result": null
-          },
-          "NANO-Antivirus": {
-            "category": "undetected",
-            "engine_name": "NANO-Antivirus",
-            "engine_update": "20260429",
-            "engine_version": "1.0.170.26895",
-            "method": "blacklist",
-            "result": null
-          },
-          "Paloalto": {
-            "category": "type-unsupported",
-            "engine_name": "Paloalto",
-            "engine_update": "20260429",
-            "engine_version": "0.9.0.1003",
-            "method": "blacklist",
-            "result": null
-          },
-          "Panda": {
-            "category": "undetected",
-            "engine_name": "Panda",
-            "engine_update": "20260428",
-            "engine_version": "4.6.4.2",
-            "method": "blacklist",
-            "result": null
-          },
-          "Rising": {
-            "category": "undetected",
-            "engine_name": "Rising",
-            "engine_update": "20260429",
-            "engine_version": "25.0.0.28",
-            "method": "blacklist",
-            "result": null
-          },
-          "SUPERAntiSpyware": {
-            "category": "undetected",
-            "engine_name": "SUPERAntiSpyware",
-            "engine_update": "20260428",
-            "engine_version": "5.6.0.1032",
-            "method": "blacklist",
-            "result": null
-          },
-          "Sangfor": {
-            "category": "undetected",
-            "engine_name": "Sangfor",
-            "engine_update": "20260427",
-            "engine_version": "2.22.3.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "SentinelOne": {
-            "category": "undetected",
-            "engine_name": "SentinelOne",
-            "engine_update": "20260324",
-            "engine_version": "7.6.2.19",
-            "method": "blacklist",
-            "result": null
-          },
-          "Skyhigh": {
-            "category": "undetected",
-            "engine_name": "Skyhigh",
-            "engine_update": "20260428",
-            "engine_version": "v2021.2.0+4045",
-            "method": "blacklist",
-            "result": null
-          },
-          "Sophos": {
-            "category": "undetected",
-            "engine_name": "Sophos",
-            "engine_update": "20260429",
-            "engine_version": "3.4.1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "Symantec": {
-            "category": "undetected",
-            "engine_name": "Symantec",
-            "engine_update": "20260429",
-            "engine_version": "1.22.0.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "SymantecMobileInsight": {
-            "category": "type-unsupported",
-            "engine_name": "SymantecMobileInsight",
-            "engine_update": "20260123",
-            "engine_version": "2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "TACHYON": {
-            "category": "undetected",
-            "engine_name": "TACHYON",
-            "engine_update": "20260423",
-            "engine_version": "2026-04-23.02",
-            "method": "blacklist",
-            "result": null
-          },
-          "Tencent": {
-            "category": "undetected",
-            "engine_name": "Tencent",
-            "engine_update": "20260429",
-            "engine_version": "1.0.0.1",
-            "method": "blacklist",
-            "result": null
-          },
-          "Trapmine": {
-            "category": "type-unsupported",
-            "engine_name": "Trapmine",
-            "engine_update": "20260331",
-            "engine_version": "4.0.11.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrellixENS": {
-            "category": "undetected",
-            "engine_name": "TrellixENS",
-            "engine_update": "20260428",
-            "engine_version": "6.0.6.653",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrendMicro": {
-            "category": "undetected",
-            "engine_name": "TrendMicro",
-            "engine_update": "20260429",
-            "engine_version": "24.550.0.1002",
-            "method": "blacklist",
-            "result": null
-          },
-          "TrendMicro-HouseCall": {
-            "category": "undetected",
-            "engine_name": "TrendMicro-HouseCall",
-            "engine_update": "20260429",
-            "engine_version": "24.550.0.1002",
-            "method": "blacklist",
-            "result": null
-          },
-          "Trustlook": {
-            "category": "undetected",
-            "engine_name": "Trustlook",
-            "engine_update": "20260429",
-            "engine_version": "1.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "VBA32": {
-            "category": "undetected",
-            "engine_name": "VBA32",
-            "engine_update": "20260428",
-            "engine_version": "5.6.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "VIPRE": {
-            "category": "undetected",
-            "engine_name": "VIPRE",
-            "engine_update": "20260428",
-            "engine_version": "6.0.0.35",
-            "method": "blacklist",
-            "result": null
-          },
-          "Varist": {
-            "category": "undetected",
-            "engine_name": "Varist",
-            "engine_update": "20260429",
-            "engine_version": "6.6.1.3",
-            "method": "blacklist",
-            "result": null
-          },
-          "ViRobot": {
-            "category": "undetected",
-            "engine_name": "ViRobot",
-            "engine_update": "20260429",
-            "engine_version": "2014.3.20.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "VirIT": {
-            "category": "undetected",
-            "engine_name": "VirIT",
-            "engine_update": "20260428",
-            "engine_version": "9.5.1196",
-            "method": "blacklist",
-            "result": null
-          },
-          "Webroot": {
-            "category": "undetected",
-            "engine_name": "Webroot",
-            "engine_update": "20250227",
-            "engine_version": "1.9.0.8",
-            "method": "blacklist",
-            "result": null
-          },
-          "Xcitium": {
-            "category": "undetected",
-            "engine_name": "Xcitium",
-            "engine_update": "20260429",
-            "engine_version": "38605",
-            "method": "blacklist",
-            "result": null
-          },
-          "Yandex": {
-            "category": "undetected",
-            "engine_name": "Yandex",
-            "engine_update": "20260428",
-            "engine_version": "5.5.2.24",
-            "method": "blacklist",
-            "result": null
-          },
-          "Zillya": {
-            "category": "undetected",
-            "engine_name": "Zillya",
-            "engine_update": "20260429",
-            "engine_version": "2.0.0.5591",
-            "method": "blacklist",
-            "result": null
-          },
-          "ZoneAlarm": {
-            "category": "undetected",
-            "engine_name": "ZoneAlarm",
-            "engine_update": "20260428",
-            "engine_version": "6.24-114820539",
-            "method": "blacklist",
-            "result": null
-          },
-          "Zoner": {
-            "category": "undetected",
-            "engine_name": "Zoner",
-            "engine_update": "20260429",
-            "engine_version": "2.2.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "alibabacloud": {
-            "category": "undetected",
-            "engine_name": "alibabacloud",
-            "engine_update": "20250321",
-            "engine_version": "2.2.0",
-            "method": "blacklist",
-            "result": null
-          },
-          "huorong": {
-            "category": "undetected",
-            "engine_name": "huorong",
-            "engine_update": "20260428",
-            "engine_version": "fccbab7:fccbab7:8a0870e:8a0870e",
-            "method": "blacklist",
-            "result": null
-          },
-          "tehtris": {
-            "category": "type-unsupported",
-            "engine_name": "tehtris",
-            "engine_update": "20260429",
-            "engine_version": "v0.1.4",
-            "method": "blacklist",
-            "result": null
-          }
-        },
-        "last_analysis_stats": {
-          "confirmed-timeout": 0,
-          "failure": 1,
-          "harmless": 0,
-          "malicious": 0,
-          "suspicious": 0,
-          "timeout": 0,
-          "type-unsupported": 7,
-          "undetected": 67
-        },
-        "last_modification_date": 1777459507,
-        "last_submission_date": 1777459315,
-        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-        "md5": "dc264bef90bd24578d05b43164784051",
-        "meaningful_name": "addon.nvda-addon",
-        "names": [
-          "addon.nvda-addon"
-        ],
-        "reputation": 0,
-        "sha1": "5a482a527add8dc306b9b5784df8f0d5cd394574",
-        "sha256": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
-        "size": 20629989,
-        "ssdeep": "393216:12tKAd40OYiMf9ri3JjVuirVqsD/cjiwCZ9xbO0yIVOn7CIu+5HCZZ29oM:122dYig5qJZuyqsDeyjO0I9CZA",
-        "tags": [
-          "contains-pe",
-          "whl"
-        ],
-        "times_submitted": 1,
-        "tlsh": "T1CE2733A4F8544389CE7FB971C445B06F93AF720EE1FE670A2A9C90F865CBE704571628",
-        "total_votes": {
-          "harmless": 0,
-          "malicious": 0
-        },
-        "trid": [
-          {
-            "file_type": "Python Wheel package",
-            "probability": 63.2
-          },
-          {
-            "file_type": "Python Zip Application",
-            "probability": 26.5
-          },
-          {
-            "file_type": "ZIP compressed archive",
-            "probability": 10.1
-          }
-        ],
-        "type_description": "Python Wheel package",
-        "type_extension": "whl",
-        "type_tag": "whl",
-        "type_tags": [
-          "installer",
-          "python",
-          "whl"
-        ],
-        "unique_sources": 1,
-        "vhash": "980e541f1338fbec60b0026aacd96165"
-      }
-    ]
-  },
-  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v5.0.1/VisionAssistant-5.0.1.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
+	"sha256": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
+	"addonVersionName": "5.0.1",
+	"addonVersionNumber": {
+		"major": 5,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 3
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1777459278000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "KI Assistent Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
+			"changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages."
+		},
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nلایه‌ی فرمان‌ها: NVDA+Shift+V را بفشارید، سپس:\n- مترجمِ هوشمند (T)، ترجمه از کلیپ‌برد (Shift+T)؛\n- پالایش‌کننده‌ی متن (R)؛\n- توصیفِ پیمایشگر (V)، توصیف تمام صفحه (o)؛\n- تحلیلِ آنلاینِ ویدئو (Shift+V)؛\n- سندخوان (D)؛\n- OCRِ فایل (F)؛\n- حل‌کننده‌ی کپچا (C)؛\n- رونویسیِ فایلِ صوتی (A)؛\n- تایپِ صوتیِ هوشمند (S)؛\n- اعلامِ وضعیت (L)؛\n- بررسیِ بروزرسانی (U)\n- فراخوانیِ آخرین نتیجه (space)\n- راهنمای فرمان‌ها (H)\n",
+			"changelog": "## Changes for 5.0\n* **Multi-Provider Architecture**: Added full support for **OpenAI**, **Groq**, and **Mistral** alongside Google Gemini. Users can now choose their preferred AI backend.\n* **Advanced Model Routing**: Users of native providers (Gemini, OpenAI, etc.) can now select specific models from a dropdown list for different tasks (OCR, STT, TTS).\n* **Advanced Endpoint Configuration**: Custom provider users can manually input specific URLs and model names for granular control over local or third-party servers.\n* **Smart Feature Visibility**: The settings menu and Document Reader UI now automatically hide unsupported features (like TTS) based on the selected provider.\n* **Dynamic Model Fetching**: The addon now fetches the available model list directly from the provider's API, ensuring compatibility with new models as soon as they are released.\n* **Hybrid OCR & Translation**: Optimized the logic to use Google Translate for speed when using Chrome OCR, and AI-powered translation when using Gemini/Groq/OpenAI engines.\n* **Universal \"Re-scan with AI\"**: The Document Reader's re-scan feature is no longer limited to Gemini. It now utilizes whatever AI provider is currently active to re-process pages."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Analyseur de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (L)\n- Vérification des mises à jour (U)\n",
+			"changelog": "## Changements de la version 5.0\n* **Architecture multi-fournisseurs** : Ajout de la prise en charge complète de **OpenAI**, **Groq** et **Mistral** aux côtés de Google Gemini. Les utilisateurs peuvent désormais choisir leur fournisseur d'IA préféré.\n* **Choix de modèle avancé** : Les utilisateurs de fournisseurs natifs (Gemini, OpenAI, etc.) peuvent désormais sélectionner des modèles spécifiques dans une liste déroulante pour différentes tâches (OCR, transcription vocale, synthese vocale).\n* **Configuration avancée des points de terminaison** : Les utilisateurs de fournisseurs personnalisés peuvent saisir manuellement des URL et des noms de modèles spécifiques pour un contrôle granulaire sur les serveurs locaux ou tiers.\n* **Visibilité des fonctionnalités intelligentes** : Le menu des paramètres et l'interface de lecture de document masquent désormais automatiquement les fonctionnalités non prises en charge (telles que TTS) en fonction du fournisseur sélectionné.\n* **Récupération de modèle dynamique** : L'extension récupère désormais la liste des modèles disponibles directement à partir de l'API du fournisseur, garantissant ainsi la compatibilité avec les nouveaux modèles dès leur sortie.\n* **OCR et traduction hybrides** : Optimisation de la logique pour utiliser Google Translate pour plus de rapidité lors de l'utilisation de Chrome OCR et de la traduction basée sur l'IA lors de l'utilisation des moteurs Gemini/Groq/OpenAI.\n* **\"Re-scan universel avec l'IA\"** : La fonction de nouvelle numérisation du Document Reader n'est plus limitée à Gemini. Il utilise désormais le fournisseur d’IA actuellement actif pour retraiter les pages."
+		},
+		{
+			"language": "id",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Terjemahkan yang ada di Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Secara Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR Berkas (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (L)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n",
+			"changelog": "## Perubahan untuk 5.0\n* **Arsitektur Multi-Penyedia**: Menambahkan dukungan penuh untuk **OpenAI**, **Groq**, dan **Mistral** bersama dengan Google Gemini. Pengguna kini dapat memilih backend AI yang mereka inginkan.\n* **Perutean Model Lanjutan**: Pengguna penyedia bawaan (Gemini, OpenAI, dll.) kini dapat memilih model tertentu dari daftar dropdown untuk berbagai tugas (OCR, STT, TTS).\n* **Konfigurasi Titik Akhir Lanjutan**: Pengguna penyedia kustom dapat secara manual memasukkan URL dan nama model tertentu untuk kontrol seutuhnya atas server lokal atau pihak ketiga.\n* **Visibilitas Fitur Cerdas**: Menu pengaturan dan UI Pembaca Dokumen kini secara otomatis menyembunyikan fitur yang tidak didukung (seperti TTS) berdasarkan penyedia yang dipilih.\n* **Pengambilan Model Dinamis**: Add-on ini kini mengambil daftar model yang tersedia langsung dari API penyedia, memastikan kompatibilitas dengan model baru segera setelah dirilis.\n* **Hybrid OCR & Translation**: Mengoptimalkan logika untuk menggunakan Google Translate untuk kecepatan saat menggunakan Chrome OCR, dan terjemahan bertenaga AI saat menggunakan mesin Gemini/Groq/OpenAI.\n* **Universal \"Pindai ulang dengan AI\"**: Fitur pemindaian ulang Pembaca Dokumen tidak lagi terbatas pada Gemini. Sekarang menggunakan penyedia AI apa pun yang aktif untuk memproses ulang halaman."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (L)\n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),\n",
+			"changelog": "## Modifiche per 5.0\\n\n* **Architettura multi-provider**: aggiunto il supporto completo per **OpenAI**, **Groq** e **Mistral** insieme a Google Gemini. Gli utenti possono ora scegliere il backend AI preferito.\\n\n* **Instradamento avanzato dei modelli**: gli utenti di provider nativi (Gemini, OpenAI, ecc.) ora possono selezionare modelli specifici da un elenco a discesa per diverse attività (OCR, STT, TTS).\\n\n* **Configurazione endpoint avanzata**: gli utenti dei provider personalizzati possono inserire manualmente URL e nomi di modelli specifici per un controllo granulare su server locali o di terze parti.\\n\n* **Visibilità delle funzionalità intelligenti**: il menu delle impostazioni e l'interfaccia utente del lettore di documenti ora nascondono automaticamente le funzionalità non supportate (come TTS) in base al provider selezionato.\\n\n* **Recupero dinamico dei modelli**: il componente aggiuntivo ora recupera l'elenco dei modelli disponibili direttamente dall'API del provider, garantendo la compatibilità con i nuovi modelli non appena vengono rilasciati.\\n\n* **OCR e traduzione ibridi**: ottimizzata la logica per utilizzare Google Traduttore per aumentare la velocità quando si utilizza l'OCR di Chrome e la traduzione basata sull'intelligenza artificiale quando si utilizzano i motori Gemini/Groq/OpenAI.\\n\n* **\"Riscansione universale con AI\"**: la funzione di ri-scansione del lettore di documenti non è più limitata a Gemini. Ora utilizza qualsiasi provider di intelligenza artificiale attualmente attivo per rielaborare le pagine."
+		},
+		{
+			"language": "pl",
+			"displayName": "Vision Assistant Pro",
+			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Inteligentny tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Inteligentne dyktowanie (S)\n- Raportuj stan (L)\n- Sprawdź aktualizację (U)\n- pokaż ostatnią odpowiedź AI w trybie czatu. (Spacja)\n- Pomoc poleceń (H)\n",
+			"changelog": "## Zmiany w wersji 5.0\n* **Wielu dostawców**: Dodano pełną obsługę **OpenAI**, **Groq** i **Mistral** obok Google Gemini. Teraz można wybrać preferowany model AI.\n* **Przypisywanie modeli do zadań**: Użytkownicy natywnych dostawców (Gemini, OpenAI itp.) mogą teraz wybierać konkretne modele z listy rozwijanej dla różnych zadań (OCR, STT, TTS).\n* **Adresy usług**: Użytkownicy niestandardowych dostawców mogą ręcznie wprowadzać konkretne adresy URL i nazwy modeli np. dla skonfigurowania lokalnego modelu.\n* **Ukrywanie nieobsługiwanych funkcji**: Menu ustawień i interfejs czytnika dokumentów automatycznie ukrywają nieobsługiwane funkcje (np. TTS) na podstawie wybranego dostawcy.\n* **Pobieranie modeli z API**: Dodatek pobiera listę dostępnych modeli bezpośrednio z API dostawcy, co umożliwia obsługę nowych modeli natychmiast po ich wydaniu.\n* **Hybrydowe OCR i tłumaczenie**: Zoptymalizowano logikę, aby używać Tłumacza Google dla szybkości przy OCR Chrome oraz tłumaczenia opartego na AI przy silnikach Gemini/Groq/OpenAI.\n* **Ponowne skanowanie AI**: Funkcja ponownego skanowania w czytniku dokumentów nie jest już ograniczona do Gemini. Wykorzystuje teraz aktywnego dostawcę AI do ponownego przetwarzania stron."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documento (D)\n- OCR de Arquivo (F)\n- Resolvedor de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (L)\n- Verificar Atualização (U)\n- Recuperar Último Resultado (Espaço),\n- Ajuda de Comandos (H),\n",
+			"changelog": "## Alterações para 5.0\n* **Arquitetura Multi-Provedor**: Suporte completo adicionado para **OpenAI**, **Groq** e **Mistral**, juntamente com o Google Gemini. Os usuários agora podem escolher seu backend de IA preferido.\n* **Roteamento Avançado de Modelos**: Usuários de provedores nativos (Gemini, OpenAI, etc.) agora podem selecionar modelos específicos a partir de uma lista suspensa para diferentes tarefas (OCR, STT, TTS).\n* **Configuração Avançada de Endpoint**: Usuários de provedores personalizados podem inserir manualmente URLs e nomes de modelos específicos para controle detalhado de servidores locais ou de terceiros.\n* **Visibilidade Inteligente de Recursos**: O menu de configurações e a interface do Document Reader agora ocultam automaticamente recursos não suportados (como TTS) com base no provedor selecionado.\n* **Busca Dinâmica de Modelos**: O addon agora busca a lista de modelos disponíveis diretamente da API do provedor, garantindo compatibilidade com novos modelos assim que são lançados.\n* **OCR & Tradução Híbrida**: Lógica otimizada para usar o Google Translate para maior velocidade ao utilizar OCR no Chrome, e tradução com suporte de IA quando usando os motores Gemini/Groq/OpenAI.\n* **\"Re-scan com IA\" Universal**: O recurso de re-scaneamento do Document Reader não está mais limitado ao Gemini. Ele agora utiliza qualquer provedor de IA ativo para reprocessar as páginas."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente de IA avançado para o NVDA que utiliza modelos Gemini.\nCamada de Comandos: Prima NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Aperfeiçoador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (L)\n- Verificar Atualizações (U)\n- Recordar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n",
+			"changelog": "## Alterações para a versão 5.0\n* **Arquitetura Multi-Fornecedor**: Adicionado suporte completo para **OpenAI**, **Groq** e **Mistral**, juntamente com o Google Gemini. Agora é possível escolher o backend de IA preferido.\n* **Encaminhamento Avançado de Modelos**: Utilizadores de fornecedores nativos (Gemini, OpenAI, etc.) podem selecionar modelos específicos numa lista suspensa para diferentes tarefas (OCR, STT, TTS).\n* **Configuração Avançada de Endpoint**: Utilizadores de fornecedores personalizados podem introduzir manualmente URLs e nomes de modelos específicos, permitindo controlo detalhado sobre servidores locais ou de terceiros.\n* **Visibilidade Inteligente de Funcionalidades**: O menu de definições e a interface do Leitor de Documentos ocultam automaticamente funcionalidades não suportadas (como TTS) com base no fornecedor selecionado.\n* **Obtenção Dinâmica de Modelos**: O addon passa a obter a lista de modelos disponíveis diretamente da API do fornecedor, garantindo compatibilidade com novos modelos assim que forem lançados.\n* **OCR e Tradução Híbridos**: Lógica otimizada para utilizar o Google Translate pela rapidez ao usar o OCR do Chrome, e tradução com IA ao utilizar motores Gemini/Groq/OpenAI.\n* **\"Reanalisar com IA\" Universal**: A funcionalidade de reanálise do Leitor de Documentos deixou de estar limitada ao Gemini. Agora utiliza o fornecedor de IA atualmente ativo para reprocessar páginas."
+		},
+		{
+			"language": "ru",
+			"displayName": "Vision Assistant Pro (Визуальный помощник)",
+			"description": "Vision Assistant Pro — это продвинутый многофункциональный AI-ассистент для NVDA. Он использует ведущие мировые AI-движки для обеспечения интеллектуального чтения с экрана, перевода, голосового ввода и анализа документов.\nКомандный слой: нажмите NVDA+Shift+V, затем:\nУмный перевод (T) / из буфера обмена (Shift+T).\nОбработка текста (R).\nОписание объекта (V) / всего экрана (O).\nАнализ онлайн-видео (Shift+V).\nЧтение документов (D).\nOCR файлов (F).\nРешение CAPTCHA (C).\nРасшифровка аудио (A).\nУмная диктовка (S).\nСостояние (L).\nПроверка обновлений (U).\nПовтор последнего результата (Пробел).\nСправка по командам (H).\n",
+			"changelog": "## Что нового в версии 5.0\n* **Мультипровайдерная архитектура**: Добавлена полная поддержка **OpenAI**, **Groq** и **Mistral** наряду с Google Gemini. Теперь пользователи могут выбирать предпочтительный ИИ-бэкенд.\n* **Расширенная маршрутизация моделей**: Пользователи нативных провайдеров (Gemini, OpenAI и др.) теперь могут выбирать конкретные модели из выпадающего списка для разных задач (OCR, STT, TTS).\n* **Расширенная конфигурация конечных точек**: Пользователи пользовательского провайдера могут вручную вводить конкретные URL и названия моделей для детального контроля над локальными или сторонними серверами.\n* **Интеллектуальная видимость функций**: Меню настроек и интерфейс средства чтения документов теперь автоматически скрывают неподдерживаемые функции (например, TTS) в зависимости от выбранного провайдера.\n* **Динамическая загрузка моделей**: Дополнение теперь загружает список доступных моделей напрямую из API провайдера, обеспечивая совместимость с новыми моделями сразу после их выпуска.\n* **Гибридный OCR и перевод**: Оптимизирована логика для использования Google Translate для скорости при использовании Chrome OCR и ИИ-перевода при использовании движков Gemini/Groq/OpenAI.\n* **Универсальное «Повторное сканирование с ИИ»**: Функция повторного сканирования в средстве чтения документов больше не ограничена Gemini. Теперь она использует любого активного ИИ-провайдера для повторной обработки страниц."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çeviri (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesneyi Betimle (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Sesi metne çevir (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (L)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk),\n- Komut Yardımı (H),\n",
+			"changelog": "## 5.0 için Değişiklikler\n* **Çoklu Sağlayıcı Mimarisi**: Google Gemini’ye ek olarak **OpenAI**, **Groq** ve **Mistral** için tam destek eklendi. Kullanıcılar artık tercih ettikleri yapay zekâ arka ucunu seçebilir.\n* **Gelişmiş Model Yönlendirme**: Yerel sağlayıcı kullanıcıları (Gemini, OpenAI vb.) artık farklı görevler (OCR, STT, TTS) için açılır listeden belirli modelleri seçebilir.\n* **Gelişmiş Uç Nokta Yapılandırması**: Özel sağlayıcı kullanıcıları, yerel veya üçüncü taraf sunucular üzerinde ayrıntılı denetim için belirli URL’leri ve model adlarını manuel olarak girebilir.\n* **Akıllı Özellik Görünürlüğü**: Ayarlar menüsü ve Belge Okuyucu arayüzü, seçilen sağlayıcıya göre desteklenmeyen özellikleri (TTS gibi) otomatik olarak gizler.\n* **Dinamik Model Getirme**: Eklenti, mevcut model listesini doğrudan sağlayıcının API’sinden alır; böylece yeni modeller yayınlanır yayınlanmaz uyumluluk sağlanır.\n* **Hibrit OCR ve Çeviri**: Chrome OCR kullanılırken hız için Google Translate, Gemini/Groq/OpenAI motorları kullanılırken yapay zekâ destekli çeviri tercih edecek şekilde mantık optimize edildi.\n* **Evrensel “Yapay Zekâ ile Yeniden Tara”**: Belge Okuyucu’nun yeniden tarama özelliği artık yalnızca Gemini ile sınırlı değil; etkin olan herhangi bir yapay zekâ sağlayıcısını kullanır."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n",
+			"changelog": "## Зміни для 5.0\n* **Багатопостачальна архітектура**: Додано повну підтримку **OpenAI**, **Groq** та **Mistral** поряд з Google Gemini. Тепер користувачі можуть вибрати бажаний бекенд для ШІ.\n* Розширена модель маршрутизації: Користувачі нативних постачальників (Gemini, OpenAI тощо) тепер можуть вибирати конкретні моделі зі списку, для різних завдань (OCR, STT, TTS).\n* Розширена конфігурація кінцевих точок: Користувачі можуть вручну вводити конкретні URL та назви моделей для детального контролю над локальними або сторонніми серверами.\n* Розумна видимість функцій: Меню налаштувань і інтерфейс Читача документів тепер автоматично приховує непідтримувані функції (наприклад, TTS) залежно від обраного постачальника.\n* Динамічне отримання моделей: Додаток тепер завантажує список доступних моделей безпосередньо з API постачальника, забезпечуючи сумісність з новими моделями, щойно вони з'являються.\n* Гібридне розпізнавання та переклад: Оптимізовано логіку використання Google Translate для пришвидшення роботи під час використання розпізнавання в Chrome і перекладу на основі штучного інтелекту під час використання движків Gemini/Groq/OpenAI.\n* **Універсальна функція «Повторне сканування зі штучним інтелектом »**: Функція повторного сканування в Читачі документів більше не обмежується Gemini. Тепер для повторної обробки сторінок використовується будь-який активний на даний момент постачальник ШІ."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "Một trợ lý AI nâng cao dành cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thông minh (T) / Clipboard (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích video trực tuyến (Shift+V)\n- Trình đọc tài liệu (D)\n- OCR tệp (F)\n- Giải CAPTCHA (C)\n- Chuyển biên âm thanh (A)\n- Đọc chính tả thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)\n- Gọi lại kết quả cuối cùng (Space),\n- Trợ giúp lệnh (H),\n",
+			"changelog": "## Những thay đổi trong phiên bản 5.0\n* **Kiến trúc đa nhà cung cấp**: Bổ sung hỗ trợ đầy đủ cho **OpenAI**, **Groq**, và **Mistral** bên cạnh Google Gemini. Người dùng hiện có thể chọn backend AI ưa thích của mình.\n* **Định tuyến mô hình nâng cao**: Người dùng các nhà cung cấp gốc (Gemini, OpenAI, v.v.) hiện có thể chọn các mô hình cụ thể từ danh sách thả xuống cho các tác vụ khác nhau (OCR, STT, TTS).\n* **Cấu hình Endpoint nâng cao**: Người dùng nhà cung cấp tùy chỉnh có thể nhập thủ công các URL và tên mô hình cụ thể để kiểm soát chi tiết các máy chủ cục bộ hoặc bên thứ ba.\n* **Hiển thị tính năng thông minh**: Menu cài đặt và giao diện Trình đọc tài liệu giờ đây tự động ẩn các tính năng không được hỗ trợ (như TTS) dựa trên nhà cung cấp đã chọn.\n* **Tìm nạp mô hình động**: Add-on hiện tìm nạp danh sách mô hình có sẵn trực tiếp từ API của nhà cung cấp, đảm bảo khả năng tương thích với các mô hình mới ngay khi chúng được phát hành.\n* **Kết hợp OCR & Dịch thuật**: Tối ưu hóa logic để sử dụng Google Dịch nhằm tăng tốc độ khi dùng Chrome OCR, và dịch thuật bằng AI khi dùng các công cụ Gemini/Groq/OpenAI.\n* **\"Quét lại bằng AI\" toàn cầu**: Tính năng quét lại của Trình đọc tài liệu không còn bị giới hạn ở Gemini. Giờ đây, tính năng này sử dụng bất kỳ nhà cung cấp AI nào đang hoạt động để xử lý lại các trang."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vision Assistant Pro",
+			"description": "基于 AI 模型的高级 NVDA 智能助手。\n命令层：按 NVDA+Shift+V，然后按：\n- 智能翻译 (T) / 剪贴板 (Shift+T)\n- 文本润色 (R)\n- 描述对象 (V) / 全屏 (O)\n- 在线视频分析 (Shift+V)\n- 文档阅读器 (D)\n- 文件 OCR (F)\n- 验证码求解器 (C)\n- 音频转录 (A)\n- 智能听写 (S)\n- 播报状态 (L)\n- 检查更新 (U)\n- 调用上一次结果 (Space)\n- 命令帮助 (H)\n",
+			"changelog": "## 5.0 版本变更\n* **多提供商架构**：在 Google Gemini 的基础上，全面添加了对 **OpenAI**、**Groq** 和 **Mistral** 的支持。用户现在可以选择自己首选的 AI 后端。\n* **高级模型路由**：原生提供商（Gemini、OpenAI 等）的用户现在可以从下拉列表中为不同任务（OCR、STT、TTS）选择特定的模型。\n* **高级端点配置**：自定义提供商用户可以手动输入特定的 URL 和模型名称，从而对本地或第三方服务器进行精细控制。\n* **智能功能可见性**：设置菜单和文档阅读器界面现在会根据所选的提供商，自动隐藏不支持的功能（如 TTS）。\n* **动态模型获取**：插件现在直接从提供商的 API 获取可用模型列表，确保在新模型发布后第一时间兼容。\n* **混合 OCR 与翻译**：优化了逻辑，在使用 Chrome OCR 时采用 Google 翻译以保证速度，而在使用 Gemini/Groq/OpenAI 引擎时采用 AI 驱动的翻译。\n* **通用“使用 AI 重新扫描”**：文档阅读器的重新扫描功能不再局限于 Gemini。它现在利用当前活动的任何 AI 提供商来重新处理页面。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 4956,
+								"startColumn": 24,
+								"endColumn": 49
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "2913bc0dd513cd37:1",
+					"primaryLocationStartColumnFingerprint": "11"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 4956,
+								"startColumn": 24,
+								"endColumn": 39
+							}
+						},
+						"message": {
+							"text": "instagram.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/incomplete-url-substring-sanitization",
+				"rule": {
+					"id": "py/incomplete-url-substring-sanitization",
+					"index": 4,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 4958,
+								"startColumn": 25,
+								"endColumn": 47
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "ecbb1fd672237310:1",
+					"primaryLocationStartColumnFingerprint": "12"
+				},
+				"relatedLocations": [
+					{
+						"id": 1,
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 4958,
+								"startColumn": 25,
+								"endColumn": 37
+							}
+						},
+						"message": {
+							"text": "tiktok.com"
+						}
+					}
+				]
+			},
+			{
+				"ruleId": "py/overly-large-range",
+				"rule": {
+					"id": "py/overly-large-range",
+					"index": 5,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "Suspicious character range that overlaps with \\w in the same character class."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 1
+							},
+							"region": {
+								"startLine": 54,
+								"startColumn": 33,
+								"endColumn": 36
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+					"primaryLocationStartColumnFingerprint": "24"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 1,
+						"exe": 1,
+						"h": 89,
+						"html": 12,
+						"ini": 14,
+						"lib": 2,
+						"md": 14,
+						"mo": 13,
+						"po": 13,
+						"py": 50,
+						"pyd": 2,
+						"txt": 3,
+						"typed": 1
+					},
+					"file_types": {
+						"HTML": 12,
+						"Portable Executable": 4,
+						"unknown": 212
+					},
+					"highest_datetime": "2026-04-29 10:37:30",
+					"lowest_datetime": "2026-04-29 10:37:02",
+					"num_children": 228,
+					"type": "ZIP",
+					"uncompressed_size": 52430561
+				},
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: PyMuPDF (whl)\nVersion: 1.27.1\nDescription: A high performance Python library for data extraction, analysis, conversion & manipulation of PDF (and other) documents.\n\nThe provided source code is an NVDA (NonVisual Desktop Access) extension named 'Vision Assistant Pro'. It integrates multiple AI providers (Google Gemini, OpenAI, Mistral, and Groq) to offer accessibility features such as image description, document reading with OCR, smart translation, and voice dictation. The package bundles legitimate versions of the PyMuPDF and Python-Markdown libraries to support its document processing and formatting capabilities. \n\nKey findings include:\n1. **AI Integration**: The extension sends user-provided text, images, or audio to legitimate AI service endpoints for processing. API keys are stored in the standard NVDA configuration.\n2. **Functionality**: Features like CAPTCHA solving, video analysis (via third-party scrapers for direct links), and audio transcription are implemented using standard Python libraries and NVDA APIs.\n3. **System Interaction**: Uses 'ctypes' for Windows multimedia functions (audio recording) and 'subprocess' for MP3 encoding via a bundled 'lame.exe'. These are contextually appropriate for the 'Smart Dictation' feature.\n4. **Updates and Donations**: Includes a standard update manager that checks GitHub for new releases and a donation dialog that explains regional banking restrictions as the reason for accepting cryptocurrency or gift cards.\n5. **Security**: No evidence was found of unauthorized data exfiltration (e.g., SSH keys, environment variables), execution of unexpected shells, or malicious payload delivery.",
+						"category": "code_insight",
+						"id": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "0debe3ebb01d754a85bf39f151b709cc"
+				},
+				"first_submission_date": 1777459315,
+				"last_analysis_date": 1777459315,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260429",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260428",
+						"engine_version": "6.774",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260322",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260429",
+						"engine_version": "3.30.0.10666",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260429",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260429",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260322",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260429",
+						"engine_version": "260429-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260428",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260429",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20251216",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260429",
+						"engine_version": "2.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260428",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260429",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260429",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260429",
+						"engine_version": "1.5.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260423",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260428",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260429",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260429",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260429",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260428",
+						"engine_version": "4.0.258",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260429",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260428",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260429",
+						"engine_version": "7.0.30.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260429",
+						"engine_version": "GD:27.44361AVA:64.31136",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "failure",
+						"engine_name": "Google",
+						"engine_update": "20260429",
+						"engine_version": "1777449652",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260429",
+						"engine_version": "1.0.244.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260429",
+						"engine_version": "6.4.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260428",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260429",
+						"engine_version": "14.49.59347",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260429",
+						"engine_version": "14.49.59348",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260429",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260429",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260429",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260429",
+						"engine_version": "3.1.0.231",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260429",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260429",
+						"engine_version": "1.2.0.14532",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260429",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260429",
+						"engine_version": "1.1.26030.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260429",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260429",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260428",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260429",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260428",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260427",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260324",
+						"engine_version": "7.6.2.19",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260428",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260429",
+						"engine_version": "3.4.1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260429",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260423",
+						"engine_version": "2026-04-23.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260429",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260331",
+						"engine_version": "4.0.11.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260428",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260429",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260429",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260429",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260428",
+						"engine_version": "5.6.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260428",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260429",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260429",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260428",
+						"engine_version": "9.5.1196",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260429",
+						"engine_version": "38605",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260428",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260429",
+						"engine_version": "2.0.0.5591",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260428",
+						"engine_version": "6.24-114820539",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260429",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260428",
+						"engine_version": "fccbab7:fccbab7:8a0870e:8a0870e",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260429",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 7,
+					"undetected": 67
+				},
+				"last_modification_date": 1777459507,
+				"last_submission_date": 1777459315,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"md5": "dc264bef90bd24578d05b43164784051",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "5a482a527add8dc306b9b5784df8f0d5cd394574",
+				"sha256": "fe8215e6647a9d64a44fb491fd2dadd261c1318656cde89c02388dc35deb3eff",
+				"size": 20629989,
+				"ssdeep": "393216:12tKAd40OYiMf9ri3JjVuirVqsD/cjiwCZ9xbO0yIVOn7CIu+5HCZZ29oM:122dYig5qJZuyqsDeyjO0I9CZA",
+				"tags": [
+					"contains-pe",
+					"whl"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1CE2733A4F8544389CE7FB971C445B06F93AF720EE1FE670A2A9C90F865CBE704571628",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Wheel package",
+						"probability": 63.2
+					},
+					{
+						"file_type": "Python Zip Application",
+						"probability": 26.5
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 10.1
+					}
+				],
+				"type_description": "Python Wheel package",
+				"type_extension": "whl",
+				"type_tag": "whl",
+				"type_tags": [
+					"installer",
+					"python",
+					"whl"
+				],
+				"unique_sources": 1,
+				"vhash": "980e541f1338fbec60b0026aacd96165"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
 }

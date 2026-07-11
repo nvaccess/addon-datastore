@@ -1,145 +1,145 @@
 {
-  "addonId": "OpenAI",
-  "displayName": "AI-Hub",
-  "URL": "https://github.com/AAClause/nvda-OpenAI/releases/download/26.05.11-dev/OpenAI-26.05.11.nvda-addon",
-  "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text.",
-  "sha256": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
-  "addonVersionName": "26.05.11",
-  "addonVersionNumber": {
-    "major": 26,
-    "minor": 5,
-    "patch": 11
-  },
-  "minNVDAVersion": {
-    "major": 2023,
-    "minor": 1,
-    "patch": 0
-  },
-  "lastTestedVersion": {
-    "major": 2026,
-    "minor": 1,
-    "patch": 0
-  },
-  "channel": "dev",
-  "publisher": "AAClause",
-  "sourceURL": "https://github.com/AAClause/nvda-OpenAI/",
-  "license": "GPL v2",
-  "homepage": "https://andreabc.net/projects/NVDA_addons/OpenAI",
-  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-  "submissionTime": 1778482032000,
-  "translations": [
-    {
-      "language": "fi",
-      "displayName": "AI-Hub",
-      "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
-    },
-    {
-      "language": "fr",
-      "displayName": "AI-Hub",
-      "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
-    },
-    {
-      "language": "ru",
-      "displayName": "AI-Hub",
-      "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
-    },
-    {
-      "language": "tr",
-      "displayName": "AI-Hub",
-      "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
-    },
-    {
-      "language": "uk",
-      "displayName": "AI-Hub",
-      "description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
-    }
-  ],
-  "vtScanUrl": "https://www.virustotal.com/gui/file/371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
-  "scanResults": {
-    "codeQL-warnings": [
-      {
-        "ruleId": "py/bad-tag-filter",
-        "rule": {
-          "id": "py/bad-tag-filter",
-          "index": 15,
-          "toolComponent": {
-            "index": 0
-          }
-        },
-        "message": {
-          "text": "This regular expression only parses --> and not --!> as a HTML comment end tag."
-        },
-        "locations": [
-          {
-            "physicalLocation": {
-              "artifactLocation": {
-                "uri": "addon/globalPlugins/AIHub/libs/markdown_it/rules_block/html_block.py",
-                "uriBaseId": "%SRCROOT%",
-                "index": 0
-              },
-              "region": {
-                "startLine": 21,
-                "startColumn": 41,
-                "endColumn": 44
-              }
-            }
-          }
-        ],
-        "partialFingerprints": {
-          "primaryLocationLineHash": "f65ec8c2fcedf145:1",
-          "primaryLocationStartColumnFingerprint": "36"
-        }
-      }
-    ],
-    "codeQL-errors": [],
-    "virusTotal": [
-      {
-        "_id": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
-        "_type": "file",
-        "crowdsourced_ai_results": [
-          {
-            "analysis": "Package: mdurl (whl)\nVersion: 0.1.2\nDescription: Markdown URL utilities\n\nThe provided source code consists of the 'mdurl' library (version 0.1.2) and an NVDA (NonVisual Desktop Access) plugin named 'AIHub', along with its dependencies like Pillow and markdown-it-py. The 'mdurl' component is a utility for URL parsing, encoding, and decoding, and its implementation is a standard port of the Node.js URL module. The 'AIHub' plugin provides a comprehensive interface for interacting with various AI services, including OpenAI, Anthropic, Mistral, and Google Gemini. It includes features for chat, image description (via screenshots or navigator objects), and audio transcription/synthesis. The code utilizes standard Python libraries for networking (urllib) and image processing, and uses Windows-specific APIs (via ctypes) for audio recording and playback. API keys and account information are managed locally within the user's NVDA configuration directory and are transmitted only to the legitimate service endpoints configured by the user. No evidence of malicious behavior, such as unauthorized data exfiltration, execution of unexpected binaries, or suspicious runtime downloads, was found.",
-            "category": "code_insight",
-            "id": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7-file-palm",
-            "source": "palm",
-            "verdict": "benign"
-          }
-        ],
-        "filecondis": {
-          "dhash": "000000000e0f0e00",
-          "raw_md5": "b7d5efe20498edfa4570608fe9a2c842"
-        },
-        "first_submission_date": 1778482054,
-        "last_analysis_results": {},
-        "last_analysis_stats": {
-          "confirmed-timeout": 0,
-          "failure": 0,
-          "harmless": 0,
-          "malicious": 0,
-          "suspicious": 0,
-          "timeout": 0,
-          "type-unsupported": 0,
-          "undetected": 0
-        },
-        "last_modification_date": 1778482244,
-        "last_submission_date": 1778482054,
-        "md5": "c413f196f1c483e6afd404dfc744c407",
-        "names": [],
-        "reputation": 0,
-        "sha1": "26e2943a5e62d93912963d46ecc0c603aa0fa053",
-        "sha256": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
-        "size": 14203367,
-        "tags": [],
-        "times_submitted": 1,
-        "total_votes": {
-          "harmless": 0,
-          "malicious": 0
-        },
-        "type_description": "unknown",
-        "type_tags": [],
-        "unique_sources": 1
-      }
-    ]
-  },
-  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2065"
+	"addonId": "OpenAI",
+	"displayName": "AI-Hub",
+	"URL": "https://github.com/AAClause/nvda-OpenAI/releases/download/26.05.11-dev/OpenAI-26.05.11.nvda-addon",
+	"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text.",
+	"sha256": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
+	"addonVersionName": "26.05.11",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 5,
+		"patch": 11
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "AAClause",
+	"sourceURL": "https://github.com/AAClause/nvda-OpenAI/",
+	"license": "GPL v2",
+	"homepage": "https://andreabc.net/projects/NVDA_addons/OpenAI",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1778482032000,
+	"translations": [
+		{
+			"language": "fi",
+			"displayName": "AI-Hub",
+			"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
+		},
+		{
+			"language": "fr",
+			"displayName": "AI-Hub",
+			"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
+		},
+		{
+			"language": "ru",
+			"displayName": "AI-Hub",
+			"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
+		},
+		{
+			"language": "tr",
+			"displayName": "AI-Hub",
+			"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
+		},
+		{
+			"language": "uk",
+			"displayName": "AI-Hub",
+			"description": "AI-Hub is an NVDA add-on that connects your screen reader to multiple AI providers for writing, summarizing, translation, image description, voice questions, and transcription without leaving NVDA.\nIt supports OpenAI, Mistral, OpenRouter, Anthropic, xAI, Google, DeepSeek, Custom OpenAI-compatible endpoints, and local Ollama models, with provider-specific tools such as TTS, OCR, and speech-to-text."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
+	"scanResults": {
+		"codeQL-warnings": [
+			{
+				"ruleId": "py/bad-tag-filter",
+				"rule": {
+					"id": "py/bad-tag-filter",
+					"index": 15,
+					"toolComponent": {
+						"index": 0
+					}
+				},
+				"message": {
+					"text": "This regular expression only parses --> and not --!> as a HTML comment end tag."
+				},
+				"locations": [
+					{
+						"physicalLocation": {
+							"artifactLocation": {
+								"uri": "addon/globalPlugins/AIHub/libs/markdown_it/rules_block/html_block.py",
+								"uriBaseId": "%SRCROOT%",
+								"index": 0
+							},
+							"region": {
+								"startLine": 21,
+								"startColumn": 41,
+								"endColumn": 44
+							}
+						}
+					}
+				],
+				"partialFingerprints": {
+					"primaryLocationLineHash": "f65ec8c2fcedf145:1",
+					"primaryLocationStartColumnFingerprint": "36"
+				}
+			}
+		],
+		"codeQL-errors": [],
+		"virusTotal": [
+			{
+				"_id": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: mdurl (whl)\nVersion: 0.1.2\nDescription: Markdown URL utilities\n\nThe provided source code consists of the 'mdurl' library (version 0.1.2) and an NVDA (NonVisual Desktop Access) plugin named 'AIHub', along with its dependencies like Pillow and markdown-it-py. The 'mdurl' component is a utility for URL parsing, encoding, and decoding, and its implementation is a standard port of the Node.js URL module. The 'AIHub' plugin provides a comprehensive interface for interacting with various AI services, including OpenAI, Anthropic, Mistral, and Google Gemini. It includes features for chat, image description (via screenshots or navigator objects), and audio transcription/synthesis. The code utilizes standard Python libraries for networking (urllib) and image processing, and uses Windows-specific APIs (via ctypes) for audio recording and playback. API keys and account information are managed locally within the user's NVDA configuration directory and are transmitted only to the legitimate service endpoints configured by the user. No evidence of malicious behavior, such as unauthorized data exfiltration, execution of unexpected binaries, or suspicious runtime downloads, was found.",
+						"category": "code_insight",
+						"id": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0e00",
+					"raw_md5": "b7d5efe20498edfa4570608fe9a2c842"
+				},
+				"first_submission_date": 1778482054,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1778482244,
+				"last_submission_date": 1778482054,
+				"md5": "c413f196f1c483e6afd404dfc744c407",
+				"names": [],
+				"reputation": 0,
+				"sha1": "26e2943a5e62d93912963d46ecc0c603aa0fa053",
+				"sha256": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
+				"size": 14203367,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2065"
 }
