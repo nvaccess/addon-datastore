@@ -1,833 +1,833 @@
 {
-	"addonId": "translate",
-	"displayName": "Translate",
-	"URL": "https://github.com/salmanf16/nvda-translate/releases/download/2026.06.18/translate.nvda-addon",
-	"description": "An ultra-fast and lightweight online translation addon for NVDA. Originally created by Yannick Plassiard, this modified version has been optimized for rapid real-time translations using high-speed cloud engines. Special thanks and full credit go to the original developer for his exceptional work. Requires an internet connection.",
-	"sha256": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
-	"addonVersionName": "2026.06.18",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 18
-	},
-	"minNVDAVersion": {
-		"major": 2023,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Yannick Plassiard, salmanf16",
-	"sourceURL": "https://github.com/salmanf16/nvda-translate",
-	"license": "GPL v3",
-	"homepage": "https://github.com/salmanf16/nvda-translate",
-	"changelog": "\n- Added: Support for Microsoft/Bing Translator API (requires API key).\n- Added: Support for OpenRouter API translation engine with dynamic model fetching in settings.\n- Fixed: Restored and corrected format placeholders across all languages to prevent translation-induced crashes.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.txt",
-	"submissionTime": 1781816900000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "ترجمة",
-			"description": "إضافة ترجمة فورية فائقة السرعة لبرنامج NVDA. هذا الإصدار عبارة عن تعديل وتطوير للنسخة الأصلية لتقديم ترجمة سريعة للغاية. كل الشكر والتقدير للمطور الأصلي Yannick Plassiard على إضافة الترجمة الرائعة وتسهيل وصولها، حيث لا يمكننا نسيان فضله وحقه كمطور أصلي لهذا العمل. تتطلب الإضافة اتصالاً بالإنترنت.",
-			"changelog": "\n- تمت الإضافة: دعم واجهة برمجة تطبيقات Microsoft/Bing Translator (يتطلب مفتاح واجهة برمجة التطبيقات).\n- تمت الإضافة: دعم محرك ترجمة OpenRouter API مع جلب النموذج الديناميكي في الإعدادات.\n- تم الإصلاح: تمت استعادة العناصر النائبة للتنسيق وتصحيحها عبر جميع اللغات لمنع الأعطال الناجمة عن الترجمة.\n"
-		},
-		{
-			"language": "bn",
-			"displayName": "অনুবাদ করুন",
-			"description": "এনভিডিএর জন্য একটি অতি-দ্রুত এবং লাইটওয়েট অনলাইন অনুবাদ অ্যাডন। মূলত Yannick Plassiard দ্বারা তৈরি, এই পরিবর্তিত সংস্করণটি উচ্চ-গতির ক্লাউড ইঞ্জিন ব্যবহার করে দ্রুত রিয়েল-টাইম অনুবাদের জন্য অপ্টিমাইজ করা হয়েছে। বিশেষ ধন্যবাদ এবং সম্পূর্ণ কৃতিত্ব মূল বিকাশকারীকে তার ব্যতিক্রমী কাজের জন্য। একটি ইন্টারনেট সংযোগ প্রয়োজন.",
-			"changelog": "\n- যোগ করা হয়েছে: Microsoft/Bing Translator API-এর জন্য সমর্থন (API কী প্রয়োজন)।\n- যোগ করা হয়েছে: সেটিংসে গতিশীল মডেল আনা সহ OpenRouter API অনুবাদ ইঞ্জিনের জন্য সমর্থন।\n- স্থির: অনুবাদ-প্ররোচিত ক্র্যাশ প্রতিরোধ করতে সমস্ত ভাষা জুড়ে বিন্যাস স্থানধারক পুনরুদ্ধার এবং সংশোধন করা হয়েছে।\n"
-		},
-		{
-			"language": "de",
-			"displayName": "Übersetzen",
-			"description": "Ein ultraschnelles und leichtes Online-Übersetzungs-Add-on für NVDA. Ursprünglich von Yannick Plassiard erstellt, wurde diese modifizierte Version für schnelle Echtzeitübersetzungen mithilfe von Hochgeschwindigkeits-Cloud-Engines optimiert. Besonderer Dank und volle Anerkennung gebührt dem ursprünglichen Entwickler für seine außergewöhnliche Arbeit. Erfordert eine Internetverbindung.",
-			"changelog": "\n- Hinzugefügt: Unterstützung für Microsoft/Bing Translator API (erfordert API-Schlüssel).\n- Hinzugefügt: Unterstützung für die OpenRouter API-Übersetzungs-Engine mit dynamischem Modellabruf in den Einstellungen.\n- Behoben: Formatplatzhalter in allen Sprachen wiederhergestellt und korrigiert, um durch Übersetzungen verursachte Abstürze zu verhindern.\n"
-		},
-		{
-			"language": "es",
-			"displayName": "Traducir",
-			"description": "Un complemento de traducción en línea ultrarrápido y liviano para NVDA. Creada originalmente por Yannick Plasiard, esta versión modificada ha sido optimizada para traducciones rápidas en tiempo real utilizando motores de nube de alta velocidad. Un agradecimiento especial y todo el crédito para el desarrollador original por su trabajo excepcional. Requiere una conexión a Internet.",
-			"changelog": "\n- Agregado: Soporte para Microsoft/Bing Translator API (requiere clave API).\n- Agregado: Compatibilidad con el motor de traducción API de OpenRouter con recuperación dinámica de modelos en la configuración.\n- Corregido: marcadores de posición de formato restaurados y corregidos en todos los idiomas para evitar fallas inducidas por la traducción.\n"
-		},
-		{
-			"language": "fa",
-			"displayName": "ترجمه کنید",
-			"description": "یک افزونه ترجمه آنلاین فوق العاده سریع و سبک برای NVDA. این نسخه اصلاح شده که در اصل توسط Yannick Plassiard ساخته شده است، برای ترجمه های سریع در زمان واقعی با استفاده از موتورهای ابری پرسرعت بهینه شده است. تشکر ویژه و اعتبار کامل به توسعه دهنده اصلی برای کار استثنایی اش. نیاز به اتصال به اینترنت دارد.",
-			"changelog": "\n- اضافه شده: پشتیبانی از Microsoft/Bing Translator API (به کلید API نیاز دارد).\n- اضافه شده: پشتیبانی از موتور ترجمه OpenRouter API با واکشی مدل پویا در تنظیمات.\n- رفع شد: مکان‌نماهای قالب را در همه زبان‌ها بازیابی و تصحیح کرد تا از خرابی‌های ناشی از ترجمه جلوگیری شود.\n"
-		},
-		{
-			"language": "fr",
-			"displayName": "Traduire",
-			"description": "Un module complémentaire de traduction en ligne ultra-rapide et léger pour NVDA. Créée à l'origine par Yannick Plassiard, cette version modifiée a été optimisée pour des traductions rapides en temps réel à l'aide de moteurs cloud à grande vitesse. Des remerciements particuliers et tout le crédit vont au développeur d'origine pour son travail exceptionnel. Nécessite une connexion Internet.",
-			"changelog": "\n- Ajouté : prise en charge de l'API Microsoft/Bing Translator (nécessite une clé API).\n- Ajouté : prise en charge du moteur de traduction de l'API OpenRouter avec récupération de modèle dynamique dans les paramètres.\n- Corrigé : espaces réservés de format restaurés et corrigés dans toutes les langues pour éviter les plantages induits par la traduction.\n"
-		},
-		{
-			"language": "hi",
-			"displayName": "अनुवाद",
-			"description": "एनवीडीए के लिए एक अत्यंत तेज़ और हल्का ऑनलाइन अनुवाद ऐडऑन। मूल रूप से यानिक प्लासीर्ड द्वारा निर्मित, इस संशोधित संस्करण को उच्च गति वाले क्लाउड इंजनों का उपयोग करके तीव्र वास्तविक समय अनुवाद के लिए अनुकूलित किया गया है। मूल डेवलपर को उसके असाधारण कार्य के लिए विशेष धन्यवाद और पूरा श्रेय जाता है। इंटरनेट कनेक्शन की आवश्यकता है.",
-			"changelog": "\n- जोड़ा गया: माइक्रोसॉफ्ट/बिंग ट्रांसलेटर एपीआई के लिए समर्थन (एपीआई कुंजी की आवश्यकता है)।\n- जोड़ा गया: सेटिंग्स में डायनामिक मॉडल लाने के साथ ओपनराउटर एपीआई अनुवाद इंजन के लिए समर्थन।\n- ठीक किया गया: अनुवाद-प्रेरित क्रैश को रोकने के लिए सभी भाषाओं में फ़ॉर्मेट प्लेसहोल्डर्स को पुनर्स्थापित और सही किया गया।\n"
-		},
-		{
-			"language": "id",
-			"displayName": "Menerjemahkan",
-			"description": "Addon terjemahan online yang sangat cepat dan ringan untuk NVDA. Awalnya dibuat oleh Yannick Plassiard, versi modifikasi ini telah dioptimalkan untuk terjemahan cepat dan real-time menggunakan mesin cloud berkecepatan tinggi. Terima kasih khusus dan penghargaan penuh ditujukan kepada pengembang asli atas karyanya yang luar biasa. Membutuhkan koneksi internet.",
-			"changelog": "\n- Ditambahkan: Dukungan untuk Microsoft/Bing Translator API (memerlukan kunci API).\n- Ditambahkan: Dukungan untuk mesin terjemahan OpenRouter API dengan pengambilan model dinamis dalam pengaturan.\n- Memperbaiki: Placeholder format yang dipulihkan dan diperbaiki di semua bahasa untuk mencegah kerusakan yang disebabkan oleh terjemahan.\n"
-		},
-		{
-			"language": "it",
-			"displayName": "Tradurre",
-			"description": "Un componente aggiuntivo di traduzione online ultraveloce e leggero per NVDA. Creata originariamente da Yannick Plassiard, questa versione modificata è stata ottimizzata per traduzioni rapide in tempo reale utilizzando motori cloud ad alta velocità. Un ringraziamento speciale e tutto il merito vanno allo sviluppatore originale per il suo lavoro eccezionale. Richiede una connessione Internet.",
-			"changelog": "\n- Aggiunto: supporto per API Microsoft/Bing Translator (richiede la chiave API).\n- Aggiunto: supporto per il motore di traduzione API OpenRouter con recupero del modello dinamico nelle impostazioni.\n- Risolto: segnaposto di formato ripristinati e corretti in tutte le lingue per evitare arresti anomali indotti dalla traduzione.\n"
-		},
-		{
-			"language": "ja",
-			"displayName": "翻訳する",
-			"description": "NVDA 用の超高速かつ軽量のオンライン翻訳アドオン。元々は Yannick Plassiard によって作成されましたが、この修正バージョンは、高速クラウド エンジンを使用した迅速なリアルタイム翻訳用に最適化されています。オリジナル開発者の並外れた功績に特別な感謝と全面的な敬意を表します。インターネット接続が必要です。",
-			"changelog": "\n- 追加: Microsoft/Bing Translator API のサポート (API キーが必要)。\n- 追加: 設定での動的モデル取得による OpenRouter API 変換エンジンのサポート。\n- 修正: 翻訳によるクラッシュを防ぐために、すべての言語でフォーマット プレースホルダーが復元および修正されました。\n"
-		},
-		{
-			"language": "ko",
-			"displayName": "번역하다",
-			"description": "NVDA를 위한 초고속 및 경량 온라인 번역 애드온입니다. 원래 Yannick Plassiard가 만든 이 수정 버전은 고속 클라우드 엔진을 사용하여 신속한 실시간 번역에 최적화되었습니다. 탁월한 작업을 수행한 원래 개발자에게 특별한 감사와 전적인 감사를 표합니다. 인터넷 연결이 필요합니다.",
-			"changelog": "\n- 추가됨: Microsoft/Bing Translator API 지원(API 키 필요)\n- 추가됨: 설정에서 동적 모델 가져오기를 통해 OpenRouter API 번역 엔진을 지원합니다.\n- 수정됨: 번역으로 인한 충돌을 방지하기 위해 모든 언어에서 형식 자리 표시자를 복원하고 수정했습니다.\n"
-		},
-		{
-			"language": "nl",
-			"displayName": "Vertalen",
-			"description": "Een ultrasnelle en lichtgewicht online vertaaladd-on voor NVDA. Deze aangepaste versie, oorspronkelijk gemaakt door Yannick Plassiard, is geoptimaliseerd voor snelle realtime vertalingen met behulp van snelle cloud-engines. Speciale dank en alle eer gaat naar de oorspronkelijke ontwikkelaar voor zijn uitzonderlijke werk. Vereist een internetverbinding.",
-			"changelog": "\n- Toegevoegd: Ondersteuning voor Microsoft/Bing Translator API (vereist API-sleutel).\n- Toegevoegd: Ondersteuning voor OpenRouter API-vertaalengine met dynamisch ophalen van modellen in instellingen.\n- Opgelost: tijdelijke aanduidingen voor formaten in alle talen hersteld en gecorrigeerd om crashes veroorzaakt door vertalingen te voorkomen.\n"
-		},
-		{
-			"language": "pl",
-			"displayName": "Tłumaczyć",
-			"description": "Ultraszybki i lekki dodatek do tłumaczenia online dla NVDA. Ta zmodyfikowana wersja, pierwotnie stworzona przez Yannicka Plassiarda, została zoptymalizowana pod kątem szybkich tłumaczeń w czasie rzeczywistym przy użyciu szybkich silników chmurowych. Specjalne podziękowania i pełne uznanie należą się oryginalnemu programiście za jego wyjątkową pracę. Wymaga połączenia z Internetem.",
-			"changelog": "\n- Dodano: Wsparcie dla API Microsoft/Bing Translator (wymaga klucza API).\n- Dodano: Obsługa silnika translacyjnego API OpenRouter z dynamicznym pobieraniem modelu w ustawieniach.\n- Naprawiono: Przywrócono i poprawiono symbole zastępcze formatu we wszystkich językach, aby zapobiec awariom spowodowanym tłumaczeniem.\n"
-		},
-		{
-			"language": "pt",
-			"displayName": "Traduzir",
-			"description": "Um complemento de tradução online ultrarrápido e leve para NVDA. Originalmente criada por Yannick Plasiard, esta versão modificada foi otimizada para traduções rápidas em tempo real usando mecanismos de nuvem de alta velocidade. Agradecimentos especiais e crédito total ao desenvolvedor original por seu trabalho excepcional. Requer uma conexão com a internet.",
-			"changelog": "\n- Adicionado: Suporte para API Microsoft/Bing Translator (requer chave API).\n- Adicionado: suporte para mecanismo de tradução da API OpenRouter com busca dinâmica de modelo nas configurações.\n- Corrigido: espaços reservados de formato restaurados e corrigidos em todos os idiomas para evitar travamentos induzidos pela tradução.\n"
-		},
-		{
-			"language": "ru",
-			"displayName": "Переводить",
-			"description": "Сверхбыстрый и легкий аддон для онлайн-перевода для NVDA. Эта модифицированная версия, первоначально созданная Янником Плассиардом, была оптимизирована для быстрых переводов в реальном времени с использованием высокоскоростных облачных движков. Особая благодарность и полная благодарность первоначальному разработчику за его исключительную работу. Требуется подключение к Интернету.",
-			"changelog": "\n- Добавлено: поддержка API Microsoft/Bing Translator (требуется ключ API).\n- Добавлено: Поддержка механизма перевода OpenRouter API с динамической выборкой модели в настройках.\n- Исправлено: восстановлены и исправлены заполнители формата на всех языках для предотвращения сбоев, вызванных переводом.\n"
-		},
-		{
-			"language": "tr",
-			"displayName": "Çevir",
-			"description": "NVDA için ultra hızlı ve hafif bir çevrimiçi çeviri eklentisi. Başlangıçta Yannick Plassiard tarafından oluşturulan bu değiştirilmiş sürüm, yüksek hızlı bulut motorları kullanılarak hızlı gerçek zamanlı çeviriler için optimize edildi. Olağanüstü çalışmasından dolayı orijinal geliştiriciye özel teşekkürler ve tam kredi. İnternet bağlantısı gerektirir.",
-			"changelog": "\n- Eklendi: Microsoft/Bing Translator API desteği (API anahtarı gerektirir).\n- Eklendi: Ayarlarda dinamik model getirme özelliğine sahip OpenRouter API çeviri motoru desteği.\n- Düzeltildi: Çeviri kaynaklı çökmeleri önlemek için tüm dillerdeki format yer tutucuları geri yüklendi ve düzeltildi.\n"
-		},
-		{
-			"language": "uk",
-			"displayName": "Перекладач",
-			"description": "Надшвидкий та компактний онлайн перекладач для NVDA. Ця модифікована версія, спочатку створена Янніком Плассіардом, була оптимізована для швидкого перекладу в режимі реального часу з використанням високошвидкісних хмарних двигунів. Особлива подяка та повне визнання належать оригінальному розробнику за його виняткову роботу. Потрібне підключення до Інтернету.",
-			"changelog": "\n- Додано: підтримка API перекладача Microsoft/Bing (потрібен ключ API).\n- Додано: підтримка механізму перекладу OpenRouter API із динамічною вибіркою моделі в налаштуваннях.\n- Виправлено: відновлено та виправлено заповнювачі формату для всіх мов, щоб запобігти збоям, спричиненим перекладом.\n"
-		},
-		{
-			"language": "ur",
-			"displayName": "ترجمہ کریں۔",
-			"description": "NVDA کے لیے ایک انتہائی تیز اور ہلکا پھلکا آن لائن ترجمہ ایڈون۔ اصل میں Yannick Plassiard کے ذریعہ تخلیق کیا گیا، اس ترمیم شدہ ورژن کو تیز رفتار کلاؤڈ انجنوں کا استعمال کرتے ہوئے ریئل ٹائم ترجمہ کے لیے بہتر بنایا گیا ہے۔ خصوصی شکریہ اور مکمل کریڈٹ اصل ڈویلپر کو اس کے غیر معمولی کام کے لیے جاتا ہے۔ انٹرنیٹ کنکشن کی ضرورت ہے۔",
-			"changelog": "\n- شامل کیا گیا: Microsoft/Bing Translator API کے لیے سپورٹ (API کلید کی ضرورت ہے)۔\n- شامل کیا گیا: ترتیبات میں متحرک ماڈل کی بازیافت کے ساتھ OpenRouter API ترجمہ انجن کے لیے سپورٹ۔\n- فکسڈ: ترجمہ کی حوصلہ افزائی کے کریشوں کو روکنے کے لیے تمام زبانوں میں فارمیٹ پلیس ہولڈرز کو بحال اور درست کیا گیا۔\n"
-		},
-		{
-			"language": "vi",
-			"displayName": "Dịch",
-			"description": "Một tiện ích dịch trực tuyến cực nhanh và nhẹ dành cho NVDA. Ban đầu được tạo bởi Yannick Plasiard, phiên bản sửa đổi này đã được tối ưu hóa để dịch nhanh theo thời gian thực bằng cách sử dụng công cụ đám mây tốc độ cao. Lời cảm ơn đặc biệt và ghi nhận đầy đủ dành cho nhà phát triển ban đầu vì công việc đặc biệt của anh ấy. Yêu cầu kết nối internet.",
-			"changelog": "\n- Đã thêm: Hỗ trợ API Microsoft/Bing Translator (yêu cầu khóa API).\n- Đã thêm: Hỗ trợ công cụ dịch API OpenRouter với tính năng tìm nạp mô hình động trong cài đặt.\n- Đã sửa lỗi: Đã khôi phục và sửa các phần giữ chỗ định dạng trên tất cả các ngôn ngữ để ngăn chặn sự cố do dịch thuật gây ra.\n"
-		},
-		{
-			"language": "zh",
-			"displayName": "翻译",
-			"description": "NVDA 的超快速、轻量级在线翻译插件。该修改版本最初由 Yannick Plassiard 创建，已针对使用高速云引擎的快速实时翻译进行了优化。特别感谢并充分赞扬原始开发人员的出色工作。需要互联网连接。",
-			"changelog": "\n- 添加：支持 Microsoft/Bing Translator API（需要 API 密钥）。\n- 添加：支持 OpenRouter API 翻译引擎，并在设置中动态获取模型。\n- 修复：恢复并更正所有语言的格式占位符，以防止翻译引起的崩溃。\n"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 1,
-						"html": 2,
-						"ini": 21,
-						"md": 3,
-						"mo": 20,
-						"po": 20,
-						"py": 10
-					},
-					"file_types": {
-						"HTML": 2,
-						"script": 1,
-						"unknown": 76
-					},
-					"highest_datetime": "2026-06-18 23:54:52",
-					"lowest_datetime": "2025-10-14 13:42:30",
-					"num_children": 79,
-					"type": "ZIP",
-					"uncompressed_size": 341152
-				},
-				"contenthash": "033fb527037169f079b4b9f9adf974aa",
-				"filecondis": {
-					"dhash": "0000101c1e1d0800",
-					"raw_md5": "72188f405d1f988896370be3f82836c7"
-				},
-				"first_submission_date": 1781816920,
-				"last_analysis_date": 1781816920,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260618",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260616",
-						"engine_version": "6.789",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260618",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260618",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260618",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260618",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260618",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260617",
-						"engine_version": "260617-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260618",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260618",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260617",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260617",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260618",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260618",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260618",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260618",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260618",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260618",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260618",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260617",
-						"engine_version": "4.0.265",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260618",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260618",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260618",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260618",
-						"engine_version": "GD:27.44958AVA:64.31440",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260618",
-						"engine_version": "1781812883",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260618",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260618",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260618",
-						"engine_version": "14.58.59867",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260618",
-						"engine_version": "14.58.59868",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260618",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260618",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260618",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260618",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260618",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260618",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260618",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260618",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260618",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260618",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260618",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260618",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260618",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260617",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260608",
-						"engine_version": "7.6.3.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260618",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260618",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260618",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260618",
-						"engine_version": "2026-06-18.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260618",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260618",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260618",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260618",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260618",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260618",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260618",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260618",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260618",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260618",
-						"engine_version": "9.5.1231",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260618",
-						"engine_version": "38740",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260618",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260618",
-						"engine_version": "2.0.0.5625",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260618",
-						"engine_version": "6.25-116107653",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260618",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260618",
-						"engine_version": "eb947ba:eb947ba:1e47ea2:1e47ea2",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260618",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 64
-				},
-				"last_modification_date": 1781816998,
-				"last_submission_date": 1781816920,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "XPI",
-				"md5": "8cc32902562dab69db4a932849ff7c94",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "aaa8507d63c39e34b09876e6e35b7b04959c340c",
-				"sha256": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
-				"size": 128252,
-				"ssdeep": "3072:92cFZKFwV98uUG17MLkDAbaB86XWhYMRKEU2bMjvHBdBLDzk:99nD9mGNMLFbw8eWhNxOBjHk",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T12BC3F1465E4F041BF59391BE29550822E23E8249F64FFB8D148AC9C7ACD67ED0BEE40D",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "5b6a577ac5d200564ca90d44693a3d54"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9766"
+  "addonId": "translate",
+  "displayName": "Translate",
+  "URL": "https://github.com/salmanf16/nvda-translate/releases/download/2026.06.18/translate.nvda-addon",
+  "description": "An ultra-fast and lightweight online translation addon for NVDA. Originally created by Yannick Plassiard, this modified version has been optimized for rapid real-time translations using high-speed cloud engines. Special thanks and full credit go to the original developer for his exceptional work. Requires an internet connection.",
+  "sha256": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
+  "addonVersionName": "2026.06.18",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 18
+  },
+  "minNVDAVersion": {
+    "major": 2023,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Yannick Plassiard, salmanf16",
+  "sourceURL": "https://github.com/salmanf16/nvda-translate",
+  "license": "GPL v3",
+  "homepage": "https://github.com/salmanf16/nvda-translate",
+  "changelog": "\n- Added: Support for Microsoft/Bing Translator API (requires API key).\n- Added: Support for OpenRouter API translation engine with dynamic model fetching in settings.\n- Fixed: Restored and corrected format placeholders across all languages to prevent translation-induced crashes.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-3.0.txt",
+  "submissionTime": 1781816900000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "ترجمة",
+      "description": "إضافة ترجمة فورية فائقة السرعة لبرنامج NVDA. هذا الإصدار عبارة عن تعديل وتطوير للنسخة الأصلية لتقديم ترجمة سريعة للغاية. كل الشكر والتقدير للمطور الأصلي Yannick Plassiard على إضافة الترجمة الرائعة وتسهيل وصولها، حيث لا يمكننا نسيان فضله وحقه كمطور أصلي لهذا العمل. تتطلب الإضافة اتصالاً بالإنترنت.",
+      "changelog": "\n- تمت الإضافة: دعم واجهة برمجة تطبيقات Microsoft/Bing Translator (يتطلب مفتاح واجهة برمجة التطبيقات).\n- تمت الإضافة: دعم محرك ترجمة OpenRouter API مع جلب النموذج الديناميكي في الإعدادات.\n- تم الإصلاح: تمت استعادة العناصر النائبة للتنسيق وتصحيحها عبر جميع اللغات لمنع الأعطال الناجمة عن الترجمة.\n"
+    },
+    {
+      "language": "bn",
+      "displayName": "অনুবাদ করুন",
+      "description": "এনভিডিএর জন্য একটি অতি-দ্রুত এবং লাইটওয়েট অনলাইন অনুবাদ অ্যাডন। মূলত Yannick Plassiard দ্বারা তৈরি, এই পরিবর্তিত সংস্করণটি উচ্চ-গতির ক্লাউড ইঞ্জিন ব্যবহার করে দ্রুত রিয়েল-টাইম অনুবাদের জন্য অপ্টিমাইজ করা হয়েছে। বিশেষ ধন্যবাদ এবং সম্পূর্ণ কৃতিত্ব মূল বিকাশকারীকে তার ব্যতিক্রমী কাজের জন্য। একটি ইন্টারনেট সংযোগ প্রয়োজন.",
+      "changelog": "\n- যোগ করা হয়েছে: Microsoft/Bing Translator API-এর জন্য সমর্থন (API কী প্রয়োজন)।\n- যোগ করা হয়েছে: সেটিংসে গতিশীল মডেল আনা সহ OpenRouter API অনুবাদ ইঞ্জিনের জন্য সমর্থন।\n- স্থির: অনুবাদ-প্ররোচিত ক্র্যাশ প্রতিরোধ করতে সমস্ত ভাষা জুড়ে বিন্যাস স্থানধারক পুনরুদ্ধার এবং সংশোধন করা হয়েছে।\n"
+    },
+    {
+      "language": "de",
+      "displayName": "Übersetzen",
+      "description": "Ein ultraschnelles und leichtes Online-Übersetzungs-Add-on für NVDA. Ursprünglich von Yannick Plassiard erstellt, wurde diese modifizierte Version für schnelle Echtzeitübersetzungen mithilfe von Hochgeschwindigkeits-Cloud-Engines optimiert. Besonderer Dank und volle Anerkennung gebührt dem ursprünglichen Entwickler für seine außergewöhnliche Arbeit. Erfordert eine Internetverbindung.",
+      "changelog": "\n- Hinzugefügt: Unterstützung für Microsoft/Bing Translator API (erfordert API-Schlüssel).\n- Hinzugefügt: Unterstützung für die OpenRouter API-Übersetzungs-Engine mit dynamischem Modellabruf in den Einstellungen.\n- Behoben: Formatplatzhalter in allen Sprachen wiederhergestellt und korrigiert, um durch Übersetzungen verursachte Abstürze zu verhindern.\n"
+    },
+    {
+      "language": "es",
+      "displayName": "Traducir",
+      "description": "Un complemento de traducción en línea ultrarrápido y liviano para NVDA. Creada originalmente por Yannick Plasiard, esta versión modificada ha sido optimizada para traducciones rápidas en tiempo real utilizando motores de nube de alta velocidad. Un agradecimiento especial y todo el crédito para el desarrollador original por su trabajo excepcional. Requiere una conexión a Internet.",
+      "changelog": "\n- Agregado: Soporte para Microsoft/Bing Translator API (requiere clave API).\n- Agregado: Compatibilidad con el motor de traducción API de OpenRouter con recuperación dinámica de modelos en la configuración.\n- Corregido: marcadores de posición de formato restaurados y corregidos en todos los idiomas para evitar fallas inducidas por la traducción.\n"
+    },
+    {
+      "language": "fa",
+      "displayName": "ترجمه کنید",
+      "description": "یک افزونه ترجمه آنلاین فوق العاده سریع و سبک برای NVDA. این نسخه اصلاح شده که در اصل توسط Yannick Plassiard ساخته شده است، برای ترجمه های سریع در زمان واقعی با استفاده از موتورهای ابری پرسرعت بهینه شده است. تشکر ویژه و اعتبار کامل به توسعه دهنده اصلی برای کار استثنایی اش. نیاز به اتصال به اینترنت دارد.",
+      "changelog": "\n- اضافه شده: پشتیبانی از Microsoft/Bing Translator API (به کلید API نیاز دارد).\n- اضافه شده: پشتیبانی از موتور ترجمه OpenRouter API با واکشی مدل پویا در تنظیمات.\n- رفع شد: مکان‌نماهای قالب را در همه زبان‌ها بازیابی و تصحیح کرد تا از خرابی‌های ناشی از ترجمه جلوگیری شود.\n"
+    },
+    {
+      "language": "fr",
+      "displayName": "Traduire",
+      "description": "Un module complémentaire de traduction en ligne ultra-rapide et léger pour NVDA. Créée à l'origine par Yannick Plassiard, cette version modifiée a été optimisée pour des traductions rapides en temps réel à l'aide de moteurs cloud à grande vitesse. Des remerciements particuliers et tout le crédit vont au développeur d'origine pour son travail exceptionnel. Nécessite une connexion Internet.",
+      "changelog": "\n- Ajouté : prise en charge de l'API Microsoft/Bing Translator (nécessite une clé API).\n- Ajouté : prise en charge du moteur de traduction de l'API OpenRouter avec récupération de modèle dynamique dans les paramètres.\n- Corrigé : espaces réservés de format restaurés et corrigés dans toutes les langues pour éviter les plantages induits par la traduction.\n"
+    },
+    {
+      "language": "hi",
+      "displayName": "अनुवाद",
+      "description": "एनवीडीए के लिए एक अत्यंत तेज़ और हल्का ऑनलाइन अनुवाद ऐडऑन। मूल रूप से यानिक प्लासीर्ड द्वारा निर्मित, इस संशोधित संस्करण को उच्च गति वाले क्लाउड इंजनों का उपयोग करके तीव्र वास्तविक समय अनुवाद के लिए अनुकूलित किया गया है। मूल डेवलपर को उसके असाधारण कार्य के लिए विशेष धन्यवाद और पूरा श्रेय जाता है। इंटरनेट कनेक्शन की आवश्यकता है.",
+      "changelog": "\n- जोड़ा गया: माइक्रोसॉफ्ट/बिंग ट्रांसलेटर एपीआई के लिए समर्थन (एपीआई कुंजी की आवश्यकता है)।\n- जोड़ा गया: सेटिंग्स में डायनामिक मॉडल लाने के साथ ओपनराउटर एपीआई अनुवाद इंजन के लिए समर्थन।\n- ठीक किया गया: अनुवाद-प्रेरित क्रैश को रोकने के लिए सभी भाषाओं में फ़ॉर्मेट प्लेसहोल्डर्स को पुनर्स्थापित और सही किया गया।\n"
+    },
+    {
+      "language": "id",
+      "displayName": "Menerjemahkan",
+      "description": "Addon terjemahan online yang sangat cepat dan ringan untuk NVDA. Awalnya dibuat oleh Yannick Plassiard, versi modifikasi ini telah dioptimalkan untuk terjemahan cepat dan real-time menggunakan mesin cloud berkecepatan tinggi. Terima kasih khusus dan penghargaan penuh ditujukan kepada pengembang asli atas karyanya yang luar biasa. Membutuhkan koneksi internet.",
+      "changelog": "\n- Ditambahkan: Dukungan untuk Microsoft/Bing Translator API (memerlukan kunci API).\n- Ditambahkan: Dukungan untuk mesin terjemahan OpenRouter API dengan pengambilan model dinamis dalam pengaturan.\n- Memperbaiki: Placeholder format yang dipulihkan dan diperbaiki di semua bahasa untuk mencegah kerusakan yang disebabkan oleh terjemahan.\n"
+    },
+    {
+      "language": "it",
+      "displayName": "Tradurre",
+      "description": "Un componente aggiuntivo di traduzione online ultraveloce e leggero per NVDA. Creata originariamente da Yannick Plassiard, questa versione modificata è stata ottimizzata per traduzioni rapide in tempo reale utilizzando motori cloud ad alta velocità. Un ringraziamento speciale e tutto il merito vanno allo sviluppatore originale per il suo lavoro eccezionale. Richiede una connessione Internet.",
+      "changelog": "\n- Aggiunto: supporto per API Microsoft/Bing Translator (richiede la chiave API).\n- Aggiunto: supporto per il motore di traduzione API OpenRouter con recupero del modello dinamico nelle impostazioni.\n- Risolto: segnaposto di formato ripristinati e corretti in tutte le lingue per evitare arresti anomali indotti dalla traduzione.\n"
+    },
+    {
+      "language": "ja",
+      "displayName": "翻訳する",
+      "description": "NVDA 用の超高速かつ軽量のオンライン翻訳アドオン。元々は Yannick Plassiard によって作成されましたが、この修正バージョンは、高速クラウド エンジンを使用した迅速なリアルタイム翻訳用に最適化されています。オリジナル開発者の並外れた功績に特別な感謝と全面的な敬意を表します。インターネット接続が必要です。",
+      "changelog": "\n- 追加: Microsoft/Bing Translator API のサポート (API キーが必要)。\n- 追加: 設定での動的モデル取得による OpenRouter API 変換エンジンのサポート。\n- 修正: 翻訳によるクラッシュを防ぐために、すべての言語でフォーマット プレースホルダーが復元および修正されました。\n"
+    },
+    {
+      "language": "ko",
+      "displayName": "번역하다",
+      "description": "NVDA를 위한 초고속 및 경량 온라인 번역 애드온입니다. 원래 Yannick Plassiard가 만든 이 수정 버전은 고속 클라우드 엔진을 사용하여 신속한 실시간 번역에 최적화되었습니다. 탁월한 작업을 수행한 원래 개발자에게 특별한 감사와 전적인 감사를 표합니다. 인터넷 연결이 필요합니다.",
+      "changelog": "\n- 추가됨: Microsoft/Bing Translator API 지원(API 키 필요)\n- 추가됨: 설정에서 동적 모델 가져오기를 통해 OpenRouter API 번역 엔진을 지원합니다.\n- 수정됨: 번역으로 인한 충돌을 방지하기 위해 모든 언어에서 형식 자리 표시자를 복원하고 수정했습니다.\n"
+    },
+    {
+      "language": "nl",
+      "displayName": "Vertalen",
+      "description": "Een ultrasnelle en lichtgewicht online vertaaladd-on voor NVDA. Deze aangepaste versie, oorspronkelijk gemaakt door Yannick Plassiard, is geoptimaliseerd voor snelle realtime vertalingen met behulp van snelle cloud-engines. Speciale dank en alle eer gaat naar de oorspronkelijke ontwikkelaar voor zijn uitzonderlijke werk. Vereist een internetverbinding.",
+      "changelog": "\n- Toegevoegd: Ondersteuning voor Microsoft/Bing Translator API (vereist API-sleutel).\n- Toegevoegd: Ondersteuning voor OpenRouter API-vertaalengine met dynamisch ophalen van modellen in instellingen.\n- Opgelost: tijdelijke aanduidingen voor formaten in alle talen hersteld en gecorrigeerd om crashes veroorzaakt door vertalingen te voorkomen.\n"
+    },
+    {
+      "language": "pl",
+      "displayName": "Tłumaczyć",
+      "description": "Ultraszybki i lekki dodatek do tłumaczenia online dla NVDA. Ta zmodyfikowana wersja, pierwotnie stworzona przez Yannicka Plassiarda, została zoptymalizowana pod kątem szybkich tłumaczeń w czasie rzeczywistym przy użyciu szybkich silników chmurowych. Specjalne podziękowania i pełne uznanie należą się oryginalnemu programiście za jego wyjątkową pracę. Wymaga połączenia z Internetem.",
+      "changelog": "\n- Dodano: Wsparcie dla API Microsoft/Bing Translator (wymaga klucza API).\n- Dodano: Obsługa silnika translacyjnego API OpenRouter z dynamicznym pobieraniem modelu w ustawieniach.\n- Naprawiono: Przywrócono i poprawiono symbole zastępcze formatu we wszystkich językach, aby zapobiec awariom spowodowanym tłumaczeniem.\n"
+    },
+    {
+      "language": "pt",
+      "displayName": "Traduzir",
+      "description": "Um complemento de tradução online ultrarrápido e leve para NVDA. Originalmente criada por Yannick Plasiard, esta versão modificada foi otimizada para traduções rápidas em tempo real usando mecanismos de nuvem de alta velocidade. Agradecimentos especiais e crédito total ao desenvolvedor original por seu trabalho excepcional. Requer uma conexão com a internet.",
+      "changelog": "\n- Adicionado: Suporte para API Microsoft/Bing Translator (requer chave API).\n- Adicionado: suporte para mecanismo de tradução da API OpenRouter com busca dinâmica de modelo nas configurações.\n- Corrigido: espaços reservados de formato restaurados e corrigidos em todos os idiomas para evitar travamentos induzidos pela tradução.\n"
+    },
+    {
+      "language": "ru",
+      "displayName": "Переводить",
+      "description": "Сверхбыстрый и легкий аддон для онлайн-перевода для NVDA. Эта модифицированная версия, первоначально созданная Янником Плассиардом, была оптимизирована для быстрых переводов в реальном времени с использованием высокоскоростных облачных движков. Особая благодарность и полная благодарность первоначальному разработчику за его исключительную работу. Требуется подключение к Интернету.",
+      "changelog": "\n- Добавлено: поддержка API Microsoft/Bing Translator (требуется ключ API).\n- Добавлено: Поддержка механизма перевода OpenRouter API с динамической выборкой модели в настройках.\n- Исправлено: восстановлены и исправлены заполнители формата на всех языках для предотвращения сбоев, вызванных переводом.\n"
+    },
+    {
+      "language": "tr",
+      "displayName": "Çevir",
+      "description": "NVDA için ultra hızlı ve hafif bir çevrimiçi çeviri eklentisi. Başlangıçta Yannick Plassiard tarafından oluşturulan bu değiştirilmiş sürüm, yüksek hızlı bulut motorları kullanılarak hızlı gerçek zamanlı çeviriler için optimize edildi. Olağanüstü çalışmasından dolayı orijinal geliştiriciye özel teşekkürler ve tam kredi. İnternet bağlantısı gerektirir.",
+      "changelog": "\n- Eklendi: Microsoft/Bing Translator API desteği (API anahtarı gerektirir).\n- Eklendi: Ayarlarda dinamik model getirme özelliğine sahip OpenRouter API çeviri motoru desteği.\n- Düzeltildi: Çeviri kaynaklı çökmeleri önlemek için tüm dillerdeki format yer tutucuları geri yüklendi ve düzeltildi.\n"
+    },
+    {
+      "language": "uk",
+      "displayName": "Перекладач",
+      "description": "Надшвидкий та компактний онлайн перекладач для NVDA. Ця модифікована версія, спочатку створена Янніком Плассіардом, була оптимізована для швидкого перекладу в режимі реального часу з використанням високошвидкісних хмарних двигунів. Особлива подяка та повне визнання належать оригінальному розробнику за його виняткову роботу. Потрібне підключення до Інтернету.",
+      "changelog": "\n- Додано: підтримка API перекладача Microsoft/Bing (потрібен ключ API).\n- Додано: підтримка механізму перекладу OpenRouter API із динамічною вибіркою моделі в налаштуваннях.\n- Виправлено: відновлено та виправлено заповнювачі формату для всіх мов, щоб запобігти збоям, спричиненим перекладом.\n"
+    },
+    {
+      "language": "ur",
+      "displayName": "ترجمہ کریں۔",
+      "description": "NVDA کے لیے ایک انتہائی تیز اور ہلکا پھلکا آن لائن ترجمہ ایڈون۔ اصل میں Yannick Plassiard کے ذریعہ تخلیق کیا گیا، اس ترمیم شدہ ورژن کو تیز رفتار کلاؤڈ انجنوں کا استعمال کرتے ہوئے ریئل ٹائم ترجمہ کے لیے بہتر بنایا گیا ہے۔ خصوصی شکریہ اور مکمل کریڈٹ اصل ڈویلپر کو اس کے غیر معمولی کام کے لیے جاتا ہے۔ انٹرنیٹ کنکشن کی ضرورت ہے۔",
+      "changelog": "\n- شامل کیا گیا: Microsoft/Bing Translator API کے لیے سپورٹ (API کلید کی ضرورت ہے)۔\n- شامل کیا گیا: ترتیبات میں متحرک ماڈل کی بازیافت کے ساتھ OpenRouter API ترجمہ انجن کے لیے سپورٹ۔\n- فکسڈ: ترجمہ کی حوصلہ افزائی کے کریشوں کو روکنے کے لیے تمام زبانوں میں فارمیٹ پلیس ہولڈرز کو بحال اور درست کیا گیا۔\n"
+    },
+    {
+      "language": "vi",
+      "displayName": "Dịch",
+      "description": "Một tiện ích dịch trực tuyến cực nhanh và nhẹ dành cho NVDA. Ban đầu được tạo bởi Yannick Plasiard, phiên bản sửa đổi này đã được tối ưu hóa để dịch nhanh theo thời gian thực bằng cách sử dụng công cụ đám mây tốc độ cao. Lời cảm ơn đặc biệt và ghi nhận đầy đủ dành cho nhà phát triển ban đầu vì công việc đặc biệt của anh ấy. Yêu cầu kết nối internet.",
+      "changelog": "\n- Đã thêm: Hỗ trợ API Microsoft/Bing Translator (yêu cầu khóa API).\n- Đã thêm: Hỗ trợ công cụ dịch API OpenRouter với tính năng tìm nạp mô hình động trong cài đặt.\n- Đã sửa lỗi: Đã khôi phục và sửa các phần giữ chỗ định dạng trên tất cả các ngôn ngữ để ngăn chặn sự cố do dịch thuật gây ra.\n"
+    },
+    {
+      "language": "zh",
+      "displayName": "翻译",
+      "description": "NVDA 的超快速、轻量级在线翻译插件。该修改版本最初由 Yannick Plassiard 创建，已针对使用高速云引擎的快速实时翻译进行了优化。特别感谢并充分赞扬原始开发人员的出色工作。需要互联网连接。",
+      "changelog": "\n- 添加：支持 Microsoft/Bing Translator API（需要 API 密钥）。\n- 添加：支持 OpenRouter API 翻译引擎，并在设置中动态获取模型。\n- 修复：恢复并更正所有语言的格式占位符，以防止翻译引起的崩溃。\n"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 1,
+            "html": 2,
+            "ini": 21,
+            "md": 3,
+            "mo": 20,
+            "po": 20,
+            "py": 10
+          },
+          "file_types": {
+            "HTML": 2,
+            "script": 1,
+            "unknown": 76
+          },
+          "highest_datetime": "2026-06-18 23:54:52",
+          "lowest_datetime": "2025-10-14 13:42:30",
+          "num_children": 79,
+          "type": "ZIP",
+          "uncompressed_size": 341152
+        },
+        "contenthash": "033fb527037169f079b4b9f9adf974aa",
+        "filecondis": {
+          "dhash": "0000101c1e1d0800",
+          "raw_md5": "72188f405d1f988896370be3f82836c7"
+        },
+        "first_submission_date": 1781816920,
+        "last_analysis_date": 1781816920,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260618",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260616",
+            "engine_version": "6.789",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260618",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260618",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260618",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260618",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260618",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260617",
+            "engine_version": "260617-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260618",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260618",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260617",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260617",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260618",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260618",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260618",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260618",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260618",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260618",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260618",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260617",
+            "engine_version": "4.0.265",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260618",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260618",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260618",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260618",
+            "engine_version": "GD:27.44958AVA:64.31440",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260618",
+            "engine_version": "1781812883",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260618",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260618",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260618",
+            "engine_version": "14.58.59867",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260618",
+            "engine_version": "14.58.59868",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260618",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260618",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260618",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260618",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260618",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260618",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260618",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260618",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260618",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260618",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260618",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260618",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260618",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260617",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260608",
+            "engine_version": "7.6.3.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260618",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260618",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260618",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260618",
+            "engine_version": "2026-06-18.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260618",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260618",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260618",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260618",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260618",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260618",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260618",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260618",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260618",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260618",
+            "engine_version": "9.5.1231",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260618",
+            "engine_version": "38740",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260618",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260618",
+            "engine_version": "2.0.0.5625",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260618",
+            "engine_version": "6.25-116107653",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260618",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260618",
+            "engine_version": "eb947ba:eb947ba:1e47ea2:1e47ea2",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260618",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 64
+        },
+        "last_modification_date": 1781816998,
+        "last_submission_date": 1781816920,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "XPI",
+        "md5": "8cc32902562dab69db4a932849ff7c94",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "aaa8507d63c39e34b09876e6e35b7b04959c340c",
+        "sha256": "57f40ff217352a1441e25e155f82e420dc89bc98871f20768b8c2ec0480023f0",
+        "size": 128252,
+        "ssdeep": "3072:92cFZKFwV98uUG17MLkDAbaB86XWhYMRKEU2bMjvHBdBLDzk:99nD9mGNMLFbw8eWhNxOBjHk",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T12BC3F1465E4F041BF59391BE29550822E23E8249F64FFB8D148AC9C7ACD67ED0BEE40D",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "5b6a577ac5d200564ca90d44693a3d54"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9766"
 }

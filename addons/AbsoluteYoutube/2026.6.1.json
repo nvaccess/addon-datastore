@@ -1,964 +1,964 @@
 {
-	"addonId": "AbsoluteYoutube",
-	"displayName": "AbsoluteYoutube",
-	"URL": "https://github.com/chaichaimee/AbsoluteYoutube/releases/download/2026.6.1/AbsoluteYoutube-v2026.6.1.nvda-addon",
-	"description": "Download YouTube videos as MP3, MP4 and WAV with resume, trim clips, snapshots, short URL copy, and smart failed download manager fast & accessible for NVDA users.\nWhy waste time opening a video page when you can grab it instantly? Our latest update introduces the revolutionary Focus and Fetch feature. Simply focus your cursor on any video link and trigger your download immediately - no more waiting for pages to load.\nWhat's New:\nToggle immediate download mode\nDownload list manager\nFavorite channel\nSearch Youtube\nHot Keys:\n- NVDA+Y\nSingle Tap: Download MP3\nDouble Tap: Download MP4\nTriple Tap: Download WAV\n- CTRL+Shift+Y\nSingle Tap: Open Context Menu\nDouble Tap: Open Destination Folder\nTripple Tap : Search Video\nNVDA+CTRL+Y : Toggle immediate download mode\nNVDA+Shift+Y: Toggle playlist mode\n- ALT+Windows+Y: Cycle MP3 quality",
-	"sha256": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
-	"addonVersionName": "2026.6.1",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/AbsoluteYoutube",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/AbsoluteYoutube",
-	"changelog": "Fixed playlist download in non-immediate mode, added cache size limit (3MB), corrected fail manager playlist handling, and blocked accidental homepage downloads.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781229795000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "AbsoluteYoutube",
-			"description": "تحميل فيديوهات يوتيوب بصيغة MP3 و MP4 و WAV مع استئناف التحميل، وقص المقاطع، واللقطات، ونسخ روابط قصيرة، ومدير تحميل ذكي للفشل - سريع وسهل الوصول لمستخدمي NVDA.\nلماذا تضيع الوقت في فتح صفحة الفيديو بينما يمكنك الحصول عليه فوراً؟ تحديثنا الأخير يقدم ميزة Focus and Fetch الثورية. ما عليك سوى تركيز المؤشر على أي رابط فيديو وبدء التحميل فوراً - لا مزيد من الانتظار لتحميل الصفحات.\nما الجديد:\nتبديل وضع التحميل الفوري\nمدير قائمة التحميل\nالقناة المفضلة\nبحث يوتيوب\nمفاتيح الاختصار:\n- NVDA+Y\nضغطة واحدة: تحميل MP3\nضغطتان: تحميل MP4\nثلاث ضغطات: تحميل WAV\n- CTRL+Shift+Y\nضغطة واحدة: فتح قائمة السياق\nضغطتان: فتح مجلد الوجهة\nثلاث ضغطات: بحث عن فيديو\nNVDA+CTRL+Y: تبديل وضع التحميل الفوري\nNVDA+Shift+Y: تبديل وضع قائمة التشغيل\n- ALT+Windows+Y: تبديل جودة MP3"
-		},
-		{
-			"language": "bg",
-			"displayName": "AbsoluteYoutube",
-			"description": "Изтегляйте видеоклипове от YouTube като MP3, MP4 и WAV с поддръжка на възобновяване, изрязване на клипове, снимки, копиране на кратки URL адреси и интелигентен мениджър за неуспешни изтегляния - бързо и достъпно за потребители на NVDA.\nЗащо да губите време в отваряне на страницата на видеоклипа, когато можете да го вземете мигновено? Нашата последна актуализация въвежда революционната функция Focus and Fetch. Просто фокусирайте курсора върху която и да е връзка към видеоклип и задействайте изтеглянето веднага - без повече чакане за зареждане на страници.\nКакво ново:\nПревключване на режим за незабавно изтегляне\nМениджър на списъка за изтегляне\nЛюбим канал\nТърсене в YouTube\nГорещи клавиши:\n- NVDA+Y\nЕднократно натискане: Изтегляне на MP3\nДвукратно натискане: Изтегляне на MP4\nТрикратно натискане: Изтегляне на WAV\n- CTRL+Shift+Y\nЕднократно натискане: Отваряне на контекстното меню\nДвукратно натискане: Отваряне на папката по местоназначение\nТрикратно натискане: Търсене на видеоклип\nNVDA+CTRL+Y: Превключване на режим за незабавно изтегляне\nNVDA+Shift+Y: Превключване на режим за плейлист\n- ALT+Windows+Y: Превключване на качеството на MP3"
-		},
-		{
-			"language": "bn",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube ভিডিওগুলি MP3, MP4 এবং WAV হিসেবে ডাউনলোড করুন জীবনবৃত্তান্ত, ট্রিম ক্লিপ, স্ন্যাপশট, ছোট URL কপি এবং স্মার্ট ব্যর্থ ডাউনলোড ম্যানেজার সহ - NVDA ব্যবহারকারীদের জন্য দ্রুত এবং অ্যাক্সেসযোগ্য।\nভিডিও পেজ খোলার সময় কেন নষ্ট করবেন যখন আপনি এটি সাথে সাথে পেতে পারেন? আমাদের সর্বশেষ আপডেট বৈপ্লবিক Focus and Fetch ফিচারটি চালু করেছে। যেকোনো ভিডিও লিঙ্কে আপনার কার্সার ফোকাস করুন এবং অবিলম্বে আপনার ডাউনলোড ট্রিগার করুন - পেজ লোড হওয়ার জন্য আর অপেক্ষা করতে হবে না।\nনতুন কি আছে:\nতাত্ক্ষণিক ডাউনলোড মোড টগল করুন\nডাউনলোড তালিকা ম্যানেজার\nপ্রিয় চ্যানেল\nইউটিউব সার্চ\nহট কি:\n- NVDA+Y\nএকবার ট্যাপ করুন: MP3 ডাউনলোড করুন\nদুইবার ট্যাপ করুন: MP4 ডাউনলোড করুন\nতিনবার ট্যাপ করুন: WAV ডাউনলোড করুন\n- CTRL+Shift+Y\nএকবার ট্যাপ করুন: কনটেক্সট মেনু খুলুন\nদুইবার ট্যাপ করুন: ডেস্টিনেশন ফোল্ডার খুলুন\nতিনবার ট্যাপ করুন: ভিডিও সার্চ করুন\nNVDA+CTRL+Y: তাত্ক্ষণিক ডাউনলোড মোড টগল করুন\nNVDA+Shift+Y: প্লেলিস্ট মোড টกล করুন\n- ALT+Windows+Y: MP3 কোয়ালিটি সাইকেল করুন"
-		},
-		{
-			"language": "cs",
-			"displayName": "AbsoluteYoutube",
-			"description": "Stahujte videa z YouTube ve formátech MP3, MP4 a WAV s možností navázání, stříháním klipů, snímky, kopírováním krátkých URL a chytrým správcem selhaných stahování - rychlé a přístupné pro uživatele NVDA.\nProč ztrácet čas otevíráním stránky s videem, když ho můžete získat okamžitě? Naše nejnovější aktualizace představuje revoluční funkci Focus and Fetch. Stačí zaměřit kurzor na jakýkoli odkaz na video a okamžitě spustit stahování - už žádné čekání na načtení stránek.\nCo je nového:\nPřepnout režim okamžitého stahování\nSprávce seznamu stahování\nOblíbený kanál\nHledat na Youtube\nHorké klávesy:\n- NVDA+Y\nJedno klepnutí: Stáhnout MP3\nDvojité klepnutí: Stáhnout MP4\nTrojité klepnutí: Stáhnout WAV\n- CTRL+Shift+Y\nJedno klepnutí: Otevřít kontextovou nabídku\nDvojité klepnutí: Otevřít cílovou složku\nTrojité klepnutí: Hledat video\nNVDA+CTRL+Y: Přepnout režim okamžitého stahování\nNVDA+Shift+Y: Přepnout režim seznamu stop\n- ALT+Windows+Y: Přepínat kvalitu MP3"
-		},
-		{
-			"language": "da",
-			"displayName": "AbsoluteYoutube",
-			"description": "Download YouTube-videoer som MP3, MP4 og WAV med genoptagelse, trimning af klip, snapshots, kopiering af korte URL'er og smart fejlhåndtering af downloads - hurtigt og tilgængeligt for NVDA-brugere.\nHvorfor spilde tid på at åbne en videoside, når du kan hente den med det samme? Vores seneste opdatering introducerer den revolutionerende Focus and Fetch-funktion. Du skal blot fokusere din markør på et hvilket som helst videolink og starte din download med det samme - slut med at vente på, at siderne indlæses.\nHvad er nyt:\nSkift tilstand for øjeblikkelig download\nDownload-listestyring\nFavoritkanal\nSøg på YouTube\nGenvejstaster:\n- NVDA+Y\nEnkelt tryk: Download MP3\nDobbelt tryk: Download MP4\nTriple tryk: Download WAV\n- CTRL+Shift+Y\nEnkelt tryk: Åbn genvejsmenu\nDobbelt tryk: Åbn destinationsmappe\nTriple tryk: Søg efter video\nNVDA+CTRL+Y: Skift tilstand for øjeblikkelig download\nNVDA+Shift+Y: Skift afspilningslistetilstand\n- ALT+Windows+Y: Skift MP3-kvalitet"
-		},
-		{
-			"language": "de",
-			"displayName": "AbsoluteYoutube",
-			"description": "Laden Sie YouTube-Videos als MP3, MP4 und WAV mit Fortsetzung, Zuschnitt, Snapshots, Kurz-URL-Kopie und smartem Download-Manager herunter – schnell & barrierefrei für NVDA-Nutzer.\nWarum Zeit verschwenden, eine Videoseite zu öffnen, wenn Sie sie sofort greifen können? Unser neuestes Update führt die revolutionäre Funktion \"Focus and Fetch\" ein. Fokussieren Sie einfach Ihren Cursor auf einen beliebigen Videolink und lösen Sie Ihren Download sofort aus – kein Warten mehr auf das Laden von Seiten.\nWas ist neu:\nSofort-Download-Modus umschalten\nDownload-Listen-Manager\nFavorisierter Kanal\nYouTube suchen\nTastenkombinationen:\n- NVDA+Y\nEinmal tippen: MP3 herunterladen\nZweimal tippen: MP4 herunterladen\nDreimal tippen: WAV herunterladen\n- STRG+Umschalt+Y\nEinmal tippen: Kontextmenü öffnen\nZweimal tippen: Zielordner öffnen\nDreimal tippen: Video suchen\nNVDA+STRG+Y: Sofort-Download-Modus umschalten\nNVDA+Umschalt+Y: Playlist-Modus umschalten\n- ALT+Windows+Y: MP3-Qualität durchlaufen"
-		},
-		{
-			"language": "en",
-			"displayName": "AbsoluteYoutube",
-			"description": "Download YouTube videos as MP3, MP4 and WAV with resume, trim clips, snapshots, short URL copy, and smart failed download manager fast & accessible for NVDA users.\nWhy waste time opening a video page when you can grab it instantly? Our latest update introduces the revolutionary Focus and Fetch feature. Simply focus your cursor on any video link and trigger your download immediately - no more waiting for pages to load.\nWhat's New:\nToggle immediate download mode\nDownload list manager\nFavorite channel\nSearch Youtube\nHot Keys:\n- NVDA+Y\nSingle Tap: Download MP3\nDouble Tap: Download MP4\nTriple Tap: Download WAV\n- CTRL+Shift+Y\nSingle Tap: Open Context Menu\nDouble Tap: Open Destination Folder\nTripple Tap : Search Video\nNVDA+CTRL+Y : Toggle immediate download mode\nNVDA+Shift+Y: Toggle playlist mode\n- ALT+Windows+Y: Cycle MP3 quality"
-		},
-		{
-			"language": "es",
-			"displayName": "AbsoluteYoutube",
-			"description": "Descarga vídeos de YouTube como MP3, MP4 y WAV con reanudación, recorte de clips, capturas, copia de URL corta y gestor inteligente de descargas fallidas: rápido y accesible para usuarios de NVDA.\n¿Por qué perder tiempo abriendo una página de vídeo cuando puedes obtenerlo al instante? Nuestra última actualización presenta la revolucionaria función Focus and Fetch. Solo tienes que situar el cursor sobre cualquier enlace de vídeo e iniciar la descarga inmediatamente, sin esperar a que se carguen las páginas.\nNovedades:\nAlternar modo de descarga inmediata\nGestor de lista de descargas\nCanal favorito\nBuscar en Youtube\nTeclas rápidas:\n- NVDA+Y\nUn toque: Descargar MP3\nDos toques: Descargar MP4\nTres toques: Descargar WAV\n- CTRL+Shift+Y\nUn toque: Abrir menú contextual\nDos toques: Abrir carpeta de destino\nTres toques: Buscar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga inmediata\nNVDA+Shift+Y: Alternar modo de lista de reproducción\n- ALT+Windows+Y: Cambiar calidad de MP3"
-		},
-		{
-			"language": "fa",
-			"displayName": "AbsoluteYoutube",
-			"description": "دانلود ویدیوهای یوتیوب به صورت MP3، MP4 و WAV با قابلیت ادامه دانلود، برش کلیپ، اسکرین‌شات، کپی لینک کوتاه و مدیریت هوشمند دانلودهای ناموفق - سریع و قابل دسترس برای کاربران NVDA.\nچرا وقتی می‌توانید فوراً ویدیو را دریافت کنید، وقت خود را برای باز کردن صفحه ویدیو تلف کنید؟ آخرین به‌روزرسانی ما ویژگی انقلابی Focus and Fetch را معرفی می‌کند. به سادگی نشانگر خود را روی هر لینک ویدیو متمرکز کنید و دانلود خود را بلافاصله شروع کنید - دیگر منتظر بارگذاری صفحات نباشید.\nموارد جدید:\nتغییر وضعیت حالت دانلود فوری\nمدیریت لیست دانلود\nکانال مورد علاقه\nجستجوی یوتیوب\nکلیدهای میانبر:\n- NVDA+Y\nیک بار فشردن: دانلود MP3\nدو بار فشردن: دانلود MP4\nسه بار فشردن: دانلود WAV\n- CTRL+Shift+Y\nیک بار فشردن: باز کردن منوی زمینه\nدو بار فشردن: باز کردن پوشه مقصد\nسه بار فشردن: جستجوی ویدیو\nNVDA+CTRL+Y: تغییر وضعیت حالت دانلود فوری\nNVDA+Shift+Y: تغییر وضعیت حالت لیست پخش\n- ALT+Windows+Y: تغییر کیفیت MP3"
-		},
-		{
-			"language": "fi",
-			"displayName": "AbsoluteYoutube",
-			"description": "Lataa YouTube-videoita MP3-, MP4- ja WAV-muodoissa jatkamisella, leikkeiden trimmauksella, kuvakaappauksilla, lyhyt-URL-kopioinnilla ja älykkäällä epäonnistuneiden latausten hallinnalla - nopea ja saavutettava NVDA-käyttäjille.\nMiksi tuhlata aikaa videosivun avaamiseen, kun voit napata sen välittömästi? Uusin päivityksemme esittelee vallankumouksellisen Focus and Fetch -ominaisuuden. Kohdista kursori mihin tahansa videolinkkiin ja käynnistä lataus välittömästi - ei enää sivujen latautumisen odottelua.\nUutta:\nVälittömän lataustilan vaihtaminen\nLatauslistan hallinta\nSuosikkikanava\nEtsi YouTubesta\nPikanäppäimet:\n- NVDA+Y\nYksi napautus: Lataa MP3\nKaksi napautusta: Lataa MP4\nKolme napautusta: Lataa WAV\n- CTRL+Shift+Y\nYksi napautus: Avaa pikavalikko\nKaksi napautusta: Avaa kohdekansio\nKolme napautusta: Etsi video\nNVDA+CTRL+Y: Välittömän lataustilan vaihtaminen\nNVDA+Shift+Y: Soittolistan tilan vaihtaminen\n- ALT+Windows+Y: Selaa MP3-laatua"
-		},
-		{
-			"language": "fr",
-			"displayName": "AbsoluteYoutube",
-			"description": "Téléchargez des vidéos YouTube en MP3, MP4 et WAV avec reprise, découpe de clips, instantanés, copie d'URL courte et gestionnaire intelligent de téléchargements échoués - rapide et accessible pour les utilisateurs de NVDA.\nPourquoi perdre du temps à ouvrir une page vidéo quand on peut la récupérer instantanément ? Notre dernière mise à jour introduit la fonction révolutionnaire Focus and Fetch. Placez simplement votre curseur sur n'importe quel lien vidéo et lancez votre téléchargement immédiatement - plus besoin d'attendre le chargement des pages.\nQuoi de neuf :\nBasculer le mode de téléchargement immédiat\nGestionnaire de liste de téléchargement\nChaîne favorite\nRechercher sur Youtube\nRaccourcis clavier :\n- NVDA+Y\nAppui simple : Télécharger MP3\nAppui double : Télécharger MP4\nAppui triple : Télécharger WAV\n- CTRL+Maj+Y\nAppui simple : Ouvrir le menu contextuel\nAppui double : Ouvrir le dossier de destination\nAppui triple : Rechercher une vidéo\nNVDA+CTRL+Y : Basculer le mode de téléchargement immédiat\nNVDA+Maj+Y : Basculer le mode playlist\n- ALT+Windows+Y : Cycle de qualité MP3"
-		},
-		{
-			"language": "gl",
-			"displayName": "AbsoluteYoutube",
-			"description": "Descarga vídeos de YouTube como MP3, MP4 e WAV con continuación, recorte de clips, capturas, copia de URL curta e xestor intelixente de descargas fallidas: rápido e accesible para usuarios de NVDA.\nPor que perder tempo abrindo unha páxina de vídeo cando podes obtelo ao instante? A nosa última actualización presenta a revolucionaria función Focus and Fetch. Só tes que situar o cursor sobre calquera ligazón de vídeo e iniciar a descarga inmediatamente, sen esperar a que se carguen as páxinas.\nNovidades:\nAlternar modo de descarga inmediata\nXestor de lista de descargas\nCanle favorita\nBuscar en Youtube\nTeclas rápidas:\n- NVDA+Y\nUn toque: Descargar MP3\nDous toques: Descargar MP4\nTres toques: Descargar WAV\n- CTRL+Shift+Y\nUn toque: Abrir menú contextual\nDous toques: Abrir cartafol de destino\nTres toques: Buscar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga inmediata\nNVDA+Shift+Y: Alternar modo de lista de reprodución\n- ALT+Windows+Y: Cambiar calidade de MP3"
-		},
-		{
-			"language": "he",
-			"displayName": "AbsoluteYoutube",
-			"description": "הורד סרטוני YouTube כ-MP3, MP4 ו-WAV עם חידוש הורדה, חיתוך קטעים, צילומי מסך, העתקת כתובת קצרה ומנהל הורדות חכם - מהיר ונגיש למשתמשי NVDA.\nלמה לבזבז זמן על פתיחת דף וידאו כשאפשר לקבל אותו באופן מיידי? העדכון האחרון שלנו מציג את תכונת ה-Focus and Fetch המהפכנית. פשוט מקד את הסמן על כל קישור וידאו והפעל את ההורדה שלך מיד - לא צריך יותר לחכות לטעינת דפים.\nמה חדש:\nהחלפת מצב הורדה מיידית\nמנהל רשימת הורדות\nערוץ מועדף\nחיפוש ביוטיוב\nמקשי קיצור:\n- NVDA+Y\nהקשה אחת: הורד MP3\nהקשה כפולה: הורד MP4\nהקשה משולשת: הורד WAV\n- CTRL+Shift+Y\nהקשה אחת: פתח תפריט הקשר\nהקשה כפולה: פתח תיקיית יעד\nהקשה משולשת: חפש וידאו\nNVDA+CTRL+Y: החלפת מצב הורדה מיידית\nNVDA+Shift+Y: החלפת מצב פלייליסט\n- ALT+Windows+Y: החלפת איכות MP3"
-		},
-		{
-			"language": "hi",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube वीडियो को MP3, MP4 और WAV के रूप में रिज्यूमे, ट्रिम क्लिप, स्नैपशॉट, शॉर्ट URL कॉपी और स्मार्ट विफल डाउनलोड मैनेजर के साथ डाउनलोड करें - NVDA उपयोगकर्ताओं के लिए तेज़ और सुलभ।\nजब आप इसे तुरंत प्राप्त कर सकते हैं तो वीडियो पेज खोलने में समय क्यों बर्बाद करें? हमारा नवीनतम अपडेट क्रांतिकारी Focus and Fetch फीचर पेश करता है। बस अपने कर्सर को किसी भी वीडियो लिंक पर केंद्रित करें और अपना डाउनलोड तुरंत ट्रिगर करें - पेजों के लोड होने का कोई और इंतज़ार नहीं।\nनया क्या है:\nतत्काल डाउनलोड मोड टॉगल करें\nडाउनलोड सूची प्रबंधक\nपसंदीदा चैनल\nयूट्यूब सर्च\nहॉट कीज़:\n- NVDA+Y\nएक टैप: MP3 डाउनलोड करें\nदो टैप: MP4 डाउनलोड करें\nतीन टैप: WAV डाउनलोड करें\n- CTRL+Shift+Y\nएक टैप: संदर्भ मेनू खोलें\nदो टैप: गंतव्य फ़ोल्डर खोलें\nतीन टैप: वीडियो खोजें\nNVDA+CTRL+Y: तत्काल डाउनलोड मोड टॉगल करें\nNVDA+Shift+Y: प्लेलिस्ट मोड टॉगल करें\n- ALT+Windows+Y: MP3 गुणवत्ता बदलें"
-		},
-		{
-			"language": "hr",
-			"displayName": "AbsoluteYoutube",
-			"description": "Preuzmite YouTube videozapise kao MP3, MP4 i WAV s nastavkom, obrezivanjem isječaka, snimkama zaslona, kopiranjem kratkih URL-ova i pametnim upraviteljem neuspjelih preuzimanja - brzo i dostupno za korisnike NVDA.\nZašto gubiti vrijeme na otvaranje stranice videa kada ga možete zgrabiti odmah? Naše najnovije ažuriranje uvodi revolucionarnu značajku Focus and Fetch. Jednostavno fokusirajte kursor na bilo koju poveznicu videozapisa i odmah pokrenite preuzimanje - nema više čekanja da se stranice učitaju.\nŠto je novo:\nPrebacivanje načina trenutnog preuzimanja\nUpravitelj popisa preuzimanja\nOmiljeni kanal\nPretraživanje YouTubea\nVruće tipke:\n- NVDA+Y\nJedan dodir: Preuzmi MP3\nDvostruki dodir: Preuzmi MP4\nTrostruki dodir: Preuzmi WAV\n- CTRL+Shift+Y\nJedan dodir: Otvori kontekstni izbornik\nDvostruki dodir: Otvori odredišnu mapu\nTrostruki dodir: Pretraži video\nNVDA+CTRL+Y: Prebacivanje načina trenutnog preuzimanja\nNVDA+Shift+Y: Prebacivanje načina popisa pjesama\n- ALT+Windows+Y: Kružna promjena MP3 kvalitete"
-		},
-		{
-			"language": "hu",
-			"displayName": "AbsoluteYoutube",
-			"description": "Töltsön le YouTube-videókat MP3, MP4 és WAV formátumban folytatással, klipvágással, pillanatképekkel, rövid URL-másolással és intelligens sikertelen letöltéskezelővel - gyors és akadálymentes az NVDA-felhasználók számára.\nMiért vesztegetné az idejét egy videóoldal megnyitásával, ha azonnal letöltheti? Legújabb frissítésünk bemutatja a forradalmi Focus and Fetch funkciót. Egyszerűen vigye a fókuszt bármely videólinkre, és azonnal indítsa el a letöltést – nincs többé várakozás az oldalak betöltésére.\nÚjdonságok:\nAzonnali letöltési mód váltása\nLetöltési lista kezelő\nKedvenc csatorna\nKeresés a YouTube-on\nGyorsbillentyűk:\n- NVDA+Y\nEgy koppintás: MP3 letöltése\nDupla koppintás: MP4 letöltése\nTripla koppintás: WAV letöltése\n- CTRL+Shift+Y\nEgy koppintás: Helyi menü megnyitása\nDupla koppintás: Célmappa megnyitása\nTripla koppintás: Videó keresése\nNVDA+CTRL+Y: Azonnali letöltési mód váltása\nNVDA+Shift+Y: Lejátszási lista mód váltása\n- ALT+Windows+Y: MP3 minőség váltása"
-		},
-		{
-			"language": "id",
-			"displayName": "AbsoluteYoutube",
-			"description": "Unduh video YouTube sebagai MP3, MP4 dan WAV dengan fitur resume, potong klip, snapshot, salin URL pendek, dan pengelola unduhan gagal yang cerdas - cepat & aksesibel untuk pengguna NVDA.\nMengapa membuang waktu membuka halaman video jika Anda bisa mendapatkannya secara instan? Pembaruan terbaru kami memperkenalkan fitur Focus and Fetch yang revolusioner. Cukup fokuskan kursor Anda pada tautan video apa pun dan picu unduhan Anda segera - tidak perlu lagi menunggu halaman dimuat.\nYang Baru:\nAlihkan mode unduhan instan\nPengelola daftar unduhan\nSaluran favorit\nCari Youtube\nTombol Pintas:\n- NVDA+Y\nKetuk Sekali: Unduh MP3\nKetuk Dua Kali: Unduh MP4\nKetuk Tiga Kali: Unduh WAV\n- CTRL+Shift+Y\nKetuk Sekali: Buka Menu Konteks\nKetuk Dua Kali: Buka Folder Tujuan\nKetuk Tiga Kali: Cari Video\nNVDA+CTRL+Y: Alihkan mode unduhan instan\nNVDA+Shift+Y: Alihkan mode daftar putar\n- ALT+Windows+Y: Ubah kualitas MP3"
-		},
-		{
-			"language": "it",
-			"displayName": "AbsoluteYoutube",
-			"description": "Scarica video da YouTube in MP3, MP4 e WAV con ripresa, ritaglio clip, istantanee, copia URL breve e gestione intelligente dei download falliti: veloce e accessibile per gli utenti NVDA.\nPerché perdere tempo ad aprire la pagina di un video quando puoi scaricarlo all'istante? Il nostro ultimo aggiornamento introduce la rivoluzionaria funzione Focus and Fetch. Basta spostare il cursore su qualsiasi link video e avviare il download immediatamente, senza più attendere il caricamento delle pagine.\nNovità:\nAttiva/disattiva modalità download immediato\nGestore elenco download\nCanale preferito\nCerca su YouTube\nTasti di scelta rapida:\n- NVDA+Y\nSingolo tocco: Scarica MP3\nDoppio tocco: Scarica MP4\nTriplo tocco: Scarica WAV\n- CTRL+Shift+Y\nSingolo tocco: Apri menu contestuale\nDoppio tocco: Apri cartella di destinazione\nTriplo tocco: Cerca video\nNVDA+CTRL+Y: Attiva/disattiva modalità download immediato\nNVDA+Shift+Y: Attiva/disattiva modalità playlist\n- ALT+Windows+Y: Cicla qualità MP3"
-		},
-		{
-			"language": "ja",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube動画をMP3、MP4、WAVとしてダウンロード。レジューム、クリップのトリミング、スナップショット、短縮URLのコピー、スマートなダウンロード失敗管理機能を備え、NVDAユーザーにとって高速でアクセシブルです。\n動画ページを開くのに時間を無駄にする必要はありません。最新のアップデートでは、革新的な「Focus and Fetch」機能を導入しました。ビデオリンクにカーソルを合わせるだけで、すぐにダウンロードを開始できます。ページの読み込みを待つ必要はもうありません。\n新機能：\n即時ダウンロードモードの切り替え\nダウンロードリストマネージャー\nお気に入りチャンネル\nYouTube検索\nホットキー：\n- NVDA+Y\nシングルタップ：MP3をダウンロード\nダブルタップ：MP4をダウンロード\nトリプルタップ：WAVをダウンロード\n- CTRL+Shift+Y\nシングルタップ：コンテキストメニューを開く\nダブルタップ：保存先フォルダーを開く\nトリプルタップ：ビデオを検索\nNVDA+CTRL+Y：即時ダウンロードモードの切り替え\nNVDA+Shift+Y：プレイリストモードの切り替え\n- ALT+Windows+Y：MP3品質の切り替え"
-		},
-		{
-			"language": "kk",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube бейнелерін MP3, MP4 және WAV ретінде жүктеп алыңыз. Жүктеуді жалғастыру, клиптерді қию, скриншоттар, қысқа URL мекенжайын көшіру және сәтсіз жүктеулерді ақылды басқару - NVDA пайдаланушылары үшін жылдам және қолжетімді.\nБейнені бірден алуға болатын кезде бейне бетін ашуға неге уақыт жоғалту керек? Соңғы жаңартуымыз революциялық Focus and Fetch мүмкіндігін ұсынады. Курсорды кез келген бейне сілтемесіне қойып, жүктеуді бірден бастаңыз - беттердің жүктелуін күтудің қажеті жоқ.\nЖаңалықтар:\nЖедел жүктеу режимін қосу/өшіру\nЖүктеулер тізімінің менеджері\nТаңдаулы арна\nYouTube-тен іздеу\nЫстық пернелер:\n- NVDA+Y\nБір рет басу: MP3 жүктеу\nЕкі рет басу: MP4 жүктеу\nҮш рет басу: WAV жүктеу\n- CTRL+Shift+Y\nБір рет басу: Мәнмәтіндік мәзірді ашу\nЕкі рет басу: Тағайындалған қалтаны ашу\nҮш рет басу: Бейнені іздеу\nNVDA+CTRL+Y: Жедел жүктеу режимін қосу/өшіру\nNVDA+Shift+Y: Ойнату тізімі режимін қосу/өшіру\n- ALT+Windows+Y: MP3 сапасын өзгерту"
-		},
-		{
-			"language": "ko",
-			"displayName": "AbsoluteYoutube",
-			"description": "이어받기, 클립 자르기, 스냅샷, 짧은 URL 복사 및 스마트 실패 다운로드 관리자 기능을 갖춘 YouTube 동영상을 MP3, MP4 및 WAV로 다운로드하세요. NVDA 사용자를 위해 빠르고 접근성이 좋습니다.\n동영상 페이지를 여는 데 시간을 낭비할 이유가 무엇입니까? 최신 업데이트에는 혁신적인 'Focus and Fetch' 기능이 도입되었습니다. 동영상 링크에 커서를 올리고 즉시 다운로드를 실행하기만 하면 됩니다. 더 이상 페이지가 로드될 때까지 기다릴 필요가 없습니다.\n새로운 기능:\n즉시 다운로드 모드 토글\n다운로드 목록 관리자\n즐겨찾는 채널\nYouTube 검색\n단축키:\n- NVDA+Y\n한 번 누르기: MP3 다운로드\n두 번 누르기: MP4 다운로드\n세 번 누르기: WAV 다운로드\n- CTRL+Shift+Y\n한 번 누르기: 컨텍스트 메뉴 열기\n두 번 누르기: 대상 폴더 열기\n세 번 누르기: 동영상 검색\nNVDA+CTRL+Y: 즉시 다운로드 모드 토글\nNVDA+Shift+Y: 재생 목록 모드 토글\n- ALT+Windows+Y: MP3 음질 순환"
-		},
-		{
-			"language": "lo",
-			"displayName": "AbsoluteYoutube",
-			"description": "ດາວໂຫຼດວິດີໂອ YouTube ເປັນ MP3, MP4 ແລະ WAV ພ້ອມດ້ວຍການດາວໂຫຼດຕໍ່, ຕັດຄລິບ, ຖ່າຍພາບໜ້າຈໍ, ສຳເນົາ URL ສັ້ນ, ແລະລະບົບຈັດການການດາວໂຫຼດທີ່ລົ້ມເຫຼວແບບອັດສະລິຍະ - ໄວ ແລະ ເຂົ້າເຖິງໄດ້ງ່າຍສຳລັບຜູ້ໃຊ້ NVDA.\nເປັນຫຍັງຕ້ອງເສຍເວລາເປີດໜ້າວິດີໂອ ໃນເມື່ອເຈົ້າສາມາດດາວໂຫຼດໄດ້ທັນທີ? ການອັບເດດຫຼ້າສຸດຂອງພວກເຮົາໄດ້ນຳສະເໜີຟີເຈີ Focus and Fetch ທີ່ທັນສະໄໝ. ພຽງແຕ່ໂຟກັດເຄີເຊີຂອງທ່ານໃສ່ລິ້ງວິດີໂອໃດໜຶ່ງ ແລະເລີ່ມການດາວໂຫຼດທັນທີ - ບໍ່ຕ້ອງລໍຖ້າໃຫ້ໜ້າເວັບໂຫຼດອີກຕໍ່ໄປ.\nມີຫຍັງໃໝ່:\nເປີດ/ປິດ ໂໝດດາວໂຫຼດທັນທີ\nລະບົບຈັດການລາຍການດາວໂຫຼດ\nຊ່ອງທີ່ມັກ\nຄົ້ນຫາ Youtube\nປຸ່ມລັດ:\n- NVDA+Y\nກົດໜຶ່ງຄັ້ງ: ດາວໂຫຼດ MP3\nກົດສອງຄັ້ງ: ດາວໂຫຼด MP4\nກົດສາມຄັ້ງ: ດາວໂຫຼດ WAV\n- CTRL+Shift+Y\nກົດໜຶ່ງຄັ້ງ: ເປີດເມນູລັດ\nກົດສອງຄັ້ງ: ເປີດໂຟນເດີປາຍທາງ\nກົດສາມຄັ້ງ: ຄົ້ນຫາວິດີໂອ\nNVDA+CTRL+Y: ເປີດ/ປິດ ໂໝດດາວໂຫຼດທັນທີ\nNVDA+Shift+Y: ເປີດ/ປິດ ໂໝດລາຍການເພງ\n- ALT+Windows+Y: ປ່ຽນຄຸນນະພາບ MP3"
-		},
-		{
-			"language": "ms",
-			"displayName": "AbsoluteYoutube",
-			"description": "Muat turun video YouTube sebagai MP3, MP4 dan WAV dengan sambungan semula, potong klip, tangkapan skrin, salin URL pendek, dan pengurus muat turun gagal yang pintar - pantas & boleh diakses untuk pengguna NVDA.\nMengapa membazir masa membuka halaman video sedangkan anda boleh mendapatkannya dengan serta-merta? Kemas kini terbaru kami memperkenalkan ciri Focus and Fetch yang revolusioner. Hanya fokuskan kursor anda pada mana-mana pautan video dan cetuskan muat turun anda dengan segera - tiada lagi menunggu halaman dimuatkan.\nApa yang Baru:\nTogol mod muat turun segera\nPengurus senarai muat turun\nSaluran kegemaran\nCari Youtube\nKekunci Pintas:\n- NVDA+Y\nSekali Ketuk: Muat turun MP3\nDua Kali Ketuk: Muat turun MP4\nTiga Kali Ketuk: Muat turun WAV\n- CTRL+Shift+Y\nSekali Ketuk: Buka Menu Konteks\nDua Kali Ketuk: Buka Folder Destinasi\nTiga Kali Ketuk: Cari Video\nNVDA+CTRL+Y: Togol mod muat turun segera\nNVDA+Shift+Y: Togol mod senarai main\n- ALT+Windows+Y: Kitar kualiti MP3"
-		},
-		{
-			"language": "my",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube ဗီဒီယိုများကို MP3, MP4 နှင့် WAV အဖြစ် ဒေါင်းလုဒ်လုပ်ပါ။ ပြန်လည်စတင်ခြင်း၊ ကလစ်ဖြတ်ခြင်း၊ စနက်ရှော့ရိုက်ခြင်း၊ URL အတိုကူးယူခြင်းနှင့် ပျက်ကွက်သောဒေါင်းလုဒ်များကို စမတ်ကျကျစီမံခန့်ခွဲခြင်း - NVDA အသုံးပြုသူများအတွက် မြန်ဆန်ပြီး အလွယ်တကူအသုံးပြုနိုင်ပါသည်။\nဗီဒီယိုကို ချက်ချင်းရနိုင်ချိန်တွင် ဗီဒီယိုစာမျက်နှာကိုဖွင့်ပြီး အချိန်အဘယ်ကြောင့်ဖြုန်းနေမည်နည်း။ ကျွန်ုပ်တို့၏နောက်ဆုံးထွက်အပ်ဒိတ်တွင် တော်လှန်သော Focus and Fetch လုပ်ဆောင်ချက်ကို မိတ်ဆက်ပေးထားပါသည်။ ဗီဒီယိုလင့်ခ်တစ်ခုခုပေါ်တွင် ကာဆာကိုထားရှိရုံဖြင့် ဒေါင်းလုဒ်ကို ချက်ချင်းစတင်နိုင်ပါသည် - စာမျက်နှာများပွင့်လာသည်အထိ စောင့်ရန်မလိုတော့ပါ။\nအသစ်ပါဝင်သောအရာများ-\nချက်ချင်းဒေါင်းလုဒ်လုပ်မည့်မုဒ်ကို ပြောင်းရန်\nဒေါင်းလုဒ်စာရင်း စီမံခန့်ခွဲသူ\nနှစ်သက်သောချန်နယ်\nYouTube ရှာဖွေရန်\nဖြတ်လမ်းခလုတ်များ-\n- NVDA+Y\nတစ်ချက်နှိပ်ရန်- MP3 ဒေါင်းလုဒ်လုပ်ရန်\nနှစ်ချက်နှိပ်ရန်- MP4 ဒေါင်းလုဒ်လုပ်ရန်\nသုံးချက်နှိပ်ရန်- WAV ဒေါင်းလုဒ်လုပ်ရန်\n- CTRL+Shift+Y\nတစ်ချက်နှိပ်ရန်- ကွန်တက်မီနူးဖွင့်ရန်\nနှစ်ချက်နှိပ်ရန်- သိမ်းဆည်းသည့်ဖိုင်တွဲကိုဖွင့်ရန်\nသုံးချက်နှိပ်ရန်- ဗီဒီယိုရှာဖွေရန်\nNVDA+CTRL+Y- ချက်ချင်းဒေါင်းလုဒ်လုပ်မည့်မုဒ်ကို ပြောင်းရန်\nNVDA+Shift+Y- ပလေးလစ်မုဒ်ကို ပြောင်းရန်\n- ALT+Windows+Y- MP3 အရည်အသွေးကို ပြောင်းရန်"
-		},
-		{
-			"language": "pt",
-			"displayName": "AbsoluteYoutube",
-			"description": "Descarregue vídeos do YouTube como MP3, MP4 e WAV com retoma, recorte de clipes, instantâneos, cópia de URL curto e gestor inteligente de falhas - rápido e acessível para utilizadores de NVDA.\nPorquê perder tempo a abrir uma página de vídeo quando pode obtê-lo instantaneamente? A nossa última atualização apresenta a funcionalidade revolucionária Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar a descarga imediatamente - sem mais esperas que as páginas carreguem.\nO que há de novo:\nAlternar modo de descarga imediata\nGestor de lista de descargas\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Descarregar MP3\nDois toques: Descarregar MP4\nTrês toques: Descarregar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga imediata\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Ciclar qualidade de MP3"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "AbsoluteYoutube",
-			"description": "Baixe vídeos do YouTube como MP3, MP4 e WAV com retomada, recorte de clipes, instantâneos, cópia de URL curta e gerenciador inteligente de falhas - rápido e acessível para usuários de NVDA.\nPor que perder tempo abrindo uma página de vídeo quando você pode obtê-lo instantaneamente? Nossa atualização mais recente apresenta o recurso revolucionário Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar o download imediatamente - sem mais espera pelo carregamento das páginas.\nO que há de novo:\nAlternar modo de download imediato\nGerenciador de lista de downloads\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Baixar MP3\nDois toques: Baixar MP4\nTrês toques: Baixar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de download imediato\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Alternar qualidade de MP3"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "AbsoluteYoutube",
-			"description": "Descarregue vídeos do YouTube como MP3, MP4 e WAV com retoma, recorte de clipes, instantâneos, cópia de URL curto e gestor inteligente de falhas - rápido e acessível para utilizadores de NVDA.\nPorquê perder tempo a abrir uma página de vídeo quando pode obtê-lo instantaneamente? A nossa última atualização apresenta a funcionalidade revolucionária Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar a descarga imediatamente - sem mais esperas que as páginas carreguem.\nO que há de novo:\nAlternar modo de descarga imediata\nGestor de lista de descargas\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Descarregar MP3\nDois toques: Descarregar MP4\nTrês toques: Descarregar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga imediata\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Ciclar qualidade de MP3"
-		},
-		{
-			"language": "ro",
-			"displayName": "AbsoluteYoutube",
-			"description": "Descărcați videoclipuri de pe YouTube ca MP3, MP4 și WAV cu reluare, tăiere clipuri, capturi, copiere URL scurt și manager inteligent de descărcări eșuate - rapid și accesibil pentru utilizatorii NVDA.\nDe ce să pierdeți timpul deschizând o pagină video când o puteți obține instantaneu? Ultima noastră actualizare introduce funcția revoluționară Focus and Fetch. Pur și simplu focalizați cursorul pe orice link video și declanșați descărcarea imediat - nu mai așteptați încărcarea paginilor.\nCe este nou:\nComutare mod de descărcare imediată\nManager listă de descărcări\nCanal favorit\nCăutare Youtube\nTaste rapide:\n- NVDA+Y\nO singură apăsare: Descărcare MP3\nApăsare dublă: Descărcare MP4\nApăsare triplă: Descărcare WAV\n- CTRL+Shift+Y\nO singură apăsare: Deschidere meniu contextual\nApăsare dublă: Deschidere folder destinație\nApăsare triplă: Căutare video\nNVDA+CTRL+Y: Comutare mod de descărcare imediată\nNVDA+Shift+Y: Comutare mod listă de redare\n- ALT+Windows+Y: Ciclu calitate MP3"
-		},
-		{
-			"language": "ru",
-			"displayName": "AbsoluteYoutube",
-			"description": "Скачивайте видео с YouTube в форматах MP3, MP4 и WAV с докачкой, обрезкой клипов, снимками, копированием коротких URL и умным менеджером неудачных загрузок — быстро и доступно для пользователей NVDA.\nЗачем тратить время на открытие страницы видео, если его можно получить мгновенно? В нашем последнем обновлении представлена революционная функция Focus and Fetch. Просто наведите курсор на любую ссылку на видео и сразу запустите загрузку — больше не нужно ждать загрузки страниц.\nЧто нового:\nПереключение режима немедленной загрузки\nМенеджер списка загрузок\nИзбранный канал\nПоиск в YouTube\nГорячие клавиши:\n- NVDA+Y\nОдиночное нажатие: Скачать MP3\nДвойное нажатие: Скачать MP4\nТройное нажатие: Скачать WAV\n- CTRL+Shift+Y\nОдиночное нажатие: Открыть контекстное меню\nДвойное нажатие: Открыть папку назначения\nТройное нажатие: Поиск видео\nNVDA+CTRL+Y: Переключение режима немедленной загрузки\nNVDA+Shift+Y: Переключение режима плейлиста\n- ALT+Windows+Y: Циклическое переключение качества MP3"
-		},
-		{
-			"language": "si",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube වීඩියෝ MP3, MP4 සහ WAV ලෙස බාගත කරන්න. නැවත ආරම්භ කිරීම, ක්ලිප් කැපීම, ස්නැප්ෂොට්, කෙටි URL පිටපත් කිරීම සහ ස්මාර්ට් අසාර්ථක බාගත කිරීම් කළමනාකරු සමඟ - NVDA පරිශීලකයින් සඳහා වේගවත් සහ ප්‍රවේශ විය හැකිය.\nඔබට එය ක්ෂණිකව ලබා ගත හැකි විට වීඩියෝ පිටුවක් විවෘත කිරීමට කාලය නාස්ති කරන්නේ ඇයි? අපගේ නවතම යාවත්කාලීනය විප්ලවීය Focus and Fetch විශේෂාංගය හඳුන්වා දෙයි. ඕනෑම වීඩියෝ සබැඳියක් මත ඔබේ කර්සරය යොමු කර වහාම ඔබේ බාගත කිරීම ආරම්භ කරන්න - පිටු පූරණය වන තෙක් තවදුරටත් බලා සිටීමට අවශ්‍ය නැත.\nඅලුත් මොනවාද:\nක්ෂණික බාගත කිරීමේ මාදිලිය මාරු කරන්න\nබාගත ලැයිස්තු කළමනාකරු\nප්‍රියතම නාලිකාව\nYouTube සොයන්න\nහොට් කීස්:\n- NVDA+Y\nඑක් වරක් තට්ටු කිරීම: MP3 බාගන්න\nදෙවරක් තට්ටු කිරීම: MP4 බාගන්න\nතෙවරක් තට්ටු කිරීම: WAV බාගන්න\n- CTRL+Shift+Y\nඑක් වරක් තට්ටු කිරීම: සන්දර්භය මෙනුව විවෘත කරන්න\nදෙවරක් තට්ටු කිරීම: ගමනාන්ත ෆෝල්ඩරය විවෘත කරන්න\nතෙවරක් තට්ටු කිරීම: වීඩියෝ සොයන්න\nNVDA+CTRL+Y: ක්ෂණික බාගත කිරීමේ මාදිලිය මාරු කරන්න\nNVDA+Shift+Y: ධාවන ලැයිස්තු මාදිලිය මාරු කරන්න\n- ALT+Windows+Y: MP3 ගුණාත්මකභාවය වෙනස් කරන්න"
-		},
-		{
-			"language": "sk",
-			"displayName": "AbsoluteYoutube",
-			"description": "Sťahujte videá z YouTube vo formátoch MP3, MP4 a WAV s nadviazaním, strihaním klipov, snímkami, kopírovaním krátkych URL adries a inteligentným správcom zlyhaných sťahovaní - rýchle a prístupné pre používateľov NVDA.\nPrečo strácať čas otváraním stránky s videom, keď ho môžete získať okamžite? Naša najnovšia aktualizácia predstavuje revolučnú funkciu Focus and Fetch. Stačí zamerať kurzor na akýkoľvek odkaz na video a okamžite spustiť sťahovanie - už žiadne čakanie na načítanie stránok.\nČo je nové:\nPrepnúť režim okamžitého sťahovania\nSprávca zoznamu sťahovaní\nObľúbený kanál\nHľadať na Youtube\nHorúce klávesy:\n- NVDA+Y\nJedno klepnutie: Stiahnuť MP3\nDvojité klepnutie: Stiahnuť MP4\nTrojité klepnutie: Stiahnuť WAV\n- CTRL+Shift+Y\nJedno klepnutie: Otvoriť kontextovú ponuku\nDvojité klepnutie: Otvoriť cieľový priečinok\nTrojité klepnutie: Hľadať video\nNVDA+CTRL+Y: Prepnúť režim okamžitého sťahovania\nNVDA+Shift+Y: Prepnúť režim zoznamu skladieb\n- ALT+Windows+Y: Prepínať kvalitu MP3"
-		},
-		{
-			"language": "ta",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube வீடியோக்களை MP3, MP4 மற்றும் WAV வடிவில் தரவிறக்கம் செய்யுங்கள். மீண்டும் தொடங்குதல், கிளிப்களை வெட்டுதல், ஸ்னாப்ஷாட்கள், குறுகிய URL நகல் மற்றும் ஸ்மார்ட் தோல்வியுற்ற தரவிறக்க மேலாளர் - NVDA பயனர்களுக்கு வேகமானது மற்றும் அணுகக்கூடியது.\nவீடியோ பக்கத்தைத் திறந்து நேரத்தை ஏன் வீணாக்க வேண்டும்? எங்களின் சமீபத்திய அப்டேட் புரட்சிகரமான Focus and Fetch அம்சத்தை அறிமுகப்படுத்துகிறது. எந்தவொரு வீடியோ இணைப்பிலும் உங்கள் கர்சரை வைத்து உடனடியாக தரவிறக்கத்தைத் தொடங்குங்கள் - பக்கங்கள் ஏற்றப்படும் வரை காத்திருக்க வேண்டியதில்லை.\nபுதியவை:\nஉடனடி தரவிறக்க பயன்முறையை மாற்றவும்\nதரவிறக்கப் பட்டியல் மேலாளர்\nபிடித்த சேனல்\nYouTube தேடல்\nஹாட் கீஸ்:\n- NVDA+Y\nஒற்றை தட்டல்: MP3 தரவிறக்கம்\nஇரட்டை தட்டல்: MP4 தரவிறக்கம்\nமும்முறை தட்டல்: WAV தரவிறக்கம்\n- CTRL+Shift+Y\nஒற்றை தட்டல்: சூழல் மெனுவைத் திற\nஇரட்டை தட்டல்: இலக்கு கோப்புறையைத் திற\nமும்முறை தட்டல்: வீடியோவைத் தேடு\nNVDA+CTRL+Y: உடனடி தரவிறக்க பயன்முறையை மாற்றவும்\nNVDA+Shift+Y: பிளேலிஸ்ட் பயன்முறையை மாற்றவும்\n- ALT+Windows+Y: MP3 தரத்தை மாற்றவும்"
-		},
-		{
-			"language": "te",
-			"displayName": "AbsoluteYoutube",
-			"description": "యూట్యూబ్ వీడియోలను MP3, MP4 మరియు WAVలుగా డౌన్‌లోడ్ చేసుకోండి. రెజ్యూమ్, ట్రిమ్ క్లిప్స్, స్నాప్‌షాట్స్, షార్ట్ URL కాపీ మరియు స్మార్ట్ ఫెయిల్డ్ డౌన్‌లోడ్ మేనేజర్‌తో - NVDA వినియోగదారుల కోసం వేగంగా మరియు సులభంగా అందుబాటులో ఉంటుంది.\nవీడియో పేజీని తెరవడానికి సమయాన్ని ఎందుకు వృధా చేయాలి? మా తాజా అప్‌డేట్ విప్లవాత్మక 'Focus and Fetch' ఫీచర్‌ను పరిచయం చేస్తోంది. ఏదైనా వీడియో లింక్‌పై మీ కర్సర్‌ను ఉంచి వెంటనే డౌన్‌లోడ్‌ను ప్రారంభించండి - పేజీలు లోడ్ అయ్యే వరకు వేచి ఉండాల్సిన అవసరం లేదు.\nకొత్తవి:\nతక్షణ డౌన్‌లోడ్ మోడ్‌ను మార్చండి\nడౌన్‌లోడ్ జాబితా నిర్వాహకుడు\nఇష్టమైన ఛానెల్\nయూట్యూబ్‌లో శోధించండి\nహాట్ కీలు:\n- NVDA+Y\nఒక్కసారి నొక్కండి: MP3 డౌన్‌లోడ్\nరెండుసార్లు నొక్కండి: MP4 డౌన్‌లోడ్\nమూడుసార్లు నొక్కండి: WAV డౌన్‌లోడ్\n- CTRL+Shift+Y\nఒక్కసారి నొక్కండి: కాంటెక్స్ట్ మెనూ తెరవండి\nరెండుసార్లు నొక్కండి: గమ్యస్థాన ఫోల్డర్‌ను తెరవండి\nమూడుసార్లు నొక్కండి: వీడియో కోసం శోధించండి\nNVDA+CTRL+Y: తక్షణ డౌన్‌లోడ్ మోడ్‌ను మార్చండి\nNVDA+Shift+Y: ప్లేలిస్ట్ మోడ్‌ను మార్చండి\n- ALT+Windows+Y: MP3 క్వాలిటీని మార్చండి"
-		},
-		{
-			"language": "th",
-			"displayName": "AbsoluteYoutube",
-			"description": "ดาวน์โหลดวิดีโอ YouTube เป็น MP3, MP4 และ WAV พร้อมฟีเจอร์ดาวน์โหลดต่อ, ตัดคลิป, จับภาพสแนปชอต, คัดลอก URL สั้น และระบบจัดการการดาวน์โหลดที่ล้มเหลวแบบอัจฉริยะ - รวดเร็วและเข้าถึงได้ง่ายสำหรับผู้ใช้ NVDA\nทำไมต้องเสียเวลาเปิดหน้าวิดีโอในเมื่อคุณสามารถโหลดได้ทันที? การอัปเดตล่าสุดของเราขอเสนอคุณสมบัติ Focus and Fetch ที่ปฏิวัติวงการ เพียงวางโฟกัสเคอร์เซอร์ของคุณบนลิงก์วิดีโอใดๆ และเริ่มการดาวน์โหลดทันที - ไม่ต้องรอให้โหลดหน้าเว็บอีกต่อไป\nมีอะไรใหม่:\nเปิด/ปิด โหมดดาวน์โหลดทันที\nระบบจัดการรายการดาวน์โหลด\nช่องโปรด\nค้นหา Youtube\nปุ่มลัด:\n- NVDA+Y\nกดหนึ่งครั้ง: ดาวน์โหลด MP3\nกดสองครั้ง: ดาวน์โหลด MP4\nกดสามครั้ง: ดาวน์โหลด WAV\n- CTRL+Shift+Y\nกดหนึ่งครั้ง: เปิดเมนูบริบท\nกดสองครั้ง: เปิดโฟลเดอร์ปลายทาง\nกดสามครั้ง: ค้นหาวิดีโอ\nNVDA+CTRL+Y: เปิด/ปิด โหมดดาวน์โหลดทันที\nNVDA+Shift+Y: เปิด/ปิด โหมดเพลย์ลิสต์\n- ALT+Windows+Y: สลับคุณภาพ MP3"
-		},
-		{
-			"language": "tk",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube wideolaryny MP3, MP4 we WAV formatynda göçürip alyň. Dowam etdirmek, klipleri kesmek, surat almak, gysga URL nusgalamak we akylly şowsuz göçürme dolandyryjysy - NVDA ulanyjylary üçin çalt we elýeterli.\nWideony derrew alyp biljek wagtyňyz wideonyň sahypasyny açyp wagt ýitirmek nämä gerek? Iň soňky täzelemämiz rewolýusiýa Focus and Fetch aýratynlygyny hödürleýär. Diňe kursoryňyzy islendik wideonyň çykgydyna durnuklaşdyryň we göçürip almagy derrew başladyň - sahypalaryň ýüklenmegine garaşmak gerek däl.\nTäzelikler:\nDerrew göçürip almak rejimini aç/ýap\nGöçürilenler sanawynyň dolandyryjysy\nHalanýan kanal\nYouTube-dan gözleg\nGyzgyn düwmeler:\n- NVDA+Y\nBir gezek basmak: MP3 göçürip al\nIki gezek basmak: MP4 göçürip al\nÜç gezek basmak: WAV göçürip al\n- CTRL+Shift+Y\nBir gezek basmak: Kontekst menýusyny aç\nIki gezek basmak: Niýetlenen bukja aç\nÜç gezek basmak: Wideony gözle\nNVDA+CTRL+Y: Derrew göçürip almak rejimini aç/ýap\nNVDA+Shift+Y: Pリーリスト rejimini aç/ýap\n- ALT+Windows+Y: MP3 hilini üýtgetmek"
-		},
-		{
-			"language": "tl",
-			"displayName": "AbsoluteYoutube",
-			"description": "I-download ang mga video sa YouTube bilang MP3, MP4 at WAV na may resume, trim clips, snapshots, short URL copy, at smart failed download manager - mabilis at accessible para sa mga gumagamit ng NVDA.\nBakit mag-aaksaya ng oras sa pagbubukas ng pahina ng video kung maaari mo itong makuha agad? Ipinapakilala ng aming pinakabagong update ang rebolusyonaryong feature na Focus and Fetch. I-focus lang ang iyong cursor sa anumang link ng video at simulan agad ang iyong pag-download - wala nang paghihintay na mag-load ang mga pahina.\nAno ang Bago:\nI-toggle ang immediate download mode\nDownload list manager\nPaboritong channel\nMaghanap sa Youtube\nMga Hot Key:\n- NVDA+Y\nIsang Tap: I-download ang MP3\nDalawang Tap: I-download ang MP4\nTatlong Tap: I-download ang WAV\n- CTRL+Shift+Y\nIsang Tap: Buksan ang Context Menu\nDalawang Tap: Buksan ang Destination Folder\nTatlong Tap: Maghanap ng Video\nNVDA+CTRL+Y: I-toggle ang immediate download mode\nNVDA+Shift+Y: I-toggle ang playlist mode\n- ALT+Windows+Y: I-cycle ang kalidad ng MP3"
-		},
-		{
-			"language": "tr",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube videolarını devam ettirme, klip kırpma, anlık görüntü, kısa URL kopyalama và akıllı indirme yöneticisi özellikleriyle MP3, MP4 ve WAV olarak indirin - NVDA kullanıcıları için hızlı ve erişilebilir.\nVideoyu anında alabilecekken neden video sayfasını açarak vakit kaybedesiniz? En son güncellememiz devrim niteliğindeki Focus and Fetch özelliğini sunuyor. İmlecinizi herhangi bir video bağlantısına odaklayın ve indirmenizi hemen başlatın - artık sayfaların yüklenmesini beklemenize gerek yok.\nYenilikler:\nAnında indirme modunu aç/kapat\nİndirme listesi yöneticisi\nFavori kanal\nYoutube'da ara\nKısayol Tuşları:\n- NVDA+Y\nTek Tıklama: MP3 İndir\nÇift Tıklama: MP4 İndir\nÜç Tıklama: WAV İndir\n- CTRL+Shift+Y\nTek Tıklama: Bağlam Menüsünü Aç\nÇift Tıklama: Hedef Klasörü Aç\nÜç Tıklama: Video Ara\nNVDA+CTRL+Y: Anında indirme modunu aç/kapat\nNVDA+Shift+Y: Oynatma listesi modunu aç/kapat\n- ALT+Windows+Y: MP3 kalitesini değiştir"
-		},
-		{
-			"language": "uk",
-			"displayName": "AbsoluteYoutube",
-			"description": "Завантажуйте відео з YouTube у форматах MP3, MP4 та WAV з відновленням, обрізкою кліпів, знімками екрана, копіюванням коротких URL та розумним менеджером невдалих завантажень — швидко та доступно для користувачів NVDA.\nНавіщо витрачати час на відкриття сторінки відео, якщо його можна отримати миттєво? Наше останнє оновлення представляє революційну функцію Focus and Fetch. Просто наведіть курсор на будь-яке посилання на відео та миттєво запустіть завантаження — більше не потрібно чекати завантаження сторінок.\nЩо нового:\nПеремикання режиму негайного завантаження\nМенеджер списку завантажень\nУлюблений канал\nПошук у YouTube\nГарячі клавіші:\n- NVDA+Y\nОдне натискання: Завантажити MP3\nПодвійне натискання: Завантажити MP4\nПотрійне натискання: Завантажити WAV\n- CTRL+Shift+Y\nОдне натискання: Відкрити контекстне меню\nПодвійне натискання: Відкрити папку призначення\nПотрійне натискання: Пошук відео\nNVDA+CTRL+Y: Перемикання режиму негайного завантаження\nNVDA+Shift+Y: Перемикання режиму списку відтворення\n- ALT+Windows+Y: Циклічна зміна якості MP3"
-		},
-		{
-			"language": "ur",
-			"displayName": "AbsoluteYoutube",
-			"description": "یوٹیوب ویڈیوز کو MP3، MP4 اور WAV کے طور پر ڈاؤن لوڈ کریں بشمول ریزیوم، ٹرم کلپس، اسنیپ شاٹس، مختصر URL کاپی، اور سمارٹ فیلڈ ڈاؤن لوڈ مینیجر - NVDA صارفین کے لیے تیز اور قابل رسائی۔\nجب آپ اسے فوری طور پر حاصل کر سکتے ہیں تو ویڈیو پیج کھولنے میں وقت کیوں ضائع کریں؟ ہماری تازہ ترین اپ ڈیٹ انقلابی Focus and Fetch فیچر متعارف کرواتی ہے۔ بس اپنے کرسر کو کسی بھی ویڈیو لنک پر فوکس کریں اور اپنا ڈاؤن لوڈ فوری طور پر شروع کریں - اب پیجز لوڈ ہونے کا انتظار کرنے کی ضرورت نہیں ہے۔\nنیا کیا ہے:\nفوری ڈاؤن لوڈ موڈ کو ٹوگل کریں\nڈاؤن لوڈ لسٹ مینیجر\nپسندیدہ چینل\nیوٹیوب سرچ\nہاٹ کیز:\n- NVDA+Y\nایک بار ٹیپ کریں: MP3 ڈاؤن لوڈ کریں\nدو بار ٹیپ کریں: MP4 ڈاؤن لوڈ کریں\nتین بار ٹیپ کریں: WAV ڈاؤن لوڈ کریں\n- CTRL+Shift+Y\nایک بار ٹیپ کریں: سیاق و سباق مینو کھولیں\nدو بار ٹیپ کریں: منزل کا فولڈر کھولیں\nتین بار ٹیپ کریں: ویڈیو تلاش کریں\nNVDA+CTRL+Y: فوری ڈاؤن لوڈ موڈ کو ٹوگل کریں\nNVDA+Shift+Y: پلے لسٹ موڈ کو ٹوگل کریں\n- ALT+Windows+Y: MP3 کوالٹی تبدیل کریں"
-		},
-		{
-			"language": "uz",
-			"displayName": "AbsoluteYoutube",
-			"description": "YouTube videolarini MP3, MP4 va WAV formatlarida yuklab oling. Yuklab olishni davom ettirish, kliplarni kesish, skrinshotlar, qisqa URL nusxalash va aqlli yuklab olish menejeri - NVDA foydalanuvchilari uchun tez va qulay.\nVideoni darhol olish mumkin bo'lsa, video sahifasini ochishga vaqt sarflashning nima keragi bor? Bizning so'nggi yangilanishimiz inqilobiy Focus and Fetch funksiyasini taqdim etadi. Shunchaki kursorni istalgan video havolasiga qarating va yuklab olishni darhol boshlang - sahifalar yuklanishini kutishga hojat yo'q.\nYangiliklar:\nDarhol yuklab olish rejimini yoqish/o'chirish\nYuklab olishlar ro'yxati menejeri\nSevimli kanal\nYouTube'dan qidirish\nTezkor tugmalar:\n- NVDA+Y\nBir marta bosish: MP3 yuklab olish\nIkki marta bosish: MP4 yuklab olish\nUch marta bosish: WAV yuklab olish\n- CTRL+Shift+Y\nBir marta bosish: Kontekst menyusini ochish\nIkki marta bosish: Maqsadli papkani ochish\nUch marta bosish: Videoni qidirish\nNVDA+CTRL+Y: Darhol yuklab olish rejimini yoqish/o'chirish\nNVDA+Shift+Y: Pleylist rejimini yoqish/o'chirish\n- ALT+Windows+Y: MP3 sifatini o'zgartirish"
-		},
-		{
-			"language": "vi",
-			"displayName": "AbsoluteYoutube",
-			"description": "Tải xuống video YouTube dưới dạng MP3, MP4 và WAV với tính năng tiếp tục tải, cắt clip, chụp ảnh màn hình, sao chép URL ngắn và trình quản lý tải xuống lỗi thông minh - nhanh chóng & dễ tiếp cận cho người dùng NVDA.\nTại sao phải lãng phí thời gian mở trang video khi bạn có thể tải nó ngay lập tức? Bản cập nhật mới nhất của chúng tôi giới thiệu tính năng Focus and Fetch mang tính cách mạng. Chỉ cần tập trung con trỏ vào bất kỳ liên kết video nào và kích hoạt tải xuống ngay lập tức - không còn phải chờ đợi trang tải xong.\nCó gì mới:\nChuyển đổi chế độ tải xuống ngay lập tức\nTrình quản lý danh sách tải xuống\nKênh yêu thích\nTìm kiếm Youtube\nPhím nóng:\n- NVDA+Y\nNhấn một lần: Tải xuống MP3\nNhấn hai lần: Tải xuống MP4\nNhấn ba lần: Tải xuống WAV\n- CTRL+Shift+Y\nNhấn một lần: Mở Menu ngữ cảnh\nNhấn hai lần: Mở Thư mục đích\nNhấn ba lần: Tìm kiếm Video\nNVDA+CTRL+Y: Chuyển đổi chế độ tải xuống ngay lập tức\nNVDA+Shift+Y: Chuyển đổi chế độ danh sách phát\n- ALT+Windows+Y: Thay đổi chất lượng MP3"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "AbsoluteYoutube",
-			"description": "将 YouTube 视频下载为 MP3、MP4 和 WAV 格式，支持断点续传、剪辑裁剪、快照、短链接复制以及智能失败下载管理 - 为 NVDA 用户提供快速且无障碍的体验。\n既然可以立即获取，为什么还要浪费时间打开视频页面呢？我们的最新更新引入了革命性的 Focus and Fetch 功能。只需将光标聚焦在任何视频链接上并立即触发下载 - 无需再等待页面加载。\n更新内容：\n切换立即下载模式\n下载列表管理器\n收藏频道\n搜索 YouTube\n热键：\n- NVDA+Y\n单击：下载 MP3\n双击：下载 MP4\n三击：下载 WAV\n- CTRL+Shift+Y\n单击：打开上下文菜单\n双击：打开目标文件夹\n三击：搜索视频\nNVDA+CTRL+Y：切换立即下载模式\nNVDA+Shift+Y：切换播放列表模式\n- ALT+Windows+Y：循环切换 MP3 音质"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "AbsoluteYoutube",
-			"description": "將 YouTube 影片下載為 MP3、MP4 和 WAV 格式，支援斷點續傳、剪輯裁剪、快照、短網址複製以及智慧失敗下載管理 - 為 NVDA 使用者提供快速且無障礙的體驗。\n既然可以立即獲取，為什麼還要浪費時間打開影片頁面呢？我們的最新更新引入了革命性的 Focus and Fetch 功能。只需將游標聚焦在任何影片連結上並立即觸發下載 - 無需再等待頁面載入。\n更新內容：\n切換立即下載模式\n下載列表管理器\n收藏頻道\n搜尋 YouTube\n快速鍵：\n- NVDA+Y\n單擊：下載 MP3\n雙擊：下載 MP4\n三擊：下載 WAV\n- CTRL+Shift+Y\n單擊：打開快顯功能表\n雙擊：打開目標資料夾\n三擊：搜尋影片\nNVDA+CTRL+Y：切換立即下載模式\nNVDA+Shift+Y：切換播放清單模式\n- ALT+Windows+Y：循環切換 MP3 音質"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"exe": 3,
-						"html": 6,
-						"ini": 44,
-						"md": 6,
-						"mo": 43,
-						"po": 43,
-						"py": 14,
-						"wav": 2
-					},
-					"file_types": {
-						"HTML": 6,
-						"Portable Executable": 3,
-						"directory": 98,
-						"unknown": 152
-					},
-					"highest_datetime": "2026-06-07 15:24:02",
-					"lowest_datetime": "2026-04-30 14:00:26",
-					"num_children": 259,
-					"type": "ZIP",
-					"uncompressed_size": 89963191
-				},
-				"filecondis": {
-					"dhash": "000000000c0d0000",
-					"raw_md5": "8277627704f6e35c7ef003b20fd9ec78"
-				},
-				"first_submission_date": 1780822179,
-				"last_analysis_date": 1780878792,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260607",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260607",
-						"engine_version": "6.786",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260607",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260607",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260607",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260607",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260607",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260607",
-						"engine_version": "260607-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260607",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260607",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260606",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260607",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260607",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260608",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260607",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260521",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260607",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260607",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260607",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260608",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260603",
-						"engine_version": "4.0.264",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260607",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260607",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260607",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260608",
-						"engine_version": "GD:27.44829AVA:64.31378",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "timeout",
-						"engine_name": "Google",
-						"engine_update": "20260608",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260607",
-						"engine_version": "1.0.247.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260607",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260607",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260607",
-						"engine_version": "14.55.59743",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260607",
-						"engine_version": "14.55.59743",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260608",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260607",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260607",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260607",
-						"engine_version": "3.1.0.238",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260605",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260608",
-						"engine_version": "1.2.0.14833",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260607",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260607",
-						"engine_version": "1.1.26040.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260607",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260608",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260607",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260607",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260605",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260605",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260607",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260607",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260607",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260608",
-						"engine_version": "2026-06-08.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260608",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260607",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260607",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260607",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "failure",
-						"engine_name": "Trustlook",
-						"engine_update": "20260608",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260605",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260607",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260607",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260607",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260605",
-						"engine_version": "9.5.1222",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260607",
-						"engine_version": "38709",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260607",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "malicious",
-						"engine_name": "Zillya",
-						"engine_update": "20260605",
-						"engine_version": "2.0.0.5616",
-						"method": "blacklist",
-						"result": "Trojan.AgentAGen.Win64.18885"
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260607",
-						"engine_version": "6.25-116107381",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260607",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260607",
-						"engine_version": "73e0c6e:73e0c6e:d28a123:d28a123",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260608",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 1,
-					"suspicious": 0,
-					"timeout": 2,
-					"type-unsupported": 7,
-					"undetected": 64
-				},
-				"last_modification_date": 1780886065,
-				"last_submission_date": 1780822179,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
-				"md5": "b8df87c9b46fd5ba664bfad9b6faa6cc",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"popular_threat_classification": {
-					"popular_threat_category": [
-						{
-							"count": 1,
-							"value": "trojan"
-						}
-					],
-					"popular_threat_name": [
-						{
-							"count": 1,
-							"value": "agentagen"
-						}
-					],
-					"suggested_threat_label": "trojan.agentagen"
-				},
-				"reputation": 0,
-				"sandbox_verdicts": {
-					"Zenbox": {
-						"category": "harmless",
-						"confidence": 94,
-						"malware_classification": [
-							"CLEAN"
-						],
-						"sandbox_name": "Zenbox"
-					}
-				},
-				"sha1": "24817c8e9594e15674844d6e2583dcdb8f9ba683",
-				"sha256": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
-				"size": 42040926,
-				"ssdeep": "786432:Fv63KZ0cEg+xY76BXIeYrlNY8NhdJwit/iEmpIorphyX3kaBkngk/zQzjKIuqk:Fyx++w6mxNJNCW/iEm3PyX3kXgmEjKIC",
-				"tags": [
-					"long-sleeps",
-					"detect-debug-environment",
-					"zip",
-					"contains-pe"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1359733C19E14F41AC45BFFB335668A0DD30725AEA04A5ECB5A7D63C43FA96B86C97300",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "2d56af1bfdd68af4e8ee4dc6aec93e1b"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7614"
+  "addonId": "AbsoluteYoutube",
+  "displayName": "AbsoluteYoutube",
+  "URL": "https://github.com/chaichaimee/AbsoluteYoutube/releases/download/2026.6.1/AbsoluteYoutube-v2026.6.1.nvda-addon",
+  "description": "Download YouTube videos as MP3, MP4 and WAV with resume, trim clips, snapshots, short URL copy, and smart failed download manager fast & accessible for NVDA users.\nWhy waste time opening a video page when you can grab it instantly? Our latest update introduces the revolutionary Focus and Fetch feature. Simply focus your cursor on any video link and trigger your download immediately - no more waiting for pages to load.\nWhat's New:\nToggle immediate download mode\nDownload list manager\nFavorite channel\nSearch Youtube\nHot Keys:\n- NVDA+Y\nSingle Tap: Download MP3\nDouble Tap: Download MP4\nTriple Tap: Download WAV\n- CTRL+Shift+Y\nSingle Tap: Open Context Menu\nDouble Tap: Open Destination Folder\nTripple Tap : Search Video\nNVDA+CTRL+Y : Toggle immediate download mode\nNVDA+Shift+Y: Toggle playlist mode\n- ALT+Windows+Y: Cycle MP3 quality",
+  "sha256": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
+  "addonVersionName": "2026.6.1",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/AbsoluteYoutube",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/AbsoluteYoutube",
+  "changelog": "Fixed playlist download in non-immediate mode, added cache size limit (3MB), corrected fail manager playlist handling, and blocked accidental homepage downloads.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781229795000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "AbsoluteYoutube",
+      "description": "تحميل فيديوهات يوتيوب بصيغة MP3 و MP4 و WAV مع استئناف التحميل، وقص المقاطع، واللقطات، ونسخ روابط قصيرة، ومدير تحميل ذكي للفشل - سريع وسهل الوصول لمستخدمي NVDA.\nلماذا تضيع الوقت في فتح صفحة الفيديو بينما يمكنك الحصول عليه فوراً؟ تحديثنا الأخير يقدم ميزة Focus and Fetch الثورية. ما عليك سوى تركيز المؤشر على أي رابط فيديو وبدء التحميل فوراً - لا مزيد من الانتظار لتحميل الصفحات.\nما الجديد:\nتبديل وضع التحميل الفوري\nمدير قائمة التحميل\nالقناة المفضلة\nبحث يوتيوب\nمفاتيح الاختصار:\n- NVDA+Y\nضغطة واحدة: تحميل MP3\nضغطتان: تحميل MP4\nثلاث ضغطات: تحميل WAV\n- CTRL+Shift+Y\nضغطة واحدة: فتح قائمة السياق\nضغطتان: فتح مجلد الوجهة\nثلاث ضغطات: بحث عن فيديو\nNVDA+CTRL+Y: تبديل وضع التحميل الفوري\nNVDA+Shift+Y: تبديل وضع قائمة التشغيل\n- ALT+Windows+Y: تبديل جودة MP3"
+    },
+    {
+      "language": "bg",
+      "displayName": "AbsoluteYoutube",
+      "description": "Изтегляйте видеоклипове от YouTube като MP3, MP4 и WAV с поддръжка на възобновяване, изрязване на клипове, снимки, копиране на кратки URL адреси и интелигентен мениджър за неуспешни изтегляния - бързо и достъпно за потребители на NVDA.\nЗащо да губите време в отваряне на страницата на видеоклипа, когато можете да го вземете мигновено? Нашата последна актуализация въвежда революционната функция Focus and Fetch. Просто фокусирайте курсора върху която и да е връзка към видеоклип и задействайте изтеглянето веднага - без повече чакане за зареждане на страници.\nКакво ново:\nПревключване на режим за незабавно изтегляне\nМениджър на списъка за изтегляне\nЛюбим канал\nТърсене в YouTube\nГорещи клавиши:\n- NVDA+Y\nЕднократно натискане: Изтегляне на MP3\nДвукратно натискане: Изтегляне на MP4\nТрикратно натискане: Изтегляне на WAV\n- CTRL+Shift+Y\nЕднократно натискане: Отваряне на контекстното меню\nДвукратно натискане: Отваряне на папката по местоназначение\nТрикратно натискане: Търсене на видеоклип\nNVDA+CTRL+Y: Превключване на режим за незабавно изтегляне\nNVDA+Shift+Y: Превключване на режим за плейлист\n- ALT+Windows+Y: Превключване на качеството на MP3"
+    },
+    {
+      "language": "bn",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube ভিডিওগুলি MP3, MP4 এবং WAV হিসেবে ডাউনলোড করুন জীবনবৃত্তান্ত, ট্রিম ক্লিপ, স্ন্যাপশট, ছোট URL কপি এবং স্মার্ট ব্যর্থ ডাউনলোড ম্যানেজার সহ - NVDA ব্যবহারকারীদের জন্য দ্রুত এবং অ্যাক্সেসযোগ্য।\nভিডিও পেজ খোলার সময় কেন নষ্ট করবেন যখন আপনি এটি সাথে সাথে পেতে পারেন? আমাদের সর্বশেষ আপডেট বৈপ্লবিক Focus and Fetch ফিচারটি চালু করেছে। যেকোনো ভিডিও লিঙ্কে আপনার কার্সার ফোকাস করুন এবং অবিলম্বে আপনার ডাউনলোড ট্রিগার করুন - পেজ লোড হওয়ার জন্য আর অপেক্ষা করতে হবে না।\nনতুন কি আছে:\nতাত্ক্ষণিক ডাউনলোড মোড টগল করুন\nডাউনলোড তালিকা ম্যানেজার\nপ্রিয় চ্যানেল\nইউটিউব সার্চ\nহট কি:\n- NVDA+Y\nএকবার ট্যাপ করুন: MP3 ডাউনলোড করুন\nদুইবার ট্যাপ করুন: MP4 ডাউনলোড করুন\nতিনবার ট্যাপ করুন: WAV ডাউনলোড করুন\n- CTRL+Shift+Y\nএকবার ট্যাপ করুন: কনটেক্সট মেনু খুলুন\nদুইবার ট্যাপ করুন: ডেস্টিনেশন ফোল্ডার খুলুন\nতিনবার ট্যাপ করুন: ভিডিও সার্চ করুন\nNVDA+CTRL+Y: তাত্ক্ষণিক ডাউনলোড মোড টগল করুন\nNVDA+Shift+Y: প্লেলিস্ট মোড টกล করুন\n- ALT+Windows+Y: MP3 কোয়ালিটি সাইকেল করুন"
+    },
+    {
+      "language": "cs",
+      "displayName": "AbsoluteYoutube",
+      "description": "Stahujte videa z YouTube ve formátech MP3, MP4 a WAV s možností navázání, stříháním klipů, snímky, kopírováním krátkých URL a chytrým správcem selhaných stahování - rychlé a přístupné pro uživatele NVDA.\nProč ztrácet čas otevíráním stránky s videem, když ho můžete získat okamžitě? Naše nejnovější aktualizace představuje revoluční funkci Focus and Fetch. Stačí zaměřit kurzor na jakýkoli odkaz na video a okamžitě spustit stahování - už žádné čekání na načtení stránek.\nCo je nového:\nPřepnout režim okamžitého stahování\nSprávce seznamu stahování\nOblíbený kanál\nHledat na Youtube\nHorké klávesy:\n- NVDA+Y\nJedno klepnutí: Stáhnout MP3\nDvojité klepnutí: Stáhnout MP4\nTrojité klepnutí: Stáhnout WAV\n- CTRL+Shift+Y\nJedno klepnutí: Otevřít kontextovou nabídku\nDvojité klepnutí: Otevřít cílovou složku\nTrojité klepnutí: Hledat video\nNVDA+CTRL+Y: Přepnout režim okamžitého stahování\nNVDA+Shift+Y: Přepnout režim seznamu stop\n- ALT+Windows+Y: Přepínat kvalitu MP3"
+    },
+    {
+      "language": "da",
+      "displayName": "AbsoluteYoutube",
+      "description": "Download YouTube-videoer som MP3, MP4 og WAV med genoptagelse, trimning af klip, snapshots, kopiering af korte URL'er og smart fejlhåndtering af downloads - hurtigt og tilgængeligt for NVDA-brugere.\nHvorfor spilde tid på at åbne en videoside, når du kan hente den med det samme? Vores seneste opdatering introducerer den revolutionerende Focus and Fetch-funktion. Du skal blot fokusere din markør på et hvilket som helst videolink og starte din download med det samme - slut med at vente på, at siderne indlæses.\nHvad er nyt:\nSkift tilstand for øjeblikkelig download\nDownload-listestyring\nFavoritkanal\nSøg på YouTube\nGenvejstaster:\n- NVDA+Y\nEnkelt tryk: Download MP3\nDobbelt tryk: Download MP4\nTriple tryk: Download WAV\n- CTRL+Shift+Y\nEnkelt tryk: Åbn genvejsmenu\nDobbelt tryk: Åbn destinationsmappe\nTriple tryk: Søg efter video\nNVDA+CTRL+Y: Skift tilstand for øjeblikkelig download\nNVDA+Shift+Y: Skift afspilningslistetilstand\n- ALT+Windows+Y: Skift MP3-kvalitet"
+    },
+    {
+      "language": "de",
+      "displayName": "AbsoluteYoutube",
+      "description": "Laden Sie YouTube-Videos als MP3, MP4 und WAV mit Fortsetzung, Zuschnitt, Snapshots, Kurz-URL-Kopie und smartem Download-Manager herunter – schnell & barrierefrei für NVDA-Nutzer.\nWarum Zeit verschwenden, eine Videoseite zu öffnen, wenn Sie sie sofort greifen können? Unser neuestes Update führt die revolutionäre Funktion \"Focus and Fetch\" ein. Fokussieren Sie einfach Ihren Cursor auf einen beliebigen Videolink und lösen Sie Ihren Download sofort aus – kein Warten mehr auf das Laden von Seiten.\nWas ist neu:\nSofort-Download-Modus umschalten\nDownload-Listen-Manager\nFavorisierter Kanal\nYouTube suchen\nTastenkombinationen:\n- NVDA+Y\nEinmal tippen: MP3 herunterladen\nZweimal tippen: MP4 herunterladen\nDreimal tippen: WAV herunterladen\n- STRG+Umschalt+Y\nEinmal tippen: Kontextmenü öffnen\nZweimal tippen: Zielordner öffnen\nDreimal tippen: Video suchen\nNVDA+STRG+Y: Sofort-Download-Modus umschalten\nNVDA+Umschalt+Y: Playlist-Modus umschalten\n- ALT+Windows+Y: MP3-Qualität durchlaufen"
+    },
+    {
+      "language": "en",
+      "displayName": "AbsoluteYoutube",
+      "description": "Download YouTube videos as MP3, MP4 and WAV with resume, trim clips, snapshots, short URL copy, and smart failed download manager fast & accessible for NVDA users.\nWhy waste time opening a video page when you can grab it instantly? Our latest update introduces the revolutionary Focus and Fetch feature. Simply focus your cursor on any video link and trigger your download immediately - no more waiting for pages to load.\nWhat's New:\nToggle immediate download mode\nDownload list manager\nFavorite channel\nSearch Youtube\nHot Keys:\n- NVDA+Y\nSingle Tap: Download MP3\nDouble Tap: Download MP4\nTriple Tap: Download WAV\n- CTRL+Shift+Y\nSingle Tap: Open Context Menu\nDouble Tap: Open Destination Folder\nTripple Tap : Search Video\nNVDA+CTRL+Y : Toggle immediate download mode\nNVDA+Shift+Y: Toggle playlist mode\n- ALT+Windows+Y: Cycle MP3 quality"
+    },
+    {
+      "language": "es",
+      "displayName": "AbsoluteYoutube",
+      "description": "Descarga vídeos de YouTube como MP3, MP4 y WAV con reanudación, recorte de clips, capturas, copia de URL corta y gestor inteligente de descargas fallidas: rápido y accesible para usuarios de NVDA.\n¿Por qué perder tiempo abriendo una página de vídeo cuando puedes obtenerlo al instante? Nuestra última actualización presenta la revolucionaria función Focus and Fetch. Solo tienes que situar el cursor sobre cualquier enlace de vídeo e iniciar la descarga inmediatamente, sin esperar a que se carguen las páginas.\nNovedades:\nAlternar modo de descarga inmediata\nGestor de lista de descargas\nCanal favorito\nBuscar en Youtube\nTeclas rápidas:\n- NVDA+Y\nUn toque: Descargar MP3\nDos toques: Descargar MP4\nTres toques: Descargar WAV\n- CTRL+Shift+Y\nUn toque: Abrir menú contextual\nDos toques: Abrir carpeta de destino\nTres toques: Buscar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga inmediata\nNVDA+Shift+Y: Alternar modo de lista de reproducción\n- ALT+Windows+Y: Cambiar calidad de MP3"
+    },
+    {
+      "language": "fa",
+      "displayName": "AbsoluteYoutube",
+      "description": "دانلود ویدیوهای یوتیوب به صورت MP3، MP4 و WAV با قابلیت ادامه دانلود، برش کلیپ، اسکرین‌شات، کپی لینک کوتاه و مدیریت هوشمند دانلودهای ناموفق - سریع و قابل دسترس برای کاربران NVDA.\nچرا وقتی می‌توانید فوراً ویدیو را دریافت کنید، وقت خود را برای باز کردن صفحه ویدیو تلف کنید؟ آخرین به‌روزرسانی ما ویژگی انقلابی Focus and Fetch را معرفی می‌کند. به سادگی نشانگر خود را روی هر لینک ویدیو متمرکز کنید و دانلود خود را بلافاصله شروع کنید - دیگر منتظر بارگذاری صفحات نباشید.\nموارد جدید:\nتغییر وضعیت حالت دانلود فوری\nمدیریت لیست دانلود\nکانال مورد علاقه\nجستجوی یوتیوب\nکلیدهای میانبر:\n- NVDA+Y\nیک بار فشردن: دانلود MP3\nدو بار فشردن: دانلود MP4\nسه بار فشردن: دانلود WAV\n- CTRL+Shift+Y\nیک بار فشردن: باز کردن منوی زمینه\nدو بار فشردن: باز کردن پوشه مقصد\nسه بار فشردن: جستجوی ویدیو\nNVDA+CTRL+Y: تغییر وضعیت حالت دانلود فوری\nNVDA+Shift+Y: تغییر وضعیت حالت لیست پخش\n- ALT+Windows+Y: تغییر کیفیت MP3"
+    },
+    {
+      "language": "fi",
+      "displayName": "AbsoluteYoutube",
+      "description": "Lataa YouTube-videoita MP3-, MP4- ja WAV-muodoissa jatkamisella, leikkeiden trimmauksella, kuvakaappauksilla, lyhyt-URL-kopioinnilla ja älykkäällä epäonnistuneiden latausten hallinnalla - nopea ja saavutettava NVDA-käyttäjille.\nMiksi tuhlata aikaa videosivun avaamiseen, kun voit napata sen välittömästi? Uusin päivityksemme esittelee vallankumouksellisen Focus and Fetch -ominaisuuden. Kohdista kursori mihin tahansa videolinkkiin ja käynnistä lataus välittömästi - ei enää sivujen latautumisen odottelua.\nUutta:\nVälittömän lataustilan vaihtaminen\nLatauslistan hallinta\nSuosikkikanava\nEtsi YouTubesta\nPikanäppäimet:\n- NVDA+Y\nYksi napautus: Lataa MP3\nKaksi napautusta: Lataa MP4\nKolme napautusta: Lataa WAV\n- CTRL+Shift+Y\nYksi napautus: Avaa pikavalikko\nKaksi napautusta: Avaa kohdekansio\nKolme napautusta: Etsi video\nNVDA+CTRL+Y: Välittömän lataustilan vaihtaminen\nNVDA+Shift+Y: Soittolistan tilan vaihtaminen\n- ALT+Windows+Y: Selaa MP3-laatua"
+    },
+    {
+      "language": "fr",
+      "displayName": "AbsoluteYoutube",
+      "description": "Téléchargez des vidéos YouTube en MP3, MP4 et WAV avec reprise, découpe de clips, instantanés, copie d'URL courte et gestionnaire intelligent de téléchargements échoués - rapide et accessible pour les utilisateurs de NVDA.\nPourquoi perdre du temps à ouvrir une page vidéo quand on peut la récupérer instantanément ? Notre dernière mise à jour introduit la fonction révolutionnaire Focus and Fetch. Placez simplement votre curseur sur n'importe quel lien vidéo et lancez votre téléchargement immédiatement - plus besoin d'attendre le chargement des pages.\nQuoi de neuf :\nBasculer le mode de téléchargement immédiat\nGestionnaire de liste de téléchargement\nChaîne favorite\nRechercher sur Youtube\nRaccourcis clavier :\n- NVDA+Y\nAppui simple : Télécharger MP3\nAppui double : Télécharger MP4\nAppui triple : Télécharger WAV\n- CTRL+Maj+Y\nAppui simple : Ouvrir le menu contextuel\nAppui double : Ouvrir le dossier de destination\nAppui triple : Rechercher une vidéo\nNVDA+CTRL+Y : Basculer le mode de téléchargement immédiat\nNVDA+Maj+Y : Basculer le mode playlist\n- ALT+Windows+Y : Cycle de qualité MP3"
+    },
+    {
+      "language": "gl",
+      "displayName": "AbsoluteYoutube",
+      "description": "Descarga vídeos de YouTube como MP3, MP4 e WAV con continuación, recorte de clips, capturas, copia de URL curta e xestor intelixente de descargas fallidas: rápido e accesible para usuarios de NVDA.\nPor que perder tempo abrindo unha páxina de vídeo cando podes obtelo ao instante? A nosa última actualización presenta a revolucionaria función Focus and Fetch. Só tes que situar o cursor sobre calquera ligazón de vídeo e iniciar a descarga inmediatamente, sen esperar a que se carguen as páxinas.\nNovidades:\nAlternar modo de descarga inmediata\nXestor de lista de descargas\nCanle favorita\nBuscar en Youtube\nTeclas rápidas:\n- NVDA+Y\nUn toque: Descargar MP3\nDous toques: Descargar MP4\nTres toques: Descargar WAV\n- CTRL+Shift+Y\nUn toque: Abrir menú contextual\nDous toques: Abrir cartafol de destino\nTres toques: Buscar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga inmediata\nNVDA+Shift+Y: Alternar modo de lista de reprodución\n- ALT+Windows+Y: Cambiar calidade de MP3"
+    },
+    {
+      "language": "he",
+      "displayName": "AbsoluteYoutube",
+      "description": "הורד סרטוני YouTube כ-MP3, MP4 ו-WAV עם חידוש הורדה, חיתוך קטעים, צילומי מסך, העתקת כתובת קצרה ומנהל הורדות חכם - מהיר ונגיש למשתמשי NVDA.\nלמה לבזבז זמן על פתיחת דף וידאו כשאפשר לקבל אותו באופן מיידי? העדכון האחרון שלנו מציג את תכונת ה-Focus and Fetch המהפכנית. פשוט מקד את הסמן על כל קישור וידאו והפעל את ההורדה שלך מיד - לא צריך יותר לחכות לטעינת דפים.\nמה חדש:\nהחלפת מצב הורדה מיידית\nמנהל רשימת הורדות\nערוץ מועדף\nחיפוש ביוטיוב\nמקשי קיצור:\n- NVDA+Y\nהקשה אחת: הורד MP3\nהקשה כפולה: הורד MP4\nהקשה משולשת: הורד WAV\n- CTRL+Shift+Y\nהקשה אחת: פתח תפריט הקשר\nהקשה כפולה: פתח תיקיית יעד\nהקשה משולשת: חפש וידאו\nNVDA+CTRL+Y: החלפת מצב הורדה מיידית\nNVDA+Shift+Y: החלפת מצב פלייליסט\n- ALT+Windows+Y: החלפת איכות MP3"
+    },
+    {
+      "language": "hi",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube वीडियो को MP3, MP4 और WAV के रूप में रिज्यूमे, ट्रिम क्लिप, स्नैपशॉट, शॉर्ट URL कॉपी और स्मार्ट विफल डाउनलोड मैनेजर के साथ डाउनलोड करें - NVDA उपयोगकर्ताओं के लिए तेज़ और सुलभ।\nजब आप इसे तुरंत प्राप्त कर सकते हैं तो वीडियो पेज खोलने में समय क्यों बर्बाद करें? हमारा नवीनतम अपडेट क्रांतिकारी Focus and Fetch फीचर पेश करता है। बस अपने कर्सर को किसी भी वीडियो लिंक पर केंद्रित करें और अपना डाउनलोड तुरंत ट्रिगर करें - पेजों के लोड होने का कोई और इंतज़ार नहीं।\nनया क्या है:\nतत्काल डाउनलोड मोड टॉगल करें\nडाउनलोड सूची प्रबंधक\nपसंदीदा चैनल\nयूट्यूब सर्च\nहॉट कीज़:\n- NVDA+Y\nएक टैप: MP3 डाउनलोड करें\nदो टैप: MP4 डाउनलोड करें\nतीन टैप: WAV डाउनलोड करें\n- CTRL+Shift+Y\nएक टैप: संदर्भ मेनू खोलें\nदो टैप: गंतव्य फ़ोल्डर खोलें\nतीन टैप: वीडियो खोजें\nNVDA+CTRL+Y: तत्काल डाउनलोड मोड टॉगल करें\nNVDA+Shift+Y: प्लेलिस्ट मोड टॉगल करें\n- ALT+Windows+Y: MP3 गुणवत्ता बदलें"
+    },
+    {
+      "language": "hr",
+      "displayName": "AbsoluteYoutube",
+      "description": "Preuzmite YouTube videozapise kao MP3, MP4 i WAV s nastavkom, obrezivanjem isječaka, snimkama zaslona, kopiranjem kratkih URL-ova i pametnim upraviteljem neuspjelih preuzimanja - brzo i dostupno za korisnike NVDA.\nZašto gubiti vrijeme na otvaranje stranice videa kada ga možete zgrabiti odmah? Naše najnovije ažuriranje uvodi revolucionarnu značajku Focus and Fetch. Jednostavno fokusirajte kursor na bilo koju poveznicu videozapisa i odmah pokrenite preuzimanje - nema više čekanja da se stranice učitaju.\nŠto je novo:\nPrebacivanje načina trenutnog preuzimanja\nUpravitelj popisa preuzimanja\nOmiljeni kanal\nPretraživanje YouTubea\nVruće tipke:\n- NVDA+Y\nJedan dodir: Preuzmi MP3\nDvostruki dodir: Preuzmi MP4\nTrostruki dodir: Preuzmi WAV\n- CTRL+Shift+Y\nJedan dodir: Otvori kontekstni izbornik\nDvostruki dodir: Otvori odredišnu mapu\nTrostruki dodir: Pretraži video\nNVDA+CTRL+Y: Prebacivanje načina trenutnog preuzimanja\nNVDA+Shift+Y: Prebacivanje načina popisa pjesama\n- ALT+Windows+Y: Kružna promjena MP3 kvalitete"
+    },
+    {
+      "language": "hu",
+      "displayName": "AbsoluteYoutube",
+      "description": "Töltsön le YouTube-videókat MP3, MP4 és WAV formátumban folytatással, klipvágással, pillanatképekkel, rövid URL-másolással és intelligens sikertelen letöltéskezelővel - gyors és akadálymentes az NVDA-felhasználók számára.\nMiért vesztegetné az idejét egy videóoldal megnyitásával, ha azonnal letöltheti? Legújabb frissítésünk bemutatja a forradalmi Focus and Fetch funkciót. Egyszerűen vigye a fókuszt bármely videólinkre, és azonnal indítsa el a letöltést – nincs többé várakozás az oldalak betöltésére.\nÚjdonságok:\nAzonnali letöltési mód váltása\nLetöltési lista kezelő\nKedvenc csatorna\nKeresés a YouTube-on\nGyorsbillentyűk:\n- NVDA+Y\nEgy koppintás: MP3 letöltése\nDupla koppintás: MP4 letöltése\nTripla koppintás: WAV letöltése\n- CTRL+Shift+Y\nEgy koppintás: Helyi menü megnyitása\nDupla koppintás: Célmappa megnyitása\nTripla koppintás: Videó keresése\nNVDA+CTRL+Y: Azonnali letöltési mód váltása\nNVDA+Shift+Y: Lejátszási lista mód váltása\n- ALT+Windows+Y: MP3 minőség váltása"
+    },
+    {
+      "language": "id",
+      "displayName": "AbsoluteYoutube",
+      "description": "Unduh video YouTube sebagai MP3, MP4 dan WAV dengan fitur resume, potong klip, snapshot, salin URL pendek, dan pengelola unduhan gagal yang cerdas - cepat & aksesibel untuk pengguna NVDA.\nMengapa membuang waktu membuka halaman video jika Anda bisa mendapatkannya secara instan? Pembaruan terbaru kami memperkenalkan fitur Focus and Fetch yang revolusioner. Cukup fokuskan kursor Anda pada tautan video apa pun dan picu unduhan Anda segera - tidak perlu lagi menunggu halaman dimuat.\nYang Baru:\nAlihkan mode unduhan instan\nPengelola daftar unduhan\nSaluran favorit\nCari Youtube\nTombol Pintas:\n- NVDA+Y\nKetuk Sekali: Unduh MP3\nKetuk Dua Kali: Unduh MP4\nKetuk Tiga Kali: Unduh WAV\n- CTRL+Shift+Y\nKetuk Sekali: Buka Menu Konteks\nKetuk Dua Kali: Buka Folder Tujuan\nKetuk Tiga Kali: Cari Video\nNVDA+CTRL+Y: Alihkan mode unduhan instan\nNVDA+Shift+Y: Alihkan mode daftar putar\n- ALT+Windows+Y: Ubah kualitas MP3"
+    },
+    {
+      "language": "it",
+      "displayName": "AbsoluteYoutube",
+      "description": "Scarica video da YouTube in MP3, MP4 e WAV con ripresa, ritaglio clip, istantanee, copia URL breve e gestione intelligente dei download falliti: veloce e accessibile per gli utenti NVDA.\nPerché perdere tempo ad aprire la pagina di un video quando puoi scaricarlo all'istante? Il nostro ultimo aggiornamento introduce la rivoluzionaria funzione Focus and Fetch. Basta spostare il cursore su qualsiasi link video e avviare il download immediatamente, senza più attendere il caricamento delle pagine.\nNovità:\nAttiva/disattiva modalità download immediato\nGestore elenco download\nCanale preferito\nCerca su YouTube\nTasti di scelta rapida:\n- NVDA+Y\nSingolo tocco: Scarica MP3\nDoppio tocco: Scarica MP4\nTriplo tocco: Scarica WAV\n- CTRL+Shift+Y\nSingolo tocco: Apri menu contestuale\nDoppio tocco: Apri cartella di destinazione\nTriplo tocco: Cerca video\nNVDA+CTRL+Y: Attiva/disattiva modalità download immediato\nNVDA+Shift+Y: Attiva/disattiva modalità playlist\n- ALT+Windows+Y: Cicla qualità MP3"
+    },
+    {
+      "language": "ja",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube動画をMP3、MP4、WAVとしてダウンロード。レジューム、クリップのトリミング、スナップショット、短縮URLのコピー、スマートなダウンロード失敗管理機能を備え、NVDAユーザーにとって高速でアクセシブルです。\n動画ページを開くのに時間を無駄にする必要はありません。最新のアップデートでは、革新的な「Focus and Fetch」機能を導入しました。ビデオリンクにカーソルを合わせるだけで、すぐにダウンロードを開始できます。ページの読み込みを待つ必要はもうありません。\n新機能：\n即時ダウンロードモードの切り替え\nダウンロードリストマネージャー\nお気に入りチャンネル\nYouTube検索\nホットキー：\n- NVDA+Y\nシングルタップ：MP3をダウンロード\nダブルタップ：MP4をダウンロード\nトリプルタップ：WAVをダウンロード\n- CTRL+Shift+Y\nシングルタップ：コンテキストメニューを開く\nダブルタップ：保存先フォルダーを開く\nトリプルタップ：ビデオを検索\nNVDA+CTRL+Y：即時ダウンロードモードの切り替え\nNVDA+Shift+Y：プレイリストモードの切り替え\n- ALT+Windows+Y：MP3品質の切り替え"
+    },
+    {
+      "language": "kk",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube бейнелерін MP3, MP4 және WAV ретінде жүктеп алыңыз. Жүктеуді жалғастыру, клиптерді қию, скриншоттар, қысқа URL мекенжайын көшіру және сәтсіз жүктеулерді ақылды басқару - NVDA пайдаланушылары үшін жылдам және қолжетімді.\nБейнені бірден алуға болатын кезде бейне бетін ашуға неге уақыт жоғалту керек? Соңғы жаңартуымыз революциялық Focus and Fetch мүмкіндігін ұсынады. Курсорды кез келген бейне сілтемесіне қойып, жүктеуді бірден бастаңыз - беттердің жүктелуін күтудің қажеті жоқ.\nЖаңалықтар:\nЖедел жүктеу режимін қосу/өшіру\nЖүктеулер тізімінің менеджері\nТаңдаулы арна\nYouTube-тен іздеу\nЫстық пернелер:\n- NVDA+Y\nБір рет басу: MP3 жүктеу\nЕкі рет басу: MP4 жүктеу\nҮш рет басу: WAV жүктеу\n- CTRL+Shift+Y\nБір рет басу: Мәнмәтіндік мәзірді ашу\nЕкі рет басу: Тағайындалған қалтаны ашу\nҮш рет басу: Бейнені іздеу\nNVDA+CTRL+Y: Жедел жүктеу режимін қосу/өшіру\nNVDA+Shift+Y: Ойнату тізімі режимін қосу/өшіру\n- ALT+Windows+Y: MP3 сапасын өзгерту"
+    },
+    {
+      "language": "ko",
+      "displayName": "AbsoluteYoutube",
+      "description": "이어받기, 클립 자르기, 스냅샷, 짧은 URL 복사 및 스마트 실패 다운로드 관리자 기능을 갖춘 YouTube 동영상을 MP3, MP4 및 WAV로 다운로드하세요. NVDA 사용자를 위해 빠르고 접근성이 좋습니다.\n동영상 페이지를 여는 데 시간을 낭비할 이유가 무엇입니까? 최신 업데이트에는 혁신적인 'Focus and Fetch' 기능이 도입되었습니다. 동영상 링크에 커서를 올리고 즉시 다운로드를 실행하기만 하면 됩니다. 더 이상 페이지가 로드될 때까지 기다릴 필요가 없습니다.\n새로운 기능:\n즉시 다운로드 모드 토글\n다운로드 목록 관리자\n즐겨찾는 채널\nYouTube 검색\n단축키:\n- NVDA+Y\n한 번 누르기: MP3 다운로드\n두 번 누르기: MP4 다운로드\n세 번 누르기: WAV 다운로드\n- CTRL+Shift+Y\n한 번 누르기: 컨텍스트 메뉴 열기\n두 번 누르기: 대상 폴더 열기\n세 번 누르기: 동영상 검색\nNVDA+CTRL+Y: 즉시 다운로드 모드 토글\nNVDA+Shift+Y: 재생 목록 모드 토글\n- ALT+Windows+Y: MP3 음질 순환"
+    },
+    {
+      "language": "lo",
+      "displayName": "AbsoluteYoutube",
+      "description": "ດາວໂຫຼດວິດີໂອ YouTube ເປັນ MP3, MP4 ແລະ WAV ພ້ອມດ້ວຍການດາວໂຫຼດຕໍ່, ຕັດຄລິບ, ຖ່າຍພາບໜ້າຈໍ, ສຳເນົາ URL ສັ້ນ, ແລະລະບົບຈັດການການດາວໂຫຼດທີ່ລົ້ມເຫຼວແບບອັດສະລິຍະ - ໄວ ແລະ ເຂົ້າເຖິງໄດ້ງ່າຍສຳລັບຜູ້ໃຊ້ NVDA.\nເປັນຫຍັງຕ້ອງເສຍເວລາເປີດໜ້າວິດີໂອ ໃນເມື່ອເຈົ້າສາມາດດາວໂຫຼດໄດ້ທັນທີ? ການອັບເດດຫຼ້າສຸດຂອງພວກເຮົາໄດ້ນຳສະເໜີຟີເຈີ Focus and Fetch ທີ່ທັນສະໄໝ. ພຽງແຕ່ໂຟກັດເຄີເຊີຂອງທ່ານໃສ່ລິ້ງວິດີໂອໃດໜຶ່ງ ແລະເລີ່ມການດາວໂຫຼດທັນທີ - ບໍ່ຕ້ອງລໍຖ້າໃຫ້ໜ້າເວັບໂຫຼດອີກຕໍ່ໄປ.\nມີຫຍັງໃໝ່:\nເປີດ/ປິດ ໂໝດດາວໂຫຼດທັນທີ\nລະບົບຈັດການລາຍການດາວໂຫຼດ\nຊ່ອງທີ່ມັກ\nຄົ້ນຫາ Youtube\nປຸ່ມລັດ:\n- NVDA+Y\nກົດໜຶ່ງຄັ້ງ: ດາວໂຫຼດ MP3\nກົດສອງຄັ້ງ: ດາວໂຫຼด MP4\nກົດສາມຄັ້ງ: ດາວໂຫຼດ WAV\n- CTRL+Shift+Y\nກົດໜຶ່ງຄັ້ງ: ເປີດເມນູລັດ\nກົດສອງຄັ້ງ: ເປີດໂຟນເດີປາຍທາງ\nກົດສາມຄັ້ງ: ຄົ້ນຫາວິດີໂອ\nNVDA+CTRL+Y: ເປີດ/ປິດ ໂໝດດາວໂຫຼດທັນທີ\nNVDA+Shift+Y: ເປີດ/ປິດ ໂໝດລາຍການເພງ\n- ALT+Windows+Y: ປ່ຽນຄຸນນະພາບ MP3"
+    },
+    {
+      "language": "ms",
+      "displayName": "AbsoluteYoutube",
+      "description": "Muat turun video YouTube sebagai MP3, MP4 dan WAV dengan sambungan semula, potong klip, tangkapan skrin, salin URL pendek, dan pengurus muat turun gagal yang pintar - pantas & boleh diakses untuk pengguna NVDA.\nMengapa membazir masa membuka halaman video sedangkan anda boleh mendapatkannya dengan serta-merta? Kemas kini terbaru kami memperkenalkan ciri Focus and Fetch yang revolusioner. Hanya fokuskan kursor anda pada mana-mana pautan video dan cetuskan muat turun anda dengan segera - tiada lagi menunggu halaman dimuatkan.\nApa yang Baru:\nTogol mod muat turun segera\nPengurus senarai muat turun\nSaluran kegemaran\nCari Youtube\nKekunci Pintas:\n- NVDA+Y\nSekali Ketuk: Muat turun MP3\nDua Kali Ketuk: Muat turun MP4\nTiga Kali Ketuk: Muat turun WAV\n- CTRL+Shift+Y\nSekali Ketuk: Buka Menu Konteks\nDua Kali Ketuk: Buka Folder Destinasi\nTiga Kali Ketuk: Cari Video\nNVDA+CTRL+Y: Togol mod muat turun segera\nNVDA+Shift+Y: Togol mod senarai main\n- ALT+Windows+Y: Kitar kualiti MP3"
+    },
+    {
+      "language": "my",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube ဗီဒီယိုများကို MP3, MP4 နှင့် WAV အဖြစ် ဒေါင်းလုဒ်လုပ်ပါ။ ပြန်လည်စတင်ခြင်း၊ ကလစ်ဖြတ်ခြင်း၊ စနက်ရှော့ရိုက်ခြင်း၊ URL အတိုကူးယူခြင်းနှင့် ပျက်ကွက်သောဒေါင်းလုဒ်များကို စမတ်ကျကျစီမံခန့်ခွဲခြင်း - NVDA အသုံးပြုသူများအတွက် မြန်ဆန်ပြီး အလွယ်တကူအသုံးပြုနိုင်ပါသည်။\nဗီဒီယိုကို ချက်ချင်းရနိုင်ချိန်တွင် ဗီဒီယိုစာမျက်နှာကိုဖွင့်ပြီး အချိန်အဘယ်ကြောင့်ဖြုန်းနေမည်နည်း။ ကျွန်ုပ်တို့၏နောက်ဆုံးထွက်အပ်ဒိတ်တွင် တော်လှန်သော Focus and Fetch လုပ်ဆောင်ချက်ကို မိတ်ဆက်ပေးထားပါသည်။ ဗီဒီယိုလင့်ခ်တစ်ခုခုပေါ်တွင် ကာဆာကိုထားရှိရုံဖြင့် ဒေါင်းလုဒ်ကို ချက်ချင်းစတင်နိုင်ပါသည် - စာမျက်နှာများပွင့်လာသည်အထိ စောင့်ရန်မလိုတော့ပါ။\nအသစ်ပါဝင်သောအရာများ-\nချက်ချင်းဒေါင်းလုဒ်လုပ်မည့်မုဒ်ကို ပြောင်းရန်\nဒေါင်းလုဒ်စာရင်း စီမံခန့်ခွဲသူ\nနှစ်သက်သောချန်နယ်\nYouTube ရှာဖွေရန်\nဖြတ်လမ်းခလုတ်များ-\n- NVDA+Y\nတစ်ချက်နှိပ်ရန်- MP3 ဒေါင်းလုဒ်လုပ်ရန်\nနှစ်ချက်နှိပ်ရန်- MP4 ဒေါင်းလုဒ်လုပ်ရန်\nသုံးချက်နှိပ်ရန်- WAV ဒေါင်းလုဒ်လုပ်ရန်\n- CTRL+Shift+Y\nတစ်ချက်နှိပ်ရန်- ကွန်တက်မီနူးဖွင့်ရန်\nနှစ်ချက်နှိပ်ရန်- သိမ်းဆည်းသည့်ဖိုင်တွဲကိုဖွင့်ရန်\nသုံးချက်နှိပ်ရန်- ဗီဒီယိုရှာဖွေရန်\nNVDA+CTRL+Y- ချက်ချင်းဒေါင်းလုဒ်လုပ်မည့်မုဒ်ကို ပြောင်းရန်\nNVDA+Shift+Y- ပလေးလစ်မုဒ်ကို ပြောင်းရန်\n- ALT+Windows+Y- MP3 အရည်အသွေးကို ပြောင်းရန်"
+    },
+    {
+      "language": "pt",
+      "displayName": "AbsoluteYoutube",
+      "description": "Descarregue vídeos do YouTube como MP3, MP4 e WAV com retoma, recorte de clipes, instantâneos, cópia de URL curto e gestor inteligente de falhas - rápido e acessível para utilizadores de NVDA.\nPorquê perder tempo a abrir uma página de vídeo quando pode obtê-lo instantaneamente? A nossa última atualização apresenta a funcionalidade revolucionária Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar a descarga imediatamente - sem mais esperas que as páginas carreguem.\nO que há de novo:\nAlternar modo de descarga imediata\nGestor de lista de descargas\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Descarregar MP3\nDois toques: Descarregar MP4\nTrês toques: Descarregar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga imediata\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Ciclar qualidade de MP3"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "AbsoluteYoutube",
+      "description": "Baixe vídeos do YouTube como MP3, MP4 e WAV com retomada, recorte de clipes, instantâneos, cópia de URL curta e gerenciador inteligente de falhas - rápido e acessível para usuários de NVDA.\nPor que perder tempo abrindo uma página de vídeo quando você pode obtê-lo instantaneamente? Nossa atualização mais recente apresenta o recurso revolucionário Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar o download imediatamente - sem mais espera pelo carregamento das páginas.\nO que há de novo:\nAlternar modo de download imediato\nGerenciador de lista de downloads\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Baixar MP3\nDois toques: Baixar MP4\nTrês toques: Baixar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de download imediato\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Alternar qualidade de MP3"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "AbsoluteYoutube",
+      "description": "Descarregue vídeos do YouTube como MP3, MP4 e WAV com retoma, recorte de clipes, instantâneos, cópia de URL curto e gestor inteligente de falhas - rápido e acessível para utilizadores de NVDA.\nPorquê perder tempo a abrir uma página de vídeo quando pode obtê-lo instantaneamente? A nossa última atualização apresenta a funcionalidade revolucionária Focus and Fetch. Basta focar o cursor em qualquer link de vídeo e iniciar a descarga imediatamente - sem mais esperas que as páginas carreguem.\nO que há de novo:\nAlternar modo de descarga imediata\nGestor de lista de descargas\nCanal favorito\nPesquisar no Youtube\nTeclas de atalho:\n- NVDA+Y\nUm toque: Descarregar MP3\nDois toques: Descarregar MP4\nTrês toques: Descarregar WAV\n- CTRL+Shift+Y\nUm toque: Abrir menu de contexto\nDois toques: Abrir pasta de destino\nTrês toques: Pesquisar vídeo\nNVDA+CTRL+Y: Alternar modo de descarga imediata\nNVDA+Shift+Y: Alternar modo de lista de reprodução\n- ALT+Windows+Y: Ciclar qualidade de MP3"
+    },
+    {
+      "language": "ro",
+      "displayName": "AbsoluteYoutube",
+      "description": "Descărcați videoclipuri de pe YouTube ca MP3, MP4 și WAV cu reluare, tăiere clipuri, capturi, copiere URL scurt și manager inteligent de descărcări eșuate - rapid și accesibil pentru utilizatorii NVDA.\nDe ce să pierdeți timpul deschizând o pagină video când o puteți obține instantaneu? Ultima noastră actualizare introduce funcția revoluționară Focus and Fetch. Pur și simplu focalizați cursorul pe orice link video și declanșați descărcarea imediat - nu mai așteptați încărcarea paginilor.\nCe este nou:\nComutare mod de descărcare imediată\nManager listă de descărcări\nCanal favorit\nCăutare Youtube\nTaste rapide:\n- NVDA+Y\nO singură apăsare: Descărcare MP3\nApăsare dublă: Descărcare MP4\nApăsare triplă: Descărcare WAV\n- CTRL+Shift+Y\nO singură apăsare: Deschidere meniu contextual\nApăsare dublă: Deschidere folder destinație\nApăsare triplă: Căutare video\nNVDA+CTRL+Y: Comutare mod de descărcare imediată\nNVDA+Shift+Y: Comutare mod listă de redare\n- ALT+Windows+Y: Ciclu calitate MP3"
+    },
+    {
+      "language": "ru",
+      "displayName": "AbsoluteYoutube",
+      "description": "Скачивайте видео с YouTube в форматах MP3, MP4 и WAV с докачкой, обрезкой клипов, снимками, копированием коротких URL и умным менеджером неудачных загрузок — быстро и доступно для пользователей NVDA.\nЗачем тратить время на открытие страницы видео, если его можно получить мгновенно? В нашем последнем обновлении представлена революционная функция Focus and Fetch. Просто наведите курсор на любую ссылку на видео и сразу запустите загрузку — больше не нужно ждать загрузки страниц.\nЧто нового:\nПереключение режима немедленной загрузки\nМенеджер списка загрузок\nИзбранный канал\nПоиск в YouTube\nГорячие клавиши:\n- NVDA+Y\nОдиночное нажатие: Скачать MP3\nДвойное нажатие: Скачать MP4\nТройное нажатие: Скачать WAV\n- CTRL+Shift+Y\nОдиночное нажатие: Открыть контекстное меню\nДвойное нажатие: Открыть папку назначения\nТройное нажатие: Поиск видео\nNVDA+CTRL+Y: Переключение режима немедленной загрузки\nNVDA+Shift+Y: Переключение режима плейлиста\n- ALT+Windows+Y: Циклическое переключение качества MP3"
+    },
+    {
+      "language": "si",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube වීඩියෝ MP3, MP4 සහ WAV ලෙස බාගත කරන්න. නැවත ආරම්භ කිරීම, ක්ලිප් කැපීම, ස්නැප්ෂොට්, කෙටි URL පිටපත් කිරීම සහ ස්මාර්ට් අසාර්ථක බාගත කිරීම් කළමනාකරු සමඟ - NVDA පරිශීලකයින් සඳහා වේගවත් සහ ප්‍රවේශ විය හැකිය.\nඔබට එය ක්ෂණිකව ලබා ගත හැකි විට වීඩියෝ පිටුවක් විවෘත කිරීමට කාලය නාස්ති කරන්නේ ඇයි? අපගේ නවතම යාවත්කාලීනය විප්ලවීය Focus and Fetch විශේෂාංගය හඳුන්වා දෙයි. ඕනෑම වීඩියෝ සබැඳියක් මත ඔබේ කර්සරය යොමු කර වහාම ඔබේ බාගත කිරීම ආරම්භ කරන්න - පිටු පූරණය වන තෙක් තවදුරටත් බලා සිටීමට අවශ්‍ය නැත.\nඅලුත් මොනවාද:\nක්ෂණික බාගත කිරීමේ මාදිලිය මාරු කරන්න\nබාගත ලැයිස්තු කළමනාකරු\nප්‍රියතම නාලිකාව\nYouTube සොයන්න\nහොට් කීස්:\n- NVDA+Y\nඑක් වරක් තට්ටු කිරීම: MP3 බාගන්න\nදෙවරක් තට්ටු කිරීම: MP4 බාගන්න\nතෙවරක් තට්ටු කිරීම: WAV බාගන්න\n- CTRL+Shift+Y\nඑක් වරක් තට්ටු කිරීම: සන්දර්භය මෙනුව විවෘත කරන්න\nදෙවරක් තට්ටු කිරීම: ගමනාන්ත ෆෝල්ඩරය විවෘත කරන්න\nතෙවරක් තට්ටු කිරීම: වීඩියෝ සොයන්න\nNVDA+CTRL+Y: ක්ෂණික බාගත කිරීමේ මාදිලිය මාරු කරන්න\nNVDA+Shift+Y: ධාවන ලැයිස්තු මාදිලිය මාරු කරන්න\n- ALT+Windows+Y: MP3 ගුණාත්මකභාවය වෙනස් කරන්න"
+    },
+    {
+      "language": "sk",
+      "displayName": "AbsoluteYoutube",
+      "description": "Sťahujte videá z YouTube vo formátoch MP3, MP4 a WAV s nadviazaním, strihaním klipov, snímkami, kopírovaním krátkych URL adries a inteligentným správcom zlyhaných sťahovaní - rýchle a prístupné pre používateľov NVDA.\nPrečo strácať čas otváraním stránky s videom, keď ho môžete získať okamžite? Naša najnovšia aktualizácia predstavuje revolučnú funkciu Focus and Fetch. Stačí zamerať kurzor na akýkoľvek odkaz na video a okamžite spustiť sťahovanie - už žiadne čakanie na načítanie stránok.\nČo je nové:\nPrepnúť režim okamžitého sťahovania\nSprávca zoznamu sťahovaní\nObľúbený kanál\nHľadať na Youtube\nHorúce klávesy:\n- NVDA+Y\nJedno klepnutie: Stiahnuť MP3\nDvojité klepnutie: Stiahnuť MP4\nTrojité klepnutie: Stiahnuť WAV\n- CTRL+Shift+Y\nJedno klepnutie: Otvoriť kontextovú ponuku\nDvojité klepnutie: Otvoriť cieľový priečinok\nTrojité klepnutie: Hľadať video\nNVDA+CTRL+Y: Prepnúť režim okamžitého sťahovania\nNVDA+Shift+Y: Prepnúť režim zoznamu skladieb\n- ALT+Windows+Y: Prepínať kvalitu MP3"
+    },
+    {
+      "language": "ta",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube வீடியோக்களை MP3, MP4 மற்றும் WAV வடிவில் தரவிறக்கம் செய்யுங்கள். மீண்டும் தொடங்குதல், கிளிப்களை வெட்டுதல், ஸ்னாப்ஷாட்கள், குறுகிய URL நகல் மற்றும் ஸ்மார்ட் தோல்வியுற்ற தரவிறக்க மேலாளர் - NVDA பயனர்களுக்கு வேகமானது மற்றும் அணுகக்கூடியது.\nவீடியோ பக்கத்தைத் திறந்து நேரத்தை ஏன் வீணாக்க வேண்டும்? எங்களின் சமீபத்திய அப்டேட் புரட்சிகரமான Focus and Fetch அம்சத்தை அறிமுகப்படுத்துகிறது. எந்தவொரு வீடியோ இணைப்பிலும் உங்கள் கர்சரை வைத்து உடனடியாக தரவிறக்கத்தைத் தொடங்குங்கள் - பக்கங்கள் ஏற்றப்படும் வரை காத்திருக்க வேண்டியதில்லை.\nபுதியவை:\nஉடனடி தரவிறக்க பயன்முறையை மாற்றவும்\nதரவிறக்கப் பட்டியல் மேலாளர்\nபிடித்த சேனல்\nYouTube தேடல்\nஹாட் கீஸ்:\n- NVDA+Y\nஒற்றை தட்டல்: MP3 தரவிறக்கம்\nஇரட்டை தட்டல்: MP4 தரவிறக்கம்\nமும்முறை தட்டல்: WAV தரவிறக்கம்\n- CTRL+Shift+Y\nஒற்றை தட்டல்: சூழல் மெனுவைத் திற\nஇரட்டை தட்டல்: இலக்கு கோப்புறையைத் திற\nமும்முறை தட்டல்: வீடியோவைத் தேடு\nNVDA+CTRL+Y: உடனடி தரவிறக்க பயன்முறையை மாற்றவும்\nNVDA+Shift+Y: பிளேலிஸ்ட் பயன்முறையை மாற்றவும்\n- ALT+Windows+Y: MP3 தரத்தை மாற்றவும்"
+    },
+    {
+      "language": "te",
+      "displayName": "AbsoluteYoutube",
+      "description": "యూట్యూబ్ వీడియోలను MP3, MP4 మరియు WAVలుగా డౌన్‌లోడ్ చేసుకోండి. రెజ్యూమ్, ట్రిమ్ క్లిప్స్, స్నాప్‌షాట్స్, షార్ట్ URL కాపీ మరియు స్మార్ట్ ఫెయిల్డ్ డౌన్‌లోడ్ మేనేజర్‌తో - NVDA వినియోగదారుల కోసం వేగంగా మరియు సులభంగా అందుబాటులో ఉంటుంది.\nవీడియో పేజీని తెరవడానికి సమయాన్ని ఎందుకు వృధా చేయాలి? మా తాజా అప్‌డేట్ విప్లవాత్మక 'Focus and Fetch' ఫీచర్‌ను పరిచయం చేస్తోంది. ఏదైనా వీడియో లింక్‌పై మీ కర్సర్‌ను ఉంచి వెంటనే డౌన్‌లోడ్‌ను ప్రారంభించండి - పేజీలు లోడ్ అయ్యే వరకు వేచి ఉండాల్సిన అవసరం లేదు.\nకొత్తవి:\nతక్షణ డౌన్‌లోడ్ మోడ్‌ను మార్చండి\nడౌన్‌లోడ్ జాబితా నిర్వాహకుడు\nఇష్టమైన ఛానెల్\nయూట్యూబ్‌లో శోధించండి\nహాట్ కీలు:\n- NVDA+Y\nఒక్కసారి నొక్కండి: MP3 డౌన్‌లోడ్\nరెండుసార్లు నొక్కండి: MP4 డౌన్‌లోడ్\nమూడుసార్లు నొక్కండి: WAV డౌన్‌లోడ్\n- CTRL+Shift+Y\nఒక్కసారి నొక్కండి: కాంటెక్స్ట్ మెనూ తెరవండి\nరెండుసార్లు నొక్కండి: గమ్యస్థాన ఫోల్డర్‌ను తెరవండి\nమూడుసార్లు నొక్కండి: వీడియో కోసం శోధించండి\nNVDA+CTRL+Y: తక్షణ డౌన్‌లోడ్ మోడ్‌ను మార్చండి\nNVDA+Shift+Y: ప్లేలిస్ట్ మోడ్‌ను మార్చండి\n- ALT+Windows+Y: MP3 క్వాలిటీని మార్చండి"
+    },
+    {
+      "language": "th",
+      "displayName": "AbsoluteYoutube",
+      "description": "ดาวน์โหลดวิดีโอ YouTube เป็น MP3, MP4 และ WAV พร้อมฟีเจอร์ดาวน์โหลดต่อ, ตัดคลิป, จับภาพสแนปชอต, คัดลอก URL สั้น และระบบจัดการการดาวน์โหลดที่ล้มเหลวแบบอัจฉริยะ - รวดเร็วและเข้าถึงได้ง่ายสำหรับผู้ใช้ NVDA\nทำไมต้องเสียเวลาเปิดหน้าวิดีโอในเมื่อคุณสามารถโหลดได้ทันที? การอัปเดตล่าสุดของเราขอเสนอคุณสมบัติ Focus and Fetch ที่ปฏิวัติวงการ เพียงวางโฟกัสเคอร์เซอร์ของคุณบนลิงก์วิดีโอใดๆ และเริ่มการดาวน์โหลดทันที - ไม่ต้องรอให้โหลดหน้าเว็บอีกต่อไป\nมีอะไรใหม่:\nเปิด/ปิด โหมดดาวน์โหลดทันที\nระบบจัดการรายการดาวน์โหลด\nช่องโปรด\nค้นหา Youtube\nปุ่มลัด:\n- NVDA+Y\nกดหนึ่งครั้ง: ดาวน์โหลด MP3\nกดสองครั้ง: ดาวน์โหลด MP4\nกดสามครั้ง: ดาวน์โหลด WAV\n- CTRL+Shift+Y\nกดหนึ่งครั้ง: เปิดเมนูบริบท\nกดสองครั้ง: เปิดโฟลเดอร์ปลายทาง\nกดสามครั้ง: ค้นหาวิดีโอ\nNVDA+CTRL+Y: เปิด/ปิด โหมดดาวน์โหลดทันที\nNVDA+Shift+Y: เปิด/ปิด โหมดเพลย์ลิสต์\n- ALT+Windows+Y: สลับคุณภาพ MP3"
+    },
+    {
+      "language": "tk",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube wideolaryny MP3, MP4 we WAV formatynda göçürip alyň. Dowam etdirmek, klipleri kesmek, surat almak, gysga URL nusgalamak we akylly şowsuz göçürme dolandyryjysy - NVDA ulanyjylary üçin çalt we elýeterli.\nWideony derrew alyp biljek wagtyňyz wideonyň sahypasyny açyp wagt ýitirmek nämä gerek? Iň soňky täzelemämiz rewolýusiýa Focus and Fetch aýratynlygyny hödürleýär. Diňe kursoryňyzy islendik wideonyň çykgydyna durnuklaşdyryň we göçürip almagy derrew başladyň - sahypalaryň ýüklenmegine garaşmak gerek däl.\nTäzelikler:\nDerrew göçürip almak rejimini aç/ýap\nGöçürilenler sanawynyň dolandyryjysy\nHalanýan kanal\nYouTube-dan gözleg\nGyzgyn düwmeler:\n- NVDA+Y\nBir gezek basmak: MP3 göçürip al\nIki gezek basmak: MP4 göçürip al\nÜç gezek basmak: WAV göçürip al\n- CTRL+Shift+Y\nBir gezek basmak: Kontekst menýusyny aç\nIki gezek basmak: Niýetlenen bukja aç\nÜç gezek basmak: Wideony gözle\nNVDA+CTRL+Y: Derrew göçürip almak rejimini aç/ýap\nNVDA+Shift+Y: Pリーリスト rejimini aç/ýap\n- ALT+Windows+Y: MP3 hilini üýtgetmek"
+    },
+    {
+      "language": "tl",
+      "displayName": "AbsoluteYoutube",
+      "description": "I-download ang mga video sa YouTube bilang MP3, MP4 at WAV na may resume, trim clips, snapshots, short URL copy, at smart failed download manager - mabilis at accessible para sa mga gumagamit ng NVDA.\nBakit mag-aaksaya ng oras sa pagbubukas ng pahina ng video kung maaari mo itong makuha agad? Ipinapakilala ng aming pinakabagong update ang rebolusyonaryong feature na Focus and Fetch. I-focus lang ang iyong cursor sa anumang link ng video at simulan agad ang iyong pag-download - wala nang paghihintay na mag-load ang mga pahina.\nAno ang Bago:\nI-toggle ang immediate download mode\nDownload list manager\nPaboritong channel\nMaghanap sa Youtube\nMga Hot Key:\n- NVDA+Y\nIsang Tap: I-download ang MP3\nDalawang Tap: I-download ang MP4\nTatlong Tap: I-download ang WAV\n- CTRL+Shift+Y\nIsang Tap: Buksan ang Context Menu\nDalawang Tap: Buksan ang Destination Folder\nTatlong Tap: Maghanap ng Video\nNVDA+CTRL+Y: I-toggle ang immediate download mode\nNVDA+Shift+Y: I-toggle ang playlist mode\n- ALT+Windows+Y: I-cycle ang kalidad ng MP3"
+    },
+    {
+      "language": "tr",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube videolarını devam ettirme, klip kırpma, anlık görüntü, kısa URL kopyalama và akıllı indirme yöneticisi özellikleriyle MP3, MP4 ve WAV olarak indirin - NVDA kullanıcıları için hızlı ve erişilebilir.\nVideoyu anında alabilecekken neden video sayfasını açarak vakit kaybedesiniz? En son güncellememiz devrim niteliğindeki Focus and Fetch özelliğini sunuyor. İmlecinizi herhangi bir video bağlantısına odaklayın ve indirmenizi hemen başlatın - artık sayfaların yüklenmesini beklemenize gerek yok.\nYenilikler:\nAnında indirme modunu aç/kapat\nİndirme listesi yöneticisi\nFavori kanal\nYoutube'da ara\nKısayol Tuşları:\n- NVDA+Y\nTek Tıklama: MP3 İndir\nÇift Tıklama: MP4 İndir\nÜç Tıklama: WAV İndir\n- CTRL+Shift+Y\nTek Tıklama: Bağlam Menüsünü Aç\nÇift Tıklama: Hedef Klasörü Aç\nÜç Tıklama: Video Ara\nNVDA+CTRL+Y: Anında indirme modunu aç/kapat\nNVDA+Shift+Y: Oynatma listesi modunu aç/kapat\n- ALT+Windows+Y: MP3 kalitesini değiştir"
+    },
+    {
+      "language": "uk",
+      "displayName": "AbsoluteYoutube",
+      "description": "Завантажуйте відео з YouTube у форматах MP3, MP4 та WAV з відновленням, обрізкою кліпів, знімками екрана, копіюванням коротких URL та розумним менеджером невдалих завантажень — швидко та доступно для користувачів NVDA.\nНавіщо витрачати час на відкриття сторінки відео, якщо його можна отримати миттєво? Наше останнє оновлення представляє революційну функцію Focus and Fetch. Просто наведіть курсор на будь-яке посилання на відео та миттєво запустіть завантаження — більше не потрібно чекати завантаження сторінок.\nЩо нового:\nПеремикання режиму негайного завантаження\nМенеджер списку завантажень\nУлюблений канал\nПошук у YouTube\nГарячі клавіші:\n- NVDA+Y\nОдне натискання: Завантажити MP3\nПодвійне натискання: Завантажити MP4\nПотрійне натискання: Завантажити WAV\n- CTRL+Shift+Y\nОдне натискання: Відкрити контекстне меню\nПодвійне натискання: Відкрити папку призначення\nПотрійне натискання: Пошук відео\nNVDA+CTRL+Y: Перемикання режиму негайного завантаження\nNVDA+Shift+Y: Перемикання режиму списку відтворення\n- ALT+Windows+Y: Циклічна зміна якості MP3"
+    },
+    {
+      "language": "ur",
+      "displayName": "AbsoluteYoutube",
+      "description": "یوٹیوب ویڈیوز کو MP3، MP4 اور WAV کے طور پر ڈاؤن لوڈ کریں بشمول ریزیوم، ٹرم کلپس، اسنیپ شاٹس، مختصر URL کاپی، اور سمارٹ فیلڈ ڈاؤن لوڈ مینیجر - NVDA صارفین کے لیے تیز اور قابل رسائی۔\nجب آپ اسے فوری طور پر حاصل کر سکتے ہیں تو ویڈیو پیج کھولنے میں وقت کیوں ضائع کریں؟ ہماری تازہ ترین اپ ڈیٹ انقلابی Focus and Fetch فیچر متعارف کرواتی ہے۔ بس اپنے کرسر کو کسی بھی ویڈیو لنک پر فوکس کریں اور اپنا ڈاؤن لوڈ فوری طور پر شروع کریں - اب پیجز لوڈ ہونے کا انتظار کرنے کی ضرورت نہیں ہے۔\nنیا کیا ہے:\nفوری ڈاؤن لوڈ موڈ کو ٹوگل کریں\nڈاؤن لوڈ لسٹ مینیجر\nپسندیدہ چینل\nیوٹیوب سرچ\nہاٹ کیز:\n- NVDA+Y\nایک بار ٹیپ کریں: MP3 ڈاؤن لوڈ کریں\nدو بار ٹیپ کریں: MP4 ڈاؤن لوڈ کریں\nتین بار ٹیپ کریں: WAV ڈاؤن لوڈ کریں\n- CTRL+Shift+Y\nایک بار ٹیپ کریں: سیاق و سباق مینو کھولیں\nدو بار ٹیپ کریں: منزل کا فولڈر کھولیں\nتین بار ٹیپ کریں: ویڈیو تلاش کریں\nNVDA+CTRL+Y: فوری ڈاؤن لوڈ موڈ کو ٹوگل کریں\nNVDA+Shift+Y: پلے لسٹ موڈ کو ٹوگل کریں\n- ALT+Windows+Y: MP3 کوالٹی تبدیل کریں"
+    },
+    {
+      "language": "uz",
+      "displayName": "AbsoluteYoutube",
+      "description": "YouTube videolarini MP3, MP4 va WAV formatlarida yuklab oling. Yuklab olishni davom ettirish, kliplarni kesish, skrinshotlar, qisqa URL nusxalash va aqlli yuklab olish menejeri - NVDA foydalanuvchilari uchun tez va qulay.\nVideoni darhol olish mumkin bo'lsa, video sahifasini ochishga vaqt sarflashning nima keragi bor? Bizning so'nggi yangilanishimiz inqilobiy Focus and Fetch funksiyasini taqdim etadi. Shunchaki kursorni istalgan video havolasiga qarating va yuklab olishni darhol boshlang - sahifalar yuklanishini kutishga hojat yo'q.\nYangiliklar:\nDarhol yuklab olish rejimini yoqish/o'chirish\nYuklab olishlar ro'yxati menejeri\nSevimli kanal\nYouTube'dan qidirish\nTezkor tugmalar:\n- NVDA+Y\nBir marta bosish: MP3 yuklab olish\nIkki marta bosish: MP4 yuklab olish\nUch marta bosish: WAV yuklab olish\n- CTRL+Shift+Y\nBir marta bosish: Kontekst menyusini ochish\nIkki marta bosish: Maqsadli papkani ochish\nUch marta bosish: Videoni qidirish\nNVDA+CTRL+Y: Darhol yuklab olish rejimini yoqish/o'chirish\nNVDA+Shift+Y: Pleylist rejimini yoqish/o'chirish\n- ALT+Windows+Y: MP3 sifatini o'zgartirish"
+    },
+    {
+      "language": "vi",
+      "displayName": "AbsoluteYoutube",
+      "description": "Tải xuống video YouTube dưới dạng MP3, MP4 và WAV với tính năng tiếp tục tải, cắt clip, chụp ảnh màn hình, sao chép URL ngắn và trình quản lý tải xuống lỗi thông minh - nhanh chóng & dễ tiếp cận cho người dùng NVDA.\nTại sao phải lãng phí thời gian mở trang video khi bạn có thể tải nó ngay lập tức? Bản cập nhật mới nhất của chúng tôi giới thiệu tính năng Focus and Fetch mang tính cách mạng. Chỉ cần tập trung con trỏ vào bất kỳ liên kết video nào và kích hoạt tải xuống ngay lập tức - không còn phải chờ đợi trang tải xong.\nCó gì mới:\nChuyển đổi chế độ tải xuống ngay lập tức\nTrình quản lý danh sách tải xuống\nKênh yêu thích\nTìm kiếm Youtube\nPhím nóng:\n- NVDA+Y\nNhấn một lần: Tải xuống MP3\nNhấn hai lần: Tải xuống MP4\nNhấn ba lần: Tải xuống WAV\n- CTRL+Shift+Y\nNhấn một lần: Mở Menu ngữ cảnh\nNhấn hai lần: Mở Thư mục đích\nNhấn ba lần: Tìm kiếm Video\nNVDA+CTRL+Y: Chuyển đổi chế độ tải xuống ngay lập tức\nNVDA+Shift+Y: Chuyển đổi chế độ danh sách phát\n- ALT+Windows+Y: Thay đổi chất lượng MP3"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "AbsoluteYoutube",
+      "description": "将 YouTube 视频下载为 MP3、MP4 和 WAV 格式，支持断点续传、剪辑裁剪、快照、短链接复制以及智能失败下载管理 - 为 NVDA 用户提供快速且无障碍的体验。\n既然可以立即获取，为什么还要浪费时间打开视频页面呢？我们的最新更新引入了革命性的 Focus and Fetch 功能。只需将光标聚焦在任何视频链接上并立即触发下载 - 无需再等待页面加载。\n更新内容：\n切换立即下载模式\n下载列表管理器\n收藏频道\n搜索 YouTube\n热键：\n- NVDA+Y\n单击：下载 MP3\n双击：下载 MP4\n三击：下载 WAV\n- CTRL+Shift+Y\n单击：打开上下文菜单\n双击：打开目标文件夹\n三击：搜索视频\nNVDA+CTRL+Y：切换立即下载模式\nNVDA+Shift+Y：切换播放列表模式\n- ALT+Windows+Y：循环切换 MP3 音质"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "AbsoluteYoutube",
+      "description": "將 YouTube 影片下載為 MP3、MP4 和 WAV 格式，支援斷點續傳、剪輯裁剪、快照、短網址複製以及智慧失敗下載管理 - 為 NVDA 使用者提供快速且無障礙的體驗。\n既然可以立即獲取，為什麼還要浪費時間打開影片頁面呢？我們的最新更新引入了革命性的 Focus and Fetch 功能。只需將游標聚焦在任何影片連結上並立即觸發下載 - 無需再等待頁面載入。\n更新內容：\n切換立即下載模式\n下載列表管理器\n收藏頻道\n搜尋 YouTube\n快速鍵：\n- NVDA+Y\n單擊：下載 MP3\n雙擊：下載 MP4\n三擊：下載 WAV\n- CTRL+Shift+Y\n單擊：打開快顯功能表\n雙擊：打開目標資料夾\n三擊：搜尋影片\nNVDA+CTRL+Y：切換立即下載模式\nNVDA+Shift+Y：切換播放清單模式\n- ALT+Windows+Y：循環切換 MP3 音質"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "exe": 3,
+            "html": 6,
+            "ini": 44,
+            "md": 6,
+            "mo": 43,
+            "po": 43,
+            "py": 14,
+            "wav": 2
+          },
+          "file_types": {
+            "HTML": 6,
+            "Portable Executable": 3,
+            "directory": 98,
+            "unknown": 152
+          },
+          "highest_datetime": "2026-06-07 15:24:02",
+          "lowest_datetime": "2026-04-30 14:00:26",
+          "num_children": 259,
+          "type": "ZIP",
+          "uncompressed_size": 89963191
+        },
+        "filecondis": {
+          "dhash": "000000000c0d0000",
+          "raw_md5": "8277627704f6e35c7ef003b20fd9ec78"
+        },
+        "first_submission_date": 1780822179,
+        "last_analysis_date": 1780878792,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260607",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260607",
+            "engine_version": "6.786",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260607",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260607",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260607",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260607",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260607",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260607",
+            "engine_version": "260607-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260607",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260607",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260606",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260607",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260607",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260608",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260607",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260521",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260607",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260607",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260607",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260608",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260603",
+            "engine_version": "4.0.264",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260607",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260607",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260607",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260608",
+            "engine_version": "GD:27.44829AVA:64.31378",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "timeout",
+            "engine_name": "Google",
+            "engine_update": "20260608",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260607",
+            "engine_version": "1.0.247.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260607",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260607",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260607",
+            "engine_version": "14.55.59743",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260607",
+            "engine_version": "14.55.59743",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260608",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260607",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260607",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260607",
+            "engine_version": "3.1.0.238",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260605",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260608",
+            "engine_version": "1.2.0.14833",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260607",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260607",
+            "engine_version": "1.1.26040.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260607",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260608",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260607",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260607",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260605",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260605",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260607",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260607",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260607",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260608",
+            "engine_version": "2026-06-08.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260608",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260607",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260607",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260607",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "failure",
+            "engine_name": "Trustlook",
+            "engine_update": "20260608",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260605",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260607",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260607",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260607",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260605",
+            "engine_version": "9.5.1222",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260607",
+            "engine_version": "38709",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260607",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "malicious",
+            "engine_name": "Zillya",
+            "engine_update": "20260605",
+            "engine_version": "2.0.0.5616",
+            "method": "blacklist",
+            "result": "Trojan.AgentAGen.Win64.18885"
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260607",
+            "engine_version": "6.25-116107381",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260607",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260607",
+            "engine_version": "73e0c6e:73e0c6e:d28a123:d28a123",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260608",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 1,
+          "suspicious": 0,
+          "timeout": 2,
+          "type-unsupported": 7,
+          "undetected": 64
+        },
+        "last_modification_date": 1780886065,
+        "last_submission_date": 1780822179,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "md5": "b8df87c9b46fd5ba664bfad9b6faa6cc",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "popular_threat_classification": {
+          "popular_threat_category": [
+            {
+              "count": 1,
+              "value": "trojan"
+            }
+          ],
+          "popular_threat_name": [
+            {
+              "count": 1,
+              "value": "agentagen"
+            }
+          ],
+          "suggested_threat_label": "trojan.agentagen"
+        },
+        "reputation": 0,
+        "sandbox_verdicts": {
+          "Zenbox": {
+            "category": "harmless",
+            "confidence": 94,
+            "malware_classification": [
+              "CLEAN"
+            ],
+            "sandbox_name": "Zenbox"
+          }
+        },
+        "sha1": "24817c8e9594e15674844d6e2583dcdb8f9ba683",
+        "sha256": "d61141564419a553a2547428fb6c4cb77216d9537ebf612ce8fe30b121471050",
+        "size": 42040926,
+        "ssdeep": "786432:Fv63KZ0cEg+xY76BXIeYrlNY8NhdJwit/iEmpIorphyX3kaBkngk/zQzjKIuqk:Fyx++w6mxNJNCW/iEm3PyX3kXgmEjKIC",
+        "tags": [
+          "long-sleeps",
+          "detect-debug-environment",
+          "zip",
+          "contains-pe"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1359733C19E14F41AC45BFFB335668A0DD30725AEA04A5ECB5A7D63C43FA96B86C97300",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "2d56af1bfdd68af4e8ee4dc6aec93e1b"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7614"
 }

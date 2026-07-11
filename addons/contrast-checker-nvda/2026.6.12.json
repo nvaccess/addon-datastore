@@ -1,74 +1,74 @@
 {
-	"addonId": "contrast-checker-nvda",
-	"displayName": "Color Contrast Checker for NVDA",
-	"URL": "https://github.com/cartertemm/contrast-checker-nvda/releases/download/v2026.06.12/contrast-checker-nvda-2026.06.12.nvda-addon",
-	"description": "Add-on that presents the color contrast of the system carrot, navigator object, and all elements on the page.\nPrimarily useful for helping blind digital accessibility testers determine whether visible text and controls meet threshholds set out by the Web Content Accessibility Guidelines (WCAG).",
-	"sha256": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
-	"addonVersionName": "2026.06.12",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 12
-	},
-	"minNVDAVersion": {
-		"major": 0,
-		"minor": 0,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Carter Temm <cartertemm@gmail.com>",
-	"sourceURL": "https://github.com/cartertemm/contrast-checker-nvda/",
-	"license": "GPL v2",
-	"changelog": "New in version 2026.06.12:\nMade it possible to press NVDA+shift+C twice quickly to present the contrast of the focus indicator in browse mode.\nSwitch to calendar versioning, i.e. yyyy.mm.dd to maintain consistency with my other add-ons.\nNew in version 0.4:\nFixed a rounding error where contrast values were being counted as failures when they passed exactly, i.e. #4f5b61 on #ffffff passes exactly at 7:1\nNew in version 0.3:\nInitial public release, which is to say that I have fixed all of the bugs that I currently know about.\nRendered the [test page on my site](https://ctemm.me/files/test_contrast.html) so it can be accessed without the need to clone the repo.\nNew in version 0.2:\nIt is now possible to inspect the contrast of focus indicators using NVDA+shift+c. This works by capturing a screen region around the focused element using a `BitBlt` call, then sampling pixels along the element's perimeter at 8px out for the background reference and 1-4px out for the highest-contrast transition.\nAdded a document with test scenarios (tests/contrast.html) that can be used to measure what this add-on supports and where it currently falls short. More info on this to come.\nNew in version 0.1:\nInitial version. Please consult this add-ons documentation to learn how it works.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781303586000,
-	"translations": [],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "7878787849000000",
-					"raw_md5": "7e67bba7611adb4846899f8e73bc5e0e"
-				},
-				"first_submission_date": 1781303806,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1781303807,
-				"last_submission_date": 1781303806,
-				"md5": "b190218fc2842f08735380f7df77c7c3",
-				"names": [],
-				"reputation": 0,
-				"sha1": "f33ea54ec755fe32a8ec5f54defdd118e4bdc80c",
-				"sha256": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
-				"size": 9440,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9840"
+  "addonId": "contrast-checker-nvda",
+  "displayName": "Color Contrast Checker for NVDA",
+  "URL": "https://github.com/cartertemm/contrast-checker-nvda/releases/download/v2026.06.12/contrast-checker-nvda-2026.06.12.nvda-addon",
+  "description": "Add-on that presents the color contrast of the system carrot, navigator object, and all elements on the page.\nPrimarily useful for helping blind digital accessibility testers determine whether visible text and controls meet threshholds set out by the Web Content Accessibility Guidelines (WCAG).",
+  "sha256": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
+  "addonVersionName": "2026.06.12",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 12
+  },
+  "minNVDAVersion": {
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Carter Temm <cartertemm@gmail.com>",
+  "sourceURL": "https://github.com/cartertemm/contrast-checker-nvda/",
+  "license": "GPL v2",
+  "changelog": "New in version 2026.06.12:\nMade it possible to press NVDA+shift+C twice quickly to present the contrast of the focus indicator in browse mode.\nSwitch to calendar versioning, i.e. yyyy.mm.dd to maintain consistency with my other add-ons.\nNew in version 0.4:\nFixed a rounding error where contrast values were being counted as failures when they passed exactly, i.e. #4f5b61 on #ffffff passes exactly at 7:1\nNew in version 0.3:\nInitial public release, which is to say that I have fixed all of the bugs that I currently know about.\nRendered the [test page on my site](https://ctemm.me/files/test_contrast.html) so it can be accessed without the need to clone the repo.\nNew in version 0.2:\nIt is now possible to inspect the contrast of focus indicators using NVDA+shift+c. This works by capturing a screen region around the focused element using a `BitBlt` call, then sampling pixels along the element's perimeter at 8px out for the background reference and 1-4px out for the highest-contrast transition.\nAdded a document with test scenarios (tests/contrast.html) that can be used to measure what this add-on supports and where it currently falls short. More info on this to come.\nNew in version 0.1:\nInitial version. Please consult this add-ons documentation to learn how it works.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781303586000,
+  "translations": [],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
+        "_type": "file",
+        "filecondis": {
+          "dhash": "7878787849000000",
+          "raw_md5": "7e67bba7611adb4846899f8e73bc5e0e"
+        },
+        "first_submission_date": 1781303806,
+        "last_analysis_results": {},
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 0,
+          "undetected": 0
+        },
+        "last_modification_date": 1781303807,
+        "last_submission_date": 1781303806,
+        "md5": "b190218fc2842f08735380f7df77c7c3",
+        "names": [],
+        "reputation": 0,
+        "sha1": "f33ea54ec755fe32a8ec5f54defdd118e4bdc80c",
+        "sha256": "16868f221cc3433a2864fc948649429e4d778e2db87e395b66602b18a5ac5f67",
+        "size": 9440,
+        "tags": [],
+        "times_submitted": 1,
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "type_description": "unknown",
+        "type_tags": [],
+        "unique_sources": 1
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9840"
 }

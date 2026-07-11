@@ -1,948 +1,948 @@
 {
-	"addonId": "VisionAssistant",
-	"displayName": "Vision Assistant Pro",
-	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v5.5/VisionAssistant-5.5.nvda-addon",
-	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
-	"sha256": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
-	"addonVersionName": "5.5",
-	"addonVersionNumber": {
-		"major": 5,
-		"minor": 5,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2025,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Mahmood Hozhabri",
-	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-	"license": "GPL v2",
-	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-	"changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1778090408000,
-	"translations": [
-		{
-			"language": "de",
-			"displayName": "KI Assistent Pro",
-			"description": "Ein fortschrittlicher KI-Assistent unter Verwendung von Gemini.\\n\nMaster-Tastenkombination: NVDA+Umschalt+V, dann:\\n\n- Intelligenter Übersetzer(T) \\n\n- Übersetzen der Zwischenablage (Umschalt+T)\\n\n- Textüberarbeitung (R)\\n\n- Objekt beschreiben (V) / Vollbild (O)\\n\n- Online-Videoanalyse (Umschalt+V)\\n\n- Dokumentenleser (D)\\n\n- Datei-OCR (F)\\n\n- CAPTCHA-Lösen (C)\\n\n- Audiotranskription (A)\\n\n- Intelligentes Diktieren (S)\\n\n- Status ankündigen (L)\\n\n- Auf Update prüfen (U)\\n\n(Übersetzt vom BFW Würzburg)\n",
-			"changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
-		},
-		{
-			"language": "fa",
-			"displayName": "دستیارِ حرفه‌ایِ بینایی",
-			"description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nلایه‌ی فرمان‌ها: NVDA+Shift+V را بفشارید، سپس:\n- مترجمِ هوشمند (T)، ترجمه از کلیپ‌برد (Shift+T)؛\n- پالایش‌کننده‌ی متن (R)؛\n- توصیفِ پیمایشگر (V)، توصیف تمام صفحه (o)؛\n- تحلیلِ آنلاینِ ویدئو (Shift+V)؛\n- سندخوان (D)؛\n- OCRِ فایل (F)؛\n- حل‌کننده‌ی کپچا (C)؛\n- رونویسیِ فایلِ صوتی (A)؛\n- تایپِ صوتیِ هوشمند (S)؛\n- اعلامِ وضعیت (L)؛\n- بررسیِ بروزرسانی (U)\n- فراخوانیِ آخرین نتیجه (space)\n- راهنمای فرمان‌ها (H)\n",
-			"changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
-		},
-		{
-			"language": "fr",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Analyseur de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (L)\n- Vérification des mises à jour (U)\n",
-			"changelog": "## Modifications de la version 5.5 (la mise à jour de l'automatisation)\n\n*   **Opérateur IA (Contrôle Autonome - Shift+A) :** C'est le joyau de la couronne de la v5.5. Vision Assistant Pro est passé du statut d'assistant passif à celui de votre **opérateur IA** personnel. Il ne se contente pas de décrire l'écran : il le commande.\n    *   *Comment ça marche :* Vous pouvez maintenant donner des instructions verbales pour faire fonctionner votre PC. Par exemple, dans une application totalement inaccessible où votre lecteur d'écran reste silencieux, vous pouvez appuyer sur **Maj+A** et taper : *\"Clique sur le bouton Paramètres\"* ou *\"Cherche le champ de recherche, tape « Dernières nouvelles » et appuie sur Entrée.\"* L'IA identifie visuellement les éléments, déplace la souris et exécute la tâche à votre place.\n    *   *Remarque sur les performances :* Cette fonctionnalité est optimisée pour **Gemini 3.0 Flash (Aperçu)**, offrant des réponses incroyablement rapides et intelligentes capables de gérer même les mises en page d'interface utilisateur les plus complexes.\n    *   **⚠️ Avertissement concernant l'utilisation de l'API :** Parce que l'opérateur IA doit « voir » exactement ce qui se passe pour être précis, il envoie une capture d'écran haute résolution à chaque étape. Veuillez noter qu'une utilisation fréquente consommera votre quota API beaucoup plus rapidement que les tâches textuelles standard.\n*   **Explorateur d'interface visuel (E) :** Fatigué de naviguer à travers des « boutons sans étiquette » ? Appuyez sur **E** pour activer l'explorateur d'interface utilisateur. L'IA analysera toute la fenêtre et générera une liste de tous les éléments cliquables qu'elle voit, y compris les icônes, les graphiques et les menus. Choisissez simplement un élément dans la liste et l'opérateur IA cliquera dessus pour vous. C’est comme avoir une « couche accessible » au-dessus de n’importe quelle application.\n*   **Action contextuelle intelligente sur les fichier (F) :** La touche \"F\" a été entièrement revue. Elle ne suppose plus que vous souhaitez seulement l'OCR. Lorsque vous sélectionnez une image, elle vous demande désormais intelligemment votre intention : vous pouvez choisir une **Description visuelle détaillée** pour comprendre la scène ou une **Extraction de texte structuré (OCR)** pour la lecture. Le menu s'adapte dynamiquement en fonction du type de fichier et de votre moteur d'IA actif.\n*   **Optimisation de base :** Nous avons effectué un nettoyage en profondeur de la logique interne du module complémentaire, en supprimant les fonctions héritées inutilisées et le code redondant. Il en résulte une expérience plus simple, plus rapide et plus fiable pour tous les utilisateurs."
-		},
-		{
-			"language": "id",
-			"displayName": "Vision Assistant Pro",
-			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Terjemahkan yang ada di Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Secara Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR Berkas (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (L)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n",
-			"changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
-		},
-		{
-			"language": "it",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (L)\n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),\n",
-			"changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
-		},
-		{
-			"language": "pl",
-			"displayName": "Vision Assistant Pro",
-			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Inteligentny tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Inteligentne dyktowanie (S)\n- Raportuj stan (L)\n- Sprawdź aktualizację (U)\n- pokaż ostatnią odpowiedź AI w trybie czatu. (Spacja)\n- Pomoc poleceń (H)\n",
-			"changelog": "## Zmiany w 5.5 (Aktualizacja automatyzacji)\n\n*   **Operator AI (Sterowanie autonomiczne - Shift+A):** To perła w koronie wersji 5.5. Vision Assistant Pro przeszedł z biernego asystenta w Twojego osobistego **Operatora AI**. Nie tylko opisuje ekran, lecz przejmuje sterowanie.\n    *   *Jak to działa:* Możesz teraz wydawać polecenia głosowe dla obsługi swojego komputera. Na przykład w całkowicie niedostępnej aplikacji, gdzie czytnik ekranu milczy, możesz nacisnąć **Shift+A** i wpisać: *\"Kliknij przycisk Ustawienia\"* lub *\"Znajdź pole wyszukiwania, wpisz 'Najnowsze wiadomości' i naciśnij enter.\"* AI wizualnie identyfikuje elementy, przesuwa kursor i wykonuje zadanie za Ciebie.\n    *   *Uwaga o wydajności:* Funkcja jest zoptymalizowana dla **Gemini 3.0 Flash (Preview)**, dostarczając niezwykle szybkich i inteligentnych odpowiedzi, które poradzą sobie nawet z najbardziej złożonymi układami interfejsu.\n    *   **⚠️ Ostrzeżenie o zużyciu API:** Ponieważ Operator AI musi \"widzieć\" dokładnie to, co się dzieje, aby działać precyzyjnie, wysyła zrzut ekranu w wysokiej rozdzielczości na każdym kroku. Częste używanie znacznie szybciej zużyje Twój limit API niż standardowe zadania tekstowe.\n*   **Wizualny Eksplorator interfejsu (E):** Zmęczony nawigacją po \"nieoznaczonych przyciskach\"? Naciśnij **E**, aby uruchomić Eksplorator interfejsu. AI przeskanuje całe okno i wygeneruje listę każdego klikalnego elementu, jaki widzi: ikon, grafik i menu. Wybierz element z listy, a Operator AI kliknie go za Ciebie. To jak \"warstwa dostępności\" nałożona na dowolną aplikację.\n*   **Inteligentna akcja na pliku zależna od kontekstu (F):** Klawisz \"F\" został gruntownie przebudowany. Nie zakłada już, że chcesz tylko OCR. Gdy wybierzesz pojedynczy obraz, inteligentnie zapyta o Twoją intencję: możesz wybrać **Szczegółowy opis wizualny**, aby zrozumieć scenę, lub **Strukturalne wyodrębnienie tekstu (OCR)** do czytania. Menu dostosowuje się dynamicznie do typu pliku i aktywnego silnika AI.\n*   **Optymalizacja rdzenia:** Wykonaliśmy głębokie czyszczenie wewnętrznej logiki dodatku, usuwając nieużywane funkcje legacy i zbędny kod. Daje to lżejsze, szybsze i bardziej niezawodne działanie dla wszystkich użytkowników."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Assistente de Visão Pro",
-			"description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documento (D)\n- OCR de Arquivo (F)\n- Resolvedor de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (L)\n- Verificar Atualização (U)\n- Recuperar Último Resultado (Espaço),\n- Ajuda de Comandos (H),\n",
-			"changelog": "## Alterações para 5.5 (A Atualização de Automação)\n\n*   **Operador de IA (Controle Autônomo - Shift+A):** Esta é a principal novidade da versão 5.5. O Vision Assistant Pro evoluiu de um assistente passivo para se tornar seu **Operador de IA** pessoal. Ele não apenas descreve a tela — ele assume o controle.\n    *   *Como funciona:* Agora é possível dar instruções para operar o computador. Por exemplo, em um aplicativo completamente inacessível onde o leitor de telas não fornece retorno, pressione **Shift+A** e digite: *\"Clique no botão Configurações\"* ou *\"Encontre o campo de busca, digite 'Últimas Notícias' e pressione Enter.\"* A IA identifica visualmente os elementos, move o mouse e executa a tarefa.\n    *   *Nota de desempenho:* Este recurso é otimizado para o **Gemini 3.0 Flash (Preview)**, oferecendo respostas extremamente rápidas e inteligentes, capazes de lidar com interfaces complexas.\n    *   **⚠️ Aviso de uso da API:** Como o Operador de IA precisa \"ver\" exatamente o que está acontecendo para ser preciso, ele envia uma captura de tela em alta resolução a cada etapa. O uso frequente pode consumir sua cota de API muito mais rapidamente do que tarefas baseadas apenas em texto.\n*   **Explorador Visual de Interface (E):** Cansado de navegar por \"botões sem rótulo\"? Pressione **E** para ativar o Explorador de Interface. A IA analisará toda a janela e gerará uma lista de todos os elementos clicáveis — incluindo ícones, gráficos e menus. Basta escolher um item da lista, e o Operador de IA clicará para você. É como ter uma \"camada acessível\" sobre qualquer aplicativo.\n*   **Ação Inteligente de Arquivo com Contexto (F):** A tecla \"F\" foi completamente reformulada. Ela não assume mais que você deseja apenas OCR. Ao selecionar uma única imagem, o sistema pergunta sua intenção: é possível escolher entre uma **Descrição Visual Detalhada** para entender a cena ou uma **Extração de Texto Estruturada (OCR)** para leitura. O menu se adapta dinamicamente com base no tipo de arquivo e no mecanismo de IA ativo.\n*   **Otimização do Núcleo:** Foi realizada uma limpeza profunda na lógica interna do add-on, removendo funções antigas não utilizadas e códigos redundantes. O resultado é uma experiência mais leve, rápida e confiável para todos os usuários."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Assistente de Visão Pro",
-			"description": "Um assistente de IA avançado para o NVDA que utiliza modelos Gemini.\nCamada de Comandos: Prima NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Aperfeiçoador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (L)\n- Verificar Atualizações (U)\n- Recordar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n",
-			"changelog": "## Alterações para 5.5 (A Atualização da Automação)\n\n*   **Operador de IA (Controlo Autónomo - Shift+A):** Este é o grande destaque da versão 5.5. O Vision Assistant Pro deixou de ser um assistente passivo e passou a ser o seu **Operador de IA pessoal**. Não apenas descreve o ecrã — assume o controlo.\n    *   *Como funciona:* Agora é possível dar instruções em linguagem natural para operar o PC. Por exemplo, numa aplicação completamente inacessível em que o leitor de ecrã permanece silencioso, pode pressionar **Shift+A** e escrever: *\"Clica no botão de Definições\"* ou *\"Localiza o campo de pesquisa, escreve 'Latest News' e prime Enter.\"* A IA identifica visualmente os elementos, move o rato e executa a tarefa.\n    *   *Nota de desempenho:* Esta funcionalidade está otimizada para o **Gemini 3.0 Flash (Preview)**, fornecendo respostas extremamente rápidas e inteligentes, capazes de lidar até com os layouts de interface mais complexos.\n    *   **⚠️ Aviso sobre API:** Como o Operador de IA precisa de “ver” exatamente o que está a acontecer para ser preciso, é enviada uma captura de ecrã em alta resolução a cada passo. Tenha em atenção que o uso frequente pode consumir muito mais rapidamente a quota da API do que tarefas baseadas apenas em texto.\n*   **Explorador de UI Visual (E):** Cansado de navegar por “botões sem rótulo”? Pressione **E** para ativar o Explorador de UI. A IA irá analisar a janela inteira e gerar uma lista de todos os elementos clicáveis que encontra — incluindo ícones, gráficos e menus. Basta selecionar um item da lista e o Operador de IA irá clicar por si. É como ter uma “camada de acessibilidade” sobre qualquer aplicação.\n*   **Ação Inteligente de Ficheiros com Consciência de Contexto (F):** A tecla “F” foi completamente reformulada. Já não assume que apenas pretende OCR. Quando seleciona uma única imagem, passa a perguntar de forma inteligente a sua intenção: pode escolher uma **Descrição visual detalhada** para compreender a cena ou uma **Extração de texto estruturada (OCR)** para leitura. O menu adapta-se dinamicamente com base no tipo de ficheiro e no motor de IA ativo.\n*   **Otimização do núcleo:** Foi realizada uma limpeza profunda da lógica interna do add-on, removendo funções legadas não utilizadas e código redundante. O resultado é uma experiência mais leve, rápida e fiável para todos os utilizadores."
-		},
-		{
-			"language": "ro",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un asistent IA avansat pentru NVDA, care folosește modele Gemini.\nStrat de comenzi: Apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvator CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (L)\n- Verifică actualizările (U)\n- Reapelează ultimul rezultat (Space),\n- Ajutor comenzi (H),\n",
-			"changelog": "## Modificări pentru 5.5 (Actualizarea pentru automatizare)\n\n*   **Operator IA (control autonom - Shift+A):** Aceasta este funcția centrală din v5.5. Vision Assistant Pro a trecut de la un asistent pasiv la un **Operator IA** personal. Nu doar descrie ecranul, ci preia controlul.\n    *   *Cum funcționează:* Acum poți da instrucțiuni verbale pentru operarea PC-ului. De exemplu, într-o aplicație complet inaccesibilă, unde cititorul de ecran rămâne tăcut, poți apăsa **Shift+A** și poți tasta: *\"Clic pe butonul Setări\"* sau *\"Găsește câmpul de căutare, tastează 'Ultimele știri' și apasă Enter.\"* IA identifică vizual elementele, mișcă mouse-ul și execută sarcina pentru tine.\n    *   *Notă de performanță:* Această funcție este optimizată pentru **Gemini 3.0 Flash (Preview)** și oferă răspunsuri foarte rapide și inteligente, care pot gestiona chiar și interfețe complexe.\n    *   **⚠️ Avertisment privind utilizarea API:** Deoarece Operatorul IA trebuie să „vadă” exact ce se întâmplă pentru a fi precis, trimite o captură de ecran de rezoluție înaltă la fiecare pas. Folosirea frecventă va consuma cota API mult mai repede decât sarcinile standard bazate pe text.\n*   **Explorator UI vizual (E):** Te-ai săturat să navighezi prin „butoane fără etichetă”? Apasă **E** pentru a activa Exploratorul UI. IA va scana întreaga fereastră și va genera o listă cu fiecare element clicabil pe care îl vede, inclusiv pictograme, elemente grafice și meniuri. Alege un element din listă, iar Operatorul IA va da clic pe el pentru tine. Este ca un strat accesibil peste orice aplicație.\n*   **Acțiune inteligentă pentru fișiere, sensibilă la context (F):** Tasta „F” a fost refăcută complet. Nu mai presupune că vrei doar OCR. Când selectezi o singură imagine, acum te întreabă inteligent care este intenția ta: poți alege o **descriere vizuală detaliată** pentru a înțelege scena sau o **extragere structurată a textului (OCR)** pentru citire. Meniul se adaptează dinamic în funcție de tipul fișierului și de motorul IA activ.\n*   **Optimizare de bază:** Am făcut o curățare profundă a logicii interne a suplimentului, eliminând funcții vechi nefolosite și cod redundant. Rezultatul este o experiență mai suplă, mai rapidă și mai fiabilă pentru toți utilizatorii."
-		},
-		{
-			"language": "ru",
-			"displayName": "Vision Assistant Pro (Визуальный помощник)",
-			"description": "Vision Assistant Pro — это продвинутый многофункциональный ИИ-ассистент для NVDA. Он использует ведущие мировые ИИ-движки для обеспечения интеллектуального чтения с экрана, перевода, голосового ввода и анализа документов.\nКомандный слой: нажмите NVDA+Shift+V, затем:\nУмный перевод (T) / из буфера обмена (Shift+T).\nОбработка текста (R).\nОписание объекта (V) / всего экрана (O).\nАнализ онлайн-видео (Shift+V).\nЧтение документов (D).\nOCR файлов (F).\nРешение CAPTCHA (C).\nРасшифровка аудио (A).\nУмная диктовка (S).\nСостояние (L).\nПроверка обновлений (U).\nПовтор последнего результата (Пробел).\nСправка по командам (H).\n",
-			"changelog": "## Изменения в версии 5.5 (Обновление с автоматизацией)\n\n*   **ИИ-Оператор (Автономное управление - Shift+A):** Это главная жемчужина v5.5. Vision Assistant Pro перешел от пассивного ассистента к вашему личному **ИИ-Оператору**.\n    *   *Как это работает:* Теперь вы можете отдавать голосовые инструкции для управления компьютером. Например, в полностью недоступном приложении, где ваш скринридер молчит, вы можете нажать **Shift+A** и ввести: *\"Нажми на кнопку 'Настройки'\"* или *\"Найди поле поиска, введи 'Последние новости' и нажми Enter\"*. ИИ визуально идентифицирует элементы, перемещает мышь и выполняет задачу за вас.\n    *   *Примечание по производительности:* Эта функция оптимизирована для **Gemini 3.0 Flash (Preview)**, обеспечивая невероятно быстрые и интеллектуальные ответы, способные справиться с самыми сложными макетами интерфейса.\n    *   **⚠️ Предупреждение об использовании API:** Поскольку ИИ-Оператору нужно \"видеть\", что происходит для точности, он отправляет скриншот высокого разрешения на каждом шаге. Имейте в виду, что частое использование будет расходовать вашу квоту API гораздо быстрее, чем стандартные текстовые задачи.\n*   **Визуальный исследователь интерфейса (E):** Устали ориентироваться по \"ненужным кнопкам\"? Нажмите **E** для активации исследователя интерфейса. ИИ просканирует все окно и создаст список каждого кликабельного элемента, который он видит, включая значки, графику и меню. Просто выберите элемент из списка, и ИИ-Оператор нажмет его за вас. Это как иметь \"доступный слой\" поверх любого приложения.\n*   **Контекстно-зависимое умное действие с файлом (F):** Клавиша \"F\" была полностью переработана. Она больше не предполагает, что вы хотите только OCR. Когда вы выбираете одно изображение, она теперь интеллектуально спрашивает о вашем намерении: вы можете выбрать **Детальное визуальное описание** для понимания сцены или **Структурированное извлечение текста (OCR)** для чтения. Меню динамически адаптируется в зависимости от типа файла и вашего активного ИИ-движка.\n*   **Оптимизация ядра:** Мы провели глубокую очистку внутренней логики дополнения, удалив неиспользуемые устаревшие функции и избыточный код. Это приводит к более легкому, быстрому и надежному опыту для всех пользователей."
-		},
-		{
-			"language": "tr",
-			"displayName": "Profesyonel Görsel Asistan",
-			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çeviri (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesneyi Betimle (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Sesi metne çevir (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (L)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk),\n- Komut Yardımı (H),\n",
-			"changelog": "## 5.5 İçin Değişiklikler (Otomasyon Güncellemesi)\n\n*   **Yapay Zeka Operatörü (Otonom Kontrol - Shift+A):** Bu, v5.5'in en önemli özelliğidir. Profesyonel Görsel Asistan, pasif bir asistan olmaktan çıkıp kişisel **Yapay Zeka Operatörünüz** haline geldi. Yalnızca ekranı betimlemez; komut gerektirir.\n   * *Nasıl çalışır:* Artık bilgisayarınızı çalıştırmak için sözlü talimatlar verebilirsiniz. Örneğin, ekran okuyucunuzun sessiz kaldığı, tamamen erişilemeyen bir uygulamada **Shift+A** tuşlarına basıp şunu yazabilirsiniz: *\"Ayarlar düğmesine tıklayın\"* veya *\"Arama alanını bulun, 'Son Haberler' yazın ve enter tuşuna basın.\"* Yapay zeka, öğeleri görsel olarak betimler, fareyi hareket ettirir ve görevi sizin için yürütür.\n    *   *Performans Notu:* Bu özellik **Gemini 3.0 Flash (Önizleme)** için optimize edilmiştir ve en karmaşık kullanıcı arayüzü düzenlerini bile işleyebilecek inanılmaz derecede hızlı ve akıllı yanıtlar sunar.\n    *   **⚠️ API Kullanım Uyarısı:** Yapay Zeka Operatörünün doğru olması için tam olarak ne olduğunu \"görmesi\" gerektiğinden, her adımda yüksek çözünürlüklü bir ekran görüntüsü gönderir. Sık kullanımın API kotanızı standart metin tabanlı görevlere göre çok daha hızlı tüketeceğini lütfen unutmayın.\n*   **Görsel Kullanıcı Arayüz Gezgini (E):** \"Etiketlenmemiş düğmeler\" arasında gezinmekten bıktınız mı? UI Explorer'ı etkinleştirmek için **E** tuşuna basın. Yapay zeka tüm pencereyi tarayacak ve simgeler, grafikler ve menüler dahil gördüğü her tıklanabilir öğenin bir listesini oluşturacaktır. Listeden bir öğe seçmeniz yeterlidir; yapay zeka Operatörü sizin için o öğeye tıklayacaktır. Bu, herhangi bir uygulamanın üstünde \"erişilebilir bir katmana\" sahip olmak gibidir.\n*   **Bağlama Duyarlı Akıllı Dosya Eylemi (F):** \"F\" tuşu tamamen elden geçirildi. Artık yalnızca OCR istediğinizi varsaymıyor. Tek bir görsel seçtiğinizde artık akıllı bir şekilde amacınızı soruyor: Sahneyi anlamak için **Ayrıntılı Görsel Açıklama** veya okumak için **Yapılandırılmış Metin Çıkarma (OCR)** seçebilirsiniz. Menü, dosya türüne ve aktif AI motorunuza göre dinamik olarak uyarlanır.\n*   **Çekirdek Optimizasyonu:** Eklentinin dahili mantığında derinlemesine bir temizlik gerçekleştirdik, kullanılmayan eski işlevleri ve gereksiz kodları kaldırdık. Bu, tüm kullanıcılar için daha yalın, daha hızlı ve daha güvenilir bir deneyimle sonuçlanır."
-		},
-		{
-			"language": "uk",
-			"displayName": "Vision Assistant Pro",
-			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n",
-			"changelog": "## Зміни у версії 5.5 (Оновлення автоматизації)\n\n*   **Оператор ШІ (Автономне керування — Shift+A):** Це головна родзинка версії 5.5. Vision Assistant Pro перетворився з пасивного помічника на вашого особистого **Оператора ШІ**. Він не просто описує екран — він виконує ваші команди.\n    *   *Як це працює:* Тепер ви можете давати усні вказівки для керування вашим ПК. Наприклад, у повністю недоступній програмі, де ваш екранний зчитувач мовчить, ви можете натиснути **Shift+A** і ввести: *«Натисни на кнопку Налаштування»* або *«Знайди поле пошуку, введи «Останні новини» і натисни Enter».* Штучний інтелект візуально ідентифікує елементи, рухає мишкою та виконує завдання за вас.\n    *   *Примітка щодо продуктивності:* Ця функція оптимізована для **Gemini 3.0 Flash (Preview)**, забезпечуючи неймовірно швидкі та інтелектуальні відповіді, здатні впоратися навіть із найскладнішими макетами інтерфейсу.\n    *   **⚠️ Попередження щодо використання API:** Оскільки Оператор ШІ повинен «бачити» саме те, що відбувається, щоб бути точним, він надсилає знімок екрана з високою роздільною здатністю на кожному кроці. Зверніть увагу, що часте використання вичерпає ваш ліміт API набагато швидше, ніж стандартні текстові завдання.\n*   **Візуальний досліджувач елементів інтерфейсу користувача (E):** Втомилися перебирати «непозначені кнопки»? Натисніть **E**, щоб активувати Досліджувач інтерфейсу користувача. Штучний інтелект просканує все вікно та згенерує список усіх елементів, на які можна натиснути, — включаючи іконки, графіку та меню. Просто виберіть елемент зі списку, і Оператор ШІ натисне на нього за вас. Це ніби «доступний шар» поверх будь-якого додатка.\n*   **Контекстно-залежна розумна дія з файлом (F):** Клавіша «F» була повністю перероблена. Вона більше не припускає, що вам потрібне лише оптичне розпізнавання символів. Коли ви вибираєте одне зображення, вона тепер розумно запитує про ваші наміри: ви можете вибрати **Детальний візуальний опис**, щоб зрозуміти сцену, або **Витяг структурованого тексту (OCR)** для читання. Меню динамічно адаптується залежно від типу файлу та активного двигуна штучного інтелекту.\n*   **Оптимізація ядра:** Ми провели глибоке очищення внутрішньої логіки додатка, видаливши невикористовувані застарілі функції та зайвий код. Це забезпечує більш компактний, швидкий та надійний досвід для всіх користувачів."
-		},
-		{
-			"language": "vi",
-			"displayName": "Vision Assistant Pro",
-			"description": "Một trợ lý AI nâng cao dành cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thông minh (T) / Clipboard (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích video trực tuyến (Shift+V)\n- Trình đọc tài liệu (D)\n- OCR tệp (F)\n- Giải CAPTCHA (C)\n- Chuyển biên âm thanh (A)\n- Đọc chính tả thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)\n- Gọi lại kết quả cuối cùng (Space),\n- Trợ giúp lệnh (H),\n",
-			"changelog": "## Những thay đổi trong phiên bản 5.5 (Bản cập nhật Tự động hóa)\"\n\n\"*   **AI Operator (Điều khiển tự động - Shift+A):** Đây là tính năng sáng giá nhất của v5.5. Vision Assistant Pro đã nâng cấp từ một trợ lý thụ động thành **AI Operator** cá nhân của bạn. Nó không chỉ mô tả màn hình mà còn thực sự nắm quyền điều khiển.\n\"    *   *Cách thức hoạt động:* Giờ đây bạn có thể đưa ra các chỉ dẫn bằng văn bản hoặc giọng nói để vận hành máy tính. Ví dụ, trong một ứng dụng hoàn toàn không tiếp cận được nơi trình đọc màn hình im lặng, bạn có thể nhấn **Shift+A** và nhập: *\\\"Click vào nút Cài đặt\\\"* hoặc *\\\"Tìm ô tìm kiếm, nhập 'Tin tức mới nhất' rồi nhấn enter.\\\"* AI sẽ nhận diện các thành phần bằng hình ảnh, di chuyển chuột và thực hiện tác vụ cho bạn.\n\"    *   *Lưu ý về hiệu suất:* Tính năng này được tối ưu hóa cho **Gemini 3.0 Flash (Bản xem trước)**, mang lại phản hồi cực nhanh và thông minh, có thể xử lý cả những bố cục giao diện phức tạp nhất.\n    *   **⚠️ Cảnh báo sử dụng API:** Vì AI Operator cần \\\"nhìn\\\" chính xác những gì đang diễn ra để đảm bảo độ chính xác, nó sẽ gửi ảnh chụp màn hình độ phân giải cao sau mỗi bước. Lưu ý rằng việc sử dụng thường xuyên sẽ tiêu tốn hạn ngạch API nhanh hơn nhiều so với các tác vụ văn bản thông thường.\n\"*   **Trình thám hiểm giao diện (UI Explorer - E):** Bạn mệt mỏi vì phải điều hướng qua các \\\"nút không nhãn\\\"? Nhấn **E** để kích hoạt UI Explorer. AI sẽ quét toàn bộ cửa sổ và tạo danh sách mọi thành phần có thể click mà nó thấy—bao gồm cả icon, đồ họa và menu. Chỉ cần chọn một mục từ danh sách và AI Operator sẽ click giúp bạn. Nó giống như việc thêm một \\\"lớp tiếp cận\\\" lên trên bất kỳ ứng dụng nào.\n\"*   **Hành động tệp thông minh theo ngữ cảnh (F):** Phím \\\"F\\\" đã được đại tu hoàn toàn. Nó không còn mặc định là bạn chỉ muốn OCR nữa. Khi bạn chọn một hình ảnh, nó sẽ hỏi ý định của bạn: bạn có thể chọn **Mô tả hình ảnh chi tiết** để hiểu bối cảnh hoặc **Trích xuất văn bản có cấu trúc (OCR)** để đọc. Menu sẽ thay đổi linh hoạt dựa trên loại tệp và công cụ AI bạn đang dùng.\n\"*   **Tối ưu hóa cốt lõi:** Chúng tôi đã dọn dẹp sâu logic nội bộ của add-on, loại bỏ các hàm cũ không còn sử dụng và mã dư thừa. Điều này giúp add-on nhẹ hơn, nhanh hơn và hoạt động ổn định hơn cho tất cả người dùng."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "Vision Assistant Pro",
-			"description": "基于 AI 模型的高级 NVDA 智能助手。\n命令层：按 NVDA+Shift+V，然后按：\n- 智能翻译 (T) / 剪贴板 (Shift+T)\n- 文本润色 (R)\n- 描述对象 (V) / 全屏 (O)\n- 在线视频分析 (Shift+V)\n- 文档阅读器 (D)\n- 文件智能操作 (F)\n- 验证码求解器 (C)\n- 音频转录 (A)\n- 智能听写 (S)\n- AI 操作员 (Shift+A)\n- UI 资源管理器 (E)\n- 播报状态 (L)\n- 检查更新 (U)\n- 调用上一次结果 (Space)\n- 命令帮助 (H)\n",
-			"changelog": "## 5.5 版本变更 (自动化更新)\n\n*   **AI 操作员 (自主控制 - Shift+A)：** 这是 5.5 版本的核心亮点。Vision Assistant Pro 已经从一个被动的助手升级成为您的私人 **AI 操作员**。它不再仅仅是描述屏幕——它开始掌控操作。\n    *   *工作原理：* 您现在可以下达口头指令来操作您的电脑。例如，在一个屏幕阅读器完全无法朗读的无障碍应用中，您可以按下 **Shift+A** 并输入：*“点击设置按钮”* 或 *“找到搜索框，输入‘最新新闻’并回车。”* AI 会在视觉上识别这些元素，移动鼠标，并为您执行任务。\n    *   *性能说明：* 此功能针对 **Gemini 3.0 Flash (Preview)** 进行了优化，能够提供极其快速和智能的响应，即使是最复杂的 UI 布局也能应对自如。\n    *   **⚠️ API 使用警告：** 因为 AI 操作员需要精确地“看到”正在发生的事情，它会在每一步发送一张高分辨率的屏幕截图。请注意，频繁使用将比标准的基于文本的任务更快地消耗您的 API 配额。\n*   **可视化 UI 资源管理器 (E)：** 厌倦了在“未标记的按钮”中导航？按下 **E** 激活 UI 资源管理器。AI 将扫描整个窗口并生成一个包含它看到的每个可点击元素（包括图标、图形和菜单）的列表。只需从列表中选择一个项目，AI 操作员就会为您点击它。这就像在任何应用之上覆盖了一层“无障碍层”。\n*   **基于上下文的智能文件操作 (F)：** “F”键已被彻底重构。它不再假设您只想要 OCR。当您选择单张图像时，它现在会智能地询问您的意图：您可以选择 **详细的视觉描述** 来理解场景，或者选择 **结构化文本提取 (OCR)** 用于阅读。菜单会根据文件类型和您当前活动的 AI 引擎动态调整。\n*   **核心优化：** 我们对插件的内部逻辑进行了深度清理，移除了未使用的旧功能和冗余代码。这为所有用户带来了更精简、更快、更可靠的体验。"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
-	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/incomplete-url-substring-sanitization",
-				"rule": {
-					"id": "py/incomplete-url-substring-sanitization",
-					"index": 4,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5148,
-								"startColumn": 24,
-								"endColumn": 49
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "2913bc0dd513cd37:1",
-					"primaryLocationStartColumnFingerprint": "11"
-				},
-				"relatedLocations": [
-					{
-						"id": 1,
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5148,
-								"startColumn": 24,
-								"endColumn": 39
-							}
-						},
-						"message": {
-							"text": "instagram.com"
-						}
-					}
-				]
-			},
-			{
-				"ruleId": "py/incomplete-url-substring-sanitization",
-				"rule": {
-					"id": "py/incomplete-url-substring-sanitization",
-					"index": 4,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5150,
-								"startColumn": 25,
-								"endColumn": 47
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "ecbb1fd672237310:1",
-					"primaryLocationStartColumnFingerprint": "12"
-				},
-				"relatedLocations": [
-					{
-						"id": 1,
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/__init__.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5150,
-								"startColumn": 25,
-								"endColumn": 37
-							}
-						},
-						"message": {
-							"text": "tiktok.com"
-						}
-					}
-				]
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\w in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 1
-							},
-							"region": {
-								"startLine": 54,
-								"startColumn": 33,
-								"endColumn": 36
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
-					"primaryLocationStartColumnFingerprint": "24"
-				}
-			}
-		],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 1,
-						"dll": 2,
-						"exe": 1,
-						"h": 177,
-						"html": 13,
-						"ini": 15,
-						"lib": 4,
-						"md": 13,
-						"mo": 14,
-						"po": 14,
-						"py": 63,
-						"pyd": 4,
-						"typed": 1
-					},
-					"file_types": {
-						"HTML": 13,
-						"Portable Executable": 7,
-						"unknown": 303
-					},
-					"highest_datetime": "2026-05-06 17:39:18",
-					"lowest_datetime": "2026-05-06 17:38:38",
-					"num_children": 323,
-					"type": "ZIP",
-					"uncompressed_size": 97579998
-				},
-				"filecondis": {
-					"dhash": "0000000006070704",
-					"raw_md5": "d1b64a652f12e3d031a5f03a14217104"
-				},
-				"first_submission_date": 1778090438,
-				"last_analysis_date": 1778090438,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260506",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260501",
-						"engine_version": "6.775",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260506",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260506",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260506",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260506",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260506",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260506",
-						"engine_version": "260506-08",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260506",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260506",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20251216",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260505",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260506",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260506",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260506",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20251219",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260423",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260506",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260506",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260506",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260506",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260506",
-						"engine_version": "4.0.260",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260506",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260506",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260505",
-						"engine_version": "7.0.30.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260506",
-						"engine_version": "GD:27.44448AVA:64.31186",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "failure",
-						"engine_name": "Google",
-						"engine_update": "20260506",
-						"engine_version": "1778086866",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260506",
-						"engine_version": "1.0.245.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260506",
-						"engine_version": "6.4.16.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260505",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260506",
-						"engine_version": "14.50.59421",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260506",
-						"engine_version": "14.50.59422",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260506",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "timeout",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260506",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260506",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260506",
-						"engine_version": "3.1.0.234",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260506",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260506",
-						"engine_version": "1.2.0.14532",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260506",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260506",
-						"engine_version": "1.1.26030.3008",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260506",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260506",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260506",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260506",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260506",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260504",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260506",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260506",
-						"engine_version": "3.4.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260506",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260506",
-						"engine_version": "2026-05-06.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260506",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260504",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260506",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260506",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260506",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260506",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260506",
-						"engine_version": "5.6.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260506",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260506",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260506",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260506",
-						"engine_version": "9.5.1201",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260506",
-						"engine_version": "38627",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260506",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260506",
-						"engine_version": "2.0.0.5596",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260506",
-						"engine_version": "6.24-114820697",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260506",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260506",
-						"engine_version": "bac4b0b:bac4b0b:08be008:08be008",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260506",
-						"engine_version": "v0.1.4",
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 2,
-					"type-unsupported": 7,
-					"undetected": 64
-				},
-				"last_modification_date": 1778090615,
-				"last_submission_date": 1778090438,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"md5": "67ba339e7c8636b3b9d44de449879f21",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "ad80a19308c8dc40671d4381720705bbb0ba9cde",
-				"sha256": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
-				"size": 37957987,
-				"ssdeep": "786432:J1irITxRQC4vycIuJBzkYsQx3JIaSmnH2hMwGWeaxgv3wFihk:JaITxRQC4vqu/xsQxAqHkMw3ejfw0W",
-				"tags": [
-					"contains-pe",
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1D78733A7C89CD289EEB2E4BEE0541BD776FF52EC804AB44E642DD0CA5DC3BD901856C1",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "Python Zip Application",
-						"probability": 72.4
-					},
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 27.5
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+  "addonId": "VisionAssistant",
+  "displayName": "Vision Assistant Pro",
+  "URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v5.5/VisionAssistant-5.5.nvda-addon",
+  "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (L)\n- Check Update (U)\n- Recall Last Result (Space),\n- Commands Help (H),\n",
+  "sha256": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
+  "addonVersionName": "5.5",
+  "addonVersionNumber": {
+    "major": 5,
+    "minor": 5,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Mahmood Hozhabri",
+  "sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+  "license": "GPL v2",
+  "homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+  "changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1778090408000,
+  "translations": [
+    {
+      "language": "de",
+      "displayName": "KI Assistent Pro",
+      "description": "Ein fortschrittlicher KI-Assistent unter Verwendung von Gemini.\\n\nMaster-Tastenkombination: NVDA+Umschalt+V, dann:\\n\n- Intelligenter Übersetzer(T) \\n\n- Übersetzen der Zwischenablage (Umschalt+T)\\n\n- Textüberarbeitung (R)\\n\n- Objekt beschreiben (V) / Vollbild (O)\\n\n- Online-Videoanalyse (Umschalt+V)\\n\n- Dokumentenleser (D)\\n\n- Datei-OCR (F)\\n\n- CAPTCHA-Lösen (C)\\n\n- Audiotranskription (A)\\n\n- Intelligentes Diktieren (S)\\n\n- Status ankündigen (L)\\n\n- Auf Update prüfen (U)\\n\n(Übersetzt vom BFW Würzburg)\n",
+      "changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
+    },
+    {
+      "language": "fa",
+      "displayName": "دستیارِ حرفه‌ایِ بینایی",
+      "description": "یک دستیارِ پیشرفته‌ی هوشِ مصنوعی برای NVDA که از مدل‌های Gemini استفاده می‌کند.\nلایه‌ی فرمان‌ها: NVDA+Shift+V را بفشارید، سپس:\n- مترجمِ هوشمند (T)، ترجمه از کلیپ‌برد (Shift+T)؛\n- پالایش‌کننده‌ی متن (R)؛\n- توصیفِ پیمایشگر (V)، توصیف تمام صفحه (o)؛\n- تحلیلِ آنلاینِ ویدئو (Shift+V)؛\n- سندخوان (D)؛\n- OCRِ فایل (F)؛\n- حل‌کننده‌ی کپچا (C)؛\n- رونویسیِ فایلِ صوتی (A)؛\n- تایپِ صوتیِ هوشمند (S)؛\n- اعلامِ وضعیت (L)؛\n- بررسیِ بروزرسانی (U)\n- فراخوانیِ آخرین نتیجه (space)\n- راهنمای فرمان‌ها (H)\n",
+      "changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
+    },
+    {
+      "language": "fr",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Analyseur de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (L)\n- Vérification des mises à jour (U)\n",
+      "changelog": "## Modifications de la version 5.5 (la mise à jour de l'automatisation)\n\n*   **Opérateur IA (Contrôle Autonome - Shift+A) :** C'est le joyau de la couronne de la v5.5. Vision Assistant Pro est passé du statut d'assistant passif à celui de votre **opérateur IA** personnel. Il ne se contente pas de décrire l'écran : il le commande.\n    *   *Comment ça marche :* Vous pouvez maintenant donner des instructions verbales pour faire fonctionner votre PC. Par exemple, dans une application totalement inaccessible où votre lecteur d'écran reste silencieux, vous pouvez appuyer sur **Maj+A** et taper : *\"Clique sur le bouton Paramètres\"* ou *\"Cherche le champ de recherche, tape « Dernières nouvelles » et appuie sur Entrée.\"* L'IA identifie visuellement les éléments, déplace la souris et exécute la tâche à votre place.\n    *   *Remarque sur les performances :* Cette fonctionnalité est optimisée pour **Gemini 3.0 Flash (Aperçu)**, offrant des réponses incroyablement rapides et intelligentes capables de gérer même les mises en page d'interface utilisateur les plus complexes.\n    *   **⚠️ Avertissement concernant l'utilisation de l'API :** Parce que l'opérateur IA doit « voir » exactement ce qui se passe pour être précis, il envoie une capture d'écran haute résolution à chaque étape. Veuillez noter qu'une utilisation fréquente consommera votre quota API beaucoup plus rapidement que les tâches textuelles standard.\n*   **Explorateur d'interface visuel (E) :** Fatigué de naviguer à travers des « boutons sans étiquette » ? Appuyez sur **E** pour activer l'explorateur d'interface utilisateur. L'IA analysera toute la fenêtre et générera une liste de tous les éléments cliquables qu'elle voit, y compris les icônes, les graphiques et les menus. Choisissez simplement un élément dans la liste et l'opérateur IA cliquera dessus pour vous. C’est comme avoir une « couche accessible » au-dessus de n’importe quelle application.\n*   **Action contextuelle intelligente sur les fichier (F) :** La touche \"F\" a été entièrement revue. Elle ne suppose plus que vous souhaitez seulement l'OCR. Lorsque vous sélectionnez une image, elle vous demande désormais intelligemment votre intention : vous pouvez choisir une **Description visuelle détaillée** pour comprendre la scène ou une **Extraction de texte structuré (OCR)** pour la lecture. Le menu s'adapte dynamiquement en fonction du type de fichier et de votre moteur d'IA actif.\n*   **Optimisation de base :** Nous avons effectué un nettoyage en profondeur de la logique interne du module complémentaire, en supprimant les fonctions héritées inutilisées et le code redondant. Il en résulte une expérience plus simple, plus rapide et plus fiable pour tous les utilisateurs."
+    },
+    {
+      "language": "id",
+      "displayName": "Vision Assistant Pro",
+      "description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Terjemahkan yang ada di Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Secara Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR Berkas (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (L)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n",
+      "changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
+    },
+    {
+      "language": "it",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (L)\n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),\n",
+      "changelog": "## Changes for 5.5 (The Automation Update)\n\n*   **AI Operator (Autonomous Control - Shift+A):** This is the crown jewel of v5.5. Vision Assistant Pro has graduated from being a passive assistant to becoming your personal **AI Operator**. It doesn't just describe the screen—it takes command.\n    *   *How it works:* You can now give verbal instructions to operate your PC. For example, in a completely inaccessible application where your screen reader stays silent, you can press **Shift+A** and type: *\"Click on the Settings button\"* or *\"Find the search field, type 'Latest News' and press enter.\"* The AI visually identifies the elements, moves the mouse, and executes the task for you.\n    *   *Performance Note:* This feature is optimized for **Gemini 3.0 Flash (Preview)**, delivering incredibly fast and intelligent responses that can handle even the most complex UI layouts.\n    *   **⚠️ API Usage Warning:** Because the AI Operator needs to \"see\" exactly what's happening to be accurate, it sends a high-resolution screenshot with every step. Please note that frequent use will consume your API quota much faster than standard text-based tasks.\n*   **Visual UI Explorer (E):** Tired of navigating through \"unlabeled buttons\"? Press **E** to activate the UI Explorer. The AI will scan the entire window and generate a list of every clickable element it sees—including icons, graphics, and menus. Simply pick an item from the list, and the AI Operator will click it for you. It’s like having an \"accessible layer\" on top of any app.\n*   **Context-Aware Smart File Action (F):** The \"F\" key has been completely overhauled. It no longer assumes you only want OCR. When you select a single image, it now intelligently asks for your intent: you can choose a **Detailed Visual Description** to understand the scene or a **Structured Text Extraction (OCR)** for reading. The menu adapts dynamically based on the file type and your active AI engine.\n*   **Core Optimization:** We've performed a deep cleanup of the add-on’s internal logic, removing unused legacy functions and redundant code. This results in a leaner, faster, and more reliable experience for all users."
+    },
+    {
+      "language": "pl",
+      "displayName": "Vision Assistant Pro",
+      "description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Inteligentny tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Inteligentne dyktowanie (S)\n- Raportuj stan (L)\n- Sprawdź aktualizację (U)\n- pokaż ostatnią odpowiedź AI w trybie czatu. (Spacja)\n- Pomoc poleceń (H)\n",
+      "changelog": "## Zmiany w 5.5 (Aktualizacja automatyzacji)\n\n*   **Operator AI (Sterowanie autonomiczne - Shift+A):** To perła w koronie wersji 5.5. Vision Assistant Pro przeszedł z biernego asystenta w Twojego osobistego **Operatora AI**. Nie tylko opisuje ekran, lecz przejmuje sterowanie.\n    *   *Jak to działa:* Możesz teraz wydawać polecenia głosowe dla obsługi swojego komputera. Na przykład w całkowicie niedostępnej aplikacji, gdzie czytnik ekranu milczy, możesz nacisnąć **Shift+A** i wpisać: *\"Kliknij przycisk Ustawienia\"* lub *\"Znajdź pole wyszukiwania, wpisz 'Najnowsze wiadomości' i naciśnij enter.\"* AI wizualnie identyfikuje elementy, przesuwa kursor i wykonuje zadanie za Ciebie.\n    *   *Uwaga o wydajności:* Funkcja jest zoptymalizowana dla **Gemini 3.0 Flash (Preview)**, dostarczając niezwykle szybkich i inteligentnych odpowiedzi, które poradzą sobie nawet z najbardziej złożonymi układami interfejsu.\n    *   **⚠️ Ostrzeżenie o zużyciu API:** Ponieważ Operator AI musi \"widzieć\" dokładnie to, co się dzieje, aby działać precyzyjnie, wysyła zrzut ekranu w wysokiej rozdzielczości na każdym kroku. Częste używanie znacznie szybciej zużyje Twój limit API niż standardowe zadania tekstowe.\n*   **Wizualny Eksplorator interfejsu (E):** Zmęczony nawigacją po \"nieoznaczonych przyciskach\"? Naciśnij **E**, aby uruchomić Eksplorator interfejsu. AI przeskanuje całe okno i wygeneruje listę każdego klikalnego elementu, jaki widzi: ikon, grafik i menu. Wybierz element z listy, a Operator AI kliknie go za Ciebie. To jak \"warstwa dostępności\" nałożona na dowolną aplikację.\n*   **Inteligentna akcja na pliku zależna od kontekstu (F):** Klawisz \"F\" został gruntownie przebudowany. Nie zakłada już, że chcesz tylko OCR. Gdy wybierzesz pojedynczy obraz, inteligentnie zapyta o Twoją intencję: możesz wybrać **Szczegółowy opis wizualny**, aby zrozumieć scenę, lub **Strukturalne wyodrębnienie tekstu (OCR)** do czytania. Menu dostosowuje się dynamicznie do typu pliku i aktywnego silnika AI.\n*   **Optymalizacja rdzenia:** Wykonaliśmy głębokie czyszczenie wewnętrznej logiki dodatku, usuwając nieużywane funkcje legacy i zbędny kod. Daje to lżejsze, szybsze i bardziej niezawodne działanie dla wszystkich użytkowników."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Assistente de Visão Pro",
+      "description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documento (D)\n- OCR de Arquivo (F)\n- Resolvedor de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (L)\n- Verificar Atualização (U)\n- Recuperar Último Resultado (Espaço),\n- Ajuda de Comandos (H),\n",
+      "changelog": "## Alterações para 5.5 (A Atualização de Automação)\n\n*   **Operador de IA (Controle Autônomo - Shift+A):** Esta é a principal novidade da versão 5.5. O Vision Assistant Pro evoluiu de um assistente passivo para se tornar seu **Operador de IA** pessoal. Ele não apenas descreve a tela — ele assume o controle.\n    *   *Como funciona:* Agora é possível dar instruções para operar o computador. Por exemplo, em um aplicativo completamente inacessível onde o leitor de telas não fornece retorno, pressione **Shift+A** e digite: *\"Clique no botão Configurações\"* ou *\"Encontre o campo de busca, digite 'Últimas Notícias' e pressione Enter.\"* A IA identifica visualmente os elementos, move o mouse e executa a tarefa.\n    *   *Nota de desempenho:* Este recurso é otimizado para o **Gemini 3.0 Flash (Preview)**, oferecendo respostas extremamente rápidas e inteligentes, capazes de lidar com interfaces complexas.\n    *   **⚠️ Aviso de uso da API:** Como o Operador de IA precisa \"ver\" exatamente o que está acontecendo para ser preciso, ele envia uma captura de tela em alta resolução a cada etapa. O uso frequente pode consumir sua cota de API muito mais rapidamente do que tarefas baseadas apenas em texto.\n*   **Explorador Visual de Interface (E):** Cansado de navegar por \"botões sem rótulo\"? Pressione **E** para ativar o Explorador de Interface. A IA analisará toda a janela e gerará uma lista de todos os elementos clicáveis — incluindo ícones, gráficos e menus. Basta escolher um item da lista, e o Operador de IA clicará para você. É como ter uma \"camada acessível\" sobre qualquer aplicativo.\n*   **Ação Inteligente de Arquivo com Contexto (F):** A tecla \"F\" foi completamente reformulada. Ela não assume mais que você deseja apenas OCR. Ao selecionar uma única imagem, o sistema pergunta sua intenção: é possível escolher entre uma **Descrição Visual Detalhada** para entender a cena ou uma **Extração de Texto Estruturada (OCR)** para leitura. O menu se adapta dinamicamente com base no tipo de arquivo e no mecanismo de IA ativo.\n*   **Otimização do Núcleo:** Foi realizada uma limpeza profunda na lógica interna do add-on, removendo funções antigas não utilizadas e códigos redundantes. O resultado é uma experiência mais leve, rápida e confiável para todos os usuários."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Assistente de Visão Pro",
+      "description": "Um assistente de IA avançado para o NVDA que utiliza modelos Gemini.\nCamada de Comandos: Prima NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Aperfeiçoador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (L)\n- Verificar Atualizações (U)\n- Recordar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n",
+      "changelog": "## Alterações para 5.5 (A Atualização da Automação)\n\n*   **Operador de IA (Controlo Autónomo - Shift+A):** Este é o grande destaque da versão 5.5. O Vision Assistant Pro deixou de ser um assistente passivo e passou a ser o seu **Operador de IA pessoal**. Não apenas descreve o ecrã — assume o controlo.\n    *   *Como funciona:* Agora é possível dar instruções em linguagem natural para operar o PC. Por exemplo, numa aplicação completamente inacessível em que o leitor de ecrã permanece silencioso, pode pressionar **Shift+A** e escrever: *\"Clica no botão de Definições\"* ou *\"Localiza o campo de pesquisa, escreve 'Latest News' e prime Enter.\"* A IA identifica visualmente os elementos, move o rato e executa a tarefa.\n    *   *Nota de desempenho:* Esta funcionalidade está otimizada para o **Gemini 3.0 Flash (Preview)**, fornecendo respostas extremamente rápidas e inteligentes, capazes de lidar até com os layouts de interface mais complexos.\n    *   **⚠️ Aviso sobre API:** Como o Operador de IA precisa de “ver” exatamente o que está a acontecer para ser preciso, é enviada uma captura de ecrã em alta resolução a cada passo. Tenha em atenção que o uso frequente pode consumir muito mais rapidamente a quota da API do que tarefas baseadas apenas em texto.\n*   **Explorador de UI Visual (E):** Cansado de navegar por “botões sem rótulo”? Pressione **E** para ativar o Explorador de UI. A IA irá analisar a janela inteira e gerar uma lista de todos os elementos clicáveis que encontra — incluindo ícones, gráficos e menus. Basta selecionar um item da lista e o Operador de IA irá clicar por si. É como ter uma “camada de acessibilidade” sobre qualquer aplicação.\n*   **Ação Inteligente de Ficheiros com Consciência de Contexto (F):** A tecla “F” foi completamente reformulada. Já não assume que apenas pretende OCR. Quando seleciona uma única imagem, passa a perguntar de forma inteligente a sua intenção: pode escolher uma **Descrição visual detalhada** para compreender a cena ou uma **Extração de texto estruturada (OCR)** para leitura. O menu adapta-se dinamicamente com base no tipo de ficheiro e no motor de IA ativo.\n*   **Otimização do núcleo:** Foi realizada uma limpeza profunda da lógica interna do add-on, removendo funções legadas não utilizadas e código redundante. O resultado é uma experiência mais leve, rápida e fiável para todos os utilizadores."
+    },
+    {
+      "language": "ro",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un asistent IA avansat pentru NVDA, care folosește modele Gemini.\nStrat de comenzi: Apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvator CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (L)\n- Verifică actualizările (U)\n- Reapelează ultimul rezultat (Space),\n- Ajutor comenzi (H),\n",
+      "changelog": "## Modificări pentru 5.5 (Actualizarea pentru automatizare)\n\n*   **Operator IA (control autonom - Shift+A):** Aceasta este funcția centrală din v5.5. Vision Assistant Pro a trecut de la un asistent pasiv la un **Operator IA** personal. Nu doar descrie ecranul, ci preia controlul.\n    *   *Cum funcționează:* Acum poți da instrucțiuni verbale pentru operarea PC-ului. De exemplu, într-o aplicație complet inaccesibilă, unde cititorul de ecran rămâne tăcut, poți apăsa **Shift+A** și poți tasta: *\"Clic pe butonul Setări\"* sau *\"Găsește câmpul de căutare, tastează 'Ultimele știri' și apasă Enter.\"* IA identifică vizual elementele, mișcă mouse-ul și execută sarcina pentru tine.\n    *   *Notă de performanță:* Această funcție este optimizată pentru **Gemini 3.0 Flash (Preview)** și oferă răspunsuri foarte rapide și inteligente, care pot gestiona chiar și interfețe complexe.\n    *   **⚠️ Avertisment privind utilizarea API:** Deoarece Operatorul IA trebuie să „vadă” exact ce se întâmplă pentru a fi precis, trimite o captură de ecran de rezoluție înaltă la fiecare pas. Folosirea frecventă va consuma cota API mult mai repede decât sarcinile standard bazate pe text.\n*   **Explorator UI vizual (E):** Te-ai săturat să navighezi prin „butoane fără etichetă”? Apasă **E** pentru a activa Exploratorul UI. IA va scana întreaga fereastră și va genera o listă cu fiecare element clicabil pe care îl vede, inclusiv pictograme, elemente grafice și meniuri. Alege un element din listă, iar Operatorul IA va da clic pe el pentru tine. Este ca un strat accesibil peste orice aplicație.\n*   **Acțiune inteligentă pentru fișiere, sensibilă la context (F):** Tasta „F” a fost refăcută complet. Nu mai presupune că vrei doar OCR. Când selectezi o singură imagine, acum te întreabă inteligent care este intenția ta: poți alege o **descriere vizuală detaliată** pentru a înțelege scena sau o **extragere structurată a textului (OCR)** pentru citire. Meniul se adaptează dinamic în funcție de tipul fișierului și de motorul IA activ.\n*   **Optimizare de bază:** Am făcut o curățare profundă a logicii interne a suplimentului, eliminând funcții vechi nefolosite și cod redundant. Rezultatul este o experiență mai suplă, mai rapidă și mai fiabilă pentru toți utilizatorii."
+    },
+    {
+      "language": "ru",
+      "displayName": "Vision Assistant Pro (Визуальный помощник)",
+      "description": "Vision Assistant Pro — это продвинутый многофункциональный ИИ-ассистент для NVDA. Он использует ведущие мировые ИИ-движки для обеспечения интеллектуального чтения с экрана, перевода, голосового ввода и анализа документов.\nКомандный слой: нажмите NVDA+Shift+V, затем:\nУмный перевод (T) / из буфера обмена (Shift+T).\nОбработка текста (R).\nОписание объекта (V) / всего экрана (O).\nАнализ онлайн-видео (Shift+V).\nЧтение документов (D).\nOCR файлов (F).\nРешение CAPTCHA (C).\nРасшифровка аудио (A).\nУмная диктовка (S).\nСостояние (L).\nПроверка обновлений (U).\nПовтор последнего результата (Пробел).\nСправка по командам (H).\n",
+      "changelog": "## Изменения в версии 5.5 (Обновление с автоматизацией)\n\n*   **ИИ-Оператор (Автономное управление - Shift+A):** Это главная жемчужина v5.5. Vision Assistant Pro перешел от пассивного ассистента к вашему личному **ИИ-Оператору**.\n    *   *Как это работает:* Теперь вы можете отдавать голосовые инструкции для управления компьютером. Например, в полностью недоступном приложении, где ваш скринридер молчит, вы можете нажать **Shift+A** и ввести: *\"Нажми на кнопку 'Настройки'\"* или *\"Найди поле поиска, введи 'Последние новости' и нажми Enter\"*. ИИ визуально идентифицирует элементы, перемещает мышь и выполняет задачу за вас.\n    *   *Примечание по производительности:* Эта функция оптимизирована для **Gemini 3.0 Flash (Preview)**, обеспечивая невероятно быстрые и интеллектуальные ответы, способные справиться с самыми сложными макетами интерфейса.\n    *   **⚠️ Предупреждение об использовании API:** Поскольку ИИ-Оператору нужно \"видеть\", что происходит для точности, он отправляет скриншот высокого разрешения на каждом шаге. Имейте в виду, что частое использование будет расходовать вашу квоту API гораздо быстрее, чем стандартные текстовые задачи.\n*   **Визуальный исследователь интерфейса (E):** Устали ориентироваться по \"ненужным кнопкам\"? Нажмите **E** для активации исследователя интерфейса. ИИ просканирует все окно и создаст список каждого кликабельного элемента, который он видит, включая значки, графику и меню. Просто выберите элемент из списка, и ИИ-Оператор нажмет его за вас. Это как иметь \"доступный слой\" поверх любого приложения.\n*   **Контекстно-зависимое умное действие с файлом (F):** Клавиша \"F\" была полностью переработана. Она больше не предполагает, что вы хотите только OCR. Когда вы выбираете одно изображение, она теперь интеллектуально спрашивает о вашем намерении: вы можете выбрать **Детальное визуальное описание** для понимания сцены или **Структурированное извлечение текста (OCR)** для чтения. Меню динамически адаптируется в зависимости от типа файла и вашего активного ИИ-движка.\n*   **Оптимизация ядра:** Мы провели глубокую очистку внутренней логики дополнения, удалив неиспользуемые устаревшие функции и избыточный код. Это приводит к более легкому, быстрому и надежному опыту для всех пользователей."
+    },
+    {
+      "language": "tr",
+      "displayName": "Profesyonel Görsel Asistan",
+      "description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çeviri (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesneyi Betimle (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Sesi metne çevir (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (L)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk),\n- Komut Yardımı (H),\n",
+      "changelog": "## 5.5 İçin Değişiklikler (Otomasyon Güncellemesi)\n\n*   **Yapay Zeka Operatörü (Otonom Kontrol - Shift+A):** Bu, v5.5'in en önemli özelliğidir. Profesyonel Görsel Asistan, pasif bir asistan olmaktan çıkıp kişisel **Yapay Zeka Operatörünüz** haline geldi. Yalnızca ekranı betimlemez; komut gerektirir.\n   * *Nasıl çalışır:* Artık bilgisayarınızı çalıştırmak için sözlü talimatlar verebilirsiniz. Örneğin, ekran okuyucunuzun sessiz kaldığı, tamamen erişilemeyen bir uygulamada **Shift+A** tuşlarına basıp şunu yazabilirsiniz: *\"Ayarlar düğmesine tıklayın\"* veya *\"Arama alanını bulun, 'Son Haberler' yazın ve enter tuşuna basın.\"* Yapay zeka, öğeleri görsel olarak betimler, fareyi hareket ettirir ve görevi sizin için yürütür.\n    *   *Performans Notu:* Bu özellik **Gemini 3.0 Flash (Önizleme)** için optimize edilmiştir ve en karmaşık kullanıcı arayüzü düzenlerini bile işleyebilecek inanılmaz derecede hızlı ve akıllı yanıtlar sunar.\n    *   **⚠️ API Kullanım Uyarısı:** Yapay Zeka Operatörünün doğru olması için tam olarak ne olduğunu \"görmesi\" gerektiğinden, her adımda yüksek çözünürlüklü bir ekran görüntüsü gönderir. Sık kullanımın API kotanızı standart metin tabanlı görevlere göre çok daha hızlı tüketeceğini lütfen unutmayın.\n*   **Görsel Kullanıcı Arayüz Gezgini (E):** \"Etiketlenmemiş düğmeler\" arasında gezinmekten bıktınız mı? UI Explorer'ı etkinleştirmek için **E** tuşuna basın. Yapay zeka tüm pencereyi tarayacak ve simgeler, grafikler ve menüler dahil gördüğü her tıklanabilir öğenin bir listesini oluşturacaktır. Listeden bir öğe seçmeniz yeterlidir; yapay zeka Operatörü sizin için o öğeye tıklayacaktır. Bu, herhangi bir uygulamanın üstünde \"erişilebilir bir katmana\" sahip olmak gibidir.\n*   **Bağlama Duyarlı Akıllı Dosya Eylemi (F):** \"F\" tuşu tamamen elden geçirildi. Artık yalnızca OCR istediğinizi varsaymıyor. Tek bir görsel seçtiğinizde artık akıllı bir şekilde amacınızı soruyor: Sahneyi anlamak için **Ayrıntılı Görsel Açıklama** veya okumak için **Yapılandırılmış Metin Çıkarma (OCR)** seçebilirsiniz. Menü, dosya türüne ve aktif AI motorunuza göre dinamik olarak uyarlanır.\n*   **Çekirdek Optimizasyonu:** Eklentinin dahili mantığında derinlemesine bir temizlik gerçekleştirdik, kullanılmayan eski işlevleri ve gereksiz kodları kaldırdık. Bu, tüm kullanıcılar için daha yalın, daha hızlı ve daha güvenilir bir deneyimle sonuçlanır."
+    },
+    {
+      "language": "uk",
+      "displayName": "Vision Assistant Pro",
+      "description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n",
+      "changelog": "## Зміни у версії 5.5 (Оновлення автоматизації)\n\n*   **Оператор ШІ (Автономне керування — Shift+A):** Це головна родзинка версії 5.5. Vision Assistant Pro перетворився з пасивного помічника на вашого особистого **Оператора ШІ**. Він не просто описує екран — він виконує ваші команди.\n    *   *Як це працює:* Тепер ви можете давати усні вказівки для керування вашим ПК. Наприклад, у повністю недоступній програмі, де ваш екранний зчитувач мовчить, ви можете натиснути **Shift+A** і ввести: *«Натисни на кнопку Налаштування»* або *«Знайди поле пошуку, введи «Останні новини» і натисни Enter».* Штучний інтелект візуально ідентифікує елементи, рухає мишкою та виконує завдання за вас.\n    *   *Примітка щодо продуктивності:* Ця функція оптимізована для **Gemini 3.0 Flash (Preview)**, забезпечуючи неймовірно швидкі та інтелектуальні відповіді, здатні впоратися навіть із найскладнішими макетами інтерфейсу.\n    *   **⚠️ Попередження щодо використання API:** Оскільки Оператор ШІ повинен «бачити» саме те, що відбувається, щоб бути точним, він надсилає знімок екрана з високою роздільною здатністю на кожному кроці. Зверніть увагу, що часте використання вичерпає ваш ліміт API набагато швидше, ніж стандартні текстові завдання.\n*   **Візуальний досліджувач елементів інтерфейсу користувача (E):** Втомилися перебирати «непозначені кнопки»? Натисніть **E**, щоб активувати Досліджувач інтерфейсу користувача. Штучний інтелект просканує все вікно та згенерує список усіх елементів, на які можна натиснути, — включаючи іконки, графіку та меню. Просто виберіть елемент зі списку, і Оператор ШІ натисне на нього за вас. Це ніби «доступний шар» поверх будь-якого додатка.\n*   **Контекстно-залежна розумна дія з файлом (F):** Клавіша «F» була повністю перероблена. Вона більше не припускає, що вам потрібне лише оптичне розпізнавання символів. Коли ви вибираєте одне зображення, вона тепер розумно запитує про ваші наміри: ви можете вибрати **Детальний візуальний опис**, щоб зрозуміти сцену, або **Витяг структурованого тексту (OCR)** для читання. Меню динамічно адаптується залежно від типу файлу та активного двигуна штучного інтелекту.\n*   **Оптимізація ядра:** Ми провели глибоке очищення внутрішньої логіки додатка, видаливши невикористовувані застарілі функції та зайвий код. Це забезпечує більш компактний, швидкий та надійний досвід для всіх користувачів."
+    },
+    {
+      "language": "vi",
+      "displayName": "Vision Assistant Pro",
+      "description": "Một trợ lý AI nâng cao dành cho NVDA sử dụng các mô hình Gemini.\nLớp lệnh: Nhấn NVDA+Shift+V, sau đó:\n- Dịch thông minh (T) / Clipboard (Shift+T)\n- Tinh chỉnh văn bản (R)\n- Mô tả đối tượng (V) / Toàn màn hình (O)\n- Phân tích video trực tuyến (Shift+V)\n- Trình đọc tài liệu (D)\n- OCR tệp (F)\n- Giải CAPTCHA (C)\n- Chuyển biên âm thanh (A)\n- Đọc chính tả thông minh (S)\n- Thông báo trạng thái (L)\n- Kiểm tra cập nhật (U)\n- Gọi lại kết quả cuối cùng (Space),\n- Trợ giúp lệnh (H),\n",
+      "changelog": "## Những thay đổi trong phiên bản 5.5 (Bản cập nhật Tự động hóa)\"\n\n\"*   **AI Operator (Điều khiển tự động - Shift+A):** Đây là tính năng sáng giá nhất của v5.5. Vision Assistant Pro đã nâng cấp từ một trợ lý thụ động thành **AI Operator** cá nhân của bạn. Nó không chỉ mô tả màn hình mà còn thực sự nắm quyền điều khiển.\n\"    *   *Cách thức hoạt động:* Giờ đây bạn có thể đưa ra các chỉ dẫn bằng văn bản hoặc giọng nói để vận hành máy tính. Ví dụ, trong một ứng dụng hoàn toàn không tiếp cận được nơi trình đọc màn hình im lặng, bạn có thể nhấn **Shift+A** và nhập: *\\\"Click vào nút Cài đặt\\\"* hoặc *\\\"Tìm ô tìm kiếm, nhập 'Tin tức mới nhất' rồi nhấn enter.\\\"* AI sẽ nhận diện các thành phần bằng hình ảnh, di chuyển chuột và thực hiện tác vụ cho bạn.\n\"    *   *Lưu ý về hiệu suất:* Tính năng này được tối ưu hóa cho **Gemini 3.0 Flash (Bản xem trước)**, mang lại phản hồi cực nhanh và thông minh, có thể xử lý cả những bố cục giao diện phức tạp nhất.\n    *   **⚠️ Cảnh báo sử dụng API:** Vì AI Operator cần \\\"nhìn\\\" chính xác những gì đang diễn ra để đảm bảo độ chính xác, nó sẽ gửi ảnh chụp màn hình độ phân giải cao sau mỗi bước. Lưu ý rằng việc sử dụng thường xuyên sẽ tiêu tốn hạn ngạch API nhanh hơn nhiều so với các tác vụ văn bản thông thường.\n\"*   **Trình thám hiểm giao diện (UI Explorer - E):** Bạn mệt mỏi vì phải điều hướng qua các \\\"nút không nhãn\\\"? Nhấn **E** để kích hoạt UI Explorer. AI sẽ quét toàn bộ cửa sổ và tạo danh sách mọi thành phần có thể click mà nó thấy—bao gồm cả icon, đồ họa và menu. Chỉ cần chọn một mục từ danh sách và AI Operator sẽ click giúp bạn. Nó giống như việc thêm một \\\"lớp tiếp cận\\\" lên trên bất kỳ ứng dụng nào.\n\"*   **Hành động tệp thông minh theo ngữ cảnh (F):** Phím \\\"F\\\" đã được đại tu hoàn toàn. Nó không còn mặc định là bạn chỉ muốn OCR nữa. Khi bạn chọn một hình ảnh, nó sẽ hỏi ý định của bạn: bạn có thể chọn **Mô tả hình ảnh chi tiết** để hiểu bối cảnh hoặc **Trích xuất văn bản có cấu trúc (OCR)** để đọc. Menu sẽ thay đổi linh hoạt dựa trên loại tệp và công cụ AI bạn đang dùng.\n\"*   **Tối ưu hóa cốt lõi:** Chúng tôi đã dọn dẹp sâu logic nội bộ của add-on, loại bỏ các hàm cũ không còn sử dụng và mã dư thừa. Điều này giúp add-on nhẹ hơn, nhanh hơn và hoạt động ổn định hơn cho tất cả người dùng."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "Vision Assistant Pro",
+      "description": "基于 AI 模型的高级 NVDA 智能助手。\n命令层：按 NVDA+Shift+V，然后按：\n- 智能翻译 (T) / 剪贴板 (Shift+T)\n- 文本润色 (R)\n- 描述对象 (V) / 全屏 (O)\n- 在线视频分析 (Shift+V)\n- 文档阅读器 (D)\n- 文件智能操作 (F)\n- 验证码求解器 (C)\n- 音频转录 (A)\n- 智能听写 (S)\n- AI 操作员 (Shift+A)\n- UI 资源管理器 (E)\n- 播报状态 (L)\n- 检查更新 (U)\n- 调用上一次结果 (Space)\n- 命令帮助 (H)\n",
+      "changelog": "## 5.5 版本变更 (自动化更新)\n\n*   **AI 操作员 (自主控制 - Shift+A)：** 这是 5.5 版本的核心亮点。Vision Assistant Pro 已经从一个被动的助手升级成为您的私人 **AI 操作员**。它不再仅仅是描述屏幕——它开始掌控操作。\n    *   *工作原理：* 您现在可以下达口头指令来操作您的电脑。例如，在一个屏幕阅读器完全无法朗读的无障碍应用中，您可以按下 **Shift+A** 并输入：*“点击设置按钮”* 或 *“找到搜索框，输入‘最新新闻’并回车。”* AI 会在视觉上识别这些元素，移动鼠标，并为您执行任务。\n    *   *性能说明：* 此功能针对 **Gemini 3.0 Flash (Preview)** 进行了优化，能够提供极其快速和智能的响应，即使是最复杂的 UI 布局也能应对自如。\n    *   **⚠️ API 使用警告：** 因为 AI 操作员需要精确地“看到”正在发生的事情，它会在每一步发送一张高分辨率的屏幕截图。请注意，频繁使用将比标准的基于文本的任务更快地消耗您的 API 配额。\n*   **可视化 UI 资源管理器 (E)：** 厌倦了在“未标记的按钮”中导航？按下 **E** 激活 UI 资源管理器。AI 将扫描整个窗口并生成一个包含它看到的每个可点击元素（包括图标、图形和菜单）的列表。只需从列表中选择一个项目，AI 操作员就会为您点击它。这就像在任何应用之上覆盖了一层“无障碍层”。\n*   **基于上下文的智能文件操作 (F)：** “F”键已被彻底重构。它不再假设您只想要 OCR。当您选择单张图像时，它现在会智能地询问您的意图：您可以选择 **详细的视觉描述** 来理解场景，或者选择 **结构化文本提取 (OCR)** 用于阅读。菜单会根据文件类型和您当前活动的 AI 引擎动态调整。\n*   **核心优化：** 我们对插件的内部逻辑进行了深度清理，移除了未使用的旧功能和冗余代码。这为所有用户带来了更精简、更快、更可靠的体验。"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
+  "scanResults": {
+    "codeQL-warnings": [
+      {
+        "ruleId": "py/incomplete-url-substring-sanitization",
+        "rule": {
+          "id": "py/incomplete-url-substring-sanitization",
+          "index": 4,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "The string [instagram.com](1) may be at an arbitrary position in the sanitized URL."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5148,
+                "startColumn": 24,
+                "endColumn": 49
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "2913bc0dd513cd37:1",
+          "primaryLocationStartColumnFingerprint": "11"
+        },
+        "relatedLocations": [
+          {
+            "id": 1,
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5148,
+                "startColumn": 24,
+                "endColumn": 39
+              }
+            },
+            "message": {
+              "text": "instagram.com"
+            }
+          }
+        ]
+      },
+      {
+        "ruleId": "py/incomplete-url-substring-sanitization",
+        "rule": {
+          "id": "py/incomplete-url-substring-sanitization",
+          "index": 4,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "The string [tiktok.com](1) may be at an arbitrary position in the sanitized URL."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5150,
+                "startColumn": 25,
+                "endColumn": 47
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "ecbb1fd672237310:1",
+          "primaryLocationStartColumnFingerprint": "12"
+        },
+        "relatedLocations": [
+          {
+            "id": 1,
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/visionAssistant/__init__.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5150,
+                "startColumn": 25,
+                "endColumn": 37
+              }
+            },
+            "message": {
+              "text": "tiktok.com"
+            }
+          }
+        ]
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\w in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 1
+              },
+              "region": {
+                "startLine": 54,
+                "startColumn": 33,
+                "endColumn": 36
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+          "primaryLocationStartColumnFingerprint": "24"
+        }
+      }
+    ],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 1,
+            "dll": 2,
+            "exe": 1,
+            "h": 177,
+            "html": 13,
+            "ini": 15,
+            "lib": 4,
+            "md": 13,
+            "mo": 14,
+            "po": 14,
+            "py": 63,
+            "pyd": 4,
+            "typed": 1
+          },
+          "file_types": {
+            "HTML": 13,
+            "Portable Executable": 7,
+            "unknown": 303
+          },
+          "highest_datetime": "2026-05-06 17:39:18",
+          "lowest_datetime": "2026-05-06 17:38:38",
+          "num_children": 323,
+          "type": "ZIP",
+          "uncompressed_size": 97579998
+        },
+        "filecondis": {
+          "dhash": "0000000006070704",
+          "raw_md5": "d1b64a652f12e3d031a5f03a14217104"
+        },
+        "first_submission_date": 1778090438,
+        "last_analysis_date": 1778090438,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260506",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260501",
+            "engine_version": "6.775",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260506",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260506",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260506",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260506",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260506",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260506",
+            "engine_version": "260506-08",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260506",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260506",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20251216",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260505",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260506",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260506",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260506",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20251219",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260423",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260506",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260506",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260506",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260506",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260506",
+            "engine_version": "4.0.260",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260506",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260506",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260505",
+            "engine_version": "7.0.30.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260506",
+            "engine_version": "GD:27.44448AVA:64.31186",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "failure",
+            "engine_name": "Google",
+            "engine_update": "20260506",
+            "engine_version": "1778086866",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260506",
+            "engine_version": "1.0.245.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260506",
+            "engine_version": "6.4.16.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260505",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260506",
+            "engine_version": "14.50.59421",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260506",
+            "engine_version": "14.50.59422",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260506",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "timeout",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260506",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260506",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260506",
+            "engine_version": "3.1.0.234",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260506",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260506",
+            "engine_version": "1.2.0.14532",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260506",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260506",
+            "engine_version": "1.1.26030.3008",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260506",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260506",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260506",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260506",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260506",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260504",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260506",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260506",
+            "engine_version": "3.4.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260506",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260506",
+            "engine_version": "2026-05-06.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260506",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260504",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260506",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260506",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260506",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260506",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260506",
+            "engine_version": "5.6.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260506",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260506",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260506",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260506",
+            "engine_version": "9.5.1201",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260506",
+            "engine_version": "38627",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260506",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260506",
+            "engine_version": "2.0.0.5596",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260506",
+            "engine_version": "6.24-114820697",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260506",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260506",
+            "engine_version": "bac4b0b:bac4b0b:08be008:08be008",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260506",
+            "engine_version": "v0.1.4",
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 2,
+          "type-unsupported": 7,
+          "undetected": 64
+        },
+        "last_modification_date": 1778090615,
+        "last_submission_date": 1778090438,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "md5": "67ba339e7c8636b3b9d44de449879f21",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "ad80a19308c8dc40671d4381720705bbb0ba9cde",
+        "sha256": "bd27da1cbfedf4f377f894f408f7e464ef647941c7067061c0d4bb955f3aa59a",
+        "size": 37957987,
+        "ssdeep": "786432:J1irITxRQC4vycIuJBzkYsQx3JIaSmnH2hMwGWeaxgv3wFihk:JaITxRQC4vqu/xsQxAqHkMw3ejfw0W",
+        "tags": [
+          "contains-pe",
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1D78733A7C89CD289EEB2E4BEE0541BD776FF52EC804AB44E642DD0CA5DC3BD901856C1",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "Python Zip Application",
+            "probability": 72.4
+          },
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 27.5
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
 }

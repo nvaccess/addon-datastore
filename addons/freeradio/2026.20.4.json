@@ -1,75 +1,75 @@
 {
-	"addonId": "freeradio",
-	"displayName": "freeRadio",
-	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.4/freeradio-2026.20.4.nvda-addon",
-	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
-	"sha256": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
-	"addonVersionName": "2026.20.4",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 20,
-		"patch": 4
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
-	"sourceURL": "https://github.com/Surveyor123/freeradio",
-	"license": "GPL v2",
-	"homepage": "https://github.com/Surveyor123/freeradio",
-	"changelog": "\n**New features**\n- Favourites can now be exported to JSON or M3U format and imported back from either format. Export and Import buttons appear at the bottom of the Favourites tab. When importing, you can choose to merge the file's stations into your existing list or replace the list entirely. Duplicate stations (matched by ID or stream URL) are skipped automatically during merge.\n- The Recordings and Timer tabs now have a Filter field above their favourite station lists, matching the one already present in the Favourites tab. The Liked Songs tab also has a Filter field above the song list. In all cases, pressing the Down arrow from the filter field moves focus directly into the list, and the number of matching results is announced after each keystroke.\n**Added a Lyrics Service**\nAsynchronous lyrics fetcher for the Liked Songs tab using the lrclib.net API (free, no API key required).\n- Fetches lyrics in the background via a daemon thread; the UI remains responsive during lookup.\n- Prefers `plainLyrics`; falls back to `syncedLyrics` with LRC timestamps stripped when plain text is unavailable. Tracks marked as instrumental are silently skipped.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782446595000,
-	"translations": [],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "db549cc295b5aad6880ec3b07d9a34cc"
-				},
-				"first_submission_date": 1782446600,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1782446673,
-				"last_submission_date": 1782446600,
-				"md5": "0a0050ae7050ef81e7b6f6750465a556",
-				"names": [],
-				"reputation": 0,
-				"sha1": "32c88705fa9f8f76538d896e341fa0dfee72e12f",
-				"sha256": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
-				"size": 45664767,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+  "addonId": "freeradio",
+  "displayName": "freeRadio",
+  "URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.4/freeradio-2026.20.4.nvda-addon",
+  "description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+  "sha256": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
+  "addonVersionName": "2026.20.4",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 20,
+    "patch": 4
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+  "sourceURL": "https://github.com/Surveyor123/freeradio",
+  "license": "GPL v2",
+  "homepage": "https://github.com/Surveyor123/freeradio",
+  "changelog": "\n**New features**\n- Favourites can now be exported to JSON or M3U format and imported back from either format. Export and Import buttons appear at the bottom of the Favourites tab. When importing, you can choose to merge the file's stations into your existing list or replace the list entirely. Duplicate stations (matched by ID or stream URL) are skipped automatically during merge.\n- The Recordings and Timer tabs now have a Filter field above their favourite station lists, matching the one already present in the Favourites tab. The Liked Songs tab also has a Filter field above the song list. In all cases, pressing the Down arrow from the filter field moves focus directly into the list, and the number of matching results is announced after each keystroke.\n**Added a Lyrics Service**\nAsynchronous lyrics fetcher for the Liked Songs tab using the lrclib.net API (free, no API key required).\n- Fetches lyrics in the background via a daemon thread; the UI remains responsive during lookup.\n- Prefers `plainLyrics`; falls back to `syncedLyrics` with LRC timestamps stripped when plain text is unavailable. Tracks marked as instrumental are silently skipped.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782446595000,
+  "translations": [],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
+        "_type": "file",
+        "filecondis": {
+          "dhash": "0000000000070600",
+          "raw_md5": "db549cc295b5aad6880ec3b07d9a34cc"
+        },
+        "first_submission_date": 1782446600,
+        "last_analysis_results": {},
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 0,
+          "undetected": 0
+        },
+        "last_modification_date": 1782446673,
+        "last_submission_date": 1782446600,
+        "md5": "0a0050ae7050ef81e7b6f6750465a556",
+        "names": [],
+        "reputation": 0,
+        "sha1": "32c88705fa9f8f76538d896e341fa0dfee72e12f",
+        "sha256": "262f3aa10f3a2773dda6596d7d983b9601d9f83e8175f1df181421fe0fd83682",
+        "size": 45664767,
+        "tags": [],
+        "times_submitted": 1,
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "type_description": "unknown",
+        "type_tags": [],
+        "unique_sources": 1
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
 }

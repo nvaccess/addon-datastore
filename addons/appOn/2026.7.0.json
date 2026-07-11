@@ -1,935 +1,935 @@
 {
-	"addonId": "appOn",
-	"displayName": "appOn",
-	"URL": "https://github.com/chaichaimee/appOn/releases/download/2026.7.0/appOn-v2026.7.0.nvda-addon",
-	"description": "Launches and activates various applications, including text editors, media players, browsers, and system tools, using direct paths, shortcuts, or URIs.\nHot Key:\nALT+Windows+A : open appOn menu Center",
-	"sha256": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
-	"addonVersionName": "2026.7.0",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 7,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/appOn",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/appOn",
-	"changelog": "async I/O caching, timer cleanup, threading safety. Fixed Watchdog timeout risks by implementing async app detection with caching, resolved memory leak from wx.Timer, and improved UI threading stability.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782711184000,
-	"translations": [
-		{
-			"language": "he",
-			"displayName": "appOn",
-			"description": "מפעיל ומפעיל יישומים שונים, כולל עורכי טקסט, נגני מדיה, דפדפנים וכלי מערכת, באמצעות נתיבים ישירים, קיצורי דרך או URI.\nמקש חם:\nALT+Windows+A : פתח את מרכז התפריטים של appOn"
-		},
-		{
-			"language": "vi",
-			"displayName": "appOn",
-			"description": "Khởi chạy và kích hoạt các ứng dụng khác nhau, bao gồm trình chỉnh sửa văn bản, trình phát đa phương tiện, trình duyệt và công cụ hệ thống, bằng cách sử dụng đường dẫn trực tiếp, lối tắt hoặc URI.\nPhím nóng:\nALT+Windows+A : mở trung tâm menu appOn"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "appOn",
-			"description": "使用直接路徑、快捷方式或 URI 啟動並激活各種應用程式，包括文字編輯器、多媒體播放器、瀏覽器和系統工具。\n快速鍵：\nALT+Windows+A ：打開 appOn 菜單中心"
-		},
-		{
-			"language": "gl",
-			"displayName": "appOn",
-			"description": "Inicia e activa diversas aplicacións, incluídos editores de texto, reprodutores multimedia, navegadores e ferramentas do sistema, mediante rutas directas, atallos ou URI.\nTecla de acceso rápido:\nALT+Windows+A : abrir o centro de menús de appOn"
-		},
-		{
-			"language": "ko",
-			"displayName": "appOn",
-			"description": "직접 경로, 바로 가기 또는 URI를 사용하여 텍스트 편집기, 미디어 플레이어, 브라우저 및 시스템 도구를 포함한 다양한 응용 프로그램을 실행하고 활성화합니다.\n단축키:\nALT+Windows+A : appOn 메뉴 센터 열기"
-		},
-		{
-			"language": "ar",
-			"displayName": "appOn",
-			"description": "يقوم بتشغيل وتنشيط تطبيقات مختلفة، بما في ذلك محررات النصوص ومشغلات الوسائط والمتصفحات وأدوات النظام، باستخدام المسارات المباشرة أو الاختصارات أو معرفات URI.\nمفتاح الاختصار:\nALT+Windows+A: فتح مركز قائمة appOn"
-		},
-		{
-			"language": "ur",
-			"displayName": "appOn",
-			"description": "براہ راست راستوں، شارٹ کٹس، یا URIs کا استعمال کرتے ہوئے ٹیکسٹ ایڈیٹرز، میڈیا پلیئرز، براؤزرز اور سسٹم ٹولز سمیت مختلف ایپلیکیشنز کو لانچ اور فعال کرتا ہے۔\nہاٹ کی:\nALT+Windows+A : appOn مینو سینٹر کھولیں"
-		},
-		{
-			"language": "ro",
-			"displayName": "appOn",
-			"description": "Lansează și activează diverse aplicații, inclusiv editoare de text, playere media, browsere și instrumente de sistem, utilizând căi directe, comenzi rapide sau URI-uri.\nTasta rapidă:\nALT+Windows+A : deschide centrul de meniuri appOn"
-		},
-		{
-			"language": "pt",
-			"displayName": "appOn",
-			"description": "Inicia e ativa várias aplicações, incluindo editores de texto, leitores multimédia, navegadores e ferramentas de sistema, utilizando caminhos diretos, atalhos ou URIs.\nTeclas de atalho:\nALT+Windows+A : abrir o centro de menus appOn"
-		},
-		{
-			"language": "tr",
-			"displayName": "appOn",
-			"description": "Doğrudan yolları, kısayolları veya URI'leri kullanarak metin düzenleyiciler, medya oynatıcılar, tarayıcılar ve sistem araçları dahil olmak üzere çeşitli uygulamaları başlatır ve etkinleştirir.\nKısayol Tuşu:\nALT+Windows+A : appOn menü merkezini aç"
-		},
-		{
-			"language": "uk",
-			"displayName": "appOn",
-			"description": "Запускає та активує різноманітні програми, включаючи текстові редактори, медіаплеєри, браузери та системні інструменти, використовуючи прямі шляхи, ярлики або URI.\nГаряча клавіша:\nALT+Windows+A : відкрити центр меню appOn"
-		},
-		{
-			"language": "th",
-			"displayName": "appOn",
-			"description": "เรียกใช้และเปิดใช้งานแอปพลิเคชันต่างๆ รวมถึงโปรแกรมแก้ไขข้อความ เครื่องเล่นมีเดีย เบราว์เซอร์ และเครื่องมือระบบ โดยใช้เส้นทางโดยตรง ทางลัด หรือ URI\nคีย์ลัด:\nALT+Windows+A : เปิดศูนย์เมนู appOn"
-		},
-		{
-			"language": "hu",
-			"displayName": "appOn",
-			"description": "Különböző alkalmazásokat indít el és aktivál, beleértve a szövegszerkesztőket, médialejátszókat, böngészőket és rendszereszközöket, közvetlen elérési utak, parancsikonok vagy URI-k használatával.\nGyorsbillentyű:\nALT+Windows+A : appOn menüközpont megnyitása"
-		},
-		{
-			"language": "tl",
-			"displayName": "appOn",
-			"description": "Naglulunsad at nag-a-activate ng iba't ibang application, kabilang ang mga text editor, media player, browser, at system tool, gamit ang mga direktang path, shortcut, o URI.\nHot Key:\nALT+Windows+A : buksan ang appOn menu Center"
-		},
-		{
-			"language": "ru",
-			"displayName": "appOn",
-			"description": "Запускает и активирует различные приложения, включая текстовые редакторы, медиаплееры, браузеры и системные инструменты, используя прямые пути, ярлыки или URI.\nГорячая клавиша:\nALT+Windows+A : открыть центр меню appOn"
-		},
-		{
-			"language": "si",
-			"displayName": "appOn",
-			"description": "සෘජු මාර්ග, කෙටිමං හෝ URI භාවිතයෙන් පෙළ සංස්කාරක, මාධ්‍ය වාදක, බ්‍රව්සර සහ පද්ධති මෙවලම් ඇතුළු විවිධ යෙදුම් දියත් කර සක්‍රිය කරයි.\nහොට් කී:\nALT+Windows+A : appOn මෙනු මධ්‍යස්ථානය විවෘත කරන්න"
-		},
-		{
-			"language": "sk",
-			"displayName": "appOn",
-			"description": "Spúšťa a aktivuje rôzne aplikácie vrátane textových editorov, prehrávačov médií, prehliadačov a systémových nástrojov pomocou priamych ciest, skratiek alebo URI.\nHorúci kláves:\nALT+Windows+A : otvoriť centrum menu appOn"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "appOn",
-			"description": "Inicia e ativa várias aplicações, incluindo editores de texto, leitores multimédia, navegadores e ferramentas de sistema, utilizando caminhos diretos, atalhos ou URIs.\nTecla de atalho:\nALT+Windows+A : abrir o centro de menus appOn"
-		},
-		{
-			"language": "da",
-			"displayName": "appOn",
-			"description": "Starter og aktiverer forskellige applikationer, herunder teksteditorer, medieafspillere, browsere og systemværktøjer, ved hjælp af direkte stier, genveje eller URI'er.\nGenvejstast:\nALT+Windows+A : åbn appOn menu Center"
-		},
-		{
-			"language": "it",
-			"displayName": "appOn",
-			"description": "Avvia e attiva varie applicazioni, tra cui editor di testo, lettori multimediali, browser e strumenti di sistema, utilizzando percorsi diretti, collegamenti o URI.\nTasto di scelta rapida:\nALT+Windows+A : apre il centro menu appOn"
-		},
-		{
-			"language": "lo",
-			"displayName": "appOn",
-			"description": "ເປີດໃຊ້ງານ ແລະ ກະຕຸ້ນແອັບພລິເຄຊັນຕ່າງໆ, ລວມທັງຕົວແກ້ໄຂຂໍ້ຄວາມ, ເຄື່ອງຫຼິ້ນມີເດຍ, ບຣາວເຊີ ແລະ ເຄື່ອງມືລະບົບ, ໂດຍໃຊ້ເສັ້ນທາງໂດຍກົງ, ທາງລັດ ຫຼື URI.\nປຸ່ມລັດ:\nALT+Windows+A : ເປີດສູນເມນູ appOn"
-		},
-		{
-			"language": "bg",
-			"displayName": "appOn",
-			"description": "Стартираและактивира различни приложения, включително текстови редактори, медийни плейъри, браузъри и системни инструменти, като използва директни пътища, преки пътища или URI.\nГорещ клавиш:\nALT+Windows+A : отваряне на менюто appOn Center"
-		},
-		{
-			"language": "kk",
-			"displayName": "appOn",
-			"description": "Тікелей жолдарды, жарлықтарды немесе URI кодтарын пайдаланып мәтіндік редакторларды, медиа ойнатқыштарды, браузерлерді және жүйелік құралдарды қоса алғанда, әртүрлі қолданбаларды іске қосады және белсендіреді.\nЖедел перне:\nALT+Windows+A : appOn мәзір орталығын ашу"
-		},
-		{
-			"language": "my",
-			"displayName": "appOn",
-			"description": "တိုက်ရိုက်လမ်းကြောင်းများ၊ ဖြတ်လမ်းများ သို့မဟုတ် URI များကို အသုံးပြု၍ စာသားတည်းဖြတ်သူများ၊ မီဒီယာပလေယာများ၊ ဘရောက်ဆာများနှင့် စနစ်ကိရိယာများအပါအဝင် အမျိုးမျိုးသော အပလီကေးရှင်းများကို စတင်ပြီး အသက်သွင်းပေးသည်။\nဟော့ကီး-\nALT+Windows+A : appOn မီနူးစင်တာကို ဖွင့်ပါ"
-		},
-		{
-			"language": "bn",
-			"displayName": "appOn",
-			"description": "সরাসরি পাথ, শর্টকাট বা URI ব্যবহার করে টেক্সট এডিটর, মিডিয়া প্লেয়ার, ব্রাউজার এবং সিস্টেম টুল সহ বিভিন্ন অ্যাপ্লিকেশন লঞ্চ এবং সক্রিয় করে।\nহট কি:\nALT+Windows+A : appOn মেনু সেন্টার খুলুন"
-		},
-		{
-			"language": "ms",
-			"displayName": "appOn",
-			"description": "Melancarkan dan mengaktifkan pelbagai aplikasi, termasuk editor teks, pemain media, pelayar dan alat sistem, menggunakan laluan langsung, pintasan atau URI.\nKekunci Pintas:\nALT+Windows+A : buka Pusat menu appOn"
-		},
-		{
-			"language": "de",
-			"displayName": "appOn",
-			"description": "Startet und aktiviert verschiedene Anwendungen, einschließlich Texteditoren, Mediaplayer, Browser und Systemtools, über direkte Pfade, Verknüpfungen oder URIs.\nTastenkombination:\nALT+Windows+A : appOn-Menü-Center öffnen"
-		},
-		{
-			"language": "cs",
-			"displayName": "appOn",
-			"description": "Spouští a aktivuje různé aplikace, včetně textových editorů, mediálních přehrávačů, prohlížečů a systémových nástrojů, pomocí přímých cest, zástupců nebo URI.\nHorká klávesa:\nALT+Windows+A : otevřít nabídku appOn Center"
-		},
-		{
-			"language": "uz",
-			"displayName": "appOn",
-			"description": "To'g'ridan-to'g'ri yo'llar, yorliqlar yoki URI'lar yordamida matn tahrirlovchilari, media pleerlar, brauzerlar va tizim asboblarini o'z ichiga olgan turli ilovalarni ishga tushiradi va faollashtiradi.\nIssiq klavisha:\nALT+Windows+A : appOn menyu markazini ochish"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "appOn",
-			"description": "Inicia e ativa vários aplicativos, incluindo editores de texto, reprodutores de mídia, navegadores e ferramentas do sistema, usando caminhos diretos, atalhos ou URIs.\nTecla de atalho:\nALT+Windows+A : abrir a central de menus do appOn"
-		},
-		{
-			"language": "es",
-			"displayName": "appOn",
-			"description": "Inicia y activa diversas aplicaciones, incluidos editores de texto, reproductores multimedia, navegadores y herramientas del sistema, utilizando rutas directas, accesos directos o URI.\nTecla de acceso rápido:\nALT+Windows+A : abrir el centro de menús de appOn"
-		},
-		{
-			"language": "te",
-			"displayName": "appOn",
-			"description": "నేరుగా పాత్‌లు, షార్ట్‌కట్‌లు లేదా URIలను ఉపయోగించి టెక్స్ట్ ఎడిటర్‌లు, మీడియా ప్లేయర్‌లు, బ్రౌజర్‌లు మరియు సిస్టమ్ టూల్స్‌తో సహా వివిధ అప్లికేషన్‌లను లాంచ్ చేస్తుంది మరియు యాక్టివేట్ చేస్తుంది.\nహాట్ కీ:\nALT+Windows+A : appOn మెనూ సెంటర్‌ను తెరువు"
-		},
-		{
-			"language": "hi",
-			"displayName": "appOn",
-			"description": "डायरेक्ट पाथ, शॉर्टकट या URI का उपयोग करके टेक्स्ट एडिटर, मीडिया प्लेयर, ब्राउज़र और सिस्टम टूल सहित विभिन्न एप्लिकेशन लॉन्च और सक्रिय करता है।\nहॉट की:\nALT+Windows+A : appOn मेनू सेंटर खोलें"
-		},
-		{
-			"language": "fi",
-			"displayName": "appOn",
-			"description": "Käynnistää ja aktivoi erilaisia sovelluksia, kuten tekstinkäsittelyohjelmia, mediasoittimia, selaimia ja järjestelmätyökaluja, käyttämällä suoria polkuja, pikakuvakkeita tai URI-tunnuksia.\nPikanäppäin:\nALT+Windows+A : avaa appOn-valikkokeskus"
-		},
-		{
-			"language": "id",
-			"displayName": "appOn",
-			"description": "Meluncurkan dan mengaktifkan berbagai aplikasi, termasuk editor teks, pemutar media, peramban, dan perkakas sistem, menggunakan jalur langsung, pintasan, atau URI.\nTombol Pintas:\nALT+Windows+A : buka Pusat menu appOn"
-		},
-		{
-			"language": "hr",
-			"displayName": "appOn",
-			"description": "Pokreće i aktivira različite aplikacije, uključujući uređivače teksta, medijske playere, preglednike i sistemske alate, koristeći izravne putanje, prečace ili URI-je.\nVruća tipka:\nALT+Windows+A : otvorite centar izbornika appOn"
-		},
-		{
-			"language": "tk",
-			"displayName": "appOn",
-			"description": "Göni ýollar, gysga ýollar ýa-da URI-ler arkaly tekst redaktorlary, media pleýerleri, brauzerler we ulgam gurallary ýaly dürli programmalary açýar we işledýär.\nGysga ýol klawişi:\nALT+Windows+A : appOn menýu merkezini açmak"
-		},
-		{
-			"language": "fa",
-			"displayName": "appOn",
-			"description": "برنامه‌های مختلف از جمله ویرایشگرهای متن، پخش‌کننده‌های رسانه، مرورگرها و ابزارهای سیستم را با استفاده از مسیرهای مستقیم، میان‌برها یا URIها راه‌اندازی و فعال می‌کند.\nکلید میانبر:\nALT+Windows+A : باز کردن مرکز منوی appOn"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "appOn",
-			"description": "使用直接路径、快捷方式或 URI 启动并激活各种应用程序，包括文本编辑器、媒体播放器、浏览器和系统工具。\n热键：\nALT+Windows+A ：打开 appOn 菜单中心"
-		},
-		{
-			"language": "en",
-			"displayName": "appOn",
-			"description": "Launches and activates various applications, including text editors, media players, browsers, and system tools, using direct paths, shortcuts, or URIs.\nHot Key:\nALT+Windows+A : open appOn menu Center"
-		},
-		{
-			"language": "ja",
-			"displayName": "appOn",
-			"description": "直接パス、ショートカット、またはURIを使用して、テキストエディタ、メディアプレーヤー、ブラウザ、システムツールなどのさまざまなアプリケーションを起動およびアクティブ化します。\nホットキー:\nALT+Windows+A : appOnメニューセンターを開く"
-		},
-		{
-			"language": "fr",
-			"displayName": "appOn",
-			"description": "Lance et active diverses applications, notamment des éditeurs de texte, des lecteurs multimédias, des navigateurs et des outils système, à l'aide de chemins directs, de raccourcis ou d'URI.\nRaccourci clavier :\nALT+Windows+A : ouvrir le centre de menu appOn"
-		},
-		{
-			"language": "ta",
-			"displayName": "appOn",
-			"description": "நேரடி பாதைகள், குறுக்குவழிகள் அல்லது URIகளைப் பயன்படுத்தி உரை எடிட்டர்கள், மீடியா பிளேயர்கள், உலாவிகள் மற்றும் கணினி கருவிகள் உள்ளிட்ட பல்வேறு பயன்பாடுகளைத் துவக்கி செயல்படுத்துகிறது.\nஹாட் கீ:\nALT+Windows+A : appOn மெனு மையத்தைத் திறக்கவும்"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"html": 6,
-						"ini": 44,
-						"md": 6,
-						"mo": 43,
-						"po": 43,
-						"py": 4
-					},
-					"file_types": {
-						"XML": 6,
-						"directory": 96,
-						"unknown": 140
-					},
-					"highest_datetime": "2026-06-29 12:19:58",
-					"lowest_datetime": "2026-02-11 17:05:42",
-					"num_children": 242,
-					"type": "ZIP",
-					"uncompressed_size": 266860
-				},
-				"contenthash": "e20746cde284634625b66dbaaf249ba1",
-				"filecondis": {
-					"dhash": "00003c3c1d280000",
-					"raw_md5": "bf74eb91388d026981320e4296301691"
-				},
-				"first_submission_date": 1782711189,
-				"last_analysis_date": 1782711189,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260628",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260628",
-						"engine_version": "6.793",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260629",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260629",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260629",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260629",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260629",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260628",
-						"engine_version": "260628-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260629",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260629",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260627",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260628",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260629",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260629",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260628",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260625",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260628",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260629",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260629",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260626",
-						"engine_version": "4.0.268",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260629",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260629",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260629",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260629",
-						"engine_version": "GD:27.45079AVA:64.31494",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260629",
-						"engine_version": "1782705642",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260629",
-						"engine_version": "1.0.249.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260628",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260628",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260629",
-						"engine_version": "14.59.59969",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260629",
-						"engine_version": "14.59.59969",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260629",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260628",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260628",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260629",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260626",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260629",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260629",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260629",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260628",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260629",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260628",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260629",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260627",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260626",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260623",
-						"engine_version": "7.7.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260628",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260628",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260628",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260629",
-						"engine_version": "2026-06-29.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260629",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260628",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260629",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260629",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "failure",
-						"engine_name": "Trustlook",
-						"engine_update": "20260629",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260628",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260628",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260629",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260629",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260626",
-						"engine_version": "9.5.1237",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260628",
-						"engine_version": "38767",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260629",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260626",
-						"engine_version": "2.0.0.5630",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260628",
-						"engine_version": "6.25-116107928",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260629",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260628",
-						"engine_version": "0aa8ddc:0aa8ddc:6990e76:6990e76",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260629",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 65
-				},
-				"last_modification_date": 1782711222,
-				"last_submission_date": 1782711189,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
-				"magika": "ZIP",
-				"md5": "83525d57fe184246db3305d25c656d41",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "d12716315ea460f7a232c5e21722e5380ee86107",
-				"sha256": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
-				"size": 153111,
-				"ssdeep": "1536:FmPGS2whDfFhrGhv6J15uj536lUHkTlPR5A5fMbsXMjQyq8BvG8Gw+BaNE36nppF:FmOPw7r+vYWulniUbkMjrxs8Gw+0NwPK",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T10DE39D15D32F1107E16AD7FF76860516F23C5105D23FBB4B066BA8C26C893AE0F9EA46",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "381af0661af812c75a1a26bc84c9ca8b"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6472"
+  "addonId": "appOn",
+  "displayName": "appOn",
+  "URL": "https://github.com/chaichaimee/appOn/releases/download/2026.7.0/appOn-v2026.7.0.nvda-addon",
+  "description": "Launches and activates various applications, including text editors, media players, browsers, and system tools, using direct paths, shortcuts, or URIs.\nHot Key:\nALT+Windows+A : open appOn menu Center",
+  "sha256": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
+  "addonVersionName": "2026.7.0",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 7,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/appOn",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/appOn",
+  "changelog": "async I/O caching, timer cleanup, threading safety. Fixed Watchdog timeout risks by implementing async app detection with caching, resolved memory leak from wx.Timer, and improved UI threading stability.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782711184000,
+  "translations": [
+    {
+      "language": "he",
+      "displayName": "appOn",
+      "description": "מפעיל ומפעיל יישומים שונים, כולל עורכי טקסט, נגני מדיה, דפדפנים וכלי מערכת, באמצעות נתיבים ישירים, קיצורי דרך או URI.\nמקש חם:\nALT+Windows+A : פתח את מרכז התפריטים של appOn"
+    },
+    {
+      "language": "vi",
+      "displayName": "appOn",
+      "description": "Khởi chạy và kích hoạt các ứng dụng khác nhau, bao gồm trình chỉnh sửa văn bản, trình phát đa phương tiện, trình duyệt và công cụ hệ thống, bằng cách sử dụng đường dẫn trực tiếp, lối tắt hoặc URI.\nPhím nóng:\nALT+Windows+A : mở trung tâm menu appOn"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "appOn",
+      "description": "使用直接路徑、快捷方式或 URI 啟動並激活各種應用程式，包括文字編輯器、多媒體播放器、瀏覽器和系統工具。\n快速鍵：\nALT+Windows+A ：打開 appOn 菜單中心"
+    },
+    {
+      "language": "gl",
+      "displayName": "appOn",
+      "description": "Inicia e activa diversas aplicacións, incluídos editores de texto, reprodutores multimedia, navegadores e ferramentas do sistema, mediante rutas directas, atallos ou URI.\nTecla de acceso rápido:\nALT+Windows+A : abrir o centro de menús de appOn"
+    },
+    {
+      "language": "ko",
+      "displayName": "appOn",
+      "description": "직접 경로, 바로 가기 또는 URI를 사용하여 텍스트 편집기, 미디어 플레이어, 브라우저 및 시스템 도구를 포함한 다양한 응용 프로그램을 실행하고 활성화합니다.\n단축키:\nALT+Windows+A : appOn 메뉴 센터 열기"
+    },
+    {
+      "language": "ar",
+      "displayName": "appOn",
+      "description": "يقوم بتشغيل وتنشيط تطبيقات مختلفة، بما في ذلك محررات النصوص ومشغلات الوسائط والمتصفحات وأدوات النظام، باستخدام المسارات المباشرة أو الاختصارات أو معرفات URI.\nمفتاح الاختصار:\nALT+Windows+A: فتح مركز قائمة appOn"
+    },
+    {
+      "language": "ur",
+      "displayName": "appOn",
+      "description": "براہ راست راستوں، شارٹ کٹس، یا URIs کا استعمال کرتے ہوئے ٹیکسٹ ایڈیٹرز، میڈیا پلیئرز، براؤزرز اور سسٹم ٹولز سمیت مختلف ایپلیکیشنز کو لانچ اور فعال کرتا ہے۔\nہاٹ کی:\nALT+Windows+A : appOn مینو سینٹر کھولیں"
+    },
+    {
+      "language": "ro",
+      "displayName": "appOn",
+      "description": "Lansează și activează diverse aplicații, inclusiv editoare de text, playere media, browsere și instrumente de sistem, utilizând căi directe, comenzi rapide sau URI-uri.\nTasta rapidă:\nALT+Windows+A : deschide centrul de meniuri appOn"
+    },
+    {
+      "language": "pt",
+      "displayName": "appOn",
+      "description": "Inicia e ativa várias aplicações, incluindo editores de texto, leitores multimédia, navegadores e ferramentas de sistema, utilizando caminhos diretos, atalhos ou URIs.\nTeclas de atalho:\nALT+Windows+A : abrir o centro de menus appOn"
+    },
+    {
+      "language": "tr",
+      "displayName": "appOn",
+      "description": "Doğrudan yolları, kısayolları veya URI'leri kullanarak metin düzenleyiciler, medya oynatıcılar, tarayıcılar ve sistem araçları dahil olmak üzere çeşitli uygulamaları başlatır ve etkinleştirir.\nKısayol Tuşu:\nALT+Windows+A : appOn menü merkezini aç"
+    },
+    {
+      "language": "uk",
+      "displayName": "appOn",
+      "description": "Запускає та активує різноманітні програми, включаючи текстові редактори, медіаплеєри, браузери та системні інструменти, використовуючи прямі шляхи, ярлики або URI.\nГаряча клавіша:\nALT+Windows+A : відкрити центр меню appOn"
+    },
+    {
+      "language": "th",
+      "displayName": "appOn",
+      "description": "เรียกใช้และเปิดใช้งานแอปพลิเคชันต่างๆ รวมถึงโปรแกรมแก้ไขข้อความ เครื่องเล่นมีเดีย เบราว์เซอร์ และเครื่องมือระบบ โดยใช้เส้นทางโดยตรง ทางลัด หรือ URI\nคีย์ลัด:\nALT+Windows+A : เปิดศูนย์เมนู appOn"
+    },
+    {
+      "language": "hu",
+      "displayName": "appOn",
+      "description": "Különböző alkalmazásokat indít el és aktivál, beleértve a szövegszerkesztőket, médialejátszókat, böngészőket és rendszereszközöket, közvetlen elérési utak, parancsikonok vagy URI-k használatával.\nGyorsbillentyű:\nALT+Windows+A : appOn menüközpont megnyitása"
+    },
+    {
+      "language": "tl",
+      "displayName": "appOn",
+      "description": "Naglulunsad at nag-a-activate ng iba't ibang application, kabilang ang mga text editor, media player, browser, at system tool, gamit ang mga direktang path, shortcut, o URI.\nHot Key:\nALT+Windows+A : buksan ang appOn menu Center"
+    },
+    {
+      "language": "ru",
+      "displayName": "appOn",
+      "description": "Запускает и активирует различные приложения, включая текстовые редакторы, медиаплееры, браузеры и системные инструменты, используя прямые пути, ярлыки или URI.\nГорячая клавиша:\nALT+Windows+A : открыть центр меню appOn"
+    },
+    {
+      "language": "si",
+      "displayName": "appOn",
+      "description": "සෘජු මාර්ග, කෙටිමං හෝ URI භාවිතයෙන් පෙළ සංස්කාරක, මාධ්‍ය වාදක, බ්‍රව්සර සහ පද්ධති මෙවලම් ඇතුළු විවිධ යෙදුම් දියත් කර සක්‍රිය කරයි.\nහොට් කී:\nALT+Windows+A : appOn මෙනු මධ්‍යස්ථානය විවෘත කරන්න"
+    },
+    {
+      "language": "sk",
+      "displayName": "appOn",
+      "description": "Spúšťa a aktivuje rôzne aplikácie vrátane textových editorov, prehrávačov médií, prehliadačov a systémových nástrojov pomocou priamych ciest, skratiek alebo URI.\nHorúci kláves:\nALT+Windows+A : otvoriť centrum menu appOn"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "appOn",
+      "description": "Inicia e ativa várias aplicações, incluindo editores de texto, leitores multimédia, navegadores e ferramentas de sistema, utilizando caminhos diretos, atalhos ou URIs.\nTecla de atalho:\nALT+Windows+A : abrir o centro de menus appOn"
+    },
+    {
+      "language": "da",
+      "displayName": "appOn",
+      "description": "Starter og aktiverer forskellige applikationer, herunder teksteditorer, medieafspillere, browsere og systemværktøjer, ved hjælp af direkte stier, genveje eller URI'er.\nGenvejstast:\nALT+Windows+A : åbn appOn menu Center"
+    },
+    {
+      "language": "it",
+      "displayName": "appOn",
+      "description": "Avvia e attiva varie applicazioni, tra cui editor di testo, lettori multimediali, browser e strumenti di sistema, utilizzando percorsi diretti, collegamenti o URI.\nTasto di scelta rapida:\nALT+Windows+A : apre il centro menu appOn"
+    },
+    {
+      "language": "lo",
+      "displayName": "appOn",
+      "description": "ເປີດໃຊ້ງານ ແລະ ກະຕຸ້ນແອັບພລິເຄຊັນຕ່າງໆ, ລວມທັງຕົວແກ້ໄຂຂໍ້ຄວາມ, ເຄື່ອງຫຼິ້ນມີເດຍ, ບຣາວເຊີ ແລະ ເຄື່ອງມືລະບົບ, ໂດຍໃຊ້ເສັ້ນທາງໂດຍກົງ, ທາງລັດ ຫຼື URI.\nປຸ່ມລັດ:\nALT+Windows+A : ເປີດສູນເມນູ appOn"
+    },
+    {
+      "language": "bg",
+      "displayName": "appOn",
+      "description": "Стартираและактивира различни приложения, включително текстови редактори, медийни плейъри, браузъри и системни инструменти, като използва директни пътища, преки пътища или URI.\nГорещ клавиш:\nALT+Windows+A : отваряне на менюто appOn Center"
+    },
+    {
+      "language": "kk",
+      "displayName": "appOn",
+      "description": "Тікелей жолдарды, жарлықтарды немесе URI кодтарын пайдаланып мәтіндік редакторларды, медиа ойнатқыштарды, браузерлерді және жүйелік құралдарды қоса алғанда, әртүрлі қолданбаларды іске қосады және белсендіреді.\nЖедел перне:\nALT+Windows+A : appOn мәзір орталығын ашу"
+    },
+    {
+      "language": "my",
+      "displayName": "appOn",
+      "description": "တိုက်ရိုက်လမ်းကြောင်းများ၊ ဖြတ်လမ်းများ သို့မဟုတ် URI များကို အသုံးပြု၍ စာသားတည်းဖြတ်သူများ၊ မီဒီယာပလေယာများ၊ ဘရောက်ဆာများနှင့် စနစ်ကိရိယာများအပါအဝင် အမျိုးမျိုးသော အပလီကေးရှင်းများကို စတင်ပြီး အသက်သွင်းပေးသည်။\nဟော့ကီး-\nALT+Windows+A : appOn မီနူးစင်တာကို ဖွင့်ပါ"
+    },
+    {
+      "language": "bn",
+      "displayName": "appOn",
+      "description": "সরাসরি পাথ, শর্টকাট বা URI ব্যবহার করে টেক্সট এডিটর, মিডিয়া প্লেয়ার, ব্রাউজার এবং সিস্টেম টুল সহ বিভিন্ন অ্যাপ্লিকেশন লঞ্চ এবং সক্রিয় করে।\nহট কি:\nALT+Windows+A : appOn মেনু সেন্টার খুলুন"
+    },
+    {
+      "language": "ms",
+      "displayName": "appOn",
+      "description": "Melancarkan dan mengaktifkan pelbagai aplikasi, termasuk editor teks, pemain media, pelayar dan alat sistem, menggunakan laluan langsung, pintasan atau URI.\nKekunci Pintas:\nALT+Windows+A : buka Pusat menu appOn"
+    },
+    {
+      "language": "de",
+      "displayName": "appOn",
+      "description": "Startet und aktiviert verschiedene Anwendungen, einschließlich Texteditoren, Mediaplayer, Browser und Systemtools, über direkte Pfade, Verknüpfungen oder URIs.\nTastenkombination:\nALT+Windows+A : appOn-Menü-Center öffnen"
+    },
+    {
+      "language": "cs",
+      "displayName": "appOn",
+      "description": "Spouští a aktivuje různé aplikace, včetně textových editorů, mediálních přehrávačů, prohlížečů a systémových nástrojů, pomocí přímých cest, zástupců nebo URI.\nHorká klávesa:\nALT+Windows+A : otevřít nabídku appOn Center"
+    },
+    {
+      "language": "uz",
+      "displayName": "appOn",
+      "description": "To'g'ridan-to'g'ri yo'llar, yorliqlar yoki URI'lar yordamida matn tahrirlovchilari, media pleerlar, brauzerlar va tizim asboblarini o'z ichiga olgan turli ilovalarni ishga tushiradi va faollashtiradi.\nIssiq klavisha:\nALT+Windows+A : appOn menyu markazini ochish"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "appOn",
+      "description": "Inicia e ativa vários aplicativos, incluindo editores de texto, reprodutores de mídia, navegadores e ferramentas do sistema, usando caminhos diretos, atalhos ou URIs.\nTecla de atalho:\nALT+Windows+A : abrir a central de menus do appOn"
+    },
+    {
+      "language": "es",
+      "displayName": "appOn",
+      "description": "Inicia y activa diversas aplicaciones, incluidos editores de texto, reproductores multimedia, navegadores y herramientas del sistema, utilizando rutas directas, accesos directos o URI.\nTecla de acceso rápido:\nALT+Windows+A : abrir el centro de menús de appOn"
+    },
+    {
+      "language": "te",
+      "displayName": "appOn",
+      "description": "నేరుగా పాత్‌లు, షార్ట్‌కట్‌లు లేదా URIలను ఉపయోగించి టెక్స్ట్ ఎడిటర్‌లు, మీడియా ప్లేయర్‌లు, బ్రౌజర్‌లు మరియు సిస్టమ్ టూల్స్‌తో సహా వివిధ అప్లికేషన్‌లను లాంచ్ చేస్తుంది మరియు యాక్టివేట్ చేస్తుంది.\nహాట్ కీ:\nALT+Windows+A : appOn మెనూ సెంటర్‌ను తెరువు"
+    },
+    {
+      "language": "hi",
+      "displayName": "appOn",
+      "description": "डायरेक्ट पाथ, शॉर्टकट या URI का उपयोग करके टेक्स्ट एडिटर, मीडिया प्लेयर, ब्राउज़र और सिस्टम टूल सहित विभिन्न एप्लिकेशन लॉन्च और सक्रिय करता है।\nहॉट की:\nALT+Windows+A : appOn मेनू सेंटर खोलें"
+    },
+    {
+      "language": "fi",
+      "displayName": "appOn",
+      "description": "Käynnistää ja aktivoi erilaisia sovelluksia, kuten tekstinkäsittelyohjelmia, mediasoittimia, selaimia ja järjestelmätyökaluja, käyttämällä suoria polkuja, pikakuvakkeita tai URI-tunnuksia.\nPikanäppäin:\nALT+Windows+A : avaa appOn-valikkokeskus"
+    },
+    {
+      "language": "id",
+      "displayName": "appOn",
+      "description": "Meluncurkan dan mengaktifkan berbagai aplikasi, termasuk editor teks, pemutar media, peramban, dan perkakas sistem, menggunakan jalur langsung, pintasan, atau URI.\nTombol Pintas:\nALT+Windows+A : buka Pusat menu appOn"
+    },
+    {
+      "language": "hr",
+      "displayName": "appOn",
+      "description": "Pokreće i aktivira različite aplikacije, uključujući uređivače teksta, medijske playere, preglednike i sistemske alate, koristeći izravne putanje, prečace ili URI-je.\nVruća tipka:\nALT+Windows+A : otvorite centar izbornika appOn"
+    },
+    {
+      "language": "tk",
+      "displayName": "appOn",
+      "description": "Göni ýollar, gysga ýollar ýa-da URI-ler arkaly tekst redaktorlary, media pleýerleri, brauzerler we ulgam gurallary ýaly dürli programmalary açýar we işledýär.\nGysga ýol klawişi:\nALT+Windows+A : appOn menýu merkezini açmak"
+    },
+    {
+      "language": "fa",
+      "displayName": "appOn",
+      "description": "برنامه‌های مختلف از جمله ویرایشگرهای متن، پخش‌کننده‌های رسانه، مرورگرها و ابزارهای سیستم را با استفاده از مسیرهای مستقیم، میان‌برها یا URIها راه‌اندازی و فعال می‌کند.\nکلید میانبر:\nALT+Windows+A : باز کردن مرکز منوی appOn"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "appOn",
+      "description": "使用直接路径、快捷方式或 URI 启动并激活各种应用程序，包括文本编辑器、媒体播放器、浏览器和系统工具。\n热键：\nALT+Windows+A ：打开 appOn 菜单中心"
+    },
+    {
+      "language": "en",
+      "displayName": "appOn",
+      "description": "Launches and activates various applications, including text editors, media players, browsers, and system tools, using direct paths, shortcuts, or URIs.\nHot Key:\nALT+Windows+A : open appOn menu Center"
+    },
+    {
+      "language": "ja",
+      "displayName": "appOn",
+      "description": "直接パス、ショートカット、またはURIを使用して、テキストエディタ、メディアプレーヤー、ブラウザ、システムツールなどのさまざまなアプリケーションを起動およびアクティブ化します。\nホットキー:\nALT+Windows+A : appOnメニューセンターを開く"
+    },
+    {
+      "language": "fr",
+      "displayName": "appOn",
+      "description": "Lance et active diverses applications, notamment des éditeurs de texte, des lecteurs multimédias, des navigateurs et des outils système, à l'aide de chemins directs, de raccourcis ou d'URI.\nRaccourci clavier :\nALT+Windows+A : ouvrir le centre de menu appOn"
+    },
+    {
+      "language": "ta",
+      "displayName": "appOn",
+      "description": "நேரடி பாதைகள், குறுக்குவழிகள் அல்லது URIகளைப் பயன்படுத்தி உரை எடிட்டர்கள், மீடியா பிளேயர்கள், உலாவிகள் மற்றும் கணினி கருவிகள் உள்ளிட்ட பல்வேறு பயன்பாடுகளைத் துவக்கி செயல்படுத்துகிறது.\nஹாட் கீ:\nALT+Windows+A : appOn மெனு மையத்தைத் திறக்கவும்"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "html": 6,
+            "ini": 44,
+            "md": 6,
+            "mo": 43,
+            "po": 43,
+            "py": 4
+          },
+          "file_types": {
+            "XML": 6,
+            "directory": 96,
+            "unknown": 140
+          },
+          "highest_datetime": "2026-06-29 12:19:58",
+          "lowest_datetime": "2026-02-11 17:05:42",
+          "num_children": 242,
+          "type": "ZIP",
+          "uncompressed_size": 266860
+        },
+        "contenthash": "e20746cde284634625b66dbaaf249ba1",
+        "filecondis": {
+          "dhash": "00003c3c1d280000",
+          "raw_md5": "bf74eb91388d026981320e4296301691"
+        },
+        "first_submission_date": 1782711189,
+        "last_analysis_date": 1782711189,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260628",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260628",
+            "engine_version": "6.793",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260629",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260629",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260629",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260629",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260629",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260628",
+            "engine_version": "260628-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260629",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260629",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260627",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260628",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260629",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260629",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260628",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260625",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260628",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260629",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260629",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260626",
+            "engine_version": "4.0.268",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260629",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260629",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260629",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260629",
+            "engine_version": "GD:27.45079AVA:64.31494",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260629",
+            "engine_version": "1782705642",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260629",
+            "engine_version": "1.0.249.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260628",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260628",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260629",
+            "engine_version": "14.59.59969",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260629",
+            "engine_version": "14.59.59969",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260629",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260628",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260628",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260629",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260626",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260629",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260629",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260629",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260628",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260629",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260628",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260629",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260627",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260626",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260623",
+            "engine_version": "7.7.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260628",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260628",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260628",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260629",
+            "engine_version": "2026-06-29.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260629",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260628",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260629",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260629",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "failure",
+            "engine_name": "Trustlook",
+            "engine_update": "20260629",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260628",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260628",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260629",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260629",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260626",
+            "engine_version": "9.5.1237",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260628",
+            "engine_version": "38767",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260629",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260626",
+            "engine_version": "2.0.0.5630",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260628",
+            "engine_version": "6.25-116107928",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260629",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260628",
+            "engine_version": "0aa8ddc:0aa8ddc:6990e76:6990e76",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260629",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 65
+        },
+        "last_modification_date": 1782711222,
+        "last_submission_date": 1782711189,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "magika": "ZIP",
+        "md5": "83525d57fe184246db3305d25c656d41",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "d12716315ea460f7a232c5e21722e5380ee86107",
+        "sha256": "1a1e2c32f56ef9a6c9e0c1b76cec9b060cfb2915abd1c1cd296b8cba85b6ebbe",
+        "size": 153111,
+        "ssdeep": "1536:FmPGS2whDfFhrGhv6J15uj536lUHkTlPR5A5fMbsXMjQyq8BvG8Gw+BaNE36nppF:FmOPw7r+vYWulniUbkMjrxs8Gw+0NwPK",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T10DE39D15D32F1107E16AD7FF76860516F23C5105D23FBB4B066BA8C26C893AE0F9EA46",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "381af0661af812c75a1a26bc84c9ca8b"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6472"
 }

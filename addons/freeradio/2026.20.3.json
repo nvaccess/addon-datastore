@@ -1,780 +1,780 @@
 {
-	"addonId": "freeradio",
-	"displayName": "freeRadio",
-	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.3/freeradio-2026.20.3.nvda-addon",
-	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
-	"sha256": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
-	"addonVersionName": "2026.20.3",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 20,
-		"patch": 3
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
-	"sourceURL": "https://github.com/Surveyor123/freeradio",
-	"license": "GPL v2",
-	"homepage": "https://github.com/Surveyor123/freeradio",
-	"changelog": "\n**Save Audio Profile dialog now offers three save options**\nWhen saving an audio profile for a station, a dialog now appears asking what to save: volume only, effects only, or both. Cancelling the dialog leaves the existing profile unchanged. If only one option is selected, the other part of the profile is kept as-is.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782188891000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "freeRadio",
-			"description": "إضافة FreeRadio هي إضافة راديو إنترنت لقارئ الشاشة NVDA توفر وصولاً سلساً إلى آلاف المحطات عبر دليل Radio Browser المفتوح. وتتضمن متصفح محطات متوافقاً كلياً يتيح البحث، وتصفية المحطات حسب البلد، وإدارة المفضلة، وملفات صوتية مخصصة لكل محطة. تتم معالجة التشغيل عبر سلسلة محركات ذات أولوية (BASS، وVLC، وPotPlayer، وWindows Media Player) مع دعم التحكم بمستوى الصوت، والتأثيرات الصوتية، واختيار جهاز الإخراج، بالإضافة إلى نسخ الصوت المتزامن إلى جهاز ثانٍ. وتشمل الميزات الإضافية: التسجيل الفوري والمجدول، ومؤقتات النوم والمنبه، والإعلان التلقائي عن البيانات الوصفية (ICY)، والتعرف على الموسيقى باستخدام Shazam، وسجلاً للأغاني المعجب بها. كافة عناصر التحكم والاختصارات مصممة لتتوافق مع إمكانيات NVDA للوصول الشامل.",
-			"changelog": "\n**يقدم مربع حوار حفظ الملف الصوتي الآن ثلاثة خيارات للحفظ**\nعند حفظ ملف صوتي لمحطة ما، يظهر الآن مربع حوار يسأل عما تريد حفظه: مستوى الصوت فقط، أو التأثيرات فقط، أو كليهما معاً. يؤدي إلغاء الحوار إلى إبقاء الملف الصوتي الموجود دون تغيير. وإذا تم اختيار خيار واحد فقط، يُحتفظ بالجزء الآخر من الملف الصوتي كما هو.\n"
-		},
-		{
-			"language": "cs",
-			"displayName": "freeRadio",
-			"description": "FreeRadio je doplněk pro internetové rádio určený pro NVDA, který umožňuje plynulý přístup k tisícům stanic prostřednictvím otevřeného adresáře Radio Browser. Nabízí plně přístupný prohlížeč stanic s funkcí vyhledávání, filtrem podle země, správou oblíbených položek a zvukovými profily pro jednotlivé stanice. Přehrávání zajišťuje řetězec prioritních backendů (BASS, VLC, PotPlayer, Windows Media Player) s podporou ovládání hlasitosti, zvukových efektů, výběru výstupního zařízení a simultánního zrcadlení zvuku na druhé zařízení. Mezi další funkce patří okamžité a plánované nahrávání, časovače spánku a budíku, automatické hlášení metadat ICY, rozpoznávání hudby na bázi Shazamu a protokol oblíbených skladeb. Všechny ovládací prvky a klávesové zkratky jsou navrženy s ohledem na přístupnost NVDA.",
-			"changelog": "\n**Dialog Uložit zvukový profil nyní nabízí tři možnosti uložení**\nPři ukládání zvukového profilu pro stanici se nyní zobrazí dialog s dotazem, co chcete uložit: pouze hlasitost, pouze efekty, nebo obojí. Zrušení dialogu ponechá stávající profil beze změny. Pokud je vybrána pouze jedna možnost, druhá část profilu zůstane zachována tak, jak je.\n"
-		},
-		{
-			"language": "es",
-			"displayName": "freeRadio",
-			"description": "FreeRadio es un complemento de radio por Internet para NVDA que proporciona un acceso continuo a miles de estaciones a través del directorio abierto de Radio Browser. Cuenta con un navegador de estaciones totalmente accesible con búsqueda, filtro de países, administración de favoritos y perfiles de audio por estación. La reproducción es manejada por una cadena de backend priorizada (BASS, VLC, PotPlayer, Windows Media Player) con soporte para control de volumen, efectos de audio, selección de dispositivo de salida y la puesta en espejo de audio simultánea en un segundo dispositivo. Las características adicionales incluyen grabación instantánea y programada, temporizadores de apagado y alarma, anuncios automáticos de metadatos ICY, reconocimiento de música basado en Shazam y un registro de canciones favoritas. Todos los controles y atajos están diseñados para la accesibilidad de NVDA.",
-			"changelog": "\n**El diálogo Guardar perfil de audio ahora ofrece tres opciones de guardado**\nAl guardar un perfil de audio para una estación, ahora aparece un diálogo preguntando qué desea guardar: solo el volumen, solo los efectos o ambos. Cancelar el diálogo deja el perfil existente sin cambios. Si solo se selecciona una opción, la otra parte del perfil se conserva tal cual.\n"
-		},
-		{
-			"language": "fr",
-			"displayName": "freeRadio",
-			"description": "FreeRadio est une extension de radio Internet pour NVDA qui offre un accès continu à des milliers de stations via l'annuaire ouvert de Radio Browser. Il dispose d'un navigateur de stations entièrement accessible avec recherche, filtre de pays, gestion des favoris et profils audio par station. La lecture est gérée par une chaîne backend prioritaire (BASS, VLC, PotPlayer, Windows Media Player) avec prise en charge du contrôle du volume, des effets audio, de la sélection du périphérique de sortie et de la mise en miroir audio simultanée sur un deuxième périphérique. Les fonctionnalités supplémentaires incluent l'enregistrement instantané et planifié, des minuteries de mise en veille et d'alarme, des annonces automatiques de métadonnées ICY, une reconnaissance musicale basée sur Shazam et un journal des morceaux aimés. Tous les contrôles et raccourcis sont conçus pour l'accessibilité de NVDA.",
-			"changelog": "\n**La boîte de dialogue Enregistrer le profil audio propose désormais trois options de sauvegarde**\nLors de l'enregistrement d'un profil audio pour une station, une boîte de dialogue s'affiche maintenant pour demander ce que vous souhaitez enregistrer : le volume uniquement, les effets uniquement, ou les deux. Annuler la boîte de dialogue laisse le profil existant inchangé. Si une seule option est sélectionnée, l'autre partie du profil est conservée telle quelle.\n"
-		},
-		{
-			"language": "it",
-			"displayName": "FreeRadio",
-			"description": "FreeRadio è un componente aggiuntivo per NVDA che permette l’ascolto di radio su Internet, offrendo accesso a migliaia di stazioni tramite il database open source Radio Browser. Include un browser delle stazioni completamente accessibile con ricerca, filtro per paese, gestione dei preferiti e profili audio per singola stazione.\nLa riproduzione è gestita tramite una catena di backend prioritari (BASS, VLC, PotPlayer, Windows Media Player), con supporto per controllo del volume, effetti audio, selezione del dispositivo di uscita e duplicazione simultanea dell’audio su un secondo dispositivo.\nSono disponibili funzioni aggiuntive come registrazione istantanea e programmata, timer di spegnimento e sveglia, annunci automatici dei metadati ICY, riconoscimento musicale basato su Shazam e registro dei brani preferiti. Tutti i controlli e le scorciatoie sono progettati per garantire la piena accessibilità con NVDA.",
-			"changelog": "\n**La finestra Salva profilo audio offre ora tre opzioni di salvataggio**\nQuando si salva un profilo audio per una stazione, viene ora visualizzata una finestra di dialogo che chiede cosa salvare: solo il volume, solo gli effetti, o entrambi. Annullare la finestra di dialogo lascia il profilo esistente invariato. Se viene selezionata solo un'opzione, l'altra parte del profilo viene mantenuta così com'è.\n"
-		},
-		{
-			"language": "km",
-			"displayName": "freeRadio",
-			"description": "FreeRadio គឺជាកម្មវិធីជំនួយនៃវិទ្យុនៅលើបណ្ដាញអ៊ីនថឺណេតរបស់កម្មវិធី NVDA ដែលផ្តល់នូវការចូលទៅកាន់ស្ថានីយរាប់ពាន់យ៉ាងងាយស្រួលតាមរយៈបញ្ជីបើកចំហរបស់ Radio Browser។ វាមានរួមបញ្ចូលនូវកម្មវិធីរុករកស្ថានីយវិទ្យុដែលអាចចូលប្រើប្រាស់បានយ៉ាងពេញលេញ រួមជាមួយមុខងារស្វែងរក តតាមប្រទេស ការគ្រប់គ្រងបញ្ជីដែលចូលចិត្ត និងការកំណត់សំឡេងដោយឡែកសម្រាប់ស្ថានីយនីមួយៗ។ ការចាក់សំឡេងត្រូវបានគ្រប់គ្រងដោយខ្សែសង្វាក់ប្រព័ន្ធខាងក្រោយដែលកំណត់អាទិភាព (BASS, VLC, PotPlayer, Windows Media Player) ជាមួយនឹងការគាំទ្រសម្រាប់ការគ្រប់គ្រងកម្រិតសំឡេង បែបផែនសំឡេង ការជ្រើសរើសឧបករណ៍បញ្ចេញសំឡេងខាងក្រៅ និងការចម្លងសំឡេងក្នុងពេលដំណាលគ្នាទៅកាន់ឧបករណ៍ទីពីរ។ មុខងារបន្ថែមរួមមានការថតភ្លាមៗ និងតាមកាលវិភាគ ការផ្អាក និងម៉ោងរោទិ៍ ការប្រកាសទិន្នន័យមេតា ICY ដោយស្វ័យប្រវត្តិ ការស្វែងរកបទចម្រៀង ឬតន្ត្រីដែលមិនស្គាល់ចំណងជើងផ្អែកលើ Shazam និងកំណត់ហេតុបទចម្រៀងដែលចូលចិត្ត។ ការគ្រប់គ្រង និងគ្រាប់ចុចរហ័សទាំងអស់ត្រូវបានរចនាឡើងសម្រាប់ភាពងាយស្រួលរបស់ NVDA ។",
-			"changelog": "\n**ប្រអប់ \"រក្សាទុកទម្រង់សំឡេង\" ឥឡូវនេះផ្តល់ជម្រើសរក្សាទុកបីប្រភេទ**\nនៅពេលរក្សាទុកទម្រង់សំឡេងសម្រាប់ស្ថានីយ៍ ប្រអប់对话ឥឡូវនេះបង្ហាញ ដោយសួរថាអ្នកចង់រក្សាទុកអ្វី: កម្រិតសំឡេងតែប៉ុណ្ណោះ បែបផែនតែប៉ុណ្ណោះ ឬទាំងពីរ។ ការបោះបង់ប្រអប់対話នឹងទុកទម្រង់ដែលមានស្រាប់ដោយមិនផ្លាស់ប្ដូរ។ ប្រសិនបើជ្រើសរើសជម្រើសតែមួយ ផ្នែកម្ខាងទៀតនៃទម្រង់នឹងត្រូវបានរក្សាទុកដដែល។\n"
-		},
-		{
-			"language": "pl",
-			"displayName": "freeRadio",
-			"description": "FreeRadio to dodatek radia internetowego dla NVDA, który zapewnia wygodny dostęp do tysięcy stacji przez otwarty katalog Radio Browser. Oferuje w pełni dostępny przeglądacz stacji z wyszukiwaniem, filtrem kraju, zarządzaniem ulubionymi i profilami audio dla poszczególnych stacji. Odtwarzanie obsługuje priorytetowy łańcuch backendów (BASS, VLC, PotPlayer, Windows Media Player) z obsługą regulacji głośności, efektów dźwiękowych, wyboru urządzenia wyjściowego i jednoczesnego kopiowania dźwięku na drugie urządzenie. Dodatkowe funkcje obejmują nagrywanie natychmiastowe i zaplanowane, timery uśpienia i alarmu, automatyczne komunikaty metadanych ICY, rozpoznawanie muzyki oparte na Shazamie oraz dziennik polubionych utworów. Wszystkie elementy sterujące i skróty zaprojektowano z myślą o dostępności w NVDA.",
-			"changelog": "\n**Okno dialogowe Zapisz profil audio oferuje teraz trzy opcje zapisu**\nPodczas zapisywania profilu audio dla stacji pojawia się teraz okno dialogowe z pytaniem, co chcesz zapisać: tylko głośność, tylko efekty lub obie wartości. Anulowanie okna dialogowego pozostawia istniejący profil bez zmian. Jeśli wybrana jest tylko jedna opcja, druga część profilu pozostaje niezmieniona.\n"
-		},
-		{
-			"language": "pt",
-			"displayName": "freeRadio",
-			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
-			"changelog": "\n**O diálogo Guardar perfil de áudio oferece agora três opções de gravação**\nAo guardar um perfil de áudio para uma estação, aparece agora um diálogo a perguntar o que guardar: apenas o volume, apenas os efeitos ou ambos. Cancelar o diálogo deixa o perfil existente sem alterações. Se for selecionada apenas uma opção, a outra parte do perfil é mantida como está.\n"
-		},
-		{
-			"language": "ru",
-			"displayName": "FreeRadio",
-			"description": "FreeRadio — это интернет-радио-дополнение для экранного диктора NVDA.\nЕго основная цель — предоставить пользователям простой доступ к тысячам интернет-радиостанций.\nВесь интерфейс и все функции разработаны с учётом полной доступности для NVDA.\nFreeRadio использует открытый каталог Radio Browser, содержащий более 50 000 станций со всего мира.\nРегистрация не требуется.\nДополнение поддерживает горячие клавиши для управления воспроизведением, громкостью и записью из любого места системы.\nВы можете добавлять станции в избранное и упорядочивать их.\nДоступно аудиозеркало для одновременного вывода звука на два устройства.\nДоступна мгновенная и запланированная запись эфира.\n• Поддерживается запись песен с автоматической остановкой при смене трека.\n• Встроено распознавание музыки через Shazam при отсутствии метаданных.\n• Есть таймер сна и будильник для автоматического включения радио.\n• Можно сохранять понравившиеся треки в текстовый файл и прослушивать их на Spotify или YouTube.\nДополнение использует движок BASS по умолчанию с поддержкой аудиоэффектов и плавных переходов между станциями.\nПри необходимости задействуются VLC, PotPlayer или Windows Media Player.\nВсе особенности описаны в справочном руководстве.",
-			"changelog": "\n**Диалог сохранения аудиопрофиля теперь предлагает три варианта**\nПри сохранении аудиопрофиля для станции теперь открывается диалоговое окно с вопросом, что именно сохранить: только громкость, только эффекты или и то, и другое. Отмена диалога оставляет существующий профиль без изменений. Если выбран только один параметр, другая часть профиля сохраняется как есть.\n"
-		},
-		{
-			"language": "tr",
-			"displayName": "FreeRadio",
-			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
-			"changelog": "\n**Save Audio Profile dialog now offers three save options**\nWhen saving an audio profile for a station, a dialog now appears asking what to save: volume only, effects only, or both. Cancelling the dialog leaves the existing profile unchanged. If only one option is selected, the other part of the profile is kept as-is.\n"
-		},
-		{
-			"language": "uk",
-			"displayName": "FreeRadio",
-			"description": "Ось переклад тексту українською мовою:\n\nFreeRadio — це додаток інтернет-радіо для NVDA, який забезпечує безперешкодний доступ до тисяч станцій через відкритий каталог Radio Browser. Він пропонує повністю доступний оглядач станцій із пошуком, фільтром за країною, керуванням обраним та індивідуальними аудіопрофілями для кожної станції. Відтворення обробляється пріоритетним ланцюжком бекендів (BASS, VLC, PotPlayer, Windows Media Player) із підтримкою керування гучністю, аудіоефектів, вибору пристрою виводу та одночасного дублювання звуку на другий пристрій. Додаткові можливості включають миттєвий та запланований запис, таймери сну та будильника, автоматичне озвучення метаданих ICY, розпізнавання музики на базі Shazam та журнал вподобаних пісень. Усі елементи керування та гарячі клавіші розроблені з урахуванням доступності для NVDA.",
-			"changelog": "\n**Діалог збереження аудіопрофілю тепер пропонує три варіанти**\nПри збереженні аудіопрофілю для станції тепер відкривається діалогове вікно із запитом, що саме зберегти: лише гучність, лише ефекти або обидва параметри. Скасування діалогу залишає наявний профіль без змін. Якщо обрано лише один параметр, інша частина профілю зберігається як є.\n"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"_pth": 2,
-						"cat": 2,
-						"css": 1,
-						"dll": 33,
-						"exe": 5,
-						"html": 11,
-						"ini": 12,
-						"md": 11,
-						"mo": 11,
-						"po": 11,
-						"pot": 1,
-						"py": 8,
-						"pyd": 40,
-						"txt": 2,
-						"zip": 2
-					},
-					"file_types": {
-						"Portable Executable": 78,
-						"ZIP": 2,
-						"unknown": 72
-					},
-					"highest_datetime": "2026-06-23 04:25:14",
-					"lowest_datetime": "2026-06-23 04:24:22",
-					"num_children": 152,
-					"type": "ZIP",
-					"uncompressed_size": 107017652
-				},
-				"contenthash": "a53468ad85fdc7497e57174d5ca3453e",
-				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "3d349f769582c765a0cc4c15d03f2c32"
-				},
-				"first_submission_date": 1782188916,
-				"last_analysis_date": 1782188916,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260623",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260622",
-						"engine_version": "6.791",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260622",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260623",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260623",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260622",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260622",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260622",
-						"engine_version": "260620-02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260623",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260623",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260622",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260622",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260623",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260623",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260622",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260618",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260623",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260623",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260623",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260617",
-						"engine_version": "4.0.265",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260623",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260623",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260623",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260623",
-						"engine_version": "GD:27.45008AVA:64.31462",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260623",
-						"engine_version": "1782180043",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260622",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260622",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260623",
-						"engine_version": "14.59.59906",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260623",
-						"engine_version": "14.59.59907",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260623",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260618",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260622",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260623",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260622",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260623",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260622",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260623",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260622",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260623",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260622",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260623",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260622",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260622",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260608",
-						"engine_version": "7.6.3.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260622",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260623",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260623",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260623",
-						"engine_version": "2026-06-23.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260622",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260623",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260623",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260623",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260622",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260622",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260623",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260623",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260622",
-						"engine_version": "9.5.1233",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260622",
-						"engine_version": "38750",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260623",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260622",
-						"engine_version": "2.0.0.5627",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260623",
-						"engine_version": "6.25-116107718",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260623",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260622",
-						"engine_version": "9ebf280:9ebf280:7301059:7301059",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260623",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 1,
-					"type-unsupported": 7,
-					"undetected": 64
-				},
-				"last_modification_date": 1782189042,
-				"last_submission_date": 1782188916,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "XPI",
-				"md5": "1ee6b617673fbb41bb9df4a44e27672f",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "8816ec8aed264585b6fe7575235d875a82efbb77",
-				"sha256": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
-				"size": 45458046,
-				"ssdeep": "786432:0s8GX6pFbKrbeFsYXUctSxUF9uMPREhcbQAv91RDZxVxVhyE7oj/rTvPMSRUxz/B:0sX6vzsYEctSxUDrzv9HDH/VhH7oD3Nm",
-				"tags": [
-					"zip",
-					"contains-pe"
-				],
-				"times_submitted": 1,
-				"tlsh": "T17CA7339AE47E60CF981B303D9A9C6F1189F8073E7942DABDE04CCB59659F9D806D108F",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "2428617b79d3cbc308fb72824067acc1"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+  "addonId": "freeradio",
+  "displayName": "freeRadio",
+  "URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.3/freeradio-2026.20.3.nvda-addon",
+  "description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+  "sha256": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
+  "addonVersionName": "2026.20.3",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 20,
+    "patch": 3
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+  "sourceURL": "https://github.com/Surveyor123/freeradio",
+  "license": "GPL v2",
+  "homepage": "https://github.com/Surveyor123/freeradio",
+  "changelog": "\n**Save Audio Profile dialog now offers three save options**\nWhen saving an audio profile for a station, a dialog now appears asking what to save: volume only, effects only, or both. Cancelling the dialog leaves the existing profile unchanged. If only one option is selected, the other part of the profile is kept as-is.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782188891000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "freeRadio",
+      "description": "إضافة FreeRadio هي إضافة راديو إنترنت لقارئ الشاشة NVDA توفر وصولاً سلساً إلى آلاف المحطات عبر دليل Radio Browser المفتوح. وتتضمن متصفح محطات متوافقاً كلياً يتيح البحث، وتصفية المحطات حسب البلد، وإدارة المفضلة، وملفات صوتية مخصصة لكل محطة. تتم معالجة التشغيل عبر سلسلة محركات ذات أولوية (BASS، وVLC، وPotPlayer، وWindows Media Player) مع دعم التحكم بمستوى الصوت، والتأثيرات الصوتية، واختيار جهاز الإخراج، بالإضافة إلى نسخ الصوت المتزامن إلى جهاز ثانٍ. وتشمل الميزات الإضافية: التسجيل الفوري والمجدول، ومؤقتات النوم والمنبه، والإعلان التلقائي عن البيانات الوصفية (ICY)، والتعرف على الموسيقى باستخدام Shazam، وسجلاً للأغاني المعجب بها. كافة عناصر التحكم والاختصارات مصممة لتتوافق مع إمكانيات NVDA للوصول الشامل.",
+      "changelog": "\n**يقدم مربع حوار حفظ الملف الصوتي الآن ثلاثة خيارات للحفظ**\nعند حفظ ملف صوتي لمحطة ما، يظهر الآن مربع حوار يسأل عما تريد حفظه: مستوى الصوت فقط، أو التأثيرات فقط، أو كليهما معاً. يؤدي إلغاء الحوار إلى إبقاء الملف الصوتي الموجود دون تغيير. وإذا تم اختيار خيار واحد فقط، يُحتفظ بالجزء الآخر من الملف الصوتي كما هو.\n"
+    },
+    {
+      "language": "cs",
+      "displayName": "freeRadio",
+      "description": "FreeRadio je doplněk pro internetové rádio určený pro NVDA, který umožňuje plynulý přístup k tisícům stanic prostřednictvím otevřeného adresáře Radio Browser. Nabízí plně přístupný prohlížeč stanic s funkcí vyhledávání, filtrem podle země, správou oblíbených položek a zvukovými profily pro jednotlivé stanice. Přehrávání zajišťuje řetězec prioritních backendů (BASS, VLC, PotPlayer, Windows Media Player) s podporou ovládání hlasitosti, zvukových efektů, výběru výstupního zařízení a simultánního zrcadlení zvuku na druhé zařízení. Mezi další funkce patří okamžité a plánované nahrávání, časovače spánku a budíku, automatické hlášení metadat ICY, rozpoznávání hudby na bázi Shazamu a protokol oblíbených skladeb. Všechny ovládací prvky a klávesové zkratky jsou navrženy s ohledem na přístupnost NVDA.",
+      "changelog": "\n**Dialog Uložit zvukový profil nyní nabízí tři možnosti uložení**\nPři ukládání zvukového profilu pro stanici se nyní zobrazí dialog s dotazem, co chcete uložit: pouze hlasitost, pouze efekty, nebo obojí. Zrušení dialogu ponechá stávající profil beze změny. Pokud je vybrána pouze jedna možnost, druhá část profilu zůstane zachována tak, jak je.\n"
+    },
+    {
+      "language": "es",
+      "displayName": "freeRadio",
+      "description": "FreeRadio es un complemento de radio por Internet para NVDA que proporciona un acceso continuo a miles de estaciones a través del directorio abierto de Radio Browser. Cuenta con un navegador de estaciones totalmente accesible con búsqueda, filtro de países, administración de favoritos y perfiles de audio por estación. La reproducción es manejada por una cadena de backend priorizada (BASS, VLC, PotPlayer, Windows Media Player) con soporte para control de volumen, efectos de audio, selección de dispositivo de salida y la puesta en espejo de audio simultánea en un segundo dispositivo. Las características adicionales incluyen grabación instantánea y programada, temporizadores de apagado y alarma, anuncios automáticos de metadatos ICY, reconocimiento de música basado en Shazam y un registro de canciones favoritas. Todos los controles y atajos están diseñados para la accesibilidad de NVDA.",
+      "changelog": "\n**El diálogo Guardar perfil de audio ahora ofrece tres opciones de guardado**\nAl guardar un perfil de audio para una estación, ahora aparece un diálogo preguntando qué desea guardar: solo el volumen, solo los efectos o ambos. Cancelar el diálogo deja el perfil existente sin cambios. Si solo se selecciona una opción, la otra parte del perfil se conserva tal cual.\n"
+    },
+    {
+      "language": "fr",
+      "displayName": "freeRadio",
+      "description": "FreeRadio est une extension de radio Internet pour NVDA qui offre un accès continu à des milliers de stations via l'annuaire ouvert de Radio Browser. Il dispose d'un navigateur de stations entièrement accessible avec recherche, filtre de pays, gestion des favoris et profils audio par station. La lecture est gérée par une chaîne backend prioritaire (BASS, VLC, PotPlayer, Windows Media Player) avec prise en charge du contrôle du volume, des effets audio, de la sélection du périphérique de sortie et de la mise en miroir audio simultanée sur un deuxième périphérique. Les fonctionnalités supplémentaires incluent l'enregistrement instantané et planifié, des minuteries de mise en veille et d'alarme, des annonces automatiques de métadonnées ICY, une reconnaissance musicale basée sur Shazam et un journal des morceaux aimés. Tous les contrôles et raccourcis sont conçus pour l'accessibilité de NVDA.",
+      "changelog": "\n**La boîte de dialogue Enregistrer le profil audio propose désormais trois options de sauvegarde**\nLors de l'enregistrement d'un profil audio pour une station, une boîte de dialogue s'affiche maintenant pour demander ce que vous souhaitez enregistrer : le volume uniquement, les effets uniquement, ou les deux. Annuler la boîte de dialogue laisse le profil existant inchangé. Si une seule option est sélectionnée, l'autre partie du profil est conservée telle quelle.\n"
+    },
+    {
+      "language": "it",
+      "displayName": "FreeRadio",
+      "description": "FreeRadio è un componente aggiuntivo per NVDA che permette l’ascolto di radio su Internet, offrendo accesso a migliaia di stazioni tramite il database open source Radio Browser. Include un browser delle stazioni completamente accessibile con ricerca, filtro per paese, gestione dei preferiti e profili audio per singola stazione.\nLa riproduzione è gestita tramite una catena di backend prioritari (BASS, VLC, PotPlayer, Windows Media Player), con supporto per controllo del volume, effetti audio, selezione del dispositivo di uscita e duplicazione simultanea dell’audio su un secondo dispositivo.\nSono disponibili funzioni aggiuntive come registrazione istantanea e programmata, timer di spegnimento e sveglia, annunci automatici dei metadati ICY, riconoscimento musicale basato su Shazam e registro dei brani preferiti. Tutti i controlli e le scorciatoie sono progettati per garantire la piena accessibilità con NVDA.",
+      "changelog": "\n**La finestra Salva profilo audio offre ora tre opzioni di salvataggio**\nQuando si salva un profilo audio per una stazione, viene ora visualizzata una finestra di dialogo che chiede cosa salvare: solo il volume, solo gli effetti, o entrambi. Annullare la finestra di dialogo lascia il profilo esistente invariato. Se viene selezionata solo un'opzione, l'altra parte del profilo viene mantenuta così com'è.\n"
+    },
+    {
+      "language": "km",
+      "displayName": "freeRadio",
+      "description": "FreeRadio គឺជាកម្មវិធីជំនួយនៃវិទ្យុនៅលើបណ្ដាញអ៊ីនថឺណេតរបស់កម្មវិធី NVDA ដែលផ្តល់នូវការចូលទៅកាន់ស្ថានីយរាប់ពាន់យ៉ាងងាយស្រួលតាមរយៈបញ្ជីបើកចំហរបស់ Radio Browser។ វាមានរួមបញ្ចូលនូវកម្មវិធីរុករកស្ថានីយវិទ្យុដែលអាចចូលប្រើប្រាស់បានយ៉ាងពេញលេញ រួមជាមួយមុខងារស្វែងរក តតាមប្រទេស ការគ្រប់គ្រងបញ្ជីដែលចូលចិត្ត និងការកំណត់សំឡេងដោយឡែកសម្រាប់ស្ថានីយនីមួយៗ។ ការចាក់សំឡេងត្រូវបានគ្រប់គ្រងដោយខ្សែសង្វាក់ប្រព័ន្ធខាងក្រោយដែលកំណត់អាទិភាព (BASS, VLC, PotPlayer, Windows Media Player) ជាមួយនឹងការគាំទ្រសម្រាប់ការគ្រប់គ្រងកម្រិតសំឡេង បែបផែនសំឡេង ការជ្រើសរើសឧបករណ៍បញ្ចេញសំឡេងខាងក្រៅ និងការចម្លងសំឡេងក្នុងពេលដំណាលគ្នាទៅកាន់ឧបករណ៍ទីពីរ។ មុខងារបន្ថែមរួមមានការថតភ្លាមៗ និងតាមកាលវិភាគ ការផ្អាក និងម៉ោងរោទិ៍ ការប្រកាសទិន្នន័យមេតា ICY ដោយស្វ័យប្រវត្តិ ការស្វែងរកបទចម្រៀង ឬតន្ត្រីដែលមិនស្គាល់ចំណងជើងផ្អែកលើ Shazam និងកំណត់ហេតុបទចម្រៀងដែលចូលចិត្ត។ ការគ្រប់គ្រង និងគ្រាប់ចុចរហ័សទាំងអស់ត្រូវបានរចនាឡើងសម្រាប់ភាពងាយស្រួលរបស់ NVDA ។",
+      "changelog": "\n**ប្រអប់ \"រក្សាទុកទម្រង់សំឡេង\" ឥឡូវនេះផ្តល់ជម្រើសរក្សាទុកបីប្រភេទ**\nនៅពេលរក្សាទុកទម្រង់សំឡេងសម្រាប់ស្ថានីយ៍ ប្រអប់对话ឥឡូវនេះបង្ហាញ ដោយសួរថាអ្នកចង់រក្សាទុកអ្វី: កម្រិតសំឡេងតែប៉ុណ្ណោះ បែបផែនតែប៉ុណ្ណោះ ឬទាំងពីរ។ ការបោះបង់ប្រអប់対話នឹងទុកទម្រង់ដែលមានស្រាប់ដោយមិនផ្លាស់ប្ដូរ។ ប្រសិនបើជ្រើសរើសជម្រើសតែមួយ ផ្នែកម្ខាងទៀតនៃទម្រង់នឹងត្រូវបានរក្សាទុកដដែល។\n"
+    },
+    {
+      "language": "pl",
+      "displayName": "freeRadio",
+      "description": "FreeRadio to dodatek radia internetowego dla NVDA, który zapewnia wygodny dostęp do tysięcy stacji przez otwarty katalog Radio Browser. Oferuje w pełni dostępny przeglądacz stacji z wyszukiwaniem, filtrem kraju, zarządzaniem ulubionymi i profilami audio dla poszczególnych stacji. Odtwarzanie obsługuje priorytetowy łańcuch backendów (BASS, VLC, PotPlayer, Windows Media Player) z obsługą regulacji głośności, efektów dźwiękowych, wyboru urządzenia wyjściowego i jednoczesnego kopiowania dźwięku na drugie urządzenie. Dodatkowe funkcje obejmują nagrywanie natychmiastowe i zaplanowane, timery uśpienia i alarmu, automatyczne komunikaty metadanych ICY, rozpoznawanie muzyki oparte na Shazamie oraz dziennik polubionych utworów. Wszystkie elementy sterujące i skróty zaprojektowano z myślą o dostępności w NVDA.",
+      "changelog": "\n**Okno dialogowe Zapisz profil audio oferuje teraz trzy opcje zapisu**\nPodczas zapisywania profilu audio dla stacji pojawia się teraz okno dialogowe z pytaniem, co chcesz zapisać: tylko głośność, tylko efekty lub obie wartości. Anulowanie okna dialogowego pozostawia istniejący profil bez zmian. Jeśli wybrana jest tylko jedna opcja, druga część profilu pozostaje niezmieniona.\n"
+    },
+    {
+      "language": "pt",
+      "displayName": "freeRadio",
+      "description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+      "changelog": "\n**O diálogo Guardar perfil de áudio oferece agora três opções de gravação**\nAo guardar um perfil de áudio para uma estação, aparece agora um diálogo a perguntar o que guardar: apenas o volume, apenas os efeitos ou ambos. Cancelar o diálogo deixa o perfil existente sem alterações. Se for selecionada apenas uma opção, a outra parte do perfil é mantida como está.\n"
+    },
+    {
+      "language": "ru",
+      "displayName": "FreeRadio",
+      "description": "FreeRadio — это интернет-радио-дополнение для экранного диктора NVDA.\nЕго основная цель — предоставить пользователям простой доступ к тысячам интернет-радиостанций.\nВесь интерфейс и все функции разработаны с учётом полной доступности для NVDA.\nFreeRadio использует открытый каталог Radio Browser, содержащий более 50 000 станций со всего мира.\nРегистрация не требуется.\nДополнение поддерживает горячие клавиши для управления воспроизведением, громкостью и записью из любого места системы.\nВы можете добавлять станции в избранное и упорядочивать их.\nДоступно аудиозеркало для одновременного вывода звука на два устройства.\nДоступна мгновенная и запланированная запись эфира.\n• Поддерживается запись песен с автоматической остановкой при смене трека.\n• Встроено распознавание музыки через Shazam при отсутствии метаданных.\n• Есть таймер сна и будильник для автоматического включения радио.\n• Можно сохранять понравившиеся треки в текстовый файл и прослушивать их на Spotify или YouTube.\nДополнение использует движок BASS по умолчанию с поддержкой аудиоэффектов и плавных переходов между станциями.\nПри необходимости задействуются VLC, PotPlayer или Windows Media Player.\nВсе особенности описаны в справочном руководстве.",
+      "changelog": "\n**Диалог сохранения аудиопрофиля теперь предлагает три варианта**\nПри сохранении аудиопрофиля для станции теперь открывается диалоговое окно с вопросом, что именно сохранить: только громкость, только эффекты или и то, и другое. Отмена диалога оставляет существующий профиль без изменений. Если выбран только один параметр, другая часть профиля сохраняется как есть.\n"
+    },
+    {
+      "language": "tr",
+      "displayName": "FreeRadio",
+      "description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+      "changelog": "\n**Save Audio Profile dialog now offers three save options**\nWhen saving an audio profile for a station, a dialog now appears asking what to save: volume only, effects only, or both. Cancelling the dialog leaves the existing profile unchanged. If only one option is selected, the other part of the profile is kept as-is.\n"
+    },
+    {
+      "language": "uk",
+      "displayName": "FreeRadio",
+      "description": "Ось переклад тексту українською мовою:\n\nFreeRadio — це додаток інтернет-радіо для NVDA, який забезпечує безперешкодний доступ до тисяч станцій через відкритий каталог Radio Browser. Він пропонує повністю доступний оглядач станцій із пошуком, фільтром за країною, керуванням обраним та індивідуальними аудіопрофілями для кожної станції. Відтворення обробляється пріоритетним ланцюжком бекендів (BASS, VLC, PotPlayer, Windows Media Player) із підтримкою керування гучністю, аудіоефектів, вибору пристрою виводу та одночасного дублювання звуку на другий пристрій. Додаткові можливості включають миттєвий та запланований запис, таймери сну та будильника, автоматичне озвучення метаданих ICY, розпізнавання музики на базі Shazam та журнал вподобаних пісень. Усі елементи керування та гарячі клавіші розроблені з урахуванням доступності для NVDA.",
+      "changelog": "\n**Діалог збереження аудіопрофілю тепер пропонує три варіанти**\nПри збереженні аудіопрофілю для станції тепер відкривається діалогове вікно із запитом, що саме зберегти: лише гучність, лише ефекти або обидва параметри. Скасування діалогу залишає наявний профіль без змін. Якщо обрано лише один параметр, інша частина профілю зберігається як є.\n"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "_pth": 2,
+            "cat": 2,
+            "css": 1,
+            "dll": 33,
+            "exe": 5,
+            "html": 11,
+            "ini": 12,
+            "md": 11,
+            "mo": 11,
+            "po": 11,
+            "pot": 1,
+            "py": 8,
+            "pyd": 40,
+            "txt": 2,
+            "zip": 2
+          },
+          "file_types": {
+            "Portable Executable": 78,
+            "ZIP": 2,
+            "unknown": 72
+          },
+          "highest_datetime": "2026-06-23 04:25:14",
+          "lowest_datetime": "2026-06-23 04:24:22",
+          "num_children": 152,
+          "type": "ZIP",
+          "uncompressed_size": 107017652
+        },
+        "contenthash": "a53468ad85fdc7497e57174d5ca3453e",
+        "filecondis": {
+          "dhash": "0000000000070600",
+          "raw_md5": "3d349f769582c765a0cc4c15d03f2c32"
+        },
+        "first_submission_date": 1782188916,
+        "last_analysis_date": 1782188916,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260623",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260622",
+            "engine_version": "6.791",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260622",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260623",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260623",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260622",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260622",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260622",
+            "engine_version": "260620-02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260623",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260623",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260622",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260622",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260623",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260623",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260622",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260618",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260623",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260623",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260623",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260617",
+            "engine_version": "4.0.265",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260623",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260623",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260623",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260623",
+            "engine_version": "GD:27.45008AVA:64.31462",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260623",
+            "engine_version": "1782180043",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260622",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260622",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260623",
+            "engine_version": "14.59.59906",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260623",
+            "engine_version": "14.59.59907",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260623",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260618",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260622",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260623",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260622",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260623",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260622",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260623",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260622",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260623",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260622",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260623",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260622",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260622",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260608",
+            "engine_version": "7.6.3.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260622",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260623",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260623",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260623",
+            "engine_version": "2026-06-23.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260622",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260623",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260623",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260623",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260622",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260622",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260623",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260623",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260622",
+            "engine_version": "9.5.1233",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260622",
+            "engine_version": "38750",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260623",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260622",
+            "engine_version": "2.0.0.5627",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260623",
+            "engine_version": "6.25-116107718",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260623",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260622",
+            "engine_version": "9ebf280:9ebf280:7301059:7301059",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260623",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 1,
+          "type-unsupported": 7,
+          "undetected": 64
+        },
+        "last_modification_date": 1782189042,
+        "last_submission_date": 1782188916,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "XPI",
+        "md5": "1ee6b617673fbb41bb9df4a44e27672f",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "8816ec8aed264585b6fe7575235d875a82efbb77",
+        "sha256": "2590a98a3360580c679b4119033938ee36502f77768ad3cb269e7711abdfee6a",
+        "size": 45458046,
+        "ssdeep": "786432:0s8GX6pFbKrbeFsYXUctSxUF9uMPREhcbQAv91RDZxVxVhyE7oj/rTvPMSRUxz/B:0sX6vzsYEctSxUDrzv9HDH/VhH7oD3Nm",
+        "tags": [
+          "zip",
+          "contains-pe"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T17CA7339AE47E60CF981B303D9A9C6F1189F8073E7942DABDE04CCB59659F9D806D108F",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "2428617b79d3cbc308fb72824067acc1"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
 }

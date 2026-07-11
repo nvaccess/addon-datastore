@@ -1,90 +1,90 @@
 {
-	"addonId": "easyTableCopy",
-	"displayName": "Easy Table Copy",
-	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.6.8/easyTableCopy-2026.6.8.nvda-addon",
-	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
-	"sha256": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
-	"addonVersionName": "2026.6.8",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 8
-	},
-	"minNVDAVersion": {
-		"major": 2022,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
-	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
-	"license": "GPL v2",
-	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
-	"changelog": "\n* **Improved Large List Handling:** Copying large list controls (specifically `SysListView32`) now reliably extracts all items while preserving table formatting. This update bypasses previous limitations caused by object virtualization, ensuring items outside the visible screen are no longer skipped.\n* **Reliable Column Selection:** Column-specific copying commands have been updated to work consistently within extensive lists. You can now copy specific columns from large lists without experiencing silent failures or missing data.\n* **64-bit Architecture Stability:** Resolved a memory pointer truncation issue during Win32 API operations. Background data extraction is now fully stable and compatible with modern 64-bit NVDA architectures.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1780387525000,
-	"translations": [
-		{
-			"language": "tr",
-			"displayName": "EasyTableCopy",
-			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
-			"changelog": "\n* **Geliştirilmiş Büyük Liste İşleme:** Büyük liste kontrollerinin (özellikle `SysListView32`) kopyalanması, artık tablo biçimlendirmesini koruyarak tüm öğeleri güvenilir bir şekilde dışa aktarıyor. Bu güncelleme, nesne sanallaştırmasından kaynaklanan önceki sınırlamaları atlayarak, ekranda görünmeyen öğelerin artık eksik kalmamasını sağlıyor.\n* **Güvenilir Sütun Seçimi:** Belirli sütunları kopyalama komutları, kapsamlı listelerde tutarlı bir şekilde çalışacak şekilde güncellendi. Artık büyük listelerden belirli sütunları, sessiz hatalarla veya veri kaybıyla karşılaşmadan kopyalayabilirsiniz.\n* **64-bit Mimari Kararlılığı:** Win32 API işlemleri sırasında yaşanan bellek işaretçisi (memory pointer) kırpılma sorunu çözüldü. Arka planda veri okuma işlemi artık tamamen kararlı ve modern 64-bit NVDA mimarileriyle tam uyumlu çalışıyor.\n"
-		},
-		{
-			"language": "uk",
-			"displayName": "Легке копіювання таблиці",
-			"description": "EasyTableCopy — це доповнення NVDA, призначене для вирішення поширених проблем: копіювання таблиць з Інтернету або списків із Windows у документи (наприклад, Word, Excel або Outlook) без втрати форматування чи макета.",
-			"changelog": "\n* **Покращена обробка великих списків:** Копіювання елементів керування великими списками (зокрема `SysListView32`) тепер надійно витягує всі елементи, зберігаючи форматування таблиці. Це оновлення обходить попередні обмеження, спричинені віртуалізацією об’єктів, гарантуючи, що елементи поза межами видимої частини екрана більше не пропускаються.\n* **Надійний вибір стовпців:** Команди копіювання окремих стовпців оновлено для стабільної роботи у великих списках. Тепер ви можете копіювати певні стовпці з великих списків, не стикаючись із прихованими помилками або втратою даних.\n* **Стабільність 64-розрядної архітектури:** Вирішено проблему усічення покажчика пам'яті під час операцій Win32 API. Фонове витягнення даних тепер повністю стабільне та сумісне із сучасними 64-розрядними архітектурами NVDA.\n"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
-	"scanResults": {
-		"codeQL-warnings": [],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "0008181c1d1c0000",
-					"raw_md5": "baa2fa2211726dfc7cc2098a410bfee5"
-				},
-				"first_submission_date": 1780387542,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1780387588,
-				"last_submission_date": 1780387542,
-				"md5": "fe1b7a2dcf2134d454505cecc3d22488",
-				"names": [],
-				"reputation": 0,
-				"sha1": "c7deaf148bf6a8923eb89ac4f429c00e57a97648",
-				"sha256": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
-				"size": 72964,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7837"
+  "addonId": "easyTableCopy",
+  "displayName": "Easy Table Copy",
+  "URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/V2026.6.8/easyTableCopy-2026.6.8.nvda-addon",
+  "description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+  "sha256": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+  "addonVersionName": "2026.6.8",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 8
+  },
+  "minNVDAVersion": {
+    "major": 2022,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+  "sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+  "license": "GPL v2",
+  "homepage": "https://github.com/Surveyor123/EasyTableCopy",
+  "changelog": "\n* **Improved Large List Handling:** Copying large list controls (specifically `SysListView32`) now reliably extracts all items while preserving table formatting. This update bypasses previous limitations caused by object virtualization, ensuring items outside the visible screen are no longer skipped.\n* **Reliable Column Selection:** Column-specific copying commands have been updated to work consistently within extensive lists. You can now copy specific columns from large lists without experiencing silent failures or missing data.\n* **64-bit Architecture Stability:** Resolved a memory pointer truncation issue during Win32 API operations. Background data extraction is now fully stable and compatible with modern 64-bit NVDA architectures.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1780387525000,
+  "translations": [
+    {
+      "language": "tr",
+      "displayName": "EasyTableCopy",
+      "description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+      "changelog": "\n* **Geliştirilmiş Büyük Liste İşleme:** Büyük liste kontrollerinin (özellikle `SysListView32`) kopyalanması, artık tablo biçimlendirmesini koruyarak tüm öğeleri güvenilir bir şekilde dışa aktarıyor. Bu güncelleme, nesne sanallaştırmasından kaynaklanan önceki sınırlamaları atlayarak, ekranda görünmeyen öğelerin artık eksik kalmamasını sağlıyor.\n* **Güvenilir Sütun Seçimi:** Belirli sütunları kopyalama komutları, kapsamlı listelerde tutarlı bir şekilde çalışacak şekilde güncellendi. Artık büyük listelerden belirli sütunları, sessiz hatalarla veya veri kaybıyla karşılaşmadan kopyalayabilirsiniz.\n* **64-bit Mimari Kararlılığı:** Win32 API işlemleri sırasında yaşanan bellek işaretçisi (memory pointer) kırpılma sorunu çözüldü. Arka planda veri okuma işlemi artık tamamen kararlı ve modern 64-bit NVDA mimarileriyle tam uyumlu çalışıyor.\n"
+    },
+    {
+      "language": "uk",
+      "displayName": "Легке копіювання таблиці",
+      "description": "EasyTableCopy — це доповнення NVDA, призначене для вирішення поширених проблем: копіювання таблиць з Інтернету або списків із Windows у документи (наприклад, Word, Excel або Outlook) без втрати форматування чи макета.",
+      "changelog": "\n* **Покращена обробка великих списків:** Копіювання елементів керування великими списками (зокрема `SysListView32`) тепер надійно витягує всі елементи, зберігаючи форматування таблиці. Це оновлення обходить попередні обмеження, спричинені віртуалізацією об’єктів, гарантуючи, що елементи поза межами видимої частини екрана більше не пропускаються.\n* **Надійний вибір стовпців:** Команди копіювання окремих стовпців оновлено для стабільної роботи у великих списках. Тепер ви можете копіювати певні стовпці з великих списків, не стикаючись із прихованими помилками або втратою даних.\n* **Стабільність 64-розрядної архітектури:** Вирішено проблему усічення покажчика пам'яті під час операцій Win32 API. Фонове витягнення даних тепер повністю стабільне та сумісне із сучасними 64-розрядними архітектурами NVDA.\n"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+  "scanResults": {
+    "codeQL-warnings": [],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+        "_type": "file",
+        "filecondis": {
+          "dhash": "0008181c1d1c0000",
+          "raw_md5": "baa2fa2211726dfc7cc2098a410bfee5"
+        },
+        "first_submission_date": 1780387542,
+        "last_analysis_results": {},
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 0,
+          "undetected": 0
+        },
+        "last_modification_date": 1780387588,
+        "last_submission_date": 1780387542,
+        "md5": "fe1b7a2dcf2134d454505cecc3d22488",
+        "names": [],
+        "reputation": 0,
+        "sha1": "c7deaf148bf6a8923eb89ac4f429c00e57a97648",
+        "sha256": "026e832138002c1bf53d6e94a6bcbe815ee44ca9c4a5d51e8c2235b4618507b1",
+        "size": 72964,
+        "tags": [],
+        "times_submitted": 1,
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "type_description": "unknown",
+        "type_tags": [],
+        "unique_sources": 1
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7837"
 }

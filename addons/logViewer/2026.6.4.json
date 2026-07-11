@@ -1,291 +1,291 @@
 {
-	"addonId": "logViewer",
-	"displayName": "logViewer",
-	"URL": "https://github.com/chaichaimee/logViewer/releases/download/2026.6.4/logViewer-v2026.6.4.nvda-addon",
-	"description": "Increase the efficiency of the NVDA LOG Viewer to be able to search. Add Bookmark to check the NVDA function.\nHot Keys:\nCTRL+F : Open search Dialog\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\nShift+F3 : Find previous occurrence\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\nNVDA+CTRL+L : open OldLog File",
-	"sha256": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
-	"addonVersionName": "2026.6.4",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 4
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/logViewer",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/logViewer",
-	"changelog": "Fixed \"nvda+control+l\" script failure by adding missing sys import and replacing wx.CallAfter with core.callLater to prevent watchdog timeout when opening log files from background thread.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781661308000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "logViewer",
-			"description": "زيادة كفاءة عارض سجل NVDA للتمكن من البحث. إضافة إشارة مرجعية لفحص وظيفة NVDA.\nمفاتيح الاختصار:\nCTRL+F : فتح مربع حوار البحث\nF3\nضغطة واحدة : البحث عن النتيجة التالية\nضغطة مزدوجة : نسخ مستوى سجل الخطأ\nShift+F3 : البحث عن النتيجة السابقة\nCTRL+F2 : إضافة إشارة مرجعية\nF2 : الانتقال إلى الإشارة المرجعية التالية في السجل\nShift+F2 : الانتقال إلى الإشارة المرجعية السابقة في السجل\nNVDA+CTRL+L : فتح ملف السجل القديم"
-		},
-		{
-			"language": "bg",
-			"displayName": "logViewer",
-			"description": "Увеличаване на ефективността на NVDA LOG Viewer за възможност за търсене. Добавяне на отметка за проверка на функцията на NVDA.\nБързи клавиши:\nCTRL+F : Отваряне на диалог за търсене\nF3\nЕдинично натискане : Намиране на следващо съвпадение\nДвойно натискане : Копиране на нивото на грешката в лога\nShift+F3 : Намиране на предишно съвпадение\nCTRL+F2 : Добавяне на отметка\nF2 : Към следващата отметка в лога\nShift+F2 : Към предишната отметка в лога\nNVDA+CTRL+L : Отваряне на файла със стария лог"
-		},
-		{
-			"language": "bn",
-			"displayName": "logViewer",
-			"description": "অনুসন্ধান করার ক্ষমতা দিতে NVDA LOG Viewer এর দক্ষতা বৃদ্ধি করুন। NVDA ফাংশন পরীক্ষা করতে বুকমার্ক যোগ করুন।\nহট কী:\nCTRL+F : অনুসন্ধান ডায়ালগ খুলুন\nF3\nএকবার ট্যাপ : পরবর্তী ফলাফল খুঁজুন\nডাবল ট্যাপ : এরর লগ লেভেল কপি করুন\nShift+F3 : পূর্ববর্তী ফলাফল খুঁজুন\nCTRL+F2 : বুকমার্ক যোগ করুন\nF2 : লগের পরবর্তী বুকমার্কে যান\nShift+F2 : লগের পূর্ববর্তী বুকমার্কে যান\nNVDA+CTRL+L : পুরাতন লগ ফাইল খুলুন"
-		},
-		{
-			"language": "cs",
-			"displayName": "logViewer",
-			"description": "Zvýšení efektivity prohlížeče logů NVDA díky možnosti vyhledávání. Přidání záložky pro kontrolu funkce NVDA.\nHorké klávesy:\nCTRL+F : Otevřít dialog vyhledávání\nF3\nJedno stisknutí : Najít další výskyt\nDvojité stisknutí : Kopírovat úroveň chyby v logu\nShift+F3 : Najít předchozí výskyt\nCTRL+F2 : Přidat záložku\nF2 : Přesunout na další záložku v logu\nShift+F2 : Přesunout na předchozí záložku v logu\nNVDA+CTRL+L : Otevřít starý soubor logu"
-		},
-		{
-			"language": "da",
-			"displayName": "logViewer",
-			"description": "Øg effektiviteten af NVDA LOG Viewer for at kunne søge. Tilføj bogmærke for at kontrollere NVDA-funktionen.\nGenvejstaster:\nCTRL+F : Åbn søgedialog\nF3\nEnkelt tryk : Find næste forekomst\nDobbelt tryk : Kopier fejllogniveau\nShift+F3 : Find forrige forekomst\nCTRL+F2 : Tilføj bogmærke\nF2 : Gå til næste bogmærke i loggen\nShift+F2 : Gå til forrige bogmærke i loggen\nNVDA+CTRL+L : Åbn gammel logfil"
-		},
-		{
-			"language": "de",
-			"displayName": "logViewer",
-			"description": "Erhöhen Sie die Effizienz des NVDA LOG Viewers, um suchen zu können. Lesezeichen hinzufügen, um die NVDA-Funktion zu prüfen.\nTastenkombinationen:\nCTRL+F : Suchdialog öffnen\nF3\nEinmal drücken : Nächstes Vorkommen suchen\nDoppelt drücken : Fehler-Log-Ebene kopieren\nShift+F3 : Vorheriges Vorkommen suchen\nCTRL+F2 : Lesezeichen hinzufügen\nF2 : Zum nächsten Lesezeichen im Log springen\nShift+F2 : Zum vorherigen Lesezeichen im Log springen\nNVDA+CTRL+L : Alte Log-Datei öffnen"
-		},
-		{
-			"language": "en",
-			"displayName": "logViewer",
-			"description": "Increase the efficiency of the NVDA LOG Viewer to be able to search. Add Bookmark to check the NVDA function.\nHot Keys:\nCTRL+F : Open search Dialog\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\nShift+F3 : Find previous occurrence\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\nNVDA+CTRL+L : open OldLog File"
-		},
-		{
-			"language": "es",
-			"displayName": "logViewer",
-			"description": "Aumenta la eficiencia del Visor de registro de NVDA para poder buscar. Añade marcadores para comprobar el funcionamiento de NVDA.\nTeclas rápidas:\nCTRL+F : Abrir el diálogo de búsqueda\nF3\nUn toque : Buscar siguiente coincidencia\nDos toques : Copiar nivel de registro de errores\nShift+F3 : Buscar coincidencia anterior\nCTRL+F2 : Añadir marcador\nF2 : Ir al siguiente marcador en el registro\nShift+F2 : Ir al marcador anterior en el registro\nNVDA+CTRL+L : Abrir el archivo de registro antiguo"
-		},
-		{
-			"language": "fa",
-			"displayName": "logViewer",
-			"description": "افزایش کارایی نمایشگر گزارش NVDA برای قابلیت جستجو. افزودن نشانک برای بررسی عملکرد NVDA.\nکلیدهای میانبر:\nCTRL+F : باز کردن دیالوگ جستجو\nF3\nیک‌بار ضربه : یافتن مورد بعدی\nدو बार ضربه : کپی کردن سطح گزارش خطا\nShift+F3 : یافتن مورد قبلی\nCTRL+F2 : افزودن نشانک\nF2 : رفتن به نشانک بعدیใน گزارش\nShift+F2 : رفتن به نشانک قبلی در گزارش\nNVDA+CTRL+L : باز کردن فایل گزارش قدیمی"
-		},
-		{
-			"language": "fi",
-			"displayName": "logViewer",
-			"description": "Paranna NVDA:n lokikatselimen tehokkuutta mahdollistamalla haku. Lisää kirjanmerkki NVDA-toiminnon tarkistamiseksi.\nPikanäppäimet:\nCTRL+F : Avaa hakuikkuna\nF3\nYksi painallus : Etsi seuraava esiintymä\nKaksoispainallus : Kopioi virhelokitaso\nShift+F3 : Etsi edellinen esiintymä\nCTRL+F2 : Lisää kirjanmerkki\nF2 : Siirry lokin seuraavaan kirjanmerkkiin\nShift+F2 : Siirry lokin edelliseen kirjanmerkkiin\nNVDA+CTRL+L : Avaa vanha lokitiedosto"
-		},
-		{
-			"language": "fr",
-			"displayName": "logViewer",
-			"description": "Augmenter l'efficacité de la visionneuse de journaux NVDA pour pouvoir effectuer des recherches. Ajouter un signet para vérifier la fonction NVDA.\nTouches de raccourci :\nCTRL+F : Ouvrir la boîte de dialogue de recherche\nF3\nAppui simple : Rechercher l'occurrence suivante\nAppui double : Copier le niveau du journal d'erreurs\nShift+F3 : Rechercher l'occurrence précédente\nCTRL+F2 : Ajouter un signet\nF2 : Passer au signet suivant dans le journal\nShift+F2 : Passer au signet précédent dans le journal\nNVDA+CTRL+L : Ouvrir l'ancien fichier journal"
-		},
-		{
-			"language": "gl",
-			"displayName": "logViewer",
-			"description": "Aumenta a eficiencia do Visor de Rexistro de NVDA para poder buscar. Engade marcadores para comprobar o funcionamento de NVDA.\nTeclas rápidas:\nCTRL+F : Abrir o diálogo de busca\nF3\nUn toque : Buscar seguinte coincidencia\nDous toques : Copiar nivel de rexistro de erros\nShift+F3 : Buscar coincidencia anterior\nCTRL+F2 : Engadir marcador\nF2 : Ir ao seguinte marcador no rexistro\nShift+F2 : Ir ao marcador anterior no rexistro\nNVDA+CTRL+L : Abrir o ficheiro de rexistro antigo"
-		},
-		{
-			"language": "he",
-			"displayName": "logViewer",
-			"description": "הגברת היעילות של מציг היומן של NVDA כדי לאפשר חיפוש. הוספת סיმניה לבديקת פונקציית ה-NVDA.\nמקשי קיצור:\nCTRL+F : פתיחת תיבת דו-שיח לחיפוש\nF3\nלחיצה אחת : מציאת המופע הבא\nלחיצה כפולה : העתקת רמת יומן השגיאות\nShift+F3 : מציאת המופע הקודם\nCTRL+F2 : הוספת סיმניה\nF2 : מעבר לסיმניה הבאה ביומן\nShift+F2 : מעבר לסיมניה הקודמת ביומן\nNVDA+CTRL+L : פתיחת קובץ יומן ישн"
-		},
-		{
-			"language": "hi",
-			"displayName": "logViewer",
-			"description": "NVDA लॉग व्यूअर की दक्षता बढ़ाएं ताकि खोज की जा सके। NVDA फ़ंक्शन की जांच के लिए बुकमार्ग जोड़ें।\nहॉट कीज़:\nCTRL+F : खोज संवाद खोलें\nF3\nएक बार टैप : अगला परिणाम ढूंढें\nदो बार टैप : एरर लॉग लेवल कॉपी करें\nShift+F3 : पिछला परिणाम ढूंढें\nCTRL+F2 : बुकमार्क जोड़ें\nF2 : लॉग में अगले बुकमार्क पर जाएं\nShift+F2 : लॉग में पिछले बुकमार्क पर जाएं\nNVDA+CTRL+L : पुरानी लॉग फ़ाइल खोलें"
-		},
-		{
-			"language": "hr",
-			"displayName": "logViewer",
-			"description": "Povećajte učinkovitost NVDA preglednika dnevnika (log viewer) kako biste mogli pretraživati. Dodajte oznaku za provjeru NVDA funkcije.\nVruće tipke:\nCTRL+F : Otvori dijaloški okvir za pretraživanje\nF3\nJedan pritisak : Pronađi sljedeće pojavljivanje\nDvostruki pritisak : Kopiraj razinu dnevnika pogrešaka\nShift+F3 : Pronađi prethodno pojavljivanje\nCTRL+F2 : Dodaj oznaku\nF2 : Idi na sljedeću oznaku u dnevniku\nShift+F2 : Idi na prethodnu oznaku u dnevniku\nNVDA+CTRL+L : Otvori staru datoteku dnevnika"
-		},
-		{
-			"language": "hu",
-			"displayName": "logViewer",
-			"description": "Növelje az NVDA naplómegtekintő hatékonyságát a keresés lehetővé tételével. Könyvjelző hozzáadása az NVDA funkció ellenőrzéséhez.\nGyorsbillentyűk:\nCTRL+F : Keresési párbeszédablak megnyitása\nF3\nEgyszeri leütés : Következő találat keresése\nDupla leütés : Hibaszint másolása a naplóból\nShift+F3 : Előző találat keresése\nCTRL+F2 : Könyvjelző hozzáadása\nF2 : Ugrás a napló következő könyvjelzőjére\nShift+F2 : Ugrás a napló előző könyvjelzőjére\nNVDA+CTRL+L : Régi naplófájl megnyitása"
-		},
-		{
-			"language": "id",
-			"displayName": "logViewer",
-			"description": "Tingkatkan efisiensi NVDA LOG Viewer agar dapat mencari. Tambahkan Bookmark untuk memeriksa fungsi NVDA.\nTombol Cepat:\nCTRL+F : Buka Dialog pencarian\nF3\nKetukan Tunggal : Cari kemunculan berikutnya\nKetukan Ganda : salin Tingkat Log Kesalahan\nShift+F3 : Cari kemunculan sebelumnya\nCTRL+F2 : Tambahkan Bookmark\nF2 : Pindah to bookmark berikutnya di log\nShift+F2 : Pindah to bookmark sebelumnya di log\nNVDA+CTRL+L : buka file Log Lama"
-		},
-		{
-			"language": "it",
-			"displayName": "logViewer",
-			"description": "Aumenta l'efficienza del Visualizzatore log di NVDA per poter effettuare ricerche. Aggiungi segnalibro per controllare la funzione NVDA.\nTasti di scelta rapida:\nCTRL+F : Apri finestra di ricerca\nF3\nTocco singolo : Trova occorrenza successiva\nTocco doppio : Copia livello log errori\nShift+F3 : Trova occorrenza precedente\nCTRL+F2 : Aggiungi segnalibro\nF2 : Vai al segnalibro successivo nel log\nShift+F2 : Vai al segnalibro precedente nel log\nNVDA+CTRL+L : Apri il vecchio file di log"
-		},
-		{
-			"language": "ja",
-			"displayName": "logViewer",
-			"description": "NVDAログビューアーの検索効率を高めます。NVDAの機能を確認するためのブックマークを追加します。\nホットキー:\nCTRL+F : 検索ダイアログを開く\nF3\nシングルタップ : 次を検索\nダブルタップ : エラーログレベルをコピー\nShift+F3 : 前を検索\nCTRL+F2 : ブックマークを追加\nF2 : ログ内の次のブックマークに移動\nShift+F2 : ログ内の前のブックマークに移動\nNVDA+CTRL+L : 古いログファイルを開く"
-		},
-		{
-			"language": "kk",
-			"displayName": "logViewer",
-			"description": "Іздеу мүмкіндігі үшін NVDA журналын қарау құралының тиімділігін арттырыңыз. NVDA функциясын тексеру үшін бетбелгі қосыңыз.\nЖедел пернелер:\nCTRL+F : Іздеу диалогын ашу\nF3\nБір рет басу : Келесісін табу\nЕкі рет басу : Қате журналының деңгейін көшіру\nShift+F3 : Алдыңғысын табу\nCTRL+F2 : Бетбелгі қосу\nF2 : Журналдағы келесі бетбелгіге өту\nShift+F2 : Журналдағы алдыңғы бетбелгіге өту\nNVDA+CTRL+L : Ескі журнал файлын ашу"
-		},
-		{
-			"language": "ko",
-			"displayName": "logViewer",
-			"description": "검색 기능을 위해 NVDA 로그 뷰어의 효율성을 높입니다. NVDA 기능을 확인하기 위해 책갈피를 추가합니다.\n단축키:\nCTRL+F : 검색 대화상자 열기\nF3\n한 번 누르기 : 다음 찾기\n두 번 누르기 : 오류 로그 레벨 복사\nShift+F3 : 이전 찾기\nCTRL+F2 : 책갈피 추가\nF2 : 로그의 다음 책갈피로 이동\nShift+F2 : 로그의 이전 책갈피로 이동\nNVDA+CTRL+L : 이전 로그 파일 열기"
-		},
-		{
-			"language": "lo",
-			"displayName": "logViewer",
-			"description": "ເພີ່ມປະສິດທິພາບຂອງຕົວເບິ່ງບັນທຶກ NVDA ໃຫ້ສາມາດຄົ້ນຫາໄດ້. ເພີ່ມ Bookmark ເພື່ອສະແກນຟັງຊັນ NVDA.\nປຸ່ມລັດ:\nCTRL+F : ເປີດກ່ອງໂຕ້ຕອບການຄົ້ນຫາ\nF3\nກົດເທື່ອດຽວ : คົ້ນຫາຄຳຕໍ່ໄປ\nກົດສອງເທື່ອ : ສຳເນົາລະດັບບັນທຶກຂໍ້ຜິດພາດ\nShift+F3 : ຄົ້ນຫາຄຳກ່ອນໜ້າ\nCTRL+F2 : ເພີ່ມ Bookmark\nF2 : ໄປຫາ Bookmark ຕໍ່ໄປໃນບັນທຶກ\nShift+F2 : ໄປຫາ Bookmark ກ່ອນໜ້າໃນບັນທຶກ\nNVDA+CTRL+L : ເປີດໄຟລ໌ບັນທຶກເກົ່າ"
-		},
-		{
-			"language": "ms",
-			"displayName": "logViewer",
-			"description": "Tingkatkan kecekapan NVDA LOG Viewer untuk membolehkan pencarian. Tambah Penanda Buku untuk memeriksa fungsi NVDA.\nKekunci Pintas:\nCTRL+F : Buka Dialog carian\nF3\nKetukan Tunggal : Cari kemunculan seterusnya\nKetukan Ganda : Salin Tahap Log Ralat\nShift+F3 : Cari kemunculan sebelumnya\nCTRL+F2 : Tambah Penanda Buku\nF2 : Pindah ke penanda buku seterusnya dalam log\nShift+F2 : Pindah ke penanda buku sebelumnya dalam log\nNVDA+CTRL+L : Buka fail Log Lama"
-		},
-		{
-			"language": "my",
-			"displayName": "logViewer",
-			"description": "ရှာဖွေနိုင်ရန်အတွက် NVDA LOG Viewer ၏ စွမ်းဆောင်ရည်ကို မြှင့်တင်ပါ။ NVDA လုပ်ဆောင်ချက်ကို စစ်ဆေးရန် မှတ်သားချက် (Bookmark) ထည့်ပါ။\nဟော့ကီးများ-\nCTRL+F : ရှာဖွေရန် ဒိုင်ယာလော့ဂ်ကို ဖွင့်ပါ\nF3\nတစ်ချက်နှိပ် : နောက်တစ်ခုကို ရှာပါ\nနှစ်ချက်နှိပ် : အမှားမှတ်တမ်း အဆင့်ကို ကူးယူပါ\nShift+F3 : ရှေ့တစ်ခုကို ရှာပါ\nCTRL+F2 : မှတ်သားချက် ထည့်ပါ\nF2 : မှတ်တမ်းရှိ နောက်မှတ်သားချက်သို့ ရွှေ့ပါ\nShift+F2 : မှတ်တမ်းရှိ ရှေ့မှတ်သားချက်သို့ ရွှေ့ပါ\nNVDA+CTRL+L : မှတ်တမ်းဟောင်းဖိုင်ကို ဖွင့်ပါ"
-		},
-		{
-			"language": "pt",
-			"displayName": "logViewer",
-			"description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir ficheiro de log antigo"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "logViewer",
-			"description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir arquivo de log antigo"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "logViewer",
-			"description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir ficheiro de log antigo"
-		},
-		{
-			"language": "ro",
-			"displayName": "logViewer",
-			"description": "Crește eficiența vizualizatorului de jurnal NVDA pentru a putea căuta. Adaugă semn de carte pentru a verifica funcția NVDA.\nTaste rapide:\nCTRL+F : Deschide dialogul de căutare\nF3\nO singură apăsare : Găsește următoarea apariție\nApăsare dublă : Copiază nivelul jurnalului de erori\nShift+F3 : Găsește apariția anterioară\nCTRL+F2 : Adaugă semn de carte\nF2 : Mergi la următorul semn de carte din jurnal\nShift+F2 : Mergi la semnul de carte anterior din jurnal\nNVDA+CTRL+L : Deschide vechiul fișier de jurnal"
-		},
-		{
-			"language": "ru",
-			"displayName": "logViewer",
-			"description": "Повышение эффективности средства просмотра журналов NVDA для возможности поиска. Добавление закладок для проверки функций NVDA.\nГорячие клавиши:\nCTRL+F : Открыть диалог поиска\nF3\nОдинарное нажатие : Найти следующее вхождение\nДвойное нажатие : Копировать уровень журнала ошибок\nShift+F3 : Найти предыдущее вхождение\nCTRL+F2 : Добавить закладку\nF2 : Перейти к следующей закладке в журнале\nShift+F2 : Перейти к предыдущей закладке в журнале\nNVDA+CTRL+L : Открыть файл старого журнала"
-		},
-		{
-			"language": "si",
-			"displayName": "logViewer",
-			"description": "සෙවීමේ හැකියාව ලබා දීම සඳහා NVDA ලොග් නරඹන්නාගේ කාර්යක්ෂමතාව වැඩි කරන්න. NVDA ක්‍රියාකාරිත්වය පරීක්ෂා කිරීමට බුක්මාර්ක් එක් කරන්න.\nහොට් කී:\nCTRL+F : සෙවුම් සංවාද කොටුව විවෘත කරන්න\nF3\nඑක් වරක් එබීම : ඊළඟ අවස්ථාව සොයන්න\nදෙවරක් එබීම : දෝෂ ලොග් මට්ටම පිටපත් කරන්න\nShift+F3 : පෙර අවස්ථාව සොයන්න\nCTRL+F2 : බුක්මාර්ක් එක් කරන්න\nF2 : ලොගයේ ඊළඟ බුක්මාර්ක් එකට යන්න\nShift+F2 : ලොගයේ පෙර බුක්මාර්ක් එකට යන්න\nNVDA+CTRL+L : පැරණි ලොග් ගොනුව විවෘත කරන්න"
-		},
-		{
-			"language": "sk",
-			"displayName": "logViewer",
-			"description": "Zvýšenie efektivity prehliadača logov NVDA vďaka možnosti vyhľadávania. Pridanie záložky pre kontrolu funkcie NVDA.\nHorúce klávesy:\nCTRL+F : Otvoriť dialóg vyhľadávania\nF3\nJedno stlačenie : Nájsť ďalší výskyt\nDvojité stlačenie : Kopírovať úroveň chyby v logu\nShift+F3 : Nájsť predchádzajúci výskyt\nCTRL+F2 : Pridať záložku\nF2 : Presunúť na ďalšiu záložku v logu\nShift+F2 : Presunúť na predchádzajúcu záložku v logu\nNVDA+CTRL+L : Otvoriť starý súbor logu"
-		},
-		{
-			"language": "ta",
-			"displayName": "logViewer",
-			"description": "தேடலை அனுமதிப்பதன் மூலம் NVDA லாக் வியூவரின் செயல்திறனை அதிகரிக்கவும். NVDA செயல்பாட்டைச் சரிபார்க்க புக்மார்க்கைச் சேர்க்கவும்.\nகுறுக்குவழி விசைகள்:\nCTRL+F : தேடல் உரையாடலைத் திறக்கவும்\nF3\nஒருமுறை தட்டவும் : அடுத்த நிகழ்வைக் கண்டறியவும்\nஇருமுறை தட்டவும் : பிழை பதிவு நிலையை நகலெடுக்கவும்\nShift+F3 : முந்தைய நிகழ்வைக் கண்டறியவும்\nCTRL+F2 : புக்மார்க்கைச் சேர்க்கவும்\nF2 : பதிவில் அடுத்த புக்மார்க்கிற்குச் செல்லவும்\nShift+F2 : பதிவில் முந்தைய புக்மார்க்கிற்குச் செல்லவும்\nNVDA+CTRL+L : பழைய பதிவு கோப்பைத் திறக்கவும்"
-		},
-		{
-			"language": "te",
-			"displayName": "logViewer",
-			"description": "వెతకడానికి వీలుగా NVDA లాగ్ వ్యూయర్ యొక్క సామర్థ్యాన్ని పెంచండి. NVDA ఫంక్షన్‌ని తనిఖీ చేయడానికి బుక్‌మార్క్ జోడించండి.\nహాట్ కీలు:\nCTRL+F : సెర్చ్ డైలాగ్‌ని తెరవండి\nF3\nఒక్కసారి నొక్కండి : తదుపరి ఫలితాన్ని కనుగొనండి\nرెండుసార్లు నొక్కండి : ఎర్రర్ లాగ్ లెవల్‌ని కాピー చేయండి\nShift+F3 : మునుపటి ఫలితాన్ని కనుగొనండి\nCTRL+F2 : బుక్‌మార్క్‌ను జోడించండి\nF2 : లాగ్‌లోని తదుపరి బుక్‌మార్క్‌కు వెళ్లండి\nShift+F2 : లాగ్‌లోని మునుపటి బుక్‌మార్క్‌కు వెళ్లండి\nNVDA+CTRL+L : పాత లాగ్ ఫైల్‌ని తెరవండి"
-		},
-		{
-			"language": "th",
-			"displayName": "logViewer",
-			"description": "เพิ่มประสิทธิภาพของเครื่องมือดูปูมบันทึก (LOG Viewer) ของ NVDA ให้สามารถค้นหาได้ เพิ่มที่คั่นหน้าเพื่อตรวจสอบการทำงานของ NVDA\nปุ่มลัด:\nCTRL+F : เปิดหน้าต่างค้นหา\nF3\nกดครั้งเดียว : ค้นหาคำถัดไป\nกดสองครั้ง : คัดลอกระดับข้อผิดพลาดของปูมบันทึก\nShift+F3 : ค้นหาคำก่อนหน้า\nCTRL+F2 : เพิ่มที่คั่นหน้า\nF2 : ไปยังที่คั่นหน้าถัดไปในปูมบันทึก\nShift+F2 : ไปยังที่คั่นหน้าก่อนหน้าในปูมบันทึก\nNVDA+CTRL+L : เปิดไฟล์ปูมบันทึกเก่า"
-		},
-		{
-			"language": "tk",
-			"displayName": "logViewer",
-			"description": "Gözleg mümkinçiligi üçin NVDA žurnal seredişiniň netijeliligini ýokarlandyryň. NVDA funksiýasyny barlamak üçin bellik goşuň.\nGyzgyn düwmeler:\nCTRL+F : Gözleg dialogyny aç\nF3\nBir gezek basmak : Indikini tap\nIki gezek basmak : Ýalňyşlyk žurnalynyň derejesini nusgala\nShift+F3 : Öňkini tap\nCTRL+F2 : Bellik goş\nF2 : Žurnaldaky indiki bellige geç\nShift+F2 : Žurnaldaky öňki bellige geç\nNVDA+CTRL+L : Köne žurnal faýlyny aç"
-		},
-		{
-			"language": "tl",
-			"displayName": "logViewer",
-			"description": "Dagdagan ang kahusayan ng NVDA LOG Viewer upang makapaghanap. Magdagdag ng Bookmark upang suriin ang function ng NVDA.\nHot Keys:\nCTRL+F : Buksan ang search Dialog\nF3\nIsang Tap : Hanapin ang susunod na pagkakataon\nDalawang Tap : kopyahin ang Error Log Level\nShift+F3 : Hanapin ang nakaraang pagkakataon\nCTRL+F2 : Magdagdag ng Bookmark\nF2 : Lumipat sa susunod na bookmark sa log\nShift+F2 : Lumipat sa nakaraang bookmark sa log\nNVDA+CTRL+L : buksan ang OldLog File"
-		},
-		{
-			"language": "tr",
-			"displayName": "logViewer",
-			"description": "Arama yapabilmek için NVDA günlük görüntüleyicisinin verimliliğini artırın. NVDA işlevini kontrol etmek için yer işareti ekleyin.\nKısayol Tuşları:\nCTRL+F : Arama iletişim kutusunu aç\nF3\nTek Dokunuş : Sonrakini bul\nÇift Dokunuş : Hata günlüğü düzeyini kopyala\nShift+F3 : Öncekini bul\nCTRL+F2 : Yer işareti ekle\nF2 : Günlükteki bir sonraki yer işaretine git\nShift+F2 : Günlükteki bir önceki yer işaretine git\nNVDA+CTRL+L : Eski günlük dosyasını aç"
-		},
-		{
-			"language": "uk",
-			"displayName": "logViewer",
-			"description": "Підвищення ефективності переглядача журналів NVDA для можливості пошуку. Додавання закладок для перевірки функцій NVDA.\nГарячі клавіші:\nCTRL+F : Відкрити діалог пошуку\nF3\nОдне натискання : Знайти наступне входження\nПодвійне натискання : Копіювати рівень журналу помилок\nShift+F3 : Знайти попереднє входження\nCTRL+F2 : Додати закладку\nF2 : Перейти до наступної закладки в журналі\nShift+F2 : Перейти до попередньої закладки в журналі\nNVDA+CTRL+L : Відкрити файл старого журналу"
-		},
-		{
-			"language": "ur",
-			"displayName": "logViewer",
-			"description": "تلاش کی اہلیت کے لیے NVDA لاگ ویور کی کارکردگی کو بڑھائیں۔ NVDA فنکشن کو چیک کرنے کے لیے بک مارک شامل کریں۔\nہاٹ کیز:\nCTRL+F : تلاش کا ڈائیلاگ کھولیں\nF3\nایک بار ٹیپ کریں : اگلا نتیجہ تلاش کریں\nدو بار ٹیپ کریں : ایرر لاگ لیول کاپی کریں\nShift+F3 : پچھلا نتیجہ تلاش کریں\nCTRL+F2 : بک مارک شامل کریں\nF2 : لاگ میں اگلے بک مارک پر جائیں\nShift+F2 : لاگ میں پچھلے بک مارک پر جائیں\nNVDA+CTRL+L : پرانی لاگ فائل کھولیں"
-		},
-		{
-			"language": "uz",
-			"displayName": "logViewer",
-			"description": "Qidiruv imkoniyati uchun NVDA jurnallarini ko'rish vositasi samaradorligini oshiring. NVDA funksiyasini tekshirish uchun xatcho'p qo'shing.\nTezkor tugmalar:\nCTRL+F : Qidiruv muloqot oynasini ochish\nF3\nBir marta bosish : Keyingisini topish\nIkki marta bosish : Xato jurnali darajasini nusxalash\nShift+F3 : Oldingisini topish\nCTRL+F2 : Xatcho'p qo'shish\nF2 : Jurnaldagi keyingi xatcho'pga o'tish\nShift+F2 : Jurnaldagi oldingi xatcho'pga o'tish\nNVDA+CTRL+L : Eski jurnal faylini ochish"
-		},
-		{
-			"language": "vi",
-			"displayName": "logViewer",
-			"description": "Tăng hiệu quả của trình xem nhật ký NVDA để có thể tìm kiếm. Thêm dấu trang để kiểm tra chức năng của NVDA.\nPhím nóng:\nCTRL+F : Mở hộp thoại tìm kiếm\nF3\nNhấn một lần : Tìm lần xuất hiện tiếp theo\nNhấn hai lần : sao chép cấp độ nhật ký lỗi\nShift+F3 : Tìm lần xuất hiện trước đó\nCTRL+F2 : Thêm dấu trang\nF2 : Di chuyển đến dấu trang tiếp theo trong nhật ký\nShift+F2 : Di chuyển đến dấu trang trước đó trong nhật ký\nNVDA+CTRL+L : mở tệp nhật ký cũ"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "logViewer",
-			"description": "增强 NVDA 日志查看器的搜索效率。添加书签以检查 NVDA 功能。\n热键：\nCTRL+F ：打开搜索对话框\nF3\n单击：查找下一个\n双击：复制错误日志级别\nShift+F3 ：查找上一个\nCTRL+F2 ：添加书签\nF2 ：移动到日志中的下一个书签\nShift+F2 ：移动到日志中的上一个书签\nNVDA+CTRL+L ：打开旧日志文件"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "logViewer",
-			"description": "增強 NVDA 日誌檢視器的搜尋效率。添加書籤以檢查 NVDA 功能。\n快速鍵：\nCTRL+F ：打開搜尋對話方塊\nF3\n按一下：尋找下一個\n按兩下：複製錯誤日誌層級\nShift+F3 ：尋找上一個\nCTRL+F2 ：添加書籤\nF2 ：移動到日誌中的下一個書籤\nShift+F2 ：移動到日誌中的上一個書籤\nNVDA+CTRL+L ：打開舊日誌文件"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "0000181c15180000",
-					"raw_md5": "b9e8457770311c5ac32af3296e0e6709"
-				},
-				"first_submission_date": 1781661325,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1781661327,
-				"last_submission_date": 1781661325,
-				"md5": "fa5adc03c1cd68712d969349721915c6",
-				"names": [],
-				"reputation": 0,
-				"sha1": "d42d155ba8f2570026341fa7082a731329901890",
-				"sha256": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
-				"size": 207422,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6291"
+  "addonId": "logViewer",
+  "displayName": "logViewer",
+  "URL": "https://github.com/chaichaimee/logViewer/releases/download/2026.6.4/logViewer-v2026.6.4.nvda-addon",
+  "description": "Increase the efficiency of the NVDA LOG Viewer to be able to search. Add Bookmark to check the NVDA function.\nHot Keys:\nCTRL+F : Open search Dialog\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\nShift+F3 : Find previous occurrence\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\nNVDA+CTRL+L : open OldLog File",
+  "sha256": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+  "addonVersionName": "2026.6.4",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 4
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/logViewer",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/logViewer",
+  "changelog": "Fixed \"nvda+control+l\" script failure by adding missing sys import and replacing wx.CallAfter with core.callLater to prevent watchdog timeout when opening log files from background thread.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781661308000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "logViewer",
+      "description": "زيادة كفاءة عارض سجل NVDA للتمكن من البحث. إضافة إشارة مرجعية لفحص وظيفة NVDA.\nمفاتيح الاختصار:\nCTRL+F : فتح مربع حوار البحث\nF3\nضغطة واحدة : البحث عن النتيجة التالية\nضغطة مزدوجة : نسخ مستوى سجل الخطأ\nShift+F3 : البحث عن النتيجة السابقة\nCTRL+F2 : إضافة إشارة مرجعية\nF2 : الانتقال إلى الإشارة المرجعية التالية في السجل\nShift+F2 : الانتقال إلى الإشارة المرجعية السابقة في السجل\nNVDA+CTRL+L : فتح ملف السجل القديم"
+    },
+    {
+      "language": "bg",
+      "displayName": "logViewer",
+      "description": "Увеличаване на ефективността на NVDA LOG Viewer за възможност за търсене. Добавяне на отметка за проверка на функцията на NVDA.\nБързи клавиши:\nCTRL+F : Отваряне на диалог за търсене\nF3\nЕдинично натискане : Намиране на следващо съвпадение\nДвойно натискане : Копиране на нивото на грешката в лога\nShift+F3 : Намиране на предишно съвпадение\nCTRL+F2 : Добавяне на отметка\nF2 : Към следващата отметка в лога\nShift+F2 : Към предишната отметка в лога\nNVDA+CTRL+L : Отваряне на файла със стария лог"
+    },
+    {
+      "language": "bn",
+      "displayName": "logViewer",
+      "description": "অনুসন্ধান করার ক্ষমতা দিতে NVDA LOG Viewer এর দক্ষতা বৃদ্ধি করুন। NVDA ফাংশন পরীক্ষা করতে বুকমার্ক যোগ করুন।\nহট কী:\nCTRL+F : অনুসন্ধান ডায়ালগ খুলুন\nF3\nএকবার ট্যাপ : পরবর্তী ফলাফল খুঁজুন\nডাবল ট্যাপ : এরর লগ লেভেল কপি করুন\nShift+F3 : পূর্ববর্তী ফলাফল খুঁজুন\nCTRL+F2 : বুকমার্ক যোগ করুন\nF2 : লগের পরবর্তী বুকমার্কে যান\nShift+F2 : লগের পূর্ববর্তী বুকমার্কে যান\nNVDA+CTRL+L : পুরাতন লগ ফাইল খুলুন"
+    },
+    {
+      "language": "cs",
+      "displayName": "logViewer",
+      "description": "Zvýšení efektivity prohlížeče logů NVDA díky možnosti vyhledávání. Přidání záložky pro kontrolu funkce NVDA.\nHorké klávesy:\nCTRL+F : Otevřít dialog vyhledávání\nF3\nJedno stisknutí : Najít další výskyt\nDvojité stisknutí : Kopírovat úroveň chyby v logu\nShift+F3 : Najít předchozí výskyt\nCTRL+F2 : Přidat záložku\nF2 : Přesunout na další záložku v logu\nShift+F2 : Přesunout na předchozí záložku v logu\nNVDA+CTRL+L : Otevřít starý soubor logu"
+    },
+    {
+      "language": "da",
+      "displayName": "logViewer",
+      "description": "Øg effektiviteten af NVDA LOG Viewer for at kunne søge. Tilføj bogmærke for at kontrollere NVDA-funktionen.\nGenvejstaster:\nCTRL+F : Åbn søgedialog\nF3\nEnkelt tryk : Find næste forekomst\nDobbelt tryk : Kopier fejllogniveau\nShift+F3 : Find forrige forekomst\nCTRL+F2 : Tilføj bogmærke\nF2 : Gå til næste bogmærke i loggen\nShift+F2 : Gå til forrige bogmærke i loggen\nNVDA+CTRL+L : Åbn gammel logfil"
+    },
+    {
+      "language": "de",
+      "displayName": "logViewer",
+      "description": "Erhöhen Sie die Effizienz des NVDA LOG Viewers, um suchen zu können. Lesezeichen hinzufügen, um die NVDA-Funktion zu prüfen.\nTastenkombinationen:\nCTRL+F : Suchdialog öffnen\nF3\nEinmal drücken : Nächstes Vorkommen suchen\nDoppelt drücken : Fehler-Log-Ebene kopieren\nShift+F3 : Vorheriges Vorkommen suchen\nCTRL+F2 : Lesezeichen hinzufügen\nF2 : Zum nächsten Lesezeichen im Log springen\nShift+F2 : Zum vorherigen Lesezeichen im Log springen\nNVDA+CTRL+L : Alte Log-Datei öffnen"
+    },
+    {
+      "language": "en",
+      "displayName": "logViewer",
+      "description": "Increase the efficiency of the NVDA LOG Viewer to be able to search. Add Bookmark to check the NVDA function.\nHot Keys:\nCTRL+F : Open search Dialog\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\nShift+F3 : Find previous occurrence\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\nNVDA+CTRL+L : open OldLog File"
+    },
+    {
+      "language": "es",
+      "displayName": "logViewer",
+      "description": "Aumenta la eficiencia del Visor de registro de NVDA para poder buscar. Añade marcadores para comprobar el funcionamiento de NVDA.\nTeclas rápidas:\nCTRL+F : Abrir el diálogo de búsqueda\nF3\nUn toque : Buscar siguiente coincidencia\nDos toques : Copiar nivel de registro de errores\nShift+F3 : Buscar coincidencia anterior\nCTRL+F2 : Añadir marcador\nF2 : Ir al siguiente marcador en el registro\nShift+F2 : Ir al marcador anterior en el registro\nNVDA+CTRL+L : Abrir el archivo de registro antiguo"
+    },
+    {
+      "language": "fa",
+      "displayName": "logViewer",
+      "description": "افزایش کارایی نمایشگر گزارش NVDA برای قابلیت جستجو. افزودن نشانک برای بررسی عملکرد NVDA.\nکلیدهای میانبر:\nCTRL+F : باز کردن دیالوگ جستجو\nF3\nیک‌بار ضربه : یافتن مورد بعدی\nدو बार ضربه : کپی کردن سطح گزارش خطا\nShift+F3 : یافتن مورد قبلی\nCTRL+F2 : افزودن نشانک\nF2 : رفتن به نشانک بعدیใน گزارش\nShift+F2 : رفتن به نشانک قبلی در گزارش\nNVDA+CTRL+L : باز کردن فایل گزارش قدیمی"
+    },
+    {
+      "language": "fi",
+      "displayName": "logViewer",
+      "description": "Paranna NVDA:n lokikatselimen tehokkuutta mahdollistamalla haku. Lisää kirjanmerkki NVDA-toiminnon tarkistamiseksi.\nPikanäppäimet:\nCTRL+F : Avaa hakuikkuna\nF3\nYksi painallus : Etsi seuraava esiintymä\nKaksoispainallus : Kopioi virhelokitaso\nShift+F3 : Etsi edellinen esiintymä\nCTRL+F2 : Lisää kirjanmerkki\nF2 : Siirry lokin seuraavaan kirjanmerkkiin\nShift+F2 : Siirry lokin edelliseen kirjanmerkkiin\nNVDA+CTRL+L : Avaa vanha lokitiedosto"
+    },
+    {
+      "language": "fr",
+      "displayName": "logViewer",
+      "description": "Augmenter l'efficacité de la visionneuse de journaux NVDA pour pouvoir effectuer des recherches. Ajouter un signet para vérifier la fonction NVDA.\nTouches de raccourci :\nCTRL+F : Ouvrir la boîte de dialogue de recherche\nF3\nAppui simple : Rechercher l'occurrence suivante\nAppui double : Copier le niveau du journal d'erreurs\nShift+F3 : Rechercher l'occurrence précédente\nCTRL+F2 : Ajouter un signet\nF2 : Passer au signet suivant dans le journal\nShift+F2 : Passer au signet précédent dans le journal\nNVDA+CTRL+L : Ouvrir l'ancien fichier journal"
+    },
+    {
+      "language": "gl",
+      "displayName": "logViewer",
+      "description": "Aumenta a eficiencia do Visor de Rexistro de NVDA para poder buscar. Engade marcadores para comprobar o funcionamento de NVDA.\nTeclas rápidas:\nCTRL+F : Abrir o diálogo de busca\nF3\nUn toque : Buscar seguinte coincidencia\nDous toques : Copiar nivel de rexistro de erros\nShift+F3 : Buscar coincidencia anterior\nCTRL+F2 : Engadir marcador\nF2 : Ir ao seguinte marcador no rexistro\nShift+F2 : Ir ao marcador anterior no rexistro\nNVDA+CTRL+L : Abrir o ficheiro de rexistro antigo"
+    },
+    {
+      "language": "he",
+      "displayName": "logViewer",
+      "description": "הגברת היעילות של מציг היומן של NVDA כדי לאפשר חיפוש. הוספת סיმניה לבديקת פונקציית ה-NVDA.\nמקשי קיצור:\nCTRL+F : פתיחת תיבת דו-שיח לחיפוש\nF3\nלחיצה אחת : מציאת המופע הבא\nלחיצה כפולה : העתקת רמת יומן השגיאות\nShift+F3 : מציאת המופע הקודם\nCTRL+F2 : הוספת סיმניה\nF2 : מעבר לסיმניה הבאה ביומן\nShift+F2 : מעבר לסיมניה הקודמת ביומן\nNVDA+CTRL+L : פתיחת קובץ יומן ישн"
+    },
+    {
+      "language": "hi",
+      "displayName": "logViewer",
+      "description": "NVDA लॉग व्यूअर की दक्षता बढ़ाएं ताकि खोज की जा सके। NVDA फ़ंक्शन की जांच के लिए बुकमार्ग जोड़ें।\nहॉट कीज़:\nCTRL+F : खोज संवाद खोलें\nF3\nएक बार टैप : अगला परिणाम ढूंढें\nदो बार टैप : एरर लॉग लेवल कॉपी करें\nShift+F3 : पिछला परिणाम ढूंढें\nCTRL+F2 : बुकमार्क जोड़ें\nF2 : लॉग में अगले बुकमार्क पर जाएं\nShift+F2 : लॉग में पिछले बुकमार्क पर जाएं\nNVDA+CTRL+L : पुरानी लॉग फ़ाइल खोलें"
+    },
+    {
+      "language": "hr",
+      "displayName": "logViewer",
+      "description": "Povećajte učinkovitost NVDA preglednika dnevnika (log viewer) kako biste mogli pretraživati. Dodajte oznaku za provjeru NVDA funkcije.\nVruće tipke:\nCTRL+F : Otvori dijaloški okvir za pretraživanje\nF3\nJedan pritisak : Pronađi sljedeće pojavljivanje\nDvostruki pritisak : Kopiraj razinu dnevnika pogrešaka\nShift+F3 : Pronađi prethodno pojavljivanje\nCTRL+F2 : Dodaj oznaku\nF2 : Idi na sljedeću oznaku u dnevniku\nShift+F2 : Idi na prethodnu oznaku u dnevniku\nNVDA+CTRL+L : Otvori staru datoteku dnevnika"
+    },
+    {
+      "language": "hu",
+      "displayName": "logViewer",
+      "description": "Növelje az NVDA naplómegtekintő hatékonyságát a keresés lehetővé tételével. Könyvjelző hozzáadása az NVDA funkció ellenőrzéséhez.\nGyorsbillentyűk:\nCTRL+F : Keresési párbeszédablak megnyitása\nF3\nEgyszeri leütés : Következő találat keresése\nDupla leütés : Hibaszint másolása a naplóból\nShift+F3 : Előző találat keresése\nCTRL+F2 : Könyvjelző hozzáadása\nF2 : Ugrás a napló következő könyvjelzőjére\nShift+F2 : Ugrás a napló előző könyvjelzőjére\nNVDA+CTRL+L : Régi naplófájl megnyitása"
+    },
+    {
+      "language": "id",
+      "displayName": "logViewer",
+      "description": "Tingkatkan efisiensi NVDA LOG Viewer agar dapat mencari. Tambahkan Bookmark untuk memeriksa fungsi NVDA.\nTombol Cepat:\nCTRL+F : Buka Dialog pencarian\nF3\nKetukan Tunggal : Cari kemunculan berikutnya\nKetukan Ganda : salin Tingkat Log Kesalahan\nShift+F3 : Cari kemunculan sebelumnya\nCTRL+F2 : Tambahkan Bookmark\nF2 : Pindah to bookmark berikutnya di log\nShift+F2 : Pindah to bookmark sebelumnya di log\nNVDA+CTRL+L : buka file Log Lama"
+    },
+    {
+      "language": "it",
+      "displayName": "logViewer",
+      "description": "Aumenta l'efficienza del Visualizzatore log di NVDA per poter effettuare ricerche. Aggiungi segnalibro per controllare la funzione NVDA.\nTasti di scelta rapida:\nCTRL+F : Apri finestra di ricerca\nF3\nTocco singolo : Trova occorrenza successiva\nTocco doppio : Copia livello log errori\nShift+F3 : Trova occorrenza precedente\nCTRL+F2 : Aggiungi segnalibro\nF2 : Vai al segnalibro successivo nel log\nShift+F2 : Vai al segnalibro precedente nel log\nNVDA+CTRL+L : Apri il vecchio file di log"
+    },
+    {
+      "language": "ja",
+      "displayName": "logViewer",
+      "description": "NVDAログビューアーの検索効率を高めます。NVDAの機能を確認するためのブックマークを追加します。\nホットキー:\nCTRL+F : 検索ダイアログを開く\nF3\nシングルタップ : 次を検索\nダブルタップ : エラーログレベルをコピー\nShift+F3 : 前を検索\nCTRL+F2 : ブックマークを追加\nF2 : ログ内の次のブックマークに移動\nShift+F2 : ログ内の前のブックマークに移動\nNVDA+CTRL+L : 古いログファイルを開く"
+    },
+    {
+      "language": "kk",
+      "displayName": "logViewer",
+      "description": "Іздеу мүмкіндігі үшін NVDA журналын қарау құралының тиімділігін арттырыңыз. NVDA функциясын тексеру үшін бетбелгі қосыңыз.\nЖедел пернелер:\nCTRL+F : Іздеу диалогын ашу\nF3\nБір рет басу : Келесісін табу\nЕкі рет басу : Қате журналының деңгейін көшіру\nShift+F3 : Алдыңғысын табу\nCTRL+F2 : Бетбелгі қосу\nF2 : Журналдағы келесі бетбелгіге өту\nShift+F2 : Журналдағы алдыңғы бетбелгіге өту\nNVDA+CTRL+L : Ескі журнал файлын ашу"
+    },
+    {
+      "language": "ko",
+      "displayName": "logViewer",
+      "description": "검색 기능을 위해 NVDA 로그 뷰어의 효율성을 높입니다. NVDA 기능을 확인하기 위해 책갈피를 추가합니다.\n단축키:\nCTRL+F : 검색 대화상자 열기\nF3\n한 번 누르기 : 다음 찾기\n두 번 누르기 : 오류 로그 레벨 복사\nShift+F3 : 이전 찾기\nCTRL+F2 : 책갈피 추가\nF2 : 로그의 다음 책갈피로 이동\nShift+F2 : 로그의 이전 책갈피로 이동\nNVDA+CTRL+L : 이전 로그 파일 열기"
+    },
+    {
+      "language": "lo",
+      "displayName": "logViewer",
+      "description": "ເພີ່ມປະສິດທິພາບຂອງຕົວເບິ່ງບັນທຶກ NVDA ໃຫ້ສາມາດຄົ້ນຫາໄດ້. ເພີ່ມ Bookmark ເພື່ອສະແກນຟັງຊັນ NVDA.\nປຸ່ມລັດ:\nCTRL+F : ເປີດກ່ອງໂຕ້ຕອບການຄົ້ນຫາ\nF3\nກົດເທື່ອດຽວ : คົ້ນຫາຄຳຕໍ່ໄປ\nກົດສອງເທື່ອ : ສຳເນົາລະດັບບັນທຶກຂໍ້ຜິດພາດ\nShift+F3 : ຄົ້ນຫາຄຳກ່ອນໜ້າ\nCTRL+F2 : ເພີ່ມ Bookmark\nF2 : ໄປຫາ Bookmark ຕໍ່ໄປໃນບັນທຶກ\nShift+F2 : ໄປຫາ Bookmark ກ່ອນໜ້າໃນບັນທຶກ\nNVDA+CTRL+L : ເປີດໄຟລ໌ບັນທຶກເກົ່າ"
+    },
+    {
+      "language": "ms",
+      "displayName": "logViewer",
+      "description": "Tingkatkan kecekapan NVDA LOG Viewer untuk membolehkan pencarian. Tambah Penanda Buku untuk memeriksa fungsi NVDA.\nKekunci Pintas:\nCTRL+F : Buka Dialog carian\nF3\nKetukan Tunggal : Cari kemunculan seterusnya\nKetukan Ganda : Salin Tahap Log Ralat\nShift+F3 : Cari kemunculan sebelumnya\nCTRL+F2 : Tambah Penanda Buku\nF2 : Pindah ke penanda buku seterusnya dalam log\nShift+F2 : Pindah ke penanda buku sebelumnya dalam log\nNVDA+CTRL+L : Buka fail Log Lama"
+    },
+    {
+      "language": "my",
+      "displayName": "logViewer",
+      "description": "ရှာဖွေနိုင်ရန်အတွက် NVDA LOG Viewer ၏ စွမ်းဆောင်ရည်ကို မြှင့်တင်ပါ။ NVDA လုပ်ဆောင်ချက်ကို စစ်ဆေးရန် မှတ်သားချက် (Bookmark) ထည့်ပါ။\nဟော့ကီးများ-\nCTRL+F : ရှာဖွေရန် ဒိုင်ယာလော့ဂ်ကို ဖွင့်ပါ\nF3\nတစ်ချက်နှိပ် : နောက်တစ်ခုကို ရှာပါ\nနှစ်ချက်နှိပ် : အမှားမှတ်တမ်း အဆင့်ကို ကူးယူပါ\nShift+F3 : ရှေ့တစ်ခုကို ရှာပါ\nCTRL+F2 : မှတ်သားချက် ထည့်ပါ\nF2 : မှတ်တမ်းရှိ နောက်မှတ်သားချက်သို့ ရွှေ့ပါ\nShift+F2 : မှတ်တမ်းရှိ ရှေ့မှတ်သားချက်သို့ ရွှေ့ပါ\nNVDA+CTRL+L : မှတ်တမ်းဟောင်းဖိုင်ကို ဖွင့်ပါ"
+    },
+    {
+      "language": "pt",
+      "displayName": "logViewer",
+      "description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir ficheiro de log antigo"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "logViewer",
+      "description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir arquivo de log antigo"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "logViewer",
+      "description": "Aumenta a eficiência do Visualizador de Log do NVDA para permitir pesquisas. Adiciona marcadores para verificar a função do NVDA.\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nF3\nUm toque : Localizar próxima ocorrência\nDois toques : Copiar nível de erro do log\nShift+F3 : Localizar ocorrência anterior\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\nNVDA+CTRL+L : Abrir ficheiro de log antigo"
+    },
+    {
+      "language": "ro",
+      "displayName": "logViewer",
+      "description": "Crește eficiența vizualizatorului de jurnal NVDA pentru a putea căuta. Adaugă semn de carte pentru a verifica funcția NVDA.\nTaste rapide:\nCTRL+F : Deschide dialogul de căutare\nF3\nO singură apăsare : Găsește următoarea apariție\nApăsare dublă : Copiază nivelul jurnalului de erori\nShift+F3 : Găsește apariția anterioară\nCTRL+F2 : Adaugă semn de carte\nF2 : Mergi la următorul semn de carte din jurnal\nShift+F2 : Mergi la semnul de carte anterior din jurnal\nNVDA+CTRL+L : Deschide vechiul fișier de jurnal"
+    },
+    {
+      "language": "ru",
+      "displayName": "logViewer",
+      "description": "Повышение эффективности средства просмотра журналов NVDA для возможности поиска. Добавление закладок для проверки функций NVDA.\nГорячие клавиши:\nCTRL+F : Открыть диалог поиска\nF3\nОдинарное нажатие : Найти следующее вхождение\nДвойное нажатие : Копировать уровень журнала ошибок\nShift+F3 : Найти предыдущее вхождение\nCTRL+F2 : Добавить закладку\nF2 : Перейти к следующей закладке в журнале\nShift+F2 : Перейти к предыдущей закладке в журнале\nNVDA+CTRL+L : Открыть файл старого журнала"
+    },
+    {
+      "language": "si",
+      "displayName": "logViewer",
+      "description": "සෙවීමේ හැකියාව ලබා දීම සඳහා NVDA ලොග් නරඹන්නාගේ කාර්යක්ෂමතාව වැඩි කරන්න. NVDA ක්‍රියාකාරිත්වය පරීක්ෂා කිරීමට බුක්මාර්ක් එක් කරන්න.\nහොට් කී:\nCTRL+F : සෙවුම් සංවාද කොටුව විවෘත කරන්න\nF3\nඑක් වරක් එබීම : ඊළඟ අවස්ථාව සොයන්න\nදෙවරක් එබීම : දෝෂ ලොග් මට්ටම පිටපත් කරන්න\nShift+F3 : පෙර අවස්ථාව සොයන්න\nCTRL+F2 : බුක්මාර්ක් එක් කරන්න\nF2 : ලොගයේ ඊළඟ බුක්මාර්ක් එකට යන්න\nShift+F2 : ලොගයේ පෙර බුක්මාර්ක් එකට යන්න\nNVDA+CTRL+L : පැරණි ලොග් ගොනුව විවෘත කරන්න"
+    },
+    {
+      "language": "sk",
+      "displayName": "logViewer",
+      "description": "Zvýšenie efektivity prehliadača logov NVDA vďaka možnosti vyhľadávania. Pridanie záložky pre kontrolu funkcie NVDA.\nHorúce klávesy:\nCTRL+F : Otvoriť dialóg vyhľadávania\nF3\nJedno stlačenie : Nájsť ďalší výskyt\nDvojité stlačenie : Kopírovať úroveň chyby v logu\nShift+F3 : Nájsť predchádzajúci výskyt\nCTRL+F2 : Pridať záložku\nF2 : Presunúť na ďalšiu záložku v logu\nShift+F2 : Presunúť na predchádzajúcu záložku v logu\nNVDA+CTRL+L : Otvoriť starý súbor logu"
+    },
+    {
+      "language": "ta",
+      "displayName": "logViewer",
+      "description": "தேடலை அனுமதிப்பதன் மூலம் NVDA லாக் வியூவரின் செயல்திறனை அதிகரிக்கவும். NVDA செயல்பாட்டைச் சரிபார்க்க புக்மார்க்கைச் சேர்க்கவும்.\nகுறுக்குவழி விசைகள்:\nCTRL+F : தேடல் உரையாடலைத் திறக்கவும்\nF3\nஒருமுறை தட்டவும் : அடுத்த நிகழ்வைக் கண்டறியவும்\nஇருமுறை தட்டவும் : பிழை பதிவு நிலையை நகலெடுக்கவும்\nShift+F3 : முந்தைய நிகழ்வைக் கண்டறியவும்\nCTRL+F2 : புக்மார்க்கைச் சேர்க்கவும்\nF2 : பதிவில் அடுத்த புக்மார்க்கிற்குச் செல்லவும்\nShift+F2 : பதிவில் முந்தைய புக்மார்க்கிற்குச் செல்லவும்\nNVDA+CTRL+L : பழைய பதிவு கோப்பைத் திறக்கவும்"
+    },
+    {
+      "language": "te",
+      "displayName": "logViewer",
+      "description": "వెతకడానికి వీలుగా NVDA లాగ్ వ్యూయర్ యొక్క సామర్థ్యాన్ని పెంచండి. NVDA ఫంక్షన్‌ని తనిఖీ చేయడానికి బుక్‌మార్క్ జోడించండి.\nహాట్ కీలు:\nCTRL+F : సెర్చ్ డైలాగ్‌ని తెరవండి\nF3\nఒక్కసారి నొక్కండి : తదుపరి ఫలితాన్ని కనుగొనండి\nرెండుసార్లు నొక్కండి : ఎర్రర్ లాగ్ లెవల్‌ని కాピー చేయండి\nShift+F3 : మునుపటి ఫలితాన్ని కనుగొనండి\nCTRL+F2 : బుక్‌మార్క్‌ను జోడించండి\nF2 : లాగ్‌లోని తదుపరి బుక్‌మార్క్‌కు వెళ్లండి\nShift+F2 : లాగ్‌లోని మునుపటి బుక్‌మార్క్‌కు వెళ్లండి\nNVDA+CTRL+L : పాత లాగ్ ఫైల్‌ని తెరవండి"
+    },
+    {
+      "language": "th",
+      "displayName": "logViewer",
+      "description": "เพิ่มประสิทธิภาพของเครื่องมือดูปูมบันทึก (LOG Viewer) ของ NVDA ให้สามารถค้นหาได้ เพิ่มที่คั่นหน้าเพื่อตรวจสอบการทำงานของ NVDA\nปุ่มลัด:\nCTRL+F : เปิดหน้าต่างค้นหา\nF3\nกดครั้งเดียว : ค้นหาคำถัดไป\nกดสองครั้ง : คัดลอกระดับข้อผิดพลาดของปูมบันทึก\nShift+F3 : ค้นหาคำก่อนหน้า\nCTRL+F2 : เพิ่มที่คั่นหน้า\nF2 : ไปยังที่คั่นหน้าถัดไปในปูมบันทึก\nShift+F2 : ไปยังที่คั่นหน้าก่อนหน้าในปูมบันทึก\nNVDA+CTRL+L : เปิดไฟล์ปูมบันทึกเก่า"
+    },
+    {
+      "language": "tk",
+      "displayName": "logViewer",
+      "description": "Gözleg mümkinçiligi üçin NVDA žurnal seredişiniň netijeliligini ýokarlandyryň. NVDA funksiýasyny barlamak üçin bellik goşuň.\nGyzgyn düwmeler:\nCTRL+F : Gözleg dialogyny aç\nF3\nBir gezek basmak : Indikini tap\nIki gezek basmak : Ýalňyşlyk žurnalynyň derejesini nusgala\nShift+F3 : Öňkini tap\nCTRL+F2 : Bellik goş\nF2 : Žurnaldaky indiki bellige geç\nShift+F2 : Žurnaldaky öňki bellige geç\nNVDA+CTRL+L : Köne žurnal faýlyny aç"
+    },
+    {
+      "language": "tl",
+      "displayName": "logViewer",
+      "description": "Dagdagan ang kahusayan ng NVDA LOG Viewer upang makapaghanap. Magdagdag ng Bookmark upang suriin ang function ng NVDA.\nHot Keys:\nCTRL+F : Buksan ang search Dialog\nF3\nIsang Tap : Hanapin ang susunod na pagkakataon\nDalawang Tap : kopyahin ang Error Log Level\nShift+F3 : Hanapin ang nakaraang pagkakataon\nCTRL+F2 : Magdagdag ng Bookmark\nF2 : Lumipat sa susunod na bookmark sa log\nShift+F2 : Lumipat sa nakaraang bookmark sa log\nNVDA+CTRL+L : buksan ang OldLog File"
+    },
+    {
+      "language": "tr",
+      "displayName": "logViewer",
+      "description": "Arama yapabilmek için NVDA günlük görüntüleyicisinin verimliliğini artırın. NVDA işlevini kontrol etmek için yer işareti ekleyin.\nKısayol Tuşları:\nCTRL+F : Arama iletişim kutusunu aç\nF3\nTek Dokunuş : Sonrakini bul\nÇift Dokunuş : Hata günlüğü düzeyini kopyala\nShift+F3 : Öncekini bul\nCTRL+F2 : Yer işareti ekle\nF2 : Günlükteki bir sonraki yer işaretine git\nShift+F2 : Günlükteki bir önceki yer işaretine git\nNVDA+CTRL+L : Eski günlük dosyasını aç"
+    },
+    {
+      "language": "uk",
+      "displayName": "logViewer",
+      "description": "Підвищення ефективності переглядача журналів NVDA для можливості пошуку. Додавання закладок для перевірки функцій NVDA.\nГарячі клавіші:\nCTRL+F : Відкрити діалог пошуку\nF3\nОдне натискання : Знайти наступне входження\nПодвійне натискання : Копіювати рівень журналу помилок\nShift+F3 : Знайти попереднє входження\nCTRL+F2 : Додати закладку\nF2 : Перейти до наступної закладки в журналі\nShift+F2 : Перейти до попередньої закладки в журналі\nNVDA+CTRL+L : Відкрити файл старого журналу"
+    },
+    {
+      "language": "ur",
+      "displayName": "logViewer",
+      "description": "تلاش کی اہلیت کے لیے NVDA لاگ ویور کی کارکردگی کو بڑھائیں۔ NVDA فنکشن کو چیک کرنے کے لیے بک مارک شامل کریں۔\nہاٹ کیز:\nCTRL+F : تلاش کا ڈائیلاگ کھولیں\nF3\nایک بار ٹیپ کریں : اگلا نتیجہ تلاش کریں\nدو بار ٹیپ کریں : ایرر لاگ لیول کاپی کریں\nShift+F3 : پچھلا نتیجہ تلاش کریں\nCTRL+F2 : بک مارک شامل کریں\nF2 : لاگ میں اگلے بک مارک پر جائیں\nShift+F2 : لاگ میں پچھلے بک مارک پر جائیں\nNVDA+CTRL+L : پرانی لاگ فائل کھولیں"
+    },
+    {
+      "language": "uz",
+      "displayName": "logViewer",
+      "description": "Qidiruv imkoniyati uchun NVDA jurnallarini ko'rish vositasi samaradorligini oshiring. NVDA funksiyasini tekshirish uchun xatcho'p qo'shing.\nTezkor tugmalar:\nCTRL+F : Qidiruv muloqot oynasini ochish\nF3\nBir marta bosish : Keyingisini topish\nIkki marta bosish : Xato jurnali darajasini nusxalash\nShift+F3 : Oldingisini topish\nCTRL+F2 : Xatcho'p qo'shish\nF2 : Jurnaldagi keyingi xatcho'pga o'tish\nShift+F2 : Jurnaldagi oldingi xatcho'pga o'tish\nNVDA+CTRL+L : Eski jurnal faylini ochish"
+    },
+    {
+      "language": "vi",
+      "displayName": "logViewer",
+      "description": "Tăng hiệu quả của trình xem nhật ký NVDA để có thể tìm kiếm. Thêm dấu trang để kiểm tra chức năng của NVDA.\nPhím nóng:\nCTRL+F : Mở hộp thoại tìm kiếm\nF3\nNhấn một lần : Tìm lần xuất hiện tiếp theo\nNhấn hai lần : sao chép cấp độ nhật ký lỗi\nShift+F3 : Tìm lần xuất hiện trước đó\nCTRL+F2 : Thêm dấu trang\nF2 : Di chuyển đến dấu trang tiếp theo trong nhật ký\nShift+F2 : Di chuyển đến dấu trang trước đó trong nhật ký\nNVDA+CTRL+L : mở tệp nhật ký cũ"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "logViewer",
+      "description": "增强 NVDA 日志查看器的搜索效率。添加书签以检查 NVDA 功能。\n热键：\nCTRL+F ：打开搜索对话框\nF3\n单击：查找下一个\n双击：复制错误日志级别\nShift+F3 ：查找上一个\nCTRL+F2 ：添加书签\nF2 ：移动到日志中的下一个书签\nShift+F2 ：移动到日志中的上一个书签\nNVDA+CTRL+L ：打开旧日志文件"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "logViewer",
+      "description": "增強 NVDA 日誌檢視器的搜尋效率。添加書籤以檢查 NVDA 功能。\n快速鍵：\nCTRL+F ：打開搜尋對話方塊\nF3\n按一下：尋找下一個\n按兩下：複製錯誤日誌層級\nShift+F3 ：尋找上一個\nCTRL+F2 ：添加書籤\nF2 ：移動到日誌中的下一個書籤\nShift+F2 ：移動到日誌中的上一個書籤\nNVDA+CTRL+L ：打開舊日誌文件"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+        "_type": "file",
+        "filecondis": {
+          "dhash": "0000181c15180000",
+          "raw_md5": "b9e8457770311c5ac32af3296e0e6709"
+        },
+        "first_submission_date": 1781661325,
+        "last_analysis_results": {},
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 0,
+          "undetected": 0
+        },
+        "last_modification_date": 1781661327,
+        "last_submission_date": 1781661325,
+        "md5": "fa5adc03c1cd68712d969349721915c6",
+        "names": [],
+        "reputation": 0,
+        "sha1": "d42d155ba8f2570026341fa7082a731329901890",
+        "sha256": "e1f907d3a2c3d6f09bda5f0c05825120b64e6261581616c1d5b4587a7d5be88a",
+        "size": 207422,
+        "tags": [],
+        "times_submitted": 1,
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "type_description": "unknown",
+        "type_tags": [],
+        "unique_sources": 1
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6291"
 }

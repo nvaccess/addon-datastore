@@ -1,768 +1,768 @@
 {
-	"addonId": "linkLibrary",
-	"displayName": "Link Library",
-	"URL": "https://github.com/ibrahim-s/linkLibrary/releases/download/2.3/linkLibrary-2.3.nvda-addon",
-	"description": "This addon helps the user to arrange his links or bookmarks in library like way.\nFrom the main dialog of libraries, you can choose the library or category you like and press enter on it.\nOn the opened dialog, you will have all links in that category in a list and have access to source url an the about info of each llink if present.\nThis addon does not come with a default or assigned gesture or shortcut to it\nYou can as always add a gesture or change the existed one going to :\nNVDA menu>preferences>inputGestures>Link Library.",
-	"sha256": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
-	"addonVersionName": "2.3",
-	"addonVersionNumber": {
-		"major": 2,
-		"minor": 3,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2021,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Ibrahim Hamadeh",
-	"sourceURL": "https://github.com/ibrahim-s/linkLibrary",
-	"license": "GPL v2",
-	"homepage": "https://github.com/ibrahim-s/linkLibrary",
-	"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782401860000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "مكتبةْ الروابط",
-			"description": "هذه الإضافةُ تتيحُ للمستخدمِ عمل مكتبة لِتنظيم و ترتيب الروابط الخاصة به.\nمِن المُحاوَرة الرئيسية للمكتبات, يُمكنك اختيار المكتبة التي تشاء و فَتحها بالضغط إنتر عليها.\nو في المحاورة التي ستظهر, يُمكنك الإطِّلاع علىجميع الروابط في هذه المكتبة في قائمة و معلومات حول أي رابط و قيمته إذا كان ذلك موجودا.\nهذه الإضافةُ لا يُوجد اختصار افتراضي خاص بها\nو كما هو معروف فيُمكنكَ تغيير أو إضافةْ اختصار لها بالذهاب إلى:\nقائمةْ NVDA(NVDA+N)>تفضيلات>تخصيص اختصارات NVDA>مكتبةُ الروابط.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "pt",
-			"displayName": "Biblioteca de links",
-			"description": "Este extra ajuda o utilizador a organizar os seus links ou marcadores de página em bibliotecas.\nA partir do diálogo principal das bibliotecas, pode escolher a biblioteca ou categoria que gosta e pressionar enter nela.\nNo diálogo aberto, terá todos os links dessa categoria, numa lista e terá acesso à url de origem e à informação sobre cada link, se presente.\nEste extra não vem com uma tecla de atalho atribuído\nPode, como sempre, adicionar um atalho ou mudar o já existente :\nMenu do NVDA>preferências>definir comandos>biblioteca de links.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "tr",
-			"displayName": "Bağlantı Kitaplığı",
-			"description": "Bu eklenti, kullanıcının bağlantılarını veya yer imlerini kitaplıktaki gibi düzenlemesine yardımcı olur..\nKitaplıkların ana iletişim kutusundan, beğendiğiniz kitaplığı veya kategoriyi seçip enter tuşuna basabilirsiniz.\nAçılan iletişim kutusunda, o kategorideki tüm bağlantılara bir listede sahip olacaksınız ve kaynak url'ye ve varsa her bağlantının hakkında bilgisine erişebileceksiniz.\nBu eklenti, varsayılan veya atanmış bir hareket veya kısayol ile gelmiyor\nHer zaman olduğu gibi bir hareket ekleyebilir veya mevcut olanı şu şekilde değiştirebilirsiniz:\nNVDA menüsü>tercihler>Girdi hareketleri>Bağlantı Kitaplığı.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "uk",
-			"displayName": "Бібліотека посилань",
-			"description": "Цей додаток допомагає користувачеві розташувати посилання або закладки у вигляді бібліотеки.\nВ головному діалозі бібліотек ви можете вибрати бібліотеку або категорію, що вам сподобалася, і натиснути на ній клавішу Enter.\nВ діалозі, що відкрився, у вас буде список всіх посилань в цій категорії і доступ до вихідного url та інформація про кожне посилання, якщо воно присутнє.\nЦей додаток початково не має призначених гарячих клавіш\nВи можете додати гарячі клавіші або змінити існуючі, перейшовши в:\nNVDA меню>Параметри>Жести вводу>Бібліотека посилань.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "ru",
-			"displayName": "Link Library (Библиотека ссылок)",
-			"description": "Это дополнение помогает пользователю упорядочивать свои ссылки или закладки по принципу библиотеки.\nВ главном диалоговом окне библиотек вы можете выбрать понравившуюся библиотеку или категорию и нажать на ней enter.\nВ открывшемся диалоговом окне вы увидите список всех ссылок в этой категории и получите доступ к URL-адресу источника и информации о каждой ссылке, если она присутствует.\nЭто дополнение  не имеет сочетаний клавиш, назначенных по умолчанию. Вы можете, как всегда, добавить  новое сочитание клавиш или изменить существующее, перейдя по пути:\nNVDA меню, Параметры, Жесты ввода , Библиотека ссылок.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "es",
-			"displayName": "Link Library",
-			"description": "Este complemento ayuda al usuario a organizar sus enlaces o marcadores al estilo de una biblioteca.\nDesde el diálogo principal de bibliotecas, puede elegir la biblioteca o categoría que prefiera y pulsar intro sobre ella.\nEn el diálogo que se abre, tendrá todos los enlaces de esa categoría en una lista y tendrá acceso a la URL de origen y a la información \"acerca de\" de cada enlace si estuviera presente.\nEste complemento no incluye un gesto o atajo de teclado asignado de forma predeterminada.\nComo siempre, puede añadir un gesto o cambiar el existente yendo a:\nMenú NVDA > Preferencias > Gestos de entrada > Link Library.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "链接库",
-			"description": "这个插件可以帮助用户以图书馆的方式排列他的链接或书签。从链接库的主对话框中，您可以选择您喜欢的库或类别，然后按回车键。在打开的对话框中，您将获得该类别中的所有链接列表，并可以访问源URL和每个链接的关于信息（如果存在）。此插件不带有默认或分配的手势或快捷方式。您可以像往常一样添加手势或更改现有的手势，转到：NVDA菜单>首选项>输入手势>链接库。",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		},
-		{
-			"language": "en",
-			"displayName": "Link Library",
-			"description": "This addon helps the user to arrange his links or bookmarks in library like way.\nFrom the main dialog of libraries, you can choose the library or category you like and press enter on it.\nOn the opened dialog, you will have all links in that category in a list and have access to source url an the about info of each llink if present.\nThis addon does not come with a default or assigned gesture or shortcut to it\nYou can as always add a gesture or change the existed one going to :\nNVDA menu>preferences>inputGestures>Link Library.",
-			"changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 1,
-						"html": 6,
-						"ini": 9,
-						"md": 6,
-						"mo": 8,
-						"po": 8,
-						"py": 6
-					},
-					"file_types": {
-						"HTML": 6,
-						"unknown": 38
-					},
-					"highest_datetime": "2026-06-24 18:17:20",
-					"lowest_datetime": "2026-06-24 18:17:00",
-					"num_children": 44,
-					"type": "ZIP",
-					"uncompressed_size": 593312
-				},
-				"contenthash": "29576d8de3bad7333e924fb8b48bfc93",
-				"filecondis": {
-					"dhash": "0000000c0d0c0400",
-					"raw_md5": "2c3322fde7c973e1f4666b9012c20e25"
-				},
-				"first_submission_date": 1782401864,
-				"last_analysis_date": 1782401864,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260625",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260625",
-						"engine_version": "6.792",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260625",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260625",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260625",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260625",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260625",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260625",
-						"engine_version": "260625-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260625",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260625",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260625",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260624",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260625",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260625",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260625",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260625",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260625",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260625",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260625",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260624",
-						"engine_version": "4.0.267",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260625",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260625",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260625",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260625",
-						"engine_version": "GD:27.45038AVA:64.31474",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260625",
-						"engine_version": "1782396089",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260625",
-						"engine_version": "1.0.249.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260625",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260624",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260625",
-						"engine_version": "14.59.59941",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260625",
-						"engine_version": "14.59.59941",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260625",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260618",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260625",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260625",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260625",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260625",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260625",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260625",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260625",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260625",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260625",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260625",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260624",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260622",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260623",
-						"engine_version": "7.7.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260625",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260625",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260625",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260625",
-						"engine_version": "2026-06-25.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260625",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260624",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260625",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260625",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260625",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260625",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260625",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260625",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260625",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260625",
-						"engine_version": "9.5.1236",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260625",
-						"engine_version": "38757",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260625",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260625",
-						"engine_version": "2.0.0.5629",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260625",
-						"engine_version": "6.25-116107815",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260625",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260625",
-						"engine_version": "ef52b13:ef52b13:d686325:d686325",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260625",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 65
-				},
-				"last_modification_date": 1782401936,
-				"last_submission_date": 1782401864,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "ZIP",
-				"md5": "50258ba9a173a95a75b64b8aee28c399",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "2b442f85c408888cbb84bd37dc3abed15f8c24ab",
-				"sha256": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
-				"size": 176036,
-				"ssdeep": "3072:xCSPnTuDWBKPwc4FkgBx3WjTXYcS7BSEdwBjJbh/oArNtZJ3UNAty:xjQ/Wz3Wq7sgw/h/okkF",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1BC0412A8950F442ED9E5C375FA756C10B82F41C1AD0DF8C4B7C4A6C68CA7FAC998E781",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "b01148ba4db5aa6d332119633e23f864"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6847"
+  "addonId": "linkLibrary",
+  "displayName": "Link Library",
+  "URL": "https://github.com/ibrahim-s/linkLibrary/releases/download/2.3/linkLibrary-2.3.nvda-addon",
+  "description": "This addon helps the user to arrange his links or bookmarks in library like way.\nFrom the main dialog of libraries, you can choose the library or category you like and press enter on it.\nOn the opened dialog, you will have all links in that category in a list and have access to source url an the about info of each llink if present.\nThis addon does not come with a default or assigned gesture or shortcut to it\nYou can as always add a gesture or change the existed one going to :\nNVDA menu>preferences>inputGestures>Link Library.",
+  "sha256": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
+  "addonVersionName": "2.3",
+  "addonVersionNumber": {
+    "major": 2,
+    "minor": 3,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2021,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Ibrahim Hamadeh",
+  "sourceURL": "https://github.com/ibrahim-s/linkLibrary",
+  "license": "GPL v2",
+  "homepage": "https://github.com/ibrahim-s/linkLibrary",
+  "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782401860000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "مكتبةْ الروابط",
+      "description": "هذه الإضافةُ تتيحُ للمستخدمِ عمل مكتبة لِتنظيم و ترتيب الروابط الخاصة به.\nمِن المُحاوَرة الرئيسية للمكتبات, يُمكنك اختيار المكتبة التي تشاء و فَتحها بالضغط إنتر عليها.\nو في المحاورة التي ستظهر, يُمكنك الإطِّلاع علىجميع الروابط في هذه المكتبة في قائمة و معلومات حول أي رابط و قيمته إذا كان ذلك موجودا.\nهذه الإضافةُ لا يُوجد اختصار افتراضي خاص بها\nو كما هو معروف فيُمكنكَ تغيير أو إضافةْ اختصار لها بالذهاب إلى:\nقائمةْ NVDA(NVDA+N)>تفضيلات>تخصيص اختصارات NVDA>مكتبةُ الروابط.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "pt",
+      "displayName": "Biblioteca de links",
+      "description": "Este extra ajuda o utilizador a organizar os seus links ou marcadores de página em bibliotecas.\nA partir do diálogo principal das bibliotecas, pode escolher a biblioteca ou categoria que gosta e pressionar enter nela.\nNo diálogo aberto, terá todos os links dessa categoria, numa lista e terá acesso à url de origem e à informação sobre cada link, se presente.\nEste extra não vem com uma tecla de atalho atribuído\nPode, como sempre, adicionar um atalho ou mudar o já existente :\nMenu do NVDA>preferências>definir comandos>biblioteca de links.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "tr",
+      "displayName": "Bağlantı Kitaplığı",
+      "description": "Bu eklenti, kullanıcının bağlantılarını veya yer imlerini kitaplıktaki gibi düzenlemesine yardımcı olur..\nKitaplıkların ana iletişim kutusundan, beğendiğiniz kitaplığı veya kategoriyi seçip enter tuşuna basabilirsiniz.\nAçılan iletişim kutusunda, o kategorideki tüm bağlantılara bir listede sahip olacaksınız ve kaynak url'ye ve varsa her bağlantının hakkında bilgisine erişebileceksiniz.\nBu eklenti, varsayılan veya atanmış bir hareket veya kısayol ile gelmiyor\nHer zaman olduğu gibi bir hareket ekleyebilir veya mevcut olanı şu şekilde değiştirebilirsiniz:\nNVDA menüsü>tercihler>Girdi hareketleri>Bağlantı Kitaplığı.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "uk",
+      "displayName": "Бібліотека посилань",
+      "description": "Цей додаток допомагає користувачеві розташувати посилання або закладки у вигляді бібліотеки.\nВ головному діалозі бібліотек ви можете вибрати бібліотеку або категорію, що вам сподобалася, і натиснути на ній клавішу Enter.\nВ діалозі, що відкрився, у вас буде список всіх посилань в цій категорії і доступ до вихідного url та інформація про кожне посилання, якщо воно присутнє.\nЦей додаток початково не має призначених гарячих клавіш\nВи можете додати гарячі клавіші або змінити існуючі, перейшовши в:\nNVDA меню>Параметри>Жести вводу>Бібліотека посилань.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "ru",
+      "displayName": "Link Library (Библиотека ссылок)",
+      "description": "Это дополнение помогает пользователю упорядочивать свои ссылки или закладки по принципу библиотеки.\nВ главном диалоговом окне библиотек вы можете выбрать понравившуюся библиотеку или категорию и нажать на ней enter.\nВ открывшемся диалоговом окне вы увидите список всех ссылок в этой категории и получите доступ к URL-адресу источника и информации о каждой ссылке, если она присутствует.\nЭто дополнение  не имеет сочетаний клавиш, назначенных по умолчанию. Вы можете, как всегда, добавить  новое сочитание клавиш или изменить существующее, перейдя по пути:\nNVDA меню, Параметры, Жесты ввода , Библиотека ссылок.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "es",
+      "displayName": "Link Library",
+      "description": "Este complemento ayuda al usuario a organizar sus enlaces o marcadores al estilo de una biblioteca.\nDesde el diálogo principal de bibliotecas, puede elegir la biblioteca o categoría que prefiera y pulsar intro sobre ella.\nEn el diálogo que se abre, tendrá todos los enlaces de esa categoría en una lista y tendrá acceso a la URL de origen y a la información \"acerca de\" de cada enlace si estuviera presente.\nEste complemento no incluye un gesto o atajo de teclado asignado de forma predeterminada.\nComo siempre, puede añadir un gesto o cambiar el existente yendo a:\nMenú NVDA > Preferencias > Gestos de entrada > Link Library.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "链接库",
+      "description": "这个插件可以帮助用户以图书馆的方式排列他的链接或书签。从链接库的主对话框中，您可以选择您喜欢的库或类别，然后按回车键。在打开的对话框中，您将获得该类别中的所有链接列表，并可以访问源URL和每个链接的关于信息（如果存在）。此插件不带有默认或分配的手势或快捷方式。您可以像往常一样添加手势或更改现有的手势，转到：NVDA菜单>首选项>输入手势>链接库。",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    },
+    {
+      "language": "en",
+      "displayName": "Link Library",
+      "description": "This addon helps the user to arrange his links or bookmarks in library like way.\nFrom the main dialog of libraries, you can choose the library or category you like and press enter on it.\nOn the opened dialog, you will have all links in that category in a list and have access to source url an the about info of each llink if present.\nThis addon does not come with a default or assigned gesture or shortcut to it\nYou can as always add a gesture or change the existed one going to :\nNVDA menu>preferences>inputGestures>Link Library.",
+      "changelog": "- Add two letter navigation feature in listboxes,so that now the user can navigate using two consecutive letters in library and link dialogs, and cycle through items as in file explorer.\n"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 1,
+            "html": 6,
+            "ini": 9,
+            "md": 6,
+            "mo": 8,
+            "po": 8,
+            "py": 6
+          },
+          "file_types": {
+            "HTML": 6,
+            "unknown": 38
+          },
+          "highest_datetime": "2026-06-24 18:17:20",
+          "lowest_datetime": "2026-06-24 18:17:00",
+          "num_children": 44,
+          "type": "ZIP",
+          "uncompressed_size": 593312
+        },
+        "contenthash": "29576d8de3bad7333e924fb8b48bfc93",
+        "filecondis": {
+          "dhash": "0000000c0d0c0400",
+          "raw_md5": "2c3322fde7c973e1f4666b9012c20e25"
+        },
+        "first_submission_date": 1782401864,
+        "last_analysis_date": 1782401864,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260625",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260625",
+            "engine_version": "6.792",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260625",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260625",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260625",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260625",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260625",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260625",
+            "engine_version": "260625-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260625",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260625",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260625",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260624",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260625",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260625",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260625",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260625",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260625",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260625",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260625",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260624",
+            "engine_version": "4.0.267",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260625",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260625",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260625",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260625",
+            "engine_version": "GD:27.45038AVA:64.31474",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260625",
+            "engine_version": "1782396089",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260625",
+            "engine_version": "1.0.249.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260625",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260624",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260625",
+            "engine_version": "14.59.59941",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260625",
+            "engine_version": "14.59.59941",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260625",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260618",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260625",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260625",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260625",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260625",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260625",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260625",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260625",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260625",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260625",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260625",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260624",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260622",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260623",
+            "engine_version": "7.7.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260625",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260625",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260625",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260625",
+            "engine_version": "2026-06-25.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260625",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260624",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260625",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260625",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260625",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260625",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260625",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260625",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260625",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260625",
+            "engine_version": "9.5.1236",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260625",
+            "engine_version": "38757",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260625",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260625",
+            "engine_version": "2.0.0.5629",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260625",
+            "engine_version": "6.25-116107815",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260625",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260625",
+            "engine_version": "ef52b13:ef52b13:d686325:d686325",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260625",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 65
+        },
+        "last_modification_date": 1782401936,
+        "last_submission_date": 1782401864,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "ZIP",
+        "md5": "50258ba9a173a95a75b64b8aee28c399",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "2b442f85c408888cbb84bd37dc3abed15f8c24ab",
+        "sha256": "7718631f308f655b91bf9db1ff3df45a77e30152a648166986ad3593a19609e4",
+        "size": 176036,
+        "ssdeep": "3072:xCSPnTuDWBKPwc4FkgBx3WjTXYcS7BSEdwBjJbh/oArNtZJ3UNAty:xjQ/Wz3Wq7sgw/h/okkF",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1BC0412A8950F442ED9E5C375FA756C10B82F41C1AD0DF8C4B7C4A6C68CA7FAC998E781",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "b01148ba4db5aa6d332119633e23f864"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6847"
 }

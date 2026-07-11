@@ -1,934 +1,934 @@
 {
-	"addonId": "Listen",
-	"displayName": "Listen",
-	"URL": "https://github.com/chaichaimee/Listen/releases/download/2026.6.1/Listen-v2026.6.1.nvda-addon",
-	"description": "Control background audio from anywhere. Auto-hides when you switch tasks, returns when you’re back.\nHot Keys:\nALT+Windows+L\nSingle Tap : open Listen Mode\nDouble Tap : Close Listen Mode\nAll control commands available in Layer Mode are documented in the add-on user guide",
-	"sha256": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
-	"addonVersionName": "2026.6.1",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 6,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/Listen",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/Listen",
-	"changelog": "Added single-tap show/hide, double-tap permanent stop, auto focus tracking, and fixed gesture passthrough for Q/Escape.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781229798000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "Listen",
-			"description": "التحكم في الصوت الخلفيจาก أي مكان. يختفي تلقائيًا عند تبديل المهام، ويعود عند عودتك.\nمفاتيح الاختصار:\nALT+Windows+L\nضغط مفرد: فتح وضع Listen\nضغط مزدوج: إغلاق وضع Listen\nجميع أوامر التحكم المتاحة في وضع الطبقات موثقة في دليل مستخدم الإضافة"
-		},
-		{
-			"language": "bg",
-			"displayName": "Listen",
-			"description": "Управление на фоновото аудио от всякъде. Автоматично се скрива при превключване на задачи и се връща, когато се върнете.\nБързи клавиши:\nALT+Windows+L\nЕдинично натискане: отваряне на режим Listen\nДвойно натискане: затваряне на режим Listen\nВсички команди за управление, налични в режим \"Слой\" (Layer Mode), са документирани в ръководството на потребителя за добавката"
-		},
-		{
-			"language": "bn",
-			"displayName": "Listen",
-			"description": "যেকোনো স্থান থেকে ব্যাকগ্রাউন্ড অডিও নিয়ন্ত্রণ করুন। টাস্ক পরিবর্তন করলে স্বয়ংক্রিয়ভাবে লুকিয়ে যায়, ফিরে এলে আবার দেখা যায়।\nহট কি:\nALT+Windows+L\nএকবার চাপুন: Listen মোড খুলুন\nদুবার চাপুন: Listen মোд বন্ধ করুন\nলেয়ার মোডে উপলব্ধ সমস্ত নিয়ন্ত্রণ কমান্ড অ্যাড-অন ব্যবহারকারী গাইডে নথিবদ্ধ করা হয়েছে"
-		},
-		{
-			"language": "cs",
-			"displayName": "Listen",
-			"description": "Ovládání zvuku na pozadí odkudkoli. Automaticky se skryje při přepnutí úlohy, vrátí se, když se vrátíte zpět.\nKlávesové zkratky:\nALT+Windows+L\nJedno stisknutí: otevřít režim Listen\nDvojité stisknutí: zavřít režim Listen\nVšechny ovládací příkazy dostupné v režimu vrstev jsou popsány v uživatelské příručce doplňku"
-		},
-		{
-			"language": "da",
-			"displayName": "Listen",
-			"description": "Styr baggrundslyd fra hvor som helst. Skjules automatisk, når du skifter opgaver, og vender tilbage, når du er tilbage.\nGenvejstaster:\nALT+Windows+L\nEnkelttryk: Åbn Listen-tilstand\nDobbelttryk: Luk Listen-tilstand\nAlle kontrolkommandoer, der er tilgængelige i lagtilstand, er dokumenteret i tilføjelsens brugervejledning"
-		},
-		{
-			"language": "de",
-			"displayName": "Listen",
-			"description": "Hintergrund-Audio von überall aus steuern. Wird beim Aufgabenwechsel automatisch ausgeblendet und kehrt zurück, wenn Sie zurück sind.\nTastenkombinationen:\nALT+Windows+L\nEinmaliges Drücken: Listen-Modus öffnen\nDoppeltes Drücken: Listen-Modus schließen\nAlle im Layer-Modus verfügbaren Steuerbefehle sind im Add-on-Benutzerhandbuch dokumentiert"
-		},
-		{
-			"language": "en",
-			"displayName": "Listen",
-			"description": "Control background audio from anywhere. Auto-hides when you switch tasks, returns when you’re back.\nHot Keys:\nALT+Windows+L\nSingle Tap : open Listen Mode\nDouble Tap : Close Listen Mode\nAll control commands available in Layer Mode are documented in the add-on user guide"
-		},
-		{
-			"language": "es",
-			"displayName": "Listen",
-			"description": "Controla el audio de fondo desde cualquier lugar. Se oculta automáticamente al cambiar de tarea y regresa al volver.\nTeclas rápidas:\nALT+Windows+L\nUn toque: abrir el modo Listen\nDos toques: cerrar el modo Listen\nTodos los comandos de control disponibles en el modo capa están documentados en la guía del usuario del complemento"
-		},
-		{
-			"language": "fa",
-			"displayName": "Listen",
-			"description": "کنترل صدای پس‌زمینه از هر مکان. هنگام جابجایی بین برنامه‌ها به‌طور خودکار پنهان می‌شود و با بازگشت شما برمی‌گردد.\nکلیدهای میانبر:\nALT+Windows+L\nیک‌بار فشردن: باز کردن حالت Listen\nدوبار فشردن: بستن حالت Listen\nتمام دستورات کنترلی موجود در حالت لایه‌ای در راهنمای کاربر افزونه مستند شده‌اند"
-		},
-		{
-			"language": "fi",
-			"displayName": "Listen",
-			"description": "Hallitse tausta-ääntä mistä tahansa. Piiloutuu automaattisesti, kun vaihdat tehtävää, ja palaa, kun tulet takaisin.\nPikanäppäimet:\nALT+Windows+L\nYksittäispainallus: avaa Listen-tila\nKaksoispainallus: sulje Listen-tila\nKaikki kerrostilassa käytettävissä olevat ohjauskomennot on dokumentoitu lisäosan käyttöoppaassa"
-		},
-		{
-			"language": "fr",
-			"displayName": "Listen",
-			"description": "Contrôlez l'audio d'arrière-plan de n'importe où. Se masque automatiquement lorsque vous changez de tâche, revient lorsque vous êtes de retour.\nTouches de raccourci :\nALT+Windows+L\nAppui simple : ouvrir le mode Listen\nAppui double : fermer le mode Listen\nToutes les commandes de contrôle disponibles en mode calque sont documentées dans le guide de l'utilisateur de l'extension"
-		},
-		{
-			"language": "gl",
-			"displayName": "Listen",
-			"description": "Controla o son de fondo desde calquera lugar. Ocúltase automaticamente ao cambiar de tarefa e volve cando regresas.\nTeclas rápidas:\nALT+Windows+L\nUn toque: abrir o modo Listen\nDobre toque: pechar o modo Listen\nTodos os comandos de control dispoñibles no modo capa están documentados na guía do usuario do complemento"
-		},
-		{
-			"language": "he",
-			"displayName": "Listen",
-			"description": "שליטה בשמע רקע מכל מקום. מוסתר אוטומטית בעת החלפת משימות, וחוזר כשאתה חוזר.\nמקשי קיצור:\nALT+Windows+L\nלחיצה בודדת: פתיחת מצב Listen\nלחיצה כפולה: סגירת מצב Listen\nכל פקודות הבקרה הזמינות במצב שכבה מתועדות במדריך למשתמש של התוסף"
-		},
-		{
-			"language": "hi",
-			"displayName": "Listen",
-			"description": "कहीं से भी बैकग्राउंड ऑडियो नियंत्रित करें। जब आप कार्य बदलते हैं तो स्वचालित रूप से छिप जाता है, वापस आने पर वापस आ जाता है।\nहॉट कीज़:\nALT+Windows+L\nएक बार दबाएं: Listen मोड खोलें\nदो बार दबाएं: Listen मोड बंद करें\nलेयर मोड में उपलब्ध सभी नियंत्रण कमांड ऐड-ऑन उपयोगकर्ता गाइड में प्रलेखित हैं"
-		},
-		{
-			"language": "hr",
-			"displayName": "Listen",
-			"description": "Upravljajte pozadinskim zvukom s bilo kojeg mjesta. Automatski se skriva kada promijenite zadatak, vraća se kada se vratite.\nPrečaci:\nALT+Windows+L\nJedan pritisak: otvori način Listen\nDvostruki pritisak: zatvori način Listen\nSve upravljačke naredbe dostupne u načinu rada slojeva dokumentirane su u korisničkom priručniku dodatka"
-		},
-		{
-			"language": "hu",
-			"displayName": "Listen",
-			"description": "Háttérhang vezérlése bárhonnan. Automatikusan elrejtőzik feladatváltáskor, és visszatér, ha visszatérsz.\nGyorsbillentyűk:\nALT+Windows+L\nEgy gombnyomás: Listen mód megnyitása\nDupla gombnyomás: Listen mód bezárása\nA Réteg módban elérhető összes vezérlőparancs megtalálható a kiegészítő felhasználói útmutatójában"
-		},
-		{
-			"language": "id",
-			"displayName": "Listen",
-			"description": "Kontrol audio latar belakang dari mana saja. Sembunyi otomatis saat Anda beralih tugas, kembali saat Anda kembali.\nTombol Cepat:\nALT+Windows+L\nKetukan Tunggal : buka Mode Listen\nKetukan Ganda : Tutup Mode Listen\nSemua perintah kontrol yang tersedia dalam Mode Lapisan didokumentasikan dalam panduan pengguna pengaya"
-		},
-		{
-			"language": "it",
-			"displayName": "Listen",
-			"description": "Controlla l'audio in background da qualsiasi luogo. Si nasconde automaticamente quando cambi attività, ritorna quando torni.\nTasti di scelta rapida:\nALT+Windows+L\nPressione singola: apre la modalità Listen\nDoppia pressione: chiude la modalità Listen\nTutti i comandi di controllo disponibili nella modalità livello sono documentati nella guida utente del componente aggiuntivo"
-		},
-		{
-			"language": "ja",
-			"displayName": "Listen",
-			"description": "どこからでもバックグラウンドオーディオをコントロール。タスクを切り替えると自動的に隠れ、戻ると再表示されます。\nホットキー:\nALT+Windows+L\nシングルタップ : Listen モードを開く\nダブルタップ : Listen モードを閉じます\nレイヤーモードで利用可能なすべてのコントロールコマンドは、アドオンのユーザーガイドに記載されています"
-		},
-		{
-			"language": "kk",
-			"displayName": "Listen",
-			"description": "Кез келген жерден фондық аудионы басқару. Тапсырмаларды ауыстырған кезде автоматты түрде жасырылады, қайтып келгенде қайтарылады.\nЖедел пернелер:\nALT+Windows+L\nБір рет басу: Listen режимін ашу\nЕкі рет басу: Listen режимін жабу\nҚабаттық режимде қолжетімді барлық басқару командалары қосымшаның пайдаланушы нұсқаулығында құжатталған"
-		},
-		{
-			"language": "ko",
-			"displayName": "Listen",
-			"description": "어디서나 배경 오디오를 제어합니다. 작업 창을 전환하면 자동으로 숨겨지고, 돌아오면 다시 나타납니다.\n단축키:\nALT+Windows+L\n한 번 누르기: Listen 모드 열기\n두 번 누르기: Listen 모드 닫기\n레이어 모드에서 사용할 수 있는 모든 제어 명령은 부가기능 사용자 가이드에 문서화되어 있습니다"
-		},
-		{
-			"language": "lo",
-			"displayName": "Listen",
-			"description": "ຄວບຄຸມສຽງພື້ນຫຼັງຈາກທຸກບ່ອນ. ເຊື່ອງອັດຕະໂນມັດເມື່ອທ່ານປ່ຽນວຽກ, ກັບຄືນມາເມື່ອທ່ານກັບມາ.\nປຸ່ມລັດ:\nALT+Windows+L\nກົດເທື່ອດຽວ: ເປີດໂໝດ Listen\nກົດສອງເທື່ອ: ປິດໂໝດ Listen\nຄຳສັ່ງຄວບຄຸມທັງໝົດທີ່ມີຢູ່ໃນໂໝດ Layer ແມ່ນມີຢູ່ໃນຄູ່ມືການໃຊ້ງານຂອງສ່ວນເສີມ"
-		},
-		{
-			"language": "ms",
-			"displayName": "Listen",
-			"description": "Kawal audio latar belakang dari mana-mana sahaja. Sembunyi automatik apabila anda menukar tugasan, kembali apabila anda kembali.\nKekunci Pintas:\nALT+Windows+L\nKetik Sekali : buka Mod Listen\nKetik Dua Kali : Tutup Mod Listen\nSemua arahan kawalan yang tersedia dalam Mod Lapisan didokumentasikan dalam panduan pengguna add-on"
-		},
-		{
-			"language": "my",
-			"displayName": "Listen",
-			"description": "မည်သည့်နေရာမှမဆို နောက်ခံအသံကို ထိန်းချုပ်ပါ။ အလုပ်များ ပြောင်းလဲသည့်အခါ အလိုအလျောက် ဝှက်ပေးပြီး ပြန်လာသည့်အခါ ပြန်ပေါ်လာမည်။\nဖြတ်လမ်းလော့ခ်များ:\nALT+Windows+L\nတစ်ချက်နှိပ်ရုံဖြင့် : Listen မုဒ်ကို ဖွင့်ပါ\nနှစ်ချက်နှိပ်ရုံဖြင့် : Listen မုဒ်ကို ပိတ်ပါ\nLayer မုဒ်တွင် ရရှိနိုင်သော ထိန်းချုပ်မှုဆိုင်ရာ ညွှန်ကြားချက်များအားလုံးကို အက်ဒွန်အသုံးပြုသူလမ်းညွှန်တွင် မှတ်တမ်းတင်ထားပါသည်"
-		},
-		{
-			"language": "pt",
-			"displayName": "Listen",
-			"description": "Controle o áudio de fundo a partir de qualquer lugar. Oculta-se automaticamente quando muda de tarefa, regressa quando volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controlo disponíveis no Modo Camada estão documentados no guia do utilizador do extra"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Listen",
-			"description": "Controle o áudio de fundo de qualquer lugar. Oculta automaticamente quando você alterna de tarefa, retorna quando você volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controle disponíveis no Modo Camada estão documentados no guia do usuário do complemento"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Listen",
-			"description": "Controle o áudio de fundo a partir de qualquer lugar. Oculta-se automaticamente quando muda de tarefa, regressa quando volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controlo disponíveis no Modo Camada estão documentados no guia do utilizador do extra"
-		},
-		{
-			"language": "ro",
-			"displayName": "Listen",
-			"description": "Controlați sunetul de fundal de oriunde. Se ascunde automat când schimbați sarcinile, revine când vă întoarceți.\nTaste rapide:\nALT+Windows+L\nO singură apăsare: deschide modul Listen\nApăsare dublă: închide modul Listen\nToate comenzile de control disponibile în modul strat sunt documentate în ghidul de utilizare al suplimentului"
-		},
-		{
-			"language": "ru",
-			"displayName": "Listen",
-			"description": "Управление фоновым аудио из любого места. Автоматически скрывается при переключении задач и возвращается при вашем возвращении.\nГорячие клавиши:\nALT+Windows+L\nОдиночное нажатие: открыть режим Listen\nДвойное нажатие: закрыть режим Listen\nВсе команды управления, доступные в режиме слоев, описаны в руководстве пользователя дополнения"
-		},
-		{
-			"language": "si",
-			"displayName": "Listen",
-			"description": "ඕනෑම තැනක සිට පසුබිම් ශ්‍රව්‍ය පාලනය කරන්න. ඔබ කාර්යයන් මාරු කරන විට ස්වයංක්‍රීයව සැඟවෙයි, ඔබ ආපසු පැමිණි විට නැවත පැමිණේ.\nහොට් කීස්:\nALT+Windows+L\nතනි තට්ටු කිරීම : Listen ප්‍රකාරය විවෘත කරන්න\nද්විත්ව තට්ටු කිරීම : Listen ප්‍රකාරය වසන්න\nස්ථර ප්‍රකාරයේදී පවතින සියලුම පාලන විධාන ඇඩෝන පරිශීලක මාර්ගෝපදේශයෙහි ලේඛනගත කර ඇත"
-		},
-		{
-			"language": "sk",
-			"displayName": "Listen",
-			"description": "Ovládanie zvuku na pozadí odkiaľkoľvek. Automaticky sa skryje pri prepnutí úlohy, vráti sa, keď sa vrátite späť.\nKlávesové skratky:\nALT+Windows+L\nJedno stlačenie: otvoriť režim Listen\nDvojité stlačenie: zatvoriť režim Listen\nVšetky ovládacie príkazy dostupné v režime vrstiev sú popísané v používateľskej príručke doplnku"
-		},
-		{
-			"language": "ta",
-			"displayName": "Listen",
-			"description": "எங்கிருந்தும் பின்னணி ஆடியோவைக் கட்டுப்படுத்தவும். நீங்கள் பணிகளை மாற்றும்போது தானாகவே மறைந்துவிடும், நீங்கள் திரும்பி வரும்போது மீண்டும் வரும்.\nவிசைப்பலகை குறுக்குவழிகள்:\nALT+Windows+L\nஒற்றைத் தட்டல் : Listen பயன்முறையைத் திறக்கவும்\nஇரட்டைத் தட்டல் : Listen பயன்முறையை மூடவும்\nஅடுக்கு பயன்முறையில் கிடைக்கும் அனைத்து கட்டுப்பாட்டு கட்டளைகளும் துணை நிரல் பயனர் வழிகாட்டியில் ஆவணப்படுத்தப்பட்டுள்ளன"
-		},
-		{
-			"language": "te",
-			"displayName": "Listen",
-			"description": "ఎక్కడి నుండైనా బ్యాక్‌గ్రౌండ్ ఆడియోను నియంత్రించండి. మీరు టాస్క్‌లను మార్చినప్పుడు స్వయంచాలకంగా దాచబడుతుంది, తిరిగి వచ్చినప్పుడు మళ్లీ కనిపిస్తుంది.\nహాట్ కీలు:\nALT+Windows+L\nఒక్కసారి నొక్కడం : Listen మోడ్‌ని తెరవండి\nరెండుసార్లు నొక్కడం : Listen మోడ్‌ని మూసివేయండి\nలేయర్ మోడ్‌లో అందుబాటులో ఉన్న అన్ని నియంత్రణ ఆదేశాలు యాడ్-ఆన్ యూజర్ గైడ్‌లో చేర్చబడ్డాయి"
-		},
-		{
-			"language": "th",
-			"displayName": "Listen",
-			"description": "ควบคุมเสียงพื้นหลังได้จากทุกที่ ซ่อนอัตโนมัติเมื่อคุณสลับงาน และจะกลับมาแสดงเมื่อคุณกลับมาใช้งาน\nคีย์ลัด:\nALT+Windows+L\nกดครั้งเดียว: เปิดโหมด Listen\nกดสองครั้ง: ปิดโหมด Listen\nคำสั่งควบคุมทั้งหมดที่มีในโหมดเลเยอร์ได้รับการบันทึกไว้ในคู่มือผู้ใช้ส่วนเสริมแล้ว"
-		},
-		{
-			"language": "tk",
-			"displayName": "Listen",
-			"description": "Arka plandaky audio islendik ýerden dolandyryň. Başga bir işe geçeniňizde awtomatik gizlenýär, yzyňa dolananyňyzda bolsa yzyna gaýdyp gelýär.\nGysga ýollar:\nALT+Windows+L\nBir gezek basmak: Listen režimini açmak\nIki gezek basmak: Listen režimini ýapmak\nGatlak režiminde elýeterli bolan ähli dolandyryş buýruklary goşundynyň ulanyjy gollanmasynda resmileşdirilendir"
-		},
-		{
-			"language": "tl",
-			"displayName": "Listen",
-			"description": "Kont्रोलin ang background audio mula kahit saan. Awtomatikong nagtatago kapag nagpalit ka ng task, bumบabalik kapag bumalik ka na.\nMga Hot Key:\nALT+Windows+L\nIsang Tapik : buksan ang Listen Mode\nDalawang Tapik : Isara ang Listen Mode\nAng lahat ng control command na available sa Layer Mode ay nakadokumento sa gabay ng user ng add-on"
-		},
-		{
-			"language": "tr",
-			"displayName": "Listen",
-			"description": "Arka plan sesini her yerden kontrol edin. Görev değiştirdiğinizde otomatik olarak gizlenir, geri döndüğünüzde yeniden görünür.\nKısayol Tuşları:\nALT+Windows+L\nTek Tıklama: Listen modunu aç\nÇift Tıklama: Listen modunu kapat\nKatman Modunda kullanılabilen tüm kontrol komutları eklenti kullanıcı kılavuzunda belgelenmiştir"
-		},
-		{
-			"language": "uk",
-			"displayName": "Listen",
-			"description": "Керування фоновим аудіо з будь-якого місця. Автоматично ховається під час перемикання завдань і повертається, коли ви повертаєтеся.\nГарячі клавіші:\nALT+Windows+L\nОдне натискання: відкрити режим Listen\nПодвійне натискання: закроти режим Listen\nУсі команди керування, доступні в режимі шарів, описані в посібнику користувача додатка"
-		},
-		{
-			"language": "ur",
-			"displayName": "Listen",
-			"description": "کہیں سے بھی بیک گراؤنڈ آڈیو کو کنٹرول کریں۔ جب آپ کام تبدیل کرتے ہیں تو خود بخود چھپ جاتا ہے، واپس آنے پر واپس آجاتا ہے۔\nشارٹ کٹ کیز:\nALT+Windows+L\nایک بار دبائیں: Listen موڈ کھولیں\nدو بار دبائیں: Listen موڈ بند کریں\nلیئر موڈ میں دستیاب تمام کنٹرول کمانڈز ایڈ آن صارف گائیڈ میں درج ہیں"
-		},
-		{
-			"language": "uz",
-			"displayName": "Listen",
-			"description": "Fon audiosini istalgan joydan boshqarish. Boshqa vazifaga o‘tganingizda avtomatik ravishda yashiriladi, qaytganingizda yana paydo bo‘ladi.\nTezkor tugmalar:\nALT+Windows+L\nBir marta bosish: Listen rejimini ochish\nIkki marta bosish: Listen rejimini yopish\nQatlam rejimida mavjud bo‘lgan barcha boshqaruv buyruqlari plaginning foydalanuvchi qo‘llanmasida hujjatlashtirilgan"
-		},
-		{
-			"language": "vi",
-			"displayName": "Listen",
-			"description": "Điều khiển âm thanh nền từ bất cứ đâu. Tự động ẩn khi bạn chuyển tác vụ, hiển thị lại khi bạn quay lại.\nPhím nóng:\nALT+Windows+L\nNhấn một lần: mở Chế độ Listen\nNhấn hai lần: Đóng Chế độ Listen\nTất cả các lệnh điều khiển có sẵn trong Chế độ lớp đều được ghi lại trong hướng dẫn sử dụng của tiện ích mở rộng"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "Listen",
-			"description": "随时随地控制后台音频。切换任务时自动隐藏，返回时自动恢复。\n快捷键：\nALT+Windows+L\n单击：打开 Listen 模式\n双击：关闭 Listen 模式\n分层模式中可用的所有控制命令均已记录在附加组件用户指南中"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "Listen",
-			"description": "隨時隨地控制背景音訊。切換工作時自動隱藏，返回時自動恢復。\n快速鍵：\nALT+Windows+L\n單擊：開啟 Listen 模式\n雙擊：關閉 Listen 模式\n分層模式中可用的所有控制指令均已記錄在附加元件使用者指南中"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"html": 6,
-						"ini": 44,
-						"md": 6,
-						"mo": 43,
-						"po": 43,
-						"py": 2
-					},
-					"file_types": {
-						"HTML": 6,
-						"directory": 96,
-						"unknown": 138
-					},
-					"highest_datetime": "2026-06-02 07:51:20",
-					"lowest_datetime": "2026-03-21 14:23:52",
-					"num_children": 240,
-					"type": "ZIP",
-					"uncompressed_size": 269709
-				},
-				"filecondis": {
-					"dhash": "00003c3c3d280000",
-					"raw_md5": "711bececfacb3ff2d1025a0f0be51289"
-				},
-				"first_submission_date": 1780362234,
-				"last_analysis_date": 1780362234,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260601",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260528",
-						"engine_version": "6.783",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260601",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260601",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260602",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260602",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260601",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260601",
-						"engine_version": "260601-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260601",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260601",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260601",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260601",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260601",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260602",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260601",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20251219",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260521",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260601",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260601",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260601",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260601",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260528",
-						"engine_version": "4.0.264",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260601",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260601",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260601",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260602",
-						"engine_version": "GD:27.44758AVA:64.31347",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260602",
-						"engine_version": "1780354853",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260601",
-						"engine_version": "1.0.247.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260601",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260601",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260601",
-						"engine_version": "14.55.59683",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260601",
-						"engine_version": "14.55.59683",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260601",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260601",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260601",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260601",
-						"engine_version": "3.1.0.235",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260601",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260602",
-						"engine_version": "1.2.0.14833",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260601",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260601",
-						"engine_version": "1.1.26040.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260601",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260602",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260601",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260601",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260530",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260601",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260601",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260601",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260601",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260602",
-						"engine_version": "2026-06-02.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260602",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260504",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260601",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260601",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260601",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260602",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260601",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260531",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260601",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260601",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260601",
-						"engine_version": "9.5.1219",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260601",
-						"engine_version": "38694",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260601",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260601",
-						"engine_version": "2.0.0.5612",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260601",
-						"engine_version": "6.25-116107207",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260601",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260601",
-						"engine_version": "38cd6ab:38cd6ab:354651b:354651b",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260602",
-						"engine_version": "v0.1.4",
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 65
-				},
-				"last_modification_date": 1780369607,
-				"last_submission_date": 1780362234,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
-				"magika": "ZIP",
-				"md5": "76b0a8b682ad9b9c4a2997bb6b2754c9",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "d37eede8ec7a5d721d5f0e84a81eceebde69627b",
-				"sha256": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
-				"size": 149720,
-				"ssdeep": "1536:hDsOPmbhguNpmvi9QvQ0ouumBa8ygTvP8UB8x3YF6SwLrdHDcd8oAJ+PvivVbcjJ:hYBsi9QI7x3MAII3rhDcCd+ieqtoW7Xe",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1FAE37C65975F100BE09AD7FE7AC60222F23D8044D16FDA87096BACC2BC8939D5FDE905",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "fa8f6c95dca57e368192786aeff5dd3a"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9763"
+  "addonId": "Listen",
+  "displayName": "Listen",
+  "URL": "https://github.com/chaichaimee/Listen/releases/download/2026.6.1/Listen-v2026.6.1.nvda-addon",
+  "description": "Control background audio from anywhere. Auto-hides when you switch tasks, returns when you’re back.\nHot Keys:\nALT+Windows+L\nSingle Tap : open Listen Mode\nDouble Tap : Close Listen Mode\nAll control commands available in Layer Mode are documented in the add-on user guide",
+  "sha256": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
+  "addonVersionName": "2026.6.1",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 6,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/Listen",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/Listen",
+  "changelog": "Added single-tap show/hide, double-tap permanent stop, auto focus tracking, and fixed gesture passthrough for Q/Escape.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781229798000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "Listen",
+      "description": "التحكم في الصوت الخلفيจาก أي مكان. يختفي تلقائيًا عند تبديل المهام، ويعود عند عودتك.\nمفاتيح الاختصار:\nALT+Windows+L\nضغط مفرد: فتح وضع Listen\nضغط مزدوج: إغلاق وضع Listen\nجميع أوامر التحكم المتاحة في وضع الطبقات موثقة في دليل مستخدم الإضافة"
+    },
+    {
+      "language": "bg",
+      "displayName": "Listen",
+      "description": "Управление на фоновото аудио от всякъде. Автоматично се скрива при превключване на задачи и се връща, когато се върнете.\nБързи клавиши:\nALT+Windows+L\nЕдинично натискане: отваряне на режим Listen\nДвойно натискане: затваряне на режим Listen\nВсички команди за управление, налични в режим \"Слой\" (Layer Mode), са документирани в ръководството на потребителя за добавката"
+    },
+    {
+      "language": "bn",
+      "displayName": "Listen",
+      "description": "যেকোনো স্থান থেকে ব্যাকগ্রাউন্ড অডিও নিয়ন্ত্রণ করুন। টাস্ক পরিবর্তন করলে স্বয়ংক্রিয়ভাবে লুকিয়ে যায়, ফিরে এলে আবার দেখা যায়।\nহট কি:\nALT+Windows+L\nএকবার চাপুন: Listen মোড খুলুন\nদুবার চাপুন: Listen মোд বন্ধ করুন\nলেয়ার মোডে উপলব্ধ সমস্ত নিয়ন্ত্রণ কমান্ড অ্যাড-অন ব্যবহারকারী গাইডে নথিবদ্ধ করা হয়েছে"
+    },
+    {
+      "language": "cs",
+      "displayName": "Listen",
+      "description": "Ovládání zvuku na pozadí odkudkoli. Automaticky se skryje při přepnutí úlohy, vrátí se, když se vrátíte zpět.\nKlávesové zkratky:\nALT+Windows+L\nJedno stisknutí: otevřít režim Listen\nDvojité stisknutí: zavřít režim Listen\nVšechny ovládací příkazy dostupné v režimu vrstev jsou popsány v uživatelské příručce doplňku"
+    },
+    {
+      "language": "da",
+      "displayName": "Listen",
+      "description": "Styr baggrundslyd fra hvor som helst. Skjules automatisk, når du skifter opgaver, og vender tilbage, når du er tilbage.\nGenvejstaster:\nALT+Windows+L\nEnkelttryk: Åbn Listen-tilstand\nDobbelttryk: Luk Listen-tilstand\nAlle kontrolkommandoer, der er tilgængelige i lagtilstand, er dokumenteret i tilføjelsens brugervejledning"
+    },
+    {
+      "language": "de",
+      "displayName": "Listen",
+      "description": "Hintergrund-Audio von überall aus steuern. Wird beim Aufgabenwechsel automatisch ausgeblendet und kehrt zurück, wenn Sie zurück sind.\nTastenkombinationen:\nALT+Windows+L\nEinmaliges Drücken: Listen-Modus öffnen\nDoppeltes Drücken: Listen-Modus schließen\nAlle im Layer-Modus verfügbaren Steuerbefehle sind im Add-on-Benutzerhandbuch dokumentiert"
+    },
+    {
+      "language": "en",
+      "displayName": "Listen",
+      "description": "Control background audio from anywhere. Auto-hides when you switch tasks, returns when you’re back.\nHot Keys:\nALT+Windows+L\nSingle Tap : open Listen Mode\nDouble Tap : Close Listen Mode\nAll control commands available in Layer Mode are documented in the add-on user guide"
+    },
+    {
+      "language": "es",
+      "displayName": "Listen",
+      "description": "Controla el audio de fondo desde cualquier lugar. Se oculta automáticamente al cambiar de tarea y regresa al volver.\nTeclas rápidas:\nALT+Windows+L\nUn toque: abrir el modo Listen\nDos toques: cerrar el modo Listen\nTodos los comandos de control disponibles en el modo capa están documentados en la guía del usuario del complemento"
+    },
+    {
+      "language": "fa",
+      "displayName": "Listen",
+      "description": "کنترل صدای پس‌زمینه از هر مکان. هنگام جابجایی بین برنامه‌ها به‌طور خودکار پنهان می‌شود و با بازگشت شما برمی‌گردد.\nکلیدهای میانبر:\nALT+Windows+L\nیک‌بار فشردن: باز کردن حالت Listen\nدوبار فشردن: بستن حالت Listen\nتمام دستورات کنترلی موجود در حالت لایه‌ای در راهنمای کاربر افزونه مستند شده‌اند"
+    },
+    {
+      "language": "fi",
+      "displayName": "Listen",
+      "description": "Hallitse tausta-ääntä mistä tahansa. Piiloutuu automaattisesti, kun vaihdat tehtävää, ja palaa, kun tulet takaisin.\nPikanäppäimet:\nALT+Windows+L\nYksittäispainallus: avaa Listen-tila\nKaksoispainallus: sulje Listen-tila\nKaikki kerrostilassa käytettävissä olevat ohjauskomennot on dokumentoitu lisäosan käyttöoppaassa"
+    },
+    {
+      "language": "fr",
+      "displayName": "Listen",
+      "description": "Contrôlez l'audio d'arrière-plan de n'importe où. Se masque automatiquement lorsque vous changez de tâche, revient lorsque vous êtes de retour.\nTouches de raccourci :\nALT+Windows+L\nAppui simple : ouvrir le mode Listen\nAppui double : fermer le mode Listen\nToutes les commandes de contrôle disponibles en mode calque sont documentées dans le guide de l'utilisateur de l'extension"
+    },
+    {
+      "language": "gl",
+      "displayName": "Listen",
+      "description": "Controla o son de fondo desde calquera lugar. Ocúltase automaticamente ao cambiar de tarefa e volve cando regresas.\nTeclas rápidas:\nALT+Windows+L\nUn toque: abrir o modo Listen\nDobre toque: pechar o modo Listen\nTodos os comandos de control dispoñibles no modo capa están documentados na guía do usuario do complemento"
+    },
+    {
+      "language": "he",
+      "displayName": "Listen",
+      "description": "שליטה בשמע רקע מכל מקום. מוסתר אוטומטית בעת החלפת משימות, וחוזר כשאתה חוזר.\nמקשי קיצור:\nALT+Windows+L\nלחיצה בודדת: פתיחת מצב Listen\nלחיצה כפולה: סגירת מצב Listen\nכל פקודות הבקרה הזמינות במצב שכבה מתועדות במדריך למשתמש של התוסף"
+    },
+    {
+      "language": "hi",
+      "displayName": "Listen",
+      "description": "कहीं से भी बैकग्राउंड ऑडियो नियंत्रित करें। जब आप कार्य बदलते हैं तो स्वचालित रूप से छिप जाता है, वापस आने पर वापस आ जाता है।\nहॉट कीज़:\nALT+Windows+L\nएक बार दबाएं: Listen मोड खोलें\nदो बार दबाएं: Listen मोड बंद करें\nलेयर मोड में उपलब्ध सभी नियंत्रण कमांड ऐड-ऑन उपयोगकर्ता गाइड में प्रलेखित हैं"
+    },
+    {
+      "language": "hr",
+      "displayName": "Listen",
+      "description": "Upravljajte pozadinskim zvukom s bilo kojeg mjesta. Automatski se skriva kada promijenite zadatak, vraća se kada se vratite.\nPrečaci:\nALT+Windows+L\nJedan pritisak: otvori način Listen\nDvostruki pritisak: zatvori način Listen\nSve upravljačke naredbe dostupne u načinu rada slojeva dokumentirane su u korisničkom priručniku dodatka"
+    },
+    {
+      "language": "hu",
+      "displayName": "Listen",
+      "description": "Háttérhang vezérlése bárhonnan. Automatikusan elrejtőzik feladatváltáskor, és visszatér, ha visszatérsz.\nGyorsbillentyűk:\nALT+Windows+L\nEgy gombnyomás: Listen mód megnyitása\nDupla gombnyomás: Listen mód bezárása\nA Réteg módban elérhető összes vezérlőparancs megtalálható a kiegészítő felhasználói útmutatójában"
+    },
+    {
+      "language": "id",
+      "displayName": "Listen",
+      "description": "Kontrol audio latar belakang dari mana saja. Sembunyi otomatis saat Anda beralih tugas, kembali saat Anda kembali.\nTombol Cepat:\nALT+Windows+L\nKetukan Tunggal : buka Mode Listen\nKetukan Ganda : Tutup Mode Listen\nSemua perintah kontrol yang tersedia dalam Mode Lapisan didokumentasikan dalam panduan pengguna pengaya"
+    },
+    {
+      "language": "it",
+      "displayName": "Listen",
+      "description": "Controlla l'audio in background da qualsiasi luogo. Si nasconde automaticamente quando cambi attività, ritorna quando torni.\nTasti di scelta rapida:\nALT+Windows+L\nPressione singola: apre la modalità Listen\nDoppia pressione: chiude la modalità Listen\nTutti i comandi di controllo disponibili nella modalità livello sono documentati nella guida utente del componente aggiuntivo"
+    },
+    {
+      "language": "ja",
+      "displayName": "Listen",
+      "description": "どこからでもバックグラウンドオーディオをコントロール。タスクを切り替えると自動的に隠れ、戻ると再表示されます。\nホットキー:\nALT+Windows+L\nシングルタップ : Listen モードを開く\nダブルタップ : Listen モードを閉じます\nレイヤーモードで利用可能なすべてのコントロールコマンドは、アドオンのユーザーガイドに記載されています"
+    },
+    {
+      "language": "kk",
+      "displayName": "Listen",
+      "description": "Кез келген жерден фондық аудионы басқару. Тапсырмаларды ауыстырған кезде автоматты түрде жасырылады, қайтып келгенде қайтарылады.\nЖедел пернелер:\nALT+Windows+L\nБір рет басу: Listen режимін ашу\nЕкі рет басу: Listen режимін жабу\nҚабаттық режимде қолжетімді барлық басқару командалары қосымшаның пайдаланушы нұсқаулығында құжатталған"
+    },
+    {
+      "language": "ko",
+      "displayName": "Listen",
+      "description": "어디서나 배경 오디오를 제어합니다. 작업 창을 전환하면 자동으로 숨겨지고, 돌아오면 다시 나타납니다.\n단축키:\nALT+Windows+L\n한 번 누르기: Listen 모드 열기\n두 번 누르기: Listen 모드 닫기\n레이어 모드에서 사용할 수 있는 모든 제어 명령은 부가기능 사용자 가이드에 문서화되어 있습니다"
+    },
+    {
+      "language": "lo",
+      "displayName": "Listen",
+      "description": "ຄວບຄຸມສຽງພື້ນຫຼັງຈາກທຸກບ່ອນ. ເຊື່ອງອັດຕະໂນມັດເມື່ອທ່ານປ່ຽນວຽກ, ກັບຄືນມາເມື່ອທ່ານກັບມາ.\nປຸ່ມລັດ:\nALT+Windows+L\nກົດເທື່ອດຽວ: ເປີດໂໝດ Listen\nກົດສອງເທື່ອ: ປິດໂໝດ Listen\nຄຳສັ່ງຄວບຄຸມທັງໝົດທີ່ມີຢູ່ໃນໂໝດ Layer ແມ່ນມີຢູ່ໃນຄູ່ມືການໃຊ້ງານຂອງສ່ວນເສີມ"
+    },
+    {
+      "language": "ms",
+      "displayName": "Listen",
+      "description": "Kawal audio latar belakang dari mana-mana sahaja. Sembunyi automatik apabila anda menukar tugasan, kembali apabila anda kembali.\nKekunci Pintas:\nALT+Windows+L\nKetik Sekali : buka Mod Listen\nKetik Dua Kali : Tutup Mod Listen\nSemua arahan kawalan yang tersedia dalam Mod Lapisan didokumentasikan dalam panduan pengguna add-on"
+    },
+    {
+      "language": "my",
+      "displayName": "Listen",
+      "description": "မည်သည့်နေရာမှမဆို နောက်ခံအသံကို ထိန်းချုပ်ပါ။ အလုပ်များ ပြောင်းလဲသည့်အခါ အလိုအလျောက် ဝှက်ပေးပြီး ပြန်လာသည့်အခါ ပြန်ပေါ်လာမည်။\nဖြတ်လမ်းလော့ခ်များ:\nALT+Windows+L\nတစ်ချက်နှိပ်ရုံဖြင့် : Listen မုဒ်ကို ဖွင့်ပါ\nနှစ်ချက်နှိပ်ရုံဖြင့် : Listen မုဒ်ကို ပိတ်ပါ\nLayer မုဒ်တွင် ရရှိနိုင်သော ထိန်းချုပ်မှုဆိုင်ရာ ညွှန်ကြားချက်များအားလုံးကို အက်ဒွန်အသုံးပြုသူလမ်းညွှန်တွင် မှတ်တမ်းတင်ထားပါသည်"
+    },
+    {
+      "language": "pt",
+      "displayName": "Listen",
+      "description": "Controle o áudio de fundo a partir de qualquer lugar. Oculta-se automaticamente quando muda de tarefa, regressa quando volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controlo disponíveis no Modo Camada estão documentados no guia do utilizador do extra"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Listen",
+      "description": "Controle o áudio de fundo de qualquer lugar. Oculta automaticamente quando você alterna de tarefa, retorna quando você volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controle disponíveis no Modo Camada estão documentados no guia do usuário do complemento"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Listen",
+      "description": "Controle o áudio de fundo a partir de qualquer lugar. Oculta-se automaticamente quando muda de tarefa, regressa quando volta.\nTeclas de Atalho:\nALT+Windows+L\nToque Único : abrir Modo Listen\nToque Duplo : Fechar Modo Listen\nTodos os comandos de controlo disponíveis no Modo Camada estão documentados no guia do utilizador do extra"
+    },
+    {
+      "language": "ro",
+      "displayName": "Listen",
+      "description": "Controlați sunetul de fundal de oriunde. Se ascunde automat când schimbați sarcinile, revine când vă întoarceți.\nTaste rapide:\nALT+Windows+L\nO singură apăsare: deschide modul Listen\nApăsare dublă: închide modul Listen\nToate comenzile de control disponibile în modul strat sunt documentate în ghidul de utilizare al suplimentului"
+    },
+    {
+      "language": "ru",
+      "displayName": "Listen",
+      "description": "Управление фоновым аудио из любого места. Автоматически скрывается при переключении задач и возвращается при вашем возвращении.\nГорячие клавиши:\nALT+Windows+L\nОдиночное нажатие: открыть режим Listen\nДвойное нажатие: закрыть режим Listen\nВсе команды управления, доступные в режиме слоев, описаны в руководстве пользователя дополнения"
+    },
+    {
+      "language": "si",
+      "displayName": "Listen",
+      "description": "ඕනෑම තැනක සිට පසුබිම් ශ්‍රව්‍ය පාලනය කරන්න. ඔබ කාර්යයන් මාරු කරන විට ස්වයංක්‍රීයව සැඟවෙයි, ඔබ ආපසු පැමිණි විට නැවත පැමිණේ.\nහොට් කීස්:\nALT+Windows+L\nතනි තට්ටු කිරීම : Listen ප්‍රකාරය විවෘත කරන්න\nද්විත්ව තට්ටු කිරීම : Listen ප්‍රකාරය වසන්න\nස්ථර ප්‍රකාරයේදී පවතින සියලුම පාලන විධාන ඇඩෝන පරිශීලක මාර්ගෝපදේශයෙහි ලේඛනගත කර ඇත"
+    },
+    {
+      "language": "sk",
+      "displayName": "Listen",
+      "description": "Ovládanie zvuku na pozadí odkiaľkoľvek. Automaticky sa skryje pri prepnutí úlohy, vráti sa, keď sa vrátite späť.\nKlávesové skratky:\nALT+Windows+L\nJedno stlačenie: otvoriť režim Listen\nDvojité stlačenie: zatvoriť režim Listen\nVšetky ovládacie príkazy dostupné v režime vrstiev sú popísané v používateľskej príručke doplnku"
+    },
+    {
+      "language": "ta",
+      "displayName": "Listen",
+      "description": "எங்கிருந்தும் பின்னணி ஆடியோவைக் கட்டுப்படுத்தவும். நீங்கள் பணிகளை மாற்றும்போது தானாகவே மறைந்துவிடும், நீங்கள் திரும்பி வரும்போது மீண்டும் வரும்.\nவிசைப்பலகை குறுக்குவழிகள்:\nALT+Windows+L\nஒற்றைத் தட்டல் : Listen பயன்முறையைத் திறக்கவும்\nஇரட்டைத் தட்டல் : Listen பயன்முறையை மூடவும்\nஅடுக்கு பயன்முறையில் கிடைக்கும் அனைத்து கட்டுப்பாட்டு கட்டளைகளும் துணை நிரல் பயனர் வழிகாட்டியில் ஆவணப்படுத்தப்பட்டுள்ளன"
+    },
+    {
+      "language": "te",
+      "displayName": "Listen",
+      "description": "ఎక్కడి నుండైనా బ్యాక్‌గ్రౌండ్ ఆడియోను నియంత్రించండి. మీరు టాస్క్‌లను మార్చినప్పుడు స్వయంచాలకంగా దాచబడుతుంది, తిరిగి వచ్చినప్పుడు మళ్లీ కనిపిస్తుంది.\nహాట్ కీలు:\nALT+Windows+L\nఒక్కసారి నొక్కడం : Listen మోడ్‌ని తెరవండి\nరెండుసార్లు నొక్కడం : Listen మోడ్‌ని మూసివేయండి\nలేయర్ మోడ్‌లో అందుబాటులో ఉన్న అన్ని నియంత్రణ ఆదేశాలు యాడ్-ఆన్ యూజర్ గైడ్‌లో చేర్చబడ్డాయి"
+    },
+    {
+      "language": "th",
+      "displayName": "Listen",
+      "description": "ควบคุมเสียงพื้นหลังได้จากทุกที่ ซ่อนอัตโนมัติเมื่อคุณสลับงาน และจะกลับมาแสดงเมื่อคุณกลับมาใช้งาน\nคีย์ลัด:\nALT+Windows+L\nกดครั้งเดียว: เปิดโหมด Listen\nกดสองครั้ง: ปิดโหมด Listen\nคำสั่งควบคุมทั้งหมดที่มีในโหมดเลเยอร์ได้รับการบันทึกไว้ในคู่มือผู้ใช้ส่วนเสริมแล้ว"
+    },
+    {
+      "language": "tk",
+      "displayName": "Listen",
+      "description": "Arka plandaky audio islendik ýerden dolandyryň. Başga bir işe geçeniňizde awtomatik gizlenýär, yzyňa dolananyňyzda bolsa yzyna gaýdyp gelýär.\nGysga ýollar:\nALT+Windows+L\nBir gezek basmak: Listen režimini açmak\nIki gezek basmak: Listen režimini ýapmak\nGatlak režiminde elýeterli bolan ähli dolandyryş buýruklary goşundynyň ulanyjy gollanmasynda resmileşdirilendir"
+    },
+    {
+      "language": "tl",
+      "displayName": "Listen",
+      "description": "Kont्रोलin ang background audio mula kahit saan. Awtomatikong nagtatago kapag nagpalit ka ng task, bumบabalik kapag bumalik ka na.\nMga Hot Key:\nALT+Windows+L\nIsang Tapik : buksan ang Listen Mode\nDalawang Tapik : Isara ang Listen Mode\nAng lahat ng control command na available sa Layer Mode ay nakadokumento sa gabay ng user ng add-on"
+    },
+    {
+      "language": "tr",
+      "displayName": "Listen",
+      "description": "Arka plan sesini her yerden kontrol edin. Görev değiştirdiğinizde otomatik olarak gizlenir, geri döndüğünüzde yeniden görünür.\nKısayol Tuşları:\nALT+Windows+L\nTek Tıklama: Listen modunu aç\nÇift Tıklama: Listen modunu kapat\nKatman Modunda kullanılabilen tüm kontrol komutları eklenti kullanıcı kılavuzunda belgelenmiştir"
+    },
+    {
+      "language": "uk",
+      "displayName": "Listen",
+      "description": "Керування фоновим аудіо з будь-якого місця. Автоматично ховається під час перемикання завдань і повертається, коли ви повертаєтеся.\nГарячі клавіші:\nALT+Windows+L\nОдне натискання: відкрити режим Listen\nПодвійне натискання: закроти режим Listen\nУсі команди керування, доступні в режимі шарів, описані в посібнику користувача додатка"
+    },
+    {
+      "language": "ur",
+      "displayName": "Listen",
+      "description": "کہیں سے بھی بیک گراؤنڈ آڈیو کو کنٹرول کریں۔ جب آپ کام تبدیل کرتے ہیں تو خود بخود چھپ جاتا ہے، واپس آنے پر واپس آجاتا ہے۔\nشارٹ کٹ کیز:\nALT+Windows+L\nایک بار دبائیں: Listen موڈ کھولیں\nدو بار دبائیں: Listen موڈ بند کریں\nلیئر موڈ میں دستیاب تمام کنٹرول کمانڈز ایڈ آن صارف گائیڈ میں درج ہیں"
+    },
+    {
+      "language": "uz",
+      "displayName": "Listen",
+      "description": "Fon audiosini istalgan joydan boshqarish. Boshqa vazifaga o‘tganingizda avtomatik ravishda yashiriladi, qaytganingizda yana paydo bo‘ladi.\nTezkor tugmalar:\nALT+Windows+L\nBir marta bosish: Listen rejimini ochish\nIkki marta bosish: Listen rejimini yopish\nQatlam rejimida mavjud bo‘lgan barcha boshqaruv buyruqlari plaginning foydalanuvchi qo‘llanmasida hujjatlashtirilgan"
+    },
+    {
+      "language": "vi",
+      "displayName": "Listen",
+      "description": "Điều khiển âm thanh nền từ bất cứ đâu. Tự động ẩn khi bạn chuyển tác vụ, hiển thị lại khi bạn quay lại.\nPhím nóng:\nALT+Windows+L\nNhấn một lần: mở Chế độ Listen\nNhấn hai lần: Đóng Chế độ Listen\nTất cả các lệnh điều khiển có sẵn trong Chế độ lớp đều được ghi lại trong hướng dẫn sử dụng của tiện ích mở rộng"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "Listen",
+      "description": "随时随地控制后台音频。切换任务时自动隐藏，返回时自动恢复。\n快捷键：\nALT+Windows+L\n单击：打开 Listen 模式\n双击：关闭 Listen 模式\n分层模式中可用的所有控制命令均已记录在附加组件用户指南中"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "Listen",
+      "description": "隨時隨地控制背景音訊。切換工作時自動隱藏，返回時自動恢復。\n快速鍵：\nALT+Windows+L\n單擊：開啟 Listen 模式\n雙擊：關閉 Listen 模式\n分層模式中可用的所有控制指令均已記錄在附加元件使用者指南中"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "html": 6,
+            "ini": 44,
+            "md": 6,
+            "mo": 43,
+            "po": 43,
+            "py": 2
+          },
+          "file_types": {
+            "HTML": 6,
+            "directory": 96,
+            "unknown": 138
+          },
+          "highest_datetime": "2026-06-02 07:51:20",
+          "lowest_datetime": "2026-03-21 14:23:52",
+          "num_children": 240,
+          "type": "ZIP",
+          "uncompressed_size": 269709
+        },
+        "filecondis": {
+          "dhash": "00003c3c3d280000",
+          "raw_md5": "711bececfacb3ff2d1025a0f0be51289"
+        },
+        "first_submission_date": 1780362234,
+        "last_analysis_date": 1780362234,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260601",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260528",
+            "engine_version": "6.783",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260601",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260601",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260602",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260602",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260601",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260601",
+            "engine_version": "260601-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260601",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260601",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260601",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260601",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260601",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260602",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260601",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20251219",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260521",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260601",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260601",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260601",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260601",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260528",
+            "engine_version": "4.0.264",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260601",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260601",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260601",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260602",
+            "engine_version": "GD:27.44758AVA:64.31347",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260602",
+            "engine_version": "1780354853",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260601",
+            "engine_version": "1.0.247.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260601",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260601",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260601",
+            "engine_version": "14.55.59683",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260601",
+            "engine_version": "14.55.59683",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260601",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260601",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260601",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260601",
+            "engine_version": "3.1.0.235",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260601",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260602",
+            "engine_version": "1.2.0.14833",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260601",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260601",
+            "engine_version": "1.1.26040.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260601",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260602",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260601",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260601",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260530",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260601",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260601",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260601",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260601",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260602",
+            "engine_version": "2026-06-02.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260602",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260504",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260601",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260601",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260601",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260602",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260601",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260531",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260601",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260601",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260601",
+            "engine_version": "9.5.1219",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260601",
+            "engine_version": "38694",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260601",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260601",
+            "engine_version": "2.0.0.5612",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260601",
+            "engine_version": "6.25-116107207",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260601",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260601",
+            "engine_version": "38cd6ab:38cd6ab:354651b:354651b",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260602",
+            "engine_version": "v0.1.4",
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 65
+        },
+        "last_modification_date": 1780369607,
+        "last_submission_date": 1780362234,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "magika": "ZIP",
+        "md5": "76b0a8b682ad9b9c4a2997bb6b2754c9",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "d37eede8ec7a5d721d5f0e84a81eceebde69627b",
+        "sha256": "47b2606ca52f913b08c79d568af040e067b155e93157c1e875badc0490466bdb",
+        "size": 149720,
+        "ssdeep": "1536:hDsOPmbhguNpmvi9QvQ0ouumBa8ygTvP8UB8x3YF6SwLrdHDcd8oAJ+PvivVbcjJ:hYBsi9QI7x3MAII3rhDcCd+ieqtoW7Xe",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1FAE37C65975F100BE09AD7FE7AC60222F23D8044D16FDA87096BACC2BC8939D5FDE905",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "fa8f6c95dca57e368192786aeff5dd3a"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9763"
 }

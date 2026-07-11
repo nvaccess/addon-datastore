@@ -1,838 +1,838 @@
 {
-	"addonId": "VisionAssistant",
-	"displayName": "Vision Assistant Pro",
-	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v6.5.0/VisionAssistant-6.5.0.nvda-addon",
-	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-	"sha256": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
-	"addonVersionName": "6.5.0",
-	"addonVersionNumber": {
-		"major": 6,
-		"minor": 5,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2025,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Mahmood Hozhabri",
-	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-	"license": "GPL v2",
-	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
-	"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781448808000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "Vision Assistant Pro",
-			"description": "مساعد ذكاء اصطناعي متقدم لـ NVDA باستخدام نماذج Gemini.\nطبقة الأوامر: اضغط NVDA+Shift+V، ثم:\n- إجراء الملف الذكي (F): تحليل ملفات الصور أو PDF أو TIFF.\n- قارئ المستندات (D): قراءة و OCR لملفات PDF.\n- الفيديو والصوت: اضغط (V) أو (A) لتحليل الفيديو أو تفريغ الصوت.\n- الترجمة (T): مترجم ذكي.\n- والمزيد! اكتشف جميع الميزات.",
-			"changelog": "## تغييرات الإصدار 6.5.0\n\n*   **المساعد المباشر (Live Assistant)**: تمت إضافة ميزة المساعد الصوتي والبصري المباشر، والمتاحة حصرياً لمزود Google Gemini (أو المزود المخصص المتوافق مع Gemini). تتضمن تفاعلاً صوتياً وتخصيص عمق التفكير مباشرة داخل الحوار، مع إعادة اتصال تلقائي عند تغيير الإعدادات.\n*   **مزود MiniMax AI**: تم دمج MiniMax كمزود مكافئ مع دعم كامل متعدد الوسائط (دردشة، رؤية، OCR)، وصوت TTS مخصص باستخدام أكثر من 300+ صوت ديناميكي، وإزالة تلقائية لكتل التفكير (مثل `<think>...</think>`) من المخرجات.\n*   **تصحيح ترجمة عارض المستندات**: تم إصلاح فشل الترجمة الصامت لمستخدمي NVDA غير الناطقين بالإنجليزية من خلال ضمان إرسال رمز اللغة المكون من حرفين إلى Google Translate بدلاً من اسم اللغة المحلي.\n*   **إعادة محاولة المسح المجمع PDF**: تم تنفيذ منطق إعادة محاولة منفصل وصامت وعالي التحسين لمسح دفعات مستندات PDF لمنع الرفع المكرر وتجنب النوافذ المنبثقة المزعجة أثناء إعادة المحاولة.\n*   **حالة عارض المستندات**: تم إصلاح خطأ حيث كانت حالة الإضافة الإجمالية (التي يتم التحقق منها عبر `I`) تبقى عالقة على \"بدأت المعالجة المجمعة\" أثناء مسح المستندات الطويلة.\n*   **إصلاح تعطل الخيوط**: تم إصلاح تعطل حاد في تأكيد الخيط `IsMain() failed in wxTimerImpl` عند فتح المستندات من خيط خلفي عن طريق تحويل قائمة انتظار ردود GUI إلى `wx.CallAfter`."
-		},
-		{
-			"language": "de",
-			"displayName": "KI Assistent Pro",
-			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		},
-		{
-			"language": "es",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Administrar/Escanear etiquetas (Shift+L)\n- Explorador de interfaz (E)\n- Operador de IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)",
-			"changelog": "## Cambios para 6.5.0\n\n*   **Asistente en vivo**: Se añadió una función de asistente de voz y pantalla en tiempo real, disponible exclusivamente para el proveedor Google Gemini (o proveedores personalizados compatibles con Gemini). Incluye personalización interactiva de voz y profundidad de razonamiento directamente dentro del diálogo, con reconexión automática al cambiar la configuración.\n*   **Proveedor de IA MiniMax**: Se integró MiniMax como proveedor par con soporte multimodal completo (chat, visión, OCR), TTS personalizado con más de 300+ voces dinámicas y eliminación automática de bloques de razonamiento (por ejemplo, `<think>...</think>`) de las salidas.\n*   **Traducción del visor de documentos**: Se corrigió un error de traducción silencioso para usuarios de NVDA que no usan inglés, asegurando que el código de idioma estándar de 2 letras se envíe a Google Translate en lugar del nombre del idioma localizado.\n*   **Reintento de escaneo en lotes de PDF**: Se implementó una lógica de reintento altamente optimizada, separada y silenciosa para el escaneo en lotes de documentos PDF, para evitar cargas redundantes y evitar ventanas emergentes de error perturbadoras durante los reintentos.\n*   **Estado del visor de documentos**: Se corrigió un error donde el estado general del complemento (verificado mediante `I`) permanecía bloqueado en \"Procesamiento por lotes iniciado\" durante escaneos de documentos largos.\n*   **Fallo de hilo resuelto**: Se corrigió un fallo grave de aserción de hilo `IsMain() failed in wxTimerImpl` al abrir documentos desde un hilo de fondo, transfiriendo la cola de devolución de llamadas de la GUI a `wx.CallAfter`."
-		},
-		{
-			"language": "fa",
-			"displayName": "دستیارِ حرفه‌ایِ بینایی",
-			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		},
-		{
-			"language": "fr",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappeler le dernier résultat (Espace)\n- Aide des commandes (H)",
-			"changelog": "## Modifications pour la version 6.5.0\n\n*   **Live Assistant** : Ajout d'une fonctionnalité d'assistant vocal et d'écran en temps réel, disponible exclusivement pour le fournisseur Google Gemini (ou les fournisseurs personnalisés compatibles Gemini). Inclut une personnalisation interactive de la voix et de la profondeur de réflexion directement dans la boîte de dialogue, avec reconnexion automatique lors de la modification des paramètres.\n*   **Fournisseur d'IA MiniMax** : Intégration de MiniMax comme fournisseur supplémentaire avec prise en charge multimodale complète (chat, vision, OCR), synthèse vocale personnalisé utilisant plus de 300 voix dynamiques et suppression automatique des blocs de raisonnement (par exemple, `<think>...</think>`) des sorties.\n*   **Traduction de la visionneuse de documents** : Correction d'un échec de traduction silencieuse pour les utilisateurs NVDA non anglais en garantissant que le code de langue standard à 2 lettres est envoyé à Google Translate au lieu du nom de langue localisé.\n*   **Nouvelle tentative d'analyse par lots de PDF** : Implémentation d'une logique de nouvelle tentative hautement optimisée, séparée et silencieuse pour l'analyse par lots de documents PDF afin d'éviter les téléchargements redondants et d'éviter les fenêtres contextuelles d'erreur perturbatrices lors des tentatives.\n*   **Statut de la visionneuse de documents** : Correction d'un bug où l'état général du plugin (vérifié avec `I`) restait bloqué sur \"Traitement par lots démarré\" lors de longues analyses de documents.\n*   **Résolution d'un crash lié au multi-threading** : Correction d'un grave crash dû à l'assertion de thread `IsMain() failed in wxTimerImpl` lors de l'ouverture de documents depuis un thread en arrière-plan grâce au remplacement de la file d'attente des rappels de l'interface graphique par `wx.CallAfter`."
-		},
-		{
-			"language": "id",
-			"displayName": "Vision Assistant Pro",
-			"description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)",
-			"changelog": "## Perubahan untuk 6.5.0\n\n*   **Asisten Langsung**: Menambahkan fitur asisten suara dan layar secara real-time, tersedia secara eksklusif untuk penyedia Google Gemini (atau penyedia kustom yang kompatibel dengan Gemini). Termasuk kustomisasi suara interaktif dan kedalaman pemikiran langsung di dalam dialog, dengan rekoneksi otomatis setelah mengubah pengaturan.\n*   **Penyedia AI MiniMax**: Mengintegrasikan MiniMax sebagai penyedia setara dengan dukungan multimodal penuh (obrolan, visi, OCR), TTS kustom menggunakan lebih dari 300+ suara dinamis, dan penghapusan blok penalaran secara otomatis (misalnya, `<think>...</think>`) dari keluaran.\n*   **Terjemahan Penampil Dokumen**: Memperbaiki kegagalan terjemahan diam-diam untuk pengguna NVDA non-Inggris dengan memastikan kode bahasa 2 huruf standar dikirim ke Google Translate alih-alih nama bahasa yang dilokalkan.\n*   **Coba Lagi Pemindaian Batch PDF**: Mengimplementasikan logika coba lagi yang sangat dioptimalkan, terpisah, dan diam-diam untuk pemindaian batch dokumen PDF guna mencegah pengunggahan berulang dan menghindari popup kesalahan yang mengganggu selama proses coba lagi.\n*   **Status Penampil Dokumen**: Memperbaiki bug di mana status keseluruhan plugin (diperiksa melalui `I`) tetap macet di \"Pemrosesan Batch Dimulai\" selama pemindaian dokumen yang panjang.\n*   **Perbaikan Crash Threading**: Memperbaiki crash pernyataan thread `IsMain() failed in wxTimerImpl` yang parah saat membuka dokumen dari thread latar belakang dengan mentransisikan antrean panggilan balik GUI ke `wx.CallAfter`."
-		},
-		{
-			"language": "it",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (I)\n- Etichettatore oggetti (l) \n- Gestisci/scansiona etichette (Shift-l) \n- Operatore IA (Shift+A)\\n\n- Esplora interfaccia (e) \n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		},
-		{
-			"language": "pl",
-			"displayName": "Vision Assistant Pro",
-			"description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Dyktowanie (S)\n- Raportuj stan (I)\n- Oznacz obiekt (L)\n- Zarządzaj etykietami / Skanuj (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Pokaż ostatni wynik (Spacja)\n- Pomoc poleceń (H)",
-			"changelog": "## Zmiany w wersji 6.5.0\n\n*   **Asystent głosowy**: Dodano funkcję asystenta głosowego i ekranowego w czasie rzeczywistym, dostępną wyłącznie dla dostawcy Google Gemini (lub zgodnych z Gemini dostawców niestandardowych). Obejmuje interaktywną zmianę głosu i głębi myślenia bezpośrednio w oknie dialogowym, z automatycznym ponownym połączeniem po zmianie ustawień.\n*   **Dostawca MiniMax**: Zintegrowano MiniMax jako równorzędnego dostawcę z pełną obsługą multimodalną (czat, obraz, OCR), własnym TTS z ponad 300 dynamicznymi głosami oraz automatycznym usuwaniem bloków rozumowania (np. `<think>...</think>`) z odpowiedzi.\n*   **Tłumaczenie w czytniku dokumentów**: Naprawiono ciche niepowodzenie tłumaczenia u osób korzystających z NVDA w językach innych niż angielski, dbając o to, by do Google Translate trafiał standardowy dwuliterowy kod języka zamiast zlokalizowanej nazwy.\n*   **Ponawianie skanowania wsadowego PDF**: Wprowadzono zoptymalizowaną, osobną i cichą logikę ponawiania przy skanowaniu wsadowym dokumentów PDF, aby zapobiec zbędnym przesłaniom i uniknąć uciążliwych okienek z błędami podczas ponawiania.\n*   **Status czytnika dokumentów**: Naprawiono błąd, przez który ogólny status dodatku (sprawdzany przez `I`) pozostawał zatrzymany na „Rozpoczęto przetwarzanie wsadowe” podczas długiego skanowania dokumentów.\n*   **Naprawiona awaria wątkowania**: Naprawiono poważną awarię (`IsMain() failed in wxTimerImpl`) przy otwieraniu dokumentów z wątku działającego w tle, przenosząc kolejkę wywołań GUI na `wx.CallAfter`."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Assistente de Visão Pro",
-			"description": "Um assistente avançado de IA para NVDA usando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (I)\n- Rotular Objeto (L)\n- Gerenciar/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualizações (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
-			"changelog": "## Mudanças para 6.5.0\n\n*   **Assistente ao Vivo**: Adicionado um recurso de assistente de voz e tela em tempo real, disponível exclusivamente para o provedor Google Gemini (ou provedores personalizados compatíveis com Gemini). Inclui personalização interativa de voz e profundidade de pensamento diretamente no diálogo, com reconexão automática ao alterar configurações.\n*   **Provedor de IA MiniMax**: Integração do MiniMax como provedor independente com suporte multimodal completo (chat, visão, OCR), TTS personalizado com mais de 300 vozes dinâmicas e remoção automática de blocos de raciocínio (ex.: `<think>...</think>`) das respostas.\n*   **Tradução do Visualizador de Documentos**: Corrigida uma falha silenciosa de tradução para usuários do NVDA em outros idiomas, garantindo o envio do código de idioma padrão de 2 letras para o Google Translate em vez do nome localizado do idioma.\n*   **Nova tentativa para varredura em lote de PDF**: Implementada uma lógica de retry altamente otimizada, separada e silenciosa para varredura de documentos em PDF, evitando reenvios redundantes e janelas de erro durante as tentativas.\n*   **Status do Visualizador de Documentos**: Corrigido um bug em que o status geral do plugin (verificado com `I`) ficava preso em \"Processamento em lote iniciado\" durante varreduras longas de documentos.\n*   **Correção de crash por threading**: Corrigida uma falha crítica de assertiva `IsMain() failed in wxTimerImpl` ao abrir documentos a partir de uma thread em segundo plano, migrando a fila de callbacks da interface para `wx.CallAfter`."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Assistente de Visão Pro",
-			"description": "Um assistente avançado de IA para o NVDA usando modelos Gemini.\nCamada de comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de UI (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
-			"changelog": "## Alterações para a versão 6.5.0\n\n*   **Assistente em Tempo Real**: Adicionada uma funcionalidade de assistente de voz e ecrã em tempo real, disponível exclusivamente para o fornecedor Google Gemini (ou fornecedores personalizados compatíveis com Gemini). Inclui personalização interactiva da voz e da profundidade de pensamento directamente na caixa de diálogo, com reconexão automática ao alterar definições.\n*   **Fornecedor de IA MiniMax**: O MiniMax foi integrado como fornecedor equivalente com suporte multimodal completo (chat, visão, OCR), TTS personalizado com mais de 300 vozes dinâmicas e remoção automática de blocos de raciocínio (por exemplo, `<think>...</think>`) das respostas.\n*   **Tradução do Visualizador de Documentos**: Corrigida uma falha silenciosa de tradução para utilizadores não anglófonos do NVDA, garantindo que o código de idioma de 2 letras é enviado ao Google Tradutor em vez do nome localizado do idioma.\n*   **Repetição de Lotes PDF**: Implementada uma lógica de repetição separada, optimizada e silenciosa para a digitalização de lotes de documentos PDF, evitando reenvios redundantes e pop-ups de erro durante as tentativas.\n*   **Estado do Visualizador de Documentos**: Corrigido um erro em que o estado geral do plugin (verificado com `I`) ficava preso em \"Processamento de lote iniciado\" durante digitalizações prolongadas de documentos.\n*   **Correção de Falha de Threads**: Corrigido um erro crítico de asserção de threads `IsMain() failed in wxTimerImpl` ao abrir documentos a partir de uma thread em segundo plano, através da migração da fila de callbacks da interface para `wx.CallAfter`."
-		},
-		{
-			"language": "ro",
-			"displayName": "Vision Assistant Pro",
-			"description": "Un asistent AI avansat pentru NVDA care folosește modelele Gemini.\nStrat de comenzi: apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvitor CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (I)\n- Etichetează obiectul (L)\n- Gestionează/scanează etichetele (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Verifică actualizarea (U)\n- Reia ultimul rezultat (Spațiu)\n- Ajutor comenzi (H)",
-			"changelog": "## Modificări pentru 6.5.0\n\n*   **Asistent live**: A fost adăugată o funcție de asistent vocal și de ecran în timp real, disponibilă exclusiv pentru furnizorul Google Gemini sau pentru furnizori personalizați compatibili cu Gemini. Include personalizarea interactivă a vocii și a profunzimii de gândire direct în dialog, cu reconectare automată când se modifică setările.\n*   **Furnizorul AI MiniMax**: MiniMax a fost integrat ca furnizor de același nivel, cu suport multimodal complet (chat, vision, OCR), TTS personalizat folosind peste 300 de voci dinamice și eliminarea automată a blocurilor de raționament, de exemplu `<think>...</think>`, din rezultate.\n*   **Traducerea în vizualizatorul de documente**: A fost corectată o eroare silențioasă de traducere pentru utilizatorii NVDA în alte limbi decât engleza, asigurând trimiterea codului standard de limbă din 2 litere către Google Translate în locul numelui localizat al limbii.\n*   **Reîncercare pentru scanarea PDF în lot**: A fost implementată o logică de reîncercare foarte optimizată, separată și silențioasă pentru scanarea documentelor PDF în lot, pentru a preveni încărcările redundante și pentru a evita popup-urile de eroare deranjante în timpul reîncercărilor.\n*   **Starea vizualizatorului de documente**: A fost remediată o eroare prin care starea generală a add-on-ului, verificată cu `I`, rămânea blocată pe „Procesarea lotului a început” în timpul scanărilor lungi de documente.\n*   **Blocare de threading rezolvată**: A fost remediată o blocare severă cauzată de aserțiunea de fir `IsMain() failed in wxTimerImpl` la deschiderea documentelor dintr-un fir de fundal, prin trecerea cozii de callback-uri GUI la `wx.CallAfter`."
-		},
-		{
-			"language": "ru",
-			"displayName": "Vision Assistant Pro (Визуальный помощник)",
-			"description": "Vision Assistant Pro — это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini.\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ онлайн-видео (Shift+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).",
-			"changelog": "## Изменения в версии 6.5.0\n\n*   **Живой помощник**: Добавлен помощник в реальном времени с голосом и экраном, доступный исключительно для провайдера Google Gemini (или пользовательских провайдеров, совместимых с Gemini). Включает интерактивную голосовую настройку и настройку глубины мышления прямо внутри диалога, с автоматическим переподключением при изменении настроек.\n*   **Провайдер MiniMax AI**: Интегрирован MiniMax как полноценный провайдер с полной мультимодальной поддержкой (чат, зрение, OCR), пользовательским синтезом речи с использованием более 300 динамических голосов и автоматическим удалением блоков рассуждений (например, `<think>...</think>`) из выходных данных.\n*   **Перевод в просмотрщике документов**: Исправлена скрытая ошибка перевода для пользователей NVDA с неанглийским интерфейсом путём отправки стандартного двухбуквенного кода языка в Google Translate вместо локализованного названия языка.\n*   **Повторная попытка пакетного сканирования PDF**: Реализована высокооптимизированная, отдельная и «тихая» логика повторных попыток для пакетного сканирования PDF-документов, чтобы предотвратить повторные загрузки и избежать раздражающих всплывающих окон об ошибках во время повторных попыток.\n*   **Статус просмотрщика документов**: Исправлена ошибка, из-за которой общий статус дополнения (проверяемый через `I`) оставался на «Пакетная обработка запущена» во время длительного сканирования документов.\n*   **Устранена проблема с потоками**: Исправлено критическое утверждение потока `IsMain() failed in wxTimerImpl`, вызывавшее сбой при открытии документов из фонового потока, путём переключения очереди вызовов графического интерфейса на `wx.CallAfter`."
-		},
-		{
-			"language": "tr",
-			"displayName": "Profesyonel Görsel Asistan",
-			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Tanımlama (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)",
-			"changelog": "## 6.5.0 Sürümündeki Değişiklikler\n\n*   **Live Assistant**: Yalnızca Google Gemini sağlayıcısı (veya Gemini uyumlu özel sağlayıcılar) için kullanılabilen bir gerçek zamanlı sesli ve ekran asistanı özelliği eklendi. Bu özellik, ayarların değiştirilmesi durumunda otomatik yeniden bağlanma ile birlikte, doğrudan diyalog içinde etkileşimli ses ve düşünme derinliği özelleştirme seçeneklerini içerir.\n*   **MiniMax AI Sağlayıcı**: MiniMax, tam multimodal destek (sohbet, görme, OCR), 300'den fazla dinamik ses kullanan özel TTS ve çıktılardan akıl yürütme bloklarının (ör. `<think>...</think>`) otomatik olarak çıkarılması özellikleriyle eş sağlayıcı olarak entegre edildi.\n*   **Belge Görüntüleyici Çevirisi**: Yerelleştirilmiş dil adı yerine standart 2 harfli dil kodunun Google Translate'e gönderilmesini sağlayarak, İngilizce olmayan NVDA kullanıcıları için sessiz çeviri hatası düzeltildi.\n*   **PDF Toplu Tarama Yeniden Denemesi**: Gereksiz yüklemeleri önlemek ve yeniden denemeler sırasında rahatsız edici hata pencerelerinin açılmasını engellemek için, PDF belge toplu taraması için yüksek düzeyde optimize edilmiş, ayrı ve sessiz bir yeniden deneme mantığı uygulandı.\n*   **Belge Görüntüleyici Durumu**: Uzun belge taramaları sırasında eklentinin genel durumunun (`I` ile kontrol edilir) “Toplu İşleme Başladı” durumunda takılı kalmasına neden olan bir hata düzeltildi.\n*   **İş Parçacığı Çökmesi Çözüldü**: Arka plan iş parçacığından belgeler açılırken ortaya çıkan ciddi bir `IsMain() failed in wxTimerImpl` iş parçacığı onaylama çökmesi, GUI geri arama kuyruğunun `wx.CallAfter`'a geçirilmesiyle düzeltildi."
-		},
-		{
-			"language": "uk",
-			"displayName": "Vision Assistant Pro",
-			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		},
-		{
-			"language": "vi",
-			"displayName": "Vision Assistant Pro",
-			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "Vision Assistant Pro",
-			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
-			"changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 1,
-						"dll": 2,
-						"exe": 1,
-						"h": 177,
-						"html": 16,
-						"ini": 17,
-						"lib": 4,
-						"md": 16,
-						"mo": 16,
-						"po": 16,
-						"py": 63,
-						"pyd": 4,
-						"typed": 1
-					},
-					"file_types": {
-						"HTML": 16,
-						"Portable Executable": 7,
-						"unknown": 312
-					},
-					"highest_datetime": "2026-06-14 14:33:14",
-					"lowest_datetime": "2026-06-14 14:32:48",
-					"num_children": 335,
-					"type": "ZIP",
-					"uncompressed_size": 98770226
-				},
-				"filecondis": {
-					"dhash": "0000000006070600",
-					"raw_md5": "27cd00864cb632cd3214931c29adc5ad"
-				},
-				"first_submission_date": 1781448076,
-				"last_analysis_date": 1781448076,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260613",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260613",
-						"engine_version": "6.788",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260614",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260614",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260614",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260614",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260614",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260614",
-						"engine_version": "260614-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260614",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260614",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260613",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260613",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260614",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260614",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260614",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260521",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260614",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260614",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260614",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260609",
-						"engine_version": "4.0.265",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260614",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260614",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260614",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260614",
-						"engine_version": "GD:27.44908AVA:64.31416",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "failure",
-						"engine_name": "Google",
-						"engine_update": "20260614",
-						"engine_version": "1781443882",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260614",
-						"engine_version": "1.0.247.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260614",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260613",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260614",
-						"engine_version": "14.57.59816",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260614",
-						"engine_version": "14.57.59814",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260614",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260614",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260614",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260614",
-						"engine_version": "3.1.0.238",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260609",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260614",
-						"engine_version": "1.2.0.14833",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260614",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260614",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260614",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260614",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260614",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260614",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260611",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260612",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260608",
-						"engine_version": "7.6.3.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260613",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260613",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260614",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260614",
-						"engine_version": "2026-06-14.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260614",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260614",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260614",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260614",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260614",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260614",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260614",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260614",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260614",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260612",
-						"engine_version": "9.5.1227",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260614",
-						"engine_version": "38728",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260614",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260612",
-						"engine_version": "2.0.0.5622",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260614",
-						"engine_version": "6.25-116107535",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260614",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260614",
-						"engine_version": "ca7fd16:ca7fd16:855344c:855344c",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260614",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 2,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 1,
-					"type-unsupported": 7,
-					"undetected": 65
-				},
-				"last_modification_date": 1781448696,
-				"last_submission_date": 1781448076,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"md5": "503d6873a836ab3f3bf74636e3b045b9",
-				"meaningful_name": "a412ed56-26ab-4cdc-ad29-990c9a52be17.nvda-addon",
-				"names": [
-					"a412ed56-26ab-4cdc-ad29-990c9a52be17.nvda-addon"
-				],
-				"reputation": 0,
-				"sandbox_verdicts": {
-					"Zenbox": {
-						"category": "harmless",
-						"confidence": 95,
-						"malware_classification": [
-							"CLEAN"
-						],
-						"sandbox_name": "Zenbox"
-					}
-				},
-				"sha1": "9a4cafef026591d25445c191c806106b68c2b7f7",
-				"sha256": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
-				"size": 38276233,
-				"ssdeep": "786432:bQx3JIaxmnH2hMwGWeaxgv3wFihLirIMxRQC4vycIuJBzkY2b:bQxrqHkMw3ejfw0SIMxRQC4vqu/x0",
-				"tags": [
-					"zip",
-					"contains-pe",
-					"detect-debug-environment",
-					"long-sleeps"
-				],
-				"times_submitted": 1,
-				"tlsh": "T19A8733B7889DD24AEEB2E4BEF0941BD771FF529C800A740E652DD0CB69C3BD641892C5",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "Python Zip Application",
-						"probability": 72.4
-					},
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 27.5
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+  "addonId": "VisionAssistant",
+  "displayName": "Vision Assistant Pro",
+  "URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v6.5.0/VisionAssistant-6.5.0.nvda-addon",
+  "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+  "sha256": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+  "addonVersionName": "6.5.0",
+  "addonVersionNumber": {
+    "major": 6,
+    "minor": 5,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Mahmood Hozhabri",
+  "sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+  "license": "GPL v2",
+  "homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+  "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781448808000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "Vision Assistant Pro",
+      "description": "مساعد ذكاء اصطناعي متقدم لـ NVDA باستخدام نماذج Gemini.\nطبقة الأوامر: اضغط NVDA+Shift+V، ثم:\n- إجراء الملف الذكي (F): تحليل ملفات الصور أو PDF أو TIFF.\n- قارئ المستندات (D): قراءة و OCR لملفات PDF.\n- الفيديو والصوت: اضغط (V) أو (A) لتحليل الفيديو أو تفريغ الصوت.\n- الترجمة (T): مترجم ذكي.\n- والمزيد! اكتشف جميع الميزات.",
+      "changelog": "## تغييرات الإصدار 6.5.0\n\n*   **المساعد المباشر (Live Assistant)**: تمت إضافة ميزة المساعد الصوتي والبصري المباشر، والمتاحة حصرياً لمزود Google Gemini (أو المزود المخصص المتوافق مع Gemini). تتضمن تفاعلاً صوتياً وتخصيص عمق التفكير مباشرة داخل الحوار، مع إعادة اتصال تلقائي عند تغيير الإعدادات.\n*   **مزود MiniMax AI**: تم دمج MiniMax كمزود مكافئ مع دعم كامل متعدد الوسائط (دردشة، رؤية، OCR)، وصوت TTS مخصص باستخدام أكثر من 300+ صوت ديناميكي، وإزالة تلقائية لكتل التفكير (مثل `<think>...</think>`) من المخرجات.\n*   **تصحيح ترجمة عارض المستندات**: تم إصلاح فشل الترجمة الصامت لمستخدمي NVDA غير الناطقين بالإنجليزية من خلال ضمان إرسال رمز اللغة المكون من حرفين إلى Google Translate بدلاً من اسم اللغة المحلي.\n*   **إعادة محاولة المسح المجمع PDF**: تم تنفيذ منطق إعادة محاولة منفصل وصامت وعالي التحسين لمسح دفعات مستندات PDF لمنع الرفع المكرر وتجنب النوافذ المنبثقة المزعجة أثناء إعادة المحاولة.\n*   **حالة عارض المستندات**: تم إصلاح خطأ حيث كانت حالة الإضافة الإجمالية (التي يتم التحقق منها عبر `I`) تبقى عالقة على \"بدأت المعالجة المجمعة\" أثناء مسح المستندات الطويلة.\n*   **إصلاح تعطل الخيوط**: تم إصلاح تعطل حاد في تأكيد الخيط `IsMain() failed in wxTimerImpl` عند فتح المستندات من خيط خلفي عن طريق تحويل قائمة انتظار ردود GUI إلى `wx.CallAfter`."
+    },
+    {
+      "language": "de",
+      "displayName": "KI Assistent Pro",
+      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    },
+    {
+      "language": "es",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Administrar/Escanear etiquetas (Shift+L)\n- Explorador de interfaz (E)\n- Operador de IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)",
+      "changelog": "## Cambios para 6.5.0\n\n*   **Asistente en vivo**: Se añadió una función de asistente de voz y pantalla en tiempo real, disponible exclusivamente para el proveedor Google Gemini (o proveedores personalizados compatibles con Gemini). Incluye personalización interactiva de voz y profundidad de razonamiento directamente dentro del diálogo, con reconexión automática al cambiar la configuración.\n*   **Proveedor de IA MiniMax**: Se integró MiniMax como proveedor par con soporte multimodal completo (chat, visión, OCR), TTS personalizado con más de 300+ voces dinámicas y eliminación automática de bloques de razonamiento (por ejemplo, `<think>...</think>`) de las salidas.\n*   **Traducción del visor de documentos**: Se corrigió un error de traducción silencioso para usuarios de NVDA que no usan inglés, asegurando que el código de idioma estándar de 2 letras se envíe a Google Translate en lugar del nombre del idioma localizado.\n*   **Reintento de escaneo en lotes de PDF**: Se implementó una lógica de reintento altamente optimizada, separada y silenciosa para el escaneo en lotes de documentos PDF, para evitar cargas redundantes y evitar ventanas emergentes de error perturbadoras durante los reintentos.\n*   **Estado del visor de documentos**: Se corrigió un error donde el estado general del complemento (verificado mediante `I`) permanecía bloqueado en \"Procesamiento por lotes iniciado\" durante escaneos de documentos largos.\n*   **Fallo de hilo resuelto**: Se corrigió un fallo grave de aserción de hilo `IsMain() failed in wxTimerImpl` al abrir documentos desde un hilo de fondo, transfiriendo la cola de devolución de llamadas de la GUI a `wx.CallAfter`."
+    },
+    {
+      "language": "fa",
+      "displayName": "دستیارِ حرفه‌ایِ بینایی",
+      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    },
+    {
+      "language": "fr",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :Fonctionnalités :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos en ligne (Maj+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappeler le dernier résultat (Espace)\n- Aide des commandes (H)",
+      "changelog": "## Modifications pour la version 6.5.0\n\n*   **Live Assistant** : Ajout d'une fonctionnalité d'assistant vocal et d'écran en temps réel, disponible exclusivement pour le fournisseur Google Gemini (ou les fournisseurs personnalisés compatibles Gemini). Inclut une personnalisation interactive de la voix et de la profondeur de réflexion directement dans la boîte de dialogue, avec reconnexion automatique lors de la modification des paramètres.\n*   **Fournisseur d'IA MiniMax** : Intégration de MiniMax comme fournisseur supplémentaire avec prise en charge multimodale complète (chat, vision, OCR), synthèse vocale personnalisé utilisant plus de 300 voix dynamiques et suppression automatique des blocs de raisonnement (par exemple, `<think>...</think>`) des sorties.\n*   **Traduction de la visionneuse de documents** : Correction d'un échec de traduction silencieuse pour les utilisateurs NVDA non anglais en garantissant que le code de langue standard à 2 lettres est envoyé à Google Translate au lieu du nom de langue localisé.\n*   **Nouvelle tentative d'analyse par lots de PDF** : Implémentation d'une logique de nouvelle tentative hautement optimisée, séparée et silencieuse pour l'analyse par lots de documents PDF afin d'éviter les téléchargements redondants et d'éviter les fenêtres contextuelles d'erreur perturbatrices lors des tentatives.\n*   **Statut de la visionneuse de documents** : Correction d'un bug où l'état général du plugin (vérifié avec `I`) restait bloqué sur \"Traitement par lots démarré\" lors de longues analyses de documents.\n*   **Résolution d'un crash lié au multi-threading** : Correction d'un grave crash dû à l'assertion de thread `IsMain() failed in wxTimerImpl` lors de l'ouverture de documents depuis un thread en arrière-plan grâce au remplacement de la file d'attente des rappels de l'interface graphique par `wx.CallAfter`."
+    },
+    {
+      "language": "id",
+      "displayName": "Vision Assistant Pro",
+      "description": "Asisten AI canggih untuk NVDA yang menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video Online (Shift+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)",
+      "changelog": "## Perubahan untuk 6.5.0\n\n*   **Asisten Langsung**: Menambahkan fitur asisten suara dan layar secara real-time, tersedia secara eksklusif untuk penyedia Google Gemini (atau penyedia kustom yang kompatibel dengan Gemini). Termasuk kustomisasi suara interaktif dan kedalaman pemikiran langsung di dalam dialog, dengan rekoneksi otomatis setelah mengubah pengaturan.\n*   **Penyedia AI MiniMax**: Mengintegrasikan MiniMax sebagai penyedia setara dengan dukungan multimodal penuh (obrolan, visi, OCR), TTS kustom menggunakan lebih dari 300+ suara dinamis, dan penghapusan blok penalaran secara otomatis (misalnya, `<think>...</think>`) dari keluaran.\n*   **Terjemahan Penampil Dokumen**: Memperbaiki kegagalan terjemahan diam-diam untuk pengguna NVDA non-Inggris dengan memastikan kode bahasa 2 huruf standar dikirim ke Google Translate alih-alih nama bahasa yang dilokalkan.\n*   **Coba Lagi Pemindaian Batch PDF**: Mengimplementasikan logika coba lagi yang sangat dioptimalkan, terpisah, dan diam-diam untuk pemindaian batch dokumen PDF guna mencegah pengunggahan berulang dan menghindari popup kesalahan yang mengganggu selama proses coba lagi.\n*   **Status Penampil Dokumen**: Memperbaiki bug di mana status keseluruhan plugin (diperiksa melalui `I`) tetap macet di \"Pemrosesan Batch Dimulai\" selama pemindaian dokumen yang panjang.\n*   **Perbaikan Crash Threading**: Memperbaiki crash pernyataan thread `IsMain() failed in wxTimerImpl` yang parah saat membuka dokumen dari thread latar belakang dengan mentransisikan antrean panggilan balik GUI ke `wx.CallAfter`."
+    },
+    {
+      "language": "it",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un assistente AI avanzato per NVDA che utilizza modelli Gemini.\nLayer Comandi: Premi NVDA+Shift+V, poi:\n- Traduttore intelligente (T) / Blocco appunti (Shift+T)\n- Miglioramento testo (R)\n- Descrivi l'oggetto (V) / Schermo intero (O)\n- Analisi video online (Shift+V)\n- Lettore Documenti (D)\n- File OCR (F)\n- Risolutore CAPTCHA (C)\n- Trascrizione audio (A)\n- Dettatura intelligente (S)\n- Annuncia lo stato (I)\n- Etichettatore oggetti (l) \n- Gestisci/scansiona etichette (Shift-l) \n- Operatore IA (Shift+A)\\n\n- Esplora interfaccia (e) \n- Controllo aggiornamenti (U) \n- Richiama ultimo risultato (Spazio),\\n\n- Aiuto comandi (H),",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    },
+    {
+      "language": "pl",
+      "displayName": "Vision Assistant Pro",
+      "description": "Zaawansowany asystent AI dla NVDA wykorzystujący modele Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, a następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo online (Shift+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja audio (A)\n- Dyktowanie (S)\n- Raportuj stan (I)\n- Oznacz obiekt (L)\n- Zarządzaj etykietami / Skanuj (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Pokaż ostatni wynik (Spacja)\n- Pomoc poleceń (H)",
+      "changelog": "## Zmiany w wersji 6.5.0\n\n*   **Asystent głosowy**: Dodano funkcję asystenta głosowego i ekranowego w czasie rzeczywistym, dostępną wyłącznie dla dostawcy Google Gemini (lub zgodnych z Gemini dostawców niestandardowych). Obejmuje interaktywną zmianę głosu i głębi myślenia bezpośrednio w oknie dialogowym, z automatycznym ponownym połączeniem po zmianie ustawień.\n*   **Dostawca MiniMax**: Zintegrowano MiniMax jako równorzędnego dostawcę z pełną obsługą multimodalną (czat, obraz, OCR), własnym TTS z ponad 300 dynamicznymi głosami oraz automatycznym usuwaniem bloków rozumowania (np. `<think>...</think>`) z odpowiedzi.\n*   **Tłumaczenie w czytniku dokumentów**: Naprawiono ciche niepowodzenie tłumaczenia u osób korzystających z NVDA w językach innych niż angielski, dbając o to, by do Google Translate trafiał standardowy dwuliterowy kod języka zamiast zlokalizowanej nazwy.\n*   **Ponawianie skanowania wsadowego PDF**: Wprowadzono zoptymalizowaną, osobną i cichą logikę ponawiania przy skanowaniu wsadowym dokumentów PDF, aby zapobiec zbędnym przesłaniom i uniknąć uciążliwych okienek z błędami podczas ponawiania.\n*   **Status czytnika dokumentów**: Naprawiono błąd, przez który ogólny status dodatku (sprawdzany przez `I`) pozostawał zatrzymany na „Rozpoczęto przetwarzanie wsadowe” podczas długiego skanowania dokumentów.\n*   **Naprawiona awaria wątkowania**: Naprawiono poważną awarię (`IsMain() failed in wxTimerImpl`) przy otwieraniu dokumentów z wątku działającego w tle, przenosząc kolejkę wywołań GUI na `wx.CallAfter`."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Assistente de Visão Pro",
+      "description": "Um assistente avançado de IA para NVDA usando modelos Gemini.\nCamada de Comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Tela Inteira (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Status (I)\n- Rotular Objeto (L)\n- Gerenciar/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualizações (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+      "changelog": "## Mudanças para 6.5.0\n\n*   **Assistente ao Vivo**: Adicionado um recurso de assistente de voz e tela em tempo real, disponível exclusivamente para o provedor Google Gemini (ou provedores personalizados compatíveis com Gemini). Inclui personalização interativa de voz e profundidade de pensamento diretamente no diálogo, com reconexão automática ao alterar configurações.\n*   **Provedor de IA MiniMax**: Integração do MiniMax como provedor independente com suporte multimodal completo (chat, visão, OCR), TTS personalizado com mais de 300 vozes dinâmicas e remoção automática de blocos de raciocínio (ex.: `<think>...</think>`) das respostas.\n*   **Tradução do Visualizador de Documentos**: Corrigida uma falha silenciosa de tradução para usuários do NVDA em outros idiomas, garantindo o envio do código de idioma padrão de 2 letras para o Google Translate em vez do nome localizado do idioma.\n*   **Nova tentativa para varredura em lote de PDF**: Implementada uma lógica de retry altamente otimizada, separada e silenciosa para varredura de documentos em PDF, evitando reenvios redundantes e janelas de erro durante as tentativas.\n*   **Status do Visualizador de Documentos**: Corrigido um bug em que o status geral do plugin (verificado com `I`) ficava preso em \"Processamento em lote iniciado\" durante varreduras longas de documentos.\n*   **Correção de crash por threading**: Corrigida uma falha crítica de assertiva `IsMain() failed in wxTimerImpl` ao abrir documentos a partir de uma thread em segundo plano, migrando a fila de callbacks da interface para `wx.CallAfter`."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Assistente de Visão Pro",
+      "description": "Um assistente avançado de IA para o NVDA usando modelos Gemini.\nCamada de comandos: Pressione NVDA+Shift+V, depois:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Completo (O)\n- Análise de Vídeo Online (Shift+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de UI (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)",
+      "changelog": "## Alterações para a versão 6.5.0\n\n*   **Assistente em Tempo Real**: Adicionada uma funcionalidade de assistente de voz e ecrã em tempo real, disponível exclusivamente para o fornecedor Google Gemini (ou fornecedores personalizados compatíveis com Gemini). Inclui personalização interactiva da voz e da profundidade de pensamento directamente na caixa de diálogo, com reconexão automática ao alterar definições.\n*   **Fornecedor de IA MiniMax**: O MiniMax foi integrado como fornecedor equivalente com suporte multimodal completo (chat, visão, OCR), TTS personalizado com mais de 300 vozes dinâmicas e remoção automática de blocos de raciocínio (por exemplo, `<think>...</think>`) das respostas.\n*   **Tradução do Visualizador de Documentos**: Corrigida uma falha silenciosa de tradução para utilizadores não anglófonos do NVDA, garantindo que o código de idioma de 2 letras é enviado ao Google Tradutor em vez do nome localizado do idioma.\n*   **Repetição de Lotes PDF**: Implementada uma lógica de repetição separada, optimizada e silenciosa para a digitalização de lotes de documentos PDF, evitando reenvios redundantes e pop-ups de erro durante as tentativas.\n*   **Estado do Visualizador de Documentos**: Corrigido um erro em que o estado geral do plugin (verificado com `I`) ficava preso em \"Processamento de lote iniciado\" durante digitalizações prolongadas de documentos.\n*   **Correção de Falha de Threads**: Corrigido um erro crítico de asserção de threads `IsMain() failed in wxTimerImpl` ao abrir documentos a partir de uma thread em segundo plano, através da migração da fila de callbacks da interface para `wx.CallAfter`."
+    },
+    {
+      "language": "ro",
+      "displayName": "Vision Assistant Pro",
+      "description": "Un asistent AI avansat pentru NVDA care folosește modelele Gemini.\nStrat de comenzi: apasă NVDA+Shift+V, apoi:\n- Traducător inteligent (T) / Clipboard (Shift+T)\n- Rafinare text (R)\n- Descrie obiectul (V) / Ecran complet (O)\n- Analiză video online (Shift+V)\n- Cititor de documente (D)\n- OCR fișier (F)\n- Rezolvitor CAPTCHA (C)\n- Transcriere audio (A)\n- Dictare inteligentă (S)\n- Anunță starea (I)\n- Etichetează obiectul (L)\n- Gestionează/scanează etichetele (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Verifică actualizarea (U)\n- Reia ultimul rezultat (Spațiu)\n- Ajutor comenzi (H)",
+      "changelog": "## Modificări pentru 6.5.0\n\n*   **Asistent live**: A fost adăugată o funcție de asistent vocal și de ecran în timp real, disponibilă exclusiv pentru furnizorul Google Gemini sau pentru furnizori personalizați compatibili cu Gemini. Include personalizarea interactivă a vocii și a profunzimii de gândire direct în dialog, cu reconectare automată când se modifică setările.\n*   **Furnizorul AI MiniMax**: MiniMax a fost integrat ca furnizor de același nivel, cu suport multimodal complet (chat, vision, OCR), TTS personalizat folosind peste 300 de voci dinamice și eliminarea automată a blocurilor de raționament, de exemplu `<think>...</think>`, din rezultate.\n*   **Traducerea în vizualizatorul de documente**: A fost corectată o eroare silențioasă de traducere pentru utilizatorii NVDA în alte limbi decât engleza, asigurând trimiterea codului standard de limbă din 2 litere către Google Translate în locul numelui localizat al limbii.\n*   **Reîncercare pentru scanarea PDF în lot**: A fost implementată o logică de reîncercare foarte optimizată, separată și silențioasă pentru scanarea documentelor PDF în lot, pentru a preveni încărcările redundante și pentru a evita popup-urile de eroare deranjante în timpul reîncercărilor.\n*   **Starea vizualizatorului de documente**: A fost remediată o eroare prin care starea generală a add-on-ului, verificată cu `I`, rămânea blocată pe „Procesarea lotului a început” în timpul scanărilor lungi de documente.\n*   **Blocare de threading rezolvată**: A fost remediată o blocare severă cauzată de aserțiunea de fir `IsMain() failed in wxTimerImpl` la deschiderea documentelor dintr-un fir de fundal, prin trecerea cozii de callback-uri GUI la `wx.CallAfter`."
+    },
+    {
+      "language": "ru",
+      "displayName": "Vision Assistant Pro (Визуальный помощник)",
+      "description": "Vision Assistant Pro — это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini.\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ онлайн-видео (Shift+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).",
+      "changelog": "## Изменения в версии 6.5.0\n\n*   **Живой помощник**: Добавлен помощник в реальном времени с голосом и экраном, доступный исключительно для провайдера Google Gemini (или пользовательских провайдеров, совместимых с Gemini). Включает интерактивную голосовую настройку и настройку глубины мышления прямо внутри диалога, с автоматическим переподключением при изменении настроек.\n*   **Провайдер MiniMax AI**: Интегрирован MiniMax как полноценный провайдер с полной мультимодальной поддержкой (чат, зрение, OCR), пользовательским синтезом речи с использованием более 300 динамических голосов и автоматическим удалением блоков рассуждений (например, `<think>...</think>`) из выходных данных.\n*   **Перевод в просмотрщике документов**: Исправлена скрытая ошибка перевода для пользователей NVDA с неанглийским интерфейсом путём отправки стандартного двухбуквенного кода языка в Google Translate вместо локализованного названия языка.\n*   **Повторная попытка пакетного сканирования PDF**: Реализована высокооптимизированная, отдельная и «тихая» логика повторных попыток для пакетного сканирования PDF-документов, чтобы предотвратить повторные загрузки и избежать раздражающих всплывающих окон об ошибках во время повторных попыток.\n*   **Статус просмотрщика документов**: Исправлена ошибка, из-за которой общий статус дополнения (проверяемый через `I`) оставался на «Пакетная обработка запущена» во время длительного сканирования документов.\n*   **Устранена проблема с потоками**: Исправлено критическое утверждение потока `IsMain() failed in wxTimerImpl`, вызывавшее сбой при открытии документов из фонового потока, путём переключения очереди вызовов графического интерфейса на `wx.CallAfter`."
+    },
+    {
+      "language": "tr",
+      "displayName": "Profesyonel Görsel Asistan",
+      "description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Tanımlama (V) / Tam Ekran (O)\n- Çevrimiçi Video Analizi (Shift+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)",
+      "changelog": "## 6.5.0 Sürümündeki Değişiklikler\n\n*   **Live Assistant**: Yalnızca Google Gemini sağlayıcısı (veya Gemini uyumlu özel sağlayıcılar) için kullanılabilen bir gerçek zamanlı sesli ve ekran asistanı özelliği eklendi. Bu özellik, ayarların değiştirilmesi durumunda otomatik yeniden bağlanma ile birlikte, doğrudan diyalog içinde etkileşimli ses ve düşünme derinliği özelleştirme seçeneklerini içerir.\n*   **MiniMax AI Sağlayıcı**: MiniMax, tam multimodal destek (sohbet, görme, OCR), 300'den fazla dinamik ses kullanan özel TTS ve çıktılardan akıl yürütme bloklarının (ör. `<think>...</think>`) otomatik olarak çıkarılması özellikleriyle eş sağlayıcı olarak entegre edildi.\n*   **Belge Görüntüleyici Çevirisi**: Yerelleştirilmiş dil adı yerine standart 2 harfli dil kodunun Google Translate'e gönderilmesini sağlayarak, İngilizce olmayan NVDA kullanıcıları için sessiz çeviri hatası düzeltildi.\n*   **PDF Toplu Tarama Yeniden Denemesi**: Gereksiz yüklemeleri önlemek ve yeniden denemeler sırasında rahatsız edici hata pencerelerinin açılmasını engellemek için, PDF belge toplu taraması için yüksek düzeyde optimize edilmiş, ayrı ve sessiz bir yeniden deneme mantığı uygulandı.\n*   **Belge Görüntüleyici Durumu**: Uzun belge taramaları sırasında eklentinin genel durumunun (`I` ile kontrol edilir) “Toplu İşleme Başladı” durumunda takılı kalmasına neden olan bir hata düzeltildi.\n*   **İş Parçacığı Çökmesi Çözüldü**: Arka plan iş parçacığından belgeler açılırken ortaya çıkan ciddi bir `IsMain() failed in wxTimerImpl` iş parçacığı onaylama çökmesi, GUI geri arama kuyruğunun `wx.CallAfter`'a geçirilmesiyle düzeltildi."
+    },
+    {
+      "language": "uk",
+      "displayName": "Vision Assistant Pro",
+      "description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Очищення тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Онлайн-аналіз відео (Shift+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    },
+    {
+      "language": "vi",
+      "displayName": "Vision Assistant Pro",
+      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "Vision Assistant Pro",
+      "description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Online Video Analysis (Shift+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)",
+      "changelog": "## Changes for 6.5.0\n\n*   **Live Assistant**: Added a real-time voice and screen assistant feature, available exclusively for the Google Gemini provider (or Gemini-compatible custom providers). Includes interactive voice and thinking depth customization directly inside the dialog, with automatic reconnection upon changing settings.\n*   **MiniMax AI Provider**: Integrated MiniMax as a peer provider with full multimodal support (chat, vision, OCR), custom TTS using over 300+ dynamic voices, and automatic stripping of reasoning blocks (e.g., `<think>...</think>`) from outputs.\n*   **Document Viewer Translation**: Corrected a silent translation failure for non-English NVDA users by ensuring the standard 2-letter language code is sent to Google Translate instead of the localized language name.\n*   **PDF Batch Scan Retry**: Implemented a highly optimized, separate, and silent retry logic for PDF document batch scanning to prevent redundant uploads and avoid disruptive error popups during retries.\n*   **Document Viewer Status**: Fixed a bug where the plugin's overall status (checked via `I`) remained stuck on \"Batch Processing Started\" during long document scans.\n*   **Resolved Threading Crash**: Fixed a severe `IsMain() failed in wxTimerImpl` thread assertion crash when opening documents from a background thread by transitioning the GUI callback queue to `wx.CallAfter`."
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 1,
+            "dll": 2,
+            "exe": 1,
+            "h": 177,
+            "html": 16,
+            "ini": 17,
+            "lib": 4,
+            "md": 16,
+            "mo": 16,
+            "po": 16,
+            "py": 63,
+            "pyd": 4,
+            "typed": 1
+          },
+          "file_types": {
+            "HTML": 16,
+            "Portable Executable": 7,
+            "unknown": 312
+          },
+          "highest_datetime": "2026-06-14 14:33:14",
+          "lowest_datetime": "2026-06-14 14:32:48",
+          "num_children": 335,
+          "type": "ZIP",
+          "uncompressed_size": 98770226
+        },
+        "filecondis": {
+          "dhash": "0000000006070600",
+          "raw_md5": "27cd00864cb632cd3214931c29adc5ad"
+        },
+        "first_submission_date": 1781448076,
+        "last_analysis_date": 1781448076,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260613",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260613",
+            "engine_version": "6.788",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260614",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260614",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260614",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260614",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260614",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260614",
+            "engine_version": "260614-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260614",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260614",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260613",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260613",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260614",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260614",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260614",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260521",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260614",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260614",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260614",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260609",
+            "engine_version": "4.0.265",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260614",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260614",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260614",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260614",
+            "engine_version": "GD:27.44908AVA:64.31416",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "failure",
+            "engine_name": "Google",
+            "engine_update": "20260614",
+            "engine_version": "1781443882",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260614",
+            "engine_version": "1.0.247.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260614",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260613",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260614",
+            "engine_version": "14.57.59816",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260614",
+            "engine_version": "14.57.59814",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260614",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260614",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260614",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260614",
+            "engine_version": "3.1.0.238",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260609",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260614",
+            "engine_version": "1.2.0.14833",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260614",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260614",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260614",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260614",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260614",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260614",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260611",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260612",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260608",
+            "engine_version": "7.6.3.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260613",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260613",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260614",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260614",
+            "engine_version": "2026-06-14.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260614",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260614",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260614",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260614",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260614",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260614",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260614",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260614",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260614",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260612",
+            "engine_version": "9.5.1227",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260614",
+            "engine_version": "38728",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260614",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260612",
+            "engine_version": "2.0.0.5622",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260614",
+            "engine_version": "6.25-116107535",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260614",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260614",
+            "engine_version": "ca7fd16:ca7fd16:855344c:855344c",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260614",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 2,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 1,
+          "type-unsupported": 7,
+          "undetected": 65
+        },
+        "last_modification_date": 1781448696,
+        "last_submission_date": 1781448076,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "md5": "503d6873a836ab3f3bf74636e3b045b9",
+        "meaningful_name": "a412ed56-26ab-4cdc-ad29-990c9a52be17.nvda-addon",
+        "names": [
+          "a412ed56-26ab-4cdc-ad29-990c9a52be17.nvda-addon"
+        ],
+        "reputation": 0,
+        "sandbox_verdicts": {
+          "Zenbox": {
+            "category": "harmless",
+            "confidence": 95,
+            "malware_classification": [
+              "CLEAN"
+            ],
+            "sandbox_name": "Zenbox"
+          }
+        },
+        "sha1": "9a4cafef026591d25445c191c806106b68c2b7f7",
+        "sha256": "0ef39e4c6f387e83c9cb0c147783b786325b88f82def4daf47ef06542826745c",
+        "size": 38276233,
+        "ssdeep": "786432:bQx3JIaxmnH2hMwGWeaxgv3wFihLirIMxRQC4vycIuJBzkY2b:bQxrqHkMw3ejfw0SIMxRQC4vqu/x0",
+        "tags": [
+          "zip",
+          "contains-pe",
+          "detect-debug-environment",
+          "long-sleeps"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T19A8733B7889DD24AEEB2E4BEF0941BD771FF529C800A740E652DD0CB69C3BD641892C5",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "Python Zip Application",
+            "probability": 72.4
+          },
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 27.5
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
 }

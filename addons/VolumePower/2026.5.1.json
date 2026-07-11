@@ -1,934 +1,934 @@
 {
-	"addonId": "VolumePower",
-	"displayName": "VolumePower",
-	"URL": "https://github.com/chaichaimee/VolumePower/releases/download/2026.5.1/VolumePower-v2026.5.1.nvda-addon",
-	"description": "provides quick control over your computer's NVDA volume and power functions\nHot Keys:\nNVDA+Shift+PageUp Increase NVDA volume\nNVDA+Shift+PageDown Decrease NVDA volume\nAlt+Windows+R Restart computer\nAlt+Windows+S Shutdown computer",
-	"sha256": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
-	"addonVersionName": "2026.5.1",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 5,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/VolumePower",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/VolumePower",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1777516334000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "VolumePower",
-			"description": "يوفر تحكمًا سريعًا في مستوى صوت NVDA ووظائف الطاقة بجهاز الكمبيوتر الخاص بك\nمفاتيح الاختصار:\nNVDA+Shift+PageUp زيادة مستوى صوت NVDA\nNVDA+Shift+PageDown خفض مستوى صوت NVDA\nAlt+Windows+R إعادة تشغيل الكمبيوتر\nAlt+Windows+S إيقاف تشغيل الكمبيوتر"
-		},
-		{
-			"language": "bg",
-			"displayName": "VolumePower",
-			"description": "осигурява бърз контрол върху силата на звука на NVDA и функциите за захранване на вашия компютър\nГорещи клавиши:\nNVDA+Shift+PageUp Увеличаване на силата на звука на NVDA\nNVDA+Shift+PageDown Намаляване на силата на звука на NVDA\nAlt+Windows+R Рестартиране на компютъра\nAlt+Windows+S Изключване на компютъра"
-		},
-		{
-			"language": "bn",
-			"displayName": "VolumePower",
-			"description": "আপনার কম্পিউটারের NVDA ভলিউম এবং পাওয়ার ফাংশনগুলির দ্রুত নিয়ন্ত্রণ প্রদান করে\nহট কী:\nNVDA+Shift+PageUp NVDA ভলিউম বাড়ান\nNVDA+Shift+PageDown NVDA ভলিউম কমান\nAlt+Windows+R কম্পিউটার রিস্টার্ট করুন\nAlt+Windows+S কম্পিউটার শাটডাউন করুন"
-		},
-		{
-			"language": "cs",
-			"displayName": "VolumePower",
-			"description": "poskytuje rychlé ovládání hlasitosti NVDA a funkcí napájení počítače\nHorké klávesy:\nNVDA+Shift+PageUp Zvýšit hlasitost NVDA\nNVDA+Shift+PageDown Snížit hlasitost NVDA\nAlt+Windows+R Restartovat počítač\nAlt+Windows+S Vypnout počítač"
-		},
-		{
-			"language": "da",
-			"displayName": "VolumePower",
-			"description": "giver hurtig kontrol over din computers NVDA-lydstyrke og strømfunktioner\nGenvejstaster:\nNVDA+Shift+PageUp Øg NVDA-lydstyrken\nNVDA+Shift+PageDown Skru ned for NVDA-lydstyrken\nAlt+Windows+R Genstart computeren\nAlt+Windows+S Sluk computeren"
-		},
-		{
-			"language": "de",
-			"displayName": "VolumePower",
-			"description": "ermöglicht die schnelle Steuerung der NVDA-Lautstärke und der Energiefunktionen Ihres Computers\nTastenkombinationen:\nNVDA+Shift+PageUp NVDA-Lautstärke erhöhen\nNVDA+Shift+PageDown NVDA-Lautstärke verringern\nAlt+Windows+R Computer neu starten\nAlt+Windows+S Computer ausschalten"
-		},
-		{
-			"language": "en",
-			"displayName": "VolumePower",
-			"description": "provides quick control over your computer's NVDA volume and power functions\nHot Keys:\nNVDA+Shift+PageUp Increase NVDA volume\nNVDA+Shift+PageDown Decrease NVDA volume\nAlt+Windows+R Restart computer\nAlt+Windows+S Shutdown computer"
-		},
-		{
-			"language": "es",
-			"displayName": "VolumePower",
-			"description": "proporciona un control rápido sobre el volumen de NVDA y las funciones de energía de tu ordenador\nTeclas calientes:\nNVDA+Shift+PageUp Aumentar el volumen de NVDA\nNVDA+Shift+PageDown Disminuir el volumen de NVDA\nAlt+Windows+R Reiniciar el ordenador\nAlt+Windows+S Apagar el ordenador"
-		},
-		{
-			"language": "fa",
-			"displayName": "VolumePower",
-			"description": "کنترل سریع حجم صدای NVDA و عملکردهای برق رایانه شما را فراهم می کند\nکلیدهای میانبر:\nNVDA+Shift+PageUp افزایش حجم صدای NVDA\nNVDA+Shift+PageDown کاهش حجم صدای NVDA\nAlt+Windows+R راه اندازی مجدد رایانه\nAlt+Windows+S خاموش کردن رایانه"
-		},
-		{
-			"language": "fi",
-			"displayName": "VolumePower",
-			"description": "mahdollistaa tietokoneen NVDA-äänenvoimakkuuden ja virranhallintatoimintojen nopean hallinnan\nPikanäppäimet:\nNVDA+Shift+PageUp Lisää NVDA-äänenvoimakkuutta\nNVDA+Shift+PageDown Vähennä NVDA-äänenvoimakkuutta\nAlt+Windows+R Käynnistä tietokone uudelleen\nAlt+Windows+S Sammuta tietokone"
-		},
-		{
-			"language": "fr",
-			"displayName": "VolumePower",
-			"description": "permet un contrôle rapide du volume de NVDA et des fonctions d'alimentation de votre ordinateur\nTouches de raccourci :\nNVDA+Shift+PageUp Augmenter le volume de NVDA\nNVDA+Shift+PageDown Diminuer le volume de NVDA\nAlt+Windows+R Redémarrer l'ordinateur\nAlt+Windows+S Éteindre l'ordinateur"
-		},
-		{
-			"language": "gl",
-			"displayName": "VolumePower",
-			"description": "ofrece un control rápido sobre o volume de NVDA e as funcións de enerxía do teu ordenador\nTeclas rápidas:\nNVDA+Shift+PageUp Aumentar o volume de NVDA\nNVDA+Shift+PageDown Diminuír o volume de NVDA\nAlt+Windows+R Reiniciar o ordenador\nAlt+Windows+S Apagar o ordenador"
-		},
-		{
-			"language": "he",
-			"displayName": "VolumePower",
-			"description": "מספק שליטה מהירה על עוצמת הקול של NVDA ופונקציות הכיבוי וההפעלה של המחשב שלך\nמקשי קיצור:\nNVDA+Shift+PageUp הגברת עוצמת הקולของ NVDA\nNVDA+Shift+PageDown הנמכת עוצמת הקולของ NVDA\nAlt+Windows+R הפעלה מחדש של המחשב\nAlt+Windows+S כיבוי המחשב"
-		},
-		{
-			"language": "hi",
-			"displayName": "VolumePower",
-			"description": "आपके कंप्यूटर के NVDA वॉल्यूम और पावर फ़ंक्शंस पर त्वरित नियंत्रण प्रदान करता है\nहॉट कीज़:\nNVDA+Shift+PageUp NVDA वॉल्यूम बढ़ाएँ\nNVDA+Shift+PageDown NVDA वॉल्यूम घटाएँ\nAlt+Windows+R कंप्यूटर रीस्टार्ट करें\nAlt+Windows+S कंप्यूटर बंद करें"
-		},
-		{
-			"language": "hr",
-			"displayName": "VolumePower",
-			"description": "omogućuje brzu kontrolu nad glasnoćom NVDA-a i funkcijama napajanja vašeg računala\nVruće tipke:\nNVDA+Shift+PageUp Povećaj glasnoću NVDA-a\nNVDA+Shift+PageDown Smanji glasnoću NVDA-a\nAlt+Windows+R Ponovno pokreni računalo\nAlt+Windows+S Isključi računalo"
-		},
-		{
-			"language": "hu",
-			"displayName": "VolumePower",
-			"description": "gyors vezérlést biztosít a számítógép NVDA hangereje és energiagazdálkodási funkciói felett\nGyorsbillentyűk:\nNVDA+Shift+PageUp NVDA hangerő növelése\nNVDA+Shift+PageDown NVDA hangerő csökkentése\nAlt+Windows+R Számítógép újraindítása\nAlt+Windows+S Számítógép leállítása"
-		},
-		{
-			"language": "id",
-			"displayName": "VolumePower",
-			"description": "memberikan kontrol cepat atas volume NVDA dan fungsi daya komputer Anda\nTombol Cepat:\nNVDA+Shift+PageUp Tingkatkan volume NVDA\nNVDA+Shift+PageDown Kurangi volume NVDA\nAlt+Windows+R Mulai ulang komputer\nAlt+Windows+S Matikan komputer"
-		},
-		{
-			"language": "it",
-			"displayName": "VolumePower",
-			"description": "fornisce un controllo rapido del volume di NVDA e delle funzioni di alimentazione del computer\nTasti di scelta rapida:\nNVDA+Shift+PageUp Aumenta il volume di NVDA\nNVDA+Shift+PageDown Diminuisci il volume di NVDA\nAlt+Windows+R Riavvia il computer\nAlt+Windows+S Spegni il computer"
-		},
-		{
-			"language": "ja",
-			"displayName": "VolumePower",
-			"description": "コンピュータの NVDA ボリュームと電源機能を素早くコントロールできます。\nホットキー:\nNVDA+Shift+PageUp NVDA ボリュームを上げる\nNVDA+Shift+PageDown NVDA ボリュームを下げる\nAlt+Windows+R コンピュータを再起動する\nAlt+Windows+S コンピュータをシャットダウンする"
-		},
-		{
-			"language": "kk",
-			"displayName": "VolumePower",
-			"description": "компьютеріңіздің NVDA дыбыс деңгейін және қуат функцияларын жылдам басқаруды қамтамасыз етеді\nЖедел пернелер:\nNVDA+Shift+PageUp NVDA дыбыс деңгейін арттыру\nNVDA+Shift+PageDown NVDA дыбыс деңгейін төмендету\nAlt+Windows+R Компьютерді қайта іске қосу\nAlt+Windows+S Компьютерді өшіру"
-		},
-		{
-			"language": "ko",
-			"displayName": "VolumePower",
-			"description": "컴퓨터의 NVDA 볼륨 및 전원 기능을 빠르게 제어할 수 있습니다.\n단축키:\nNVDA+Shift+PageUp NVDA 볼륨 높이기\nNVDA+Shift+PageDown NVDA 볼륨 낮추기\nAlt+Windows+R 컴퓨터 다시 시작\nAlt+Windows+S 컴퓨터 종료"
-		},
-		{
-			"language": "lo",
-			"displayName": "VolumePower",
-			"description": "ໃຫ້ການຄວບຄຸມລະດับສຽງ NVDA ແລະຟັງຊັນພະລັງງານຂອງຄອມພິວເຕີຂອງທ່ານຢ່າງວ່ອງໄວ\nປຸ່ມລັດ:\nNVDA+Shift+PageUp ເພີ່ມລະດັບສຽງ NVDA\nNVDA+Shift+PageDown ຫຼຸດລະດັບສຽງ NVDA\nAlt+Windows+R ເລີ່ມລະບົບຄອมພິວເຕີໃໝ່\nAlt+Windows+S ປິດຄອມພິວເຕີ"
-		},
-		{
-			"language": "ms",
-			"displayName": "VolumePower",
-			"description": "memberikan kawalan pantas ke atas kelantangan NVDA dan fungsi kuasa komputer anda\nKekunci Pintas:\nNVDA+Shift+PageUp Tingkatkan kelantangan NVDA\nNVDA+Shift+PageDown Kurangkan kelantangan NVDA\nAlt+Windows+R Mulakan semula komputer\nAlt+Windows+S Matikan komputer"
-		},
-		{
-			"language": "my",
-			"displayName": "VolumePower",
-			"description": "သင်၏ကွန်ပျူတာ၏ NVDA အသံပမာဏနှင့် ပါဝါလုပ်ဆောင်ချက်များကို လျင်မြန်စွာ ထိန်းချုပ်ပေးသည်\nဟော့ကီးများ-\nNVDA+Shift+PageUp NVDA အသံပမာဏကို တိုးမြှင့်ရန်\nNVDA+Shift+PageDown NVDA အသံပမာဏကို လျှော့ချရန်\nAlt+Windows+R ကွန်ပျူတာကို ပြန်လည်စတင်ရန်\nAlt+Windows+S ကွန်ပျူတာကို ပိတ်ရန်"
-		},
-		{
-			"language": "pt",
-			"displayName": "VolumePower",
-			"description": "fornece controlo rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "VolumePower",
-			"description": "fornece controle rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "VolumePower",
-			"description": "fornece controlo rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
-		},
-		{
-			"language": "ro",
-			"displayName": "VolumePower",
-			"description": "oferă control rapid asupra volumului NVDA și funcțiilor de alimentare ale computerului dumneavoastră\nTaste rapide:\nNVDA+Shift+PageUp Crește volumul NVDA\nNVDA+Shift+PageDown Scade volumul NVDA\nAlt+Windows+R Repornește computerul\nAlt+Windows+S Închide computerul"
-		},
-		{
-			"language": "ru",
-			"displayName": "VolumePower",
-			"description": "обеспечивает быстрое управление громкостью NVDA и функциями питания вашего компьютера\nГорячие клавиши:\nNVDA+Shift+PageUp Увеличить громкость NVDA\nNVDA+Shift+PageDown Уменьшить громкость NVDA\nAlt+Windows+R Перезагрузить компьютер\nAlt+Windows+S Выключить компьютер"
-		},
-		{
-			"language": "si",
-			"displayName": "VolumePower",
-			"description": "ඔබේ පරිගණකයේ NVDA ශබ්දය සහ බල ශ්‍රිතයන් කෙරෙහි ඉක්මන් පාලනයක් ලබා දෙයි\nහොට් කී:\nNVDA+Shift+PageUp NVDA ශබ්දය වැඩි කරන්න\nNVDA+Shift+PageDown NVDA ශබ්දය අඩු කරන්න\nAlt+Windows+R පරිගණකය නැවත පණගන්වන්න\nAlt+Windows+S පරිගණකය ක්‍රියා විරහිත කරන්න"
-		},
-		{
-			"language": "sk",
-			"displayName": "VolumePower",
-			"description": "poskytuje rýchle ovládanie hlasitosti NVDA a funkcií napájania vášho počítača\nHorúce klávesy:\nNVDA+Shift+PageUp Zvýšiť hlasitosť NVDA\nNVDA+Shift+PageDown Znížiť hlasitosť NVDA\nAlt+Windows+R Reštartovať počítač\nAlt+Windows+S Vypnúť počítač"
-		},
-		{
-			"language": "ta",
-			"displayName": "VolumePower",
-			"description": "உங்கள் கணினியின் NVDA ஒலி அளவு மற்றும் ஆற்றல் செயல்பாடுகளின் விரைவான கட்டுப்பாட்டை வழங்குகிறது\nவிசைப்பலகை குறுக்குவழிகள்:\nNVDA+Shift+PageUp NVDA ஒலி அளவை அதிகரிக்க\nNVDA+Shift+PageDown NVDA ஒலி அளவைக் குறைக்க\nAlt+Windows+R கணினியை மறுதொடக்கம் செய்ய\nAlt+Windows+S கணினியை அணைக்க"
-		},
-		{
-			"language": "te",
-			"displayName": "VolumePower",
-			"description": "మీ కంప్యూటర్ యొక్క NVDA వాల్యూమ్ మరియు పవర్ ఫంక్షన్‌లపై శీఘ్ర నియంత్రణను అందిస్తుంది\nహాట్ కీలు:\nNVDA+Shift+PageUp NVDA వాల్యూమ్‌ను పెంచండి\nNVDA+Shift+PageDown NVDA వాల్యూమ్‌ను తగ్గించండి\nAlt+Windows+R కంప్యూటర్‌ను పునఃప్రారంభించండి\nAlt+Windows+S కంప్యూటర్‌ను ఆపివేయండి"
-		},
-		{
-			"language": "th",
-			"displayName": "VolumePower",
-			"description": "ช่วยให้ควบคุมระดับเสียง NVDA และฟังก์ชันพลังงานของคอมพิวเตอร์ได้อย่างรวดเร็ว\nปุ่มลัด:\nNVDA+Shift+PageUp เพิ่มระดับเสียง NVDA\nNVDA+Shift+PageDown ลดระดับเสียง NVDA\nAlt+Windows+R รีสตาร์ทคอมพิวเตอร์\nAlt+Windows+S ปิดคอมพิวเตอร์"
-		},
-		{
-			"language": "tk",
-			"displayName": "VolumePower",
-			"description": "kompýuteriňiziň NVDA ses derejesini we güýç funksiýalaryny çalt dolandyrmaga mümkinçilik berýär\nGisgelendirmeler:\nNVDA+Shift+PageUp NVDA sesini ýokarlandyrmak\nNVDA+Shift+PageDown NVDA sesini peseltmek\nAlt+Windows+R Kompýuteri täzeden başlatmak\nAlt+Windows+S Kompýuteri öçürmek"
-		},
-		{
-			"language": "tl",
-			"displayName": "VolumePower",
-			"description": "nagbibigay ng mabilis na kontrol sa volume ng NVDA ng iyong computer at mga function ng power\nMga Hot Key:\nNVDA+Shift+PageUp Taasan ang volume ng NVDA\nNVDA+Shift+PageDown Babaan ang volume ng NVDA\nAlt+Windows+R I-restart ang computer\nAlt+Windows+S I-shutdown ang computer"
-		},
-		{
-			"language": "tr",
-			"displayName": "VolumePower",
-			"description": "bilgisayarınızın NVDA ses seviyesi ve güç işlevleri üzerinde hızlı kontrol sağlar\nKısayol Tuşları:\nNVDA+Shift+PageUp NVDA sesini artır\nNVDA+Shift+PageDown NVDA sesini azalt\nAlt+Windows+R Bilgisayarı yeniden başlat\nAlt+Windows+S Bilgisayarı kapat"
-		},
-		{
-			"language": "uk",
-			"displayName": "VolumePower",
-			"description": "забезпечує швидке керування гучністю NVDA та функціями живлення вашого комп’ютера\nГарячі клавіші:\nNVDA+Shift+PageUp Збільшити гучність NVDA\nNVDA+Shift+PageDown Зменшити гучність NVDA\nAlt+Windows+R Перезавантажити комп’ютер\nAlt+Windows+S Вимкнути комп’ютер"
-		},
-		{
-			"language": "ur",
-			"displayName": "VolumePower",
-			"description": "آپ کے کمپیوٹر کے NVDA والیوم اور پاور فنکشنز پر فوری کنٹرول فراہم کرتا ہے۔\nہاٹ کیز:\nNVDA+Shift+PageUp والیوم بڑھائیں NVDA\nNVDA+Shift+PageDown والیوم کم کریں NVDA\nAlt+Windows+R کمپیوٹر کو ری اسٹาร์ٹ کریں۔\nAlt+Windows+S کمپیوٹر کو بند کریں۔"
-		},
-		{
-			"language": "uz",
-			"displayName": "VolumePower",
-			"description": "kompyuteringizning NVDA ovozi va quvvat funksiyalarini tezkor boshqarish imkonini beradi\nTezkor tugmalar:\nNVDA+Shift+PageUp NVDA ovozini balandlatish\nNVDA+Shift+PageDown NVDA ovozini pasaytirish\nAlt+Windows+R Kompyuterni qayta ishga tushirish\nAlt+Windows+S Kompyuterni o'chirish"
-		},
-		{
-			"language": "vi",
-			"displayName": "VolumePower",
-			"description": "cung cấp khả năng kiểm soát nhanh âm lượng NVDA và các chức năng nguồn của máy tính\nPhím nóng:\nNVDA+Shift+PageUp Tăng âm lượng NVDA\nNVDA+Shift+PageDown Giảm âm lượng NVDA\nAlt+Windows+R Khởi động lại máy tính\nAlt+Windows+S Tắt máy tính"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "VolumePower",
-			"description": "提供对计算机 NVDA 音量和电源功能的快速控制\n快捷键：\nNVDA+Shift+PageUp 调高 NVDA 音量\nNVDA+Shift+PageDown 调低 NVDA 音量\nAlt+Windows+R 重启电脑\nAlt+Windows+S 关闭电脑"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "VolumePower",
-			"description": "提供對電腦 NVDA 音量和電源功能的快速控制\n快速鍵：\nNVDA+Shift+PageUp 調高 NVDA 音量\nNVDA+Shift+PageDown 調低 NVDA 音量\nAlt+Windows+R 重啟電腦\nAlt+Windows+S 關閉電腦"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
-	"scanResults": {
-		"codeQL-warnings": [],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"html": 1,
-						"ini": 44,
-						"md": 1,
-						"mo": 43,
-						"po": 43,
-						"py": 1
-					},
-					"file_types": {
-						"HTML": 1,
-						"unknown": 132
-					},
-					"highest_datetime": "2026-04-30 08:52:30",
-					"lowest_datetime": "2026-01-08 12:03:00",
-					"num_children": 133,
-					"type": "ZIP",
-					"uncompressed_size": 181782
-				},
-				"filecondis": {
-					"dhash": "00303c361c151000",
-					"raw_md5": "4eab444c019f2a44db20b88d0307752b"
-				},
-				"first_submission_date": 1777516363,
-				"last_analysis_date": 1777516363,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260429",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260428",
-						"engine_version": "6.774",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260322",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260429",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260429",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260430",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260322",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260429",
-						"engine_version": "260429-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260429",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260430",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20251216",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260429",
-						"engine_version": "2.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260429",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260429",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260430",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260429",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20251219",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260423",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260429",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260429",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260429",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260429",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260429",
-						"engine_version": "4.0.259",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260429",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260429",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260430",
-						"engine_version": "7.0.30.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260430",
-						"engine_version": "GD:27.44369AVA:64.31139",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260430",
-						"engine_version": "1777510876",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260430",
-						"engine_version": "1.0.244.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260429",
-						"engine_version": "6.4.16.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260429",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260429",
-						"engine_version": "14.49.59351",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260429",
-						"engine_version": "14.49.59351",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260430",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260429",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260429",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260430",
-						"engine_version": "3.1.0.234",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260429",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260430",
-						"engine_version": "1.2.0.14532",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260429",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260430",
-						"engine_version": "1.1.26030.3008",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260429",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260430",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260429",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260429",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260429",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260427",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "timeout",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260429",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260429",
-						"engine_version": "3.4.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "timeout",
-						"engine_name": "Symantec",
-						"engine_update": "20260429",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260423",
-						"engine_version": "2026-04-23.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260430",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260331",
-						"engine_version": "4.0.11.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260429",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260430",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260430",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260430",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260429",
-						"engine_version": "5.6.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260429",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260430",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260429",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260429",
-						"engine_version": "9.5.1197",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260429",
-						"engine_version": "38606",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260430",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260429",
-						"engine_version": "2.0.0.5591",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260429",
-						"engine_version": "6.24-114820581",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260429",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260429",
-						"engine_version": "7f798c6:7f798c6:5365e55:5365e55",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260430",
-						"engine_version": "v0.1.4",
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 2,
-					"type-unsupported": 9,
-					"undetected": 64
-				},
-				"last_modification_date": 1777516476,
-				"last_submission_date": 1777516363,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "XPI",
-				"md5": "478760f5e08e067a14988f770ad5e441",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "9a1c050e96cbd6bc5e80e1d847aa0aa292118c72",
-				"sha256": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
-				"size": 96532,
-				"ssdeep": "1536:nfUDhA3QVh1FE569zroZmgDCEyWLHGh7OKYwBLcxm7IqMnnuJmSUCtc3KzrGjIgG:fUDOEy3m4jyWLHY7ZYwLsm7IqqnukGt7",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1B9939D618B1F1047E49B53BF7A951862E66C0340F15FEB8E0A9695C78C993DD0FCF88A",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "7a790fd5b8c545338273a06b5456bddd"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7240"
+  "addonId": "VolumePower",
+  "displayName": "VolumePower",
+  "URL": "https://github.com/chaichaimee/VolumePower/releases/download/2026.5.1/VolumePower-v2026.5.1.nvda-addon",
+  "description": "provides quick control over your computer's NVDA volume and power functions\nHot Keys:\nNVDA+Shift+PageUp Increase NVDA volume\nNVDA+Shift+PageDown Decrease NVDA volume\nAlt+Windows+R Restart computer\nAlt+Windows+S Shutdown computer",
+  "sha256": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
+  "addonVersionName": "2026.5.1",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 5,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/VolumePower",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/VolumePower",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1777516334000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "VolumePower",
+      "description": "يوفر تحكمًا سريعًا في مستوى صوت NVDA ووظائف الطاقة بجهاز الكمبيوتر الخاص بك\nمفاتيح الاختصار:\nNVDA+Shift+PageUp زيادة مستوى صوت NVDA\nNVDA+Shift+PageDown خفض مستوى صوت NVDA\nAlt+Windows+R إعادة تشغيل الكمبيوتر\nAlt+Windows+S إيقاف تشغيل الكمبيوتر"
+    },
+    {
+      "language": "bg",
+      "displayName": "VolumePower",
+      "description": "осигурява бърз контрол върху силата на звука на NVDA и функциите за захранване на вашия компютър\nГорещи клавиши:\nNVDA+Shift+PageUp Увеличаване на силата на звука на NVDA\nNVDA+Shift+PageDown Намаляване на силата на звука на NVDA\nAlt+Windows+R Рестартиране на компютъра\nAlt+Windows+S Изключване на компютъра"
+    },
+    {
+      "language": "bn",
+      "displayName": "VolumePower",
+      "description": "আপনার কম্পিউটারের NVDA ভলিউম এবং পাওয়ার ফাংশনগুলির দ্রুত নিয়ন্ত্রণ প্রদান করে\nহট কী:\nNVDA+Shift+PageUp NVDA ভলিউম বাড়ান\nNVDA+Shift+PageDown NVDA ভলিউম কমান\nAlt+Windows+R কম্পিউটার রিস্টার্ট করুন\nAlt+Windows+S কম্পিউটার শাটডাউন করুন"
+    },
+    {
+      "language": "cs",
+      "displayName": "VolumePower",
+      "description": "poskytuje rychlé ovládání hlasitosti NVDA a funkcí napájení počítače\nHorké klávesy:\nNVDA+Shift+PageUp Zvýšit hlasitost NVDA\nNVDA+Shift+PageDown Snížit hlasitost NVDA\nAlt+Windows+R Restartovat počítač\nAlt+Windows+S Vypnout počítač"
+    },
+    {
+      "language": "da",
+      "displayName": "VolumePower",
+      "description": "giver hurtig kontrol over din computers NVDA-lydstyrke og strømfunktioner\nGenvejstaster:\nNVDA+Shift+PageUp Øg NVDA-lydstyrken\nNVDA+Shift+PageDown Skru ned for NVDA-lydstyrken\nAlt+Windows+R Genstart computeren\nAlt+Windows+S Sluk computeren"
+    },
+    {
+      "language": "de",
+      "displayName": "VolumePower",
+      "description": "ermöglicht die schnelle Steuerung der NVDA-Lautstärke und der Energiefunktionen Ihres Computers\nTastenkombinationen:\nNVDA+Shift+PageUp NVDA-Lautstärke erhöhen\nNVDA+Shift+PageDown NVDA-Lautstärke verringern\nAlt+Windows+R Computer neu starten\nAlt+Windows+S Computer ausschalten"
+    },
+    {
+      "language": "en",
+      "displayName": "VolumePower",
+      "description": "provides quick control over your computer's NVDA volume and power functions\nHot Keys:\nNVDA+Shift+PageUp Increase NVDA volume\nNVDA+Shift+PageDown Decrease NVDA volume\nAlt+Windows+R Restart computer\nAlt+Windows+S Shutdown computer"
+    },
+    {
+      "language": "es",
+      "displayName": "VolumePower",
+      "description": "proporciona un control rápido sobre el volumen de NVDA y las funciones de energía de tu ordenador\nTeclas calientes:\nNVDA+Shift+PageUp Aumentar el volumen de NVDA\nNVDA+Shift+PageDown Disminuir el volumen de NVDA\nAlt+Windows+R Reiniciar el ordenador\nAlt+Windows+S Apagar el ordenador"
+    },
+    {
+      "language": "fa",
+      "displayName": "VolumePower",
+      "description": "کنترل سریع حجم صدای NVDA و عملکردهای برق رایانه شما را فراهم می کند\nکلیدهای میانبر:\nNVDA+Shift+PageUp افزایش حجم صدای NVDA\nNVDA+Shift+PageDown کاهش حجم صدای NVDA\nAlt+Windows+R راه اندازی مجدد رایانه\nAlt+Windows+S خاموش کردن رایانه"
+    },
+    {
+      "language": "fi",
+      "displayName": "VolumePower",
+      "description": "mahdollistaa tietokoneen NVDA-äänenvoimakkuuden ja virranhallintatoimintojen nopean hallinnan\nPikanäppäimet:\nNVDA+Shift+PageUp Lisää NVDA-äänenvoimakkuutta\nNVDA+Shift+PageDown Vähennä NVDA-äänenvoimakkuutta\nAlt+Windows+R Käynnistä tietokone uudelleen\nAlt+Windows+S Sammuta tietokone"
+    },
+    {
+      "language": "fr",
+      "displayName": "VolumePower",
+      "description": "permet un contrôle rapide du volume de NVDA et des fonctions d'alimentation de votre ordinateur\nTouches de raccourci :\nNVDA+Shift+PageUp Augmenter le volume de NVDA\nNVDA+Shift+PageDown Diminuer le volume de NVDA\nAlt+Windows+R Redémarrer l'ordinateur\nAlt+Windows+S Éteindre l'ordinateur"
+    },
+    {
+      "language": "gl",
+      "displayName": "VolumePower",
+      "description": "ofrece un control rápido sobre o volume de NVDA e as funcións de enerxía do teu ordenador\nTeclas rápidas:\nNVDA+Shift+PageUp Aumentar o volume de NVDA\nNVDA+Shift+PageDown Diminuír o volume de NVDA\nAlt+Windows+R Reiniciar o ordenador\nAlt+Windows+S Apagar o ordenador"
+    },
+    {
+      "language": "he",
+      "displayName": "VolumePower",
+      "description": "מספק שליטה מהירה על עוצמת הקול של NVDA ופונקציות הכיבוי וההפעלה של המחשב שלך\nמקשי קיצור:\nNVDA+Shift+PageUp הגברת עוצמת הקולของ NVDA\nNVDA+Shift+PageDown הנמכת עוצמת הקולของ NVDA\nAlt+Windows+R הפעלה מחדש של המחשב\nAlt+Windows+S כיבוי המחשב"
+    },
+    {
+      "language": "hi",
+      "displayName": "VolumePower",
+      "description": "आपके कंप्यूटर के NVDA वॉल्यूम और पावर फ़ंक्शंस पर त्वरित नियंत्रण प्रदान करता है\nहॉट कीज़:\nNVDA+Shift+PageUp NVDA वॉल्यूम बढ़ाएँ\nNVDA+Shift+PageDown NVDA वॉल्यूम घटाएँ\nAlt+Windows+R कंप्यूटर रीस्टार्ट करें\nAlt+Windows+S कंप्यूटर बंद करें"
+    },
+    {
+      "language": "hr",
+      "displayName": "VolumePower",
+      "description": "omogućuje brzu kontrolu nad glasnoćom NVDA-a i funkcijama napajanja vašeg računala\nVruće tipke:\nNVDA+Shift+PageUp Povećaj glasnoću NVDA-a\nNVDA+Shift+PageDown Smanji glasnoću NVDA-a\nAlt+Windows+R Ponovno pokreni računalo\nAlt+Windows+S Isključi računalo"
+    },
+    {
+      "language": "hu",
+      "displayName": "VolumePower",
+      "description": "gyors vezérlést biztosít a számítógép NVDA hangereje és energiagazdálkodási funkciói felett\nGyorsbillentyűk:\nNVDA+Shift+PageUp NVDA hangerő növelése\nNVDA+Shift+PageDown NVDA hangerő csökkentése\nAlt+Windows+R Számítógép újraindítása\nAlt+Windows+S Számítógép leállítása"
+    },
+    {
+      "language": "id",
+      "displayName": "VolumePower",
+      "description": "memberikan kontrol cepat atas volume NVDA dan fungsi daya komputer Anda\nTombol Cepat:\nNVDA+Shift+PageUp Tingkatkan volume NVDA\nNVDA+Shift+PageDown Kurangi volume NVDA\nAlt+Windows+R Mulai ulang komputer\nAlt+Windows+S Matikan komputer"
+    },
+    {
+      "language": "it",
+      "displayName": "VolumePower",
+      "description": "fornisce un controllo rapido del volume di NVDA e delle funzioni di alimentazione del computer\nTasti di scelta rapida:\nNVDA+Shift+PageUp Aumenta il volume di NVDA\nNVDA+Shift+PageDown Diminuisci il volume di NVDA\nAlt+Windows+R Riavvia il computer\nAlt+Windows+S Spegni il computer"
+    },
+    {
+      "language": "ja",
+      "displayName": "VolumePower",
+      "description": "コンピュータの NVDA ボリュームと電源機能を素早くコントロールできます。\nホットキー:\nNVDA+Shift+PageUp NVDA ボリュームを上げる\nNVDA+Shift+PageDown NVDA ボリュームを下げる\nAlt+Windows+R コンピュータを再起動する\nAlt+Windows+S コンピュータをシャットダウンする"
+    },
+    {
+      "language": "kk",
+      "displayName": "VolumePower",
+      "description": "компьютеріңіздің NVDA дыбыс деңгейін және қуат функцияларын жылдам басқаруды қамтамасыз етеді\nЖедел пернелер:\nNVDA+Shift+PageUp NVDA дыбыс деңгейін арттыру\nNVDA+Shift+PageDown NVDA дыбыс деңгейін төмендету\nAlt+Windows+R Компьютерді қайта іске қосу\nAlt+Windows+S Компьютерді өшіру"
+    },
+    {
+      "language": "ko",
+      "displayName": "VolumePower",
+      "description": "컴퓨터의 NVDA 볼륨 및 전원 기능을 빠르게 제어할 수 있습니다.\n단축키:\nNVDA+Shift+PageUp NVDA 볼륨 높이기\nNVDA+Shift+PageDown NVDA 볼륨 낮추기\nAlt+Windows+R 컴퓨터 다시 시작\nAlt+Windows+S 컴퓨터 종료"
+    },
+    {
+      "language": "lo",
+      "displayName": "VolumePower",
+      "description": "ໃຫ້ການຄວບຄຸມລະດับສຽງ NVDA ແລະຟັງຊັນພະລັງງານຂອງຄອມພິວເຕີຂອງທ່ານຢ່າງວ່ອງໄວ\nປຸ່ມລັດ:\nNVDA+Shift+PageUp ເພີ່ມລະດັບສຽງ NVDA\nNVDA+Shift+PageDown ຫຼຸດລະດັບສຽງ NVDA\nAlt+Windows+R ເລີ່ມລະບົບຄອมພິວເຕີໃໝ່\nAlt+Windows+S ປິດຄອມພິວເຕີ"
+    },
+    {
+      "language": "ms",
+      "displayName": "VolumePower",
+      "description": "memberikan kawalan pantas ke atas kelantangan NVDA dan fungsi kuasa komputer anda\nKekunci Pintas:\nNVDA+Shift+PageUp Tingkatkan kelantangan NVDA\nNVDA+Shift+PageDown Kurangkan kelantangan NVDA\nAlt+Windows+R Mulakan semula komputer\nAlt+Windows+S Matikan komputer"
+    },
+    {
+      "language": "my",
+      "displayName": "VolumePower",
+      "description": "သင်၏ကွန်ပျူတာ၏ NVDA အသံပမာဏနှင့် ပါဝါလုပ်ဆောင်ချက်များကို လျင်မြန်စွာ ထိန်းချုပ်ပေးသည်\nဟော့ကီးများ-\nNVDA+Shift+PageUp NVDA အသံပမာဏကို တိုးမြှင့်ရန်\nNVDA+Shift+PageDown NVDA အသံပမာဏကို လျှော့ချရန်\nAlt+Windows+R ကွန်ပျူတာကို ပြန်လည်စတင်ရန်\nAlt+Windows+S ကွန်ပျူတာကို ပိတ်ရန်"
+    },
+    {
+      "language": "pt",
+      "displayName": "VolumePower",
+      "description": "fornece controlo rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "VolumePower",
+      "description": "fornece controle rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "VolumePower",
+      "description": "fornece controlo rápido sobre o volume do NVDA e as funções de energia do seu computador\nTeclas de Atalho:\nNVDA+Shift+PageUp Aumentar o volume do NVDA\nNVDA+Shift+PageDown Diminuir o volume do NVDA\nAlt+Windows+R Reiniciar o computador\nAlt+Windows+S Desligar o computador"
+    },
+    {
+      "language": "ro",
+      "displayName": "VolumePower",
+      "description": "oferă control rapid asupra volumului NVDA și funcțiilor de alimentare ale computerului dumneavoastră\nTaste rapide:\nNVDA+Shift+PageUp Crește volumul NVDA\nNVDA+Shift+PageDown Scade volumul NVDA\nAlt+Windows+R Repornește computerul\nAlt+Windows+S Închide computerul"
+    },
+    {
+      "language": "ru",
+      "displayName": "VolumePower",
+      "description": "обеспечивает быстрое управление громкостью NVDA и функциями питания вашего компьютера\nГорячие клавиши:\nNVDA+Shift+PageUp Увеличить громкость NVDA\nNVDA+Shift+PageDown Уменьшить громкость NVDA\nAlt+Windows+R Перезагрузить компьютер\nAlt+Windows+S Выключить компьютер"
+    },
+    {
+      "language": "si",
+      "displayName": "VolumePower",
+      "description": "ඔබේ පරිගණකයේ NVDA ශබ්දය සහ බල ශ්‍රිතයන් කෙරෙහි ඉක්මන් පාලනයක් ලබා දෙයි\nහොට් කී:\nNVDA+Shift+PageUp NVDA ශබ්දය වැඩි කරන්න\nNVDA+Shift+PageDown NVDA ශබ්දය අඩු කරන්න\nAlt+Windows+R පරිගණකය නැවත පණගන්වන්න\nAlt+Windows+S පරිගණකය ක්‍රියා විරහිත කරන්න"
+    },
+    {
+      "language": "sk",
+      "displayName": "VolumePower",
+      "description": "poskytuje rýchle ovládanie hlasitosti NVDA a funkcií napájania vášho počítača\nHorúce klávesy:\nNVDA+Shift+PageUp Zvýšiť hlasitosť NVDA\nNVDA+Shift+PageDown Znížiť hlasitosť NVDA\nAlt+Windows+R Reštartovať počítač\nAlt+Windows+S Vypnúť počítač"
+    },
+    {
+      "language": "ta",
+      "displayName": "VolumePower",
+      "description": "உங்கள் கணினியின் NVDA ஒலி அளவு மற்றும் ஆற்றல் செயல்பாடுகளின் விரைவான கட்டுப்பாட்டை வழங்குகிறது\nவிசைப்பலகை குறுக்குவழிகள்:\nNVDA+Shift+PageUp NVDA ஒலி அளவை அதிகரிக்க\nNVDA+Shift+PageDown NVDA ஒலி அளவைக் குறைக்க\nAlt+Windows+R கணினியை மறுதொடக்கம் செய்ய\nAlt+Windows+S கணினியை அணைக்க"
+    },
+    {
+      "language": "te",
+      "displayName": "VolumePower",
+      "description": "మీ కంప్యూటర్ యొక్క NVDA వాల్యూమ్ మరియు పవర్ ఫంక్షన్‌లపై శీఘ్ర నియంత్రణను అందిస్తుంది\nహాట్ కీలు:\nNVDA+Shift+PageUp NVDA వాల్యూమ్‌ను పెంచండి\nNVDA+Shift+PageDown NVDA వాల్యూమ్‌ను తగ్గించండి\nAlt+Windows+R కంప్యూటర్‌ను పునఃప్రారంభించండి\nAlt+Windows+S కంప్యూటర్‌ను ఆపివేయండి"
+    },
+    {
+      "language": "th",
+      "displayName": "VolumePower",
+      "description": "ช่วยให้ควบคุมระดับเสียง NVDA และฟังก์ชันพลังงานของคอมพิวเตอร์ได้อย่างรวดเร็ว\nปุ่มลัด:\nNVDA+Shift+PageUp เพิ่มระดับเสียง NVDA\nNVDA+Shift+PageDown ลดระดับเสียง NVDA\nAlt+Windows+R รีสตาร์ทคอมพิวเตอร์\nAlt+Windows+S ปิดคอมพิวเตอร์"
+    },
+    {
+      "language": "tk",
+      "displayName": "VolumePower",
+      "description": "kompýuteriňiziň NVDA ses derejesini we güýç funksiýalaryny çalt dolandyrmaga mümkinçilik berýär\nGisgelendirmeler:\nNVDA+Shift+PageUp NVDA sesini ýokarlandyrmak\nNVDA+Shift+PageDown NVDA sesini peseltmek\nAlt+Windows+R Kompýuteri täzeden başlatmak\nAlt+Windows+S Kompýuteri öçürmek"
+    },
+    {
+      "language": "tl",
+      "displayName": "VolumePower",
+      "description": "nagbibigay ng mabilis na kontrol sa volume ng NVDA ng iyong computer at mga function ng power\nMga Hot Key:\nNVDA+Shift+PageUp Taasan ang volume ng NVDA\nNVDA+Shift+PageDown Babaan ang volume ng NVDA\nAlt+Windows+R I-restart ang computer\nAlt+Windows+S I-shutdown ang computer"
+    },
+    {
+      "language": "tr",
+      "displayName": "VolumePower",
+      "description": "bilgisayarınızın NVDA ses seviyesi ve güç işlevleri üzerinde hızlı kontrol sağlar\nKısayol Tuşları:\nNVDA+Shift+PageUp NVDA sesini artır\nNVDA+Shift+PageDown NVDA sesini azalt\nAlt+Windows+R Bilgisayarı yeniden başlat\nAlt+Windows+S Bilgisayarı kapat"
+    },
+    {
+      "language": "uk",
+      "displayName": "VolumePower",
+      "description": "забезпечує швидке керування гучністю NVDA та функціями живлення вашого комп’ютера\nГарячі клавіші:\nNVDA+Shift+PageUp Збільшити гучність NVDA\nNVDA+Shift+PageDown Зменшити гучність NVDA\nAlt+Windows+R Перезавантажити комп’ютер\nAlt+Windows+S Вимкнути комп’ютер"
+    },
+    {
+      "language": "ur",
+      "displayName": "VolumePower",
+      "description": "آپ کے کمپیوٹر کے NVDA والیوم اور پاور فنکشنز پر فوری کنٹرول فراہم کرتا ہے۔\nہاٹ کیز:\nNVDA+Shift+PageUp والیوم بڑھائیں NVDA\nNVDA+Shift+PageDown والیوم کم کریں NVDA\nAlt+Windows+R کمپیوٹر کو ری اسٹาร์ٹ کریں۔\nAlt+Windows+S کمپیوٹر کو بند کریں۔"
+    },
+    {
+      "language": "uz",
+      "displayName": "VolumePower",
+      "description": "kompyuteringizning NVDA ovozi va quvvat funksiyalarini tezkor boshqarish imkonini beradi\nTezkor tugmalar:\nNVDA+Shift+PageUp NVDA ovozini balandlatish\nNVDA+Shift+PageDown NVDA ovozini pasaytirish\nAlt+Windows+R Kompyuterni qayta ishga tushirish\nAlt+Windows+S Kompyuterni o'chirish"
+    },
+    {
+      "language": "vi",
+      "displayName": "VolumePower",
+      "description": "cung cấp khả năng kiểm soát nhanh âm lượng NVDA và các chức năng nguồn của máy tính\nPhím nóng:\nNVDA+Shift+PageUp Tăng âm lượng NVDA\nNVDA+Shift+PageDown Giảm âm lượng NVDA\nAlt+Windows+R Khởi động lại máy tính\nAlt+Windows+S Tắt máy tính"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "VolumePower",
+      "description": "提供对计算机 NVDA 音量和电源功能的快速控制\n快捷键：\nNVDA+Shift+PageUp 调高 NVDA 音量\nNVDA+Shift+PageDown 调低 NVDA 音量\nAlt+Windows+R 重启电脑\nAlt+Windows+S 关闭电脑"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "VolumePower",
+      "description": "提供對電腦 NVDA 音量和電源功能的快速控制\n快速鍵：\nNVDA+Shift+PageUp 調高 NVDA 音量\nNVDA+Shift+PageDown 調低 NVDA 音量\nAlt+Windows+R 重啟電腦\nAlt+Windows+S 關閉電腦"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
+  "scanResults": {
+    "codeQL-warnings": [],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "html": 1,
+            "ini": 44,
+            "md": 1,
+            "mo": 43,
+            "po": 43,
+            "py": 1
+          },
+          "file_types": {
+            "HTML": 1,
+            "unknown": 132
+          },
+          "highest_datetime": "2026-04-30 08:52:30",
+          "lowest_datetime": "2026-01-08 12:03:00",
+          "num_children": 133,
+          "type": "ZIP",
+          "uncompressed_size": 181782
+        },
+        "filecondis": {
+          "dhash": "00303c361c151000",
+          "raw_md5": "4eab444c019f2a44db20b88d0307752b"
+        },
+        "first_submission_date": 1777516363,
+        "last_analysis_date": 1777516363,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260429",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260428",
+            "engine_version": "6.774",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260322",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260429",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260429",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260430",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260322",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260429",
+            "engine_version": "260429-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260429",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260430",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20251216",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260429",
+            "engine_version": "2.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260429",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260429",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260430",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260429",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20251219",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260423",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260429",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260429",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260429",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260429",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260429",
+            "engine_version": "4.0.259",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260429",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260429",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260430",
+            "engine_version": "7.0.30.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260430",
+            "engine_version": "GD:27.44369AVA:64.31139",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260430",
+            "engine_version": "1777510876",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260430",
+            "engine_version": "1.0.244.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260429",
+            "engine_version": "6.4.16.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260429",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260429",
+            "engine_version": "14.49.59351",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260429",
+            "engine_version": "14.49.59351",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260430",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260429",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260429",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260430",
+            "engine_version": "3.1.0.234",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260429",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260430",
+            "engine_version": "1.2.0.14532",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260429",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260430",
+            "engine_version": "1.1.26030.3008",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260429",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260430",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260429",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260429",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260429",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260427",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "timeout",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260429",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260429",
+            "engine_version": "3.4.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "timeout",
+            "engine_name": "Symantec",
+            "engine_update": "20260429",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260423",
+            "engine_version": "2026-04-23.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260430",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260331",
+            "engine_version": "4.0.11.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260429",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260430",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260430",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260430",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260429",
+            "engine_version": "5.6.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260429",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260430",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260429",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260429",
+            "engine_version": "9.5.1197",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260429",
+            "engine_version": "38606",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260430",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260429",
+            "engine_version": "2.0.0.5591",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260429",
+            "engine_version": "6.24-114820581",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260429",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260429",
+            "engine_version": "7f798c6:7f798c6:5365e55:5365e55",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260430",
+            "engine_version": "v0.1.4",
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 2,
+          "type-unsupported": 9,
+          "undetected": 64
+        },
+        "last_modification_date": 1777516476,
+        "last_submission_date": 1777516363,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "XPI",
+        "md5": "478760f5e08e067a14988f770ad5e441",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "9a1c050e96cbd6bc5e80e1d847aa0aa292118c72",
+        "sha256": "85d52191a303394ad047a5a09041d4cb8f5fdce0fd5b2c0333f70f5b3d33afd0",
+        "size": 96532,
+        "ssdeep": "1536:nfUDhA3QVh1FE569zroZmgDCEyWLHGh7OKYwBLcxm7IqMnnuJmSUCtc3KzrGjIgG:fUDOEy3m4jyWLHY7ZYwLsm7IqqnukGt7",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1B9939D618B1F1047E49B53BF7A951862E66C0340F15FEB8E0A9695C78C993DD0FCF88A",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "7a790fd5b8c545338273a06b5456bddd"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7240"
 }

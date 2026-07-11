@@ -1,82 +1,82 @@
 {
-	"addonId": "leanCalendar",
-	"displayName": "leanCalendar",
-	"URL": "https://github.com/cary-rowen/leanCalendar/releases/download/v0.2.2/leanCalendar-0.2.2.nvda-addon",
-	"description": "Reports Chinese lunar date, solar terms, Gregorian date and time details, and an interactive calendar query dialog.",
-	"sha256": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
-	"addonVersionName": "0.2.2",
-	"addonVersionNumber": {
-		"major": 0,
-		"minor": 2,
-		"patch": 2
-	},
-	"minNVDAVersion": {
-		"major": 2025,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Cary-rowen <manchen_0528@outlook.com>",
-	"sourceURL": "https://github.com/cary-rowen/leanCalendar",
-	"license": "GPL v2",
-	"homepage": "https://github.com/cary-rowen/leanCalendar",
-	"changelog": "### 0.2.2\n\n* Fixed next solar term countdowns in the detailed lunar report and query results so intermediate solar terms are no longer skipped.\n* Streamlined the brief lunar report by removing repeated lunar hour wording when the four pillars already include the hour pillar.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1781397231000,
-	"translations": [
-		{
-			"language": "zh",
-			"displayName": "简易万年历",
-			"description": "读出农历日期、节气、公历日期和时间详情，并提供可交互的万年历查询对话框。",
-			"changelog": "### 0.2.2\n\n* 修复详细农历播报和查询结果中的下个节气倒计时，避免跳过中间节气。\n* 简化简要农历播报；当四柱已包含时柱时，不再重复播报时辰。"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
-				"_type": "file",
-				"filecondis": {
-					"dhash": "0000001c0d0e0800",
-					"raw_md5": "0eb4ba143caabed8576c439bbd207faa"
-				},
-				"first_submission_date": 1781397503,
-				"last_analysis_results": {},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
-				},
-				"last_modification_date": 1781397557,
-				"last_submission_date": 1781397503,
-				"md5": "c144c7757953ad7c156cae0ca05b0dee",
-				"names": [],
-				"reputation": 0,
-				"sha1": "0d6357db6dcaa25f191e873991a80ee9606fbe64",
-				"sha256": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
-				"size": 140379,
-				"tags": [],
-				"times_submitted": 1,
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8726"
+  "addonId": "leanCalendar",
+  "displayName": "leanCalendar",
+  "URL": "https://github.com/cary-rowen/leanCalendar/releases/download/v0.2.2/leanCalendar-0.2.2.nvda-addon",
+  "description": "Reports Chinese lunar date, solar terms, Gregorian date and time details, and an interactive calendar query dialog.",
+  "sha256": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
+  "addonVersionName": "0.2.2",
+  "addonVersionNumber": {
+    "major": 0,
+    "minor": 2,
+    "patch": 2
+  },
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Cary-rowen <manchen_0528@outlook.com>",
+  "sourceURL": "https://github.com/cary-rowen/leanCalendar",
+  "license": "GPL v2",
+  "homepage": "https://github.com/cary-rowen/leanCalendar",
+  "changelog": "### 0.2.2\n\n* Fixed next solar term countdowns in the detailed lunar report and query results so intermediate solar terms are no longer skipped.\n* Streamlined the brief lunar report by removing repeated lunar hour wording when the four pillars already include the hour pillar.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1781397231000,
+  "translations": [
+    {
+      "language": "zh",
+      "displayName": "简易万年历",
+      "description": "读出农历日期、节气、公历日期和时间详情，并提供可交互的万年历查询对话框。",
+      "changelog": "### 0.2.2\n\n* 修复详细农历播报和查询结果中的下个节气倒计时，避免跳过中间节气。\n* 简化简要农历播报；当四柱已包含时柱时，不再重复播报时辰。"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
+        "_type": "file",
+        "filecondis": {
+          "dhash": "0000001c0d0e0800",
+          "raw_md5": "0eb4ba143caabed8576c439bbd207faa"
+        },
+        "first_submission_date": 1781397503,
+        "last_analysis_results": {},
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 0,
+          "undetected": 0
+        },
+        "last_modification_date": 1781397557,
+        "last_submission_date": 1781397503,
+        "md5": "c144c7757953ad7c156cae0ca05b0dee",
+        "names": [],
+        "reputation": 0,
+        "sha1": "0d6357db6dcaa25f191e873991a80ee9606fbe64",
+        "sha256": "5b7574a9f84738adf5fff1d34adf4d62336cadc2ea99b5a05888e3865243bc6d",
+        "size": 140379,
+        "tags": [],
+        "times_submitted": 1,
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "type_description": "unknown",
+        "type_tags": [],
+        "unique_sources": 1
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8726"
 }

@@ -1,808 +1,808 @@
 {
-	"addonId": "brailleEssentials",
-	"displayName": "Braille Essentials",
-	"URL": "https://github.com/josephsl/brailleEssentials/releases/download/26.07/brailleEssentials-26.07.nvda-addon",
-	"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-	"sha256": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
-	"addonVersionName": "26.07",
-	"addonVersionNumber": {
-		"major": 26,
-		"minor": 7,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2025,
-		"minor": 3,
-		"patch": 3
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "josephsl",
-	"sourceURL": "https://github.com/josephsl/brailleEssentials",
-	"license": "GPL v2",
-	"homepage": "https://github.com/josephsl/brailleEssentials",
-	"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1783689863000,
-	"translations": [
-		{
-			"language": "he",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "ar",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "pt",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "tr",
-			"displayName": "Braille Essentials",
-			"description": "Bu eklenti, Braille desteğine güvenen NVDA kullanıcıları için temel özellikler sağlar. Braille Extender eklentisinden türetilen aşağıdaki özellikler mevcuttur:\n\n* İki favori Braille ekranını kısayollarla yeniden yükleme.\n* PuTTY, Powershell, bash, cmd gibi uçbirim (terminal) rollerinde inceleme imlecinin otomatik olarak kilitlenmesi/bağlanması.\n* Otomatik kaydırma.\n* Birkaç giriş/çıkış Braille tablosu arasında geçiş yapma.\n* Metni, nokta 7, nokta 8 veya her ikisi aracılığıyla özel niteliklerle işaretleme.\n* Aynı anda iki çıktı Braille tablosunu kullanma.\n* Sekme (tab) işaretlerini boşluk olarak gösterme.\n* İleri kaydırma ve geri kaydırma düğmelerini tersine çevirme.\n* Metin kaydırma sırasında, inceleme modunda, odak modunda veya her ikisinde de mevcut satırı seslendirme.\n* Metni Unicode Braille'e kolayca dönüştürme ve tersini yapma. Örneğin: z <--> ⠵.\n* Hücre açıklamasını Unicode Braille'e dönüştürme ve tersini yapma. Örneğin: 123 <--> ⠇.\n* Braille klavyesini kilitleme.\n* Bir hareketle (kısayol tuşu/komutla) bir uygulamayı/URL'yi başlatma.\n* Braille sözlükleri.\n* Braille klavyesinden tek elle yazma.\n* Braille tablolarında tanımlanmamış karakterleri (emojiler dahil) alternatif gösterimler kullanarak görüntüleme.\n* Braille klavyesinden herhangi bir karakteri (emojiler dahil) girme.\n* Metin kaydırma sırasında boş satırları atlama.\n* Konuşma Geçmişi Modu.\n\nVe çok daha fazlası.\n\nBazı Braille ekranları için, aşağıdaki işlevleri sağlamak üzere Braille ekranı komutlarını genişletir:\n\n* İşlev tuşları, multimedya tuşları, hızlı dolaşım vb. dahil olmak üzere eksiksiz hareket haritaları sunma.\n* Değiştirici tuşları (Ctrl, Shift vb.) simüle etme ve böylece herhangi bir klavye kısayolunu kullanabilme.\n* Nokta 7 ve 8'i, enter ve backspace tuşlarını girme olasılığına ilişkin çeşitli klavye yapılandırmaları sunma.\n* Bir rotor (döndürücü) aracılığıyla eylemler ve hızlı dolaşım ekleme",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "uk",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "ru",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "da",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "it",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "pl",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "de",
-			"displayName": "Braille-Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "es",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "hr",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "fa",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		},
-		{
-			"language": "fr",
-			"displayName": "Braille Essentials",
-			"description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
-			"changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 1,
-						"ctb": 1,
-						"ini": 30,
-						"mo": 16,
-						"po": 16,
-						"py": 30,
-						"wav": 1
-					},
-					"file_types": {
-						"script": 1,
-						"unknown": 94
-					},
-					"highest_datetime": "2026-07-10 07:19:26",
-					"lowest_datetime": "2026-07-05 11:18:46",
-					"num_children": 95,
-					"type": "ZIP",
-					"uncompressed_size": 2468174
-				},
-				"contenthash": "d875174061b0f04adc59de646923a66f",
-				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "27bb9e9be35808360d4c7fd1f684a030"
-				},
-				"first_submission_date": 1783689867,
-				"last_analysis_date": 1783689867,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260710",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260710",
-						"engine_version": "6.797",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260710",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260710",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260710",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260710",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260710",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260709",
-						"engine_version": "260709-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260710",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260710",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260710",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260709",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260710",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260710",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260710",
-						"engine_version": "1.5.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260709",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260710",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260710",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260710",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260708",
-						"engine_version": "4.0.271",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260710",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260710",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260710",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260710",
-						"engine_version": "GD:27.45215AVA:64.31557",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260710",
-						"engine_version": "1783681282",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260710",
-						"engine_version": "1.0.250.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260710",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260710",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260710",
-						"engine_version": "14.61.60094",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260710",
-						"engine_version": "14.61.60095",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260710",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260710",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260710",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260710",
-						"engine_version": "3.1.0.246",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260710",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260710",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260710",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260710",
-						"engine_version": "1.1.26060.3008",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260710",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260710",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260710",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260710",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260709",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260710",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260623",
-						"engine_version": "7.7.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260709",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260710",
-						"engine_version": "3.6.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260710",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260710",
-						"engine_version": "2026-07-10.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260710",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260708",
-						"engine_version": "4.0.14.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260709",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260710",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260710",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260710",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260710",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260710",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260710",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260710",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260710",
-						"engine_version": "9.5.1247",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260710",
-						"engine_version": "38797",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260710",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260710",
-						"engine_version": "2.0.0.5639",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260710",
-						"engine_version": "6.26-117392089",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260710",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260709",
-						"engine_version": "cb28bb3:cb28bb3:f7a54b1:f7a54b1",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260710",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 8,
-					"undetected": 65
-				},
-				"last_modification_date": 1783689906,
-				"last_submission_date": 1783689867,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "XPI",
-				"md5": "0d5bb45016d14bbe168d5920778900b6",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "87b7e2542cd273ae0c9831d69b08e24dfbc3d757",
-				"sha256": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
-				"size": 767344,
-				"ssdeep": "12288:LkWxSxADXyAn3PH5s0vnknfJIgFLvXdKSPm89IJwDR94XN/PhqF8xZS:HCktsfJIgvXISPm8bL4dRqF8a",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T163F423BB1A8D9213F5B25BBDD351A911F86A4ED1719EFCEC601111CA88CBBC82BDD1C1",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "00490f75355b4977098a83d4c2dacf37"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8896"
+  "addonId": "brailleEssentials",
+  "displayName": "Braille Essentials",
+  "URL": "https://github.com/josephsl/brailleEssentials/releases/download/26.07/brailleEssentials-26.07.nvda-addon",
+  "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+  "sha256": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
+  "addonVersionName": "26.07",
+  "addonVersionNumber": {
+    "major": 26,
+    "minor": 7,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 3,
+    "patch": 3
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "josephsl",
+  "sourceURL": "https://github.com/josephsl/brailleEssentials",
+  "license": "GPL v2",
+  "homepage": "https://github.com/josephsl/brailleEssentials",
+  "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1783689863000,
+  "translations": [
+    {
+      "language": "he",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "ar",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "pt",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "tr",
+      "displayName": "Braille Essentials",
+      "description": "Bu eklenti, Braille desteğine güvenen NVDA kullanıcıları için temel özellikler sağlar. Braille Extender eklentisinden türetilen aşağıdaki özellikler mevcuttur:\n\n* İki favori Braille ekranını kısayollarla yeniden yükleme.\n* PuTTY, Powershell, bash, cmd gibi uçbirim (terminal) rollerinde inceleme imlecinin otomatik olarak kilitlenmesi/bağlanması.\n* Otomatik kaydırma.\n* Birkaç giriş/çıkış Braille tablosu arasında geçiş yapma.\n* Metni, nokta 7, nokta 8 veya her ikisi aracılığıyla özel niteliklerle işaretleme.\n* Aynı anda iki çıktı Braille tablosunu kullanma.\n* Sekme (tab) işaretlerini boşluk olarak gösterme.\n* İleri kaydırma ve geri kaydırma düğmelerini tersine çevirme.\n* Metin kaydırma sırasında, inceleme modunda, odak modunda veya her ikisinde de mevcut satırı seslendirme.\n* Metni Unicode Braille'e kolayca dönüştürme ve tersini yapma. Örneğin: z <--> ⠵.\n* Hücre açıklamasını Unicode Braille'e dönüştürme ve tersini yapma. Örneğin: 123 <--> ⠇.\n* Braille klavyesini kilitleme.\n* Bir hareketle (kısayol tuşu/komutla) bir uygulamayı/URL'yi başlatma.\n* Braille sözlükleri.\n* Braille klavyesinden tek elle yazma.\n* Braille tablolarında tanımlanmamış karakterleri (emojiler dahil) alternatif gösterimler kullanarak görüntüleme.\n* Braille klavyesinden herhangi bir karakteri (emojiler dahil) girme.\n* Metin kaydırma sırasında boş satırları atlama.\n* Konuşma Geçmişi Modu.\n\nVe çok daha fazlası.\n\nBazı Braille ekranları için, aşağıdaki işlevleri sağlamak üzere Braille ekranı komutlarını genişletir:\n\n* İşlev tuşları, multimedya tuşları, hızlı dolaşım vb. dahil olmak üzere eksiksiz hareket haritaları sunma.\n* Değiştirici tuşları (Ctrl, Shift vb.) simüle etme ve böylece herhangi bir klavye kısayolunu kullanabilme.\n* Nokta 7 ve 8'i, enter ve backspace tuşlarını girme olasılığına ilişkin çeşitli klavye yapılandırmaları sunma.\n* Bir rotor (döndürücü) aracılığıyla eylemler ve hızlı dolaşım ekleme",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "uk",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "ru",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "da",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "it",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "pl",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "de",
+      "displayName": "Braille-Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "es",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "hr",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "fa",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    },
+    {
+      "language": "fr",
+      "displayName": "Braille Essentials",
+      "description": "This add-on provides essential features for NVDA users relying on braille support. The following features, deriving from Braille Extender, are available:\n\n* Reload two favorite braille display with shortcuts.\n* Automatic review cursor tethering in terminal role like in PuTTY, Powershell, bash, cmd.\n* Auto scroll.\n* Switch between several input/output braille tables.\n* Mark the text with special attributes through dot 7, dot 8 or both.\n* Use two output braille tables simultaneously.\n* Display tab signs as spaces.\n* Reverse forward scroll and back scroll buttons.\n* Say the current line during text scrolling either in review mode, or in focus mode or both.\n* Translate text easily in Unicode braille and vice versa. E.g.: z <--> ⠵.\n* Convert cell description to Unicode braille and vice versa. E.g.: 123 <--> ⠇.\n* Lock braille keyboard.\n* Launch an application/URL with gesture.\n* Braille dictionaries.\n* Type with one-hand from braille keyboard.\n* Display undefined characters from braille tables (including emojis) using altenative representations.\n* Enter any character from braille keyboard (including emojis).\n* Skip blank lines during text scrolling.\n* Speech History Mode.\n\nAnd much more.\n\nFor some braille displays, it extends the braille display commands to provide:\n\n* Offer complete gesture maps including function keys, multimedia keys, quick navigation, etc.\n* Emulate modifier keys, and thus any keyboard shortcut\n* Offer several keyboard configurations concerning the possibility to input dots 7 and 8, enter and backspace\n* Add actions and quick navigation through a rotor",
+      "changelog": "* Updated the add-on code to Braille Extender commit 38b6fa35 (2026-07-03), introducing enhanced braille support for Microsoft Excel and localization updates.\n* NVDA will honor custom braille routing commands from apps, specifically Punktum (issue 2).\n\nChanges from BrailleExtender:\n\n* No statement on add-on store based update process in add-on settings/general category (Braille Essentials does not have a self-updating mechanism).\n* Brailiant B profile: Removed Control+Alt+Tab keystroke emulation (Space with dots 5-6-8/C1+C3+C5) as it conflicts with review copy comand."
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 1,
+            "ctb": 1,
+            "ini": 30,
+            "mo": 16,
+            "po": 16,
+            "py": 30,
+            "wav": 1
+          },
+          "file_types": {
+            "script": 1,
+            "unknown": 94
+          },
+          "highest_datetime": "2026-07-10 07:19:26",
+          "lowest_datetime": "2026-07-05 11:18:46",
+          "num_children": 95,
+          "type": "ZIP",
+          "uncompressed_size": 2468174
+        },
+        "contenthash": "d875174061b0f04adc59de646923a66f",
+        "filecondis": {
+          "dhash": "0000000000070600",
+          "raw_md5": "27bb9e9be35808360d4c7fd1f684a030"
+        },
+        "first_submission_date": 1783689867,
+        "last_analysis_date": 1783689867,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260710",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260710",
+            "engine_version": "6.797",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260710",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260710",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260710",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260710",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260710",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260709",
+            "engine_version": "260709-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260710",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260710",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260710",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260709",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260710",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260710",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260710",
+            "engine_version": "1.5.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260709",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260710",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260710",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260710",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260708",
+            "engine_version": "4.0.271",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260710",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260710",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260710",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260710",
+            "engine_version": "GD:27.45215AVA:64.31557",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260710",
+            "engine_version": "1783681282",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260710",
+            "engine_version": "1.0.250.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260710",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260710",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260710",
+            "engine_version": "14.61.60094",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260710",
+            "engine_version": "14.61.60095",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260710",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260710",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260710",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260710",
+            "engine_version": "3.1.0.246",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260710",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260710",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260710",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260710",
+            "engine_version": "1.1.26060.3008",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260710",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260710",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260710",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260710",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260709",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260710",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260623",
+            "engine_version": "7.7.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260709",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260710",
+            "engine_version": "3.6.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260710",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260710",
+            "engine_version": "2026-07-10.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260710",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260708",
+            "engine_version": "4.0.14.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260709",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260710",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260710",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260710",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260710",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260710",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260710",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260710",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260710",
+            "engine_version": "9.5.1247",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260710",
+            "engine_version": "38797",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260710",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260710",
+            "engine_version": "2.0.0.5639",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260710",
+            "engine_version": "6.26-117392089",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260710",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260709",
+            "engine_version": "cb28bb3:cb28bb3:f7a54b1:f7a54b1",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260710",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 8,
+          "undetected": 65
+        },
+        "last_modification_date": 1783689906,
+        "last_submission_date": 1783689867,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "XPI",
+        "md5": "0d5bb45016d14bbe168d5920778900b6",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "87b7e2542cd273ae0c9831d69b08e24dfbc3d757",
+        "sha256": "dcbfe8b714d4c9c3d912ea02414530c0665d35a82d8a4ef67aadada4a56f977a",
+        "size": 767344,
+        "ssdeep": "12288:LkWxSxADXyAn3PH5s0vnknfJIgFLvXdKSPm89IJwDR94XN/PhqF8xZS:HCktsfJIgvXISPm8bL4dRqF8a",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T163F423BB1A8D9213F5B25BBDD351A911F86A4ED1719EFCEC601111CA88CBBC82BDD1C1",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "00490f75355b4977098a83d4c2dacf37"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8896"
 }

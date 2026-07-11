@@ -1,922 +1,922 @@
 {
-	"addonId": "uTalk",
-	"displayName": "uTalk",
-	"URL": "https://github.com/chaichaimee/uTalk/releases/download/2026.7.0/uTalk-v2026.7.0.nvda-addon",
-	"description": "Elevate your clipboard experience: monitors actions like copy, cut, and paste etc, transforming standard system alerts into custom voices limited only by your imagination.\nHot Key:\nNVDA+ALT+T\nSingle Tap : Toggle language\nDouble Tap : open uTalk setting",
-	"sha256": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
-	"addonVersionName": "2026.7.0",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 7,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/uTalk",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/uTalk",
-	"changelog": "Removed blocking time.sleep and synchronous clipboard access; selection extraction now uses only non-blocking textInfo API. Replaced bare except: with specific exception handling (RuntimeError, ValueError) to prevent silent failures. Changed global plugin reference to weakref.ref to eliminate memory leak risk on termination. Refactored script_announceCopy to avoid any clipboard-dependent fallback that could stall the main thread.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782106214000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "uTalk",
-			"description": "ارتقِ بتجربة الحافظة الخاصة بك: يراقب الإجراءات مثل النسخ والقص واللصق وغيرها، ويحول تنبيهات النظام القياسية إلى أصوات مخصصة لا يحدها إلا خيالك.\nمفتاح الاختصار:\nNVDA+ALT+T\nضغط مفرد: تبديل اللغة\nضغط مزدوج: فتح إعدادات uTalk"
-		},
-		{
-			"language": "bg",
-			"displayName": "uTalk",
-			"description": "Подобрете работата си с клипборда: следи действия като копиране, изрязване, поставяне и т.н., като трансформира стандартните системни известия в персонализирани гласове, ограничени само от вашето въображение.\nБърз клавиш:\nNVDA+ALT+T\nЕдинично натискане: Превключване на език\nДвойно натискане: Отваряне на настройките на uTalk"
-		},
-		{
-			"language": "bn",
-			"displayName": "uTalk",
-			"description": "আপনার ক্লিপবোর্ড অভিজ্ঞতা উন্নত করুন: কপি, কাট এবং পেস্ট ইত্যাদির মতো ক্রিয়াগুলি নিরীক্ষণ করে, সাধারণ সিস্টেম অ্যালার্টগুলিকে আপনার কল্পনার মতো কাস্টম ভয়েসে রূপান্তরিত করে৷\nহট কী:\nNVDA+ALT+T\nএকবার ট্যাপ: ভাষা পরিবর্তন করুন\nদুইবার ট্যাপ: uTalk সেটিংস খুলুন"
-		},
-		{
-			"language": "cs",
-			"displayName": "uTalk",
-			"description": "Vylepšete svou práci se schránkou: monitoruje akce jako kopírování, vyjmutí a vložení atd. a mění standardní systémová upozornění na vlastní hlasy omezené pouze vaší představivostí.\nKlávesová zkratka:\nNVDA+ALT+T\nJedno stisknutí: Přepnout jazyk\nDvojité stisknutí: Otevřít nastavení uTalk"
-		},
-		{
-			"language": "da",
-			"displayName": "uTalk",
-			"description": "Løft din udklipsholderoplevelse: overvåger handlinger som kopiering, klipning og indsættelse osv., og transformerer standard systemadvarsler til brugerdefinerede stemmer, der kun er begrænset af din fantasi.\nGenvejstast:\nNVDA+ALT+T\nEnkelt tryk: Skift sprog\nDobbelt tryk: Åbn uTalk-indstillinger"
-		},
-		{
-			"language": "de",
-			"displayName": "uTalk",
-			"description": "Verbessern Sie Ihr Zwischenablage-Erlebnis: Überwacht Aktionen wie Kopieren, Ausschneiden und Einfügen usw. und verwandelt Standard-Systembenachrichtigungen in benutzerdefinierte Stimmen, die nur durch Ihre Fantasie begrenzt sind.\nTastenkombination:\nNVDA+ALT+T\nEinmal drücken: Sprache umschalten\nZweimal drücken: uTalk-Einstellungen öffnen"
-		},
-		{
-			"language": "en",
-			"displayName": "uTalk",
-			"description": "Elevate your clipboard experience: monitors actions like copy, cut, and paste etc, transforming standard system alerts into custom voices limited only by your imagination.\nHot Key:\nNVDA+ALT+T\nSingle Tap : Toggle language\nDouble Tap : open uTalk setting"
-		},
-		{
-			"language": "fa",
-			"displayName": "uTalk",
-			"description": "تجربه حافظه موقت (Clipboard) خود را ارتقا دهید: اقداماتی مانند کپی، برش و چسباندن و غیره را نظارت می‌کند و هشدارهای استاندارد سیستم را به صداهای سفارشی تبدیل می‌کند که فقط به تخیل شما محدود می‌شود.\nکلید میانبر:\nNVDA+ALT+T\nیک‌بار فشار: تغییر زبان\nدوبار فشار: باز کردن تنظیمات uTalk"
-		},
-		{
-			"language": "fi",
-			"displayName": "uTalk",
-			"description": "Paranna leikepöytäkokemustasi: seuraa toimintoja, kuten kopioimista, leikkaamista ja liittämistä, ja muuntaa järjestelmän vakiohälytykset mukautetuiksi ääniksi, joita rajoittaa vain mielikuvituksesi.\nPikanäppäin:\nNVDA+ALT+T\nYksi painallus: Vaihda kieltä\nKaksoispainallus: Avaa uTalk-asetukset"
-		},
-		{
-			"language": "fr",
-			"displayName": "uTalk",
-			"description": "Améliorez votre expérience du presse-papiers : surveille les actions telles que copier, couper et coller, etc., en transformant les alertes système standard en voix personnalisées limitées uniquement par votre imagination.\nRaccourci clavier :\nNVDA+ALT+T\nAppui simple : Changer de langue\nAppui double : Ouvrir les paramètres uTalk"
-		},
-		{
-			"language": "gl",
-			"displayName": "uTalk",
-			"description": "Mellora a túa experiencia co portapapeis: supervisa accións como copiar, cortar e pegar, etc., transformando as alertas estándar do sistema en voces personalizadas limitadas só pola túa imaxinación.\nTecla de atallo:\nNVDA+ALT+T\nUn toque: Cambiar idioma\nDobre toque: Abrir axustes de uTalk"
-		},
-		{
-			"language": "he",
-			"displayName": "uTalk",
-			"description": "שדרג את חוויית לוח הגזירים שלך: מנטר פעולות כמו העתקה, גזירה והדבקה וכו', והופך התראות מערכת סטנדרטיות לקולות מותאמים אישית המוגבלים רק על ידי הדמיון שלך.\nמקש חם:\nNVDA+ALT+T\nלחיצה אחת: החלפת שפה\nלחיצה כפולה: פתיחת הגדרות uTalk"
-		},
-		{
-			"language": "hi",
-			"displayName": "uTalk",
-			"description": "अपने क्लिपबोर्ड अनुभव को बेहतर बनाएं: कॉपी, कट और पेस्ट आदि जैसी क्रियाओं की निगरानी करता है, मानक सिस्टम अलर्ट को कस्टम आवाजों में बदल देता है जो केवल आपकी कल्पना तक सीमित हैं।\nहॉट की:\nNVDA+ALT+T\nएक बार टैप: भाषा बदलें\nदो बार टैप: uTalk सेटिंग खोलें"
-		},
-		{
-			"language": "hr",
-			"displayName": "uTalk",
-			"description": "Unaprijedite svoje iskustvo s međuspremnikom: nadzire radnje poput kopiranja, izrezivanja i lijepljenja itd., pretvarajući standardna sistemska upozorenja u prilagođene glasove ograničene samo vašom maštom.\nVruća tipka:\nNVDA+ALT+T\nJedan pritisak: Promjena jezika\nDvostruki pritisak: Otvori postavke uTalk-a"
-		},
-		{
-			"language": "hu",
-			"displayName": "uTalk",
-			"description": "Emelje magasabb szintre a vágólap-élményt: figyeli az olyan műveleteket, mint a másolás, kivágás, beillesztés stb., és a szabványos rendszerjelzéseket egyedi hangokká alakítja, aminek csak a képzelete szab határt.\nGyorsbillentyű:\nNVDA+ALT+T\nEgyszeri megnyomás: Nyelvváltás\nDupla megnyomás: uTalk beállítások megnyitása"
-		},
-		{
-			"language": "id",
-			"displayName": "uTalk",
-			"description": "Tingkatkan pengalaman papan klip Anda: memantau tindakan seperti salin, potong, dan tempel, dll, mengubah peringatan sistem standar menjadi suara khusus yang hanya dibatasi oleh imajinasi Anda.\nTombol Pintas:\nNVDA+ALT+T\nSekali Ketuk: Ganti bahasa\nDua Kali Ketuk: Buka pengaturan uTalk"
-		},
-		{
-			"language": "it",
-			"displayName": "uTalk",
-			"description": "Migliora la tua esperienza con gli appunti: monitora azioni come copia, taglia e incolla, ecc., trasformando gli avvisi di sistema standard in voci personalizzate limitate solo dalla tua immaginazione.\nTasto di scelta rapida:\nNVDA+ALT+T\nTocco singolo: Cambia lingua\nTocco doppio: Apri impostazioni uTalk"
-		},
-		{
-			"language": "ja",
-			"displayName": "uTalk",
-			"description": "クリップボード体験を向上させます。コピー、切り取り、貼り付けなどのアクションを監視し、標準的なシステムアラートを、あなたの想像力次第で無限に広がるカスタム音声に変換します。\nホットキー:\nNVDA+ALT+T\nシングルタップ: 言語の切り替え\nダブルタップ: uTalk 設定を開く"
-		},
-		{
-			"language": "kk",
-			"displayName": "uTalk",
-			"description": "Алмасу буферімен жұмыс тәжірибеңізді арттырыңыз: көшіру, қию және қою сияқты әрекеттерді бақылайды, стандартты жүйелік ескертулерді қиялыңызбен ғана шектелетін реттелетін дауыстарға түрлендіреді.\nЖедел перне:\nNVDA+ALT+T\nБір рет басу: Тілді ауыстыру\nЕкі рет басу: uTalk параметрлерін ашу"
-		},
-		{
-			"language": "ko",
-			"displayName": "uTalk",
-			"description": "클립보드 경험을 향상시키세요: 복사, 잘라내기, 붙여넣기 등의 동작을 모니터링하여 표준 시스템 알림을 상상력에 따라 무한한 커스텀 음성으로 변환합니다.\n단축키:\nNVDA+ALT+T\n한 번 누르기: 언어 전환\n두 번 누르기: uTalk 설정 열기"
-		},
-		{
-			"language": "lo",
-			"displayName": "uTalk",
-			"description": "ຍົກລະດັບປະສົບການຄລິບບອດຂອງທ່ານ: ຕິດຕາມການກະທຳຕ່າງໆ ເຊັ່ນ: ສຳເນົາ, ຕັດ, ແລະ ວາງ ເປັນຕົ້ນ, ປ່ຽນການແຈ້ງເຕືອນລະບົບມາດຕະຖານໃຫ້ເປັນສຽງທີ່ກຳນົດເອງຕາມຈິນຕະນາການຂອງທ່ານ.\nປຸ່ມລັດ:\nNVDA+ALT+T\nແຕະເທື່ອດຽວ: ປ່ຽນພາສາ\nແຕະສອງເທື່ອ: ເປີດການຕັ້ງຄ່າ uTalk"
-		},
-		{
-			"language": "ms",
-			"displayName": "uTalk",
-			"description": "Tingkatkan pengalaman papan keratan anda: memantau tindakan seperti salin, potong dan tampal dll, mengubah makluman sistem standard kepada suara tersuai yang hanya dihadkan oleh imaginasi anda.\nKekunci Pintas:\nNVDA+ALT+T\nSatu Ketikan: Tukar bahasa\nDua Ketikan: Buka tetapan uTalk"
-		},
-		{
-			"language": "my",
-			"displayName": "uTalk",
-			"description": "သင်၏ Clipboard အတွေ့အကြုံကို မြှင့်တင်ပါ - ကူးယူခြင်း၊ ဖြတ်တောက်ခြင်းနှင့် ကူးထည့်ခြင်းစသည့် လုပ်ဆောင်ချက်များကို စောင့်ကြည့်ပြီး စံစနစ်သတိပေးချက်များကို သင်၏စိတ်ကူးစိတ်သန်းအတိုင်း စိတ်ကြိုက်အသံများအဖြစ် ပြောင်းလဲပေးပါသည်။\nဖြတ်လမ်းခလုတ် -\nNVDA+ALT+T\nတစ်ချက်နှိပ် - ဘာသာစကားပြောင်းရန်\nနှစ်ချက်နှိပ် - uTalk ဆက်တင်ကိုဖွင့်ရန်"
-		},
-		{
-			"language": "pt",
-			"displayName": "uTalk",
-			"description": "Eleve a sua experiência com a área de transferência: monitoriza ações como copiar, cortar e colar, etc., transformando os alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir definições do uTalk"
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "uTalk",
-			"description": "Eleve sua experiência com a área de transferência: monitora ações como copiar, recortar e colar, etc., transformando alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir configurações do uTalk"
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "uTalk",
-			"description": "Eleve a sua experiência com a área de transferência: monitoriza ações como copiar, cortar e colar, etc., transformando os alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir definições do uTalk"
-		},
-		{
-			"language": "ro",
-			"displayName": "uTalk",
-			"description": "Îmbunătățiți experiența clipboard-ului: monitorizează acțiuni precum copierea, tăierea și lipirea etc., transformând alertele standard de sistem în voci personalizate limitate doar de imaginația dvs.\nTastă rapidă:\nNVDA+ALT+T\nO singură apăsare: Schimbă limba\nApăsare dublă: Deschide setările uTalk"
-		},
-		{
-			"language": "ru",
-			"displayName": "uTalk",
-			"description": "Расширьте возможности работы с буфером обмена: отслеживает такие действия, как копирование, вырезание, вставка и т. д., превращая стандартные системные оповещения в настраиваемые голоса, ограниченные только вашим воображением.\nГорячая клавиша:\nNVDA+ALT+T\nОдиночное нажатие: переключить язык\nДвойное нажатие: открыть настройки uTalk"
-		},
-		{
-			"language": "si",
-			"displayName": "uTalk",
-			"description": "ඔබේ පසුතලය (clipboard) අත්දැකීම ඉහළ නංවන්න: පිටපත් කිරීම, කැපීම සහ ඇලවීම වැනි ක්‍රියා නිරීක්ෂණය කරන අතර, සම්මත පද්ධති අනතුරු ඇඟවීම් ඔබේ පරිකල්පනයට අනුව රිසිකරණය කළ හඬවල් බවට පත් කරයි.\nහොට් කී (Hot Key):\nNVDA+ALT+T\nඑක් වරක් එබීම: භාෂාව මාරු කිරීම\nදෙවරක් එබීම: uTalk සැකසුම් විවෘත කිරීම"
-		},
-		{
-			"language": "sk",
-			"displayName": "uTalk",
-			"description": "Vylepšite svoju prácu so schránkou: monitoruje akcie ako kopírovanie, vystrihnutie a prilepenie atď. a mení štandardné systémové upozornenia na vlastné hlasy obmedzené len vašou predstavivosťou.\nKlávesová skratka:\nNVDA+ALT+T\nJedno stlačenie: Prepnúť jazyk\nDvojité stlačenie: Otvoriť nastavenia uTalk"
-		},
-		{
-			"language": "ta",
-			"displayName": "uTalk",
-			"description": "உங்கள் கிளிப்போர்டு அனுபவத்தை மேம்படுத்துங்கள்: நகலெடுத்தல், வெட்டுதல் மற்றும் ஒட்டுதல் போன்ற செயல்களைக் கண்காணித்து, நிலையான கணினி எச்சரிக்கைகளை உங்கள் கற்பனைக்கு ஏற்ப தனிப்பயனாக்கப்பட்ட குரல்களாக மாற்றுகிறது.\nஹாட் கீ (Hot Key):\nNVDA+ALT+T\nஒரு முறை தட்டவும்: மொழியை மாற்ற\nஇருமுறை தட்டவும்: uTalk அமைப்புகளைத் திறக்க"
-		},
-		{
-			"language": "te",
-			"displayName": "uTalk",
-			"description": "మీ క్లిప్‌బోర్డ్ అనుభవాన్ని మెరుగుపరచుకోండి: కాపీ, కట్ మరియు పేస్ట్ వంటి చర్యలను పర్యవేక్షిస్తుంది, ప్రామాణిక సిస్టమ్ హెచ్చరికలను మీ ఊహకు తగినట్లుగా అనుకూల స్వరాలుగా మారుస్తుంది.\nహాట్ కీ:\nNVDA+ALT+T\nఒక్కసారి నొక్కండి: భాషను మార్చండి\nరెండుసార్లు నొక్కండి: uTalk సెట్టింగ్‌లను తెరవండి"
-		},
-		{
-			"language": "th",
-			"displayName": "uTalk",
-			"description": "ยกระดับประสบการณ์การใช้งานคลิปบอร์ดของคุณ: ตรวจสอบการกระทำต่างๆ เช่น การคัดลอก ตัด และวาง ฯลฯ โดยเปลี่ยนการแจ้งเตือนมาตรฐานของระบบให้เป็นเสียงที่คุณกำหนดเองได้ตามจินตนาการ\nคีย์ลัด:\nNVDA+ALT+T\nกดครั้งเดียว: สลับภาษา\nกดสองครั้ง: เปิดการตั้งค่า uTalk"
-		},
-		{
-			"language": "tk",
-			"displayName": "uTalk",
-			"description": "Almas we buferi tejribäňizi ýokarlandyryň: nusgalama, kesme we goýma ýaly hereketlere gözegçilik edýär, adaty ulgam duýduryşlaryny diňe hyýalyňyz bilen çäklenýän ýörite seslere öwürýär.\nGisge ýol klawişi:\nNVDA+ALT+T\nBir gezek basmak: Dili çalşyrmak\nIki gezek basmak: uTalk sazlamalaryny açmak"
-		},
-		{
-			"language": "tl",
-			"displayName": "uTalk",
-			"description": "Itaas ang iyong karanasan sa clipboard: sinusubaybayan ang mga aksyon tulad de kopya, cut, at paste atbp, ginagawa ang mga karaniwang alerto ng system na mga pasadyang boses na limitado lamang ng iyong imahinasyon.\nHot Key:\nNVDA+ALT+T\nIsang Tap: Palitan ang wika\nDalawang Tap: Buksan ang uTalk setting"
-		},
-		{
-			"language": "tr",
-			"displayName": "uTalk",
-			"description": "Pano deneyiminizi geliştirin: kopyalama, kesme ve yapıştırma gibi eylemleri izler, standart sistem uyarılarını yalnızca hayal gücünüzle sınırlı özel seslere dönüştürür.\nKısayol Tuşu:\nNVDA+ALT+T\nTek Tıklama: Dili değiştir\nÇift Tıklama: uTalk ayarlarını aç"
-		},
-		{
-			"language": "uk",
-			"displayName": "uTalk",
-			"description": "Покращте роботу з буфером обміну: відстежує такі дії, как копіювання, вирізання, вставлення тощо, перетворюючи стандартні системні сповіщення на власні голоси, обмежені лише вашою уявою.\nГаряча клавіша:\nNVDA+ALT+T\nОдне натискання: переключити мову\nПодвійне натискання: відкрити налаштування uTalk"
-		},
-		{
-			"language": "ur",
-			"displayName": "uTalk",
-			"description": "اپنے کلپ بورڈ کے تجربے کو بہتر بنائیں: کاپی، کٹ اور پیسٹ وغیرہ جیسے اعمال کی نگرانی کرتا ہے، اور سسٹم کے معیاری الرٹس کو اپنی مرضی کی آوازوں میں تبدیل کرتا ہے جو صرف آپ کے تخیل تک محدود ہیں۔\nہاٹ کی (Hot Key):\nNVDA+ALT+T\nایک بار دبائیں: زبان تبدیل کریں\nدو بار دبائیں: uTalk کی ترتیبات کھولیں"
-		},
-		{
-			"language": "uz",
-			"displayName": "uTalk",
-			"description": "Almashish buferi tajribasini oshiring: nusxalash, kesish va joylashtirish kabi amallarni kuzatadi, standart tizim ogohlantirishlarini faqat tasavvuringiz bilan cheklangan maxsus ovozlarga aylantiradi.\nIssiq tugma:\nNVDA+ALT+T\nBir marta bosish: Tilni almashtirish\nIkki marta bosish: uTalk sozlamalarini ochish"
-		},
-		{
-			"language": "vi",
-			"displayName": "uTalk",
-			"description": "Nâng tầm trải nghiệm khay nhớ tạm của bạn: theo dõi các hành động như sao chép, cắt và dán, v.v., chuyển đổi các cảnh báo hệ thống tiêu chuẩn thành giọng nói tùy chỉnh chỉ giới hạn bởi trí tưởng tượng của bạn.\nPhím nóng:\nNVDA+ALT+T\nNhấn một lần: Chuyển đổi ngôn ngữ\nNhấn hai lần: Mở cài đặt uTalk"
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "uTalk",
-			"description": "提升您的剪贴板体验：监控复制、剪切和粘贴等操作，将标准的系统提示音转换为自定义语音，开启无限想象空间。\n热键：\nNVDA+ALT+T\n单击：切换语言\n双击：打开 uTalk 设置"
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "uTalk",
-			"description": "提升您的剪貼簿體驗：監控複製、剪切和貼上等操作，將標準的系統提示音轉換為自定義語音，開啟無限想像空間。\n熱鍵：\nNVDA+ALT+T\n單擊：切換語言\n雙擊：打開 uTalk 設置"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"html": 6,
-						"ini": 43,
-						"md": 6,
-						"mo": 42,
-						"po": 42,
-						"py": 3
-					},
-					"file_types": {
-						"HTML": 6,
-						"directory": 94,
-						"unknown": 136
-					},
-					"highest_datetime": "2026-06-22 12:11:22",
-					"lowest_datetime": "2026-03-24 18:11:14",
-					"num_children": 236,
-					"type": "ZIP",
-					"uncompressed_size": 159052
-				},
-				"contenthash": "26a518bb3e866e3ad91dccc52d595772",
-				"filecondis": {
-					"dhash": "20283c3c3d280000",
-					"raw_md5": "6f3b47c48dc5571181e0fb3d1ba5ccee"
-				},
-				"first_submission_date": 1782106250,
-				"last_analysis_date": 1782106250,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260621",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260619",
-						"engine_version": "6.790",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260620",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260622",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260622",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260622",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260620",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260620",
-						"engine_version": "260620-02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260621",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260622",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260620",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260621",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260622",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260622",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260621",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260618",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260621",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260622",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260622",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260617",
-						"engine_version": "4.0.265",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260622",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260621",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260622",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260622",
-						"engine_version": "GD:27.44996AVA:64.31457",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260622",
-						"engine_version": "1782100859",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260621",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260621",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260622",
-						"engine_version": "14.58.59894",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260622",
-						"engine_version": "14.58.59894",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260622",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260618",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260621",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260622",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260619",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260622",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260622",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260622",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260621",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260622",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260621",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260622",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260619",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260619",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260608",
-						"engine_version": "7.6.3.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260621",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260621",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260621",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260622",
-						"engine_version": "2026-06-22.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260622",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260621",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260622",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260622",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "failure",
-						"engine_name": "Trustlook",
-						"engine_update": "20260622",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260621",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260621",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260622",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260622",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260619",
-						"engine_version": "9.5.1232",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260621",
-						"engine_version": "38748",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260622",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260619",
-						"engine_version": "2.0.0.5626",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260622",
-						"engine_version": "6.25-116107717",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260622",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260621",
-						"engine_version": "c9b0e25:c9b0e25:1e47ea2:1e47ea2",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260622",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 64
-				},
-				"last_modification_date": 1782106293,
-				"last_submission_date": 1782106250,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
-				"magika": "ZIP",
-				"md5": "a448b824a050d614e2f64fb71e6d6e2e",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "6354e531fbbf48bcc611d9aadae1d0c381e802b2",
-				"sha256": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
-				"size": 116288,
-				"ssdeep": "3072:RS/F76ScNUcPfNN8/jqXtp7GjUWXbv6OI47:RS/F76ScNxPfN4j5j6b47",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T144B36B45C74F1407E05BFBFE7AD7022AE22C5504D1AF9A8B062B9CC26C893AD0FCE546",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "fa8f6c95dca57e368192786aeff5dd3a"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6199"
+  "addonId": "uTalk",
+  "displayName": "uTalk",
+  "URL": "https://github.com/chaichaimee/uTalk/releases/download/2026.7.0/uTalk-v2026.7.0.nvda-addon",
+  "description": "Elevate your clipboard experience: monitors actions like copy, cut, and paste etc, transforming standard system alerts into custom voices limited only by your imagination.\nHot Key:\nNVDA+ALT+T\nSingle Tap : Toggle language\nDouble Tap : open uTalk setting",
+  "sha256": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
+  "addonVersionName": "2026.7.0",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 7,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/uTalk",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/uTalk",
+  "changelog": "Removed blocking time.sleep and synchronous clipboard access; selection extraction now uses only non-blocking textInfo API. Replaced bare except: with specific exception handling (RuntimeError, ValueError) to prevent silent failures. Changed global plugin reference to weakref.ref to eliminate memory leak risk on termination. Refactored script_announceCopy to avoid any clipboard-dependent fallback that could stall the main thread.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782106214000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "uTalk",
+      "description": "ارتقِ بتجربة الحافظة الخاصة بك: يراقب الإجراءات مثل النسخ والقص واللصق وغيرها، ويحول تنبيهات النظام القياسية إلى أصوات مخصصة لا يحدها إلا خيالك.\nمفتاح الاختصار:\nNVDA+ALT+T\nضغط مفرد: تبديل اللغة\nضغط مزدوج: فتح إعدادات uTalk"
+    },
+    {
+      "language": "bg",
+      "displayName": "uTalk",
+      "description": "Подобрете работата си с клипборда: следи действия като копиране, изрязване, поставяне и т.н., като трансформира стандартните системни известия в персонализирани гласове, ограничени само от вашето въображение.\nБърз клавиш:\nNVDA+ALT+T\nЕдинично натискане: Превключване на език\nДвойно натискане: Отваряне на настройките на uTalk"
+    },
+    {
+      "language": "bn",
+      "displayName": "uTalk",
+      "description": "আপনার ক্লিপবোর্ড অভিজ্ঞতা উন্নত করুন: কপি, কাট এবং পেস্ট ইত্যাদির মতো ক্রিয়াগুলি নিরীক্ষণ করে, সাধারণ সিস্টেম অ্যালার্টগুলিকে আপনার কল্পনার মতো কাস্টম ভয়েসে রূপান্তরিত করে৷\nহট কী:\nNVDA+ALT+T\nএকবার ট্যাপ: ভাষা পরিবর্তন করুন\nদুইবার ট্যাপ: uTalk সেটিংস খুলুন"
+    },
+    {
+      "language": "cs",
+      "displayName": "uTalk",
+      "description": "Vylepšete svou práci se schránkou: monitoruje akce jako kopírování, vyjmutí a vložení atd. a mění standardní systémová upozornění na vlastní hlasy omezené pouze vaší představivostí.\nKlávesová zkratka:\nNVDA+ALT+T\nJedno stisknutí: Přepnout jazyk\nDvojité stisknutí: Otevřít nastavení uTalk"
+    },
+    {
+      "language": "da",
+      "displayName": "uTalk",
+      "description": "Løft din udklipsholderoplevelse: overvåger handlinger som kopiering, klipning og indsættelse osv., og transformerer standard systemadvarsler til brugerdefinerede stemmer, der kun er begrænset af din fantasi.\nGenvejstast:\nNVDA+ALT+T\nEnkelt tryk: Skift sprog\nDobbelt tryk: Åbn uTalk-indstillinger"
+    },
+    {
+      "language": "de",
+      "displayName": "uTalk",
+      "description": "Verbessern Sie Ihr Zwischenablage-Erlebnis: Überwacht Aktionen wie Kopieren, Ausschneiden und Einfügen usw. und verwandelt Standard-Systembenachrichtigungen in benutzerdefinierte Stimmen, die nur durch Ihre Fantasie begrenzt sind.\nTastenkombination:\nNVDA+ALT+T\nEinmal drücken: Sprache umschalten\nZweimal drücken: uTalk-Einstellungen öffnen"
+    },
+    {
+      "language": "en",
+      "displayName": "uTalk",
+      "description": "Elevate your clipboard experience: monitors actions like copy, cut, and paste etc, transforming standard system alerts into custom voices limited only by your imagination.\nHot Key:\nNVDA+ALT+T\nSingle Tap : Toggle language\nDouble Tap : open uTalk setting"
+    },
+    {
+      "language": "fa",
+      "displayName": "uTalk",
+      "description": "تجربه حافظه موقت (Clipboard) خود را ارتقا دهید: اقداماتی مانند کپی، برش و چسباندن و غیره را نظارت می‌کند و هشدارهای استاندارد سیستم را به صداهای سفارشی تبدیل می‌کند که فقط به تخیل شما محدود می‌شود.\nکلید میانبر:\nNVDA+ALT+T\nیک‌بار فشار: تغییر زبان\nدوبار فشار: باز کردن تنظیمات uTalk"
+    },
+    {
+      "language": "fi",
+      "displayName": "uTalk",
+      "description": "Paranna leikepöytäkokemustasi: seuraa toimintoja, kuten kopioimista, leikkaamista ja liittämistä, ja muuntaa järjestelmän vakiohälytykset mukautetuiksi ääniksi, joita rajoittaa vain mielikuvituksesi.\nPikanäppäin:\nNVDA+ALT+T\nYksi painallus: Vaihda kieltä\nKaksoispainallus: Avaa uTalk-asetukset"
+    },
+    {
+      "language": "fr",
+      "displayName": "uTalk",
+      "description": "Améliorez votre expérience du presse-papiers : surveille les actions telles que copier, couper et coller, etc., en transformant les alertes système standard en voix personnalisées limitées uniquement par votre imagination.\nRaccourci clavier :\nNVDA+ALT+T\nAppui simple : Changer de langue\nAppui double : Ouvrir les paramètres uTalk"
+    },
+    {
+      "language": "gl",
+      "displayName": "uTalk",
+      "description": "Mellora a túa experiencia co portapapeis: supervisa accións como copiar, cortar e pegar, etc., transformando as alertas estándar do sistema en voces personalizadas limitadas só pola túa imaxinación.\nTecla de atallo:\nNVDA+ALT+T\nUn toque: Cambiar idioma\nDobre toque: Abrir axustes de uTalk"
+    },
+    {
+      "language": "he",
+      "displayName": "uTalk",
+      "description": "שדרג את חוויית לוח הגזירים שלך: מנטר פעולות כמו העתקה, גזירה והדבקה וכו', והופך התראות מערכת סטנדרטיות לקולות מותאמים אישית המוגבלים רק על ידי הדמיון שלך.\nמקש חם:\nNVDA+ALT+T\nלחיצה אחת: החלפת שפה\nלחיצה כפולה: פתיחת הגדרות uTalk"
+    },
+    {
+      "language": "hi",
+      "displayName": "uTalk",
+      "description": "अपने क्लिपबोर्ड अनुभव को बेहतर बनाएं: कॉपी, कट और पेस्ट आदि जैसी क्रियाओं की निगरानी करता है, मानक सिस्टम अलर्ट को कस्टम आवाजों में बदल देता है जो केवल आपकी कल्पना तक सीमित हैं।\nहॉट की:\nNVDA+ALT+T\nएक बार टैप: भाषा बदलें\nदो बार टैप: uTalk सेटिंग खोलें"
+    },
+    {
+      "language": "hr",
+      "displayName": "uTalk",
+      "description": "Unaprijedite svoje iskustvo s međuspremnikom: nadzire radnje poput kopiranja, izrezivanja i lijepljenja itd., pretvarajući standardna sistemska upozorenja u prilagođene glasove ograničene samo vašom maštom.\nVruća tipka:\nNVDA+ALT+T\nJedan pritisak: Promjena jezika\nDvostruki pritisak: Otvori postavke uTalk-a"
+    },
+    {
+      "language": "hu",
+      "displayName": "uTalk",
+      "description": "Emelje magasabb szintre a vágólap-élményt: figyeli az olyan műveleteket, mint a másolás, kivágás, beillesztés stb., és a szabványos rendszerjelzéseket egyedi hangokká alakítja, aminek csak a képzelete szab határt.\nGyorsbillentyű:\nNVDA+ALT+T\nEgyszeri megnyomás: Nyelvváltás\nDupla megnyomás: uTalk beállítások megnyitása"
+    },
+    {
+      "language": "id",
+      "displayName": "uTalk",
+      "description": "Tingkatkan pengalaman papan klip Anda: memantau tindakan seperti salin, potong, dan tempel, dll, mengubah peringatan sistem standar menjadi suara khusus yang hanya dibatasi oleh imajinasi Anda.\nTombol Pintas:\nNVDA+ALT+T\nSekali Ketuk: Ganti bahasa\nDua Kali Ketuk: Buka pengaturan uTalk"
+    },
+    {
+      "language": "it",
+      "displayName": "uTalk",
+      "description": "Migliora la tua esperienza con gli appunti: monitora azioni come copia, taglia e incolla, ecc., trasformando gli avvisi di sistema standard in voci personalizzate limitate solo dalla tua immaginazione.\nTasto di scelta rapida:\nNVDA+ALT+T\nTocco singolo: Cambia lingua\nTocco doppio: Apri impostazioni uTalk"
+    },
+    {
+      "language": "ja",
+      "displayName": "uTalk",
+      "description": "クリップボード体験を向上させます。コピー、切り取り、貼り付けなどのアクションを監視し、標準的なシステムアラートを、あなたの想像力次第で無限に広がるカスタム音声に変換します。\nホットキー:\nNVDA+ALT+T\nシングルタップ: 言語の切り替え\nダブルタップ: uTalk 設定を開く"
+    },
+    {
+      "language": "kk",
+      "displayName": "uTalk",
+      "description": "Алмасу буферімен жұмыс тәжірибеңізді арттырыңыз: көшіру, қию және қою сияқты әрекеттерді бақылайды, стандартты жүйелік ескертулерді қиялыңызбен ғана шектелетін реттелетін дауыстарға түрлендіреді.\nЖедел перне:\nNVDA+ALT+T\nБір рет басу: Тілді ауыстыру\nЕкі рет басу: uTalk параметрлерін ашу"
+    },
+    {
+      "language": "ko",
+      "displayName": "uTalk",
+      "description": "클립보드 경험을 향상시키세요: 복사, 잘라내기, 붙여넣기 등의 동작을 모니터링하여 표준 시스템 알림을 상상력에 따라 무한한 커스텀 음성으로 변환합니다.\n단축키:\nNVDA+ALT+T\n한 번 누르기: 언어 전환\n두 번 누르기: uTalk 설정 열기"
+    },
+    {
+      "language": "lo",
+      "displayName": "uTalk",
+      "description": "ຍົກລະດັບປະສົບການຄລິບບອດຂອງທ່ານ: ຕິດຕາມການກະທຳຕ່າງໆ ເຊັ່ນ: ສຳເນົາ, ຕັດ, ແລະ ວາງ ເປັນຕົ້ນ, ປ່ຽນການແຈ້ງເຕືອນລະບົບມາດຕະຖານໃຫ້ເປັນສຽງທີ່ກຳນົດເອງຕາມຈິນຕະນາການຂອງທ່ານ.\nປຸ່ມລັດ:\nNVDA+ALT+T\nແຕະເທື່ອດຽວ: ປ່ຽນພາສາ\nແຕະສອງເທື່ອ: ເປີດການຕັ້ງຄ່າ uTalk"
+    },
+    {
+      "language": "ms",
+      "displayName": "uTalk",
+      "description": "Tingkatkan pengalaman papan keratan anda: memantau tindakan seperti salin, potong dan tampal dll, mengubah makluman sistem standard kepada suara tersuai yang hanya dihadkan oleh imaginasi anda.\nKekunci Pintas:\nNVDA+ALT+T\nSatu Ketikan: Tukar bahasa\nDua Ketikan: Buka tetapan uTalk"
+    },
+    {
+      "language": "my",
+      "displayName": "uTalk",
+      "description": "သင်၏ Clipboard အတွေ့အကြုံကို မြှင့်တင်ပါ - ကူးယူခြင်း၊ ဖြတ်တောက်ခြင်းနှင့် ကူးထည့်ခြင်းစသည့် လုပ်ဆောင်ချက်များကို စောင့်ကြည့်ပြီး စံစနစ်သတိပေးချက်များကို သင်၏စိတ်ကူးစိတ်သန်းအတိုင်း စိတ်ကြိုက်အသံများအဖြစ် ပြောင်းလဲပေးပါသည်။\nဖြတ်လမ်းခလုတ် -\nNVDA+ALT+T\nတစ်ချက်နှိပ် - ဘာသာစကားပြောင်းရန်\nနှစ်ချက်နှိပ် - uTalk ဆက်တင်ကိုဖွင့်ရန်"
+    },
+    {
+      "language": "pt",
+      "displayName": "uTalk",
+      "description": "Eleve a sua experiência com a área de transferência: monitoriza ações como copiar, cortar e colar, etc., transformando os alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir definições do uTalk"
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "uTalk",
+      "description": "Eleve sua experiência com a área de transferência: monitora ações como copiar, recortar e colar, etc., transformando alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir configurações do uTalk"
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "uTalk",
+      "description": "Eleve a sua experiência com a área de transferência: monitoriza ações como copiar, cortar e colar, etc., transformando os alertas padrão do sistema em vozes personalizadas limitadas apenas pela sua imaginação.\nTecla de Atalho:\nNVDA+ALT+T\nUm Toque: Alternar idioma\nToque Duplo: Abrir definições do uTalk"
+    },
+    {
+      "language": "ro",
+      "displayName": "uTalk",
+      "description": "Îmbunătățiți experiența clipboard-ului: monitorizează acțiuni precum copierea, tăierea și lipirea etc., transformând alertele standard de sistem în voci personalizate limitate doar de imaginația dvs.\nTastă rapidă:\nNVDA+ALT+T\nO singură apăsare: Schimbă limba\nApăsare dublă: Deschide setările uTalk"
+    },
+    {
+      "language": "ru",
+      "displayName": "uTalk",
+      "description": "Расширьте возможности работы с буфером обмена: отслеживает такие действия, как копирование, вырезание, вставка и т. д., превращая стандартные системные оповещения в настраиваемые голоса, ограниченные только вашим воображением.\nГорячая клавиша:\nNVDA+ALT+T\nОдиночное нажатие: переключить язык\nДвойное нажатие: открыть настройки uTalk"
+    },
+    {
+      "language": "si",
+      "displayName": "uTalk",
+      "description": "ඔබේ පසුතලය (clipboard) අත්දැකීම ඉහළ නංවන්න: පිටපත් කිරීම, කැපීම සහ ඇලවීම වැනි ක්‍රියා නිරීක්ෂණය කරන අතර, සම්මත පද්ධති අනතුරු ඇඟවීම් ඔබේ පරිකල්පනයට අනුව රිසිකරණය කළ හඬවල් බවට පත් කරයි.\nහොට් කී (Hot Key):\nNVDA+ALT+T\nඑක් වරක් එබීම: භාෂාව මාරු කිරීම\nදෙවරක් එබීම: uTalk සැකසුම් විවෘත කිරීම"
+    },
+    {
+      "language": "sk",
+      "displayName": "uTalk",
+      "description": "Vylepšite svoju prácu so schránkou: monitoruje akcie ako kopírovanie, vystrihnutie a prilepenie atď. a mení štandardné systémové upozornenia na vlastné hlasy obmedzené len vašou predstavivosťou.\nKlávesová skratka:\nNVDA+ALT+T\nJedno stlačenie: Prepnúť jazyk\nDvojité stlačenie: Otvoriť nastavenia uTalk"
+    },
+    {
+      "language": "ta",
+      "displayName": "uTalk",
+      "description": "உங்கள் கிளிப்போர்டு அனுபவத்தை மேம்படுத்துங்கள்: நகலெடுத்தல், வெட்டுதல் மற்றும் ஒட்டுதல் போன்ற செயல்களைக் கண்காணித்து, நிலையான கணினி எச்சரிக்கைகளை உங்கள் கற்பனைக்கு ஏற்ப தனிப்பயனாக்கப்பட்ட குரல்களாக மாற்றுகிறது.\nஹாட் கீ (Hot Key):\nNVDA+ALT+T\nஒரு முறை தட்டவும்: மொழியை மாற்ற\nஇருமுறை தட்டவும்: uTalk அமைப்புகளைத் திறக்க"
+    },
+    {
+      "language": "te",
+      "displayName": "uTalk",
+      "description": "మీ క్లిప్‌బోర్డ్ అనుభవాన్ని మెరుగుపరచుకోండి: కాపీ, కట్ మరియు పేస్ట్ వంటి చర్యలను పర్యవేక్షిస్తుంది, ప్రామాణిక సిస్టమ్ హెచ్చరికలను మీ ఊహకు తగినట్లుగా అనుకూల స్వరాలుగా మారుస్తుంది.\nహాట్ కీ:\nNVDA+ALT+T\nఒక్కసారి నొక్కండి: భాషను మార్చండి\nరెండుసార్లు నొక్కండి: uTalk సెట్టింగ్‌లను తెరవండి"
+    },
+    {
+      "language": "th",
+      "displayName": "uTalk",
+      "description": "ยกระดับประสบการณ์การใช้งานคลิปบอร์ดของคุณ: ตรวจสอบการกระทำต่างๆ เช่น การคัดลอก ตัด และวาง ฯลฯ โดยเปลี่ยนการแจ้งเตือนมาตรฐานของระบบให้เป็นเสียงที่คุณกำหนดเองได้ตามจินตนาการ\nคีย์ลัด:\nNVDA+ALT+T\nกดครั้งเดียว: สลับภาษา\nกดสองครั้ง: เปิดการตั้งค่า uTalk"
+    },
+    {
+      "language": "tk",
+      "displayName": "uTalk",
+      "description": "Almas we buferi tejribäňizi ýokarlandyryň: nusgalama, kesme we goýma ýaly hereketlere gözegçilik edýär, adaty ulgam duýduryşlaryny diňe hyýalyňyz bilen çäklenýän ýörite seslere öwürýär.\nGisge ýol klawişi:\nNVDA+ALT+T\nBir gezek basmak: Dili çalşyrmak\nIki gezek basmak: uTalk sazlamalaryny açmak"
+    },
+    {
+      "language": "tl",
+      "displayName": "uTalk",
+      "description": "Itaas ang iyong karanasan sa clipboard: sinusubaybayan ang mga aksyon tulad de kopya, cut, at paste atbp, ginagawa ang mga karaniwang alerto ng system na mga pasadyang boses na limitado lamang ng iyong imahinasyon.\nHot Key:\nNVDA+ALT+T\nIsang Tap: Palitan ang wika\nDalawang Tap: Buksan ang uTalk setting"
+    },
+    {
+      "language": "tr",
+      "displayName": "uTalk",
+      "description": "Pano deneyiminizi geliştirin: kopyalama, kesme ve yapıştırma gibi eylemleri izler, standart sistem uyarılarını yalnızca hayal gücünüzle sınırlı özel seslere dönüştürür.\nKısayol Tuşu:\nNVDA+ALT+T\nTek Tıklama: Dili değiştir\nÇift Tıklama: uTalk ayarlarını aç"
+    },
+    {
+      "language": "uk",
+      "displayName": "uTalk",
+      "description": "Покращте роботу з буфером обміну: відстежує такі дії, как копіювання, вирізання, вставлення тощо, перетворюючи стандартні системні сповіщення на власні голоси, обмежені лише вашою уявою.\nГаряча клавіша:\nNVDA+ALT+T\nОдне натискання: переключити мову\nПодвійне натискання: відкрити налаштування uTalk"
+    },
+    {
+      "language": "ur",
+      "displayName": "uTalk",
+      "description": "اپنے کلپ بورڈ کے تجربے کو بہتر بنائیں: کاپی، کٹ اور پیسٹ وغیرہ جیسے اعمال کی نگرانی کرتا ہے، اور سسٹم کے معیاری الرٹس کو اپنی مرضی کی آوازوں میں تبدیل کرتا ہے جو صرف آپ کے تخیل تک محدود ہیں۔\nہاٹ کی (Hot Key):\nNVDA+ALT+T\nایک بار دبائیں: زبان تبدیل کریں\nدو بار دبائیں: uTalk کی ترتیبات کھولیں"
+    },
+    {
+      "language": "uz",
+      "displayName": "uTalk",
+      "description": "Almashish buferi tajribasini oshiring: nusxalash, kesish va joylashtirish kabi amallarni kuzatadi, standart tizim ogohlantirishlarini faqat tasavvuringiz bilan cheklangan maxsus ovozlarga aylantiradi.\nIssiq tugma:\nNVDA+ALT+T\nBir marta bosish: Tilni almashtirish\nIkki marta bosish: uTalk sozlamalarini ochish"
+    },
+    {
+      "language": "vi",
+      "displayName": "uTalk",
+      "description": "Nâng tầm trải nghiệm khay nhớ tạm của bạn: theo dõi các hành động như sao chép, cắt và dán, v.v., chuyển đổi các cảnh báo hệ thống tiêu chuẩn thành giọng nói tùy chỉnh chỉ giới hạn bởi trí tưởng tượng của bạn.\nPhím nóng:\nNVDA+ALT+T\nNhấn một lần: Chuyển đổi ngôn ngữ\nNhấn hai lần: Mở cài đặt uTalk"
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "uTalk",
+      "description": "提升您的剪贴板体验：监控复制、剪切和粘贴等操作，将标准的系统提示音转换为自定义语音，开启无限想象空间。\n热键：\nNVDA+ALT+T\n单击：切换语言\n双击：打开 uTalk 设置"
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "uTalk",
+      "description": "提升您的剪貼簿體驗：監控複製、剪切和貼上等操作，將標準的系統提示音轉換為自定義語音，開啟無限想像空間。\n熱鍵：\nNVDA+ALT+T\n單擊：切換語言\n雙擊：打開 uTalk 設置"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "html": 6,
+            "ini": 43,
+            "md": 6,
+            "mo": 42,
+            "po": 42,
+            "py": 3
+          },
+          "file_types": {
+            "HTML": 6,
+            "directory": 94,
+            "unknown": 136
+          },
+          "highest_datetime": "2026-06-22 12:11:22",
+          "lowest_datetime": "2026-03-24 18:11:14",
+          "num_children": 236,
+          "type": "ZIP",
+          "uncompressed_size": 159052
+        },
+        "contenthash": "26a518bb3e866e3ad91dccc52d595772",
+        "filecondis": {
+          "dhash": "20283c3c3d280000",
+          "raw_md5": "6f3b47c48dc5571181e0fb3d1ba5ccee"
+        },
+        "first_submission_date": 1782106250,
+        "last_analysis_date": 1782106250,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260621",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260619",
+            "engine_version": "6.790",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260620",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260622",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260622",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260622",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260620",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260620",
+            "engine_version": "260620-02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260621",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260622",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260620",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260621",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260622",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260622",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260621",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260618",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260621",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260622",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260622",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260617",
+            "engine_version": "4.0.265",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260622",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260621",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260622",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260622",
+            "engine_version": "GD:27.44996AVA:64.31457",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260622",
+            "engine_version": "1782100859",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260621",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260621",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260622",
+            "engine_version": "14.58.59894",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260622",
+            "engine_version": "14.58.59894",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260622",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260618",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260621",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260622",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260619",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260622",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260622",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260622",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260621",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260622",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260621",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260622",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260619",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260619",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260608",
+            "engine_version": "7.6.3.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260621",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260621",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260621",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260622",
+            "engine_version": "2026-06-22.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260622",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260621",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260622",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260622",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "failure",
+            "engine_name": "Trustlook",
+            "engine_update": "20260622",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260621",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260621",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260622",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260622",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260619",
+            "engine_version": "9.5.1232",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260621",
+            "engine_version": "38748",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260622",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260619",
+            "engine_version": "2.0.0.5626",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260622",
+            "engine_version": "6.25-116107717",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260622",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260621",
+            "engine_version": "c9b0e25:c9b0e25:1e47ea2:1e47ea2",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260622",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 64
+        },
+        "last_modification_date": 1782106293,
+        "last_submission_date": 1782106250,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "magika": "ZIP",
+        "md5": "a448b824a050d614e2f64fb71e6d6e2e",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "6354e531fbbf48bcc611d9aadae1d0c381e802b2",
+        "sha256": "1f29922555cae0eb4b2a27b9498a705e8c64a0f07eaa291c8fc4c37c24c8caec",
+        "size": 116288,
+        "ssdeep": "3072:RS/F76ScNUcPfNN8/jqXtp7GjUWXbv6OI47:RS/F76ScNxPfN4j5j6b47",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T144B36B45C74F1407E05BFBFE7AD7022AE22C5504D1AF9A8B062B9CC26C893AD0FCE546",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "fa8f6c95dca57e368192786aeff5dd3a"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6199"
 }

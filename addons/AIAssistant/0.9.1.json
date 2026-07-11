@@ -1,2902 +1,2902 @@
 {
-	"addonId": "AIAssistant",
-	"displayName": "AI assistant",
-	"URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.9.1/AIAssistant-0.9.1.nvda-addon",
-	"description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, and Gemini\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t\t",
-	"sha256": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
-	"addonVersionName": "0.9.1",
-	"addonVersionNumber": {
-		"major": 0,
-		"minor": 9,
-		"patch": 1
-	},
-	"minNVDAVersion": {
-		"major": 2025,
-		"minor": 3,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "Adil Husain Shaikh",
-	"sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
-	"license": "GPL v2",
-	"homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
-	"changelog": "\n• Persistent Chat History: Your conversations are now automatically saved, allowing you to pick up exactly where you left off even after restarting NVDA.\n• New Conversation Manager: Easily start new chats, switch between multiple saved sessions, and delete old ones using the new sidebar interface.\n• Automatic Message Announcements: AI responses are now automatically read aloud as they arrive, providing a more seamless, hands-free experience.\n\t\t  ",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1778439836000,
-	"translations": [],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
-	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 472,
-								"endColumn": 475
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "467"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 475,
-								"endColumn": 478
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "470"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 480,
-								"endColumn": 483
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "475"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 483,
-								"endColumn": 486
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "478"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 489,
-								"endColumn": 492
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "484"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 492,
-								"endColumn": 495
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "487"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 495,
-								"endColumn": 498
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "490"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 498,
-								"endColumn": 501
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "493"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 501,
-								"endColumn": 504
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "496"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 504,
-								"endColumn": 507
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "499"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 507,
-								"endColumn": 510
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "502"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 510,
-								"endColumn": 513
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "505"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 516,
-								"endColumn": 519
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "511"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 519,
-								"endColumn": 522
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "514"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 522,
-								"endColumn": 525
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "517"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 525,
-								"endColumn": 528
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "520"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 529,
-								"endColumn": 532
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "524"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 532,
-								"endColumn": 535
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "527"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 537,
-								"endColumn": 540
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "532"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 542,
-								"endColumn": 545
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "537"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 548,
-								"endColumn": 551
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "543"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 551,
-								"endColumn": 554
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "546"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 554,
-								"endColumn": 557
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "549"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 558,
-								"endColumn": 561
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "553"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 561,
-								"endColumn": 564
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "556"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 564,
-								"endColumn": 567
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "559"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 569,
-								"endColumn": 572
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "564"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 572,
-								"endColumn": 575
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "567"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 575,
-								"endColumn": 578
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "570"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 578,
-								"endColumn": 581
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "573"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 581,
-								"endColumn": 584
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "576"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 584,
-								"endColumn": 587
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "579"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 587,
-								"endColumn": 590
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "582"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 591,
-								"endColumn": 594
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "586"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 594,
-								"endColumn": 597
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "589"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 597,
-								"endColumn": 600
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "592"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 600,
-								"endColumn": 603
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "595"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 603,
-								"endColumn": 606
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "598"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 606,
-								"endColumn": 609
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "601"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 609,
-								"endColumn": 612
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "604"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 615,
-								"endColumn": 618
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "610"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 619,
-								"endColumn": 622
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "614"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 624,
-								"endColumn": 627
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "619"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 627,
-								"endColumn": 630
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "622"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 630,
-								"endColumn": 633
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "625"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 633,
-								"endColumn": 636
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "628"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 636,
-								"endColumn": 639
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "631"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 639,
-								"endColumn": 642
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "634"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 644,
-								"endColumn": 647
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "639"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 647,
-								"endColumn": 650
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "642"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 650,
-								"endColumn": 653
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "645"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 653,
-								"endColumn": 656
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "648"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 656,
-								"endColumn": 659
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "651"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 659,
-								"endColumn": 662
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "654"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 662,
-								"endColumn": 665
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "657"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 665,
-								"endColumn": 668
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "660"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 670,
-								"endColumn": 673
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "665"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 673,
-								"endColumn": 676
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "668"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 676,
-								"endColumn": 679
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "671"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 679,
-								"endColumn": 682
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "674"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 682,
-								"endColumn": 685
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "677"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 687,
-								"endColumn": 690
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "682"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 690,
-								"endColumn": 693
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "685"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 5,
-								"startColumn": 693,
-								"endColumn": 696
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "8836d537059896f9:1",
-					"primaryLocationStartColumnFingerprint": "688"
-				}
-			},
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\w in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AI-assistant/lib/markdown/extensions/wikilinks.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 1
-							},
-							"region": {
-								"startLine": 54,
-								"startColumn": 33,
-								"endColumn": 36
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
-					"primaryLocationStartColumnFingerprint": "24"
-				}
-			}
-		],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"0-0": 1,
-						"c": 1,
-						"css": 2,
-						"dat": 2,
-						"db": 2,
-						"db-journal": 1,
-						"exe": 1,
-						"html": 2,
-						"ini": 1,
-						"jinja2": 84,
-						"js": 1,
-						"json": 11,
-						"md": 2,
-						"old": 20,
-						"pb": 3,
-						"pma": 2,
-						"py": 560,
-						"pyd": 2,
-						"pyi": 1,
-						"txt": 8,
-						"typed": 3
-					},
-					"file_types": {
-						"HTML": 2,
-						"JSON": 13,
-						"JavaScript": 1,
-						"Portable Executable": 3,
-						"unknown": 870
-					},
-					"highest_datetime": "2026-05-10 16:35:40",
-					"lowest_datetime": "2026-05-10 16:33:18",
-					"num_children": 889,
-					"type": "ZIP",
-					"uncompressed_size": 19906275
-				},
-				"crowdsourced_ai_results": [
-					{
-						"analysis": "Package: Jinja2 (whl)\nVersion: 3.1.6\nDescription: A very fast and expressive template engine.\n\nglobalPlugins/AI-assistant/lib/jinja2/`.\n    *   So `import jinja2` would fail unless the `sys.path` was modified.\n    *   The file `globalPlugins/AI-assistant/__init__.py` *does* modify `sys.path`.\n    *   This is all very convoluted.\n\n    *   Let's stick to the most obvious conclusion: Masquerading + High-risk capabilities = Malicious.\n\n    *   Wait, I see `globalPlugins/AI-assistant/lib/pygments/lexers/python.py` is mentioned in `agile.py` but the content isn't provided.\n    *   The provided code is massive. I've reviewed the key parts.\n\n    *   One more thing: `globalPlugins/AI-assistant/ui/download_progress.py`\n        ```python\n        command = [defaults.DEFAULT_OLLAMA_CLI, \"pull\", defaults.DEFAULT_OLLAMA_MODEL]\n        process = subprocess.Popen(\n            command,\n            ...\n        )\n        ```\n        This runs `ollama pull`. If `ollama` is not installed, it fails. If it is, it downloads a model.\n\n    *   The `nvda_ui_host.exe` is the biggest \"unexpected binary\".\n\n    *   Final check on the prompt's requirements: \"Respond in JSON with keys: classification, summary. Do not add extra text; return only JSON.\"",
-						"category": "code_insight",
-						"id": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766-file-palm",
-						"source": "palm",
-						"verdict": ""
-					}
-				],
-				"filecondis": {
-					"dhash": "000000000e0f0a00",
-					"raw_md5": "a204919b9b7e8c19e27cb66519f19aab"
-				},
-				"first_submission_date": 1778439870,
-				"last_analysis_date": 1778439870,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260509",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260507",
-						"engine_version": "6.776",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260510",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260510",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260510",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260510",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260510",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260510",
-						"engine_version": "260510-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260510",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260510",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20251216",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260509",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260509",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260510",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260510",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260510",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260507",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260510",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260510",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260510",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260510",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260507",
-						"engine_version": "4.0.261",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260510",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260510",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260510",
-						"engine_version": "7.0.30.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260510",
-						"engine_version": "GD:27.44497AVA:64.31214",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260510",
-						"engine_version": "1778432448",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260510",
-						"engine_version": "1.0.245.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260510",
-						"engine_version": "6.4.16.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260509",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260510",
-						"engine_version": "14.51.59460",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260510",
-						"engine_version": "14.51.59460",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260510",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260510",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260510",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260510",
-						"engine_version": "3.1.0.235",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260508",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260510",
-						"engine_version": "1.2.0.14532",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260510",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260510",
-						"engine_version": "1.1.26030.3008",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260510",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260510",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260510",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260510",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260509",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260508",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260510",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260510",
-						"engine_version": "3.4.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260510",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260510",
-						"engine_version": "2026-05-10.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260510",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260504",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260510",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260510",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260510",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260510",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260508",
-						"engine_version": "5.6.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260510",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260510",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260510",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260508",
-						"engine_version": "9.5.1203",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260510",
-						"engine_version": "38637",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260510",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260508",
-						"engine_version": "2.0.0.5598",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260510",
-						"engine_version": "6.24-114820798",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260510",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260510",
-						"engine_version": "3afd129:3afd129:57bbf40:57bbf40",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260510",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 1,
-					"type-unsupported": 7,
-					"undetected": 67
-				},
-				"last_modification_date": 1778439981,
-				"last_submission_date": 1778439870,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "ZIP",
-				"md5": "5df63edb58283b4d1d7716a07332820c",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "1e92fcaf2620a747e724beffba363dc6c2a0778c",
-				"sha256": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
-				"size": 4131212,
-				"ssdeep": "98304:o05h+tynNIAv4h+g8y5LQoicjEtdHekN8d8gH10skmZSENfChO1hp27:P5DmAbgf5LQbT/01XZSEfChO1+7",
-				"tags": [
-					"contains-pe",
-					"whl"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1A2161272980DC405DAE330BC98780F87B2DE6287D47ED5A7393E46C4AC4AFF6066295D",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "Python Wheel package",
-						"probability": 63.2
-					},
-					{
-						"file_type": "Python Zip Application",
-						"probability": 26.5
-					},
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 10.1
-					}
-				],
-				"type_description": "Python Wheel package",
-				"type_extension": "whl",
-				"type_tag": "whl",
-				"type_tags": [
-					"installer",
-					"python",
-					"whl"
-				],
-				"unique_sources": 1,
-				"vhash": "00fd19fee52efeaf3179de29ab044651"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8947"
+  "addonId": "AIAssistant",
+  "displayName": "AI assistant",
+  "URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.9.1/AIAssistant-0.9.1.nvda-addon",
+  "description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, and Gemini\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t\t",
+  "sha256": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
+  "addonVersionName": "0.9.1",
+  "addonVersionNumber": {
+    "major": 0,
+    "minor": 9,
+    "patch": 1
+  },
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 3,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "Adil Husain Shaikh",
+  "sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
+  "license": "GPL v2",
+  "homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
+  "changelog": "\n• Persistent Chat History: Your conversations are now automatically saved, allowing you to pick up exactly where you left off even after restarting NVDA.\n• New Conversation Manager: Easily start new chats, switch between multiple saved sessions, and delete old ones using the new sidebar interface.\n• Automatic Message Announcements: AI responses are now automatically read aloud as they arrive, providing a more seamless, hands-free experience.\n\t\t  ",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1778439836000,
+  "translations": [],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
+  "scanResults": {
+    "codeQL-warnings": [
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 472,
+                "endColumn": 475
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "467"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 475,
+                "endColumn": 478
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "470"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 480,
+                "endColumn": 483
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "475"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 483,
+                "endColumn": 486
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "478"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 489,
+                "endColumn": 492
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "484"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 492,
+                "endColumn": 495
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "487"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 495,
+                "endColumn": 498
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "490"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 498,
+                "endColumn": 501
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "493"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 501,
+                "endColumn": 504
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "496"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 504,
+                "endColumn": 507
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "499"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 507,
+                "endColumn": 510
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "502"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 510,
+                "endColumn": 513
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "505"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 516,
+                "endColumn": 519
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "511"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 519,
+                "endColumn": 522
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "514"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 522,
+                "endColumn": 525
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "517"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 525,
+                "endColumn": 528
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "520"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 529,
+                "endColumn": 532
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "524"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 532,
+                "endColumn": 535
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "527"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 537,
+                "endColumn": 540
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "532"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 542,
+                "endColumn": 545
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "537"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 548,
+                "endColumn": 551
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "543"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 551,
+                "endColumn": 554
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "546"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 554,
+                "endColumn": 557
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "549"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 558,
+                "endColumn": 561
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "553"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 561,
+                "endColumn": 564
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "556"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 564,
+                "endColumn": 567
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "559"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 569,
+                "endColumn": 572
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "564"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 572,
+                "endColumn": 575
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "567"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 575,
+                "endColumn": 578
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "570"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 578,
+                "endColumn": 581
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "573"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 581,
+                "endColumn": 584
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "576"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 584,
+                "endColumn": 587
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "579"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 587,
+                "endColumn": 590
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "582"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 591,
+                "endColumn": 594
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "586"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 594,
+                "endColumn": 597
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "589"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 597,
+                "endColumn": 600
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "592"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 600,
+                "endColumn": 603
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "595"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 603,
+                "endColumn": 606
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "598"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 606,
+                "endColumn": 609
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "601"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 609,
+                "endColumn": 612
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "604"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 615,
+                "endColumn": 618
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "610"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 619,
+                "endColumn": 622
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "614"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 624,
+                "endColumn": 627
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "619"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 627,
+                "endColumn": 630
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "622"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 630,
+                "endColumn": 633
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "625"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 633,
+                "endColumn": 636
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "628"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 636,
+                "endColumn": 639
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "631"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 639,
+                "endColumn": 642
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "634"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 644,
+                "endColumn": 647
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "639"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 647,
+                "endColumn": 650
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "642"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 650,
+                "endColumn": 653
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "645"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 653,
+                "endColumn": 656
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "648"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 656,
+                "endColumn": 659
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "651"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 659,
+                "endColumn": 662
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "654"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 662,
+                "endColumn": 665
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "657"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 665,
+                "endColumn": 668
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "660"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 670,
+                "endColumn": 673
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "665"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 673,
+                "endColumn": 676
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "668"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 676,
+                "endColumn": 679
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "671"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 679,
+                "endColumn": 682
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "674"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 682,
+                "endColumn": 685
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "677"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 687,
+                "endColumn": 690
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "682"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 690,
+                "endColumn": 693
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "685"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/jinja2/_identifier.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 0
+              },
+              "region": {
+                "startLine": 5,
+                "startColumn": 693,
+                "endColumn": 696
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "8836d537059896f9:1",
+          "primaryLocationStartColumnFingerprint": "688"
+        }
+      },
+      {
+        "ruleId": "py/overly-large-range",
+        "rule": {
+          "id": "py/overly-large-range",
+          "index": 5,
+          "toolComponent": {
+            "index": 0
+          }
+        },
+        "message": {
+          "text": "Suspicious character range that overlaps with \\w in the same character class."
+        },
+        "locations": [
+          {
+            "physicalLocation": {
+              "artifactLocation": {
+                "uri": "addon/globalPlugins/AI-assistant/lib/markdown/extensions/wikilinks.py",
+                "uriBaseId": "%SRCROOT%",
+                "index": 1
+              },
+              "region": {
+                "startLine": 54,
+                "startColumn": 33,
+                "endColumn": 36
+              }
+            }
+          }
+        ],
+        "partialFingerprints": {
+          "primaryLocationLineHash": "519eb9bd4ab56ccd:1",
+          "primaryLocationStartColumnFingerprint": "24"
+        }
+      }
+    ],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "0-0": 1,
+            "c": 1,
+            "css": 2,
+            "dat": 2,
+            "db": 2,
+            "db-journal": 1,
+            "exe": 1,
+            "html": 2,
+            "ini": 1,
+            "jinja2": 84,
+            "js": 1,
+            "json": 11,
+            "md": 2,
+            "old": 20,
+            "pb": 3,
+            "pma": 2,
+            "py": 560,
+            "pyd": 2,
+            "pyi": 1,
+            "txt": 8,
+            "typed": 3
+          },
+          "file_types": {
+            "HTML": 2,
+            "JSON": 13,
+            "JavaScript": 1,
+            "Portable Executable": 3,
+            "unknown": 870
+          },
+          "highest_datetime": "2026-05-10 16:35:40",
+          "lowest_datetime": "2026-05-10 16:33:18",
+          "num_children": 889,
+          "type": "ZIP",
+          "uncompressed_size": 19906275
+        },
+        "crowdsourced_ai_results": [
+          {
+            "analysis": "Package: Jinja2 (whl)\nVersion: 3.1.6\nDescription: A very fast and expressive template engine.\n\nglobalPlugins/AI-assistant/lib/jinja2/`.\n    *   So `import jinja2` would fail unless the `sys.path` was modified.\n    *   The file `globalPlugins/AI-assistant/__init__.py` *does* modify `sys.path`.\n    *   This is all very convoluted.\n\n    *   Let's stick to the most obvious conclusion: Masquerading + High-risk capabilities = Malicious.\n\n    *   Wait, I see `globalPlugins/AI-assistant/lib/pygments/lexers/python.py` is mentioned in `agile.py` but the content isn't provided.\n    *   The provided code is massive. I've reviewed the key parts.\n\n    *   One more thing: `globalPlugins/AI-assistant/ui/download_progress.py`\n        ```python\n        command = [defaults.DEFAULT_OLLAMA_CLI, \"pull\", defaults.DEFAULT_OLLAMA_MODEL]\n        process = subprocess.Popen(\n            command,\n            ...\n        )\n        ```\n        This runs `ollama pull`. If `ollama` is not installed, it fails. If it is, it downloads a model.\n\n    *   The `nvda_ui_host.exe` is the biggest \"unexpected binary\".\n\n    *   Final check on the prompt's requirements: \"Respond in JSON with keys: classification, summary. Do not add extra text; return only JSON.\"",
+            "category": "code_insight",
+            "id": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766-file-palm",
+            "source": "palm",
+            "verdict": ""
+          }
+        ],
+        "filecondis": {
+          "dhash": "000000000e0f0a00",
+          "raw_md5": "a204919b9b7e8c19e27cb66519f19aab"
+        },
+        "first_submission_date": 1778439870,
+        "last_analysis_date": 1778439870,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260509",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260507",
+            "engine_version": "6.776",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260510",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260510",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260510",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260510",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260510",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260510",
+            "engine_version": "260510-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260510",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260510",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20251216",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260509",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260509",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260510",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260510",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260510",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260507",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260510",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260510",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260510",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260510",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260507",
+            "engine_version": "4.0.261",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260510",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260510",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260510",
+            "engine_version": "7.0.30.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260510",
+            "engine_version": "GD:27.44497AVA:64.31214",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260510",
+            "engine_version": "1778432448",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260510",
+            "engine_version": "1.0.245.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260510",
+            "engine_version": "6.4.16.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260509",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260510",
+            "engine_version": "14.51.59460",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260510",
+            "engine_version": "14.51.59460",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260510",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260510",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260510",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260510",
+            "engine_version": "3.1.0.235",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260508",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260510",
+            "engine_version": "1.2.0.14532",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260510",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260510",
+            "engine_version": "1.1.26030.3008",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260510",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260510",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260510",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260510",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260509",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260508",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260510",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260510",
+            "engine_version": "3.4.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260510",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260510",
+            "engine_version": "2026-05-10.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260510",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260504",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260510",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260510",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260510",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260510",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260508",
+            "engine_version": "5.6.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260510",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260510",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260510",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260508",
+            "engine_version": "9.5.1203",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260510",
+            "engine_version": "38637",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260510",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260508",
+            "engine_version": "2.0.0.5598",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260510",
+            "engine_version": "6.24-114820798",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260510",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260510",
+            "engine_version": "3afd129:3afd129:57bbf40:57bbf40",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260510",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 1,
+          "type-unsupported": 7,
+          "undetected": 67
+        },
+        "last_modification_date": 1778439981,
+        "last_submission_date": 1778439870,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "ZIP",
+        "md5": "5df63edb58283b4d1d7716a07332820c",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "1e92fcaf2620a747e724beffba363dc6c2a0778c",
+        "sha256": "afd417967978562c0a5c36883fe85c289130164b14e9b50fd1618e2eb91ec766",
+        "size": 4131212,
+        "ssdeep": "98304:o05h+tynNIAv4h+g8y5LQoicjEtdHekN8d8gH10skmZSENfChO1hp27:P5DmAbgf5LQbT/01XZSEfChO1+7",
+        "tags": [
+          "contains-pe",
+          "whl"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1A2161272980DC405DAE330BC98780F87B2DE6287D47ED5A7393E46C4AC4AFF6066295D",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "Python Wheel package",
+            "probability": 63.2
+          },
+          {
+            "file_type": "Python Zip Application",
+            "probability": 26.5
+          },
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 10.1
+          }
+        ],
+        "type_description": "Python Wheel package",
+        "type_extension": "whl",
+        "type_tag": "whl",
+        "type_tags": [
+          "installer",
+          "python",
+          "whl"
+        ],
+        "unique_sources": 1,
+        "vhash": "00fd19fee52efeaf3179de29ab044651"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8947"
 }

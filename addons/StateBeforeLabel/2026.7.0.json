@@ -1,935 +1,935 @@
 {
-	"addonId": "StateBeforeLabel",
-	"displayName": "StateBeforeLabel",
-	"URL": "https://github.com/chaichaimee/StateBeforeLabel/releases/download/2026.7.0/StateBeforeLabel-v2026.7.0.nvda-addon",
-	"description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel.",
-	"sha256": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
-	"addonVersionName": "2026.7.0",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 7,
-		"patch": 0
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 4,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Chai Chaimee",
-	"sourceURL": "https://github.com/chaichaimee/StateBeforeLabel",
-	"license": "GPL v2",
-	"homepage": "https://github.com/chaichaimee/StateBeforeLabel",
-	"changelog": "individual settings toggles. Fixed critical freeze bug and double Read-only speech.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1782646736000,
-	"translations": [
-		{
-			"language": "he",
-			"displayName": "מצב לפני תווית",
-			"description": "מכריז על מצבי פקד (מסומן, לחוץ, מורחב, לא זמין, נבחר, לקריאה בלבד) לפני שם האובייקט כך שהמשתמשים ישמעו את המצב תחילה. ניתן להפעיל או לכבות כל סוג מצב בנפרד בלוח ההגדרות של \"מצב לפני תווית\" ב-NVDA."
-		},
-		{
-			"language": "vi",
-			"displayName": "Trạng thái trước nhãn",
-			"description": "Thông báo các trạng thái điều khiển (đã chọn, đã nhấn, đã mở rộng, không khả dụng, đã chọn, chỉ đọc) trước tên đối tượng để người dùng nghe thấy trạng thái trước. Mỗi loại trạng thái có thể được bật/tắt riêng lẻ trong bảng cài đặt \"Trạng thái trước nhãn\" của NVDA."
-		},
-		{
-			"language": "zh_TW",
-			"displayName": "標籤前的狀態",
-			"description": "在物件名稱前朗讀控制項狀態（已勾選、已按下、已展開、不可用、已選取、唯讀），以便使用者先聽到狀態。每種狀態類型都可以在 NVDA 的「標籤前的狀態」設定面板中分別切換。"
-		},
-		{
-			"language": "gl",
-			"displayName": "Estado antes da etiqueta",
-			"description": "Anuncia os estados de control (marcado, premido, expandido, non dispoñible, seleccionado, só de lectura) antes do nome do obxecto para que os usuarios escoiten o estado primeiro. Cada tipo de estado pódese cambiar individualmente no panel de configuración de \"Estado antes da etiqueta\" de NVDA."
-		},
-		{
-			"language": "ko",
-			"displayName": "레이블 앞에 상태",
-			"description": "사용자가 상태를 먼저 들을 수 있도록 컨트롤 상태(체크됨, 눌림, 확장됨, 사용 불가, 선택됨, 읽기 전용)를 개체 이름보다 먼저 알립니다. 각 상태 유형은 NVDA의 \"레이블 앞에 상태\" 설정 패널에서 개별적으로 전환할 수 있습니다."
-		},
-		{
-			"language": "ar",
-			"displayName": "حالة قبل التسمية",
-			"description": "يعلن عن حالات التحكم (محدد، مضغوط، موسع، غير متاح، محدد، للقراءة فقط) قبل اسم الكائن ليسمع المستخدم الحالة أولاً. يمكن تبديل كل نوع حالة بشكل فردي في لوحة إعدادات \"حالة قبل التسمية\" في NVDA."
-		},
-		{
-			"language": "ur",
-			"displayName": "لیبل سے پہلے اسٹیٹ",
-			"description": "آبجیکٹ کے نام سے پہلے کنٹرول اسٹیٹس (چیکڈ، پریسڈ، ایکسپینڈڈ، ناقابل دستیاب، منتخب، صرف پڑھنے کے لیے) کا اعلان کرتا ہے تاکہ صارفین پہلے اسٹیٹ سن سکیں۔ ہر اسٹیٹ کی قسم کو NVDA کے \"لیبل سے پہلے اسٹیٹ\" سیٹنگز پینل میں انفرادی طور پر ٹوگل کیا جا سکتا ہے۔"
-		},
-		{
-			"language": "ro",
-			"displayName": "Starea înainte de etichetă",
-			"description": "Anunță stările controlului (bifat, apăsat, extins, indisponibil, selectat, doar citire) înainte de numele obiectului, astfel încât utilizatorii să audă starea mai întâi. Fiecare tip de stare poate fi comutat individual în panoul de setări \"Starea înainte de etichetă\" din NVDA."
-		},
-		{
-			"language": "pt",
-			"displayName": "Estado antes do rótulo",
-			"description": "Anuncia os estados de controlo (marcado, premido, expandido, indisponível, selecionado, apenas de leitura) antes do nome do objeto para que os utilizadores ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de definições \"Estado antes do rótulo\" do NVDA."
-		},
-		{
-			"language": "tr",
-			"displayName": "Etiket öncesi durum",
-			"description": "Kullanıcıların durumu önce duyması için denetim durumlarını (işaretli, basılı, genişletilmiş, kullanılamaz, seçili, salt okunur) nesne adından önce duyurur. Her durum türü, NVDA'nın \"Etiket öncesi durum\" ayarlar panelinden ayrı ayrı değiştirilebilir."
-		},
-		{
-			"language": "uk",
-			"displayName": "Стан перед міткою",
-			"description": "Озвучує стани елементів керування (відмічено, натиснуто, розгорнуто, недоступно, вибрано, тільки для читання) перед назвою об'єкта, щоб користувачі спочатку чули стан. Кожен тип стану можна індивідуально перемикати на панелі налаштувань \"Стан перед міткою\" в NVDA."
-		},
-		{
-			"language": "th",
-			"displayName": "สถานะก่อนป้ายชื่อ",
-			"description": "ประกาศสถานะของตัวควบคุม (ทำเครื่องหมาย, กด, ขยาย, ไม่พร้อมใช้งาน, เลือก, อ่านอย่างเดียว) ก่อนชื่อวัตถุเพื่อให้ผู้ใช้ได้ยินสถานะก่อน สามารถสลับสถานะแต่ละประเภทได้ที่แผงการตั้งค่า \"สถานะก่อนป้ายชื่อ\" ของ NVDA"
-		},
-		{
-			"language": "hu",
-			"displayName": "Állapot a felirat előtt",
-			"description": "Bejelenti a vezérlőállapotokat (bejelölve, lenyomva, kibontva, nem elérhető, kijelölve, írásvédett) az objektum neve előtt, így a felhasználók először az állapotot hallják. Minden állapottípus külön-külön kapcsolható az NVDA \"Állapot a felirat előtt\" beállítási paneljén."
-		},
-		{
-			"language": "tl",
-			"displayName": "Estado bago ang label",
-			"description": "Inanunsyo ang mga estado ng control (naka-check, pinindot, pinalawak, hindi available, napili, read-only) bago ang pangalan ng object para marinig muna ng mga user ang estado. Ang bawat uri ng estado ay maaaring i-toggle nang paisa-isa sa panel ng mga setting ng \"Estado bago ang label\" ng NVDA."
-		},
-		{
-			"language": "ru",
-			"displayName": "Состояние перед меткой",
-			"description": "Озвучивает состояния элементов управления (отмечено, нажато, развернуто, недоступно, выбрано, только чтение) перед именем объекта, чтобы пользователи сначала слышали состояние. Каждый тип состояния можно отдельно переключать на панели настроек \"Состояние перед меткой\" в NVDA."
-		},
-		{
-			"language": "si",
-			"displayName": "ලේබලයට පෙර තත්ත්වය",
-			"description": "පාලක තත්ත්වයන් (සලකුණු කළ, ඔබන ලද, දිගහැරුණු, ලබාගත නොහැකි, තෝරාගත්, කියවීමට පමණක්) ඔබ්ජෙක්ට් නාමයට පෙර ප්‍රකාශ කරන බැවින් පරිශීලකයින්ට මුලින්ම තත්ත්වය ඇසෙනු ඇත. සෑම තත්ත්ව වර්ගයක්ම NVDA හි \"ලේබලයට පෙර තත්ත්වය\" සැකසුම් පුවරුව තුළ වෙන වෙනම ටොගල් කළ හැක."
-		},
-		{
-			"language": "sk",
-			"displayName": "Stav pred menovkou",
-			"description": "Oznámi stavy ovládacích prvkov (zaškrtnuté, stlačené, rozbalené, nedostupné, vybraté, len na čítanie) pred názvom objektu, takže používatelia počujú stav ako prvý. Každý typ stavu možno individuálne prepínať na paneli nastavení \"Stav pred menovkou\" v NVDA."
-		},
-		{
-			"language": "pt_PT",
-			"displayName": "Estado antes do rótulo",
-			"description": "Anuncia os estados de controlo (marcado, premido, expandido, indisponível, selecionado, apenas de leitura) antes do nome do objeto para que os utilizadores ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de definições \"Estado antes do rótulo\" do NVDA."
-		},
-		{
-			"language": "da",
-			"displayName": "Tilstand før etiket",
-			"description": "Oplæser kontrolelementernes tilstande (markeret, trykket, udvidet, utilgængelig, valgt, skrivebeskyttet) før objektnavnet, så brugerne hører tilstanden først. Hver tilstandstype kan slås til eller fra individuelt i NVDA's indstillingspanel for \"Tilstand før etiket\"."
-		},
-		{
-			"language": "it",
-			"displayName": "Stato prima dell'etichetta",
-			"description": "Annuncia gli stati dei controlli (selezionato, premuto, espanso, non disponibile, selezionato, sola lettura) prima del nome dell'oggetto, in modo che gli utenti sentano prima lo stato. Ogni tipo di stato può essere attivato individualmente nel pannello delle impostazioni \"Stato prima dell'etichetta\" di NVDA."
-		},
-		{
-			"language": "lo",
-			"displayName": "ສະຖານະກ່ອນປ້າຍຊື່",
-			"description": "ປະກາດສະຖານະການຄວບຄຸມ (ໝາຍຕິກ, ກົດ, ຂະຫຍາຍ, ບໍ່ສາມາດໃຊ້ງານໄດ້, ເລືອກ, ອ່ານຢ່າງດຽວ) ກ່ອນຊື່ອອບເຈັກ ເພື່ອໃຫ້ຜູ້ໃຊ້ໄດ້ຍິນສະຖານະກ່ອນ. ແຕ່ລະປະເພດສະຖານະສາມາດສະຫຼັບແຍກຕ່າງຫາກໃນແຜງການຕັ້ງຄ່າ \"ສະຖານະກ່ອນປ້າຍຊື່\" ຂອງ NVDA."
-		},
-		{
-			"language": "bg",
-			"displayName": "Състояние преди етикета",
-			"description": "Обявява състоянията на контролите (отметнато, натиснато, разгърнато, недостъпно, избрано, само за четене) преди името на обекта, така че потребителите първо да чуят състоянието. Всеки тип състояние може да се превключва индивидуално в панела с настройки на NVDA за състояние преди етикета."
-		},
-		{
-			"language": "kk",
-			"displayName": "Белгіге дейінгі күй",
-			"description": "Пайдаланушылар күйді алдымен естуі үшін басқару элементтерінің күйлерін (белгіленген, басылған, жайылған, қолжетімсіз, таңдалған, тек оқу үшін) нысан атауының алдында жариялайды. Әр күй түрін NVDA-ның \"Белгіге дейінгі күй\" параметрлер панелінде жеке қосуға/өшіруге болады."
-		},
-		{
-			"language": "my",
-			"displayName": "တံဆိပ်မတပ်မီ အခြေအနေ",
-			"description": "အသုံးပြုသူများ ဦးစွာကြားရစေရန် ထိန်းချုပ်မှုအခြေအနေများ (အမှန်ခြစ်ထားသော၊ နှိပ်ထားသော၊ ချဲ့ထားသော၊ မရနိုင်သော၊ ရွေးချယ်ထားသော၊ ဖတ်ရန်သာ) ကို အရာဝတ္ထုအမည်မတိုင်မီ ကြေညာပေးသည်။ အခြေအနေအမျိုးအစားတစ်ခုစီကို NVDA ၏ \"တံဆိပ်မတပ်မီ အခြေအနေ\" ဆက်တင်များတွင် တစ်ခုချင်းစီ ပြောင်းလဲနိုင်ပါသည်။"
-		},
-		{
-			"language": "bn",
-			"displayName": "লেবেলের আগে অবস্থা",
-			"description": "অবজেক্টের নামের আগে কন্ট্রোল স্টেটগুলো (চেক করা, প্রেস করা, প্রসারিত, অনুপলব্ধ, নির্বাচিত, শুধুমাত্র পঠনযোগ্য) ঘোষণা করে যাতে ব্যবহারকারীরা প্রথমে স্টেটটি শুনতে পান। NVDA-এর \"লেবেলের আগে অবস্থা\" সেটিংস প্যানেলে প্রতিটি স্টেট আলাদাভাবে টগল করা যেতে পারে।"
-		},
-		{
-			"language": "ms",
-			"displayName": "Status sebelum label",
-			"description": "Mengumumkan status kawalan (ditanda, ditekan, dikembangkan, tidak tersedia, dipilih, baca sahaja) sebelum nama objek supaya pengguna mendengar status itu dahulu. Setiap jenis status boleh ditogol secara individu dalam panel tetapan \"Status sebelum label\" NVDA."
-		},
-		{
-			"language": "de",
-			"displayName": "Zustand vor Bezeichnung",
-			"description": "Kündigt Steuerelementzustände (markiert, gedrückt, aufgeklappt, nicht verfügbar, ausgewählt, schreibgeschützt) vor dem Objektnamen an, sodass Benutzer den Zustand zuerst hören. Jeder Zustandstyp kann im NVDA-Einstellungsbereich „Zustand vor Bezeichnung“ individuell umgeschaltet werden."
-		},
-		{
-			"language": "cs",
-			"displayName": "Stav před popiskem",
-			"description": "Oznámí stavy ovládacích prvků (zaškrtnuto, stisknuto, rozbaleno, nedostupné, vybráno, jen ke čtení) před názvem objektu, takže uživatelé slyší stav jako první. Každý typ stavu lze individuálně přepínat v panelu nastavení \"Stav před popiskem\" v NVDA."
-		},
-		{
-			"language": "uz",
-			"displayName": "Yorliqdan oldingi holat",
-			"description": "Foydalanuvchilar holatni birinchi bo'lib eshitishlari uchun boshqaruv holatlarini (belgilangan, bosilgan, kengaytirilgan, mavjud emas, tanlangan, faqat o'qish uchun) ob'ekt nomidan oldin e'lon qiladi. Har bir holat turini NVDA'ning \"Yorliqdan oldingi holat\" sozlamalar panelida alohida yoqish yoki o'chirish mumkin."
-		},
-		{
-			"language": "pt_BR",
-			"displayName": "Estado antes do rótulo",
-			"description": "Anuncia os estados de controle (marcado, pressionado, expandido, indisponível, selecionado, somente leitura) antes do nome do objeto para que os usuários ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de configurações \"Estado antes do rótulo\" do NVDA."
-		},
-		{
-			"language": "es",
-			"displayName": "Estado antes de la etiqueta",
-			"description": "Anuncia los estados de control (marcado, presionado, expandido, no disponible, seleccionado, de solo lectura) antes del nombre del objeto para que los usuarios escuchen el estado primero. Cada tipo de estado puede activarse individualmente en el panel de configuración de \"Estado antes de la etiqueta\" de NVDA."
-		},
-		{
-			"language": "te",
-			"displayName": "లేబుల్‌కు ముందు స్థితి",
-			"description": "కంట్రోల్ స్థితులను (సెలెక్ట్ చేయబడింది, నొక్కబడింది, విస్తరించబడింది, అందుబాటులో లేదు, ఎంచుకోబడింది, చదవడానికి మాత్రమే) ఆబ్జెక్ట్ పేరు కంటే ముందుగానే తెలియజేస్తుంది, దీనివల్ల వినియోగదారులు స్థితిని ముందుగా వినగలరు. ప్రతి స్థితిని NVDAలోని \"లేబుల్‌కు ముందు స్థితి\" సెట్టింగ్‌ల ప్యానెల్‌లో వ్యక్తిగతంగా మార్చుకోవచ్చు."
-		},
-		{
-			"language": "hi",
-			"displayName": "लेबल से पहले स्थिति",
-			"description": "ऑब्जेक्ट के नाम से पहले नियंत्रण स्थितियों (चेक किया गया, दबाया गया, विस्तारित, अनुपलब्ध, चयनित, केवल पढ़ने योग्य) की घोषणा करता है ताकि उपयोगकर्ता पहले स्थिति सुन सकें। NVDA के \"लेबल से पहले स्थिति\" सेटिंग्स पैनल में प्रत्येक स्थिति प्रकार को व्यक्तिगत रूप से टॉगल किया जा सकता है।"
-		},
-		{
-			"language": "fi",
-			"displayName": "Tila ennen nimikettä",
-			"description": "Ilmoittaa hallintaelementtien tilat (valittu, painettu, laajennettu, ei käytettävissä, valittu, vain luku) ennen objektin nimeä, jotta käyttäjät kuulevat tilan ensin. Kukin tilatyyppi voidaan vaihtaa yksilöllisesti NVDA:n \"Tila ennen nimikettä\" -asetuspaneelissa."
-		},
-		{
-			"language": "id",
-			"displayName": "Status sebelum label",
-			"description": "Mengumumkan status kontrol (dicentang, ditekan, diperluas, tidak tersedia, dipilih, hanya-baca) sebelum nama objek agar pengguna mendengar statusnya terlebih dahulu. Setiap tipe status dapat diaktifkan/dinonaktifkan secara individu di panel pengaturan \"Status sebelum label\" NVDA."
-		},
-		{
-			"language": "hr",
-			"displayName": "Stanje prije oznake",
-			"description": "Objavljuje stanja kontrola (označeno, pritisnuto, prošireno, nedostupno, odabrano, samo za čitanje) prije naziva objekta kako bi korisnici prvo čuli stanje. Svaka vrsta stanja može se pojedinačno uključiti ili isključiti na NVDA ploči postavki \"Stanje prije oznake\"."
-		},
-		{
-			"language": "tk",
-			"displayName": "Bellikden öňki ýagdaý",
-			"description": "Ulanyjylar ýagdaýy ilki eşitsin diýip, dolandyryş ýagdaýlaryny (bellenen, basylan, giňeldilen, elýeterli däl, saýlanan, diňe okaýyş) obýektiň adyndan öň yglan edýär. Her ýagdaý görnüşi NVDA-nyň \"Bellikden öňki ýagdaý\" sazlamalar panelinde aýratynlykda açylyp/ýapylyp bilner."
-		},
-		{
-			"language": "fa",
-			"displayName": "وضعیت پیش از برچسب",
-			"description": "وضعیت‌های کنترل (تیک‌خورده، فشرده، بازشده، غیرقابل دسترس، انتخاب‌شده، فقط خواندنی) را قبل از نام شیء اعلام می‌کند تا کاربران ابتدا وضعیت را بشنوند. هر نوع وضعیت را می‌توان به‌صورت جداگانه در پنل تنظیمات \"وضعیت پیش از برچسب\" در NVDA تغییر داد."
-		},
-		{
-			"language": "zh_CN",
-			"displayName": "标签前的状态",
-			"description": "在对象名称前朗读控件状态（选中、按下、展开、不可用、已选择、只读），以便用户先听到状态。每种状态类型都可以在 NVDA 的“标签前的状态”设置面板中单独切换。"
-		},
-		{
-			"language": "en",
-			"displayName": "StateBeforeLabel",
-			"description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel."
-		},
-		{
-			"language": "ja",
-			"displayName": "ラベルの前に状態",
-			"description": "コントロールの状態（チェック済み、押下済み、展開済み、利用不可、選択済み、読み取り専用）をオブジェクト名の前に読み上げるため、ユーザーは先に状態を知ることができます。各状態タイプは、NVDAの「ラベルの前に状態」設定パネルで個別に切り替え可能です。"
-		},
-		{
-			"language": "fr",
-			"displayName": "État avant l'étiquette",
-			"description": "Annonce les états des contrôles (coché, appuyé, développé, indisponible, sélectionné, lecture seule) avant le nom de l'objet afin que les utilisateurs entendent l'état en premier. Chaque type d'état peut être activé individuellement dans le panneau de paramètres \"État avant l'étiquette\" de NVDA."
-		},
-		{
-			"language": "ta",
-			"displayName": "லேபிளுக்கு முன் நிலை",
-			"description": "கட்டுப்பாட்டு நிலைகளை (தேர்வு செய்யப்பட்டது, அழுத்தப்பட்டது, விரிவாக்கப்பட்டது, கிடைக்கவில்லை, தேர்ந்தெடுக்கப்பட்டது, படிக்க மட்டும்) ஆப்ஜெக்ட் பெயருக்கு முன்னதாகவே அறிவிக்கிறது, இதனால் பயனர்கள் முதலில் நிலையை அறியலாம். ஒவ்வொரு நிலை வகையையும் NVDA-வின் \"லேபிளுக்கு முன் நிலை\" அமைப்புகள் பேனலில் தனித்தனியாக மாற்றிக்கொள்ளலாம்."
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
-	"scanResults": {
-		"virusTotal": [
-			{
-				"_id": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"html": 6,
-						"ini": 44,
-						"md": 6,
-						"mo": 43,
-						"po": 43,
-						"py": 1
-					},
-					"file_types": {
-						"HTML": 6,
-						"directory": 96,
-						"unknown": 137
-					},
-					"highest_datetime": "2026-06-28 18:15:48",
-					"lowest_datetime": "2026-01-03 12:44:18",
-					"num_children": 239,
-					"type": "ZIP",
-					"uncompressed_size": 263755
-				},
-				"contenthash": "c458fccb1bce1311c45888495bad1ef2",
-				"filecondis": {
-					"dhash": "00003c3c35280000",
-					"raw_md5": "5b4e76ba6786dde185462e7ca6fed6ad"
-				},
-				"first_submission_date": 1782646739,
-				"last_analysis_date": 1782646739,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260628",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260628",
-						"engine_version": "6.793",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260628",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260628",
-						"engine_version": "3.30.1.10706",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260628",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260628",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260628",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260628",
-						"engine_version": "260628-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260628",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260628",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260627",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260627",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260628",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260628",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260628",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260625",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260628",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260614",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260628",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260628",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260626",
-						"engine_version": "4.0.268",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260628",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260628",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260628",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260628",
-						"engine_version": "GD:27.45071AVA:64.31489",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260628",
-						"engine_version": "1782644474",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260628",
-						"engine_version": "1.0.249.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260628",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260628",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260628",
-						"engine_version": "14.59.59965",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260628",
-						"engine_version": "14.59.59966",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260628",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260628",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260628",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260628",
-						"engine_version": "3.1.0.239",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260626",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260628",
-						"engine_version": "1.2.0.15146",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260628",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260628",
-						"engine_version": "1.1.26050.11",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260628",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260628",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260628",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260628",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260627",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260626",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260623",
-						"engine_version": "7.7.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260627",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260628",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260628",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260628",
-						"engine_version": "2026-06-28.02",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260628",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260604",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260627",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260628",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260628",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "failure",
-						"engine_name": "Trustlook",
-						"engine_update": "20260628",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260628",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260628",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260628",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260627",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260626",
-						"engine_version": "9.5.1237",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.10.0.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260628",
-						"engine_version": "38765",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260628",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260626",
-						"engine_version": "2.0.0.5630",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260628",
-						"engine_version": "6.25-116107927",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260628",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260627",
-						"engine_version": "70ca644:70ca644:6990e76:6990e76",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260628",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 65
-				},
-				"last_modification_date": 1782646776,
-				"last_submission_date": 1782646739,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
-				"magika": "ZIP",
-				"md5": "1b901f8d6941ffd70aa3c50f67b9287a",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "7859ce11067ad63cfa8567e4d92448ada56d73ba",
-				"sha256": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
-				"size": 147039,
-				"ssdeep": "3072:rkZkRTRj6puyPWjBBDBvb27qo/JGIsqmk9:rkGZucFBpZhfTk9",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 1,
-				"tlsh": "T196E36B55932F104BF09A97FF75870227E27D8109E27EAA470A5BA4C2DC8E35D0FCEA45",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "6316cbd8d16e2cb49068ba6e44759924"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10098"
+  "addonId": "StateBeforeLabel",
+  "displayName": "StateBeforeLabel",
+  "URL": "https://github.com/chaichaimee/StateBeforeLabel/releases/download/2026.7.0/StateBeforeLabel-v2026.7.0.nvda-addon",
+  "description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel.",
+  "sha256": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
+  "addonVersionName": "2026.7.0",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 7,
+    "patch": 0
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 4,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Chai Chaimee",
+  "sourceURL": "https://github.com/chaichaimee/StateBeforeLabel",
+  "license": "GPL v2",
+  "homepage": "https://github.com/chaichaimee/StateBeforeLabel",
+  "changelog": "individual settings toggles. Fixed critical freeze bug and double Read-only speech.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1782646736000,
+  "translations": [
+    {
+      "language": "he",
+      "displayName": "מצב לפני תווית",
+      "description": "מכריז על מצבי פקד (מסומן, לחוץ, מורחב, לא זמין, נבחר, לקריאה בלבד) לפני שם האובייקט כך שהמשתמשים ישמעו את המצב תחילה. ניתן להפעיל או לכבות כל סוג מצב בנפרד בלוח ההגדרות של \"מצב לפני תווית\" ב-NVDA."
+    },
+    {
+      "language": "vi",
+      "displayName": "Trạng thái trước nhãn",
+      "description": "Thông báo các trạng thái điều khiển (đã chọn, đã nhấn, đã mở rộng, không khả dụng, đã chọn, chỉ đọc) trước tên đối tượng để người dùng nghe thấy trạng thái trước. Mỗi loại trạng thái có thể được bật/tắt riêng lẻ trong bảng cài đặt \"Trạng thái trước nhãn\" của NVDA."
+    },
+    {
+      "language": "zh_TW",
+      "displayName": "標籤前的狀態",
+      "description": "在物件名稱前朗讀控制項狀態（已勾選、已按下、已展開、不可用、已選取、唯讀），以便使用者先聽到狀態。每種狀態類型都可以在 NVDA 的「標籤前的狀態」設定面板中分別切換。"
+    },
+    {
+      "language": "gl",
+      "displayName": "Estado antes da etiqueta",
+      "description": "Anuncia os estados de control (marcado, premido, expandido, non dispoñible, seleccionado, só de lectura) antes do nome do obxecto para que os usuarios escoiten o estado primeiro. Cada tipo de estado pódese cambiar individualmente no panel de configuración de \"Estado antes da etiqueta\" de NVDA."
+    },
+    {
+      "language": "ko",
+      "displayName": "레이블 앞에 상태",
+      "description": "사용자가 상태를 먼저 들을 수 있도록 컨트롤 상태(체크됨, 눌림, 확장됨, 사용 불가, 선택됨, 읽기 전용)를 개체 이름보다 먼저 알립니다. 각 상태 유형은 NVDA의 \"레이블 앞에 상태\" 설정 패널에서 개별적으로 전환할 수 있습니다."
+    },
+    {
+      "language": "ar",
+      "displayName": "حالة قبل التسمية",
+      "description": "يعلن عن حالات التحكم (محدد، مضغوط، موسع، غير متاح، محدد، للقراءة فقط) قبل اسم الكائن ليسمع المستخدم الحالة أولاً. يمكن تبديل كل نوع حالة بشكل فردي في لوحة إعدادات \"حالة قبل التسمية\" في NVDA."
+    },
+    {
+      "language": "ur",
+      "displayName": "لیبل سے پہلے اسٹیٹ",
+      "description": "آبجیکٹ کے نام سے پہلے کنٹرول اسٹیٹس (چیکڈ، پریسڈ، ایکسپینڈڈ، ناقابل دستیاب، منتخب، صرف پڑھنے کے لیے) کا اعلان کرتا ہے تاکہ صارفین پہلے اسٹیٹ سن سکیں۔ ہر اسٹیٹ کی قسم کو NVDA کے \"لیبل سے پہلے اسٹیٹ\" سیٹنگز پینل میں انفرادی طور پر ٹوگل کیا جا سکتا ہے۔"
+    },
+    {
+      "language": "ro",
+      "displayName": "Starea înainte de etichetă",
+      "description": "Anunță stările controlului (bifat, apăsat, extins, indisponibil, selectat, doar citire) înainte de numele obiectului, astfel încât utilizatorii să audă starea mai întâi. Fiecare tip de stare poate fi comutat individual în panoul de setări \"Starea înainte de etichetă\" din NVDA."
+    },
+    {
+      "language": "pt",
+      "displayName": "Estado antes do rótulo",
+      "description": "Anuncia os estados de controlo (marcado, premido, expandido, indisponível, selecionado, apenas de leitura) antes do nome do objeto para que os utilizadores ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de definições \"Estado antes do rótulo\" do NVDA."
+    },
+    {
+      "language": "tr",
+      "displayName": "Etiket öncesi durum",
+      "description": "Kullanıcıların durumu önce duyması için denetim durumlarını (işaretli, basılı, genişletilmiş, kullanılamaz, seçili, salt okunur) nesne adından önce duyurur. Her durum türü, NVDA'nın \"Etiket öncesi durum\" ayarlar panelinden ayrı ayrı değiştirilebilir."
+    },
+    {
+      "language": "uk",
+      "displayName": "Стан перед міткою",
+      "description": "Озвучує стани елементів керування (відмічено, натиснуто, розгорнуто, недоступно, вибрано, тільки для читання) перед назвою об'єкта, щоб користувачі спочатку чули стан. Кожен тип стану можна індивідуально перемикати на панелі налаштувань \"Стан перед міткою\" в NVDA."
+    },
+    {
+      "language": "th",
+      "displayName": "สถานะก่อนป้ายชื่อ",
+      "description": "ประกาศสถานะของตัวควบคุม (ทำเครื่องหมาย, กด, ขยาย, ไม่พร้อมใช้งาน, เลือก, อ่านอย่างเดียว) ก่อนชื่อวัตถุเพื่อให้ผู้ใช้ได้ยินสถานะก่อน สามารถสลับสถานะแต่ละประเภทได้ที่แผงการตั้งค่า \"สถานะก่อนป้ายชื่อ\" ของ NVDA"
+    },
+    {
+      "language": "hu",
+      "displayName": "Állapot a felirat előtt",
+      "description": "Bejelenti a vezérlőállapotokat (bejelölve, lenyomva, kibontva, nem elérhető, kijelölve, írásvédett) az objektum neve előtt, így a felhasználók először az állapotot hallják. Minden állapottípus külön-külön kapcsolható az NVDA \"Állapot a felirat előtt\" beállítási paneljén."
+    },
+    {
+      "language": "tl",
+      "displayName": "Estado bago ang label",
+      "description": "Inanunsyo ang mga estado ng control (naka-check, pinindot, pinalawak, hindi available, napili, read-only) bago ang pangalan ng object para marinig muna ng mga user ang estado. Ang bawat uri ng estado ay maaaring i-toggle nang paisa-isa sa panel ng mga setting ng \"Estado bago ang label\" ng NVDA."
+    },
+    {
+      "language": "ru",
+      "displayName": "Состояние перед меткой",
+      "description": "Озвучивает состояния элементов управления (отмечено, нажато, развернуто, недоступно, выбрано, только чтение) перед именем объекта, чтобы пользователи сначала слышали состояние. Каждый тип состояния можно отдельно переключать на панели настроек \"Состояние перед меткой\" в NVDA."
+    },
+    {
+      "language": "si",
+      "displayName": "ලේබලයට පෙර තත්ත්වය",
+      "description": "පාලක තත්ත්වයන් (සලකුණු කළ, ඔබන ලද, දිගහැරුණු, ලබාගත නොහැකි, තෝරාගත්, කියවීමට පමණක්) ඔබ්ජෙක්ට් නාමයට පෙර ප්‍රකාශ කරන බැවින් පරිශීලකයින්ට මුලින්ම තත්ත්වය ඇසෙනු ඇත. සෑම තත්ත්ව වර්ගයක්ම NVDA හි \"ලේබලයට පෙර තත්ත්වය\" සැකසුම් පුවරුව තුළ වෙන වෙනම ටොගල් කළ හැක."
+    },
+    {
+      "language": "sk",
+      "displayName": "Stav pred menovkou",
+      "description": "Oznámi stavy ovládacích prvkov (zaškrtnuté, stlačené, rozbalené, nedostupné, vybraté, len na čítanie) pred názvom objektu, takže používatelia počujú stav ako prvý. Každý typ stavu možno individuálne prepínať na paneli nastavení \"Stav pred menovkou\" v NVDA."
+    },
+    {
+      "language": "pt_PT",
+      "displayName": "Estado antes do rótulo",
+      "description": "Anuncia os estados de controlo (marcado, premido, expandido, indisponível, selecionado, apenas de leitura) antes do nome do objeto para que os utilizadores ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de definições \"Estado antes do rótulo\" do NVDA."
+    },
+    {
+      "language": "da",
+      "displayName": "Tilstand før etiket",
+      "description": "Oplæser kontrolelementernes tilstande (markeret, trykket, udvidet, utilgængelig, valgt, skrivebeskyttet) før objektnavnet, så brugerne hører tilstanden først. Hver tilstandstype kan slås til eller fra individuelt i NVDA's indstillingspanel for \"Tilstand før etiket\"."
+    },
+    {
+      "language": "it",
+      "displayName": "Stato prima dell'etichetta",
+      "description": "Annuncia gli stati dei controlli (selezionato, premuto, espanso, non disponibile, selezionato, sola lettura) prima del nome dell'oggetto, in modo che gli utenti sentano prima lo stato. Ogni tipo di stato può essere attivato individualmente nel pannello delle impostazioni \"Stato prima dell'etichetta\" di NVDA."
+    },
+    {
+      "language": "lo",
+      "displayName": "ສະຖານະກ່ອນປ້າຍຊື່",
+      "description": "ປະກາດສະຖານະການຄວບຄຸມ (ໝາຍຕິກ, ກົດ, ຂະຫຍາຍ, ບໍ່ສາມາດໃຊ້ງານໄດ້, ເລືອກ, ອ່ານຢ່າງດຽວ) ກ່ອນຊື່ອອບເຈັກ ເພື່ອໃຫ້ຜູ້ໃຊ້ໄດ້ຍິນສະຖານະກ່ອນ. ແຕ່ລະປະເພດສະຖານະສາມາດສະຫຼັບແຍກຕ່າງຫາກໃນແຜງການຕັ້ງຄ່າ \"ສະຖານະກ່ອນປ້າຍຊື່\" ຂອງ NVDA."
+    },
+    {
+      "language": "bg",
+      "displayName": "Състояние преди етикета",
+      "description": "Обявява състоянията на контролите (отметнато, натиснато, разгърнато, недостъпно, избрано, само за четене) преди името на обекта, така че потребителите първо да чуят състоянието. Всеки тип състояние може да се превключва индивидуално в панела с настройки на NVDA за състояние преди етикета."
+    },
+    {
+      "language": "kk",
+      "displayName": "Белгіге дейінгі күй",
+      "description": "Пайдаланушылар күйді алдымен естуі үшін басқару элементтерінің күйлерін (белгіленген, басылған, жайылған, қолжетімсіз, таңдалған, тек оқу үшін) нысан атауының алдында жариялайды. Әр күй түрін NVDA-ның \"Белгіге дейінгі күй\" параметрлер панелінде жеке қосуға/өшіруге болады."
+    },
+    {
+      "language": "my",
+      "displayName": "တံဆိပ်မတပ်မီ အခြေအနေ",
+      "description": "အသုံးပြုသူများ ဦးစွာကြားရစေရန် ထိန်းချုပ်မှုအခြေအနေများ (အမှန်ခြစ်ထားသော၊ နှိပ်ထားသော၊ ချဲ့ထားသော၊ မရနိုင်သော၊ ရွေးချယ်ထားသော၊ ဖတ်ရန်သာ) ကို အရာဝတ္ထုအမည်မတိုင်မီ ကြေညာပေးသည်။ အခြေအနေအမျိုးအစားတစ်ခုစီကို NVDA ၏ \"တံဆိပ်မတပ်မီ အခြေအနေ\" ဆက်တင်များတွင် တစ်ခုချင်းစီ ပြောင်းလဲနိုင်ပါသည်။"
+    },
+    {
+      "language": "bn",
+      "displayName": "লেবেলের আগে অবস্থা",
+      "description": "অবজেক্টের নামের আগে কন্ট্রোল স্টেটগুলো (চেক করা, প্রেস করা, প্রসারিত, অনুপলব্ধ, নির্বাচিত, শুধুমাত্র পঠনযোগ্য) ঘোষণা করে যাতে ব্যবহারকারীরা প্রথমে স্টেটটি শুনতে পান। NVDA-এর \"লেবেলের আগে অবস্থা\" সেটিংস প্যানেলে প্রতিটি স্টেট আলাদাভাবে টগল করা যেতে পারে।"
+    },
+    {
+      "language": "ms",
+      "displayName": "Status sebelum label",
+      "description": "Mengumumkan status kawalan (ditanda, ditekan, dikembangkan, tidak tersedia, dipilih, baca sahaja) sebelum nama objek supaya pengguna mendengar status itu dahulu. Setiap jenis status boleh ditogol secara individu dalam panel tetapan \"Status sebelum label\" NVDA."
+    },
+    {
+      "language": "de",
+      "displayName": "Zustand vor Bezeichnung",
+      "description": "Kündigt Steuerelementzustände (markiert, gedrückt, aufgeklappt, nicht verfügbar, ausgewählt, schreibgeschützt) vor dem Objektnamen an, sodass Benutzer den Zustand zuerst hören. Jeder Zustandstyp kann im NVDA-Einstellungsbereich „Zustand vor Bezeichnung“ individuell umgeschaltet werden."
+    },
+    {
+      "language": "cs",
+      "displayName": "Stav před popiskem",
+      "description": "Oznámí stavy ovládacích prvků (zaškrtnuto, stisknuto, rozbaleno, nedostupné, vybráno, jen ke čtení) před názvem objektu, takže uživatelé slyší stav jako první. Každý typ stavu lze individuálně přepínat v panelu nastavení \"Stav před popiskem\" v NVDA."
+    },
+    {
+      "language": "uz",
+      "displayName": "Yorliqdan oldingi holat",
+      "description": "Foydalanuvchilar holatni birinchi bo'lib eshitishlari uchun boshqaruv holatlarini (belgilangan, bosilgan, kengaytirilgan, mavjud emas, tanlangan, faqat o'qish uchun) ob'ekt nomidan oldin e'lon qiladi. Har bir holat turini NVDA'ning \"Yorliqdan oldingi holat\" sozlamalar panelida alohida yoqish yoki o'chirish mumkin."
+    },
+    {
+      "language": "pt_BR",
+      "displayName": "Estado antes do rótulo",
+      "description": "Anuncia os estados de controle (marcado, pressionado, expandido, indisponível, selecionado, somente leitura) antes do nome do objeto para que os usuários ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de configurações \"Estado antes do rótulo\" do NVDA."
+    },
+    {
+      "language": "es",
+      "displayName": "Estado antes de la etiqueta",
+      "description": "Anuncia los estados de control (marcado, presionado, expandido, no disponible, seleccionado, de solo lectura) antes del nombre del objeto para que los usuarios escuchen el estado primero. Cada tipo de estado puede activarse individualmente en el panel de configuración de \"Estado antes de la etiqueta\" de NVDA."
+    },
+    {
+      "language": "te",
+      "displayName": "లేబుల్‌కు ముందు స్థితి",
+      "description": "కంట్రోల్ స్థితులను (సెలెక్ట్ చేయబడింది, నొక్కబడింది, విస్తరించబడింది, అందుబాటులో లేదు, ఎంచుకోబడింది, చదవడానికి మాత్రమే) ఆబ్జెక్ట్ పేరు కంటే ముందుగానే తెలియజేస్తుంది, దీనివల్ల వినియోగదారులు స్థితిని ముందుగా వినగలరు. ప్రతి స్థితిని NVDAలోని \"లేబుల్‌కు ముందు స్థితి\" సెట్టింగ్‌ల ప్యానెల్‌లో వ్యక్తిగతంగా మార్చుకోవచ్చు."
+    },
+    {
+      "language": "hi",
+      "displayName": "लेबल से पहले स्थिति",
+      "description": "ऑब्जेक्ट के नाम से पहले नियंत्रण स्थितियों (चेक किया गया, दबाया गया, विस्तारित, अनुपलब्ध, चयनित, केवल पढ़ने योग्य) की घोषणा करता है ताकि उपयोगकर्ता पहले स्थिति सुन सकें। NVDA के \"लेबल से पहले स्थिति\" सेटिंग्स पैनल में प्रत्येक स्थिति प्रकार को व्यक्तिगत रूप से टॉगल किया जा सकता है।"
+    },
+    {
+      "language": "fi",
+      "displayName": "Tila ennen nimikettä",
+      "description": "Ilmoittaa hallintaelementtien tilat (valittu, painettu, laajennettu, ei käytettävissä, valittu, vain luku) ennen objektin nimeä, jotta käyttäjät kuulevat tilan ensin. Kukin tilatyyppi voidaan vaihtaa yksilöllisesti NVDA:n \"Tila ennen nimikettä\" -asetuspaneelissa."
+    },
+    {
+      "language": "id",
+      "displayName": "Status sebelum label",
+      "description": "Mengumumkan status kontrol (dicentang, ditekan, diperluas, tidak tersedia, dipilih, hanya-baca) sebelum nama objek agar pengguna mendengar statusnya terlebih dahulu. Setiap tipe status dapat diaktifkan/dinonaktifkan secara individu di panel pengaturan \"Status sebelum label\" NVDA."
+    },
+    {
+      "language": "hr",
+      "displayName": "Stanje prije oznake",
+      "description": "Objavljuje stanja kontrola (označeno, pritisnuto, prošireno, nedostupno, odabrano, samo za čitanje) prije naziva objekta kako bi korisnici prvo čuli stanje. Svaka vrsta stanja može se pojedinačno uključiti ili isključiti na NVDA ploči postavki \"Stanje prije oznake\"."
+    },
+    {
+      "language": "tk",
+      "displayName": "Bellikden öňki ýagdaý",
+      "description": "Ulanyjylar ýagdaýy ilki eşitsin diýip, dolandyryş ýagdaýlaryny (bellenen, basylan, giňeldilen, elýeterli däl, saýlanan, diňe okaýyş) obýektiň adyndan öň yglan edýär. Her ýagdaý görnüşi NVDA-nyň \"Bellikden öňki ýagdaý\" sazlamalar panelinde aýratynlykda açylyp/ýapylyp bilner."
+    },
+    {
+      "language": "fa",
+      "displayName": "وضعیت پیش از برچسب",
+      "description": "وضعیت‌های کنترل (تیک‌خورده، فشرده، بازشده، غیرقابل دسترس، انتخاب‌شده، فقط خواندنی) را قبل از نام شیء اعلام می‌کند تا کاربران ابتدا وضعیت را بشنوند. هر نوع وضعیت را می‌توان به‌صورت جداگانه در پنل تنظیمات \"وضعیت پیش از برچسب\" در NVDA تغییر داد."
+    },
+    {
+      "language": "zh_CN",
+      "displayName": "标签前的状态",
+      "description": "在对象名称前朗读控件状态（选中、按下、展开、不可用、已选择、只读），以便用户先听到状态。每种状态类型都可以在 NVDA 的“标签前的状态”设置面板中单独切换。"
+    },
+    {
+      "language": "en",
+      "displayName": "StateBeforeLabel",
+      "description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel."
+    },
+    {
+      "language": "ja",
+      "displayName": "ラベルの前に状態",
+      "description": "コントロールの状態（チェック済み、押下済み、展開済み、利用不可、選択済み、読み取り専用）をオブジェクト名の前に読み上げるため、ユーザーは先に状態を知ることができます。各状態タイプは、NVDAの「ラベルの前に状態」設定パネルで個別に切り替え可能です。"
+    },
+    {
+      "language": "fr",
+      "displayName": "État avant l'étiquette",
+      "description": "Annonce les états des contrôles (coché, appuyé, développé, indisponible, sélectionné, lecture seule) avant le nom de l'objet afin que les utilisateurs entendent l'état en premier. Chaque type d'état peut être activé individuellement dans le panneau de paramètres \"État avant l'étiquette\" de NVDA."
+    },
+    {
+      "language": "ta",
+      "displayName": "லேபிளுக்கு முன் நிலை",
+      "description": "கட்டுப்பாட்டு நிலைகளை (தேர்வு செய்யப்பட்டது, அழுத்தப்பட்டது, விரிவாக்கப்பட்டது, கிடைக்கவில்லை, தேர்ந்தெடுக்கப்பட்டது, படிக்க மட்டும்) ஆப்ஜெக்ட் பெயருக்கு முன்னதாகவே அறிவிக்கிறது, இதனால் பயனர்கள் முதலில் நிலையை அறியலாம். ஒவ்வொரு நிலை வகையையும் NVDA-வின் \"லேபிளுக்கு முன் நிலை\" அமைப்புகள் பேனலில் தனித்தனியாக மாற்றிக்கொள்ளலாம்."
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
+  "scanResults": {
+    "virusTotal": [
+      {
+        "_id": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "html": 6,
+            "ini": 44,
+            "md": 6,
+            "mo": 43,
+            "po": 43,
+            "py": 1
+          },
+          "file_types": {
+            "HTML": 6,
+            "directory": 96,
+            "unknown": 137
+          },
+          "highest_datetime": "2026-06-28 18:15:48",
+          "lowest_datetime": "2026-01-03 12:44:18",
+          "num_children": 239,
+          "type": "ZIP",
+          "uncompressed_size": 263755
+        },
+        "contenthash": "c458fccb1bce1311c45888495bad1ef2",
+        "filecondis": {
+          "dhash": "00003c3c35280000",
+          "raw_md5": "5b4e76ba6786dde185462e7ca6fed6ad"
+        },
+        "first_submission_date": 1782646739,
+        "last_analysis_date": 1782646739,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260628",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260628",
+            "engine_version": "6.793",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260628",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260628",
+            "engine_version": "3.30.1.10706",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260628",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260628",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260628",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260628",
+            "engine_version": "260628-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260628",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260628",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260627",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260627",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260628",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260628",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260628",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260625",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260628",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260614",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260628",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260628",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260626",
+            "engine_version": "4.0.268",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260628",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260628",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260628",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260628",
+            "engine_version": "GD:27.45071AVA:64.31489",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260628",
+            "engine_version": "1782644474",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260628",
+            "engine_version": "1.0.249.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260628",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260628",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260628",
+            "engine_version": "14.59.59965",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260628",
+            "engine_version": "14.59.59966",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260628",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260628",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260628",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260628",
+            "engine_version": "3.1.0.239",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260626",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260628",
+            "engine_version": "1.2.0.15146",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260628",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260628",
+            "engine_version": "1.1.26050.11",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260628",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260628",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260628",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260628",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260627",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260626",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260623",
+            "engine_version": "7.7.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260627",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260628",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260628",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260628",
+            "engine_version": "2026-06-28.02",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260628",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260604",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260627",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260628",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260628",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "failure",
+            "engine_name": "Trustlook",
+            "engine_update": "20260628",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260628",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260628",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260628",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260627",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260626",
+            "engine_version": "9.5.1237",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.10.0.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260628",
+            "engine_version": "38765",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260628",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260626",
+            "engine_version": "2.0.0.5630",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260628",
+            "engine_version": "6.25-116107927",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260628",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260627",
+            "engine_version": "70ca644:70ca644:6990e76:6990e76",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260628",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 65
+        },
+        "last_modification_date": 1782646776,
+        "last_submission_date": 1782646739,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+        "magika": "ZIP",
+        "md5": "1b901f8d6941ffd70aa3c50f67b9287a",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "7859ce11067ad63cfa8567e4d92448ada56d73ba",
+        "sha256": "a2326997e0a2a22eb7bd7fb6ac7e3205db31910e1534f69b32dd8b20057d5e4b",
+        "size": 147039,
+        "ssdeep": "3072:rkZkRTRj6puyPWjBBDBvb27qo/JGIsqmk9:rkGZucFBpZhfTk9",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T196E36B55932F104BF09A97FF75870227E27D8109E27EAA470A5BA4C2DC8E35D0FCEA45",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "6316cbd8d16e2cb49068ba6e44759924"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10098"
 }

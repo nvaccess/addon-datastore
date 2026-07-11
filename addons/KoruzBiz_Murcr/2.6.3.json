@@ -1,801 +1,801 @@
 {
-	"addonId": "KoruzBiz_Murcr",
-	"displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
-	"URL": "https://github.com/koruzbiz/murcr/releases/download/2.6.3/KoruzBiz_Murcr-2.6.3.nvda-addon",
-	"description": "MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose.",
-	"sha256": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
-	"addonVersionName": "2.6.3",
-	"addonVersionNumber": {
-		"major": 2,
-		"minor": 6,
-		"patch": 3
-	},
-	"minNVDAVersion": {
-		"major": 2022,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2025,
-		"minor": 3,
-		"patch": 0
-	},
-	"channel": "stable",
-	"publisher": "koruzbiz",
-	"sourceURL": "https://github.com/koruzbiz/murcr/",
-	"license": "GPL v2",
-	"homepage": "https://MurText.org",
-	"changelog": "MurCr allows you to process audio and video files in many different formats. It reduces the risk of errors with features such as timeline overlap detection, video resolution conflict analysis, and other smart management tools. Its fully accessible interface ensures usability for everyone.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1776393443000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "Koruz.biz MurCr – أداة قص وإنشاء الصوت والفيديو بإمكانية وصول كاملة",
-			"description": "MurCr هو تطبيق قص وإنشاء وتحويل الصوت والفيديو بإمكانية وصول كاملة، تم تطويره للمستخدمين المكفوفين. يعمل هذا الملحق الخاص بـ NVDA كجسر بين NVDA وMurCr. يتيح لك قص الملفات، وتقسيمها إلى أجزاء متساوية، وتحويلها إلى صيغ مختلفة، أو إنشاء مقاطع فيديو باستخدام أي صورة تختارها.",
-			"changelog": "يتيح لك MurCr معالجة ملفات الصوت والفيديو بعدة صيغ مختلفة. كما يقلل من خطر الأخطاء من خلال ميزات مثل اكتشاف تداخل المخطط الزمني وتحليل تعارض دقة الفيديو وأدوات الإدارة الذكية الأخرى. وتضمن واجهته القابلة للوصول بالكامل سهولة الاستخدام للجميع."
-		},
-		{
-			"language": "de",
-			"displayName": "Koruz.biz MurCr – Barrierefreies Zuschneiden und Erstellen von Audio und Video",
-			"description": "MurCr ist eine vollständig barrierefreie Anwendung zum Zuschneiden, Erstellen und Konvertieren von Audio- und Videodateien, die für blinde Benutzer entwickelt wurde. Dieses NVDA-Add-on fungiert als Brücke zwischen NVDA und MurCr. Es ermöglicht Ihnen, Dateien zuzuschneiden, in gleiche Teile zu teilen, in verschiedene Formate zu konvertieren oder Videos mit einem beliebigen Bild zu erstellen.",
-			"changelog": "Mit MurCr können Sie Audio- und Videodateien in vielen verschiedenen Formaten verarbeiten. Funktionen wie die Erkennung von Zeitachsenüberschneidungen, die Analyse von Konflikten bei der Videoauflösung und andere intelligente Verwaltungswerkzeuge reduzieren das Fehlerrisiko. Die vollständig barrierefreie Oberfläche sorgt für eine nutzbare Erfahrung für alle."
-		},
-		{
-			"language": "es",
-			"displayName": "Koruz.biz MurCr – Recorte y creación accesible de audio y video",
-			"description": "MurCr es una aplicación totalmente accesible para recortar, crear y convertir audio y video, desarrollada para usuarios ciegos. Este complemento de NVDA actúa como un puente entre NVDA y MurCr. Permite recortar archivos, dividirlos en partes iguales, convertirlos a diferentes formatos o crear videos utilizando cualquier imagen que elija.",
-			"changelog": "MurCr le permite procesar archivos de audio y video en muchos formatos diferentes. Reduce el riesgo de errores con funciones como la detección de superposición en la línea de tiempo, el análisis de conflictos de resolución de video y otras herramientas inteligentes de gestión. Su interfaz totalmente accesible garantiza la usabilidad para todos."
-		},
-		{
-			"language": "fr",
-			"displayName": "Koruz.biz MurCr – Découpage et création audio et vidéo accessibles",
-			"description": "MurCr est une application entièrement accessible de découpage, de création et de conversion audio et vidéo, développée pour les utilisateurs aveugles. Cette extension NVDA agit comme un pont entre NVDA et MurCr. Elle vous permet de découper des fichiers, de les diviser en parties égales, de les convertir dans différents formats ou de créer des vidéos à partir de l'image de votre choix.",
-			"changelog": "MurCr vous permet de traiter des fichiers audio et vidéo dans de nombreux formats différents. Il réduit le risque d'erreurs grâce à des fonctions telles que la détection de chevauchement de la ligne temporelle, l'analyse des conflits de résolution vidéo et d'autres outils intelligents de gestion. Son interface entièrement accessible garantit une utilisation pour tous."
-		},
-		{
-			"language": "hi",
-			"displayName": "Koruz.biz MurCr – सुलभ ऑडियो और वीडियो ट्रिमिंग और निर्माण",
-			"description": "MurCr एक पूरी तरह सुलभ ऑडियो और वीडियो ट्रिमिंग, निर्माण और रूपांतरण अनुप्रयोग है, जिसे दृष्टिबाधित उपयोगकर्ताओं के लिए विकसित किया गया है। यह NVDA ऐड-ऑन NVDA और MurCr के बीच एक सेतु का कार्य करता है। यह आपको फ़ाइलों को ट्रिम करने, उन्हें समान भागों में विभाजित करने, विभिन्न प्रारूपों में बदलने या अपनी पसंद की किसी भी छवि का उपयोग करके वीडियो बनाने की अनुमति देता है।",
-			"changelog": "MurCr आपको कई विभिन्न प्रारूपों में ऑडियो और वीडियो फ़ाइलों को संसाधित करने की अनुमति देता है। यह टाइमलाइन ओवरलैप पहचान, वीडियो रिज़ॉल्यूशन संघर्ष विश्लेषण और अन्य स्मार्ट प्रबंधन उपकरण जैसी सुविधाओं के साथ त्रुटियों के जोखिम को कम करता है। इसका पूरी तरह सुलभ इंटरफ़ेस सभी के लिए उपयोगिता सुनिश्चित करता है।"
-		},
-		{
-			"language": "it",
-			"displayName": "Koruz.biz MurCr – Taglio e creazione accessibile di audio e video",
-			"description": "MurCr è un'applicazione completamente accessibile per il taglio, la creazione e la conversione di audio e video, sviluppata per utenti non vedenti. Questo componente aggiuntivo di NVDA funge da ponte tra NVDA e MurCr. Consente di tagliare file, dividerli in parti uguali, convertirli in diversi formati o creare video utilizzando qualsiasi immagine scelta.",
-			"changelog": "MurCr consente di elaborare file audio e video in molti formati diversi. Riduce il rischio di errori grazie a funzioni come il rilevamento delle sovrapposizioni nella timeline, l'analisi dei conflitti di risoluzione video e altri strumenti intelligenti di gestione. La sua interfaccia completamente accessibile garantisce usabilità per tutti."
-		},
-		{
-			"language": "ja",
-			"displayName": "Koruz.biz MurCr – アクセシブルな音声・動画のトリミングと作成",
-			"description": "MurCr は、視覚障害者向けに開発された完全にアクセシブルな音声および動画のトリミング、作成、変換アプリケーションです。この NVDA アドオンは NVDA と MurCr の間の橋渡しとして機能します。ファイルのトリミング、均等な分割、異なる形式への変換、または任意の画像を使用した動画の作成が可能になります。",
-			"changelog": "MurCr を使用すると、多くの異なる形式の音声および動画ファイルを処理できます。タイムラインの重複検出、動画解像度の競合分析、その他のスマート管理ツールなどの機能により、エラーのリスクを低減します。完全にアクセシブルなインターフェースにより、誰にとっても使いやすい環境を提供します。"
-		},
-		{
-			"language": "pt",
-			"displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
-			"description": "MurCr é um aplicativo totalmente acessível para corte, criação e conversão de áudio e vídeo, desenvolvido para usuários cegos. Este complemento do NVDA atua como uma ponte entre o NVDA e o MurCr. Ele permite cortar arquivos, dividi-los em partes iguais, convertê-los para diferentes formatos ou criar vídeos usando qualquer imagem que você escolher.",
-			"changelog": "MurCr permite processar arquivos de áudio e vídeo em muitos formatos diferentes. Ele reduz o risco de erros com recursos como detecção de sobreposição na linha do tempo, análise de conflitos de resolução de vídeo e outras ferramentas inteligentes de gerenciamento. Sua interface totalmente acessível garante usabilidade para todos."
-		},
-		{
-			"language": "ru",
-			"displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
-			"description": "MurCr — это полностью доступное приложение для обрезки, создания и конвертации аудио и видео, разработанное для незрячих пользователей. Это дополнение NVDA выступает мостом между NVDA и MurCr. Оно позволяет обрезать файлы, разделять их на равные части, конвертировать в различные форматы или создавать видео с использованием любого выбранного изображения.",
-			"changelog": "MurCr позволяет обрабатывать аудио- и видеофайлы во многих различных форматах. Он снижает риск ошибок благодаря таким функциям, как обнаружение перекрытий на временной шкале, анализ конфликтов разрешения видео и другие интеллектуальные инструменты управления. Его полностью доступный интерфейс обеспечивает удобство использования для всех."
-		},
-		{
-			"language": "tr",
-			"displayName": "Körüz.biz MurCr – Erişilebilir Ses ve Video Kırpma ve Oluşturma",
-			"description": "MurCr, görme engelli kullanıcılar için geliştirilmiş, tamamen erişilebilir bir ses ve video kırpma, oluşturma ve dönüştürme uygulamasıdır. Bu NVDA eklentisi, NVDA ile MurCr arasında bir köprü görevi görür. Dosyaları kırpmanıza, eşit parçalara ayırmanıza, farklı formatlara dönüştürmenize veya seçtiğiniz herhangi bir görüntüyü kullanarak videolar oluşturmanıza olanak tanır.",
-			"changelog": "MurCr, birçok farklı formattaki ses ve video dosyalarını işlemenize olanak sağlar. Zaman çizelgesi çakışması tespiti, video çözünürlüğü çakışması analizi ve diğer akıllı yönetim araçları gibi özelliklerle hata riskini azaltır. Tamamen erişilebilir arayüzü herkes için kullanılabilirlik sağlar."
-		},
-		{
-			"language": "uk",
-			"displayName": "Körüz.biz MurCr – Доступне обрізання та створення аудіо й відео",
-			"description": "MurCr — це повністю доступний застосунок для обрізання, створення та конвертації аудіо й відео, розроблений для незрячих користувачів. Це доповнення NVDA виступає мостом між NVDA та MurCr. Воно дозволяє обрізати файли, розділяти їх на рівні частини, конвертувати в різні формати або створювати відео, використовуючи будь-яке обране зображення.",
-			"changelog": "MurCr дозволяє обробляти аудіо та відеофайли у багатьох різних форматах. Він зменшує ризик помилок завдяки таким функціям, як виявлення перекриття на часовій шкалі, аналіз конфліктів роздільної здатності відео та інші інтелектуальні інструменти керування. Повністю доступний інтерфейс забезпечує зручність використання для всіх."
-		},
-		{
-			"language": "zh",
-			"displayName": "Koruz.biz MurCr – 无障碍音频和视频剪辑与创建",
-			"description": "MurCr 是一款专为盲人用户开发的完全无障碍音频和视频剪辑、创建和转换应用程序。此 NVDA 插件充当 NVDA 与 MurCr 之间的桥梁。它允许您剪辑文件、将其分割为相等的部分、转换为不同的格式，或使用您选择的任何图像创建视频。",
-			"changelog": "MurCr 允许您处理多种不同格式的音频和视频文件。通过时间线重叠检测、视频分辨率冲突分析以及其他智能管理工具等功能，它可以降低出错的风险。其完全无障碍的界面确保所有人都能轻松使用。"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
-	"scanResults": {
-		"codeQL-warnings": [],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"css": 2,
-						"html": 13,
-						"ini": 13,
-						"md": 14,
-						"mo": 25,
-						"po": 25,
-						"py": 4
-					},
-					"file_types": {
-						"HTML": 13,
-						"unknown": 83
-					},
-					"highest_datetime": "2026-04-06 18:53:44",
-					"lowest_datetime": "2026-04-06 18:53:20",
-					"num_children": 96,
-					"type": "ZIP",
-					"uncompressed_size": 273081
-				},
-				"filecondis": {
-					"dhash": "00001416141d0800",
-					"raw_md5": "443f585eaa381ba5b42e1694c6a8b8e6"
-				},
-				"first_submission_date": 1775504652,
-				"last_analysis_date": 1776393460,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260416",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260416",
-						"engine_version": "6.770",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260322",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260416",
-						"engine_version": "3.29.3.10609",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260417",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260416",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260322",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260416",
-						"engine_version": "260416-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260416",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Baidu": {
-						"category": "undetected",
-						"engine_name": "Baidu",
-						"engine_update": "20190318",
-						"engine_version": "1.0.0.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260417",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20251216",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260416",
-						"engine_version": "2.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260416",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260416",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260417",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "undetected",
-						"engine_name": "ClamAV",
-						"engine_update": "20260416",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260416",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260416",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "type-unsupported",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260407",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260417",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260416",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "type-unsupported",
-						"engine_name": "Elastic",
-						"engine_update": "20260416",
-						"engine_version": "4.0.256",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260417",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260416",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260416",
-						"engine_version": "7.0.30.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260417",
-						"engine_version": "GD:27.44220AVA:64.31050",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260417",
-						"engine_version": "1776387660",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260416",
-						"engine_version": "1.0.243.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "undetected",
-						"engine_name": "Ikarus",
-						"engine_update": "20260416",
-						"engine_version": "6.4.16.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260416",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260417",
-						"engine_version": "14.47.59223",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260416",
-						"engine_version": "14.47.59222",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260417",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260416",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260416",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260417",
-						"engine_version": "3.1.0.231",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "undetected",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260416",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260417",
-						"engine_version": "1.2.0.14532",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260416",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260416",
-						"engine_version": "1.1.26030.3008",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260417",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260417",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260416",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260416",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260416",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260413",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260416",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260416",
-						"engine_version": "3.4.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260416",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260417",
-						"engine_version": "2026-04-17.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260417",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260331",
-						"engine_version": "4.0.11.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260416",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "undetected",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260417",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260417",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260416",
-						"engine_version": "5.5.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260416",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260416",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260416",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260416",
-						"engine_version": "9.5.1188",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260416",
-						"engine_version": "38573",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260417",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260416",
-						"engine_version": "2.0.0.5582",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260416",
-						"engine_version": "6.24-114820304",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260417",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260416",
-						"engine_version": "8551ec9:8551ec9:9bef9f5:9bef9f5",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260417",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 0,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 0,
-					"type-unsupported": 9,
-					"undetected": 67
-				},
-				"last_modification_date": 1776393521,
-				"last_submission_date": 1776393460,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "UNKNOWN",
-				"md5": "d6785268cd4cfb1c8246d1036e18b2f3",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "eac0e7299e34e96c29dfbca9b4c88a8e7bdb5c1f",
-				"sha256": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
-				"size": 124927,
-				"ssdeep": "3072:mnK1SVF/KqWqYdKuYNF9obHT4Um8O4iLdF71IetBil1cS:mnK1SXWXkNFuzcUm8WlI4ibcS",
-				"tags": [
-					"zip"
-				],
-				"times_submitted": 3,
-				"tlsh": "T1FAC3C01A9A5E001ADAF34EFEEA53380BF04F1145F14E3765271BD4E29E0939F43EA958",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "00fef6b58edf473f647175ffec205bfe"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8416"
+  "addonId": "KoruzBiz_Murcr",
+  "displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
+  "URL": "https://github.com/koruzbiz/murcr/releases/download/2.6.3/KoruzBiz_Murcr-2.6.3.nvda-addon",
+  "description": "MurCr is a fully accessible audio and video trimming, creation, and conversion application developed for blind users. This NVDA add-on acts as a bridge between NVDA and MurCr. It allows you to trim files, split them into equal parts, convert them to different formats, or create videos using any image you choose.",
+  "sha256": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
+  "addonVersionName": "2.6.3",
+  "addonVersionNumber": {
+    "major": 2,
+    "minor": 6,
+    "patch": 3
+  },
+  "minNVDAVersion": {
+    "major": 2022,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2025,
+    "minor": 3,
+    "patch": 0
+  },
+  "channel": "stable",
+  "publisher": "koruzbiz",
+  "sourceURL": "https://github.com/koruzbiz/murcr/",
+  "license": "GPL v2",
+  "homepage": "https://MurText.org",
+  "changelog": "MurCr allows you to process audio and video files in many different formats. It reduces the risk of errors with features such as timeline overlap detection, video resolution conflict analysis, and other smart management tools. Its fully accessible interface ensures usability for everyone.",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1776393443000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "Koruz.biz MurCr – أداة قص وإنشاء الصوت والفيديو بإمكانية وصول كاملة",
+      "description": "MurCr هو تطبيق قص وإنشاء وتحويل الصوت والفيديو بإمكانية وصول كاملة، تم تطويره للمستخدمين المكفوفين. يعمل هذا الملحق الخاص بـ NVDA كجسر بين NVDA وMurCr. يتيح لك قص الملفات، وتقسيمها إلى أجزاء متساوية، وتحويلها إلى صيغ مختلفة، أو إنشاء مقاطع فيديو باستخدام أي صورة تختارها.",
+      "changelog": "يتيح لك MurCr معالجة ملفات الصوت والفيديو بعدة صيغ مختلفة. كما يقلل من خطر الأخطاء من خلال ميزات مثل اكتشاف تداخل المخطط الزمني وتحليل تعارض دقة الفيديو وأدوات الإدارة الذكية الأخرى. وتضمن واجهته القابلة للوصول بالكامل سهولة الاستخدام للجميع."
+    },
+    {
+      "language": "de",
+      "displayName": "Koruz.biz MurCr – Barrierefreies Zuschneiden und Erstellen von Audio und Video",
+      "description": "MurCr ist eine vollständig barrierefreie Anwendung zum Zuschneiden, Erstellen und Konvertieren von Audio- und Videodateien, die für blinde Benutzer entwickelt wurde. Dieses NVDA-Add-on fungiert als Brücke zwischen NVDA und MurCr. Es ermöglicht Ihnen, Dateien zuzuschneiden, in gleiche Teile zu teilen, in verschiedene Formate zu konvertieren oder Videos mit einem beliebigen Bild zu erstellen.",
+      "changelog": "Mit MurCr können Sie Audio- und Videodateien in vielen verschiedenen Formaten verarbeiten. Funktionen wie die Erkennung von Zeitachsenüberschneidungen, die Analyse von Konflikten bei der Videoauflösung und andere intelligente Verwaltungswerkzeuge reduzieren das Fehlerrisiko. Die vollständig barrierefreie Oberfläche sorgt für eine nutzbare Erfahrung für alle."
+    },
+    {
+      "language": "es",
+      "displayName": "Koruz.biz MurCr – Recorte y creación accesible de audio y video",
+      "description": "MurCr es una aplicación totalmente accesible para recortar, crear y convertir audio y video, desarrollada para usuarios ciegos. Este complemento de NVDA actúa como un puente entre NVDA y MurCr. Permite recortar archivos, dividirlos en partes iguales, convertirlos a diferentes formatos o crear videos utilizando cualquier imagen que elija.",
+      "changelog": "MurCr le permite procesar archivos de audio y video en muchos formatos diferentes. Reduce el riesgo de errores con funciones como la detección de superposición en la línea de tiempo, el análisis de conflictos de resolución de video y otras herramientas inteligentes de gestión. Su interfaz totalmente accesible garantiza la usabilidad para todos."
+    },
+    {
+      "language": "fr",
+      "displayName": "Koruz.biz MurCr – Découpage et création audio et vidéo accessibles",
+      "description": "MurCr est une application entièrement accessible de découpage, de création et de conversion audio et vidéo, développée pour les utilisateurs aveugles. Cette extension NVDA agit comme un pont entre NVDA et MurCr. Elle vous permet de découper des fichiers, de les diviser en parties égales, de les convertir dans différents formats ou de créer des vidéos à partir de l'image de votre choix.",
+      "changelog": "MurCr vous permet de traiter des fichiers audio et vidéo dans de nombreux formats différents. Il réduit le risque d'erreurs grâce à des fonctions telles que la détection de chevauchement de la ligne temporelle, l'analyse des conflits de résolution vidéo et d'autres outils intelligents de gestion. Son interface entièrement accessible garantit une utilisation pour tous."
+    },
+    {
+      "language": "hi",
+      "displayName": "Koruz.biz MurCr – सुलभ ऑडियो और वीडियो ट्रिमिंग और निर्माण",
+      "description": "MurCr एक पूरी तरह सुलभ ऑडियो और वीडियो ट्रिमिंग, निर्माण और रूपांतरण अनुप्रयोग है, जिसे दृष्टिबाधित उपयोगकर्ताओं के लिए विकसित किया गया है। यह NVDA ऐड-ऑन NVDA और MurCr के बीच एक सेतु का कार्य करता है। यह आपको फ़ाइलों को ट्रिम करने, उन्हें समान भागों में विभाजित करने, विभिन्न प्रारूपों में बदलने या अपनी पसंद की किसी भी छवि का उपयोग करके वीडियो बनाने की अनुमति देता है।",
+      "changelog": "MurCr आपको कई विभिन्न प्रारूपों में ऑडियो और वीडियो फ़ाइलों को संसाधित करने की अनुमति देता है। यह टाइमलाइन ओवरलैप पहचान, वीडियो रिज़ॉल्यूशन संघर्ष विश्लेषण और अन्य स्मार्ट प्रबंधन उपकरण जैसी सुविधाओं के साथ त्रुटियों के जोखिम को कम करता है। इसका पूरी तरह सुलभ इंटरफ़ेस सभी के लिए उपयोगिता सुनिश्चित करता है।"
+    },
+    {
+      "language": "it",
+      "displayName": "Koruz.biz MurCr – Taglio e creazione accessibile di audio e video",
+      "description": "MurCr è un'applicazione completamente accessibile per il taglio, la creazione e la conversione di audio e video, sviluppata per utenti non vedenti. Questo componente aggiuntivo di NVDA funge da ponte tra NVDA e MurCr. Consente di tagliare file, dividerli in parti uguali, convertirli in diversi formati o creare video utilizzando qualsiasi immagine scelta.",
+      "changelog": "MurCr consente di elaborare file audio e video in molti formati diversi. Riduce il rischio di errori grazie a funzioni come il rilevamento delle sovrapposizioni nella timeline, l'analisi dei conflitti di risoluzione video e altri strumenti intelligenti di gestione. La sua interfaccia completamente accessibile garantisce usabilità per tutti."
+    },
+    {
+      "language": "ja",
+      "displayName": "Koruz.biz MurCr – アクセシブルな音声・動画のトリミングと作成",
+      "description": "MurCr は、視覚障害者向けに開発された完全にアクセシブルな音声および動画のトリミング、作成、変換アプリケーションです。この NVDA アドオンは NVDA と MurCr の間の橋渡しとして機能します。ファイルのトリミング、均等な分割、異なる形式への変換、または任意の画像を使用した動画の作成が可能になります。",
+      "changelog": "MurCr を使用すると、多くの異なる形式の音声および動画ファイルを処理できます。タイムラインの重複検出、動画解像度の競合分析、その他のスマート管理ツールなどの機能により、エラーのリスクを低減します。完全にアクセシブルなインターフェースにより、誰にとっても使いやすい環境を提供します。"
+    },
+    {
+      "language": "pt",
+      "displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
+      "description": "MurCr é um aplicativo totalmente acessível para corte, criação e conversão de áudio e vídeo, desenvolvido para usuários cegos. Este complemento do NVDA atua como uma ponte entre o NVDA e o MurCr. Ele permite cortar arquivos, dividi-los em partes iguais, convertê-los para diferentes formatos ou criar vídeos usando qualquer imagem que você escolher.",
+      "changelog": "MurCr permite processar arquivos de áudio e vídeo em muitos formatos diferentes. Ele reduz o risco de erros com recursos como detecção de sobreposição na linha do tempo, análise de conflitos de resolução de vídeo e outras ferramentas inteligentes de gerenciamento. Sua interface totalmente acessível garante usabilidade para todos."
+    },
+    {
+      "language": "ru",
+      "displayName": "Koruz.biz MurCr – Accessible Audio & Video Trimming and Creation",
+      "description": "MurCr — это полностью доступное приложение для обрезки, создания и конвертации аудио и видео, разработанное для незрячих пользователей. Это дополнение NVDA выступает мостом между NVDA и MurCr. Оно позволяет обрезать файлы, разделять их на равные части, конвертировать в различные форматы или создавать видео с использованием любого выбранного изображения.",
+      "changelog": "MurCr позволяет обрабатывать аудио- и видеофайлы во многих различных форматах. Он снижает риск ошибок благодаря таким функциям, как обнаружение перекрытий на временной шкале, анализ конфликтов разрешения видео и другие интеллектуальные инструменты управления. Его полностью доступный интерфейс обеспечивает удобство использования для всех."
+    },
+    {
+      "language": "tr",
+      "displayName": "Körüz.biz MurCr – Erişilebilir Ses ve Video Kırpma ve Oluşturma",
+      "description": "MurCr, görme engelli kullanıcılar için geliştirilmiş, tamamen erişilebilir bir ses ve video kırpma, oluşturma ve dönüştürme uygulamasıdır. Bu NVDA eklentisi, NVDA ile MurCr arasında bir köprü görevi görür. Dosyaları kırpmanıza, eşit parçalara ayırmanıza, farklı formatlara dönüştürmenize veya seçtiğiniz herhangi bir görüntüyü kullanarak videolar oluşturmanıza olanak tanır.",
+      "changelog": "MurCr, birçok farklı formattaki ses ve video dosyalarını işlemenize olanak sağlar. Zaman çizelgesi çakışması tespiti, video çözünürlüğü çakışması analizi ve diğer akıllı yönetim araçları gibi özelliklerle hata riskini azaltır. Tamamen erişilebilir arayüzü herkes için kullanılabilirlik sağlar."
+    },
+    {
+      "language": "uk",
+      "displayName": "Körüz.biz MurCr – Доступне обрізання та створення аудіо й відео",
+      "description": "MurCr — це повністю доступний застосунок для обрізання, створення та конвертації аудіо й відео, розроблений для незрячих користувачів. Це доповнення NVDA виступає мостом між NVDA та MurCr. Воно дозволяє обрізати файли, розділяти їх на рівні частини, конвертувати в різні формати або створювати відео, використовуючи будь-яке обране зображення.",
+      "changelog": "MurCr дозволяє обробляти аудіо та відеофайли у багатьох різних форматах. Він зменшує ризик помилок завдяки таким функціям, як виявлення перекриття на часовій шкалі, аналіз конфліктів роздільної здатності відео та інші інтелектуальні інструменти керування. Повністю доступний інтерфейс забезпечує зручність використання для всіх."
+    },
+    {
+      "language": "zh",
+      "displayName": "Koruz.biz MurCr – 无障碍音频和视频剪辑与创建",
+      "description": "MurCr 是一款专为盲人用户开发的完全无障碍音频和视频剪辑、创建和转换应用程序。此 NVDA 插件充当 NVDA 与 MurCr 之间的桥梁。它允许您剪辑文件、将其分割为相等的部分、转换为不同的格式，或使用您选择的任何图像创建视频。",
+      "changelog": "MurCr 允许您处理多种不同格式的音频和视频文件。通过时间线重叠检测、视频分辨率冲突分析以及其他智能管理工具等功能，它可以降低出错的风险。其完全无障碍的界面确保所有人都能轻松使用。"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
+  "scanResults": {
+    "codeQL-warnings": [],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "css": 2,
+            "html": 13,
+            "ini": 13,
+            "md": 14,
+            "mo": 25,
+            "po": 25,
+            "py": 4
+          },
+          "file_types": {
+            "HTML": 13,
+            "unknown": 83
+          },
+          "highest_datetime": "2026-04-06 18:53:44",
+          "lowest_datetime": "2026-04-06 18:53:20",
+          "num_children": 96,
+          "type": "ZIP",
+          "uncompressed_size": 273081
+        },
+        "filecondis": {
+          "dhash": "00001416141d0800",
+          "raw_md5": "443f585eaa381ba5b42e1694c6a8b8e6"
+        },
+        "first_submission_date": 1775504652,
+        "last_analysis_date": 1776393460,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260416",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260416",
+            "engine_version": "6.770",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260322",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260416",
+            "engine_version": "3.29.3.10609",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260417",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260416",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260322",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260416",
+            "engine_version": "260416-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260416",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Baidu": {
+            "category": "undetected",
+            "engine_name": "Baidu",
+            "engine_update": "20190318",
+            "engine_version": "1.0.0.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260417",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20251216",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260416",
+            "engine_version": "2.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260416",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260416",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260417",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "undetected",
+            "engine_name": "ClamAV",
+            "engine_update": "20260416",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260416",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260416",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "type-unsupported",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260407",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260417",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260416",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "type-unsupported",
+            "engine_name": "Elastic",
+            "engine_update": "20260416",
+            "engine_version": "4.0.256",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260417",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260416",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260416",
+            "engine_version": "7.0.30.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260417",
+            "engine_version": "GD:27.44220AVA:64.31050",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260417",
+            "engine_version": "1776387660",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260416",
+            "engine_version": "1.0.243.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "undetected",
+            "engine_name": "Ikarus",
+            "engine_update": "20260416",
+            "engine_version": "6.4.16.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260416",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260417",
+            "engine_version": "14.47.59223",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260416",
+            "engine_version": "14.47.59222",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260417",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260416",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260416",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260417",
+            "engine_version": "3.1.0.231",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "undetected",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260416",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260417",
+            "engine_version": "1.2.0.14532",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260416",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260416",
+            "engine_version": "1.1.26030.3008",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260417",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260417",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260416",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260416",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260416",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260413",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260416",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260416",
+            "engine_version": "3.4.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260416",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260417",
+            "engine_version": "2026-04-17.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260417",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260331",
+            "engine_version": "4.0.11.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260416",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "undetected",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260417",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260417",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260416",
+            "engine_version": "5.5.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260416",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260416",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260416",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260416",
+            "engine_version": "9.5.1188",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260416",
+            "engine_version": "38573",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260417",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260416",
+            "engine_version": "2.0.0.5582",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260416",
+            "engine_version": "6.24-114820304",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260417",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260416",
+            "engine_version": "8551ec9:8551ec9:9bef9f5:9bef9f5",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260417",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 0,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 0,
+          "type-unsupported": 9,
+          "undetected": 67
+        },
+        "last_modification_date": 1776393521,
+        "last_submission_date": 1776393460,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "UNKNOWN",
+        "md5": "d6785268cd4cfb1c8246d1036e18b2f3",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "eac0e7299e34e96c29dfbca9b4c88a8e7bdb5c1f",
+        "sha256": "7cad2448b0747db386a6f2b50de092e6ce45733a0e880a85eb34efbebe2eed09",
+        "size": 124927,
+        "ssdeep": "3072:mnK1SVF/KqWqYdKuYNF9obHT4Um8O4iLdF71IetBil1cS:mnK1SXWXkNFuzcUm8WlI4ibcS",
+        "tags": [
+          "zip"
+        ],
+        "times_submitted": 3,
+        "tlsh": "T1FAC3C01A9A5E001ADAF34EFEEA53380BF04F1145F14E3765271BD4E29E0939F43EA958",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "00fef6b58edf473f647175ffec205bfe"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8416"
 }

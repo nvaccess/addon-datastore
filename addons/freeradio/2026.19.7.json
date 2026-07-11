@@ -1,778 +1,778 @@
 {
-	"addonId": "freeradio",
-	"displayName": "freeRadio",
-	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.19.7/freeradio-2026.19.7.nvda-addon",
-	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
-	"sha256": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
-	"addonVersionName": "2026.19.7",
-	"addonVersionNumber": {
-		"major": 2026,
-		"minor": 19,
-		"patch": 7
-	},
-	"minNVDAVersion": {
-		"major": 2024,
-		"minor": 1,
-		"patch": 0
-	},
-	"lastTestedVersion": {
-		"major": 2026,
-		"minor": 1,
-		"patch": 1
-	},
-	"channel": "stable",
-	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
-	"sourceURL": "https://github.com/Surveyor123/freeradio",
-	"license": "GPL v2",
-	"homepage": "https://github.com/Surveyor123/freeradio",
-	"changelog": "\n**New Languages for Freeradio**\n- Czech by jiri Holzinger.\n- Arabic by ALI ALOMARI\n- French and Spanish by Rémy Ruiz\n- Khmer by Phearith\n- Russian by Валентин Куприянов\n**Station Manager: resilient mirror selection**\n- The Radio Browser server list is now fetched dynamically via DNS lookup (`all.api.radio-browser.info`) at startup, following the approach recommended by the Radio Browser API. Servers are shuffled before use so load is distributed across the network. When DNS discovery fails, the previous hardcoded mirror list is used as a fallback. Temporary HTTP 5xx errors (e.g. 503 Service Unavailable) are now retried once after a short delay before moving on to the next mirror, reducing failed loads during brief server outages.\n**Search: multi-token filtering for All Stations and Favourites**\n- Local filtering in both the All Stations tab and the Favourites tab now splits the search query into individual tokens and requires all of them to match (AND logic). For example, searching \"jazz france\" returns only stations whose metadata contains both \"jazz\" and \"france\". The last token is matched as a prefix so that results remain visible while the user is still typing a word. The status label in the All Stations tab now always reflects the actual number of visible stations after filtering, rather than the raw count returned by the API.\n- Added a \"Result limit\" setting to the All Stations tab to control the maximum number of results fetched for searches and country filters.\n",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
-	"submissionTime": 1780372090000,
-	"translations": [
-		{
-			"language": "ar",
-			"displayName": "freeRadio",
-			"description": "إضافة FreeRadio هي إضافة راديو إنترنت لقارئ الشاشة NVDA توفر وصولاً سلساً إلى آلاف المحطات عبر دليل Radio Browser المفتوح. وتتضمن متصفح محطات متوافقاً كلياً يتيح البحث، وتصفية المحطات حسب البلد، وإدارة المفضلة، وملفات صوتية مخصصة لكل محطة. تتم معالجة التشغيل عبر سلسلة محركات ذات أولوية (BASS، وVLC، وPotPlayer، وWindows Media Player) مع دعم التحكم بمستوى الصوت، والتأثيرات الصوتية، واختيار جهاز الإخراج، بالإضافة إلى نسخ الصوت المتزامن إلى جهاز ثانٍ. وتشمل الميزات الإضافية: التسجيل الفوري والمجدول، ومؤقتات النوم والمنبه، والإعلان التلقائي عن البيانات الوصفية (ICY)، والتعرف على الموسيقى باستخدام Shazam، وسجلاً للأغاني المعجب بها. كافة عناصر التحكم والاختصارات مصممة لتتوافق مع إمكانيات NVDA للوصول الشامل.",
-			"changelog": "\nجديد في Freeradio\n• الترجمة التشيكية: جيري هولزينغر\n• الترجمة العربية: علي العمري\n• الترجمة الفرنسية والإسبانية: ريمي رويز\n• الترجمة الخميرية: فياريث\n• الترجمة الروسية: فالنتين كوبريانوف\nمدير المحطات: اختيار مرايا أكثر مرونة\n• يتم الآن جلب قائمة خوادم Radio Browser ديناميكيًا عبر بحث DNS‏ (‏all.api.radio-browser.info‏) عند بدء التشغيل، وفق النهج الذي توصي به واجهة برمجة Radio Browser. يتم خلط الخوادم قبل الاستخدام لتوزيع الحمل عبر الشبكة. عند فشل اكتشاف DNS، تُستخدم قائمة المرايا المضمّنة مسبقًا احتياطيًا. أخطاء HTTP 5xx المؤقتة (مثل 503 Service Unavailable) تُعاد المحاولة مرة واحدة بعد تأخير قصير قبل الانتقال إلى المرآة التالية، مما يقلل من فشل التحميل خلال انقطاعات الخادم القصيرة.\nالبحث: تصفية متعددة الكلمات للمحطات الكاملة والمفضلة\n• تقسّم الآن التصفية المحلية في كل من تبويب \"كل المحطات\" وتبويب \"المفضلة\" استعلام البحث إلى كلمات منفردة وتشترط مطابقة جميعها (منطق AND). على سبيل المثال، البحث عن \"jazz france\" يعرض فقط المحطات التي تحتوي بياناتها على كلتا الكلمتين. تُطابَق الكلمة الأخيرة كبادئة حتى تظل النتائج مرئية أثناء كتابة المستخدم. يعكس تسمية الحالة في تبويب \"كل المحطات\" الآن دائمًا العدد الفعلي للمحطات المرئية بعد التصفية، بدلًا من العدد الخام الذي تعيده الواجهة البرمجية.\n• أُضيف إعداد \"حد النتائج\" إلى تبويب \"كل المحطات\" للتحكم في الحد الأقصى لعدد النتائج التي يتم جلبها للبحث وفلاتر البلدان.\n"
-		},
-		{
-			"language": "cs",
-			"displayName": "freeRadio",
-			"description": "FreeRadio je doplněk pro internetové rádio určený pro NVDA, který umožňuje plynulý přístup k tisícům stanic prostřednictvím otevřeného adresáře Radio Browser. Nabízí plně přístupný prohlížeč stanic s funkcí vyhledávání, filtrem podle země, správou oblíbených položek a zvukovými profily pro jednotlivé stanice. Přehrávání zajišťuje řetězec prioritních backendů (BASS, VLC, PotPlayer, Windows Media Player) s podporou ovládání hlasitosti, zvukových efektů, výběru výstupního zařízení a simultánního zrcadlení zvuku na druhé zařízení. Mezi další funkce patří okamžité a plánované nahrávání, časovače spánku a budíku, automatické hlášení metadat ICY, rozpoznávání hudby na bázi Shazamu a protokol oblíbených skladeb. Všechny ovládací prvky a klávesové zkratky jsou navrženy s ohledem na přístupnost NVDA.",
-			"changelog": "\nNovinky ve Freeradio\n• Český překlad: Jiří Holzinger\n• Arabský překlad: Ali Alomari\n• Francouzský a španělský překlad: Rémy Ruiz\n• Khmerský překlad: Phearith\n• Ruský překlad: Валентин Куприянов\nSprávce stanic: odolný výběr zrcadel\n• Seznam serverů Radio Browser se nyní načítá dynamicky pomocí DNS vyhledávání (all.api.radio-browser.info) při spuštění, v souladu s doporučeným přístupem API Radio Browser. Servery jsou před použitím náhodně seřazeny, aby se zátěž rozložila po celé síti. Pokud DNS zjišťování selže, použije se jako záloha předchozí pevně zakódovaný seznam zrcadel. Dočasné chyby HTTP 5xx (např. 503 Service Unavailable) jsou nyní jednou zopakovány po krátké prodlevě, než se přejde na další zrcadlo, čímž se snižuje počet neúspěšných načtení při krátkých výpadcích serveru.\nVyhledávání: filtrování podle více výrazů pro Všechny stanice a Oblíbené\n• Místní filtrování na kartě Všechny stanice i na kartě Oblíbené nyní rozděluje vyhledávací dotaz na jednotlivé výrazy a vyžaduje shodu všech z nich (logika AND). Například vyhledávání „jazz france\" vrátí pouze stanice, jejichž metadata obsahují oba výrazy. Poslední výraz je porovnáván jako prefix, takže výsledky zůstávají viditelné, dokud uživatel dokončuje psaní slova. Stavový popisek na kartě Všechny stanice nyní vždy odráží skutečný počet viditelných stanic po filtrování, nikoli hrubý počet vrácený rozhraním API.\n• Na kartu Všechny stanice bylo přidáno nastavení „Limit výsledků\" pro kontrolu maximálního počtu výsledků načítaných při vyhledávání a filtrování podle zemí.\n"
-		},
-		{
-			"language": "es",
-			"displayName": "freeRadio",
-			"description": "FreeRadio es un complemento de radio por Internet para NVDA que proporciona un acceso continuo a miles de estaciones a través del directorio abierto de Radio Browser. Cuenta con un navegador de estaciones totalmente accesible con búsqueda, filtro de países, administración de favoritos y perfiles de audio por estación. La reproducción es manejada por una cadena de backend priorizada (BASS, VLC, PotPlayer, Windows Media Player) con soporte para control de volumen, efectos de audio, selección de dispositivo de salida y la puesta en espejo de audio simultánea en un segundo dispositivo. Las características adicionales incluyen grabación instantánea y programada, temporizadores de apagado y alarma, anuncios automáticos de metadatos ICY, reconocimiento de música basado en Shazam y un registro de canciones favoritas. Todos los controles y atajos están diseñados para la accesibilidad de NVDA.",
-			"changelog": "\n**Nuevos idiomas para Freeradio**\n- Checo de jiri Holzinger.\n- Árabe por ALI ALOMARI\n- Francés y Español por Rémy Ruiz\n- Jemer por Phearith\n- Ruso por Валентин Куприянов\n**Administrador de estaciones: selección de espejo resistente**\n- La lista de servidores de Radio Browser ahora se recupera dinámicamente mediante la búsqueda de DNS (`all.api.radio-browser.info`) al inicio, siguiendo el enfoque recomendado por la API de Radio Browser. Los servidores se barajan antes de su uso para que la carga se distribuya por toda la red. Cuando falla el descubrimiento de DNS, la lista de réplicas codificada anterior se utiliza como alternativa. Los errores temporales HTTP 5xx (por ejemplo, 503 Servicio no disponible) ahora se reintentan una vez después de un breve retraso antes de pasar al siguiente espejo, lo que reduce las cargas fallidas durante breves interrupciones del servidor.\\n\n**Búsqueda: filtrado de tokens múltiples para todas las estaciones y favoritos**\n- El filtrado local tanto en la pestaña Todas las estaciones como en la pestaña Favoritos ahora divide la consulta de búsqueda en tokens individuales y requiere que todos coincidan (lógica Y). Por ejemplo, al buscar \"jazz france\" solo se devuelven emisoras cuyos metadatos contengan \"jazz\" y \"france\". El último token coincide como prefijo para que los resultados permanezcan visibles mientras el usuario todavía escribe una palabra. La etiqueta de estado en la pestaña Todas las estaciones ahora siempre refleja el número real de estaciones visibles después del filtrado, en lugar del recuento sin procesar devuelto por la API.\n- Se agregó una configuración de \"Límite de resultados\" a la pestaña Todas las estaciones para controlar la cantidad máxima de resultados obtenidos para búsquedas y filtros de países.\n"
-		},
-		{
-			"language": "fr",
-			"displayName": "freeRadio",
-			"description": "FreeRadio est une extension de radio Internet pour NVDA qui offre un accès continu à des milliers de stations via l'annuaire ouvert de Radio Browser. Il dispose d'un navigateur de stations entièrement accessible avec recherche, filtre de pays, gestion des favoris et profils audio par station. La lecture est gérée par une chaîne backend prioritaire (BASS, VLC, PotPlayer, Windows Media Player) avec prise en charge du contrôle du volume, des effets audio, de la sélection du périphérique de sortie et de la mise en miroir audio simultanée sur un deuxième périphérique. Les fonctionnalités supplémentaires incluent l'enregistrement instantané et planifié, des minuteries de mise en veille et d'alarme, des annonces automatiques de métadonnées ICY, une reconnaissance musicale basée sur Shazam et un journal des morceaux aimés. Tous les contrôles et raccourcis sont conçus pour l'accessibilité de NVDA.",
-			"changelog": "\n**Nouvelles langues pour Freeradio**\n- Tchèque par Jiri Holzinger.\n- Arabe par ALI ALOMARI\n- Français et Espagnol par Rémy Ruiz\n- Khmer par Phearith\n- Russe par Валентин Куприянов\n**Station Manager : sélection de miroirs résilients**\n- La liste des serveurs Radio Browser est désormais récupérée dynamiquement via la recherche DNS (`all.api.radio-browser.info`) au démarrage, suivant l'approche recommandée par l'API Radio Browser. Les serveurs sont mélangés avant utilisation afin que la charge soit répartie sur le réseau. Lorsque la découverte DNS échoue, la liste de miroirs codée en dur précédente est utilisée comme solution de secours. Les erreurs HTTP 5xx temporaires (par exemple, 503 Service indisponible) sont désormais réessayées une fois après un court délai avant de passer au miroir suivant, réduisant ainsi les échecs de chargement lors de brèves pannes de serveur.\n**Recherche : filtrage multi-jetons pour toutes les stations et favoris**\n- Le filtrage local dans les onglets Toutes les stations et Favoris divise désormais la requête de recherche en jetons individuels et exige qu'ils correspondent tous (logique ET). Par exemple, la recherche « jazz france » renvoie uniquement les stations dont les métadonnées contiennent à la fois « jazz » et « france ». Le dernier jeton correspond à un préfixe afin que les résultats restent visibles pendant que l'utilisateur est encore en train de taper un mot. L'étiquette d'état dans l'onglet Toutes les stations reflète désormais toujours le nombre réel de stations visibles après le filtrage, plutôt que le nombre brut renvoyé par l'API.\n- Ajout d'un paramètre \"Limite de résultats\" à l'onglet Toutes les stations pour contrôler le nombre maximum de résultats récupérés pour les recherches et les filtres de pays.\n"
-		},
-		{
-			"language": "km",
-			"displayName": "freeRadio",
-			"description": "FreeRadio គឺជាកម្មវិធីជំនួយនៃវិទ្យុនៅលើបណ្ដាញអ៊ីនថឺណេតរបស់កម្មវិធី NVDA ដែលផ្តល់នូវការចូលទៅកាន់ស្ថានីយរាប់ពាន់យ៉ាងងាយស្រួលតាមរយៈបញ្ជីបើកចំហរបស់ Radio Browser។ វាមានរួមបញ្ចូលនូវកម្មវិធីរុករកស្ថានីយវិទ្យុដែលអាចចូលប្រើប្រាស់បានយ៉ាងពេញលេញ រួមជាមួយមុខងារស្វែងរក តតាមប្រទេស ការគ្រប់គ្រងបញ្ជីដែលចូលចិត្ត និងការកំណត់សំឡេងដោយឡែកសម្រាប់ស្ថានីយនីមួយៗ។ ការចាក់សំឡេងត្រូវបានគ្រប់គ្រងដោយខ្សែសង្វាក់ប្រព័ន្ធខាងក្រោយដែលកំណត់អាទិភាព (BASS, VLC, PotPlayer, Windows Media Player) ជាមួយនឹងការគាំទ្រសម្រាប់ការគ្រប់គ្រងកម្រិតសំឡេង បែបផែនសំឡេង ការជ្រើសរើសឧបករណ៍បញ្ចេញសំឡេងខាងក្រៅ និងការចម្លងសំឡេងក្នុងពេលដំណាលគ្នាទៅកាន់ឧបករណ៍ទីពីរ។ មុខងារបន្ថែមរួមមានការថតភ្លាមៗ និងតាមកាលវិភាគ ការផ្អាក និងម៉ោងរោទិ៍ ការប្រកាសទិន្នន័យមេតា ICY ដោយស្វ័យប្រវត្តិ ការស្វែងរកបទចម្រៀង ឬតន្ត្រីដែលមិនស្គាល់ចំណងជើងផ្អែកលើ Shazam និងកំណត់ហេតុបទចម្រៀងដែលចូលចិត្ត។ ការគ្រប់គ្រង និងគ្រាប់ចុចរហ័សទាំងអស់ត្រូវបានរចនាឡើងសម្រាប់ភាពងាយស្រួលរបស់ NVDA ។",
-			"changelog": "\nភាសាថ្មីសម្រាប់ Freeradio\n• ការបកប្រែជាភាសាឆែក៖ Jiří Holzinger\n• ការបកប្រែជាភាសាអារ៉ាប់៖ Ali Alomari\n• ការបកប្រែជាភាសាបារាំង និងស្បាញ៖ Rémy Ruiz\n• ការបកប្រែជាភាសាខ្មែរ៖ ភារិទ្ធ\n• ការបកប្រែជាភាសារុស្ស៊ី៖ Валентин Куприянов\nកម្មវិធីគ្រប់គ្រងស្ថានី៖ ការជ្រើសរើសកញ្ចក់ប្រឆាំងបញ្ហា\n• បញ្ជីម៉ាស៊ីនមេ Radio Browser ឥឡូវនេះត្រូវបានទាញយកដោយឆ្លើយតបតាមរយៈការស្វែងរក DNS (all.api.radio-browser.info) នៅពេលចាប់ផ្ដើម ដោយធ្វើតាមវិធីសាស្ត្រដែលណែនាំដោយ API Radio Browser។ ម៉ាស៊ីនមេត្រូវបានលាយចៀនមុនពេលប្រើ ដើម្បីចែកចាយបន្ទុកលើបណ្តាញ។ ប្រសិនបើការស្វែងរក DNS បរាជ័យ បញ្ជីកញ្ចក់ដែលបានកំណត់ជាស្ថាពរពីមុនត្រូវបានប្រើជាការបម្រុងទុក។ កំហុស HTTP 5xx បណ្តោះអាសន្ន (ឧ. 503 Service Unavailable) ឥឡូវនេះត្រូវបានព្យាយាមម្ដងទៀតបន្ទាប់ពីការពន្យារពេលខ្លី មុនពេលឆ្លងទៅកញ្ចក់បន្ទាប់ ដែលកាត់បន្ថយការបរាជ័យនៃការផ្ទុកក្នុងអំឡុងពេលមានបញ្ហាខ្លីៗ។\nការស្វែងរក៖ ការច្រោះពហុពាក្យសម្រាប់ស្ថានីទាំងអស់ និងចំណូលចិត្ត\n• ការច្រោះក្នុងតំបន់ក្នុងផ្ទាំង ស្ថានីទាំងអស់ និងផ្ទាំង ចំណូលចិត្ត ឥឡូវចែកការស្វែងរកជាពាក្យដោយឡែក ហើយតម្រូវឱ្យទាំងអស់ត្រូវគ្នា (តក្កវិជ្ជា AND)។ ជាឧទាហរណ៍ ការស្វែងរក «jazz france» បង្ហាញតែស្ថានីដែលទិន្នន័យរបស់វាមានទាំង «jazz» និង «france»។ ពាក្យចុងក្រោយត្រូវបានផ្គូផ្គងជាបុព្វបទ ដើម្បីឱ្យលទ្ធផលនៅតែបង្ហាញខណៈអ្នកប្រើកំពុងវាយ។ ស្លាកស្ថានភាពក្នុងផ្ទាំង ស្ថានីទាំងអស់ ឥឡូវនេះតែងតែឆ្លុះបញ្ចាំងចំនួនស្ថានីដែលអាចមើលឃើញពិតប្រាកដបន្ទាប់ពីការច្រោះ មិនមែនចំនួនដើមដែល API ត្រឡប់មកវិញ។\n• បានបន្ថែមការកំណត់ «ដែនកំណត់លទ្ធផល» ទៅផ្ទាំង ស្ថានីទាំងអស់ ដើម្បីគ្រប់គ្រងចំនួនអតិបរមានៃលទ្ធផលដែលទាញយកសម្រាប់ការស្វែងរក និងការច្រោះប្រទេស។\n \n"
-		},
-		{
-			"language": "pt",
-			"displayName": "freeRadio",
-			"description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
-			"changelog": "\nNovidades no Freeradio\n• Tradução para checo: Jiří Holzinger\n• Tradução para árabe: Ali Alomari\n• Tradução para francês e espanhol: Rémy Ruiz\n• Tradução para khmer: Phearith\n• Tradução para russo: Валентин Куприянов\nGestor de estações: seleção resiliente de espelhos\n• A lista de servidores do Radio Browser é agora obtida dinamicamente através de uma consulta DNS (all.api.radio-browser.info) no arranque, seguindo a abordagem recomendada pela API do Radio Browser. Os servidores são embaralhados antes da utilização para distribuir a carga pela rede. Quando a descoberta por DNS falha, a lista de espelhos predefinida anteriormente é usada como alternativa. Erros HTTP 5xx temporários (por exemplo, 503 Service Unavailable) são agora repetidos uma vez após um curto atraso antes de avançar para o próximo espelho, reduzindo falhas de carregamento durante breves interrupções do servidor.\nPesquisa: filtragem multi-termo para Todas as Estações e Favoritos\n• A filtragem local no separador Todas as Estações e no separador Favoritos divide agora a consulta em termos individuais e exige que todos correspondam (lógica AND). Por exemplo, pesquisar «jazz france» devolve apenas estações cujos metadados contenham tanto «jazz» como «france». O último termo é correspondido como prefixo para que os resultados permaneçam visíveis enquanto o utilizador ainda está a escrever. A etiqueta de estado no separador Todas as Estações reflete agora sempre o número real de estações visíveis após a filtragem, em vez do número bruto devolvido pela API.\n• Foi adicionada uma definição de «Limite de resultados» ao separador Todas as Estações para controlar o número máximo de resultados obtidos em pesquisas e filtros por país.\n \n"
-		},
-		{
-			"language": "ru",
-			"displayName": "FreeRadio",
-			"description": "FreeRadio — это интернет-радио-дополнение для экранного диктора NVDA.\nЕго основная цель — предоставить пользователям простой доступ к тысячам интернет-радиостанций.\nВесь интерфейс и все функции разработаны с учётом полной доступности для NVDA.\nFreeRadio использует открытый каталог Radio Browser, содержащий более 50 000 станций со всего мира.\nРегистрация не требуется.\nДополнение поддерживает горячие клавиши для управления воспроизведением, громкостью и записью из любого места системы.\nВы можете добавлять станции в избранное и упорядочивать их.\nДоступно аудиозеркало для одновременного вывода звука на два устройства.\nДоступна мгновенная и запланированная запись эфира.\n• Поддерживается запись песен с автоматической остановкой при смене трека.\n• Встроено распознавание музыки через Shazam при отсутствии метаданных.\n• Есть таймер сна и будильник для автоматического включения радио.\n• Можно сохранять понравившиеся треки в текстовый файл и прослушивать их на Spotify или YouTube.\nДополнение использует движок BASS по умолчанию с поддержкой аудиоэффектов и плавных переходов между станциями.\nПри необходимости задействуются VLC, PotPlayer или Windows Media Player.\nВсе особенности описаны в справочном руководстве.",
-			"changelog": "\nНовое в Freeradio\n• Перевод на чешский: Йиржи Гольцингер\n• Перевод на арабский: Али Аль-Омари\n• Перевод на французский и испанский: Реми Руис\n• Перевод на кхмерский: Фиарит\n• Перевод на русский: Валентин Куприянов\nМенеджер станций: устойчивый выбор зеркал\n• Список серверов Radio Browser теперь загружается динамически через DNS-запрос (all.api.radio-browser.info) при запуске, следуя подходу, рекомендованному API Radio Browser. Серверы перемешиваются перед использованием для распределения нагрузки по сети. При сбое DNS-обнаружения в качестве резервного варианта используется прежний жёстко заданный список зеркал. Временные ошибки HTTP 5xx (например, 503 Service Unavailable) теперь повторяются один раз после небольшой задержки, прежде чем перейти к следующему зеркалу, что снижает количество неудачных загрузок при кратких сбоях сервера.\nПоиск: многословная фильтрация для всех станций и избранного\n• Локальная фильтрация на вкладках Все станции и Избранное теперь разбивает поисковый запрос на отдельные слова и требует совпадения всех из них (логика И). Например, поиск «jazz france» отображает только станции, метаданные которых содержат оба слова. Последнее слово сопоставляется как префикс, чтобы результаты оставались видимыми, пока пользователь ещё вводит текст. Метка состояния на вкладке Все станции теперь всегда отражает фактическое количество видимых станций после фильтрации, а не исходное число, возвращённое API.\n• На вкладку Все станции добавлен параметр «Лимит результатов» для управления максимальным количеством результатов, загружаемых при поиске и фильтрации по странам.\n \n"
-		},
-		{
-			"language": "tr",
-			"displayName": "FreeRadio",
-			"description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
-			"changelog": "\nFreeradio'da Yenilikler\n• Çekçe çeviri: Jiří Holzinger\n• Arapça çeviri: Ali Alomari\n• Fransızca ve İspanyolca çeviri: Rémy Ruiz\n• Khmer çeviri: Phearith\n• Rusça çeviri: Валентин Куприянов\nİstasyon Yöneticisi: dayanıklı yansıtıcı seçimi\n• Radio Browser sunucu listesi artık başlangıçta DNS sorgusu (all.api.radio-browser.info) aracılığıyla dinamik olarak alınıyor; bu, Radio Browser API'sinin önerdiği yaklaşımı izliyor. Ağ üzerindeki yük dağıtımı için sunucular kullanılmadan önce rastgele sıralanıyor. DNS keşfi başarısız olursa önceki sabit kodlanmış yansıtıcı listesi yedek olarak kullanılıyor. Geçici HTTP 5xx hataları (ör. 503 Service Unavailable) artık bir sonraki yansıtıcıya geçmeden önce kısa bir gecikmenin ardından bir kez daha deneniyor; böylece kısa süreli sunucu kesintilerinde başarısız yükleme sayısı azalıyor.\nArama: Tüm İstasyonlar ve Favoriler için çok sözcüklü filtreleme\n• Hem Tüm İstasyonlar hem de Favoriler sekmesindeki yerel filtreleme artık arama sorgusunu ayrı sözcüklere bölüyor ve tümünün eşleşmesini gerektiriyor (VE mantığı). Örneğin \"jazz france\" araması yalnızca meta verilerinde hem \"jazz\" hem \"france\" geçen istasyonları döndürüyor. Son sözcük önek olarak eşleştiriliyor; böylece kullanıcı yazmayı sürdürürken sonuçlar görünür kalıyor. Tüm İstasyonlar sekmesindeki durum etiketi artık API'nin döndürdüğü ham sayı yerine filtreleme sonrasında görünen gerçek istasyon sayısını yansıtıyor.\n• Aramalar ve ülke filtreleri için getirilen maksimum sonuç sayısını denetlemek amacıyla Tüm İstasyonlar sekmesine \"Sonuç limiti\" ayarı eklendi.\n"
-		}
-	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
-	"scanResults": {
-		"codeQL-warnings": [],
-		"codeQL-errors": [],
-		"virusTotal": [
-			{
-				"_id": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
-				"_type": "file",
-				"bundle_info": {
-					"extensions": {
-						"_pth": 2,
-						"cat": 2,
-						"css": 1,
-						"dll": 33,
-						"exe": 5,
-						"html": 9,
-						"ini": 9,
-						"md": 9,
-						"mo": 8,
-						"po": 8,
-						"py": 8,
-						"pyd": 40,
-						"txt": 2,
-						"zip": 2
-					},
-					"file_types": {
-						"Portable Executable": 78,
-						"ZIP": 2,
-						"unknown": 58
-					},
-					"highest_datetime": "2026-06-02 03:33:52",
-					"lowest_datetime": "2026-06-02 03:33:04",
-					"num_children": 138,
-					"type": "ZIP",
-					"uncompressed_size": 106377837
-				},
-				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "b23c3f7ff7c381f974523332b6b8146b"
-				},
-				"first_submission_date": 1780372112,
-				"last_analysis_date": 1780372112,
-				"last_analysis_results": {
-					"ALYac": {
-						"category": "undetected",
-						"engine_name": "ALYac",
-						"engine_update": "20260602",
-						"engine_version": "2.0.0.10",
-						"method": "blacklist",
-						"result": null
-					},
-					"APEX": {
-						"category": "type-unsupported",
-						"engine_name": "APEX",
-						"engine_update": "20260528",
-						"engine_version": "6.783",
-						"method": "blacklist",
-						"result": null
-					},
-					"AVG": {
-						"category": "undetected",
-						"engine_name": "AVG",
-						"engine_update": "20260601",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Acronis": {
-						"category": "undetected",
-						"engine_name": "Acronis",
-						"engine_update": "20240328",
-						"engine_version": "1.2.0.121",
-						"method": "blacklist",
-						"result": null
-					},
-					"AhnLab-V3": {
-						"category": "undetected",
-						"engine_name": "AhnLab-V3",
-						"engine_update": "20260601",
-						"engine_version": "3.30.0.10666",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
-						"method": "blacklist",
-						"result": null
-					},
-					"Antiy-AVL": {
-						"category": "undetected",
-						"engine_name": "Antiy-AVL",
-						"engine_update": "20260602",
-						"engine_version": "3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Arcabit": {
-						"category": "undetected",
-						"engine_name": "Arcabit",
-						"engine_update": "20260602",
-						"engine_version": "2025.0.0.23",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast": {
-						"category": "undetected",
-						"engine_name": "Avast",
-						"engine_update": "20260601",
-						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20260601",
-						"engine_version": "260601-00",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avira": {
-						"category": "undetected",
-						"engine_name": "Avira",
-						"engine_update": "20260601",
-						"engine_version": "8.3.3.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefender": {
-						"category": "undetected",
-						"engine_name": "BitDefender",
-						"engine_update": "20260602",
-						"engine_version": "7.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"BitDefenderFalx": {
-						"category": "type-unsupported",
-						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260525",
-						"engine_version": "2.0.936",
-						"method": "blacklist",
-						"result": null
-					},
-					"Bkav": {
-						"category": "undetected",
-						"engine_name": "Bkav",
-						"engine_update": "20260601",
-						"engine_version": "8.2.40(8338)",
-						"method": "blacklist",
-						"result": null
-					},
-					"CAT-QuickHeal": {
-						"category": "undetected",
-						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20260601",
-						"engine_version": "22.00",
-						"method": "blacklist",
-						"result": null
-					},
-					"CMC": {
-						"category": "undetected",
-						"engine_name": "CMC",
-						"engine_update": "20260602",
-						"engine_version": "2.4.2022.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"CTX": {
-						"category": "undetected",
-						"engine_name": "CTX",
-						"engine_update": "20260602",
-						"engine_version": "2024.8.29.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"ClamAV": {
-						"category": "timeout",
-						"engine_name": "ClamAV",
-						"engine_update": "20260601",
-						"engine_version": "1.5.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"CrowdStrike": {
-						"category": "undetected",
-						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cylance": {
-						"category": "type-unsupported",
-						"engine_name": "Cylance",
-						"engine_update": "20260521",
-						"engine_version": "3.0.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Cynet": {
-						"category": "undetected",
-						"engine_name": "Cynet",
-						"engine_update": "20260602",
-						"engine_version": "4.0.3.4",
-						"method": "blacklist",
-						"result": null
-					},
-					"DeepInstinct": {
-						"category": "undetected",
-						"engine_name": "DeepInstinct",
-						"engine_update": "20260601",
-						"engine_version": "5.0.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"DrWeb": {
-						"category": "undetected",
-						"engine_name": "DrWeb",
-						"engine_update": "20260602",
-						"engine_version": "7.0.75.2070",
-						"method": "blacklist",
-						"result": null
-					},
-					"ESET-NOD32": {
-						"category": "undetected",
-						"engine_name": "ESET-NOD32",
-						"engine_update": "20260602",
-						"engine_version": "18.2.18.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Elastic": {
-						"category": "undetected",
-						"engine_name": "Elastic",
-						"engine_update": "20260528",
-						"engine_version": "4.0.264",
-						"method": "blacklist",
-						"result": null
-					},
-					"Emsisoft": {
-						"category": "undetected",
-						"engine_name": "Emsisoft",
-						"engine_update": "20260601",
-						"engine_version": "2024.8.0.61147",
-						"method": "blacklist",
-						"result": null
-					},
-					"F-Secure": {
-						"category": "undetected",
-						"engine_name": "F-Secure",
-						"engine_update": "20260602",
-						"engine_version": "18.10.1547.307",
-						"method": "blacklist",
-						"result": null
-					},
-					"Fortinet": {
-						"category": "undetected",
-						"engine_name": "Fortinet",
-						"engine_update": "20260602",
-						"engine_version": "7.0.48.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"GData": {
-						"category": "undetected",
-						"engine_name": "GData",
-						"engine_update": "20260602",
-						"engine_version": "GD:27.44760AVA:64.31348",
-						"method": "blacklist",
-						"result": null
-					},
-					"Google": {
-						"category": "undetected",
-						"engine_name": "Google",
-						"engine_update": "20260602",
-						"engine_version": "1780365690",
-						"method": "blacklist",
-						"result": null
-					},
-					"Gridinsoft": {
-						"category": "undetected",
-						"engine_name": "Gridinsoft",
-						"engine_update": "20260602",
-						"engine_version": "1.0.247.174",
-						"method": "blacklist",
-						"result": null
-					},
-					"Ikarus": {
-						"category": "failure",
-						"engine_name": "Ikarus",
-						"engine_update": "20260601",
-						"engine_version": "6.5.4.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Jiangmin": {
-						"category": "undetected",
-						"engine_name": "Jiangmin",
-						"engine_update": "20260601",
-						"engine_version": "16.0.100",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7AntiVirus": {
-						"category": "undetected",
-						"engine_name": "K7AntiVirus",
-						"engine_update": "20260602",
-						"engine_version": "14.55.59684",
-						"method": "blacklist",
-						"result": null
-					},
-					"K7GW": {
-						"category": "undetected",
-						"engine_name": "K7GW",
-						"engine_update": "20260602",
-						"engine_version": "14.55.59684",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kaspersky": {
-						"category": "undetected",
-						"engine_name": "Kaspersky",
-						"engine_update": "20260602",
-						"engine_version": "22.0.1.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"Kingsoft": {
-						"category": "undetected",
-						"engine_name": "Kingsoft",
-						"engine_update": "20260601",
-						"engine_version": "None",
-						"method": "blacklist",
-						"result": null
-					},
-					"Lionic": {
-						"category": "undetected",
-						"engine_name": "Lionic",
-						"engine_update": "20260601",
-						"engine_version": "8.16",
-						"method": "blacklist",
-						"result": null
-					},
-					"Malwarebytes": {
-						"category": "undetected",
-						"engine_name": "Malwarebytes",
-						"engine_update": "20260602",
-						"engine_version": "3.1.0.235",
-						"method": "blacklist",
-						"result": null
-					},
-					"MaxSecure": {
-						"category": "timeout",
-						"engine_name": "MaxSecure",
-						"engine_update": "20260601",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"McAfeeD": {
-						"category": "undetected",
-						"engine_name": "McAfeeD",
-						"engine_update": "20260602",
-						"engine_version": "1.2.0.14833",
-						"method": "blacklist",
-						"result": null
-					},
-					"MicroWorld-eScan": {
-						"category": "undetected",
-						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20260602",
-						"engine_version": "14.0.409.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Microsoft": {
-						"category": "undetected",
-						"engine_name": "Microsoft",
-						"engine_update": "20260602",
-						"engine_version": "1.1.26040.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"NANO-Antivirus": {
-						"category": "undetected",
-						"engine_name": "NANO-Antivirus",
-						"engine_update": "20260602",
-						"engine_version": "1.0.170.26895",
-						"method": "blacklist",
-						"result": null
-					},
-					"Paloalto": {
-						"category": "type-unsupported",
-						"engine_name": "Paloalto",
-						"engine_update": "20260602",
-						"engine_version": "0.9.0.1003",
-						"method": "blacklist",
-						"result": null
-					},
-					"Panda": {
-						"category": "undetected",
-						"engine_name": "Panda",
-						"engine_update": "20260601",
-						"engine_version": "4.6.4.2",
-						"method": "blacklist",
-						"result": null
-					},
-					"Rising": {
-						"category": "undetected",
-						"engine_name": "Rising",
-						"engine_update": "20260602",
-						"engine_version": "25.0.0.28",
-						"method": "blacklist",
-						"result": null
-					},
-					"SUPERAntiSpyware": {
-						"category": "undetected",
-						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20260530",
-						"engine_version": "5.6.0.1032",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sangfor": {
-						"category": "undetected",
-						"engine_name": "Sangfor",
-						"engine_update": "20260601",
-						"engine_version": "2.22.3.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SentinelOne": {
-						"category": "undetected",
-						"engine_name": "SentinelOne",
-						"engine_update": "20260324",
-						"engine_version": "7.6.2.19",
-						"method": "blacklist",
-						"result": null
-					},
-					"Skyhigh": {
-						"category": "undetected",
-						"engine_name": "Skyhigh",
-						"engine_update": "20260601",
-						"engine_version": "v2021.2.0+4045",
-						"method": "blacklist",
-						"result": null
-					},
-					"Sophos": {
-						"category": "undetected",
-						"engine_name": "Sophos",
-						"engine_update": "20260601",
-						"engine_version": "3.5.1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Symantec": {
-						"category": "undetected",
-						"engine_name": "Symantec",
-						"engine_update": "20260602",
-						"engine_version": "1.22.0.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"SymantecMobileInsight": {
-						"category": "type-unsupported",
-						"engine_name": "SymantecMobileInsight",
-						"engine_update": "20260123",
-						"engine_version": "2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TACHYON": {
-						"category": "undetected",
-						"engine_name": "TACHYON",
-						"engine_update": "20260602",
-						"engine_version": "2026-06-02.01",
-						"method": "blacklist",
-						"result": null
-					},
-					"Tencent": {
-						"category": "undetected",
-						"engine_name": "Tencent",
-						"engine_update": "20260602",
-						"engine_version": "1.0.0.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trapmine": {
-						"category": "type-unsupported",
-						"engine_name": "Trapmine",
-						"engine_update": "20260504",
-						"engine_version": "4.0.12.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrellixENS": {
-						"category": "undetected",
-						"engine_name": "TrellixENS",
-						"engine_update": "20260601",
-						"engine_version": "6.0.6.653",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro": {
-						"category": "timeout",
-						"engine_name": "TrendMicro",
-						"engine_update": "20260602",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"TrendMicro-HouseCall": {
-						"category": "undetected",
-						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20260602",
-						"engine_version": "24.550.0.1002",
-						"method": "blacklist",
-						"result": null
-					},
-					"Trustlook": {
-						"category": "undetected",
-						"engine_name": "Trustlook",
-						"engine_update": "20260602",
-						"engine_version": "1.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VBA32": {
-						"category": "undetected",
-						"engine_name": "VBA32",
-						"engine_update": "20260601",
-						"engine_version": "5.6.1",
-						"method": "blacklist",
-						"result": null
-					},
-					"VIPRE": {
-						"category": "undetected",
-						"engine_name": "VIPRE",
-						"engine_update": "20260531",
-						"engine_version": "6.0.0.35",
-						"method": "blacklist",
-						"result": null
-					},
-					"Varist": {
-						"category": "undetected",
-						"engine_name": "Varist",
-						"engine_update": "20260602",
-						"engine_version": "6.6.1.3",
-						"method": "blacklist",
-						"result": null
-					},
-					"ViRobot": {
-						"category": "undetected",
-						"engine_name": "ViRobot",
-						"engine_update": "20260602",
-						"engine_version": "2014.3.20.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"VirIT": {
-						"category": "undetected",
-						"engine_name": "VirIT",
-						"engine_update": "20260601",
-						"engine_version": "9.5.1219",
-						"method": "blacklist",
-						"result": null
-					},
-					"Webroot": {
-						"category": "undetected",
-						"engine_name": "Webroot",
-						"engine_update": "20250227",
-						"engine_version": "1.9.0.8",
-						"method": "blacklist",
-						"result": null
-					},
-					"Xcitium": {
-						"category": "undetected",
-						"engine_name": "Xcitium",
-						"engine_update": "20260601",
-						"engine_version": "38694",
-						"method": "blacklist",
-						"result": null
-					},
-					"Yandex": {
-						"category": "undetected",
-						"engine_name": "Yandex",
-						"engine_update": "20260602",
-						"engine_version": "5.5.2.24",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zillya": {
-						"category": "undetected",
-						"engine_name": "Zillya",
-						"engine_update": "20260601",
-						"engine_version": "2.0.0.5612",
-						"method": "blacklist",
-						"result": null
-					},
-					"ZoneAlarm": {
-						"category": "undetected",
-						"engine_name": "ZoneAlarm",
-						"engine_update": "20260601",
-						"engine_version": "6.25-116107207",
-						"method": "blacklist",
-						"result": null
-					},
-					"Zoner": {
-						"category": "undetected",
-						"engine_name": "Zoner",
-						"engine_update": "20260602",
-						"engine_version": "2.2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"alibabacloud": {
-						"category": "undetected",
-						"engine_name": "alibabacloud",
-						"engine_update": "20250321",
-						"engine_version": "2.2.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"huorong": {
-						"category": "undetected",
-						"engine_name": "huorong",
-						"engine_update": "20260601",
-						"engine_version": "38cd6ab:38cd6ab:354651b:354651b",
-						"method": "blacklist",
-						"result": null
-					},
-					"tehtris": {
-						"category": "type-unsupported",
-						"engine_name": "tehtris",
-						"engine_update": "20260602",
-						"engine_version": null,
-						"method": "blacklist",
-						"result": null
-					}
-				},
-				"last_analysis_stats": {
-					"confirmed-timeout": 0,
-					"failure": 1,
-					"harmless": 0,
-					"malicious": 0,
-					"suspicious": 0,
-					"timeout": 3,
-					"type-unsupported": 7,
-					"undetected": 64
-				},
-				"last_modification_date": 1780372298,
-				"last_submission_date": 1780372112,
-				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "ZIP",
-				"md5": "89dfeda792d2a492ab2ee93393265011",
-				"meaningful_name": "addon.nvda-addon",
-				"names": [
-					"addon.nvda-addon"
-				],
-				"reputation": 0,
-				"sha1": "44fc8faf19eb9f1467124d39131e1d6a0ba5aefc",
-				"sha256": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
-				"size": 45322275,
-				"ssdeep": "786432:as8GX6pFbKrbeFsYXUctSxUF9uMPREhPRvAF915DZxPxVhyE7oDpbnvPYSRCxz/Y:asX6vzsYEctSxUDmoF9nDHZVhH7o53JB",
-				"tags": [
-					"zip",
-					"contains-pe"
-				],
-				"times_submitted": 1,
-				"tlsh": "T1E2A7339EE47E64CF9C1F303E9A986E1189B8073E79429A7EE04CC749659F9D806D10CF",
-				"total_votes": {
-					"harmless": 0,
-					"malicious": 0
-				},
-				"trid": [
-					{
-						"file_type": "ZIP compressed archive",
-						"probability": 100
-					}
-				],
-				"type_description": "ZIP",
-				"type_extension": "zip",
-				"type_tag": "zip",
-				"type_tags": [
-					"compressed",
-					"zip"
-				],
-				"unique_sources": 1,
-				"vhash": "26d88baf3fce5a2630047fc6bcf7bdaf"
-			}
-		]
-	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+  "addonId": "freeradio",
+  "displayName": "freeRadio",
+  "URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.19.7/freeradio-2026.19.7.nvda-addon",
+  "description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+  "sha256": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
+  "addonVersionName": "2026.19.7",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 19,
+    "patch": 7
+  },
+  "minNVDAVersion": {
+    "major": 2024,
+    "minor": 1,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+  "sourceURL": "https://github.com/Surveyor123/freeradio",
+  "license": "GPL v2",
+  "homepage": "https://github.com/Surveyor123/freeradio",
+  "changelog": "\n**New Languages for Freeradio**\n- Czech by jiri Holzinger.\n- Arabic by ALI ALOMARI\n- French and Spanish by Rémy Ruiz\n- Khmer by Phearith\n- Russian by Валентин Куприянов\n**Station Manager: resilient mirror selection**\n- The Radio Browser server list is now fetched dynamically via DNS lookup (`all.api.radio-browser.info`) at startup, following the approach recommended by the Radio Browser API. Servers are shuffled before use so load is distributed across the network. When DNS discovery fails, the previous hardcoded mirror list is used as a fallback. Temporary HTTP 5xx errors (e.g. 503 Service Unavailable) are now retried once after a short delay before moving on to the next mirror, reducing failed loads during brief server outages.\n**Search: multi-token filtering for All Stations and Favourites**\n- Local filtering in both the All Stations tab and the Favourites tab now splits the search query into individual tokens and requires all of them to match (AND logic). For example, searching \"jazz france\" returns only stations whose metadata contains both \"jazz\" and \"france\". The last token is matched as a prefix so that results remain visible while the user is still typing a word. The status label in the All Stations tab now always reflects the actual number of visible stations after filtering, rather than the raw count returned by the API.\n- Added a \"Result limit\" setting to the All Stations tab to control the maximum number of results fetched for searches and country filters.\n",
+  "licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "submissionTime": 1780372090000,
+  "translations": [
+    {
+      "language": "ar",
+      "displayName": "freeRadio",
+      "description": "إضافة FreeRadio هي إضافة راديو إنترنت لقارئ الشاشة NVDA توفر وصولاً سلساً إلى آلاف المحطات عبر دليل Radio Browser المفتوح. وتتضمن متصفح محطات متوافقاً كلياً يتيح البحث، وتصفية المحطات حسب البلد، وإدارة المفضلة، وملفات صوتية مخصصة لكل محطة. تتم معالجة التشغيل عبر سلسلة محركات ذات أولوية (BASS، وVLC، وPotPlayer، وWindows Media Player) مع دعم التحكم بمستوى الصوت، والتأثيرات الصوتية، واختيار جهاز الإخراج، بالإضافة إلى نسخ الصوت المتزامن إلى جهاز ثانٍ. وتشمل الميزات الإضافية: التسجيل الفوري والمجدول، ومؤقتات النوم والمنبه، والإعلان التلقائي عن البيانات الوصفية (ICY)، والتعرف على الموسيقى باستخدام Shazam، وسجلاً للأغاني المعجب بها. كافة عناصر التحكم والاختصارات مصممة لتتوافق مع إمكانيات NVDA للوصول الشامل.",
+      "changelog": "\nجديد في Freeradio\n• الترجمة التشيكية: جيري هولزينغر\n• الترجمة العربية: علي العمري\n• الترجمة الفرنسية والإسبانية: ريمي رويز\n• الترجمة الخميرية: فياريث\n• الترجمة الروسية: فالنتين كوبريانوف\nمدير المحطات: اختيار مرايا أكثر مرونة\n• يتم الآن جلب قائمة خوادم Radio Browser ديناميكيًا عبر بحث DNS‏ (‏all.api.radio-browser.info‏) عند بدء التشغيل، وفق النهج الذي توصي به واجهة برمجة Radio Browser. يتم خلط الخوادم قبل الاستخدام لتوزيع الحمل عبر الشبكة. عند فشل اكتشاف DNS، تُستخدم قائمة المرايا المضمّنة مسبقًا احتياطيًا. أخطاء HTTP 5xx المؤقتة (مثل 503 Service Unavailable) تُعاد المحاولة مرة واحدة بعد تأخير قصير قبل الانتقال إلى المرآة التالية، مما يقلل من فشل التحميل خلال انقطاعات الخادم القصيرة.\nالبحث: تصفية متعددة الكلمات للمحطات الكاملة والمفضلة\n• تقسّم الآن التصفية المحلية في كل من تبويب \"كل المحطات\" وتبويب \"المفضلة\" استعلام البحث إلى كلمات منفردة وتشترط مطابقة جميعها (منطق AND). على سبيل المثال، البحث عن \"jazz france\" يعرض فقط المحطات التي تحتوي بياناتها على كلتا الكلمتين. تُطابَق الكلمة الأخيرة كبادئة حتى تظل النتائج مرئية أثناء كتابة المستخدم. يعكس تسمية الحالة في تبويب \"كل المحطات\" الآن دائمًا العدد الفعلي للمحطات المرئية بعد التصفية، بدلًا من العدد الخام الذي تعيده الواجهة البرمجية.\n• أُضيف إعداد \"حد النتائج\" إلى تبويب \"كل المحطات\" للتحكم في الحد الأقصى لعدد النتائج التي يتم جلبها للبحث وفلاتر البلدان.\n"
+    },
+    {
+      "language": "cs",
+      "displayName": "freeRadio",
+      "description": "FreeRadio je doplněk pro internetové rádio určený pro NVDA, který umožňuje plynulý přístup k tisícům stanic prostřednictvím otevřeného adresáře Radio Browser. Nabízí plně přístupný prohlížeč stanic s funkcí vyhledávání, filtrem podle země, správou oblíbených položek a zvukovými profily pro jednotlivé stanice. Přehrávání zajišťuje řetězec prioritních backendů (BASS, VLC, PotPlayer, Windows Media Player) s podporou ovládání hlasitosti, zvukových efektů, výběru výstupního zařízení a simultánního zrcadlení zvuku na druhé zařízení. Mezi další funkce patří okamžité a plánované nahrávání, časovače spánku a budíku, automatické hlášení metadat ICY, rozpoznávání hudby na bázi Shazamu a protokol oblíbených skladeb. Všechny ovládací prvky a klávesové zkratky jsou navrženy s ohledem na přístupnost NVDA.",
+      "changelog": "\nNovinky ve Freeradio\n• Český překlad: Jiří Holzinger\n• Arabský překlad: Ali Alomari\n• Francouzský a španělský překlad: Rémy Ruiz\n• Khmerský překlad: Phearith\n• Ruský překlad: Валентин Куприянов\nSprávce stanic: odolný výběr zrcadel\n• Seznam serverů Radio Browser se nyní načítá dynamicky pomocí DNS vyhledávání (all.api.radio-browser.info) při spuštění, v souladu s doporučeným přístupem API Radio Browser. Servery jsou před použitím náhodně seřazeny, aby se zátěž rozložila po celé síti. Pokud DNS zjišťování selže, použije se jako záloha předchozí pevně zakódovaný seznam zrcadel. Dočasné chyby HTTP 5xx (např. 503 Service Unavailable) jsou nyní jednou zopakovány po krátké prodlevě, než se přejde na další zrcadlo, čímž se snižuje počet neúspěšných načtení při krátkých výpadcích serveru.\nVyhledávání: filtrování podle více výrazů pro Všechny stanice a Oblíbené\n• Místní filtrování na kartě Všechny stanice i na kartě Oblíbené nyní rozděluje vyhledávací dotaz na jednotlivé výrazy a vyžaduje shodu všech z nich (logika AND). Například vyhledávání „jazz france\" vrátí pouze stanice, jejichž metadata obsahují oba výrazy. Poslední výraz je porovnáván jako prefix, takže výsledky zůstávají viditelné, dokud uživatel dokončuje psaní slova. Stavový popisek na kartě Všechny stanice nyní vždy odráží skutečný počet viditelných stanic po filtrování, nikoli hrubý počet vrácený rozhraním API.\n• Na kartu Všechny stanice bylo přidáno nastavení „Limit výsledků\" pro kontrolu maximálního počtu výsledků načítaných při vyhledávání a filtrování podle zemí.\n"
+    },
+    {
+      "language": "es",
+      "displayName": "freeRadio",
+      "description": "FreeRadio es un complemento de radio por Internet para NVDA que proporciona un acceso continuo a miles de estaciones a través del directorio abierto de Radio Browser. Cuenta con un navegador de estaciones totalmente accesible con búsqueda, filtro de países, administración de favoritos y perfiles de audio por estación. La reproducción es manejada por una cadena de backend priorizada (BASS, VLC, PotPlayer, Windows Media Player) con soporte para control de volumen, efectos de audio, selección de dispositivo de salida y la puesta en espejo de audio simultánea en un segundo dispositivo. Las características adicionales incluyen grabación instantánea y programada, temporizadores de apagado y alarma, anuncios automáticos de metadatos ICY, reconocimiento de música basado en Shazam y un registro de canciones favoritas. Todos los controles y atajos están diseñados para la accesibilidad de NVDA.",
+      "changelog": "\n**Nuevos idiomas para Freeradio**\n- Checo de jiri Holzinger.\n- Árabe por ALI ALOMARI\n- Francés y Español por Rémy Ruiz\n- Jemer por Phearith\n- Ruso por Валентин Куприянов\n**Administrador de estaciones: selección de espejo resistente**\n- La lista de servidores de Radio Browser ahora se recupera dinámicamente mediante la búsqueda de DNS (`all.api.radio-browser.info`) al inicio, siguiendo el enfoque recomendado por la API de Radio Browser. Los servidores se barajan antes de su uso para que la carga se distribuya por toda la red. Cuando falla el descubrimiento de DNS, la lista de réplicas codificada anterior se utiliza como alternativa. Los errores temporales HTTP 5xx (por ejemplo, 503 Servicio no disponible) ahora se reintentan una vez después de un breve retraso antes de pasar al siguiente espejo, lo que reduce las cargas fallidas durante breves interrupciones del servidor.\\n\n**Búsqueda: filtrado de tokens múltiples para todas las estaciones y favoritos**\n- El filtrado local tanto en la pestaña Todas las estaciones como en la pestaña Favoritos ahora divide la consulta de búsqueda en tokens individuales y requiere que todos coincidan (lógica Y). Por ejemplo, al buscar \"jazz france\" solo se devuelven emisoras cuyos metadatos contengan \"jazz\" y \"france\". El último token coincide como prefijo para que los resultados permanezcan visibles mientras el usuario todavía escribe una palabra. La etiqueta de estado en la pestaña Todas las estaciones ahora siempre refleja el número real de estaciones visibles después del filtrado, en lugar del recuento sin procesar devuelto por la API.\n- Se agregó una configuración de \"Límite de resultados\" a la pestaña Todas las estaciones para controlar la cantidad máxima de resultados obtenidos para búsquedas y filtros de países.\n"
+    },
+    {
+      "language": "fr",
+      "displayName": "freeRadio",
+      "description": "FreeRadio est une extension de radio Internet pour NVDA qui offre un accès continu à des milliers de stations via l'annuaire ouvert de Radio Browser. Il dispose d'un navigateur de stations entièrement accessible avec recherche, filtre de pays, gestion des favoris et profils audio par station. La lecture est gérée par une chaîne backend prioritaire (BASS, VLC, PotPlayer, Windows Media Player) avec prise en charge du contrôle du volume, des effets audio, de la sélection du périphérique de sortie et de la mise en miroir audio simultanée sur un deuxième périphérique. Les fonctionnalités supplémentaires incluent l'enregistrement instantané et planifié, des minuteries de mise en veille et d'alarme, des annonces automatiques de métadonnées ICY, une reconnaissance musicale basée sur Shazam et un journal des morceaux aimés. Tous les contrôles et raccourcis sont conçus pour l'accessibilité de NVDA.",
+      "changelog": "\n**Nouvelles langues pour Freeradio**\n- Tchèque par Jiri Holzinger.\n- Arabe par ALI ALOMARI\n- Français et Espagnol par Rémy Ruiz\n- Khmer par Phearith\n- Russe par Валентин Куприянов\n**Station Manager : sélection de miroirs résilients**\n- La liste des serveurs Radio Browser est désormais récupérée dynamiquement via la recherche DNS (`all.api.radio-browser.info`) au démarrage, suivant l'approche recommandée par l'API Radio Browser. Les serveurs sont mélangés avant utilisation afin que la charge soit répartie sur le réseau. Lorsque la découverte DNS échoue, la liste de miroirs codée en dur précédente est utilisée comme solution de secours. Les erreurs HTTP 5xx temporaires (par exemple, 503 Service indisponible) sont désormais réessayées une fois après un court délai avant de passer au miroir suivant, réduisant ainsi les échecs de chargement lors de brèves pannes de serveur.\n**Recherche : filtrage multi-jetons pour toutes les stations et favoris**\n- Le filtrage local dans les onglets Toutes les stations et Favoris divise désormais la requête de recherche en jetons individuels et exige qu'ils correspondent tous (logique ET). Par exemple, la recherche « jazz france » renvoie uniquement les stations dont les métadonnées contiennent à la fois « jazz » et « france ». Le dernier jeton correspond à un préfixe afin que les résultats restent visibles pendant que l'utilisateur est encore en train de taper un mot. L'étiquette d'état dans l'onglet Toutes les stations reflète désormais toujours le nombre réel de stations visibles après le filtrage, plutôt que le nombre brut renvoyé par l'API.\n- Ajout d'un paramètre \"Limite de résultats\" à l'onglet Toutes les stations pour contrôler le nombre maximum de résultats récupérés pour les recherches et les filtres de pays.\n"
+    },
+    {
+      "language": "km",
+      "displayName": "freeRadio",
+      "description": "FreeRadio គឺជាកម្មវិធីជំនួយនៃវិទ្យុនៅលើបណ្ដាញអ៊ីនថឺណេតរបស់កម្មវិធី NVDA ដែលផ្តល់នូវការចូលទៅកាន់ស្ថានីយរាប់ពាន់យ៉ាងងាយស្រួលតាមរយៈបញ្ជីបើកចំហរបស់ Radio Browser។ វាមានរួមបញ្ចូលនូវកម្មវិធីរុករកស្ថានីយវិទ្យុដែលអាចចូលប្រើប្រាស់បានយ៉ាងពេញលេញ រួមជាមួយមុខងារស្វែងរក តតាមប្រទេស ការគ្រប់គ្រងបញ្ជីដែលចូលចិត្ត និងការកំណត់សំឡេងដោយឡែកសម្រាប់ស្ថានីយនីមួយៗ។ ការចាក់សំឡេងត្រូវបានគ្រប់គ្រងដោយខ្សែសង្វាក់ប្រព័ន្ធខាងក្រោយដែលកំណត់អាទិភាព (BASS, VLC, PotPlayer, Windows Media Player) ជាមួយនឹងការគាំទ្រសម្រាប់ការគ្រប់គ្រងកម្រិតសំឡេង បែបផែនសំឡេង ការជ្រើសរើសឧបករណ៍បញ្ចេញសំឡេងខាងក្រៅ និងការចម្លងសំឡេងក្នុងពេលដំណាលគ្នាទៅកាន់ឧបករណ៍ទីពីរ។ មុខងារបន្ថែមរួមមានការថតភ្លាមៗ និងតាមកាលវិភាគ ការផ្អាក និងម៉ោងរោទិ៍ ការប្រកាសទិន្នន័យមេតា ICY ដោយស្វ័យប្រវត្តិ ការស្វែងរកបទចម្រៀង ឬតន្ត្រីដែលមិនស្គាល់ចំណងជើងផ្អែកលើ Shazam និងកំណត់ហេតុបទចម្រៀងដែលចូលចិត្ត។ ការគ្រប់គ្រង និងគ្រាប់ចុចរហ័សទាំងអស់ត្រូវបានរចនាឡើងសម្រាប់ភាពងាយស្រួលរបស់ NVDA ។",
+      "changelog": "\nភាសាថ្មីសម្រាប់ Freeradio\n• ការបកប្រែជាភាសាឆែក៖ Jiří Holzinger\n• ការបកប្រែជាភាសាអារ៉ាប់៖ Ali Alomari\n• ការបកប្រែជាភាសាបារាំង និងស្បាញ៖ Rémy Ruiz\n• ការបកប្រែជាភាសាខ្មែរ៖ ភារិទ្ធ\n• ការបកប្រែជាភាសារុស្ស៊ី៖ Валентин Куприянов\nកម្មវិធីគ្រប់គ្រងស្ថានី៖ ការជ្រើសរើសកញ្ចក់ប្រឆាំងបញ្ហា\n• បញ្ជីម៉ាស៊ីនមេ Radio Browser ឥឡូវនេះត្រូវបានទាញយកដោយឆ្លើយតបតាមរយៈការស្វែងរក DNS (all.api.radio-browser.info) នៅពេលចាប់ផ្ដើម ដោយធ្វើតាមវិធីសាស្ត្រដែលណែនាំដោយ API Radio Browser។ ម៉ាស៊ីនមេត្រូវបានលាយចៀនមុនពេលប្រើ ដើម្បីចែកចាយបន្ទុកលើបណ្តាញ។ ប្រសិនបើការស្វែងរក DNS បរាជ័យ បញ្ជីកញ្ចក់ដែលបានកំណត់ជាស្ថាពរពីមុនត្រូវបានប្រើជាការបម្រុងទុក។ កំហុស HTTP 5xx បណ្តោះអាសន្ន (ឧ. 503 Service Unavailable) ឥឡូវនេះត្រូវបានព្យាយាមម្ដងទៀតបន្ទាប់ពីការពន្យារពេលខ្លី មុនពេលឆ្លងទៅកញ្ចក់បន្ទាប់ ដែលកាត់បន្ថយការបរាជ័យនៃការផ្ទុកក្នុងអំឡុងពេលមានបញ្ហាខ្លីៗ។\nការស្វែងរក៖ ការច្រោះពហុពាក្យសម្រាប់ស្ថានីទាំងអស់ និងចំណូលចិត្ត\n• ការច្រោះក្នុងតំបន់ក្នុងផ្ទាំង ស្ថានីទាំងអស់ និងផ្ទាំង ចំណូលចិត្ត ឥឡូវចែកការស្វែងរកជាពាក្យដោយឡែក ហើយតម្រូវឱ្យទាំងអស់ត្រូវគ្នា (តក្កវិជ្ជា AND)។ ជាឧទាហរណ៍ ការស្វែងរក «jazz france» បង្ហាញតែស្ថានីដែលទិន្នន័យរបស់វាមានទាំង «jazz» និង «france»។ ពាក្យចុងក្រោយត្រូវបានផ្គូផ្គងជាបុព្វបទ ដើម្បីឱ្យលទ្ធផលនៅតែបង្ហាញខណៈអ្នកប្រើកំពុងវាយ។ ស្លាកស្ថានភាពក្នុងផ្ទាំង ស្ថានីទាំងអស់ ឥឡូវនេះតែងតែឆ្លុះបញ្ចាំងចំនួនស្ថានីដែលអាចមើលឃើញពិតប្រាកដបន្ទាប់ពីការច្រោះ មិនមែនចំនួនដើមដែល API ត្រឡប់មកវិញ។\n• បានបន្ថែមការកំណត់ «ដែនកំណត់លទ្ធផល» ទៅផ្ទាំង ស្ថានីទាំងអស់ ដើម្បីគ្រប់គ្រងចំនួនអតិបរមានៃលទ្ធផលដែលទាញយកសម្រាប់ការស្វែងរក និងការច្រោះប្រទេស។\n \n"
+    },
+    {
+      "language": "pt",
+      "displayName": "freeRadio",
+      "description": "FreeRadio é um complemento de rádio na Internet para o NVDA que fornece acesso contínuo a milhares de estações através do diretório aberto do Radio Browser. Possui um navegador de estação totalmente acessível com pesquisa, filtro de país, gerenciamento de favoritos e perfis de áudio por estação. A reprodução é feita por uma cadeia de back-end priorizada (BASS, VLC, PotPlayer, Windows Media Player) com suporte para controle de volume, efeitos de áudio, seleção de dispositivo de saída e espelhamento de áudio simultâneo para um segundo dispositivo. Recursos adicionais incluem gravação instantânea e programada, temporizadores de suspensão e alarme, anúncios automáticos de metadados ICY, reconhecimento de música baseado em Shazam e um registro de músicas favoritas. Todos os controles e atalhos são projetados para acessibilidade do NVDA.",
+      "changelog": "\nNovidades no Freeradio\n• Tradução para checo: Jiří Holzinger\n• Tradução para árabe: Ali Alomari\n• Tradução para francês e espanhol: Rémy Ruiz\n• Tradução para khmer: Phearith\n• Tradução para russo: Валентин Куприянов\nGestor de estações: seleção resiliente de espelhos\n• A lista de servidores do Radio Browser é agora obtida dinamicamente através de uma consulta DNS (all.api.radio-browser.info) no arranque, seguindo a abordagem recomendada pela API do Radio Browser. Os servidores são embaralhados antes da utilização para distribuir a carga pela rede. Quando a descoberta por DNS falha, a lista de espelhos predefinida anteriormente é usada como alternativa. Erros HTTP 5xx temporários (por exemplo, 503 Service Unavailable) são agora repetidos uma vez após um curto atraso antes de avançar para o próximo espelho, reduzindo falhas de carregamento durante breves interrupções do servidor.\nPesquisa: filtragem multi-termo para Todas as Estações e Favoritos\n• A filtragem local no separador Todas as Estações e no separador Favoritos divide agora a consulta em termos individuais e exige que todos correspondam (lógica AND). Por exemplo, pesquisar «jazz france» devolve apenas estações cujos metadados contenham tanto «jazz» como «france». O último termo é correspondido como prefixo para que os resultados permaneçam visíveis enquanto o utilizador ainda está a escrever. A etiqueta de estado no separador Todas as Estações reflete agora sempre o número real de estações visíveis após a filtragem, em vez do número bruto devolvido pela API.\n• Foi adicionada uma definição de «Limite de resultados» ao separador Todas as Estações para controlar o número máximo de resultados obtidos em pesquisas e filtros por país.\n \n"
+    },
+    {
+      "language": "ru",
+      "displayName": "FreeRadio",
+      "description": "FreeRadio — это интернет-радио-дополнение для экранного диктора NVDA.\nЕго основная цель — предоставить пользователям простой доступ к тысячам интернет-радиостанций.\nВесь интерфейс и все функции разработаны с учётом полной доступности для NVDA.\nFreeRadio использует открытый каталог Radio Browser, содержащий более 50 000 станций со всего мира.\nРегистрация не требуется.\nДополнение поддерживает горячие клавиши для управления воспроизведением, громкостью и записью из любого места системы.\nВы можете добавлять станции в избранное и упорядочивать их.\nДоступно аудиозеркало для одновременного вывода звука на два устройства.\nДоступна мгновенная и запланированная запись эфира.\n• Поддерживается запись песен с автоматической остановкой при смене трека.\n• Встроено распознавание музыки через Shazam при отсутствии метаданных.\n• Есть таймер сна и будильник для автоматического включения радио.\n• Можно сохранять понравившиеся треки в текстовый файл и прослушивать их на Spotify или YouTube.\nДополнение использует движок BASS по умолчанию с поддержкой аудиоэффектов и плавных переходов между станциями.\nПри необходимости задействуются VLC, PotPlayer или Windows Media Player.\nВсе особенности описаны в справочном руководстве.",
+      "changelog": "\nНовое в Freeradio\n• Перевод на чешский: Йиржи Гольцингер\n• Перевод на арабский: Али Аль-Омари\n• Перевод на французский и испанский: Реми Руис\n• Перевод на кхмерский: Фиарит\n• Перевод на русский: Валентин Куприянов\nМенеджер станций: устойчивый выбор зеркал\n• Список серверов Radio Browser теперь загружается динамически через DNS-запрос (all.api.radio-browser.info) при запуске, следуя подходу, рекомендованному API Radio Browser. Серверы перемешиваются перед использованием для распределения нагрузки по сети. При сбое DNS-обнаружения в качестве резервного варианта используется прежний жёстко заданный список зеркал. Временные ошибки HTTP 5xx (например, 503 Service Unavailable) теперь повторяются один раз после небольшой задержки, прежде чем перейти к следующему зеркалу, что снижает количество неудачных загрузок при кратких сбоях сервера.\nПоиск: многословная фильтрация для всех станций и избранного\n• Локальная фильтрация на вкладках Все станции и Избранное теперь разбивает поисковый запрос на отдельные слова и требует совпадения всех из них (логика И). Например, поиск «jazz france» отображает только станции, метаданные которых содержат оба слова. Последнее слово сопоставляется как префикс, чтобы результаты оставались видимыми, пока пользователь ещё вводит текст. Метка состояния на вкладке Все станции теперь всегда отражает фактическое количество видимых станций после фильтрации, а не исходное число, возвращённое API.\n• На вкладку Все станции добавлен параметр «Лимит результатов» для управления максимальным количеством результатов, загружаемых при поиске и фильтрации по странам.\n \n"
+    },
+    {
+      "language": "tr",
+      "displayName": "FreeRadio",
+      "description": "FreeRadio, NVDA için radioBrowser açık dizini aracılığıyla binlerce istasyona kesintisiz erişim sağlayan bir internet radyo eklentisidir. Arama, ülke filtresi, sık kullanılanlar yönetimi ve istasyon başına ses profilleri içeren, tamamen erişilebilir bir istasyon tarayıcısına sahiptir. Oynatma, ses kontrolü, ses efektleri, çıkış cihazı seçimi ve ikinci bir cihaza eşzamanlı ses yansıtma desteğine sahip, öncelikli bir arka uç zinciri (BASS, VLC, PotPlayer, Windows Media Player) tarafından gerçekleştirilir. Ek özellikler arasında anında ve programlı kayıt, uyku ve alarm zamanlayıcıları, otomatik ICY meta veri duyuruları, Shazam tabanlı müzik tanıma ve beğenilen şarkılar günlüğü yer alır. Tüm kontroller ve kısayollar kullanım kolaylığı ve erişilebilirlik gözetilerek  tasarlanmıştır.",
+      "changelog": "\nFreeradio'da Yenilikler\n• Çekçe çeviri: Jiří Holzinger\n• Arapça çeviri: Ali Alomari\n• Fransızca ve İspanyolca çeviri: Rémy Ruiz\n• Khmer çeviri: Phearith\n• Rusça çeviri: Валентин Куприянов\nİstasyon Yöneticisi: dayanıklı yansıtıcı seçimi\n• Radio Browser sunucu listesi artık başlangıçta DNS sorgusu (all.api.radio-browser.info) aracılığıyla dinamik olarak alınıyor; bu, Radio Browser API'sinin önerdiği yaklaşımı izliyor. Ağ üzerindeki yük dağıtımı için sunucular kullanılmadan önce rastgele sıralanıyor. DNS keşfi başarısız olursa önceki sabit kodlanmış yansıtıcı listesi yedek olarak kullanılıyor. Geçici HTTP 5xx hataları (ör. 503 Service Unavailable) artık bir sonraki yansıtıcıya geçmeden önce kısa bir gecikmenin ardından bir kez daha deneniyor; böylece kısa süreli sunucu kesintilerinde başarısız yükleme sayısı azalıyor.\nArama: Tüm İstasyonlar ve Favoriler için çok sözcüklü filtreleme\n• Hem Tüm İstasyonlar hem de Favoriler sekmesindeki yerel filtreleme artık arama sorgusunu ayrı sözcüklere bölüyor ve tümünün eşleşmesini gerektiriyor (VE mantığı). Örneğin \"jazz france\" araması yalnızca meta verilerinde hem \"jazz\" hem \"france\" geçen istasyonları döndürüyor. Son sözcük önek olarak eşleştiriliyor; böylece kullanıcı yazmayı sürdürürken sonuçlar görünür kalıyor. Tüm İstasyonlar sekmesindeki durum etiketi artık API'nin döndürdüğü ham sayı yerine filtreleme sonrasında görünen gerçek istasyon sayısını yansıtıyor.\n• Aramalar ve ülke filtreleri için getirilen maksimum sonuç sayısını denetlemek amacıyla Tüm İstasyonlar sekmesine \"Sonuç limiti\" ayarı eklendi.\n"
+    }
+  ],
+  "vtScanUrl": "https://www.virustotal.com/gui/file/bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
+  "scanResults": {
+    "codeQL-warnings": [],
+    "codeQL-errors": [],
+    "virusTotal": [
+      {
+        "_id": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
+        "_type": "file",
+        "bundle_info": {
+          "extensions": {
+            "_pth": 2,
+            "cat": 2,
+            "css": 1,
+            "dll": 33,
+            "exe": 5,
+            "html": 9,
+            "ini": 9,
+            "md": 9,
+            "mo": 8,
+            "po": 8,
+            "py": 8,
+            "pyd": 40,
+            "txt": 2,
+            "zip": 2
+          },
+          "file_types": {
+            "Portable Executable": 78,
+            "ZIP": 2,
+            "unknown": 58
+          },
+          "highest_datetime": "2026-06-02 03:33:52",
+          "lowest_datetime": "2026-06-02 03:33:04",
+          "num_children": 138,
+          "type": "ZIP",
+          "uncompressed_size": 106377837
+        },
+        "filecondis": {
+          "dhash": "0000000000070600",
+          "raw_md5": "b23c3f7ff7c381f974523332b6b8146b"
+        },
+        "first_submission_date": 1780372112,
+        "last_analysis_date": 1780372112,
+        "last_analysis_results": {
+          "ALYac": {
+            "category": "undetected",
+            "engine_name": "ALYac",
+            "engine_update": "20260602",
+            "engine_version": "2.0.0.10",
+            "method": "blacklist",
+            "result": null
+          },
+          "APEX": {
+            "category": "type-unsupported",
+            "engine_name": "APEX",
+            "engine_update": "20260528",
+            "engine_version": "6.783",
+            "method": "blacklist",
+            "result": null
+          },
+          "AVG": {
+            "category": "undetected",
+            "engine_name": "AVG",
+            "engine_update": "20260601",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Acronis": {
+            "category": "undetected",
+            "engine_name": "Acronis",
+            "engine_update": "20240328",
+            "engine_version": "1.2.0.121",
+            "method": "blacklist",
+            "result": null
+          },
+          "AhnLab-V3": {
+            "category": "undetected",
+            "engine_name": "AhnLab-V3",
+            "engine_update": "20260601",
+            "engine_version": "3.30.0.10666",
+            "method": "blacklist",
+            "result": null
+          },
+          "Alibaba": {
+            "category": "undetected",
+            "engine_name": "Alibaba",
+            "engine_update": "20190527",
+            "engine_version": "0.3.0.5",
+            "method": "blacklist",
+            "result": null
+          },
+          "Antiy-AVL": {
+            "category": "undetected",
+            "engine_name": "Antiy-AVL",
+            "engine_update": "20260602",
+            "engine_version": "3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Arcabit": {
+            "category": "undetected",
+            "engine_name": "Arcabit",
+            "engine_update": "20260602",
+            "engine_version": "2025.0.0.23",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast": {
+            "category": "undetected",
+            "engine_name": "Avast",
+            "engine_update": "20260601",
+            "engine_version": "23.9.8494.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avast-Mobile": {
+            "category": "undetected",
+            "engine_name": "Avast-Mobile",
+            "engine_update": "20260601",
+            "engine_version": "260601-00",
+            "method": "blacklist",
+            "result": null
+          },
+          "Avira": {
+            "category": "undetected",
+            "engine_name": "Avira",
+            "engine_update": "20260601",
+            "engine_version": "8.3.3.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefender": {
+            "category": "undetected",
+            "engine_name": "BitDefender",
+            "engine_update": "20260602",
+            "engine_version": "7.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "BitDefenderFalx": {
+            "category": "type-unsupported",
+            "engine_name": "BitDefenderFalx",
+            "engine_update": "20260525",
+            "engine_version": "2.0.936",
+            "method": "blacklist",
+            "result": null
+          },
+          "Bkav": {
+            "category": "undetected",
+            "engine_name": "Bkav",
+            "engine_update": "20260601",
+            "engine_version": "8.2.40(8338)",
+            "method": "blacklist",
+            "result": null
+          },
+          "CAT-QuickHeal": {
+            "category": "undetected",
+            "engine_name": "CAT-QuickHeal",
+            "engine_update": "20260601",
+            "engine_version": "22.00",
+            "method": "blacklist",
+            "result": null
+          },
+          "CMC": {
+            "category": "undetected",
+            "engine_name": "CMC",
+            "engine_update": "20260602",
+            "engine_version": "2.4.2022.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "CTX": {
+            "category": "undetected",
+            "engine_name": "CTX",
+            "engine_update": "20260602",
+            "engine_version": "2024.8.29.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "ClamAV": {
+            "category": "timeout",
+            "engine_name": "ClamAV",
+            "engine_update": "20260601",
+            "engine_version": "1.5.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "CrowdStrike": {
+            "category": "undetected",
+            "engine_name": "CrowdStrike",
+            "engine_update": "20230417",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cylance": {
+            "category": "type-unsupported",
+            "engine_name": "Cylance",
+            "engine_update": "20260521",
+            "engine_version": "3.0.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Cynet": {
+            "category": "undetected",
+            "engine_name": "Cynet",
+            "engine_update": "20260602",
+            "engine_version": "4.0.3.4",
+            "method": "blacklist",
+            "result": null
+          },
+          "DeepInstinct": {
+            "category": "undetected",
+            "engine_name": "DeepInstinct",
+            "engine_update": "20260601",
+            "engine_version": "5.0.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "DrWeb": {
+            "category": "undetected",
+            "engine_name": "DrWeb",
+            "engine_update": "20260602",
+            "engine_version": "7.0.75.2070",
+            "method": "blacklist",
+            "result": null
+          },
+          "ESET-NOD32": {
+            "category": "undetected",
+            "engine_name": "ESET-NOD32",
+            "engine_update": "20260602",
+            "engine_version": "18.2.18.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Elastic": {
+            "category": "undetected",
+            "engine_name": "Elastic",
+            "engine_update": "20260528",
+            "engine_version": "4.0.264",
+            "method": "blacklist",
+            "result": null
+          },
+          "Emsisoft": {
+            "category": "undetected",
+            "engine_name": "Emsisoft",
+            "engine_update": "20260601",
+            "engine_version": "2024.8.0.61147",
+            "method": "blacklist",
+            "result": null
+          },
+          "F-Secure": {
+            "category": "undetected",
+            "engine_name": "F-Secure",
+            "engine_update": "20260602",
+            "engine_version": "18.10.1547.307",
+            "method": "blacklist",
+            "result": null
+          },
+          "Fortinet": {
+            "category": "undetected",
+            "engine_name": "Fortinet",
+            "engine_update": "20260602",
+            "engine_version": "7.0.48.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "GData": {
+            "category": "undetected",
+            "engine_name": "GData",
+            "engine_update": "20260602",
+            "engine_version": "GD:27.44760AVA:64.31348",
+            "method": "blacklist",
+            "result": null
+          },
+          "Google": {
+            "category": "undetected",
+            "engine_name": "Google",
+            "engine_update": "20260602",
+            "engine_version": "1780365690",
+            "method": "blacklist",
+            "result": null
+          },
+          "Gridinsoft": {
+            "category": "undetected",
+            "engine_name": "Gridinsoft",
+            "engine_update": "20260602",
+            "engine_version": "1.0.247.174",
+            "method": "blacklist",
+            "result": null
+          },
+          "Ikarus": {
+            "category": "failure",
+            "engine_name": "Ikarus",
+            "engine_update": "20260601",
+            "engine_version": "6.5.4.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Jiangmin": {
+            "category": "undetected",
+            "engine_name": "Jiangmin",
+            "engine_update": "20260601",
+            "engine_version": "16.0.100",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7AntiVirus": {
+            "category": "undetected",
+            "engine_name": "K7AntiVirus",
+            "engine_update": "20260602",
+            "engine_version": "14.55.59684",
+            "method": "blacklist",
+            "result": null
+          },
+          "K7GW": {
+            "category": "undetected",
+            "engine_name": "K7GW",
+            "engine_update": "20260602",
+            "engine_version": "14.55.59684",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kaspersky": {
+            "category": "undetected",
+            "engine_name": "Kaspersky",
+            "engine_update": "20260602",
+            "engine_version": "22.0.1.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "engine_name": "Kingsoft",
+            "engine_update": "20260601",
+            "engine_version": "None",
+            "method": "blacklist",
+            "result": null
+          },
+          "Lionic": {
+            "category": "undetected",
+            "engine_name": "Lionic",
+            "engine_update": "20260601",
+            "engine_version": "8.16",
+            "method": "blacklist",
+            "result": null
+          },
+          "Malwarebytes": {
+            "category": "undetected",
+            "engine_name": "Malwarebytes",
+            "engine_update": "20260602",
+            "engine_version": "3.1.0.235",
+            "method": "blacklist",
+            "result": null
+          },
+          "MaxSecure": {
+            "category": "timeout",
+            "engine_name": "MaxSecure",
+            "engine_update": "20260601",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "McAfeeD": {
+            "category": "undetected",
+            "engine_name": "McAfeeD",
+            "engine_update": "20260602",
+            "engine_version": "1.2.0.14833",
+            "method": "blacklist",
+            "result": null
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "engine_name": "MicroWorld-eScan",
+            "engine_update": "20260602",
+            "engine_version": "14.0.409.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Microsoft": {
+            "category": "undetected",
+            "engine_name": "Microsoft",
+            "engine_update": "20260602",
+            "engine_version": "1.1.26040.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "NANO-Antivirus": {
+            "category": "undetected",
+            "engine_name": "NANO-Antivirus",
+            "engine_update": "20260602",
+            "engine_version": "1.0.170.26895",
+            "method": "blacklist",
+            "result": null
+          },
+          "Paloalto": {
+            "category": "type-unsupported",
+            "engine_name": "Paloalto",
+            "engine_update": "20260602",
+            "engine_version": "0.9.0.1003",
+            "method": "blacklist",
+            "result": null
+          },
+          "Panda": {
+            "category": "undetected",
+            "engine_name": "Panda",
+            "engine_update": "20260601",
+            "engine_version": "4.6.4.2",
+            "method": "blacklist",
+            "result": null
+          },
+          "Rising": {
+            "category": "undetected",
+            "engine_name": "Rising",
+            "engine_update": "20260602",
+            "engine_version": "25.0.0.28",
+            "method": "blacklist",
+            "result": null
+          },
+          "SUPERAntiSpyware": {
+            "category": "undetected",
+            "engine_name": "SUPERAntiSpyware",
+            "engine_update": "20260530",
+            "engine_version": "5.6.0.1032",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sangfor": {
+            "category": "undetected",
+            "engine_name": "Sangfor",
+            "engine_update": "20260601",
+            "engine_version": "2.22.3.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SentinelOne": {
+            "category": "undetected",
+            "engine_name": "SentinelOne",
+            "engine_update": "20260324",
+            "engine_version": "7.6.2.19",
+            "method": "blacklist",
+            "result": null
+          },
+          "Skyhigh": {
+            "category": "undetected",
+            "engine_name": "Skyhigh",
+            "engine_update": "20260601",
+            "engine_version": "v2021.2.0+4045",
+            "method": "blacklist",
+            "result": null
+          },
+          "Sophos": {
+            "category": "undetected",
+            "engine_name": "Sophos",
+            "engine_update": "20260601",
+            "engine_version": "3.5.1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "Symantec": {
+            "category": "undetected",
+            "engine_name": "Symantec",
+            "engine_update": "20260602",
+            "engine_version": "1.22.0.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "SymantecMobileInsight": {
+            "category": "type-unsupported",
+            "engine_name": "SymantecMobileInsight",
+            "engine_update": "20260123",
+            "engine_version": "2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TACHYON": {
+            "category": "undetected",
+            "engine_name": "TACHYON",
+            "engine_update": "20260602",
+            "engine_version": "2026-06-02.01",
+            "method": "blacklist",
+            "result": null
+          },
+          "Tencent": {
+            "category": "undetected",
+            "engine_name": "Tencent",
+            "engine_update": "20260602",
+            "engine_version": "1.0.0.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trapmine": {
+            "category": "type-unsupported",
+            "engine_name": "Trapmine",
+            "engine_update": "20260504",
+            "engine_version": "4.0.12.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrellixENS": {
+            "category": "undetected",
+            "engine_name": "TrellixENS",
+            "engine_update": "20260601",
+            "engine_version": "6.0.6.653",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro": {
+            "category": "timeout",
+            "engine_name": "TrendMicro",
+            "engine_update": "20260602",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "TrendMicro-HouseCall": {
+            "category": "undetected",
+            "engine_name": "TrendMicro-HouseCall",
+            "engine_update": "20260602",
+            "engine_version": "24.550.0.1002",
+            "method": "blacklist",
+            "result": null
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "engine_name": "Trustlook",
+            "engine_update": "20260602",
+            "engine_version": "1.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VBA32": {
+            "category": "undetected",
+            "engine_name": "VBA32",
+            "engine_update": "20260601",
+            "engine_version": "5.6.1",
+            "method": "blacklist",
+            "result": null
+          },
+          "VIPRE": {
+            "category": "undetected",
+            "engine_name": "VIPRE",
+            "engine_update": "20260531",
+            "engine_version": "6.0.0.35",
+            "method": "blacklist",
+            "result": null
+          },
+          "Varist": {
+            "category": "undetected",
+            "engine_name": "Varist",
+            "engine_update": "20260602",
+            "engine_version": "6.6.1.3",
+            "method": "blacklist",
+            "result": null
+          },
+          "ViRobot": {
+            "category": "undetected",
+            "engine_name": "ViRobot",
+            "engine_update": "20260602",
+            "engine_version": "2014.3.20.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "VirIT": {
+            "category": "undetected",
+            "engine_name": "VirIT",
+            "engine_update": "20260601",
+            "engine_version": "9.5.1219",
+            "method": "blacklist",
+            "result": null
+          },
+          "Webroot": {
+            "category": "undetected",
+            "engine_name": "Webroot",
+            "engine_update": "20250227",
+            "engine_version": "1.9.0.8",
+            "method": "blacklist",
+            "result": null
+          },
+          "Xcitium": {
+            "category": "undetected",
+            "engine_name": "Xcitium",
+            "engine_update": "20260601",
+            "engine_version": "38694",
+            "method": "blacklist",
+            "result": null
+          },
+          "Yandex": {
+            "category": "undetected",
+            "engine_name": "Yandex",
+            "engine_update": "20260602",
+            "engine_version": "5.5.2.24",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zillya": {
+            "category": "undetected",
+            "engine_name": "Zillya",
+            "engine_update": "20260601",
+            "engine_version": "2.0.0.5612",
+            "method": "blacklist",
+            "result": null
+          },
+          "ZoneAlarm": {
+            "category": "undetected",
+            "engine_name": "ZoneAlarm",
+            "engine_update": "20260601",
+            "engine_version": "6.25-116107207",
+            "method": "blacklist",
+            "result": null
+          },
+          "Zoner": {
+            "category": "undetected",
+            "engine_name": "Zoner",
+            "engine_update": "20260602",
+            "engine_version": "2.2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "alibabacloud": {
+            "category": "undetected",
+            "engine_name": "alibabacloud",
+            "engine_update": "20250321",
+            "engine_version": "2.2.0",
+            "method": "blacklist",
+            "result": null
+          },
+          "huorong": {
+            "category": "undetected",
+            "engine_name": "huorong",
+            "engine_update": "20260601",
+            "engine_version": "38cd6ab:38cd6ab:354651b:354651b",
+            "method": "blacklist",
+            "result": null
+          },
+          "tehtris": {
+            "category": "type-unsupported",
+            "engine_name": "tehtris",
+            "engine_update": "20260602",
+            "engine_version": null,
+            "method": "blacklist",
+            "result": null
+          }
+        },
+        "last_analysis_stats": {
+          "confirmed-timeout": 0,
+          "failure": 1,
+          "harmless": 0,
+          "malicious": 0,
+          "suspicious": 0,
+          "timeout": 3,
+          "type-unsupported": 7,
+          "undetected": 64
+        },
+        "last_modification_date": 1780372298,
+        "last_submission_date": 1780372112,
+        "magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+        "magika": "ZIP",
+        "md5": "89dfeda792d2a492ab2ee93393265011",
+        "meaningful_name": "addon.nvda-addon",
+        "names": [
+          "addon.nvda-addon"
+        ],
+        "reputation": 0,
+        "sha1": "44fc8faf19eb9f1467124d39131e1d6a0ba5aefc",
+        "sha256": "bed57afb2b7d2548659c825ac91615d893f6b6da8cdabfd36ed8173764bd3318",
+        "size": 45322275,
+        "ssdeep": "786432:as8GX6pFbKrbeFsYXUctSxUF9uMPREhPRvAF915DZxPxVhyE7oDpbnvPYSRCxz/Y:asX6vzsYEctSxUDmoF9nDHZVhH7o53JB",
+        "tags": [
+          "zip",
+          "contains-pe"
+        ],
+        "times_submitted": 1,
+        "tlsh": "T1E2A7339EE47E64CF9C1F303E9A986E1189B8073E79429A7EE04CC749659F9D806D10CF",
+        "total_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "trid": [
+          {
+            "file_type": "ZIP compressed archive",
+            "probability": 100
+          }
+        ],
+        "type_description": "ZIP",
+        "type_extension": "zip",
+        "type_tag": "zip",
+        "type_tags": [
+          "compressed",
+          "zip"
+        ],
+        "unique_sources": 1,
+        "vhash": "26d88baf3fce5a2630047fc6bcf7bdaf"
+      }
+    ]
+  },
+  "reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
 }
