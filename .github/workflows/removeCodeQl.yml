@@ -19,6 +19,8 @@ jobs:
       uses: astral-sh/setup-uv@v8.2.0
     - name: Checkout code
       uses: actions/checkout@v7
+      with:
+        ref: ${{ github.head_ref || github.ref_name }}
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v6
       with:
@@ -33,5 +35,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git commit -m "Remove CodeQL keys from add-ons metadata"
-          git push
+          git push origin HEAD:${{ github.head_ref || github.ref_name }}
         fi
