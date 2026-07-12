@@ -1,0 +1,32 @@
+{
+	"addonId": "googleTtsForNvda",
+	"displayName": "Google TTS For NVDA",
+	"URL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/releases/download/v0.3/googleTtsForNvda-0.3.nvda-addon",
+	"description": "Use Google's WASM text-to-speech voices locally through a supported browser runtime (Microsoft Edge or Google Chrome) as an NVDA synthesizer.",
+	"sha256": "e3d8d7e46318478793f437de70a74365c7f0b68a71f7c8fa83b4f13cb90915b6",
+	"addonVersionName": "0.3",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Nguyen Anh Duc, Dao Duc Trung and Pham Hung Vuong",
+	"sourceURL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA",
+	"changelog": "Version 0.3:\n- Added browser runtime selection (Microsoft Edge or Google Chrome) directly in NVDA settings.\n- Moved browser profile storage to AppData\\Local for cache stability and hidden background helper windows.\n- Added Filter by language dropdown and orphaned voice packages cleanup in Voice Manager.\n- Fixed cut-off speech on the first utterance and reduced speech synthesis latency.\n- Integrated 180 Google TTS voice packages and normalized language codes.\n- Added full localization system and complete Vietnamese translation.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1783849692000,
+	"translations": []
+}
