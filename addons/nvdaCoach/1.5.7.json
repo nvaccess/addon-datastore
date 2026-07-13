@@ -1,0 +1,62 @@
+{
+	"addonId": "nvdaCoach",
+	"displayName": "NVDA Coach - Interactive Screen Reader Training",
+	"URL": "https://github.com/tonygeb23/nvdaCoach-/releases/download/v1.5.7/nvdaCoach-1.5.7.nvda-addon",
+	"description": "An interactive, in-NVDA training system that teaches screen reader commands through guided, hands-on drills with real-time feedback. Built by an assistive technology instructor for absolute beginners.",
+	"sha256": "963ab8221803630109f23d117fc63805789a91a5ebf5ea7b9292ce4178804e88",
+	"addonVersionName": "1.5.7",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Tony Gebhard",
+	"sourceURL": "https://github.com/tonygeb23/nvdaCoach-",
+	"license": "GPL v2",
+	"homepage": "https://tonygebhard.me/nvdacoach/",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1783974806000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "NVDA Coach - 互動式螢幕閱讀器訓練",
+			"description": "\nNVDA Coach 是一款面向 NVDA 螢幕閱讀器的互動式訓練外掛。\n它透過簡短的實踐練習幫助你掌握 NVDA 命令。\n你無需閱讀手冊，而是在語音回饋的引導下進行實時練習。\n本外掛專為初學者以及剛開始接觸螢幕閱讀器的人設計。\n要開始使用，請按 NVDA+Shift+C。\n教練視窗將會開啟，其中包含課程介紹和課程列表。\n用方向鍵選擇一課，然後按 Enter。\n每節課由一系列步驟組成。\n對於需要執行命令的步驟，請切換到其他視窗，完成操作後按 NVDA+Shift+C 返回教練視窗。\n對於包含內建文字的步驟，可直接在教練視窗中練習。\n課程進行期間，以下按鍵始終可用：\n• Enter——進入下一步\n• F1——重複當前指令\n• F2——獲取當前步驟的提示\n• F3——跳過當前步驟\n• Escape——停止課程\n完成一課後，按 Ctrl+N 進入下一課，按 Ctrl+B 返回上一課，按 Ctrl+R 重新開始本課。\n外掛會記住已完成的課程，並在列表中加以標記。\n學習進度儲存在 NVDA 的配置資料夾中。\nNVDA Coach 目前包含六章：\n• 《NVDA 入門》\n• 《閱讀和瀏覽文字》\n• 《瀏覽模式與網頁導航》\n• 《物件導航》\n• 《自訂 NVDA》\n• 《認識你的鍵盤》\n課程包含內建練習環境：\n• 實時練習表單，用於練習 Tab 導航和控制元件操作\n• 文字區域，可直接在教練視窗中練習閱讀和選擇文字\n• 獨立的練習網頁，用於練習按標題、連結和表單導航\n本外掛由輔助技術講師 Tony Gebhard 開發。\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA Eğitmeni - İnteraktif Ekran Okuyucu Eğitimi",
+			"description": "Ekran okuyucu komutlarını, gerçek zamanlı geri bildirimle birlikte rehberli, uygulamalı alıştırmalar yoluyla öğreten etkileşimli, NVDA içi bir eğitim sistemi. Tamamen yeni başlayanlar için yardımcı bir teknoloji eğitmeni tarafından tasarlandı."
+		},
+		{
+			"language": "ru",
+			"displayName": "NVDACoach (Интерактивный тренажёр по скринридеру NVDA)",
+			"description": "\nNVDA Coach — это интерактивное обучающее дополнение для экранного диктора NVDA.\nОно помогает освоить команды NVDA через короткие практические упражнения.\nВместо чтения руководства вы отрабатываете навыки в реальном времени с голосовыми подсказками.\nДополнение разработано специально для новичков и тех, кто только начинает знакомство с экранными дикторами.\nДля начала работы нажмите NVDA+Shift+C.\nОткроется окно Тренера с приветствием и списком уроков.\nВыберите урок стрелками и нажмите Enter.\nКаждый урок состоит из последовательных шагов.\nДля шагов с командами переключитесь в другое окно выполните действие и вернитесь в окно Тренера с помощью NVDA+Shift+C.\nДля шагов со встроенным текстом практикуйтесь прямо в окне Тренера.\nВо время урока всегда доступны клавиши\n• Enter — переход к следующему шагу\n• F1 — повтор текущей инструкции\n• F2 — подсказка для текущего шага\n• F3 — пропуск текущего шага\n• Escape — остановка урока\nПосле завершения урока используйте Ctrl+N для следующего урока Ctrl+B для предыдущего и Ctrl+R для перезапуска.\nДополнение запоминает пройденные уроки и отмечает их в списке.\nПрогресс сохраняется в папке конфигурации NVDA.\nВ данный момент NVDA Coach включает шесть глав:\n• «Начало работы с NVDA».\n• «Чтение и перемещение по тексту».\n• «Режим обзора и навигация в интернете».\n• «Навигация по объектам».\n• «Настройка NVDA».\n• «Ваша клавиатура».\nДля уроков предусмотрены встроенные среды практики\n• живые тренировочные формы для отработки навигации по TAB и активации элементов\n• текстовая область для практики чтения и выделения прямо в окне Тренера\n• отдельная веб-страница для отработки навигации по заголовкам ссылкам и формам\nДополнение создано Тони Гебхардом инструктором по ассистивным технологиям.\n"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "NVDA Coach - Treinamento Interativo para o Leitor de Tela",
+			"description": "\nNVDA Coach é um complemento de treinamento interativo para o leitor de tela NVDA.\nEle ajuda você a dominar os comandos do NVDA por meio de exercícios práticos e breves.\nEm vez de ler um manual, você pratica em tempo real com feedback de voz.\nO complemento foi desenvolvido especialmente para iniciantes e pessoas que estão começando a usar leitores de tela.\nPara começar, pressione NVDA+Shift+C.\nA janela do Treinador será aberta com uma introdução e uma lista de lições.\nSelecione uma lição com as setas e pressione Enter.\nCada lição é composta por etapas sequenciais.\nPara as etapas com comandos, mude para outra janela, execute a ação e volte à janela do Treinador com NVDA+Shift+C.\nPara as etapas com texto integrado, pratique diretamente na janela do Treinador.\nDurante a lição, as seguintes teclas estão sempre disponíveis:\n• Enter — avançar para a próxima etapa\n• F1 — repetir a instrução atual\n• F2 — dica para a etapa atual\n• F3 — pular a etapa atual\n• Escape — parar a lição\nApós concluir uma lição, use Ctrl+N para a próxima lição, Ctrl+B para a anterior e Ctrl+R para reiniciar.\nO complemento memoriza as lições concluídas e as marca na lista.\nO progresso é salvo na pasta de configuração do NVDA.\nAtualmente, o NVDA Coach inclui seis capítulos:\n• «Introdução ao NVDA».\n• «Leitura e movimentação pelo texto».\n• «Modo de navegação e navegação na web».\n• «Navegação por objetos».\n• «Personalização do NVDA».\n• «Seu teclado».\nAs lições incluem ambientes de prática integrados:\n• formulários de prática ao vivo para navegação com Tab e ativação de controles\n• área de texto para prática de leitura e seleção diretamente na janela do Treinador\n• página web separada para praticar a navegação por cabeçalhos, links e formulários\nO complemento foi criado por Tony Gebhard, instrutor de tecnologia assistiva.\n"
+		},
+		{
+			"language": "es",
+			"displayName": "NVDA Coach - Entrenamiento Interactivo para el Lector de Pantalla",
+			"description": "\nNVDA Coach es un complemento de entrenamiento interactivo para el lector de pantalla NVDA.\nTe ayuda a dominar los comandos de NVDA a través de ejercicios prácticos y breves.\nEn lugar de leer un manual, practicas en tiempo real con retroalimentación de voz.\nEl complemento fue diseñado especialmente para principiantes y personas que recién comienzan con los lectores de pantalla.\nPara comenzar, presiona NVDA+Shift+C.\nSe abrirá la ventana del Entrenador con una introducción y una lista de lecciones.\nSelecciona una lección con las flechas y presiona Enter.\nCada lección consta de pasos secuenciales.\nPara los pasos con comandos, cambia a otra ventana, realiza la acción y regresa a la ventana del Entrenador con NVDA+Shift+C.\nPara los pasos con texto integrado, practica directamente en la ventana del Entrenador.\nDurante la lección siempre están disponibles las teclas:\n• Enter — avanzar al siguiente paso\n• F1 — repetir la instrucción actual\n• F2 — pista para el paso actual\n• F3 — saltar el paso actual\n• Escape — detener la lección\nDespués de completar una lección, usa Ctrl+N para la siguiente lección, Ctrl+B para la anterior y Ctrl+R para reiniciar.\nEl complemento recuerda las lecciones completadas y las marca en la lista.\nEl progreso se guarda en la carpeta de configuración de NVDA.\nActualmente NVDA Coach incluye seis capítulos:\n• «Introducción a NVDA».\n• «Leer y moverse por el texto».\n• «Modo exploración y navegación web».\n• «Navegación por objetos».\n• «Personalización de NVDA».\n• «Tu teclado».\nLas lecciones incluyen entornos de práctica integrados:\n• formularios de práctica en vivo para la navegación con Tab y la activación de controles\n• área de texto para la práctica de lectura y selección directamente en la ventana del Entrenador\n• página web separada para practicar la navegación por encabezados, enlaces y formularios\nEl complemento fue creado por Tony Gebhard, instructor de tecnología asistiva.\n"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "NVDA Coach - 交互式屏幕阅读器训练",
+			"description": "\nNVDA Coach 是一款面向 NVDA 屏幕阅读器的交互式训练插件。\n它通过简短的实践练习帮助你掌握 NVDA 命令。\n你无需阅读手册，而是在语音反馈的引导下进行实时练习。\n本插件专为初学者以及刚开始接触屏幕阅读器的人设计。\n要开始使用，请按 NVDA+Shift+C。\n教练窗口将会打开，其中包含课程介绍和课程列表。\n用方向键选择一课，然后按 Enter。\n每节课由一系列步骤组成。\n对于需要执行命令的步骤，请切换到其他窗口，完成操作后按 NVDA+Shift+C 返回教练窗口。\n对于包含内置文本的步骤，可直接在教练窗口中练习。\n课程进行期间，以下按键始终可用：\n• Enter——进入下一步\n• F1——重复当前指令\n• F2——获取当前步骤的提示\n• F3——跳过当前步骤\n• Escape——停止课程\n完成一课后，按 Ctrl+N 进入下一课，按 Ctrl+B 返回上一课，按 Ctrl+R 重新开始本课。\n插件会记住已完成的课程，并在列表中加以标记。\n学习进度保存在 NVDA 的配置文件夹中。\nNVDA Coach 目前包含六章：\n• 《NVDA 入门》\n• 《阅读和浏览文本》\n• 《浏览模式与网页导航》\n• 《对象导航》\n• 《自定义 NVDA》\n• 《认识你的键盘》\n课程包含内置练习环境：\n• 实时练习表单，用于练习 Tab 导航和控件操作\n• 文本区域，可直接在教练窗口中练习阅读和选择文本\n• 独立的练习网页，用于练习按标题、链接和表单导航\n本插件由辅助技术讲师 Tony Gebhard 开发。\n"
+		}
+	]
+}
