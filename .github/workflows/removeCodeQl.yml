@@ -1,15 +1,12 @@
 name: remove codeQl keys for add-ons metadata
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   workflow_dispatch:
 jobs:
   removeCodeQl:
     permissions:
       contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -29,9 +26,30 @@ jobs:
       run: |
         ./remove-codeql-keys.sh
         git add addons
-        if ! git diff --cached --quiet; then
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git commit -m "Remove CodeQL keys from add-ons metadata"
-          git push origin HEAD:${{ github.head_ref || github.ref_name }}
+        if git diff --cached --quiet; then
+        exit 1
         fi
+    - name: Upload addons folder as an artifact
+      uses: actions/upload-artifact@v7
+      with:
+        name: addons
+        path: addons
+
+  createPullRequest:
+    runs-on: ubuntu-latest
+    needs: removeCodeQl
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v7
+    - name: Download addons folder artifact
+      uses: actions/download-artifact@v8
+      with:
+        name: addons
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add addons
+        git commit -m "Remove codeQl keys from add-ons metadata"
+        gh pr create --title "Remove codeQl keys from add-ons metadata" --body "This PR removes codeQl keys from add-ons metadata." --base master --head ${{ github.actor }}:remove-codeql-keys 
+        
