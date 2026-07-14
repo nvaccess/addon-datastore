@@ -27,8 +27,6 @@ while IFS= read -r -d '' file; do
 	jq 'del(
 		.. | .["codeQL-warnings"]?,
 		.. | .["codeQL-errors"]?,
-		.. | .["codeQl-warnings"]?,
-		.. | .["codeQlErrors"]?
 	)' "$file" > "$tmp_file"
 
 	if ! cmp -s "$file" "$tmp_file"; then
