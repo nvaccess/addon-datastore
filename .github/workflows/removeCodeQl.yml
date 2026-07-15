@@ -34,4 +34,5 @@ jobs:
         git commit -m "Remove codeQl keys from add-ons metadata"
         gh pr create --title "Remove codeQl keys from add-ons metadata" --body "This PR removes codeQl keys from add-ons metadata." --base master --head ${{ github.actor }}:remove-codeql-keys 
         fi
-        
+      env:
+        GH_TOKEN: ${{ github.token }}        
