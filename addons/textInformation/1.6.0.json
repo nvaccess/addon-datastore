@@ -43,5 +43,47 @@
 			"displayName": "informations textuelles",
 			"description": "Fournit des informations comme des définitions de dictionnaire pour le texte sélectionné. Appuyez sur NVDA+ ; (point-virgule) pour activer, NVDA + maj + ; pour obtenir des informations depuis le presse-papiers, et NVDA + contrôle + ; pour énoncer la dernière information récupérée. Vous pouvez appuyer deux fois rapidement pour l'afficher dans une boîte de dialogue navigable. Remarque : pour les dispositions de clavier non anglaises, ces gestes devront peut-être être redéfinis dans le dialogue Gestes de commandes."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/125eb2241e06e4c6bb910eadd8f3d3e307fdfaf8d928b4e7229eb868f18feaa9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "125eb2241e06e4c6bb910eadd8f3d3e307fdfaf8d928b4e7229eb868f18feaa9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001c0d0c0000",
+					"raw_md5": "dfb50fde625bca7440127338b3ed0384"
+				},
+				"first_submission_date": 1784140084,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784140085,
+				"last_submission_date": 1784140084,
+				"md5": "273dd2ed565833f78ae5666b26aa8777",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a07de8c4e3af324993b99958b0f0dd325038b439",
+				"sha256": "125eb2241e06e4c6bb910eadd8f3d3e307fdfaf8d928b4e7229eb868f18feaa9",
+				"size": 121937,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
