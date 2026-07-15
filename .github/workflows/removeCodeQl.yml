@@ -25,9 +25,6 @@ jobs:
       shell: bash
       run: |
         ./remove-codeql-keys.sh
-        git add addons
-        exit 1
-        fi
     - name: Commit and push changes
       run: |
         git add addons
@@ -36,4 +33,5 @@ jobs:
         git config user.email "github-actions@github.com"
         git commit -m "Remove codeQl keys from add-ons metadata"
         gh pr create --title "Remove codeQl keys from add-ons metadata" --body "This PR removes codeQl keys from add-ons metadata." --base master --head ${{ github.actor }}:remove-codeql-keys 
+        fi
         
