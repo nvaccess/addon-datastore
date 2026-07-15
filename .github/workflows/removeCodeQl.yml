@@ -25,14 +25,25 @@ jobs:
       shell: bash
       run: |
         ./remove-codeql-keys.sh
-    - name: Commit and push changes
-      run: |
+        - name: Commit changes and create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
         git add addons
-        if ! git diff --staged --quiet; then
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+          BRANCH="remove-codeql-keys-${{ github.run_id }}"
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
+        git checkout -b "$BRANCH"
         git commit -m "Remove codeQl keys from add-ons metadata"
-        gh pr create --title "Remove codeQl keys from add-ons metadata" --body "This PR removes codeQl keys from add-ons metadata." --base master --head ${{ github.actor }}:remove-codeql-keys 
-        fi
-      env:
-        GH_TOKEN: ${{ github.token }}        
+        git push origin "$BRANCH"
+        gh pr create \
+          --title "Remove codeQl keys from add-ons metadata" \
+          --body "This PR removes codeQl keys from add-ons metadata." \
+          --base master \
+          --head "$BRANCH"
+            
