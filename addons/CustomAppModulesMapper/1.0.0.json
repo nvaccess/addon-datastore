@@ -1,0 +1,32 @@
+{
+	"addonId": "CustomAppModulesMapper",
+	"displayName": "Custom App Modules Mapper",
+	"URL": "https://github.com/marlon-sousa/CustomAppModulesMapper/releases/download/1.0.0/CustomAppModulesMapper-1.0.0.nvda-addon",
+	"description": "Lets you dynamically map any application to any existing NVDA app module, straight from the NVDA settings dialog, without writing an add-on or waiting for a mapping to be merged into NVDA.",
+	"sha256": "3512c8f65b71a26c5860e804ec4ceddd9916f3a9cfc2858369405e76b0348bb4",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Marlon Brandão de Sousa",
+	"sourceURL": "https://github.com/marlon-sousa/CustomAppModulesMapper",
+	"license": "MIT",
+	"homepage": "https://github.com/marlon-sousa/CustomAppModulesMapper",
+	"changelog": "Version 1.0.0:\n* Associate any application with any app module — one bundled with NVDA or provided by another add-on — or with no module (\"not associated\"), straight from the NVDA Settings dialog, without writing an add-on or waiting for a mapping to be merged into NVDA.\n* Change an association at any time, or remove it to restore the module the application originally used.\n* The applications you currently have open are offered for selection, with the app you were last in pre-selected; you can still type any executable name.\n* Application names are matched case-insensitively.\n* Associations are stored in the NVDA configuration directory, so they survive updating or reinstalling the add-on, and are protected against duplicates. Mappings saved by previous versions are migrated automatically.\n* Compatible with NVDA 2026.1.",
+	"licenseURL": "https://github.com/marlon-sousa/CustomAppModulesMapper/blob/main/LICENSE",
+	"submissionTime": 1784079273000,
+	"translations": []
+}
