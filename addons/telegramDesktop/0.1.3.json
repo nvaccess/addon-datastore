@@ -1,0 +1,50 @@
+{
+	"addonId": "telegramDesktop",
+	"displayName": "Telegram Desktop Accessibility",
+	"URL": "https://github.com/keyang556/tdesktopnvda/releases/download/0.1.3/telegramDesktop-0.1.3.nvda-addon",
+	"description": "Improves Telegram Desktop accessibility for NVDA users.\n\nAdds Alt+1 to move focus to the chat list and Alt+M to open Telegram's main menu. The add-on uses Telegram's stable UIA class information and leaves Telegram's native accessible names unchanged.",
+	"sha256": "6c6019a281ef18d677d7517e1499037e6470645c5bdde38e309213b1a7e4216c",
+	"addonVersionName": "0.1.3",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/tdesktopnvda",
+	"license": "GPL v2",
+	"changelog": "Fixed Alt+M in Telegram's folder-sidebar layout and fixed an NVDA freeze by replacing recursive object-tree traversal with provider-side UIA queries.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784171944000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "Telegram 電腦版無障礙支援",
+			"description": "改善 Telegram 電腦版與 NVDA 搭配使用時的無障礙體驗。\n\n新增 Alt+1 將焦點移至聊天室清單，以及 Alt+M 開啟 Telegram 主選單。附加元件使用 Telegram 穩定的 UIA 類別資訊，並保留 Telegram 原有的無障礙名稱。",
+			"changelog": "修正 Telegram 資料夾側欄版面中的 Alt+M，並以 UIA 提供者端查詢取代遞迴物件樹走訪，避免 NVDA 凍結。"
+		},
+		{
+			"language": "ru",
+			"displayName": "Доступность Telegram Desktop",
+			"description": "Улучшает доступность Telegram Desktop для пользователей NVDA.\n\nДобавляет Alt+1 для перемещения фокуса в список чатов и Alt+M для открытия главного меню Telegram. Дополнение использует стабильные сведения о классах UIA Telegram и сохраняет исходные доступные имена Telegram.",
+			"changelog": "Исправлена работа Alt+M при отображении боковой панели папок Telegram; рекурсивный обход дерева объектов заменён запросами UIA на стороне поставщика, чтобы предотвратить зависание NVDA."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Telegram 电脑版无障碍支持",
+			"description": "改善 Telegram 电脑版与 NVDA 配合使用时的无障碍体验。\n\n新增 Alt+1 将焦点移到会话列表，以及 Alt+M 打开 Telegram 主菜单。附加组件使用 Telegram 稳定的 UIA 类信息，并保留 Telegram 原有的无障碍名称。",
+			"changelog": "修复 Telegram 文件夹侧栏布局中的 Alt+M，并以 UIA 提供程序端查询取代递归对象树遍历，避免 NVDA 卡死。"
+		}
+	]
+}
