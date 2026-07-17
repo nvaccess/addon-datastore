@@ -1,0 +1,926 @@
+{
+	"addonId": "SiteMarker",
+	"displayName": "SiteMarker",
+	"URL": "https://github.com/chaichaimee/SiteMarker/releases/download/2026.7.7/SiteMarker-v2026.7.7.nvda-addon",
+	"description": "Manage all sites and markers from a central manager  add, edit, delete, or clear markers, with support for all major browsers, SPAs, Unicode, and portable JSON sharing\nHot Keys:\nWindows+F12\nSingle Tap : Add or Edit Marker\nDouble Tap : open Site Manager\nTriple Tap : open Marker Manager",
+	"sha256": "c608514bc83f4940bb259926aed0a37ed62c7928760e7dcff13ffcdc2e7f51a2",
+	"addonVersionName": "2026.7.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/SiteMarker",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/SiteMarker",
+	"changelog": "Fixed: windows+f12 now only activates SiteMarker actions when focus is inside a browser; otherwise the keystroke is passed through normally. Fixed: Jump navigation no longer gets stuck on the same marker when pressing the same direction repeatedly. Skip logic now uses the actual paragraph offset (skipOffset) instead of the destination position to correctly move to the next marker. Fixed: Editable fields (combo boxes, search inputs) are now consistently skipped during jump scans, preventing unwanted focus shifts (especially in Chrome). Improved: Unified scroll-and-wait handling for both jump and autoclick actions, reducing duplicate code and improving reliability. Improved: Direction validation (_isMatchInRightDirection) restored to ensure jumps only move forward/backward relative to the current caret position.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784173427000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "SiteMarker",
+			"description": "中央マネージャーからすべてのサイトとマーカーを管理します - マーカーの追加、編集、削除、クリア。すべての主要ブラウザ、SPA、Unicode、ポータブルJSON共有をサポート\nHot Keys:\nWindows+F12\n1回押し : マーカーの追加または編集\n2回押し : サイトマネージャーを開く\n3回押し : マーカーマネージャーを開く"
+		},
+		{
+			"language": "th",
+			"displayName": "SiteMarker",
+			"description": "จัดการทุกเว็บไซต์และมาร์กเกอร์จากตัวจัดการส่วนกลาง - เพิ่ม แก้ไข ลบ หรือล้างมาร์กเกอร์ พร้อมรองรับเบราว์เซอร์หลักทั้งหมด, SPA, Unicode และการแชร์ JSON แบบพกพา\nHot Keys:\nWindows+F12\nกดครั้งเดียว : เพิ่มหรือแก้ไขมาร์กเกอร์\nกดสองครั้ง : เปิดตัวจัดการเว็บไซต์\nกดสามครั้ง : เปิดตัวจัดการมาร์กเกอร์"
+		},
+		{
+			"language": "id",
+			"displayName": "SiteMarker",
+			"description": "Kelola semua situs dan penanda dari pengelola pusat - tambah, edit, hapus, atau bersihkan penanda, dengan dukungan untuk semua browser utama, SPA, Unicode, dan berbagi JSON portabel\nHot Keys:\nWindows+F12\nKetukan Tunggal : Tambah atau Edit Penanda\nKetukan Ganda : buka Pengelola Situs\nKetukan Tiga Kali : buka Pengelola Penanda"
+		},
+		{
+			"language": "it",
+			"displayName": "SiteMarker",
+			"description": "Gestisci tutti i siti e i marcatori da un gestore centrale: aggiungi, modifica, elimina o cancella marcatori, con supporto per tutti i principali browser, SPA, Unicode e condivisione JSON portatile\nHot Keys:\nWindows+F12\nTocco singolo : Aggiungi o modifica marcatore\nDoppio tocco : Apri Gestore siti\nTriplo tocco : Apri Gestore marcatori"
+		},
+		{
+			"language": "hi",
+			"displayName": "SiteMarker",
+			"description": "एक केंद्रीय प्रबंधक से सभी साइटों और मार्करों को प्रबंधित करें - मार्करों को जोड़ें, संपादित करें, हटाएं या साफ़ करें, सभी प्रमुख ब्राउज़रों, SPAs, यूनिकोड और पोर्टेबल JSON साझाकरण के समर्थन के साथ\nHot Keys:\nWindows+F12\nएक बार दबाएं : मार्कर जोड़ें या संपादित करें\nदो बार दबाएं : साइट प्रबंधक खोलें\nतीन बार दबाएं : मार्कर प्रबंधक खोलें"
+		},
+		{
+			"language": "kk",
+			"displayName": "SiteMarker",
+			"description": "Барлық сайттар мен маркерлерді орталық менеджерден басқарыңыз - маркерлерді қосу, өңдеу, жою немесе тазалау, барлық негізгі браузерлерді, SPA, Unicode және тасымалданатын JSON файлдарын бөлісуді қолдау арқылы\nHot Keys:\nWindows+F12\nБір рет басу : Маркерді қосу немесе өңдеу\nЕкі рет басу : Сайт менеджерін ашу\nҮш рет басу : Маркер менеджерін ашу"
+		},
+		{
+			"language": "te",
+			"displayName": "SiteMarker",
+			"description": "కేంద్రీయ నిర్వాహకుని నుండి అన్ని సైట్‌లు మరియు మార్కర్‌లను నిర్వహించండి - అన్ని ప్రధాన బ్రౌజర్‌లు, SPAలు, యూనికోడ్ మరియు పోర్టబుల్ JSON భాగస్వామ్య మద్దతుతో మార్కర్‌లను జోడించండి, సవరించండి, తొలగించండి లేదా క్లియర్ చేయండి\nHot Keys:\nWindows+F12\nఒకే ట్యాప్ : మార్కర్‌ను జోడించండి లేదా సవరించండి\nడబుల్ ట్యాప్ : సైట్ మేనేజర్‌ని తెరవండి\nట్రిపుల్ ట్యాప్ : మార్కర్ మేネజర్‌ని తెరవండి"
+		},
+		{
+			"language": "ms",
+			"displayName": "SiteMarker",
+			"description": "Urus semua tapak dan penanda daripada pengurus pusat - tambah, edit, padam atau kosongkan penanda, dengan sokongan untuk semua pelayar utama, SPA, Unicode, dan perkongsian JSON mudah alih\nHot Keys:\nWindows+F12\nSatu Ketukan : Tambah atau Edit Penanda\nDua Ketukan : Buka Pengurus Tapak\nTiga Ketukan : Buka Pengurus Penanda"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "SiteMarker",
+			"description": "從中央管理程序管理所有網站與標記——新增、編輯、刪除或清除標記，支援所有主流瀏覽器、SPA、Unicode 和可攜式 JSON 分享\nHot Keys:\nWindows+F12\n單擊 : 新增或編輯標記\n雙擊 : 打開網站管理程序\n三擊 : 打開標記管理程序"
+		},
+		{
+			"language": "fr",
+			"displayName": "SiteMarker",
+			"description": "Gerez tous les sites et marqueurs depuis un gestionnaire central - ajoutez, modifiez, supprimez ou effacez des marqueurs, avec prise en charge de tous les principaux navigateurs, SPA, Unicode et partage JSON portable\nHot Keys:\nWindows+F12\nSimple pression : Ajouter ou modifier un marqueur\nDouble pression : Ouvrir le gestionnaire de sites\nTriple pression : Ouvrir le gestionnaire de marqueurs"
+		},
+		{
+			"language": "hr",
+			"displayName": "SiteMarker",
+			"description": "Upravljajte svim stranicama i oznakama iz središnjeg upravitelja - dodajte, uredite, izbrišite ili očistite oznake, uz podršku za sve glavne preglednike, SPA, Unicode i prijenosno dijeljenje JSON-a\nHot Keys:\nWindows+F12\nJedan pritisak : Dodaj ili uredi oznaku\nDvostruki pritisak : Otvori upravitelj stranica\nTrostruki pritisak : Otvori upravitelj oznaka"
+		},
+		{
+			"language": "en",
+			"displayName": "SiteMarker",
+			"description": "Manage all sites and markers from a central manager  add, edit, delete, or clear markers, with support for all major browsers, SPAs, Unicode, and portable JSON sharing\nHot Keys:\nWindows+F12\nSingle Tap : Add or Edit Marker\nDouble Tap : open Site Manager\nTriple Tap : open Marker Manager"
+		},
+		{
+			"language": "fa",
+			"displayName": "SiteMarker",
+			"description": "مدیریت تمام سایت‌ها و نشانه‌ها از یک مدیر مرکزی - افزودن، ویرایش، حذف یا پاک کردن نشانه‌ها، با پشتیبانی از تمام مرورگرهای اصلی، SPAها، یونیکد و اشتراک‌گذاری قابل حمل JSON\nHot Keys:\nWindows+F12\nیک بار فشردن : افزودن یا ویرایش نشانه\nدو بار فشردن : باز کردن مدیریت سایت‌ها\nسه بار فشردن : باز کردن مدیریت نشانه‌ها"
+		},
+		{
+			"language": "fi",
+			"displayName": "SiteMarker",
+			"description": "Hallitse kaikkia sivustoja ja merkkejä keskitetystä hallinnasta - lisää, muokkaa, poista tai tyhjennä merkkejä, tuki kaikille tärkeimmille selaimille, SPA-sovelluksille, Unicodelle ja kannettavalle JSON-jakamiselle\nHot Keys:\nWindows+F12\nYksi painallus : Lisää tai muokkaa merkkiä\nKaksoispainallus : Avaa sivustonhallinta\nKolmoispainallus : Avaa merkkien hallinta"
+		},
+		{
+			"language": "lo",
+			"displayName": "SiteMarker",
+			"description": "ຈັດການທຸກເວັບໄຊ ແລະ ເຄື່ອງໝາຍຈາກຕົວຈັດການສູນກາງ - ເພີ່ມ, ແກ້ໄຂ, ລຶບ ຫຼື ລ້າງເຄື່ອງໝາຍ, ພ້ອມຮອງຮັບບຣາວເຊີຫຼັກທັງໝົດ, SPAs, Unicode ແລະ ການແບ່ງປັນ JSON ແບບພົກພາ\nHot Keys:\nWindows+F12\nກົດເທື່ອດຽວ : ເພີ່ມ ຫຼື ແກ້ໄຂເຄື່ອງໝາຍ\nກົດສອງເທື່ອ : ເປີດຕົວຈັດການເວັບໄຊ\nກົດສາມເທື່ອ : ເປີດຕົວຈັດການເຄື່ອງໝາຍ"
+		},
+		{
+			"language": "my",
+			"displayName": "SiteMarker",
+			"description": "ဗဟိုမန်နေဂျာမှ ဝဘ်ဆိုဒ်များနှင့် မာကုများအားလုံးကို စီမံခန့်ခွဲပါ - မာကုများ ထည့်ခြင်း၊ ပြင်ဆင်ခြင်း၊ ဖျက်ခြင်း သို့မဟုတ် ရှင်းလင်းခြင်း၊ အဓိက ဘရောက်ဇာအားလုံး၊ SPAs၊ ယူနီကုဒ်နှင့် သယ်ဆောင်ရလွယ်ကူသော JSON မျှဝေခြင်းတို့ကို ပံ့ပိုးပေးသည်\nHot Keys:\nWindows+F12\nတစ်ချက်နှိပ်ရုံ : မာကုထည့်ရန် သို့မဟုတ် ပြင်ဆင်ရန်\nနှစ်ချက်နှိပ်ရုံ : ဝဘ်ဆိုဒ်မန်နေဂျာကို ဖွင့်ပါ\nသုံးချက်နှိပ်ရုံ : မာကုမန်နေဂျာကို ဖွင့်ပါ"
+		},
+		{
+			"language": "ro",
+			"displayName": "SiteMarker",
+			"description": "Gestionați toate site-urile și marcajele dintr-un manager central - adăugați, editați, ștergeți sau ștergeți marcaje, cu suport pentru toate browserele majore, SPA-uri, Unicode și partajare JSON portabilă\nHot Keys:\nWindows+F12\nO singură apăsare : Adăugare sau editare marcaj\nApăsare dublă : Deschidere Manager site-uri\nApăsare triplă : Deschidere Manager marcaje"
+		},
+		{
+			"language": "ta",
+			"displayName": "SiteMarker",
+			"description": "ஒரு மைய நிர்வாகியிடமிருந்து அனைத்து தளங்களையும் குறிப்பான்களையும் நிர்வகிக்கவும் - அனைத்து முக்கிய உலாவிகள், SPAக்கள், யூனிகோட் மற்றும் போர்ட்டபிள் JSON பகிர்வு ஆகியவற்றிற்கான Cosmic ஆதரவுடன் குறிப்பான்களைச் சேர்க்கவும், திருத்தவும், நீக்கவும் அல்லது அழிக்கவும்\nHot Keys:\nWindows+F12\nஒருமுறை தட்டவும் : குறிப்பானைச் சேர்க்கவும் அல்லது திருத்தவும்\nஇருமுறை தட்டவும் : தள நிர்வாகியைத் திறக்கவும்\nமூன்று முறை தட்டவும் : குறிப்பான் நிர்வாகியைத் திறக்கவும்"
+		},
+		{
+			"language": "pt",
+			"displayName": "SiteMarker",
+			"description": "Gira todos os sites e marcadores a partir de um gestor central - adicione, edite, elimine ou limpe marcadores, com suporte para todos os principais navegadores, SPAs, Unicode e partilha JSON portátil\nHot Keys:\nWindows+F12\nUm Toque : Adicionar ou Editar Marcador\nDois Toques : Abrir Gestor de Sites\nTrês Toques : Abrir Gestor de Marcadores"
+		},
+		{
+			"language": "sk",
+			"displayName": "SiteMarker",
+			"description": "Správa všetkých webov a značiek z centrálneho správcu - pridávanie, úprava, mazanie alebo vymazanie značiek, s podporou všetkých hlavných prehliadačov, SPA, Unicode a prenosného zdieľania JSON\nHot Keys:\nWindows+F12\nJedno stlačenie : Pridať alebo upraviť značku\nDvojité stlačenie : Otvoriť správcu webov\nTrojité stlačenie : Otvoriť správcu značiek"
+		},
+		{
+			"language": "uz",
+			"displayName": "SiteMarker",
+			"description": "Barcha saytlar va markerlarni markaziy menejerdan boshqaring - barcha asosiy brauzerlar, SPA-lar, Unicode va portativ JSON ulashish qo'llab-quvvatlashi bilan markerlarni qo'shing, tahrirlang, o'chiring yoki tozalang\nHot Keys:\nWindows+F12\nBir marta bosish : Markerni qo'shish yoki tahrirlash\nIkki marta bosish : Sayt menejerini ochish\nUch marta bosish : Marker menejerini ochish"
+		},
+		{
+			"language": "gl",
+			"displayName": "SiteMarker",
+			"description": "Xestiona todos os sitios e marcadores desde un xestor central: engade, edita, elimina ou limpa marcadores, con soporte para todos os navegadores principais, SPAs, Unicode e compartición JSON portátil\nHot Keys:\nWindows+F12\nUn toque : Engadir ou editar marcador\nDous toques : Abrir o Xestor de sitios\nTres toques : Abrir o Xestor de marcadores"
+		},
+		{
+			"language": "ur",
+			"displayName": "SiteMarker",
+			"description": "تمام سائٹس اور مارکرز को एक مرکزی مینیجر سے منظم کریں - تمام بڑے براؤзرز، SPAs، یونیکوڈ، اور پورٹیبل JSON شیئرنگ کے تعاون کے ساتھ مارکر شامل کریں، ترمیم کریں، حذف کریں یا صاف کریں\nHot Keys:\nWindows+F12\nایک بار دبائیں : مارکر شامل کریں یا ترمیم کریں\nदो बार दबाएं : साइट मینیجر کھولیں\nتین بار دبائیں : مارکر مینیجر کھولیں"
+		},
+		{
+			"language": "da",
+			"displayName": "SiteMarker",
+			"description": "Administrer alle websteder og markører fra en central manager - tilføj, rediger, slet eller ryd markører, med support til alle større browsere, SPA'er, Unicode og bærbar JSON-deling\nHot Keys:\nWindows+F12\nEnkelt tryk : Tilføj eller rediger markør\nDobbelt tryk : Åbn Site Manager\nTredobbelt tryk : Åbn Marker Manager"
+		},
+		{
+			"language": "bg",
+			"displayName": "SiteMarker",
+			"description": "Управление на всички сайтове и маркери от централен мениджър - добавяне, редактиране, изтриване или изчистване на маркери, с поддръжка на всички основни браузъри, SPA, Unicode и преносимо споделяне на JSON\nHot Keys:\nWindows+F12\nЕдинично натискане : Добавяне или редактиране на маркер\nДвойно натискане : Отваряне на мениджъра на сайтове\nТройно натискане : Отваряне на мениджъра на маркери"
+		},
+		{
+			"language": "tr",
+			"displayName": "SiteMarker",
+			"description": "Tüm siteleri ve işaretçileri merkezi bir yöneticiden yönetin - tüm büyük tarayıcılar, SPA'lar, Unicode ve taşınabilir JSON paylaşımı desteğiyle işaretçiler ekleyin, düzenleyin, silin veya temizleyin\nHot Keys:\nWindows+F12\nTek Dokunuş : İşaretçi Ekle veya Düzenle\nÇift Dokunuş : Site Yöneticisini Aç\nÜç Dokunuş : İşaretçi Yöneticisini Aç"
+		},
+		{
+			"language": "es",
+			"displayName": "SiteMarker",
+			"description": "Administra todos los sitios y marcadores desde un administrador central: añade, edita, elimina o limpia marcadores, con soporte para los principales navegadores, SPAs, Unicode y uso compartido de JSON portátil\nHot Keys:\nWindows+F12\nUn toque : Añadir o editar marcador\nDos toques : Abrir el Administrador de sitios\nTres toques : Abrir el Administrador de marcadores"
+		},
+		{
+			"language": "bn",
+			"displayName": "SiteMarker",
+			"description": "একটি কেন্দ্রীয় ম্যানেজার থেকে সমস্ত সাইট এবং মার্কার পরিচালনা করুন - মার্কার যোগ করুন, সম্পাদনা করুন, মুছুন বা সাফ করুন, সমস্ত প্রধান ব্রাউজার, SPA, ইউনিকোড এবং পোর্টেবল JSON শেয়ারিং সমর্থন সহ\nHot Keys:\nWindows+F12\nএকটি ট্যাপ : মার্কার যোগ বা সম্পাদনা করুন\nদুটি ট্যাপ : সাইট ম্যানেজার খুলুন\nতিনটি ট্যাপ : মার্কার ম্যানেজার খুলুন"
+		},
+		{
+			"language": "cs",
+			"displayName": "SiteMarker",
+			"description": "Správa všech webů a značek z centrálního správce - přidávání, úprava, mazání nebo mazání značek, s podporou všech hlavních prohlížečů, SPA, Unicode a přenosného sdílení JSON\nHot Keys:\nWindows+F12\nJedno stisknutí : Přidat nebo upravit značku\nDvojité stisknutí : Otevřít správce webů\nTrojité stisknutí : Otevřít správce značek"
+		},
+		{
+			"language": "si",
+			"displayName": "SiteMarker",
+			"description": "මධ්‍යම කළමනාකරුවෙකුගෙන් සියලුම වෙබ් අඩවි සහ සලකුණු කළමනාකරණය කරන්න - සියලුම ප්‍රධාන බ්‍රව්සර්, SPAs, යුනිකෝඩ් සහ අතේ ගෙන යා හැකි JSON බෙදාගැනීමේ සහාය ඇතිව සලකුණු එකතු කරන්න, සංස්කරණය කරන්න, මකන්න හෝ ඉවත් කරන්න\nHot Keys:\nWindows+F12\nඑක් තට්ටු කිරීමක් : සලකුණක් එක් කරන්න හෝ සංස්කරණය කරන්න\nදෙවරක් තට්ටු කිරීම : වෙබ් අඩවි කළමනාකරු විවෘත කරන්න\nතුන් වරක් තට්ටු කිරීම : සලකුණු කළමනාකරු විවෘත කරන්න"
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "SiteMarker",
+			"description": "Gira todos os sites e marcadores a partir de um gestor central - adicione, edite, elimine ou limpe marcadores, com suporte para todos os principais navegadores, SPAs, Unicode e partilha JSON portátil\nHot Keys:\nWindows+F12\nUm Toque : Adicionar ou Editar Marcador\nDois Toques : Abrir Gestor de Sites\nTrês Toques : Abrir Gestor de Marcadores"
+		},
+		{
+			"language": "he",
+			"displayName": "SiteMarker",
+			"description": "ניהول כל האתרים והסימניות ממנהל מרכזי - הוספה, עריכה, מחיקה או ניקוי של סימניות, עם תמיכה בכל הדפדפנים המובילים, SPAs, יוניקוד ושיתוף JSON נייд\nHot Keys:\nWindows+F12\nלחיצה בודדת : הוספה או עריכה של סיมניה\nלחיצה כפולה : פתיחת מנהл האתרים\nלחיצה משולשת : פתיחת מנהל הסיมניות"
+		},
+		{
+			"language": "tl",
+			"displayName": "SiteMarker",
+			"description": "Pamahalaan ang lahat ng site at marker mula sa isang sentral na manager - magdagdag, mag-edit, magtanggal, o mag-clear ng mga marker, na may suporta para sa lahat ng pangunahing browser, SPA, Unicode, at portable JSON sharing\nHot Keys:\nWindows+F12\nIsang Tapik : Magdagdag o Mag-edit ng Marker\nDalawang Tapik : buksan ang Site Manager\nTatlong Tapik : buksan ang Marker Manager"
+		},
+		{
+			"language": "hu",
+			"displayName": "SiteMarker",
+			"description": "Kezelje az összes webhelyet és jelölőt egy központi kezelőből - jelölők hozzáadása, szerkesztése, törlése vagy törlése, az összes jelentősebb böngésző, SPA, Unicode és hordozható JSON-megosztás támogatásával\nHot Keys:\nWindows+F12\nEgy gombnyomás : Jelölő hozzáadása vagy szerkesztése\nDupla gombnyomás : Webhelykezelő megnyitása\nTripla gombnyomás : Jelölőkezelő megnyitása"
+		},
+		{
+			"language": "vi",
+			"displayName": "SiteMarker",
+			"description": "Quản lý tất cả các trang web và dấu đánh dấu từ một trình quản lý trung tâm - thêm, sửa, xóa hoặc xóa dấu đánh dấu, hỗ trợ tất cả các trình duyệt lớn, SPA, Unicode và chia sẻ JSON di động\nHot Keys:\nWindows+F12\nNhấn một lần : Thêm hoặc Sửa dấu đánh dấu\nNhấn hai lần : Mở Trình quản lý trang web\nNhấn ba lần : Mở Trình quản lý dấu đánh dấu"
+		},
+		{
+			"language": "uk",
+			"displayName": "SiteMarker",
+			"description": "Керуйте всіма сайтами та маркерами з центрального менеджера — додавайте, редагуйте, видаляйте або очищайте маркери з підтримкою всіх основних браузерів, SPA, Unicode та портативного обміну файлами JSON\nHot Keys:\nWindows+F12\nОдне натискання : Додати або редагувати маркер\nПодвійне натискання : Відкрити диспетчер сайтів\nПотрійне натискання : Відкрити диспетчер маркерів"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "SiteMarker",
+			"description": "Gerencie todos os sites e marcadores a partir de um gerenciador central - adicione, edite, exclua ou limpe marcadores, com suporte para todos os principais navegadores, SPAs, Unicode e compartilhamento JSON portátil\nHot Keys:\nWindows+F12\nUm Toque : Adicionar ou Editar Marcador\nDois Toques : Abrir Gerenciador de Sites\nTrês Toques : Abrir Gerenciador de Marcadores"
+		},
+		{
+			"language": "de",
+			"displayName": "SiteMarker",
+			"description": "Verwalten Sie alle Websites und Marker über einen zentralen Manager – Hinzufügen, Bearbeiten, Löschen oder Leeren von Markern, mit Unterstützung für alle gängigen Browser, SPAs, Unicode und portablen JSON-Austausch\nHot Keys:\nWindows+F12\nEinmaliges Drücken : Marker hinzufügen oder bearbeiten\nZweimaliges Drücken : Webseiten-Manager öffnen\nDreimaliges Drücken : Marker-Manager öffnen"
+		},
+		{
+			"language": "ko",
+			"displayName": "SiteMarker",
+			"description": "중앙 관리자에서 모든 사이트 및 마커 관리 - 마커 추가, 편집, 삭제 또는 지우기, 모든 주요 브라우저, SPA, 유니코드 및 이식 가능한 JSON 공유 지원\nHot Keys:\nWindows+F12\n한 번 누르기 : 마커 추가 또는 편집\n두 번 누르기 : 사이트 관리자 열기\n세 번 누르기 : 마커 관리자 열기"
+		},
+		{
+			"language": "tk",
+			"displayName": "SiteMarker",
+			"description": "Ähli saýtlary we markerleri merkezi dolandyryjydan dolandyryň - ähli esasy brauzerler, SPA-lar, Unicode we göçme JSON paýlaşylmagy goldawy bilen markerleri goşuň, redaktirläň, pozuň ýa-da arassalaň\nHot Keys:\nWindows+F12\nBir gezek basmak : Markeri goşmak ýa-da redaktirlemek\nIki gezek basmak : Saýt dolandyryjysyny açmak\nÜç gezek basmak : Marker dolandyryjysyny açmak"
+		},
+		{
+			"language": "ru",
+			"displayName": "SiteMarker",
+			"description": "Управление всеми сайтами и маркерами из центрального менеджера — добавление, редактирование, удаление или очистка маркеров с поддержкой всех основных браузеров, SPA, Unicode и портативного обмена файлами JSON\nHot Keys:\nWindows+F12\nОдно нажатие : добавить или изменить маркер\nДвойное нажатие : открыть диспетчер сайтов\nТройное нажатие : открыть диспетчер маркеров"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "SiteMarker",
+			"description": "从中央管理器管理所有网站和标记——添加、编辑、删除 or 清除标记，支持所有主流浏览器、SPA、Unicode 和便携式 JSON 共享\nHot Keys:\nWindows+F12\n单击 : 添加或编辑标记\n双击 : 打开网站管理器\n三击 : 打开标记管理器"
+		},
+		{
+			"language": "ar",
+			"displayName": "SiteMarker",
+			"description": "إدارة جميع المواقع والعلامات من مدير مركزي - إضافة، تعديل، حذف، أو مسح العلامات، مع دعم لجميع المتصفحات الرئيسية، وتطبيقات الصفحة الواحدة (SPAs)، واليونيكود، ومشاركة ملفات JSON المحمولة\nHot Keys:\nWindows+F12\nضغطة واحدة : إضافة أو تعديل علامة\nضغطتان : فتح مدير المواقع\nثلاث ضغطات : فتح مدير العلامات"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c608514bc83f4940bb259926aed0a37ed62c7928760e7dcff13ffcdc2e7f51a2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c608514bc83f4940bb259926aed0a37ed62c7928760e7dcff13ffcdc2e7f51a2",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 44,
+						"md": 6,
+						"mo": 38,
+						"po": 43,
+						"py": 4
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 96,
+						"unknown": 135
+					},
+					"highest_datetime": "2026-07-16 09:51:56",
+					"lowest_datetime": "2026-04-28 14:48:04",
+					"num_children": 237,
+					"type": "ZIP",
+					"uncompressed_size": 833212
+				},
+				"contenthash": "aeed64ccdffb68cc7164fa7e1239a50d",
+				"filecondis": {
+					"dhash": "0000101d1c180000",
+					"raw_md5": "f0cfa88a8c53c265a06b32c35c03611a"
+				},
+				"first_submission_date": 1784173430,
+				"last_analysis_date": 1784173430,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260716",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260713",
+						"engine_version": "6.798",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260715",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260716",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260716",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260715",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260715",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260715",
+						"engine_version": "260715-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260716",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260716",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260715",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260715",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260716",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260716",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260715",
+						"engine_version": "1.5.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260709",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260715",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260716",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260716",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260713",
+						"engine_version": "4.0.271",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260716",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260715",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260716",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260716",
+						"engine_version": "GD:27.45281AVA:64.31585",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260716",
+						"engine_version": "1784167252",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260715",
+						"engine_version": "1.0.250.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260715",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260714",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260715",
+						"engine_version": "14.63.60143",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260716",
+						"engine_version": "14.63.60147",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260716",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260715",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260715",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260716",
+						"engine_version": "3.1.0.246",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260715",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260716",
+						"engine_version": "1.2.0.15146",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260716",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260715",
+						"engine_version": "1.1.26060.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260715",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260716",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260715",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260715",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260714",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260713",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260715",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260715",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260716",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260716",
+						"engine_version": "2026-07-15.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260716",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260708",
+						"engine_version": "4.0.14.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260714",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260716",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260715",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260716",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260715",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260715",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260715",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260716",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260715",
+						"engine_version": "9.5.1250",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260715",
+						"engine_version": "38809",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260716",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260715",
+						"engine_version": "2.0.0.5642",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260715",
+						"engine_version": "6.26-117392213",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260715",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260715",
+						"engine_version": "a114442:a114442:3f757df:3f757df",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260716",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 8,
+					"undetected": 65
+				},
+				"last_modification_date": 1784173478,
+				"last_submission_date": 1784173430,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=store",
+				"magika": "XPI",
+				"md5": "a652b68539f061537f59ec9749d5c710",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "615c73c4f171d6e255445619cd45eff2622858e3",
+				"sha256": "c608514bc83f4940bb259926aed0a37ed62c7928760e7dcff13ffcdc2e7f51a2",
+				"size": 284937,
+				"ssdeep": "6144:GEfye0S9H3O5mHCXQMVkGsmxzln1MgKfmxMD:FfWO3OYqVBlagwn",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1B054D085D72F2057E4A6CBFFB6C2061AE3680405D22FE7474E5BA4C69CCE36D0F9A506",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6316cbd8d16e2cb49068ba6e44759924"
+			}
+		]
+	}
+}
