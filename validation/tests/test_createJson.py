@@ -166,7 +166,7 @@ class Test_main(unittest.TestCase):
 			with self.assertRaisesRegex(ValueError, "Unable to download and validate the add-on"):
 				createJson.main()
 
-		mock_outputErrors.assert_called_once_with(ADDON_PACKAGE, ["download error"], None)
+		mock_outputErrors.assert_called_once_with(["download error"], None)
 		mock_getManifest.assert_not_called()
 
 	def test_licUrlEmptyStringBecomesNone(self):
