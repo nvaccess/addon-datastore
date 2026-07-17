@@ -89,5 +89,47 @@
 			"description": "Отслеживает события и отображает информацию о них",
 			"changelog": "* Removed add-on changelog from add-on help (readme) file."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d0a364387af27d20756bdcba23719fa671d5d5960f976014e6bb871af163fabd",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "d0a364387af27d20756bdcba23719fa671d5d5960f976014e6bb871af163fabd",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00383c3c3d3c0000",
+					"raw_md5": "84a60d41d2324ff72b9edf98ebe20861"
+				},
+				"first_submission_date": 1784251329,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784251331,
+				"last_submission_date": 1784251329,
+				"md5": "c44af6514d13496388a91652130e21d4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "6ffc8c41b414b9a6fae29afc909e2e0e0bcafb65",
+				"sha256": "d0a364387af27d20756bdcba23719fa671d5d5960f976014e6bb871af163fabd",
+				"size": 55862,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
