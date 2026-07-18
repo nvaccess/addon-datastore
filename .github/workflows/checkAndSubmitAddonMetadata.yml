@@ -201,16 +201,17 @@ jobs:
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
       vtKeySet: ${{ env.VT_API_KEY != '' }}
     steps:
+      # checkout of repo needed for posting comments to issues
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
       - name: Check if VT_API_KEY is set
         id: checkVTKey
         if: ${{ !env.VT_API_KEY }}
         run: |
           echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
           exit 1
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ env.branchName }}
       - name: Install Node.js
         uses: actions/setup-node@v6
       - name: Install npm dependencies
@@ -333,44 +334,53 @@ jobs:
     if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure') }}
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       contents: write
       issues: write
       pull-requests: write
     steps:
-      - name: Fetch Rejection Comment
-        uses: actions/github-script@v9
-        id: fetchRejectionComment
+      - name: Checkout code
+        uses: actions/checkout@v6
         with:
-          script: |
-            // Fetch the review history for the current workflow run
-            const response = await github.rest.actions.getApprovedProcessorReviewedHistoriesForWorkflowRun({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              run_id: context.runId
-            });
+          ref: ${{ env.branchName }}
+      - name: Fetch Rejection Comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        id: fetchRejectionComment
+        run: |
+          approvalsJson="$(gh api \
+            -H 'Accept: application/vnd.github+json' \
+            "/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/approvals" \
+            2>/dev/null || echo '[]')"
 
-            // Filter out the rejection entry/entries.
-            const rejectionEvents = response.data.filter(
-              review => review.state === 'rejected'
-            );
+          rejectionReasons="$(
+            printf '%s' "$approvalsJson" | jq -r '
+              [ .[]? | select(.state == "rejected") | "- " + (.comment // "No reason provided.") ]
+              | if length == 0 then "- No reason provided." else join("\n") end
+            '
+          )"
 
-            const rejectionReasons = [];
-            const reviewers = [];
-            for (const event of rejectionEvents) {
-              const reason = event.comment || "No reason provided.";
-              const reviewer = event.user.login;
-              rejectionReasons.push(`- ${reason}`);
-              reviewers.push(reviewer);
-            }
-            core.setOutput('rejectionReasons', rejectionReasons.join('\n'));
-            core.setOutput('reviewers', reviewers.join(', '));
+          reviewers="$(
+            printf '%s' "$approvalsJson" | jq -r '
+              [ .[]? | select(.state == "rejected") | .user.login ]
+              | unique
+              | if length == 0 then "Unknown reviewer" else join(", ") end
+            '
+          )"
+
+          {
+            echo 'rejectionReasons<<EOF'
+            echo "$rejectionReasons"
+            echo 'EOF'
+            echo "reviewers=$reviewers"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Post manual review failure comment and close PR and issue
         run: |
           gh issue comment "${{ inputs.issueNumber }}" --body "${{ env.body }}"
-          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"
-          gh branch delete ${{ env.branchName }} --remote --force
           gh issue close "${{ inputs.issueNumber }}" --reason "not planned"
+          gh pr close "${{ needs.createPullRequest.outputs.pullRequestNumber }}"
+          git push origin --delete "${{ env.branchName }}"
         env:
           GH_TOKEN: ${{ github.token }}
           body: |
@@ -526,6 +536,9 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
+        git push --set-upstream origin ${{ env.branchName }}
+        # wait for a few seconds to ensure the PR is up to date before merging
+        sleep 3
         gh pr merge --admin --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:
