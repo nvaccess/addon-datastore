@@ -1,0 +1,48 @@
+{
+	"addonId": "PPAWakeUp",
+	"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+	"URL": "https://github.com/chaichaimee/PPAWakeUp/releases/download/2026.7.7/PPAWakeUp-v2026.7.7.nvda-addon",
+	"description": "Retrieve PPA Tatip Synthesizers that are stuck and return to normal operation.\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Open PPA Tatip options\nTripple Tap Open Tatip Dictionary File",
+	"sha256": "b9125d4838f0c1c4939343e3961f23df5a5cbff806ee867cb94b073a9aafa0e8",
+	"addonVersionName": "2026.7.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/PPAWakeUp",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/PPAWakeUp",
+	"changelog": "Updated to use core.callLater and threading for async execution, replaced wx.CallLater, improved error handling and stability.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784333931000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "PPA Tatip จงตื่น",
+			"description": "เรียกคืน PPA Tatip Synthesizers ที่ค้างและกลับสู่การทำงานปกติ\nแป้นลัด:\nWindows+P\nกดครั้งเดียวเพื่อปลุก PPA Tatip\nกดสองครั้งเพื่อเปิดตัวเลือก PPA Tatip\nกดสามครั้งเพื่อเปิดไฟล์พจนานุกรม Tatip"
+		},
+		{
+			"language": "en",
+			"displayName": "PPA Tatip WakeUp",
+			"description": "Retrieve PPA Tatip Synthesizers that are stuck and return to normal operation.\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Open PPA Tatip options\nTripple Tap Open Tatip Dictionary File"
+		},
+		{
+			"language": "lo",
+			"displayName": "ປຸກ PPA Tatip",
+			"description": "ກູ້ຄືນ PPA Tatip Synthesizers ທີ່ຄ້າງ ແລະ ກັບສູ່ການເຮັດວຽກປົກກະຕິ\nແປ້ນລັດ:\nWindows+P\nກົດຄັ້ງດຽວເພື່ອປຸກ PPA Tatip\nກົດສອງຄັ້ງເພື່ອເປີດຕົວເລືອກ PPA Tatip\nກົດສາມຄັ້ງເພື່ອເປີດໄຟລ໌ວັດຈະນານຸກົມ Tatip"
+		}
+	]
+}
