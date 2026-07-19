@@ -1,0 +1,50 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.0.0/polyglot-1.0.0.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "c0e58371c2fb824bae5fd0b740f27818f315dafe5121699693997597b3665268",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GPL v2",
+	"changelog": "### 1.0.0\n\n- Added offline English-to-Chinese definitions to NVDA's repeated current-word review command in Chinese,\n  including conservative lookup for common spelling and inflection variants, candidate announcements for\n  ambiguous words, and clear feedback for possible abbreviations and words absent from the local dictionary.\n- Manual selection, clipboard, and last-spoken translation now use matching local word definitions for\n  supported English-Chinese requests. Translation-command and text-review lookup can be controlled separately\n  from Common Settings.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784468264000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.0.0\n\n- Added offline English-to-Chinese definitions to NVDA's repeated current-word review command in Chinese,\n  including conservative lookup for common spelling and inflection variants, candidate announcements for\n  ambiguous words, and clear feedback for possible abbreviations and words absent from the local dictionary.\n- Manual selection, clipboard, and last-spoken translation now use matching local word definitions for\n  supported English-Chinese requests. Translation-command and text-review lookup can be controlled separately\n  from Common Settings."
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.0.0\n\n- Added offline English-to-Chinese definitions to NVDA's repeated current-word review command in Chinese,\n  including conservative lookup for common spelling and inflection variants, candidate announcements for\n  ambiguous words, and clear feedback for possible abbreviations and words absent from the local dictionary.\n- Manual selection, clipboard, and last-spoken translation now use matching local word definitions for\n  supported English-Chinese requests. Translation-command and text-review lookup can be controlled separately\n  from Common Settings."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.0.0\n\n- Added offline English-to-Chinese definitions to NVDA's repeated current-word review command in Chinese,\n  including conservative lookup for common spelling and inflection variants, candidate announcements for\n  ambiguous words, and clear feedback for possible abbreviations and words absent from the local dictionary.\n- Manual selection, clipboard, and last-spoken translation now use matching local word definitions for\n  supported English-Chinese requests. Translation-command and text-review lookup can be controlled separately\n  from Common Settings."
+		}
+	]
+}
