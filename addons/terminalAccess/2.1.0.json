@@ -1,0 +1,814 @@
+{
+	"addonId": "terminalAccess",
+	"displayName": "Terminal Access for NVDA",
+	"URL": "https://github.com/PratikP1/Terminal-Access-for-NVDA/releases/download/v2.1.0/terminalAccess-2.1.0.nvda-addon",
+	"description": "Provides enhanced terminal accessibility for Windows Terminal and PowerShell, enabling screen reader users to efficiently navigate and interact with command-line interfaces. Inspired by TDSR (Terminal Data Structure Reader) and incorporates functionality from both TDSR and Speakup. Advanced features inspired by community suggestions and discussions.",
+	"sha256": "c6a77976921c65e1cd89ed73f2e637dda04fb9785b71a36a1d74a0aff8526d64",
+	"addonVersionName": "2.1.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Pratik Patel",
+	"sourceURL": "https://github.com/PratikP1/Terminal-Access-for-NVDA/",
+	"license": "GPL v3",
+	"homepage": "https://github.com/PratikP1/Terminal-Access-for-NVDA",
+	"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1784311154000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "NVDAのターミナルアクセス",
+			"description": "Windows TerminalおよびPowerShell向けに強化されたターミナルアクセシビリティを提供し、スクリーンリーダー利用者がコマンドラインインターフェースを効率的に操作・対話できるようにします。TDSR（Terminal Data Structure Reader）に着想を得て、TDSRとSpeakupの両方の機能を統合。コミュニティからの提案や議論を基に開発された高度な機能を備えています。",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "pl",
+			"displayName": "Dostęp do terminala dla NVDA",
+			"description": "Zapewnia lepszą dostępność terminala dla Windows Terminal i PowerShell, umożliwiając użytkownikom czytników ekranu sprawną nawigację i interakcję z interfejsami wiersza poleceń. Zainspirowany TDSR (Terminal Data Structure Reader) i łączący w sobie funkcje zarówno TDSR, jak i Speakup. Zaawansowane funkcje zainspirowane sugestiami i dyskusjami społeczności.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "it",
+			"displayName": "Accesso al terminale per NVDA",
+			"description": "Fornisce una maggiore accessibilità al terminale per Windows Terminal e PowerShell, consentendo agli utenti di screen reader di navigare e interagire in modo efficiente con le interfacce a riga di comando. Ispirato a TDSR (Terminal Data Structure Reader), incorpora funzionalità sia di TDSR che di Speakup. Funzionalità avanzate ispirate dai suggerimenti e dalle discussioni della comunità.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "終端存取功能適用於 NVDA",
+			"description": "為 Windows 終端機與 PowerShell 提供增強的終端機無障礙功能，使螢幕閱讀器使用者能高效導覽並與命令列介面互動。本工具受 TDSR（終端機資料結構閱讀器）啟發，整合了 TDSR 與 Speakup 的功能。進階特性源自社群建議與討論。",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "fr",
+			"displayName": "Accès au terminal pour NVDA",
+			"description": "Améliore l'accessibilité des terminaux Windows Terminal et PowerShell, permettant aux utilisateurs de lecteurs d'écran de naviguer et d'interagir efficacement avec les interfaces en ligne de commande. Inspiré par TDSR (Terminal Data Structure Reader), il intègre les fonctionnalités de TDSR et Speakup. Fonctionnalités avancées inspirées des suggestions et des discussions de la communauté.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "pt",
+			"displayName": "Acesso ao terminal para NVDA",
+			"description": "Oferece acessibilidade aprimorada ao terminal para o Windows Terminal e o PowerShell, permitindo que usuários de leitores de tela naveguem e interajam com eficiência com interfaces de linha de comando. Inspirado no TDSR (Terminal Data Structure Reader) e incorpora funcionalidades do TDSR e do Speakup. Recursos avançados inspirados em sugestões e discussões da comunidade.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA için Terminal Erişimi",
+			"description": "Windows Terminal ve PowerShell için gelişmiş terminal erişilebilirliği sağlayarak, ekran okuyucu kullanıcılarının komut satırı arayüzlerinde verimli bir şekilde gezinmelerini ve etkileşim kurmalarını sağlar. TDSR (Terminal Data Structure Reader) tarafından ilham alınarak geliştirilmiş olup, hem TDSR hem de Speakup'ın işlevselliğini bünyesinde barındırır. Topluluk önerileri ve tartışmalarından ilham alan gelişmiş özellikler.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "es",
+			"displayName": "Acceso a la terminal para NVDA",
+			"description": "Proporciona una accesibilidad mejorada a Windows Terminal y PowerShell, lo que permite a los usuarios de lectores de pantalla navegar e interactuar de manera eficiente con las interfaces de línea de comandos. Inspirado en TDSR (Terminal Data Structure Reader) e incorpora funcionalidades tanto de TDSR como de Speakup. Funciones avanzadas inspiradas en las sugerencias y debates de la comunidad.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "cs",
+			"displayName": "Přístup k terminálu pro NVDA",
+			"description": "Poskytuje vylepšenou přístupnost terminálu pro Windows Terminal a PowerShell, což uživatelům čteček obrazovky umožňuje efektivní navigaci a interakci s rozhraními příkazového řádku. Inspirováno TDSR (Terminal Data Structure Reader) a zahrnuje funkce jak z TDSR, tak ze Speakup. Pokročilé funkce inspirované návrhy a diskusemi komunity.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "hu",
+			"displayName": "Terminál hozzáférés az NVDA számára",
+			"description": "Fokozott terminál-hozzáférhetőséget biztosít a Windows Terminal és a PowerShell számára, lehetővé téve a képernyőolvasó felhasználók számára a parancssori felületeken való hatékony navigációt és interakciót. A TDSR (Terminal Data Structure Reader) ihlette, és mind a TDSR, mind a Speakup funkcióit magában foglalja. A közösség javaslatai és megbeszélései ihlette fejlett funkciók.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "uk",
+			"displayName": "Доступ до терміналу для NVDA",
+			"description": "Забезпечує покращену доступність терміналу для Windows Terminal та PowerShell, дозволяючи користувачам екранних зчитувачів ефективно переміщатися та взаємодіяти з інтерфейсами командного рядка. Натхненний TDSR (Terminal Data Structure Reader) та включає функціональність як TDSR, так і Speakup. Розширені функції натхненні пропозиціями та обговореннями спільноти.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "de",
+			"displayName": "Terminalzugriff für NVDA",
+			"description": "Bietet verbesserte Terminalzugänglichkeit für Windows Terminal und PowerShell, sodass Benutzer von Bildschirmleseprogrammen effizient navigieren und mit Befehlszeilenschnittstellen interagieren können. Inspiriert von TDSR (Terminal Data Structure Reader) und mit Funktionen von TDSR und Speakup. Erweiterte Funktionen, inspiriert durch Vorschläge und Diskussionen der Community.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "ko",
+			"displayName": "터미널 접근을 위한 NVDA",
+			"description": "Windows 터미널 및 PowerShell의 향상된 터미널 접근성을 제공하여, 스크린 리더 사용자가 명령줄 인터페이스를 효율적으로 탐색하고 상호작용할 수 있도록 합니다. TDSR(터미널 데이터 구조 리더)에서 영감을 받았으며 TDSR과 Speakup의 기능을 모두 통합합니다. 커뮤니티 제안 및 토론에서 영감을 받은 고급 기능을 제공합니다.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "ru",
+			"displayName": "Доступ к терминалу для NVDA",
+			"description": "Обеспечивает расширенную доступность терминала для Windows Terminal и PowerShell, позволяя пользователям экранных считывающих устройств эффективно перемещаться по интерфейсам командной строки и взаимодействовать с ними. Вдохновлен TDSR (Terminal Data Structure Reader) и включает в себя функциональность как TDSR, так и Speakup. Расширенные функции вдохновлены предложениями и обсуждениями сообщества.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "终端访问（适用于NVDA）",
+			"description": "为 Windows 终端和 PowerShell 提供增强的终端可访问性，使屏幕阅读器用户能够高效地导航和交互命令行界面。该方案受 TDSR（终端数据结构阅读器）启发，融合了 TDSR 与 Speakup 的功能特性。其高级功能源于社区建议与讨论的成果。",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "nl",
+			"displayName": "Terminaltoegang voor NVDA",
+			"description": "Biedt verbeterde terminaltoegankelijkheid voor Windows Terminal en PowerShell, waardoor gebruikers van schermlezers efficiënt kunnen navigeren en communiceren met opdrachtregelinterfaces. Geïnspireerd door TDSR (Terminal Data Structure Reader) en bevat functionaliteit van zowel TDSR als Speakup. Geavanceerde functies geïnspireerd door suggesties en discussies uit de gemeenschap.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		},
+		{
+			"language": "ar",
+			"displayName": "الوصول إلى المحطة الطرفية لـ NVDA",
+			"description": "يوفر إمكانية وصول محسّنة إلى Windows Terminal و PowerShell، مما يتيح لمستخدمي قارئ الشاشة التنقل والتفاعل بكفاءة مع واجهات سطر الأوامر. مستوحى من TDSR (Terminal Data Structure Reader) ويضم وظائف من كل من TDSR و Speakup. ميزات متقدمة مستوحاة من اقتراحات ومناقشات المجتمع.",
+			"changelog": "v2.1.0: the buffer window release, going first to the beta channel for testing.\n\nNew: the buffer window. Press NVDA+Enter in a terminal to open the whole scrollback as a browsable snapshot: arrow through it, press H to move between the commands you ran and the errors they produced, follow the table of contents, read columnar output as real tables, and activate web links. NVDA+Shift+Enter opens a jump to line dialog that moves the review cursor to any line, found by its text. In the command layer, Shift+E opens an errors-only view and Shift+C a commands-only view.\n\nAlso: punctuation keys are now named in the guide and command finder (NVDA+semicolon rather than a symbol your punctuation level may silence), the spell-word command reads as NVDA+K twice, and a jump whose line has scrolled out of history says so instead of failing silently.\n\nLaptop keyboard layout: NVDA+Enter is NVDA's activate-navigator-object command; Terminal Access takes it only inside terminals. Use the command layer's Enter or reassign in Input Gestures if you need NVDA's command there.\n\nRequires NVDA 2025.1 or later. Existing settings are preserved on upgrade."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c6a77976921c65e1cd89ed73f2e637dda04fb9785b71a36a1d74a0aff8526d64",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c6a77976921c65e1cd89ed73f2e637dda04fb9785b71a36a1d74a0aff8526d64",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 1,
+						"ini": 18,
+						"md": 1,
+						"mo": 17,
+						"po": 17,
+						"py": 30
+					},
+					"file_types": {
+						"HTML": 1,
+						"unknown": 84
+					},
+					"highest_datetime": "2026-07-17 17:46:06",
+					"lowest_datetime": "2026-07-17 17:45:54",
+					"num_children": 85,
+					"type": "ZIP",
+					"uncompressed_size": 2488319
+				},
+				"contenthash": "36afaa0582124f9788aa48c56e7a7f00",
+				"filecondis": {
+					"dhash": "0000000004070400",
+					"raw_md5": "1d8a49e22fcb556ace5300a6078d1a93"
+				},
+				"first_submission_date": 1784311158,
+				"last_analysis_date": 1784311158,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260716",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260716",
+						"engine_version": "6.799",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260717",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260717",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260717",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260717",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260717",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260717",
+						"engine_version": "260717-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260717",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260717",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260717",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260716",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260717",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260717",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260717",
+						"engine_version": "1.5.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260709",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260717",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260717",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260717",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260716",
+						"engine_version": "4.0.273",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260717",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260717",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260717",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260717",
+						"engine_version": "GD:27.45299AVA:64.31595",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260717",
+						"engine_version": "1784307653",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260717",
+						"engine_version": "1.0.250.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260717",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260716",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260717",
+						"engine_version": "14.63.60167",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260717",
+						"engine_version": "14.63.60169",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260717",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260717",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260717",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260717",
+						"engine_version": "3.1.0.246",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260717",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260717",
+						"engine_version": "1.2.0.15146",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260717",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260717",
+						"engine_version": "1.1.26060.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260717",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260717",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260717",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260717",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260714",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260717",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260717",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260717",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260717",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260717",
+						"engine_version": "2026-07-17.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260717",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260708",
+						"engine_version": "4.0.14.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260717",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260717",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260717",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "failure",
+						"engine_name": "Trustlook",
+						"engine_update": "20260717",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260717",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260717",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260717",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260717",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260717",
+						"engine_version": "9.5.1252",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260717",
+						"engine_version": "38815",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260717",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260717",
+						"engine_version": "2.0.0.5644",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260717",
+						"engine_version": "6.26-117392280",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260717",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260717",
+						"engine_version": "3114a5c:3114a5c:ee62b07:ee62b07",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260717",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 8,
+					"undetected": 65
+				},
+				"last_modification_date": 1784311196,
+				"last_submission_date": 1784311158,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "f3c6dd2b5a7f076377cde0ac1e984c02",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "ad24ee2446d68fe5e6abeb67abd3cea25ee56fa6",
+				"sha256": "c6a77976921c65e1cd89ed73f2e637dda04fb9785b71a36a1d74a0aff8526d64",
+				"size": 650736,
+				"ssdeep": "12288:XKfzxYCD1n3u8EmOaqd94ooJmFGruU2pq20qSURMUSMw/JVbbBYTKfjDrsH:XKrmWQ8E50mFGyU2pgqSUmUTwzNfjnsH",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T116D42379424E1F47EDC3D17EFCA5907AA09E1206F4DE3A024AC5C99A9C25F8C16CF2B5",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "2bb020dfd926ffedf650acdf2152d28b"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7845"
+}
