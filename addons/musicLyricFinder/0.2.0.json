@@ -35,5 +35,47 @@
 			"description": "Etrafınızda veya bilgisayarınızda çalan müziği öğrenin ve şarkı sözlerini bulun.\nDinleyerek tanıma, yapılandırılmış mikrofonunuzu ve/veya sistem ses (geri döngü) cihazınızı yakalar - ya tek başına ya da ayarlarda her ikisini de ayarladıysanız her ikisi aynı anda karıştırılmış olarak. Dosyadan tanı, bilgisayarınızda zaten bulunan bir ses dosyasındaki parçayı tanır.\nBir parça tanındığında, tek bir kısayol tuşuyla şarkı sözlerini incelenebilir bir pencerede gösterin ve okuyun. Tanınan parça isteğe bağlı olarak panoya otomatik olarak kopyalanabilir ve tanıma sırasında çalınan bip sesi kapatılabilir.",
 			"changelog": "\nİlk sürüm.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000302",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1784564590,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784564652,
+				"last_submission_date": 1784564590,
+				"md5": "9d4f472a62435c6696cc41323e2380ba",
+				"names": [],
+				"reputation": 0,
+				"sha1": "abafc8bed08be41079d597249431740598a74172",
+				"sha256": "4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+				"size": 21111936,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
