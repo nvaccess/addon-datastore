@@ -1,0 +1,81 @@
+{
+	"addonId": "musicLyricFinder",
+	"displayName": "Music & Lyrics Finder",
+	"URL": "https://github.com/Surveyor123/musicLyricFinder/releases/download/v0.2.0/musicLyricFinder-0.2.0.nvda-addon",
+	"description": "Identify music playing around you or on your computer, and pull up its lyrics.\nRecognize by listening captures your configured microphone and/or system-audio (loopback) device — either one alone, or both mixed together at once if you've set up both in settings. Recognize from file identifies a track from an audio file already on your computer.\nOnce a track is recognized, fetch and read its lyrics in a browsable window with a single keystroke. The recognized track can optionally be copied to the clipboard automatically, and the beep sound played during recognition can be turned off.",
+	"sha256": "4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+	"addonVersionName": "0.2.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/musicLyricFinder",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/musicLyricFinder",
+	"changelog": "\nInitial release.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784564582000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Müzik ve Söz Bulucu",
+			"description": "Etrafınızda veya bilgisayarınızda çalan müziği öğrenin ve şarkı sözlerini bulun.\nDinleyerek tanıma, yapılandırılmış mikrofonunuzu ve/veya sistem ses (geri döngü) cihazınızı yakalar - ya tek başına ya da ayarlarda her ikisini de ayarladıysanız her ikisi aynı anda karıştırılmış olarak. Dosyadan tanı, bilgisayarınızda zaten bulunan bir ses dosyasındaki parçayı tanır.\nBir parça tanındığında, tek bir kısayol tuşuyla şarkı sözlerini incelenebilir bir pencerede gösterin ve okuyun. Tanınan parça isteğe bağlı olarak panoya otomatik olarak kopyalanabilir ve tanıma sırasında çalınan bip sesi kapatılabilir.",
+			"changelog": "\nİlk sürüm.\n"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000302",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1784564590,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784564652,
+				"last_submission_date": 1784564590,
+				"md5": "9d4f472a62435c6696cc41323e2380ba",
+				"names": [],
+				"reputation": 0,
+				"sha1": "abafc8bed08be41079d597249431740598a74172",
+				"sha256": "4b65b9352d46449137131ecd140b17c84a0bb9df06e105f2a24b5d1155c23d89",
+				"size": 21111936,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
+}
