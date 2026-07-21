@@ -526,6 +526,7 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
+        # Mitigate intermittent GitHub GraphQL errors by allowing PR merge state to settle.
         sleep 5
         gh pr merge --admin --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
