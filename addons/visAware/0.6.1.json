@@ -34,5 +34,47 @@
 			"description": "OCR 和 AI 图像描述的视觉识别插件。",
 			"changelog": "### 0.6.1\n\n* 从按键与手势中移除独立的 AI Agent 启停命令；在 Agent 模式下使用 Vis Aware 主命令。\n* 更新中英文帮助文档，涵盖命令、自动识别、设置、数据处理以及推荐的通过 Ollama 使用 Gemma 4 的方案。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/e095bcc7686926cb18e2f51b99f4ce618271db1e852366cc1869fac4f8e73da7",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "e095bcc7686926cb18e2f51b99f4ce618271db1e852366cc1869fac4f8e73da7",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0e0400",
+					"raw_md5": "dd631298f7782c17933d242b31ccbc98"
+				},
+				"first_submission_date": 1784687891,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784687893,
+				"last_submission_date": 1784687891,
+				"md5": "f599842161eb677e3af15f3c1710b893",
+				"names": [],
+				"reputation": 0,
+				"sha1": "d9f6c9545f714df5a31671b24f499034d6123c78",
+				"sha256": "e095bcc7686926cb18e2f51b99f4ce618271db1e852366cc1869fac4f8e73da7",
+				"size": 196213,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
