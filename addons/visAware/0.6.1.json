@@ -1,0 +1,38 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.6.1/visAware-0.6.1.nvda-addon",
+	"description": "Visual Recognition add-on with OCR and AI image description.",
+	"sha256": "e095bcc7686926cb18e2f51b99f4ce618271db1e852366cc1869fac4f8e73da7",
+	"addonVersionName": "0.6.1",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 6,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.6.1\n\n* Removed the separate AI Agent start/stop command from Input Gestures; use the main Vis Aware command in Agent mode.\n* Updated the English and Simplified Chinese documentation for commands, automatic recognition, settings, data handling, and the recommended Gemma 4 setup through Ollama.",
+	"licenseURL": "https://www.gnu.org/licenses//gpl-2.0.html",
+	"submissionTime": 1784687888000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "OCR 和 AI 图像描述的视觉识别插件。",
+			"changelog": "### 0.6.1\n\n* 从按键与手势中移除独立的 AI Agent 启停命令；在 Agent 模式下使用 Vis Aware 主命令。\n* 更新中英文帮助文档，涵盖命令、自动识别、设置、数据处理以及推荐的通过 Ollama 使用 Gemma 4 的方案。"
+		}
+	]
+}
