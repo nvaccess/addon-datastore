@@ -1,0 +1,32 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.20.7/freeradio-2026.20.7.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "75502cfaa4e31596920df36271837b5fc23ff65882c9231a19e577628dacbc1d",
+	"addonVersionName": "2026.20.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 20,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n## Changed\n- Station search, browsing by country/tag, and the top-stations list now use a local cache of the full station catalog instead of querying the Radio Browser API every time. This makes searches and filtering nearly instant and removes the network delay that could previously freeze the UI during a search.\n- The local cache is synced from the server automatically in the background (every 12 hours, or immediately if no cache exists yet). If a sync fails, the previous cache is kept so search keeps working.\n- Added an \"Update Station List\" button (next to Close) to manually re-sync the station list from the server on demand, instead of waiting for the automatic background refresh.\n- Add Dutch localization of the interface and user guide.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784783940000,
+	"translations": []
+}
