@@ -1,0 +1,819 @@
+{
+	"addonId": "VisionAssistant",
+	"displayName": "Vision Assistant Pro",
+	"URL": "https://github.com/mahmoodhozhabri/VisionAssistantPro/releases/download/v2026.07.16/VisionAssistant-2026.07.16.nvda-addon",
+	"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+	"sha256": "2abce300220d3c26666a13666d5e9405b013ad5a9e1e22c3bbcccefa8f2ee127",
+	"addonVersionName": "2026.07.16",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 16
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mahmood Hozhabri",
+	"sourceURL": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mahmoodhozhabri/VisionAssistantPro",
+	"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784577399000,
+	"translations": [
+		{
+			"language": "pl",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asystent AI dla NVDA korzystający z modeli Gemini.\nWarstwa poleceń: naciśnij NVDA+Shift+V, następnie:\n- Tłumacz (T) / Schowek (Shift+T)\n- Poprawianie tekstu (R)\n- Opis obiektu (V) / Cały ekran (O)\n- Analiza wideo (Shift+V)\n- Nagrywanie ekranu (Control+V)\n- Czytnik dokumentów (D)\n- OCR pliku (F)\n- Rozwiązywanie CAPTCHA (C)\n- Transkrypcja dźwięku (A)\n- Dyktowanie (S)\n- Ogłoś stan (I)\n- Etykietuj obiekt (L)\n- Zarządzaj/skanuj etykiety (Shift+L)\n- Eksplorator interfejsu (E)\n- Operator AI (Shift+A)\n- Sprawdź aktualizację (U)\n- Przywołaj ostatni wynik (Spacja)\n- Pomoc poleceń (H)\n- Otwórz ustawienia (Alt+S)\n- Zgłoś klucze z wyczerpanym limitem (Alt+Q)\n- Zgłoś przydział modeli (Alt+M)",
+			"changelog": "## Zmiany w wersji 2026.07.15\n\n*   **Filtrowanie modeli API**: Całkowita przebudowa systemu filtrowania modeli na podejście czystej czarnej listy zamiast białych list. Dodano mocniejsze słowa kluczowe filtrowania (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`), aby lista rozwijana głównego modelu czatu pozostawała czysta i odporna na przyszłe zmiany, przy jednoczesnym zachowaniu dostępu do wszystkich wyspecjalizowanych modeli w sekcji osobnego modelu dla każdego zadania.\n*   **Wyszukiwanie w przydziale modeli**: Wszystkie listy rozwijane osobnego modelu dla każdego zadania (OCR, STT, TTS, Operator, Wideo, Asystent głosowy) oraz selektor wariantu eSpeak są teraz w pełni przeszukiwalne. Można szybko wpisać frazę, aby przefiltrować i znaleźć żądany model lub wariant.\n*   **Nowe skróty warstwy poleceń**:\n    *   **Ustawienia (`Alt + S`)**: Natychmiast otwiera okno ustawień Vision Assistant Pro.\n    *   **Raport kluczy z wyczerpanym limitem (`Alt + Q`)**: Podaje dokładną liczbę kluczy API Gemini, które przekroczyły dzienny limit, wskazuje, na którym modelu się wyczerpały, i ogłasza dokładny czas ich zresetowania.\n    *   **Audyt przydziału (`Alt + M`)**: Sprawdza i ogłasza bieżącą konfigurację osobnego modelu dla każdego zadania, odczytując, które modele są aktywnie wybrane do wyspecjalizowanych zadań (pomijając ustawienia domyślne).\n*   **Całkowita przebudowa analizatora wideo**: Analizator wideo, który wcześniej udostępniał tylko podstawowy opis filmów online, robi teraz znacznie więcej:\n    *   **Lokalne nagrywanie ekranu (`Control+V`)**: Można teraz nagrywać bezgłośne filmy bezpośrednio z ekranu. AI przeanalizuje nagrany fragment i poda szczegółowy opis sceny, układu i akcji.\n    *   **Generowanie audiodeskrypcji (SRT)**: Dodatek potrafi teraz generować szczegółowe skrypty audiodeskrypcji (w standardowym formacie SRT) dla filmów, wraz z dopasowaniem czasu do przerw, aby zakotwiczyć opisy w naturalnych pauzach ścieżki dźwiękowej, oraz dosłownym OCR tekstu na ekranie.\n    *   **Zsynchronizowana narracja dźwiękowa (eksport MP3)**: Poza napisami tekstowymi dodatek potrafi zsyntetyzować audiodeskrypcję na mowę, automatycznie zmiksować ją z oryginalną ścieżką dźwiękową filmu, zastosować przyciszanie tła (obniżenie głośności tła podczas opisów) i wyeksportować gotowy zsynchronizowany wynik jako plik MP3!\n    *   **Akcja na pliku wideo**: Jeśli ustawisz fokus na lokalnym pliku wideo i naciśniesz skrót wideo, dodatek automatycznie go wykryje i przetworzy plik bezpośrednio.\n    *   **Śledzenie postaci**: AI wykonuje teraz wstępne przejście wyodrębniające postacie. Buduje globalny słownik postaci i śledzi je dokładnie segment po segmencie, nie myląc tożsamości.\n    *   **Konfiguracja analizy wideo**: Dodano nowe ustawienia sterujące rozmiarem fragmentów SRT, napisami postaci i zastrzeżeniami.\n    *   **Rozszerzony przydział modeli**: Można teraz jawnie wybrać wyspecjalizowane modele wideo (`gemini_video_model`, `custom_video_model`) w ustawieniach osobnego modelu dla każdego zadania.\n*   **Zarządzanie limitami API**: Ulepszona obsługa błędów 429 (dzienny limit) przez śledzenie limitów per model. Jeśli klucz osiągnie dzienny limit na jednym modelu, zostaje odizolowany tylko dla tego konkretnego modelu, pozostając dostępny dla innych modeli."
+		},
+		{
+			"language": "id",
+			"displayName": "Vision Assistant Pro",
+			"description": "Asisten AI tingkat lanjut untuk NVDA menggunakan model Gemini.\nLapisan Perintah: Tekan NVDA+Shift+V, lalu:\n- Penerjemah Cerdas (T) / Papan Klip (Shift+T)\n- Penyempurna Teks (R)\n- Deskripsikan Objek (V) / Layar Penuh (O)\n- Analisis Video (Shift+V)\n- Perekaman Video Lokal (Control+V)\n- Pembaca Dokumen (D)\n- OCR File (F)\n- Pemecah CAPTCHA (C)\n- Transkripsi Audio (A)\n- Dikte Cerdas (S)\n- Umumkan Status (I)\n- Label Objek (L)\n- Kelola/Pindai Label (Shift+L)\n- UI Explorer (E)\n- Operator AI (Shift+A)\n- Periksa Pembaruan (U)\n- Buka Hasil Terakhir (Space)\n- Bantuan Perintah (H)\n- Buka Pengaturan (Alt+S)\n- Laporkan Kunci Kuota Habis (Alt+Q)\n- Laporkan Perutean Lanjutan (Alt+M)",
+			"changelog": "## Perubahan untuk 2026.07.15\n\n*   **Penyaringan Model API Cerdas**: Perombakan total sistem penyaringan model untuk menggunakan pendekatan blacklist murni alih-alih whitelist. Menambahkan kata kunci penyaringan yang lebih kuat (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) untuk memastikan menu dropdown model obrolan utama tetap bersih dan tahan masa depan, sementara tetap menjaga semua model khusus dapat diakses di bagian Perutean Lanjutan.\n*   **Pencarian Perutean Lanjutan**: Semua dropdown Perutean Model Lanjutan (OCR, STT, TTS, Operator, Video, Live) dan pemilih Varian eSpeak sekarang sepenuhnya dapat dicari. Anda dapat mengetik dengan cepat untuk menyaring dan menemukan model atau varian yang Anda inginkan.\n*   **Pintasan Lapisan Perintah Baru**:\n    *   **Pengaturan (`Alt + S`)**: Membuka dialog pengaturan Vision Assistant Pro secara instan.\n    *   **Laporan Kunci Kuota Habis (`Alt + Q`)**: Melaporkan jumlah persis kunci API Gemini yang telah melebihi kuota harian mereka, mengidentifikasi model spesifik mana yang kuotanya habis, dan mengumumkan waktu reset persisnya.\n    *   **Audit Perutean (`Alt + M`)**: Mengaudit dan mengumumkan konfigurasi Perutean Lanjutan Anda saat ini, membacakan model mana yang aktif dipilih untuk tugas-tugas khusus (melewati pengaturan default).\n*   **Perombakan Total Penganalisis Video**: Penganalisis Video telah diubah sepenuhnya! Sebelumnya, fitur ini hanya menyediakan deskripsi dasar untuk video online. Sekarang, fitur ini adalah paket pemrosesan video komprehensif yang dirancang untuk pengguna tunanetra:\n    *   **Perekaman Layar Lokal (`Control+V`)**: Anda sekarang dapat merekam video tanpa suara langsung dari layar Anda. AI akan menganalisis segmen yang direkam dan memberikan deskripsi yang sangat rinci tentang pemandangan, tata letak, dan tindakan.\n    *   **Pembuatan Deskripsi Audio (SRT)**: Add-on sekarang dapat menghasilkan skrip Deskripsi Audio yang sangat mendetail (dalam format SRT standar) untuk video, lengkap dengan waktu jeda cerdas untuk menambatkan deskripsi secara cerdas ke jeda alami di trek audio, dan OCR verbatim untuk teks apa pun yang ada di layar.\n    *   **Narasi Audio Sinkron (MP3)**: Selain subtitel berbasis teks, add-on dapat mensintesis Deskripsi Audio menjadi ucapan, secara otomatis mencampurnya dengan trek audio asli video, menerapkan peredupan audio (ducking), dan mengekspor hasil akhir yang disinkronkan sebagai file MP3!\n    *   **Aksi File Video Cerdas**: Jika Anda memfokuskan pada file video lokal dan menekan pintasan video, add-on akan secara otomatis mendeteksinya dan memproses file tersebut secara langsung.\n    *   **Pelacakan Karakter Lanjutan**: AI sekarang melakukan ekstraksi karakter tahap pertama. Ini membangun kamus karakter global dan melacak karakter secara akurat segmen demi segmen tanpa membingungkan identitas.\n    *   **Konfigurasi Analisis Video**: Menambahkan pengaturan baru untuk mengontrol ukuran potongan SRT, subtitel karakter, dan penafian.\n    *   **Perutean Model Diperluas**: Anda sekarang dapat memilih model video khusus (`gemini_video_model`, `custom_video_model`) secara eksplisit di pengaturan Perutean Model Lanjutan.\n*   **Manajemen Kuota API Cerdas**: Penanganan kesalahan 429 (Batas Harian) yang ditingkatkan dengan melacak kuota per model. Jika sebuah kunci mencapai batas hariannya pada satu model, ia akan dikarantina secara cerdas hanya untuk model tersebut, membiarkan kunci tersebut tetap tersedia untuk digunakan dengan model lainnya."
+		},
+		{
+			"language": "it",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "fr",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un assistant IA avancé pour NVDA utilisant les modèles Gemini.\nCommandes séquentielles : appuyez sur NVDA+Shift+V, puis :\n- Traducteur intelligent (T) / Presse-papiers (Maj+T)\n- Assistant de texte (R)\n- Décrire l'objet (V) / Tout l'écran (O)\n- Analyse de vidéos (Maj+V)\n- Enregistrement vidéo local (Contrôle+V)\n- Lecteur de document (D)\n- Reconnaissance de texte d'un fichier (F)\n- Résolution de CAPTCHA (C)\n- Transcription audio (A)\n- Dictée intelligente (S)\n- Annonce du statut (I)\n- Etiqueter un objet (L)\n- Gérer/analyser les étiquettes (Maj+L)\n- Explorateur d'interface (E)\n- Opérateur IA (Maj+A)\n- Vérification des mises à jour (U)\n- Rappel du dernier résultat (Espace)\n- Aide des commandes (H)\n- Ouvrir les paramètres (Alt+S)\n- Annoncer les clés dont le quota est épuisées (Alt+Q)\n- Annonce du routage avancé (Alt+M)",
+			"changelog": "## Modifications de la 2026.07.15\n\n* **Filtrage intelligent des modèles API** : Refonte complète du système de filtrage des modèles afin d'utiliser une approche reposant uniquement sur une liste noire au lieu de listes blanches. Ajout de mots-clés de filtrage plus stricts (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) pour garantir que la liste principale des modèles de conversation reste parfaitement pertinente y compris avec les modèles ajoutés à l'avenir, tout en conservant l'accès à tous les modèles spécialisés dans la section de routage avancé.\n* **Recherche dans le routage avancé** : Toutes les listes déroulantes de routage avancé des modèles (OCR, STT, TTS, opérateur, vidéo, Live) ainsi que le sélecteur de variantes eSpeak sont désormais entièrement accessibles par recherche. Vous pouvez rapidement saisir du texte pour filtrer et trouver le modèle ou la variante souhaité(e).\n* **Nouveaux raccourcis des commandes séquentielles** :\n    * **Paramètres (`Alt+S`)** : Ouvre instantanément la boîte de dialogue des paramètres de Vision Assistant Pro.\n    * **Annonce des clés dont le quota est épuisé (`Alt+Q`)** : Indique le nombre exact de clés API Gemini ayant dépassé leur quota quotidien, précise pour quel modèle elles sont épuisées et annonce leur heure exacte de réinitialisation.\n    * **Audit de routage (`Alt+M`)** : Analyse et annonce la configuration actuelle du routage avancé, en indiquant les modèles actuellement sélectionnés pour les tâches spécialisées (en ignorant les paramètres par défaut).\n* **Refonte complète de l'analyseur vidéo** : L'analyseur vidéo a été entièrement transformé ! Auparavant, il fournissait uniquement une description basique des vidéos en ligne. Il constitue désormais une suite complète de traitement vidéo adaptée aux utilisateurs aveugles :\n    * **Enregistrement de l'écran local (`Ctrl+V`)** : Vous pouvez maintenant enregistrer des vidéos silencieuses directement depuis votre écran. L'IA analyse le segment enregistré et fournit une description très détaillée de la scène, de la disposition des éléments et des actions.\n    * **Génération d'audiodescriptions (SRT)** : L'extension peut maintenant générer des scripts de description audio très détaillés au format SRT standard pour les vidéos, avec une synchronisation intelligente des intervalles afin d'ancrer les descriptions sur les pauses naturelles de la piste audio, ainsi qu'une transcription OCR exacte des textes affichés à l'écran.\n    * **Narration audio synchronisée (export MP3)** : Au-delà des sous-titres textuels, l'add-on peut synthétiser la description audio en parole, la mélanger automatiquement avec la piste audio originale de la vidéo, appliquer une atténuation audio (en abaissant le volume de fond pendant les descriptions), et exporter le résultat synchronisé final sous forme de fichier MP3.\n    * **Action vidéo intelligente** : Si vous placez le focus sur un fichier vidéo local et appuyez sur le raccourci vidéo, l'extension le détecte automatiquement et traite directement le fichier.\n    * **Suivi avancé des personnages** : L'IA effectue désormais une étape préalable d'extraction des personnages. Elle crée une liste globale des personnages et suit précisément leur présence segment par segment sans confondre les identités.\n    * **Configuration de l'analyse vidéo** : Ajout de nouveaux paramètres permettant de contrôler la taille des blocs SRT, le sous-titrage des personnages et les avertissements.\n    * **Routage étendu des modèles** : Vous pouvez maintenant sélectionner explicitement des modèles vidéo spécialisés (`gemini_video_model`, `custom_video_model`) dans les paramètres de routage avancé des modèles.\n\n* **Gestion intelligente des quotas API** : Amélioration de la gestion des erreurs 429 (limite quotidienne) grâce au suivi des quotas par modèle. Lorsqu'une clé atteint sa limite quotidienne pour un modèle donné, elle est mise en quarantaine uniquement pour ce modèle, tout en restant disponible pour les autres modèles."
+		},
+		{
+			"language": "fa",
+			"displayName": "دستیارِ حرفه‌ایِ بینایی",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "ro",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "tr",
+			"displayName": "Profesyonel Görsel Asistan",
+			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Betimleme (V) / Tam Ekran (O)\n- Video Analizi (Shift+V)\n- Yerel Video Kaydı (Kontrol+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Ses Transkripsiyonu (A)\n- Akıllı Dikte (S)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)\n- Ayarları Aç (Alt+S)\n- Kotası Dolan Anahtarları Bildir (Alt+Q)\n- Gelişmiş Yönlendirmeyi Bildir (Alt+M)",
+			"changelog": "## 2026.07.15 için değişiklikler\n\n* **Akıllı API Model Filtreleme**: Model filtreleme sistemi, beyaz liste yaklaşımı yerine tamamen kara liste yaklaşımını kullanacak şekilde baştan sona yenilendi. Ana sohbet modeli açılır listesinin kusursuz şekilde temiz ve geleceğe hazır kalmasını sağlamak için daha güçlü filtreleme anahtar sözcükleri (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) eklendi. Buna karşın tüm uzmanlaşmış modeller, Gelişmiş Yönlendirme bölümünde erişilebilir olmaya devam ediyor.\n* **Gelişmiş Yönlendirme Araması**: Tüm Gelişmiş Model Yönlendirme açılır listeleri (OCR, STT, TTS, Operatör, Video, Canlı) ile eSpeak Varyant seçicisi artık tamamen aranabilir. İstediğiniz modeli veya varyantı hızlıca bulmak için yazmaya başlayarak filtreleme yapabilirsiniz.\n* **Yeni Komut Katmanı Kısayolları**:\n  * **Ayarlar (`Alt + S`)**: Profesyonel Görsel Asistan ayarlar iletişim kutusunu anında açar.\n  * **Kotası Tükenen Anahtarları Bildir (`Alt + Q`)**: Günlük kotasını aşmış Gemini API anahtarlarının tam sayısını bildirir, hangi modelde kotalarının tükendiğini belirtir ve tam sıfırlanma zamanlarını sesli olarak duyurur.\n  * **Yönlendirme Denetimi (`Alt + M`)**: Mevcut Gelişmiş Yönlendirme yapılandırmanızı denetler ve varsayılan ayarlar atlanarak, uzmanlaşmış görevler için etkin olarak seçilmiş modelleri sesli olarak bildirir.\n* **Video Analizi Tamamen Yenilendi**: Video Analizi baştan sona dönüştürüldü! Önceden yalnızca çevrimiçi videolar için temel bir açıklama sunarken, artık görme engelli kullanıcılar için tasarlanmış kapsamlı bir video işleme paketine dönüştü:\n  * **Yerel Ekran Kaydı (`Control+V`)**: Artık ekranınızdan doğrudan sessiz videolar kaydedebilirsiniz. Yapay zekâ, kaydedilen bölümü analiz ederek sahneyi, yerleşimi ve gerçekleşen eylemleri son derece ayrıntılı şekilde betimler.\n  * **Sesli Betimleme Oluşturma (SRT)**: Eklenti artık videolar için son derece ayrıntılı Sesli Betimleme metinleri (standart SRT biçiminde) oluşturabilir. Bu işlem, betimlemeleri ses parçasındaki doğal duraklamalara akıllıca yerleştiren akıllı boşluk zamanlaması ile ekrandaki tüm metinler için birebir OCR çıktısını içerir.\n  * **Eşzamanlı Sesli Anlatım (MP3 Dışa Aktarma)**: Metin tabanlı altyazıların ötesinde, eklenti Sesli Betimlemeyi konuşmaya dönüştürebilir, bunu videonun özgün ses parçasıyla otomatik olarak birleştirebilir, ses azaltma (betimlemeler sırasında arka plan sesini düşürme) uygulayabilir ve son eşzamanlı sonucu MP3 dosyası olarak dışa aktarabilir.\n  * **Akıllı Video Dosyası Eylemi**: Yerel bir video dosyasına odaklanıp video kısayoluna bastığınızda, eklenti bunu otomatik olarak algılar ve dosyayı doğrudan işler.\n  * **Gelişmiş Karakter Takibi**: Yapay zekâ artık ön işlem olarak karakter çıkarımı gerçekleştirir. Genel bir karakter sözlüğü oluşturur ve karakterleri bölüm bölüm kimliklerini karıştırmadan doğru şekilde takip eder.\n  * **Video Analizi Yapılandırması**: SRT parça boyutlarını, karakter altyazılamasını ve sorumluluk reddi bildirimlerini denetlemek için yeni ayarlar eklendi.\n  * **Genişletilmiş Model Yönlendirmesi**: Artık Gelişmiş Model Yönlendirme ayarlarından video için özelleşmiş modelleri (`gemini_video_model`, `custom_video_model`) açıkça seçebilirsiniz.\n* **Akıllı API Kota Yönetimi**: 429 (Günlük Limit) hatalarının işlenmesi, model bazında kota takibi yapacak şekilde geliştirildi. Bir API anahtarı belirli bir modelde günlük limitine ulaştığında, yalnızca o model için akıllıca karantinaya alınır; böylece aynı anahtar diğer modellerle kullanılmaya devam edebilir."
+		},
+		{
+			"language": "es",
+			"displayName": "Vision Assistant Pro",
+			"description": "Un asistente de IA avanzado para NVDA que usa modelos Gemini.\nCapa de comandos: Presiona NVDA+Shift+V, luego:\n- Traductor inteligente (T) / Portapapeles (Shift+T)\n- Refinador de texto (R)\n- Describir objeto (V) / Pantalla completa (O)\n- Análisis de vídeo en línea (Shift+V)\n- Lector de documentos (D)\n- OCR de archivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcripción de audio (A)\n- Dictado inteligente (S)\n- Anunciar estado (I)\n- Etiquetar objeto (L)\n- Administrar/Escanear etiquetas (Shift+L)\n- Explorador de interfaz (E)\n- Operador de IA (Shift+A)\n- Buscar actualización (U)\n- Recuperar último resultado (Espacio)\n- Ayuda de comandos (H)\n- Abrir configuración (Alt+S)\n- Informar claves con cuota agotada (Alt+Q)\n- Informar enrutamiento avanzado (Alt+M)",
+			"changelog": "## Cambios para 8.0.0\n\n*   **Nueva función: Generación de audiodescripción (SRT)**: Genera archivos SRT sincronizados para cualquier vídeo (en línea o local).\n    *   Compatibilidad con YouTube, Instagram, Twitter, TikTok y vídeos locales.\n    *   Grabación de pantalla en vivo (requiere ffmpeg).\n    *   AD extendida con detección de silencios y narración MP3.\n    *   Narración sin conexión con eSpeak-NG.\n    *   Seguimiento avanzado de personajes con diccionario global.\n    *   Configuración de fragmentos SRT, subtítulos de personajes y avisos.\n    *   Enrutamiento de modelos de vídeo especializados.\n*   **Gestión inteligente de cuotas de API**: Cuarentena por modelo para errores 429 de límite diario.\n*   **Nuevos atajos de capa**: Alt+S (Configuración), Alt+Q (Informe de cuotas), Alt+M (Enrutamiento avanzado)."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente avançado de IA para o NVDA utilizando modelos Gemini.\nCamada de comandos: Prima NVDA+Shift+V e, em seguida:\n- Tradutor Inteligente (T) / Área de Transferência (Shift+T)\n- Refinador de Texto (R)\n- Descrever Objeto (V) / Ecrã Inteiro (O)\n- Análise de Vídeo (Shift+V)\n- Gravação Local de Vídeo (Control+V)\n- Leitor de Documentos (D)\n- OCR de Ficheiros (F)\n- Resolução de CAPTCHA (C)\n- Transcrição de Áudio (A)\n- Ditado Inteligente (S)\n- Anunciar Estado (I)\n- Rotular Objeto (L)\n- Gerir/Analisar Rótulos (Shift+L)\n- Explorador de Interface (E)\n- Operador de IA (Shift+A)\n- Verificar Atualização (U)\n- Relembrar Último Resultado (Espaço)\n- Ajuda de Comandos (H)\n- Abrir Configurações (Alt+S)\n- Relatório de Chaves com Quota Excedida (Alt+Q)\n- Relatório de Encaminhamento Avançado (Alt+M)",
+			"changelog": "## Alterações na versão 2026.07.15\n\n*   **Filtragem Inteligente de Modelos de API**: Reformulação total do sistema de filtragem de modelos para utilizar uma abordagem puramente baseada em lista de bloqueio (blacklist) em vez de listas de permissão. Foram adicionadas palavras-chave de filtragem mais fortes (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) para garantir que a lista suspensa do modelo principal de chat permaneça limpa e preparada para o futuro, mantendo todos os modelos especializados acessíveis na secção de Encaminhamento Avançado.\n*   **Pesquisa de Encaminhamento Avançado**: Todas as listas suspensas de Encaminhamento Avançado de Modelos (OCR, STT, TTS, Operador, Vídeo, Tempo Real) e o seletor de Variantes do eSpeak são agora totalmente pesquisáveis. Pode digitar rapidamente para filtrar e encontrar o modelo ou variante pretendida.\n*   **Novos Atalhos na Camada de Comandos**:\n    *   **Definições (`Alt + S`)**: Abre instantaneamente o diálogo de configurações do Vision Assistant Pro.\n    *   **Relatório de Chaves com Quota Excedida (`Alt + Q`)**: Informa o número exato de chaves de API do Gemini que excederam a respetiva quota diária, identificando em qual modelo específico se esgotaram, e anuncia o tempo exato de reposição.\n    *   **Auditoria de Encaminhamento (`Alt + M`)**: Audita e anuncia a sua configuração atual de Encaminhamento Avançado, lendo quais modelos estão ativamente selecionados para tarefas especializadas (ignorando as configurações padrão).\n*   **Reformulação Completa do Analisador de Vídeo**: O Analisador de Vídeo foi completamente transformado! Anteriormente, apenas fornecia uma descrição básica de vídeos online. Agora, é um pacote abrangente de processamento de vídeo adaptado para utilizadores cegos:\n    *   **Gravação Local de Ecrã (`Control+V`)**: Agora pode gravar vídeos silenciosos diretamente do seu ecrã. A IA analisará o segmento gravado e fornecerá uma descrição altamente detalhada da cena, da disposição e das ações.\n    *   **Geração de Audiodescrição (SRT)**: O suplemento pode agora gerar guiões de Audiodescrição altamente detalhados (no formato padrão SRT) para vídeos, com temporização inteligente de intervalos para ancorar as descrições de forma inteligente nas pausas naturais da faixa de áudio, além de OCR literal para qualquer texto no ecrã.\n    *   **Narração de Áudio Sincronizada (Exportação de MP3)**: Além das legendas em formato de texto, o suplemento pode sintetizar a Audiodescrição em fala, misturá-la automaticamente com a faixa de áudio original do vídeo, aplicar atenuação de áudio (reduzindo o volume de fundo durante as descrições) e exportar o resultado final sincronizado como um ficheiro MP3!\n    *   **Ação Inteligente em Ficheiros de Vídeo**: Se focar um ficheiro de vídeo local e premir o atalho de vídeo, o suplemento irá detetá-lo automaticamente e processará o ficheiro diretamente.\n    *   **Rastreio Avançado de Personagens**: A IA executa agora uma pré-passagem de extração de personagens. Cria um dicionário global de personagens e rastreia-as com precisão, segmento a segmento, sem baralhar as identidades.\n    *   **Configuração da Análise de Vídeo**: Adicionadas novas definições para controlar o tamanho dos blocos SRT, legendagem de personagens e avisos de exoneração de responsabilidade.\n    *   **Encaminhamento Alargado de Modelos**: Pode agora selecionar explicitamente modelos de vídeo especializados (`gemini_video_model`, `custom_video_model`) nas definições de Encaminhamento Avançado de Modelos.\n*   **Gestão Inteligente de Quotas da API**: Melhorado o tratamento de erros 429 (Limite Diário) através do rastreio de quotas por modelo. Se uma chave atingir o seu limite diário num modelo, é inteligentemente colocada em quarentena apenas para esse modelo específico, deixando a chave disponível para utilização com outros modelos."
+		},
+		{
+			"language": "vi",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vision Assistant Pro",
+			"description": "Розширений ШІ-асистент для NVDA, що використовує моделі Gemini.\nКомандний шар: натисніть NVDA+Shift+V, а потім:\n- Розумний перекладач (T) / Буфер обміну (Shift+T)\n- Вдосконалювач тексту (R)\n- Опис об'єкта (V) / Повний екран (O)\n- Аналіз відео (Shift+V)\n- Локальний відеозапис (Control+V)\n- Читач документів (D)\n- OCR файлів (F)\n- Розв'язування CAPTCHA (C)\n- Транскрипція аудіо (A)\n- Розумне диктування (S)\n- Оголошення статусу (L)\n- Підписати елемент (L)\n- Керування/сканування підписів (Shift+L)\n- Провідник UI(E)\n- Оператор ШІ (Shift+A)\n- Показати останній результат (пробіл),\n- Перевірка оновлень (U)\n- Довідка команд (H),\n- Відкрити налаштування (Alt+S)\n- Повідомити про вичерпання квоти ключів (Alt+Q)\n- Повідомити про розширену маршрутизацію (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Assistente de Visão Pro",
+			"description": "Um assistente de IA avançado para o NVDA usando modelos Gemini.\nCamada de comandos: pressione NVDA+Shift+V e, em seguida:\n- Tradutor inteligente (T) / Área de transferência (Shift+T)\n- Refinador de texto (R)\n- Descrever objeto (V) / Tela inteira (O)\n- Análise de vídeo (Shift+V)\n- Gravação de vídeo local (Control+V)\n- Leitor de documentos (D)\n- OCR de arquivos (F)\n- Solucionador de CAPTCHA (C)\n- Transcrição de áudio (A)\n- Ditado inteligente (S)\n- Anunciar status (I)\n- Rotular objeto (L)\n- Gerenciar/Examinar rótulos (Shift+L)\n- Explorador de interface (E)\n- Operador de IA (Shift+A)\n- Verificar atualização (U)\n- Recuperar último resultado (Espaço)\n- Ajuda de comandos (H)\n- Abrir configurações (Alt+S)\n- Relatar chaves com cota esgotada (Alt+Q)\n- Relatar roteamento avançado (Alt+M)",
+			"changelog": "## Alterações para 15/07/2026\n\n*   **Filtragem Inteligente de Modelos da API**: Revisão completa do sistema de filtragem de modelos para utilizar uma abordagem de lista negra pura em vez de listas brancas. Foram adicionadas palavras-chave de filtragem mais rigorosas (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) para garantir que a lista suspensa do modelo principal de chat permaneça perfeitamente limpa e preparada para o futuro, enquanto mantém todos os modelos especializados acessíveis na seção de Roteamento Avançado.\n*   **Pesquisa no Roteamento Avançado**: Todas as listas suspensas de Roteamento Avançado de Modelos (OCR, STT, TTS, Operador, Vídeo, Live) e o seletor de Variante do eSpeak agora possuem pesquisa completa. Você pode digitar rapidamente para filtrar e encontrar o modelo ou variante desejado.\n*   **Novos Atalhos da Camada de Comandos**:\n    *   **Configurações (`Alt + S`)**: Abre instantaneamente o diálogo de configurações do Vision Assistant Pro.\n    *   **Relatório de Chaves com Cota Esgotada (`Alt + Q`)**: Informa o número exato de chaves da API do Gemini que excederam sua cota diária, identificando em qual modelo específico elas foram esgotadas e anunciando o horário exato de redefinição.\n    *   **Auditoria de Roteamento (`Alt + M`)**: Audita e informa a configuração atual do Roteamento Avançado, lendo quais modelos estão selecionados atualmente para tarefas especializadas (ignorando configurações padrão).\n*   **Grande Reformulação do Analisador de Vídeo**: O Analisador de Vídeo foi completamente transformado! Anteriormente, ele fornecia apenas uma descrição básica de vídeos online. Agora, é uma suíte completa de processamento de vídeo desenvolvida especialmente para usuários cegos:\n    *   **Gravação de Tela Local (`Control+V`)**: Agora é possível gravar vídeos silenciosos diretamente da tela. A IA analisará o segmento gravado e fornecerá uma descrição altamente detalhada da cena, do layout e das ações.\n    *   **Geração de Descrição de Áudio (SRT)**: O complemento agora pode gerar roteiros de descrição de áudio altamente detalhados (no formato SRT padrão) para vídeos, com temporização inteligente de intervalos para vincular descrições às pausas naturais da faixa de áudio e OCR literal de qualquer texto exibido na tela.\n    *   **Narração de Áudio Sincronizada (Exportação MP3)**: Além das legendas em texto, o complemento pode sintetizar a descrição de áudio em fala, misturá-la automaticamente com a faixa de áudio original do vídeo, aplicar redução de volume do áudio de fundo durante as descrições e exportar o resultado final sincronizado como um arquivo MP3!\n    *   **Ação Inteligente para Arquivos de Vídeo**: Ao focar em um arquivo de vídeo local e pressionar o atalho de vídeo, o complemento detectará automaticamente o arquivo e processará o vídeo diretamente.\n    *   **Rastreamento Avançado de Personagens**: A IA agora realiza uma etapa preliminar de extração de personagens. Ela cria um dicionário global de personagens e rastreia os personagens com precisão segmento por segmento, sem confundir identidades.\n    *   **Configuração de Análise de Vídeo**: Foram adicionadas novas configurações para controlar o tamanho dos segmentos SRT, legendas de personagens e avisos.\n    *   **Roteamento Estendido de Modelos**: Agora é possível selecionar explicitamente modelos de vídeo especializados (`gemini_video_model`, `custom_video_model`) nas configurações de Roteamento Avançado de Modelos.\n*   **Gerenciamento Inteligente de Cotas da API**: Melhor tratamento dos erros 429 (limite diário) por meio do rastreamento de cotas por modelo. Se uma chave atingir seu limite diário em um modelo específico, ela será colocada em quarentena apenas para esse modelo, mantendo a chave disponível para uso com outros modelos."
+		},
+		{
+			"language": "de",
+			"displayName": "KI Assistent Pro",
+			"description": "Ein fortschrittlicher KI-Assistent für NVDA, der Gemini-Modelle verwendet.\nBefehlsebene: Drücken Sie NVDA+Umschalt+V, dann:\nIntelligenter Übersetzer (T) / Zwischenablage (Umschalt+T)\nTextverfeinerer (R)\nObjekt beschreiben (V) / Vollbild (O)\nVideoanalyse (Umschalt+V)\nLokale Videoaufnahme (Strg+V)\nDokumentenleser (D)\nDatei-OCR (F)\nCAPTCHA-Löser (C)\nAudio-Transkription (A)\nIntelligente Diktierfunktion (S)\nStatus ansagen (I)\nObjekt beschriften (L)\nBeschriftungen verwalten/scannen (Umschalt+L)\nUI-Explorer (E)\nKI-Operator (Umschalt+A)\nUpdate prüfen (U)\nLetztes Ergebnis abrufen (Leertaste)\nBefehlshilfe (H)\nEinstellungen öffnen (Alt+S)\nBericht über erschöpfte Kontingentschlüssel (Alt+Q)\nBericht über erweitertes Routing (Alt+M)",
+			"changelog": "## Änderungen für 2026.07.15\n\n* **Intelligente API-Modellfilterung**: Komplette Überarbeitung des Modellfiltersystems, um einen reinen Blacklist-Ansatz anstelle von Whitelists zu verwenden. Es wurden stärkere Filterschlüsselwörter hinzugefügt (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`), um sicherzustellen, dass das Haupt-Chat-Modell-Dropdown perfekt sauber und zukunftssicher bleibt, während alle spezialisierten Modelle im Abschnitt „Erweitertes Routing“ zugänglich bleiben.\n* **Erweiterte Routing-Suche**: Alle Dropdown-Menüs für erweitertes Modell-Routing (OCR, STT, TTS, Operator, Video, Live) und die eSpeak-Variantenauswahl sind jetzt vollständig durchsuchbar. Sie können schnell tippen, um zu filtern und Ihr gewünschtes Modell oder Ihre gewünschte Variante zu finden.\n* **Neue Befehlsebenenverknüpfungen**:\n    * **Einstellungen (`Alt + S`)**: Öffnet sofort den Vision Assistant Pro-Einstellungsdialog.\n    * **Bericht über erschöpfte Schlüsselkontingente (`Alt + Q`)**: Meldet die genaue Anzahl der Gemini-API-Schlüssel, die ihr tägliches Kontingent überschritten haben, gibt an, bei welchem spezifischen Modell sie erschöpft sind, und gibt ihre genaue Rücksetzzeit bekannt.\n    * **Routing-Überprüfung (`Alt + M`)**: Überprüft und kündigt Ihre aktuelle erweiterte Routing-Konfiguration an und liest aus, welche Modelle aktiv für spezielle Aufgaben ausgewählt werden (Standardeinstellungen werden übersprungen).\n* **Vollständige Überarbeitung des Videoanalysators**: Der Videoanalysator wurde komplett überarbeitet! Bisher gab es nur eine grundlegende Beschreibung von Online-Videos. Jetzt handelt es sich um eine umfassende Videoverarbeitungssuite, die speziell auf blinde Benutzer zugeschnitten ist:\n    * **Lokale Bildschirmaufnahme („Strg+V“)**: Sie können jetzt stille Videos direkt von Ihrem Bildschirm aufnehmen. Die KI analysiert den aufgezeichneten Abschnitt und liefert eine sehr detaillierte Beschreibung der Szene, des Layouts und der Aktionen.\n    * **Audiobeschreibungsgenerierung (SRT)**: Das Add-on kann jetzt hochdetaillierte Audiobeschreibungsskripte (im Standard-SRT-Format) für Videos generieren, komplett mit intelligentem Gap-Timing, um Beschreibungen intelligent in natürlichen Pausen in der Audiospur zu verankern, und wörtlicher OCR für jeden Text auf dem Bildschirm.\n    * **Synchronisierte Audiokommentare (MP3-Export)**: Über textbasierte Untertitel hinaus kann das Add-on die Audiobeschreibung in Sprache umwandeln, sie automatisch mit der Originaltonspur des Videos mischen, Audio-Ducking anwenden (die Hintergrundlautstärke während der Beschreibungen verringern) und das endgültige synchronisierte Ergebnis als MP3-Datei exportieren!\n    * **Intelligente Videodatei-Aktion**: Wenn Sie sich auf eine lokale Videodatei konzentrieren und die Videoverknüpfung drücken, erkennt das Add-on diese automatisch und verarbeitet die Datei direkt.\n    * **Erweiterte Charakterverfolgung**: Die KI führt jetzt eine Vorab-Charakterextraktion durch. Es erstellt ein globales Zeichenwörterbuch und verfolgt Zeichen präzise Segment für Segment, ohne Identitäten zu verwechseln.\n    * **Videoanalyse-Konfiguration**: Neue Einstellungen hinzugefügt, um SRT-Blockgrößen, Zeichenuntertitel und Haftungsausschlüsse zu steuern.\n    * **Erweitertes Modellrouting**:Sie können jetzt in den erweiterten Modellrouting-Einstellungen explizit spezielle Videomodelle („gemini_video_model“, „custom_video_model“) auswählen.\n* **Intelligente API-Kontingentverwaltung**: Verbesserte Behandlung von 429-Fehlern (Tageslimit) durch Verfolgung von Kontingenten pro Modell. Wenn ein Schlüssel bei einem Modell sein Tageslimit erreicht, wird er intelligent nur für dieses bestimmte Modell unter Quarantäne gestellt, sodass der Schlüssel für die Verwendung mit anderen Modellen verfügbar bleibt."
+		},
+		{
+			"language": "ru",
+			"displayName": "Vision Assistant Pro (Визуальный помощник)",
+			"description": "Vision Assistant - это продвинутый ИИ-ассистент для NVDA, использующий модели Gemini.\nКомандный слой: нажмите NVDA+Shift+V, затем:\n• Умный перевод (T) / из буфера обмена (Shift+T).\n• Обработка текста (R).\n• Описание объекта (V) / всего экрана (O).\n• Анализ видео (Shift+V).\n• Локальная запись экрана (Control+V).\n• Чтение документов (D).\n• OCR файла (F).\n• Решение CAPTCHA (C).\n• Расшифровка аудио (A).\n• Умная диктовка (S).\n• Состояние (I).\n• Маркировка объекта (L).\n• Управление/сканирование меток (Shift+L).\n• Обозреватель интерфейса (E).\n• ИИ-оператор (Shift+A).\n• Проверка обновлений (U).\n• Повтор последнего результата (Пробел).\n• Справка по командам (H).\n• Открыть настройки (Alt+S).\n• Отчёт об исчерпанных ключах (Alt+Q).\n• Отчёт о расширенной маршрутизации (Alt+M).",
+			"changelog": "## Изменения для 2026.07.15\n\n*   **Интеллектуальная фильтрация моделей API**: Полная переработка системы фильтрации моделей с использованием подхода «чёрного списка» вместо «белого списка». Добавлены более строгие ключевые слова фильтрации (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`), чтобы основной список выбора модели чата оставался идеально чистым и готовым к будущим обновлениям, сохраняя при этом все специализированные модели доступными в разделе расширенной маршрутизации.\n*   **Поиск в расширенной маршрутизации**: Все раскрывающиеся списки расширенной маршрутизации моделей (OCR, STT, TTS, Operator, Video, Live) и селектор вариантов eSpeak теперь полностью поддерживают поиск. Вы можете быстро вводить текст для фильтрации и поиска нужной модели или варианта.\n*   **Новые горячие клавиши командного слоя**:\n    *   **Настройки (`Alt + S`)**: Мгновенно открывает диалог настроек Vision Assistant Pro.\n    *   **Отчёт об исчерпанных ключах (`Alt + Q`)**: Сообщает точное количество ключей Gemini API, превысивших дневную квоту, определяет, для какой конкретной модели они исчерпаны, и объявляет точное время сброса.\n    *   **Аудит маршрутизации (`Alt + M`)**: Проверяет и объявляет вашу текущую конфигурацию расширенной маршрутизации, зачитывая, какие модели активно выбраны для специализированных задач (пропуская настройки по умолчанию).\n*   **Полная переработка видеоанализатора**: Видеоанализатор был полностью преобразован! Ранее он предоставлял только базовое описание онлайн-видео. Теперь это комплексный набор для обработки видео, адаптированный для незрячих пользователей:\n    *   **Локальная запись экрана (`Control+V`)**: Теперь вы можете записывать немые видео непосредственно с экрана. ИИ проанализирует записанный сегмент и предоставит очень подробное описание сцены, макета и действий.\n    *   **Генерация аудиоописания (SRT)**: Дополнение теперь может генерировать очень подробные скрипты аудиоописаний (в стандартном формате SRT) для видео, с интеллектуальной расстановкой пауз для привязки описаний к естественным паузам в аудиодорожке и дословным OCR для любого текста на экране.\n    *   **Синхронизированное аудио-озвучивание (Экспорт MP3)**: Помимо текстовых субтитров, дополнение может синтезировать аудиоописание в речь, автоматически смешивать его с исходной аудиодорожкой видео, применять Audio Ducking (понижение громкости фона во время описаний) и экспортировать конечный синхронизированный результат в виде MP3-файла!\n    *   **Умное действие с видеофайлом**: Если вы сфокусируетесь на локальном видеофайле и нажмете горячую клавишу видео, дополнение автоматически обнаружит его и обработает файл напрямую.\n    *   **Расширенное отслеживание персонажей**: Теперь ИИ выполняет предварительный проход для извлечения персонажей. Он создает глобальный словарь персонажей и точно отслеживает их сегмент за сегментом, не путая личности.\n    *   **Конфигурация видеоанализа**: Добавлены новые настройки для управления размером фрагментов SRT, субтитрами персонажей и дисклеймерами.\n    *   **Расширенная маршрутизация моделей**: Теперь вы можете явно выбирать специализированные видеомодели (`gemini_video_model`, `custom_video_model`) в настройках расширенной маршрутизации моделей.\n*   **Умное управление квотой API**: Улучшена обработка ошибок 429 (Дневной лимит) с отслеживанием квот для каждой модели. Если ключ достигает дневного лимита для одной модели, он интеллектуально изолируется для этой конкретной модели, оставляя ключ доступным для использования с другими моделями."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		},
+		{
+			"language": "ar",
+			"displayName": "Vision Assistant Pro",
+			"description": "An advanced AI assistant for NVDA using Gemini models.\nCommand Layer: Press NVDA+Shift+V, then:\n- Smart Translator (T) / Clipboard (Shift+T)\n- Text Refiner (R)\n- Describe Object (V) / Full Screen (O)\n- Video Analysis (Shift+V)\n- Local Video Recording (Control+V)\n- Document Reader (D)\n- File OCR (F)\n- CAPTCHA Solver (C)\n- Audio Transcription (A)\n- Smart Dictation (S)\n- Announce Status (I)\n- Label Object (L)\n- Manage/Scan Labels (Shift+L)\n- UI Explorer (E)\n- AI Operator (Shift+A)\n- Check Update (U)\n- Recall Last Result (Space)\n- Commands Help (H)\n- Open Settings (Alt+S)\n- Report Quota Exhausted Keys (Alt+Q)\n- Report Advanced Routing (Alt+M)",
+			"changelog": "## Changes for 2026.07.15\n\n*   **Intelligent API Model Filtering**: Complete overhaul of the model filtering system to use a pure blacklist approach instead of whitelists. Added stronger filtering keywords (`embedding`, `bison`, `gecko`, `audio`, `realtime`, `babbage`, `moderation`, `deep`, `antigravity`, `computer`) to ensure the main chat model dropdown remains perfectly clean and future-proof, while keeping all specialized models accessible in the Advanced Routing section.\n*   **Advanced Routing Search**: All Advanced Model Routing dropdowns (OCR, STT, TTS, Operator, Video, Live) and the eSpeak Variant selector are now fully searchable. You can quickly type to filter and find your desired model or variant.\n*   **New Command Layer Shortcuts**:\n    *   **Settings (`Alt + S`)**: Instantly opens the Vision Assistant Pro settings dialog.\n    *   **Quota Exhausted Keys Report (`Alt + Q`)**: Reports the exact number of Gemini API keys that have exceeded their daily quota, identifying which specific model they are exhausted on, and announces their exact reset time.\n    *   **Routing Audit (`Alt + M`)**: Audits and announces your current Advanced Routing configuration, reading out which models are actively selected for specialized tasks (skipping default settings).\n*   **Video Analyzer Complete Overhaul**: The Video Analyzer has been completely transformed! Previously, it only provided a basic description of online videos. Now, it is a comprehensive video processing suite tailored for blind users:\n    *   **Local Screen Recording (`Control+V`)**: You can now record silent videos directly from your screen. The AI will analyze the recorded segment and provide a highly detailed description of the scene, layout, and actions.\n    *   **Audio Description Generation (SRT)**: The add-on can now generate highly detailed Audio Description scripts (in standard SRT format) for videos, complete with smart gap-timing to intelligently anchor descriptions to natural pauses in the audio track, and verbatim OCR for any on-screen text.\n    *   **Synchronized Audio Narration (MP3 Export)**: Beyond text-based subtitles, the add-on can synthesize the Audio Description into speech, automatically mix it with the video's original audio track, apply audio ducking (lowering background volume during descriptions), and export the final synchronized result as an MP3 file!\n    *   **Smart Video File Action**: If you focus on a local video file and press the video shortcut, the add-on will automatically detect it and process the file directly.\n    *   **Advanced Character Tracking**: The AI now performs a character extraction pre-pass. It builds a global character dictionary and tracks characters accurately segment-by-segment without confusing identities.\n    *   **Video Analysis Configuration**: Added new settings to control SRT chunk sizes, character subtitling, and disclaimers.\n    *   **Extended Model Routing**: You can now explicitly select specialized video models (`gemini_video_model`, `custom_video_model`) in the Advanced Model Routing settings.\n*   **Smart API Quota Management**: Enhanced handling of 429 (Daily Limit) errors by tracking quotas per-model. If a key hits its daily limit on one model, it is intelligently quarantined for that specific model only, leaving the key available for use with other models."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2abce300220d3c26666a13666d5e9405b013ad5a9e1e22c3bbcccefa8f2ee127",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "2abce300220d3c26666a13666d5e9405b013ad5a9e1e22c3bbcccefa8f2ee127",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 2,
+						"exe": 1,
+						"h": 177,
+						"html": 16,
+						"ini": 17,
+						"lib": 4,
+						"md": 16,
+						"mo": 16,
+						"po": 16,
+						"py": 63,
+						"pyd": 4,
+						"typed": 1
+					},
+					"file_types": {
+						"HTML": 16,
+						"Portable Executable": 7,
+						"unknown": 312
+					},
+					"highest_datetime": "2026-07-20 19:54:26",
+					"lowest_datetime": "2026-07-20 19:53:56",
+					"num_children": 335,
+					"type": "ZIP",
+					"uncompressed_size": 100255192
+				},
+				"contenthash": "f52c54b3b8c7fce8b97a696ecbcd6ac8",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "0b8b00bdcf11b212d078a0f5d6894f67"
+				},
+				"first_submission_date": 1784577406,
+				"last_analysis_date": 1784577406,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260720",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260719",
+						"engine_version": "6.800",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260720",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260720",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260720",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260720",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260720",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260720",
+						"engine_version": "260720-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260720",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260720",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260720",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260719",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260720",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260720",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260720",
+						"engine_version": "1.5.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260709",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260720",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260720",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260720",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260720",
+						"engine_version": "4.0.273",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260720",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260720",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260720",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260720",
+						"engine_version": "GD:27.45337AVA:64.31615",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "failure",
+						"engine_name": "Google",
+						"engine_update": "20260720",
+						"engine_version": "1784574064",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260720",
+						"engine_version": "1.0.250.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260720",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260719",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260720",
+						"engine_version": "14.64.60196",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260720",
+						"engine_version": "14.64.60196",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260720",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260720",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260720",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260720",
+						"engine_version": "3.1.0.246",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260720",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260720",
+						"engine_version": "1.2.0.15146",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260720",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260720",
+						"engine_version": "1.1.26060.3008",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260720",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260720",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260720",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260720",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260717",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260720",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260720",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260720",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260720",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260720",
+						"engine_version": "2026-07-20.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260720",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260708",
+						"engine_version": "4.0.14.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260720",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260720",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260720",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "failure",
+						"engine_name": "Trustlook",
+						"engine_update": "20260720",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260718",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260720",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260720",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260720",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260720",
+						"engine_version": "9.5.1253",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260720",
+						"engine_version": "38820",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260720",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260720",
+						"engine_version": "2.0.0.5645",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260720",
+						"engine_version": "6.26-117392329",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260720",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260720",
+						"engine_version": "2c37b60:2c37b60:a2fd4d3:a2fd4d3",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260720",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 7,
+					"undetected": 64
+				},
+				"last_modification_date": 1784577512,
+				"last_submission_date": 1784577406,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"md5": "5bab9182993399b22c6bcd6b0df7a152",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "5be827a28aabe01e7c63fe4da0718c17fc18a982",
+				"sha256": "2abce300220d3c26666a13666d5e9405b013ad5a9e1e22c3bbcccefa8f2ee127",
+				"size": 38678570,
+				"ssdeep": "786432:7irIVxRQC4vycIuJBzkYrQx3JIakmnH2hMwGWeaxgv3wFihpV:4IVxRQC4vqu/xrQxqqHkMw3ejfw0x",
+				"tags": [
+					"zip",
+					"contains-pe"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1598733A7C89CD24AEDB2E4BEE0941BE771EF52EC804A744E642DD0CB59C3BDA01853C5",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Zip Application",
+						"probability": 72.4
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 27.5
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "5c0fe2b63f3cb585f0d826276f3aa272"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6945"
+}
