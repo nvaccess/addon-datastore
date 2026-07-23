@@ -28,5 +28,47 @@
 	"changelog": "\n## Changed\n- Station search, browsing by country/tag, and the top-stations list now use a local cache of the full station catalog instead of querying the Radio Browser API every time. This makes searches and filtering nearly instant and removes the network delay that could previously freeze the UI during a search.\n- The local cache is synced from the server automatically in the background (every 12 hours, or immediately if no cache exists yet). If a sync fails, the previous cache is kept so search keeps working.\n- Added an \"Update Station List\" button (next to Close) to manually re-sync the station list from the server on demand, instead of waiting for the automatic background refresh.\n- Add Dutch localization of the interface and user guide.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1784783940000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/75502cfaa4e31596920df36271837b5fc23ff65882c9231a19e577628dacbc1d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "75502cfaa4e31596920df36271837b5fc23ff65882c9231a19e577628dacbc1d",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "48664c54c09a49e1cf2d5c0af07b2567"
+				},
+				"first_submission_date": 1784783945,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1784784042,
+				"last_submission_date": 1784783945,
+				"md5": "8f2930fe923cf70de6a70a272c88ffd9",
+				"names": [],
+				"reputation": 0,
+				"sha1": "ba0fd292966c5dfd1f81ad1728c1ed8d7e19d2b1",
+				"sha256": "75502cfaa4e31596920df36271837b5fc23ff65882c9231a19e577628dacbc1d",
+				"size": 45736963,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
