@@ -1,0 +1,38 @@
+{
+	"addonId": "siamSquare",
+	"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+	"URL": "https://github.com/chaichaimee/siamSquare/releases/download/2026.7.7/siamSquare-v2026.7.7.nvda-addon",
+	"description": "A Thai word repository containing over 30,000 Thai words with Thai definitions.\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary",
+	"sha256": "6d8d8f47c1973360018800c43283536558193b678f54a67924fdec294a9c05d3",
+	"addonVersionName": "2026.7.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/siamSquare",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/siamSquare",
+	"changelog": "fix on_replace_click: When selecting an item, close the dialog with EndModal immediately, then use wx.CallAfter to call execute_replacement after focus returns to the document.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1784875831000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+			"description": "A Thai word repository containing over 30,000 Thai words with Thai definitions.\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary"
+		}
+	]
+}
