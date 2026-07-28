@@ -22,6 +22,8 @@ scanned_count=0
 while IFS= read -r -d '' file; do
 	((scanned_count += 1))
 	tmp_file=$(mktemp)
+	formatted_file=$(mktemp)
+	trap 'rm -f "$tmp_file" "$formatted_file"' EXIT
 
 	# Remove legacy keys from every object; missing keys are ignored safely.
 	jq 'walk(
@@ -33,13 +35,14 @@ while IFS= read -r -d '' file; do
 	)' "$file" > "$tmp_file"
 
 	if ! cmp -s "$file" "$tmp_file"; then
-		jq --tab . "$tmp_file" > "$file"
-		rm -f "$tmp_file"	
+		jq --tab . "$tmp_file" > "$formatted_file"
+		mv -f "$formatted_file" "$file"
 		((updated_count += 1))
 		echo "Updated: $file"
-	else
-		rm -f "$tmp_file"
 	fi
+
+	rm -f "$tmp_file" "$formatted_file"
+	trap - EXIT
 done < <(find "$addons_dir" -type f -name '*.json' -print0)
 
 echo "Scanned $scanned_count JSON files in '$addons_dir'."
