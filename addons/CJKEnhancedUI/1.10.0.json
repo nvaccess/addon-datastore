@@ -38,42 +38,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/3ee402298414d405a050476619fbbe3d08b898d301aa946adaac757ded853b5b",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with a-z in the same character class, and is equivalent to \\[A-Z\\\\[\\\\\\\\]^_`a-z\\]."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/cjkEnhancedUI.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 78,
-								"startColumn": 27,
-								"endColumn": 30
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "eca08ecd6568119:1",
-					"primaryLocationStartColumnFingerprint": "26"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "3ee402298414d405a050476619fbbe3d08b898d301aa946adaac757ded853b5b",
