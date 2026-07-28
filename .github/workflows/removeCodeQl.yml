@@ -1,0 +1,49 @@
+name: remove codeQl keys for add-ons metadata
+
+on:
+  workflow_dispatch:
+jobs:
+  removeCodeQl:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.13]
+    steps:
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v8.2.0
+      - name: Checkout code
+        uses: actions/checkout@v7
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+      - name: Remove codeQl keys from add-ons metadata
+        shell: bash
+        run: bash ./remove-codeql-keys.sh
+      - name: Commit changes and create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git add addons
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          BRANCH="remove-codeql-keys-${{ github.run_id }}"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git checkout -b "$BRANCH"
+          git commit -m "Remove codeQl keys from add-ons metadata"
+          git push origin "$BRANCH"
+          gh pr create \
+            --title "Remove codeQl keys from add-ons metadata" \
+            --body "This PR removes codeQl keys from add-ons metadata." \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$BRANCH"
+            
