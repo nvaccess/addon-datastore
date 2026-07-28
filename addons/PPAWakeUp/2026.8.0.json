@@ -1,0 +1,43 @@
+{
+	"addonId": "PPAWakeUp",
+	"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+	"URL": "https://github.com/chaichaimee/PPAWakeUp/releases/download/2026.8.0/PPAWakeUp-v2026.8.0.nvda-addon",
+	"description": "Retrieve PPA Tatip Synthesizers that are stuck and return to normal operation.\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Open PPA Tatip options\nTripple Tap Open Tatip Menu",
+	"sha256": "adc7a4ac6c7c0ae221229e94b7afd8dd16a3398e9935f01dfb8c43a600798cb9",
+	"addonVersionName": "2026.8.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/PPAWakeUp",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/PPAWakeUp",
+	"changelog": "Fixed crash on CJK characters via speech filtering; triple-tap now opens a backup/restore menu; added robust process kill & portable config support; distinct beep feedback.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785210646000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+			"description": "Retrieve PPA Tatip Synthesizers that are stuck and return to normal operation.\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Open PPA Tatip options\nTripple Tap Open Tatip Menu"
+		},
+		{
+			"language": "th",
+			"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+			"description": "เรียกคืนเสียงสังเคราะห์ PPA Tatip ที่ค้างให้กลับมาทำงานตามปกติ\nปุ่มลัด:\nWindows+P\nแตะ 1 ครั้ง: ปลุก PPA Tatip\nแตะ 2 ครั้ง: เปิดตัวเลือก PPA Tatip\nแตะ 3 ครั้ง: เปิดเมนู Tatip"
+		}
+	]
+}
