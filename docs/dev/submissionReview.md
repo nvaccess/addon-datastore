@@ -33,6 +33,8 @@ The process for reviewing pending first submissions is as follows:
    * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
+    * If you are unsure, leave a comment outlining why the add-on is being left open and what's needed to decide how to process it.
+    Tag another member of NV Access for a second opinion if needed.
     * When rejecting, the rejection message(s) are provided to the user as the closing reason(s).
     The issue and PR will be closed.
     Make sure to clarify any further information on the issue.
