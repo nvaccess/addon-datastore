@@ -201,17 +201,16 @@ jobs:
       vtResultsJSON: ${{ steps.setVirusTotalAnalysisStatus.outputs.vtResults }}
       vtKeySet: ${{ env.VT_API_KEY != '' }}
     steps:
-      # checkout of repo needed for posting comments to issues
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ env.branchName }}
       - name: Check if VT_API_KEY is set
         id: checkVTKey
         if: ${{ !env.VT_API_KEY }}
         run: |
           echo "VT_API_KEY secret is not set. Skipping VirusTotal analysis."
           exit 1
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.branchName }}
       - name: Install Node.js
         uses: actions/setup-node@v6
       - name: Install npm dependencies
@@ -239,7 +238,7 @@ jobs:
           Please approve the add-on submission manually or configure an API key.
           ${{ env.jobFooter }}
           EOF
-          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-not-set-up-correctly.md
+          gh -R "${{ github.repository }}" issue comment "${{ inputs.issueNumber }}" --body-file vt-not-set-up-correctly.md
       - name: Warn if analysis fails
         if: ${{ failure() && steps.setVirusTotalAnalysisStatus.outcome == 'failure' }}
         env:
@@ -253,7 +252,7 @@ jobs:
           Please ask here or email <info@nvaccess.org> if you need assistance with this process.
           ${{ env.jobFooter }}
           EOF
-          gh issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
+          gh -R "${{ github.repository }}" issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
 
   commitScanResults:
     needs: [getAddonId, virusTotal-analysis]
@@ -300,8 +299,8 @@ jobs:
           git push --set-upstream origin ${{ env.branchName }}
 
   requireSecurityManualApproval:
-    needs: [commitScanResults, virusTotal-analysis]
-    if: ${{ always() && (needs.virusTotal-analysis.result == 'failure') }}
+    needs: [commitScanResults, virusTotal-analysis, createPullRequest]
+    if: ${{ always() && (needs.virusTotal-analysis.result == 'failure') && (needs.createPullRequest.result == 'success') }}
     runs-on: ubuntu-latest
     environment:
       # Require a manual deployment approval if security analysis fails
@@ -311,8 +310,8 @@ jobs:
         run: echo "Manual approval performed"
 
   requireSubmitterManualApproval:
-    needs: [verifySubmitter]
-    if: ${{ always() && (needs.verifySubmitter.result == 'failure') }}
+    needs: [verifySubmitter, createPullRequest]
+    if: ${{ always() && (needs.verifySubmitter.result == 'failure') && (needs.createPullRequest.result == 'success') }}
     runs-on: ubuntu-latest
     environment:
       # Require a manual deployment approval if manual approval is required for the submitter
@@ -322,8 +321,8 @@ jobs:
         run: echo "Manual approval performed"
 
   passesManualReview:
-    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, commitScanResults]
-    if: ${{ always() && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
+    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, commitScanResults, createPullRequest]
+    if: ${{ always() && (needs.createPullRequest.result == 'success') && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
       - name: Confirm manual review passed
@@ -434,7 +433,12 @@ jobs:
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
       run: |
         jqCode="
-        .[\"${{ inputs.issueAuthorId }}\"].addons += [\"${{ needs.getAddonId.outputs.addonId }}\"]
+        .[\"${{ inputs.issueAuthorId }}\"].addons |= (
+          (. // []) |
+          if index(\"${{ needs.getAddonId.outputs.addonId }}\") then .
+          else . + [\"${{ needs.getAddonId.outputs.addonId }}\"]
+          end
+        )
         | .[\"${{ inputs.issueAuthorId }}\"].githubName = \"${{ inputs.issueAuthorName }}\"
         "
 
@@ -447,8 +451,12 @@ jobs:
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
       run: |
         git add submitters.json
-        git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
-        git push --set-upstream origin ${{ env.branchName }}
+        if git diff --staged --quiet; then
+          echo "No changes to submitters.json; skipping commit and push."
+        else
+          git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
+          git push --set-upstream origin ${{ env.branchName }}
+        fi
     - name: Check if discussion for this add-on exists
       id: checkDiscussion
       run: |
@@ -527,9 +535,8 @@ jobs:
         git config user.email "github-actions@github.com"
         git fetch origin master
         git merge origin/master --no-edit
-        git push --set-upstream origin ${{ env.branchName }}
-        # wait for a few seconds to ensure the PR is up to date before merging
-        sleep 3
+        # Mitigate intermittent GitHub GraphQL errors by allowing PR merge state to settle.
+        sleep 5
         gh pr merge --admin --squash ${{ env.branchName }} -b '[Automated] Merged ${{ needs.getAddonId.outputs.addonFileName }} into master (PR #${{ needs.createPullRequest.outputs.pullRequestNumber }})'
     - name: Comment on issue confirming successful submission
       env:

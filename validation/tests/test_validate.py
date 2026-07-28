@@ -68,12 +68,12 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 	def test_missingHTTPS(self):
 		url = "http://something.nvda-addon"
 		errors = list(validate.checkDownloadUrlFormat(url))
-		self.assertEqual(errors, ["Add-on download url must start with https://"])
+		self.assertEqual(errors, [f"Add-on download url must start with https:// ({url})"])
 
 	def test_missingExt(self):
 		url = "https://example.com"
 		errors = list(validate.checkDownloadUrlFormat(url))
-		self.assertEqual(errors, ["Add-on download url must end with .nvda-addon"])
+		self.assertEqual(errors, [f"Add-on download url must end with .nvda-addon ({url})"])
 
 	def test_missingHTTPsAndExt(self):
 		url = "http://example.com"
@@ -81,8 +81,8 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				"Add-on download url must start with https://",
-				"Add-on download url must end with .nvda-addon",
+				f"Add-on download url must start with https:// ({url})",
+				f"Add-on download url must end with .nvda-addon ({url})",
 			],
 		)
 
@@ -90,13 +90,14 @@ class Validate_checkDownloadUrlFormat(unittest.TestCase):
 class Validate_downloadAndValidateAddon(unittest.TestCase):
 	def test_invalidUrlStopsBeforeDownload(self):
 		with patch("_validate.validate.downloadAddon") as mock_download:
-			errors = list(validate.downloadAndValidateAddon("http://example.com", "dest.nvda-addon"))
+			url = "http://example.com"
+			errors = list(validate.downloadAndValidateAddon(url, "dest.nvda-addon"))
 
 		self.assertEqual(
 			errors,
 			[
-				"Add-on download url must start with https://",
-				"Add-on download url must end with .nvda-addon",
+				f"Add-on download url must start with https:// ({url})",
+				f"Add-on download url must end with .nvda-addon ({url})",
 			],
 		)
 		mock_download.assert_not_called()
@@ -160,7 +161,16 @@ class Validate_checkSha256(unittest.TestCase):
 			expectedSha="abc",
 		)
 		errors = list(errors)
-		self.assertEqual(errors, [f"Sha256 of .nvda-addon at URL is: {self.validSha.lower()}"])
+		self.assertEqual(
+			errors,
+			[
+				(
+					f"Sha256 of the downloaded add-on from the download URL is: {self.validSha.lower()}, expected: abc.\n"
+					"This means the file downloaded from the provided URL does not match the original file.\n"
+					"The add-on downloaded from the provided URL must not be modified, it should always match the original file."
+				),
+			],
+		)
 
 
 class Validate_checkSummaryMatchesDisplayName(unittest.TestCase):
@@ -291,7 +301,7 @@ class Validate_checkAddonId(unittest.TestCase):
 			[  # expected errors
 				(  # idMismatchError
 					"Submission data 'addonId' field does not match 'name' field"
-					f" in addon manifest: {VALID_ADDON_ID} vs {invalidID}"
+					f" in add-on manifest: {VALID_ADDON_ID} vs {invalidID}"
 				),
 			],
 			errors,
@@ -310,7 +320,7 @@ class Validate_checkAddonId(unittest.TestCase):
 				),
 				(  # idMismatch
 					"Submission data 'addonId' field does not match 'name' field"
-					f" in addon manifest: {expectedAddonId} vs {'fake'}"
+					f" in add-on manifest: {expectedAddonId} vs {'fake'}"
 				),
 			],
 			errors,
@@ -403,7 +413,11 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 		self.submissionData["lastTestedVersion"]["patch"] = 0
 		self.assertEqual(
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
-			["Last tested version error: 2018.3.0 doesn't exist"],
+			[
+				"Last tested version error: 2018.3.0 doesn't exist. "
+				"Please update the last tested NVDA version to a valid version. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+			],
 		)
 
 	def test_invalidNew(self):
@@ -412,7 +426,11 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 		self.submissionData["lastTestedVersion"]["patch"] = 0
 		self.assertEqual(
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
-			["Last tested version error: 9999.3.0 doesn't exist"],
+			[
+				"Last tested version error: 9999.3.0 doesn't exist. "
+				"Please update the last tested NVDA version to a valid version. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+			],
 		)
 
 	def test_validExperimental(self):
@@ -434,7 +452,8 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
 			[
 				"Last tested version error: 2024.1.0 is not stable yet. "
-				"Please submit add-on using the beta or dev channel.",
+				"Please submit add-on using the beta or dev channel until the RC version is released. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 
@@ -470,7 +489,11 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.submissionData["minNVDAVersion"]["patch"] = 0
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
-			["Minimum required version error: 2018.3.0 doesn't exist"],
+			[
+				"Minimum required version error: 2018.3.0 doesn't exist. "
+				"Please update the minimum required NVDA version to a valid version. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+			],
 		)
 
 	def test_invalidNew(self):
@@ -479,7 +502,11 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.submissionData["minNVDAVersion"]["patch"] = 0
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
-			["Minimum required version error: 9999.3.0 doesn't exist"],
+			[
+				"Minimum required version error: 9999.3.0 doesn't exist. "
+				"Please update the minimum required NVDA version to a valid version. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+			],
 		)
 
 	def test_validExperimental(self):
@@ -500,8 +527,9 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Minimum required version error: 2024.1.0 is not stable yet. "
-				"Please submit add-on using the beta or dev channel.",
+				"Minimum required version error: 2024.1.0 is not stable yet, it is either in beta or alpha. "
+				"Please submit add-on using the beta or dev channel until the RC version is released. "
+				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
 			],
 		)
 

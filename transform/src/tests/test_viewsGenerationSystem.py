@@ -183,15 +183,13 @@ class TestTransformation(unittest.TestCase):
 		with self.assertRaises(subprocess.CalledProcessError) as transformError:
 			self.runTransformation(expectFailure=True)
 
-		doubleEscapedDir = DATA_DIR.OUTPUT.value.replace(
-			"\\",
-			"\\\\",
-		)  # stderr escapes all the backslashes twice
-		self.assertIn(
-			"FileExistsError: [WinError 183] Cannot create a file when that file already exists: "
-			f"'{doubleEscapedDir}'",
-			# requires that runTransformation and child processes log errors to stderr
-			transformError.exception.stderr.decode("utf-8"),
+		stderr = transformError.exception.stderr.decode("utf-8")
+		self.assertIn("FileExistsError:", stderr)
+		self.assertIn("test_data", stderr)
+		self.assertIn("output", stderr)
+		self.assertTrue(
+			"File exists" in stderr or "already exists" in stderr,
+			msg=stderr,
 		)
 
 	def _assertAddonDataWritten(self, *expectedAddons: ExpectedAddonVersion):

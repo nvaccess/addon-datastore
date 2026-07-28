@@ -8,45 +8,44 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v6
     - name: Create validation errors file
       run: echo "" > validationErrors.md
     - name: Install the latest version of uv
-      uses: astral-sh/setup-uv@v7
+      uses: astral-sh/setup-uv@v8.2.0
     - name: Regenerate json
       run: |
-        validation/regenerateJson `
-        --dir ..\addons `
-        --output validationErrors.md
+        uv run --directory validation -m _validate.regenerateJson \
+          --dir ../addons \
+          --output validationErrors.md
     - name: Commit changes and open PR
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        $baseBranch = "${{ github.ref_name }}"
-        $headBranch = "regenJson${{ github.run_id }}-${{ github.run_attempt }}"
+        baseBranch="${{ github.ref_name }}"
+        headBranch="regenJson${{ github.run_id }}-${{ github.run_attempt }}"
 
         git add addons
-        git diff --staged --quiet
-        if ($LASTEXITCODE -eq 0) {
+        if git diff --staged --quiet; then
           echo "No changes to commit; skipping PR creation."
-        } else {
+        else
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git checkout -b $headBranch
+          git checkout -b "$headBranch"
           git commit -m "[Automated] Regenerate json files"
-          git push --set-upstream origin $headBranch
+          git push --set-upstream origin "$headBranch"
 
-          $prUrl = gh pr create `
-            --base $baseBranch `
-            --head $headBranch `
-            --title "[Automated] Regenerate json files" `
-            --body "Regenerated json files for add-ons. Triggered from workflow run ${{ github.run_id }}."
+          prUrl=$(gh pr create \
+            --base "$baseBranch" \
+            --head "$headBranch" \
+            --title "[Automated] Regenerate json files" \
+            --body "Regenerated json files for add-ons. Triggered from workflow run ${{ github.run_id }}.")
 
-          gh pr merge $prUrl --squash --delete-branch
-        }
+          gh pr merge "$prUrl" --squash --delete-branch
+        fi
     - name: Upload validation errors as artifact
       if: failure()
       uses: actions/upload-artifact@v6
