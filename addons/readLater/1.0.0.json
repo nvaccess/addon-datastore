@@ -30,42 +30,6 @@
 	"translations": [],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/6ee310d5f9a72b6816b998a42335fb53d5741122c57f367f69621c1a7a2dd3af",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/bad-tag-filter",
-				"rule": {
-					"id": "py/bad-tag-filter",
-					"index": 15,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "This regular expression does not match script end tags like </script >."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/readLater.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 882,
-								"startColumn": 21,
-								"endColumn": 46
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "7d01b0c54831d35f:1",
-					"primaryLocationStartColumnFingerprint": "16"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "6ee310d5f9a72b6816b998a42335fb53d5741122c57f367f69621c1a7a2dd3af",

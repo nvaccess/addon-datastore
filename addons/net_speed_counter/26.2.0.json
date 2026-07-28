@@ -56,42 +56,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/59f5677f48e729b92766d5ba2e468b18e35f5bb397a4762721bec5ea4cd3a033",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/insecure-default-protocol",
-				"rule": {
-					"id": "py/insecure-default-protocol",
-					"index": 25,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Call to deprecated method ssl.wrap_socket does not specify a protocol, which may result in an insecure default being used."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/net_speed_counter/speedtest.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 490,
-								"startColumn": 33,
-								"endColumn": 59
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "5c6a57138797c8d0:1",
-					"primaryLocationStartColumnFingerprint": "12"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "59f5677f48e729b92766d5ba2e468b18e35f5bb397a4762721bec5ea4cd3a033",

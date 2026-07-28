@@ -86,62 +86,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/0afb02d76eb1dca399cba06094579a852b18627693c9085f062645fff3c2918f",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/insecure-protocol",
-				"rule": {
-					"id": "py/insecure-protocol",
-					"index": 26,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Insecure SSL/TLS protocol version TLSv1 allowed by [call to ssl.create_default_context](1).\nInsecure SSL/TLS protocol version TLSv1_1 allowed by [call to ssl.create_default_context](1)."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/nao/framework/generic/http.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 84,
-								"startColumn": 11,
-								"endColumn": 14
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "d572e7c74b7b2aac:1",
-					"primaryLocationStartColumnFingerprint": "7"
-				},
-				"relatedLocations": [
-					{
-						"id": 1,
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/nao/framework/generic/http.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 79,
-								"startColumn": 10,
-								"endColumn": 38
-							}
-						},
-						"message": {
-							"text": "call to ssl.create_default_context"
-						}
-					}
-				]
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "0afb02d76eb1dca399cba06094579a852b18627693c9085f062645fff3c2918f",
