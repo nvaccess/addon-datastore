@@ -56,42 +56,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/bad-tag-filter",
-				"rule": {
-					"id": "py/bad-tag-filter",
-					"index": 15,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "This regular expression only parses --> and not --!> as a HTML comment end tag."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/AIHub/libs/markdown_it/rules_block/html_block.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 21,
-								"startColumn": 41,
-								"endColumn": 44
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "f65ec8c2fcedf145:1",
-					"primaryLocationStartColumnFingerprint": "36"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "371276913ee7610ed27a74f34dcb7827db52a7aad2d71778b12dba923e0874e7",

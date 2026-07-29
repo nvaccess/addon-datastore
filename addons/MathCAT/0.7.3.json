@@ -76,42 +76,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/eee6f5c097fb1237b5cf1dcb213211d39912b9634d6a600392c410721f61d925",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\ufffd-\\ufffd in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/MathCAT/yaml/reader.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 145,
-								"startColumn": 45,
-								"endColumn": 48
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "5a88ec6d0eb4f05:1",
-					"primaryLocationStartColumnFingerprint": "40"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "eee6f5c097fb1237b5cf1dcb213211d39912b9634d6a600392c410721f61d925",

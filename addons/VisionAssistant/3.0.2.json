@@ -80,42 +80,6 @@
 	],
 	"vtScanUrl": "https://www.virustotal.com/gui/file/9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
 	"scanResults": {
-		"codeQL-warnings": [
-			{
-				"ruleId": "py/overly-large-range",
-				"rule": {
-					"id": "py/overly-large-range",
-					"index": 5,
-					"toolComponent": {
-						"index": 0
-					}
-				},
-				"message": {
-					"text": "Suspicious character range that overlaps with \\w in the same character class."
-				},
-				"locations": [
-					{
-						"physicalLocation": {
-							"artifactLocation": {
-								"uri": "addon/globalPlugins/visionAssistant/lib/markdown/extensions/wikilinks.py",
-								"uriBaseId": "%SRCROOT%",
-								"index": 0
-							},
-							"region": {
-								"startLine": 54,
-								"startColumn": 33,
-								"endColumn": 36
-							}
-						}
-					}
-				],
-				"partialFingerprints": {
-					"primaryLocationLineHash": "519eb9bd4ab56ccd:1",
-					"primaryLocationStartColumnFingerprint": "24"
-				}
-			}
-		],
-		"codeQL-errors": [],
 		"virusTotal": [
 			{
 				"_id": "9e253af86648c15e0d7f1fa8b8ea556f703cc76d0ed5bf365b2206d602630403",
