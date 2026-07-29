@@ -28,5 +28,47 @@
 	"changelog": "Version 0.3:\n- Added browser runtime selection (Microsoft Edge or Google Chrome) directly in NVDA settings.\n- Moved browser profile storage to AppData\\Local for cache stability and hidden background helper windows.\n- Added Filter by language dropdown and orphaned voice packages cleanup in Voice Manager.\n- Fixed cut-off speech on the first utterance and reduced speech synthesis latency.\n- Integrated 180 Google TTS voice packages and normalized language codes.\n- Added full localization system and complete Vietnamese translation.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1785303286000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/3963a94493d2be7d9dceb6a8358f6bfefcfff2909ba73035f2c8689969d80497",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "3963a94493d2be7d9dceb6a8358f6bfefcfff2909ba73035f2c8689969d80497",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "50ea7b129ac007be7b566ca111b5dc1c"
+				},
+				"first_submission_date": 1785303290,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1785303292,
+				"last_submission_date": 1785303290,
+				"md5": "4002e770a3e30aed326e6aeb9e7cd09c",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e88d84c493544be3e90ae90d0eb119e03896339e",
+				"sha256": "3963a94493d2be7d9dceb6a8358f6bfefcfff2909ba73035f2c8689969d80497",
+				"size": 6563498,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
