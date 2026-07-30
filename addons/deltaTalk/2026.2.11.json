@@ -1,0 +1,45 @@
+{
+	"addonId": "deltaTalk",
+	"displayName": "MicroPower DeltaTalk TTS",
+	"URL": "https://github.com/wendrillaksenow/deltaTalkTTS/releases/download/2026.02.11/deltaTalk-2026.02.11.nvda-addon",
+	"description": "DeltaTalk is the first high-quality speech synthesizer available for the Portuguese language.\nThis add-on implements NVDA compatibility with this synthesizer.",
+	"sha256": "c301db6ab097d48c3aa77f897c119041309627bd224c3c816d34622525603944",
+	"addonVersionName": "2026.02.11",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 11
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Patrick Barboza <patrickbarboza774@gmail.com>, Wendrill Aksenow Brandão <wendrillaksenow@gmail.com>",
+	"sourceURL": "https://github.com/wendrillaksenow/deltaTalkTTS",
+	"license": "GPL v2",
+	"homepage": "https://github.com/wendrillaksenow/deltaTalkTTS",
+	"changelog": "- The main new feature in this version is compatibility with the new 64-bit version of NVDA.\n\n    - Since the original engine (Dtalk32.dll) is 32-bit and cannot be recompiled, the driver has been split. Now, a \"bridge\" (proxy) runs in NVDA's 64-bit main process and communicates with the full logic, which remains in a 32-bit subprocess.\n    - Within the 32-bit subprocess, virtually all \"log.debug\" and \"log.error\" messages have been removed (the synthDriverHost32 environment is more restricted than that of the full NVDA). In practice, this makes it harder to diagnose problems that occur specifically within that subprocess, since fewer details are recorded in the NVDA log. However, this is a measure we have adopted temporarily while we explore safe ways to reintroduce them.\n\n- The keyboard shortcut for \"Virtual Vision Mode\" has changed from \"NVDA+Shift+V\" to \"NVDA+Control+Shift+V\" to avoid conflicts with the \"Vision Assistant Pro\" add-on.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785435625000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "MicroPower DeltaTalk TTS",
+			"description": "DeltaTalk é o primeiro sintetizador de voz de alta qualidade, disponível para a língua portuguesa.\nEste complemento implementa a compatibilidade do NVDA com este sintetizador.",
+			"changelog": "- A principal novidade desta versão é a compatibilidade com a nova versão de 64 bits do NVDA.\n\n    - Como o motor original (Dtalk32.dll) é de 32 bits e não pode ser recompilado, o driver foi dividido. Agora, uma \"ponte\" (proxy) é executada no processo principal de 64 bits do NVDA e se comunica com a lógica completa, que permanece em um subprocesso de 32 bits.\n    - No subprocesso de 32 bits, praticamente todas as mensagens \"log.debug\" e \"log.error\" foram removidas (o ambiente do synthDriverHost32 é mais restrito do que o do NVDA completo). Na prática, isso torna mais difícil diagnosticar problemas que ocorrem especificamente nesse subprocesso, uma vez que são registrados menos detalhes no log do NVDA. No entanto, trata-se de uma medida que adotamos temporariamente, enquanto procuramos formas seguras de reintroduzi-las.\n\n- O atalho de teclado para o \"Modo Virtual Vision\" mudou de \"NVDA+Shift+V\" para \"NVDA+Control+Shift+V\" para evitar conflitos com o complemento \"Assistente de Visão Pro\"."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "MicroPower DeltaTalk TTS",
+			"description": "O DeltaTalk é o primeiro sintetizador de fala de alta qualidade, disponível para a língua portuguesa.\nEste extra implementa a compatibilidade do NVDA com este sintetizador.",
+			"changelog": "- A principal novidade desta versão é a compatibilidade com a nova versão de 64 bits do NVDA.\n\n    - Uma vez que o motor original (Dtalk32.dll) é de 32 bits e não pode ser recompilado, o controlador foi dividido. Agora, uma \"ponte\" (proxy) é executada no processo principal de 64 bits do NVDA e comunica com a lógica completa, que permanece num subprocesso de 32 bits.\n    - No subprocesso de 32 bits, praticamente todas as mensagens \"log.debug\" e \"«log.error\"» foram removidas (o ambiente do synthDriverHost32 é mais restrito do que o do NVDA completo). Na prática, isto torna mais difícil diagnosticar problemas que ocorrem especificamente nesse subprocesso, uma vez que são registados menos detalhes no log do NVDA. No entanto, trata-se de uma medida que adotámos temporariamente, enquanto procuramos formas seguras de as reintroduzir.\n\n- O atalho de teclado para o \"Modo Virtual Vision\" mudou de \"NVDA+Shift+V\" para \"NVDA+Control+Shift+V\" para evitar conflitos com o extra \"Assistente de Visão Pro\"."
+		}
+	]
+}
