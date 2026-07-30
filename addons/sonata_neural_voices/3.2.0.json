@@ -1,0 +1,51 @@
+{
+	"addonId": "sonata_neural_voices",
+	"displayName": "Sonata Neural Voices",
+	"URL": "https://github.com/austek/sonata-nvda/releases/download/v3.2.0/sonata_neural_voices-3.2.0.nvda-addon",
+	"description": "Neural voices for NVDA based on Sonata",
+	"sha256": "f3992cc63580e89d19624486e310826d1e8853c47541420cbf3196bf81b5efe1",
+	"addonVersionName": "3.2.0",
+	"addonVersionNumber": {
+		"major": 3,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ali Ustek",
+	"sourceURL": "https://github.com/austek/sonata-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/austek/sonata-nvda",
+	"changelog": "First stable release of the maintenance fork. Adds NVDA 2026.1 compatibility (Python 3.13, 64-bit) by rebuilding the bundled gRPC, miniaudio, and cffi binaries. Fixes voice list URL handling, voice install regex for names containing digits, voice list refresh after a successful download, install-from-local-file UX and error messages, and adds a Visual C++ Redistributable pre-flight check.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785447789000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Нейронные голоса Sonata",
+			"description": "Нейронные голоса для NVDA на основе Sonata",
+			"changelog": "First stable release of the maintenance fork. Adds NVDA 2026.1 compatibility (Python 3.13, 64-bit) by rebuilding the bundled gRPC, miniaudio, and cffi binaries. Fixes voice list URL handling, voice install regex for names containing digits, voice list refresh after a successful download, install-from-local-file UX and error messages, and adds a Visual C++ Redistributable pre-flight check."
+		},
+		{
+			"language": "fr",
+			"displayName": "Voix neuronales de Sonata",
+			"description": "Voix neuronales pour NVDA basées sur Sonata",
+			"changelog": "First stable release of the maintenance fork. Adds NVDA 2026.1 compatibility (Python 3.13, 64-bit) by rebuilding the bundled gRPC, miniaudio, and cffi binaries. Fixes voice list URL handling, voice install regex for names containing digits, voice list refresh after a successful download, install-from-local-file UX and error messages, and adds a Visual C++ Redistributable pre-flight check."
+		},
+		{
+			"language": "es",
+			"displayName": "Voces Neuronales Sonata",
+			"description": "Voces neuronales para NVDA basado en Sonata",
+			"changelog": "First stable release of the maintenance fork. Adds NVDA 2026.1 compatibility (Python 3.13, 64-bit) by rebuilding the bundled gRPC, miniaudio, and cffi binaries. Fixes voice list URL handling, voice install regex for names containing digits, voice list refresh after a successful download, install-from-local-file UX and error messages, and adds a Visual C++ Redistributable pre-flight check."
+		}
+	]
+}
