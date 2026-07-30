@@ -1,0 +1,45 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/v2026.7.0/easyTableCopy-2026.7.0.nvda-addon",
+	"description": "EasyTableCopy is an NVDA add-on designed to solve a common frustration: copying tables from the Web or lists from Windows into documents (like Word, Excel, or Outlook) without losing formatting or layout.",
+	"sha256": "104822fecfb3811c31bbfda736998d9bcc216368bd71a2e3f961874ee3cec969",
+	"addonVersionName": "2026.7.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n### Added\n- Row/item marking and copying of marked items now also works in list types beyond web lists and web tables.\n- When navigating to a marked item, EasyTableCopy now announces \"marked\":\n  - In web lists, via `I` / `Shift+I` (next/previous list item).\n  - In web tables, via `Ctrl+Alt+Down` / `Ctrl+Alt+Up` (next/previous row).\n  - In other (non-web) lists, via the Up/Down arrow keys.\n- The \"marked\" announcement is now spoken before the item's name, instead of after it.\n- Marks from a previously visited list/table are now cleared automatically when you start marking in a different list/table, so stale selections from an earlier list no longer linger.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785408392000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Легке копіювання таблиці",
+			"description": "EasyTableCopy — це доповнення NVDA, призначене для вирішення поширених проблем: копіювання таблиць з Інтернету або списків із Windows у документи (наприклад, Word, Excel або Outlook) без втрати форматування чи макета.",
+			"changelog": "\n### Added\n- Row/item marking and copying of marked items now also works in list types beyond web lists and web tables.\n- When navigating to a marked item, EasyTableCopy now announces \"marked\":\n  - In web lists, via `I` / `Shift+I` (next/previous list item).\n  - In web tables, via `Ctrl+Alt+Down` / `Ctrl+Alt+Up` (next/previous row).\n  - In other (non-web) lists, via the Up/Down arrow keys.\n- The \"marked\" announcement is now spoken before the item's name, instead of after it.\n- Marks from a previously visited list/table are now cleared automatically when you start marking in a different list/table, so stale selections from an earlier list no longer linger.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, yaygın bir sıkıntıyı çözmek için tasarlanmış bir NVDA eklentisidir: Web'deki tabloları veya Windows'da listeleri belgelere (Word, Excel veya Outlook gibi) biçimlendirme veya düzeni kaybetmeden kopyalamak.",
+			"changelog": "\n### Eklendi\n- İşaretli öğelerin satır/öğe işaretlemesi ve kopyalanması artık web listeleri ve web tablolarının dışında bazı liste türlerinde de çalışıyor.\n- İşaretli bir öğeye gelindiğinde EasyTableCopy artık \"işaretlendi\" ifadesini ekliyor:\n  - Web listelerinde, \"I\" / \"Shift+I\" (sonraki/önceki liste öğesi) aracılığıyla.\n  - Web tablolarında, 'Ctrl+Alt+Aşağı' / 'Ctrl+Alt+Yukarı' (sonraki/önceki satır) aracılığıyla.\n  - Diğer (web dışı) listelerde Yukarı/Aşağı ok tuşları kullanıldığında.\n- \"İşaretli\" duyurusu artık öğenin adından sonra değil, adından önce söyleniyor.\n- Daha önce ziyaret edilen bir liste/tablodaki işaretler artık farklı bir listede/tabloda işaretlemeye başladığınızda otomatik olarak silinir, böylece daha önceki bir listedeki eski seçimler iptal edilerek karışıklık engellenir.\n"
+		}
+	]
+}
