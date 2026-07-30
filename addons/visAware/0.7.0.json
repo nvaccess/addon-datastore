@@ -1,0 +1,87 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.7.0/visAware-0.7.0.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "b8537ad41abe882dda8f0c5b65b336b58bf7774b8af7fa072013a4aa43b2d9a0",
+	"addonVersionName": "0.7.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.7.0\n\n* Added the Apple Vision (OCR Server) engine for local-network OCR through the open-source OCR Server iOS app.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785426124000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 0.7.0\n\n* 新增 Apple Vision（OCR Server）引擎，可通过开源 iOS 应用 OCR Server 在局域网中进行 OCR。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 0.7.0\n\n* Додано рушій Apple Vision (OCR Server) для локального мережевого розпізнавання тексту за допомогою застосунку OCR Server з відкритим кодом для iOS."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b8537ad41abe882dda8f0c5b65b336b58bf7774b8af7fa072013a4aa43b2d9a0",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b8537ad41abe882dda8f0c5b65b336b58bf7774b8af7fa072013a4aa43b2d9a0",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000080f0e0400",
+					"raw_md5": "e84e7ec337d8238818b984aa9082979c"
+				},
+				"first_submission_date": 1785426128,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1785426142,
+				"last_submission_date": 1785426128,
+				"md5": "db7952806002d75385923b9bb1403059",
+				"names": [],
+				"reputation": 0,
+				"sha1": "777df3c4c9daaa2360e6dfa5dfd07f5cfa5be7a8",
+				"sha256": "b8537ad41abe882dda8f0c5b65b336b58bf7774b8af7fa072013a4aa43b2d9a0",
+				"size": 249836,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10351"
+}
