@@ -1,0 +1,51 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.1.1/polyglot-1.1.1.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "e90894d29705d28b763c2f2a139805455d5d854c8cc51c0a5728b926f3c9c3ad",
+	"addonVersionName": "1.1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GNU General Public License version 3 or later",
+	"homepage": "https://github.com/cary-rowen/polyglot",
+	"changelog": "### 1.1.1\n\n- Fixed repeated current-character review failing after version 1.1.0 by preserving NVDA's\n  `speech.spellTextInfo` keyword-argument contract.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1785428413000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.1.1\n\n- Fixed repeated current-character review failing after version 1.1.0 by preserving NVDA's\n  `speech.spellTextInfo` keyword-argument contract."
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.1.1\n\n- Fixed repeated current-character review failing after version 1.1.0 by preserving NVDA's\n  `speech.spellTextInfo` keyword-argument contract."
+		},
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.1.1\n\n- Fixed repeated current-character review failing after version 1.1.0 by preserving NVDA's\n  `speech.spellTextInfo` keyword-argument contract."
+		}
+	]
+}
