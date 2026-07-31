@@ -1,0 +1,31 @@
+{
+	"addonId": "selectionInfo",
+	"displayName": "Selection Info – Detailed analysis of selected text",
+	"URL": "https://github.com/kasturibhosale2207-svg/selectionAnnouncer/releases/download/v1.0/selectionInfo-1.0.nvda-addon",
+	"description": "Provides comprehensive information about selected text with multiple shortcut keys, each supporting multiple presses to cycle through features.\n\nShortcuts:\n• Ctrl+Shift+A – Character count (1st press), word count (2nd), line count (3rd)\n• Ctrl+Shift+Q – Sentence count (1st), longest and shortest words (2nd), number/digit count (3rd)\n• Ctrl+Shift+E – Copy to clipboard (1st), selected emails count (2nd), selection info (3rd), save to file (4th)\n• Ctrl+Shift+R – Copy only digits from selection\n• Ctrl+Shift+Y – Maths calculations: addition (1st), subtraction (2nd), multiplication (3rd), division (4th)\n• Ctrl+Shift+F – Announce and copy the last maths result\n• Ctrl+Shift+O – Extract URLs (1st), open extracted URLs in browser (2nd)\n• Ctrl+Shift+V – Play/stop voice guide (audio file must be present)\n\nAll features can be enabled/disabled in NVDA Settings → Selection Info.\nDouble‑press timeout and auto‑save location are also configurable.\nAuthor: Kasturi Bhosale\nMinimum NVDA version: 2023, last tested: 2026.1",
+	"sha256": "f9ba50d8d3c4e49bcbb8a057e44ff740e0adb11ea061b0b303d8fdc65c843800",
+	"addonVersionName": "1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kasturi bhosale",
+	"sourceURL": "https://github.com/kasturibhosale2207-svg/selectionAnnouncer",
+	"license": "GPL v2",
+	"changelog": "Initial release.\nAll core features implemented:\n- Text statistics (characters, words, lines, sentences, longest/shortest words, number count)\n- Clipboard copy, save to file, and selection info summary\n- Email selection count (Outlook, Gmail, Outlook Web)\n- Maths calculations (add, subtract, multiply, divide)\n- URL extraction and opening\n- Copy digits only\n- Voice guide for all commands\n- Fully configurable settings panel",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785514505000,
+	"translations": []
+}
