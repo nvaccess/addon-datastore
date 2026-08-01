@@ -1,0 +1,75 @@
+{
+	"addonId": "hardSubReader",
+	"displayName": "HardSub Reader",
+	"URL": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader/releases/download/v1.2.0/hardSubReader-1.2.0.nvda-addon",
+	"description": "Reads hardcoded (burned-in) video subtitles, also known as hardsubs, aloud in real time using the high-accuracy Windows 11 OneOCR engine, with automatic fallback to legacy Windows OCR. Press NVDA+alt+shift+s to toggle. Configure in NVDA Settings, HardSub Reader category.",
+	"sha256": "725bf4c8c2ec9001181c74fb72c380f41787ca86118c66012ca3d5275b74efaa",
+	"addonVersionName": "1.2.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Shaima Almarzooqi",
+	"sourceURL": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader",
+	"changelog": "\n* Added noise filtering: a list of phrases or patterns that are never read aloud.\n* Choose from built-in options (timestamps, ALL-CAPS watermarks, ad-skip prompts, symbol-only misreads) or type your own phrases.\n* Custom phrases match a whole subtitle line exactly, so they cannot accidentally remove dialogue that merely contains the same words.\n* Advanced: start a line with `regex:` to use a regular expression instead of plain text.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785392430000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/725bf4c8c2ec9001181c74fb72c380f41787ca86118c66012ca3d5275b74efaa",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "725bf4c8c2ec9001181c74fb72c380f41787ca86118c66012ca3d5275b74efaa",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000100",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1785392438,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1785392440,
+				"last_submission_date": 1785392438,
+				"md5": "7e88e6b33b968d6df395ee4dd794267b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "71e762bc3087585dbeefc155dd3dc168c2661c62",
+				"sha256": "725bf4c8c2ec9001181c74fb72c380f41787ca86118c66012ca3d5275b74efaa",
+				"size": 29079953,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10507"
+}
