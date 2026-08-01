@@ -1,0 +1,32 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.21.0/freeradio-2026.21.0.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "4d77ee0a47ab4ecd5d4c165a47ec20054a4f96d87e9e54ae510dc5e648b62540",
+	"addonVersionName": "2026.21.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 21,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n**Fixed**\n- **ICY \"Now Playing\" titles containing an apostrophe were truncated.** The `StreamTitle` regex in `radioPlayer.py` stopped at the first `'` it found, so any title with an apostrophe (e.g. *\"Don't Stop Believin'\"*) was cut short. The parser now matches up to the closing `';` delimiter that ICY metadata actually uses, so apostrophes inside the title no longer break the match.\n- Added: **Liked song context menu (Liked Songs Tab)**\n- Right-click a station (or press the Applications key / Shift+F10) to bring up a new context menu with quick actions\n- Fixed: rewind/fast-forward stopped working after pausing and resuming\n  playback. Pausing and resuming advanced the internal playback generation\n  counter twice without re-syncing the time-shift buffer's own counter,\n  so the buffer was permanently (and incorrectly) treated as stale for\n  the rest of the session.\n- Fixed: on HLS (.m3u8) stations, rewinding or fast-forwarding could land\n  at the wrong point in time, and the \"N seconds behind live\" readout\n  could show inconsistent or even negative values. The buffered-duration\n  estimate was based on wall-clock time since capture started, which\n  drifts from the actual amount of audio captured on HLS stations\n  (manifest polling delays, segment-fetch latency, and bursty catch-up\n  downloads all throw it off). Buffered duration for HLS is now computed\n  from each segment's own declared duration, matching what is actually\n  in the buffer.\n\n- Improved: trimming the old end of an HLS time-shift buffer now always\n  drops whole segments instead of an estimated byte count, avoiding a\n  rare risk of cutting a segment in half and producing a corrupt tail.\n- **Time-shift (rewind) buffer could silently stop engaging, even after re-enabling it.** `rewind_timeshift()` gates on two internal generation counters staying in sync; a few code paths (station launch, resume-from-pause, a successful stall reconnect) correctly re-synced them, but `set_timeshift_enabled()` did not. If playback generation advanced elsewhere (e.g. a brief stream stall/reconnect) without a matching sync, rewind would permanently report \"not enough buffered audio,\" regardless of wait time, and toggling time-shift off/on for the same station could not fix it — only switching stations (which goes through the syncing path) sometimes did. `set_timeshift_enabled()` now re-syncs the buffer generation after (re)starting capture, closing that gap.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785553863000,
+	"translations": []
+}
