@@ -1,0 +1,32 @@
+{
+	"addonId": "googleTtsForNvda",
+	"displayName": "Google TTS For NVDA",
+	"URL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/releases/download/v0.5.5/googleTtsForNvda-0.5.5.nvda-addon",
+	"description": "Use Google's WASM text-to-speech voices locally through a supported Chromium browser runtime such as Google Chrome, Microsoft Edge, or Brave as an NVDA synthesizer.",
+	"sha256": "29f9868346d189a6b90dc4904da9e3ef16b7cb4d0f35faa7a894d07fca6b3251",
+	"addonVersionName": "0.5.5",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 5,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Nguyen Anh Duc <ducna1803@gmail.com>, Dao Duc Trung <trung@ddt.one> and Pham Hung Vuong <hungvuong106206@gmail.com>",
+	"sourceURL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA",
+	"changelog": "Version 0.5.5:\n- Improved automatic language profile matching across CLD2 and Google TTS language-code aliases, including Filipino/Tagalog, Javanese, legacy Hebrew codes, Norwegian variants, Arabic, and Simplified, Traditional, and Cantonese Chinese mappings.\n- Rebuilt the bundled CLD2 Windows DLLs with MSVC instead of MinGW-w64 so the packaged add-on no longer triggers the previous false-positive antivirus detection in VirusTotal testing.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785638845000,
+	"translations": []
+}
