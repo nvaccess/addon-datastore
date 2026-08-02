@@ -1,0 +1,32 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.21.1/freeradio-2026.21.1.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "4822fd612d4e24098eb16918d542c13f5a0b002737016f596ef591dcbbf8c509",
+	"addonVersionName": "2026.21.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 21,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n- Add braille messages and improve BASS device handling \n**TimeShift fixes**\n- **Time-shift buffer could get stuck reporting \"not enough buffered audio\" indefinitely.** Restarting the buffer's capture session (on station switch, on a BASS stall reconnect, and when toggling the rewind feature on) happened without any coordination between those three code paths. If two of them landed close together — most commonly a fast station switch overlapping with the buffer still starting up for the previous station — they could race, and the buffer could end up capturing one station while its internal generation counter pointed at another. Rewind would then refuse with \"not enough buffered audio\" no matter how long you waited, since nothing made the two ever match again on its own; switching stations or toggling the rewind setting off and back on happened to reset the counters and mask the problem. A shared lock now serializes these restart sequences and re-validates the current station right before acting, so a stale restart can no longer overwrite a newer one.\n- **Rewinding, then pausing for a while, then resuming broke further navigation.** On resume after a pause longer than ~10 seconds, playback always reconnected to the live stream, but the internal \"time-shifted\" flag was never cleared to match. The app kept behaving as if playback was still reading from the local buffer file, so subsequent rewind/fast-forward presses tried to seek inside a stream that could no longer be seeked, and silently did nothing — matching the reported behavior where navigation stopped working until the buffer was toggled off/on. The long-pause reconnect path now resets that state the same way a genuine station relaunch already did.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785669436000,
+	"translations": []
+}
