@@ -3,27 +3,26 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import argparse
-from collections.abc import Generator
-from glob import glob
 import json
 import os
 import re
-from typing import Any, cast
 import urllib.request
+from collections.abc import Generator
+from glob import glob
+from typing import Any, cast
 
-from jsonschema import validate, exceptions
+from jsonschema import exceptions, validate
 
 from .addonManifest import AddonManifest, ApiVersionT
-from .manifestLoader import getAddonManifest, TEMP_DIR
 from .majorMinorPatch import MajorMinorPatch
+from .manifestLoader import TEMP_DIR, getAddonManifest
 from .sha256 import sha256_checksum
-
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
 JsonObjT = dict[str, Any]
 
 
-ValidationErrorGenerator = Generator[str, None, None]
+ValidationErrorGenerator = Generator[str]
 
 
 def getAddonMetadata(filename: str) -> JsonObjT:
@@ -96,8 +95,7 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 		chunk = DOWNLOAD_BLOCK_SIZE
 		while True:
 			remainingSize = size - read
-			if remainingSize < chunk:
-				chunk = remainingSize
+			chunk = min(chunk, remainingSize)
 			block = remote.read(chunk)
 			if not block:
 				break
