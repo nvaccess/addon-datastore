@@ -1,0 +1,37 @@
+{
+	"addonId": "invisinote",
+	"displayName": "invisinote",
+	"URL": "https://github.com/ClippyCat/invisinote/releases/download/v1.7/invisinote-1.7.nvda-addon",
+	"description": "Invisinote is an NVDA add-on for reading plain-text notes without leaving the application you are working in. No window opens and focus never moves: the notes are loaded into memory and you browse them entirely with keyboard gestures, while the app you are in keeps the focus.\n\nFolders and notes:\n- NVDA+ALT+P: open the current folder in File Explorer\n- NVDA+ALT+[: previous folder\n- NVDA+ALT+]: next folder\n- NVDA+ALT+N: load the notes in the current folder\n- NVDA+ALT+U: previous note\n- NVDA+ALT+O: next note\n\nReading:\n- NVDA+ALT+SHIFT+A: read the whole note\n- NVDA+ALT+I: previous line\n- NVDA+ALT+K: next line\n- NVDA+ALT+J: previous word\n- NVDA+ALT+L: next word\n- NVDA+ALT+,: previous character\n- NVDA+ALT+.: next character\n- NVDA+ALT+H: start of line\n- NVDA+ALT+': end of line\n- NVDA+ALT+Space: render the note as Markdown and read it in a browse-mode window\n\nCopying:\n- NVDA+ALT+A: copy the whole note\n- NVDA+ALT+;: copy the current line\n- NVDA+ALT+F9: set the selection start at the current position\n- NVDA+ALT+F10: set the selection end; press twice to copy the selection\n- NVDA+ALT+BACKSPACE: clear the selection markers\n\nEncoding:\n- NVDA+ALT+E: switch to the next note encoding\n- NVDA+ALT+SHIFT+E: switch to the previous note encoding\n\nSettings live in NVDA's Settings dialog (NVDA+CTRL+S) under the Invisinote category. An Open Invisinote settings command that jumps straight to that category is available in NVDA's Input Gestures dialog, under the invisinote category, if you would like to assign a shortcut of your own.\n",
+	"sha256": "e6f152e3a6b9bd10bac16afc9632da4759d3cac098af8631f445524b4e2de1e4",
+	"addonVersionName": "1.7",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "ClippyCat",
+	"sourceURL": "https://github.com/ClippyCat/invisinote/archive/refs/tags/v1.7.zip",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ClippyCat/invisinote",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785824014000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "invisinote",
+			"description": "Invisinote 是一個 NVDA 附加元件，讓您不必離開目前正在使用的程式就能閱讀純文字筆記。它不會開啟任何視窗，焦點也不會移動：筆記會載入記憶體中，完全以鍵盤手勢瀏覽，您所在的程式仍保有焦點。\n\n資料夾與筆記：\n- NVDA+ALT+P：在檔案總管中開啟目前資料夾\n- NVDA+ALT+[：上一個資料夾\n- NVDA+ALT+]：下一個資料夾\n- NVDA+ALT+N：載入目前資料夾中的筆記\n- NVDA+ALT+U：上一則筆記\n- NVDA+ALT+O：下一則筆記\n\n閱讀：\n- NVDA+ALT+SHIFT+A：朗讀整則筆記\n- NVDA+ALT+I：上一行\n- NVDA+ALT+K：下一行\n- NVDA+ALT+J：上一個字詞\n- NVDA+ALT+L：下一個字詞\n- NVDA+ALT+,：上一個字元\n- NVDA+ALT+.：下一個字元\n- NVDA+ALT+H：行首\n- NVDA+ALT+'：行尾\n- NVDA+ALT+Space：將筆記轉譯為 Markdown，並在瀏覽模式視窗中閱讀\n\n複製：\n- NVDA+ALT+A：複製整則筆記\n- NVDA+ALT+;：複製目前這一行\n- NVDA+ALT+F9：在目前位置設定選取起點\n- NVDA+ALT+F10：設定選取終點；連按兩次即複製選取內容\n- NVDA+ALT+BACKSPACE：清除選取標記\n\n編碼：\n- NVDA+ALT+E：切換至下一個筆記編碼\n- NVDA+ALT+SHIFT+E：切換至上一個筆記編碼\n\n設定位於 NVDA 設定對話框（NVDA+CTRL+S）中的 Invisinote 類別。NVDA 的「輸入手勢」對話框中，invisinote 類別下有「開啟 Invisinote 設定」指令，可直接跳至該類別；若您想要專屬快速鍵，可在此自行指派。\n"
+		}
+	]
+}
