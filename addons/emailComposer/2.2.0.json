@@ -28,5 +28,56 @@
 	"changelog": "\n    Version 2.2.0:\n    - Gemini and Hugging Face are now tried first for higher-quality, more\n      reliable results; the free g4f backend is off by default since it\n      relies on unofficial access to third-party services and can break\n      without notice (can be re-enabled in settings)\n    - Fixed: generated text no longer permanently overwrites your clipboard -\n      your previous clipboard contents are restored after every paste\n    - Fixed: all shortcuts are now guarded against being triggered twice at\n      once (e.g. pressing NVDA+Shift+H repeatedly while busy)\n    - Fixed: language auto-detection now matches whole words only, so\n      instructions like \"German engineering\" no longer force German output\n    - Fixed: error messages are now short and screen-reader friendly instead\n      of raw technical text\n    - Added: NVDA+Shift+X to cancel a generation in progress\n    - Added: NVDA+Shift+R to regenerate the last action\n    - Added: NVDA+Shift+Y to browse recent generation history\n    - Added: spoken preview of generated text (toggle in settings)\n    - Added: periodic progress tone during slow requests so NVDA doesn't\n      feel frozen\n    - Added: provider indicator shown with translation/refine/history results\n    - Added: tone and length can now be set inline in your instructions\n      (e.g. \"a short, friendly email about...\") in addition to language\n    - Added: editable per-content-type prompt templates in settings\n    - Added: settings now disclose that API keys are stored locally in\n      plain text\n\n    Version 2.1.0:\n    - Added Content Type selection (Email, Story, Blog, Message, Social, Poem, Essay, Report)\n    - NVDA+Shift+G: Generate title for any topic\n    - NVDA+Shift+H: Generate full content (stories, blogs, emails, etc.)\n    - Auto language detection (write \"in Marathi\" for Marathi output)\n    - Your Name field in settings (used for email signatures)\n    - Uses g4f (free AI) with provider rotation\n    - Works on any platform (WhatsApp, Telegram, Notepad, etc.)\n    - Fixed: Pollinations removed, using g4f with multiple providers\n    ",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1785850135000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/db2866d1ecddb1fd59aa5e09a97979f702d3d307b3f57c96df2896256e1c46e7",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "db2866d1ecddb1fd59aa5e09a97979f702d3d307b3f57c96df2896256e1c46e7",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: aiohappyeyeballs (whl)\nVersion: 2.7.1\nDescription: Happy Eyeballs for asyncio\n\nThe analyzed package consists of legitimate open-source Python libraries (including aiohappyeyeballs, g4f, PyCryptodome, Pillow, aiohttp, requests, and qrcode) alongside installation scripts for an NVDA screen reader add-on ('AI Email Composer Pro'). No malicious behavior, obfuscated payloads, secret exfiltration, or unauthorized process executions were found.",
+						"category": "code_insight",
+						"id": "db2866d1ecddb1fd59aa5e09a97979f702d3d307b3f57c96df2896256e1c46e7-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "e6dd63fd52c12d6a0cf6a292162ba14d"
+				},
+				"first_submission_date": 1785850142,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1785850161,
+				"last_submission_date": 1785850142,
+				"md5": "7c8517728243a2b9d43b0cd6eec1dcba",
+				"names": [],
+				"reputation": 0,
+				"sha1": "7ab484daa5485284e3654fef8c145f361926aac6",
+				"sha256": "db2866d1ecddb1fd59aa5e09a97979f702d3d307b3f57c96df2896256e1c46e7",
+				"size": 12047146,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
