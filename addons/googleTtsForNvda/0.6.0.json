@@ -1,0 +1,32 @@
+{
+	"addonId": "googleTtsForNvda",
+	"displayName": "Google TTS For NVDA",
+	"URL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/releases/download/v0.6/googleTtsForNvda-0.6.nvda-addon",
+	"description": "Use Google's WASM text-to-speech voices locally through a supported Chromium browser runtime such as Google Chrome, Microsoft Edge, or Brave as an NVDA synthesizer.",
+	"sha256": "21957daa6fc47a5a7e5fb874b5405da7d57bac29a06c8944ad48855706c0bfe2",
+	"addonVersionName": "0.6",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 6,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Nguyen Anh Duc <ducna1803@gmail.com>, Dao Duc Trung <trung@ddt.one> and Pham Hung Vuong <hungvuong106206@gmail.com>",
+	"sourceURL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA",
+	"changelog": "Version 0.6:\n- Added an optional setting to make Google TTS ready faster when switching from another synthesizer. This setting is off by default; when turned on, it may use more memory while NVDA is running.\n- When this setting is enabled, Google TTS updates its background preparation after you change the selected Chromium browser runtime or install/remove voice packages.\n- Improved reliability when switching away from Google TTS, especially while speech or voice preparation is still stopping.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785807454000,
+	"translations": []
+}
