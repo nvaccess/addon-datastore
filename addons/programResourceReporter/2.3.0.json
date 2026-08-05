@@ -1,0 +1,37 @@
+{
+	"addonId": "programResourceReporter",
+	"displayName": "Program Resource Reporter",
+	"URL": "https://github.com/Ninjacoder42/programResourceReporter-nvda-addon/releases/download/2.3.0/programResourceReporter.nvda-addon",
+	"description": "This add-on lets you hear the RAM and CPU usage of the program you are focused on.\nPress NVDA+Shift+9 for its CPU usage, NVDA+Shift+0 for its RAM usage.",
+	"sha256": "ea31cdd067bb6a43d46398358a29e54bdf2bc6e2f43e648e51406a9262a584d4",
+	"addonVersionName": "2.3.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin",
+	"sourceURL": "https://github.com/Ninjacoder42/programResourceReporter-nvda-addon",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Ninjacoder42/programResourceReporter-nvda-addon",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785949840000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "ProgramResourceReporter",
+			"description": "\n此插件允许您跟踪当前程序的内存和CPU使用情况。\n按NVDA+Shift+9查看当前程序的CPU使用情况。\n按NVDA+Shift+0查看当前程序的内存使用情况。\n您可以在输入手势的程序资源使用情况子项中更改如下功能的快捷键：\n报告当前程序的物理内存使用情况。\n报告当前程序的CPU使用率。\n您还可以指定一个快捷键来查看CPU所有内核的负载情况。\n"
+		}
+	]
+}
