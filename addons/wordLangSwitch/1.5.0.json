@@ -1,0 +1,81 @@
+{
+	"addonId": "wordLangSwitch",
+	"displayName": "Word Language Switching",
+	"URL": "https://github.com/b-g-h/wordLangSwitch/releases/download/1.5.0/wordLangSwitch-1.5.0.nvda-addon",
+	"description": "Automatic voice switching for marked language changes in Microsoft Word and Outlook.\nThe add-on obtains the language marked in the document via the Word object model and feeds it\ninto NVDA's automatic language switching, so multilingual documents are read with the matching\nvoice (e.g. neural/natural voices via OneCore or SAPI 5) - just like on the web.\nRequires \"Automatic language switching\" to be enabled in NVDA's speech settings.\nIncludes optional dialect stripping and language code mappings for synthesizers\nthat only match specific language codes.",
+	"sha256": "752484668c394d18bc80b1f2ad13cc7658e417481f20dc3ab981c58cc3a68b44",
+	"addonVersionName": "1.5.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Barbara Henn - MBZ Ilvesheim",
+	"sourceURL": "https://github.com/b-g-h/wordLangSwitch",
+	"license": "GPL v2",
+	"homepage": "https://github.com/b-g-h/wordLangSwitch",
+	"changelog": "First public release: language detection via the Word object model,\nsettings panel with dialect stripping and language mappings, diagnostics script.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1785351868000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Sprecherwechsel in Word",
+			"description": "Automatischer Sprecherwechsel bei ausgezeichneten Sprachwechseln in Microsoft Word und Outlook.\nDie Erweiterung ermittelt die im Dokument ausgezeichnete Sprache über das Word-Objektmodell und speist sie\nin NVDAs automatischen Sprachenwechsel ein, sodass mehrsprachige Dokumente mit der passenden Stimme\n(z. B. Neural-/Natural-Stimmen über OneCore oder SAPI 5) gelesen werden – wie im Web.\nErfordert die aktivierte Option „Automatischer Sprachenwechsel“ in NVDAs Sprachausgaben-Einstellungen.\nEnthält optional Dialekt-Entfernung und Sprachcode-Zuordnungen für Synthesizer,\ndie nur bestimmte Sprachcodes erkennen.",
+			"changelog": "Erste öffentliche Version: Spracherkennung über das Word-Objektmodell,\nEinstellungs-Panel mit Dialekt-Entfernung und Sprachzuordnungen, Diagnose-Skript."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/752484668c394d18bc80b1f2ad13cc7658e417481f20dc3ab981c58cc3a68b44",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "752484668c394d18bc80b1f2ad13cc7658e417481f20dc3ab981c58cc3a68b44",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "30303c3c19480000",
+					"raw_md5": "8b1505bd14b4d0e7340b8456371c86b3"
+				},
+				"first_submission_date": 1785351871,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1785351876,
+				"last_submission_date": 1785351871,
+				"md5": "12fc22f96aaf83515d2b6b43eadf1f1f",
+				"names": [],
+				"reputation": 0,
+				"sha1": "190e8e4636de9414932913f69cc0ffde43f619a2",
+				"sha256": "752484668c394d18bc80b1f2ad13cc7658e417481f20dc3ab981c58cc3a68b44",
+				"size": 21793,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
+}
