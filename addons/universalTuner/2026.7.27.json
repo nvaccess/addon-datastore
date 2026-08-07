@@ -1,0 +1,32 @@
+{
+	"addonId": "universalTuner",
+	"displayName": "Universal Tuner for NVDA",
+	"URL": "https://github.com/sharetoyouaccess/UniversalTuner-/releases/download/v2026.07.27/UniversalTunerV2026.07.27.nvda-addon",
+	"description": "\nAccessible instrument tuner for NVDA with reference tone playback for over two dozen instruments and tunings.\nLive microphone tuning: press L to listen while you play a string. Every 2 seconds it reports one clear reading: in tune, sharp by a percentage, or flat by a percentage (100% equals one semitone). Press C to switch to chromatic mode, which detects the nearest note automatically instead of comparing against a specific selected string.\nWhen a reading is exactly in tune, it plays a confirmation beep at the actual target note's pitch, then announces the note name. Press O to turn this beep on or off if you only want the spoken reading. Press R to repeat the last reading if you didn't catch it clearly. While live listening is on, Space cancels an in-progress beep and announcement immediately.\nSettings (A4 reference pitch, volume, tone length, gap, sample rate, chromatic mode, beep length, beep on/off, microphone device, last instrument and tuning) persist across NVDA restarts.\n",
+	"sha256": "c897b73b65bc9433cc5106a92c0109bcbf57ca6ed5d0a2ce87021b001c31f409",
+	"addonVersionName": "2026.07.27",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 27
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Peem Narkkhwan",
+	"sourceURL": "https://github.com/sharetoyouaccess/UniversalTuner-",
+	"license": "GPL v2",
+	"homepage": "https://github.com/sharetoyouaccess/UniversalTuner-",
+	"changelog": "\n2026.07.27: switched to date-based versioning. Added the manifest \"url\" field (was missing - now points to the public source repository), synced the testing-status note in live_tuner.py with __init__.py and mic_capture.py (all three now correctly say live microphone tuning has been manually tested end-to-end on a real NVDA + Windows machine), and added a source-code link to readme.html. No functional code changes. Previously tested end-to-end on a real NVDA + Windows machine as of the prior release (dialog UI, reference tones, live microphone tuning, chromatic mode, mic device switching/disconnect detection, settings persistence, Thai/English announcements).\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786082979000,
+	"translations": []
+}
