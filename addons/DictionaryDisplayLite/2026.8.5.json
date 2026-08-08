@@ -1,0 +1,58 @@
+{
+	"addonId": "DictionaryDisplayLite",
+	"displayName": "DictionaryDisplayLite",
+	"URL": "https://github.com/chaichaimee/DictionaryDisplayLite/releases/download/2026.8.5/DictionaryDisplayLite-v2026.8.5.nvda-addon",
+	"description": "Hear only what matters clean, crisp dictionary entries",
+	"sha256": "00edd2f18d641b784085e899d171d55df442a2617be00930e8f461a0bac1ab12",
+	"addonVersionName": "2026.8.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/DictionaryDisplayLite",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/DictionaryDisplayLite",
+	"changelog": "Optimized event_gainFocus with a Watchdog pattern for O(1) early exits and added safe object mutation via try-finally blocks to prevent UIA pipeline freezing and UI thread lag.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786181411000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "DictionaryDisplayLite",
+			"description": "Hear only what matters clean, crisp dictionary entries"
+		},
+		{
+			"language": "ru",
+			"displayName": "DictionaryDisplayLite",
+			"description": "Слушайте только важное — чистые и лаконичные записи словаря"
+		},
+		{
+			"language": "de",
+			"displayName": "DictionaryDisplayLite",
+			"description": "Hören Sie nur, was zählt – saubere, klare Wörterbucheinträge"
+		},
+		{
+			"language": "fr",
+			"displayName": "DictionaryDisplayLite",
+			"description": "N'écoutez que l'essentiel – des entrées de dictionnaire claires et nettes"
+		},
+		{
+			"language": "es",
+			"displayName": "DictionaryDisplayLite",
+			"description": "Escucha solo lo importante: entradas de diccionario limpias и claras"
+		}
+	]
+}
