@@ -1,0 +1,38 @@
+{
+	"addonId": "audioSwitcher",
+	"displayName": "Audio Switcher",
+	"URL": "https://github.com/kamalyaser31/nvda-audio-switcher/releases/download/v2026.2/audioSwitcher-2026.2.nvda-addon",
+	"description": "Sets configured or directly selected speakers and microphones as default and announces current defaults.",
+	"sha256": "aff12c5825881e2c27434a56ce15875407750498a66e3cf3ef5786ff7bd644ae",
+	"addonVersionName": "2026.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"license": "GPL v2",
+	"changelog": "Added a refreshable quick device dialog with preserved selections, explicit empty states, duplicate-name labels, connected-only lists, and combined default-device announcement. Improved device enumeration and prevented ambiguous legacy names from selecting the wrong device.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786187649000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مبدل أجهزة الصوت",
+			"description": "تعيين السماعات والميكروفونات المهيأة أو المختارة مباشرة أجهزة افتراضية، ونطق الأجهزة الافتراضية الحالية.",
+			"changelog": "إضافة حوار سريع قابل للتحديث، يحفظ الاختيارات، ويصرح بخلو القوائم، ويميز الأسماء المتشابهة، ويقتصر على الأجهزة المتصلة، وينطق الجهازين الافتراضيين معاً. وتحسين استقراء الأجهزة ومنع الأسماء القديمة الملتبسة من اختيار جهاز غير مقصود."
+		}
+	]
+}
