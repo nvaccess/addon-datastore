@@ -1,0 +1,38 @@
+{
+	"addonId": "addonStoreLite",
+	"displayName": "addon Store Lite",
+	"URL": "https://github.com/chaichaimee/addonStoreLite/releases/download/2026.8.5/addonStoreLite-v2026.8.5.nvda-addon",
+	"description": "Say goodbye to information overload in the Add-on Store",
+	"sha256": "0e72aff2a9f1f00c5cbe383dab37b5160984b0ea18bdf13387c6a5ec9d3561c9",
+	"addonVersionName": "2026.8.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/addonStoreLite",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/addonStoreLite",
+	"changelog": "Optimized UIA pipeline: Added a foreground watchdog to track Add-on Store state. Replaced heavy tree climbing in event_gainFocus with an O(1) early exit switch, preventing NVDA freezing.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786160865000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "addon Store Lite",
+			"description": "Say goodbye to information overload in the Add-on Store"
+		}
+	]
+}
