@@ -1,0 +1,39 @@
+{
+	"addonId": "itemOrderAnnouncer",
+	"displayName": "Item Order Announcer",
+	"URL": "https://github.com/balaraz/nvda-item-order-announcer/releases/download/v2.1/itemOrderAnnouncer-2.1.nvda-addon",
+	"description": "Quickly announces the order, total count, and nesting level of the currently focused object.",
+	"sha256": "d30973d53fb7fe0c9c4633d5afed15e649279d14bb036ad00672c31400573505",
+	"addonVersionName": "2.1",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Balaraz",
+	"sourceURL": "https://github.com/balaraz/nvda-item-order-announcer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/balaraz/nvda-item-order-announcer",
+	"changelog": "- Changed default shortcut for guessing item order to NVDA+Control+I to avoid collision with NVDA built-in gestures.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786263147000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Оголошення порядку елемента",
+			"description": "Швидко оголошує порядок, загальну кількість та рівень вкладеності поточного елемента у фокусі.",
+			"changelog": "- Змінено стандартну комбінацію клавіш для приблизного визначення порядку на `NVDA+Control+I`, щоб уникнути конфлікту зі вбудованими жестами NVDA."
+		}
+	]
+}
