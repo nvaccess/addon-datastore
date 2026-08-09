@@ -1,0 +1,32 @@
+{
+	"addonId": "NVDAInflectMicroTTS",
+	"displayName": "NVDAInflect Micro TTS",
+	"URL": "https://github.com/anujj87/NVDAInflectMicroTTS/releases/download/dev/NVDAInflectMicroTTS-20260809.0.0.nvda-addon",
+	"description": "A high-quality local neural text-to-speech voice for NVDA based on the Inflect Micro v2 model created by Owen Song.\nThe model, the ONNX Runtime and all other dependencies are bundled with the add-on,\nso the voice works fully offline.\nSpeaks English with a fixed male voice at 24 kHz and offers rate, rate\nboost, volume, variation and seed settings, plus optional GPU\nacceleration via DirectML (Auto/CPU/GPU compute device choice).\ni use ai agent in this addon development",
+	"sha256": "92cdfd2a9f3705c1bd79d09fff9e09c2f1fc08fe9058a7ecd7a0212b75bf4881",
+	"addonVersionName": "20260809.0.0",
+	"addonVersionNumber": {
+		"major": 20260809,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Anuj Sharma",
+	"sourceURL": "https://github.com/anujj87/NVDAInflectMicroTTS",
+	"license": "GPL v2",
+	"homepage": "https://github.com/anujj87/NVDAInflectMicroTTS",
+	"changelog": "Fixed a crash (native access violation) that could occur right after\nselecting the Inflect Micro v2 synthesizer when GPU acceleration was active:\nthe background preload and the speech worker could run the DirectML sessions\nconcurrently, which the DirectML provider does not tolerate. Model inference\nis now serialized, so the preload and the first utterance never overlap.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786296741000,
+	"translations": []
+}
