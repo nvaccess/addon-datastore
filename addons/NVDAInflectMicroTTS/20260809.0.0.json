@@ -28,5 +28,56 @@
 	"changelog": "Fixed a crash (native access violation) that could occur right after\nselecting the Inflect Micro v2 synthesizer when GPU acceleration was active:\nthe background preload and the speech worker could run the DirectML sessions\nconcurrently, which the DirectML provider does not tolerate. Model inference\nis now serialized, so the preload and the first utterance never overlap.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1786296741000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/92cdfd2a9f3705c1bd79d09fff9e09c2f1fc08fe9058a7ecd7a0212b75bf4881",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "92cdfd2a9f3705c1bd79d09fff9e09c2f1fc08fe9058a7ecd7a0212b75bf4881",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: phonemizer (whl)\nVersion: 3.4.0\nDescription: Simple text to phones converter for multiple languages\n\nThe analyzed source code belongs to an NVDA screen reader text-to-speech add-on (Inflect Micro TTS) bundled with standard, unmodified open-source library dependencies including SymPy, NumPy, ONNX Runtime, Joblib, Protobuf, Attrs, and Unidecode. The add-on includes benign TTS frontend processing and model management code. No malicious behavior, unexpected binary execution, data exfiltration, or remote payload downloading was detected.",
+						"category": "code_insight",
+						"id": "92cdfd2a9f3705c1bd79d09fff9e09c2f1fc08fe9058a7ecd7a0212b75bf4881-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000001e1a130a00",
+					"raw_md5": "5400314229d935155e43b862eecc3153"
+				},
+				"first_submission_date": 1786296748,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786296843,
+				"last_submission_date": 1786296748,
+				"md5": "67b9f22d3244d71a7e61e5437f795e99",
+				"names": [],
+				"reputation": 0,
+				"sha1": "7b6f6e6329a4d7b808c2839072b450d5f93b321a",
+				"sha256": "92cdfd2a9f3705c1bd79d09fff9e09c2f1fc08fe9058a7ecd7a0212b75bf4881",
+				"size": 90299279,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
