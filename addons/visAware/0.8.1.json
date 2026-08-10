@@ -1,0 +1,44 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.8.1/visAware-0.8.1.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "98b571c3e815a67be79faa97be2a3d38fc8c2eccbfee6ffa5417a99a9be83d2c",
+	"addonVersionName": "0.8.1",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 8,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786321961000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 0.8.1\n\n* 新增基于 OpenAI 兼容 Kimi API 的 Kimi 图像描述、追问、带结构化坐标的 OCR 和 AI Agent 支持。\n* 改进受支持引擎的图像描述提示词，提供本地化默认值。\n* 改进数学图像描述，将可见公式转换为 LaTeX，且纯公式图像仅返回 LaTeX 公式。\n* 改进自动图像识别，使用简洁的 20 到 30 字无 Markdown 描述。\n* 改进可浏览图像描述输出，表格内容使用标准 Markdown 表格并避免代码围栏。\n* 从追问对话框中移除模型和模型提供商名称。\n* 为可浏览的识别与追问结果对话框添加“复制”和“关闭”按钮。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 0.8.1\n\n* Додано підтримку Kimi для опису зображень, додаткових запитань, OCR зі структурованими координатами та ШІ-помічника через сумісний з OpenAI API Kimi.\n* Удосконалено підказки опису зображень у підтримуваних рушіях і додано локалізовані типові значення.\n* Удосконалено опис математичних зображень: видимі формули перетворюються на LaTeX, а для зображень лише з формулою повертається тільки формула LaTeX.\n* Удосконалено автоматичне розпізнавання зображень: використовуються стислі описи з 20–30 слів без Markdown.\n* Удосконалено доступний для перегляду вивід опису зображень: табличні дані подаються як стандартні таблиці Markdown без блоків коду.\n* З діалогу додаткових запитань прибрано назви моделі та постачальника моделі.\n* До діалогів результатів розпізнавання й додаткових запитань із можливістю перегляду додано кнопки «Копіювати» та «Закрити»."
+		}
+	]
+}
