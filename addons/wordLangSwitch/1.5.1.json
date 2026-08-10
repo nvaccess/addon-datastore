@@ -1,0 +1,39 @@
+{
+	"addonId": "wordLangSwitch",
+	"displayName": "Word Language Switching",
+	"URL": "https://github.com/b-g-h/wordLangSwitch/releases/download/1.5.1/wordLangSwitch-1.5.1.nvda-addon",
+	"description": "Automatic voice switching for marked language changes in Microsoft Word and Outlook.\nThe add-on obtains the language marked in the document via the Word object model and feeds it\ninto NVDA's automatic language switching, so multilingual documents are read with the matching\nvoice (e.g. neural/natural voices via OneCore or SAPI 5) - just like on the web.\nRequires \"Automatic language switching\" to be enabled in NVDA's speech settings.\nIncludes optional dialect stripping and language code mappings for synthesizers\nthat only match specific language codes.",
+	"sha256": "4b64466df7fbc6857bd692f448d85d91cd53f5bd8b38fb6ce708f58f7d030362",
+	"addonVersionName": "1.5.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Barbara Henn - MBZ Ilvesheim",
+	"sourceURL": "https://github.com/b-g-h/wordLangSwitch",
+	"license": "GPL v2",
+	"homepage": "https://github.com/b-g-h/wordLangSwitch",
+	"changelog": "Updated for NVDA 2026.2: the toggle gesture is now NVDA+Alt+W and the\ndiagnostics gesture is NVDA+Alt+K, because NVDA 2026.2 reserves NVDA+Shift+L\nfor the Magnifier. The build tooling (site_scons) and project files were updated\nto match the current NVDA add-on template (including the speechDictionaries field).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786351563000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Sprecherwechsel in Word",
+			"description": "Automatischer Sprecherwechsel bei ausgezeichneten Sprachwechseln in Microsoft Word und Outlook.\nDie Erweiterung ermittelt die im Dokument ausgezeichnete Sprache über das Word-Objektmodell und speist sie\nin NVDAs automatischen Sprachenwechsel ein, sodass mehrsprachige Dokumente mit der passenden Stimme\n(z. B. Neural-/Natural-Stimmen über OneCore oder SAPI 5) gelesen werden – wie im Web.\nErfordert die aktivierte Option „Automatischer Sprachenwechsel“ in NVDAs Sprachausgaben-Einstellungen.\nEnthält optional Dialekt-Entfernung und Sprachcode-Zuordnungen für Synthesizer,\ndie nur bestimmte Sprachcodes erkennen.",
+			"changelog": "Updated for NVDA 2026.2: the toggle gesture is now NVDA+Alt+W and the\ndiagnostics gesture is NVDA+Alt+K, because NVDA 2026.2 reserves NVDA+Shift+L\nfor the Magnifier. The build tooling (site_scons) and project files were updated\nto match the current NVDA add-on template (including the speechDictionaries field)."
+		}
+	]
+}
