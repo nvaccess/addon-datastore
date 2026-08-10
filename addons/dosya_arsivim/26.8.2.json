@@ -1,0 +1,94 @@
+{
+	"addonId": "dosya_arsivim",
+	"displayName": "Dosya Arşivim - Internet Archive Entegrasyonu",
+	"URL": "https://github.com/MehmetAykurt/dosya-arsivim/releases/download/v26.8.2/dosya-arsivim-v26.8.2.nvda-addon",
+	"description": "Sınırsız alan, sınırsız dosya...\nDijital çevrim içi dosya depolama arşivi olan İnternet Archive sistemiyle entegre çalışan bu eklenti, NVDA kullanıcılarının tüm dosyalarını düzenli biçimde saklamasını, dilediğinde indirmesini veya paylaşım bağlantısı oluşturmasını sağlar. Sık kullanılan tüm işlemleri klavye kısayollarıyla erişilebilir kılarak arşiv yönetimini kolaylaştırır.\n(NVDA+Shift+A)",
+	"sha256": "b6752708ca991f5ac42d653b73d3d8783bd86d0e8993fdcf1b87924419875a46",
+	"addonVersionName": "26.8.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 8,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mehmet Aykurt",
+	"sourceURL": "https://github.com/MehmetAykurt/dosya-arsivim/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/MehmetAykurt/dosya-arsivim",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786395105000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "My File Archive - Internet Archive Integration",
+			"description": "Unlimited space, unlimited files...\nWorking in integration with the Internet Archive system—a digital online file storage archive—this add-on enables NVDA users to store all their files in an organized manner, download them whenever desired, or create sharing links. It facilitates archive management by making all frequently used operations accessible via keyboard shortcuts.\n(NVDA+Shift+A)"
+		},
+		{
+			"language": "tr",
+			"displayName": "Dosya Arşivim - Internet Archive Entegrasyonu",
+			"description": "Sınırsız alan, sınırsız dosya...\nDijital çevrim içi dosya depolama arşivi olan İnternet Archive sistemiyle entegre çalışan bu eklenti, NVDA kullanıcılarının tüm dosyalarını düzenli biçimde saklamasını, dilediğinde indirmesini veya paylaşım bağlantısı oluşturmasını sağlar. Sık kullanılan tüm işlemleri klavye kısayollarıyla erişilebilir kılarak arşiv yönetimini kolaylaştırır.\n(NVDA+Shift+A)"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b6752708ca991f5ac42d653b73d3d8783bd86d0e8993fdcf1b87924419875a46",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b6752708ca991f5ac42d653b73d3d8783bd86d0e8993fdcf1b87924419875a46",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: truststore (whl)\nVersion: 0.10.4\nDescription: Verify certificates using native system trust stores\n\nThe package is an NVDA screen reader add-on ('Dosya Arşivim') that integrates with Internet Archive (archive.org) for cloud storage and file management. It includes standard vendored open-source libraries (truststore 0.10.4 and sqlite3), uses Windows DPAPI (CryptProtectData) to securely encrypt session tokens locally, and contains no malicious logic, backdoor mechanisms, or unauthorized exfiltration.",
+						"category": "code_insight",
+						"id": "b6752708ca991f5ac42d653b73d3d8783bd86d0e8993fdcf1b87924419875a46-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "24b7a3d92e15771cb2f907b839835262"
+				},
+				"first_submission_date": 1786395110,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786395117,
+				"last_submission_date": 1786395110,
+				"md5": "fe640cc6bb0de831efb2ea658417910f",
+				"names": [],
+				"reputation": 0,
+				"sha1": "0cc3b5634d002f48dc0a2ea48b7f5534bbe2a023",
+				"sha256": "b6752708ca991f5ac42d653b73d3d8783bd86d0e8993fdcf1b87924419875a46",
+				"size": 983284,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10738"
+}
