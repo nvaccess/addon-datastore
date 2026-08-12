@@ -1,0 +1,32 @@
+{
+	"addonId": "AIAssistant",
+	"displayName": "AI assistant",
+	"URL": "https://github.com/adil-adysh/NVDA-AI-assistant/releases/download/v0.13.1/AIAssistant-0.13.1.nvda-addon",
+	"description": "\nNVDA AI Assistant adds AI-powered summaries, chat, screenshot understanding, and contextual interaction directly into NVDA.\n\nFeatures include:\n\n* page and document summaries\n* image and screenshot description\n* persistent chat conversations\n* page content and screenshot attachment\n* runtime provider and model switching\n* support for Ollama, OpenAI-compatible APIs, Gemini, and LiteRT-LM local inference\n* provider enable/disable and per-model sampling settings\n\nThe add-on includes a WebView-based chat interface with streaming responses, conversation history, and contextual workflows designed for NVDA users.\n\t",
+	"sha256": "89ae5daf5422edf540e17ad24cf6b7c7395068827417682fc5f43f82b1f407ed",
+	"addonVersionName": "0.13.1",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 13,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "adilhusain shaikh",
+	"sourceURL": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"license": "GPL v2",
+	"homepage": "https://github.com/adil-adysh/NVDA-AI-assistant",
+	"changelog": "\nNew Features\n• LiteRT-LM local inference provider with on-demand runtime install and one-click model download\n• Manage AI Providers dialog with provider enable/disable, install, and active-provider selection\n• Per-model sampling settings (context window, temperature, top-k, top-p, max tokens, repetition penalty)\n• Digit-based provider and model selection in the assistant layer (press T or M, then a number)\n• Add to chat / Open in new chat actions for summaries and image descriptions\n• Soft-dismiss chat window — Escape hides the window while streaming continues in the background\nImproved\n• Faster model listing with background preloading and caching\nFixed\n• WebView focus handling, preventing NVDA from reading the pane role on programmatic activation\n\t\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786565052000,
+	"translations": []
+}
