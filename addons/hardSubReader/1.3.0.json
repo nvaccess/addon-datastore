@@ -1,0 +1,32 @@
+{
+	"addonId": "hardSubReader",
+	"displayName": "HardSub Reader",
+	"URL": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader/releases/download/v1.3.0/hardSubReader-1.3.0.nvda-addon",
+	"description": "Reads hardcoded (burned-in) video subtitles, also known as hardsubs, aloud in real time using the high-accuracy Windows 11 OneOCR engine, with automatic fallback to legacy Windows OCR. Press NVDA+alt+shift+s to toggle. Configure in NVDA Settings, HardSub Reader category.",
+	"sha256": "7404579e84af6b4610b0d211b61406a40144721e4617dae231e8c501dff0b7e9",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Shaima Almarzooqi",
+	"sourceURL": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Shaima-Almarzooqi/nvda-hardsub-reader",
+	"changelog": "\n* Fixed several settings not taking effect, so the add-on now uses the options you choose rather than its default values.\n* Added an option to read only subtitles in one language, for videos that mix languages. Type a language code such as ar, en or ja and tick \"Read only subtitles in this language\" to skip logos and credits written in another one.\n* Fixed a subtitle losing one of its lines when both lines looked alike.\n* Fixed a line being skipped when recognition briefly missed it.\n* Added a \"Restore default settings\" button to the settings panel.\n* Added an optional detailed diagnostic log, off by default, for use when reporting a problem.\n* Improved the filter for text in capital letters: it now uses the subtitle language code to tell a cast name from a sentence, so longer credit lines are skipped while capitalised dialogue is kept.\n* Fixed a subtitle being read again each time text beside it changed, such as rolling credits recognised as part of the subtitle line.\n* Fixed the filters removing ordinary dialogue and short words, and removing subtitles written in some languages.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786527114000,
+	"translations": []
+}
