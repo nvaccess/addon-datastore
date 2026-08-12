@@ -125,5 +125,47 @@
 			"description": "Gemini modellerini kullanan NVDA için gelişmiş bir yapay zeka asistanı.\nKomut Katmanı: NVDA+Shift+V tuşlarına basın, ardından:\n- Akıllı Çevirmen (T) / Pano (Shift+T)\n- Metin İyileştirici (R)\n- Nesne Betimleme (V) / Tam Ekran (O)\n- Video Analizi (Shift+V)\n- Yerel Video Kaydı (Kontrol+V)\n- Belge Okuyucu (D)\n- Dosya OCR (F)\n- CAPTCHA Çözücü (C)\n- Doğrudan Sohbet (Shift+C)\n- Medya Transkripsiyon ve Dublaj (M)\n- Akıllı Dikte (S)\n        - Sesli Çeviri (Kontrol+T)\n- Durumu Seslendir (I)\n- Nesne Etiketleme (L)\n- Etiketleri Yönet/Tara (Shift+L)\n- Kullanıcı Arayüzü Gezgini (E)\n- Yapay Zeka Operatörü (Shift+A)\n- Güncellemeleri Denetle (U)\n- Son Sonucu Geri Çağır (Boşluk)\n- Komut Yardımı (H)\n- Ayarları Aç (Alt+S)\n- Kotası Dolan Anahtarları Bildir (Alt+Q)\n- Gelişmiş Yönlendirmeyi Bildir (Alt+M)\n- Hızlı Ayarlar (Yukarı/Aşağı/Sol/Sağ)",
 			"changelog": "## 2026.08.06 İçin Değişiklikler\n\n* **Arayüz Gezgini Etiketleme:** Artık Arayüz Gezgini içinde bulunan öğelere doğrudan etiket ekleyebilirsiniz! Yeni bir **\"Etiket Ekle\"** düğmesi eklendi. Ayrıca arayüz açık kalır ve odağı korur; böylece birden fazla nesneyi kesintisiz ve hızlı bir şekilde etiketleyebilirsiniz.\n* **Hızlı Ayarlar Katmanı Geliştirildi:** Görsel Asistan katmanı (`Insert+Shift+V`) artık kalıcı ve çok daha etkileşimlidir. `Yukarı/Aşağı` ok tuşlarıyla hızlı ayarlar (Sağlayıcı, Model, Yapay Zekâ Yanıt Dili, TTS Modeli) arasında dolaşabilir, `Sol/Sağ` ok tuşlarıyla ise kısa ve anlaşılır sesli geri bildirim eşliğinde değerlerini anında değiştirebilirsiniz. Seçimleriniz hemen uygulanır (gerektiğinde gelişmiş yönlendirme de otomatik olarak etkinleştirilir) ve yapılandırma sırasında katman etkin kalmaya devam eder.\n* **Doğrudan Sohbet (`Shift+C`):** Komut Katmanına yeni bir komut eklendi! `Shift+C` tuşlarına basarak anında bir **\"Doğrudan Sohbet\"** penceresi açabilirsiniz. Böylece bir görsel veya belgeyle başlamaya gerek kalmadan, yapay zekâ ile doğrudan metin tabanlı bir sohbet başlatabilirsiniz.\n* **Kusursuz Sohbet Geçmişi Geri Yükleme:** `Boşluk` çubuğuyla son sonucu geri çağırırken sonraki sohbet geçmişinin kaybolmasına neden olan önemli bir hata giderildi. Artık eklenti konuşmalarınızı genel olarak takip eder. Sohbet ettikten sonra pencereyi kapatıp `Boşluk` çubuğuna bastığınızda tüm konuşma geçmişiniz eksiksiz olarak geri yüklenir. Bu özellik Doğrudan Sohbet, Görsel Analizi, Belge Sohbeti ve Çeviri için çalışır.\n* **OCR'de Satır İçi Görsel Betimleme:** Belge OCR işlemi sırasında görselleri satır içinde betimleyen isteğe bağlı bir özellik eklendi. Bu ayarı eklentinin OCR ayarlarından, metin çıkarma öncesinde Belge Okuyucu seçeneklerinden veya Hızlı Ayarlar Katmanından anlık olarak açıp kapatabilirsiniz.\n* **Sesli Çeviri (`Control+T`):** Güçlü yeni bir özellik eklendi! Konuşmanızı dikte edin; yapay zekâ, yapılandırılmış kaynak ve hedef dillerinizi kullanarak konuşmayı anında çevirsin ve sonucu yazsın.\n* **Güncelleme İndirici İyileştirmeleri:** Güncelleme indirme iletişim kutusu artık indirme ilerlemesini yüzde olarak doğru şekilde gösterir. Ayrıca kurulum iptal edildiğinde görünen hatalı **\"Güncelleme indiriliyor\"** iletisi sorunu giderildi.\n* **eSpeak-NG İndirici İyileştirmeleri:** eSpeak-NG indirmeleri için yüzde tabanlı ilerleme takibi eklendi.\n* **Toplu OCR Dayanıklılığı:** Toplu PDF OCR işlemi sırasında etkin API anahtarının kotası dolduğunda işlemin durmasına neden olan sorun giderildi. Artık eklenti otomatik olarak kullanılabilir sonraki API anahtarına geçerek işleme kaldığı yerden devam eder.\n* **Görsel CAPTCHA Desteği:** Görsel CAPTCHA çözümü için güçlü destek eklendi. hCaptcha ve reCAPTCHA gibi karmaşık görsel doğrulamaları otomatik olarak çözmeye çalışarak erişilebilirliği önemli ölçüde artırır.\n* **Ses Yazıya Dökme Modülü Yenilendi:** Ses Yazıya Dökme modülü tamamen yeniden geliştirildi ve artık hem ses hem de video dosyalarını destekliyor. Üç farklı çalışma modu sunar: **\"Yazıya Dök (Özgün Dil)\"**, **\"Yazıya Dök ve Çevir (Hedef Dil)\"** ve yalnızca Gemini'ye özel olan, özgün konuşmanın çevrilmiş seslendirmesini oluşturan güçlü yeni **\"Dublaj Yap ve Çevir (Hedef Dil)\"** seçeneği.\n* **Belge Okuyucuda İsteğe Bağlı Sayfa Numaraları:** Çok sayfalı belge çıktılarında sayfa numaraları ve ayırıcıların eklenmesini açıp kapatmaya yarayan yeni bir ayar eklendi. Bu seçenek ana ayarlardan veya Hızlı Ayarlar Katmanından anında yönetilebilir. Özellik hem TXT/HTML dışa aktarımlarında hem de satır içi **\"Biçimlendirilmiş Görünüm\"** penceresinde geçerlidir ve birleştirilmiş belgeleri kesintisiz okumanızı sağlar.\n* **Video Betimlemeleri için Sınırsız Gemini Live TTS:** Videolar için Eşzamanlı Sesli Anlatım (MP3) oluştururken artık ses motoru olarak **Gemini Live TTS** seçilebilir. Bu özellik, Google Gemini Live API'sini kullanarak karakter veya süre sınırlaması olmaksızın yüksek kaliteli sesli betimlemeler üretir.\n* **Kod Tabanının Modülerleştirilmesi:** Eklentinin yapısı, bakımını kolaylaştırmak amacıyla tek dosyalı yapıdan çok dosyalı modüler mimariye dönüştürüldü.\n* **Ayarlar Arayüzü Yeniden Tasarlandı:** Ayarlar iletişim kutusu tamamen yenilenerek gruplandırılmış düzen yerine modern, sekmeli bir arayüz kullanılmaya başlandı. Böylece mevcut tüm seçenekler korunurken daha iyi organizasyon ve daha kolay dolaşım sağlandı.\n* **Genel ve Ayrı Günlük Dosyası Kaydı:** Yeni **\"Gelişmiş\"** sekmesi altında isteğe bağlı genel günlük kayıt sistemi eklendi. Tüm eklenti modüllerindeki işlemleri, API trafiğini ve hataları otomatik olarak özel bir günlük dosyasına (`vision_assistant.log`) kaydeder. Yapılandırılabilir günlük düzeylerini (Hata Ayıklama, Bilgi, Uyarı, Hata), otomatik saklama sürelerini (1 saat–90 gün) ve ayarlar üzerinden günlük dosyasını doğrudan açma veya temizleme işlemlerini performansı etkilemeden ve NVDA günlüklerine müdahale etmeden destekler.\n* **Gemini Yükleme İlerleme Takibi:** Büyük dosyalar (video, ses ve belgeler) Google Gemini API'sine yüklenirken gerçek zamanlı yüzde ilerleme bildirimleri eklendi."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/f3c43532ee2d8e986ad9a5e4cb093d042c91a6690f7e17aa8161edcdd2ebcfe4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "f3c43532ee2d8e986ad9a5e4cb093d042c91a6690f7e17aa8161edcdd2ebcfe4",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "6a40744a3164c10adfcb7ba105ec0591"
+				},
+				"first_submission_date": 1786516307,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786516314,
+				"last_submission_date": 1786516307,
+				"md5": "a82aaaa4a78d6c480e77b65ab305649a",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c25b3c747a4e45d6e75936ff3d02af1016bca64c",
+				"sha256": "f3c43532ee2d8e986ad9a5e4cb093d042c91a6690f7e17aa8161edcdd2ebcfe4",
+				"size": 39056024,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
