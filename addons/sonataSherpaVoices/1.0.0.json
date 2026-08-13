@@ -393,5 +393,56 @@
 			"displayName": "Sonata Sherpa Voices",
 			"description": "Erişilebilir bir ses yöneticisine sahip sherpa-onnx modellerini kullanan Sonata tabanlı NVDA sentezleyici."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/170c2a27cf69e4c7bbdb2df4128bb84b177c64e4743642bfee4c5366f93e2654",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "170c2a27cf69e4c7bbdb2df4128bb84b177c64e4743642bfee4c5366f93e2654",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: pycotovia (whl)\nVersion: 0.6.0a1\nDescription: Pure-Python Cotovia G2P phonemizer for Galician and Spanish\n\nThe pycotovia package (version 0.6.0a1) is a pure-Python Cotovia G2P phonemizer for Galician and Spanish. The wheel bundle includes standard open-source dependencies and speech-synthesis/NVDA addon utilities. Analysis of all source files shows no malicious behavior, secret exfiltration, obfuscation, or unauthorized process execution.",
+						"category": "code_insight",
+						"id": "170c2a27cf69e4c7bbdb2df4128bb84b177c64e4743642bfee4c5366f93e2654-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000001e1e160500",
+					"raw_md5": "e3ac5737296cd7f607613d0c78f8a007"
+				},
+				"first_submission_date": 1786626409,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786626454,
+				"last_submission_date": 1786626409,
+				"md5": "1a2a3c35bfe02ae315cd3b667a284aff",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3117fd44c25e21c63be814f557c4d9106d29b70d",
+				"sha256": "170c2a27cf69e4c7bbdb2df4128bb84b177c64e4743642bfee4c5366f93e2654",
+				"size": 128027383,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
