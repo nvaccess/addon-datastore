@@ -113,7 +113,7 @@ def createDataclassMatchingJsonSchema(
 	try:
 		addonVersionNumber = MajorMinorPatch.getFromStr(cast(str, manifest["version"]))
 	except ValueError as e:
-		raise ValueError(f"Manifest value for 'version' is invalid {manifest['version']}") from e
+		raise ValueError(f"Manifest value for 'version' is invalid {manifest['version']}. Format must be major.minor or major.minor.patch") from e
 
 	for key in ("name", "summary", "description", "minimumNVDAVersion", "lastTestedNVDAVersion", "version"):
 		if key not in manifest:
