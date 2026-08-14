@@ -407,7 +407,7 @@ def outputErrors(errors: list[str], errorFilePath: str | None = None):
 				errorFile.write(
 					"This add-on submission has validation errors. "
 					"Please submit a new version with the errors fixed. "
-					"To get help fixing the errors, read the Add-on Manifest Validation section of the [Submission Guide](https://github.com/nvaccess/addon-datastore/blob/master/docs/submitters/submissionGuide.md#add-on-manifest-validation). "
+					"To get help fixing the errors, read the Add-on Manifest Validation section of the [Submission Guide](https://github.com/nvaccess/addon-datastore/blob/master/docs/submitters/submissionGuide.md#add-on-manifest-validation).\n"
 					"Errors:\n- " + "\n- ".join(errors) + "\n\n",
 				)
 
