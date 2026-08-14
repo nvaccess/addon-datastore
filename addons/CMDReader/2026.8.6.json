@@ -109,5 +109,47 @@
 			"displayName": "CMDReader",
 			"description": "Accessibilità della riga di comando, ridefinita.\nTasti di scelta rapida:\nCTRLALT+L : Apri file CMDReader\nctrl+alt+up arrow : Leggi la riga precedente\nctrl+alt+down arrow : Leggi la riga successiva"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a8c5384e286ae2e846949f8bed840e7d3fefd8e0f4cd8789398b5a37424fbc8b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a8c5384e286ae2e846949f8bed840e7d3fefd8e0f4cd8789398b5a37424fbc8b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c3d080000",
+					"raw_md5": "3340f2739fd837743e0539e53303ddd4"
+				},
+				"first_submission_date": 1786682263,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786682265,
+				"last_submission_date": 1786682263,
+				"md5": "24a4f202c58270f084ff0604eddc6893",
+				"names": [],
+				"reputation": 0,
+				"sha1": "829a141647596918be208ffdbca91899a24a49d1",
+				"sha256": "a8c5384e286ae2e846949f8bed840e7d3fefd8e0f4cd8789398b5a37424fbc8b",
+				"size": 91846,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
