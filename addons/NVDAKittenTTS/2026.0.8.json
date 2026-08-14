@@ -1,0 +1,32 @@
+{
+	"addonId": "NVDAKittenTTS",
+	"displayName": "NVDAKitten TTS neural speech synthesizer",
+	"URL": "https://github.com/anujj87/NVDAKittenTTS/releases/download/2026.0.8/NVDAKittenTTS-2026.0.8.nvda-addon",
+	"description": "Offline neural speech synthesis for NVDA using Kitten TTS.\nUltra-lightweight ONNX model (about 25 MB) bundled with the add-on, all\ndependencies included (onnxruntime-directml for CPU and GPU). 8 built-in\nvoices (4 female, 4 male). Additional higher-quality models can be\ndownloaded from the Kitten TTS settings panel, which also lets you choose\nthe compute device (CPU or GPU) used for speech.\nAI Agent use in developmet of this addon",
+	"sha256": "c5663fb0189cb41a6ebf59f974bad15c7761f40557ad8790a3e1bd89224ff279",
+	"addonVersionName": "2026.0.8",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 0,
+		"patch": 8
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "anuj sharma",
+	"sourceURL": "https://github.com/anujj87/NVDAKittenTTS",
+	"license": "GPL v2",
+	"homepage": "https://github.com/anujj87/NVDAKittenTTS",
+	"changelog": "The rate boost option has been removed. The Kitten TTS neural model only\nsounds natural within its trained speed range, and rate boost pushed the\nspeed past that range, which degraded the voice. The rate slider alone now\ncontrols speed up to the model's quality limit, and it sounds clean at\nevery setting.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786678487000,
+	"translations": []
+}
