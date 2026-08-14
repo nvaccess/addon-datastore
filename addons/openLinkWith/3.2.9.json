@@ -1,0 +1,75 @@
+{
+	"addonId": "openLinkWith",
+	"displayName": "Open Link With",
+	"URL": "https://github.com/ibrahim-s/openLinkWith/releases/download/3.2.9/openLinkWith-3.2.9.nvda-addon",
+	"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+	"sha256": "68655c11969e6bb078a393bb39e32a15b107db75384be22cfcba30c1c85f29af",
+	"addonVersionName": "3.2.9",
+	"addonVersionNumber": {
+		"major": 3,
+		"minor": 2,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ibrahim Hamadeh",
+	"sourceURL": "https://github.com/ibrahim-s/openLinkWith",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ibrahim-s/openLinkWith/blob/master/readme.md",
+	"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786738197000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "打开链接",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "en",
+			"displayName": "Open Link With",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "ar",
+			"displayName": "فتح الروابط",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Открыть ссылку с помощью",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Відкрити посилання за допомогою",
+			"description": "\nВидобуває посилання, знайдені у виділеному, останньому вимовленому тексті або тексті в буфері обміну, показує їх списком у діалозі, надаючи вам можливість відкрити будь-яке посилання за допомогою різних браузерів, наявних на комп'ютері.\nНатисніть команду, яку ви асоціювали з додатком за допомогою жестів вводу, щоб показати діалог додатка.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "fr",
+			"displayName": "Ouvrir le Lien Avec",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		},
+		{
+			"language": "tr",
+			"displayName": "Bağlantıyı Şununla Aç",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- The addon now uses NVDA’s builtin pre_speech extension point instead of patching NVDA’s core speech function.  \n- Minimum NVDA version is now 2024.2 (since that’s when the extension point was introduced).  \n- When collecting spoken text, the addon now uses NVDA’s CHUNK_SEPARATOR, resulting cleaner and more accurate extraction of links from speech sequences.  \n- In Hyper link menu feature, the addon now recognizes links inside nested elements and graphical objects, using the same approach as NVDA core, making it capable of detecting and accessing more and more links.\n- As always credit goes to [Cary Rowen](https://github.com/cary-rowen), thanks Cary! \n"
+		}
+	]
+}
