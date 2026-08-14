@@ -1,0 +1,32 @@
+{
+	"addonId": "wordPredictor",
+	"displayName": "Word Predictor",
+	"URL": "https://github.com/RareBird15/wordpredictor/releases/download/v1.6.0/wordPredictor-1.6.0.nvda-addon",
+	"description": "Watches what you type and predicts the next word using n-gram analysis with Kneser-Ney smoothing. Now includes an optional LSTM neural network predictor trained on 116 Project Gutenberg books for context-aware predictions. Predictions are announced through NVDA's speech engine and can be accepted with NVDA+Control+number keys (1 through 0). Learns from your writing over time. Includes partial-word prediction and terminal auto-detection and a custom app exclusion list and a settings panel.",
+	"sha256": "a574ae577a5f1e2cb61968595e37b2283d742d9400c934758102b1aa8c3505e3",
+	"addonVersionName": "1.6.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 6,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Lanie",
+	"sourceURL": "https://github.com/RareBird15/wordpredictor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/RareBird15/wordPredictor",
+	"changelog": "Adds optional LSTM neural network predictor trained on 116 Project Gutenberg books. The LSTM model provides context-aware predictions that complement the n-gram model. Toggle in Settings > Word Predictor. Requires onnxruntime to be installed.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a574ae577a5f1e2cb61968595e37b2283d742d9400c934758102b1aa8c3505e3"
+}
