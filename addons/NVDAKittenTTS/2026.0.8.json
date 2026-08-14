@@ -28,5 +28,56 @@
 	"changelog": "The rate boost option has been removed. The Kitten TTS neural model only\nsounds natural within its trained speed range, and rate boost pushed the\nspeed past that range, which degraded the voice. The rate slider alone now\ncontrols speed up to the model's quality limit, and it sounds clean at\nevery setting.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1786678487000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c5663fb0189cb41a6ebf59f974bad15c7761f40557ad8790a3e1bd89224ff279",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c5663fb0189cb41a6ebf59f974bad15c7761f40557ad8790a3e1bd89224ff279",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: attrs (whl)\nVersion: 26.1.0\nDescription: Classes Without Boilerplate\n\nThe codebase consists of legitimate, standard Python libraries (attrs, numpy, joblib, onnxruntime, phonemizer, protobuf, packaging, flatbuffers) alongside the Kitten TTS NVDA screen reader add-on modules (kittentts, kittencommon, espeakng_loader). All model downloads occur from official Hugging Face repositories, ONNX provider probing uses an embedded minimal model, and no malicious credential exfiltration or unauthorized execution logic is present.",
+						"category": "code_insight",
+						"id": "c5663fb0189cb41a6ebf59f974bad15c7761f40557ad8790a3e1bd89224ff279-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000a0e0f0e00",
+					"raw_md5": "48efca3920b63ba5e5aa6b10d8cd3479"
+				},
+				"first_submission_date": 1786678495,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786678533,
+				"last_submission_date": 1786678495,
+				"md5": "0fc24019441d2e98a619e1abe2ca3ec8",
+				"names": [],
+				"reputation": 0,
+				"sha1": "449109d2788e5717dbfcf63a868e6d78d748a6d0",
+				"sha256": "c5663fb0189cb41a6ebf59f974bad15c7761f40557ad8790a3e1bd89224ff279",
+				"size": 72781031,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
