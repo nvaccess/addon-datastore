@@ -393,5 +393,56 @@
 			"displayName": "Sonata Sherpa Voices",
 			"description": "sintetizador NVDA basado en Sonata que utiliza modelos sherpa-onnx con un administrador de voz accesible."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/da89640ea80455027dc2dd502de01552b77955f56ae92c24154091d332d30d17",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "da89640ea80455027dc2dd502de01552b77955f56ae92c24154091d332d30d17",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: pycotovia (whl)\nVersion: 0.6.0a1\nDescription: Pure-Python Cotovia G2P phonemizer for Galician and Spanish\n\nThe package pycotovia (version 0.6.0a1) is a legitimate pure-Python Galician and Spanish grapheme-to-phoneme (G2P) phonemizer library bundled with common NLP, TTS, and mathematical helper libraries (such as networkx, dateparser, scriptconv, and NVDA screen reader speech driver components). Thorough analysis of the codebase reveals no malicious activities, credential exfiltration, backdoors, or unauthorized process execution.",
+						"category": "code_insight",
+						"id": "da89640ea80455027dc2dd502de01552b77955f56ae92c24154091d332d30d17-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000001e1e160500",
+					"raw_md5": "fad0ab22a149598ce5ab8e0fbb70f000"
+				},
+				"first_submission_date": 1786828412,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786828458,
+				"last_submission_date": 1786828412,
+				"md5": "892f8c58985057263ab1fafe5a0e979e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "95600c30234f5eea68f678fa38926ba44b641d48",
+				"sha256": "da89640ea80455027dc2dd502de01552b77955f56ae92c24154091d332d30d17",
+				"size": 143545486,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
