@@ -1,0 +1,82 @@
+{
+	"addonId": "wordPredictor",
+	"displayName": "Word Predictor",
+	"URL": "https://github.com/RareBird15/wordpredictor/releases/download/v1.7.1/wordPredictor-1.7.1.nvda-addon",
+	"description": "Watches what you type and predicts the next word using n-gram analysis with Kneser-Ney smoothing. Predictions are announced through NVDA's speech engine and can be accepted with NVDA+Control+number keys (1 through 0). Learns from your writing over time. Includes partial-word prediction and terminal auto-detection and a custom app exclusion list and a settings panel.",
+	"sha256": "a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+	"addonVersionName": "1.7.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 7,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Lanie",
+	"sourceURL": "https://github.com/RareBird15/wordpredictor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/RareBird15/wordPredictor",
+	"changelog": "Added a setting to silence automatic predictions while keeping on-demand predictions (NVDA+Alt+O) and the numbered acceptance keys working. Useful for users who find constant beeping and speech distracting and only want predictions when they ask for them.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786832627000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Kelime Tahmincisi",
+			"description": "Yazdıklarınızı izler ve Kneser-Ney yumuşatma yöntemiyle n-gram analizi kullanarak bir sonraki kelimeyi tahmin eder. Tahminler, NVDA’nın konuşma motoru aracılığıyla duyurulur ve NVDA + Control + sayı tuşları (1’den 0’a kadar) ile kabul edilebilir. Zamanla yazdıklarınızdan öğrenir. Kısmi kelime tahmini, terminal otomatik algılama, özel uygulama hariç tutma listesi ve ayarlar paneli içerir.",
+			"changelog": "Added a setting to silence automatic predictions while keeping on-demand predictions (NVDA+Alt+O) and the numbered acceptance keys working. Useful for users who find constant beeping and speech distracting and only want predictions when they ask for them."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000100",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1786832632,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786832636,
+				"last_submission_date": 1786832632,
+				"md5": "2c38b20fcada55f9c044bd2c26c66622",
+				"names": [],
+				"reputation": 0,
+				"sha1": "111f213ca5564aa059702c137ac97bcd5aae29d0",
+				"sha256": "a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+				"size": 32305130,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10441"
+}
