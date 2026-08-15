@@ -1,0 +1,153 @@
+{
+	"addonId": "translate",
+	"displayName": "Translate",
+	"URL": "https://github.com/salmanf16/nvda-translate/releases/download/2026.08.15/translate.nvda-addon",
+	"description": "An ultra-fast and lightweight online translation addon for NVDA. Originally created by Yannick Plassiard, this modified version has been optimized for rapid real-time translations using high-speed cloud engines. Special thanks and full credit go to the original developer for his exceptional work. Requires an internet connection.",
+	"sha256": "11f6aca461151f3adb36d154afe8458e967e3ff68a3a5cf4a20ce490821ff035",
+	"addonVersionName": "2026.08.15",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 15
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Yannick Plassiard, salmanf16",
+	"sourceURL": "https://github.com/salmanf16/nvda-translate",
+	"license": "GPL v3",
+	"homepage": "https://github.com/salmanf16/nvda-translate",
+	"changelog": "\n- Feature: User-customizable translation timeout in NVDA Settings Panel (1 - 30 seconds).\n- Fixed: 100% Neural engine auto-detection across all languages (fixes English target language and script guessing issues).\n- Fixed: Memory cache guard to prevent network timeouts from locking untranslated text into memory.\n- Fixed: Strict HTTP socket timeouts across all cloud and AI engines (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Fixed: Fallback safeguard for template number placeholders if mangled by translation engines.\n- Performance: Strict whitelist packaging architecture reducing add-on size to ~79 KB.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.txt",
+	"submissionTime": 1786822061000,
+	"translations": [
+		{
+			"language": "fa",
+			"displayName": "ترجمه کنید",
+			"description": "یک افزونه ترجمه آنلاین فوق العاده سریع و سبک برای NVDA. این نسخه اصلاح شده که در اصل توسط Yannick Plassiard ساخته شده است، برای ترجمه های سریع در زمان واقعی با استفاده از موتورهای ابری پرسرعت بهینه شده است. تشکر ویژه و اعتبار کامل به توسعه دهنده اصلی برای کار استثنایی اش. نیاز به اتصال به اینترنت دارد.",
+			"changelog": "\n- ویژگی: زمان ترجمه قابل تنظیم توسط کاربر در پانل تنظیمات NVDA (1 تا 30 ثانیه).\n- رفع شد: 100٪ تشخیص خودکار موتور عصبی در همه زبان ها (مشکلات حدس زدن زبان مقصد و اسکریپت انگلیسی را برطرف می کند).\n- رفع شد: محافظ حافظه نهان برای جلوگیری از قفل شدن متن ترجمه نشده در حافظه توسط وقفه های زمانی شبکه.\n- رفع شد: وقفه های شدید سوکت HTTP در تمام موتورهای ابری و هوش مصنوعی (DeepL، OpenAI، Gemini، Bing، OpenRouter، LibreTranslate، Lingva).\n- رفع شد: در صورتی که توسط موتورهای ترجمه مخدوش شوند، محافظت مجدد برای جای‌بان‌های شماره الگو.\n- عملکرد: معماری بسته بندی لیست سفید دقیق که اندازه افزونه را تا 79 کیلوبایت کاهش می دهد.\n"
+		},
+		{
+			"language": "ja",
+			"displayName": "翻訳する",
+			"description": "NVDA 用の超高速かつ軽量のオンライン翻訳アドオン。元々は Yannick Plassiard によって作成されましたが、この修正バージョンは、高速クラウド エンジンを使用した迅速なリアルタイム翻訳用に最適化されています。オリジナル開発者の並外れた功績に特別な感謝と全面的な敬意を表します。インターネット接続が必要です。",
+			"changelog": "\n- 機能: NVDA 設定パネルでユーザーがカスタマイズ可能な翻訳タイムアウト (1 ～ 30 秒)。\n- 修正: すべての言語で 100% ニューラル エンジン自動検出 (英語のターゲット言語とスクリプトの推測の問題を修正)。\n- 修正: ネットワーク タイムアウトによる未翻訳テキストのメモリへのロックを防ぐためのメモリ キャッシュ ガード。\n- 修正: すべてのクラウドおよび AI エンジン (DeepL、OpenAI、Gemini、Bing、OpenRouter、LibreTranslate、Lingva) にわたる厳密な HTTP ソケット タイムアウト。\n- 修正: 翻訳エンジンによって破損した場合のテンプレート番号プレースホルダーのフォールバック セーフガード。\n- パフォーマンス: 厳格なホワイトリスト パッケージング アーキテクチャにより、アドオンのサイズが最大 79 KB に削減されます。\n"
+		},
+		{
+			"language": "ar",
+			"displayName": "ترجمة",
+			"description": "إضافة ترجمة فورية فائقة السرعة لبرنامج NVDA. هذا الإصدار عبارة عن تعديل وتطوير للنسخة الأصلية لتقديم ترجمة سريعة للغاية. كل الشكر والتقدير للمطور الأصلي Yannick Plassiard على إضافة الترجمة الرائعة وتسهيل وصولها، حيث لا يمكننا نسيان فضله وحقه كمطور أصلي لهذا العمل. تتطلب الإضافة اتصالاً بالإنترنت.",
+			"changelog": "\n- الخاصية: انتهاء مهلة الترجمة القابلة للتخصيص من قبل المستخدم في لوحة إعدادات NVDA (من 1 إلى 30 ثانية).\n- تم الإصلاح: الاكتشاف التلقائي للمحرك العصبي بنسبة 100% عبر جميع اللغات (يصلح مشكلات اللغة الإنجليزية المستهدفة وتخمين النص البرمجي).\n- تم إصلاح: حارس ذاكرة التخزين المؤقت للذاكرة لمنع مهلات الشبكة من قفل النص غير المترجم في الذاكرة.\n- تم الإصلاح: مهلة صارمة لمأخذ توصيل HTTP عبر جميع محركات السحابة ومحركات الذكاء الاصطناعي (DeepL وOpenAI وGemini وBing وOpenRouter وLibreTranslate وLingva).\n- تم إصلاح: الحماية الاحتياطية للعناصر النائبة لأرقام القالب في حالة تشويهها بواسطة محركات الترجمة.\n- الأداء: بنية تعبئة القائمة البيضاء الصارمة تقلل حجم الوظيفة الإضافية إلى 79 كيلو بايت تقريبًا.\n"
+		},
+		{
+			"language": "vi",
+			"displayName": "Dịch",
+			"description": "Một tiện ích dịch trực tuyến cực nhanh và nhẹ dành cho NVDA. Ban đầu được tạo bởi Yannick Plasiard, phiên bản sửa đổi này đã được tối ưu hóa để dịch nhanh theo thời gian thực bằng cách sử dụng công cụ đám mây tốc độ cao. Lời cảm ơn đặc biệt và ghi nhận đầy đủ dành cho nhà phát triển ban đầu vì công việc đặc biệt của anh ấy. Yêu cầu kết nối internet.",
+			"changelog": "\n- Tính năng: Người dùng có thể tùy chỉnh thời gian dịch trong Bảng cài đặt NVDA (1 - 30 giây).\n- Đã sửa lỗi: Tự động phát hiện 100% công cụ thần kinh trên tất cả các ngôn ngữ (khắc phục các vấn đề về ngôn ngữ đích và đoán chữ viết bằng tiếng Anh).\n- Đã sửa lỗi: Bảo vệ bộ đệm bộ nhớ để ngăn thời gian chờ mạng khóa văn bản chưa được dịch vào bộ nhớ.\n- Đã sửa lỗi: Hết thời gian chờ ổ cắm HTTP nghiêm ngặt trên tất cả các công cụ đám mây và AI (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Đã sửa lỗi: Bảo vệ dự phòng cho phần giữ chỗ số mẫu nếu bị công cụ dịch thuật đọc sai.\n- Hiệu suất: Kiến trúc đóng gói danh sách trắng nghiêm ngặt giúp giảm kích thước tiện ích bổ sung xuống ~79 KB.\n"
+		},
+		{
+			"language": "zh",
+			"displayName": "翻译",
+			"description": "NVDA 的超快速、轻量级在线翻译插件。该修改版本最初由 Yannick Plassiard 创建，已针对使用高速云引擎的快速实时翻译进行了优化。特别感谢并充分赞扬原始开发人员的出色工作。需要互联网连接。",
+			"changelog": "\n- 功能：用户可在 NVDA 设置面板中自定义翻译超时（1 - 30 秒）。\n- 已修复：所有语言 100% 神经引擎自动检测（修复英语目标语言和脚本猜测问题）。\n- 修复：内存缓存防护，以防止网络超时将未翻译的文本锁定到内存中。\n- 已修复：所有云和 AI 引擎（DeepL、OpenAI、Gemini、Bing、OpenRouter、LibreTranslate、Lingva）的严格 HTTP 套接字超时。\n- 已修复：如果被翻译引擎破坏，模板编号占位符的后备保护措施。\n- 性能：严格的白名单打包架构将附加组件大小减少至约 79 KB。\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Переводить",
+			"description": "Сверхбыстрый и легкий аддон для онлайн-перевода для NVDA. Эта модифицированная версия, первоначально созданная Янником Плассиардом, была оптимизирована для быстрых переводов в реальном времени с использованием высокоскоростных облачных движков. Особая благодарность и полная благодарность первоначальному разработчику за его исключительную работу. Требуется подключение к Интернету.",
+			"changelog": "\n- Функция: настраиваемый пользователем тайм-аут перевода на панели настроек NVDA (1–30 секунд).\n- Исправлено: 100% автоматическое определение нейронного движка на всех языках (исправлены проблемы с целевым английским языком и угадыванием сценариев).\n- Исправлено: защита кэша памяти, предотвращающая блокировку непереведенного текста в памяти по тайм-аутам сети.\n- Исправлено: строгие таймауты HTTP-сокетов во всех облачных системах и механизмах искусственного интеллекта (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Исправлено: резервная защита для заполнителей номеров шаблонов, если они были повреждены системами перевода.\n- Производительность: строгая архитектура упаковки с белым списком, уменьшающая размер надстройки до ~79 КБ.\n"
+		},
+		{
+			"language": "hi",
+			"displayName": "अनुवाद",
+			"description": "एनवीडीए के लिए एक अत्यंत तेज़ और हल्का ऑनलाइन अनुवाद ऐडऑन। मूल रूप से यानिक प्लासीर्ड द्वारा निर्मित, इस संशोधित संस्करण को उच्च गति वाले क्लाउड इंजनों का उपयोग करके तीव्र वास्तविक समय अनुवाद के लिए अनुकूलित किया गया है। मूल डेवलपर को उसके असाधारण कार्य के लिए विशेष धन्यवाद और पूरा श्रेय जाता है। इंटरनेट कनेक्शन की आवश्यकता है.",
+			"changelog": "\n- फ़ीचर: एनवीडीए सेटिंग्स पैनल में उपयोगकर्ता-अनुकूलन योग्य अनुवाद टाइमआउट (1 - 30 सेकंड)।\n- ठीक किया गया: सभी भाषाओं में 100% न्यूरल इंजन ऑटो-डिटेक्शन (अंग्रेजी लक्ष्य भाषा और स्क्रिप्ट अनुमान लगाने की समस्याओं को ठीक करता है)।\n- ठीक किया गया: नेटवर्क टाइमआउट को अअनुवादित टेक्स्ट को मेमोरी में लॉक करने से रोकने के लिए मेमोरी कैश गार्ड।\n- फिक्स्ड: सभी क्लाउड और एआई इंजनों (डीपएल, ओपनएआई, जेमिनी, बिंग, ओपनराउटर, लिबरट्रांसलेट, लिंगवा) पर सख्त HTTP सॉकेट टाइमआउट।\n- ठीक किया गया: अनुवाद इंजनों द्वारा खराब होने पर टेम्पलेट नंबर प्लेसहोल्डर्स के लिए फ़ॉलबैक सुरक्षा।\n- प्रदर्शन: सख्त श्वेतसूची पैकेजिंग आर्किटेक्चर ऐड-ऑन आकार को घटाकर ~79 केबी कर देता है।\n"
+		},
+		{
+			"language": "id",
+			"displayName": "Menerjemahkan",
+			"description": "Addon terjemahan online yang sangat cepat dan ringan untuk NVDA. Awalnya dibuat oleh Yannick Plassiard, versi modifikasi ini telah dioptimalkan untuk terjemahan cepat dan real-time menggunakan mesin cloud berkecepatan tinggi. Terima kasih khusus dan penghargaan penuh ditujukan kepada pengembang asli atas karyanya yang luar biasa. Membutuhkan koneksi internet.",
+			"changelog": "\n- Fitur: Batas waktu terjemahan yang dapat disesuaikan pengguna di Panel Pengaturan NVDA (1 - 30 detik).\n- Memperbaiki: Deteksi otomatis mesin Neural 100% di semua bahasa (memperbaiki masalah bahasa target bahasa Inggris dan tebakan skrip).\n- Memperbaiki: Penjaga cache memori untuk mencegah batas waktu jaringan mengunci teks yang tidak diterjemahkan ke dalam memori.\n- Memperbaiki: Batas waktu soket HTTP yang ketat di semua mesin cloud dan AI (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Memperbaiki: Perlindungan cadangan untuk placeholder nomor templat jika dirusak oleh mesin terjemahan.\n- Performa: Arsitektur pengemasan daftar putih yang ketat mengurangi ukuran add-on hingga ~79 KB.\n"
+		},
+		{
+			"language": "ur",
+			"displayName": "ترجمہ کریں۔",
+			"description": "NVDA کے لیے ایک انتہائی تیز اور ہلکا پھلکا آن لائن ترجمہ ایڈون۔ اصل میں Yannick Plassiard کے ذریعہ تخلیق کیا گیا، اس ترمیم شدہ ورژن کو تیز رفتار کلاؤڈ انجنوں کا استعمال کرتے ہوئے ریئل ٹائم ترجمہ کے لیے بہتر بنایا گیا ہے۔ خصوصی شکریہ اور مکمل کریڈٹ اصل ڈویلپر کو اس کے غیر معمولی کام کے لیے جاتا ہے۔ انٹرنیٹ کنکشن کی ضرورت ہے۔",
+			"changelog": "\n- خصوصیت: NVDA سیٹنگ پینل میں صارف کی مرضی کے مطابق ترجمہ کا ٹائم آؤٹ (1 - 30 سیکنڈ)۔\n- فکسڈ: تمام زبانوں میں 100% نیورل انجن آٹو ڈیٹیکشن (انگریزی ٹارگٹ لینگویج اور اسکرپٹ کا اندازہ لگانے کے مسائل کو ٹھیک کرتا ہے)۔\n- فکسڈ: نیٹ ورک ٹائم آؤٹ کو غیر ترجمہ شدہ متن کو میموری میں لاک کرنے سے روکنے کے لیے میموری کیش گارڈ۔\n- فکسڈ: تمام کلاؤڈ اور اے آئی انجنوں پر سخت HTTP ساکٹ ٹائم آؤٹ (ڈیپ ایل، اوپن اے آئی، جیمنی، بنگ، اوپن راؤٹر، لیبر ٹرانسلیٹ، لنگوا)۔\n- فکسڈ: ٹیمپلیٹ نمبر پلیس ہولڈرز کے لیے فال بیک سیف گارڈ اگر ٹرانسلیشن انجنوں کے ذریعے خراب ہو جائے۔\n- کارکردگی: سخت وائٹ لسٹ پیکیجنگ آرکیٹیکچر ایڈ آن سائز کو ~79 KB تک کم کرتا ہے۔\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Перекладач",
+			"description": "Надшвидкий та компактний онлайн перекладач для NVDA. Ця модифікована версія, спочатку створена Янніком Плассіардом, була оптимізована для швидкого перекладу в режимі реального часу з використанням високошвидкісних хмарних двигунів. Особлива подяка та повне визнання належать оригінальному розробнику за його виняткову роботу. Потрібне підключення до Інтернету.",
+			"changelog": "\n- Функція: настроюваний користувачем час очікування перекладу на панелі налаштувань NVDA (1–30 секунд).\n- Виправлено: 100% автоматичне визначення нейронної системи для всіх мов (вирішено проблеми з підгадуванням англійської цільової мови та сценарію).\n- Виправлено: захист кешу пам’яті, щоб запобігти блокуванню неперекладеного тексту в пам’яті через час очікування мережі.\n- Виправлено: строгі тайм-аути сокетів HTTP для всіх хмарних механізмів і механізмів штучного інтелекту (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Виправлено: резервний захист для заповнювачів номерів шаблонів, якщо їх спотворили механізми перекладу.\n- Продуктивність: сувора архітектура упаковки білого списку зменшує розмір надбудови до ~79 КБ.\n"
+		},
+		{
+			"language": "nl",
+			"displayName": "Vertalen",
+			"description": "Een ultrasnelle en lichtgewicht online vertaaladd-on voor NVDA. Deze aangepaste versie, oorspronkelijk gemaakt door Yannick Plassiard, is geoptimaliseerd voor snelle realtime vertalingen met behulp van snelle cloud-engines. Speciale dank en alle eer gaat naar de oorspronkelijke ontwikkelaar voor zijn uitzonderlijke werk. Vereist een internetverbinding.",
+			"changelog": "\n- Functie: Door de gebruiker aanpasbare time-out voor vertalingen in het NVDA-instellingenpaneel (1 - 30 seconden).\n- Opgelost: 100% automatische detectie van neurale motoren in alle talen (verhelpt problemen met de Engelse doeltaal en het raden van scripts).\n- Opgelost: geheugencachebewaking om te voorkomen dat netwerktime-outs onvertaalde tekst in het geheugen vergrendelen.\n- Opgelost: strikte HTTP-socket-time-outs in alle cloud- en AI-engines (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Opgelost: terugvalbeveiliging voor tijdelijke aanduidingen voor sjabloonnummers als deze door vertaalmachines worden verminkt.\n- Prestaties: Strikte verpakkingsarchitectuur op de witte lijst, waardoor de grootte van de add-on wordt teruggebracht tot ~79 KB.\n"
+		},
+		{
+			"language": "fr",
+			"displayName": "Traduire",
+			"description": "Un module complémentaire de traduction en ligne ultra-rapide et léger pour NVDA. Créée à l'origine par Yannick Plassiard, cette version modifiée a été optimisée pour des traductions rapides en temps réel à l'aide de moteurs cloud à grande vitesse. Des remerciements particuliers et tout le crédit vont au développeur d'origine pour son travail exceptionnel. Nécessite une connexion Internet.",
+			"changelog": "\n- Fonctionnalité : Délai d'expiration de traduction personnalisable par l'utilisateur dans le panneau de paramètres NVDA (1 à 30 secondes).\n- Corrigé : détection automatique à 100 % du moteur neuronal dans toutes les langues (corrige les problèmes de langue cible en anglais et de devinette de script).\n- Corrigé : protection du cache mémoire pour empêcher les délais d'attente du réseau de verrouiller le texte non traduit en mémoire.\n- Corrigé : délais d'expiration stricts des sockets HTTP sur tous les moteurs cloud et IA (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Corrigé : sauvegarde de secours pour les espaces réservés aux numéros de modèle en cas de modification par les moteurs de traduction.\n- Performances : architecture de packaging de liste blanche stricte réduisant la taille des modules complémentaires à environ 79 Ko.\n"
+		},
+		{
+			"language": "pl",
+			"displayName": "Tłumaczyć",
+			"description": "Ultraszybki i lekki dodatek do tłumaczenia online dla NVDA. Ta zmodyfikowana wersja, pierwotnie stworzona przez Yannicka Plassiarda, została zoptymalizowana pod kątem szybkich tłumaczeń w czasie rzeczywistym przy użyciu szybkich silników chmurowych. Specjalne podziękowania i pełne uznanie należą się oryginalnemu programiście za jego wyjątkową pracę. Wymaga połączenia z Internetem.",
+			"changelog": "\n- Cecha: Konfigurowalny przez użytkownika limit czasu tłumaczenia w panelu ustawień NVDA (1–30 sekund).\n- Naprawiono: 100% automatyczne wykrywanie silnika neuronowego we wszystkich językach (naprawia problemy z językiem docelowym w języku angielskim i odgadywaniem skryptów).\n- Naprawiono: Ochrona pamięci podręcznej pamięci, zapobiegająca blokowaniu nieprzetłumaczonego tekstu w pamięci po przekroczeniu limitu czasu sieci.\n- Naprawiono: Ścisłe limity czasu gniazd HTTP we wszystkich silnikach chmurowych i AI (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Naprawiono: Zabezpieczenie awaryjne dla symboli zastępczych numerów szablonów, jeśli zostały zniekształcone przez silniki tłumaczeniowe.\n- Wydajność: Ścisła architektura opakowań z białą listą zmniejszająca rozmiar dodatku do ~ 79 KB.\n"
+		},
+		{
+			"language": "es",
+			"displayName": "Traducir",
+			"description": "Un complemento de traducción en línea ultrarrápido y liviano para NVDA. Creada originalmente por Yannick Plasiard, esta versión modificada ha sido optimizada para traducciones rápidas en tiempo real utilizando motores de nube de alta velocidad. Un agradecimiento especial y todo el crédito para el desarrollador original por su trabajo excepcional. Requiere una conexión a Internet.",
+			"changelog": "\n- Característica: Tiempo de espera de traducción personalizable por el usuario en el Panel de configuración de NVDA (1 - 30 segundos).\n- Corregido: 100% de detección automática del motor neuronal en todos los idiomas (soluciona problemas de adivinación del idioma de destino en inglés y de escritura).\n- Corregido: Protección de memoria caché para evitar que los tiempos de espera de la red bloqueen el texto no traducido en la memoria.\n- Corregido: Estrictos tiempos de espera de socket HTTP en todos los motores de nube e inteligencia artificial (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Corregido: protección alternativa para los marcadores de posición de números de plantilla si los motores de traducción los estropean.\n- Rendimiento: arquitectura de empaquetado de lista blanca estricta que reduce el tamaño de los complementos a ~79 KB.\n"
+		},
+		{
+			"language": "bn",
+			"displayName": "অনুবাদ করুন",
+			"description": "এনভিডিএর জন্য একটি অতি-দ্রুত এবং লাইটওয়েট অনলাইন অনুবাদ অ্যাডন। মূলত Yannick Plassiard দ্বারা তৈরি, এই পরিবর্তিত সংস্করণটি উচ্চ-গতির ক্লাউড ইঞ্জিন ব্যবহার করে দ্রুত রিয়েল-টাইম অনুবাদের জন্য অপ্টিমাইজ করা হয়েছে। বিশেষ ধন্যবাদ এবং সম্পূর্ণ কৃতিত্ব মূল বিকাশকারীকে তার ব্যতিক্রমী কাজের জন্য। একটি ইন্টারনেট সংযোগ প্রয়োজন.",
+			"changelog": "\n- বৈশিষ্ট্য: NVDA সেটিংস প্যানেলে ব্যবহারকারী-কাস্টমাইজযোগ্য অনুবাদের সময়সীমা (1 - 30 সেকেন্ড)।\n- স্থির: সমস্ত ভাষা জুড়ে 100% নিউরাল ইঞ্জিন অটো-ডিটেকশন (ইংরেজি টার্গেট ল্যাঙ্গুয়েজ এবং স্ক্রিপ্ট অনুমান সমস্যা সমাধান করে)।\n- স্থির: মেমরিতে অঅনুবাদিত পাঠ্য লক করা থেকে নেটওয়ার্ক টাইমআউট প্রতিরোধ করতে মেমরি ক্যাশে গার্ড।\n- স্থির: সমস্ত ক্লাউড এবং এআই ইঞ্জিন জুড়ে কঠোর HTTP সকেট সময়সীমা (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva)।\n- স্থির: টেমপ্লেট নম্বর স্থানধারকদের জন্য ফলব্যাক রক্ষাকবচ যদি অনুবাদ ইঞ্জিন দ্বারা আটকে থাকে।\n- পারফরম্যান্স: কঠোর হোয়াইটলিস্ট প্যাকেজিং আর্কিটেকচার অ্যাড-অনের আকারকে ~79 KB এ কমিয়ে দেয়।\n"
+		},
+		{
+			"language": "ko",
+			"displayName": "번역하다",
+			"description": "NVDA를 위한 초고속 및 경량 온라인 번역 애드온입니다. 원래 Yannick Plassiard가 만든 이 수정 버전은 고속 클라우드 엔진을 사용하여 신속한 실시간 번역에 최적화되었습니다. 탁월한 작업을 수행한 원래 개발자에게 특별한 감사와 전적인 감사를 표합니다. 인터넷 연결이 필요합니다.",
+			"changelog": "\n- 기능: NVDA 설정 패널에서 사용자 정의 가능한 번역 시간 제한(1 - 30초).\n- 수정됨: 모든 언어에서 100% 신경 엔진 자동 감지(영어 대상 언어 및 스크립트 추측 문제 수정)\n- 수정됨: 네트워크 시간 초과로 인해 번역되지 않은 텍스트가 메모리에 잠기는 것을 방지하기 위한 메모리 캐시 보호.\n- 수정됨: 모든 클라우드 및 AI 엔진(DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva)에서 엄격한 HTTP 소켓 시간 초과가 발생했습니다.\n- 수정됨: 번역 엔진에 의해 손상된 경우 템플릿 번호 자리 표시자에 대한 대체 보호 장치입니다.\n- 성능: 추가 기능 크기를 ~79KB로 줄이는 엄격한 화이트리스트 패키징 아키텍처.\n"
+		},
+		{
+			"language": "pt",
+			"displayName": "Traduzir",
+			"description": "Um complemento de tradução online ultrarrápido e leve para NVDA. Originalmente criada por Yannick Plasiard, esta versão modificada foi otimizada para traduções rápidas em tempo real usando mecanismos de nuvem de alta velocidade. Agradecimentos especiais e crédito total ao desenvolvedor original por seu trabalho excepcional. Requer uma conexão com a internet.",
+			"changelog": "\n- Recurso: Tempo limite de tradução personalizável pelo usuário no painel de configurações do NVDA (1 a 30 segundos).\n- Corrigido: 100% de detecção automática do mecanismo neural em todos os idiomas (corrige problemas de idioma alvo em inglês e adivinhação de script).\n- Corrigido: proteção de cache de memória para evitar que o tempo limite da rede bloqueie texto não traduzido na memória.\n- Corrigido: tempos limite de soquete HTTP rigorosos em todos os mecanismos de nuvem e IA (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Corrigido: proteção de fallback para espaços reservados para números de modelos se forem distorcidos por mecanismos de tradução.\n- Desempenho: Arquitetura de empacotamento de lista de permissões rigorosa, reduzindo o tamanho do complemento para aproximadamente 79 KB.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "Çevir",
+			"description": "NVDA için ultra hızlı ve hafif bir çevrimiçi çeviri eklentisi. Başlangıçta Yannick Plassiard tarafından oluşturulan bu değiştirilmiş sürüm, yüksek hızlı bulut motorları kullanılarak hızlı gerçek zamanlı çeviriler için optimize edildi. Olağanüstü çalışmasından dolayı orijinal geliştiriciye özel teşekkürler ve tam kredi. İnternet bağlantısı gerektirir.",
+			"changelog": "\n- Özellik: NVDA Ayarlar Panelinde kullanıcı tarafından kişiselleştirilebilir çeviri zaman aşımı (1 - 30 saniye).\n- Düzeltildi: Tüm dillerde %100 Nöral motor otomatik algılama (İngilizce hedef dil ve komut dosyası tahmin etme sorunlarını düzeltir).\n- Düzeltildi: Ağ zaman aşımlarının çevrilmemiş metni belleğe kilitlemesini önlemek için bellek önbellek koruması.\n- Düzeltildi: Tüm bulut ve yapay zeka motorlarında (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva) katı HTTP soketi zaman aşımları.\n- Düzeltildi: Şablon numarası yer tutucularının çeviri motorları tarafından karıştırılması durumunda geri dönüş koruması.\n- Performans: Eklenti boyutunu ~79 KB'ye düşüren katı beyaz liste paketleme mimarisi.\n"
+		},
+		{
+			"language": "de",
+			"displayName": "Übersetzen",
+			"description": "Ein ultraschnelles und leichtes Online-Übersetzungs-Add-on für NVDA. Ursprünglich von Yannick Plassiard erstellt, wurde diese modifizierte Version für schnelle Echtzeitübersetzungen mithilfe von Hochgeschwindigkeits-Cloud-Engines optimiert. Besonderer Dank und volle Anerkennung gebührt dem ursprünglichen Entwickler für seine außergewöhnliche Arbeit. Erfordert eine Internetverbindung.",
+			"changelog": "\n- Funktion: Vom Benutzer anpassbares Übersetzungs-Timeout im NVDA-Einstellungsfeld (1–30 Sekunden).\n- Behoben: 100 % automatische Erkennung der neuronalen Engine in allen Sprachen (behebt Probleme beim Erraten der englischen Zielsprache und des Skripts).\n- Behoben: Speicher-Cache-Schutz, um zu verhindern, dass Netzwerk-Timeouts nicht übersetzten Text im Speicher sperren.\n- Behoben: Strenge HTTP-Socket-Timeouts in allen Cloud- und KI-Engines (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Behoben: Fallback-Schutz für Platzhalter für Vorlagennummern, wenn diese durch Übersetzungs-Engines entstellt werden.\n- Leistung: Strenge Whitelist-Paketarchitektur reduziert die Add-on-Größe auf ca. 79 KB.\n"
+		},
+		{
+			"language": "it",
+			"displayName": "Tradurre",
+			"description": "Un componente aggiuntivo di traduzione online ultraveloce e leggero per NVDA. Creata originariamente da Yannick Plassiard, questa versione modificata è stata ottimizzata per traduzioni rapide in tempo reale utilizzando motori cloud ad alta velocità. Un ringraziamento speciale e tutto il merito vanno allo sviluppatore originale per il suo lavoro eccezionale. Richiede una connessione Internet.",
+			"changelog": "\n- Funzionalità: timeout della traduzione personalizzabile dall'utente nel pannello Impostazioni di NVDA (1 - 30 secondi).\n- Risolto: rilevamento automatico del motore neurale al 100% in tutte le lingue (risolve i problemi relativi alla lingua di destinazione inglese e ai problemi di interpretazione degli script).\n- Risolto: protezione della cache di memoria per impedire ai timeout di rete di bloccare il testo non tradotto in memoria.\n- Risolto: timeout rigorosi del socket HTTP su tutti i motori cloud e AI (DeepL, OpenAI, Gemini, Bing, OpenRouter, LibreTranslate, Lingva).\n- Risolto: salvaguardia di fallback per i segnaposto dei numeri di modello se alterati dai motori di traduzione.\n- Prestazioni: architettura rigorosa del pacchetto whitelist che riduce le dimensioni dei componenti aggiuntivi a ~79 KB.\n"
+		}
+	]
+}
