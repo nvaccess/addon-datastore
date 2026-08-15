@@ -35,5 +35,47 @@
 			"description": "Yazdıklarınızı izler ve Kneser-Ney yumuşatma yöntemiyle n-gram analizi kullanarak bir sonraki kelimeyi tahmin eder. Tahminler, NVDA’nın konuşma motoru aracılığıyla duyurulur ve NVDA + Control + sayı tuşları (1’den 0’a kadar) ile kabul edilebilir. Zamanla yazdıklarınızdan öğrenir. Kısmi kelime tahmini, terminal otomatik algılama, özel uygulama hariç tutma listesi ve ayarlar paneli içerir.",
 			"changelog": "Added a setting to silence automatic predictions while keeping on-demand predictions (NVDA+Alt+O) and the numbered acceptance keys working. Useful for users who find constant beeping and speech distracting and only want predictions when they ask for them."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000100",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1786832632,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786832636,
+				"last_submission_date": 1786832632,
+				"md5": "2c38b20fcada55f9c044bd2c26c66622",
+				"names": [],
+				"reputation": 0,
+				"sha1": "111f213ca5564aa059702c137ac97bcd5aae29d0",
+				"sha256": "a92b2454e3abb665bd3631f2dc4c8c3ddc5d861cdde94438c75075de325dbe6b",
+				"size": 32305130,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
