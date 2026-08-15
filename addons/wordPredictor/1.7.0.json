@@ -1,0 +1,39 @@
+{
+	"addonId": "wordPredictor",
+	"displayName": "Word Predictor",
+	"URL": "https://github.com/RareBird15/wordpredictor/releases/download/v1.7.0/wordPredictor-1.7.0.nvda-addon",
+	"description": "Watches what you type and predicts the next word using n-gram analysis with Kneser-Ney smoothing. Predictions are announced through NVDA's speech engine and can be accepted with NVDA+Control+number keys (1 through 0). Learns from your writing over time. Includes partial-word prediction and terminal auto-detection and a custom app exclusion list and a settings panel.",
+	"sha256": "a9ca8349666027d24419b2c62da00d10b432b0354758de8436392ae180d2d673",
+	"addonVersionName": "1.7.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Lanie",
+	"sourceURL": "https://github.com/RareBird15/wordpredictor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/RareBird15/wordPredictor",
+	"changelog": "Retrained the LSTM predictor on 20 million tokens of modern movie and TV dialogue (OpenSubtitles) instead of 19th-century literature, for much more natural predictions. Extended the context window from 4 to 6 words. The LSTM now blends with the n-gram model instead of replacing it, combining context-aware suggestions with words learned from your own writing. Fixed a padding bug and a context-corruption bug that were degrading prediction quality.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786829502000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Kelime Tahmincisi",
+			"description": "Yazdıklarınızı izler ve Kneser-Ney yumuşatma yöntemiyle n-gram analizi kullanarak bir sonraki kelimeyi tahmin eder. Tahminler, NVDA’nın konuşma motoru aracılığıyla duyurulur ve NVDA + Control + sayı tuşları (1’den 0’a kadar) ile kabul edilebilir. Zamanla yazdıklarınızdan öğrenir. Kısmi kelime tahmini, terminal otomatik algılama, özel uygulama hariç tutma listesi ve ayarlar paneli içerir.",
+			"changelog": "Retrained the LSTM predictor on 20 million tokens of modern movie and TV dialogue (OpenSubtitles) instead of 19th-century literature, for much more natural predictions. Extended the context window from 4 to 6 words. The LSTM now blends with the n-gram model instead of replacing it, combining context-aware suggestions with words learned from your own writing. Fixed a padding bug and a context-corruption bug that were degrading prediction quality."
+		}
+	]
+}
