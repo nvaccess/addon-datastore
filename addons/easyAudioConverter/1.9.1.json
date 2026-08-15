@@ -1,0 +1,407 @@
+{
+	"addonId": "easyAudioConverter",
+	"displayName": "Easy Audio Converter",
+	"URL": "https://github.com/kazek5p-git/easy-audio-converter/releases/download/v1.9.1/easyAudioConverter-1.9.1.nvda-addon",
+	"description": "Accessible queued and independent-window audio conversion plus no-re-encoding stream extraction/remuxing with planning, naming templates, EBU R128 loudness normalization, output verification, profiles, optional bundled GOGO WAV-to-MP3 encoding, detailed results, and secure updates.",
+	"sha256": "c6252818b235ddec313271ec41812527701f8615af41317bdadcc4b825bf6352",
+	"addonVersionName": "1.9.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 9,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Kazimierz Parzych",
+	"sourceURL": "https://github.com/kazek5p-git/easy-audio-converter",
+	"license": "GPL v3 or later",
+	"homepage": "https://github.com/kazek5p-git/easy-audio-converter",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1786827624000,
+	"translations": [
+		{
+			"language": "hr",
+			"displayName": "Jednostavan audio pretvarač",
+			"description": "Dostupna pretvorba pojedinačne datoteke i paketna audio konverzija iz Windows Explorera, koju pokreće paket FFmpeg."
+		},
+		{
+			"language": "de_CH",
+			"displayName": "Einfacher Audiokonverter",
+			"description": "Zugängliche Einzeldatei- und Batch-Audiokonvertierung über den Windows Explorer, unterstützt durch das mitgelieferte FFmpeg."
+		},
+		{
+			"language": "fa",
+			"displayName": "مبدل صوتی آسان",
+			"description": "امکان تبدیل صوتی تک فایل و دسته ای از Windows Explorer که توسط FFmpeg همراه ارائه می شود."
+		},
+		{
+			"language": "kn",
+			"displayName": "ಸುಲಭ ಆಡಿಯೋ ಪರಿವರ್ತಕ",
+			"description": "ವಿಂಡೋಸ್ ಎಕ್ಸ್‌ಪ್ಲೋರರ್‌ನಿಂದ ಪ್ರವೇಶಿಸಬಹುದಾದ ಸಿಂಗಲ್-ಫೈಲ್ ಮತ್ತು ಬ್ಯಾಚ್ ಆಡಿಯೊ ಪರಿವರ್ತನೆ, ಬಂಡಲ್ ಮಾಡಿದ FFmpeg ನಿಂದ ಚಾಲಿತವಾಗಿದೆ."
+		},
+		{
+			"language": "ky",
+			"displayName": "Easy Audio Converter",
+			"description": "Топтолгон FFmpeg менен камсыздалган Windows Explorerден жеткиликтүү бир файлдуу жана пакеттик аудио конверсиясы."
+		},
+		{
+			"language": "af_ZA",
+			"displayName": "Maklike oudio-omskakelaar",
+			"description": "Toeganklike enkel-lêer en bondel oudio-omskakeling vanaf Windows Explorer, aangedryf deur gebundelde FFmpeg."
+		},
+		{
+			"language": "ckb",
+			"displayName": "گۆڕینی دەنگی ئاسان",
+			"description": "گۆڕینی دەنگی تاکە فایل و وەجبەیی دەستڕاگەیشتن لە ویندۆز ئێکسپلۆرەرەوە، کە بە FFmpeg ی کۆکراوە کاردەکات."
+		},
+		{
+			"language": "be",
+			"displayName": "Лёгкі аўдыё канвэртар",
+			"description": "Даступнае аднафайлавае і пакетнае пераўтварэнне гуку з Правадыра Windows на базе FFmpeg, які ўваходзіць у камплект."
+		},
+		{
+			"language": "an",
+			"displayName": "Convertidor de Audio Easy",
+			"description": "Conversión de audio accesible en archivos únicos y en lotes desde el Explorador de Windows, impulsada por FFmpeg incluido."
+		},
+		{
+			"language": "am",
+			"displayName": "ቀላል የድምጽ መለወጫ",
+			"description": "ተደራሽ ነጠላ-ፋይል እና ባች የድምጽ ልወጣ ከዊንዶውስ ኤክስፕሎረር፣ በተጠቀለለ FFmpeg የተጎላበተ።"
+		},
+		{
+			"language": "mni",
+			"displayName": "ꯑꯆꯝꯕ ꯑꯣꯗꯤꯑꯣ ꯀꯟꯚꯔꯇꯔ",
+			"description": "ꯋꯤꯟꯗꯣꯁ ꯑꯦꯛꯁꯄ꯭ꯂꯣꯔꯔꯗꯒꯤ ꯐꯪꯕ ꯉꯝꯕ ꯁꯤꯡꯒꯜ-ꯐꯥꯏꯜ ꯑꯃꯁꯨꯡ ꯕꯦꯆ ꯑꯣꯗꯤꯑꯣ ꯀꯟꯚꯔꯁꯟ, ꯕꯟꯗꯜ FFmpeg ꯅ ꯄꯥꯋꯔ ꯇꯧꯋꯤ꯫"
+		},
+		{
+			"language": "mn",
+			"displayName": "Хялбар аудио хөрвүүлэгч",
+			"description": "Windows Explorer-ээс нэг файл болон багц аудио хөрвүүлэх боломжтой, багцалсан FFmpeg."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Conversor de áudio fácil",
+			"description": "Conversão acessível de arquivo único e áudio em lote do Windows Explorer, com tecnologia FFmpeg incluída."
+		},
+		{
+			"language": "ga",
+			"displayName": "Tiontaire Fuaime Éasca",
+			"description": "Comhshó fuaime aonchomhad agus baisce inrochtana ó Windows Explorer, faoi thiomáint ag FFmpeg cuachta."
+		},
+		{
+			"language": "he",
+			"displayName": "ממיר אודיו קל",
+			"description": "המרת אודיו נגישה של קובץ בודד ואצווה מסייר Windows, מופעלת על ידי FFmpeg מצורפת."
+		},
+		{
+			"language": "ka",
+			"displayName": "მარტივი აუდიო კონვერტორი",
+			"description": "ხელმისაწვდომია ერთი ფაილის და სერიული აუდიო კონვერტაცია Windows Explorer-დან, რომელიც უზრუნველყოფილია შეფუთული FFmpeg-ით."
+		},
+		{
+			"language": "lb",
+			"displayName": "Einfach Audio Converter",
+			"description": "Zougänglech Single-Datei a Batch Audio Konversioun vu Windows Explorer, ugedriwwen duerch gebündelte FFmpeg."
+		},
+		{
+			"language": "ja",
+			"displayName": "簡単オーディオコンバーター",
+			"description": "バンドルされている FFmpeg を利用して、Windows エクスプローラーから単一ファイルおよびバッチ オーディオ変換にアクセスできます。"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "简易音频转换器",
+			"description": "可从 Windows 资源管理器访问单文件和批量音频转换，由捆绑的 FFmpeg 提供支持。"
+		},
+		{
+			"language": "ar",
+			"displayName": "محول الصوت السهل",
+			"description": "يمكن الوصول إلى تحويل الصوت للملف الفردي والدفعي من Windows Explorer، المدعوم من FFmpeg المجمعة."
+		},
+		{
+			"language": "vi",
+			"displayName": "Chuyển đổi âm thanh dễ dàng",
+			"description": "Chuyển đổi âm thanh hàng loạt và tệp đơn có thể truy cập được từ Windows Explorer, được cung cấp bởi FFmpeg đi kèm."
+		},
+		{
+			"language": "as",
+			"displayName": "সহজ অডিঅ' কনভাৰ্টাৰ",
+			"description": "উইণ্ডোচ এক্সপ্ল'ৰাৰৰ পৰা অভিগম্য-একক ফাইল আৰু চাম অডিঅ' ৰূপান্তৰণ, বাণ্ডল কৰা FFmpeg দ্বাৰা চালিত।"
+		},
+		{
+			"language": "kok",
+			"displayName": "सोंपें ऑडियो कन्व्हर्टर",
+			"description": "विंडोज एक्सप्लोरर कडल्यान प्रवेशयोग्य सिंगल-फायल आनी बॅच ऑडिओ रूपांतरण, बंडल FFmpeg वरवीं संचालित."
+		},
+		{
+			"language": "ru",
+			"displayName": "Простой аудио конвертер",
+			"description": "Доступное однофайловое и пакетное преобразование аудио из проводника Windows на базе встроенного FFmpeg."
+		},
+		{
+			"language": "cs",
+			"displayName": "Snadný audio převodník",
+			"description": "Přístupná jednosouborová a dávková konverze zvuku z Průzkumníka Windows, poháněná přibaleným FFmpegem."
+		},
+		{
+			"language": "ro",
+			"displayName": "Convertor audio ușor",
+			"description": "Conversie audio accesibilă într-un singur fișier și în lot din Windows Explorer, alimentată de FFmpeg inclus."
+		},
+		{
+			"language": "ca",
+			"displayName": "Convertidor d'àudio fàcil",
+			"description": "Conversió d'àudio d'un sol fitxer i per lots accessible des de l'Explorador de Windows, impulsat per FFmpeg inclòs."
+		},
+		{
+			"language": "nb_NO",
+			"displayName": "Enkel lydkonvertering",
+			"description": "Tilgjengelig enkeltfil- og batch-lydkonvertering fra Windows Utforsker, drevet av medfølgende FFmpeg."
+		},
+		{
+			"language": "bs",
+			"displayName": "Jednostavan audio konverter",
+			"description": "Pristupačna konverzija jednog fajla i grupna audio konverzija iz Windows Explorera, koju pokreće FFmpeg u paketu."
+		},
+		{
+			"language": "lt",
+			"displayName": "Lengvas garso keitiklis",
+			"description": "Prieinamas vieno failo ir paketinis garso konvertavimas iš „Windows Explorer“, palaikomas kartu su FFmpeg."
+		},
+		{
+			"language": "gl",
+			"displayName": "Conversor de audio sinxelo",
+			"description": "Accesible conversión de audio por lotes e ficheiros únicos desde o Explorador de Windows, impulsado por FFmpeg incluído."
+		},
+		{
+			"language": "nb",
+			"displayName": "Enkel lydkonvertering",
+			"description": "Tilgjengelig enkeltfil- og batch-lydkonvertering fra Windows Utforsker, drevet av medfølgende FFmpeg."
+		},
+		{
+			"language": "el",
+			"displayName": "Εύκολος μετατροπέας ήχου",
+			"description": "Προσβάσιμη μετατροπή ήχου μεμονωμένων αρχείων και ομαδικών από την Εξερεύνηση των Windows, που υποστηρίζεται από το πακέτο FFmpeg."
+		},
+		{
+			"language": "nn_NO",
+			"displayName": "Enkel lydkonvertering",
+			"description": "Tilgjengelig enkeltfil- og batch-lydkonvertering fra Windows Utforsker, drevet av medfølgende FFmpeg."
+		},
+		{
+			"language": "sv",
+			"displayName": "Easy Audio Converter",
+			"description": "Tillgänglig enkelfils- och batchljudkonvertering från Utforskaren i Windows, driven av medföljande FFmpeg."
+		},
+		{
+			"language": "ne",
+			"displayName": "सजिलो अडियो कनवर्टर",
+			"description": "Windows Explorer बाट पहुँचयोग्य एकल-फाइल र ब्याच अडियो रूपान्तरण, बन्डल गरिएको FFmpeg द्वारा संचालित।"
+		},
+		{
+			"language": "da",
+			"displayName": "Nem lydkonverter",
+			"description": "Tilgængelig enkelt-fil og batch-lydkonvertering fra Windows Stifinder, drevet af medfølgende FFmpeg."
+		},
+		{
+			"language": "sl",
+			"displayName": "Easy Audio Converter",
+			"description": "Dostopna pretvorba posamezne datoteke in paketna zvočna pretvorba iz Windows Explorerja, ki jo poganja priloženi FFmpeg."
+		},
+		{
+			"language": "hi",
+			"displayName": "आसान ऑडियो कनवर्टर",
+			"description": "विंडोज़ एक्सप्लोरर से सुलभ एकल-फ़ाइल और बैच ऑडियो रूपांतरण, बंडल एफएफएमपीईजी द्वारा संचालित।"
+		},
+		{
+			"language": "km",
+			"displayName": "កម្មវិធីបម្លែងសំឡេងងាយស្រួល",
+			"description": "ការបម្លែងសំឡេងឯកសារតែមួយ និងជាច្រើនដែលអាចចូលដំណើរការបានពី Windows Explorer ដែលដំណើរការដោយ FFmpeg ដែលបានភ្ជាប់មកជាមួយ។"
+		},
+		{
+			"language": "id",
+			"displayName": "Konverter Audio Mudah",
+			"description": "Konversi file tunggal dan audio batch yang dapat diakses dari Windows Explorer, didukung oleh paket FFmpeg."
+		},
+		{
+			"language": "ml",
+			"displayName": "എളുപ്പമുള്ള ഓഡിയോ കൺവെർട്ടർ",
+			"description": "Windows Explorer-ൽ നിന്ന് ആക്‌സസ് ചെയ്യാവുന്ന സിംഗിൾ-ഫയൽ, ബാച്ച് ഓഡിയോ പരിവർത്തനം, ബണ്ടിൽ ചെയ്‌ത FFmpeg."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Converter Audio Easy",
+			"description": "Veguheztina bihîstwerî ya yek-pelê û berhevokê ya ji Windows Explorer-ê, ku ji hêla FFmpeg-a hevgirtî ve hatî hêzdar kirin."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "簡易音訊轉換器",
+			"description": "可從 Windows 資源管理器存取單一檔案和批次音訊轉換，由捆綁的 FFmpeg 提供支援。"
+		},
+		{
+			"language": "ur",
+			"displayName": "آسان آڈیو کنورٹر",
+			"description": "Windows Explorer سے قابل رسائی سنگل فائل اور بیچ آڈیو کنورژن، بنڈل FFmpeg کے ذریعے تقویت یافتہ۔"
+		},
+		{
+			"language": "sk",
+			"displayName": "Jednoduchý prevodník zvuku",
+			"description": "Dostupná jednosúborová a dávková konverzia zvuku z Windows Explorer, poháňaná pribaleným FFmpegom."
+		},
+		{
+			"language": "so",
+			"displayName": "Easy Audio Converter",
+			"description": "Beddelka codka hal fayl iyo xirmo oo la heli karo oo laga heli karo Windows Explorer, oo ay ku shaqeyso FFmpeg oo la socda."
+		},
+		{
+			"language": "hu",
+			"displayName": "Easy Audio Converter",
+			"description": "Hozzáférhető egyfájlos és kötegelt hangkonverzió a Windows Intézőből, a mellékelt FFmpeg segítségével."
+		},
+		{
+			"language": "zh_HK",
+			"displayName": "簡易音訊轉換器",
+			"description": "可從 Windows 資源管理器存取單一檔案和批次音訊轉換，由捆綁的 FFmpeg 提供支援。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Легкий аудіо конвертер",
+			"description": "Доступне перетворення одного файлу та пакетне аудіо з Провідника Windows на основі пакету FFmpeg."
+		},
+		{
+			"language": "mk",
+			"displayName": "Лесен аудио конвертор",
+			"description": "Пристапна конверзија на единечна датотека и сериска аудио конверзија од Windows Explorer, овозможена од пакетот FFmpeg."
+		},
+		{
+			"language": "my",
+			"displayName": "လွယ်ကူသော Audio Converter",
+			"description": "အစုအစည်းဖြင့် FFmpeg ဖြင့် စွမ်းဆောင်ထားသည့် Windows Explorer မှ ဖိုင်တစ်ဖိုင်နှင့် အတွဲလိုက် အသံပြောင်းခြင်းကို အသုံးပြုနိုင်သည်။"
+		},
+		{
+			"language": "nl",
+			"displayName": "Eenvoudige audio-omzetter",
+			"description": "Toegankelijke audioconversie van één bestand en batch-audio vanuit Windows Verkenner, mogelijk gemaakt door de gebundelde FFmpeg."
+		},
+		{
+			"language": "is",
+			"displayName": "Auðvelt hljóðbreytir",
+			"description": "Aðgengileg hljóðbreyting í einni skrá og lotu frá Windows Explorer, knúin af FFmpeg búnt."
+		},
+		{
+			"language": "fr",
+			"displayName": "Convertisseur audio facile",
+			"description": "Conversion audio accessible en fichier unique et par lots à partir de l'Explorateur Windows, optimisée par FFmpeg fourni."
+		},
+		{
+			"language": "pl",
+			"displayName": "Easy Audio Converter",
+			"description": "Dostępna kolejkowana i wielookienkowa konwersja audio oraz wyodrębnianie i remuksowanie strumieni bez ponownego kodowania, z planowaniem, szablonami nazw, normalizacją głośności, weryfikacją, profilami, opcjonalnym dołączonym kodowaniem GOGO WAV do MP3 i dołączonym FFmpeg."
+		},
+		{
+			"language": "te",
+			"displayName": "ఈజీ ఆడియో కన్వర్టర్",
+			"description": "విండోస్ ఎక్స్ ప్లోరర్ నుండి ప్రాప్యత చేయగల సింగిల్-ఫైల్ మరియు బ్యాచ్ ఆడియో మార్పిడి, బండిల్ చేయబడిన FFmpeg చే శక్తినిచ్చబడుతుంది."
+		},
+		{
+			"language": "ta",
+			"displayName": "எளிதான ஆடியோ மாற்றி",
+			"description": "Windows Explorer இலிருந்து அணுகக்கூடிய ஒற்றை கோப்பு மற்றும் தொகுதி ஆடியோ மாற்றம், தொகுக்கப்பட்ட FFmpeg மூலம் இயக்கப்படுகிறது."
+		},
+		{
+			"language": "pa",
+			"displayName": "ਆਸਾਨ ਆਡੀਓ ਪਰਿਵਰਤਕ",
+			"description": "ਵਿੰਡੋਜ਼ ਐਕਸਪਲੋਰਰ ਤੋਂ ਪਹੁੰਚਯੋਗ ਸਿੰਗਲ-ਫਾਈਲ ਅਤੇ ਬੈਚ ਆਡੀਓ ਪਰਿਵਰਤਨ, ਬੰਡਲ FFmpeg ਦੁਆਰਾ ਸੰਚਾਲਿਤ।"
+		},
+		{
+			"language": "gu",
+			"displayName": "સરળ ઓડિયો કન્વર્ટર",
+			"description": "વિન્ડોઝ એક્સપ્લોરરમાંથી ઍક્સેસિબલ સિંગલ-ફાઈલ અને બેચ ઑડિઓ કન્વર્ઝન, બંડલ FFmpeg દ્વારા સંચાલિત."
+		},
+		{
+			"language": "bg",
+			"displayName": "Лесен аудио конвертор",
+			"description": "Достъпно конвертиране на един файл и пакетно аудио от Windows Explorer, захранвано от пакета FFmpeg."
+		},
+		{
+			"language": "es",
+			"displayName": "Convertidor de audio fácil",
+			"description": "Conversión de audio por lotes y de un solo archivo accesible desde el Explorador de Windows, impulsada por FFmpeg incluido."
+		},
+		{
+			"language": "bn",
+			"displayName": "সহজ অডিও কনভার্টার",
+			"description": "উইন্ডোজ এক্সপ্লোরার থেকে অ্যাক্সেসযোগ্য একক-ফাইল এবং ব্যাচ অডিও রূপান্তর, বান্ডিলযুক্ত FFmpeg দ্বারা চালিত।"
+		},
+		{
+			"language": "ko",
+			"displayName": "간편한 오디오 변환기",
+			"description": "번들로 제공되는 FFmpeg로 구동되는 Windows 탐색기에서 액세스 가능한 단일 파일 및 일괄 오디오 변환."
+		},
+		{
+			"language": "fi",
+			"displayName": "Helppo Audio Converter",
+			"description": "Helppokäyttöinen yhden tiedoston ja erääänen muunnos Windowsin Resurssienhallinnasta, mukana toimitettava FFmpeg."
+		},
+		{
+			"language": "af",
+			"displayName": "Maklike oudio-omskakelaar",
+			"description": "Toeganklike enkel-lêer en bondel oudio-omskakeling vanaf Windows Explorer, aangedryf deur gebundelde FFmpeg."
+		},
+		{
+			"language": "pt",
+			"displayName": "Conversor de áudio fácil",
+			"description": "Conversão acessível de arquivo único e áudio em lote do Windows Explorer, com tecnologia FFmpeg incluída."
+		},
+		{
+			"language": "tr",
+			"displayName": "Kolay Ses Dönüştürücü",
+			"description": "Birlikte verilen FFmpeg tarafından desteklenen Windows Gezgini'nden erişilebilir tek dosya ve toplu ses dönüştürme."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Conversor de áudio fácil",
+			"description": "Conversão acessível de arquivo único e áudio em lote do Windows Explorer, com tecnologia FFmpeg incluída."
+		},
+		{
+			"language": "sq",
+			"displayName": "Konvertues i lehtë audio",
+			"description": "Konvertimi audio i aksesueshëm me një skedar të vetëm dhe në grup nga Windows Explorer, i mundësuar nga FFmpeg i bashkuar."
+		},
+		{
+			"language": "de",
+			"displayName": "Einfacher Audiokonverter",
+			"description": "Zugängliche Einzeldatei- und Batch-Audiokonvertierung über den Windows Explorer, unterstützt durch das mitgelieferte FFmpeg."
+		},
+		{
+			"language": "th",
+			"displayName": "แปลงเสียงอย่างง่าย",
+			"description": "การแปลงเสียงไฟล์เดียวและชุดที่สามารถเข้าถึงได้จาก Windows Explorer ซึ่งขับเคลื่อนโดย FFmpeg ที่ให้มา"
+		},
+		{
+			"language": "it",
+			"displayName": "Convertitore audio semplice",
+			"description": "Conversione audio accessibile in file singolo e batch da Esplora risorse, basata su FFmpeg in bundle."
+		},
+		{
+			"language": "sr",
+			"displayName": "Лако аудио конвертор",
+			"description": "Приступачан сингле-филе и батцх аудио конверзија из Виндовс Екплорер, поверед би пакету ФФмпег."
+		},
+		{
+			"language": "es_CO",
+			"displayName": "Convertidor de audio fácil",
+			"description": "Conversión de audio por lotes y de un solo archivo accesible desde el Explorador de Windows, impulsada por FFmpeg incluido."
+		}
+	]
+}
