@@ -393,5 +393,56 @@
 			"displayName": "Sonata Sherpa Voices",
 			"description": "sintetizador NVDA basado en Sonata que utiliza modelos sherpa-onnx con un administrador de voz accesible."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9e436041d5ca8e4efab63518ce471455462993248694bdce43e526a29ca5e528",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "9e436041d5ca8e4efab63518ce471455462993248694bdce43e526a29ca5e528",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: pycotovia (whl)\nVersion: 0.6.0a1\nDescription: Pure-Python Cotovia G2P phonemizer for Galician and Spanish\n\nThe package pycotovia (v0.6.0a1) contains pure Python code for Galician and Spanish G2P (grapheme-to-phoneme) conversion, along with vendored speech synthesis utilities, text/date parsing libraries (such as Babel, dateparser, NetworkX, and NumPy submodules), and NVDA screen reader speech driver components. Analysis of all files revealed no malicious logic, unauthorized credential exfiltration, backdoor execution, or suspicious dynamic payload downloads.",
+						"category": "code_insight",
+						"id": "9e436041d5ca8e4efab63518ce471455462993248694bdce43e526a29ca5e528-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000001e1e160500",
+					"raw_md5": "92ee29f1cabc639fe40cd724c19de799"
+				},
+				"first_submission_date": 1786894149,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786894179,
+				"last_submission_date": 1786894149,
+				"md5": "94e62f6267f515a9bfcffc6216cfcde4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e604a0b1c5dfb9f751169ca002ce9236af02c1e2",
+				"sha256": "9e436041d5ca8e4efab63518ce471455462993248694bdce43e526a29ca5e528",
+				"size": 143545654,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
