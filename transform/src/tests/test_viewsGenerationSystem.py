@@ -7,19 +7,20 @@ Runs the dataView generation system on test data.
 Creates a number of specific scenarios for running the transformation.
 """
 
-from dataclasses import dataclass
-from enum import Enum
-import json
 import glob
-from logging import getLogger
+import json
 import os
-from pathlib import Path
 import re
 import shutil
-import textwrap
-from src.transform.datastructures import MajorMinorPatch
 import subprocess
+import textwrap
 import unittest
+from dataclasses import dataclass
+from enum import Enum
+from logging import getLogger
+from pathlib import Path
+
+from src.transform.datastructures import MajorMinorPatch
 
 log = getLogger()
 
