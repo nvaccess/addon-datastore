@@ -1,0 +1,161 @@
+{
+	"addonId": "macroStudio",
+	"displayName": "Macro Studio",
+	"URL": "https://github.com/BarryAllen53/macroStudio/releases/download/v1.0.1/macroStudio-1.0.1.nvda-addon",
+	"description": "A high-performance, system level engine for recording, editing and playing back keyboard macros.\nIncludes stealth recording, a multi-event editor, custom shortcuts and adjustable playback speed.\n\nThis add-on is based on NVDA Macro Manager by Muhammet Enes Şenovalı. It is published as a separate add-on so that development can continue actively.",
+	"sha256": "d9c21cec89127ba91e02a8096b1abab858956f2b3927efed4414b53e427f9fa2",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Bilal Uğur Özçıtak",
+	"sourceURL": "https://github.com/BarryAllen53/macroStudio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BarryAllen53/macroStudio",
+	"changelog": "1.0.1\n\nFixed chords being flattened. When two keys overlapped, the release of the first was injected in the same\nsystem call as the press of the second, so the two were never held down at the same moment and the target\napplication saw two unrelated keystrokes instead of the combination. Presses now only ever travel with\npresses and releases with releases.\nRaising the playback speed no longer shrinks the overlap between two keys to nothing; keys held together\nnow stay together for at least the configured minimum hold time.\n\n1.0\n\nFirst release of Macro Studio.\n\nMacro Studio continues the work of NVDA Macro Manager by Muhammet Enes Şenovalı as a separate add-on, so that\ndevelopment can carry on actively. The keyboard engine of the original add-on was rewritten and a large number\nof defects were fixed before this release.\n\nPlayback engine:\nKeys that were pressed together are now replayed together. A whole chord is injected with a single system call\ninstead of one key after another, and overlapping or held keys keep their original order and timing.\nKeys chosen from the key list now carry their real scan code and extended flag, so arrows, Insert, Delete,\nHome, End, right Ctrl, right Alt and numpad divide no longer arrive as a different key.\nFixed the key list replacing standard letters with layout specific keys, which could send a completely\ndifferent key than the one selected.\nFixed partially rejected keystroke batches being resent in full, which produced duplicate keystrokes.\nFixed a race that allowed the same macro to start twice and interleave its keystrokes.\nFixed a hold time floor that was applied to every key release and pulled apart keys released together.\nFixed the application lock being bypassed when the foreground application could not be identified.\n\nRecording:\nFixed a recording that repeated a single key being erased by the stop hotkey trimming.\nFixed key events that are not real key transitions being stored and then silently dropped on playback.\nRecording can no longer be started while a macro is playing, and a failed keyboard hook is now reported.\n\nMacros and interface:\nFixed macros saved from the dialog being locked to NVDA itself instead of the target application.\nFixed the smart loop optimiser dropping most repetitions of macros with a loop count above one.\nFixed duplicated macros sharing an identifier, which made one of them impossible to assign a gesture to.\nFixed the macro list keeping a hidden extra selection, so deleting could remove the wrong macro.\nFixed hold-to-run, which failed on every hotkey and could stop itself on its own keystrokes.\nFixed an empty playback speed field aborting the save.\nFixed all playback messages failing silently because a loop variable shadowed the translation function.\nExport file names are now sanitised and the clipboard import is size limited.\nThe dark dialog colours are only applied when Windows itself is in dark mode.\nKeyboard hooks are released when the add-on is unloaded.\n\nTranslations:\nComplete translations for Arabic, Azerbaijani, Chinese (simplified and traditional), Dutch, English, Filipino,\nGerman, Hindi, Kurdish (Kurmanji and Sorani), Portuguese (Brazil and Portugal), Russian, Spanish, Turkish and\nVietnamese. The German and Spanish catalogues of the original add-on were keyed to obsolete source strings and\nnever actually applied.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786114711000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Macro Studio",
+			"description": "Um mecanismo de alto desempenho, em nível de sistema, para gravar, editar e reproduzir macros de teclado.\nInclui gravação segura, editor de vários eventos, atalhos personalizados e velocidade de reprodução ajustável.\n\nEste complemento é baseado no NVDA Macro Manager de Muhammet Enes Şenovalı. Ele é publicado como um complemento separado para que o desenvolvimento possa continuar de forma ativa."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Macro Studio",
+			"description": "一个高性能的系统级引擎，用于录制、编辑和播放键盘宏。\n包含安全录制、多事件编辑器、自定义快捷键和可调播放速度。\n\n本插件基于 Muhammet Enes Şenovalı 的 NVDA Macro Manager 开发，并作为独立插件发布，以便持续积极地开发。"
+		},
+		{
+			"language": "en",
+			"displayName": "Macro Studio",
+			"description": "A high-performance, system level engine for recording, editing and playing back keyboard macros.\nIncludes stealth recording, a multi-event editor, custom shortcuts and adjustable playback speed.\n\nThis add-on is based on NVDA Macro Manager by Muhammet Enes Şenovalı. It is published as a separate add-on so that development can continue actively."
+		},
+		{
+			"language": "ku",
+			"displayName": "Macro Studio",
+			"description": "Motoreke bilez a asta pergalê ji bo tomarkirin, guherandin û lêxistina makroyên klavyeyê.\nTomarkirina ewle, guherînerê gelek bûyeran, kurterêyên taybet û leza lêxistinê ya guherbar dihewîne.\n\nEv pêvek li ser bingeha NVDA Macro Manager a Muhammet Enes Şenovalı hatiye amadekirin. Ji bo ku pêşxistin bi awayekî çalak bidome, wek pêvekeke cuda hatiye weşandin."
+		},
+		{
+			"language": "ru",
+			"displayName": "Macro Studio",
+			"description": "Высокопроизводительный движок системного уровня для записи, редактирования и воспроизведения клавиатурных макросов.\nВключает безопасную запись, редактор событий, собственные сочетания клавиш и настраиваемую скорость воспроизведения.\n\nЭто дополнение основано на NVDA Macro Manager от Muhammet Enes Şenovalı. Оно публикуется как отдельное дополнение, чтобы разработку можно было продолжать активно."
+		},
+		{
+			"language": "hi",
+			"displayName": "Macro Studio",
+			"description": "कीबोर्ड मैक्रो को रिकॉर्ड करने, संपादित करने और चलाने के लिए तेज़, सिस्टम स्तर का इंजन।\nइसमें सुरक्षित रिकॉर्डिंग, अनेक घटनाओं का संपादक, अपने शॉर्टकट और बदली जा सकने वाली गति शामिल है।\n\nयह ऐड-ऑन Muhammet Enes Şenovalı के NVDA Macro Manager पर आधारित है। विकास को सक्रिय रूप से जारी रखने के लिए इसे एक अलग ऐड-ऑन के रूप में प्रकाशित किया गया है।"
+		},
+		{
+			"language": "de",
+			"displayName": "Macro Studio",
+			"description": "Eine leistungsstarke Engine auf Systemebene zum Aufzeichnen, Bearbeiten und Abspielen von Tastaturmakros.\nMit sicherer Aufzeichnung, einem Editor für mehrere Ereignisse, eigenen Tastenkombinationen und einstellbarer Wiedergabegeschwindigkeit.\n\nDiese Erweiterung basiert auf NVDA Macro Manager von Muhammet Enes Şenovalı. Sie wird als eigenständige Erweiterung veröffentlicht, damit die Entwicklung aktiv fortgesetzt werden kann."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Macro Studio",
+			"description": "Um motor de alto desempenho, em nível de sistema, para gravar, editar e reproduzir macros de teclado.\nInclui gravação segura, editor de vários eventos, atalhos personalizados e velocidade de reprodução ajustável.\n\nEste extra baseia-se no NVDA Macro Manager de Muhammet Enes Şenovalı. É publicado como um extra separado para que o desenvolvimento possa continuar de forma ativa."
+		},
+		{
+			"language": "ckb",
+			"displayName": "Macro Studio",
+			"description": "بزوێنەرێکی خێرا لە ئاستی سیستەم بۆ تۆمارکردن، دەستکاری و لێدانی ماکرۆکانی تەختەکلیل.\nتۆمارکردنی پارێزراو، دەستکاریکەری چەند ڕووداو، کورتەڕێی تایبەت و خێرایی گۆڕاوی لێدان لەخۆدەگرێت.\n\nئەم پێوەکراوە لەسەر بنەمای NVDA Macro Manager ی Muhammet Enes Şenovalı دروستکراوە. وەک پێوەکراوێکی جیاواز بڵاوکراوەتەوە بۆ ئەوەی گەشەپێدان بە چالاکی بەردەوام بێت."
+		},
+		{
+			"language": "ar",
+			"displayName": "Macro Studio",
+			"description": "محرك عالي الأداء على مستوى النظام لتسجيل وحدات ماكرو لوحة المفاتيح وتحريرها وتشغيلها.\nيتضمن التسجيل الآمن، ومحرر أحداث متعددة، واختصارات مخصصة، وسرعة تشغيل قابلة للضبط.\n\nهذه الإضافة مبنية على NVDA Macro Manager من إعداد Muhammet Enes Şenovalı. وقد نُشرت كإضافة منفصلة لكي يستمر تطويرها بنشاط."
+		},
+		{
+			"language": "vi",
+			"displayName": "Macro Studio",
+			"description": "Một công cụ hiệu năng cao ở mức hệ thống để ghi, chỉnh sửa và phát lại macro bàn phím.\nBao gồm chế độ ghi an toàn, trình chỉnh sửa nhiều sự kiện, phím tắt tùy chỉnh và tốc độ phát điều chỉnh được.\n\nTiện ích này được xây dựng dựa trên NVDA Macro Manager của Muhammet Enes Şenovalı. Nó được phát hành thành một tiện ích riêng để việc phát triển có thể tiếp tục một cách tích cực."
+		},
+		{
+			"language": "es",
+			"displayName": "Macro Studio",
+			"description": "Un motor de alto rendimiento, a nivel del sistema, para grabar, editar y reproducir macros de teclado.\nIncluye grabación segura, un editor de varios eventos, atajos personalizados y velocidad de reproducción ajustable.\n\nEste complemento se basa en NVDA Macro Manager de Muhammet Enes Şenovalı. Se publica como un complemento independiente para que el desarrollo pueda continuar de forma activa."
+		},
+		{
+			"language": "az",
+			"displayName": "Macro Studio",
+			"description": "Klaviatura makrolarını yazmaq, redaktə etmək və oxutmaq üçün yüksək məhsuldarlıqlı, sistem səviyyəli mühərrik.\nTəhlükəsiz yazma, çoxhadisəli redaktor, fərdi qısayollar və tənzimlənən oxutma sürəti daxildir.\n\nBu əlavə Muhammet Enes Şenovalı-nin NVDA Macro Manager əlavəsi əsasında hazırlanıb. İnkişafın fəal şəkildə davam etdirilməsi üçün ayrıca əlavə kimi dərc olunub."
+		},
+		{
+			"language": "nl",
+			"displayName": "Macro Studio",
+			"description": "Een snelle engine op systeemniveau om toetsenbordmacro's op te nemen, te bewerken en af te spelen.\nMet veilige opname, een editor voor meerdere gebeurtenissen, eigen sneltoetsen en instelbare afspeelsnelheid.\n\nDeze add-on is gebaseerd op NVDA Macro Manager van Muhammet Enes Şenovalı. Hij wordt als aparte add-on uitgebracht zodat de ontwikkeling actief kan doorgaan."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "Macro Studio",
+			"description": "一個高效能的系統層級引擎，用來錄製、編輯與播放鍵盤巨集。\n包含安全錄製、多事件編輯器、自訂快速鍵與可調整的播放速度。\n\n本附加元件以 Muhammet Enes Şenovalı 的 NVDA Macro Manager 為基礎，並以獨立的附加元件發布，以便持續積極開發。"
+		},
+		{
+			"language": "fil",
+			"displayName": "Macro Studio",
+			"description": "Isang mabilis at antas-sistemang makina para mag-record, mag-edit at magpatugtog ng mga macro sa keyboard.\nKasama ang ligtas na pagre-record, editor ng maraming kaganapan, sariling shortcut at nababagong bilis ng pagpapatugtog.\n\nNakabatay ang add-on na ito sa NVDA Macro Manager ni Muhammet Enes Şenovalı. Inilalabas ito bilang hiwalay na add-on upang maipagpatuloy nang aktibo ang pagpapaunlad."
+		},
+		{
+			"language": "tr",
+			"displayName": "Macro Studio",
+			"description": "Klavye makrolarını kaydeden, düzenleyen ve oynatan yüksek başarımlı, sistem düzeyinde bir motor.\nGizli kayıt kipi, çok olaylı makro düzenleyici, özel kısayollar ve ayarlanabilir oynatma hızı içerir.\n\nBu eklenti, Muhammet Enes Şenovalı'nın NVDA Macro Manager eklentisi temel alınarak hazırlanmıştır. Geliştirmenin etkin biçimde sürdürülebilmesi için ayrı bir eklenti olarak yayımlanmıştır."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d9c21cec89127ba91e02a8096b1abab858956f2b3927efed4414b53e427f9fa2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "d9c21cec89127ba91e02a8096b1abab858956f2b3927efed4414b53e427f9fa2",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000081d0e0c1000",
+					"raw_md5": "8728af47d634f2669acbb48a9f7e99d6"
+				},
+				"first_submission_date": 1786114715,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1786114716,
+				"last_submission_date": 1786114715,
+				"md5": "a4fe023c3d43c97fb756bfdc9ea1ff24",
+				"names": [],
+				"reputation": 0,
+				"sha1": "dd807243b33001708f9bed859752967ffef449e2",
+				"sha256": "d9c21cec89127ba91e02a8096b1abab858956f2b3927efed4414b53e427f9fa2",
+				"size": 145856,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10822"
+}
