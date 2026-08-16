@@ -1,0 +1,113 @@
+{
+	"addonId": "simpleCopy",
+	"displayName": "simpleCopy",
+	"URL": "https://github.com/chaichaimee/simpleCopy/releases/download/2026.9.0/simpleCopy-v2026.9.0.nvda-addon",
+	"description": "Simple Copy is an NVDA add-on that makes copying and collecting text easier. You can copy selected text, append multiple selections to the clipboard, copy from the review cursor, copy browser URLs and hyperlinks, and copy recently spoken speech or a sequence of speech. It also includes a URL history manager for saving and organizing copied links. Clipboard clearing is supported. The add-on focuses on smooth workflow and reliable clipboard operations.\nHot Keys:\nCTRL+Shift+A\nSingle Tap : Copy URL\n Double Tap : Copy Hyper Link\nTriple Tapp : URL History\nCTRL+Shift+V\nSingle Tap : Copy and Append text\n Double Tap : Copy from Review Cursur\nTripple Tap : Clear clipboard\nF9\nSingle Tap : Copy Last Speech\nDouble Tap : Append Last Speech\nTriple Tap : Copy Until Last Speech\nShift+F9\nSingle Tap : navigate to previous speech history item\nDouble Tap : navigate to next speech history item\nTripple Tap : Open Record Speech History File",
+	"sha256": "a5ee91a0691efc4880a338ec388db4d1376f9705bb04b8ae54480e963282f600",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/simpleCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/simpleCopy",
+	"changelog": "Added URL History dialog for copied links. Fixed duplicate speech capture in Copy Until Last Speech: now keeps only final state echo instead of redundant checkbox lines.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786874963000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy は、テキストのコピーと収集を簡単にする NVDA アドオンです。選択したテキストのコピー、複数の選択範囲のクリップボードへの追加、レビューカーソルからのコピー、ブラウザのURLやハイパーリンクのコピー、最近読み上げられた音声や一連の音声のコピーが可能です。また、コピーしたリンクを保存・整理するためのURL履歴マネージャーも含まれています。クリップボードのクリア機能がサポートされています。このアドオンは、スムーズなワークフローと信頼性の高いクリップボード操作に重点を置いています。\nHot Keys:\nCTRL+Shift+A\n1回タップ : URLをコピー\n2回タップ : ハイパーリンクをコピー\n3回タップ : URL履歴\nCTRL+Shift+V\n1回タップ : テキストをコピーして追加\n2回タップ : レビューカーソルからコピー\n3回タップ : クリップボードをクリア\nF9\n1回タップ : 最後の音声をコピー\n2回タップ : 最後の音声を追加\n3回タップ : 最後の音声までコピー\nShift+F9\n1回タップ : 前の音声履歴項目へ移動\n2回タップ : 次の音声履歴項目へ移動\n3回タップ : 記録された音声履歴ファイルを開く"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy 是一个 NVDA 插件，可让复制和收集文本变得更加容易。您可以复制选中的文本、将多个选中项追加到剪贴板、从审阅光标复制、复制浏览器网址和超链接、以及复制最近朗读的语音或语音序列。它还包含一个网址历史管理器，用于保存和整理复制的链接。支持清空剪贴板。该插件专注于流畅的工作流程和可靠的剪贴板操作。\nHot Keys:\nCTRL+Shift+A\n单击 : 复制网址\n双击 : 复制超链接\n三击 : 网址历史\nCTRL+Shift+V\n单击 : 复制并追加文本\n双击 : 从审阅光标复制\n三击 : 清空剪贴板\nF9\n单击 : 复制上一语音\n双击 : 追加上一语音\n三击 : 复制到上一语音\nShift+F9\n单击 : 导航到上一个语音历史记录项\n双击 : 导航到下一个语音历史记录项\n三击 : 打开记录的语音历史记录文件"
+		},
+		{
+			"language": "en",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy is an NVDA add-on that makes copying and collecting text easier. You can copy selected text, append multiple selections to the clipboard, copy from the review cursor, copy browser URLs and hyperlinks, and copy recently spoken speech or a sequence of speech. It also includes a URL history manager for saving and organizing copied links. Clipboard clearing is supported. The add-on focuses on smooth workflow and reliable clipboard operations.\nHot Keys:\nCTRL+Shift+A\nSingle Tap : Copy URL\n Double Tap : Copy Hyper Link\nTriple Tapp : URL History\nCTRL+Shift+V\nSingle Tap : Copy and Append text\n Double Tap : Copy from Review Cursur\nTripple Tap : Clear clipboard\nF9\nSingle Tap : Copy Last Speech\nDouble Tap : Append Last Speech\nTriple Tap : Copy Until Last Speech\nShift+F9\nSingle Tap : navigate to previous speech history item\nDouble Tap : navigate to next speech history item\nTripple Tap : Open Record Speech History File"
+		},
+		{
+			"language": "ar",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy هو إضافة لـ NVDA تسهل نسخ النصوص وجمعها. يمكنك نسخ النص المحدد، وإضافة تحديدات متعددة إلى الحافظة، ونسخ النص من مؤشر المراجعة، ونسخ عناوين URL للمتصفح والارتباطات التشعبية، ونسخ الكلام المنطوق مؤخراً أو تسلسل الكلام. كما يتضمن مدير تاريخ عناوين URL لحفظ وتنظيم الروابط المنسوحة. يتم دعم مسح الحافظة. تركز الإضافة على سير عمل سلس وعمليات حافظة موثوقة.\nHot Keys:\nCTRL+Shift+A\nضغطة واحدة : نسخ عنوان URL\nضغطة مزدوجة : نسخ الارتباط التشعبي\nثلاث ضغطات : سجل عناوين URL\nCTRL+Shift+V\nضغطة واحدة : نسخ النص وإضافته\nضغطة مزدوجة : النسخ من مؤشر المراجعة\nثلاث ضغطات : مسح الحافظة\nF9\nضغطة واحدة : نسخ آخر كلام\nضغطة مزدوجة : إلحاق آخر كلام\nثلاث ضغطات : نسخ حتى آخر كلام\nShift+F9\nضغطة واحدة : الانتقال إلى عنصر سجل الكلام السابق\nضغطة مزدوجة : الانتقال إلى عنصر سجل الكلام التالي\nثلاث ضغطات : فتح ملف سجل الكلام المسجل"
+		},
+		{
+			"language": "ru",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy — это дополнение для NVDA, которое упрощает копирование и сбор текста. Вы можете копировать выделенный текст, добавлять несколько фрагментов в буфер обмена, копировать с помощью курсора просмотра, копировать URL-адреса браузера и гиперссылки, а также копировать недавно произнесенную речь или последовательность речи. Оно также включает диспетчер истории URL-адресов для сохранения и организации скопированных ссылок. Поддерживается очистка буфера обмена. Дополнение ориентировано на плавный рабочий процесс и надежную работу с буфером обмена.\nHot Keys:\nCTRL+Shift+A\nОдинарное нажатие : Копировать URL\nДвойное нажатие : Копировать гиперссылку\nТройное нажатие : История URL\nCTRL+Shift+V\nОдинарное нажатие : Копировать и добавить текст\nДвойное нажатие : Копировать с курсора просмотра\nТройное нажатие : Очистить буфер обмена\nF9\nОдинарное нажатие : Копировать последнюю речь\nДвойное нажатие : Добавить последнюю речь\nТройное нажатие : Копировать до последней речи\nShift+F9\nОдинарное нажатие : перейти к предыдущему элементу истории речи\nДвойное нажатие : перейти к следующему элементу истории речи\nТройное нажатие : Открыть файл истории записанной речи"
+		},
+		{
+			"language": "hi",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy एक NVDA एड-ऑन है जो टेक्स्ट को कॉपी और एकत्र करना आसान बनाता है। आप चयनित टेक्स्ट को कॉपी कर सकते हैं, क्लिपबोर्ड में कई चयनों को जोड़ सकते हैं, समीक्षा कर्सर से कॉपी कर सकते हैं, ब्राउज़र URL और हाइपरलिंक कॉपी कर सकते हैं, और हाल ही में बोली गई वाणी या वाणी के क्रम को कॉपी कर सकते हैं। इसमें कॉपी किए गए लिंक को सहेजने और व्यवस्थित करने के लिए एक URL इतिहास प्रबंधक भी शामिल है। क्लिपबोर्ड साफ़ करने का समर्थन किया जाता है। एड-ऑन सुचारू कार्यप्रवाह और विश्वसनीय क्लिपबोर्ड संचालन पर केंद्रित है।\nHot Keys:\nCTRL+Shift+A\nएक बार टैप करें : URL कॉपी करें\nदो बार टैप करें : हाइपरलिंक कॉपी करें\nतीन बार टैप करें : URL इतिहास\nCTRL+Shift+V\nएक बार टैप करें : टेक्स्ट कॉपी करें और जोड़ें\nदो बार टैप करें : समीक्षा कर्सर से कॉपी करें\nतीन बार टैप करें : क्लिपबोर्ड साफ़ करें\nF9\nएक बार टैप करें : अंतिम वाणी कॉपी करें\nदो बार टैप करें : अंतिम वाणी जोड़ें\nतीन बार टैप करें : अंतिम वाणी तक कॉपी करें\nShift+F9\nएक बार टैप करें : पिछले वाणी इतिहास आइटम पर नेविगेट करें\nदो बार टैप करें : अगले वाणी इतिहास आइटम पर नेविगेट करें\nतीन बार टैप करें : रिकॉर्डेड वाणी इतिहास फ़ाइल खोलें"
+		},
+		{
+			"language": "id",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy adalah add-on NVDA yang membuat penyalinan dan pengumpulan teks menjadi lebih mudah. Anda dapat menyalin teks yang dipilih, menambahkan beberapa pilihan ke clipboard, menyalin dari kursor peninjau, menyalin URL peramban dan hyperlink, serta menyalin ucapan yang baru saja diucapkan atau urutan ucapan. Add-on ini juga menyertakan pengelola riwayat URL untuk menyimpan dan mengatur tautan yang disalin. Penghapusan clipboard didukung. Add-on ini berfokus pada alur kerja yang mulus dan operasi clipboard yang andal.\nHot Keys:\nCTRL+Shift+A\nKetuk Sekali : Salin URL\nKetuk Dua Kali : Salin Hyperlink\nKetuk Tiga Kali : Riwayat URL\nCTRL+Shift+V\nKetuk Sekali : Salin dan Tambahkan teks\nKetuk Dua Kali : Salin dari Kursor Peninjau\nKetuk Tiga Kali : Bersihkan clipboard\nF9\nKetuk Sekali : Salin Ucapan Terakhir\nKetuk Dua Kali : Tambahkan Ucapan Terakhir\nKetuk Tiga Kali : Salin Hingga Ucapan Terakhir\nShift+F9\nKetuk Sekali : navigasi ke item riwayat ucapan sebelumnya\nKetuk Dua Kali : navigasi ke item riwayat ucapan berikutnya\nKetuk Tiga Kali : Buka Berkas Riwayat Ucapan yang Direkam"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy 是一個 NVDA 附加元件，可讓複製和收集文字變得更加容易。您可以複製選取的文字、將多個選取項目附加到剪貼簿、從檢視游標複製、複製瀏覽器網址和超連結，以及複製最近朗讀的語音或語音序列。它還包含一個網址歷史記錄管理員，用於儲存和整理複製的連結。支援清除剪貼簿。該附加元件專注於流暢的工作流程和可靠的剪貼簿操作。\nHot Keys:\nCTRL+Shift+A\n單擊 : 複製網址\n雙擊 : 複製超連結\n三擊 : 網址歷史記錄\nCTRL+Shift+V\n單擊 : 複製並附加文字\n雙擊 : 從檢視游標複製\n三擊 : 清除剪貼簿\nF9\n單擊 : 複製上一語音\n雙擊 : 附加上一語音\n三擊 : 複製到上一語音\nShift+F9\n單擊 : 導航到上一個語音歷史記錄項目\n雙擊 : 導航到下一個語音歷史記錄項目\n三擊 : 開啟記錄的語音歷史記錄檔案"
+		},
+		{
+			"language": "uk",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy — це додаток для NVDA, який спрощує копіювання та збір тексту. Ви можете копіювати виділений текст, додавати кілька виділень до буфера обміну, копіювати з курсору огляду, копіювати URL-адреси браузера та гіперпосилання, а також копіювати нещодавно вимовлений текст або послідовність мовлення. Він також містить менеджер історії URL-адресів для збереження та впорядкування скопійованих посилань. Підтримується очищення буфера обміну. Додаток орієнтований на плавний робочий процес та надійну роботу з буфером обміну.\nHot Keys:\nCTRL+Shift+A\nОдинарний тап : Копіювати URL\nПодвійний тап : Копіювати гіперпосилання\nПотрійний тап : Історія URL\nCTRL+Shift+V\nОдинарний тап : Копіювати та додати текст\nПодвійний тап : Копіювати з курсору огляду\nПотрійний тап : Очистити буфер обміну\nF9\nОдинарний тап : Копіювати останнє мовлення\nПодвійний тап : Додати останнє мовлення\nПотрійний тап : Копіювати до останнього мовлення\nShift+F9\nОдинарний тап : перейти до попереднього елемента історії мовлення\nПодвійний тап : перейти до наступного елемента історії мовлення\nПотрійний тап : Відкрити файл історії записаного мовлення"
+		},
+		{
+			"language": "fr",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy est un add-on NVDA qui facilite la collecte et la copie de texte. Vous pouvez copier du texte sélectionné, ajouter plusieurs sélections au presse-papiers, copier à partir du curseur de révision, copier des URL de navigateur et des hyperliens, et copier la parole récemment prononcée ou une séquence vocale. Il comprend également un gestionnaire d'historique des URL pour enregistrer et organiser les liens copiés. Le nettoyage du presse-papiers est pris en charge. L'add-on se concentre sur un flux de travail fluide et des opérations de presse-papiers fiables.\nHot Keys:\nCTRL+Shift+A\nSimple appui : Copier l'URL\nDouble appui : Copier l'hyperlien\nTriple appui : Historique des URL\nCTRL+Shift+V\nSimple appui : Copier et ajouter du texte\nDouble appui : Copier à partir du curseur de révision\nTriple appui : Vider le presse-papiers\nF9\nSimple appui : Copier la dernière parole\nDouble appui : Ajouter la dernière parole\nTriple appui : Copier jusqu'à la dernière parole\nShift+F9\nSimple appui : Naviguer vers l'élément précédent de l'historique de la parole\nDouble appui : Naviguer vers l'élément suivant de l'historique de la parole\nTriple appui : Ouvrir le fichier d'historique de la parole enregistré"
+		},
+		{
+			"language": "es",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy es un complemento para NVDA que facilita la copia y recopilación de texto. Puedes copiar texto seleccionado, añadir múltiples selecciones al portapapeles, copiar desde el cursor de revisión, copiar URLs de navegadores e hipervínculos, y copiar la voz hablada recientemente o una secuencia de voz. También incluye un administrador de historial de URLs para guardar y organizar enlaces copiados. Se admite el vaciado del portapapeles. El complemento se centra en un flujo de trabajo fluido y operaciones de portapapeles confiables.\nHot Keys:\nCTRL+Shift+A\nUn toque : Copiar URL\nDoble toque : Copiar hipervínculo\nTriple toque : Historial de URLs\nCTRL+Shift+V\nUn toque : Copiar y añadir texto\nDoble toque : Copiar desde el cursor de revisión\nTriple toque : Limpiar portapapeles\nF9\nUn toque : Copiar última locución\nDoble toque : Añadir última locución\nTriple toque : Copiar hasta la última locución\nShift+F9\nUn toque : Navegar al elemento anterior del historial de voz\nDoble toque : Navegar al siguiente elemento del historial de voz\nTriple toque : Abrir archivo de historial de voz grabado"
+		},
+		{
+			"language": "ko",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy는 텍스트 복사 및 수집을 더 쉽게 만들어 주는 NVDA 애드온입니다. 텍스트 선택 복사, 클립보드에 여러 선택 항목 추가, 검토 커서에서 복사, 브라우저 URL 및 하이퍼링크 복사, 최근에 음성으로 출력된 내용이나 연속된 음성 복사가 가능합니다. 또한 복사된 링크를 저장하고 관리할 수 있는 URL 기록 관리자도 포함되어 있습니다. 클립보드 지우기가 지원됩니다. 이 애드온은 원활한 작업 흐름과 안정적인 클립보드 작업에 중점을 둡니다.\nHot Keys:\nCTRL+Shift+A\n한 번 탭 : URL 복사\n두 번 탭 : 하이퍼링크 복사\n세 번 탭 : URL 기록\nCTRL+Shift+V\n한 번 탭 : 텍스트 복사 및 추가\n두 번 탭 : 검토 커서에서 복사\n세 번 탭 : 클립보드 지우기\nF9\n한 번 탭 : 마지막 음성 복사\n두 번 탭 : 마지막 음성 추가\n세 번 탭 : 마지막 음성까지 복사\nShift+F9\n한 번 탭 : 이전 음성 기록 항목으로 이동\n두 번 탭 : 다음 음성 기록 항목으로 이동\n세 번 탭 : 기록된 음성 기록 파일 열기"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy é um complemento do NVDA que torna a cópia e coleta de texto mais fácil. Você pode copiar texto selecionado, anexar múltiplas seleções à área de transferência, copiar a partir do cursor de revisão, copiar URLs de navegadores e hiperlinks, e copiar a fala falada recentemente ou uma sequência de fala. Ele também inclui um gerenciador de histórico de URLs para salvar e organizar links copiados. A limpeza da área de transferência é suportada. O complemento foca em um fluxo de trabalho suave e operações confiáveis na área de transferência.\nHot Keys:\nCTRL+Shift+A\nUm toque : Copiar URL\nDois toques : Copiar Hiperlink\nTrês toques : Histórico de URLs\nCTRL+Shift+V\nUm toque : Copiar e anexar texto\nDois toques : Copiar do Cursor de Revisão\nTrês toques : Limpar área de transferência\nF9\nUm toque : Copiar Última Fala\nDois toques : Anexar Última Fala\nTrês toques : Copiar Até a Última Fala\nShift+F9\nUm toque : navegar para o item anterior do histórico de fala\nDois toques : navegar para o próximo item do histórico de fala\nTrês toques : Abrir Arquivo de Histórico de Fala Gravado"
+		},
+		{
+			"language": "de",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy ist eine NVDA-Erweiterung, die das Kopieren und Sammeln von Text erleichtert. Sie können ausgewählten Text kopieren, mehrere Auswahlen an die Zwischenablage anhängen, vom Prüfcursor kopieren, Browser-URLs und Hyperlinks kopieren sowie kürzlich gesprochene Sprache oder eine Sprachsequenz kopieren. Sie enthält außerdem einen URL-Verlaufsmanager zum Speichern und Organisieren kopierter Links. Das Leeren der Zwischenablage wird unterstützt. Die Erweiterung konzentriert sich auf einen reibungslosen Arbeitsablauf und zuverlässige Zwischenablagenoperationen.\nHot Keys:\nCTRL+Shift+A\nEinfachklick : URL kopieren\nDoppelklick : Hyperlink kopieren\nDreifachklick : URL-Verlauf\nCTRL+Shift+V\nEinfachklick : Text kopieren und anhängen\nDoppelklick : Vom Prüfcursor kopieren\nDreifachklick : Zwischenablage leeren\nF9\nEinfachklick : Letzte Sprachausgabe kopieren\nDoppelklick : Letzte Sprachausgabe anhängen\nDreifachklick : Bis zur letzten Sprachausgabe kopieren\nShift+F9\nEinfachklick : Zum vorherigen Element des Sprachverlaufs navigieren\nDoppelklick : Zum nächsten Element des Sprachverlaufs navigieren\nDreifachklick : Datei des aufgezeichneten Sprachverlaufs öffnen"
+		},
+		{
+			"language": "th",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy เป็นแอดออนของ NVDA ที่ช่วยให้การคัดลอกและรวบรวมข้อความเป็นเรื่องง่าย คุณสามารถคัดลอกข้อความที่เลือก เพิ่มการเลือกหลายรายการไปยังคลิปบอร์ด คัดลอกข้อความจากเคอร์เซอร์ทบทวน คัดลอก URL ของเบราว์เซอร์และไฮเปอร์ลิงก์ และคัดลอกคำพูดที่เพิ่งพูดล่าสุดหรือลำดับคำพูด นอกจากนี้ยังมีตัวจัดการประวัติ URL สำหรับบันทึกและจัดระเบียบลิงก์ที่คัดลอก รองรับการล้างคลิปบอร์ด แอดออนนี้เน้นการทำงานที่ราบรื่นและการจัดการคลิปบอร์ดที่เชื่อถือได้\nHot Keys:\nCTRL+Shift+A\nแตะครั้งเดียว : คัดลอก URL\nแตะสองครั้ง : คัดลอกไฮเปอร์ลิงก์\nแตะสามครั้ง : ประวัติ URL\nCTRL+Shift+V\nแตะครั้งเดียว : คัดลอกและเพิ่มข้อความ\nแตะสองครั้ง : คัดลอกเนื้อหาจากเคอร์เซอร์ทบทวน\nแตะสามครั้ง : ล้างคลิปบอร์ด\nF9\nแตะครั้งเดียว : คัดลอกคำพูดล่าสุด\nแตะสองครั้ง : เพิ่มคำพูดล่าสุด\nแตะสามครั้ง : คัดลอกจนถึงคำพูดล่าสุด\nShift+F9\nแตะครั้งเดียว : ไปยังรายการประวัติคำพูดก่อนหน้า\nแตะสองครั้ง : ไปยังรายการประวัติคำพูดถัดไป\nแตะสามครั้ง : เปิดไฟล์ประวัติคำพูดที่บันทึกไว้"
+		},
+		{
+			"language": "it",
+			"displayName": "simpleCopy",
+			"description": "Simple Copy è un componente aggiuntivo per NVDA che semplifica la copia e la raccolta del testo. È possibile copiare il testo selezionato, aggiungere più selezioni negli appunti, copiare dal cursore di revisione, copiare URL del browser e collegamenti ipertestuali, e copiare il parlato recente o una sequenza di parlato. Include anche un gestore della cronologia degli URL per salvare e organizzare i collegamenti copiati. È supportata la pulizia degli appunti. Il componente aggiuntivo si concentra su un flusso di lavoro fluido e operazioni degli appunti affidabili.\nHot Keys:\nCTRL+Shift+A\nUn tocco : Copia URL\nDoppio tocco : Copia collegamento ipertestuale\nTriplo tocco : Cronologia URL\nCTRL+Shift+V\nUn tocco : Copia e aggiungi testo\nDoppio tocco : Copia dal cursore di revisione\nTriplo tocco : Pulisci appunti\nF9\nUn tocco : Copia ultimo parlato\nDoppio tocco : Aggiungi ultimo parlato\nTriplo tocco : Copia fino all'ultimo parlato\nShift+F9\nUn tocco : Passa all'elemento precedente della cronologia vocale\nDoppio tocco : Passa all'elemento successivo della cronologia vocale\nTriplo tocco : Apri il file della cronologia del parlato registrato"
+		}
+	]
+}
