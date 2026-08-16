@@ -1,0 +1,753 @@
+{
+	"addonId": "dengjen_neural_voices",
+	"displayName": "Dengjen Neural Voices",
+	"URL": "https://github.com/austek/dengjen-nvda/releases/download/v4.0.0/dengjen_neural_voices-4.0.0.nvda-addon",
+	"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the Sonata engine, together with a voice manager for downloading and installing voices.",
+	"sha256": "fe69a82f4eec02ca9df49542113c34d559719da8c89588482e9bb581e2146b14",
+	"addonVersionName": "4.0.0",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ali Ustek",
+	"sourceURL": "https://github.com/austek/dengjen-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/austek/dengjen-nvda",
+	"changelog": "The add-on has been renamed to Dengjen Neural Voices at the request of the original author, as a condition of listing in the NVDA Add-on Store. After upgrading you must reselect the synthesizer in NVDA's speech settings; your installed voices, rate, pitch and volume carry over automatically. Remove the old Sonata Neural Voices add-on, which no longer has access to the downloaded voices.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786448509000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Нейронные голоса Dengjen",
+			"description": "Добавляет в NVDA быстрые локальные нейронные голоса синтеза речи. Предоставляет драйвер синтезатора для голосовых моделей Piper на основе движка Sonata, а также менеджер голосов для загрузки и установки голосов.",
+			"changelog": "Дополнение переименовано в Нейронные голоса Dengjen по просьбе первоначального автора, как условие размещения в Магазине дополнений NVDA. После обновления необходимо заново выбрать синтезатор в настройках речи NVDA; установленные голоса, скорость, высота и громкость переносятся автоматически. Удалите старое дополнение Нейронные голоса Sonata — у него больше нет доступа к загруженным голосам."
+		},
+		{
+			"language": "fr",
+			"displayName": "Voix neuronales de Dengjen",
+			"description": "Ajoute à NVDA des voix de synthèse vocale neuronales rapides et locales. Fournit un pilote de synthétiseur pour les modèles de voix Piper via le moteur Sonata, ainsi qu'un gestionnaire de voix pour télécharger et installer des voix.",
+			"changelog": "L'extension a été renommée Voix neuronales de Dengjen à la demande de l'auteur original, comme condition pour figurer dans l'Add-on Store de NVDA. Après la mise à jour, vous devez sélectionner à nouveau le synthétiseur dans les paramètres de parole de NVDA ; vos voix installées, le débit, la hauteur et le volume sont conservés automatiquement. Supprimez l'ancienne extension Voix neuronales de Sonata, qui n'a plus accès aux voix téléchargées."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Dengên Neuronî yên Dengjen",
+			"description": "Dengên metin-bo-deng ên neuronî yên bilez û herêmî li NVDA-yê zêde dike. Ji bo modelên dengî yên Piper bi rêya motora Sonata ajokarek sentezker, û ji bo daxistin û sazkirina dengan rêveberek dengan pêşkêş dike.",
+			"changelog": "Li ser daxwaza nivîskarê bingehîn û wek şertekî ji bo cihgirtina di Dikana Pêvekan a NVDA de, navê pêvekê wek Dengên Neuronî yên Dengjen hate guherandin. Piştî bilindkirinê divê tu di mîhengên axaftinê yên NVDA de sentezker ji nû ve hilbijêrî; dengên te yên sazkirî, rêje, bilindahiya deng û piledeng bixweber derbas dibin. Pêveka kevn a Dengên Neuronî yên Sonata rake — ew êdî nikare bigihîje dengên daxistî."
+		},
+		{
+			"language": "es",
+			"displayName": "Voces Neuronales Dengjen",
+			"description": "Añade a NVDA voces neuronales de texto a voz rápidas y locales. Proporciona un controlador de sintetizador para modelos de voz de Piper mediante el motor Sonata, junto con un administrador de voces para descargar e instalar voces.",
+			"changelog": "El complemento ha pasado a llamarse Voces Neuronales Dengjen a petición del autor original, como condición para aparecer en la Tienda de Complementos de NVDA. Después de actualizar debes volver a seleccionar el sintetizador en las opciones de voz de NVDA; tus voces instaladas, la velocidad, el tono y el volumen se conservan automáticamente. Elimina el antiguo complemento Voces Neuronales Sonata, que ya no tiene acceso a las voces descargadas."
+		},
+		{
+			"language": "tr",
+			"displayName": "Dengjen Sinir Ağı Sesleri",
+			"description": "NVDA'ya hızlı, yerel sinir ağı tabanlı metin okuma sesleri ekler. Sonata motoru aracılığıyla Piper ses modelleri için bir sentezleyici sürücüsü ve sesleri indirip kurmak için bir ses yöneticisi sağlar.",
+			"changelog": "Eklentinin adı, özgün yazarın isteği üzerine ve NVDA Eklenti mağazasında yer alma koşulu olarak Dengjen Sinir Ağı Sesleri olarak değiştirildi. Güncellemeden sonra NVDA konuşma ayarlarından sentezleyiciyi yeniden seçmeniz gerekir; kurulu sesleriniz, hız, ses perdesi ve ses seviyesi otomatik olarak korunur. Artık indirilen seslere erişemeyen eski Sonata Sinir Ağı Sesleri eklentisini kaldırın."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/fe69a82f4eec02ca9df49542113c34d559719da8c89588482e9bb581e2146b14",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "fe69a82f4eec02ca9df49542113c34d559719da8c89588482e9bb581e2146b14",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"cc": 1,
+						"cfg": 1,
+						"css": 1,
+						"exe": 1,
+						"h": 5,
+						"html": 6,
+						"ini": 6,
+						"md": 10,
+						"mo": 5,
+						"pem": 1,
+						"po": 5,
+						"py": 168,
+						"pyd": 5,
+						"pyi": 1,
+						"txt": 2
+					},
+					"file_types": {
+						"HTML": 6,
+						"Portable Executable": 6,
+						"script": 1,
+						"unknown": 210
+					},
+					"highest_datetime": "2026-08-10 21:53:26",
+					"lowest_datetime": "2026-08-10 21:52:58",
+					"num_children": 223,
+					"type": "ZIP",
+					"uncompressed_size": 42307005
+				},
+				"contenthash": "92ef1ac969767aa0762dc3638c251bb1",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "475a80d33266f43e2296b613be432360"
+				},
+				"first_submission_date": 1786448515,
+				"last_analysis_date": 1786448515,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260811",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260810",
+						"engine_version": "6.808",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260811",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260811",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260811",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260811",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260811",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260811",
+						"engine_version": "260810-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260811",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260811",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260525",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260811",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260810",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260811",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260811",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260811",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260806",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260811",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260811",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260811",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260810",
+						"engine_version": "4.0.279",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260811",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260811",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260811",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260811",
+						"engine_version": "GD:27.45594AVA:64.31737",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260811",
+						"engine_version": "1786446071",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260811",
+						"engine_version": "1.0.251.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260811",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260811",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260811",
+						"engine_version": "14.71.60426",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260811",
+						"engine_version": "14.71.60427",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260811",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260811",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260811",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260811",
+						"engine_version": "3.1.0.260",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260811",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260811",
+						"engine_version": "1.2.0.15679",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260811",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260811",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260811",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260811",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260810",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260811",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260810",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260810",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260811",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260811",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260811",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260811",
+						"engine_version": "2026-08-11.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260811",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260810",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260811",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260811",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260811",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260811",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260810",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260811",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260811",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260810",
+						"engine_version": "9.5.1268",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260811",
+						"engine_version": "38878",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260811",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260810",
+						"engine_version": "2.0.0.5662",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260811",
+						"engine_version": "6.26-117392956",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260811",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260810",
+						"engine_version": "fa04f74:fa04f74:8753a2d:8753a2d",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260811",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 6,
+					"undetected": 67
+				},
+				"last_modification_date": 1786448616,
+				"last_submission_date": 1786448515,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "469eb155de7152600666f5fd6ee68027",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "8443a1e7470006ebab4d3a8ea4b4b1808714b9a7",
+				"sha256": "fe69a82f4eec02ca9df49542113c34d559719da8c89588482e9bb581e2146b14",
+				"size": 17632895,
+				"ssdeep": "393216:F9T0k96lXW6w4JBp5WV7Sy7EIqbGRQFVrckNexYCJrit/nY/OzJBYl:F5yXW6w4TuoIqiR46xYaT/CJBYl",
+				"tags": [
+					"contains-pe",
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1170733B434D4E664E5E631B22DD7ACB00EC6A015C19B26A31286D9CF7C9C0DB7739A3D",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "7f91f551df809544b18574fb8deb21cf"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10868"
+}
