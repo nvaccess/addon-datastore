@@ -1,0 +1,32 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.22.1/freeradio-2026.22.1.nvda-addon",
+	"description": "FreeRadio is an internet radio add-on for NVDA that provides seamless access to thousands of stations via the Radio Browser open directory. It features a fully accessible station browser with search, country filter, favourites management, and per-station audio profiles. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "c21fcc42a84a74afa9834646aff8dca0e833355709426ca596db3ff3fde4d490",
+	"addonVersionName": "2026.22.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 22,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n**Added**\n- Search results now include **TuneIn** and **iHeartRadio** stations alongside Radio Browser — both sources are queried in the background and merged into the existing result list; the source is shown next to the station name (\"... - TuneIn\" / \"... - iHeart\").\n- **Selectable recording output format**: keep the original stream format, extract audio losslessly, or convert to MP3 at a chosen bitrate (96–320 kb/s, default 128). Conversion runs in the background; if it fails, the original recording is kept. (#21, contributed by @michalkasperczak)\n- **On-demand, accessible output device picker**: opened with `F11` (unbound by default, customizable via NVDA's input gestures settings), pre-selects the currently active device, applies the choice on Enter. Only appears when more than one physical output device is detected — stays out of the way with a single device. (#22, contributed by @michalkasperczak)\n**Notes**\n- iHeartRadio integration may not work on some networks/regions (e.g. where the provider restricts access at the ISP level); it fails silently in that case without affecting other sources.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786950525000,
+	"translations": []
+}
