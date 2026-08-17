@@ -1,0 +1,32 @@
+{
+	"addonId": "youtubeCaptionReader",
+	"displayName": "YouTube Caption Reader",
+	"URL": "https://github.com/sheldon-im/nvda-youtube-caption-reader/releases/download/v1.0.2/youtubeCaptionReader-1.0.2.nvda-addon",
+	"description": "Reads changing captions in YouTube videos.\nUses the browser accessibility tree and adaptive streaming speech for NVDA users.",
+	"sha256": "617ac9815a93901b076edae3eef9b4a6389a8bfc79fca47667c086ff9b13c7d4",
+	"addonVersionName": "1.0.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Im Seongho",
+	"sourceURL": "https://github.com/sheldon-im/nvda-youtube-caption-reader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/sheldon-im/nvda-youtube-caption-reader",
+	"changelog": "Improves caption timing by prioritizing the latest visible caption and limiting stale speech backlog.\nUses the first visible caption as a baseline and replaces revised unspoken live-caption text.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1786945471000,
+	"translations": []
+}
