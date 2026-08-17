@@ -1,0 +1,39 @@
+{
+	"addonId": "protonVPNAccessibility",
+	"displayName": "ProtonVPN Accessibility",
+	"URL": "https://github.com/mamasene/add-on_protonvpn-o/releases/download/V1.1.0/protonVPNAccessibility-1.1.0.nvda-addon",
+	"description": "Improves accessibility of the ProtonVPN Windows application for NVDA users.\n\nMain features:\n- Proper labeling of buttons and controls\n- Dynamic announcements for VPN status information\n- Announcements for IP address, country, provider and traffic\n- Keyboard shortcuts for quick actions\n- French and English documentation\n\nThis is a community add-on and is not affiliated with Proton AG.",
+	"sha256": "d3e7fffcbe790716e62fa71eea2fda3082cefb6b4d21c13877422fd8d83f9571",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mama Sene",
+	"sourceURL": "https://github.com/mamasene/add-on_protonvpn-o",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mamasene/add-on_protonvpn-o",
+	"changelog": "Version 1.1.0:\n\nNew features:\n- Search for a country with Control+Shift+L: the add-on takes you straight to the ProtonVPN search field. Type a few letters to reach any country.\n- The country list is now readable: each country is announced by its name.\n- The country list tabs (All countries, Secure Core, P2P, Tor) are announced by their name.\n- NetShield, Kill Switch, Split tunneling and Port forwarding are announced by name, together with whether each one is on or off.\n\nFixes:\n- The add-on now speaks French.\n- The Kill Switch, traffic and country shortcuts work again, including while the VPN is connected.\n- Connection and disconnection are announced only once they have actually happened, and the add-on tells you if nothing changed.\n\nImprovements:\n- Keyboard shortcuts respond much faster.\n- NVDA no longer freezes while ProtonVPN is establishing a connection.\n- Your IP address is no longer recorded in the NVDA log.\n- The add-on summary, description and version history are available in French.\n\nVersion 1.0.1:\n- Updated add-on display name for international users\n- Fixed project repository URL\n- Improved manifest metadata\n- Updated French translation metadata\n\nVersion 1.0.0:\n- Initial stable release\n- Improved ProtonVPN interface accessibility\n- Added keyboard shortcuts\n- Added dynamic announcements for VPN status\n- Added French and English documentation",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787001726000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Accessibilité ProtonVPN",
+			"description": "Améliore l'accessibilité de l'application ProtonVPN pour Windows avec NVDA.\n\nFonctionnalités principales :\n- Étiquetage correct des boutons et des contrôles\n- Annonces dynamiques de l'état du VPN\n- Annonces de l'adresse IP, du pays, du fournisseur et du trafic\n- Raccourcis clavier pour les actions courantes\n- Documentation en français et en anglais\n\nIl s'agit d'une extension communautaire non affiliée à Proton AG.",
+			"changelog": "Version 1.1.0 :\n\nNouveautés :\n- Recherche d'un pays par Contrôle+Maj+L : l'extension vous place directement dans le champ de recherche de ProtonVPN. Tapez quelques lettres pour atteindre n'importe quel pays.\n- La liste des pays est enfin lisible : chaque pays est annoncé par son nom.\n- Les onglets de la liste des pays (Tous les pays, Secure Core, P2P, Tor) sont annoncés par leur nom.\n- NetShield, Arrêt d'urgence, Split tunneling et Redirection de port sont annoncés par leur nom, avec leur état activé ou désactivé.\n\nCorrections :\n- L'extension parle désormais français.\n- Les raccourcis Arrêt d'urgence, trafic et pays fonctionnent à nouveau, y compris lorsque le VPN est connecté.\n- La connexion et la déconnexion ne sont annoncées qu'une fois réellement effectuées, et l'extension vous prévient si rien n'a changé.\n\nAméliorations :\n- Les raccourcis clavier répondent beaucoup plus vite.\n- NVDA ne se fige plus pendant que ProtonVPN établit la connexion.\n- Votre adresse IP n'est plus enregistrée dans le journal de NVDA.\n- Le résumé, la description et l'historique des versions sont disponibles en français.\n\nVersion 1.0.1 :\n- Mise à jour du nom affiché de l'extension pour les utilisateurs internationaux\n- Correction de l'adresse du dépôt du projet\n- Amélioration des métadonnées du manifeste\n- Mise à jour des métadonnées de la traduction française\n\nVersion 1.0.0 :\n- Première version stable\n- Accessibilité améliorée de l'interface ProtonVPN\n- Ajout des raccourcis clavier\n- Annonces dynamiques de l'état du VPN\n- Documentation en français et en anglais"
+		}
+	]
+}
