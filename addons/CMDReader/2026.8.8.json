@@ -1,0 +1,113 @@
+{
+	"addonId": "CMDReader",
+	"displayName": "CMDReader",
+	"URL": "https://github.com/chaichaimee/CMDReader/releases/download/2026.8.8/CMDReader-v2026.8.8.nvda-addon",
+	"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real-time. Features instant audio notifications for terminal states and errors, customizable error keywords, a dedicated NVDA settings panel for privacy management, and live session shadow history scrolling without disrupting your workflow.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line",
+	"sha256": "75a8da98041ecbd882d2abb7775482479c728b33119a530330be7375f15238cd",
+	"addonVersionName": "2026.8.8",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 8
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/CMDReader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/CMDReader",
+	"changelog": "Refactored architecture: Decoupled logic from __init__.py into `cmdCore.py` for modular standard compliance. Expanded NVDA Settings Panel: Users can now fully customize addon behavior directly from NVDA preferences. Added 'Strict Privacy Mode' option to instantly disable all disk logging for highly sensitive console sessions. Unhardcoded error phrases: Custom error keywords can now be added or modified freely via settings (comma-separated). Added global Sound Toggle: Users can now optionally silence Window Ready, Command Finished, and Command Error beeps. Completely removed `cmdreader_history.json` and migrated terminal history to an absolute in-memory state with aggressive cleanup functionality.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787108026000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "CMDReader",
+			"description": "コマンドプロンプト (Command Prompt)、PowerShell、Windows Terminal の新しい出力をリアルタイムで自動的に読み上げます。ターミナルの状態やエラーに関する即時音声通知、カスタマイズ可能なエラーキーワード、プライバシー管理用の専用 NVDA 設定パネルを備え、ワークフローを中断することなくライブセッションのシャドウ履歴をスクロールできます。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "CMDReader",
+			"description": "实时自动读取命令提示符（Command Prompt）、PowerShell 和 Windows Terminal 中的新输出。具备终端状态和错误的即时音频通知、可自定义的错误关键词、用于隐私管理的专用 NVDA 设置面板，以及在不打断工作流的情况下实时浏览会话影子历史（shadow history）的功能。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "en",
+			"displayName": "CMDReader",
+			"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real-time. Features instant audio notifications for terminal states and errors, customizable error keywords, a dedicated NVDA settings panel for privacy management, and live session shadow history scrolling without disrupting your workflow.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ar",
+			"displayName": "CMDReader",
+			"description": "يقوم تلقائياً بقراءة المخرجات الجديدة في موجه الأوامر Command Prompt وPowerShell وWindows Terminal في الوقت الفعلي. يتضمن تنبيهات صوتية فورية لحالة الطرفية والأخطاء، وكلمات مفتاحية مخصصة للأخطاء، لوحة إعدادات NVDA مخصصة لإدارة الخصوصية، والتمرير المباشر لسجل الجلسة السابق (Shadow History) دون تعطيل سير عملك.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ru",
+			"displayName": "CMDReader",
+			"description": "Автоматически читает новый вывод в Командной строке (Command Prompt), PowerShell и Windows Terminal в реальном времени. Включает мгновенные звуковые уведомления о состоянии терминала и ошибках, настраиваемые ключевые слова ошибок, специальную панель настроек NVDA для управления конфиденциальностью, а также прокрутку истории текущей сессии (shadow history) без прерывания вашего рабочего процесса.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "hi",
+			"displayName": "CMDReader",
+			"description": "Command Prompt, PowerShell और Windows Terminal में नए आउटपुट को वास्तविक समय (real-time) में स्वचालित रूप से पढ़ता है। इसमें टर्मिनल स्थितियों और त्रुटियों (errors) के लिए त्वरित ऑडियो सूचनाएं, अनुकूलन योग्य त्रुटि कीवर्ड, गोपनीयता प्रबंधन के लिए एक समर्पित NVDA सेटिंग्स पैनल, और आपके कार्यप्रवाह को बाधित किए बिना लाइव सत्र शैडो इतिहास (shadow history) स्क्रॉलिंग की सुविधा शामिल है।\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "id",
+			"displayName": "CMDReader",
+			"description": "Secara otomatis membaca keluaran baru di Command Prompt, PowerShell, dan Windows Terminal secara real-time. Dilengkapi dengannotifikasi audio instan untuk status terminal dan galat (error), kata kunci galat yang dapat disesuaikan, panel pengaturan NVDA khusus untuk manajemen privasi, serta penelusuran riwayat sesi langsung (shadow history) tanpa mengganggu alur kerja Anda.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "CMDReader",
+			"description": "即時自動讀取命令提示字元（Command Prompt）、PowerShell 與 Windows Terminal 中的新輸出。具備終端機狀態與錯誤的即時音效通知、可自訂的錯誤關鍵字、用於隱私管理的專用 NVDA 設定面板，以及在不打斷工作流程的情況下即時捲動工作階段幕後歷史記錄（shadow history）的功能。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "uk",
+			"displayName": "CMDReader",
+			"description": "Автоматично читає новий вивід у Командному рядку (Command Prompt), PowerShell та Windows Terminal у реальному часі. Містить миттєві звукові сповіщення про стан термінала та помилки, налаштовувані ключові слова помилок, спеціальну панель налаштувань NVDA для керування конфіденційністю, а також прокручування історії поточної сесії (shadow history) без переривання вашого робочого процесу.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "fr",
+			"displayName": "CMDReader",
+			"description": "Lit automatiquement en temps réel les nouvelles sorties dans l'Invite de commandes (Command Prompt), PowerShell et Windows Terminal. Comprend des notifications audio instantanées pour les états et les erreurs du terminal, des mots-clés d'erreur personnalisables, un panneau de configuration NVDA dédié à la gestion de la confidentialité, ainsi que le défilement en direct de l'historique de session (shadow history) sans perturber votre flux de travail.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "es",
+			"displayName": "CMDReader",
+			"description": "Lee automáticamente las nuevas salidas en el Símbolo del sistema (Command Prompt), PowerShell y Windows Terminal en tiempo real. Cuenta con notificaciones de audio instantáneas para estados y errores de la terminal, palabras clave de error personalizables, un panel de configuración de NVDA dedicado para la gestión de la privacidad y desplazamiento por el historial de la sesión en vivo (shadow history) sin interrumpir su flujo de trabajo.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ko",
+			"displayName": "CMDReader",
+			"description": "명령 프롬프트(Command Prompt), PowerShell 및 Windows Terminal의 새로운 출력을 실시간으로 자동 읽어줍니다. 터미널 상태 및 오류에 대한 즉각적인 오디오 알림, 사용자 지정 가능한 오류 키워드, 개인정보 보호 관리를 위한 전용 NVDA 설정 패널을 제공하며, 작업 흐름을 방해하지 않고 실시간 세션 섀도 기록(shadow history)을 스크롤할 수 있습니다.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "CMDReader",
+			"description": "Lê automaticamente novas saídas no Prompt de Comando (Command Prompt), PowerShell e Windows Terminal em tempo real. Possui notificações de áudio instantâneas para estados e erros do terminal, palavras-chave de erro personalizáveis, um painel de configurações do NVDA dedicado para gerenciamento de privacidade e rolagem do histórico de sessão ao vivo (shadow history) sem interromper seu fluxo de trabalho.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "de",
+			"displayName": "CMDReader",
+			"description": "Liest automatisch neue Ausgaben in Eingabeaufforderung (Command Prompt), PowerShell und Windows Terminal in Echtzeit vor. Bietet sofortige akustische Benachrichtigungen für Terminalstatus und Fehler, anpassbare Fehler-Schlüsselwörter, ein dediziertes NVDA-Einstellungsfeld zur Datenschutzverwaltung sowie das direkte Durchblättern des Sitzungsverlaufs (Shadow History), ohne Ihren Arbeitsablauf zu unterbrechen.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "th",
+			"displayName": "CMDReader",
+			"description": "อ่านข้อความเอาต์พุตใหม่ใน Command Prompt, PowerShell และ Windows Terminal แบบเรียลไทม์โดยอัตโนมัติ มาพร้อมกับการแจ้งเตือนด้วยเสียงทันทีเมื่อมีสถานะหรือข้อผิดพลาดในเทอร์มินัล, กำหนดคำสำคัญของข้อผิดพลาดได้เอง, แผงตั้งค่า NVDA เฉพาะสำหรับจัดการความเป็นส่วนตัว และการเลื่อนดูประวัติเซสชันย้อนหลัง (shadow history) แบบสดๆ โดยไม่ขัดจังหวะการทำงานของคุณ\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "it",
+			"displayName": "CMDReader",
+			"description": "Legge automaticamente in tempo reale i nuovi output in Prompt dei comandi (Command Prompt), PowerShell e Windows Terminal. Dispone di notifiche audio istantanee per gli stati e gli errori del terminale, parole chiave di errore personalizzabili, un pannello delle impostazioni NVDA dedicato alla gestione della privacy e lo scorrimento della cronologia di sessione in tempo reale (shadow history) senza interrompere il flusso di lavoro.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		}
+	]
+}
