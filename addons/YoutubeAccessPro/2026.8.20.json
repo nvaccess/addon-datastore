@@ -28,5 +28,47 @@
 	"changelog": "\n2026.08.20: Fixed the automatic yt-dlp update checker only checking once every 24 hours, which made it easy to reasonably believe automatic updates were not working at all - it now checks on every NVDA startup instead (still only if enabled in Settings). Added a self-check that runs after a real restart to verify a yt-dlp update that reported success actually took effect, and warns you plainly if it did not (most likely causes: antivirus/Windows Defender blocking the newly-written files, or another NVDA installation on this computer) instead of silently staying on the old version with no explanation. Updated the bundled yt-dlp library to the latest stable release (2026.08.19).\n2026.08.18: Updated the bundled yt-dlp library (2026.07.04 to a 2026.08.17 pre-release build) to fix YouTube extraction breaking for pasted links (\"Could not fetch data\") - YouTube had changed something extraction-dependent since the previous release, and yt-dlp's maintainers had already shipped several fix builds ahead of their next stable release. Currently-live broadcasts now open directly in the user's default browser instead of playing inside the add-on, since the browser's own native YouTube player handles live playback more reliably than the bundled offline media player ever could. Added a \"Live\" search type alongside Video/Playlist/Channel, to find currently-live broadcasts by keyword directly from the Search and Download tab (previously only reachable per-channel via the Subscriptions tab's Live section). Also fixes an unrelated ordinary-video playback bug where mpv's own internal link resolver was incorrectly re-engaging on links this add-on had already resolved itself, occasionally cutting playback short before the end.\n2026.07.19: Full-featured release. Search, play, and download YouTube videos, playlists, and channels entirely by keyboard - audio playback with full transport control (play/pause, seek, volume, speed, previous/next with automatic continue), a sleep timer, personal playlist management, and a Subscriptions tab that browses a followed channel's Videos, Shorts, Live, and Playlists the way YouTube itself organizes them. Download to MP3 or MP4 with selectable quality, auto-sorted into folders by playlist or channel name. Full English/Thai interface with instant switching (Control+T).\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1787192279000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/584ed2c6181fabc8806fc6d95dcab59dd2b27b148a267de7ae8baaca4d1139c9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "584ed2c6181fabc8806fc6d95dcab59dd2b27b148a267de7ae8baaca4d1139c9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0e00",
+					"raw_md5": "5d4f8f3bb6dcd7d90143570a6b6bb6d2"
+				},
+				"first_submission_date": 1787192286,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787192326,
+				"last_submission_date": 1787192286,
+				"md5": "be10a61fff9553f948a40eb34c2b0140",
+				"names": [],
+				"reputation": 0,
+				"sha1": "f250b04189a26f8ba6f892937fc11f6b2f934597",
+				"sha256": "584ed2c6181fabc8806fc6d95dcab59dd2b27b148a267de7ae8baaca4d1139c9",
+				"size": 111731752,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
