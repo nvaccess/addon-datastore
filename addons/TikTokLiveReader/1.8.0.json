@@ -37,5 +37,56 @@
 			"displayName": "TikTok Live Reader",
 			"description": "TikTok Live Reader позволява проследяването на лайфове в реално време. Добавката извлича коментари, гифтове, последователи, харесвания, заявки за присъединяване, споделяния и статистика за зрителите, като ги запазва в текстови файлове. Те могат да бъдат четени с клавишни комбинации по време на сесията. Поддържат се също звукови известия и автоматично изговаряне на избрани събития."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6c20451b49901214db8f38e851d1e9d45dec2669e23c291da91fdf0e3683aa6f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6c20451b49901214db8f38e851d1e9d45dec2669e23c291da91fdf0e3683aa6f",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: anyio (whl)\nVersion: 4.12.1\nDescription: High-level concurrency and networking framework on top of asyncio or Trio\n\n/fetch_signed_websocket.py`\n- `globalPlugins/TiktokLiveReader/lib/anyio/streams/buffered.py`\n- `globalPlugins/TiktokLiveReader/lib/grpclib/health/check.py`\n- `globalPlugins/TiktokLiveReader/lib/grpclib/channelz/v1/channelz_grpc.py`\n- `globalPlugins/TiktokLiveReader/lib/websockets/legacy/framing.py`\n- `globalPlugins/TiktokLiveReader/lib/grpclib/utils.py`\n- `globalPlugins/TiktokLiveReader/lib/anyio/_core/_eventloop.py`\n- `globalPlugins/TiktokLiveReader/lib/h2/frame_buffer.py`\n- `globalPlugins/TiktokLiveReader/lib/TikTokLive/client/web/routes/fetch_video_data.py`\n- `globalPlugins/TiktokLiveReader/lib/websockets/legacy/auth.py`\n- `globalPlugins/TiktokLiveReader/lib/pyee/uplift.py`\n- `globalPlugins/TiktokLiveReader/lib/google/protobuf/message_factory.py`\n- `globalPlugins/TiktokLiveReader/lib/betterproto/compile/importing.py`\n- `globalPlugins/TiktokLiveReader/lib/TikTokLive/client/errors.py`\n- `globalPlugins/TiktokLiveReader",
+						"category": "code_insight",
+						"id": "6c20451b49901214db8f38e851d1e9d45dec2669e23c291da91fdf0e3683aa6f-file-palm",
+						"source": "palm",
+						"verdict": ""
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0b0600",
+					"raw_md5": "3dbfa206d99e80890f6fd2cd7a9adcf7"
+				},
+				"first_submission_date": 1787206315,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787206361,
+				"last_submission_date": 1787206315,
+				"md5": "34cc6229cd08d02ad84e6b46ec73c936",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2d63f306ff67a5e32a25623fa11c60b833e0ec3d",
+				"sha256": "6c20451b49901214db8f38e851d1e9d45dec2669e23c291da91fdf0e3683aa6f",
+				"size": 2289114,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
