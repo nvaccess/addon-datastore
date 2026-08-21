@@ -1,0 +1,32 @@
+{
+	"addonId": "NVDAInflectMicroTTS",
+	"displayName": "NVDAInflect Micro TTS",
+	"URL": "https://github.com/anujj87/NVDAInflectMicroTTS/releases/download/dev/NVDAInflectMicroTTS-20260821.0.0.nvda-addon",
+	"description": "A high-quality local neural text-to-speech voice for NVDA based on the Inflect Micro v2 model created by Owen Song.\nThe model, the ONNX Runtime and all other dependencies are bundled with the add-on,\nso the voice works fully offline.\nSpeaks English with a fixed male voice at 24 kHz and offers rate, rate\nboost, volume, variation and seed settings, plus optional GPU\nacceleration via DirectML (Auto/CPU/GPU compute device choice).\ni use ai agent in this addon development",
+	"sha256": "199ecac3e039e37070d6cb7df78cf69c6c197ca0589a1986e29d2ea3914f85a9",
+	"addonVersionName": "20260821.0.0",
+	"addonVersionNumber": {
+		"major": 20260821,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Anuj Sharma",
+	"sourceURL": "https://github.com/anujj87/NVDAInflectMicroTTS",
+	"license": "GPL v2",
+	"homepage": "https://github.com/anujj87/NVDAInflectMicroTTS",
+	"changelog": "Fixed a bug where reloading NVDA add-ons (NVDA+Ctrl+F3) caused\nmultiple \"Inflect Micro TTS\" entries to appear in NVDA Settings.\nThe settings panel is now properly cleaned up on plugin unload.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787325663000,
+	"translations": []
+}
