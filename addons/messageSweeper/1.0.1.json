@@ -33,5 +33,47 @@
 			"displayName": "Message Sweeper - Slack と Teams のメッセージを NVDA で読みやすくする",
 			"description": "Slack や Microsoft Teams のメッセージにフォーカスすると、NVDA はアプリが渡してくる内容をそのまま読み上げます。生の URL、延々と続く絵文字ラベルや全角の装飾、取り残された markdown 記号、そして送信者・本文・時刻・リアクションが追いにくい順序で並びます。Message Sweeper はこの読み上げを組み替えます。URL はリンク先のページタイトルに置き換え、装飾として並んだ絵文字は本文から取り除いて個数だけを別に伝え、markdown と装飾記号を落とし、送信者・本文・リンク・時刻・リアクションの順に読み上げます。同じ整形済みのテキストを点字ディスプレイにも送ります。\n取り除くのは連続した並びだけなので、情報として意味のある絵文字（週間予定の1行に1つ、など）はそのまま残ります。ここが、NVDA の記号読み上げレベルを下げる方法との違いです。記号レベルはすべての場面に一律で効き、装飾と内容を区別できません。\nNVDA+V で処理の有効・無効を切り替えます。装飾とみなす連続の長さ、絵文字の個数を伝える位置、ページタイトルが取得できなかったときの読み上げは、NVDA の設定の「Message Sweeper」で変更できます。\nページタイトルの取得にはインターネット接続が必要です。Slack Desktop と新しい Microsoft Teams（Windows 11）で動作を確認しています。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/e48c3a5a467337c142667c5a8b1e0b899c4f3b872a2890c3052bada451187907",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "e48c3a5a467337c142667c5a8b1e0b899c4f3b872a2890c3052bada451187907",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "10181c1c1d080000",
+					"raw_md5": "7ddd41c328c8c25a0aef8384aa92381e"
+				},
+				"first_submission_date": 1787301099,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787301100,
+				"last_submission_date": 1787301099,
+				"md5": "4d02f3dba266441cb775e623af5a24ae",
+				"names": [],
+				"reputation": 0,
+				"sha1": "aaab836a994ceb6de64589c76650576394f34a15",
+				"sha256": "e48c3a5a467337c142667c5a8b1e0b899c4f3b872a2890c3052bada451187907",
+				"size": 41443,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
