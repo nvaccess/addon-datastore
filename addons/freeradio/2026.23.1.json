@@ -28,5 +28,47 @@
 	"changelog": "\n## Audio Books (GETEM)\n- Added a new **Audio Books** tab (`Alt+7`) powered by [GETEM](https://getem.boun.edu.tr/), Boğaziçi University's digital library for the visually impaired — the first to be supported audio book sources.\n- Search GETEM's catalogue by title, author, narrator, subject, or publisher; results are automatically filtered to audio-only formats (human/computer narration, audio description, radio drama, DAISY talking books, etc.).\n- Preview any search result before committing to it, or add it straight to a personal library.\n- Multi-part works are handled as a single library entry: playback automatically resumes from the last part and position you left off on, even across NVDA restarts.\n- Play audio books through the same BASS-backed player used for radio and podcasts, with full support for pause/resume, volume, time-shift, playback speed, and output device selection.\n- Download an entire book — all parts, correctly numbered and named — to your recordings folder for offline listening.\n- GETEM sign-in credentials are stored encrypted on disk (Windows Data Protection API) and entered once from FreeRadio's Settings panel.\n- Fixed duplicate/repeated audio in recordings and Time-Shift on HLS streams that rotate session tokens in their segment URLs.\n## Fixed:\n- Cleaned up leftover time-shift buffer files (`freeradio_timeshift_*.buf`) from previous sessions on startup. These are normally deleted when time-shift capture stops cleanly, but an abrupt shutdown (crash, power loss, Windows force-closing NVDA) would skip that step and leave the file in the temp folder — these could accumulate over time, especially with longer buffer durations. The add-on now clears out any matching leftover files each time it starts, before any new capture session begins.\n- Podcast playback speed reverting to normal (1.0x) after switching episodes or resuming from pause. The chosen speed is now resent to the audio engine every time a podcast stream is (re)started, so it stays in effect across episode changes, pause/resume, and station-transition effects (crossfade/tuning) instead of silently resetting.\n## Fixed\n- Fixed a bug where playing a podcast episode could cause a temporary buffer file (`freeradio_timeshift_*.buf` in the system temp folder) to grow to several gigabytes within minutes, potentially filling up the disk.\n  - The time-shift (rewind) capture — designed for continuous live radio streams — was also being started for on-demand podcast/audio book playback. Since those sources can be read far faster than real-time the buffer's time-based trimming couldn't keep up, and each time a chapter finished downloading it was mistaken for a dropped connection and re-downloaded into the same file instead of being cleaned up.\n  - The time-shift buffer is no longer started for podcasts or audio books at all — they already support proper rewind/fast-forward/resume through their own seekable file playback, so nothing is lost.\n  - Live radio time-shift/rewind behavior is unaffected.\n## Fixed\n- **Recording no longer stops when playback changes.** Instant and song-capture\n  recordings were tied to the main player's shared time-shift buffer as an\n  optimisation to avoid capturing a freshly-inserted ad on a brand-new\n  connection. That buffer is a single instance shared by the whole player, so\n  switching stations (or resuming after a long pause) silently cut off any\n  recording that was reading from it. Recordings now always open their own\n  independent connection, so switching stations, pausing/resuming, or\n  stopping playback no longer affects an active recording. The now-unused\n  buffer-tailing code path was removed.\n- **Scheduled recordings no longer report false success.** If a station's\n  stream failed to connect for an entire scheduled recording window, the\n  add-on still announced \"Recording started\" and, at the end, \"Recording\n  finished\" — with no file ever written. A scheduled recording that never\n  connects now reports a failure instead of a false \"finished\" notification.\n## Changed (internal, no functional impact)\n`__init__.py` has been split from a single ~4,200-line file into ten focused\nmodules, each ~100–400 lines. `GlobalPlugin` itself is now under 300 lines\ncontaining only setup/teardown and script routing; everything else is a mixin\nNVDA's script discovery picks up through normal class inheritance, so all\nkeyboard shortcuts and default gestures behave exactly as before.\n\n| File | Contents |\n--|---|\n| `settingsPanel.py` | The NVDA Settings → FreeRadio panel |\n| `timerManager.py` | Sleep/alarm timer scheduling |\n| `audioDeviceMixin.py` | Output device selection, audio mirroring |\n| `playbackCoreMixin.py` | Pause/resume, stop, next/prev station |\n| `timeshiftMixin.py` | Rewind/fast-forward, time-shift toggle |\n| `audioFxMixin.py` | Volume, EQ/bass/treble/vocal boost, crossfade, playback rate |\n| `recordingMixin.py` | Instant recording toggle, recordings folder, podcast download |\n| `trackInfoMixin.py` | \"What's playing\", station details, track info, ICY polling |\n| `miscTogglesMixin.py` | Notification mute, BASS backend, track-change announce/voice, liked songs |\nFixed\n- Attribution: the GETEM catalog HTML parsing helpers (_clean_html_text, _absolute_url, _extract_select_options, _parse_catalog_results, and the \"Seslendiren:\" prefix cleanup) were developed with reference to Mehmet Aykurt's GETEM E-Kütüphane NVDA add-on (https://github.com/MehmetAykurt/getem). Attribution has been added to the source and this changelog; thanks to Mehmet for flagging this.\n- Recording: Instant recording and song capture are now blocked while a podcast or audiobook is playing. Users are prompted to download the episode/book via Ctrl+Win+V instead.\n- UI: Removed the redundant \"Instant Recording\" button from the Recording tab. The global shortcut ( Ctrl+Win+E ) remains the primary way to start/stop recordings.\n- UI: The Recording tab now sets focus to the station filter field when first opened, enabling immediate typing.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1787380464000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/faef1c43d073978f3940520fb11baf38c0be731e2f6d9afa05c1e34f91eb4b86",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "faef1c43d073978f3940520fb11baf38c0be731e2f6d9afa05c1e34f91eb4b86",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "6bb2d00505c5934036b910dc25a18912"
+				},
+				"first_submission_date": 1787380469,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787380532,
+				"last_submission_date": 1787380469,
+				"md5": "b786b85a3a1d41be0267ec73c61020ea",
+				"names": [],
+				"reputation": 0,
+				"sha1": "285b0f436a086ce22cb5e6f9ba8849f37f7c9a17",
+				"sha256": "faef1c43d073978f3940520fb11baf38c0be731e2f6d9afa05c1e34f91eb4b86",
+				"size": 46685662,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
