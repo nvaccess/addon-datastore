@@ -28,5 +28,56 @@
 	"changelog": "Prepared for NVDA Add-on Store submission. Updated store submission workflow and documentation.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1787407500000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a2af4bffe918152872804b45b55c51d60e144e79ed978821f8b298c049982dc4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a2af4bffe918152872804b45b55c51d60e144e79ed978821f8b298c049982dc4",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: attrs (whl)\nVersion: 26.1.0\nDescription: Classes Without Boilerplate\n\nThe provided code consists of standard, legitimate open-source libraries and components (including attrs, numpy, joblib, packaging, protobuf, onnxruntime transformers tools, and a Kitten TTS NVDA add-on module). No malicious behaviors, unauthorized process executions, credential exfiltration, or backdoors were detected.",
+						"category": "code_insight",
+						"id": "a2af4bffe918152872804b45b55c51d60e144e79ed978821f8b298c049982dc4-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000a0e0f0e00",
+					"raw_md5": "b30fe59454ab1e72eba60075da54b423"
+				},
+				"first_submission_date": 1787407505,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787407527,
+				"last_submission_date": 1787407505,
+				"md5": "5bf86e68d599426cefd2a7966bb77016",
+				"names": [],
+				"reputation": 0,
+				"sha1": "03b984f3380ac8dff277ffad3e20886c5fcbe657",
+				"sha256": "a2af4bffe918152872804b45b55c51d60e144e79ed978821f8b298c049982dc4",
+				"size": 72781077,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
