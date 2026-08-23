@@ -28,5 +28,47 @@
 	"changelog": "\n## scheduled recording fixes\n**Fixed**\n- Recurring scheduled recordings would only fire once and never repeat correctly.\n  - Fixed a thread-safety race where the scheduler loop's per-second cleanup of the schedule list could silently drop a freshly re-queued recurring recording before it was ever saved or checked.\n  - Fixed date calculation for recurring schedules: the next occurrence was always computed a full week ahead before checking active days, so a schedule set to record every day (e.g. daily at 09:00) actually only re-fired once a week on the original weekday. It now correctly schedules the very next matching day.\n**Note**\n- Existing entries in `freeradio_schedules.json` created before this fix may still hold a `start_time` computed by the old logic (a week ahead). Recreate those schedules, or manually correct their `start_time`, to get correct daily firing going forward.\n## Fixes for chapter Auto-advance and playback speed\n**Bug Fix — Audio Book Chapter Auto-Advance Stopped When FreeRadio Window Was Closed**\n- Fixed an issue where an audio book would correctly move to its next chapter when it finished playing while the FreeRadio window was open on the Audio Books tab, but silently stopped at the end of a chapter instead of advancing if the window was closed or hidden.\n- Chapter auto-advance no longer depends on the FreeRadio dialog being open: it now runs independently in the background, using the finished chapter's own book/part information to look up the next chapter and start it directly.\n- Progress tracking (which chapter/part you're on) is now saved correctly even while advancing in the background.\n- When the FreeRadio window is reopened, its \"now playing\" state (used by F3/F4 chapter/book navigation) is refreshed from the player, so it correctly reflects a book that kept advancing while the window was closed.\n**Bug Fix — Playback Speed Leaking Between Audio Books/Podcasts**\n- Fixed an issue where saving an audio profile with a sped-up playback rate (e.g. 1.4x) for one book, then switching to another book with no saved profile, would leave the second book playing at the first book's speed instead of normal speed.\n- Playback speed now follows the same rule already used for volume/effects/EQ: if the book or podcast being played has a saved profile with a speed, that speed is applied; otherwise, speed resets to normal (1.0x) rather than carrying over from whatever was played previously.\n- Arabic localization update\n## startup resume fixes\n**Bug Fix — Audio Profile Not Applied on Startup Resume**\n- Fixed an issue where a saved audio profile (volume/effects/EQ/speed) for a podcast or audio book was applied correctly when starting playback from the dialog, but was ignored when the station resumed automatically on NVDA startup.\n- Playing a podcast episode now also records which feed it belongs to; playing an audio book chapter already recorded which book it belongs to.\n- On startup resume:\n  - For audio books, the saved book profile is now looked up and applied together with the rebuilt playback URL.\n  - For podcast episodes, the subscribed feed is looked up independently (without needing the dialog open) and its saved profile, if any, is applied the same way.\n- As a result, resumed playback on NVDA startup now respects the same volume, effects, EQ, and playback speed settings as playback started manually from the dialog.\n## Recording tab rearrangements and audio profiles for podcasts and audio books\n**Recording Tab**\n- Removed the \"Edit\" and \"Remove\" buttons; their functionality moved into the list's context menu (Applications key / Shift+F10).\n- Delete / Shift+Delete now removes the selected schedule directly.\n- Default mode is now \"Record only\".\n- After removing a schedule, the next item in the list (or the previous one, if it was the last) is automatically selected.\n**Podcast and Audio Book Tabs**\n- F3 / F4 / Shift+F3 / Shift+F4 now also move keyboard focus to the relevant list (previously they only changed the selection).\n- On the Audio Book tab, since there's no separate list item for chapters, changing chapters moves focus to the book's row in the library list instead.\n- Delete / Shift+Delete in the Audio Book library list now removes the selected book directly (previously only available via the context menu).\n**Audio Profiles — Podcast and Audio Book Support**\n- The audio profile feature (volume/effects/EQ) from Favorites has been extended to podcast feeds and audio book library entries:\n  - Podcasts: the profile is saved on the feed and applies to **all of its episodes**.\n  - Audio Books: the profile is saved on the book and applies to **all of its chapters**.\n- Profiles can now also include **playback speed** (for podcast/audiobook content only); a new \"Volume, effects, and playback speed\" option captures the current speed when saving.\n- Episodes/chapters without a saved profile keep whatever playback speed is currently active (sticky) rather than being forced back to normal speed.\n- Added \"Save Audio Profile\" / \"Clear Audio Profile\" items to the context menus (Podcast: subscriptions list; Audio Book: library list).\n- When unsubscribing from a podcast or removing a book from the library:\n  - The saved audio profile is automatically cleared.\n  - The resume (\"where you left off\") positions for all of that feed's episodes / that book's chapters are also cleared.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1787478130000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/35e8912c95ff82c02c4916ce71c8cd33d0a7a770a0de392ff4e574231bc87591",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "35e8912c95ff82c02c4916ce71c8cd33d0a7a770a0de392ff4e574231bc87591",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "1ec02952d389365f6229828ffd1c6b2a"
+				},
+				"first_submission_date": 1787478136,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787478209,
+				"last_submission_date": 1787478136,
+				"md5": "5546f8e94058aa2e022d249f29457399",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a497ae768d87e9023db4f091b223d7e84f2618a1",
+				"sha256": "35e8912c95ff82c02c4916ce71c8cd33d0a7a770a0de392ff4e574231bc87591",
+				"size": 46701888,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
