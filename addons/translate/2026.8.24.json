@@ -149,5 +149,47 @@
 			"description": "Un componente aggiuntivo di traduzione online ultraveloce e leggero per NVDA. Creata originariamente da Yannick Plassiard, questa versione modificata è stata ottimizzata per traduzioni rapide in tempo reale utilizzando motori cloud ad alta velocità. Un ringraziamento speciale e tutto il merito vanno allo sviluppatore originale per il suo lavoro eccezionale. Richiede una connessione Internet.",
 			"changelog": "\n- Fixed: Multi-Tier Google Endpoint Failover to bypass HTTP 429 rate limits and global Google Translate blocking (fixing both Translate and Instant Translate outages).\n- Fixed: Multi-format response parser supporting Chrome extension dictionary endpoints and standard translation batch chunks.\n- Performance: SSL connection pooling across multiple Google edge nodes for ultra-fast sub-100ms real-time translation.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/fd4489ab03b91b932cbf2159506c84b2a06d333bed89284fd72176d997b8b153",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "fd4489ab03b91b932cbf2159506c84b2a06d333bed89284fd72176d997b8b153",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1c1d180800",
+					"raw_md5": "a0607192f1e05b694e77dccf45bcf7b7"
+				},
+				"first_submission_date": 1787523183,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787523185,
+				"last_submission_date": 1787523183,
+				"md5": "ad8655a2e2905625dee5a86f55b715d1",
+				"names": [],
+				"reputation": 0,
+				"sha1": "76ace40f17ba0005a91db43cba00874a6f865aeb",
+				"sha256": "fd4489ab03b91b932cbf2159506c84b2a06d333bed89284fd72176d997b8b153",
+				"size": 86568,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
