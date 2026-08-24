@@ -1,0 +1,32 @@
+{
+	"addonId": "TextMarksTheSpot",
+	"displayName": "Text Marks the Spot",
+	"URL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot/releases/download/v1.0.15/TextMarksTheSpot-1.0.15.nvda-addon",
+	"description": "Get to the actual content on a web page without working so hard to find it. Hands off. Let the page load, listen for the short beeps, and you're at the start of the article. NVDA reads the first paragraph. Press Z to skim forward, Shift+Z to jump back to the start, NVDA+Z to turn the add-on off on a specific site. Runs locally, no network calls.",
+	"sha256": "defb9189db51b358fbe6edf6cb437b7e423a084b54247351e284e75581b95257",
+	"addonVersionName": "1.0.15",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 15
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Casey Mathews",
+	"sourceURL": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"license": "GPL v2",
+	"homepage": "https://github.com/WebFriendlyHelp/TextMarksTheSpot",
+	"changelog": "Fewer pages go quiet, and magazine-style posts land on the story instead of the summary line.\n\nFewer pages that go quiet after finding the right paragraph. Some pages rebuild themselves while the add-on is still reading them, which moves the paragraph it had settled on. It handles that by searching for the paragraph again by its wording, and that search was fussier than the check that approves the result, so it was throwing away landings it would have been happy with. It now tries progressively shorter pieces of the wording, and copes with the invisible spacing characters some sites put between words. A piece is only used when it appears exactly once on the page, so a teaser box that repeats the story's opening line cannot capture the landing.\n\nMagazine-style posts land on the story instead of the summary line. A layout that runs headline, then a one-line summary, then the author and date and \"6 min read\", then the article, used to land you on the summary line. The tell is where the author block sits: a summary comes above it, the story below. The add-on now reads past the summary to the first real paragraph. Stories that open with one short sentence and no author block, like MacRumors, still land on that sentence.\n\nDiagnostic logging stays off unless you switch it on. The add-on can keep a technical log to help track down a page that lands badly, and it writes nothing at all unless you ask for it. To turn it on, create an empty file named TextMarksTheSpot-diagnostics-enabled in your NVDA user configuration folder and restart NVDA. To turn it back off, delete that file.\n\nTested with NVDA 2026.2. Nothing needed changing for it. The add-on still runs on NVDA 2024.1 and newer, on both the 32-bit builds up to 2025.3 and the 64-bit builds from 2026.1 on.\n\nKnown gaps, unchanged from 1.0.14: on some articles the cursor lands on the author's biography instead of the story; recipe sites can still land on a marketing line or a reader's review; the Verge and TechCrunch home pages lead with a large featured story and land on a headline further down the list; single-field sign-in pages that ask for your email first still get no landing (the two low beeps); and script-drawn result widgets like the fast.com speed test are still not detected.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787578248000,
+	"translations": []
+}
