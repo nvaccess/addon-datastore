@@ -1,0 +1,801 @@
+{
+	"addonId": "CMDReader",
+	"displayName": "CMDReader",
+	"URL": "https://github.com/chaichaimee/CMDReader/releases/download/2026.8.8/CMDReader-v2026.8.8.nvda-addon",
+	"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real-time. Features instant audio notifications for terminal states and errors, customizable error keywords, a dedicated NVDA settings panel for privacy management, and live session shadow history scrolling without disrupting your workflow.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line",
+	"sha256": "75a8da98041ecbd882d2abb7775482479c728b33119a530330be7375f15238cd",
+	"addonVersionName": "2026.8.8",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 8,
+		"patch": 8
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/CMDReader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/CMDReader",
+	"changelog": "Refactored architecture: Decoupled logic from __init__.py into `cmdCore.py` for modular standard compliance. Expanded NVDA Settings Panel: Users can now fully customize addon behavior directly from NVDA preferences. Added 'Strict Privacy Mode' option to instantly disable all disk logging for highly sensitive console sessions. Unhardcoded error phrases: Custom error keywords can now be added or modified freely via settings (comma-separated). Added global Sound Toggle: Users can now optionally silence Window Ready, Command Finished, and Command Error beeps. Completely removed `cmdreader_history.json` and migrated terminal history to an absolute in-memory state with aggressive cleanup functionality.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787108026000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "CMDReader",
+			"description": "コマンドプロンプト (Command Prompt)、PowerShell、Windows Terminal の新しい出力をリアルタイムで自動的に読み上げます。ターミナルの状態やエラーに関する即時音声通知、カスタマイズ可能なエラーキーワード、プライバシー管理用の専用 NVDA 設定パネルを備え、ワークフローを中断することなくライブセッションのシャドウ履歴をスクロールできます。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "CMDReader",
+			"description": "实时自动读取命令提示符（Command Prompt）、PowerShell 和 Windows Terminal 中的新输出。具备终端状态和错误的即时音频通知、可自定义的错误关键词、用于隐私管理的专用 NVDA 设置面板，以及在不打断工作流的情况下实时浏览会话影子历史（shadow history）的功能。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "en",
+			"displayName": "CMDReader",
+			"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real-time. Features instant audio notifications for terminal states and errors, customizable error keywords, a dedicated NVDA settings panel for privacy management, and live session shadow history scrolling without disrupting your workflow.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ar",
+			"displayName": "CMDReader",
+			"description": "يقوم تلقائياً بقراءة المخرجات الجديدة في موجه الأوامر Command Prompt وPowerShell وWindows Terminal في الوقت الفعلي. يتضمن تنبيهات صوتية فورية لحالة الطرفية والأخطاء، وكلمات مفتاحية مخصصة للأخطاء، لوحة إعدادات NVDA مخصصة لإدارة الخصوصية، والتمرير المباشر لسجل الجلسة السابق (Shadow History) دون تعطيل سير عملك.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ru",
+			"displayName": "CMDReader",
+			"description": "Автоматически читает новый вывод в Командной строке (Command Prompt), PowerShell и Windows Terminal в реальном времени. Включает мгновенные звуковые уведомления о состоянии терминала и ошибках, настраиваемые ключевые слова ошибок, специальную панель настроек NVDA для управления конфиденциальностью, а также прокрутку истории текущей сессии (shadow history) без прерывания вашего рабочего процесса.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "hi",
+			"displayName": "CMDReader",
+			"description": "Command Prompt, PowerShell और Windows Terminal में नए आउटपुट को वास्तविक समय (real-time) में स्वचालित रूप से पढ़ता है। इसमें टर्मिनल स्थितियों और त्रुटियों (errors) के लिए त्वरित ऑडियो सूचनाएं, अनुकूलन योग्य त्रुटि कीवर्ड, गोपनीयता प्रबंधन के लिए एक समर्पित NVDA सेटिंग्स पैनल, और आपके कार्यप्रवाह को बाधित किए बिना लाइव सत्र शैडो इतिहास (shadow history) स्क्रॉलिंग की सुविधा शामिल है।\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "id",
+			"displayName": "CMDReader",
+			"description": "Secara otomatis membaca keluaran baru di Command Prompt, PowerShell, dan Windows Terminal secara real-time. Dilengkapi dengannotifikasi audio instan untuk status terminal dan galat (error), kata kunci galat yang dapat disesuaikan, panel pengaturan NVDA khusus untuk manajemen privasi, serta penelusuran riwayat sesi langsung (shadow history) tanpa mengganggu alur kerja Anda.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "CMDReader",
+			"description": "即時自動讀取命令提示字元（Command Prompt）、PowerShell 與 Windows Terminal 中的新輸出。具備終端機狀態與錯誤的即時音效通知、可自訂的錯誤關鍵字、用於隱私管理的專用 NVDA 設定面板，以及在不打斷工作流程的情況下即時捲動工作階段幕後歷史記錄（shadow history）的功能。\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "uk",
+			"displayName": "CMDReader",
+			"description": "Автоматично читає новий вивід у Командному рядку (Command Prompt), PowerShell та Windows Terminal у реальному часі. Містить миттєві звукові сповіщення про стан термінала та помилки, налаштовувані ключові слова помилок, спеціальну панель налаштувань NVDA для керування конфіденційністю, а також прокручування історії поточної сесії (shadow history) без переривання вашого робочого процесу.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "fr",
+			"displayName": "CMDReader",
+			"description": "Lit automatiquement en temps réel les nouvelles sorties dans l'Invite de commandes (Command Prompt), PowerShell et Windows Terminal. Comprend des notifications audio instantanées pour les états et les erreurs du terminal, des mots-clés d'erreur personnalisables, un panneau de configuration NVDA dédié à la gestion de la confidentialité, ainsi que le défilement en direct de l'historique de session (shadow history) sans perturber votre flux de travail.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "es",
+			"displayName": "CMDReader",
+			"description": "Lee automáticamente las nuevas salidas en el Símbolo del sistema (Command Prompt), PowerShell y Windows Terminal en tiempo real. Cuenta con notificaciones de audio instantáneas para estados y errores de la terminal, palabras clave de error personalizables, un panel de configuración de NVDA dedicado para la gestión de la privacidad y desplazamiento por el historial de la sesión en vivo (shadow history) sin interrumpir su flujo de trabajo.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "ko",
+			"displayName": "CMDReader",
+			"description": "명령 프롬프트(Command Prompt), PowerShell 및 Windows Terminal의 새로운 출력을 실시간으로 자동 읽어줍니다. 터미널 상태 및 오류에 대한 즉각적인 오디오 알림, 사용자 지정 가능한 오류 키워드, 개인정보 보호 관리를 위한 전용 NVDA 설정 패널을 제공하며, 작업 흐름을 방해하지 않고 실시간 세션 섀도 기록(shadow history)을 스크롤할 수 있습니다.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "CMDReader",
+			"description": "Lê automaticamente novas saídas no Prompt de Comando (Command Prompt), PowerShell e Windows Terminal em tempo real. Possui notificações de áudio instantâneas para estados e erros do terminal, palavras-chave de erro personalizáveis, um painel de configurações do NVDA dedicado para gerenciamento de privacidade e rolagem do histórico de sessão ao vivo (shadow history) sem interromper seu fluxo de trabalho.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "de",
+			"displayName": "CMDReader",
+			"description": "Liest automatisch neue Ausgaben in Eingabeaufforderung (Command Prompt), PowerShell und Windows Terminal in Echtzeit vor. Bietet sofortige akustische Benachrichtigungen für Terminalstatus und Fehler, anpassbare Fehler-Schlüsselwörter, ein dediziertes NVDA-Einstellungsfeld zur Datenschutzverwaltung sowie das direkte Durchblättern des Sitzungsverlaufs (Shadow History), ohne Ihren Arbeitsablauf zu unterbrechen.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "th",
+			"displayName": "CMDReader",
+			"description": "อ่านข้อความเอาต์พุตใหม่ใน Command Prompt, PowerShell และ Windows Terminal แบบเรียลไทม์โดยอัตโนมัติ มาพร้อมกับการแจ้งเตือนด้วยเสียงทันทีเมื่อมีสถานะหรือข้อผิดพลาดในเทอร์มินัล, กำหนดคำสำคัญของข้อผิดพลาดได้เอง, แผงตั้งค่า NVDA เฉพาะสำหรับจัดการความเป็นส่วนตัว และการเลื่อนดูประวัติเซสชันย้อนหลัง (shadow history) แบบสดๆ โดยไม่ขัดจังหวะการทำงานของคุณ\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		},
+		{
+			"language": "it",
+			"displayName": "CMDReader",
+			"description": "Legge automaticamente in tempo reale i nuovi output in Prompt dei comandi (Command Prompt), PowerShell e Windows Terminal. Dispone di notifiche audio istantanee per gli stati e gli errori del terminale, parole chiave di errore personalizzabili, un pannello delle impostazioni NVDA dedicato alla gestione della privacy e lo scorrimento della cronologia di sessione in tempo reale (shadow history) senza interrompere il flusso di lavoro.\nHot Keys:\nCTRLALT+L : Open CMDReader File\nctrl+alt+up arrow : Read the previous line\nctrl+alt+down arrow : Read the next line"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/75a8da98041ecbd882d2abb7775482479c728b33119a530330be7375f15238cd",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "75a8da98041ecbd882d2abb7775482479c728b33119a530330be7375f15238cd",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 6,
+						"mo": 16,
+						"po": 16,
+						"py": 2,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 58
+					},
+					"highest_datetime": "2026-08-19 09:41:52",
+					"lowest_datetime": "2026-02-24 10:53:16",
+					"num_children": 106,
+					"type": "ZIP",
+					"uncompressed_size": 221736
+				},
+				"contenthash": "d2717719425fec4e0e1002a7ccec07fb",
+				"filecondis": {
+					"dhash": "00203c3c3d280000",
+					"raw_md5": "47534000047d16054c77a62301331498"
+				},
+				"first_submission_date": 1787108030,
+				"last_analysis_date": 1787108030,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260818",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260816",
+						"engine_version": "6.810",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260818",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260819",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260818",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260818",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260818",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260817",
+						"engine_version": "260817-02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260818",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260818",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260814",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260818",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260818",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260818",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260819",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260818",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260813",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260818",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260819",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260819",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260818",
+						"engine_version": "4.0.283",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260819",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260819",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260819",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260819",
+						"engine_version": "GD:27.45686AVA:64.31783",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260819",
+						"engine_version": "1787104846",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260818",
+						"engine_version": "1.0.252.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260818",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260818",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260818",
+						"engine_version": "14.73.60512",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260818",
+						"engine_version": "14.73.60513",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260818",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260818",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260818",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260819",
+						"engine_version": "3.1.0.246",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260818",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260819",
+						"engine_version": "1.2.0.15679",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260818",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260819",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260819",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260819",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260818",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260818",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260818",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260817",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260818",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260819",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260819",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260819",
+						"engine_version": "2026-08-19.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260819",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260818",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260819",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260819",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260819",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260818",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260818",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260819",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260819",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260818",
+						"engine_version": "9.5.1274",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260818",
+						"engine_version": "38897",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260819",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260818",
+						"engine_version": "2.0.0.5668",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260818",
+						"engine_version": "6.26-117393155",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260819",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260818",
+						"engine_version": "94611d7:94611d7:df6c9a5:df6c9a5",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260819",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1787108101,
+				"last_submission_date": 1787108030,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "b5c2f61e527ef8a6dc9e3d4f99e66d4d",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "2a3e7233409534c2552af68abbe95e5dc2311f6b",
+				"sha256": "75a8da98041ecbd882d2abb7775482479c728b33119a530330be7375f15238cd",
+				"size": 99415,
+				"ssdeep": "1536:yxbaOD2YiWVwEJHDT623m6TARkRrLvBTTUiiWCvhdQdCRPFu/ELBkhRXG73:4DBVwEJjT6omwJLvB3UiiRpBPWEL+RXY",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T15EA3C019921F501BE8A6B7FE36C71615F22D4149D0BDAB434BABA0C69CC935C0FCA61A",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "da36212a8a1c3853387d6fe5e2478422"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7840"
+}
