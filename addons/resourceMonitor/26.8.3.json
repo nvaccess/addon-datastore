@@ -233,5 +233,47 @@
 			"description": "A handy resource monitor to report CPU load, memory usage, disk usage status and more.",
 			"changelog": "* Added Resource Monitor category to NVDA settings to configure GPU temperature reporting unit between Celcius and Fahrenheit (contributed by hexxbyte).\n* Added an unassigned command to announce GPU (graphics processing unit) memory usage information (contributed by hexxbyte).\n* Pressing NVDA+Shift+3 to report disk usage information will include mapped network drives if connected (contributed by hexxbyte).\n* Removed battery status reporting feature. Pressing NVDA+Shift+4 will now report wireless connection status. For battery status, use NVDA's own battery status command (NVDA+Shift+B)."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/72b16b768ac90b4f80e19373f56917412b08b8afbae00c3b10268f3340e85435",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "72b16b768ac90b4f80e19373f56917412b08b8afbae00c3b10268f3340e85435",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000e0e0d0400",
+					"raw_md5": "da7d9d3ecfbfa9222fffe2a0e40e8a36"
+				},
+				"first_submission_date": 1787542788,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787542789,
+				"last_submission_date": 1787542788,
+				"md5": "c897c433fcc72442189adbe0fc57fead",
+				"names": [],
+				"reputation": 0,
+				"sha1": "5b9e2ef4540d1e433d6dd0157d0ceefff856466c",
+				"sha256": "72b16b768ac90b4f80e19373f56917412b08b8afbae00c3b10268f3340e85435",
+				"size": 325361,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
