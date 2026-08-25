@@ -1,0 +1,37 @@
+{
+	"addonId": "messageSweeper",
+	"displayName": "Message Sweeper - Clean Slack & Teams messages for NVDA",
+	"URL": "https://github.com/kinto-technologies/message-sweeper/releases/download/v1.1.0/messageSweeper-1.1.0.nvda-addon",
+	"description": "When you focus a message in Slack or Microsoft Teams, NVDA reads what the app exposes: raw URLs, long runs of emoji labels and fullwidth decoration, leftover markdown symbols, and the sender, body, time and reactions in an order that is hard to follow. Message Sweeper rewrites that announcement: URLs are replaced with the title of the page they point to, runs of decorative emoji are removed and reported separately as a count, markdown and decoration are stripped, and the message is spoken as sender, body, links, time, reactions. The same cleaned text is sent to a braille display.\nOnly consecutive runs of emoji are removed, so emoji that carry information - one per line in a weekly schedule, for example - survive. That is the difference from simply lowering NVDA's symbol level, which applies everywhere and cannot tell decoration from content.\nA toggle command turns processing on or off. No key is assigned to it by default, so give it one under Message Sweeper in NVDA's Input Gestures dialog if you want it. The run length that counts as decoration, where the emoji summary is announced, and what to say when a page title cannot be fetched are configurable in NVDA's Settings, under Message Sweeper.\nFetching page titles requires an internet connection. Verified with Slack Desktop and the new Microsoft Teams on Windows 11.",
+	"sha256": "cff54fb650d36bb7bb12b49cb1c40551084987def415cfef529fa6c5aa287813",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "KINTO Technologies Corporation",
+	"sourceURL": "https://github.com/kinto-technologies/message-sweeper/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kinto-technologies/message-sweeper",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787636595000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "Message Sweeper - Slack と Teams のメッセージを NVDA で読みやすくする",
+			"description": "Slack や Microsoft Teams のメッセージにフォーカスすると、NVDA はアプリが渡してくる内容をそのまま読み上げます。生の URL、延々と続く絵文字ラベルや全角の装飾、取り残された markdown 記号、そして送信者・本文・時刻・リアクションが追いにくい順序で並びます。Message Sweeper はこの読み上げを組み替えます。URL はリンク先のページタイトルに置き換え、装飾として並んだ絵文字は本文から取り除いて個数だけを別に伝え、markdown と装飾記号を落とし、送信者・本文・リンク・時刻・リアクションの順に読み上げます。同じ整形済みのテキストを点字ディスプレイにも送ります。\n取り除くのは連続した並びだけなので、情報として意味のある絵文字（週間予定の1行に1つ、など）はそのまま残ります。ここが、NVDA の記号読み上げレベルを下げる方法との違いです。記号レベルはすべての場面に一律で効き、装飾と内容を区別できません。\n処理の有効・無効は切り替えコマンドで行います。既定ではキーが割り当てられていないので、必要なときは NVDA の「入力ジェスチャ」の「Message Sweeper」から割り当ててください。装飾とみなす連続の長さ、絵文字の個数を伝える位置、ページタイトルが取得できなかったときの読み上げは、NVDA の設定の「Message Sweeper」で変更できます。\nページタイトルの取得にはインターネット接続が必要です。Slack Desktop と新しい Microsoft Teams（Windows 11）で動作を確認しています。"
+		}
+	]
+}
