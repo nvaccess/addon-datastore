@@ -1,0 +1,63 @@
+{
+	"addonId": "dengjen_neural_voices",
+	"displayName": "Dengjen Neural Voices",
+	"URL": "https://github.com/ZirekHQ/dengjen-nvda/releases/download/v4.0.1/dengjen_neural_voices-4.0.1.nvda-addon",
+	"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the Sonata engine, together with a voice manager for downloading and installing voices.",
+	"sha256": "dd5cab8d1c10034e50cbc132164256c511a099216e5ad6b4c5fe849f8a4a5bc3",
+	"addonVersionName": "4.0.1",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ali Ustek",
+	"sourceURL": "https://github.com/ZirekHQ/dengjen-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/zirekhq/dengjen-nvda",
+	"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787668217000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Нейронные голоса Dengjen",
+			"description": "Добавляет в NVDA быстрые локальные нейронные голоса синтеза речи. Предоставляет драйвер синтезатора для голосовых моделей Piper на основе движка Sonata, а также менеджер голосов для загрузки и установки голосов.",
+			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Dengên Neuronî yên Dengjen",
+			"description": "Dengên metin-bo-deng ên neuronî yên bilez û herêmî li NVDA-yê zêde dike. Ji bo modelên dengî yên Piper bi rêya motora Sonata ajokarek sentezker, û ji bo daxistin û sazkirina dengan rêveberek dengan pêşkêş dike.",
+			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
+		},
+		{
+			"language": "fr",
+			"displayName": "Voix neuronales de Dengjen",
+			"description": "Ajoute à NVDA des voix de synthèse vocale neuronales rapides et locales. Fournit un pilote de synthétiseur pour les modèles de voix Piper via le moteur Sonata, ainsi qu'un gestionnaire de voix pour télécharger et installer des voix.",
+			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
+		},
+		{
+			"language": "es",
+			"displayName": "Voces Neuronales Dengjen",
+			"description": "Añade a NVDA voces neuronales de texto a voz rápidas y locales. Proporciona un controlador de sintetizador para modelos de voz de Piper mediante el motor Sonata, junto con un administrador de voces para descargar e instalar voces.",
+			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
+		},
+		{
+			"language": "tr",
+			"displayName": "Dengjen Sinir Ağı Sesleri",
+			"description": "NVDA'ya hızlı, yerel sinir ağı tabanlı metin okuma sesleri ekler. Sonata motoru aracılığıyla Piper ses modelleri için bir sentezleyici sürücüsü ve sesleri indirip kurmak için bir ses yöneticisi sağlar.",
+			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
+		}
+	]
+}
