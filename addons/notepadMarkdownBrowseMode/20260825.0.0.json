@@ -1,0 +1,39 @@
+{
+	"addonId": "notepadMarkdownBrowseMode",
+	"displayName": "Notepad Markdown Browse Mode",
+	"URL": "https://github.com/abdel792/notepadMarkdownBrowseMode/releases/download/v26.08.25/notepadMarkdownBrowseMode-20260825.0.0.nvda-addon",
+	"description": "An NVDA screen reader add-on providing virtual buffer support and quick navigation for Markdown documents in Microsoft Notepad (IAccessible and UIA).\nFeatures:\nQuick navigation:\nH / Shift+H: Headings (levels 1 to 6)\nK / Shift+K: Links\nQ / Shift+Q: Block quotes\nL / Shift+L: Lists\nI / Shift+I: List items\nElements List dialog (NVDA+F7) to inspect and jump to structural elements.",
+	"sha256": "f74bd997c7260812ed76780252d3bf6c796f0b5dea4988674ce82f906d809c3c",
+	"addonVersionName": "20260825.0.0",
+	"addonVersionNumber": {
+		"major": 20260825,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "abdel792",
+	"sourceURL": "https://github.com/abdel792/notepadMarkdownBrowseMode/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/abdel792/notepadMarkdownBrowseMode/",
+	"changelog": "Added initial support for virtual buffer, quick navigation keys (H, K, Q, L, I) and Elements list dialog (NVDA+F7)",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787656231000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Mode navigation Markdown pour le Bloc-notes",
+			"description": "Une extension pour le lecteur d'écran NVDA ajoutant la prise en charge du mode navigation (tampon virtuel) et la navigation rapide dans les documents Markdown dans le Bloc-notes de Microsoft (IAccessible et UIA).\n\nFonctionnalités :\nNavigation rapide :\nH / Maj+H : Titres (niveaux 1 à 6)\nK / Maj+K : Liens\nQ / Maj+Q : Citations\nL / Maj+L : Listes\nI / Maj+I : Éléments de liste\nBoîte de dialogue Liste des éléments (NVDA+F7) pour examiner et atteindre les éléments de structure.",
+			"changelog": "Ajout de la prise en charge initiale du mode navigation, des touches de navigation rapide (H, K, Q, L, I) et de la boîte de dialogue Liste des éléments (NVDA+F7)"
+		}
+	]
+}
