@@ -59,5 +59,47 @@
 			"description": "NVDA'ya hızlı, yerel sinir ağı tabanlı metin okuma sesleri ekler. Sonata motoru aracılığıyla Piper ses modelleri için bir sentezleyici sürücüsü ve sesleri indirip kurmak için bir ses yöneticisi sağlar.",
 			"changelog": "Corrected the declared minimum NVDA version to 2026.1. The bundled speech engine has required NVDA's Python 3.13 64-bit runtime since v3.2-beta.1; the add-on previously claimed support for NVDA 2025.1+ and failed to load with an ImportError on those older, incompatible NVDA versions."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/dd5cab8d1c10034e50cbc132164256c511a099216e5ad6b4c5fe849f8a4a5bc3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "dd5cab8d1c10034e50cbc132164256c511a099216e5ad6b4c5fe849f8a4a5bc3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "21d46fc0d03b4c4d72386a40863af87a"
+				},
+				"first_submission_date": 1787668224,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787668226,
+				"last_submission_date": 1787668224,
+				"md5": "391c279245edb16435295c919acd259b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a7aa9b5d4636225955d192972fa7b3b9baac11cd",
+				"sha256": "dd5cab8d1c10034e50cbc132164256c511a099216e5ad6b4c5fe849f8a4a5bc3",
+				"size": 17630401,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
