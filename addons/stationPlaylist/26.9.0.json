@@ -1,0 +1,32 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.09/stationPlaylist-26.09.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "d59ee3960513a55cb50ffadc3b249847314feca67fea67a1c0f17e8bdf950fdb",
+	"addonVersionName": "26.09",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* NVDA will once again report menu item labels in local and Remote Studio, Track Tool, and Creator. This is a temporary backport of the same fix from NVDA 2026.3 to earlier 2026.x releases.\n* Reintroduced find track search history with up to 20 search history entries if running NVDA 2026.3 or later. Search history is kept as long as NVDA is running. In NVDA 2026.2 and earlier or if \"keep search history\" is disabled from browse mode settings in NVDA 2026.3 or later, find track dialog will use the search text field.\n* NVDA's browse mode find dialog (Control+NVDA+F) search terms are no longer available when invoking track finder (Control+NVDA+F) from local and Remote Studio to improve compatibility with future NVDA releases.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787687617000,
+	"translations": []
+}
