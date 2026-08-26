@@ -41,5 +41,47 @@
 			"description": "Tarama modu durumuna bağlı olarak profilleri etkinleştirir veya devre dışı bırakır.\nTarama Modu profili, tarama modu etkin olmadığında, NVDA'nın menüsündeki Konfigürasyon profilleri iletişim kutusundan düzenlenebilir.",
 			"changelog": "* Updates to translations."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6ff302923e6afb38d71981bc5aaf888e68d2e7282e9f07bc7da44e45dba89d6c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6ff302923e6afb38d71981bc5aaf888e68d2e7282e9f07bc7da44e45dba89d6c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "f8f8f4f8d8100000",
+					"raw_md5": "a530eedc944cec57b38ec58dc930c267"
+				},
+				"first_submission_date": 1787780604,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787780605,
+				"last_submission_date": 1787780604,
+				"md5": "76a4bed7f3302331a1aa3254e801b1c3",
+				"names": [],
+				"reputation": 0,
+				"sha1": "16e9532a372863b7f9a2c63851d803825a246fae",
+				"sha256": "6ff302923e6afb38d71981bc5aaf888e68d2e7282e9f07bc7da44e45dba89d6c",
+				"size": 7604,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
