@@ -1,0 +1,32 @@
+{
+	"addonId": "textToAudioConverter",
+	"displayName": "Conversor de Texto em Áudio",
+	"URL": "https://github.com/Mi-Frasson/conversor-de-texto-em-audio/releases/download/v1.0.1/conversorDeTextoEmAudio-1.0.1.nvda-addon",
+	"description": "Converte o texto de arquivos PDF em arquivos MP3 com vozes neurais em português do Brasil.\nInclui assistente de primeira execução, configurações acessíveis, progresso da conversão e comandos configuráveis em Gestos de entrada.",
+	"sha256": "8c28e29f743c1d9f48ab47d84b08e62bde0370b5ecbf7e8b883035b98a1a6997",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Frasson",
+	"sourceURL": "https://github.com/Mi-Frasson/conversor-de-texto-em-audio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Mi-Frasson/conversor-de-texto-em-audio",
+	"changelog": "Corrige licenciamento e dependências da versão pública. Remove websocket-client (Apache-2.0) e substitui por uma implementação WebSocket própria sob a licença do complemento. Inclui a licença do typing_extensions e corrige a URL do projeto.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787779405000,
+	"translations": []
+}
