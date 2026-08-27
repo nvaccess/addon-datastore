@@ -60,39 +60,993 @@
 			{
 				"_id": "2b50bccdfe00c3fce1793a47a9aaafe27cfef4f416598a453d33362595cd676b",
 				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"dll": 2,
+						"html": 6,
+						"ini": 6,
+						"js": 3,
+						"md": 6,
+						"mo": 5,
+						"po": 5,
+						"py": 278,
+						"pyc": 252,
+						"pyd": 2,
+						"typed": 7,
+						"wav": 6
+					},
+					"file_types": {
+						"HTML": 6,
+						"Portable Executable": 4,
+						"script": 1,
+						"unknown": 568
+					},
+					"highest_datetime": "2026-08-22 18:50:44",
+					"lowest_datetime": "2026-08-22 18:50:20",
+					"num_children": 579,
+					"type": "ZIP",
+					"uncompressed_size": 13795035
+				},
+				"contenthash": "d62be0de9604c8668eeccbc872f2cb9d",
 				"filecondis": {
 					"dhash": "000000000e0f0600",
 					"raw_md5": "7e705a0af91d579ee5133ac0bccdb2cc"
 				},
 				"first_submission_date": 1787424868,
-				"last_analysis_results": {},
+				"last_analysis_date": 1787424868,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260821",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260822",
+						"engine_version": "6.812",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260822",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260822",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260822",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260822",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260822",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260822",
+						"engine_version": "260822-04",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260822",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260822",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260814",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260822",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260821",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260821",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260822",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260822",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260813",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260822",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260822",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260822",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260821",
+						"engine_version": "4.0.284",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260822",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260822",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260822",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260822",
+						"engine_version": "GD:27.45729AVA:64.31806",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260822",
+						"engine_version": "1787418049",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260822",
+						"engine_version": "1.0.252.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260822",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260821",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260822",
+						"engine_version": "14.73.60556",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260822",
+						"engine_version": "14.73.60556",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260822",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260822",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260822",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260822",
+						"engine_version": "3.1.0.267",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260821",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260822",
+						"engine_version": "1.2.0.15979",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260822",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260822",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260822",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260822",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260822",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260822",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260821",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260821",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260822",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260822",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260822",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260822",
+						"engine_version": "2026-08-22.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260822",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260822",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260822",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260822",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260822",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260822",
+						"engine_version": "5.6.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260822",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260822",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260822",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260821",
+						"engine_version": "9.5.1277",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260822",
+						"engine_version": "38906",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260822",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260821",
+						"engine_version": "2.0.0.5672",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260822",
+						"engine_version": "6.27-118568156",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260822",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260822",
+						"engine_version": "1e8b978:1e8b978:24bed16:24bed16",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260822",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
 				"last_analysis_stats": {
 					"confirmed-timeout": 0,
-					"failure": 0,
+					"failure": 1,
 					"harmless": 0,
 					"malicious": 0,
 					"suspicious": 0,
 					"timeout": 0,
-					"type-unsupported": 0,
-					"undetected": 0
+					"type-unsupported": 7,
+					"undetected": 67
 				},
-				"last_modification_date": 1787424869,
+				"last_modification_date": 1787472629,
 				"last_submission_date": 1787424868,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
 				"md5": "73c418a6bebb1ba21bc82121d5f82424",
-				"names": [],
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
 				"reputation": 0,
+				"sandbox_verdicts": {
+					"Zenbox": {
+						"category": "harmless",
+						"confidence": 96,
+						"malware_classification": [
+							"CLEAN"
+						],
+						"sandbox_name": "Zenbox"
+					}
+				},
 				"sha1": "b1e1b89513402e3e7c5b999712548b25df701a3f",
 				"sha256": "2b50bccdfe00c3fce1793a47a9aaafe27cfef4f416598a453d33362595cd676b",
+				"sigma_analysis_results": [
+					{
+						"match_context": [
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.deno.lib.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.deno.lib.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							},
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.bun.lib.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.bun.lib.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							},
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.core.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.core.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							}
+						],
+						"rule_author": "Florian Roth (Nextron Systems), Nasreddine Bencherchali (Nextron Systems)",
+						"rule_description": "Detects suspicious script execution from suspicious directories or folders accessible by environment variables that may indicate malware activity.\nScript interpreters (cscript, wscript, mshta, powershell) executing from folders like Temp, Public, or user profile directories may suggest attempts to evade detection or execute malicious scripts.\n",
+						"rule_id": "92acfd50d9fe4d995d6998a5346e4e031ea037d422458bb4f74555a52ffc886c",
+						"rule_level": "high",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Script Interpreter Execution From Suspicious Folder"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.deno.lib.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.deno.lib.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							},
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.bun.lib.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.bun.lib.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							},
+							{
+								"values": {
+									"CommandLine": "C:\\Windows\\system32\\wscript.exe  \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.core.js",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\AppData\\Local\\Temp\\",
+									"Description": "Microsoft \\xae Windows Based Script Host",
+									"EventID": "1",
+									"FileVersion": "5.812.10240.16384",
+									"Hashes": "SHA1=C2326CC50A739D3BC512BB65A24D42F1CDE745C9,MD5=FF00E0480075B095948000BDC66E81F0,SHA256=8C767077BB410F95B1DB237B31F4F6E1512C78C1F0120DE3F215B501F6D1C7EA,IMPHASH=3602F3C025378F418F804C5D183603FE",
+									"Image": "C:\\Windows\\SysWOW64\\wscript.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "wscript.exe",
+									"ParentCommandLine": "\"C:\\Windows\\system32\\cmd.exe\" /c \"cd ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp^\" && C:\\Windows\\system32\\wscript.exe ^\"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/yt_dlp/extractor/youtube/jsc/_builtin/vendor/yt.solver.core.js^\"",
+									"ParentImage": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"Product": "Microsoft \\xae Windows Script Host"
+								}
+							}
+						],
+						"rule_author": "Margaritis Dimitrios (idea), Florian Roth (Nextron Systems), oscd.community, Nasreddine Bencherchali (Nextron Systems), Dave Johnson",
+						"rule_description": "Detects wscript/cscript/mshta executions of scripts located in user directories",
+						"rule_id": "2020feadc9b3cf47558c219948361d9d3eb5347af91135f21bf711f6032bc817",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Potential Dropper Script Execution Via WScript/CScript/MSHTA"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"EventID": "7",
+									"Hashes": "SHA1=ECC47D6C0C4C69D00D2FBA78EFD961C27E32A367,MD5=543AC8C5727EE9F5A83508023257A9E7,SHA256=0BF011593B5CFF9F46909E5998786E30D98440BFFE7251163570CA11CD38E07C,IMPHASH=70A44A432BB24E5D2BF607FE8361DE51",
+									"Image": "C:\\Windows\\System32\\lsass.exe",
+									"ImageLoaded": "C:\\4zgy_24j\\dll\\FYgIGXU.dll",
+									"SignatureStatus": "Unavailable",
+									"Signed": "false"
+								}
+							}
+						],
+						"rule_author": "Teymur Kheirkhabarov, oscd.community",
+						"rule_description": "Loading unsigned image (DLL, EXE) into LSASS process",
+						"rule_id": "41a3e620fba7b86366fe885ba1b20dbaae2be7596e2e9b194ab65dae5e4a7b53",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Unsigned Image Loaded Into LSASS Process"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/x64/sqlite3.dll\",#1",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+									"Description": "Windows host process (Rundll32)",
+									"EventID": "1",
+									"FileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+									"Hashes": "SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A",
+									"Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "RUNDLL32.EXE",
+									"ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+									"ParentImage": "C:\\Windows\\explorer.exe",
+									"Product": "Microsoft\\xae Windows\\xae Operating System"
+								}
+							},
+							{
+								"values": {
+									"CommandLine": "\"C:\\Windows\\system32\\rundll32.exe\" \"C:\\Users\\Bruno\\AppData\\Local\\Temp\\globalPlugins/YoutubePlus/lib/x86/sqlite3.dll\",#1",
+									"Company": "Microsoft Corporation",
+									"CurrentDirectory": "C:\\Users\\Bruno\\Desktop\\",
+									"Description": "Windows host process (Rundll32)",
+									"EventID": "1",
+									"FileVersion": "10.0.19041.746 (WinBuild.160101.0800)",
+									"Hashes": "SHA1=8FA889E456AA646A4D0A4349977430CE5FA5E2D7,MD5=889B99C52A60DD49227C5E485A016679,SHA256=6CBE0E1F046B13B29BFA26F8B368281D2DDA7EB9B718651D5856F22CC3E02910,IMPHASH=30B6D4AA5B2B125B0ABCA749B5D12B3A",
+									"Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+									"IntegrityLevel": "Medium",
+									"OriginalFileName": "RUNDLL32.EXE",
+									"ParentCommandLine": "C:\\Windows\\Explorer.EXE",
+									"ParentImage": "C:\\Windows\\explorer.exe",
+									"Product": "Microsoft\\xae Windows\\xae Operating System"
+								}
+							}
+						],
+						"rule_author": "CD_ROM_",
+						"rule_description": "Detects execution of \"rundll32.exe\" with a parent process of Explorer.exe. This has been observed by variants of Raspberry Robin, as first reported by Red Canary.",
+						"rule_id": "63bcc6f98c4a5594772428a329b433392d70f18a841926328607f303f3d782a5",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Rundll32 Spawned Via Explorer.EXE"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"EventID": "7",
+									"Hashes": "SHA1=691A879812362F1836C04F7CDC826BA72A337257,MD5=06C96E091AB68C8B211D2430EB1E274A,SHA256=7A9029F7B0677086F29B90B597236C880F093C370A12ABE39D781F9CD829B8D4,IMPHASH=00520044EC7FEF69A8DBB59ED5F4FB94",
+									"Image": "C:\\Windows\\SysWOW64\\rundll32.exe",
+									"ImageLoaded": "C:\\4zgy_24j\\dll\\FqNkWYj.dll",
+									"SignatureStatus": "Unavailable",
+									"Signed": "false"
+								}
+							},
+							{
+								"values": {
+									"EventID": "7",
+									"Hashes": "SHA1=ECC47D6C0C4C69D00D2FBA78EFD961C27E32A367,MD5=543AC8C5727EE9F5A83508023257A9E7,SHA256=0BF011593B5CFF9F46909E5998786E30D98440BFFE7251163570CA11CD38E07C,IMPHASH=70A44A432BB24E5D2BF607FE8361DE51",
+									"Image": "C:\\Windows\\System32\\rundll32.exe",
+									"ImageLoaded": "C:\\4zgy_24j\\dll\\FYgIGXU.dll",
+									"SignatureStatus": "Unavailable",
+									"Signed": "false"
+								}
+							}
+						],
+						"rule_author": "Swachchhanda Shrawan Poudel",
+						"rule_description": "Detects windows utilities loading an unsigned or untrusted DLL.\nAdversaries often abuse those programs to proxy execution of malicious code.\n",
+						"rule_id": "683818f24875a562c0b792edd4183d333b6b0b284ca8a88cc47fb2c9ae5b1473",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Unsigned DLL Loaded by Windows Utility"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"EventID": "29",
+									"Hashes": "SHA1=897885C428C094C9092210A37A7B9FA7C42E3902,MD5=357C815033F3B81263485E36170D2A39,SHA256=74D0BFCA535C01E7A529DDCE909766AA312C56DE0FF100479891FF4204418C7B,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+									"Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"TargetFilename": "C:\\scsWqlkxZK\\CAPE\\CapeOutput.bin"
+								}
+							},
+							{
+								"values": {
+									"EventID": "29",
+									"Hashes": "SHA1=46B4999D454C957610CC8C7D20D66A179ABFFA2B,MD5=8F848A938A0C23C3E7710C2FD19C81ED,SHA256=F43E46443264ED10504C98B9B25A3D46408F6D6699CC0F8A9A5D5416CF83F8CC,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+									"Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"TargetFilename": "C:\\scsWqlkxZK\\CAPE\\CapeOutput.bin"
+								}
+							},
+							{
+								"values": {
+									"EventID": "29",
+									"Hashes": "SHA1=FB22ECE01C403FC7A71B9AAF575D6C46C71CECDF,MD5=966C13CB0280306E8D0FE62E88802EA2,SHA256=1050D58AC0407C4B469A881F580F634492D008B10C42E7F678EDFA39964898D7,IMPHASH=392B4D61B1D1DADC1F06444DF258188A",
+									"Image": "C:\\Windows\\SysWOW64\\cmd.exe",
+									"TargetFilename": "C:\\scsWqlkxZK\\CAPE\\CapeOutput.bin"
+								}
+							}
+						],
+						"rule_author": "frack113",
+						"rule_description": "Triggers on any Sysmon \"FileExecutableDetected\" event, which triggers every time a PE that is monitored by the config is created.",
+						"rule_id": "89e801c894097380321f8d053ed1de87b584d895d5b7de28ee9167d1e0aa90bd",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "Sysmon File Executable Creation Detected"
+					},
+					{
+						"match_context": [
+							{
+								"values": {
+									"Details": "Binary Data",
+									"EventID": "13",
+									"EventType": "SetValue",
+									"Image": "C:\\Windows\\sysmon.exe",
+									"TargetObject": "HKLM\\SOFTWARE\\Microsoft\\SystemCertificates\\AuthRoot\\Certificates\\F40042E2E5F7E8EF8189FED15519AECE42C3BFA2\\Blob"
+								}
+							}
+						],
+						"rule_author": "frack113",
+						"rule_description": "Detects the addition of new root, CA or AuthRoot certificates to the Windows registry",
+						"rule_id": "924e45f65b58d749e29df4b23b32058847bb1b15673ee93b0f9a0fc94359b19b",
+						"rule_level": "medium",
+						"rule_source": "Sigma Integrated Rule Set (GitHub)",
+						"rule_title": "New Root or CA or AuthRoot Certificate to Store"
+					}
+				],
+				"sigma_analysis_stats": {
+					"critical": 0,
+					"high": 1,
+					"low": 0,
+					"medium": 6
+				},
+				"sigma_analysis_summary": {
+					"Sigma Integrated Rule Set (GitHub)": {
+						"critical": 0,
+						"high": 1,
+						"low": 0,
+						"medium": 6
+					}
+				},
 				"size": 4994172,
-				"tags": [],
+				"ssdeep": "98304:EjzB1wG3ML2LZtG0bY6eRGNr6eeZsLD3memlUoLMdjhITcuDM5Jddh7iezmR:mzB1w6MLS30GhmZq7mrSowdjhI8JddhW",
+				"tags": [
+					"zip",
+					"contains-pe",
+					"detect-debug-environment",
+					"long-sleeps"
+				],
 				"times_submitted": 1,
+				"tlsh": "T169362327DB1C5643EAB666FCF4C81D92D8CC1782318F75723578A9CAAE1DBF07226184",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
 				},
-				"type_description": "unknown",
-				"type_tags": [],
-				"unique_sources": 1
+				"trid": [
+					{
+						"file_type": "Python Zip Application",
+						"probability": 72.4
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 27.5
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "a76d8481cf0bc0afc991e6c60fdf5d58"
 			}
 		]
 	},
