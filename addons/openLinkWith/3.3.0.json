@@ -71,5 +71,47 @@
 			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
 			"changelog": "- Add a new feature, that announces a web page address, if the shortcut pressed once, and copies it to clipboard if pressed twice.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/f2b996a1be5a4fb7a130226a8ed47b21a96d962ce24f3313fc07f0b84c9be71b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "f2b996a1be5a4fb7a130226a8ed47b21a96d962ce24f3313fc07f0b84c9be71b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1c1d1c0000",
+					"raw_md5": "a519495db33dc391518798aac134944c"
+				},
+				"first_submission_date": 1787841230,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1787841236,
+				"last_submission_date": 1787841230,
+				"md5": "3320f396d876fdb09eec59cea1c642ef",
+				"names": [],
+				"reputation": 0,
+				"sha1": "37416ca323a98f9444ae40ec4a7223f2ed88af0e",
+				"sha256": "f2b996a1be5a4fb7a130226a8ed47b21a96d962ce24f3313fc07f0b84c9be71b",
+				"size": 73080,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
