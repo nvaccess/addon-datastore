@@ -1,0 +1,801 @@
+{
+	"addonId": "DoctorNVDA",
+	"displayName": "DoctorNVDA",
+	"URL": "https://github.com/chaichaimee/DoctorNVDA/releases/download/2026.9.0/DoctorNVDA-v2026.9.0.nvda-addon",
+	"description": "DoctorNVDA is a diagnostic and recovery utility for NVDA. It recovers frozen speech, analyzes crash logs, isolates faulty add-ons, backs up and restores settings, exports system info, and cleans temporary cache files to maintain screen reader stability.\nHot Keys:\nALT+Windows+D\nSingle Tap : open DoctorNVDA menu\nDouble Tap : Restart NVDA\nTripple Tap : Restart NVDA with add-ons disabled\nALT+Windows+R\nSingle : Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output\nDouble : Crash Log Analyzer  collapsed",
+	"sha256": "b8237bd7ba0f18e970655a2f00901675cb7213cf0f5a2af0860dc0c1a69a199f",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/DoctorNVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/DoctorNVDA",
+	"changelog": "The Binary Search Debugging add-on's list of add-ons is updated in each round. New features launched: Emergency Synthesizer Reboot and Crash Log Analyzer.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1787970346000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA は NVDA 用の診断および復旧ユーティリティです。フリーズした音声の復旧、クラッシュログの解析、不具合のあるアドオンの分離、設定のバックアップと復元、システム情報の出力、一時キャッシュファイルの削除を行い、スクリーンリーダーの安定性を維持します。\nショートカットキー:\nALT+Windows+D\n1回押す : DoctorNVDA メニューを開く\n2回押す : NVDA を再起動する\n3回押す : アドオンを無効にして NVDA を再起動する\nALT+Windows+R\n1回押す : 音声合成エンジンの緊急再起動（音声合成エンジンと音声出力を強制再初期化）\n2回押す : クラッシュログ解析ツール（折りたたみ）"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA 是一款适用于 NVDA 的诊断与恢复工具。它可以恢复冻结的语音、分析崩溃日志、隔离故障附加组件、备份和还原设置、导出系统信息并清理临时缓存文件，以保持屏幕阅读器的稳定性。\n快捷键：\nALT+Windows+D\n单击 : 打开 DoctorNVDA 菜单\n双击 : 重启 NVDA\n三击 : 在禁用附加组件的情况下重启 NVDA\nALT+Windows+R\n单击 : 紧急重启语音合成器，强制重新初始化语音合成器和音频输出\n双击 : 崩溃日志分析器 已折叠"
+		},
+		{
+			"language": "en",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA is a diagnostic and recovery utility for NVDA. It recovers frozen speech, analyzes crash logs, isolates faulty add-ons, backs up and restores settings, exports system info, and cleans temporary cache files to maintain screen reader stability.\nHot Keys:\nALT+Windows+D\nSingle Tap : open DoctorNVDA menu\nDouble Tap : Restart NVDA\nTripple Tap : Restart NVDA with add-ons disabled\nALT+Windows+R\nSingle : Emergency Synthesizer Reboot, force-reinitialize the speech synthesizer and audio output\nDouble : Crash Log Analyzer  collapsed"
+		},
+		{
+			"language": "ar",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA هي أداة مساعدة للتشخيص والاسترداد لبرنامج NVDA. تقوم باستعادة النطق المتجمد، وتحليل سجلات الانهيار، وعزل الإضافات البرمجية المعطوبة، وأخذ نسخ احتياطية واستعادتها للإعدادات، وتصدير معلومات النظام، وتنظيف ملفات التخزين المؤقت المؤقتة للحفاظ على استقرار قارئ الشاشة.\nمفاتيح الاختصار:\nALT+Windows+D\nضغطة واحدة : فتح قائمة DoctorNVDA\nضغطتان : إعادة تشغيل NVDA\n3 ضغطات : إعادة تشغيل NVDA مع تعطيل الإضافات البرمجية\nALT+Windows+R\nضغطة واحدة : إعادة تشغيل آلة النطق في حالات الطوارئ، وإعادة تهيئة آلة النطق ومخرج الصوت قسراً\nضغطتان : أداة تحليل سجل الانهيار مطوية"
+		},
+		{
+			"language": "ru",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA — это утилита для диагностики и восстановления NVDA. Она восстанавливает зависшую речь, анализирует журналы сбоев, изолирует неисправные дополнения, создает резервные копии и восстанавливает настройки, экспортирует системную информацию и очищает временные файлы кэша для поддержания стабильности программы экрана.\nГорячие клавиши:\nALT+Windows+D\nОдиночное нажатие : открыть меню DoctorNVDA\nДвойное нажатие : перезапустить NVDA\nТройное нажатие : перезапустить NVDA с отключенными дополнениями\nALT+Windows+R\nОдиночное нажатие : экстренная перезагрузка синтезатора, принудительная повторная инициализация синтезатора речи и аудиовыхода\nДвойное нажатие : анализатор журнала сбоев свернут"
+		},
+		{
+			"language": "hi",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA, NVDA के लिए एक नैदानिक (diagnostic) और पुनर्प्राप्ति (recovery) उपयोगिता है। यह रुकी हुई वाक् (speech) को पुनर्स्थापित करता है, क्रैश लॉग का विश्लेषण करता है, दोषपूर्ण ऐड-ऑन्स को अलग करता है, सेटिंग्स का बैकअप और पुनर्प्राप्ति करता है, सिस्टम जानकारी निर्यात करता है, और स्क्रीन रीडर की स्थिरता बनाए रखने के लिए अस्थायी कैश फ़ाइलों को साफ़ करता है।\nहॉट-कीज़:\nALT+Windows+D\nएक बार दबाएं : DoctorNVDA मेनू खोलें\nदो बार दबाएं : NVDA को पुनरारंभ करें\nतीन बार दबाएं : ऐड-ऑन्स को अक्षम करके NVDA को पुनरारंभ करें\nALT+Windows+R\nएक बार दबाएं : आपातकालीन सिंथेसाइज़र रीबूट, स्पीच सिंथेसाइज़र और ऑडियो आउटपुट को बलपूर्वक पुनः प्रारंभ करें\nदो बार दबाएं : क्रैश लॉग विश्लेषक सिमटा हुआ"
+		},
+		{
+			"language": "id",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA adalah utilitas diagnosis dan pemulihan untuk NVDA. Utilitas ini memulihkan suara yang macet, menganalisis log kerusakan, mengisolasi pengaya yang bermasalah, mencadangkan dan memulihkan pengaturan, mengekspor informasi sistem, serta membersihkan berkas tembolok sementara untuk menjaga stabilitas pembaca layar.\nTombol Pintas:\nALT+Windows+D\nTekan Sekali : membuka menu DoctorNVDA\nTekan Dua Kali : Memulai Ulang NVDA\nTekan Tiga Kali : Memulai Ulang NVDA dengan pengaya dinonaktifkan\nALT+Windows+R\nTekan Sekali : Muat Ulang Penyuara Darurat, memaksa inisialisasi ulang penyuara bicara dan output audio\nTekan Dua Kali : Penganalisis Log Kerusakan diciutkan"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA 是一款適用於 NVDA 的診斷與恢復工具。它可以恢復卡住的語音、分析崩潰記錄檔、隔離有問題的元件、備份與還原設定、匯出系統資訊並清理暫存快取檔案，以保持螢幕閱讀器的穩定性。\n快速鍵：\nALT+Windows+D\n單擊 : 打開 DoctorNVDA 功能表\n雙擊 : 重啟 NVDA\n三擊 : 在停用元件的情況下重啟 NVDA\nALT+Windows+R\n單擊 : 緊急重啟語音合成器，強制重新初始化語音合成器与音訊輸出\n雙擊 : 崩潰記錄檔分析器 已摺疊"
+		},
+		{
+			"language": "uk",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA — це утиліта для діагностики та відновлення NVDA. Вона відновлює завислу мову, аналізує журнали збоїв, ізолює несправні додатки, створює резервні копії та відновлює налаштування, експортує системну інформацію та очищує тимчасові файли кешу для підтримки стабільності екранного читача.\nГарячі клавіші:\nALT+Windows+D\nОдинарне натискання : відкрити меню DoctorNVDA\nПодвійне натискання : перезапустити NVDA\nПотрійне натискання : перезапустити NVDA з вимкненими додатками\nALT+Windows+R\nОдинарне натискання : аварійне перезавантаження синтезатора, примусова повторна ініціалізація синтезатора мовлення та аудіовиходу\nПодвійне натискання : аналізатор журналу збоїв згорнуто"
+		},
+		{
+			"language": "fr",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA est un utilitaire de diagnostic et de récupération pour NVDA. Il restaure la parole bloquée, analyse les journaux de plantage, isole les extensions défaillantes, sauvegarde et restaure les paramètres, exporte les informations système et nettoie les fichiers caches temporaires pour maintenir la stabilité du lecteur d'écran.\nRaccourcis clavier :\nALT+Windows+D\nPression simple : ouvrir le menu DoctorNVDA\nDouble pression : redémarrer NVDA\nTriple pression : redémarrer NVDA avec les extensions désactivées\nALT+Windows+R\nPression simple : redémarrage d'urgence du synthétiseur, force la réinitialisation du synthétiseur vocal et de la sortie audio\nDouble pression : analyseur de journal de plantage réduit"
+		},
+		{
+			"language": "es",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA es una herramienta de diagnóstico y recuperación para NVDA. Recupera la voz congelada, analiza registros de fallos, aisla complementos defectuosos, realiza copias de seguridad y restaura configuraciones, exporta información del sistema y limpia archivos de caché temporales para mantener la estabilidad del lector de pantalla.\nTeclas rápidas:\nALT+Windows+D\nUn toque : abrir el menú de DoctorNVDA\nDoble toque : reiniciar NVDA\nTriple toque : reiniciar NVDA con los complementos deshabilitados\nALT+Windows+R\nUn toque : reinicio de emergencia del sintetizador, fuerza el reinicio del sintetizador de voz y la salida de audio\nDoble toque : analizador de registros de fallos contraído"
+		},
+		{
+			"language": "ko",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA는 NVDA용 진단 및 복구 유틸리티입니다. 멈춘 음성을 복구하고, 충돌 로그를 분석하며, 결함이 있는 추가 기능을 격리하고, 설정을 백업 및 복원하며, 시스템 정보를 내보내고, 임시 캐시 파일을 정리하여 스크린 리더의 안정성을 유지합니다.\n단축키:\nALT+Windows+D\n한 번 누름 : DoctorNVDA 메뉴 열기\n두 번 누름 : NVDA 다시 시작\n세 번 누름 : 추가 기능을 비활성화한 상태로 NVDA 다시 시작\nALT+Windows+R\n한 번 누름 : 응급 음성 합성기 재부팅, 음성 합성기 및 오디오 출력을 강제로 다시 초기화\n두 번 누름 : 충돌 로그 분석기 접힘"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA é um utilitário de diagnóstico e recuperação para o NVDA. Ele recupera a fala travada, analisa logs de falhas, isola complementos com defeito, faz backup e restaura configurações, exporta informações do sistema e limpa arquivos temporários de cache para manter a estabilidade do leitor de tela.\nTeclas de atalho:\nALT+Windows+D\nToque único : abrir o menu do DoctorNVDA\nToque duplo : reiniciar o NVDA\nToque triplo : reiniciar o NVDA com os complementos desativados\nALT+Windows+R\nToque único : reinicialização de emergência do sintetizador, força a reinicialização do sintetizador de voz e da saída de áudio\nToque duplo : analisador de log de falhas recolhido"
+		},
+		{
+			"language": "de",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA ist ein Diagnose- und Wiederherstellungs-Werkzeug für NVDA. Es stellt eingefrorene Sprachausgaben wieder her, analysiert Absturzprotokolle, isoliert fehlerhafte Erweiterungen, sichert und stellt Einstellungen wieder her, exportiert Systeminformationen und bereinigt temporäre Cache-Dateien, um die Stabilität des Screenreaders aufrechtzuerhalten.\nTastenkombinationen:\nALT+Windows+D\nEinmal drücken : DoctorNVDA-Menü öffnen\nZweimal drücken : NVDA neu starten\nDreimal drücken : NVDA mit deaktivierten Erweiterungen neu starten\nALT+Windows+R\nEinmal drücken : Notfall-Neustart der Sprachausgabe, erzwingt die Neuinitialisierung der Sprachausgabe und der Audioausgabe\nZweimal drücken : Absturzprotokoll-Analyse eingenommen"
+		},
+		{
+			"language": "th",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA เป็นเครื่องมือวินิจฉัยและกู้คืนสำหรับ NVDA ช่วยกู้คืนเสียงสังเคราะห์ที่ค้าง วิเคราะห์บันทึกข้อผิดพลาด (crash log) คัดแยกแอดออนที่มีปัญหา สำรองและคืนค่าการตั้งค่า ส่งออกข้อมูลระบบ และล้างไฟล์แคชชั่วคราวเพื่อรักษาสเถียรภาพของโปรแกรมอ่านจอภาพ\nปุ่มลัด:\nALT+Windows+D\nกดหนึ่งครั้ง : เปิดเมนู DoctorNVDA\nกดสองครั้ง : เริ่มทำงาน NVDA ใหม่\nกดสามครั้ง : เริ่มทำงาน NVDA ใหม่โดยปิดการใช้งานแอดออน\nALT+Windows+R\nกดหนึ่งครั้ง : รีบูตโปรแกรมสังเคราะห์เสียงแบบฉุกเฉิน บังคับเริ่มการทำงานของโปรแกรมสังเคราะห์เสียงและอุปกรณ์ส่งออกเสียงใหม่\nกดสองครั้ง : ตัววิเคราะห์บันทึกข้อผิดพลาด ย่ออยู่"
+		},
+		{
+			"language": "it",
+			"displayName": "DoctorNVDA",
+			"description": "DoctorNVDA è un'utility di diagnosi e ripristino per NVDA. Ripristina la sintesi vocale bloccata, analizza i log di crash, isola i componenti aggiuntivi difettosi, esegue il backup e il ripristino delle impostazioni, esporta le informazioni di sistema e pulisce i file di cache temporanei per mantenere la stabilità del screen reader.\nTasti caldi:\nALT+Windows+D\nPressione singola : apre il menu di DoctorNVDA\nDoppia pressione : riavvia NVDA\nTripla pressione : riavvia NVDA con i componenti aggiuntivi disabilitati\nALT+Windows+R\nPressione singola : riavvio d'emergenza del sintetizzatore, forza il reinizio del sintetizzatore vocale e dell'uscita audio\nDoppia pressione : analizzatore dei log di crash compresso"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b8237bd7ba0f18e970655a2f00901675cb7213cf0f5a2af0860dc0c1a69a199f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b8237bd7ba0f18e970655a2f00901675cb7213cf0f5a2af0860dc0c1a69a199f",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 10,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 61
+					},
+					"highest_datetime": "2026-08-29 09:06:30",
+					"lowest_datetime": "2026-01-03 12:44:18",
+					"num_children": 109,
+					"type": "ZIP",
+					"uncompressed_size": 457561
+				},
+				"contenthash": "d628e0634ce91623a74f3e911094621e",
+				"filecondis": {
+					"dhash": "0000181d1c180000",
+					"raw_md5": "7c9889c502472b9a519921286b8a4479"
+				},
+				"first_submission_date": 1787970349,
+				"last_analysis_date": 1787970349,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260828",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260828",
+						"engine_version": "6.814",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260828",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260829",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260828",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260828",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260828",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260828",
+						"engine_version": "260828-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260829",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260828",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260826",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260828",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260828",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260828",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260829",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260828",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260824",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260828",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260828",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260828",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260828",
+						"engine_version": "4.0.285",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260828",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260828",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260828",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260829",
+						"engine_version": "GD:27.45802AVA:64.31837",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260829",
+						"engine_version": "1787965254",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260829",
+						"engine_version": "1.0.253.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260828",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260828",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260828",
+						"engine_version": "14.75.60626",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260828",
+						"engine_version": "14.75.60626",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260828",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260828",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260828",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260829",
+						"engine_version": "3.1.0.267",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260828",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260829",
+						"engine_version": "1.2.0.15979",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260828",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260828",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260828",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260829",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260828",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260828",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260828",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260828",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260828",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260828",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260828",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260829",
+						"engine_version": "2026-08-29.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260829",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260828",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260828",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260828",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260829",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260828",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260828",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260828",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260828",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260828",
+						"engine_version": "9.5.1282",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260828",
+						"engine_version": "38920",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260829",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260828",
+						"engine_version": "2.0.0.5677",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260828",
+						"engine_version": "6.27-118568268",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260828",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260828",
+						"engine_version": "8fc957a:8fc957a:fcb2e60:fcb2e60",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260829",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1787970379,
+				"last_submission_date": 1787970349,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "989dcfddf81a1c6d35d88e39395d0f7f",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "3fa54509dd7f3c7c5431f34be72a0c6ba552061e",
+				"sha256": "b8237bd7ba0f18e970655a2f00901675cb7213cf0f5a2af0860dc0c1a69a199f",
+				"size": 168571,
+				"ssdeep": "3072:KR6MCde72PzjWYiEaCfE7EA/v0EKvm01unX2m8jkAHaemmR2Q2TMjeCF5ul:8Cdu2rjWYPYCmVWxmhQ2TeTF5ul",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T19BF3E198831F101BE85B87FE79870126F27C014CD36E970B0E6A65C19ECA76D1F9EB46",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8495"
+}
