@@ -28,5 +28,47 @@
 	"changelog": "\n**Security**\n- Certificate verification for streaming connections (live playback, recording, and time-shift) is now enabled by default, closing a gap where every station's stream could previously be intercepted or substituted without warning. Stations with known broken/expired certificates automatically fall back to an unverified connection so they keep working — nothing else changes for those stations, and only they pay a small extra delay the first time they're opened each session.\n**Fixed**\n- **Audio books:** Fixed a rare timing issue where, right as one chapter finished and the next was about to start automatically, playback could occasionally jump backward to an already-heard chapter instead of continuing forward. Most noticeable during long unattended listening sessions.\n- **Scheduled recordings:** Recurring recordings now recover much more reliably after your PC wakes from sleep or when NVDA was closed for a while:\n  - A missed recurring recording on a multi-day schedule (e.g. Mon/Wed/Fri) no longer skips ahead by a full week — it correctly finds the next eligible day.\n  - Old, incorrectly saved schedule dates from earlier versions are automatically fixed on load — no need to recreate them.\n  - If a recording's start was delayed (e.g. by sleep), it now records only the time actually remaining in its original window, instead of starting a full-length recording late.\n  - Schedule data is now saved more safely, preventing rare cases of a damaged or incomplete schedule file.\n  - While a scheduled recording is in progress, Windows is prevented from going into idle sleep automatically.\n**Added**\n- New keyboard shortcuts for quick access:\n  - `Ctrl+Windows+L` — jumps straight to the Audio Books tab (focus on your library).\n  - `Ctrl+Windows+O` — jumps straight to the Podcasts tab (focus on your subscriptions).\n  - Both open the FreeRadio window if it's closed, or bring it to the front if it's already open.\n- More audio profile options when saving a profile for a podcast or audiobook: **Volume and playback speed**, **Effects and playback speed**, and **Playback speed only**, alongside the existing Volume only / Effects only / Volume and effects / Volume, effects, and playback speed choices.\n- The **Save Audio Profile for This Podcast** and **Clear Audio Profile** commands are now also available from the episode context menu, so you don't need to switch back to the podcast list to reach them. They still apply to the whole podcast, not to a single episode.\n\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1788114580000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/e43c1a86535e11f056709a85b749c267d06526ba1c94911ba209618feb047b6b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "e43c1a86535e11f056709a85b749c267d06526ba1c94911ba209618feb047b6b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "ba02d45181ba7985d2d09eb2d7f12cb3"
+				},
+				"first_submission_date": 1788114584,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788114649,
+				"last_submission_date": 1788114584,
+				"md5": "1fefa6ad69878277b791a1de2054002d",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a4604f87ba82d54120c96376db34a21ed0569636",
+				"sha256": "e43c1a86535e11f056709a85b749c267d06526ba1c94911ba209618feb047b6b",
+				"size": 47396163,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
