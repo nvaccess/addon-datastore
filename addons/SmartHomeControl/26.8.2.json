@@ -1,0 +1,39 @@
+{
+	"addonId": "SmartHomeControl",
+	"displayName": "Smart Home Control",
+	"URL": "https://github.com/BlindByte06/SmartHomeControl/releases/download/v26.8.2/SmartHomeControl-26.8.2.nvda-addon",
+	"description": "Control smart home devices (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimental) directly from NVDA",
+	"sha256": "6b29b032ddc1af7628d942c4d53a936c94f7ab8e65ae548d452c5bb8ceff31de",
+	"addonVersionName": "26.8.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 8,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Philipp Hasel",
+	"sourceURL": "https://github.com/BlindByte06/SmartHomeControl",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BlindByte06/SmartHomeControl",
+	"changelog": "- Cosori air fryers of the CAF-P583S series are supported: cooking state, programme, remaining time and both temperatures. A programme can be started with a temperature and a time of its own, its time changed while it runs, and stopped, and the end of it is announced. The programme list is learned from the appliance.\n- A Meross lamp put into white mode at the lamp or in the app is no longer shown in colour mode.\n- A sensor dropout of a Levoit purifier is no longer announced as -1 or recorded as a measurement.\n- In the device menu the selection survives a refresh, a refresh is announced once instead of two or three times, and a platform switched off in the settings leaves the tree at once.\n- In the favorites layer the switching press has to follow the announcement within a few seconds, and Ctrl+B removes the outlet it stands on rather than the whole power strip.\n- Changed credentials are proven at the platform before they are saved, and they reach a session that is already running.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788109982000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Smart Home Control",
+			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimentell) direkt aus NVDA steuern",
+			"changelog": "- Cosori-Heißluftfritteusen der Reihe CAF-P583S werden unterstützt: Garzustand, Programm, Restzeit und beide Temperaturen. Ein Programm lässt sich mit eigener Temperatur und Zeit starten, seine Zeit im Lauf ändern und beenden, und sein Ende wird angesagt. Die Programmliste lernt die Erweiterung vom Gerät.\n- Eine Meross-Lampe, die am Gerät oder in der App in den Weißmodus gestellt wurde, wird nicht mehr im Farbmodus angezeigt.\n- Der Sensorausfall eines Levoit-Luftreinigers wird nicht mehr als -1 angesagt oder als Messwert aufgezeichnet.\n- Im Gerätemenü bleibt die Auswahl beim Aktualisieren stehen, eine Aktualisierung wird einmal statt zwei- bis dreimal angesagt, und eine in den Einstellungen abgeschaltete Plattform verlässt den Baum sofort.\n- In der Favoritenebene muss der Schaltdruck innerhalb weniger Sekunden auf die Ansage folgen, und Strg+B entfernt die Steckdose, auf der es steht, statt der ganzen Steckdosenleiste.\n- Geänderte Zugangsdaten werden vor dem Speichern bei der Plattform angemeldet und erreichen auch eine bereits laufende Sitzung."
+		}
+	]
+}
