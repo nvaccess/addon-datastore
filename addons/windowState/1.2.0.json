@@ -1,0 +1,45 @@
+{
+	"addonId": "windowState",
+	"displayName": "Window State",
+	"URL": "https://github.com/RareBird15/windowState/releases/download/v1.2.0/windowState-1.2.0.nvda-addon",
+	"description": "Adds a command to announce the state of the current foreground window (maximized, restored, minimized, or snapped to a side or quarter of the screen). Optionally appends the window state to NVDA+T like JAWS does. Helps blind users confirm whether a window is maximized without triggering the Windows snap layout chooser.",
+	"sha256": "7e84af801d8bfa3a9868fee55ac7651b88a3cc10f1e25c6f870af40067431acf",
+	"addonVersionName": "1.2.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Lanie",
+	"sourceURL": "https://github.com/RareBird15/windowState",
+	"license": "GPL v2",
+	"homepage": "https://github.com/RareBird15/windowState",
+	"changelog": "The Desktop and other non-resizable windows now report \"not resizable\" instead of \"restored\" when queried with NVDA+Shift+T.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788090410000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "窗口状态",
+			"description": "新增一个命令，用于读出当前前台窗口的状态（最大化、还原、最小化，或贴靠到屏幕的一侧或四分之一）。可选择将窗口状态附加到 NVDA+T 快捷键，类似于 JAWS 的行为。帮助盲人用户在不触发 Windows 贴靠布局选择器的情况下，确认窗口是否已最大化。",
+			"changelog": "The Desktop and other non-resizable windows now report \"not resizable\" instead of \"restored\" when queried with NVDA+Shift+T."
+		},
+		{
+			"language": "tr",
+			"displayName": "Pencere Durumu",
+			"description": "Geçerli ön plandaki pencerenin durumunu (büyütülmüş, geri yüklenmiş, küçültülmüş veya ekranın bir kenarına ya da dörtte birine yapıştırılmış) seslendiren bir komut ekler. İsteğe bağlı olarak, JAWS’ın yaptığı gibi pencere durumunu NVDA+T’ye ekler. Görme engelli kullanıcıların, Windows’un yapıştırma düzeni seçicisini tetiklemeden bir pencerenin büyütülmüş olup olmadığını doğrulamasına yardımcı olur.",
+			"changelog": "The Desktop and other non-resizable windows now report \"not resizable\" instead of \"restored\" when queried with NVDA+Shift+T."
+		}
+	]
+}
