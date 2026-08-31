@@ -1,0 +1,31 @@
+{
+	"addonId": "dotPad",
+	"displayName": "Dot Pad",
+	"URL": "https://github.com/dotincorp/nvda-addon-store/releases/download/0.9.90/dotPad-0.9.90.nvda-addon",
+	"description": "Output braile text and graphics to Dot Pad braille displays.",
+	"sha256": "8bd6d1a1c4497c5f295d134465119e844fae7b0b090b7ca3bae26434cc4b0a51",
+	"addonVersionName": "0.9.90",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 90
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "dev",
+	"publisher": "Dot Incorporated",
+	"sourceURL": "https://github.com/dotincorp/nvda-addon-store/",
+	"license": "GPL v2",
+	"changelog": "New in version 1.0:\n\n- Braille and graphics on the multi-line tactile area are now rendered by the bundled TactileDisplayAPI library. It follows the focused control itself and gives richer output for controls, math and images; the NVDA review cursor remains available as an alternative\n- Tactile graphic mode for images, with pan, zoom, recentre and image inversion\n- Table mode, including tables in virtual documents such as Google Docs\n- Connecting, disconnecting and switching between Bluetooth and USB displays is faster, and no longer freezes NVDA when a display is off or out of range\n- Requires NVDA 2026.1 or later\n\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788173773000,
+	"translations": []
+}
