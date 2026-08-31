@@ -46,5 +46,47 @@
 			"description": "改善 Telegram 電腦版與 NVDA 搭配使用時的無障礙體驗。\n\n新增 Alt+1 將焦點移至聊天室清單、Alt+M 開啟 Telegram 主選單，以及 Alt+Y、Alt+N、Alt+A 與 Alt+V 用來接聽通話、掛斷、開關麥克風與開關攝影機。附加元件使用 Telegram 穩定的 UIA 類別資訊，並保留 Telegram 原有的無障礙名稱。",
 			"changelog": "新增與 UnigramPlus 相同的通話指令：Alt+Y 接聽來電、Alt+N 拒接來電或掛斷進行中的通話、Alt+A 開啟或關閉麥克風、Alt+V 開啟或關閉攝影機。每個指令都會以 Telegram 本身的用語報出所執行的動作。所有翻譯與說明文件已更新至 0.1.4 版。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1c1d080000",
+					"raw_md5": "8b45fd7807304825865da94c9b4d3eb1"
+				},
+				"first_submission_date": 1788148037,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788148038,
+				"last_submission_date": 1788148037,
+				"md5": "9b7d1a0652dc523bdcc4ed935b33a0c4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4d90d0e7139d9188765c75ded7e771a0381b6b9e",
+				"sha256": "17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+				"size": 57549,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
