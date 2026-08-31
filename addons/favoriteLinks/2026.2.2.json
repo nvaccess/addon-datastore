@@ -83,5 +83,56 @@
 			"description": "Este complemento permite salvar, editar e remover links para páginas visitadas com frequência.\n\nAtalho Windows+Alt+K.",
 			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: validators (whl)\nVersion: 0.35.0\nDescription: Python Data Validation for Humans™\n\nThe analyzed package is an NVDA screen reader add-on ('favoriteLinks') bundled with open-source dependencies (validators, BeautifulSoup4, soupsieve, email_validator, typing_extensions, and decorator). The code manages user-saved bookmarks, provides link search and validation capabilities, and interacts with NVDA and standard browser APIs without malicious or suspicious behaviors.",
+						"category": "code_insight",
+						"id": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "2daeb4f3c34ad673bed3c7a1364cbe3f"
+				},
+				"first_submission_date": 1788206397,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788206407,
+				"last_submission_date": 1788206397,
+				"md5": "9174b021c5901a62b2e71cf60effe849",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3a200162f7040a629ecdbd9ae68b83b4b2f19f28",
+				"sha256": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+				"size": 568865,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
