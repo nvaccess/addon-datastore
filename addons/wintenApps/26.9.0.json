@@ -101,5 +101,47 @@
 			"description": "Poboljšava podršku za razne aplikacije i kontrole na Windowsu 11",
 			"changelog": "* NVDA 2026.2 (64-bit) or later is required.\n* Removed app module for File Explorer."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/104652c6e9e7380d10b124522d140709d00dd6ba66771d6fbed611783214ddec",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "104652c6e9e7380d10b124522d140709d00dd6ba66771d6fbed611783214ddec",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c3c1d0000",
+					"raw_md5": "44f1f304223875e299e96c511e341add"
+				},
+				"first_submission_date": 1788148413,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788148414,
+				"last_submission_date": 1788148413,
+				"md5": "c1346f7264b95531afebaa5edf105844",
+				"names": [],
+				"reputation": 0,
+				"sha1": "573f9c85d19413b8be0b2da10915853454c754da",
+				"sha256": "104652c6e9e7380d10b124522d140709d00dd6ba66771d6fbed611783214ddec",
+				"size": 70909,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
