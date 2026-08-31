@@ -1,0 +1,93 @@
+{
+	"addonId": "telegramDesktop",
+	"displayName": "Telegram Desktop Accessibility",
+	"URL": "https://github.com/keyang556/tdesktopnvda/releases/download/0.1.4/telegramDesktop-0.1.4.nvda-addon",
+	"description": "Improves Telegram Desktop accessibility for NVDA users.\n\nAdds Alt+1 to move focus to the chat list, Alt+M to open Telegram's main menu, and Alt+Y, Alt+N, Alt+A and Alt+V to answer a call, hang up, mute the microphone and turn the camera on or off. The add-on uses Telegram's stable UIA class information and leaves Telegram's native accessible names unchanged.",
+	"sha256": "17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+	"addonVersionName": "0.1.4",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/tdesktopnvda",
+	"license": "GPL v2",
+	"changelog": "Added call commands that match UnigramPlus: Alt+Y answers an incoming call, Alt+N declines it or ends the call in progress, Alt+A mutes or unmutes the microphone, and Alt+V turns the camera on or off. Each command reports the action in Telegram's own wording. Updated all translations and manuals for version 0.1.4.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788148033000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Telegram 电脑版无障碍支持",
+			"description": "改善 Telegram 电脑版与 NVDA 配合使用时的无障碍体验。\n\n新增 Alt+1 将焦点移到会话列表、Alt+M 打开 Telegram 主菜单，以及 Alt+Y、Alt+N、Alt+A 和 Alt+V 用于接听通话、挂断、开关麦克风与开关摄像头。附加组件使用 Telegram 稳定的 UIA 类信息，并保留 Telegram 原有的无障碍名称。",
+			"changelog": "新增与 UnigramPlus 相同的通话命令：Alt+Y 接听来电、Alt+N 拒接来电或挂断进行中的通话、Alt+A 开启或关闭麦克风、Alt+V 开启或关闭摄像头。每个命令都会用 Telegram 自己的措辞报出所执行的操作。所有翻译和说明文档已更新至 0.1.4 版。"
+		},
+		{
+			"language": "ru",
+			"displayName": "Доступность Telegram Desktop",
+			"description": "Улучшает доступность Telegram Desktop для пользователей NVDA.\n\nДобавляет Alt+1 для перемещения фокуса в список чатов, Alt+M для открытия главного меню Telegram, а также Alt+Y, Alt+N, Alt+A и Alt+V для ответа на звонок, его завершения, включения микрофона и включения камеры. Дополнение использует стабильные сведения о классах UIA Telegram и сохраняет исходные доступные имена Telegram.",
+			"changelog": "Добавлены команды звонка, совпадающие с UnigramPlus: Alt+Y отвечает на входящий звонок, Alt+N отклоняет его или завершает текущий звонок, Alt+A включает и выключает микрофон, Alt+V включает и выключает камеру. Каждая команда сообщает о действии словами самого Telegram. Все переводы и руководства обновлены до версии 0.1.4."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "Telegram 電腦版無障礙支援",
+			"description": "改善 Telegram 電腦版與 NVDA 搭配使用時的無障礙體驗。\n\n新增 Alt+1 將焦點移至聊天室清單、Alt+M 開啟 Telegram 主選單，以及 Alt+Y、Alt+N、Alt+A 與 Alt+V 用來接聽通話、掛斷、開關麥克風與開關攝影機。附加元件使用 Telegram 穩定的 UIA 類別資訊，並保留 Telegram 原有的無障礙名稱。",
+			"changelog": "新增與 UnigramPlus 相同的通話指令：Alt+Y 接聽來電、Alt+N 拒接來電或掛斷進行中的通話、Alt+A 開啟或關閉麥克風、Alt+V 開啟或關閉攝影機。每個指令都會以 Telegram 本身的用語報出所執行的動作。所有翻譯與說明文件已更新至 0.1.4 版。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1c1d080000",
+					"raw_md5": "8b45fd7807304825865da94c9b4d3eb1"
+				},
+				"first_submission_date": 1788148037,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788148038,
+				"last_submission_date": 1788148037,
+				"md5": "9b7d1a0652dc523bdcc4ed935b33a0c4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4d90d0e7139d9188765c75ded7e771a0381b6b9e",
+				"sha256": "17767ab51040fa4457fff0b119c307d4bce536075f76227f98b83a41bb8f7fff",
+				"size": 57549,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9405"
+}
