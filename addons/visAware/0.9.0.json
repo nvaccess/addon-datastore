@@ -1,0 +1,44 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.9.0/visAware-0.9.0.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "832517d97f10259f1c70e30643a86535f553c7009e87edf3b22bbedfd0b49679",
+	"addonVersionName": "0.9.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788224931000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 0.9.0\n\n* 新增 DeepSeek 图像描述和 AI Agent 引擎，并支持配置 API 地址和视觉模型。\n* 新增在关闭、图像描述和 OCR 之间循环切换自动识别模式的命令；该命令没有默认手势。\n* 改进自动识别的可靠性：串行处理后台任务、仅保留最新待处理任务、在网络和 OCR 请求中传递取消操作，并使用更短的请求超时。\n* 改进浏览模式下的网页图像自动识别，支持读取当前及延迟加载图像 URL，并在 URL 不可用时回退到屏幕截图。\n* 改进自动识别结果处理，在当前识别目标变化后忽略过期结果。\n\n### 0.8.1\n\n* 新增基于 OpenAI 兼容 Kimi API 的 Kimi 图像描述、追问、带结构化坐标的 OCR 和 AI Agent 支持。\n* 改进受支持引擎的图像描述提示词，提供本地化默认值。\n* 改进数学图像描述，将可见公式转换为 LaTeX，且纯公式图像仅返回 LaTeX 公式。\n* 改进自动图像识别，使用简洁的 20 到 30 字无 Markdown 描述。\n* 改进可浏览图像描述输出，表格内容使用标准 Markdown 表格并避免代码围栏。\n* 从追问对话框中移除模型和模型提供商名称。\n* 为可浏览的识别与追问结果对话框添加“复制”和“关闭”按钮。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs."
+		}
+	]
+}
