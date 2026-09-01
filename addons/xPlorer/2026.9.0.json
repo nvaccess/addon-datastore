@@ -1,0 +1,38 @@
+{
+	"addonId": "xPlorer",
+	"displayName": "xPlorer",
+	"URL": "https://github.com/chaichaimee/xPlorer/releases/download/2026.9.0/xPlorer-v2026.9.0.nvda-addon",
+	"description": "xPlorer enhances File Explorer productivity in NVDA with dynamic tools tailored for files and folders. Effortlessly announce item properties and speak file or folder sizes directly from menus. Easily copy item names or text content, compress ZIP archives, batch-create folders, convert casing, run Robocopy tasks, and create files—delivering a fast, streamlined, and fully accessible file management workflow.\nHot Keys:\n\nNVDA+Shift+C\nSingle Tap: Copy the selected file and folder names to the clipboard\nDouble Tap: Copy the text content of the selected file(s)\nTriple Tap: Copy the current folder's address bar path \n\nNVDA+Shift+V\nSingle Tap: Select all other items that share the focused item's file extension\nDouble Tap: Invert the current selection\nTriple Tap: Toggle Multi-select mode on or off (non-contiguous selection with the keyboard) \n\nNVDA+Shift+A\nSingle Tap: Open the Select by Search dialog\nDouble Tap: Open Flat View\nTriple Tap: Open the Batch Rename Tool \n\nNVDA+Shift+Z\nSingle Tap: Announce the total size of the current selection\nDouble Tap: Compress the selection into a zip file\nTriple Tap: Extract (unzip) the selected archive \n\nNVDA+Shift+R\nSingle Tap: Robocopy - mark the selection to copy\nDouble Tap: Robocopy - paste into the current folder\nTriple Tap: Robocopy - mark the selection to move \n\nNVDA+Shift+X\nSingle Tap: Open the main xPlorer context menu\nDouble Tap: Open the Recent Locations menu \n\nNVDA+Shift+F2\nSingle Tap: Rename the selected file\nDouble Tap: Rename the selected file or folder using the current clipboard text\nTriple Tap: Undo the last batch rename operation \n\nNVDA+Shift+N\nSingle Tap: Add the selected item(s) to the File Basket\nDouble Tap: Open the File Basket window\nTriple Tap: Clear the File Basket \n\nNVDA+Shift+M\nSingle Tap: Open the Workspace menu\nDouble Tap: Add the selected folder to a new workspace, or save the current folder as a workspace\nTriple Tap: Open the Workspace editor (rename, pin, reorder, or delete saved workspaces) \n\nControl+Shift+N : Automatically paste clipboard content into rename field",
+	"sha256": "201f704ebf4107baf7bca73f3bd3e4f4e7bcae823f9fce3bd15edcbad62ac08e",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/xPlorer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/xPlorer",
+	"changelog": "Optimized event_gainFocus with a Watchdog pattern for O(1) early exits and added safe object mutation via try-finally blocks to prevent UIA pipeline freezing and UI thread lag.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788244363000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "xPlorer",
+			"description": "xPlorer enhances File Explorer productivity in NVDA with dynamic tools tailored for files and folders. Effortlessly announce item properties and speak file or folder sizes directly from menus. Easily copy item names or text content, compress ZIP archives, batch-create folders, convert casing, run Robocopy tasks, and create files—delivering a fast, streamlined, and fully accessible file management workflow.\nHot Keys:\n\nNVDA+Shift+C\nSingle Tap: Copy the selected file and folder names to the clipboard\nDouble Tap: Copy the text content of the selected file(s)\nTriple Tap: Copy the current folder's address bar path \n\nNVDA+Shift+V\nSingle Tap: Select all other items that share the focused item's file extension\nDouble Tap: Invert the current selection\nTriple Tap: Toggle Multi-select mode on or off (non-contiguous selection with the keyboard) \n\nNVDA+Shift+A\nSingle Tap: Open the Select by Search dialog\nDouble Tap: Open Flat View\nTriple Tap: Open the Batch Rename Tool \n\nNVDA+Shift+Z\nSingle Tap: Announce the total size of the current selection\nDouble Tap: Compress the selection into a zip file\nTriple Tap: Extract (unzip) the selected archive \n\nNVDA+Shift+R\nSingle Tap: Robocopy - mark the selection to copy\nDouble Tap: Robocopy - paste into the current folder\nTriple Tap: Robocopy - mark the selection to move \n\nNVDA+Shift+X\nSingle Tap: Open the main xPlorer context menu\nDouble Tap: Open the Recent Locations menu \n\nNVDA+Shift+F2\nSingle Tap: Rename the selected file\nDouble Tap: Rename the selected file or folder using the current clipboard text\nTriple Tap: Undo the last batch rename operation \n\nNVDA+Shift+N\nSingle Tap: Add the selected item(s) to the File Basket\nDouble Tap: Open the File Basket window\nTriple Tap: Clear the File Basket \n\nNVDA+Shift+M\nSingle Tap: Open the Workspace menu\nDouble Tap: Add the selected folder to a new workspace, or save the current folder as a workspace\nTriple Tap: Open the Workspace editor (rename, pin, reorder, or delete saved workspaces) \n\nControl+Shift+N : Automatically paste clipboard content into rename field"
+		}
+	]
+}
