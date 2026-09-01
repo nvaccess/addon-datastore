@@ -1,0 +1,51 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.2.0/polyglot-1.2.0.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "97f078d55b7be19eadaa735a506722ad25089b67561a8f1bd92dc8015613b055",
+	"addonVersionName": "1.2.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GNU General Public License version 3 or later",
+	"homepage": "https://github.com/cary-rowen/polyglot",
+	"changelog": "### 1.2.0\n\n- Added the key-free `DeepL Web` engine with automatic source detection, regional language options, and support for requests up to 1,500 characters.\n- Migrated key-free Microsoft Translator to the current Edge `translatetext` endpoint and removed the retired authentication-token flow.\n- Refreshed OpenRouter presets with current translation-specialised Tencent and Gemini Flash Lite models, automatic fallback for retired presets, and prompt options matched to model capabilities.\n- Reused HTTP connections across translation requests to reduce latency for repeated translations.\n- Removed the unavailable Lingva Translate engine.\n- Fixed long labels overflowing the Chrome AI and Common Settings panels.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788254153000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.2.0\n\n- Added the key-free `DeepL Web` engine with automatic source detection, regional language options, and support for requests up to 1,500 characters.\n- Migrated key-free Microsoft Translator to the current Edge `translatetext` endpoint and removed the retired authentication-token flow.\n- Refreshed OpenRouter presets with current translation-specialised Tencent and Gemini Flash Lite models, automatic fallback for retired presets, and prompt options matched to model capabilities.\n- Reused HTTP connections across translation requests to reduce latency for repeated translations.\n- Removed the unavailable Lingva Translate engine.\n- Fixed long labels overflowing the Chrome AI and Common Settings panels."
+		},
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.2.0\n\n- Added the key-free `DeepL Web` engine with automatic source detection, regional language options, and support for requests up to 1,500 characters.\n- Migrated key-free Microsoft Translator to the current Edge `translatetext` endpoint and removed the retired authentication-token flow.\n- Refreshed OpenRouter presets with current translation-specialised Tencent and Gemini Flash Lite models, automatic fallback for retired presets, and prompt options matched to model capabilities.\n- Reused HTTP connections across translation requests to reduce latency for repeated translations.\n- Removed the unavailable Lingva Translate engine.\n- Fixed long labels overflowing the Chrome AI and Common Settings panels."
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.2.0\n\n- Added the key-free `DeepL Web` engine with automatic source detection, regional language options, and support for requests up to 1,500 characters.\n- Migrated key-free Microsoft Translator to the current Edge `translatetext` endpoint and removed the retired authentication-token flow.\n- Refreshed OpenRouter presets with current translation-specialised Tencent and Gemini Flash Lite models, automatic fallback for retired presets, and prompt options matched to model capabilities.\n- Reused HTTP connections across translation requests to reduce latency for repeated translations.\n- Removed the unavailable Lingva Translate engine.\n- Fixed long labels overflowing the Chrome AI and Common Settings panels."
+		}
+	]
+}
