@@ -1,0 +1,39 @@
+{
+	"addonId": "universalTuner",
+	"displayName": "Universal Tuner for NVDA",
+	"URL": "https://github.com/sharetoyouaccess/UniversalTuner-/releases/download/v2026.09.09/UniversalTunerV2026.09.09.nvda-addon",
+	"description": "Accessible instrument tuner for NVDA with reference tone playback for over 40 instruments and nearly 100 tunings between them.\nLive microphone tuning: press L to listen while you play a string. Every 2 seconds it reports one clear reading: in tune, sharp by a percentage, or flat by a percentage (100% equals one semitone). Press C to switch to chromatic mode, which detects the nearest note automatically instead of comparing against a specific selected string.\nWhen a reading is exactly in tune, it plays a confirmation beep at the actual target note's pitch, then announces the note name. Press O to turn this beep on or off if you only want the spoken reading. Press R to repeat the last reading if you didn't catch it clearly. While live listening is on, Space cancels an in-progress beep and announcement immediately.\nSettings (A4 reference pitch, volume, tone length, gap, sample rate, chromatic mode, beep length, beep on/off, microphone device, last instrument and tuning, capo position) persist across NVDA restarts.\nCapo simulation: on instruments with frets, press [ and ] to lower or raise a simulated capo position (0-9 frets). Reference playback, live-tuning targets, and spoken note names all transpose to match what the string will actually sound like with a capo on.",
+	"sha256": "a89059da75a471b57f91c0f290e872ad1a6cda7a140450f5cf4ef2ab1212aeb6",
+	"addonVersionName": "2026.09.09",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Peem Narkkhwan",
+	"sourceURL": "https://github.com/sharetoyouaccess/UniversalTuner-",
+	"license": "GPL v2",
+	"homepage": "https://github.com/sharetoyouaccess/UniversalTuner-",
+	"changelog": "2026.09.09: added 13 new instruments (Guitar Baritone, Guitar Requinto, Guitar Tenor, Mandocello, Charango, Oud, Balalaika Prima, Erhu, Pipa, Cavaquinho, Cuatro Venezolano, Mountain Dulcimer) and 20 new tuning presets for existing instruments (Guitar 6-string: Open E, Open A, All Fourths; Bass 4-string: Eb Standard; Bass 5-string: Drop A; Banjo 5-string: Double C, Sawmill/G Modal, Open D), all cross-checked against standard tuning references for accuracy. Extended the direct string-selection shortcut from number keys 1-9 to the full row of 12 keys before Backspace (1-9, 0, -, =), so instruments with more than 9 courses (like Guitar 8-string or Oud) can be reached with a single keypress; paired/course-string instruments still toggle between their paired sound with a second press of the same key, now including Oud, Mandocello, and Charango (Charango needed a new pairing mode since its middle course is an octave pair rather than a unison pair, unlike the other paired instruments). Added capo simulation: press [ or ] to lower or raise a simulated capo position (0-9 frets) on instruments with frets - reference playback, live-tuning targets, and spoken note names all transpose to match, while fretless instruments (violin family, Oud, Erhu, the Thai saw fiddles, Khim, Double Bass) are unaffected. Manually tested end-to-end on Windows 11 with the official NVDA release 2026.1.1, including the new 0/-/=/[/] key handling, and confirmed working. Also manually tested and confirmed working on Windows 11 with NVDA 2026.2, which introduced no add-on API breaking changes.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788340709000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "Universal Tuner for NVDA",
+			"description": "Accessible instrument tuner for NVDA with reference tone playback for over 40 instruments and nearly 100 tunings between them.\nLive microphone tuning: press L to listen while you play a string. Every 2 seconds it reports one clear reading: in tune, sharp by a percentage, or flat by a percentage (100% equals one semitone). Press C to switch to chromatic mode, which detects the nearest note automatically instead of comparing against a specific selected string.\nWhen a reading is exactly in tune, it plays a confirmation beep at the actual target note's pitch, then announces the note name. Press O to turn this beep on or off if you only want the spoken reading. Press R to repeat the last reading if you didn't catch it clearly. While live listening is on, Space cancels an in-progress beep and announcement immediately.\nSettings (A4 reference pitch, volume, tone length, gap, sample rate, chromatic mode, beep length, beep on/off, microphone device, last instrument and tuning, capo position) persist across NVDA restarts.\nCapo simulation: on instruments with frets, press [ and ] to lower or raise a simulated capo position (0-9 frets). Reference playback, live-tuning targets, and spoken note names all transpose to match what the string will actually sound like with a capo on.",
+			"changelog": "2026.09.09: added 13 new instruments (Guitar Baritone, Guitar Requinto, Guitar Tenor, Mandocello, Charango, Oud, Balalaika Prima, Erhu, Pipa, Cavaquinho, Cuatro Venezolano, Mountain Dulcimer) and 20 new tuning presets for existing instruments (Guitar 6-string: Open E, Open A, All Fourths; Bass 4-string: Eb Standard; Bass 5-string: Drop A; Banjo 5-string: Double C, Sawmill/G Modal, Open D), all cross-checked against standard tuning references for accuracy. Extended the direct string-selection shortcut from number keys 1-9 to the full row of 12 keys before Backspace (1-9, 0, -, =), so instruments with more than 9 courses (like Guitar 8-string or Oud) can be reached with a single keypress; paired/course-string instruments still toggle between their paired sound with a second press of the same key, now including Oud, Mandocello, and Charango (Charango needed a new pairing mode since its middle course is an octave pair rather than a unison pair, unlike the other paired instruments). Added capo simulation: press [ or ] to lower or raise a simulated capo position (0-9 frets) on instruments with frets - reference playback, live-tuning targets, and spoken note names all transpose to match, while fretless instruments (violin family, Oud, Erhu, the Thai saw fiddles, Khim, Double Bass) are unaffected. Manually tested end-to-end on Windows 11 with the official NVDA release 2026.1.1, including the new 0/-/=/[/] key handling, and confirmed working. Also manually tested and confirmed working on Windows 11 with NVDA 2026.2, which introduced no add-on API breaking changes."
+		}
+	]
+}
