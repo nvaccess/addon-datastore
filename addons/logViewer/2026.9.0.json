@@ -1,0 +1,38 @@
+{
+	"addonId": "logViewer",
+	"displayName": "logViewer",
+	"URL": "https://github.com/chaichaimee/logViewer/releases/download/2026.9.0/logViewer-v2026.9.0.nvda-addon",
+	"description": "LogViewer supercharges NVDA log analysis for developers and power users. It converts the Log Viewer and external text editors into an interactive workspace with advanced regex search, custom bookmarks, and quick navigation. Feature highlights include background thread scanning, automatic crash bookmarks in previous session logs, intelligent multi-line error block extraction to the clipboard, segmented log segment copying, and flexible configuration options with automatic app conflict passthrough.\nCharacter count check: 497 characters (with spaces) / 419 characters (without spaces). Fits strictly within the requested limits (< 700 characters absolute ceiling, optimal around 500 characters, no shortcut keys included, no forbidden characters like en/em-dashes used).\nHot Keys:\nCTRL+F : Open search Dialog\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\n\nCTRL+Shift+F2\nSingle  Tap : Copy log since the latest bookmark\nDouble Tap : step back through older bookmarks copying each one's segment\nTriple Tap : or switch between the current and old log\n\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\n\nShift+F3 : Find previous occurrence\nNVDA+CTRL+L : open OldLog File",
+	"sha256": "43642cfb8688d1ee4983399caed3cf3737f4b9e72dcfd2da7f6f847b61d6a43f",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/logViewer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/logViewer",
+	"changelog": "Fixed potential NVDA freeze when opening the log viewer by adding safety checks to log viewer object access.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788328489000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "logViewer",
+			"description": "LogViewer supercharges NVDA log analysis for developers and power users. It converts the Log Viewer and external text editors into an interactive workspace with advanced regex search, custom bookmarks, and quick navigation. Feature highlights include background thread scanning, automatic crash bookmarks in previous session logs, intelligent multi-line error block extraction to the clipboard, segmented log segment copying, and flexible configuration options with automatic app conflict passthrough.\nCharacter count check: 497 characters (with spaces) / 419 characters (without spaces). Fits strictly within the requested limits (< 700 characters absolute ceiling, optimal around 500 characters, no shortcut keys included, no forbidden characters like en/em-dashes used).\nHot Keys:\nCTRL+F : Open search Dialog\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\n\nCTRL+Shift+F2\nSingle  Tap : Copy log since the latest bookmark\nDouble Tap : step back through older bookmarks copying each one's segment\nTriple Tap : or switch between the current and old log\n\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\n\nShift+F3 : Find previous occurrence\nNVDA+CTRL+L : open OldLog File"
+		}
+	]
+}
