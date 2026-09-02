@@ -1,0 +1,63 @@
+{
+	"addonId": "NativeSpeechGeneration",
+	"displayName": "Native Speech Generation",
+	"URL": "https://github.com/muhammadGagah/native-speech-generation/releases/download/v1.8.1/NativeSpeechGeneration-1.8.1.nvda-addon",
+	"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+	"sha256": "583220d7d0b183705a03039d95a1e59530fc0b82fb21ed50a186124341a157a4",
+	"addonVersionName": "1.8.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 8,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/native-speech-generation",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/native-speech-generation/",
+	"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788359400000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Нативная генерация речи",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "id",
+			"displayName": "Native Speech Generation",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Генерація природного мовлення",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "es",
+			"displayName": "Native Speech Generation",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n"
+		},
+		{
+			"language": "de",
+			"displayName": "Natürliche Spracherzeugung",
+			"description": "Harness the power of Google's state-of-the-art Gemini AI for high-quality speech generation directly within NVDA. This add-on provides a user-friendly dialog to convert text into natural-sounding audio.\n\nKey Features:\n- High-Quality Voices: Choose between Gemini Flash 3.1 Preview for powerful, low-latency short audio, Gemini Flash 2.5 for standard responsive generation, and Gemini Pro 2.5 for premium, life-like speech.\n- Single and Multi-Speaker Modes: Easily generate audio for a single speaker or create dynamic dialogues with two distinct speakers. Simply format your text with \"SpeakerName:\" to assign voices.\n- Advanced Voice Control: Fine-tune the output by adjusting the temperature for more creative or stable results, and provide custom style instructions.\n- Quick Speak: Speak selected text or clipboard text immediately with separate model, voice, and style settings while keeping focus in the current application.\n- Seamless Workflow: The add-on provides instant audio playback upon generation and allows you to save the resulting .wav file for later use.\n\nTo get started, obtain a Gemini API key from Google AI Studio and enter it in the add-on's settings panel, found under NVDA's Tools menu.",
+			"changelog": "- Fixed dependency installation failures on some Windows systems by refreshing missing certificate chains through Windows CryptoAPI and retrying the verified HTTPS request once.\n- Preserved TLS certificate validation and the pinned PyAudio SHA-256 verification; no unverified connection is used for the downloaded package.\n- See changelog.md for full details.\n"
+		}
+	]
+}
