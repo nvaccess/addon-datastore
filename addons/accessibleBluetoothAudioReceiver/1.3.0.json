@@ -35,5 +35,47 @@
 			"description": "Streaming audio dengan mudah dari ponsel Anda ke PC Anda!\n\tAdd-on ini meningkatkan kemampuan aplikasi Bluetooth Audio Receiver dengan hotkey global dan pengalihan koneksi cerdas.\n\tTidak perlu lagi menjelajahi menu, cukup tekan satu tombol untuk menyambungkan atau memutuskan sambungan.\n\tRasakan kontrol audio yang mulus yang belum pernah ada sebelumnya. Periksa readme untuk detail lebih lanjut!",
 			"changelog": "Updated compatibility for NVDA 2026.2.\nImproved localized Bluetooth connection-state detection and transitional-state handling.\nRestored focus to the selected device after connect or disconnect operations.\nLimited Enter handling to valid device rows and preserved native behavior elsewhere.\nImproved application foregrounding, packaging cleanliness, and manifest metadata."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/16fa2c3ee8fcb99417f44f42bffa4b77835ac1e07be78492f724ace9a8528ba7",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "16fa2c3ee8fcb99417f44f42bffa4b77835ac1e07be78492f724ace9a8528ba7",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "38383c385d080000",
+					"raw_md5": "95148b7c01781ab3c5431c9e2e8e9c04"
+				},
+				"first_submission_date": 1788360492,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788360493,
+				"last_submission_date": 1788360492,
+				"md5": "63e9ead35317258a4a2d37b8d7e5451e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "b2948e31bb60b1202e6d94c19d4ffe1751984cfb",
+				"sha256": "16fa2c3ee8fcb99417f44f42bffa4b77835ac1e07be78492f724ace9a8528ba7",
+				"size": 16794,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
