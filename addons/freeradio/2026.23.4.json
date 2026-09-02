@@ -1,0 +1,32 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.23.4/freeradio-2026.23.4.nvda-addon",
+	"description": "FreeRadio is an internet radio, podcast, and audio-book add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, and the libriVox + GETEM digital library for the visually impaired. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, and per-audio-book audio profiles. Podcast episodes and audio book chapters resume automatically from where you left off, with adjustable pitch-preserving playback speed. Playback is handled by a prioritised backend chain (BASS, VLC, PotPlayer, Windows Media Player) with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "a258164c5da368c2a62ff8c4fd1f5b5f178f51d06ca81200132d4f231fe20a1a",
+	"addonVersionName": "2026.23.4",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 23,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n- Removed VLC / PotPlayer / Windows Media Player fallback support. BASS is\nnow the sole, mandatory playback backend. This removes the \"Disable BASS\nbackend\" option and its VLC/wmplayer/PotPlayer path settings from the\nFreeRadio settings panel; if BASS itself fails to start, playback now\nfails with a clear error instead of silently switching to another\nplayer.\n- Internal cleanup: removed unused code paths and a dead\n\"player_paths\" field from scheduled recordings that was never actually\nused for playback.\n- **Seeking within a podcast or audio book now supports tap-to-jump amounts:** a single press seeks 12 seconds, two quick presses seek 1 minute, three quick presses seek 5 minutes. Holding the key down still seeks continuously in the original 5-second steps, unchanged.\n**Improved**\n- Station search now also matches on **codec**, **bitrate**, and **language**, in addition to name, country, and tags. For example, searching \"aac\" or \"320\" now finds stations using that codec or bitrate, and results can be combined with other terms (e.g. \"jazz 320\"). Partialy closing #30\nAdd a new source for audio books\n- Added LibriVox as a second audio book source alongside GETEM. Both catalogs now share the same Audio Books tab: search, browse, play, and resume progress work the same way regardless of which source a book came from.\n- Searching the Audio Books tab now queries GETEM and LibriVox together, and results from both are combined into a single list.\n- Pasting a LibriVox or Getem book URL directly into the search field now resolves and adds that book.\n- Added an \"Audio book sources\" option to the settings panel: a checkbox list lets you choose which of GETEM and LibriVox are searched (both are enabled by default).\n- **GETEM catalog & detail-page parsing: replaced regex scraping with a real DOM parser**\nThe HTML-scraping code that read GETEM's search results and work-detail pages relied on regexes over raw HTML and a literal string split to find each result row. That approach breaks silently the moment the site changes something cosmetic — element order, an extra wrapper tag, a label nested one level deeper — without changing what the page actually means.\nReplaced it with a small, dependency-free DOM builder on top of Python's standard `html.parser.HTMLParser`, then rewrote every scraping function to query that tree by tag/class instead of matching raw markup:\n- **Catalog search results**: each result row is now parsed as its own real subtree, so a field missing from one row can no longer leak text belonging to the next row — a risk the old row-splitting approach carried.\n- **Format-filter options, hidden form fields**: read directly from parsed `<select>`/`<option>` elements instead of locating them by substring search.\n- **Work-detail pages**: chapter links, title, and metadata fields (author/narrator/publisher/etc.) are now found by walking the tree rather than requiring an exact tag sequence; a field's own label text is excluded via nesting-depth-independent lookup instead of an assumed fixed `</div></div>` boundary.\n- **URL resolution**: relative/absolute link handling now goes through `urllib.parse.urljoin`, which correctly covers protocol-relative and query-only links the old hand-written checks didn't.\n- No public function signatures changed, so nothing else in the add-on needed touching. Verified against hand-built fixtures covering the exact failure modes the old code was vulnerable to (reordered attributes, div/span markup variance, a field missing mid-listing, a link wrapped in an extra tag, a deeply nested label) — all resolved correctly.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788352311000,
+	"translations": []
+}
