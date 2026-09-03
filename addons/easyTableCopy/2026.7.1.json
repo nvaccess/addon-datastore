@@ -41,5 +41,47 @@
 			"description": "EasyTableCopy, tabloları, listeleri ve ızgaraları web'den, masaüstü uygulamalarından ve Windows Gezgini'nden Word, Excel veya Outlook'a biçimlendirme bozulmadan kopyalamanıza olanak tanır. Kopyalamak istediğiniz belirli satırları veya sütunları işaretleyin, tek bir hücreyi alın, ağaç görünümünü düzleştirin veya tüm klasör listesini tek bir tuşla kopyalayın.",
 			"changelog": "\n## Değişiklikler\n- Sistem panosu kısa süreliğine başka bir işlem tarafından kullanıldığında hızlı/manuel kopyalama işlemlerinin (işaretlenmiş satır/sütunlar, hücre kopyalama, liste kopyalama, SysListView32 listeleri) güvenilirliği artırıldı.\n- EasyTableCopy artık hemen “Kopyalama başarısız oldu.” mesajını vermek yerine vazgeçmeden önce birkaç kez yeniden deniyor. Bu sayede geçici pano çakışmalarından kaynaklanan ara sıra görülen kopyalama hataları ortadan kalkacaktır.\n- 2026.2 sürümüyle uyumluluk sağlandı.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/241d0fd096443de7b0361d139e0cb85789efcecbc880ba0cc50b24376caac12f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "241d0fd096443de7b0361d139e0cb85789efcecbc880ba0cc50b24376caac12f",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181c1d0c0000",
+					"raw_md5": "5358ecea12c15b966e7676387a58b540"
+				},
+				"first_submission_date": 1788413892,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788413903,
+				"last_submission_date": 1788413892,
+				"md5": "c4467d7f3a6c0c5d42ca34ebe8c9a2cc",
+				"names": [],
+				"reputation": 0,
+				"sha1": "8706c3daeff7bc1b557b5ed8f012ba7ba35839d0",
+				"sha256": "241d0fd096443de7b0361d139e0cb85789efcecbc880ba0cc50b24376caac12f",
+				"size": 78928,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
