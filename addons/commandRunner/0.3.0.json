@@ -1,0 +1,38 @@
+{
+	"addonId": "commandRunner",
+	"displayName": "Command runner for NVDA input gesture dialog",
+	"URL": "https://github.com/Surveyor123/commandRunner/releases/download/v0.3.0/commandRunner-0.3.0.nvda-addon",
+	"description": "Adds \"Run\" buttons to NVDA's Input Gestures dialog, so you can run the command currently selected in the tree right away, without closing the dialog or having to remember its assigned key combination.\n\tFour buttons are provided (Run 1x (alt+1), 2x (alt+2), 3x (alt+3) and 4x (alt+4)), each running the command that many times in a row. This makes it easy to run commands whose behaviour changes depending on how many times in a row they are pressed, such as reporting the time on the first press and the date on the second.\n\tWorks both with NVDA's own built-in commands and with commands added by other add-ons. While a command runs, the dialog is briefly hidden, with speech muted around the hide/show so NVDA's own focus announcements don't interrupt or get mixed up with whatever the command itself reports.",
+	"sha256": "af75c9193599b6b147ed5a38576a0c99a9e73f5290e48dbaf6cddef518eab1f2",
+	"addonVersionName": "0.3.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/commandRunner",
+	"license": "GPL v2",
+	"changelog": "\nEnsure 2026.2 compatibility.\nSmall fixes in documentation.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788407945000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "NVDA girdi hareketleri iletişim kutusu için komut çalıştırıcı",
+			"description": "NVDA'nın Girdi Hareketleri iletişim kutusuna \"Çalıştır\" düğmeleri ekler, böylece ağaçta seçili olan komutu, iletişim kutusunu kapatmadan veya ona atanan tuş kombinasyonunu hatırlamanıza gerek kalmadan hemen çalıştırabilirsiniz.\n\tDört düğme sağlanmıştır (1x (alt+1), 2x (alt+2), 3x (alt+3) ve 4x (alt+4) Çalıştır), her biri komutu arka arkaya birçok kez çalıştırır. Bu, ilk basışta saatin ve ikinci basışta tarihin bildirilmesi gibi davranışları art arda kaç kez basıldığına bağlı olarak değişen komutların çalıştırılmasını kolaylaştırır.\n\tHem NVDA'nın kendi yerleşik komutlarıyla hem de diğer eklentiler tarafından eklenen komutlarla çalışır. Bir komut çalışırken diyalog kısa bir süreliğine gizlenir ve gizleme/gösterme etrafındaki konuşmalar kapatılır, böylece NVDA'nın kendi odak duyuruları komutun bildirimlerini kesmez veya onlara karışmaz.",
+			"changelog": "\n2026.2 ile uyumluluk.\nDokümantasyonda küçük düzeltmeler.\n\n"
+		}
+	]
+}
