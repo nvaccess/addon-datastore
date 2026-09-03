@@ -1,0 +1,75 @@
+{
+	"addonId": "accessibleKBBI",
+	"displayName": "Accessible KBBI - Indonesian Dictionary Search",
+	"URL": "https://github.com/muhammadGagah/nvda-accessibleKBBI/releases/download/v1.3/accessibleKBBI-1.3.nvda-addon",
+	"description": "Seamlessly search definitions in the Kamus Besar Bahasa Indonesia (KBBI), the official standard dictionary of the Indonesian language.\nFeatures include looking up selected text effectively, Word of the Day, and favorite entries, all accessible directly from NVDA.",
+	"sha256": "0aa23e88b08292776899f3ca98fe6471fecf42367c8cf3ed2dac928045718c42",
+	"addonVersionName": "1.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/nvda-accessibleKBBI",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/nvda-accessibleKBBI/",
+	"changelog": "Updated compatibility for NVDA 2026.2.\nChanged the default shortcuts to NVDA+Windows+K and NVDA+Windows+Shift+K.\nImproved dialog foreground activation, focus restoration, and selected-text search behavior.\nImproved history and favorites dialog accessibility and keyboard handling.\nPrevented stale search responses and made configuration writes safer.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788359499000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/0aa23e88b08292776899f3ca98fe6471fecf42367c8cf3ed2dac928045718c42",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "0aa23e88b08292776899f3ca98fe6471fecf42367c8cf3ed2dac928045718c42",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "78787c682d100000",
+					"raw_md5": "a6d88ce88d3e7026f22cd1e15a6d6e1a"
+				},
+				"first_submission_date": 1788359503,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788359506,
+				"last_submission_date": 1788359503,
+				"md5": "8f63a7b7f59e6455bd5db5473b88bcde",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9c514991048c50858b1d6ab1c3ba508e6eb9cff2",
+				"sha256": "0aa23e88b08292776899f3ca98fe6471fecf42367c8cf3ed2dac928045718c42",
+				"size": 14638,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7397"
+}
