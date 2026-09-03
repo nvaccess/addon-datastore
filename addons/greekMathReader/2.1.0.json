@@ -1,0 +1,39 @@
+{
+	"addonId": "greekMathReader",
+	"displayName": "Greek Math Reader",
+	"URL": "https://github.com/ChristosBouronikos/NVDA-Greek-Math/releases/download/v2.1.0/greekMathReader-2.1.0.nvda-addon",
+	"description": "Reads MathML, LaTeX, and UnicodeMath aloud in natural Greek, following the dictation\nconventions used in Greek schools and universities.\nUses conservative semantic interpretation, terminology profiles, statistics, vector calculus,\nquantum notation, SI units, fractions, powers, integrals, derivatives, and matrices.\nIncludes interactive navigation to explore complex expressions part by part,\nand three verbosity levels (terse, smart, verbose).",
+	"sha256": "393c8f38518b1213956c21bd59a64c97b281f3be37bb92ff148b66c1d5ceb490",
+	"addonVersionName": "2.1.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Bouronikos Christos",
+	"sourceURL": "https://github.com/ChristosBouronikos/NVDA-Greek-Math",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://github.com/ChristosBouronikos/NVDA-Greek-Math",
+	"changelog": "Version 2.1.0: shared semantic MathML/LaTeX/UnicodeMath reading, versioned Greek terminology profiles and overrides, vector-calculus/probability/quantum concepts, SI agreement, automatic MathCAT Greek delegation, richer diagnostics, and expanded navigation. Fractions inside trigonometric arguments are read with explicit structure, juxtaposed factors are separated by a short pause, and a bare k is read «κάπα» in Word's fallback.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788465882000,
+	"translations": [
+		{
+			"language": "el",
+			"displayName": "Greek Math Reader",
+			"description": "Εκφωνεί MathML, LaTeX και UnicodeMath σε φυσικά ελληνικά, ακολουθώντας τον τρόπο\nυπαγόρευσης των ελληνικών σχολείων και πανεπιστημίων.\nΧρησιμοποιεί συντηρητική σημασιολογική ερμηνεία, προφίλ ορολογίας, στατιστική,\nδιανυσματικό λογισμό, κβαντικό συμβολισμό, μονάδες SI, κλάσματα, δυνάμεις,\nολοκληρώματα, παραγώγους και πίνακες. Περιλαμβάνει διαδραστική πλοήγηση\nμέρος προς μέρος και τρία επίπεδα λεπτομέρειας (σύντομη, έξυπνη, αναλυτική).",
+			"changelog": "Version 2.1.0: shared semantic MathML/LaTeX/UnicodeMath reading, versioned Greek terminology profiles and overrides, vector-calculus/probability/quantum concepts, SI agreement, automatic MathCAT Greek delegation, richer diagnostics, and expanded navigation. Fractions inside trigonometric arguments are read with explicit structure, juxtaposed factors are separated by a short pause, and a bare k is read «κάπα» in Word's fallback."
+		}
+	]
+}
