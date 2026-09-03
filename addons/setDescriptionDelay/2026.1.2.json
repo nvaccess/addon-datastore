@@ -1,0 +1,39 @@
+{
+	"addonId": "setDescriptionDelay",
+	"displayName": "Set Character Description Delay",
+	"URL": "https://github.com/Surveyor123/setDescriptionDelay/releases/download/v2026.1.2/setDescriptionDelay-2026.1.2.nvda-addon",
+	"description": "This add-on improves NVDA's delayed character description feature:\n\tAllows you to configure the announcement delay in milliseconds, offering more flexibility than the built-in option.\n\tWhen the delay is set to 0, the character description is announced immediately instead of the character itself.\n\tThe add-on is controlled entirely through NVDA's existing \"Delayed descriptions for characters on cursor movement\" checkbox in Voice settings.",
+	"sha256": "77a2f57c155623fb173e84069bbeb98c1b33d4c591de6beea43374f9e9a9e57c",
+	"addonVersionName": "2026.1.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/setDescriptionDelay",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/setDescriptionDelay",
+	"changelog": "\n\n**Fixed**\n- The pending description timer is now cancelled when the add-on terminates, preventing it from firing after the add-on's patches have been removed.\n- Removed a redundant character description lookup: when the delay is set to 0, the description computed to check whether one exists is now reused directly instead of being recalculated a second time.\n- Ensure 2026.2 compatibility.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788421137000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Karakter Açıklama Gecikmesini Ayarla",
+			"description": "Bu eklenti, NVDA'nın gecikmeli karakter açıklaması özelliğini geliştirir:\n\\tYerleşik seçeneğe göre daha fazla esneklik sunarak duyuru gecikmesini milisaniye cinsinden yapılandırmanıza olanak tanır.\n\\tGecikme 0' olarak  ayarlandığında, karakterin kendisi yerine hemen karakter açıklaması duyurulur.\n\\tEklenti tamamen NVDA'nın konuşma ayarlarındaki mevcut \"İmleç hareket  ettiğinde imlecin üzerinde bulunan karakteri gecikmeli olarak açıkla\" onay kutusu aracılığıyla kontrol edilir.",
+			"changelog": "\n\n**Fixed**\n- The pending description timer is now cancelled when the add-on terminates, preventing it from firing after the add-on's patches have been removed.\n- Removed a redundant character description lookup: when the delay is set to 0, the description computed to check whether one exists is now reused directly instead of being recalculated a second time.\n- Ensure 2026.2 compatibility.\n"
+		}
+	]
+}
