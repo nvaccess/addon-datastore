@@ -1,0 +1,39 @@
+{
+	"addonId": "mediaConverter",
+	"displayName": "Media Converter",
+	"URL": "https://github.com/uzunfikret71-stack/nvdaMediaConverter/releases/download/v1.0.3/mediaConverter-1.0.3.nvda-addon",
+	"description": "Converts audio and video files to common formats from an accessible NVDA dialog using the bundled FFmpeg.",
+	"sha256": "cefda426f8295ba9db23fc675abfe8ba3ae3d2a41f2126849fa8a6bff66b4fcc",
+	"addonVersionName": "1.0.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Fikret Uzun",
+	"sourceURL": "https://github.com/uzunfikret71-stack/nvdaMediaConverter",
+	"license": "GPL-3.0-only",
+	"homepage": "https://github.com/uzunfikret71-stack/nvdaMediaConverter",
+	"changelog": "Fixed progress announcements for batch conversions, prevented FFmpeg output pipe stalls, corrected close-after-cancel behavior, and added validation for saved settings.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788433730000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Medya Dönüştürücü",
+			"description": "Ses ve video dosyalarını, eklentiyle gelen FFmpeg aracılığıyla erişilebilir bir NVDA penceresinden yaygın formatlara dönüştürür.",
+			"changelog": "Toplu dönüştürmelerde ilerleme duyuruları, FFmpeg çıktı borusunun kilitlenme riski, iptal sonrası pencerenin kapanması ve kaydedilen ayarların doğrulanması düzeltildi."
+		}
+	]
+}
