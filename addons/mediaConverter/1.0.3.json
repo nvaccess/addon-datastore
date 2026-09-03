@@ -35,5 +35,47 @@
 			"description": "Ses ve video dosyalarını, eklentiyle gelen FFmpeg aracılığıyla erişilebilir bir NVDA penceresinden yaygın formatlara dönüştürür.",
 			"changelog": "Toplu dönüştürmelerde ilerleme duyuruları, FFmpeg çıktı borusunun kilitlenme riski, iptal sonrası pencerenin kapanması ve kaydedilen ayarların doğrulanması düzeltildi."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/cefda426f8295ba9db23fc675abfe8ba3ae3d2a41f2126849fa8a6bff66b4fcc",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "cefda426f8295ba9db23fc675abfe8ba3ae3d2a41f2126849fa8a6bff66b4fcc",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000010300",
+					"raw_md5": "e0810165604ecc80a24855e3d61d1f9f"
+				},
+				"first_submission_date": 1788433735,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788433745,
+				"last_submission_date": 1788433735,
+				"md5": "a274edd39b75763e76c801f05dc89146",
+				"names": [],
+				"reputation": 0,
+				"sha1": "ebec68315136e00c9f52de4d56ea929f46cee6a2",
+				"sha256": "cefda426f8295ba9db23fc675abfe8ba3ae3d2a41f2126849fa8a6bff66b4fcc",
+				"size": 73906786,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
