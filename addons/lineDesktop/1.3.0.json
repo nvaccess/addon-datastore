@@ -1,0 +1,57 @@
+{
+	"addonId": "lineDesktop",
+	"displayName": "LINE Desktop Accessibility",
+	"URL": "https://github.com/keyang556/linedesktopnvda/releases/download/1.3.0/lineDesktop-1.3.0.nvda-addon",
+	"description": "Enhances NVDA accessibility support for LINE Desktop on Windows.\nProvides improved navigation for chat lists, messages, contacts, and message input.\nSupports calls, incoming call handling, OCR-assisted reading, message export reading, and AI image description with follow-up questions.",
+	"sha256": "1d9d2ed772ffe060b2210588cae9392747f0e3571aa7d7ddb647f0bc2173db59",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "中央流行LINE NVDA無障礙應變指揮中心",
+	"sourceURL": "https://github.com/keyang556/linedesktopnvda",
+	"license": "GPL v2",
+	"homepage": "https://keyang556.github.io/linedesktopnvda/",
+	"changelog": "Message recall and the \"Convert to text\" photo notice now ask in a standard NVDA dialog instead of temporarily binding the Y/N/P and A/D keys.\nThose letters are no longer swallowed inside LINE, and the confirmation no longer times out after ten seconds; Y/N/P and A/D still work as button shortcuts in the dialog.\nAll dialogs now use NVDA's message dialog API, replacing the deprecated gui.messageBox.\nNVDA 2025.1 or later is now required.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788400580000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "LINE デスクトップ アクセシビリティ",
+			"description": "Windows版LINEデスクトップのNVDAアクセシビリティサポートを強化します。\nトークリスト、メッセージ、友だち、メッセージ入力のナビゲーションを改善します。\n通話、着信対応、OCRによる読み取り、メッセージ書き出し閲覧、追加質問に対応したAI画像説明をサポートします。",
+			"changelog": "Message recall and the \"Convert to text\" photo notice now ask in a standard NVDA dialog instead of temporarily binding the Y/N/P and A/D keys.\nThose letters are no longer swallowed inside LINE, and the confirmation no longer times out after ten seconds; Y/N/P and A/D still work as button shortcuts in the dialog.\nAll dialogs now use NVDA's message dialog API, replacing the deprecated gui.messageBox.\nNVDA 2025.1 or later is now required."
+		},
+		{
+			"language": "en",
+			"displayName": "LINE Desktop Accessibility",
+			"description": "Enhances NVDA accessibility support for LINE Desktop on Windows.\nProvides improved navigation for chat lists, messages, contacts, and message input.\nSupports calls, incoming call handling, OCR-assisted reading, message export reading, and AI image description with follow-up questions.",
+			"changelog": "Message recall and the \"Convert to text\" photo notice now ask in a standard NVDA dialog instead of temporarily binding the Y/N/P and A/D keys.\nThose letters are no longer swallowed inside LINE, and the confirmation no longer times out after ten seconds; Y/N/P and A/D still work as button shortcuts in the dialog.\nAll dialogs now use NVDA's message dialog API, replacing the deprecated gui.messageBox.\nNVDA 2025.1 or later is now required."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "LINE 電腦版無障礙增強",
+			"description": "增強 NVDA 對 Windows 上 LINE 電腦版的無障礙支援。\n提供對聊天列表、訊息、聯絡人與訊息輸入的改進導覽體驗。\n支援通話、來電處理、OCR 輔助閱讀、訊息匯出閱讀，以及可追問的 AI 圖片描述。",
+			"changelog": "Message recall and the \"Convert to text\" photo notice now ask in a standard NVDA dialog instead of temporarily binding the Y/N/P and A/D keys.\nThose letters are no longer swallowed inside LINE, and the confirmation no longer times out after ten seconds; Y/N/P and A/D still work as button shortcuts in the dialog.\nAll dialogs now use NVDA's message dialog API, replacing the deprecated gui.messageBox.\nNVDA 2025.1 or later is now required."
+		},
+		{
+			"language": "th",
+			"displayName": "การเข้าถึง LINE Desktop",
+			"description": "เพิ่มการรองรับการเข้าถึงของ NVDA สำหรับ LINE Desktop บน Windows\nปรับปรุงการนำทางในรายการแชท ข้อความ รายชื่อติดต่อ และช่องป้อนข้อความ\nรองรับการโทร การจัดการสายเรียกเข้า การอ่านด้วย OCR โปรแกรมอ่านข้อความจากการส่งออก และการอธิบายรูปภาพด้วย AI พร้อมคำถามต่อเนื่อง",
+			"changelog": "Message recall and the \"Convert to text\" photo notice now ask in a standard NVDA dialog instead of temporarily binding the Y/N/P and A/D keys.\nThose letters are no longer swallowed inside LINE, and the confirmation no longer times out after ten seconds; Y/N/P and A/D still work as button shortcuts in the dialog.\nAll dialogs now use NVDA's message dialog API, replacing the deprecated gui.messageBox.\nNVDA 2025.1 or later is now required."
+		}
+	]
+}
