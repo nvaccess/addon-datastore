@@ -1,0 +1,45 @@
+{
+	"addonId": "easyTableCopy",
+	"displayName": "Easy Table Copy",
+	"URL": "https://github.com/Surveyor123/EasyTableCopy/releases/download/v2026.7.1/easyTableCopy-2026.7.1.nvda-addon",
+	"description": "EasyTableCopy lets you copy tables, lists, and grids from the Web, desktop apps, and Windows Explorer into Word, Excel, or Outlook — with formatting intact. Mark specific rows or columns to copy, grab a single cell, flatten a tree view, or copy an entire folder listing, all with a keystroke.",
+	"sha256": "241d0fd096443de7b0361d139e0cb85789efcecbc880ba0cc50b24376caac12f",
+	"addonVersionName": "2026.7.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/EasyTableCopy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/EasyTableCopy",
+	"changelog": "\n## Changed\n- Improved reliability of quick/manual copy operations (marked rows/columns,\n  cell copy, tree copy, list copy, SysListView32 lists) when the system\n  clipboard is briefly held by another process. EasyTableCopy now retries a\n  few times before giving up, instead of immediately reporting\n  \"Copy failed.\" This should eliminate occasional spurious copy failures\n  caused by transient clipboard contention.\n\n- Ensure 2026.2 compatibility.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788413888000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Легке копіювання таблиці",
+			"description": "EasyTableCopy lets you copy tables, lists, and grids from the Web, desktop apps, and Windows Explorer into Word, Excel, or Outlook — with formatting intact. Mark specific rows or columns to copy, grab a single cell, flatten a tree view, or copy an entire folder listing, all with a keystroke.",
+			"changelog": "\n## Changed\n- Improved reliability of quick/manual copy operations (marked rows/columns,\n  cell copy, tree copy, list copy, SysListView32 lists) when the system\n  clipboard is briefly held by another process. EasyTableCopy now retries a\n  few times before giving up, instead of immediately reporting\n  \"Copy failed.\" This should eliminate occasional spurious copy failures\n  caused by transient clipboard contention.\n\n- Ensure 2026.2 compatibility.\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "EasyTableCopy",
+			"description": "EasyTableCopy, tabloları, listeleri ve ızgaraları web'den, masaüstü uygulamalarından ve Windows Gezgini'nden Word, Excel veya Outlook'a biçimlendirme bozulmadan kopyalamanıza olanak tanır. Kopyalamak istediğiniz belirli satırları veya sütunları işaretleyin, tek bir hücreyi alın, ağaç görünümünü düzleştirin veya tüm klasör listesini tek bir tuşla kopyalayın.",
+			"changelog": "\n## Değişiklikler\n- Sistem panosu kısa süreliğine başka bir işlem tarafından kullanıldığında hızlı/manuel kopyalama işlemlerinin (işaretlenmiş satır/sütunlar, hücre kopyalama, liste kopyalama, SysListView32 listeleri) güvenilirliği artırıldı.\n- EasyTableCopy artık hemen “Kopyalama başarısız oldu.” mesajını vermek yerine vazgeçmeden önce birkaç kez yeniden deniyor. Bu sayede geçici pano çakışmalarından kaynaklanan ara sıra görülen kopyalama hataları ortadan kalkacaktır.\n- 2026.2 sürümüyle uyumluluk sağlandı.\n"
+		}
+	]
+}
