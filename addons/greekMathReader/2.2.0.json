@@ -1,0 +1,39 @@
+{
+	"addonId": "greekMathReader",
+	"displayName": "Greek Math Reader",
+	"URL": "https://github.com/ChristosBouronikos/NVDA-Greek-Math/releases/download/v2.2.0/greekMathReader-2.2.0.nvda-addon",
+	"description": "Reads MathML, LaTeX, and UnicodeMath aloud in natural Greek, following the dictation\nconventions used in Greek schools and universities.\nUses conservative semantic interpretation, terminology profiles, statistics, vector calculus,\nquantum notation, SI units, fractions, powers, integrals, derivatives, and matrices.\nIncludes interactive navigation to explore complex expressions part by part,\nand three verbosity levels (terse, smart, verbose).",
+	"sha256": "6bc053126aab8241571ee1925524f501c3300bbf3e5e5083e3218b8338cf8273",
+	"addonVersionName": "2.2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Bouronikos Christos",
+	"sourceURL": "https://github.com/ChristosBouronikos/NVDA-Greek-Math",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://github.com/ChristosBouronikos/NVDA-Greek-Math",
+	"changelog": "Version 2.2.0: fixes mixed-language readings in Word's unstructured speech fallback (used when a mouse click or arrow keys land on an equation instead of NVDA's math object navigation) — the degree sign now reads «μοίρες» instead of «βαθμοί», and simple fractions such as \"two thirds\" no longer keep their denominator in English. Adds a new setting, \"Read Latin letters in formulas as literal English letters\", for formulas that mix genuine English text with Greek.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788518219000,
+	"translations": [
+		{
+			"language": "el",
+			"displayName": "Greek Math Reader",
+			"description": "Εκφωνεί MathML, LaTeX και UnicodeMath σε φυσικά ελληνικά, ακολουθώντας τον τρόπο\nυπαγόρευσης των ελληνικών σχολείων και πανεπιστημίων.\nΧρησιμοποιεί συντηρητική σημασιολογική ερμηνεία, προφίλ ορολογίας, στατιστική,\nδιανυσματικό λογισμό, κβαντικό συμβολισμό, μονάδες SI, κλάσματα, δυνάμεις,\nολοκληρώματα, παραγώγους και πίνακες. Περιλαμβάνει διαδραστική πλοήγηση\nμέρος προς μέρος και τρία επίπεδα λεπτομέρειας (σύντομη, έξυπνη, αναλυτική).",
+			"changelog": "Version 2.2.0: fixes mixed-language readings in Word's unstructured speech fallback (used when a mouse click or arrow keys land on an equation instead of NVDA's math object navigation) — the degree sign now reads «μοίρες» instead of «βαθμοί», and simple fractions such as \"two thirds\" no longer keep their denominator in English. Adds a new setting, \"Read Latin letters in formulas as literal English letters\", for formulas that mix genuine English text with Greek."
+		}
+	]
+}
