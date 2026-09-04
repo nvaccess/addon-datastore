@@ -35,5 +35,47 @@
 			"description": "Εκφωνεί MathML, LaTeX και UnicodeMath σε φυσικά ελληνικά, ακολουθώντας τον τρόπο\nυπαγόρευσης των ελληνικών σχολείων και πανεπιστημίων.\nΧρησιμοποιεί συντηρητική σημασιολογική ερμηνεία, προφίλ ορολογίας, στατιστική,\nδιανυσματικό λογισμό, κβαντικό συμβολισμό, μονάδες SI, κλάσματα, δυνάμεις,\nολοκληρώματα, παραγώγους και πίνακες. Περιλαμβάνει διαδραστική πλοήγηση\nμέρος προς μέρος και τρία επίπεδα λεπτομέρειας (σύντομη, έξυπνη, αναλυτική).",
 			"changelog": "Version 2.2.0: fixes mixed-language readings in Word's unstructured speech fallback (used when a mouse click or arrow keys land on an equation instead of NVDA's math object navigation) — the degree sign now reads «μοίρες» instead of «βαθμοί», and simple fractions such as \"two thirds\" no longer keep their denominator in English. Adds a new setting, \"Read Latin letters in formulas as literal English letters\", for formulas that mix genuine English text with Greek."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6bc053126aab8241571ee1925524f501c3300bbf3e5e5083e3218b8338cf8273",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6bc053126aab8241571ee1925524f501c3300bbf3e5e5083e3218b8338cf8273",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000080f0e0400",
+					"raw_md5": "013b5891120e2a38c00d689485e74cc0"
+				},
+				"first_submission_date": 1788518223,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788518229,
+				"last_submission_date": 1788518223,
+				"md5": "87dd746a5af006ec6ee998f654ff478e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "f2aacca3dd0eb11fa7a019a3192e28896ab90e6b",
+				"sha256": "6bc053126aab8241571ee1925524f501c3300bbf3e5e5083e3218b8338cf8273",
+				"size": 168546,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
