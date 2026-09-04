@@ -35,5 +35,56 @@
 			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimentell) direkt aus NVDA steuern",
 			"changelog": "- Die Zugangsdaten liegen nicht mehr in NVDAs Konfiguration, sondern in einer eigenen Datei. NVDA schreibt die vollständige Konfiguration beim Start ins Protokoll, die E-Mail-Adresse reiste also in jedem eingeschickten Log mit. Vorhandene Zugangsdaten ziehen beim ersten Start von selbst um, neu eingeben muss man nichts.\n- Das Gerätemenü öffnet sich nicht mehr ein zweites Mal über dem ersten. Das Tastenkürzel holt stattdessen das offene Menü nach vorn; das stehengebliebene wurde vorher stillschweigend nicht mehr aktualisiert."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/69b20726cb485f253f00a72b807eb509d943bdcb5062ed6738c15c44a3073fa8",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "69b20726cb485f253f00a72b807eb509d943bdcb5062ed6738c15c44a3073fa8",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: aiohappyeyeballs (whl)\nVersion: 2.7.1\nDescription: Happy Eyeballs for asyncio\n\nThe package contains standard implementations of aiohappyeyeballs along with legitimate vendored dependencies and an NVDA screen reader plugin (SmartHomeControl). No malicious code, secret exfiltration, backdoors, or suspicious child process executions were found.",
+						"category": "code_insight",
+						"id": "69b20726cb485f253f00a72b807eb509d943bdcb5062ed6738c15c44a3073fa8-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0c00",
+					"raw_md5": "f65c8319782439ce45ddb6d20e943232"
+				},
+				"first_submission_date": 1788523970,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788523982,
+				"last_submission_date": 1788523970,
+				"md5": "a0800032d74ed9f8bd2164d139521e69",
+				"names": [],
+				"reputation": 0,
+				"sha1": "5a73a4ec44409e1bddc410bc695a7dc47b343dc3",
+				"sha256": "69b20726cb485f253f00a72b807eb509d943bdcb5062ed6738c15c44a3073fa8",
+				"size": 5695197,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
