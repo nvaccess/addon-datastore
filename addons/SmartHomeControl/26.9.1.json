@@ -1,0 +1,39 @@
+{
+	"addonId": "SmartHomeControl",
+	"displayName": "Smart Home Control",
+	"URL": "https://github.com/BlindByte06/SmartHomeControl/releases/download/v26.9.1/SmartHomeControl-26.9.1.nvda-addon",
+	"description": "Control smart home devices (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimental) directly from NVDA",
+	"sha256": "69b20726cb485f253f00a72b807eb509d943bdcb5062ed6738c15c44a3073fa8",
+	"addonVersionName": "26.9.1",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 9,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Philipp Hasel",
+	"sourceURL": "https://github.com/BlindByte06/SmartHomeControl",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BlindByte06/SmartHomeControl",
+	"changelog": "- Credentials no longer live in NVDA's configuration but in a file of their own. NVDA writes the complete configuration into the log when it starts, so the email address used to travel with every log that was sent in. Existing credentials move by themselves on the first start, and nothing has to be entered again.\n- The device menu no longer opens a second time on top of the first. The shortcut brings the menu that is already open to the front instead; the one left standing used to stop being updated without saying so.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788523966000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Smart Home Control",
+			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimentell) direkt aus NVDA steuern",
+			"changelog": "- Die Zugangsdaten liegen nicht mehr in NVDAs Konfiguration, sondern in einer eigenen Datei. NVDA schreibt die vollständige Konfiguration beim Start ins Protokoll, die E-Mail-Adresse reiste also in jedem eingeschickten Log mit. Vorhandene Zugangsdaten ziehen beim ersten Start von selbst um, neu eingeben muss man nichts.\n- Das Gerätemenü öffnet sich nicht mehr ein zweites Mal über dem ersten. Das Tastenkürzel holt stattdessen das offene Menü nach vorn; das stehengebliebene wurde vorher stillschweigend nicht mehr aktualisiert."
+		}
+	]
+}
