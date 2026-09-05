@@ -1,0 +1,94 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.3.0/polyglot-1.3.0.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "a81be83a8cfcd03fe4a7d3bcfd56a4e164c3cc84e84f8401b95bdfe09485da59",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GNU General Public License version 3 or later",
+	"homepage": "https://github.com/cary-rowen/polyglot",
+	"changelog": "### 1.3.0\n\n- Added Windows DPAPI protection for engine credentials, so saved credentials are no longer stored in plaintext and portable profiles must be reconfigured when moved to another machine.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788623629000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.3.0\n\n- 已为引擎凭据启用 Windows DPAPI 保护，因此已保存的凭据不再以明文存储，便携配置移到其他电脑后需要重新配置。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.3.0\n\n- Added Windows DPAPI protection for engine credentials, so saved credentials are no longer stored in plaintext and portable profiles must be reconfigured when moved to another machine."
+		},
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.3.0\n\n- Added Windows DPAPI protection for engine credentials, so saved credentials are no longer stored in plaintext and portable profiles must be reconfigured when moved to another machine."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a81be83a8cfcd03fe4a7d3bcfd56a4e164c3cc84e84f8401b95bdfe09485da59",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a81be83a8cfcd03fe4a7d3bcfd56a4e164c3cc84e84f8401b95bdfe09485da59",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "4186e6878aa07645b14aa3415df65a13"
+				},
+				"first_submission_date": 1788623634,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788623637,
+				"last_submission_date": 1788623634,
+				"md5": "f1c97fdfce94a96356761f8587cfe175",
+				"names": [],
+				"reputation": 0,
+				"sha1": "dfd52b8dcbda510d6f4b5df06bc43e859f7636a2",
+				"sha256": "a81be83a8cfcd03fe4a7d3bcfd56a4e164c3cc84e84f8401b95bdfe09485da59",
+				"size": 3377331,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9756"
+}
