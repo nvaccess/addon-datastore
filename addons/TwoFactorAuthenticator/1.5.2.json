@@ -1,0 +1,32 @@
+{
+	"addonId": "TwoFactorAuthenticator",
+	"displayName": "2Factor Authenticator",
+	"URL": "https://github.com/umesh-rathore/2factor-authenticator/releases/download/v1.5.2/TwoFactorAuthenticator-1.5.2.nvda-addon",
+	"description": "Generates 2FA TOTP codes quickly via a shortcut key and copies them to the clipboard.",
+	"sha256": "d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0",
+	"addonVersionName": "1.5.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Umesh Rathore <umeshrathore897@gmail.com>",
+	"sourceURL": "https://github.com/umesh-rathore/2factor-authenticator",
+	"license": "GPL v2",
+	"homepage": "https://github.com/umesh-rathore/2factor-authenticator",
+	"changelog": "Added automatic QR code scanning from screen using opencv or wechat model to more compatibility with windows11 and nvda2026.2. no download needed, all libs are bundled. if you doubt libs are corrupted and not working? try: nvda menu > tools menu > 2fa menu and choose reinstall QRLibrary. the addon automatically reinstalls library and restarts nvda to continue.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788627463000,
+	"translations": []
+}
