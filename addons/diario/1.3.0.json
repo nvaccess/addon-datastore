@@ -1,0 +1,53 @@
+{
+	"addonId": "diario",
+	"displayName": "Diary for NVDA",
+	"URL": "https://github.com/zambonif/NVDA-Addons/releases/download/diario-v1.3.0/diario-1.3.0.nvda-addon",
+	"description": "An accessible and encrypted personal diary integrated with NVDA. It combines dated entries, password protection and optional recovery, real-time spell checking, and encrypted ZIP backup export and merge import.",
+	"sha256": "a4ef5f54f24329290c9327d2144275df44837c44c048b2b59e15ecdf828310dc",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Fernando de Paula Zamboni",
+	"sourceURL": "https://github.com/zambonif/NVDA-Addons/tree/diario-v1.3.0/diario",
+	"license": "GPL v2",
+	"homepage": "https://github.com/zambonif/NVDA-Addons",
+	"changelog": "Added encrypted backup export and import to the unlocked Diary window. Export creates a ZIP containing diario.enc and diario.backup.enc. Import validates the ZIP and merges only entries whose identifiers are not already present, without replacing existing entries. Backups from the same vault require no additional password; backups from independent vaults request their own password. Updated interface translations, documentation and tests in all five supported languages. The encrypted vault format remains compatible with version 1.1.0.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788576857000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Journal pour NVDA",
+			"description": "Un journal personnel accessible et chiffré intégré à NVDA. Il réunit des entrées datées, une protection par mot de passe, une récupération facultative, une correction orthographique en temps réel et l'exportation et l'importation fusionnée de sauvegardes ZIP chiffrées."
+		},
+		{
+			"language": "it",
+			"displayName": "Diario per NVDA",
+			"description": "Un diario personale accessibile e crittografato integrato con NVDA. Riunisce voci datate, protezione con password, recupero facoltativo, controllo ortografico in tempo reale ed esportazione e importazione unita di backup ZIP crittografati."
+		},
+		{
+			"language": "es",
+			"displayName": "Diario para NVDA",
+			"description": "Un diario personal accesible y cifrado integrado con NVDA. Reúne entradas con fecha, protección mediante contraseña, recuperación opcional, corrección ortográfica en tiempo real y exportación e importación combinada de copias ZIP cifradas."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Diário para NVDA",
+			"description": "Um diário pessoal acessível e criptografado integrado ao NVDA. Reúne entradas com data, proteção por senha, recuperação opcional, corretor ortográfico em tempo real e exportação e importação mesclada de backups ZIP criptografados."
+		}
+	]
+}
