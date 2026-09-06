@@ -1,0 +1,118 @@
+{
+	"addonId": "openLinkWith",
+	"displayName": "Open Link With",
+	"URL": "https://github.com/ibrahim-s/openLinkWith/releases/download/3.3.1/openLinkWith-3.3.1.nvda-addon",
+	"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+	"sha256": "1717e778e66dc1db07a87a9fc1d51c8a35c466b34046ba1e754ea3f9c653d5cb",
+	"addonVersionName": "3.3.1",
+	"addonVersionNumber": {
+		"major": 3,
+		"minor": 3,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ibrahim Hamadeh",
+	"sourceURL": "https://github.com/ibrahim-s/openLinkWith",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ibrahim-s/openLinkWith/blob/master/readme.md",
+	"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788118465000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "打开链接",
+			"description": "\n该插件可以从选中文本、最后一次朗读的文本或剪贴板文本中提取链接，并将它们显示在对话框列表中，以便您选择使用已安装的浏览器打开链接。当前上下文命令会依次检查选中文本、最后一次朗读的文本和剪贴板，并使用第一个包含有效链接的来源。\n按下您在“按键与手势”中为插件分配的命令，即可显示“打开链接”对话框。\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		},
+		{
+			"language": "en",
+			"displayName": "Open Link With",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		},
+		{
+			"language": "ar",
+			"displayName": "فتح الروابط",
+			"description": "\n\u000bاستخراج الروابط إذا وُجدت في النص المحدد أو آخر نص منطوق أو النص في الحافظة، ثم عرضها في قائمة داخل مربع حوار، مما يتيح لك خيار فتح أي رابط باستخدام مختلف المتصفحات الموجودة على الكمبيوتر. يقوم أمر السياق الحالي بفحص النص المحدد أولاً، ثم آخر نص منطوق، ثم الحافظة، ويستخدم أول مصدر يحتوي على رابط صالح.\nاضغط على الأمر الذي ربطته بالإضافة عبر إيماءات الإدخال لعرض مربع الحوار (OpenLinkWith).\n",
+			"changelog": "إضافة إيماءة واحدة (غير مخصصة افتراضياً) للعثور على الروابط بناءً على السياق الحالي:\nتتحقق أولاً من النص المحدد، ثم من آخر نص منطوق، وأخيراً من الحافظة. يتم استخدام أول مصدر يحتوي على روابط صالحة.\nبالنسبة للمستخدمين، هذا يعني أن إيماءة واحدة فقط يمكنها التعامل مع أكثر مصادر الروابط شيوعاً دون إزالة الأوامر الخاصة بكل مصدر.\nبمعنى آخر، الآن إيماءة واحدة فقط ستقوم بعمل الإيماءات الثلاث السابقة، وقد تتيح الاحتفاظ بالإيماءات الأخرى لإضافات مختلفة. جرّبها واحكم بنفسك!\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Открыть ссылку с помощью",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Відкрити посилання за допомогою",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		},
+		{
+			"language": "fr",
+			"displayName": "Ouvrir le Lien Avec",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		},
+		{
+			"language": "tr",
+			"displayName": "Bağlantıyı Şununla Aç",
+			"description": "\nExtract links if found in selected, last spoken or clipboard text, display them in a list in a dialog, giving you the option to open any link with various browsers found on computer. The current context command checks selected text, then last spoken text, then clipboard, and uses the first source containing a valid link.\nPress the command you assotiated with the addon via input gestures, to display OpenLinkWith dialog.\n",
+			"changelog": "- Add a single gesture (unassigned by default) that finds links based on the current context:  \nFirst checks selected text, then last spoken text, and finally the clipboard. The first source containing valid links is used.  \nFor users, this means one gesture can handle the most common link sources without removing the existing source-specific commands.  \nIn other words, now one gesture only, will do the job of the three previous ones, and may be leaving the other gestures for other addons, test it and judge!\n"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1717e778e66dc1db07a87a9fc1d51c8a35c466b34046ba1e754ea3f9c653d5cb",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1717e778e66dc1db07a87a9fc1d51c8a35c466b34046ba1e754ea3f9c653d5cb",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181c1d1c0000",
+					"raw_md5": "7106294ad26a0159564143acc1de3349"
+				},
+				"first_submission_date": 1788118469,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788118470,
+				"last_submission_date": 1788118469,
+				"md5": "057d8fc97711fafc11cc3021891f4eb4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "52fcccfbb7e70d68d6e8204a8da0417aea70c282",
+				"sha256": "1717e778e66dc1db07a87a9fc1d51c8a35c466b34046ba1e754ea3f9c653d5cb",
+				"size": 82303,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2438"
+}

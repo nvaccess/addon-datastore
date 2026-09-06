@@ -1,0 +1,870 @@
+{
+	"addonId": "enhancedTouchGestures",
+	"displayName": "Enhanced Touch Gestures",
+	"URL": "https://github.com/kefaslungu/enhancedTouchGestures/releases/download/26.09/enhancedTouchGestures-26.08.3.nvda-addon",
+	"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+	"sha256": "b71534a44956c60b2b8cbd1f6ec96f0240d60484032abfdc758d45b9e7afd7ca",
+	"addonVersionName": "26.08.3",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 8,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 3
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "jospehsl",
+	"sourceURL": "https://github.com/kefaslungu/enhancedTouchGestures",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kefaslungu/enhancedTouchGestures",
+	"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788152772000,
+	"translations": [
+		{
+			"language": "hr",
+			"displayName": "Dodatne dodirne geste",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "de_CH",
+			"displayName": "Erweiterte Touch-gesten",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "fa",
+			"displayName": "فرمان‌های لمسیِ پیشرفته",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Gestos de toque aprimorados",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "he",
+			"displayName": "מחוות מגע משופרות",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "触摸屏手势增强",
+			"description": "此插件为 NVDA 提供了额外的触摸屏手势，包括读出焦点、循环切换合成器设置等。",
+			"changelog": "* 已从插件帮助（自述文件）中移除插件的更新日志。\n* 触摸浏览模式下的“默认（所有元素）”模式现已更名为“默认”模式，以匹配 NVDA 2026.2 的表述。\n* 如果运行 NVDA 2026.2，当导航对象位于文档内容以外的位置时，在网页浏览器中执行浏览触摸模式命令时，NVDA 将不再出现无反应或播放错误提示音的情况。"
+		},
+		{
+			"language": "ru",
+			"displayName": "Улучшенные сенсорные жесты",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "ro",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "gl",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "da",
+			"displayName": "Udvidede berøringsfunktioner",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "sl",
+			"displayName": "Napredne Dotikabilne Kretnje",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Jestên Destikê yên Pêşkeftî",
+			"description": "Ev pêvek ji bo NVDA-yê jestên ekrana desta yên zêdetir peyda dike, di nav de raporkirina fokusê û jestên zengilê yên mîhengên synthê.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "增強觸控手勢",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "sk",
+			"displayName": "Pokročilé dotykové gestá",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "uk",
+			"displayName": "Розширення сенсорних жестів",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "fr",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "pl",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "bg",
+			"displayName": "Подобрени сензорни жестове (Enhanced Touch Gestures)",
+			"description": "Тази добавка предоставя допълнителни жестове за сензорния екран при работа с NVDA, включително докладване на фокуса и жестове за пръстена от настройки на синтезатора.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "es",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "fi",
+			"displayName": "Laajennetut kosketuseleet",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "tr",
+			"displayName": "Gelişmiş Dokunma Hareketleri",
+			"description": "Bu eklenti, NVDA için odak durum bildirimi ve ses sentezleyici ayar halkası hareketleri dahil olmak üzere ek dokunmatik ekran hareketleri sunar.",
+			"changelog": "* Eklenti değişiklik günlüğü, eklenti yardım (readme) dosyasından kaldırıldı.\n* Dokunmatik Tarama modundaki \"varsayılan (tüm öğeler)\" modu artık NVDA 2026.2 mesajlarıyla eşleşecek şekilde \"varsayılan\" mod olarak adlandırılıyor.\n* NVDA 2026.2 çalıştırılıyorsa, NVDA artık hiçbir şey yapmıyor gibi görünmeyecek veya dolaşım nesnesi belge içeriği dışında bir yerdeyken web tarayıcılarında göz atma dokunmatik modu komutları gerçekleştirilirken hata sesleri çalmayacak."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Gestos Táteis Aprimorados",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "de",
+			"displayName": "Erweiterte Berührungsgesten",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "it",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		},
+		{
+			"language": "sr",
+			"displayName": "Enhanced Touch Gestures",
+			"description": "This add-on provides additional touchscreen gestures for NVDA, including focus reporting and synth settings ring gestures.",
+			"changelog": "* Removed add-on changelog from add-on help (readme) file.\n* The \"default (all elements)\" mode in touch browse mode is now called \"default\" mode to match NVDA 2026.2 messaging.\n* If running NVDA 2026.2, NVDA will no longer appear to do nothing or play error tones when performing browse touch mode commands in web browsers while navigator object is located somewhere other than the document content."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b71534a44956c60b2b8cbd1f6ec96f0240d60484032abfdc758d45b9e7afd7ca",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b71534a44956c60b2b8cbd1f6ec96f0240d60484032abfdc758d45b9e7afd7ca",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 21,
+						"ini": 26,
+						"md": 21,
+						"mo": 25,
+						"po": 25,
+						"py": 2
+					},
+					"file_types": {
+						"HTML": 21,
+						"unknown": 100
+					},
+					"highest_datetime": "2026-08-28 11:38:58",
+					"lowest_datetime": "2026-08-28 10:27:52",
+					"num_children": 121,
+					"type": "ZIP",
+					"uncompressed_size": 255153
+				},
+				"contenthash": "4ca271c45770f96a8086ccdae8576ae0",
+				"filecondis": {
+					"dhash": "0000181e1c150800",
+					"raw_md5": "0b8b3bbd533cfe20ff178e8eeaeec0ec"
+				},
+				"first_submission_date": 1788152776,
+				"last_analysis_date": 1788152776,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260831",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260828",
+						"engine_version": "6.814",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260830",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260831",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260831",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260831",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260830",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260830",
+						"engine_version": "260830-04",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260831",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260831",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260826",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260829",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260830",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260830",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260831",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260830",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260824",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260830",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "failure",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260831",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260831",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260828",
+						"engine_version": "4.0.285",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260831",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260831",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260831",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260831",
+						"engine_version": "GD:27.45827AVA:64.31845",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260831",
+						"engine_version": "1788148871",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260831",
+						"engine_version": "1.0.253.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260830",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260830",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260830",
+						"engine_version": "14.75.60640",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260831",
+						"engine_version": "14.75.60641",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260831",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260829",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260830",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260831",
+						"engine_version": "3.1.0.267",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260828",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260831",
+						"engine_version": "1.2.0.15979",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260831",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260831",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260831",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260831",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260830",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260831",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260828",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260828",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260830",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260830",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260830",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260831",
+						"engine_version": "2026-08-31.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260831",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260830",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260831",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260831",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260831",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260830",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260831",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260831",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260831",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260828",
+						"engine_version": "9.5.1282",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260830",
+						"engine_version": "38925",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260831",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260828",
+						"engine_version": "2.0.0.5677",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260830",
+						"engine_version": "6.27-118568319",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260831",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260830",
+						"engine_version": "27c7643:27c7643:fcb2e60:fcb2e60",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260831",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 2,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 8,
+					"undetected": 65
+				},
+				"last_modification_date": 1788152880,
+				"last_submission_date": 1788152776,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "3a767fb6f954e88b267ff58ea811f88b",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "7591ec4a94154e9f00069b7a25a446087fcc89c6",
+				"sha256": "b71534a44956c60b2b8cbd1f6ec96f0240d60484032abfdc758d45b9e7afd7ca",
+				"size": 130530,
+				"ssdeep": "1536:p9QcF7+jQCBRxtSxQd6dwHAbXu/Mf14D2mbInk54wAQ2FRmzfe+wyLsIKHSdup:8nhnPSxw6dwKXVqw/wAQ2bmfhzsIYSEp",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T13FD3E165505E8007E95BC2BEEBC73842F11E4070F44F2BBA2656E7D70CAB39D8B9E458",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "0ee9d01832f4102793b88b82a522b193"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2980"
+}
