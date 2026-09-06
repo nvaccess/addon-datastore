@@ -1,0 +1,32 @@
+{
+	"addonId": "monitorSistema",
+	"displayName": "Monitor del Sistema",
+	"URL": "https://github.com/daliana907/monitorSistema/releases/download/2.4/monitorSistema.nvda-addon",
+	"description": "Monitor accesible de recursos para NVDA. Fork extendido basado en Resource Monitor (por Joseph Lee y colaboradores). Consulta en tiempo real la carga de la CPU, frecuencia en vivo, memoria RAM, discos, red Wi-Fi, tarjeta grafica (GPU y memoria VRAM), version de Windows y tiempo de actividad.",
+	"sha256": "1107ebb4ae557129d8c8a4106f57903b253360f5794f855f29cbda4dd3632c00",
+	"addonVersionName": "2.4",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Daliana",
+	"sourceURL": "https://github.com/daliana907/monitorSistema",
+	"license": "GPL v2",
+	"homepage": "https://github.com/daliana907/monitorSistema",
+	"changelog": "Version 2.4:\n- Internacionalización completa: integradas 35 traducciones de la comunidad (preservando cabeceras y traductores originales de Resource Monitor y completando todas las nuevas funciones).\n- Documentación y licencias: README bilingüe y atribución completa de derechos de autor (GPLv2) a Joseph Lee, colaboradores de Resource Monitor y autores de BlueToothBatteryReport en todos los módulos.\nVersion 2.3:\n- Alertas automaticas configurables del sistema: nuevo sistema de supervision en segundo plano integrado en el panel de opciones de NVDA (Preferencias > Opciones > Monitor del Sistema) para estado de red Wi-Fi (conexion y desconexion en canal de audio de NVDA), variacion en la intensidad de senal Wi-Fi (tono y locucion al variar la cobertura), salud y desgaste critico en discos (supervision periodica de anomalias S.M.A.R.T. en HDD/SSD y limite de desgaste en SSD), alertas de sobrecalentamiento de CPU (por defecto 85 C) y GPU (por defecto 80 C), bateria cargada (por defecto 100%), bateria baja del equipo (por defecto 15%), bateria baja en Bluetooth (por defecto 15%) y desgaste limite en SSD (por defecto 80%), todas con controles interactivos y accesibles para elegir el valor exacto de aviso e intervalos de supervisión periódica (desde 1 minuto), con visibilidad dinamica y respuesta inmediata.\n- Copia automatica al portapapeles con doble pulsacion: en todas las herramientas avanzadas (NVDA+Shift+Control+1 al 5), la doble pulsacion programa la copia automatica al finalizar la prueba o la copia de inmediato si ya existe una medicion reciente, evitando reejecuciones innecesarias.\n- Deteccion precisa y optimizada de GPU: exclusion automatica del adaptador basico por software de Microsoft (Microsoft Basic Render Driver) para evitar reportar GPUs ficticias, y locucion homogenea con prefijo 'GPU:' en equipos con una sola tarjeta grafica fisica.\n- Deteccion universal de bateria Bluetooth: integracion del subsistema de Bluetooth clasico (bthprops.cpl) y estado DevNode/PnP, permitiendo detectar con total precision la bateria en auriculares, manos libres y altavoces Bluetooth clasicos (como JLab, Sony, JBL, etc.) asi como dispositivos BLE, evitando falsos descartes por desconexión.\nVersion 2.2:\n- Proteccion contra ejecuciones duplicadas simultaneas en pruebas avanzadas del sistema (test de velocidad de red, analisis SMART de discos y bateria).\n- Sistema de registro (log) exhaustivo y detallado en nvda.log: registro explicito de cada atajo ejecutado, parametros intermedios, estados de consultas WMI/PDH/PowerShell y transcripcion de cada locucion enviada al usuario.\n- Trazas completas de excepciones con exc_info=True en todas las consultas de recursos.\nVersion 2.1:\n- Sistema de auditoria y deteccion automatica de conflictos con otros complementos (colisiones de atajos de teclado y complementos incompatibles como Resource Monitor).\n- Nuevo boton en el panel de opciones de NVDA para auditar conflictos en cualquier momento.\n- Nuevo comando en Gestos de entrada para comprobar conflictos bajo demanda.\n- Pitidos de espera responsivos y no bloqueantes durante consultas prolongadas (Bluetooth, bateria avanzada, salud SMART y test de velocidad).\n- Motor avanzado de deteccion profunda de bateria Bluetooth compatible con auriculares clasicos HFP/AG y dispositivos BLE.\n- Correccion de enumeracion DXGI en adaptadores graficos hibridos.\n- Actualizada compatibilidad probada con NVDA 2026.2.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788723786000,
+	"translations": []
+}
