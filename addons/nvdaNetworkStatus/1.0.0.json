@@ -1,0 +1,51 @@
+{
+	"addonId": "nvdaNetworkStatus",
+	"displayName": "NVDA Network Status",
+	"URL": "https://github.com/mg-bledig/nvdaNetworkStatus/releases/download/v1.0/nvdaNetworkStatus-1.0.nvda-addon",
+	"description": "Reports Internet connectivity changes and wireless network signal strength.",
+	"sha256": "ef7a6045b86b7b9ce44d424d30cdc74916578ae2fe678b7c0a4950e20ffd139e",
+	"addonVersionName": "1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Michael Bledig",
+	"sourceURL": "https://github.com/mg-bledig/nvdaNetworkStatus",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mg-bledig/nvdaNetworkStatus",
+	"changelog": "Initial NVDA Network Status release, based on Rui Fontes' original networkStrenght add-on. Adds automatic Internet connectivity change announcements, a manual Internet status command, and connected Wi-Fi signal strength reporting using the native Windows WLAN API.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788718911000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "NVDA Network Status",
+			"description": "Reports Internet connectivity changes and wireless network signal strength.",
+			"changelog": "Initial NVDA Network Status release, based on Rui Fontes' original networkStrenght add-on. Adds automatic Internet connectivity change announcements, a manual Internet status command, and connected Wi-Fi signal strength reporting using the native Windows WLAN API."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "NVDA Network Status",
+			"description": "Reports Internet connectivity changes and wireless network signal strength.",
+			"changelog": "Lançamento inicial do NVDA Network Status, baseado no extra original networkStrenght de Rui Fontes. Adiciona anúncios automáticos de alterações na ligação à Internet, um comando manual para consultar o estado da Internet e informações sobre a intensidade do sinal da ligação Wi-Fi ativa através da API WLAN nativa do Windows."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "NVDA Network Status",
+			"description": "Reports Internet connectivity changes and wireless network signal strength.",
+			"changelog": "Lançamento inicial do NVDA Network Status, baseado no complemento original networkStrenght de Rui Fontes. Adiciona anúncios automáticos de alterações na conexão com a Internet, um comando manual para consultar o estado da Internet e informações sobre a intensidade do sinal da conexão Wi-Fi ativa usando a API WLAN nativa do Windows."
+		}
+	]
+}
