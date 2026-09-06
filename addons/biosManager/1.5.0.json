@@ -1,0 +1,32 @@
+{
+	"addonId": "biosManager",
+	"displayName": "Gestor de BIOS y UEFI Accesible",
+	"URL": "https://github.com/daliana907/biosManager/releases/download/1.5/biosManager.nvda-addon",
+	"description": "Complemento para NVDA que permite consultar, buscar y modificar los parametros de la BIOS y UEFI directamente desde Windows sin reiniciar la PC a ciegas.",
+	"sha256": "7506e4391bd176d0e47af583a3964946d2d91e564e4048d5df6db23ef940e829",
+	"addonVersionName": "1.5",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Daliana",
+	"sourceURL": "https://github.com/daliana907/biosManager",
+	"license": "GPL v2",
+	"homepage": "https://github.com/daliana907/biosManager",
+	"changelog": "Version 1.5:\n- Submenu organizado 'Gestor de BIOS y UEFI' en el menu Herramientas de NVDA con acceso directo a configuracion, comprobacion de conflictos y documentacion.\n- Sistema de auditoria y diagnostico de conflictos con otros complementos y atajos de teclado.\n- Sistema de registro (log) exhaustivo y detallado en nvda.log con parametros, diagnosticos de hardware, tiempos y transcripcion de mensajes al usuario.\n- Trazas completas de excepciones con exc_info=True.\nVersion 1.4:\n- Declaracion formal de uso de inteligencia artificial conforme al criterio 4.5 de la Guia de revision de complementos de NVDA en espanol.\n- Documentacion de uso de APIs locales y seguridad de privilegios conforme al criterio 1.6 y seccion 2.\n- Actualizada compatibilidad probada con NVDA 2026.2.\nVersion 1.3:\n- Soporte para orden de arranque dinamico y seleccion por listas combinadas.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788714883000,
+	"translations": []
+}
