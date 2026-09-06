@@ -28,5 +28,47 @@
 	"changelog": "Version 1.3:\n- Opcion en el menu Herramientas para auditar conflictos con otros complementos y atajos de teclado.\n- Sistema de registro (log) exhaustivo en nvda.log: tiempos de respuesta HTTP, codigos de estado, parametros y transcripcion exacta de mensajes al usuario.\n- Trazas completas de excepciones con exc_info=True.\n- Correccion de importacion del modulo 'time' para el calculo de tiempos de respuesta de red en las consultas de clima y pronostico.\nVersion 1.2:\n- Declaracion formal de uso de inteligencia artificial conforme al criterio 4.5 de la Guia de revision de complementos de NVDA en espanol.\n- Documentacion de uso de servicios de terceros (Open-Meteo bajo licencia CC-BY 4.0) conforme al criterio 1.6.\n- Actualizada compatibilidad probada con NVDA 2026.2.\nVersion 1.1: Deteccion natural de momentos de lluvia, probabilidad maxima diaria de precipitacion, extraccion automatica en cascada de departamentos y ciudades en configuracion, y correccion definitiva del reinicio de NVDA.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1788715016000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/5ca181e7b6a905eb5ce81b1970c32ef285ab9630f233cc6480cb402c6fd15511",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "5ca181e7b6a905eb5ce81b1970c32ef285ab9630f233cc6480cb402c6fd15511",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000100",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1788715020,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788715022,
+				"last_submission_date": 1788715020,
+				"md5": "bf64a40a74c573cfed51eba6f9c972ae",
+				"names": [],
+				"reputation": 0,
+				"sha1": "f79036b53e4ba824db215576852abdfb925ce599",
+				"sha256": "5ca181e7b6a905eb5ce81b1970c32ef285ab9630f233cc6480cb402c6fd15511",
+				"size": 2342339,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
