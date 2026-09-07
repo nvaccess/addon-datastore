@@ -2,8 +2,9 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from src.transform.datastructures import MajorMinorPatch
 import unittest
+
+from src.transform.datastructures import MajorMinorPatch
 
 
 class TestMajorMinorPatch(unittest.TestCase):
@@ -33,21 +34,17 @@ class TestMajorMinorPatch(unittest.TestCase):
 		self.assertEqual(
 			MajorMinorPatch(2, 3, 4),
 			MajorMinorPatch(
-				**{
-					"major": 2,
-					"minor": 3,
-					"patch": 4,
-				},
+				major=2,
+				minor=3,
+				patch=4,
 			),
 		)
 		self.assertEqual(
 			MajorMinorPatch(2, 3, 0),
 			MajorMinorPatch(
-				**{
-					"major": 2,
-					"minor": 3,
-					"patch": 0,
-				},
+				major=2,
+				minor=3,
+				patch=0,
 			),
 		)
 
@@ -56,10 +53,8 @@ class TestMajorMinorPatch(unittest.TestCase):
 		self.assertEqual(
 			MajorMinorPatch(2, 3, 0),
 			MajorMinorPatch(
-				**{
-					"major": 2,
-					"minor": 3,
-				},
+				major=2,
+				minor=3,
 			),
 		)
 
@@ -67,15 +62,11 @@ class TestMajorMinorPatch(unittest.TestCase):
 		"""Test creating versions from invalid dictionaries"""
 		with self.assertRaises(TypeError):
 			MajorMinorPatch(
-				**{
-					"patch": 2,
-					"minor": 2,
-				},
+				patch=2,
+				minor=2,
 			)
 		with self.assertRaises(TypeError):
 			MajorMinorPatch(
-				**{
-					"major": 2,
-					"patch": 2,
-				},
+				major=2,
+				patch=2,
 			)
