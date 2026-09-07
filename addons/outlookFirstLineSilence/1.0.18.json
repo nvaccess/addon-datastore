@@ -1,0 +1,32 @@
+{
+	"addonId": "outlookFirstLineSilence",
+	"displayName": "Outlook First Line Silence",
+	"URL": "https://github.com/Dennisl123/outlookFirstLineSilence/releases/download/v1.0.18/outlookFirstLineSilence-1.0.18.nvda-addon",
+	"description": "Suppresses NVDA's automatic Outlook message-entry speech, including the inspector title, dialog/document container speech, and first line. Announces when focus reaches an editable message body. Recognizes classic Outlook, new Outlook, and older Windows Mail/Calendar variants. Derived specifically from verified Mute Browse Mode 3.6.57 behavior.",
+	"sha256": "2c409f298de1d90a7246b7c19ceacbf99bd5604c61a8a90c2944449290b92e92",
+	"addonVersionName": "1.0.18",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 18
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Dennis Long",
+	"sourceURL": "https://github.com/Dennisl123/outlookFirstLineSilence/tree/v1.0.18",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Dennisl123/outlookFirstLineSilence",
+	"changelog": "Prevents repeated NVDA freezes when Outlook's Word RPC server becomes unavailable during Up/Down Arrow link-line navigation. The failed gesture and subsequent line movement in that document use native arrow keys instead of repeating the blocking COM request.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788823853000,
+	"translations": []
+}
