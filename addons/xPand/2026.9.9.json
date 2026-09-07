@@ -1,0 +1,800 @@
+{
+	"addonId": "xPand",
+	"displayName": "xPand",
+	"URL": "https://github.com/chaichaimee/xPand/releases/download/2026.9.9/xPand-v2026.9.9.nvda-addon",
+	"description": "xPand is a lightweight text-expansion add-on for NVDA that lets you define short codes for longer phrases. It features instant code expansion across diverse text editors and web browsers, smart editable field detection, a local settings manager with quick search, and automatic configuration storage with seamless legacy migration.\n\nHot Keys:\nCTRL+F3\nSingle Tap : Open xPand AutoCorrect\nDouble Tap : Open xPand Settings",
+	"sha256": "14f8b30572f86d0b2778368415fcaa6bf0b8844edb2fa71dfec8011dfb897a84",
+	"addonVersionName": "2026.9.9",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/xPand",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/xPand",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788780978000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "xPand",
+			"description": "xPand is a lightweight text-expansion add-on for NVDA that lets you define short codes for longer phrases. It features instant code expansion across diverse text editors and web browsers, smart editable field detection, a local settings manager with quick search, and automatic configuration storage with seamless legacy migration.\n\nHot Keys:\nCTRL+F3\nSingle Tap : Open xPand AutoCorrect\nDouble Tap : Open xPand Settings"
+		},
+		{
+			"language": "ar",
+			"displayName": "xPand",
+			"description": "xPand هو ملحق خفيف الوزن لتوسيع النصوص في NVDA يسمح لك بتحديد رموز قصيرة للعبارات الطويلة. يتميز بتوسيع الرموز الفوري عبر مختلف محررات النصوص ومتصفحات الويب، والكشف الذكي عن حقول الإدخال القابلة للتعديل، ومدير إعدادات محلي مع بحث سريع، وتخزين تلقائي للإعدادات مع ترحيل سلس للإصدارات القديمة.\n\nمفاتيح الاختصار:\nCTRL+F3\nنقرة واحدة: فتح تصحيح تلقائي لـ xPand\nنقرة مزدوجة: فتح إعدادات xPand"
+		},
+		{
+			"language": "de",
+			"displayName": "xPand",
+			"description": "xPand ist ein leichtgewichtiger Text-Erweiterungs-Add-on für NVDA, mit dem Sie Kürzel für längere Phrasen definieren können. Es bietet sofortige Text-Ersetzung in verschiedenen Texteditoren und Webbrowsern, intelligente Erkennung bearbeitbarer Felder, einen lokalen Einstellungsmanager mit Schnellsuche sowie automatische Konfigurationsspeicherung mit nahtloser Migration älterer Versionen.\n\nTastenkombinationen:\nCTRL+F3\nEinfach-Tippen: xPand-Autokorrektur öffnen\nDoppel-Tippen: xPand-Einstellungen öffnen"
+		},
+		{
+			"language": "id",
+			"displayName": "xPand",
+			"description": "xPand adalah add-on ekspansi teks yang ringan untuk NVDA yang memungkinkan Anda mendefinisikan kode singkat untuk frasa yang lebih panjang. Fitur utamanya meliputi perluasan kode instan di berbagai editor teks dan peramban web, deteksi bidang yang dapat diedit secara cerdas, pengelola pengaturan lokal dengan pencarian cepat, serta penyimpanan konfigurasi otomatis dengan migrasi versi lama yang mulus.\n\nTombol Pintas:\nCTRL+F3\nKetukan Tunggal: Buka Koreksi Otomatis xPand\nKetukan Ganda: Buka Pengaturan xPand"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "xPand",
+			"description": "xPand 是一款适用于 NVDA 的轻量级文本扩展加载项，允许您为较长的短语定义简短的代码。它支持在各种文本编辑器和网页浏览器中即时展开代码、智能检测可编辑字段、带快速搜索的本地设置管理器，以及自动保存配置并无缝迁移旧版本。\n\n快捷键：\nCTRL+F3\n单次点击：打开 xPand 自动更正\n双击：打开 xPand 设置"
+		},
+		{
+			"language": "fr",
+			"displayName": "xPand",
+			"description": "xPand est un module complémentaire léger d'extension de texte pour NVDA qui vous permet de définir des codes courts pour des phrases plus longues. Il propose une extension instantanée des codes dans divers éditeurs de texte et navigateurs web, une détection intelligente des champs éditables, un gestionnaire de paramètres local avec recherche rapide, ainsi qu'un stockage automatique de la configuration avec une migration transparente des anciennes versions.\n\nRaccourcis clavier :\nCTRL+F3\nAppui simple : Ouvrir la correction automatique xPand\nAppui double : Ouvrir les paramètres xPand"
+		},
+		{
+			"language": "ru",
+			"displayName": "xPand",
+			"description": "xPand — это легковесное дополнение для расширения текста для NVDA, которое позволяет задавать короткие коды для длинных фраз. Оно поддерживает мгновенное развертывание кодов в различных текстовых редакторах и веб-браузерах, интеллектуальное определение редактируемых полей, локальный менеджер настроек с быстрым поиском, а также автоматическое сохранение конфигурации с плавной миграцией со старых версий.\n\nГорячие клавиши:\nCTRL+F3\nОдинарное нажатие: Открыть автокоррекцию xPand\nДвойное нажатие: Открыть настройки xPand"
+		},
+		{
+			"language": "uk",
+			"displayName": "xPand",
+			"description": "xPand — це легковажне доповнення для розширення тексту для NVDA, яке дозволяє призначати короткі коди для довших фраз. Воно має функції миттєвого розгортання кодів у різних текстових редакторах та веб-браузерах, інтелектуального визначення редагованих полів, локального менеджера налаштувань із швидким пошуком, а також автоматичного збереження конфігурації з плавною міграцією зі старих версій.\n\nГарячі клавіші:\nCTRL+F3\nОдинарний дотик: Відкрити автовиправлення xPand\nПодвійний дотик: Відкрити налаштування xPand"
+		},
+		{
+			"language": "it",
+			"displayName": "xPand",
+			"description": "xPand è un componente aggiuntivo leggero di espansione del testo per NVDA che consente di definire codici brevi per frasi più lunghe. Dispone di espansione istantanea dei codici in vari editor di testo e browser web, rilevamento intelligente dei campi modificabili, un gestore di impostazioni locali con ricerca rapida e memorizzazione automatica della configurazione con migrazione trasparente delle versioni precedenti.\n\nTasti di scelta rapida:\nCTRL+F3\nTocco singolo: Apri Correzione automatica xPand\nDoppio tocco: Apri Impostazioni xPand"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "xPand",
+			"description": "xPand 是一款適用於 NVDA 的輕量級文字擴充附加元件，允許您為較長的片語定義簡短的代碼。它支援在各種文字編輯器和網頁瀏覽器中即時展開代碼、智慧偵測可編輯欄位、附帶快速搜尋的本地設定管理員，以及自動儲存設定並無縫移轉舊版本。\n\n快捷鍵：\nCTRL+F3\n單次點擊：開啟 xPand 自動修正\n雙擊：開啟 xPand 設定"
+		},
+		{
+			"language": "hi",
+			"displayName": "xPand",
+			"description": "xPand NVDA के लिए एक हल्का टेक्स्ट-एक्सपेंशन ऐड-ऑन है जो आपको लंबी वाक्यांशों के लिए छोटे कोड परिभाषित करने की अनुमति देता है। इसमें विभिन्न टेक्स्ट एडिटर्स और वेब ब्राउज़र में त्वरित कोड विस्तार, स्मार्ट संपादन योग्य फ़ील्ड पहचान, त्वरित खोज के साथ स्थानीय सेटिंग्स प्रबंधक, और सहज ले, गसी माइग्रेशन के साथ स्वचालित कॉन्फ़िगरेशन स्टोरेज शामिल है।\n\nहॉटकीज़:\nCTRL+F3\nसिंगल टैप: xPand स्वतः सुधार खोलें\nडबल टैप: xPand सेटिंग्स खोलें"
+		},
+		{
+			"language": "es",
+			"displayName": "xPand",
+			"description": "xPand es un complemento ligero de expansión de texto para NVDA que te permite definir códigos cortos para frases más largas. Cuenta con expansión instantánea de códigos en diversos editores de texto y navegadores web, detección inteligente de campos editables, un administrador de configuración local con búsqueda rápida y almacenamiento automático de configuración con migración fluida de versiones anteriores.\n\nTeclas rápidas:\nCTRL+F3\nUn toque: Abrir Autocorrección de xPand\nDoble toque: Abrir Configuración de xPand"
+		},
+		{
+			"language": "ja",
+			"displayName": "xPand",
+			"description": "xPandは、長いフレーズに対して短いコードを定義できるNVDA用の軽量なテキスト拡張アドオンです。多様なテキストエディタやウェブブラウザでの即座のコード展開、編集可能なフィールドのスマート検出、クイック検索付きローカル設定マネージャー、およびシームレスな従来バージョン移行を備えた自動設定保存機能を提供します。\n\nホットキー:\nCTRL+F3\nシングルタップ: xPand自動修正を開く\nダブルタップ: xPand設定を開く"
+		},
+		{
+			"language": "th",
+			"displayName": "xPand",
+			"description": "xPand เป็นส่วนเสริม (Add-on) ขยายข้อความขนาดเบาสำหรับ NVDA ที่ช่วยให้คุณกำหนดโค้ดสั้นๆ สำหรับวลีที่ยาวขึ้นได้ มีจุดเด่นคือการขยายโค้ดทันทีในโปรแกรมแก้ไขข้อความและเว็บเบราว์เซอร์ที่หลากหลาย การตรวจจับช่องแก้ไขข้อความอัจฉริยะ ตัวจัดการการตั้งค่าในเครื่องพร้อมการค้นหาด่วน และการจัดเก็บการกำหนดค่าอัตโนมัติพร้อมการโยกย้ายข้อมูลจากรุ่นเก่าอย่างราบรื่น\n\nปุ่มลัด:\nCTRL+F3\nแตะครั้งเดียว: เปิดการแก้ไขอัตโนมัติของ xPand\nแตะสองครั้ง: เปิดการตั้งค่าของ xPand"
+		},
+		{
+			"language": "ko",
+			"displayName": "xPand",
+			"description": "xPand는 긴 문구에 대해 짧은 코드를 정의할 수 있는 가벼운 NVDA용 텍스트 확장 애드온입니다. 다양한 텍스트 편집기와 웹 브라우저에서의 즉각적인 코드 확장, 스마트 편집 가능 필드 감지, 빠른 검색 기능이 포함된 로컬 설정 관리자, 그리고 원활한 구버전 마이그레이션을 지원하는 자동 설정 저장 기능을 제공합니다.\n\n단축키:\nCTRL+F3\n한 번 탭: xPand 자동 고정 열기\n두 번 탭: xPand 설정 열기"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "xPand",
+			"description": "xPand é um complemento leve de expansão de texto para o NVDA que permite definir códigos curtos para frases mais longas. Ele apresenta expansão instantânea de códigos em diversos editores de texto e navegadores web, detecção inteligente de campos editáveis, um gerenciador de configurações local com busca rápida e armazenamento automático de configuração com migração perfeita de versões anteriores.\n\nTeclas de Atalho:\nCTRL+F3\nToque Único: Abrir Correção Automática do xPand\nToque Duplo: Abrir Configurações do xPand"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/14f8b30572f86d0b2778368415fcaa6bf0b8844edb2fa71dfec8011dfb897a84",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "14f8b30572f86d0b2778368415fcaa6bf0b8844edb2fa71dfec8011dfb897a84",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 1,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 52
+					},
+					"highest_datetime": "2026-09-07 17:49:24",
+					"lowest_datetime": "2025-10-27 08:49:28",
+					"num_children": 100,
+					"type": "ZIP",
+					"uncompressed_size": 250832
+				},
+				"contenthash": "e9bb8369be1588b67988b2029a50379b",
+				"filecondis": {
+					"dhash": "00103c3c3d180000",
+					"raw_md5": "e01eecf6a24ccb041ba7784b3c76c225"
+				},
+				"first_submission_date": 1788780982,
+				"last_analysis_date": 1788780982,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260907",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260907",
+						"engine_version": "6.818",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260907",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260907",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260907",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260907",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260907",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260907",
+						"engine_version": "260907-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260907",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260907",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260903",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260905",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260906",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260907",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260907",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260907",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260903",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260907",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260907",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260907",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260902",
+						"engine_version": "4.0.286",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260907",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260907",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260907",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260907",
+						"engine_version": "GD:27.45910AVA:64.31873",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260907",
+						"engine_version": "1788777101",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260907",
+						"engine_version": "1.0.253.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260907",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260906",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260907",
+						"engine_version": "14.76.60717",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260907",
+						"engine_version": "14.76.60715",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260907",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260907",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260907",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260907",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260907",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260907",
+						"engine_version": "1.2.0.16123",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260907",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260907",
+						"engine_version": "1.26080",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260907",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260907",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260907",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260907",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260904",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260904",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260906",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260907",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260906",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260907",
+						"engine_version": "2026-09-07.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260907",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260906",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260907",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260907",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260907",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260907",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260907",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260907",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260907",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260904",
+						"engine_version": "9.5.1287",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260907",
+						"engine_version": "38941",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260907",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260904",
+						"engine_version": "2.0.0.5682",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260907",
+						"engine_version": "6.27-118568483",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260907",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260906",
+						"engine_version": "1905fe5:1905fe5:bff62f3:bff62f3",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260907",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1788781070,
+				"last_submission_date": 1788780982,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "599d6f25766856e3e64fb2fab876d7f8",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "a697e6f7d7ad4c1ae414a371bb8f3f5242b1113f",
+				"sha256": "14f8b30572f86d0b2778368415fcaa6bf0b8844edb2fa71dfec8011dfb897a84",
+				"size": 105702,
+				"ssdeep": "3072:RozADE013nndWwNT/usWFV+LPoKSpv5yUy:RKMEK3nAwNTGVSwjpRQ",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1C8A3CF49DE1F0047EC5AD7FE7ACF460AE278804DD42EA6471A75A8C10CCE39E4F9E646",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "2c3d9f05e47de4acb7335b0a630c45fa"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6797"
+}
