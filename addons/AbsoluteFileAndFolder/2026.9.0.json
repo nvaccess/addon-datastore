@@ -1,0 +1,801 @@
+{
+	"addonId": "AbsoluteFileAndFolder",
+	"displayName": "AbsoluteFileAndFolder",
+	"URL": "https://github.com/chaichaimee/AbsoluteFileAndFolder/releases/download/2026.9.0/AbsoluteFileAndFolder-v2026.9.0.nvda-addon",
+	"description": "Absolute File and Folder boosts NVDA productivity by streamlining file and directory access via Windows Explorer integration. It lets users capture paths, organize bookmarks, filter files by extension, search history with audio cues, run scripts as admin, and restore active folders after a reboot.\nHot Keys:\nWindows+Backspace\nSingle Tap open AbsoluteFloder\nDouble Tap open AbsoluteFile",
+	"sha256": "3ed281566b0942d44eb549aab40e192b345e24c5556cc0c394f8ea69d4a547cc",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/AbsoluteFileAndFolder",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/AbsoluteFileAndFolder",
+	"changelog": "Critical threading, COM resource, focus, and timer leak vulnerabilities addressed; real-time search filter implemented.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788231372000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder は、エクスプローラーとの統合によりファイルやディレクトリへのアクセスを効率化し、NVDAの生産性を向上させます。パスの取得、ブックマークの整理、拡張子によるファイルの絞り込み、音声 cue（キュー）付きの履歴検索、管理者権限でのスクリプト実行、再起動後のアクティブフォルダの復元などが可能です。\nショートカットキー:\nWindows+Backspace\n1回押す: AbsoluteFloder を開く\n2回押す: AbsoluteFile を開く"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder 通过与 Windows 资源管理器集成，简化文件和目录访问，从而提升 NVDA 的工作效率。它允许用户复制路径、整理书签、按扩展名筛选文件、结合提示音搜索历史记录、以管理员身份运行脚本以及在重启后恢复打开的文件夹。\n快捷键：\nWindows+Backspace\n按一次：打开 AbsoluteFloder\n按两次：打开 AbsoluteFile"
+		},
+		{
+			"language": "en",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder boosts NVDA productivity by streamlining file and directory access via Windows Explorer integration. It lets users capture paths, organize bookmarks, filter files by extension, search history with audio cues, run scripts as admin, and restore active folders after a reboot.\nHot Keys:\nWindows+Backspace\nSingle Tap open AbsoluteFloder\nDouble Tap open AbsoluteFile"
+		},
+		{
+			"language": "ar",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder تعزز إنتاجية NVDA من خلال تبسيط الوصول إلى الملفات والمجلدات عبر التكامل مع Windows Explorer. وتتيح للمستخدمين التقاط المسارات، وتنظيم الإشارات المرجعية، وتصفية الملفات حسب الامتداد، والبحث في السجل مع تلميحات صوتية، وتشغيل البرامج النصية كمسؤول، واستعادة المجلدات النشطة بعد إعادة التشغيل.\nمفاتيح الاختصار:\nWindows+Backspace\nضغطة واحدة لتفتح AbsoluteFloder\nضغطتان لتفتح AbsoluteFile"
+		},
+		{
+			"language": "ru",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder повышает продуктивность NVDA, упрощая доступ к файлам и каталогам благодаря интеграции с Проводником Windows. Позволяет копировать пути, организовывать закладки, фильтровать файлы по расширению, искать по истории с звуковыми сигналами, запускать скрипты от имени администратора и восстанавливать активные папки после перезагрузки.\nГорячие клавиши:\nWindows+Backspace\nОдинарное нажатие: открыть AbsoluteFloder\nДвойное нажатие: открыть AbsoluteFile"
+		},
+		{
+			"language": "hi",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder, Windows Explorer एकीकरण के माध्यम से फ़ाइल और निर्देशिका पहुंच को व्यवस्थित करके NVDA उत्पादकता को बढ़ाता है। यह उपयोगकर्ताओं को पाथ कैप्चर करने, बुकमार्क व्यवस्थित करने, फ़ाइल एक्सटेंशन द्वारा फ़िल्टर करने, ऑडियो संकेतों के साथ इतिहास खोजने, व्यवस्थापक के रूप में स्क्रिप्ट चलाने और रीबूट के बाद सक्रिय फ़ोल्डरों को पुनर्स्थापित करने की अनुमति देता है।\nहॉट-कीज़:\nWindows+Backspace\nएक बार दबाएं: AbsoluteFloder खोलें\nदो बार दबाएं: AbsoluteFile खोलें"
+		},
+		{
+			"language": "id",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder meningkatkan produktivitas NVDA dengan mempermudah akses file dan direktori melalui integrasi Windows Explorer. Fitur ini memungkinkan pengguna menyalin jalur, mengelola markah, menyaring file berdasarkan ekstensi, menelusuri riwayat dengan isyarat audio, menjalankan skrip sebagai administrator, dan memulihkan folder aktif setelah mulai ulang.\nTombol Pintas:\nWindows+Backspace\nTekan Sekali untuk membuka AbsoluteFloder\nTekan Dua Kali untuk membuka AbsoluteFile"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder 透過與 Windows 檔案總管整合，簡化檔案與目錄存取，從而提升 NVDA 的工作效率。它允許使用者複製路徑、整理書籤、按副檔名篩選檔案、搭配提示音搜尋歷史紀錄、以系統管理員身份執行指令碼以及在重啟後恢復開啟的資料夾。\n快捷鍵：\nWindows+Backspace\n按一次：開啟 AbsoluteFloder\n按兩次：開啟 AbsoluteFile"
+		},
+		{
+			"language": "uk",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder підвищує продуктивність NVDA, спрощуючи доступ до файлів і каталогів завдяки інтеграції з Провідником Windows. Дозволяє копіювати шляхи, впорядковувати закладки, фільтрувати файли за розширенням, шукати в історії зі звуковими сигналами, запускати скрипти від імені адміністратора та відновлювати активні папки після перезавантаження.\nГарячі клавіші:\nWindows+Backspace\nОдне натискання: відкрити AbsoluteFloder\nПодвійне натискання: відкрити AbsoluteFile"
+		},
+		{
+			"language": "fr",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder améliore la productivité de NVDA en simplifiant l'accès aux fichiers et dossiers grâce à l'intégration de l'Explorateur Windows. Permet aux utilisateurs de capturer des chemins, d'organiser des marque-pages, de filtrer les fichiers par extension, de rechercher dans l'historique avec des signaux sonores, d'exécuter des scripts en tant qu'administrateur et de restaurer les dossiers actifs après un redémarrage.\nRaccourcis clavier :\nWindows+Backspace\nPression simple : ouvrir AbsoluteFloder\nPression double : ouvrir AbsoluteFile"
+		},
+		{
+			"language": "es",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder mejora la productividad de NVDA al optimizar el acceso a archivos y carpetas mediante la integración con el Explorador de Windows. Permite a los usuarios copiar rutas, organizar marcadores, filtrar archivos por extensión, buscar en el historial con señales auditivas, ejecutar scripts como administrador y restaurar carpetas activas tras reiniciar.\nTeclas rápidas:\nWindows+Backspace\nPulsación simple: abrir AbsoluteFloder\nPulsación doble: abrir AbsoluteFile"
+		},
+		{
+			"language": "ko",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder는 Windows 탐색기 통합을 통해 파일 및 디렉토리 접근을 간소화하여 NVDA 생산성을 향상시킵니다. 경로 복사, 북마크 정리, 확장자별 파일 필터링, 음성 신호를 활용한 기록 검색, 관리자 권한으로 스크립트 실행, 재부팅 후 활성 폴더 복원 기능을 제공합니다.\n단축키:\nWindows+Backspace\n한 번 누름: AbsoluteFloder 열기\n두 번 누름: AbsoluteFile 열기"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder aumenta a produtividade do NVDA simplificando o acesso a arquivos e diretórios por meio da integração com o Windows Explorer. Ele permite capturar caminhos, organizar favoritos, filtrar arquivos por extensão, pesquisar no histórico com sinais sonoros, executar scripts como administrador e restaurar pastas ativas após a reinicialização.\nTeclas de atalho:\nWindows+Backspace\nPressionar uma vez: abrir AbsoluteFloder\nPressionar duas vezes: abrir AbsoluteFile"
+		},
+		{
+			"language": "de",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder steigert die NVDA-Produktivität durch die Optimierung des Datei- und Ordnerzugriffs über die Windows Explorer-Integration. Es ermöglicht das Erfassen von Pfaden, Organisieren von Lesezeichen, Filtern von Dateien nach Erweiterungen, Durchsuchen des Verlaufs mit akustischen Signalen, Ausführen von Skripten als Administrator und Wiederherstellen aktiver Ordner nach einem Neustart.\nTastenkombinationen:\nWindows+Backspace\nEinfach drücken: AbsoluteFloder öffnen\nDoppelt drücken: AbsoluteFile öffnen"
+		},
+		{
+			"language": "th",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder ช่วยเพิ่มประสิทธิภาพการทำงานของ NVDA โดยการช่วยให้เข้าถึงไฟล์และโฟลเดอร์ได้สะดวกรวดเร็วผ่านการทำงานร่วมกับ Windows Explorer ช่วยให้ผู้ใช้สามารถคัดลอกพาธ จัดเก็บบุ๊กมาร์ก กรองไฟล์ตามนามสกุล ค้นหาประวัติการใช้งานพร้อมเสียงตอบรับ รันสคริปต์ในฐานะผู้ดูแลระบบ และคืนค่าโฟลเดอร์ที่เปิดค้างไว้หลังจากการรีสตาร์ท\nคีย์ลัด:\nWindows+Backspace\nกดครั้งเดียว: เปิด AbsoluteFloder\nกดสองครั้ง: เปิด AbsoluteFile"
+		},
+		{
+			"language": "it",
+			"displayName": "AbsoluteFileAndFolder",
+			"description": "Absolute File and Folder migliora la produttività di NVDA semplificando l'accesso a file e cartelle tramite l'integrazione con Esplora File di Windows. Consente di copiare percorsi, organizzare segnalibri, filtrare file per estensione, cercare nella cronologia con segnali acustici, eseguire script come amministratore e ripristinare le cartelle attive dopo un riavvio.\nTasti di scelta rapida:\nWindows+Backspace\nPressione singola: apri AbsoluteFloder\nDoppia pressione: apri AbsoluteFile"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/3ed281566b0942d44eb549aab40e192b345e24c5556cc0c394f8ea69d4a547cc",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "3ed281566b0942d44eb549aab40e192b345e24c5556cc0c394f8ea69d4a547cc",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 3,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 54
+					},
+					"highest_datetime": "2026-09-01 09:44:48",
+					"lowest_datetime": "2026-03-01 19:33:08",
+					"num_children": 102,
+					"type": "ZIP",
+					"uncompressed_size": 286181
+				},
+				"contenthash": "a1f8163eeb380feb002f5022aced6d8b",
+				"filecondis": {
+					"dhash": "00203c3c3d280000",
+					"raw_md5": "4974d79212a650a59f12485006a7faae"
+				},
+				"first_submission_date": 1788231377,
+				"last_analysis_date": 1788231377,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260831",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260831",
+						"engine_version": "6.815",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260831",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260831",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260831",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260831",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260831",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260831",
+						"engine_version": "260831-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260831",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260831",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260826",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260831",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260831",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260831",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260901",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260831",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260824",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260831",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260901",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260901",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260831",
+						"engine_version": "4.0.286",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260901",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260901",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260901",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260901",
+						"engine_version": "GD:27.45837AVA:64.31848",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260901",
+						"engine_version": "1788228060",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260901",
+						"engine_version": "1.0.253.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "failure",
+						"engine_name": "Ikarus",
+						"engine_update": "20260831",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260831",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260831",
+						"engine_version": "14.75.60644",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260901",
+						"engine_version": "14.76.60650",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260831",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260831",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260831",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260831",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260831",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260901",
+						"engine_version": "1.2.0.15979",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260831",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260831",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260831",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260901",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260831",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260901",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260831",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260831",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260831",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260831",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260831",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260831",
+						"engine_version": "2026-08-31.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260901",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260831",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260831",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260901",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260901",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260830",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260831",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260831",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260831",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260831",
+						"engine_version": "9.5.1283",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260831",
+						"engine_version": "38926",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260901",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260831",
+						"engine_version": "2.0.0.5678",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260901",
+						"engine_version": "6.27-118568327",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260831",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260831",
+						"engine_version": "f1d221d:f1d221d:6778037:6778037",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260901",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1788231421,
+				"last_submission_date": 1788231377,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "2aeadaefb131cc860ad6c42b845063b4",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "f17302a4c73bfd3d36b7ff244edad041ec1b7495",
+				"sha256": "3ed281566b0942d44eb549aab40e192b345e24c5556cc0c394f8ea69d4a547cc",
+				"size": 111326,
+				"ssdeep": "3072:zHlhmtuTOqum5gHMhfdg0B56mJzm/gbqlwWiPSpe:blhmt8O5tMhfdgs5xzm4bqlOPSQ",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1A5B3C069D31F1117F65397FFB7C7161AE26C4004E65E8A4A1A1FA0C55CCD3AC0F9CA4A",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7610"
+}

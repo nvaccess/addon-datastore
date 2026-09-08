@@ -1,0 +1,801 @@
+{
+	"addonId": "AbsoluteSite",
+	"displayName": "AbsoluteSite",
+	"URL": "https://github.com/chaichaimee/AbsoluteSite/releases/download/2026.9.0/AbsoluteSite-v2026.9.0.nvda-addon",
+	"description": "Manage bookmarks, capture URLs instantly, track history, and perform quick web searches directly from NVDA. This fully accessible tool organizes your favorite websites into custom categories, assigns preferred browsers, and maximizes windows automatically for seamless browsing efficiency.\nHot Keys:\nALT+Backspace\nSingle Tap : open Absolute Site Manager\nDouble Tap : add New Site\nTriple Tap : All More Visited\nALT+Windows+Backspace : Search Dialog",
+	"sha256": "1ca9023d9420c1606ee63c7337f7f30837ec87eb23476f10eec51446d2c517c6",
+	"addonVersionName": "2026.9.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/AbsoluteSite",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/AbsoluteSite",
+	"changelog": "Added a Most Visited history dialog and a web search dialog for quick access to frequently visited saved sites and Google queries.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788231992000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "AbsoluteSite",
+			"description": "ブックマークの管理、URLの instant 取得、履歴の追跡、NVDAからのクイック Web 検索を directly に実行します。このアクセシビリティに完全対応したツールは、お気に入りの Web サイトをカスタムカテゴリに整理し、優先ブラウザを割り当て、ウィンドウを自動的に最大化して、スムーズで効率的なブラウジングを実現します。\nショートカットキー:\nALT+Backspace\n1回押す : Absolute Site Manager を開く\n2回押す : 新しいサイトを追加\n3回押す : すべてのよく閲覧するサイト\nALT+Windows+Backspace : 検索ダイアログ"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "AbsoluteSite",
+			"description": "从 NVDA 直接管理书签、立即使抓取 URL、跟踪历史记录并执行快速 Web 搜索。这款完全支持无障碍 accesses 的工具可将您喜爱的网站整理到自定义类别中，指定首选浏览器，并自动最大化窗口，以实现无缝的浏览效率。\n热键：\nALT+Backspace\n单击 : 打开 Absolute Site Manager\n双击 : 添加新网站\n三击 : 所有常访问网站\nALT+Windows+Backspace : 搜索对话框"
+		},
+		{
+			"language": "en",
+			"displayName": "AbsoluteSite",
+			"description": "Manage bookmarks, capture URLs instantly, track history, and perform quick web searches directly from NVDA. This fully accessible tool organizes your favorite websites into custom categories, assigns preferred browsers, and maximizes windows automatically for seamless browsing efficiency.\nHot Keys:\nALT+Backspace\nSingle Tap : open Absolute Site Manager\nDouble Tap : add New Site\nTriple Tap : All More Visited\nALT+Windows+Backspace : Search Dialog"
+		},
+		{
+			"language": "ar",
+			"displayName": "AbsoluteSite",
+			"description": "إدارة العلامات المرجعية، والتقاط روابط URL فورًا، وتتبع السجل، وإجراء بحث سريع على الويب مباشرةً من NVDA. تُنظّم هذه الأداة المتوافقة تمامًا مع إمكانية الوصول موقعك المفضلة في فئات مخصصة، وتحدد المتصفحات المفضلة، وتكبر النوافذ تلقائيًا لزيادة كفاءة التصفح.\nمفاتيح الاختصار:\nALT+Backspace\nضغط مرة واحدة : فتح Absolute Site Manager\nضغط مرتين : إضافة موقع جديد\nضغط ثلاث مرات : جميع المواقع الأكثر زيارة\nALT+Windows+Backspace : مربع حوار البحث"
+		},
+		{
+			"language": "ru",
+			"displayName": "AbsoluteSite",
+			"description": "Управляйте закладками, мгновенно захватывайте URL-адреса, отслеживайте историю и выполняйте быстрый поиск в Интернете прямо из NVDA. Этот полностью доступный инструмент организует ваши любимые веб-сайты по настраиваемым категориям, назначает предпочитаемые браузеры и автоматически разворачивает окна для максимальной эффективности работы в сети.\nГорячие клавиши:\nALT+Backspace\nОдиночное нажатие : открыть Absolute Site Manager\nДвойное нажатие : добавить новый сайт\nТройное нажатие : все наиболее посещаемые\nALT+Windows+Backspace : диалог поиска"
+		},
+		{
+			"language": "hi",
+			"displayName": "AbsoluteSite",
+			"description": "बुकमาร์क प्रबंधित करें, तुरंत URL कैप्चर करें, इतिहास ट्रैक करें और NVDA से सीधे त्वरित वेब खोजें करें। यह पूरी तरह से सुलभ टूल आपकी पसंदीदा वेबसाइटों को कस्टम श्रेणियों में व्यवस्थित करता है, पसंदीदा ब्राउज़र असाइन करता है, और निर्बाध ब्राउज़िंग दक्षता के लिए विंडो को स्वचालित रूप से अधिकतम करता है।\nहॉट कीज़:\nALT+Backspace\nएक बार दबाएं : Absolute Site Manager खोलें\nदो बार दबाएं : नया साइट जोड़ें\nतीन बार दबाएं : सभी सबसे ज़्यादा देखे गए साइट\nALT+Windows+Backspace : खोज संवाद"
+		},
+		{
+			"language": "id",
+			"displayName": "AbsoluteSite",
+			"description": "Kelola markah, tangkap URL secara instan, lacak riwayat, dan lakukan pencarian web cepat langsung dari NVDA. Alat yang sepenuhnya aksesibel ini mengorganisasi situs web favorit Anda ke dalam kategori kustom, menentukan peramban pilihan, dan memaksimalkan jendela secara otomatis untuk efisiensi penelusuran yang mulus.\nTombol Pintas:\nALT+Backspace\nTekan Sekali : buka Absolute Site Manager\nTekan Dua Kali : tambah Situs Baru\nTekan Tiga Kali : Semua yang Sering Dikunjungi\nALT+Windows+Backspace : Dialog Pencarian"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "AbsoluteSite",
+			"description": "直接從 NVDA 管理書籤、立即擷取 URL、追蹤歷史記錄並執行快速 Web 搜尋。這款完全支援無障礙存取的工具可將您喜愛的網站整理到自訂類別中，指派偏好的瀏覽器，並自動最大化視窗，以實現順暢的瀏覽效率。\n熱鍵：\nALT+Backspace\n按一下 : 開啟 Absolute Site Manager\n按兩下 : 新增網站\n按三下 : 所有常用網站\nALT+Windows+Backspace : 搜尋對話框"
+		},
+		{
+			"language": "uk",
+			"displayName": "AbsoluteSite",
+			"description": "Управляйте закладками, миттєво захоплюйте URL-адреси, відстежуйте історію та виконуйте швидкий пошук у веб безпосередньо з NVDA. Цей повністю доступний інструмент організовує ваші улюблені веб-сайти за настроюваними категоріями, призначає бажані браузери та автоматично розгортає вікна для максимальної ефективності перегляду.\nГарячі клавіші:\nALT+Backspace\nОдиночне натискання : відкрити Absolute Site Manager\nПодвійне натискання : додати новий сайт\nПотрійне натискання : усі найчастіше відвідувані\nALT+Windows+Backspace : діалогове вікно пошуку"
+		},
+		{
+			"language": "fr",
+			"displayName": "AbsoluteSite",
+			"description": "Gérez les marque-pages, capturez les URL instantanément, suivez l'historique et effectuez des recherches web rapides directement depuis NVDA. Cet outil entièrement accessible organise vos sites web préférés en catégories personnalisées, attribue des navigateurs préférés et agrandit automatiquement les fenêtres pour une navigation fluide et efficace.\nRaccourcis clavier :\nALT+Retour arrière\nPression simple : ouvrir Absolute Site Manager\nDouble pression : ajouter un nouveau site\nTriple pression : tous les sites les plus visités\nALT+Windows+Retour arrière : boîte de dialogue de recherche"
+		},
+		{
+			"language": "es",
+			"displayName": "AbsoluteSite",
+			"description": "Administra marcadores, captura URL al instante, realiza un seguimiento del historial y efectúa búsquedas web rápidas directamente desde NVDA. Esta herramienta totalmente accesible organiza tus sitios web favoritos en categorías personalizadas, asigna navegadores preferidos y maximiza las ventanas automáticamente para una navegación fluida y eficiente.\nTeclas de acceso rápido:\nALT+Retroceso\nUn toque : abrir Absolute Site Manager\nDoble toque : añadir nuevo sitio\nTriple toque : más visitados\nALT+Windows+Retroceso : diálogo de búsqueda"
+		},
+		{
+			"language": "ko",
+			"displayName": "AbsoluteSite",
+			"description": "북마크 관리, URL 즉시 캡처, 방문 기록 추적 및 NVDA에서 직접 빠른 웹 검색을 수행합니다. 완전히 접근 가능한 이 도구는 즐겨찾는 웹사이트를 사용자 지정 범주로 정리하고, 선호하는 브라우저를 지정하며, 원활한 탐색 효율성을 위해 창을 자동으로 최대화합니다.\n단축키:\nALT+Backspace\n한 번 누름 : Absolute Site Manager 열기\n두 번 누름 : 새 사이트 추가\n세 번 누름 : 자주 방문한 모든 사이트\nALT+Windows+Backspace : 검색 대화 상자"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "AbsoluteSite",
+			"description": "Gerencie favoritos, capture URLs instantaneamente, acompanhe o histórico e realize pesquisas rápidas na web diretamente do NVDA. Esta ferramenta totalmente acessível organiza seus sites favoritos em categorias personalizadas, atribui navegadores preferidos e maximiza janelas automaticamente para uma navegação fluida e eficiente.\nTeclas de atalho:\nALT+Backspace\nToque único : abrir o Absolute Site Manager\nToque duplo : adicionar novo site\nToque triplo : todos os mais visitados\nALT+Windows+Backspace : diálogo de pesquisa"
+		},
+		{
+			"language": "de",
+			"displayName": "AbsoluteSite",
+			"description": "Lesezeichen verwalten, URLs sofort erfassen, den Verlauf verfolgen und schnelle Websuchen direkt aus NVDA heraus durchführen. Dieses barrierefreie Tool organisiert Ihre bevorzugten Websites in benutzerdefinierten Kategorien, weist bevorzugte Browser zu und maximiert Fenster automatisch für ein nahtloses Surferlebnis.\nTastenkombinationen:\nALT+Rücktaste\nEinmal drücken : Absolute Site Manager öffnen\nZweimal drücken : Neue Website hinzufügen\nDreimal drücken : Alle meistbesuchten Seiten\nALT+Windows+Rücktaste : Suchdialog"
+		},
+		{
+			"language": "th",
+			"displayName": "AbsoluteSite",
+			"description": "จัดการบุ๊กมาร์ก บันทึก URL ได้ทันที ติดตามประวัติการเข้าชม และค้นหาเว็บได้อย่างรวดเร็วโดยตรงจาก NVDA เครื่องมือที่รองรับการเข้าถึงอย่างสมบูรณ์นี้จะจัดระเบียบเว็บไซต์โปรดของคุณลงในหมวดหมู่ที่กำหนดเอง กำหนดเบราว์เซอร์ที่ต้องการ และขยายหน้าต่างให้ใหญ่ที่สุดโดยอัตโนมัติเพื่อประสิทธิภาพการท่องเว็บที่ราบรื่น\nคีย์ลัด:\nALT+Backspace\nกดครั้งเดียว : เปิด Absolute Site Manager\nกดสองครั้ง : เพิ่มเว็บไซต์ใหม่\nกดสามครั้ง : เว็บไซต์ที่มีการเข้าชมมากที่สุดทั้งหมด\nALT+Windows+Backspace : ไดอะล็อกการค้นหา"
+		},
+		{
+			"language": "it",
+			"displayName": "AbsoluteSite",
+			"description": "Gestisci i segnalibri, acquisisci URL all'istante, traccia la cronologia ed effettua ricerche web rapide direttamente da NVDA. Questo strumento completamente accessibile organizza i tuoi siti web preferiti in categorie personalizzate, assegna i browser preferiti e massimizza automaticamente le finestre per un'esperienza di navigazione fluida ed efficiente.\nTasti di scelta rapida:\nALT+Backspace\nPressione singola : apri Absolute Site Manager\nDoppia pressione : aggiungi nuovo sito\nTripla pressione : tutti i più visitati\nALT+Windows+Backspace : finestra di dialogo di ricerca"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1ca9023d9420c1606ee63c7337f7f30837ec87eb23476f10eec51446d2c517c6",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1ca9023d9420c1606ee63c7337f7f30837ec87eb23476f10eec51446d2c517c6",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 4,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 55
+					},
+					"highest_datetime": "2026-09-01 09:44:46",
+					"lowest_datetime": "2026-03-11 18:39:28",
+					"num_children": 103,
+					"type": "ZIP",
+					"uncompressed_size": 337128
+				},
+				"contenthash": "092c62e618632844e4859bc5c6887a8d",
+				"filecondis": {
+					"dhash": "00001c1d1c080000",
+					"raw_md5": "32e9c59acd67f4cd0b83e997a5e9f1b3"
+				},
+				"first_submission_date": 1788231996,
+				"last_analysis_date": 1788231996,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260831",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260831",
+						"engine_version": "6.815",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260831",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260831",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260831",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260831",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260831",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260831",
+						"engine_version": "260831-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260831",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260831",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260826",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260831",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260831",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260831",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260901",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260831",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260824",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260831",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260901",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260831",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260831",
+						"engine_version": "4.0.286",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260901",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260901",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260901",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260901",
+						"engine_version": "GD:27.45837AVA:64.31848",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260901",
+						"engine_version": "1788228060",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260901",
+						"engine_version": "1.0.253.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260831",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260831",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260831",
+						"engine_version": "14.75.60644",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260901",
+						"engine_version": "14.76.60650",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260831",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260831",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260831",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260831",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260831",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260901",
+						"engine_version": "1.2.0.15979",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260831",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260831",
+						"engine_version": "1.26070",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260831",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260901",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260831",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260901",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260831",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260831",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260831",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260831",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260831",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260831",
+						"engine_version": "2026-08-31.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260901",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260811",
+						"engine_version": "4.0.15.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260831",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260831",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260901",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "failure",
+						"engine_name": "Trustlook",
+						"engine_update": "20260901",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260830",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260831",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260831",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260831",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260831",
+						"engine_version": "9.5.1283",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260831",
+						"engine_version": "38926",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260901",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260831",
+						"engine_version": "2.0.0.5678",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260901",
+						"engine_version": "6.27-118568327",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260831",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260831",
+						"engine_version": "f1d221d:f1d221d:6778037:6778037",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260901",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 1,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1788232024,
+				"last_submission_date": 1788231996,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "1c37672b521002ec4e8203b1a8b46487",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "7bd50443d98a917f2272d5583d60bfc0bf38a61b",
+				"sha256": "1ca9023d9420c1606ee63c7337f7f30837ec87eb23476f10eec51446d2c517c6",
+				"size": 123492,
+				"ssdeep": "3072:YiluX8Ey15p/tuyuFVgZi5EADfReXvzr48EeKKYjDsccynP:YilE8Ei5p1eHzJczcHRDsccyP",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1CBC3E014A3AF1117F42687BE7BCB0119F379400DD16FDA535A2AA4C07C8B79D0FAE94A",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7835"
+}
