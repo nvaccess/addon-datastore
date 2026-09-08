@@ -1,0 +1,51 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.3.2/polyglot-1.3.2.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "8ec2f999d9f927b40319efad513b468ea2735b850920e2ddb27ed2f3a2b6e6d2",
+	"addonVersionName": "1.3.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GNU General Public License version 3 or later",
+	"homepage": "https://github.com/cary-rowen/polyglot",
+	"changelog": "### 1.3.2\n\n- Added LibreTranslate support for self-hosted servers, with a configurable server URL and optional API key.\n- Improved command-layer interaction: run commands consecutively, press `Escape` to exit, or use an unrelated gesture to return to NVDA or the active application. Braille displays now show the layer status and help hint.\n- Improved the Ukrainian localization.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1788907617000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.3.2\n\n- 新增 LibreTranslate 支持，可连接自托管服务器，并可配置服务器 URL 和可选 API 密钥。\n- 改进命令层交互：可连续执行命令；按 `Escape` 退出；使用其他手势时返回 NVDA 或当前应用程序。盲文点显器现在会显示命令层状态和帮助提示。\n- 改进乌克兰语本地化。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.3.2\n\n- Added LibreTranslate support for self-hosted servers, with a configurable server URL and optional API key.\n- Improved command-layer interaction: run commands consecutively, press `Escape` to exit, or use an unrelated gesture to return to NVDA or the active application. Braille displays now show the layer status and help hint.\n- Improved the Ukrainian localization."
+		},
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.3.2\n\n- Added LibreTranslate support for self-hosted servers, with a configurable server URL and optional API key.\n- Improved command-layer interaction: run commands consecutively, press `Escape` to exit, or use an unrelated gesture to return to NVDA or the active application. Braille displays now show the layer status and help hint.\n- Improved the Ukrainian localization."
+		}
+	]
+}
