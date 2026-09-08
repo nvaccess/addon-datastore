@@ -59,5 +59,47 @@
 			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
 			"changelog": "\n\t\t* Fixed a bug where a custom label could be silently overwritten by NVDA's internal name assignment.\n\t\t* The settings panel tree now preserves expanded and selected state after editing or removing a label.\n\t\t* Fixed labelling individual controls in apps where multiple controls share identical properties. Labelling one button no longer labels all buttons of the same type.\n\t\t* Added browse mode (virtual buffer) support for Electron and WebView2-based applications: custom labels are now applied when reading content with arrow keys or quick navigation, not only in focus mode. Regular browsers are not yet supported.\n\t\t* Fixed labels failing to match after an application restart in Electron and WebView2-based apps. The volatile renderer-window identifier is now excluded from the fingerprint so saved labels survive restarts.\n\t\t* Improved fingerprinting for Electron and WebView2 content using ARIA properties and role, making label assignments more stable across page reloads."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/65a9355c8f0af144c934a708a76fa52c4a210009cccd6387d72051c6d4786623",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "65a9355c8f0af144c934a708a76fa52c4a210009cccd6387d72051c6d4786623",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00101c1c1d1c0000",
+					"raw_md5": "752b2f1de791824ebb42359fcb9eb2fc"
+				},
+				"first_submission_date": 1788874477,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788874479,
+				"last_submission_date": 1788874477,
+				"md5": "24c8e8473300421d1e5a70c2bf81d2e1",
+				"names": [],
+				"reputation": 0,
+				"sha1": "1d365c0594ab378cee057c71454a33bea921a5d6",
+				"sha256": "65a9355c8f0af144c934a708a76fa52c4a210009cccd6387d72051c6d4786623",
+				"size": 66385,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
