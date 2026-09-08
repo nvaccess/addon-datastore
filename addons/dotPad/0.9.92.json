@@ -1,0 +1,38 @@
+{
+	"addonId": "dotPad",
+	"displayName": "Dot Pad",
+	"URL": "https://github.com/dotincorp/nvda-addon-store/releases/download/0.9.92/dotPad-0.9.92.nvda-addon",
+	"description": "Output braille text and graphics to Dot Pad braille displays.",
+	"sha256": "fafa0b22b3b6ce66cb13cad817015f7f22281b0fb9d20fb4f2ad117146aa1d8f",
+	"addonVersionName": "0.9.92",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 92
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "dev",
+	"publisher": "Dot Incorporated",
+	"sourceURL": "https://github.com/dotincorp/nvda-addon-store/",
+	"license": "GPL v2",
+	"changelog": "New in version 1.0:\n\n- Braille and graphics on the multi-line tactile area are now rendered by the bundled TactileDisplayAPI library. It follows the focused control itself and gives richer output for controls, math and images; the NVDA review cursor remains available as an alternative\n- Tactile graphic mode for images, with pan, zoom, recentre and image inversion\n- Table mode, including tables in virtual documents such as Google Docs\n- Connecting, disconnecting and switching between Bluetooth and USB displays is faster, and no longer freezes NVDA when a display is off or out of range\n- Requires NVDA 2026.1 or later",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788907615000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Dot Pad",
+			"description": "Output braille text and graphics to Dot Pad braille displays.",
+			"changelog": "1.0 sürümündeki yenilikler:\n\n- Çok satırlı dokunsal alandaki Braille ve grafikler artık pakete dahil TactileDisplayAPI kütüphanesi tarafından işlenmektedir. Bu kütüphane, odaklanmış denetimin kendisini takip eder ve denetimler, matematiksel ifadeler ve görüntüler için daha zengin bir çıktı sunar; NVDA inceleme imleci ise alternatif olarak kullanılmaya devam eder.\n- Görüntüler için dokunsal grafik kipi; kaydırma, yakınlaştırma, yeniden merkezleme ve görüntü ters çevirme özellikleri ile\n- Tablo kipi; Google Dokümanlar gibi sanal belgelerdeki tablolar da dahil\n- Bluetooth ve USB ekranları arasında bağlantı kurma, bağlantıyı kesme ve geçiş yapma işlemleri daha hızlı hale geldi; ayrıca bir ekran kapalıyken veya menzil dışındayken NVDA artık donmuyor\n- NVDA 2026.1 veya daha yeni bir sürüm gerekir"
+		}
+	]
+}
