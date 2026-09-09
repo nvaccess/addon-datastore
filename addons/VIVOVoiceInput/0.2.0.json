@@ -1,0 +1,39 @@
+{
+	"addonId": "VIVOVoiceInput",
+	"displayName": "VIVO Voice Input",
+	"URL": "https://github.com/haitun001/VIVOVoiceInput/releases/download/0.2/VIVOVoiceInput-0.2.nvda-addon",
+	"description": "Uses VIVO's speech recognition capability for voice input.",
+	"sha256": "0d79a9933ba5cb1fb2fee09f57f7155c26bbe12034d5c4449068949e5f983f1c",
+	"addonVersionName": "0.2",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "haitun",
+	"sourceURL": "https://github.com/haitun001/VIVOVoiceInput",
+	"license": "GPL v2",
+	"homepage": "https://www.zxrjy.net",
+	"changelog": "Improved spoken messages for account information errors, numpad shortcut support, and short recording handling. Removed usernames and raw responses from authentication logs. Thanks to cary-rowen for contributing through PR #2.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788957768000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "VIVO语音输入",
+			"description": "调用VIVO的语音识别能力做语音输入。",
+			"changelog": "改善账户信息异常时的语音提示、数字小键盘快捷键和短录音处理，移除认证日志中的用户名和原始响应内容。感谢 cary-rowen 通过 PR #2 作出的贡献。"
+		}
+	]
+}
