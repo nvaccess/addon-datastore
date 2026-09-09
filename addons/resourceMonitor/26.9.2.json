@@ -239,5 +239,47 @@
 			"description": "A handy resource monitor to report CPU load, memory usage, disk usage status and more.",
 			"changelog": "* Introduced Resource Monitor layer commands with overall resource usage command (NVDA+Shift+E) as layer entry command. Layer commands include C (CPU), D (disks), G (GPU)/Shift+G (GPU memory), M (memory/RAM), O (operating system/Windows version), U (system uptime), and W (wi-fi). Press NVDA+Shift+E then Space for overall resource usage information, and Escape to exit the layer. The individual resource usage commands (NVDA+Shift+number row 1 through 7) are kept for limited backward compatibility (contributed by cary-rowen).\n* Added compatibility with add-on settings registration mechanics in NVDA 2026.3."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/0324d3d98b8c08fd185e3105e3f7f766a5512bf4643012137275f3c87f64ca67",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "0324d3d98b8c08fd185e3105e3f7f766a5512bf4643012137275f3c87f64ca67",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0e0d0400",
+					"raw_md5": "81836dc0c46230e2c3637e68d62d0b5b"
+				},
+				"first_submission_date": 1788927717,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788927718,
+				"last_submission_date": 1788927717,
+				"md5": "511fabb18e5cc75dcefb85727f1b6956",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c9e9690b3ead7593cd3bcd90118d91070b48886a",
+				"sha256": "0324d3d98b8c08fd185e3105e3f7f766a5512bf4643012137275f3c87f64ca67",
+				"size": 334143,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
