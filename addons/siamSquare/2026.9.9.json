@@ -1,0 +1,38 @@
+{
+	"addonId": "siamSquare",
+	"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+	"URL": "https://github.com/chaichaimee/siamSquare/releases/download/2026.9.9/siamSquare-v2026.9.9.nvda-addon",
+	"description": "siamSquare enhances Thai writing and study in NVDA with built-in dictionary tools for instant definitions, smart spelling corrections, and detailed letter spelling. It includes a full dictionary editor, a Thai alphabet order lookup, and an interactive quiz game to boost learning efficiency.\n\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary\nF5 : a character-order quiz",
+	"sha256": "f6b6200c2df06354e4a87231c11c5b98c25d68fe121ce73d31b96366faeff70f",
+	"addonVersionName": "2026.9.9",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/siamSquare",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/siamSquare",
+	"changelog": "fix on_replace_click: When selecting an item, close the dialog with EndModal immediately, then use wx.CallAfter to call execute_replacement after focus returns to the document.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789095239000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+			"description": "siamSquare enhances Thai writing and study in NVDA with built-in dictionary tools for instant definitions, smart spelling corrections, and detailed letter spelling. It includes a full dictionary editor, a Thai alphabet order lookup, and an interactive quiz game to boost learning efficiency.\n\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary\nF5 : a character-order quiz"
+		}
+	]
+}
