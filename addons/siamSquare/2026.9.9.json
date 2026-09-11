@@ -1,0 +1,81 @@
+{
+	"addonId": "siamSquare",
+	"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+	"URL": "https://github.com/chaichaimee/siamSquare/releases/download/2026.9.9/siamSquare-v2026.9.9.nvda-addon",
+	"description": "siamSquare enhances Thai writing and study in NVDA with built-in dictionary tools for instant definitions, smart spelling corrections, and detailed letter spelling. It includes a full dictionary editor, a Thai alphabet order lookup, and an interactive quiz game to boost learning efficiency.\n\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary\nF5 : a character-order quiz",
+	"sha256": "f6b6200c2df06354e4a87231c11c5b98c25d68fe121ce73d31b96366faeff70f",
+	"addonVersionName": "2026.9.9",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 9,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/siamSquare",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/siamSquare",
+	"changelog": "fix on_replace_click: When selecting an item, close the dialog with EndModal immediately, then use wx.CallAfter to call execute_replacement after focus returns to the document.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789095239000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "siamSquare พจนานุกรมไทย คลังคำ",
+			"description": "siamSquare enhances Thai writing and study in NVDA with built-in dictionary tools for instant definitions, smart spelling corrections, and detailed letter spelling. It includes a full dictionary editor, a Thai alphabet order lookup, and an interactive quiz game to boost learning efficiency.\n\nHot Keys:\nCTRL+F1 : Open Layer Keys\nF1 : word meaning\nF2 : Misspelled words and similar words\nF3 : Spell words\nF4 : Open Siam Center Dictionary\nF5 : a character-order quiz"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/f6b6200c2df06354e4a87231c11c5b98c25d68fe121ce73d31b96366faeff70f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "f6b6200c2df06354e4a87231c11c5b98c25d68fe121ce73d31b96366faeff70f",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "5832a10265baf57cd36b3d820f56a6a0"
+				},
+				"first_submission_date": 1789095242,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789095243,
+				"last_submission_date": 1789095242,
+				"md5": "dd065e85e07025658d3dea6fb783622f",
+				"names": [],
+				"reputation": 0,
+				"sha1": "cc867fa0526830a698e21adf211dd0533284099d",
+				"sha256": "f6b6200c2df06354e4a87231c11c5b98c25d68fe121ce73d31b96366faeff70f",
+				"size": 1077820,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6800"
+}
