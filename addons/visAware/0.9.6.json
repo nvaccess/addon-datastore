@@ -1,0 +1,87 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.9.6/visAware-0.9.6.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "0b615dadd0f2e7656f404462a583e48da65603be6d1143016dede088a99a78d8",
+	"addonVersionName": "0.9.6",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.9.6\n\n* Updated the default DeepSeek vision model to `deepseek-flash` and added newer Gemini vision model presets.\n* Added Baimiao OCR and formula recognition, including shared account login, protected sessions, clickable text coordinates, and accessible MathML formula output.\n* Added OCR, image description, and AI Agent support in Screen Curtain mode on NVDA 2026.3 and later.\n* Improved automatic recognition settings so the selected engine is preserved correctly.\n\n### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789240541000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 0.9.6\n\n* Updated the default DeepSeek vision model to `deepseek-flash` and added newer Gemini vision model presets.\n* Added Baimiao OCR and formula recognition, including shared account login, protected sessions, clickable text coordinates, and accessible MathML formula output.\n* Added OCR, image description, and AI Agent support in Screen Curtain mode on NVDA 2026.3 and later.\n* Improved automatic recognition settings so the selected engine is preserved correctly.\n\n### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs."
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 0.9.6\n\n* Updated the default DeepSeek vision model to `deepseek-flash` and added newer Gemini vision model presets.\n* Added Baimiao OCR and formula recognition, including shared account login, protected sessions, clickable text coordinates, and accessible MathML formula output.\n* Added OCR, image description, and AI Agent support in Screen Curtain mode on NVDA 2026.3 and later.\n* Improved automatic recognition settings so the selected engine is preserved correctly.\n\n### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/0b615dadd0f2e7656f404462a583e48da65603be6d1143016dede088a99a78d8",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "0b615dadd0f2e7656f404462a583e48da65603be6d1143016dede088a99a78d8",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0d0a00",
+					"raw_md5": "4096be5876741647b826a250f02934d0"
+				},
+				"first_submission_date": 1789240545,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789240547,
+				"last_submission_date": 1789240545,
+				"md5": "05d60e4b1c2fa2b629a84099f650c420",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c34f5dc87d813cb91e34e1e1931d663a846f2bcd",
+				"sha256": "0b615dadd0f2e7656f404462a583e48da65603be6d1143016dede088a99a78d8",
+				"size": 330178,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10351"
+}
