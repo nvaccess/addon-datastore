@@ -95,5 +95,47 @@
 			"description": "Urmărește evenimentele și afișează informații despre ele",
 			"changelog": "* NVDA 2026.1 (64-bit) or later is required."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4e01d76e75f6657f813281d557007670b535eb82a1d050a052ce712d1d84dd2d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4e01d76e75f6657f813281d557007670b535eb82a1d050a052ce712d1d84dd2d",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c3d1c0000",
+					"raw_md5": "0f276c7b92a0833a6145e52d8052ae66"
+				},
+				"first_submission_date": 1789204844,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789204845,
+				"last_submission_date": 1789204844,
+				"md5": "3e29195c83d98dd434daa91a1d2ab20d",
+				"names": [],
+				"reputation": 0,
+				"sha1": "8a67e4ac155f5a208f7c69fe92e3bf2e8835055e",
+				"sha256": "4e01d76e75f6657f813281d557007670b535eb82a1d050a052ce712d1d84dd2d",
+				"size": 62529,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
