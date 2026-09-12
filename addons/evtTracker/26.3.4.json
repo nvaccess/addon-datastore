@@ -95,5 +95,47 @@
 			"description": "Urmărește evenimentele și afișează informații despre ele",
 			"changelog": "* Removed add-on changelog from add-on help (readme) file."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/889b7028a11d02e50ee5ee147c6a37405e522530c6a83e21db47c46be21d9ecf",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "889b7028a11d02e50ee5ee147c6a37405e522530c6a83e21db47c46be21d9ecf",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c1d1c0000",
+					"raw_md5": "b427d9af9991b1589f9d1d20c4385cef"
+				},
+				"first_submission_date": 1789204812,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789204813,
+				"last_submission_date": 1789204812,
+				"md5": "0ecaaa93fa3602a11fda9ae727def3f1",
+				"names": [],
+				"reputation": 0,
+				"sha1": "79c52b0d5f2a70c715ede4059a0774149d82d095",
+				"sha256": "889b7028a11d02e50ee5ee147c6a37405e522530c6a83e21db47c46be21d9ecf",
+				"size": 62855,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
