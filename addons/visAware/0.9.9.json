@@ -1,0 +1,44 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v0.9.9/visAware-0.9.9.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "ec8def41d2bf154a97fbaec3e48fa3df638513ab45a9d070acd207ed7a7fd0f0",
+	"addonVersionName": "0.9.9",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 9,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 0.9.9\n\n* Fixed Gemini compatibility across OCR, image description, and AI Agent engines.\n* Added sound cues to recognition and AI Agent workflows for start, waiting, actions, questions, success, cancellation, and error states.\n* Improved automatic recognition to show only engines that explicitly support it.\n* Added text CAPTCHA recognition through RuCaptcha and 2Captcha, with configurable recognition options and account balance checks.\n\n### 0.9.6\n\n* Updated the default DeepSeek vision model to `deepseek-flash` and added newer Gemini vision model presets.\n* Added Baimiao OCR and formula recognition, including shared account login, protected sessions, clickable text coordinates, and accessible MathML formula output.\n* Added OCR, image description, and AI Agent support in Screen Curtain mode on NVDA 2026.3 and later.\n* Improved automatic recognition settings so the selected engine is preserved correctly.\n\n### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789339683000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 0.9.9\n\n* 修复 Gemini 在 OCR、图像描述和 AI Agent 引擎中的兼容性问题。\n* 为识别和 AI Agent 流程新增声音提示，涵盖开始、等待、执行操作、提问、成功、取消和错误等状态。\n* 改进自动识别：仅显示明确支持自动识别的引擎。\n* 新增通过 RuCaptcha 和 2Captcha 识别文本验证码，支持配置识别选项并查询账户余额。\n\n### 0.9.6\n\n* 更新默认 DeepSeek 视觉模型为 `deepseek-flash`，并新增较新的 Gemini 视觉模型预设。\n* 新增白描 OCR 和公式识别，包括共用账号登录、受保护的会话、可点击的文本坐标以及可访问的 MathML 公式输出。\n* 在 NVDA 2026.3 及更高版本中，黑屏模式支持 OCR、图像描述和 AI Agent。\n* 改进自动识别设置，正确保留所选引擎。\n\n### 0.9.0\n\n* 新增 DeepSeek 图像描述和 AI Agent 引擎，并支持配置 API 地址和视觉模型。\n* 新增在关闭、图像描述和 OCR 之间循环切换自动识别模式的命令；该命令没有默认手势。\n* 改进自动识别的可靠性：串行处理后台任务、仅保留最新待处理任务、在网络和 OCR 请求中传递取消操作，并使用更短的请求超时。\n* 改进浏览模式下的网页图像自动识别，支持读取当前及延迟加载图像 URL，并在 URL 不可用时回退到屏幕截图。\n* 改进自动识别结果处理，在当前识别目标变化后忽略过期结果。\n\n### 0.8.1\n\n* 新增基于 OpenAI 兼容 Kimi API 的 Kimi 图像描述、追问、带结构化坐标的 OCR 和 AI Agent 支持。\n* 改进受支持引擎的图像描述提示词，提供本地化默认值。\n* 改进数学图像描述，将可见公式转换为 LaTeX，且纯公式图像仅返回 LaTeX 公式。\n* 改进自动图像识别，使用简洁的 20 到 30 字无 Markdown 描述。\n* 改进可浏览图像描述输出，表格内容使用标准 Markdown 表格并避免代码围栏。\n* 从追问对话框中移除模型和模型提供商名称。\n* 为可浏览的识别与追问结果对话框添加“复制”和“关闭”按钮。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 0.9.9\n\n* Fixed Gemini compatibility across OCR, image description, and AI Agent engines.\n* Added sound cues to recognition and AI Agent workflows for start, waiting, actions, questions, success, cancellation, and error states.\n* Improved automatic recognition to show only engines that explicitly support it.\n* Added text CAPTCHA recognition through RuCaptcha and 2Captcha, with configurable recognition options and account balance checks.\n\n### 0.9.6\n\n* Updated the default DeepSeek vision model to `deepseek-flash` and added newer Gemini vision model presets.\n* Added Baimiao OCR and formula recognition, including shared account login, protected sessions, clickable text coordinates, and accessible MathML formula output.\n* Added OCR, image description, and AI Agent support in Screen Curtain mode on NVDA 2026.3 and later.\n* Improved automatic recognition settings so the selected engine is preserved correctly.\n\n### 0.9.0\n\n* Added DeepSeek image description and AI Agent engines, with configurable API endpoints and vision models.\n* Added a command to cycle automatic recognition between off, image description, and OCR; it has no default gesture.\n* Improved automatic recognition reliability by serializing background work, keeping only the latest pending task, propagating cancellation through network and OCR requests, and using shorter request timeouts.\n* Improved browse-mode automatic recognition for web graphics by recognizing current and lazy-loaded image URLs and falling back to screenshots when URLs are unavailable.\n* Improved automatic recognition result handling to ignore results after the active recognition target changes.\n\n### 0.8.1\n\n* Added Kimi image description, follow-up questions, OCR with structured coordinates, and AI Agent support through the OpenAI-compatible Kimi API.\n* Improved image-description prompts across supported engines with localized defaults.\n* Improved mathematical image descriptions by converting visible formulas to LaTeX and returning formula-only images as LaTeX formulas.\n* Improved automatic image recognition with concise 20 to 30 word descriptions without Markdown.\n* Improved browsable image-description output by using standard Markdown tables for tabular content and avoiding code fences.\n* Removed model and model-provider names from the follow-up dialog.\n* Added Copy and Close buttons to browsable recognition and follow-up result dialogs."
+		}
+	]
+}
