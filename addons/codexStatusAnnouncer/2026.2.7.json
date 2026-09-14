@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.7/chatGPTDesktopAccess-2026.2.7.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "c50dbd800dd9fa838afbb6a7dc00d33037228017454eeea57917ef384002061c",
+	"addonVersionName": "2026.2.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "Fixes chat archiving from Chat History. Shift+F10 opens a genuine Windows context menu and invokes ChatGPT's matching native action directly; stale actions cancel if the view changes or closes. Clarifies Speech and Braille settings by placing active speech detail beside both saved profiles, labeling Full-only controls, and adding a focusable button that reviews the selected speech and independent Braille profiles.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789425516000,
+	"translations": []
+}
