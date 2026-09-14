@@ -28,5 +28,47 @@
 	"changelog": "\n## New features:\n- Local Jukebox tab: search audio files stored on any attached drive by filename, or build a persistent personal library of files and folders. Jukebox tracks get the same treatment as podcasts and audio books: automatic resume, tiered rewind/fast-forward, playback speed, pitch transpose, and per-item audio profiles. Open the Jukebox tab from anywhere with Ctrl+Win+U, or from the Station Browser with Alt+8.\n- Transpose (pitch shift): shift the pitch of podcasts, audio books, and jukebox tracks up or down without changing their speed, using Shift+Win+K (raise) and Shift+Win+J (lower). Each step is one eighth of a whole tone (0.25 semitones); the range is -12.00 to +12.00 semitones. Requires bass_fx.dll.\n- Jukebox tab keyboard shortcuts: F3 / F4 move between tracks within the selected jukebox item; Shift+F3 / Shift+F4 move between jukebox entries; Ctrl+Left / Ctrl+Right do the same as F3 / F4 while the tracks or entries list is focused. Space previews a disk-search result or pauses the current playback; Enter adds a disk-search result to the jukebox or plays the focused item directly.\n\nImprovements:\n- Playback speed shortcuts (Ctrl+Win+Shift+K / Ctrl+Win+Shift+J) now also apply to jukebox tracks, not just podcasts and audio books.\n- Ctrl+Win+V (Add to Favourites / Download Media) now tells the user explicitly that the shortcut only applies to stations, podcasts, and audio books when a jukebox track is currently playing, instead of silently treating the jukebox track as a station.\n- The Station Browser now contains eight tabs instead of seven; tab navigation shortcuts run from Alt+1 through Alt+8.\n- Ctrl+Tab / Ctrl+Shift+Tab tab cycling now includes the Jukebox tab.\n- Ctrl+Win+I (What's playing) now also announces jukebox track names.\n- Ctrl+Win+J and Ctrl+Win+K (tiered seek) now also work on jukebox tracks.\n- Ctrl+Win+T (Toggle time-shift buffer) now clarifies that it has no effect on podcast, audio book, or jukebox playback.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1789402635000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8e748f2be361e590a5af737cbb08d131f8bd9721e871592d9a03314898f514e9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "8e748f2be361e590a5af737cbb08d131f8bd9721e871592d9a03314898f514e9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "74d5400f93bd3dd23824edaddf189777"
+				},
+				"first_submission_date": 1789402643,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789402655,
+				"last_submission_date": 1789402643,
+				"md5": "319259107e41e40a08b98e55c15fb4ce",
+				"names": [],
+				"reputation": 0,
+				"sha1": "d9046689280c073cc5be80f097d6fc26145641bb",
+				"sha256": "8e748f2be361e590a5af737cbb08d131f8bd9721e871592d9a03314898f514e9",
+				"size": 47780234,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
