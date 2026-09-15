@@ -1,0 +1,32 @@
+{
+	"addonId": "gemini_sharh",
+	"displayName": "Gemini Sharh - Video Tavsiflovchi",
+	"URL": "https://github.com/Zikriyo999/gemini-sharh/releases/download/GeminiSharhv1.0.0/gemini_sharh-1.0.0.nvda-addon",
+	"description": "Google Gemini sun'iy intellekti orqali videolarga sinxron audio tavsif (tiflosharh) va ovozli sharh yaratuvchi NVDA plagini.\n\nAsosiy imkoniyatlari:\n- Videolarni tahlil qilish va aniq vaqt kodlari (timestamps) bilan voqealarni tavsiflash.\n- Haqiqiy vaqtda Google Gemini API orqali tavsiflovchi (multimodal/video) modellar ro'yxatini yuklash.\n- Haqiqiy vaqtda TTS (ovoz/nutq) modellarini yuklash va Erkak/Ayol ovozlarini tanlash.\n- Videodagi voqealar bilan bir vaqtda tushuvchi sinxron audio trek (.wav) va subtitr (.srt, .txt) yaratish.\n- Bepul API kalitlar uchun so'rovlar oralig'iga kechikish (rate-limiting) va xavfsiz qayta urinish.\n\nMuallif: Zikriyo To'ychiyev (@zikriyo99)\nTelegram: @zikriyo99\nRasmiy API: Google AI Studio (https://aistudio.google.com/apikey)",
+	"sha256": "e014bee6e5b0860f17eed26a1fa16152b4a7dc5799b702d5c45997fdab0f99ee",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Zikriyo To'ychiyev",
+	"sourceURL": "https://github.com/Zikriyo999/gemini-sharh",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Zikriyo999/gemini-sharh",
+	"changelog": "Versiya 1.0.0:\n- Ilk rasmiy nashr.\n- Google Gemini API orqali videolarni tahlil qilish va sinxron audio tavsif yaratish.\n- Real vaqtda modellar va TTS ro'yxatini yuklash.\n- Erkak va Ayol ovozlarini tanlash imkoniyati.\n- Bepul hisoblar uchun so'rovlar oralig'ini sozlash (rate limit protection).\n- NVDA 2019.3 dan 2026.2 gacha to'liq moslik.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789442475000,
+	"translations": []
+}
