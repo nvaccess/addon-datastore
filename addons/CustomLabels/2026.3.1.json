@@ -1,0 +1,63 @@
+{
+	"addonId": "CustomLabels",
+	"displayName": "Custom Labels",
+	"URL": "https://github.com/kefaslungu/CustomLabels/releases/download/2026.3.1/CustomLabels-2026.3.1.nvda-addon",
+	"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+	"sha256": "0191385517727c26e24b9cb5bfc9f3db9b07606ad5a76d653ba73ac743c8861b",
+	"addonVersionName": "2026.3.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Kefas Lungu",
+	"sourceURL": "https://github.com/kefaslungu/CustomLabels/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kefaslungu/CustomLabels",
+	"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789487429000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Benutzerdefinierte Beschriftung",
+			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+			"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer."
+		},
+		{
+			"language": "ru",
+			"displayName": "Custom Labels (Пользовательские метки)",
+			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+			"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer."
+		},
+		{
+			"language": "uk",
+			"displayName": "Користувацькі мітки",
+			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+			"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer."
+		},
+		{
+			"language": "it",
+			"displayName": "Custom Labels",
+			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+			"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer."
+		},
+		{
+			"language": "tr",
+			"displayName": "Özel Etiketler",
+			"description": "An addon that allows you to add custom labels for unlabeled controls and edit existing ones.",
+			"changelog": "\n\t\t* Fixed a performance regression where navigating in browse mode or opening the Elements List (NVDA+F7) in applications with no custom labels caused unnecessary COM queries for every node in the virtual buffer."
+		}
+	]
+}
