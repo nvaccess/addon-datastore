@@ -1,0 +1,57 @@
+{
+	"addonId": "diario",
+	"displayName": "Diary for NVDA",
+	"URL": "https://github.com/zambonif/NVDA-Addons/releases/download/diario-v1.4.0/diario-1.4.0.nvda-addon",
+	"description": "An accessible and encrypted personal diary integrated with NVDA. It combines dated entries, password protection and optional recovery, real-time spell checking, and encrypted ZIP backup export and merge import.",
+	"sha256": "b642e2edb0fd187c66fd1b0a4ab7af04dba3d2f3608abe04bc3d2472e964e434",
+	"addonVersionName": "1.4.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Fernando de Paula Zamboni",
+	"sourceURL": "https://github.com/zambonif/NVDA-Addons/tree/main/Diario/diario-source",
+	"license": "GPL v2",
+	"homepage": "https://github.com/zambonif/NVDA-Addons",
+	"changelog": "Authenticated the complete password-derivation metadata, including the algorithm and 600,000 PBKDF2 iterations, following the received security report. Existing vaults remain compatible and the wrapper used to unlock them is upgraded automatically. Added UTF-8 export and validated merge import for the local spelling dictionary, with interface translations and documentation in all five supported languages.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789477791000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Journal pour NVDA",
+			"description": "Un journal personnel accessible et chiffré intégré à NVDA. Il réunit des entrées datées, une protection par mot de passe, une récupération facultative, une correction orthographique en temps réel et l'exportation et l'importation fusionnée de sauvegardes ZIP chiffrées.",
+			"changelog": "Authentifie toutes les métadonnées de dérivation de clé, notamment l'algorithme et les 600 000 itérations PBKDF2, conformément au signalement de sécurité reçu. Les anciens coffres-forts restent compatibles et la protection utilisée pour les déverrouiller est mise à niveau automatiquement. Ajoute l'exportation et l'importation fusionnée du dictionnaire orthographique local en UTF-8."
+		},
+		{
+			"language": "it",
+			"displayName": "Diario per NVDA",
+			"description": "Un diario personale accessibile e crittografato integrato con NVDA. Riunisce voci datate, protezione con password, recupero facoltativo, controllo ortografico in tempo reale ed esportazione e importazione unita di backup ZIP crittografati.",
+			"changelog": "Autentica tutti i metadati di derivazione della chiave, inclusi l'algoritmo e le 600.000 iterazioni PBKDF2, in base alla segnalazione di sicurezza ricevuta. Le cassaforti precedenti restano compatibili e la protezione usata per sbloccarle viene aggiornata automaticamente. Aggiunge l'esportazione e l'importazione con unione del dizionario ortografico locale in UTF-8."
+		},
+		{
+			"language": "es",
+			"displayName": "Diario para NVDA",
+			"description": "Un diario personal accesible y cifrado integrado con NVDA. Reúne entradas con fecha, protección mediante contraseña, recuperación opcional, corrección ortográfica en tiempo real y exportación e importación combinada de copias ZIP cifradas.",
+			"changelog": "Autentica todos los metadatos de derivación de clave, incluidos el algoritmo y las 600.000 iteraciones de PBKDF2, de acuerdo con la sugerencia de seguridad recibida. Las bóvedas anteriores siguen siendo compatibles y la protección utilizada para desbloquearlas se actualiza automáticamente. Añade exportación e importación combinada del diccionario ortográfico local en UTF-8."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Diário para NVDA",
+			"description": "Um diário pessoal acessível e criptografado integrado ao NVDA. Reúne entradas com data, proteção por senha, recuperação opcional, corretor ortográfico em tempo real e exportação e importação mesclada de backups ZIP criptografados.",
+			"changelog": "Autentica todos os metadados da derivação de chave, incluindo o algoritmo e as 600 mil iterações do PBKDF2, conforme a sugestão de segurança recebida. Cofres anteriores continuam compatíveis e a proteção usada no desbloqueio é atualizada automaticamente. Adiciona exportação e importação mesclada do dicionário ortográfico local em UTF-8."
+		}
+	]
+}
