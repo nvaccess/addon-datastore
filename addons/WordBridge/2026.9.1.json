@@ -59,5 +59,56 @@
 			"description": "helps users identify and correct homophone-based typos in Chinese.",
 			"changelog": "Update models to GPT-5.6 and Claude 5"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/db70bd4432ca75c477619a9ccfca1fb2cead3e47a6ad307e5d76b59fa78950b4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "db70bd4432ca75c477619a9ccfca1fb2cead3e47a6ad307e5d76b59fa78950b4",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: certifi (whl)\nVersion: 2026.7.22\nDescription: Python package for providing Mozilla's CA Bundle.\n\nThe package contains NVDA screen reader plugin code (WordBridge) for text/typo correction using LLM providers, alongside legitimate bundled dependencies (requests, urllib3, authlib, joserfc, cryptography, pypinyin, charset-normalizer). No malicious logic, credential exfiltration, or unauthorized execution was found.",
+						"category": "code_insight",
+						"id": "db70bd4432ca75c477619a9ccfca1fb2cead3e47a6ad307e5d76b59fa78950b4-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0200",
+					"raw_md5": "95469856e8377299690fec70b7a232d3"
+				},
+				"first_submission_date": 1789517729,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789517745,
+				"last_submission_date": 1789517729,
+				"md5": "1337b73df64fa4c6daaa05dae6c2ea3b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "baf5124bb043c24d80ea85c7eac0d18e611ff5ac",
+				"sha256": "db70bd4432ca75c477619a9ccfca1fb2cead3e47a6ad307e5d76b59fa78950b4",
+				"size": 39366650,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
