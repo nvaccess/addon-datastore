@@ -59,5 +59,56 @@
 			"description": "helps users identify and correct homophone-based typos in Chinese.",
 			"changelog": "Update models to GPT-5.6 and Claude 5"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c261fecbf1e7a50f162225705a80ece8231856dec91df413569fededa6944282",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c261fecbf1e7a50f162225705a80ece8231856dec91df413569fededa6944282",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: certifi (whl)\nVersion: 2026.7.22\nDescription: Python package for providing Mozilla's CA Bundle.\n\nThe inspected codebase consists of standard open-source Python libraries (Authlib, Cryptography, Requests, Urllib3, PyJWT, JoseRFC, CFFI, PyPinyin, Zhon, and Charset-Normalizer) alongside the WordBridge NVDA plugin for Chinese text typo correction via LLMs. No malicious payload delivery, unauthorized data exfiltration, or backdoors were detected.",
+						"category": "code_insight",
+						"id": "c261fecbf1e7a50f162225705a80ece8231856dec91df413569fededa6944282-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0200",
+					"raw_md5": "7b38ee0879d5eea1cea30203c04615db"
+				},
+				"first_submission_date": 1789524225,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789524237,
+				"last_submission_date": 1789524225,
+				"md5": "d7f0516dfeec0306bb6e747241bd44b9",
+				"names": [],
+				"reputation": 0,
+				"sha1": "50cba471665ed1f63374675dfd203b961d9e6182",
+				"sha256": "c261fecbf1e7a50f162225705a80ece8231856dec91df413569fededa6944282",
+				"size": 39367653,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
