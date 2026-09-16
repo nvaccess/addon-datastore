@@ -28,5 +28,47 @@
 	"changelog": "\n## Fixed\n- **Wrong duration/bitrate/sample rate/channels for some MP3s** (e.g. showing 12:44 instead of 4:46, mono instead of stereo, 32 kbps / 8 kHz instead of the real values). Caused by a missing entry in the MPEG bitrate table for Version 2/2.5 Layer III files (common for lower sample-rate MP3s), which made frame detection fail and lock onto random bytes elsewhere in the file.\n- **VBR files could report the placeholder bitrate** of the dummy \"Xing\"/ \"Info\"/\"VBRI\" header frame instead of the track's real average bitrate.\n- **Files without an ID3v2 tag could be probed from the wrong byte offset**, throwing off duration/bitrate/sample rate/channel detection.\n## Added\n- **Jukebox folders now resume from the last track played**, not always track 1. The track index is remembered per folder (new `jukebox_folder_positions.json`, alongside the existing `podcast_positions.json`) and updated every time a track starts playing as part of a folder sequence - including automatic advance while the dialog is closed. Cleared once the folder is played through to its last track, so it starts over next time; also cleared if the folder is removed from the jukebox library.\n- An explicit selection already made in the tracks list still wins over the remembered position - this only kicks in when nothing's selected.\n- Within-track resume position (the existing per-file feature) applies on top of this automatically, so the resumed track picks up mid-song too.\n## Changed\n- Playing a folder (or a single file) now updates the tracks list's selection to the track that actually starts playing, without moving keyboard focus there.\n## Added\n- The tracks list selection now also follows the playing track when it changes on its own: a track finishing and auto-advancing to the next one, or a Ctrl+Win+J/K seek crossing into a different track. Only updates if the folder being advanced is the one currently shown in the tracks list; never moves keyboard focus.\n## Fixed\n- Playing a jukebox track (single file or folder) no longer requires an internet connection. The connectivity check in `_play_station()` now skips jukebox tracks (`media_kind == \"jukebox\"`), since they're local files and never touch the network.\n## Fixed\n- Time-shift (rewind) now works on stations that use a \"redirect\" style address, such as many TuneIn stations. Previously, time-shift would try to reconnect over and over without ever actually buffering anything, so rewind wasn't available on those stations - even though normal playback worked fine. Regular listening was never affected.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1789564607000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/40ffa39341ebf5825cde236e278a7fc43b782aa3eef21897ff78204ef16781d7",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "40ffa39341ebf5825cde236e278a7fc43b782aa3eef21897ff78204ef16781d7",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "9462ca88cc421e822a45bdc2cff102c0"
+				},
+				"first_submission_date": 1789564615,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789564624,
+				"last_submission_date": 1789564615,
+				"md5": "5536126cc35dd5d012054802cef930f5",
+				"names": [],
+				"reputation": 0,
+				"sha1": "eb0c96ddbcdc79d4036c4d2884eb9aae8a892ae4",
+				"sha256": "40ffa39341ebf5825cde236e278a7fc43b782aa3eef21897ff78204ef16781d7",
+				"size": 47784115,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
