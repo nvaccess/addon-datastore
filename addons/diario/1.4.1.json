@@ -1,0 +1,57 @@
+{
+	"addonId": "diario",
+	"displayName": "Diary for NVDA",
+	"URL": "https://github.com/zambonif/NVDA-Addons/releases/download/diario-v1.4.1/diario-1.4.1.nvda-addon",
+	"description": "An accessible and encrypted personal diary integrated with NVDA. It combines dated entries, password protection and optional recovery, real-time spell checking, and encrypted ZIP backup export and merge import.",
+	"sha256": "f75f52e82073319db311371814a6a56686af1d2d870ce5c2b6ac33668d678196",
+	"addonVersionName": "1.4.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Fernando de Paula Zamboni",
+	"sourceURL": "https://github.com/zambonif/NVDA-Addons/tree/main/Diario/diario-source",
+	"license": "GPL v2",
+	"homepage": "https://github.com/zambonif/NVDA-Addons",
+	"changelog": "Added an independent spell-checking language setting. The new System default option uses any language supported by the Windows Spell Checking API, including Romanian, without requiring the Diary interface to be translated into that language. Added an option to disable spelling-warning sounds while keeping suggestions and the personal dictionary available. Existing preferences remain compatible.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789564750000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Journal pour NVDA",
+			"description": "Un journal personnel accessible et chiffré intégré à NVDA. Il réunit des entrées datées, une protection par mot de passe, une récupération facultative, une correction orthographique en temps réel et l'exportation et l'importation fusionnée de sauvegardes ZIP chiffrées.",
+			"changelog": "Ajoute un réglage indépendant pour la langue de correction. La nouvelle option Langue par défaut du système utilise toute langue proposée par l'API orthographique de Windows, y compris le roumain, sans imposer la traduction de l'interface du Journal. Ajoute une option pour désactiver les avertissements sonores tout en conservant les suggestions et le dictionnaire personnel. Les préférences existantes restent compatibles."
+		},
+		{
+			"language": "it",
+			"displayName": "Diario per NVDA",
+			"description": "Un diario personale accessibile e crittografato integrato con NVDA. Riunisce voci datate, protezione con password, recupero facoltativo, controllo ortografico in tempo reale ed esportazione e importazione unita di backup ZIP crittografati.",
+			"changelog": "Aggiunge un'impostazione indipendente per la lingua del controllo ortografico. La nuova opzione Predefinita di sistema usa qualsiasi lingua offerta dall'API ortografica di Windows, incluso il rumeno, senza richiedere la traduzione dell'interfaccia del Diario. Aggiunge un'opzione per disattivare gli avvisi sonori mantenendo disponibili suggerimenti e dizionario personale. Le preferenze precedenti restano compatibili."
+		},
+		{
+			"language": "es",
+			"displayName": "Diario para NVDA",
+			"description": "Un diario personal accesible y cifrado integrado con NVDA. Reúne entradas con fecha, protección mediante contraseña, recuperación opcional, corrección ortográfica en tiempo real y exportación e importación combinada de copias ZIP cifradas.",
+			"changelog": "Añade una configuración independiente para el idioma del corrector. La nueva opción Predeterminado del sistema utiliza cualquier idioma ofrecido por la API ortográfica de Windows, incluido el rumano, sin exigir que la interfaz del Diario esté traducida a ese idioma. Añade una opción para desactivar los avisos sonoros manteniendo disponibles las sugerencias y el diccionario personal. Las preferencias anteriores siguen siendo compatibles."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Diário para NVDA",
+			"description": "Um diário pessoal acessível e criptografado integrado ao NVDA. Reúne entradas com data, proteção por senha, recuperação opcional, corretor ortográfico em tempo real e exportação e importação mesclada de backups ZIP criptografados.",
+			"changelog": "Adiciona uma configuração independente para o idioma do corretor. A nova opção Padrão do sistema usa qualquer idioma oferecido pela API ortográfica do Windows, inclusive romeno, sem exigir que a interface do Diário esteja traduzida para ele. Adiciona uma opção para desativar os avisos sonoros, mantendo as sugestões e o dicionário pessoal disponíveis. As preferências anteriores continuam compatíveis."
+		}
+	]
+}
