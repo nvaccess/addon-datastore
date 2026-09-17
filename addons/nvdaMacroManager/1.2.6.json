@@ -1,0 +1,53 @@
+{
+	"addonId": "nvdaMacroManager",
+	"displayName": "NVDA Macro Manager",
+	"URL": "https://github.com/m-enes-senovali/nvdaMacroManager/releases/download/v1.2.6/nvdaMacroManager-1.2.6.nvda-addon",
+	"description": "An accessible keyboard macro recorder, editor, and playback engine for NVDA.\nFeatures include safe recording, a multi-event editor, custom shortcuts, application locks, and speed controls.",
+	"sha256": "bbbf02227583ff326ca9ac0b6d516d2ef19f61c915cf80c3c5d35104299d6e55",
+	"addonVersionName": "1.2.6",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammet Enes Şenovalı",
+	"sourceURL": "https://github.com/m-enes-senovali/nvdaMacroManager",
+	"license": "GPL v2",
+	"homepage": "https://github.com/m-enes-senovali/nvdaMacroManager",
+	"changelog": "Resolved application-lock target detection by using NVDA's focused and foreground objects and remembering the last non-NVDA application.\nThe Macro Manager now refreshes the displayed lock target when reopened from an application.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789630901000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "NVDA-Makro-Manager",
+			"description": "Ein barrierefreier Tastaturmakro-Rekorder, Editor und Wiedergabemotor für NVDA.\nZu den Funktionen gehören sichere Aufzeichnung, ein Mehrereignis-Editor, benutzerdefinierte Tastenkürzel, Anwendungssperren und Geschwindigkeitssteuerung."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Gestor de macros do NVDA",
+			"description": "Um gravador, editor e motor de reprodução acessível de macros de teclado para o NVDA.\nInclui gravação segura, editor de vários eventos, atalhos personalizados, bloqueios de aplicação e controlos de velocidade."
+		},
+		{
+			"language": "es",
+			"displayName": "Administrador de macros de NVDA",
+			"description": "Un grabador, editor y motor de reproducción accesible de macros de teclado para NVDA.\nIncluye grabación segura, editor de varios eventos, atajos personalizados, bloqueos de aplicación y controles de velocidad."
+		},
+		{
+			"language": "tr",
+			"displayName": "NVDA Makro Yöneticisi",
+			"description": "NVDA için erişilebilir bir klavye makrosu kayıt, düzenleme ve oynatma motoru.\nGüvenli kayıt, çok olaylı düzenleyici, özel kısayollar, uygulama kilitleri ve hız denetimleri içerir."
+		}
+	]
+}
