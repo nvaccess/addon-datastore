@@ -1,0 +1,794 @@
+{
+	"addonId": "SiteMarker",
+	"displayName": "SiteMarker",
+	"URL": "https://github.com/chaichaimee/SiteMarker/releases/download/2026.10.0/SiteMarker-v2026.10.0.nvda-addon",
+	"description": "SiteMarker streamlines web navigation for NVDA users by bookmarking specific webpage elements for instant access. Key features include site and marker managers, customizable search scopes, and automatic element clicking for hard to reach buttons, saving time on complex pages.\n\nHot Keys:\nWindows+F12\nSingle Tap : Add or Edit Marker\nDouble Tap : open Site Manager\nTriple Tap : open Marker Manager",
+	"sha256": "bb200ed599128f04375eb0ca3734c62d6974b1d32b3519ba19878eff4eceeed3",
+	"addonVersionName": "2026.10.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 10,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/SiteMarker",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/SiteMarker",
+	"changelog": "Improved the backend marker search system and added new features: auto-trigger and custom shortcuts.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789468107000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker streamlines web navigation for NVDA users by bookmarking specific webpage elements for instant access. Key features include site and marker managers, customizable search scopes, and automatic element clicking for hard to reach buttons, saving time on complex pages.\n\nHot Keys:\nWindows+F12\nSingle Tap : Add or Edit Marker\nDouble Tap : open Site Manager\nTriple Tap : open Marker Manager"
+		},
+		{
+			"language": "ar",
+			"displayName": "SiteMarker",
+			"description": "يعمل SiteMarker على تبسيط تصفح الويب لمستخدمي NVDA من خلال حفظ عناصر معينة في صفحات الويب للوصول إليها فوراً. تتضمن الميزات الرئيسية مديرين للمواقع والعلامات، ونطاقات بحث قابلة للتخصيص، والنقر التلقائي على العناصر للأزرار التي يسهل الوصول إليها، مما يوفر الوقت في الصفحات المعقدة.\n\nاختصارات لوحة المفاتيح:\nWindows+F12\nنقرة واحدة: إضافة أو تعديل علامة\nنقرة مزدوجة: فتح مدير المواقع\nثلاث نقرات: فتح مدير العلامات"
+		},
+		{
+			"language": "de",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker vereinfacht die Webnavigation für NVDA-Benutzer, indem es bestimmte Webseitenelemente für den Sofortzugriff mit Lesezeichen versehen kann. Zu den Hauptfunktionen gehören Website- und Markierungsverwaltung, anpassbare Suchbereiche und das automatische Klicken auf schwer zugängliche Schaltflächen, was auf komplexen Seiten Zeit spart.\n\nTastenkombinationen:\nWindows+F12\nEinfach-Tippen: Markierung hinzufügen oder bearbeiten\nDoppeltippen: Website-Verwaltung öffnen\nDreifachtippen: Markierungsverwaltung öffnen"
+		},
+		{
+			"language": "id",
+			"displayName": "Penanda Situs",
+			"description": "Penanda Situs memperlancar navigasi web bagi pengguna NVDA dengan menandai elemen halaman web tertentu untuk akses instan. Fitur utamanya mencakup pengelola situs dan penanda, cakupan pencarian yang dapat disesuaikan, serta pengeklikan elemen otomatis untuk tombol yang sulit dijangkau, menghemat waktu pada halaman yang kompleks.\n\nTombol Pintas:\nWindows+F12\nKetukan Tunggal: Tambah atau Ubah Penanda\nKetukan Ganda: Buka Pengelola Situs\nKetukan Tiga Kali: Buka Pengelola Penanda"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "站点标记",
+			"description": "SiteMarker 通过为特定的网页元素添加书签以便即时访问，从而简化了 NVDA 用户的网页导航。核心功能包括站点和标记管理器、可自定义的搜索范围，以及针对难以点击的按钮的自动元素点击功能，从而在复杂页面上节省时间。\n\n热键：\nWindows+F12\n单击：添加或编辑标记\n双击：打开站点管理器\n三击：打开标记管理器"
+		},
+		{
+			"language": "fr",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker simplifie la navigation web pour les utilisateurs de NVDA en mémorisant des éléments de page web spécifiques pour un accès instantané. Les fonctionnalités clés incluent des gestionnaires de sites et de marqueurs, des portées de recherche personnalisables et le clic automatique sur les éléments pour les boutons difficiles à atteindre, ce qui fait gagner du temps sur les pages complexes.\n\nRaccourcis clavier :\nWindows+F12\nAppui simple : Ajouter ou modifier un marqueur\nDouble appui : Ouvrir le gestionnaire de sites\nTriple appui : Ouvrir le gestionnaire de marqueurs"
+		},
+		{
+			"language": "ru",
+			"displayName": "Закладки сайта",
+			"description": "SiteMarker упрощает навигацию по веб-страницам для пользователей NVDA, сохраняя определенные элементы веб-страниц в закладки для быстрого доступа. Основные функции включают в себя менеджеры сайтов и маркеров, настраиваемые области поиска и автоматический клик по элементам для труднодоступных кнопок, что экономит время на сложныx страницах.\n\nГорячие клавиши:\nWindows+F12\nОдиночное нажатие: добавить или изменить маркер\nДвойное нажатие: открыть менеджер сайтов\nТройное нажатие: открыть менеджер маркеров"
+		},
+		{
+			"language": "uk",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker спрощує навігацію в інтернеті для користувачів NVDA шляхом додавання закладки на визначені елементи вебсторінки для миттєвого доступу. Основні функції включають менеджери сайтів і закладок, налаштовувані області пошуку та автоматичне натискання елементів для важкодоступних кнопок, що економить час на складних сторінках.\n\nГарячі клавіші:\nWindows+F12\nОдинарне торкання: додати або змінити маркер\nПодвійне торкання: відкрити менеджер сайтів\nПотрійне торкання: відкрити менеджер маркерів"
+		},
+		{
+			"language": "it",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker memudahkan navigasi web bagi pengguna NVDA dengan menandai elemen halaman web tertentu untuk akses instan. Fitur utamanya mencakup pengelola situs dan penanda, cakupan pencarian yang dapat disesuaikan, dan pengeklikan elemen otomatis untuk tombol yang sulit dijangkau, sehingga menghemat waktu pada halaman yang rumit.\n\nTombol Pintas:\nWindows+F12\nKetuk Sekali: Tambah atau Edit Penanda\nKetuk Dua Kali: buka Pengelola Situs\nKetuk Tiga Kali: buka Pengelola Penanda"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "網站標記 (SiteMarker)",
+			"description": "SiteMarker 能透過將特定的網頁元素加入書籤以供隨時存取，為 NVDA 使用者簡化網頁導覽。主要功能包含網站與標記管理員、可自訂的搜尋範圍，以及針對難以點擊的按鈕自動點擊元素，藉此在複雜的網頁上節省時間。\n\n熱鍵：\nWindows+F12\n單擊：新增或編輯標記\n雙擊：開啟網站管理員\n三擊：開啟標記管理員"
+		},
+		{
+			"language": "hi",
+			"displayName": "साइटमार्कर",
+			"description": "साइटमार्कर विशिष्ट वेबपेज तत्वों को तुरंत एक्सेस के लिए बुकमार्क करके एनवीडीए (NVDA) उपयोगकर्ताओं के लिए वेब नेविगेशन को सरल बनाता है। मुख्य विशेषताओं में साइट और मार्कर मैनेजर, अनुकूलन योग्य खोज स्कोप, और कठिन बटनों तक आसानी से पहुँचने के लिए स्वचालित तत्व क्लिक करना शामिल है, जिससे जटिल पृष्ठों पर समय की बचत होती है।\n\nहॉट कीज़:\nविंडोज+F12\nसिंगल टैप: मार्कर जोड़ें या संपादित करें\nडबल टैप: साइट मैनेजर खोलें\nट्रिपल टैप: मार्कर मैनेजर खोलें"
+		},
+		{
+			"language": "es",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker facilita la navegación web para los usuarios de NVDA marcando elementos específicos de páginas web para un acceso instantáneo. Sus funciones clave incluyen administradores de sitios y marcadores, ámbitos de búsqueda personalizables y clics automáticos en elementos para botones difíciles de alcanzar, lo que ahorra tiempo en páginas complejas.\n\nTeclas rápidas:\nWindows+F12\nUn toque: Añadir o editar marcador\nDoble toque: Abrir administrador de sitios\nTriple toque: Abrir administrador de marcadores"
+		},
+		{
+			"language": "ja",
+			"displayName": "SiteMarker",
+			"description": "SiteMarkerは、特定のWebページ要素をブックマークして即座にアクセスできるようにすることで、NVDAユーザーのWebナビゲーションを効率化します。主な機能には、サイトおよびマーカーマネージャー、カスタマイズ可能な検索スコープ、アクセスしにくいボタンの自動要素クリックなどがあり、複雑なページでの時間を節約できます。\n\nホットキー：\nWindows+F12\nシングルタップ：マーカーの追加または編集\nダブルタップ：サイトマネージャーを開く\nトリプルタップ：マーカーマネージャーを開く"
+		},
+		{
+			"language": "th",
+			"displayName": "SiteMarker",
+			"description": "SiteMarker ช่วยให้การท่องเว็บของผู้ใช้ NVDA สะดวกยิ่งขึ้นด้วยการบุ๊กมาร์กองค์ประกอบเฉพาะบนหน้าเว็บเพื่อให้เข้าถึงได้ทันทัติ ฟีเจอร์หลักประกอบด้วยตัวจัดการเว็บไซต์และมาร์กเกอร์ ขอบเขตการค้นหาที่ปรับแต่งได้ และการคลิกองค์ประกอบอัตโนมัติสำหรับปุ่มที่เข้าถึงยาก ช่วยประหยัดเวลาบนหน้าเว็บที่ซับซ้อน\n\nคีย์ลัด:\nWindows+F12\nแตะครั้งเดียว: เพิ่มหรือแก้ไขมาร์กเกอร์\nแตะสองครั้ง: เปิดตัวจัดการเว็บไซต์\nแตะสามครั้ง: เปิดตัวจัดการมาร์กเกอร์"
+		},
+		{
+			"language": "ko",
+			"displayName": "사이트마커",
+			"description": "사이트마커는 특정 웹페이지 요소를 북마크하여 즉시 접근할 수 있도록 함으로써 NVDA 사용자의 웹 탐색을 간소화합니다. 주요 기능으로는 사이트 및 마커 관리자, 사용자 지정 가능한 검색 범위, 도달하기 어려운 버튼을 위한 자동 요소 클릭 등이 있으며, 복잡한 페이지에서 시간을 절약해 줍니다.\n\n단축키:\nWindows+F12\n한 번 탭: 마커 추가 또는 편집\n두 번 탭: 사이트 관리자 열기\n세 번 탭: 마커 관리자 열기"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "SiteMarker",
+			"description": "O SiteMarker simplifica a navegação na web para usuários do NVDA, marcando elementos específicos de páginas da web para acesso instantâneo. Os principais recursos incluem gerenciadores de sites e de marcadores, escopos de pesquisa personalizáveis e cliques automáticos em elementos para botões difíceis de alcançar, economizando tempo em páginas complexas.\n\nTeclas de Atalho:\nWindows+F12\nToque Único: Adicionar ou Editar Marcador\nToque Duplo: abrir Gerenciador de Sites\nToque Triplo: abrir Gerenciador de Marcadores"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/bb200ed599128f04375eb0ca3734c62d6974b1d32b3519ba19878eff4eceeed3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "bb200ed599128f04375eb0ca3734c62d6974b1d32b3519ba19878eff4eceeed3",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"json": 1,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 10,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 62
+					},
+					"highest_datetime": "2026-09-15 17:21:10",
+					"lowest_datetime": "2026-04-28 14:48:04",
+					"num_children": 110,
+					"type": "ZIP",
+					"uncompressed_size": 579941
+				},
+				"contenthash": "2aef46e29f99f841d1ecab93f7a9146e",
+				"filecondis": {
+					"dhash": "0000101d1c180000",
+					"raw_md5": "6fe9893d3088cf1578688d1c12703c57"
+				},
+				"first_submission_date": 1789468112,
+				"last_analysis_date": 1789468112,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260915",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260913",
+						"engine_version": "6.820",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260914",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260915",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260915",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260915",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260914",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260915",
+						"engine_version": "260915-04",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260915",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260915",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260903",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260914",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260914",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260914",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260915",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260915",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260910",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260915",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260915",
+						"engine_version": "7.0.75.2070",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260915",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260910",
+						"engine_version": "4.0.288",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260915",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260915",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260915",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260915",
+						"engine_version": "GD:27.46002AVA:64.31904",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260915",
+						"engine_version": "1789459251",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260915",
+						"engine_version": "1.0.254.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260915",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260914",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260915",
+						"engine_version": "14.78.60800",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260912",
+						"engine_version": "14.78.60781",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260915",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260914",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260915",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260915",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260915",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260915",
+						"engine_version": "1.2.0.16123",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260915",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260915",
+						"engine_version": "1.26080",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260915",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260915",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260914",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260915",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260911",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260915",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260914",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260913",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260914",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260915",
+						"engine_version": "2026-09-15.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260915",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260914",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260915",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260915",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260915",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260915",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260914",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260915",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260915",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260914",
+						"engine_version": "9.5.1293",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260915",
+						"engine_version": "38959",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260915",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260914",
+						"engine_version": "2.0.0.5689",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260914",
+						"engine_version": "6.27-118568655",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260915",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260914",
+						"engine_version": "34e8452:34e8452:2c17d29:2c17d29",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260915",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 8,
+					"undetected": 66
+				},
+				"last_modification_date": 1789468193,
+				"last_submission_date": 1789468112,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "080746fec1bf1a1ba54e4cbb50227bb5",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "6ef8189f7753297203d5adc4bff2f0d66f575a26",
+				"sha256": "bb200ed599128f04375eb0ca3734c62d6974b1d32b3519ba19878eff4eceeed3",
+				"size": 197192,
+				"ssdeep": "3072:RMlL+EMCKDQtzwBPgJYEOTjp1pGujVzAmpcGHze/nqJi6PTyWPa4U4f1C03:RMljiQ5KP3ECj/pLFpcYagHPTrdfV",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T14A140215462FB48BE44697FE3AC7061AF629400DD26E9A4F0B0BA5C0DC8D38F0F5F64A",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10488"
+}
