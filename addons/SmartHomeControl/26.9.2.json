@@ -35,5 +35,56 @@
 			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimentell) direkt aus NVDA steuern",
 			"changelog": "- Wasserleck-Sensoren am selben Meross-Hub werden wieder auseinandergehalten. Zwei oder mehr davon - MS400, MS405, in beliebiger Kombination - teilten sich einen Zustand, dadurch wiederholte sich ein Alarm bei jeder Abfrage, während ein anderer Sensor im selben Atemzug als trocken gemeldet wurde. Ein einzelner Sensor war nie betroffen.\n- Zugangsdaten gehen nicht mehr verloren, wenn zwei Vorgänge gleichzeitig speichern, und ein Wert, der sich auf diesem Rechner nicht entschlüsseln lässt, bleibt stehen, statt mit nichts überschrieben zu werden. Dieser Fall tritt auf, wenn der Add-on-Ordner an einen anderen Rechner mitgenommen wird.\n- Die mitgelieferten Bibliotheken sind wieder aktuell. Damit sind drei Sicherheitslücken in urllib3 geschlossen - zwei davon können NVDA über einen schlecht antwortenden Server zum Hängen bringen oder den Speicher füllen."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4010a4f31564fd22df8575a35569dd7bed1ec1b465137ec527e2cf90121b6d2d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4010a4f31564fd22df8575a35569dd7bed1ec1b465137ec527e2cf90121b6d2d",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: aiohappyeyeballs (whl)\nVersion: 2.7.1\nDescription: Happy Eyeballs for asyncio\n\nThe inspected package contains standard legitimate library code and dependencies (including aiohappyeyeballs, aiohttp, urllib3, requests, paho-mqtt, pycryptodome, and smart home control add-on helper modules) with no malicious payloads, unauthorized data exfiltration, or backdoors.",
+						"category": "code_insight",
+						"id": "4010a4f31564fd22df8575a35569dd7bed1ec1b465137ec527e2cf90121b6d2d-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0c00",
+					"raw_md5": "a95bda87b2349e5146c8852246361648"
+				},
+				"first_submission_date": 1789903565,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789903574,
+				"last_submission_date": 1789903565,
+				"md5": "1f13b189df414fc0456493c501961a9c",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c7bc2ff9c0c2e0c5b0899164deb171ffc375dacd",
+				"sha256": "4010a4f31564fd22df8575a35569dd7bed1ec1b465137ec527e2cf90121b6d2d",
+				"size": 5819619,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
