@@ -1,0 +1,39 @@
+{
+	"addonId": "SmartHomeControl",
+	"displayName": "Smart Home Control",
+	"URL": "https://github.com/BlindByte06/SmartHomeControl/releases/download/v26.9.2/SmartHomeControl-26.9.2.nvda-addon",
+	"description": "Control smart home devices (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimental) directly from NVDA",
+	"sha256": "4010a4f31564fd22df8575a35569dd7bed1ec1b465137ec527e2cf90121b6d2d",
+	"addonVersionName": "26.9.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 9,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Philipp Hasel",
+	"sourceURL": "https://github.com/BlindByte06/SmartHomeControl",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BlindByte06/SmartHomeControl",
+	"changelog": "- Leak sensors on the same Meross hub are told apart again. Two or more of them - MS400, MS405, in any combination - shared one state, so an alarm repeated itself on every poll while another sensor was announced as dry in the same breath. A single sensor was never affected.\n- Credentials no longer go missing when two things save at once, and one that cannot be decrypted on this machine is left as it is instead of being overwritten with nothing. That case comes up when the add-on folder is carried to another computer.\n- The bundled libraries are up to date again, which closes three security issues in urllib3 - two of them able to make NVDA hang or run out of memory through a badly answering server.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789903561000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Smart Home Control",
+			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic - Cozytouch experimentell) direkt aus NVDA steuern",
+			"changelog": "- Wasserleck-Sensoren am selben Meross-Hub werden wieder auseinandergehalten. Zwei oder mehr davon - MS400, MS405, in beliebiger Kombination - teilten sich einen Zustand, dadurch wiederholte sich ein Alarm bei jeder Abfrage, während ein anderer Sensor im selben Atemzug als trocken gemeldet wurde. Ein einzelner Sensor war nie betroffen.\n- Zugangsdaten gehen nicht mehr verloren, wenn zwei Vorgänge gleichzeitig speichern, und ein Wert, der sich auf diesem Rechner nicht entschlüsseln lässt, bleibt stehen, statt mit nichts überschrieben zu werden. Dieser Fall tritt auf, wenn der Add-on-Ordner an einen anderen Rechner mitgenommen wird.\n- Die mitgelieferten Bibliotheken sind wieder aktuell. Damit sind drei Sicherheitslücken in urllib3 geschlossen - zwei davon können NVDA über einen schlecht antwortenden Server zum Hängen bringen oder den Speicher füllen."
+		}
+	]
+}
