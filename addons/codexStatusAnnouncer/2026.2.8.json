@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.8/chatGPTDesktopAccess-2026.2.8.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "e3fc63b780586f66db20738c9d4e9409d9ecda21a51cca1f5f9009cc228ff1b1",
+	"addonVersionName": "2026.2.8",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 8
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Uses NVDA's supported executable-alias API so Codex shares the ChatGPT application module without a redundant shim.\n* Leaves the microphone toggle unassigned by default so NVDA+Alt+M remains available for math interaction.\n* Reorganizes long README material into shorter, translator-friendly sections and corrects the Chat History instructions.\n* Combines the duplicate usage and credit links into one clear Open usage and credits action.\n* Rechecks the native mode after the mode selector closes so Chat History loads the selected ChatGPT or Codex list.\n* Makes one NVDA+Alt+O press attach from anywhere in a conversation, detect the mode, and open History automatically.\n* Reads Control+1 through Control+0 from a bounded tail so recent-message review remains responsive in large chats.\n* Keeps recent-message review on the visible conversation branch and serves it from a cache instead of rescanning Chromium on every shortcut.\n* Preserves browse-mode arrow navigation from the prompt while background conversation updates arrive.\n* Corrects stale activity-card focus on return to an active browse-mode conversation without moving Windows keyboard focus.\n* Cancels delayed focus actions and rejects orphaned Chromium events after ChatGPT closes.\n* Restores NVDA focus, speech, Braille, and the inactive cue after Alt+F4, using another available application if the preceding window also closed.\n* Prevents deleting an unsent prompt from starting Processing feedback.\n* Adds speech and Braille feedback for selected Add files and more menu items.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789869534000,
+	"translations": []
+}
