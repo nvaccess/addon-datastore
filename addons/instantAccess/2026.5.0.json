@@ -1,0 +1,51 @@
+{
+	"addonId": "instantAccess",
+	"displayName": "instant Access",
+	"URL": "https://github.com/kamalyaser31/instantAccess/releases/download/v2026.5/instantAccess-2026.5.nvda-addon",
+	"description": "A powerful productivity tool to launch websites, files, folders, and programs quickly using a dedicated layer.\n\tFeatures include background execution, verbosity levels, command line arguments, and settings import/export.",
+	"sha256": "c783a1ce5959f88d1ae501d7872c09c14d158b8ac3476e1589f19208d07c3980",
+	"addonVersionName": "2026.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/instantAccess",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/instantAccess",
+	"changelog": "\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789969039000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "instant Access",
+			"description": "A powerful productivity tool to launch websites, files, folders, and programs quickly using a dedicated layer.\n\tFeatures include background execution, verbosity levels, command line arguments, and settings import/export.",
+			"changelog": "\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
+		},
+		{
+			"language": "ar",
+			"displayName": "الوصول الفوري",
+			"description": "أداة إنتاجية قوية لتشغيل مواقع الويب، والملفات، والمجلدات، والبرامج بسرعة باستخدام طبقة مخصصة.\nتتضمن الميزات: التنفيذ في الخلفية، ومستويات الإسهاب، ووسائط سطر الأوامر، واستيراد وتصدير الإعدادات.",
+			"changelog": "\n- الإصدار 2026.5:\n  - تكرار العناصر: استنساخ العناصر بكافة إجراءاتها وإعداداتها بسهولة عبر زر تكرار جديد.\n  - اختبار الإجراءات: تجربة الإجراءات منفردة مع مهلة إعداد تلقائية مدتها 3 ثوانٍ لإجراءات الكتابة وضغط المفاتيح.\n  - إيقاف التنفيذ عند الخطأ: خيار لإيقاف بقية الإجراءات في السلسلة فور تعثر أحدها.\n  - تكامل النظام: دعم أوامر PATH وسكربتات الدفعات (.bat/.cmd) وبروتوكولات الروابط المخصصة (مثل mailto: و ms-settings:).\n  - سهولة التنقل بلوحة المفاتيح: Enter للتحرير، Delete للحذف مع التأكيد، و Ctrl+Up/Down لإعادة ترتيب الإجراءات.\n  - الأمان والتعافي: حفظ ذري للتهيئة، نسخ احتياطي تلقائي (config.json.bak)، ومطالبة باستعادة النسخة عند تلف الملف.\n  - تحديث أدوات البناء: التوافق التام مع معايير قالب addonTemplate الرسمي (PEP 735، uv، prek.toml).\n- الإصدار 2026.4:\n  - ميزة جديدة: محاكاة ضغطات مفاتيح متسلسلة (ماكرو) تتيح للمستخدمين المحترفين تنفيذ اختصارات لوحة المفاتيح بمهل زمنية مخصصة.\n  - جودة الكود: إعادة هيكلة الكود الأساسي لتحسين جودته ومنع التكرار.\n  - التوثيق: تحديث دليل المستخدم باللغتين العربية والإنجليزية لتوثيق الميزة الجديدة.\n- الإصدار 2026.3: إصدار رسمي محدث.\n  - إصلاح التحميل: حل مشكلة حرجة منعت تحميل الإضافة في بعض بيئات NVDA.\n  - التوثيق: تحديث دليل المستخدم العربي بالكامل لتوفير توجيهات أوضح.\n  - الاستقرار العام: تحسينات داخلية لتوفير أداء أكثر سلاسة."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "instantAccess",
+			"description": "一款高效的快捷启动工具，可通过专用快捷键层快速打开网站、文件和文件夹，或启动程序。\n\t支持后台运行、反馈详细程度、命令行参数以及设置导入和导出。",
+			"changelog": "\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
+		}
+	]
+}
