@@ -1,0 +1,32 @@
+{
+	"addonId": "ClassicSpeech",
+	"displayName": "ClassicSpeech speech, Web / Browse Mode, Voice Profile, and Speech and Sound Scheme tools",
+	"URL": "https://github.com/joshknnd1982/classicspeech-nvda/releases/download/v1.14/ClassicSpeech-1.14.nvda-addon",
+	"description": "Configurable NVDA speech verbosity, Web / Browse Mode tools, conservative processing, Voice Profiles including Mouse and document formatting voices, and JAWS-style Speech and Sound Schemes.",
+	"sha256": "f55fef8713348ecdb83b88fe35293dd21698b2982c9f6563ff999e615118d219",
+	"addonVersionName": "1.14",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 14,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Authors: Tim, Calli, Josh Kennedy",
+	"sourceURL": "https://github.com/joshknnd1982/classicspeech-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/joshknnd1982/classicspeech-nvda",
+	"changelog": "* **Give ClassicSpeech messages priority over NVDA speech** is a new option on the Misc page of General Settings. When it is checked, the messages ClassicSpeech speaks itself, such as the speech hook loaded message, Page ready and page summaries, are spoken right away, and NVDA's own speech can't cut them off. NVDA's speech follows them. Pressing a key still stops a message, as it stops any speech. The option is off by default.\n* Speech and Sound Schemes can replace NVDA's own sounds. The new **NVDA sounds** category lists every sound NVDA plays from its waves folder, named after the event it reports: switching to browse mode or focus mode, auto-suggestions, spelling errors, a logged error, the screen curtain, Remote Access, and NVDA starting and exiting. Give one a WAV file, and NVDA plays yours instead while that scheme is active. Remove it, and NVDA's own sound comes back.\n* Your sounds are kept in the scheme's folder, in `%APPDATA%\\nvda\\ClassicSpeech\\Schemes`, and NVDA's own files are never changed. With no NVDA sounds in the active scheme, NVDA plays its sounds as it always has.\n* NVDA plays its start sound before add-ons load. While your scheme has a sound for **NVDA starts**, ClassicSpeech turns off NVDA's **Play sounds when starting or exiting NVDA** option and plays the start and exit sounds itself. Removing that sound, or disabling, removing or resetting ClassicSpeech, turns the option back on.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790002634000,
+	"translations": []
+}
