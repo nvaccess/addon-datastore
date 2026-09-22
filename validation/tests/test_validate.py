@@ -2,16 +2,16 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
+import json
+import os
+import tempfile
+import unittest
 from collections.abc import Callable
 from dataclasses import dataclass
-import unittest
 from unittest.mock import NonCallableMock, patch
-import os
-import json
-import tempfile
-from jsonschema import exceptions
-from _validate import validate, addonManifest
 
+from _validate import addonManifest, validate
+from jsonschema import exceptions
 
 VALID_ADDON_ID = "fake"
 

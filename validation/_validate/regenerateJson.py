@@ -5,12 +5,12 @@
 import argparse
 import glob
 import json
-from urllib.request import urlretrieve
 from dataclasses import asdict
+from urllib.request import urlretrieve
 
+from .createJson import createDataclassMatchingJsonSchema
 from .manifestLoader import getAddonManifest
 from .validate import checkSha256
-from .createJson import createDataclassMatchingJsonSchema
 
 
 def regenerateJsonFile(filePath: str, errorFilePath: str | None) -> None:

@@ -6,7 +6,7 @@ from io import StringIO, TextIOBase
 from typing import Any, cast
 
 from configobj import ConfigObj
-from configobj.validate import Validator, ValidateError
+from configobj.validate import ValidateError, Validator
 
 from .majorMinorPatch import MajorMinorPatch
 
@@ -120,4 +120,4 @@ def validate_apiVersionString(value: str | Any) -> ApiVersionT:
 		versionParsed = MajorMinorPatch.getFromStr(value)
 		return (versionParsed.major, versionParsed.minor, versionParsed.patch)
 	except ValueError as e:
-		raise ValidateError('"{}" is not a valid API Version string: {}'.format(value, e))
+		raise ValidateError(f'"{value}" is not a valid API Version string: {e}')
