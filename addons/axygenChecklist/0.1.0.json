@@ -1,0 +1,39 @@
+{
+	"addonId": "axygenChecklist",
+	"displayName": "Axygen Checklist",
+	"URL": "https://github.com/ruslan-rv-ua/axygen-checklist/releases/download/v0.1.0/axygenChecklist-0.1.0.nvda-addon",
+	"description": "Walk a test checklist with global commands while the system focus stays in the application under test.\nItems are marked passed, failed or skipped, commented and read back by speech, without ever leaving the window being tested.\nChecklists are plain JSON files that record the result of the run.",
+	"sha256": "797a1f2277f3d1942f9c67c868024080afa88e6f4cbfd34eff752ca0d8f393ba",
+	"addonVersionName": "0.1.0",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ruslan Iskov",
+	"sourceURL": "https://github.com/ruslan-rv-ua/axygen-checklist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ruslan-rv-ua/axygen-checklist",
+	"changelog": "First release: the core of the checklist walk-through. Open a JSON checklist, move through it and mark items with global hotkeys, comment on items, copy fragments, reset a section or the run, resume after a restart, and manage everything from the add-on window.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790048443000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Axygen Checklist",
+			"description": "Проходить чекліст тестування глобальними командами, лишаючи системний фокус у тестованому застосунку.\nПункти позначаються як пройдені, провалені чи пропущені, коментуються та озвучуються — не полишаючи вікна, яке перевіряють.\nЧеклісти є звичайними файлами JSON, що зберігають результат прогону.",
+			"changelog": "Перший реліз: ядро проходження чекліста. Відкрийте чекліст у JSON, рухайтеся по ньому й позначайте пункти глобальними командами, коментуйте пункти, копіюйте фрагменти, скидайте розділ чи прогін, продовжуйте після перезапуску й керуйте всім із вікна додатка."
+		}
+	]
+}
