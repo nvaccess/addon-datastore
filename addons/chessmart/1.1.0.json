@@ -1,0 +1,45 @@
+{
+	"addonId": "chessmart",
+	"displayName": "Chessmart",
+	"URL": "https://github.com/joaovictorf01/chessmart/releases/download/v1.1.0/chessmart-1.1.0.nvda-addon",
+	"description": "An accessible chessboard and tactics trainer for NVDA. Play against Stockfish or a friend, replay PGN files, and train tactics from the Lichess puzzle database with a rating that follows you.",
+	"sha256": "829b027c1f73c219139d0be0c426126694836949f34711b127cb466ac6d6bbd3",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "João Victor  Mendes",
+	"sourceURL": "https://github.com/joaovictorf01/chessmart",
+	"license": "GPL v2",
+	"homepage": "https://github.com/joaovictorf01/chessmart",
+	"changelog": "1.1.0: Endgames: mate drills (queen, rook, two rooks, two bishops, and bishop and knight) against the engine at full strength, and nine lessons that follow the endgame course order (opposition, king and pawn, piece against pawn, pawns on both sides, rook and pawn against rook, queen against pawn, bishop and rook pawn, and the practical rook endings: short side, Vancura, back rank, rule of five, rook behind the passed pawn): each position asks win, draw or loss, tells the rule and is played out with the Syzygy tablebase as judge; tablebases up to 5 pieces downloaded from the Lichess mirror; a log of every attempt. 1.0.2: Escape asks before leaving a game in progress and really closes the board (engine, clock and online game included); an untouched puzzle no longer counts as a failure; online board fixes (start, server clock, draw offers, resignation, refused moves, reconnect); challenge levels and puzzle themes with real names and descriptions. 1.0.1: the complete puzzle database is downloaded in parts, with each part verified as it arrives and retried on its own if the connection drops. 1.0.0: first public release of the tactics trainer: Lichess puzzle database downloaded on demand (light or complete) and updated monthly, Glicko-2 tactics rating with adaptive difficulty, training plans by theme, configurable move notation (descriptive, SAN, UCI, literate, NATO, anna) and Brazilian Portuguese translation.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790040252000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Chessmart",
+			"description": "Un tablero de ajedrez accesible y un entrenador de táctica para NVDA. Juega contra Stockfish o contra un amigo, reproduce archivos PGN y entrena táctica con la base de problemas de Lichess, con un rating que te acompaña.",
+			"changelog": "1.1.0: Endgames: mate drills (queen, rook, two rooks, two bishops, and bishop and knight) against the engine at full strength, and nine lessons that follow the endgame course order (opposition, king and pawn, piece against pawn, pawns on both sides, rook and pawn against rook, queen against pawn, bishop and rook pawn, and the practical rook endings: short side, Vancura, back rank, rule of five, rook behind the passed pawn): each position asks win, draw or loss, tells the rule and is played out with the Syzygy tablebase as judge; tablebases up to 5 pieces downloaded from the Lichess mirror; a log of every attempt. 1.0.2: Escape asks before leaving a game in progress and really closes the board (engine, clock and online game included); an untouched puzzle no longer counts as a failure; online board fixes (start, server clock, draw offers, resignation, refused moves, reconnect); challenge levels and puzzle themes with real names and descriptions. 1.0.1: the complete puzzle database is downloaded in parts, with each part verified as it arrives and retried on its own if the connection drops. 1.0.0: first public release of the tactics trainer: Lichess puzzle database downloaded on demand (light or complete) and updated monthly, Glicko-2 tactics rating with adaptive difficulty, training plans by theme, configurable move notation (descriptive, SAN, UCI, literate, NATO, anna) and Brazilian Portuguese translation."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Chessmart",
+			"description": "Um tabuleiro de xadrez acessível e treinador de táticas para o NVDA. Jogue contra o Stockfish ou um amigo, reproduza arquivos PGN e treine táticas com a base de puzzles do Lichess, com um rating que acompanha você.",
+			"changelog": "1.1.0: Endgames: mate drills (queen, rook, two rooks, two bishops, and bishop and knight) against the engine at full strength, and nine lessons that follow the endgame course order (opposition, king and pawn, piece against pawn, pawns on both sides, rook and pawn against rook, queen against pawn, bishop and rook pawn, and the practical rook endings: short side, Vancura, back rank, rule of five, rook behind the passed pawn): each position asks win, draw or loss, tells the rule and is played out with the Syzygy tablebase as judge; tablebases up to 5 pieces downloaded from the Lichess mirror; a log of every attempt. 1.0.2: Escape asks before leaving a game in progress and really closes the board (engine, clock and online game included); an untouched puzzle no longer counts as a failure; online board fixes (start, server clock, draw offers, resignation, refused moves, reconnect); challenge levels and puzzle themes with real names and descriptions. 1.0.1: the complete puzzle database is downloaded in parts, with each part verified as it arrives and retried on its own if the connection drops. 1.0.0: first public release of the tactics trainer: Lichess puzzle database downloaded on demand (light or complete) and updated monthly, Glicko-2 tactics rating with adaptive difficulty, training plans by theme, configurable move notation (descriptive, SAN, UCI, literate, NATO, anna) and Brazilian Portuguese translation."
+		}
+	]
+}
