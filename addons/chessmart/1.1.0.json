@@ -41,5 +41,47 @@
 			"description": "Um tabuleiro de xadrez acessível e treinador de táticas para o NVDA. Jogue contra o Stockfish ou um amigo, reproduza arquivos PGN e treine táticas com a base de puzzles do Lichess, com um rating que acompanha você.",
 			"changelog": "1.1.0: Endgames: mate drills (queen, rook, two rooks, two bishops, and bishop and knight) against the engine at full strength, and nine lessons that follow the endgame course order (opposition, king and pawn, piece against pawn, pawns on both sides, rook and pawn against rook, queen against pawn, bishop and rook pawn, and the practical rook endings: short side, Vancura, back rank, rule of five, rook behind the passed pawn): each position asks win, draw or loss, tells the rule and is played out with the Syzygy tablebase as judge; tablebases up to 5 pieces downloaded from the Lichess mirror; a log of every attempt. 1.0.2: Escape asks before leaving a game in progress and really closes the board (engine, clock and online game included); an untouched puzzle no longer counts as a failure; online board fixes (start, server clock, draw offers, resignation, refused moves, reconnect); challenge levels and puzzle themes with real names and descriptions. 1.0.1: the complete puzzle database is downloaded in parts, with each part verified as it arrives and retried on its own if the connection drops. 1.0.0: first public release of the tactics trainer: Lichess puzzle database downloaded on demand (light or complete) and updated monthly, Glicko-2 tactics rating with adaptive difficulty, training plans by theme, configurable move notation (descriptive, SAN, UCI, literate, NATO, anna) and Brazilian Portuguese translation."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/829b027c1f73c219139d0be0c426126694836949f34711b127cb466ac6d6bbd3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "829b027c1f73c219139d0be0c426126694836949f34711b127cb466ac6d6bbd3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "740a733ba0257854d69a93a1206366d7"
+				},
+				"first_submission_date": 1790040257,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790040264,
+				"last_submission_date": 1790040257,
+				"md5": "30c3d563e8da5b29fd0577e1a161bda2",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2a47715eb8158d387a2ba42dadf2adaca47f5beb",
+				"sha256": "829b027c1f73c219139d0be0c426126694836949f34711b127cb466ac6d6bbd3",
+				"size": 37010209,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
