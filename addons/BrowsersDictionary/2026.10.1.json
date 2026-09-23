@@ -1,0 +1,793 @@
+{
+	"addonId": "BrowsersDictionary",
+	"displayName": "BrowserDictionary",
+	"URL": "https://github.com/chaichaimee/BrowsersDictionary/releases/download/2026.10.1/BrowsersDictionary-v2026.10.1.nvda-addon",
+	"description": "Customize NVDA speech per website with Browsers Dictionary. Features live URL tracking, text and regex replacements by page or domain, JSON file import, and regex safety protections. Automatically substitutes spoken text in real time to deliver accurate, seamless web reading.\n\nHot Key:\nALT+Windows+B\nSingle Tap : Open Browsers Dictionary settings\nDouble Tap : Add new site\nTriple Tab : edit Site",
+	"sha256": "9d8cabee1de6ff4fd8979622ed84c38624384742440db9476f1c8bc273e23c4c",
+	"addonVersionName": "2026.10.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 10,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 4,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/BrowsersDictionary",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/BrowsersDictionary",
+	"changelog": "Fixed NVDA freezing when browsing websites or using File Explorer. URL detection now runs in the background without blocking speech.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789614615000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "BrowserDictionary",
+			"description": "Customize NVDA speech per website with Browsers Dictionary. Features live URL tracking, text and regex replacements by page or domain, JSON file import, and regex safety protections. Automatically substitutes spoken text in real time to deliver accurate, seamless web reading.\n\nHot Key:\nALT+Windows+B\nSingle Tap : Open Browsers Dictionary settings\nDouble Tap : Add new site\nTriple Tab : edit Site"
+		},
+		{
+			"language": "ar",
+			"displayName": "قاموس المتصفح",
+			"description": "تخصيص كلام NVDA لكل موقع إلكتروني باستخدام قاموس المتصفح. يتضمن تتبعاً مباشراً لعناوين الرابط، واستبدالات للنصوص والتعبيرات المنتظمة حسب الصفحة أو النطاق، واستيراد ملفات JSON، وحماية أمان التعبيرات المنتظمة. يقوم تلقائياً باستبدال النص المنطوق في الوقت الفعلي لتوفير قراءة دقيقة وسلسة للويب.\n\nمفتاح الاختصار:\nALT+Windows+B\nنقرة واحدة: فتح إعدادات قاموس المتصفح\nنقرة مزدوجة: إضافة موقع جديد\nثلاث نقرات: تحرير الموقع"
+		},
+		{
+			"language": "de",
+			"displayName": "BrowserDictionary",
+			"description": "Passen Sie die NVDA-Sprache für jede Website mit BrowserDictionary an. Bietet Live-URL-Verfolgung, Text- und Regex-Ersetzungen nach Seite oder Domain, JSON-Dateimport und Regex-Sicherheitsschutz. Ersetzt automatisch gesprochenes Material in Echtzeit für ein präzises und nahtloses Web-Lesen.\n\nTastenkombination:\nALT+Windows+B\nEinfach tippen: BrowserDictionary-Einstellungen öffnen\nDoppelt tippen: Neue Website hinzufügen\nDreifach tippen: Website bearbeiten"
+		},
+		{
+			"language": "id",
+			"displayName": "Kamus Peramban",
+			"description": "Sesuaikan ucapan NVDA per situs web dengan Kamus Peramban. Dilengkapi pelacakan URL langsung, penggantian teks dan regex berdasarkan halaman atau domain, impor berkas JSON, dan perlindungan keamanan regex. Secara otomatis mengganti teks yang diucapkan secara waktu nyata untuk memberikan pembacaan web yang akurat dan mulus.\n\nTombol Pintas:\nALT+Windows+B\nKetuk Sekali: Buka pengaturan Kamus Peramban\nKetuk Dua Kali: Tambah situs baru\nKetuk Tiga Kali: Edit situs"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "浏览器词典",
+			"description": "使用“浏览器词典”（Browsers Dictionary）针对不同网站定制 NVDA 语音。支持实时 URL 跟踪、按页面或域进行文本和正则表达式替换、JSON 文件导入以及正则安全保护。自动实时替换朗读文本，带来准确、无缝的网页阅读体验。\n\n热键：\nALT+Windows+B\n单击：打开“浏览器词典”设置\n双击：添加新网站\n三击：编辑网站"
+		},
+		{
+			"language": "fr",
+			"displayName": "Dictionnaire pour navigateur",
+			"description": "Personnalisez la synthèse vocale de NVDA pour chaque site web avec le dictionnaire pour navigateurs. Comprend le suivi des URL en direct, des remplacements de texte et d'expressions régulières par page ou par domaine, l'importation de fichiers JSON et des protections de sécurité pour les expressions régulières. Substitue automatiquement le texte prononcé en temps réel pour offrir une lecture Web précise et fluide.\n\nTouche de raccourci :\nALT+Windows+B\nUne seule touche : Ouvrir les paramètres du dictionnaire pour navigateurs\nDouble touche : Ajouter un nouveau site\nTriple touche : Modifier le site"
+		},
+		{
+			"language": "ru",
+			"displayName": "Словарь браузера",
+			"description": "Настройте речь NVDA для каждого веб-сайта с помощью словаря браузеров. Функции включают отслеживание URL в реальном времени, замену текста и регулярных выражений для страницы или домена, импорт JSON-файлов и защиту регулярных выражений. Автоматически заменяет произносимый текст в реальном времени для обеспечения точного и плавного чтения веб-страниц.\n\nГорячая клавиша:\nALT+Windows+B\nОдиночное касание: открыть настройки словаря браузеров\nДвойное касание: добавить новый сайт\nТройное касание: изменить сайт"
+		},
+		{
+			"language": "uk",
+			"displayName": "Словник для браузера",
+			"description": "Налаштовуйте мовлення NVDA для кожного вебсайту за допомогою Словника для браузерів. Має функцію відстеження URL-адрес у реальному часі, заміну тексту та регулярних виразів для сторінки чи домена, імпорт файлів JSON і захист регулярними виразами. Автоматично замінює вимовлений текст у реальному часі для точного та плавного читання вебсторінок.\n\nГаряча клавіша:\nALT+Windows+B\nОдинарне торкання: Відкрити налаштування Словника для браузерів\nПодвійне торкання: Додати новий сайт\nПотрійне торкання: Редагувати сайт"
+		},
+		{
+			"language": "it",
+			"displayName": "תילון דפדפן",
+			"description": "התאם אישית את דיבור NVDA לכל אתר באמצעות תילון דפדפן. כולל מעקב כתובת אתר פעיל, החלפות טקסט וביטויים רגולריים לפי עמוד או דומיין, ייבוא קובץ JSON והגנות בטיחות לביטויים רגולריים. מחליף אוטומטית טקסט מדול בזמן אמת כדי לספק קריאת אינטרנט מדויקת וחלקה.\n\nמקש חם:\nALT+חלונות+B\nהקשה בודדת: פתח את הגדרות תילון דפדפן\nהקשה כפולה: הוסף אתר חדש\nהקשה משולשת: ערוך אתר"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "瀏覽器辭典",
+			"description": "透過瀏覽器辭典依網站自訂 NVDA 語音。具備即時網址追蹤、依頁面或網域進行文字與正規表達式替換、JSON 檔案匯入以及正規表達式安全防護。自動即時替換朗讀文字，提供準確、流暢的網頁閱讀體驗。\n\n熱鍵：\nALT+Windows+B\n單擊：開啟瀏覽器辭典設定\n雙擊：新增網站\n三擊：編輯網站"
+		},
+		{
+			"language": "hi",
+			"displayName": "ब्राउज़र डिक्शनरी",
+			"description": "ब्राउज़र्स डिक्शनरी के साथ प्रत्येक वेबसाइट के लिए NVDA स्पीच को कस्टमाइज़ करें। इसमें लाइव URL ट्रैकिंग, पेज या डोमेन द्वारा टेक्स्ट और रेगेक्स रिप्लेसमेंट, JSON फ़ाइल आयात, और रेगेक्स सुरक्षा सुरक्षाएँ शामिल हैं। सटीक और निर्बाध वेब रीडिंग प्रदान करने के लिए वास्तविक समय में बोले गए टेक्स्ट को स्वचालित रूप से बदलता है।\n\nहॉट कुंजी:\nALT+Windows+B\nसिंगल टैप: ब्राउज़र्स डिक्शनरी सेटिंग्स खोलें\nडबल टैप: नई साइट जोड़ें\nट्रिपल टैप: साइट संपादित करें"
+		},
+		{
+			"language": "es",
+			"displayName": "Diccionario del navegador",
+			"description": "Personaliza la voz de NVDA por sitio web con el diccionario de navegadores. Cuenta con seguimiento de URL en vivo, reemplazos de texto y expresiones regulares por página o dominio, importación de archivos JSON y protecciones de seguridad para expresiones regulares. Sustituye automáticamente el texto hablado en tiempo real para ofrecer una lectura web precisa y fluida.\n\nTecla rápida:\nALT+Windows+B\nUn toque: Abrir la configuración del diccionario de navegadores\nDoble toque: Agregar nuevo sitio\nTriple toque: Editar sitio"
+		},
+		{
+			"language": "ja",
+			"displayName": "ブラウザー辞書",
+			"description": "ブラウザー辞書を使用して、ウェブサイトごとにNVDAの読み上げをカスタマイズします。ライブURL追跡、ページまたはドメインごとのテキストおよび正規表現の置換、JSONファイルのインポート、正規表現の安全性保護機能を備えています。読み上げテキストをリアルタイムで自動的に置き換え、正確でシームレスなウェブ読み上げを実現します。\n\nホットキー:\nALT+Windows+B\n1回タップ: ブラウザー辞書の設定を開く\n2回タップ: 新しいサイトを追加\n3回タップ: サイトを編集"
+		},
+		{
+			"language": "th",
+			"displayName": "เบราว์เซอร์ดิกชันนารี",
+			"description": "ปรับแต่งเสียงพูดของ NVDA ตามเว็บไซต์ด้วย Browsers Dictionary มีฟีเจอร์ติดตาม URL แบบสด, การแทนที่ข้อความและนิพจน์ทั่วไป (Regex) ตามหน้าหรือโดเมน, การนำเข้าไฟล์ JSON และระบบป้องกันความปลอดภัยของ Regex แทนที่ข้อความที่พูดแบบเรียลไทม์โดยอัตโนมัติเพื่อให้การอ่านเว็บเป็นไปอย่างแม่นยำและราบรื่น\n\nคีย์ลัด:\nALT+Windows+B\nแตะครั้งเดียว: เปิดการตั้งค่า Browsers Dictionary\nแตะสองครั้ง: เพิ่มเว็บไซต์ใหม่\nแตะสามครั้ง: แก้ไขเว็บไซต์"
+		},
+		{
+			"language": "ko",
+			"displayName": "브라우저 사전",
+			"description": "브라우저 사전을 사용하여 웹사이트별로 NVDA 음성을 맞춤 설정하세요. 실시간 URL 추적, 페이지 또는 도메인별 텍스트 및 정규식 대체, JSON 파일 가져오기, 정규식 안전 보호 기능을 제공합니다. 음성 텍스트를 실시간으로 자동으로 대체하여 정확하고 매끄러운 웹 읽기를 지원합니다.\n\n단축키:\nALT+Windows+B\n한 번 탭: 브라우저 사전 설정 열기\n두 번 탭: 새 사이트 추가\n세 번 탭: 사이트 편집"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Dicionário de Navegador",
+			"description": "Personalize a fala do NVDA por site com o Dicionário de Navegadores. Possui rastreamento de URL em tempo real, substituições de texto e expressão regular por página ou domínio, importação de arquivo JSON e proteções de segurança de expressões regulares. Substitui automaticamente o texto falado em tempo real para fornecer uma leitura da Web precisa e contínua.\n\nTecla de Atalho:\nALT+Windows+B\nToque Único: Abrir configurações do Dicionário de Navegadores\nToque Duplo: Adicionar novo site\nToque Triplo: Editar site"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9d8cabee1de6ff4fd8979622ed84c38624384742440db9476f1c8bc273e23c4c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "9d8cabee1de6ff4fd8979622ed84c38624384742440db9476f1c8bc273e23c4c",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 4,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 55
+					},
+					"highest_datetime": "2026-09-17 09:55:30",
+					"lowest_datetime": "2026-04-28 14:48:04",
+					"num_children": 103,
+					"type": "ZIP",
+					"uncompressed_size": 392631
+				},
+				"contenthash": "7d59f31bea29a7deb71eb0c7164fead4",
+				"filecondis": {
+					"dhash": "00001c1d1c180000",
+					"raw_md5": "098ab0c3beaa61bd27b2f2f64a58150a"
+				},
+				"first_submission_date": 1789614619,
+				"last_analysis_date": 1789614619,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260916",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260916",
+						"engine_version": "6.821",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260916",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260917",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260917",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260916",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260916",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260916",
+						"engine_version": "260916-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260916",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260916",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260903",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260916",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260916",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260916",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260917",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20260916",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260910",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260916",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260916",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260916",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20260916",
+						"engine_version": "4.0.288",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260917",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260916",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260916",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260917",
+						"engine_version": "GD:27.46022AVA:64.31911",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260917",
+						"engine_version": "1789610461",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260916",
+						"engine_version": "1.0.254.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260916",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260917",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260917",
+						"engine_version": "14.79.60824",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260917",
+						"engine_version": "14.79.60824",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260917",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260916",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260916",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260917",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260916",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260917",
+						"engine_version": "1.2.0.16123",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260916",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260917",
+						"engine_version": "1.26080",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260917",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260917",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260916",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260916",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260916",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260915",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260714",
+						"engine_version": "7.7.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260916",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260916",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260917",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260917",
+						"engine_version": "2026-09-17.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260917",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260916",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260917",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260916",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260917",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260916",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260916",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260917",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260917",
+						"engine_version": "2014.3.20.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260916",
+						"engine_version": "9.5.1295",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260916",
+						"engine_version": "38963",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260916",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260916",
+						"engine_version": "2.0.0.5691",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260917",
+						"engine_version": "6.27-118568679",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260917",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260916",
+						"engine_version": "8da36db:8da36db:d202e75:d202e75",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260917",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 8,
+					"undetected": 66
+				},
+				"last_modification_date": 1789614665,
+				"last_submission_date": 1789614619,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "6eb9f4a524a5c7c475f03a9dd27993e2",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "739560c0afad3b68a416c72a1414244bec8fd8a5",
+				"sha256": "9d8cabee1de6ff4fd8979622ed84c38624384742440db9476f1c8bc273e23c4c",
+				"size": 149283,
+				"ssdeep": "3072:onpxF5v7svIEHm6kn43/q4JDpr41VnFY6cfOrLJZ7PV7iaAi:ofF5DsvIymk/R98nFcfIvzV7XAi",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T190E3F135DA2F200BF28697FE76C71226F7794106D27D6A874A5B58C19CCE39D0F4B20A",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11757"
+}
