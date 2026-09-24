@@ -1,0 +1,39 @@
+{
+	"addonId": "audioSwitcher",
+	"displayName": "Audio Switcher",
+	"URL": "https://github.com/kamalyaser31/nvda-audio-switcher/releases/download/v2026.3/audioSwitcher-2026.3.nvda-addon",
+	"description": "Sets configured or directly selected speakers and microphones as default and announces current defaults.",
+	"sha256": "c366d3a0a0b517db46d0b79556aa8cf1df716f69cebfbb3cd65dfb53123b8f21",
+	"addonVersionName": "2026.3",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"changelog": "Migrated audio backend to pure Win32 Core Audio via ctypes, eliminating pycaw, comtypes, and temporary disk cache. Added one-key cyclic device switching for speakers and microphones with position announcements. Added instant hardware mute toggle and mute state announcement for the default microphone.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790275090000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مبدل أجهزة الصوت",
+			"description": "تعيين السماعات والميكروفونات المهيأة أو المختارة مباشرة أجهزة افتراضية، ونطق الأجهزة الافتراضية الحالية.",
+			"changelog": "ترحيل البنية التحتية إلى واجهات Win32 Core Audio النقية عبر ctypes، والتخلص التام من pycaw و comtypes والملفات المؤقتة. وإضافة التبديل الدوري بين السماعات والميكروفونات بنقرة واحدة مع نطق موضع الجهاز. وإضافة كتم واسترجاع الميكروفون الافتراضي فورياً وإعلان حالة كتمه."
+		}
+	]
+}
