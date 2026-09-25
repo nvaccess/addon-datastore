@@ -53,5 +53,47 @@
 			"description": "Migliora NVDA Remote con funzionalità di produttività per utenti esperti.",
 			"changelog": "## 1.0.0\n\n- Raise the minimum supported NVDA version to 2026.1.\n- Add low-latency audio relay for listening to the controlled computer's system sounds and making bidirectional voice calls. This requires [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer) to be deployed on the host running the Remote Access server with TCP and UDP port 6838 exposed; Remote++ reuses the server address and key from the current Remote connection.\n- Add separate playback buffer, bitrate, channel, and transmission mode settings for system audio and voice calls in NVDA Settings → Remote++.\n- Add \"Listen to remote system sounds\" and \"Voice call\" to the Remote Access menu.\n- Make \"Listen to remote system sounds\" and \"Voice call\" available for assignment in NVDA's Input Gestures dialog. No gestures are assigned by default.\n- Add configurable gestures for moving to the previous or next saved connection without opening the Connection Manager. The target connection name is announced before connecting. No gestures are assigned by default.\n- Pause the controlled computer's normal NVDA Remote speech feedback while remote system sound listening is enabled to avoid duplicate speech.\n- Require an audio-capable Remote++ version on both computers; older versions continue to support normal Remote control.\n- Add Turkish translation.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2e9b6b912e12234163c751f0dbaf3fa2a73d723c1f3c06b9c60ce7d3c336108c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "2e9b6b912e12234163c751f0dbaf3fa2a73d723c1f3c06b9c60ce7d3c336108c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "778c4196164e471a21db91729bb8db47"
+				},
+				"first_submission_date": 1790374404,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790374420,
+				"last_submission_date": 1790374404,
+				"md5": "b3ea747c3b6cc711933d798a4281b95e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "19be2ff761cf87bcd6bb01c98f87e9672e84adfc",
+				"sha256": "2e9b6b912e12234163c751f0dbaf3fa2a73d723c1f3c06b9c60ce7d3c336108c",
+				"size": 464921,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
