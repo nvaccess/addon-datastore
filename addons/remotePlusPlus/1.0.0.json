@@ -1,0 +1,57 @@
+{
+	"addonId": "remotePlusPlus",
+	"displayName": "Remote++",
+	"URL": "https://github.com/cary-rowen/remotePlusPlus/releases/download/v1.0.0/remotePlusPlus-1.0.0.nvda-addon",
+	"description": "Enhances NVDA Remote with productivity features for power users.",
+	"sha256": "2e9b6b912e12234163c751f0dbaf3fa2a73d723c1f3c06b9c60ce7d3c336108c",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/remotePlusPlus",
+	"license": "GPL v2",
+	"homepage": "https://github.com/cary-rowen/remotePlusPlus",
+	"changelog": "## 1.0.0\n\n- Raise the minimum supported NVDA version to 2026.1.\n- Add low-latency audio relay for listening to the controlled computer's system sounds and making bidirectional voice calls. This requires [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer) to be deployed on the host running the Remote Access server with TCP and UDP port 6838 exposed; Remote++ reuses the server address and key from the current Remote connection.\n- Add separate playback buffer, bitrate, channel, and transmission mode settings for system audio and voice calls in NVDA Settings → Remote++.\n- Add \"Listen to remote system sounds\" and \"Voice call\" to the Remote Access menu.\n- Make \"Listen to remote system sounds\" and \"Voice call\" available for assignment in NVDA's Input Gestures dialog. No gestures are assigned by default.\n- Add configurable gestures for moving to the previous or next saved connection without opening the Connection Manager. The target connection name is announced before connecting. No gestures are assigned by default.\n- Pause the controlled computer's normal NVDA Remote speech feedback while remote system sound listening is enabled to avoid duplicate speech.\n- Require an audio-capable Remote++ version on both computers; older versions continue to support normal Remote control.\n- Add Turkish translation.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790374399000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Remote++",
+			"description": "Gelişmiş kullanıcılar için NVDA Remote eklentisini verimlilik özellikleriyle güçlendirir.",
+			"changelog": "## 1.0.0\n\n- Raise the minimum supported NVDA version to 2026.1.\n- Add low-latency audio relay for listening to the controlled computer's system sounds and making bidirectional voice calls. This requires [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer) to be deployed on the host running the Remote Access server with TCP and UDP port 6838 exposed; Remote++ reuses the server address and key from the current Remote connection.\n- Add separate playback buffer, bitrate, channel, and transmission mode settings for system audio and voice calls in NVDA Settings → Remote++.\n- Add \"Listen to remote system sounds\" and \"Voice call\" to the Remote Access menu.\n- Make \"Listen to remote system sounds\" and \"Voice call\" available for assignment in NVDA's Input Gestures dialog. No gestures are assigned by default.\n- Add configurable gestures for moving to the previous or next saved connection without opening the Connection Manager. The target connection name is announced before connecting. No gestures are assigned by default.\n- Pause the controlled computer's normal NVDA Remote speech feedback while remote system sound listening is enabled to avoid duplicate speech.\n- Require an audio-capable Remote++ version on both computers; older versions continue to support normal Remote control.\n- Add Turkish translation.\n"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Remote++",
+			"description": "增强 NVDA 远程访问功能，为高级用户提供更高效的操作体验。",
+			"changelog": "## 1.0.0\n\n- 将支持的最低 NVDA 版本提升至 2026.1。\n- 新增低延迟音频传输，可收听被控计算机的系统声音并进行双向语音通话。需要在运行 Remote Access 服务端的主机上部署 [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer)，并开放 TCP 和 UDP 6838 端口；Remote++ 会复用当前 Remote 连接的服务器地址和密钥。\n- 在 NVDA 设置 → Remote++ 中，为系统声音和语音通话分别提供播放缓冲、比特率、声道及传输模式设置。\n- 在 Remote Access 菜单中新增“收听远程系统声音”和“语音通话”。\n- “收听远程系统声音”和“语音通话”现在可以在 NVDA 的“输入手势”对话框中分配，默认不分配手势。\n- 新增向前或向后切换已保存连接的可配置手势，无需打开连接管理器即可快速切换；连接前会播报目标连接名称，默认不分配手势。\n- 开启收听远程系统声音时，暂停被控计算机的 NVDA Remote 常规语音反馈，以避免重复朗读。\n- 两台计算机都需要使用支持音频的 Remote++ 版本；旧版本仍支持常规远程控制。\n- 新增土耳其语翻译。\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Віддалене керування++",
+			"description": "Розширює Віддалене керування NVDA функціями продуктивності для досвідчених користувачів.",
+			"changelog": "## 1.0.0\n\n- Raise the minimum supported NVDA version to 2026.1.\n- Add low-latency audio relay for listening to the controlled computer's system sounds and making bidirectional voice calls. This requires [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer) to be deployed on the host running the Remote Access server with TCP and UDP port 6838 exposed; Remote++ reuses the server address and key from the current Remote connection.\n- Add separate playback buffer, bitrate, channel, and transmission mode settings for system audio and voice calls in NVDA Settings → Remote++.\n- Add \"Listen to remote system sounds\" and \"Voice call\" to the Remote Access menu.\n- Make \"Listen to remote system sounds\" and \"Voice call\" available for assignment in NVDA's Input Gestures dialog. No gestures are assigned by default.\n- Add configurable gestures for moving to the previous or next saved connection without opening the Connection Manager. The target connection name is announced before connecting. No gestures are assigned by default.\n- Pause the controlled computer's normal NVDA Remote speech feedback while remote system sound listening is enabled to avoid duplicate speech.\n- Require an audio-capable Remote++ version on both computers; older versions continue to support normal Remote control.\n- Add Turkish translation.\n"
+		},
+		{
+			"language": "it",
+			"displayName": "Remote++",
+			"description": "Migliora NVDA Remote con funzionalità di produttività per utenti esperti.",
+			"changelog": "## 1.0.0\n\n- Raise the minimum supported NVDA version to 2026.1.\n- Add low-latency audio relay for listening to the controlled computer's system sounds and making bidirectional voice calls. This requires [NVDARemoteAudioServer](https://github.com/haitun001/NVDARemoteAudioServer) to be deployed on the host running the Remote Access server with TCP and UDP port 6838 exposed; Remote++ reuses the server address and key from the current Remote connection.\n- Add separate playback buffer, bitrate, channel, and transmission mode settings for system audio and voice calls in NVDA Settings → Remote++.\n- Add \"Listen to remote system sounds\" and \"Voice call\" to the Remote Access menu.\n- Make \"Listen to remote system sounds\" and \"Voice call\" available for assignment in NVDA's Input Gestures dialog. No gestures are assigned by default.\n- Add configurable gestures for moving to the previous or next saved connection without opening the Connection Manager. The target connection name is announced before connecting. No gestures are assigned by default.\n- Pause the controlled computer's normal NVDA Remote speech feedback while remote system sound listening is enabled to avoid duplicate speech.\n- Require an audio-capable Remote++ version on both computers; older versions continue to support normal Remote control.\n- Add Turkish translation.\n"
+		}
+	]
+}
