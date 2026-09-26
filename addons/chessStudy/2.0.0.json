@@ -1,0 +1,747 @@
+{
+	"addonId": "chessStudy",
+	"displayName": "Chess Study",
+	"URL": "https://github.com/joaovictorf01/chessStudy/releases/download/v2.0.0/chessStudy-2.0.0.nvda-addon",
+	"description": "An accessible chess environment for NVDA. Train tactics from the Lichess puzzle database with a rating that follows you and missed puzzles that come back for review; learn endgames with mate drills and lessons judged by the Syzygy tablebases; record and analyse your games with Stockfish 16, a full game review and Lichess import; and play against the engine or a friend.",
+	"sha256": "9c04c477204b70dd34a8592afc999c6db83a6d77b523e51ef6276812bec803ea",
+	"addonVersionName": "2.0.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "João Victor  Mendes",
+	"sourceURL": "https://github.com/joaovictorf01/chessStudy",
+	"license": "GPL v2",
+	"homepage": "https://github.com/joaovictorf01/chessStudy",
+	"changelog": "2.0.0: Chessmart is now Chess Study, with a new add-on ID, at the request of the original author: remove Chessmart and install Chess Study; your rating, history, missed puzzles, puzzle database, tablebases, settings and games come along on the first start. The interface and the manual are complete in Spanish. 1.2.0: Analysis board: record a game with variations, comments and marks, or open a PGN; Stockfish 16 evaluation (E), the threat (X), move review (Shift+E), opening names, and the Syzygy tablebases with five pieces or fewer; game review (F7) with the critical moments and each player's accuracy as Lichess computes it; saves by itself. Import Lichess Game with the clock of every move; My Games; Board Editor; play from any position against the computer, which now answers draw offers. Tactics: the puzzles you missed come back for review until firm. Endgames: lesson 3b, promote and mate with king and pawn. Stockfish 16 replaces Stockfish 14. The manual is complete and has a Brazilian Portuguese version. 1.1.0: Endgames: mate drills (queen, rook, two rooks, two bishops, and bishop and knight) against the engine at full strength, and nine lessons that follow the endgame course order (opposition, king and pawn, piece against pawn, pawns on both sides, rook and pawn against rook, queen against pawn, bishop and rook pawn, and the practical rook endings: short side, Vancura, back rank, rule of five, rook behind the passed pawn): each position asks win, draw or loss, tells the rule and is played out with the Syzygy tablebase as judge; tablebases up to 5 pieces downloaded from the Lichess mirror; a log of every attempt. 1.0.2: Escape asks before leaving a game in progress and really closes the board (engine, clock and online game included); an untouched puzzle no longer counts as a failure; online board fixes (start, server clock, draw offers, resignation, refused moves, reconnect); challenge levels and puzzle themes with real names and descriptions. 1.0.1: the complete puzzle database is downloaded in parts, with each part verified as it arrives and retried on its own if the connection drops. 1.0.0: first public release of the tactics trainer: Lichess puzzle database downloaded on demand (light or complete) and updated monthly, Glicko-2 tactics rating with adaptive difficulty, training plans by theme, configurable move notation (descriptive, SAN, UCI, literate, NATO, anna) and Brazilian Portuguese translation.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790434172000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Chess Study",
+			"description": "Um ambiente de xadrez acessível para o NVDA. Treine táticas com a base de puzzles do Lichess, com um rating que acompanha você e os puzzles errados voltando para revisão; aprenda finais com treinos de mate e lições julgadas pelas tablebases Syzygy; grave e analise suas partidas com o Stockfish 16, revisão completa da partida e importação do Lichess; e jogue contra o motor ou contra um amigo.",
+			"changelog": "2.0.0: o Chessmart agora é o Chess Study, com novo identificador, a pedido do autor original: remova o Chessmart e instale o Chess Study; o seu rating, histórico, puzzles errados, base de puzzles, tablebases, configurações e partidas vêm junto na primeira vez que ele abre. A interface e o manual estão completos em espanhol. 1.2.0: Tabuleiro de análise: grave uma partida com variantes, comentários e marcas, ou abra um PGN; avaliação do Stockfish 16 (E), a ameaça (X), avaliação do lance (Shift+E), nomes de abertura e as tablebases Syzygy com cinco peças ou menos; revisão da partida (F7) com os momentos críticos e a precisão de cada jogador calculada como no Lichess; salva sozinho. Importar partida do Lichess com o relógio de cada lance; Minhas partidas; Editor de tabuleiro; jogue de qualquer posição contra o computador, que agora responde à oferta de empate. Táticas: os puzzles que você errou voltam para revisão até ficarem firmes. Finais: lição 3b, promover e dar mate com rei e peão. O Stockfish 16 substitui o Stockfish 14. O manual está completo e tem versão em português do Brasil. 1.1.0: Finais: treinos de mate (dama, torre, duas torres, dois bispos, e bispo e cavalo) contra o motor em força total, e nove lições na ordem dos cursos de finais (oposição, rei e peão, peça contra peão, peões dos dois lados, torre e peão contra torre, dama contra peão, bispo e peão de torre, e os finais de torre práticos: lado curto, Vancura, última fila, regra dos cinco, torre atrás do peão passado): cada posição pergunta ganha, empata ou perde, diz a regra e é jogada até o fim com a tablebase Syzygy como juiz; tablebases até 5 peças baixadas do espelho do Lichess; registro de cada tentativa. 1.0.2: Escape pergunta antes de sair de uma partida em andamento e fecha o tabuleiro de verdade (motor, relógio e partida online inclusos); puzzle sem toque não conta mais como derrota; correções do tabuleiro online (início, relógio do servidor, ofertas de empate, desistência, lances recusados, reconexão); níveis de desafio e temas de puzzle com nomes e descrições reais. 1.0.1: a base completa de puzzles é baixada em partes, cada parte conferida ao chegar e refeita sozinha se a conexão cair. 1.0.0: primeira versão pública do treinador de táticas: base de puzzles do Lichess baixada sob demanda (leve ou completa) e atualizada mensalmente, rating de táticas Glicko-2 com dificuldade adaptativa, planos de treino por tema, notação de lances configurável (descritiva, SAN, UCI, por extenso, NATO, anna) e tradução para o português do Brasil."
+		},
+		{
+			"language": "es",
+			"displayName": "Chess Study",
+			"description": "Un entorno de ajedrez accesible para NVDA. Entrena táctica con la base de problemas de Lichess, con un rating que te acompaña y los problemas fallados que vuelven para repaso; aprende finales con ejercicios de mate y lecciones juzgadas por las tablebases Syzygy; registra y analiza tus partidas con Stockfish 16, una revisión completa de la partida y la importación desde Lichess; y juega contra el motor o contra un amigo.",
+			"changelog": "2.0.0: Chessmart ahora es Chess Study, con un nuevo identificador, a pedido del autor original: elimina Chessmart e instala Chess Study; tu rating, historial, problemas fallados, base de problemas, tablebases, opciones y partidas vienen contigo la primera vez que se inicia. La interfaz y el manual están completos en español. 1.2.0: Tablero de análisis: registra una partida con variantes, comentarios y signos, o abre un PGN; evaluación de Stockfish 16 (E), la amenaza (X), evaluación de la jugada (Shift+E), nombres de aperturas y las tablebases Syzygy de cinco piezas o menos; revisión de la partida (F7) con los momentos críticos y la precisión de cada jugador calculada como en Lichess; se guarda solo. Importar partida de Lichess con el reloj de cada jugada; Mis partidas; Editor de tablero; juega desde cualquier posición contra la computadora, que ahora responde a las ofertas de tablas. Táctica: los problemas que fallaste vuelven para repaso hasta quedar firmes. Finales: lección 3b, coronar y dar mate con rey y peón. Stockfish 16 reemplaza a Stockfish 14. El manual está completo y tiene una versión en portugués de Brasil. 1.1.0: Finales: ejercicios de mate (dama, torre, dos torres, dos alfiles, y alfil y caballo) contra el motor a plena fuerza, y nueve lecciones que siguen el orden de los cursos de finales (oposición, rey y peón, pieza contra peón, peones en ambos flancos, torre y peón contra torre, dama contra peón, alfil y peón de torre, y los finales de torre prácticos: lado corto, Vancura, última fila, regla de los cinco, torre detrás del peón pasado): cada posición pregunta si se gana, se entabla o se pierde, enuncia la regla y se juega hasta el final con la tablebase Syzygy como juez; tablebases de hasta 5 piezas descargadas del espejo de Lichess; un registro de cada intento. 1.0.2: Escape pregunta antes de salir de una partida en curso y cierra de verdad el tablero (motor, reloj y partida en línea incluidos); un problema sin tocar ya no cuenta como fallo; correcciones del tablero en línea (inicio, reloj del servidor, ofertas de tablas, abandono, jugadas rechazadas, reconexión); niveles de desafío y temas de problemas con nombres y descripciones reales. 1.0.1: la base completa de problemas se descarga por partes, cada parte se verifica al llegar y se reintenta por separado si se cae la conexión. 1.0.0: primera versión pública del entrenador de táctica: base de problemas de Lichess descargada bajo demanda (ligera o completa) y actualizada cada mes, rating de táctica Glicko-2 con dificultad adaptativa, planes de entrenamiento por tema, notación de jugadas configurable (descriptiva, SAN, UCI, literal, OTAN, anna) y traducción al portugués de Brasil."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/9c04c477204b70dd34a8592afc999c6db83a6d77b523e51ef6276812bec803ea",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "9c04c477204b70dd34a8592afc999c6db83a6d77b523e51ef6276812bec803ea",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"conf": 50,
+						"css": 1,
+						"dll": 1,
+						"exe": 3,
+						"html": 3,
+						"ini": 3,
+						"json": 1,
+						"md": 5,
+						"mo": 2,
+						"po": 2,
+						"py": 94,
+						"pyd": 1,
+						"tsv": 1,
+						"txt": 4,
+						"typed": 1,
+						"wav": 26
+					},
+					"file_types": {
+						"HTML": 3,
+						"Portable Executable": 5,
+						"XML": 50,
+						"unknown": 145
+					},
+					"highest_datetime": "2026-09-26 14:47:00",
+					"lowest_datetime": "2026-09-26 14:46:24",
+					"num_children": 203,
+					"type": "ZIP",
+					"uncompressed_size": 54570165
+				},
+				"contenthash": "f9c14bbedce158b7b5e4d939bdd4dfe5",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "605ee29eb3ce5ec45b080c5c9c72bf6b"
+				},
+				"first_submission_date": 1790434179,
+				"last_analysis_date": 1790434179,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20260925",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20260925",
+						"engine_version": "6.824",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20260926",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20260926",
+						"engine_version": "3.30.1.10706",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20260926",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20260926",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20260926",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20260926",
+						"engine_version": "260926-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20260926",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20260926",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20260903",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20260926",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20260925",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20260925",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20260926",
+						"engine_version": "2024.8.29.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "timeout",
+						"engine_name": "ClamAV",
+						"engine_update": "20260926",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20260924",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20260926",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20260926",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20260926",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20260924",
+						"engine_version": "4.0.290",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20260926",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20260926",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20260926",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20260926",
+						"engine_version": "GD:27.46138AVA:64.31968",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20260926",
+						"engine_version": "1790431271",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20260926",
+						"engine_version": "1.0.255.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20260926",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20260925",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20260926",
+						"engine_version": "14.80.60926",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20260926",
+						"engine_version": "14.80.60928",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20260926",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20260926",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20260926",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20260926",
+						"engine_version": "3.1.0.272",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20260925",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20260926",
+						"engine_version": "1.2.0.16505",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20260926",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20260926",
+						"engine_version": "1.26080",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20260926",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20260926",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20260926",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20260926",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20260925",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20260925",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20260925",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20260926",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20260925",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20260926",
+						"engine_version": "2026-09-26.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20260926",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20260921",
+						"engine_version": "4.0.16.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20260925",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20260926",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20260926",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20260926",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20260926",
+						"engine_version": "5.7.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20260926",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20260926",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20260926",
+						"engine_version": "2026-09-26.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20260925",
+						"engine_version": "9.5.1302",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20260926",
+						"engine_version": "38985",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20260926",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20260925",
+						"engine_version": "2.0.0.5697",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20260926",
+						"engine_version": "6.27-118568921",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20260926",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20260926",
+						"engine_version": "e32632e:e32632e:98594cb:98594cb",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20260926",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 7,
+					"undetected": 67
+				},
+				"last_modification_date": 1790434272,
+				"last_submission_date": 1790434179,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "be3753e3abb97784d6cbe74204290bd8",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "47982a7a8b1216babe2305b034aa7f297186d218",
+				"sha256": "9c04c477204b70dd34a8592afc999c6db83a6d77b523e51ef6276812bec803ea",
+				"size": 41106039,
+				"ssdeep": "786432:BU0svblnX8TKoY5J9pKREJyUC8kwUeGqKJEoBQnLttxCA3iM1auctYLa:js5X88pKH8Ser4DBKLtDD351a6+",
+				"tags": [
+					"contains-pe",
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1679733305D2B8E55D4C0783290FFDE17BBE5096A1A515CB0550CABFAAAC33A7D367E80",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "Python Zip Application",
+						"probability": 72.4
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 27.5
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "ea3d40ff6bf29453d7ca0050c12d9e49"
+			}
+		]
+	}
+}
