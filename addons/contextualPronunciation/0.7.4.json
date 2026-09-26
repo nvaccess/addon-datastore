@@ -1,0 +1,80 @@
+{
+	"addonId": "contextualPronunciation",
+	"displayName": "Context-aware pronunciation normalization",
+	"URL": "https://github.com/ChenZ2000/contextualPronunciation/releases/download/v0.7.4/contextualPronunciation-0.7.4.nvda-addon",
+	"description": "Corrects selected Chinese polyphones and preserves lexical apostrophes before text reaches the active speech synthesizer.",
+	"sha256": "4a3fa34c6778f0ead8f0bb731b57a413c222cf55f6f92bd816c9c3f17bf4ea8c",
+	"addonVersionName": "0.7.4",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 7,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "ChenZ2000",
+	"sourceURL": "https://github.com/ChenZ2000/contextualPronunciation/tree/v0.7.4",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/ChenZ2000/contextualPronunciation",
+	"changelog": "First public repository release: add community documentation, reproducible GitHub builds, release checksums and Add-on Store submission metadata. Preserve the 0.7.3 pronunciation engine.",
+	"licenseURL": "https://github.com/ChenZ2000/contextualPronunciation/blob/v0.7.4/LICENSE",
+	"submissionTime": 1790153055000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "上下文发音规范化",
+			"description": "根据有限上下文纠正常见中文多音字，并在文本送入语音合成器前保留英文词内撇号。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4a3fa34c6778f0ead8f0bb731b57a413c222cf55f6f92bd816c9c3f17bf4ea8c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4a3fa34c6778f0ead8f0bb731b57a413c222cf55f6f92bd816c9c3f17bf4ea8c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "28ba3bdf2b21c6f5de58306abd3869ce"
+				},
+				"first_submission_date": 1790153059,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790153061,
+				"last_submission_date": 1790153059,
+				"md5": "17be96c4f099c55fcdf227f1bcca91d0",
+				"names": [],
+				"reputation": 0,
+				"sha1": "bedca9b26bff055abfd43455e02a95d6873af7c4",
+				"sha256": "4a3fa34c6778f0ead8f0bb731b57a413c222cf55f6f92bd816c9c3f17bf4ea8c",
+				"size": 4967690,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
+}
