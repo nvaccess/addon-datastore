@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.9/chatGPTDesktopAccess-2026.2.9.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "3868b48eedef3d324ec5f8f45d3e1c92a6a0a430e39038a0eee6240a8a6c80ce",
+	"addonVersionName": "2026.2.9",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Prevents ambiguous title-only Open, Pin, and Archive actions in Chat History when two recent chats share a title.\n* Directs users to the native Recents list to choose the intended chat, while unique titles keep working as before.\n* Adds an app-scoped, optionally assignable action for a native, searchable list of up to 100 newest conversation turns, with full text in a read-only pane. No key is assigned by default because NVDA+Alt+Shift+R conflicts with an NVDA command.\n* Makes the conversation list's Refresh button request a new scan without blocking the button handler.\n* Focuses the selected message after the list dialog is displayed.\n* Adds a General settings checkbox to enable or disable the native message list without affecting ChatGPT's ordinary conversation view.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790431458000,
+	"translations": []
+}
