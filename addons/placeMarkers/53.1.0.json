@@ -227,5 +227,47 @@
 			"description": "Dodatak za postavljanje markera na virtuelnim dokumentima",
 			"changelog": "* The default folder for storing place markers will be set in the normal configuration profile."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/7fe9e6b36dd550cd0064658eb720078157427ce12681873f7e8e2caef21090c3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "7fe9e6b36dd550cd0064658eb720078157427ce12681873f7e8e2caef21090c3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000f0e0400",
+					"raw_md5": "b135c57e42ed93d21430c86b1e191d48"
+				},
+				"first_submission_date": 1790495778,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790495779,
+				"last_submission_date": 1790495778,
+				"md5": "c4693c98e88987b56f3cdd924f415434",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a1b3e8858ed78c6ce5c58e7a0406f1b05505a3ae",
+				"sha256": "7fe9e6b36dd550cd0064658eb720078157427ce12681873f7e8e2caef21090c3",
+				"size": 435484,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
