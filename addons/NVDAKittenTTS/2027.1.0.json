@@ -1,0 +1,84 @@
+{
+	"addonId": "NVDAKittenTTS",
+	"displayName": "NVDAKitten TTS neural speech synthesizer",
+	"URL": "https://github.com/anujj87/NVDAKittenTTS/releases/download/v2027-1-0/NVDAKittenTTS-2027.1.0.nvda-addon",
+	"description": "Offline neural speech synthesis for NVDA using Kitten TTS.\nUltra-lightweight ONNX model (about 25 MB) bundled with the add-on, all\ndependencies included (onnxruntime-directml for CPU and GPU). 8 built-in\nvoices (4 female, 4 male). Additional higher-quality models can be\ndownloaded from the Kitten TTS settings panel, which also lets you choose\nthe compute device (CPU or GPU) used for speech.\nAI Agent use in developmet of this addon",
+	"sha256": "aa84192f065d939517cec42fa94196aa2426a725e2fcc3778f6b85916f9f9d59",
+	"addonVersionName": "2027.1.0",
+	"addonVersionNumber": {
+		"major": 2027,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2027,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Anuj sharma",
+	"sourceURL": "https://github.com/anujj87/NVDAKittenTTS",
+	"license": "GPL v2",
+	"homepage": "https://github.com/anujj87/NVDAKittenTTS",
+	"changelog": "support 2027.1.0",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789234074000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/aa84192f065d939517cec42fa94196aa2426a725e2fcc3778f6b85916f9f9d59",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "aa84192f065d939517cec42fa94196aa2426a725e2fcc3778f6b85916f9f9d59",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: attrs (whl)\nVersion: 26.1.0\nDescription: Classes Without Boilerplate\n\nThe analyzed package contains legitimate standard libraries and components (including attrs, numpy, joblib, phonemizer, protobuf, and Kitten TTS add-on helpers). No malicious behaviors, secret exfiltration, unauthorized execution, or backdoors were detected.",
+						"category": "code_insight",
+						"id": "aa84192f065d939517cec42fa94196aa2426a725e2fcc3778f6b85916f9f9d59-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "0000000a0e0f0e00",
+					"raw_md5": "ef2a01b3a4f8d76bf5633891785ee0de"
+				},
+				"first_submission_date": 1789234080,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789234097,
+				"last_submission_date": 1789234080,
+				"md5": "8bfb08cb1c2633d88182ec3d1fd20a9c",
+				"names": [],
+				"reputation": 0,
+				"sha1": "533865e724a47720ab15d901c4cbb94bc12ce8d0",
+				"sha256": "aa84192f065d939517cec42fa94196aa2426a725e2fcc3778f6b85916f9f9d59",
+				"size": 72781034,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11019"
+}
