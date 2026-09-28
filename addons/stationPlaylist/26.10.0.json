@@ -1,0 +1,75 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.10/stationPlaylist-26.10.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "6dad1de40c84365f5e5a8c99880db72bacd15e15226c59fadfe3ee12d3f35b2e",
+	"addonVersionName": "26.10",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 10,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* Added break note insertion dialog (Alt+Windows+I while focused on break note edit field in insert tracks dialog in Studio and Creator; contributed by MooSteinebach).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790244024000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6dad1de40c84365f5e5a8c99880db72bacd15e15226c59fadfe3ee12d3f35b2e",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6dad1de40c84365f5e5a8c99880db72bacd15e15226c59fadfe3ee12d3f35b2e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0400",
+					"raw_md5": "0b0885d545e237c938c70b5fe90e9aae"
+				},
+				"first_submission_date": 1790244028,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790244030,
+				"last_submission_date": 1790244028,
+				"md5": "69e78e710d1598d1c5a6eb4328f977ff",
+				"names": [],
+				"reputation": 0,
+				"sha1": "df3234a09a1a86fc239c7501613975156fb89ba8",
+				"sha256": "6dad1de40c84365f5e5a8c99880db72bacd15e15226c59fadfe3ee12d3f35b2e",
+				"size": 277951,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/2187"
+}
