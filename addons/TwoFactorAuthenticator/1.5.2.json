@@ -1,0 +1,84 @@
+{
+	"addonId": "TwoFactorAuthenticator",
+	"displayName": "2Factor Authenticator",
+	"URL": "https://github.com/umesh-rathore/2factor-authenticator/releases/download/v1.5.2/TwoFactorAuthenticator-1.5.2.nvda-addon",
+	"description": "Generates 2FA TOTP codes quickly via a shortcut key and copies them to the clipboard.",
+	"sha256": "d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0",
+	"addonVersionName": "1.5.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Umesh Rathore <umeshrathore897@gmail.com>",
+	"sourceURL": "https://github.com/umesh-rathore/2factor-authenticator",
+	"license": "GPL v2",
+	"homepage": "https://github.com/umesh-rathore/2factor-authenticator",
+	"changelog": "Added automatic QR code scanning from screen using opencv or wechat model to more compatibility with windows11 and nvda2026.2. no download needed, all libs are bundled. if you doubt libs are corrupted and not working? try: nvda menu > tools menu > 2fa menu and choose reinstall QRLibrary. the addon automatically reinstalls library and restarts nvda to continue.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788627463000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: numpy (whl)\nVersion: 2.5.2\nDescription: Fundamental package for array computing in Python\n\nThe analyzed files consist of legitimate, standard source code and test suites from open-source libraries including NumPy, Pillow (PIL), and OpenCV (cv2). No malicious behavior, obfuscation, secret exfiltration, or backdoors were detected.",
+						"category": "code_insight",
+						"id": "d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000080e0b0708",
+					"raw_md5": "77e8a8da42b304147588e85d0eefa2d0"
+				},
+				"first_submission_date": 1788627468,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788627490,
+				"last_submission_date": 1788627468,
+				"md5": "68375649da8e39a4751a0bc8c4a3c396",
+				"names": [],
+				"reputation": 0,
+				"sha1": "76fadb4c8fa8cd25611548cb790790d2007c181f",
+				"sha256": "d7d63197ab582d428b4f146d2533ac9cb220f23d63eade276d6f01959ce282a0",
+				"size": 75031733,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10605"
+}

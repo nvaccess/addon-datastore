@@ -1,0 +1,75 @@
+{
+	"addonId": "videoMaker",
+	"displayName": "Video Maker",
+	"URL": "https://github.com/kasturibhosale2207-svg/videoMaker-/releases/download/v2.1/videoMaker-2.1.nvda-addon",
+	"description": "Create professional videos with ease! This add-on allows you to:\n- Create slideshow videos from photos and videos with audio\n- Add captions to individual photos and videos\n- Create running text/ticker videos from text and audio\n- Apply transitions between photos/videos\n- Remove green/blue backgrounds from photos\n- Use custom backgrounds (black, white, or custom image)\n- Ken Burns zoom effect\n- Watermark your videos\n- Save and load projects\n\nKeyboard Shortcuts:\n- NVDA+Shift+3: Create video from photos/videos and audio\n- NVDA+Shift+4: Create running text video\n\nNote: Requires ffmpeg to be installed in the add-on directory.",
+	"sha256": "70d68f47f4dfe933171cf4412e4bb58f5877fd77e9902175029ee2cebeb7ffac",
+	"addonVersionName": "2.1",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kasturi bhosale",
+	"sourceURL": "https://github.com/kasturibhosale2207-svg/videoMaker-/archive/refs/tags/v2.1.zip",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kasturibhosale2207-svg/videoMaker-",
+	"changelog": "Version 1.0.0:\n- Initial release with full video creation features\n- Support for photos and videos as source material\n- Running text/ticker video creation\n- Background removal from photos (green/blue screen)\n- Custom backgrounds (black, white, or custom image)\n- Pause/Resume/Cancel progress dialog\n- Caption support with proper text rendering\n- Ken Burns zoom effect\n- Various transitions between clips\n- Watermark support\n- Save and load projects\n- Configurable quality settings (SD, HD, Full HD)",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1789490321000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/70d68f47f4dfe933171cf4412e4bb58f5877fd77e9902175029ee2cebeb7ffac",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "70d68f47f4dfe933171cf4412e4bb58f5877fd77e9902175029ee2cebeb7ffac",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000000100",
+					"raw_md5": "aae0ed89054a1507db23b62ce7c853b3"
+				},
+				"first_submission_date": 1789490328,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1789490341,
+				"last_submission_date": 1789490328,
+				"md5": "f6a1ab553a1152698509ccb0df264202",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e2bbed88c68d2a2d6e22ad3ee0945e8480efa644",
+				"sha256": "70d68f47f4dfe933171cf4412e4bb58f5877fd77e9902175029ee2cebeb7ffac",
+				"size": 76192891,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10836"
+}

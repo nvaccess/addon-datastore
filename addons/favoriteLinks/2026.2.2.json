@@ -1,0 +1,139 @@
+{
+	"addonId": "favoriteLinks",
+	"displayName": "Favorite links",
+	"URL": "https://github.com/EdilbertoFonseca/favoriteLinks/releases/download/v2026.2.2/favoriteLinks-2026.2.2.nvda-addon",
+	"description": "This add-on allows you to save, edit and remove links to frequently visited pages.\n\nShortcut Windows+Alt+K.",
+	"sha256": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+	"addonVersionName": "2026.2.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Edilberto Fonseca",
+	"sourceURL": "https://github.com/EdilbertoFonseca/favoriteLinks/releases/tag/v2026.2.2",
+	"license": "GPL v2",
+	"homepage": "https://github.com/EdilbertoFonseca/favoriteLinks",
+	"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788206392000,
+	"translations": [
+		{
+			"language": "pt_PT",
+			"displayName": "Ligações favoritas",
+			"description": "Este complemento permite-lhe guardar, editar e remover ligações a páginas frequentemente visitadas.\n\nAtalho Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "ar",
+			"displayName": "الروابط المفضلة",
+			"description": "This add-on allows you to save, edit and remove links to frequently visited pages.\n\nShortcut Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "vi",
+			"displayName": "Liên kết yêu thích",
+			"description": "Tiện ích bổ sung này cho phép bạn lưu, chỉnh sửa và xóa liên kết đến các trang thường xuyên truy cập.\n\nPhím tắt Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "ru",
+			"displayName": "FavoriteLinks (Избранные ссылки)",
+			"description": "This add-on allows you to save, edit and remove links to frequently visited pages.\n\nShortcut Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Girêdanên bijare",
+			"description": "Ev pêvek dihêle hûn girêdanên rûpelên ku pir caran têne ziyaret kirin tomar bikin, biguherînin û jê bibin.\n\nKurterêya Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "uk",
+			"displayName": "Обрані посилання",
+			"description": "Цей додаток дозволяє зберігати, редагувати та видаляти посилання на часто відвідувані сторінки.\n\nКомбінація клавіш Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "es",
+			"displayName": "Favorite links",
+			"description": "Este complemento te permite guardar, editar y eliminar enlaces a páginas visitadas frecuentemente.\n\nAtajo: Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "tr",
+			"displayName": "Favori bağlantılar",
+			"description": "Bu eklenti, sık ziyaret edilen sayfalara olan bağlantıları kaydetmenize, düzenlemenize ve kaldırmanıza olanak tanır.\n\nKısayol Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Links favoritos",
+			"description": "Este complemento permite salvar, editar e remover links para páginas visitadas com frequência.\n\nAtalho Windows+Alt+K.",
+			"changelog": "The new translation system via Crowdin has been integrated and the localization files have been updated."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: validators (whl)\nVersion: 0.35.0\nDescription: Python Data Validation for Humans™\n\nThe analyzed package is an NVDA screen reader add-on ('favoriteLinks') bundled with open-source dependencies (validators, BeautifulSoup4, soupsieve, email_validator, typing_extensions, and decorator). The code manages user-saved bookmarks, provides link search and validation capabilities, and interacts with NVDA and standard browser APIs without malicious or suspicious behaviors.",
+						"category": "code_insight",
+						"id": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "2daeb4f3c34ad673bed3c7a1364cbe3f"
+				},
+				"first_submission_date": 1788206397,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788206407,
+				"last_submission_date": 1788206397,
+				"md5": "9174b021c5901a62b2e71cf60effe849",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3a200162f7040a629ecdbd9ae68b83b4b2f19f28",
+				"sha256": "04b0dfc3ee5d491d4b2344ac67e786e8e47fb13f13eb5fb1858bf88d038ae4d2",
+				"size": 568865,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/3972"
+}

@@ -1,0 +1,75 @@
+{
+	"addonId": "freeradio",
+	"displayName": "freeRadio",
+	"URL": "https://github.com/Surveyor123/freeradio/releases/download/v2026.23.5/freeradio-2026.23.5.nvda-addon",
+	"description": "FreeRadio is an internet radio, podcast, and audio-book add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, and the libriVox + GETEM digital library for the visually impaired. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, and per-audio-book audio profiles. Podcast episodes and audio book chapters resume automatically from where you left off, with adjustable pitch-preserving playback speed. Playback is handled by BASS, with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "bcd7df3ab8631f19a968ff246b58efd50d210a20dfe893fb7379919fe425ec03",
+	"addonVersionName": "2026.23.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 23,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeradio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeradio",
+	"changelog": "\n### Added\n- **Obligato mode (background music)** — Play a favourite station quietly in the background, on its own independent audio output and volume, no matter what plays (or doesn't play) as the main media.\n  - New shortcut: `Ctrl+Win+Shift+M` toggles Obligato mode on and off.\n  - On first press, a dialog lets you choose the background station (from your favourites), the output device (**Same as main output** by default, **System default**, or any specific device), and the background volume as a percentage of the main player's current volume (25%–150%). Your choices are remembered for next time.\n  - Runs on a fully separate playback engine from the main player, so switching stations, podcasts, or audio books — or stopping the main player entirely — never interrupts it.\n  - Background volume automatically stays proportional to the main player's volume as it changes (`Ctrl+Win+↑`/`↓`).\n  - Pausing the main player (`Ctrl+Win+P`) pauses the background station too, and resuming the main player resumes it; a full stop of the main player is not treated as a pause.\n  - Requires at least one favourite station; if none exist, FreeRadio prompts you to add one first.\n  - Start/stop announcements respect the **Mute notifications** setting.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1788548025000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/bcd7df3ab8631f19a968ff246b58efd50d210a20dfe893fb7379919fe425ec03",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "bcd7df3ab8631f19a968ff246b58efd50d210a20dfe893fb7379919fe425ec03",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "1e6a34e64e85cf3f2a58dd314c35eaf0"
+				},
+				"first_submission_date": 1788548031,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1788548039,
+				"last_submission_date": 1788548031,
+				"md5": "98b5ef2a2a302ac407cf8efc0ef715ee",
+				"names": [],
+				"reputation": 0,
+				"sha1": "058bc36cc2cf3d46e87bf6c6fab78b7995da7d9a",
+				"sha256": "bcd7df3ab8631f19a968ff246b58efd50d210a20dfe893fb7379919fe425ec03",
+				"size": 47428901,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/8952"
+}
