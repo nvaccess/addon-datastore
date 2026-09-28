@@ -1,0 +1,57 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.1.2/powerbox-2.1.2.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "bd66a93e5e38be5d7630c3b459720dc37d46feecd6eebd09ab65d48a88179178",
+	"addonVersionName": "2.1.2",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Secure Desktop Boundary Lockdown: Integrated pure Win32 Kernel Desktop Isolation (user32.OpenInputDesktop) to prevent unauthorized execution across Windows Logon, UAC (Consent UI), and lock screens.\n- Security Alarm & Auditory Cues: Designed an authoritative 3-stage acoustic warning chime paired with explicit speech notifications when restricted actions are attempted.\n- Keystroke Performance Optimization: Shifted desktop isolation Win32 prototypes to module-level scope, achieving sub-microsecond gesture routing.\n- Storage Metrics Localization: Resolved hardcoded English terms in drive space capacity reporting (check_drives_pulse).\n- Documentation & Build Enhancements: Fixed GitHub navigation links for English documentation and improved SCons build pipeline.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790631934000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Khóa ranh giới màn hình bảo mật: Tích hợp khả năng cách ly màn hình cấp nhân Win32 (user32.OpenInputDesktop) để ngăn chặn thực thi trái phép trên màn hình đăng nhập Windows, UAC và màn hình khóa.\n- Chuông cảnh báo an ninh: Thiết kế chuông cảnh báo âm thanh 3 giai đoạn kết hợp với thông báo bằng giọng nói rõ ràng khi có hành vi truy cập bị hạn chế.\n- Tối ưu hóa hiệu suất phím bấm: Nâng cấp các nguyên mẫu Win32 lên phạm vi mô-đun để đạt tốc độ định tuyến cử chỉ dưới micro giây.\n- Bản địa hóa báo cáo dung lượng: Khắc phục các thuật ngữ tiếng Anh cố định trong báo cáo không gian ổ đĩa (check_drives_pulse).\n- Cải tiến tài liệu và bản dựng: Sửa các liên kết điều hướng tài liệu tiếng Anh trên GitHub và hoàn thiện quy trình SCons."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- عزل أسطح المكتب والشاشات الآمنة: دمج فحص كيرنل ويندوز الأصلي (user32.OpenInputDesktop) لمنع تشغيل الأوامر عبر شاشات تسجيل الدخول، وشاشات تأكيد الصلاحيات UAC، وشاشات القفل.\n- إنذار أمني وتنبيهات صوتية: تصميم نغمة تحذير أمنية متزنة ثلاثية المراحل مصحوبة بنطق تحذيري صريح عند محاولة تشغيل أوامر محظورة.\n- تحسين سرعة استجابة المفاتيح: ترقية واجهات Win32 لنطاق الموديول لتحقيق توجيه لحظي وفائق السرعة للإيماءات.\n- توطين مقاييس سعة التخزين: معالجة النصوص الإنجليزية الثابتة في تقارير مساحة الأقراص (check_drives_pulse).\n- تحسينات التوثيق والبناء: تصحيح روابط تصفح التوثيق الإنجليزي على GitHub وتعزيز منظومة بناء SCons."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Bloqueo de límites de escritorio seguro: integración del aislamiento de escritorio del kernel Win32 (user32.OpenInputDesktop) para evitar ejecuciones no autorizadas en el inicio de sesión de Windows, UAC y pantallas de bloqueo.\n- Alarma de seguridad y avisos auditivos: diseño de una alarma acústica de 3 fases combinada con notificaciones de voz explícitas cuando se intentan acciones restringidas.\n- Optimización del rendimiento de pulsaciones: elevación de prototipos Win32 al nivel de módulo para lograr un enrutamiento de gestos en submilisegundos.\n- Localización de métricas de almacenamiento: resolución de términos en inglés fijos en los informes de espacio en disco (check_drives_pulse).\n- Mejoras de documentación y compilación: corrección de enlaces de navegación en GitHub para la documentación en inglés y mejoras en SCons."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Verrouillage des limites du bureau sécurisé : intégration de l'isolation du bureau au niveau du noyau Win32 (user32.OpenInputDesktop) pour empêcher toute exécution non autorisée sur l'écran d'ouverture de session, l'UAC et les écrans de verrouillage.\n- Alarme de sécurité et alertes sonores : conception d'une alerte sonore en 3 étapes associée à des annonces vocales explicites en cas de tentative d'action restreinte.\n- Optimisation des frappes clavier : déplacement des prototypes Win32 au niveau du module pour un routage des gestes ultra-rapide.\n- Localisation des métriques de stockage : correction des termes anglais codés en dur dans les rapports d'espace disque (check_drives_pulse).\n- Améliorations de la documentation et de la compilation : correction des liens de navigation GitHub pour la documentation anglaise et optimisation de SCons."
+		}
+	]
+}
