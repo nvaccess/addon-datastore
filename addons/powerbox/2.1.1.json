@@ -1,0 +1,57 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.1.1/powerbox-2.1.1.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "9cc6ac3881e1143ac7d6d25a381f9a49ec54bbfac292b8b3eae0e1bc936f898d",
+	"addonVersionName": "2.1.1",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Drive Space Translation Fix: Resolved hardcoded English terms in storage metrics reporting (check_drives_pulse).\n- Offline Documentation Navigation: Refined documentation links for seamless HTML help browsing.\n- Updated Localization: Synchronized translation catalogs across Vietnamese, Arabic, Spanish, and French.\n- Retained all v2.1.0 template migration and socket stability improvements.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790604601000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Sửa lỗi dịch dung lượng ổ đĩa: Khắc phục các thuật ngữ tiếng Anh cố định trong báo cáo lưu trữ (check_drives_pulse).\n- Điều hướng tài liệu ngoại tuyến: Tinh chỉnh các liên kết tài liệu để duyệt trợ giúp HTML liền mạch.\n- Cập nhật bản dịch: Đồng bộ hóa các danh mục dịch thuật tiếng Việt, tiếng Ả Rập, tiếng Tây Ban Nha và tiếng Pháp.\n- Giữ lại tất cả các cải tiến về tính ổn định của socket và di chuyển mẫu v2.1.0."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- إصلاح ترجمة مساحة الأقراص: معالجة النصوص الإنجليزية الثابتة في تقارير سعة التخزين (check_drives_pulse).\n- تصفح التوثيق دون اتصال: تحسين روابط التوثيق لتصفح سلس لملفات المساعدة HTML.\n- تحديث التوطين: مزامنة قواميس الترجمة للغات الفيتنامية، العربية، الإسبانية، والفرنسية.\n- الاحتفاظ بكافة تحسينات استقرار المقابس والانتقال لقالب الإصدار v2.1.0 الرسمي."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Corrección de traducción del espacio en disco: se resolvieron los términos fijos en inglés en los informes de almacenamiento (check_drives_pulse).\n- Navegación de documentación sin conexión: enlaces de documentación mejorados para una navegación fluida por la ayuda en HTML.\n- Localización actualizada: catálogos de traducción sincronizados en vietnamita, árabe, español y francés.\n- Se conservaron todas las mejoras de estabilidad de sockets y migración de plantilla de la v2.1.0."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Correction de la traduction de l'espace disque : résolution des termes codés en dur en anglais dans les rapports de stockage (check_drives_pulse).\n- Navigation dans la documentation hors ligne : affinement des liens pour une consultation fluide de l'aide HTML.\n- Localisation mise à jour : synchronisation des catalogues de traduction en vietnamien, arabe, espagnol et français.\n- Conservation de toutes les améliorations de stabilité des sockets et de migration du modèle de la v2.1.0."
+		}
+	]
+}
