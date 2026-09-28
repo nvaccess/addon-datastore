@@ -53,5 +53,47 @@
 			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
 			"changelog": "- Renforcement de la sécurité en profondeur : mise en œuvre d'un encapsulage de sécurité automatique au niveau des méthodes, garantissant que les raccourcis personnalisés définis dans les Gestes de commandes soient strictement bloqués sur les écrans sécurisés.\n- Protection de l'interface UAC : verrouillage strict Zero-Trust empêchant toute exécution non autorisée lors des invites de Contrôle de compte d'utilisateur (UAC).\n- Alarme sonore de sécurité ajustée : optimisation du signal d'avertissement en 3 étapes pour un retour auditif net et non intrusif sur les écrans restreints.\n- Maintien des réglages sécurisés du volume général sur tous les états du bureau."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0c00",
+					"raw_md5": "ad461dba510ff5a6215c8212c22b25ad"
+				},
+				"first_submission_date": 1790635230,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790635232,
+				"last_submission_date": 1790635230,
+				"md5": "f55178b3f0ea656453e115998b303a23",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3f7db24a9531b59ffd4e785ba6ee3892ca92555b",
+				"sha256": "72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+				"size": 245355,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
