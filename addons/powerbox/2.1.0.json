@@ -1,0 +1,57 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.1.0/powerbox-2.1.0.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "495fc43820c39d0172dc36164ea99e369d8e76e518b30be368ffc055bf643ae1",
+	"addonVersionName": "2.1.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Official NV Access Add-on Template Migration: Full integration with standard build pipelines and native 'What's new' display in the Add-on Store (NVDA 2026.1+).\n- Process Network Tracker: Fixed non-responsive 'Test Port and Latency' button by starting the background worker thread.\n- Smart Listening Sockets: Enabled local listening service port probing and latency measurement via loopback across network hubs.\n- Strict Win32 Ctypes Isolation: Completely isolated private WinDLL instances (wtsapi32, advapi32, user32, psapi) preventing prototype collisions with other NVDA add-ons.\n- UX & Feedback Mode Compliance: Enforced strict feedback modes preventing unintended speech leakage in beep/none modes.\n- Accessibility Refinements: Standardized button labels and accelerators to eliminate duplicate shortcut announcements in screen readers.\n- Speech Focus Protection: Prevented speech swallowing on dialog dismissal in file manager via focus delay.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790582772000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Di chuyển sang Mẫu Add-on chính thức của NV Access: Tích hợp hoàn toàn với quy trình đóng gói chuẩn và hiển thị 'Có gì mới' trong Cửa hàng Add-on (NVDA 2026.1+).\n- Trình theo dõi mạng của tiến trình: Đã sửa lỗi nút 'Kiểm tra cổng và độ trễ' không phản hồi bằng cách khởi chạy luồng xử lý nền.\n- Socket lắng nghe thông minh: Kích hoạt khả năng kiểm tra cổng dịch vụ đang lắng nghe cục bộ và đo độ trễ thông qua loopback.\n- Cách ly nghiêm ngặt Win32 Ctypes: Cách ly hoàn toàn các thực thể WinDLL riêng tư (wtsapi32, advapi32, user32, psapi) để ngăn chặn xung đột nguyên mẫu với các add-on khác.\n- Tuân thủ UX & chế độ phản hồi: Thực thi nghiêm ngặt các chế độ phản hồi nhằm ngăn chặn rò rỉ giọng nói trong chế độ tiếng bíp hoặc tắt tiếng.\n- Cải tiến khả năng tiếp cận: Chuẩn hóa nhãn nút và phím tăng tốc để loại bỏ thông báo phím tắt bị lặp lại trong trình đọc màn hình.\n- Bảo vệ tiêu điểm giọng nói: Ngăn chặn việc nuốt giọng nói khi đóng hộp thoại trong trình quản lý tệp thông qua độ trễ tiêu điểm."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- الانتقال إلى قالب إضافات NV Access الرسمي: تكامل كامل مع مسارات البناء القياسية وعرض ميزة 'ما الجديد' في متجر الإضافات (NVDA 2026.1+).\n- متتبع شبكة العمليات: إصلاح عدم استجابة زر 'فحص المنفذ وزمن الاستجابة' عن طريق تفعيل خيط المعالجة الخلفي.\n- مقابس الاستماع الذكية: تمكين فحص منافذ خدمات الاستماع المحلية وقياس زمن الاستجابة عبر الاسترجاع الداخلي (loopback).\n- عزل صارم لمكتبات Win32 Ctypes: عزل كامل لمكتبات WinDLL الخاصة (wtsapi32, advapi32, user32, psapi) لمنع تصادم النماذج الأولية مع إضافات NVDA الأخرى.\n- التوافق مع تجربة المستخدم وأوضاع التغذية الراجعة: تطبيق صارم لأوضاع الاستجابة لمنع تسريب النطق الصوتي في وضعي beep و none.\n- تحسينات سهولة الوصول: تنقيح تسميات الأزرار ومفاتيح الاختصار لمنع تكرار نطق الاختصارات في قارئات الشاشة.\n- حماية نطق قارئ الشاشة: منع ابتلاع رسائل إغلاق الحوارات في مدير الملفات من خلال تأخير نقل التركيز."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Migración a la plantilla oficial de complementos de NV Access: integración total con las canalizaciones de compilación estándar y visualización nativa de 'Novedades' en la Tienda de complementos (NVDA 2026.1+).\n- Rastreador de red de procesos: se corrigió el botón 'Probar puerto y latencia' que no respondía al iniciar el hilo de trabajo en segundo plano.\n- Sockets de escucha inteligentes: habilitado el sondeo de puertos de servicios de escucha locales y medición de latencia a través de bucle invertido (loopback).\n- Aislamiento estricto de Win32 Ctypes: instancias privadas de WinDLL completamente aisladas (wtsapi32, advapi32, user32, psapi) para evitar colisiones con otros complementos de NVDA.\n- Cumplimiento de UX y modo de respuesta: aplicación estricta de modos de respuesta para evitar fugas de voz no deseadas en los modos de pitido o ninguno.\n- Mejoras de accesibilidad: etiquetas de botones y aceleradores estandarizados para eliminar anuncios duplicados de atajos en lectores de pantalla.\n- Protección del foco de voz: se evitó la omisión de voz al cerrar diálogos en el administrador de archivos mediante un retardo de foco."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Migration vers le modèle officiel d'extension NV Access : intégration complète aux flux de compilation standard et affichage natif de 'Nouveautés' dans le Magasin d'extensions (NVDA 2026.1+).\n- Traqueur réseau des processus : correction du bouton 'Tester le port et la latence' qui ne répondait pas en démarrant le thread en arrière-plan.\n- Sockets d'écoute intelligents : activation du test des ports de service d'écoute locaux et de la mesure de latence via bouclage local (loopback).\n- Isolation stricte des Ctypes Win32 : isolation complète des instances privées WinDLL (wtsapi32, advapi32, user32, psapi) évitant les collisions de prototypes avec d'autres extensions NVDA.\n- Conformité UX et mode de retour : application stricte des modes de retour empêchant les fuites vocales involontaires dans les modes bips ou aucun.\n- Améliorations de l'accessibilité : standardisation des étiquettes de boutons et des raccourcis pour éliminer les annonces dupliquées par les lecteurs d'écran.\n- Protection vocale du focus : prévention de l'étouffement vocal lors de la fermeture des boîtes de dialogue dans le gestionnaire de fichiers grâce à un délai de focus."
+		}
+	]
+}
