@@ -1,0 +1,39 @@
+{
+	"addonId": "nvdaClipboard",
+	"displayName": "NVDA Clipboard",
+	"URL": "https://github.com/cary-rowen/NVDAClipboard/releases/download/v0.4.5/nvdaClipboard-0.4.5.nvda-addon",
+	"description": "NVDA Clipboard adds accessible navigation and bounded SQLite history for the Windows clipboard.\nHistory supports Unicode text with optional HTML or RTF, PNG or DIB images, mixed text and images, and real file groups, with user categories and a type-aware manager.\nCommands can append or temporarily paste NVDA's last spoken text.\nOptional Tiantan Clipboard synchronization uploads only permitted Unicode text.",
+	"sha256": "96de1e7bb26d348ebe1c9cda4a44d88c95460bcb7daa53cade63d84a06901608",
+	"addonVersionName": "0.4.5",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 4,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/NVDAClipboard",
+	"license": "GPL v2",
+	"homepage": "https://www.nvdacn.com/",
+	"changelog": "### 0.4.5\n\n- Unified appending selected and last spoken text: existing text is extended; non-text clipboard content is replaced with plain text.\n- Made pasting and appending the last spoken text consistent with NVDA's built-in copy command.\n- Fixed Clipboard Manager find and replace missing matches across the cursor and mishandling regular expressions in selected text.\n- Improved error reporting for invalid regular expressions and replacement group references.\n- Clarified documentation on marked selections, browse mode, and plain-text appending.\n- Updated issue templates and development tooling.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790688770000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "剪贴板",
+			"description": "剪贴板为 Windows 剪贴板提供无障碍浏览和容量受限的 SQLite 历史记录。\n历史记录支持 Unicode 文本及可选的 HTML 或 RTF 格式、PNG 或 DIB 图片、文本与图片混合内容和原生文件组，并提供用户类别及可识别内容类型的管理器。\n相关命令可以追加或临时粘贴 NVDA 最后朗读的文本。\n可选的天坦剪贴板同步仅上传符合要求的 Unicode 文本。",
+			"changelog": "### 0.4.5\n\n- 统一追加所选文本和最后朗读文本的行为：已有文本时在末尾追加，否则以纯文本替换剪贴板内容。\n- 粘贴和追加最后朗读文本时，与 NVDA 内置复制命令使用相同的朗读内容。\n- 修复剪贴板管理器查找和替换时漏查跨越光标位置的文本，以及选中文本的正则匹配错误。\n- 改进正则表达式或替换文本中的分组引用无效时的错误提示。\n- 明确文档中有关标记选区、浏览模式和纯文本追加的说明。\n- 更新问题反馈模板和开发工具。"
+		}
+	]
+}
