@@ -1,0 +1,57 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.1.4/powerbox-2.1.4.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "ccb60939b2219359e4c46f3f3ead083533f3e4991fff864c48fd845abc64581a",
+	"addonVersionName": "2.1.4",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Real-Time Terminal PATH Synchronization: Terminals launched via PowerBox immediately recognize newly installed tools directly from Windows Registry without restarting NVDA.\n- Pure Win32 Desktop Isolation: Enforced strict kernel desktop isolation (user32.OpenInputDesktop) securing Windows Logon, UAC (Consent UI), and lock screens.\n- Auditory Security Warning: Added a distinct 3-stage security alarm chime and speech alert for restricted commands on secure screens.\n- Documentation & Accessibility: Overhauled documentation with full RTL layout support, Dark Mode styling, and clean NVDA heading navigation.\n- Updated Localization: Synchronized translation catalogs across Arabic, Vietnamese, Spanish, and French.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790696180000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Đồng bộ biến môi trường PATH thời gian thực: Các cửa sổ dòng lệnh mở qua PowerBox nhận diện ngay các công cụ mới cài đặt từ Windows Registry mà không cần khởi động lại NVDA.\n- Cách ly màn hình cấp nhân Win32: Thực thi cách ly màn hình nghiêm ngặt qua user32.OpenInputDesktop để bảo vệ màn hình đăng nhập Windows, UAC và màn hình khóa.\n- Chuông cảnh báo an ninh âm thanh: Thêm chuông cảnh báo 3 giai đoạn kết hợp thông báo giọng nói khi thực hiện các lệnh bị hạn chế trên màn hình bảo mật.\n- Tài liệu và khả năng tiếp cận: Nâng cấp tài liệu với hỗ trợ bố cục RTL, giao diện tối (Dark Mode) và điều hướng tiêu đề mượt mà cho NVDA.\n- Cập nhật bản dịch: Đồng bộ hóa danh mục dịch thuật tiếng Ả Rập, tiếng Việt, tiếng Tây Ban Nha và tiếng Pháp."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- التزامن اللحظي لمتغيرات بيئة الطرفيات: تتعرف موجهات الأوامر المفتوحة عبر PowerBox فوراً على الأدوات المثبتة حديثاً مباشرة من ريجستري ويندوز دون الحاجة لإعادة تشغيل NVDA.\n- عزل أسطح المكتب بنواة Win32: تطبيق عزل أمني صارم لأسطح المكتب عبر user32.OpenInputDesktop لتأمين شاشات تسجيل الدخول، وتأكيد الصلاحيات UAC، وقفل الشاشة.\n- إنذار أمني صوتي: إضافة نغمة تحذير أمنية ثلاثية المراحل مصحوبة بتنبيه منطوق صريح عند محاولة تشغيل أوامر مقيدة على الشاشات الآمنة.\n- التوثيق وسهولة الوصول: تطوير شامل لملفات التوثيق مع دعم اتجاه اليمين لليسار (RTL)، والوضع الليلي، وتصفح سلس للعناوين في NVDA.\n- تحديث التوطين: مزامنة قواميس الترجمة للغات العربية، الفيتنامية، الإسبانية، والفرنسية."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Sincronización de PATH en tiempo real: Las terminales abiertas mediante PowerBox reconocen de inmediato las herramientas recién instaladas desde el Registro de Windows sin reiniciar NVDA.\n- Aislamiento de escritorio de kernel Win32: Aplicación de aislamiento estricto de escritorio mediante user32.OpenInputDesktop protegiendo el inicio de sesión, UAC y pantallas de bloqueo.\n- Alarma de seguridad auditiva: Inclusión de una alarma acústica de 3 fases y aviso por voz para comandos restringidos en pantallas seguras.\n- Documentación y accesibilidad: Renovación de la documentación con soporte RTL, modo oscuro y navegación clara por encabezados para NVDA.\n- Localización actualizada: Sincronización de catálogos de traducción en árabe, vietnamita, español y francés."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Synchronisation du PATH en temps réel : Les terminaux lancés via PowerBox reconnaissent immédiatement les outils nouvellement installés depuis le Registre Windows sans redémarrer NVDA.\n- Isolation du bureau avec le noyau Win32 : Application d'une isolation stricte du bureau via user32.OpenInputDesktop protégeant l'ouverture de session, l'UAC et les écrans de verrouillage.\n- Alarme de sécurité sonore : Ajout d'une alarme acoustique en 3 étapes et d'une alerte vocale pour les commandes restreintes sur les écrans sécurisés.\n- Documentation et accessibilité : Refonte de la documentation avec prise en charge du RTL, mode sombre et navigation fluide par titres pour NVDA.\n- Localisation mise à jour : Synchronisation des catalogues de traduction en arabe, vietnamien, espagnol et français."
+		}
+	]
+}
