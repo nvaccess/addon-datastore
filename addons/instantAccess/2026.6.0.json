@@ -47,5 +47,47 @@
 			"description": "一款高效的快捷启动工具，可通过专用快捷键层快速打开网站、文件和文件夹，或启动程序。\n\t支持后台执行和命令行参数，可调整反馈详细程度，并可导入或导出设置。",
 			"changelog": "\n- Version 2026.6:\n  - Browse your items: In Instant Access mode, use the arrow keys or Tab to hear your items and Enter to run one; F1 or H lists them all. Turn it on in the add-on settings.\n  - Safer settings: A damaged or missing settings file can be restored from the backup, and your items are no longer lost when something goes wrong.\n  - One item at a time: Items now run one after another, so text and keystrokes no longer get mixed up.\n  - NVDA commands finish before the next action starts, and \"Stop on error\" now works correctly.\n  - Keys like Shift or Ctrl are no longer left pressed if typing fails.\n  - Batch files in folders with spaces in their names now run correctly.\n  - What you typed in a dialog is kept if saving fails.\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b76125b73c642f03c82fc9915741cfc7928e72f2659a3d65f5c8ae885684284b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b76125b73c642f03c82fc9915741cfc7928e72f2659a3d65f5c8ae885684284b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0e0800",
+					"raw_md5": "6ca26a9f1cfae43a384b2eeae58a5093"
+				},
+				"first_submission_date": 1790783950,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790784052,
+				"last_submission_date": 1790783950,
+				"md5": "cdbf8e235c6680340853900aa39df2f0",
+				"names": [],
+				"reputation": 0,
+				"sha1": "eb760a8bb82bcee116a0dfce2c7435c2c8759aec",
+				"sha256": "b76125b73c642f03c82fc9915741cfc7928e72f2659a3d65f5c8ae885684284b",
+				"size": 149180,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
