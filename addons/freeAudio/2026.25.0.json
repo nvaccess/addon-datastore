@@ -28,5 +28,47 @@
 	"changelog": "\n# freeAudio: What's New\n\n## FreeRadio is now freeAudio\n\n- Your settings, favourites, podcasts, jukebox library and recordings location are carried over automatically on first start.\n- Custom shortcuts assigned in Input Gestures must be set again.\n- Uninstall the old FreeRadio add-on to avoid conflicts.\n\n## Added\n\n### Favourite groups (folders)\n\n- **M3U import:** reads the `group-title` attribute. If only the first station in a folder carries the tag, as common exporters such as DVBViewer write it, the group is carried forward to the stations that follow.\n- **M3U export:** writes `group-title` again, so a round trip through freeAudio no longer drops the folder structure. JSON import and export keep the same group field.\n- **List display:** each favourite shows its folder as a trailing \"— Group\" suffix. This is display only, and the station's name is never changed.\n- **Filter box:** now also matches the group and splits your text on whitespace, so each word can match a different field. For example, \"Houston Classical\" finds \"Houston Public Media Classical\", even though that phrase never appears in one piece.\n- **Assign to Group…** (new context-menu command): mark favourites with `.`, then type a group name to organise them by hand, or leave the name empty to clear the group. It works for hand-made favourites too, not only imported M3U ones.\n- **Backward compatible:** favourites without a group default to an empty group, and the list looks and behaves exactly as before until you import a grouped playlist or use Assign to Group.\n\n### Mark a range of items\n\nFavourites, Liked Songs, Audio Books and Jukebox already let you mark single rows with `.` for bulk removal. You can now mark whole ranges:\n\n- **Shift+End:** marks or unmarks from the focused row to the last row.\n- **Shift+Home:** marks or unmarks from the focused row to the first row.\n\nThe focused row's current state decides the direction: if it is unmarked, the whole range gets marked, and if it is marked, the whole range gets unmarked. This mirrors how Shift+Home and Shift+End extend a selection in a text field. Afterwards focus moves to the far end of the range and the number of rows changed is announced. The placeholder rows in Liked Songs (\"No liked songs yet.\", \"No results found.\") are never marked.\n\n### Timers\n\n- New **recurring** option for timers.\n\n### Windows Explorer integration\n\nA new `appModules/explorer.py`, active only in the file list of `explorer.exe`, not in the address bar, tree view, ribbon, search box or other Explorer controls. It adds two commands, both unassigned by default:\n\n- **Play the focused file with freeAudio**\n- **Add the focused file or folder to the freeAudio jukebox**\n\nAssign a key (for example `.` or `,`) in Input Gestures while focused in Explorer. It is bound only there and still works as itself everywhere else.\n\n## Fixed\n\n- **The freeAudio window sometimes failed to come to the foreground**, requiring an NVDA restart. If you minimized the window instead of closing it, it stayed in the taskbar and could not be brought back. Reopening it now restores a minimized window before raising it.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1790774347000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2fac6ec8923aa6eb15bd4512870af97aa35c483a48dee9b39868018c025f640d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "2fac6ec8923aa6eb15bd4512870af97aa35c483a48dee9b39868018c025f640d",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "a597e6f08ec58ccaaa023b7f19097eaa"
+				},
+				"first_submission_date": 1790774353,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790774360,
+				"last_submission_date": 1790774353,
+				"md5": "b0f2bb9a16d3411723830ac2d215ddfc",
+				"names": [],
+				"reputation": 0,
+				"sha1": "8b16e8e966ecbf071ff828f4a40f0f39f7b5ef8e",
+				"sha256": "2fac6ec8923aa6eb15bd4512870af97aa35c483a48dee9b39868018c025f640d",
+				"size": 48518303,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
