@@ -1,0 +1,82 @@
+{
+	"addonId": "instantTimer",
+	"displayName": "Instant Timer",
+	"URL": "https://github.com/kamalyaser31/instantTimer/releases/download/v2026.2/instantTimer-2026.2.nvda-addon",
+	"description": "Countdown timers and stopwatch for NVDA with 5 preset timers, an ad-hoc quick timer, a modal command layer, and audio and speech alerts.",
+	"sha256": "4f8b9f0af20a69bfa86cfc2fb4321c6bd83fafc26fc8ecb6704176c919344e60",
+	"addonVersionName": "2026.2",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/instantTimer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/instantTimer",
+	"changelog": "- Version 2026.2: The command layer now opens with NVDA+Y to avoid a conflict with Instant Access. Renaming a running timer no longer stops it. The report-all command includes the stopwatch. Settings are saved safely and active timers survive an NVDA crash. Fixed the layer staying active after an error, and other small fixes.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790783099000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "المؤقت الفوري",
+			"description": "إضافة لمؤقتات العد التنازلي وساعة الإيقاف في NVDA، تشتمل على 5 مؤقتات مستقلة وطبقة أوامر سريعة وتنبيهات صوتية ونطقية.",
+			"changelog": "- الإصدار 2026.2: صارت طبقة الأوامر تُفتح بـ NVDA+Y تجنباً للتعارض مع إضافة Instant Access. لم يعد تغيير تسمية مؤقت جارٍ يوقفه. صار أمر الإبلاغ الشامل يتضمن ساعة الإيقاف. تُحفظ الإعدادات حفظاً آمناً، وتبقى المؤقتات النشطة بعد تعطل NVDA. أُصلح بقاء الطبقة نشطة بعد وقوع خطأ، مع إصلاحات صغيرة أخرى."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4f8b9f0af20a69bfa86cfc2fb4321c6bd83fafc26fc8ecb6704176c919344e60",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4f8b9f0af20a69bfa86cfc2fb4321c6bd83fafc26fc8ecb6704176c919344e60",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "8cd67660cedded79608cffb739aebdf7"
+				},
+				"first_submission_date": 1790783104,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790783108,
+				"last_submission_date": 1790783104,
+				"md5": "4aae932003a43913c1dce54cab9c1654",
+				"names": [],
+				"reputation": 0,
+				"sha1": "deabde1be4d8358337d4b59c1e7b3941362b1148",
+				"sha256": "4f8b9f0af20a69bfa86cfc2fb4321c6bd83fafc26fc8ecb6704176c919344e60",
+				"size": 255340,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11894"
+}
