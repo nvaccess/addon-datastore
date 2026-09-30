@@ -64,5 +64,47 @@
 			"description": "Module complémentaire qui présente le contraste de couleur du curseur système, de l'objet navigateur et de tous les éléments de la page.\nPrincipalement utile pour aider les testeurs d'accessibilité numérique aveugles à déterminer si le texte et les contrôles visibles respectent les seuils définis par les Règles pour l'accessibilité des contenus Web (WCAG).",
 			"changelog": "Nouveautés de la version 2026.09.30 :\nAjout de traductions en allemand, espagnol, français, polonais, russe et turc.\nAjout d'une section à la documentation qui explique le fonctionnement du module complémentaire.\nNouveautés de la version 2026.06.12 :\nIl est désormais possible d'appuyer rapidement deux fois sur NVDA+shift+C pour présenter le contraste de l'indicateur de focus en mode navigation.\nPassage à une numérotation de version par date, c'est-à-dire aaaa.mm.jj, pour rester cohérent avec mes autres modules complémentaires.\nNouveautés de la version 0.4 :\nCorrection d'une erreur d'arrondi qui faisait compter comme des échecs des valeurs de contraste qui passaient tout juste, par exemple #4f5b61 sur #ffffff passe exactement à 7:1\nNouveautés de la version 0.3 :\nPremière version publique, c'est-à-dire que j'ai corrigé tous les bugs que je connais pour le moment.\nPublication de la [page de test sur mon site](https://ctemm.me/files/test_contrast.html) afin qu'elle soit accessible sans avoir à cloner le dépôt.\nNouveautés de la version 0.2 :\nIl est maintenant possible d'inspecter le contraste des indicateurs de focus à l'aide de NVDA+shift+c. Cela fonctionne en capturant une région de l'écran autour de l'élément ciblé via un appel `BitBlt`, puis en échantillonnant les pixels le long du périmètre de l'élément à 8px pour la référence de l'arrière-plan et de 1 à 4px pour la transition au contraste le plus élevé.\nAjout d'un document contenant des scénarios de test (tests/contrast.html) qui permet de mesurer ce que prend en charge ce module complémentaire et où il reste limité pour l'instant. Plus d'informations à ce sujet à venir.\nNouveautés de la version 0.1 :\nVersion initiale. Veuillez consulter la documentation de ce module complémentaire pour savoir comment il fonctionne."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b67af4a2cab96bc643f6cccc4b84a621f63ccb8c9ee2a7d0fe2e6fec29e9dc01",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b67af4a2cab96bc643f6cccc4b84a621f63ccb8c9ee2a7d0fe2e6fec29e9dc01",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181c1d1c0000",
+					"raw_md5": "cf8d91f65f43db47a28d39554f15bdb5"
+				},
+				"first_submission_date": 1790804178,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790804179,
+				"last_submission_date": 1790804178,
+				"md5": "c057c29d97081b284fbbcf6bbd1a3f82",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2c047c7d97e74b4441ee204c795055b1cc39702b",
+				"sha256": "b67af4a2cab96bc643f6cccc4b84a621f63ccb8c9ee2a7d0fe2e6fec29e9dc01",
+				"size": 94536,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
