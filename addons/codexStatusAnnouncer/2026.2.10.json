@@ -28,5 +28,47 @@
 	"changelog": "* Recognizes shorter model and reasoning labels exposed by the updated ChatGPT desktop app, including Sol, Luna, and Astra variants.\n* Updates model-control help to describe the native model and reasoning choices.\n* Keeps model availability and selection under the ChatGPT app's control; no model is selected or changed automatically.\n* Plays progress sounds in order and discards stale operation cues when a task finishes.\n* Suppresses duplicate completion cues after a finished task while retaining failure notices.\n* Opens the current ChatGPT Settings → Usage page from Open usage and credits.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1790740426000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "c9062cc8c00c49ce8060f66c43e63c51"
+				},
+				"first_submission_date": 1790740432,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790740434,
+				"last_submission_date": 1790740432,
+				"md5": "06ec6920c9d757f16eab64890736618b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e27275ada2d0c7003292e6c2e00e5d521d55d89c",
+				"sha256": "8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+				"size": 483399,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
