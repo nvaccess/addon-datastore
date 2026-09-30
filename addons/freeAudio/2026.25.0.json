@@ -1,0 +1,32 @@
+{
+	"addonId": "freeAudio",
+	"displayName": "freeAudio: Radio and more",
+	"URL": "https://github.com/Surveyor123/freeAudio/releases/download/v2026.25.0/freeAudio-2026.25.0.nvda-addon",
+	"description": "freeAudio is an internet radio, podcast, audio-book, and local music add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, the libriVox + GETEM digital library for the visually impaired, and your own local audio files and folders through its built-in jukebox. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, per-audio-book, and per-jukebox-track audio profiles. Podcast episodes, audio book chapters, and jukebox tracks resume automatically from where you left off - jukebox folders even pick up on the last track you were playing - with adjustable pitch-preserving playback speed and independent pitch-shift (semitone transpose). Playback is handled by BASS, with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "2fac6ec8923aa6eb15bd4512870af97aa35c483a48dee9b39868018c025f640d",
+	"addonVersionName": "2026.25.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 25,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeAudio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeAudio",
+	"changelog": "\n# freeAudio: What's New\n\n## FreeRadio is now freeAudio\n\n- Your settings, favourites, podcasts, jukebox library and recordings location are carried over automatically on first start.\n- Custom shortcuts assigned in Input Gestures must be set again.\n- Uninstall the old FreeRadio add-on to avoid conflicts.\n\n## Added\n\n### Favourite groups (folders)\n\n- **M3U import:** reads the `group-title` attribute. If only the first station in a folder carries the tag, as common exporters such as DVBViewer write it, the group is carried forward to the stations that follow.\n- **M3U export:** writes `group-title` again, so a round trip through freeAudio no longer drops the folder structure. JSON import and export keep the same group field.\n- **List display:** each favourite shows its folder as a trailing \"— Group\" suffix. This is display only, and the station's name is never changed.\n- **Filter box:** now also matches the group and splits your text on whitespace, so each word can match a different field. For example, \"Houston Classical\" finds \"Houston Public Media Classical\", even though that phrase never appears in one piece.\n- **Assign to Group…** (new context-menu command): mark favourites with `.`, then type a group name to organise them by hand, or leave the name empty to clear the group. It works for hand-made favourites too, not only imported M3U ones.\n- **Backward compatible:** favourites without a group default to an empty group, and the list looks and behaves exactly as before until you import a grouped playlist or use Assign to Group.\n\n### Mark a range of items\n\nFavourites, Liked Songs, Audio Books and Jukebox already let you mark single rows with `.` for bulk removal. You can now mark whole ranges:\n\n- **Shift+End:** marks or unmarks from the focused row to the last row.\n- **Shift+Home:** marks or unmarks from the focused row to the first row.\n\nThe focused row's current state decides the direction: if it is unmarked, the whole range gets marked, and if it is marked, the whole range gets unmarked. This mirrors how Shift+Home and Shift+End extend a selection in a text field. Afterwards focus moves to the far end of the range and the number of rows changed is announced. The placeholder rows in Liked Songs (\"No liked songs yet.\", \"No results found.\") are never marked.\n\n### Timers\n\n- New **recurring** option for timers.\n\n### Windows Explorer integration\n\nA new `appModules/explorer.py`, active only in the file list of `explorer.exe`, not in the address bar, tree view, ribbon, search box or other Explorer controls. It adds two commands, both unassigned by default:\n\n- **Play the focused file with freeAudio**\n- **Add the focused file or folder to the freeAudio jukebox**\n\nAssign a key (for example `.` or `,`) in Input Gestures while focused in Explorer. It is bound only there and still works as itself everywhere else.\n\n## Fixed\n\n- **The freeAudio window sometimes failed to come to the foreground**, requiring an NVDA restart. If you minimized the window instead of closing it, it stayed in the taskbar and could not be brought back. Reopening it now restores a minimized window before raising it.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790774347000,
+	"translations": []
+}
