@@ -1,0 +1,39 @@
+{
+	"addonId": "audioSwitcher",
+	"displayName": "Audio Switcher",
+	"URL": "https://github.com/kamalyaser31/nvda-audio-switcher/releases/download/v2026.4/audioSwitcher-2026.4.nvda-addon",
+	"description": "Sets configured or directly selected speakers and microphones as default and announces current defaults.",
+	"sha256": "be38ecadb240a8cc89d6fab74f55ced6e63866763c6b314a2831d22d437bb498",
+	"addonVersionName": "2026.4",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"changelog": "Added one-key toggling of NVDA's own audio output between the system default and a configured secondary device. Added a secondary output selector to the settings panel and quick selection dialog, and a gesture to open the settings directly. Saved devices are kept in settings while disconnected, and Arabic translations now load correctly. Requires NVDA 2025.1 or later.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790784320000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مبدل أجهزة الصوت",
+			"description": "تعيين السماعات والميكروفونات المهيأة أو المختارة مباشرة أجهزة افتراضية، ونطق الأجهزة الافتراضية الحالية.",
+			"changelog": "إضافة تبديل مخرج صوت NVDA بنقرة واحدة بين الجهاز الافتراضي للنظام وجهاز ثانوي محدد. وإضافة اختيار الجهاز الثانوي في لوحة الإعدادات وحوار الاختيار السريع، وإيماءة لفتح الإعدادات مباشرة. وحفظ الأجهزة المهيأة في الإعدادات وإن انفصلت، وإصلاح تحميل الترجمة العربية. وتتطلب الإضافة NVDA 2025.1 أو أحدث."
+		}
+	]
+}
