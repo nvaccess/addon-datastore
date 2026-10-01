@@ -1,0 +1,38 @@
+{
+	"addonId": "contextualPronunciation",
+	"displayName": "Context-aware pronunciation normalization",
+	"URL": "https://github.com/ChenZ2000/contextualPronunciation/releases/download/v0.8.3/contextualPronunciation-0.8.3.nvda-addon",
+	"description": "Corrects selected Chinese polyphones and preserves lexical apostrophes before text reaches the active speech synthesizer.",
+	"sha256": "efb6fc560bafe1335da5c180e90a25a54c5a13360324b24cc81cac2d53b23f1e",
+	"addonVersionName": "0.8.3",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 8,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "ChenZ2000",
+	"sourceURL": "https://github.com/ChenZ2000/contextualPronunciation/releases/tag/v0.8.3",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/ChenZ2000/contextualPronunciation",
+	"changelog": "Distinguish stature gè from neutral classifiers; generalize classified growth objects and preserve lexical neutral words.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790860435000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "上下文发音规范化",
+			"description": "根据有限上下文纠正常见中文多音字，并在文本送入语音合成器前保留英文词内撇号。"
+		}
+	]
+}
