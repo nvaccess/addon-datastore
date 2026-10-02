@@ -4,6 +4,7 @@
 
 import argparse
 import json
+
 from .validate import validateJson
 
 """Validate json data file

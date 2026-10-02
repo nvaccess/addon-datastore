@@ -4,9 +4,9 @@
 
 from dataclasses import dataclass
 from typing import (
-	cast,
 	Literal,
 	NamedTuple,
+	cast,
 )
 
 from requests.structures import CaseInsensitiveDict

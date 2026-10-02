@@ -2,13 +2,13 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from collections.abc import Generator
-from glob import glob
 import os
 import pathlib
 import shutil
 import tempfile
 import zipfile
+from collections.abc import Generator
+from glob import glob
 
 from .addonManifest import AddonManifest
 
@@ -36,7 +36,7 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 
 def getAddonManifestLocalizations(
 	manifest: AddonManifest,
-) -> Generator[tuple[str, AddonManifest], None, None]:
+) -> Generator[tuple[str, AddonManifest]]:
 	"""Extract data from translated manifest.ini from *.nvda-addon and parse.
 	Raise on error.
 	"""
