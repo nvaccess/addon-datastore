@@ -1,0 +1,57 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.2.0/powerbox-2.2.0.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "19ce3edd7c982d3ca061f865ec34636e0e1556bcc64cf0cacdfcbf7e31c0e39d",
+	"addonVersionName": "2.2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Enterprise Server Guard: Protects Windows Servers and remote sessions (RDP, NVDA Remote) from accidental Sleep/Hibernate lockouts.\n- Unified Power Confirmations: Dialog and double-press confirmations now apply to all power actions (Shutdown, Restart, Firmware, Sleep, Hibernate).\n- UEFI Firmware Reboot: Added new shortcut (Shift+R) to directly restart into BIOS/UEFI settings.\n- Speech Focus Protection: Suppressed unintended background window announcements when confirming power dialogs.\n- Settings Integration: New configurable preferences for the server power guard and unified confirmation styles.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791028330000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Bảo vệ Máy chủ Doanh nghiệp: Bảo vệ Windows Servers và các phiên từ xa (RDP, NVDA Remote) khỏi việc vô tình kích hoạt chế độ Ngủ/Ngủ đông gây mất kết nối.\n- Thống nhất Xác nhận Nguồn: Các xác nhận bằng hộp thoại và nhấn đúp hiện áp dụng cho tất cả các thao tác nguồn (Tắt máy, Khởi động lại, Firmware, Ngủ, Ngủ đông).\n- Khởi động lại vào Firmware UEFI: Thêm phím tắt mới (Shift+R) để khởi động lại trực tiếp vào cài đặt BIOS/UEFI.\n- Bảo vệ Tiêu điểm Giọng nói: Loại bỏ các thông báo cửa sổ nền không mong muốn khi xác nhận hộp thoại nguồn.\n- Tích hợp Cài đặt: Các tùy chọn mới để định cấu hình bảo vệ nguồn máy chủ và các kiểu xác nhận thống nhất."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- حماية خوادم المؤسسات: حماية الخوادم وجلسات التحكم عن بعد (RDP و NVDA Remote) من الانقطاع العرضي بسبب أوامر السكون والإسبات.\n- توحيد تأكيدات الطاقة: تطبيق أنماط التأكيد (الحوار أو الضغط المزدوج) على كافة أوامر الطاقة (الإغلاق، إعادة التشغيل، البيوس، السكون، الإسبات).\n- إعادة التشغيل للبيوس (UEFI): إضافة اختصار جديد (Shift+R) لإعادة التشغيل والدخول مباشرة إلى إعدادات البيوس.\n- حماية نطق قارئ الشاشة: كتم نطق النوافذ الخلفية غير المقصود عند الموافقة على حوارات الطاقة.\n- تكامل الإعدادات: خيارات جديدة لتخصيص حماية الخوادم وتوحيد أنماط التأكيد."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Protección de servidores empresariales: protege los servidores Windows y las sesiones remotas (RDP, NVDA Remote) de bloqueos accidentales por suspensión/hibernación.\n- Confirmaciones de energía unificadas: las confirmaciones de diálogo y doble pulsación ahora se aplican a todas las acciones de energía (Apagar, Reiniciar, Firmware, Suspender, Hibernar).\n- Reinicio de firmware UEFI: se agregó un nuevo atajo (Shift+R) para reiniciar directamente en la configuración de BIOS/UEFI.\n- Protección del foco de voz: se suprimieron los anuncios involuntarios de ventanas de fondo al confirmar diálogos de energía.\n- Integración de configuración: nuevas preferencias configurables para la protección de energía del servidor y estilos de confirmación unificados."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Protection des serveurs d'entreprise : Protège les serveurs Windows et les sessions distantes (RDP, NVDA Remote) contre les verrouillages accidentels dus à la veille/veille prolongée.\n- Confirmations d'alimentation unifiées : Les confirmations par boîte de dialogue et double pression s'appliquent désormais à toutes les actions d'alimentation (Arrêter, Redémarrer, UEFI, Veille, Veille prolongée).\n- Redémarrage vers le micrologiciel UEFI : Ajout d'un nouveau raccourci (Shift+R) pour redémarrer directement dans les paramètres du BIOS/UEFI.\n- Protection vocale du focus : Suppression des annonces de fenêtres en arrière-plan non désirées lors de la confirmation des dialogues d'alimentation.\n- Intégration des paramètres : Nouvelles préférences configurables pour la protection d'alimentation du serveur et les styles de confirmation unifiés."
+		}
+	]
+}
