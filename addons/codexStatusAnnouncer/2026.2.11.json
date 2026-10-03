@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.11/chatGPTDesktopAccess-2026.2.11.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "8e4f3c05afc05833ad0a778cf17ea71edaa1de61056664f948eaa4d19bc87737",
+	"addonVersionName": "2026.2.11",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 11
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Adds content-free, rate-limited timing diagnostics for conversation scans and mode detection.\n* Recognizes alternate accessible labels and descriptions on the native ChatGPT/Codex selector, while rejecting ordinary chat titles and tolerating unavailable optional Chromium properties.\n* In Codex views where the native Attach files or connect apps control is available, activating Add files and more moves focus there and aligns the browse position when NVDA permits, without selecting a file.\n* Removes the misleading attachment-popup hint and avoids scanning the native Windows Select files dialog as a Chromium conversation.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791059113000,
+	"translations": []
+}
