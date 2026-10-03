@@ -239,5 +239,47 @@
 			"description": "A handy resource monitor to report CPU load, memory usage, disk usage status and more.",
 			"changelog": "* NVDA 2026.1 (64-bit) or later is required.\n* Added an add-on setting to configure wi-fi connect/disconnect notification method (off, message, sound, both message and sound (default)).\n* NVDA+Shift+number row commands used to announce individual resource usage information are deprecated and will be removed in a future add-on release."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/55a8e21124dff17b3bca6f4567f75d06957e8a3a9c415054e13916202bda609c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "55a8e21124dff17b3bca6f4567f75d06957e8a3a9c415054e13916202bda609c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0e0d0400",
+					"raw_md5": "a7d41368ea56ba703d629c69b456c458"
+				},
+				"first_submission_date": 1790986155,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790986157,
+				"last_submission_date": 1790986155,
+				"md5": "60e2740840273eca26ac02fa650dd8a7",
+				"names": [],
+				"reputation": 0,
+				"sha1": "d8525f1af17900693651b181a74f95f06a14a7ee",
+				"sha256": "55a8e21124dff17b3bca6f4567f75d06957e8a3a9c415054e13916202bda609c",
+				"size": 347352,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
