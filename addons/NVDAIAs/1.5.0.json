@@ -1,0 +1,39 @@
+{
+	"addonId": "NVDAIAs",
+	"displayName": "NVDAIAs - Chat with ChatGPT, Gemini and Claude",
+	"URL": "https://github.com/weliveiracruz/NVDAIAs/releases/download/v1.5.0/NVDAIAs-1.5.0.nvda-addon",
+	"description": "Chat with ChatGPT (OpenAI), Gemini (Google) or Claude (Anthropic) from an accessible NVDA window. Press NVDA+Alt+I, type the question and press Enter; Shift+Tab goes to the conversation list. Each AI is connected with an access token (API key) generated on the provider's site and stored encrypted on the computer. It can also describe the navigator object or the screen with NVDA+Alt+D and NVDA+Shift+Alt+D.",
+	"sha256": "453747c329c8cac723986ffa4190b26285623fc7b2c465ec8e0df14366b0ed6c",
+	"addonVersionName": "1.5.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Wellington Cruz",
+	"sourceURL": "https://github.com/weliveiracruz/NVDAIAs",
+	"license": "GPL v2",
+	"homepage": "https://github.com/weliveiracruz/NVDAIAs",
+	"changelog": "Tokens and conversation history are now kept when the add-on is updated (before, NVDA ran the uninstall task of the old version during updates and they were deleted). Updating from 1.0.0 to 1.4.0 is also covered: the data is copied when the new version is installed and restored when it starts. The current conversation is now a branch of the conversation tree, after Previous conversations, that can be collapsed and expanded.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791157002000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "NVDAIAs - Converse com o ChatGPT, o Gemini e o Claude",
+			"description": "Converse com o ChatGPT (OpenAI), o Gemini (Google) ou o Claude (Anthropic) em uma janela acessível do NVDA. Pressione NVDA+Alt+I, digite a pergunta e pressione Enter; com Shift+Tab você chega à lista da conversa. Cada IA é conectada com um token de acesso (chave de API) gerado no site do provedor e guardado de forma criptografada no computador. Também descreve o objeto de navegação ou a tela com NVDA+Alt+D e NVDA+Shift+Alt+D.",
+			"changelog": "Os tokens e o histórico de conversas agora são mantidos quando o complemento é atualizado (antes, o NVDA rodava a desinstalação da versão antiga durante a atualização e eles eram apagados). A atualização a partir das versões 1.0.0 a 1.4.0 também está coberta: os dados são copiados na instalação da nova versão e restaurados quando ela inicia. A conversa atual agora é um ramo da árvore, depois de Conversas anteriores, que pode ser recolhido e expandido."
+		}
+	]
+}
