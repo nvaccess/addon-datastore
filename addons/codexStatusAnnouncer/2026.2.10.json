@@ -1,0 +1,75 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.10/chatGPTDesktopAccess-2026.2.10.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+	"addonVersionName": "2026.2.10",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 10
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Recognizes shorter model and reasoning labels exposed by the updated ChatGPT desktop app, including Sol, Luna, and Astra variants.\n* Updates model-control help to describe the native model and reasoning choices.\n* Keeps model availability and selection under the ChatGPT app's control; no model is selected or changed automatically.\n* Plays progress sounds in order and discards stale operation cues when a task finishes.\n* Suppresses duplicate completion cues after a finished task while retaining failure notices.\n* Opens the current ChatGPT Settings → Usage page from Open usage and credits.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790740426000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000006070600",
+					"raw_md5": "c9062cc8c00c49ce8060f66c43e63c51"
+				},
+				"first_submission_date": 1790740432,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790740434,
+				"last_submission_date": 1790740432,
+				"md5": "06ec6920c9d757f16eab64890736618b",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e27275ada2d0c7003292e6c2e00e5d521d55d89c",
+				"sha256": "8335a1d59ee110c3c1f4a2aef2ddc61ff4b66e7be86e8f0d05121f9b6bdcc755",
+				"size": 483399,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11697"
+}
