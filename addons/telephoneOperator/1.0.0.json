@@ -1,0 +1,75 @@
+{
+	"addonId": "telephoneOperator",
+	"displayName": "Telephone Operator",
+	"URL": "https://github.com/rameshpatil7721/Telephone-Operator/releases/download/v1.0.0/telephoneOperator-1.0.0.nvda-addon",
+	"description": "Telephone Operator helps users make phone calls without manually typing phone numbers on their phone. Select or focus a phone number on the computer and use the NVDA shortcut to send the number to a phone connected to the same network. Verify the number on the phone and press CALL.\n\nTo start: Press NVDA+Alt+Z or Go to NVDA menu > Tools > Telephone Operator > Start Telephone Operator.\nOn your phone: Open the displayed address in your browser or scan the QR code shown in the dialog.\nTo send a number: Press NVDA+Alt+C after selecting or focusing the phone number.\nThe number will appear on your Phone. Verify number and Press Call button.\nTo stop: Press NVDA+Alt+Z or Go to NVDA menu > Tools > Telephone Operator > Stop Telephone Operator.",
+	"sha256": "b81c0a2c9cf6718cc6362dc44aaa4304be5e2abf85838d85ec6523cde507f792",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ramesh Patil",
+	"sourceURL": "https://github.com/rameshpatil7721/Telephone-Operator",
+	"license": "GPL v2",
+	"homepage": "https://github.com/rameshpatil7721/Telephone-Operator",
+	"changelog": "Initial release of Telephone Operator.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790679457000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b81c0a2c9cf6718cc6362dc44aaa4304be5e2abf85838d85ec6523cde507f792",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b81c0a2c9cf6718cc6362dc44aaa4304be5e2abf85838d85ec6523cde507f792",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0e00",
+					"raw_md5": "1f750d8bb6dc8de2ec33d205c17da650"
+				},
+				"first_submission_date": 1790679462,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790679465,
+				"last_submission_date": 1790679462,
+				"md5": "7cbc72081508a0b32954857e847517ad",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9fff834b27db9974e148a5c74194d42194c14dcc",
+				"sha256": "b81c0a2c9cf6718cc6362dc44aaa4304be5e2abf85838d85ec6523cde507f792",
+				"size": 2778381,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12031"
+}
