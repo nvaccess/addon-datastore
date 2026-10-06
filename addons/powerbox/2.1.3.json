@@ -1,0 +1,100 @@
+{
+	"addonId": "powerbox",
+	"displayName": "PowerBox: Essential Windows Productivity Tools",
+	"URL": "https://github.com/thomas-a-fayez/nvda-powerbox/releases/download/v2.1.3/powerbox-2.1.3.nvda-addon",
+	"description": "Enterprise-grade Windows productivity, system diagnostics, and server administration toolkit.\nFeatures clean multi-layered navigation (Quick Apps, Terminals, Network, System & Power, Files & Storage),\nreal-time process and socket tracking, and comprehensive accessibility controls.",
+	"sha256": "72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+	"addonVersionName": "2.1.3",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 1,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Thomas A. Fayez",
+	"sourceURL": "https://github.com/thomas-a-fayez/nvda-powerbox/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/thomas-a-fayez/nvda-powerbox",
+	"changelog": "- Defense-in-Depth Security Hardening: Implemented automated method-level security wrapping, ensuring that custom shortcuts assigned in NVDA's Input Gestures dialog are strictly blocked on secure screens.\n- UAC & Consent UI Protection: Enforced zero-trust boundary lockdown preventing unauthorized action execution during User Account Control (UAC) elevation prompts.\n- Refined Acoustic Security Alarm: Tuned the 3-stage warning chime for deliberate, non-intrusive auditory feedback on restricted screens.\n- Maintained safe master volume adjustments across all desktop states.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1790635226000,
+	"translations": [
+		{
+			"language": "vi",
+			"displayName": "PowerBox: Các công cụ nâng cao năng suất Windows thiết yếu",
+			"description": "Bộ công cụ quản trị máy chủ, chẩn đoán hệ thống và nâng cao năng suất Windows cấp doanh nghiệp.\nNổi bật với điều hướng phân lớp rõ ràng (Ứng dụng nhanh, Cửa sổ dòng lệnh, Mạng, Hệ thống & Nguồn điện, Tệp & Lưu trữ),\ntheo dõi tiến trình và socket thời gian thực, cùng các điều khiển hỗ trợ tiếp cận toàn diện.",
+			"changelog": "- Tăng cường bảo mật theo chiều sâu: Triển khai cơ chế bọc bảo mật tự động ở cấp độ phương thức, đảm bảo các phím tắt tùy chỉnh trong hộp thoại Cử chỉ nhập liệu của NVDA bị chặn nghiêm ngặt trên màn hình bảo mật.\n- Bảo vệ giao diện UAC: Thực thi phong tỏa ranh giới Zero-Trust ngăn chặn việc thực thi tác vụ trái phép trong các lời nhắc nâng cao quyền Kiểm soát tài khoản người dùng (UAC).\n- Chuông cảnh báo an ninh tinh chỉnh: Điều chỉnh chuông cảnh báo âm thanh 3 giai đoạn để cung cấp phản hồi âm thanh rõ ràng, không gây khó chịu trên các màn hình bị hạn chế.\n- Duy trì khả năng điều chỉnh âm lượng tổng an toàn trên mọi trạng thái màn hình."
+		},
+		{
+			"language": "ar",
+			"displayName": "PowerBox: أدوات إنتاجية ويندوز الأساسية",
+			"description": "مجموعة أدوات احترافية للإنتاجية، وتشخيص النظام، وإدارة الخوادم على ويندوز للمؤسسات.\nتتميز بتنقل طبقي منظم عبر 5 طبقات (التطبيقات السريعة، موجهات الأوامر، الشبكة، النظام والطاقة، الملفات والتخزين)،\nوتتبع لحظي للعمليات ومقابس الشبكة، مع تحكم شامل وسهل في إمكانيات الوصول.",
+			"changelog": "- التحصين الأمني الشامل (الدفاع بالعمق): تطبيق تغليف أمني تلقائي على مستوى الدوال، لضمان حظر أي اختصارات مخصصة يعينها المستخدم من حوار إيماءات الإدخال على الشاشات الآمنة.\n- حماية شاشات تأكيد الصلاحيات UAC: فرض عزل أمني صارم (Zero-Trust) يمنع تشغيل أي أوامر أثناء ظهور نوافذ التحكم في حساب المستخدم (Yes/No).\n- نغمة إنذار أمني متزنة: ضبط نغمة التحذير الأمنية الثلاثية لتوفير تنبيه صوتي وقور ومدروس على الشاشات المقيدة.\n- الحفاظ على عمل مفاتيح التحكم في الصوت العام بأمان في جميع حالات سطح المكتب."
+		},
+		{
+			"language": "es",
+			"displayName": "PowerBox: Herramientas esenciales de productividad para Windows",
+			"description": "Conjunto de herramientas empresariales de productividad, diagnóstico del sistema y administración de servidores para Windows.\nCuenta con navegación por capas (Aplicaciones rápidas, Terminales, Red, Sistema y energía, Archivos y almacenamiento),\nseguimiento en tiempo real de procesos y sockets, y controles completos de accesibilidad.",
+			"changelog": "- Refuerzo de seguridad en profundidad: implementación de un encapsulamiento de seguridad automático a nivel de métodos, asegurando que los atajos personalizados asignados en Gestos de entrada se bloqueen estrictamente en pantallas seguras.\n- Protección de interfaz UAC: bloqueo estricto de confianza cero que impide la ejecución no autorizada de acciones durante los avisos de Control de cuentas de usuario (UAC).\n- Alarma acústica de seguridad ajustada: optimización del timbre de advertencia de 3 fases para un aviso auditivo deliberado y no intrusivo en pantallas restringidas.\n- Mantenimiento del control seguro del volumen maestro en todos los estados del escritorio."
+		},
+		{
+			"language": "fr",
+			"displayName": "PowerBox : Outils essentiels de productivité pour Windows",
+			"description": "Boîte à outils d'entreprise pour la productivité Windows, le diagnostic système et l'administration de serveurs.\nComprend une navigation par couches (Applications rapides, Terminaux, Réseau, Système et alimentation, Fichiers et stockage),\nun suivi en temps réel des processus et sockets, ainsi que des contrôles complets d'accessibilité.",
+			"changelog": "- Renforcement de la sécurité en profondeur : mise en œuvre d'un encapsulage de sécurité automatique au niveau des méthodes, garantissant que les raccourcis personnalisés définis dans les Gestes de commandes soient strictement bloqués sur les écrans sécurisés.\n- Protection de l'interface UAC : verrouillage strict Zero-Trust empêchant toute exécution non autorisée lors des invites de Contrôle de compte d'utilisateur (UAC).\n- Alarme sonore de sécurité ajustée : optimisation du signal d'avertissement en 3 étapes pour un retour auditif net et non intrusif sur les écrans restreints.\n- Maintien des réglages sécurisés du volume général sur tous les états du bureau."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0c00",
+					"raw_md5": "ad461dba510ff5a6215c8212c22b25ad"
+				},
+				"first_submission_date": 1790635230,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1790635232,
+				"last_submission_date": 1790635230,
+				"md5": "f55178b3f0ea656453e115998b303a23",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3f7db24a9531b59ffd4e785ba6ee3892ca92555b",
+				"sha256": "72cb441316d6ebf4f68a32667c7a565e45d515f3d20a814aae03f9c0f249161c",
+				"size": 245355,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11450"
+}
