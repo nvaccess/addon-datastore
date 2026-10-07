@@ -1,0 +1,32 @@
+{
+	"addonId": "freeAudio",
+	"displayName": "freeAudio: Radio and more",
+	"URL": "https://github.com/Surveyor123/freeAudio/releases/download/v2026.25.1/freeAudio-2026.25.1.nvda-addon",
+	"description": "freeAudio is an internet radio, podcast, audio-book, and local music add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, the libriVox + GETEM digital library for the visually impaired, and your own local audio files and folders through its built-in jukebox. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, per-audio-book, and per-jukebox-track audio profiles. Podcast episodes, audio book chapters, and jukebox tracks resume automatically from where you left off - jukebox folders even pick up on the last track you were playing - with adjustable pitch-preserving playback speed and independent pitch-shift (semitone transpose). Playback is handled by BASS, with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "b238c882c153f1592c14ef1b21cbabf9999ee4c72ec6551158d29374f4a9b914",
+	"addonVersionName": "2026.25.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 25,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeAudio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeAudio",
+	"changelog": "\n## New Features\n\n- **Jukebox now has the same feature set as Favourites:** Jukebox entries can now be reordered in-place (comma-key pick/drop), renamed (custom display name, doesn't touch the file/folder on disk), assigned to groups, and exported/imported as JSON (full fidelity: groups + per-file audio profiles) or M3U (path + custom name only). An auto-generated NVDA Input Gestures shortcut is also created per entry under a new \"freeAudio Jukebox\" category — works even when the dialog is closed.\n\n- **Per-module enable/disable:** A new \"Modules\" checklist in settings lets users turn the Podcasts, Audio Books, and/or Jukebox tabs off entirely. All three remain enabled by default, so existing users see no change. Disabling a module hides its tab and related gestures but never touches its saved data (subscriptions, library, jukebox entries) — re-enabling restores everything as it was.\n\n- **Plain Left/Right for seeking in Jukebox/Audio Books/Podcasts lists:** Left/Right in these tabs' item lists now seeks within the currently playing item, calling the same methods as the global Ctrl+Win+J/K commands. Episode/chapter/track switching still works via Ctrl+Left/Right and F3/F4; the old plain Left/Right episode-switch behavior only remains as a fallback when nothing is playing yet.\n\n## Improvements\n\n- **Timer tab focus behaviour fixed:** Switching to the Timer tab now forces focus to the Start/Stop action radio buttons only on first open. On every later switch, focus stays where you left it — matching every other tab.\n\n- **HLS short-segment merger removed:** The ffmpeg-based `_HlsStreamMerger` and its detection helpers have been dropped. HLS streams now always play directly through BASS, and stall reconnects use the original URL.\n\n## Bug Fixes\n\n- **Wrong duration in fMP4 (HLS) recordings fixed:** Fragmented MP4 recordings had no header duration and carried the stream's absolute clock, so players showed absurd lengths. After recording, files are remuxed to a standard MP4 with ffmpeg (stream copy); when ffmpeg is unavailable, fragment timestamps are rebased to zero as a fallback.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791397335000,
+	"translations": []
+}
