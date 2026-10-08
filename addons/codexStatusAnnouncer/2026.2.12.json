@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.12/chatGPTDesktopAccess-2026.2.12.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "5b9bff417a90a30d98e67953d8099e9c932e6b9b4281ec8aba7a55b13fe56ecb",
+	"addonVersionName": "2026.2.12",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 12
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Recognizes the updated Work with Codex prompt and restores activity and submission detection.\n* Supports bounded UIA transcript scans, including NVDA document wrappers, without web-navigation character walking.\n* Removes character-by-character Chromium scan-range movement from polling, recent messages, and buffer replacement checks.\n* Pauses Working clicks when response completion is detected.\n* Fixes hardware Enter and Space on Add files and more being missed on NVDA's input thread. The main thread checks the exact control before moving to Attach files or connect apps.\n* Prevents delayed pop-up focus from pulling focus back after switching apps, and respects Speech and Braille switches for attachment-item feedback.\n* Keeps Braille Enter support. ChatGPT still controls the native menu and file picker; the add-on never selects a file.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791464331000,
+	"translations": []
+}
