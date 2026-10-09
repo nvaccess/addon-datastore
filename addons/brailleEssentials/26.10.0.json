@@ -131,5 +131,47 @@
 			"description": "Ev pêvek ji bo bikarhênerên NVDA yên ku xwe dispêrin piştgiriya braille taybetmendiyên bingehîn peyda dike. Taybetmendiyên jêrîn, ku ji Braille Extender hatine wergirtin, hene:\n\n* Du dîmenderên braille yên bijare bi kurtebiran ji nû ve bar bikin.\n* Girêdana otomatîk a kursorê di rola termînalê de mîna di PuTTY, Powershell, bash, cmd de.\n* Geroka otomatîk.\n* Di navbera çend tabloyên braille yên ketin/derketinê de guheztin.\n* Nivîsê bi taybetmendiyên taybetî bi rêya xala 7, xala 8 an herduyan nîşan bikin.\n* Du tabloyên braille yên derketinê di heman demê de bikar bînin.\n* Nîşanên tabê wekî valahiyan nîşan bide.\n* Bişkokên gerandina pêş û paş ve bizivirîne.\n* Di dema gerandina nivîsê de, çi di moda nirxandinê de, çi di moda fokusê de an jî herduyan de, rêza heyî bibêje.\n* Nivîsê bi hêsanî bi Unicode braille werdigerîne û berevajî wê. Mînak: z <--> ⠵.\n* Danasîna şaneyê veguherîne Unicode braille û berevajî wê. Mînak: 123 <--> ⠇.\n* Klavyeya braille kilît bike.\n* Serlêdanek/URL-ê bi jestê veke.\n* Ferhengên Braille.\n* Bi yek destî ji klavyeya braille binivîse.\n* Karakterên nediyar ji tabloyên braille (tevî emojiyan) bi karanîna temsîlên alternatîf nîşan bide.\n* Her karakterek ji klavyeya braille binivîse (tevî emojiyan).\n* Di dema gerandina nivîsê de xetên vala derbas bike.\n* Moda Dîroka Axaftinê.\n\nÛ gelek tiştên din.\n\nJi bo hin dîmenderên braille, ew fermanên dîmendera braille dirêj dike da ku van tiştan peyda bike:\n\n* Nexşeyên tevgerên bêkêmasî pêşkêş dike, di nav de bişkokên fonksiyonê, bişkokên multimedia, navîgasyona bilez, hwd.\n* Bişkokên guherker, û bi vî rengî her kurtebirra klavyeyê teqlîd dike\n* Çend mîhengên klavyeyê pêşkêş dike derbarê îhtîmala têketina xalên 7 û 8, enter û paşvekişandinê de\n* Çalakiyan û navîgasyona bilez bi rêya rotorê zêde dike",
 			"changelog": "* Updated the add-on code to BrailleExtender commit abc2ef1d2 (2026-10-01).\n* Fixed an issue with preferred input and output tables setting in Braille Essentials settings interface where unchecking \"automatic\" value and then closing the dialog is undone the next time the add-on settings dialog opens (BrailleExtender issue 152, contributed by adam magued)."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/931ebeb704ed414921b84aa9d2d938df5a8212e18099dfcf64e3192d0fcc5ca4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "931ebeb704ed414921b84aa9d2d938df5a8212e18099dfcf64e3192d0fcc5ca4",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "380d561ac561996cfa7f0b5a1fcde2f9"
+				},
+				"first_submission_date": 1791554948,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791554951,
+				"last_submission_date": 1791554948,
+				"md5": "ce01c3581fb4f64b5c38720f90476705",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2cd360d40cccb10599604fd1c3ff5374dac380ea",
+				"sha256": "931ebeb704ed414921b84aa9d2d938df5a8212e18099dfcf64e3192d0fcc5ca4",
+				"size": 806945,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
