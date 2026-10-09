@@ -1,0 +1,39 @@
+{
+	"addonId": "miAjedrezAccesible",
+	"displayName": "MiAjedrezAccesible",
+	"URL": "https://github.com/WilmerRv1989/MiAjedrezAccesible/releases/download/v1.0.1/miAjedrezAccesible-1.0.1.nvda-addon",
+	"description": "Accessible chess for NVDA, for all ages.\nPlay against the computer (10 levels, powered by the Stockfish engine) or against another person on the same computer, with the whole board readable by speech and braille. Includes Learn to play, a guided 23-lesson course also designed for children; 5,000 real puzzles from Lichess that adapt to your level; an optional clock; games saved in PGN format; and your statistics.\nThe Learn to play course is currently available in Spanish only.",
+	"sha256": "2f59f4900d0868e8da8a4abd3f56c220bee7d017ec6892d2c1447e5b8640f586",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Wilmer Rodríguez Vega",
+	"sourceURL": "https://github.com/WilmerRv1989/MiAjedrezAccesible",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/WilmerRv1989/MiAjedrezAccesible",
+	"changelog": "Works together with other chess add-ons such as Chess Study, which could not load while MiAjedrezAccesible was installed. Messages after closing a menu or a dialog are no longer cut off, the Keyboard shortcuts item in the Tools menu opens again, and some errors in NVDA's log are gone.",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+	"submissionTime": 1791561550000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "MiAjedrezAccesible",
+			"description": "Ajedrez accesible para NVDA, para todas las edades.\nJuega contra la computadora (10 niveles, con el motor Stockfish) o contra otra persona en el mismo equipo, con todo el tablero disponible por voz y en braille. Incluye «Aprender a jugar», un curso guiado de 23 lecciones pensado también para la infancia; 5.000 problemas reales de Lichess que se adaptan a tu nivel; reloj opcional; partidas guardadas en formato PGN, y tus estadísticas.\nEl curso «Aprender a jugar» está, por ahora, solo en español.",
+			"changelog": "Funciona junto a otros complementos de ajedrez como Chess Study, que no podía cargar con MiAjedrezAccesible instalado. Los mensajes después de cerrar un menú o un diálogo ya no se cortan, la opción Atajos de teclado del menú Herramientas vuelve a abrir, y desaparecen algunos errores del registro de NVDA."
+		}
+	]
+}
