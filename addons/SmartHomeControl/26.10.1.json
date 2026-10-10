@@ -35,5 +35,56 @@
 			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic, Petlibro - Cozytouch und Petlibro experimentell) direkt aus NVDA steuern",
 			"changelog": "- Neu, experimentell: Petlibro-Futterautomaten und -Trinkbrunnen (Air Smart Feeder PLAF108, Dockstream 2 Cordless PLWF116).\n- Neu: Plattform-Status (Strg+P im Geräte-Menü).\n- Neu: Die Heizzeiten der Cozytouch-Wärmepumpe lassen sich ändern.\n- NVDA+Strg+Umschalt+P sagt eine Zusammenfassung an; zweimal gedrückt zeigt es alle Geräte in einer Liste.\n- Die Plattformen melden sich gleichzeitig an, und eine am Netz gescheiterte Anmeldung wird von selbst wiederholt.\n- Eine Störung einer Plattform wird erst angesagt, wenn sie zwei Minuten anhält.\n- Der Verlauf hält Änderungen von außen für alle Plattformen fest, und was ein Gerät von sich aus tut, als automatisch.\n- Strg+F im Geräte-Menü findet jetzt Geräte.\n- NVDA friert nicht mehr ein, während ein Befehl an VeSync, Netatmo oder eine Meross-Lampe geht.\n- E-Mail-Adressen werden verschlüsselt gespeichert, und beim Entfernen der Erweiterung werden die Zugangsdaten gelöscht.\n- Einstellungen einer frühen Version, darunter das Netatmo-Passwort im Klartext, werden aus der nvda.ini entfernt.\n- NVDA startet schneller, und Netatmo wird mit deutlich weniger Anfragen abgefragt.\n- Dezimalzahlen verwenden das Trennzeichen der Oberflächensprache.\n- Netzwerk- und Serverstörungen spielen nicht mehr den NVDA-Fehlerton."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/384ad0761499840b65fbfbec92e5996680d8a39011edf5a53855c76cba6da11f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "384ad0761499840b65fbfbec92e5996680d8a39011edf5a53855c76cba6da11f",
+				"_type": "file",
+				"crowdsourced_ai_results": [
+					{
+						"analysis": "Package: aiohappyeyeballs (whl)\nVersion: 2.7.1\nDescription: Happy Eyeballs for asyncio\n\nThe examined codebase consists of legitimate libraries and dependencies (including aiohappyeyeballs, aiohttp, pycryptodome, requests, urllib3, paho-mqtt, and meross_iot) alongside standard NVDA smart home plugin components. No suspicious execution, backdoors, or malicious secret exfiltration behaviors were detected.",
+						"category": "code_insight",
+						"id": "384ad0761499840b65fbfbec92e5996680d8a39011edf5a53855c76cba6da11f-file-palm",
+						"source": "palm",
+						"verdict": "benign"
+					}
+				],
+				"filecondis": {
+					"dhash": "000000000e0f0c00",
+					"raw_md5": "65ba24907417d75530aff8e236a1c107"
+				},
+				"first_submission_date": 1791671597,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791671628,
+				"last_submission_date": 1791671597,
+				"md5": "1f7d7c8a14516fdcf23f828d336d5345",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4e812494b9e43e6d705e25f9a487f406730bfa10",
+				"sha256": "384ad0761499840b65fbfbec92e5996680d8a39011edf5a53855c76cba6da11f",
+				"size": 5964967,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
