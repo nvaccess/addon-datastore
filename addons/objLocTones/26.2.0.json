@@ -47,5 +47,47 @@
 			"description": "Segnala la posizione degli oggetti mediante toni.\nQuesto componente aggiuntivo introduce funzionalità di audio posizionale nel lettore di schermo NVDA.",
 			"changelog": "* Compatibilità con NVDA 2026.2\n* Nuova funzionalità: scelta della modalità di presentazione della posizione (consente di scegliere l'oggetto da rilevare durante la navigazione e il punto al suo interno da segnalare mediante un tono)\n* Nuova funzionalità: punto di riferimento per il monitoraggio del mouse basato sull'oggetto del navigatore\n* Nuova funzionalità: attivazione o disattivazione dell’annuncio della fine automatica del monitoraggio del mouse\n* Nuova funzionalità: attivazione o disattivazione della segnalazione della posizione del cursore di sistema solo in corrispondenza di tabulazioni e spazi\n* Nuova funzionalità: ripristino dell'output MIDI mediante un gesto\n* Aggiunte le traduzioni in croato, italiano e spagnolo\n---\nPer comprendere meglio il funzionamento delle nuove funzionalità, consultare la relativa descrizione nel file README.\n---\n* Ulteriori micro-ottimizzazioni delle prestazioni\n* Correzione di alcuni errori che non incidevano sulle versioni precedenti del componente aggiuntivo, ma che avrebbero causato problemi nelle versioni future"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1f603bfd6bf26b3d2a32eb27bc24eca0c95c162d81e3d6af1438dcb9e4320545",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1f603bfd6bf26b3d2a32eb27bc24eca0c95c162d81e3d6af1438dcb9e4320545",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "5756c211fab23f1e6c163d010581785c"
+				},
+				"first_submission_date": 1791615853,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791615855,
+				"last_submission_date": 1791615853,
+				"md5": "18ddb3ed9a855b4954b2978674e731f1",
+				"names": [],
+				"reputation": 0,
+				"sha1": "b9045c8a5adcf26fb80109ac038ca68ca36bac0f",
+				"sha256": "1f603bfd6bf26b3d2a32eb27bc24eca0c95c162d81e3d6af1438dcb9e4320545",
+				"size": 275810,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
