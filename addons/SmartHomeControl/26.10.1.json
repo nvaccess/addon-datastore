@@ -1,0 +1,39 @@
+{
+	"addonId": "SmartHomeControl",
+	"displayName": "Smart Home Control",
+	"URL": "https://github.com/BlindByte06/SmartHomeControl/releases/download/v26.10.1/SmartHomeControl-26.10.1.nvda-addon",
+	"description": "Control smart home devices (Meross, Netatmo, VeSync, Cozytouch/Atlantic, Petlibro - Cozytouch and Petlibro experimental) directly from NVDA",
+	"sha256": "384ad0761499840b65fbfbec92e5996680d8a39011edf5a53855c76cba6da11f",
+	"addonVersionName": "26.10.1",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 10,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Philipp Hasel",
+	"sourceURL": "https://github.com/BlindByte06/SmartHomeControl",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BlindByte06/SmartHomeControl",
+	"changelog": "- New, experimental: Petlibro feeders and water fountains (Air Smart Feeder PLAF108, Dockstream 2 Cordless PLWF116).\n- New: platform status (Ctrl+P in the device menu).\n- New: the heating times of the Cozytouch heat pump can be changed.\n- NVDA+Ctrl+Shift+P announces a summary; pressed twice, it lists every device.\n- The platforms sign in at the same time, and a sign-in that failed because of the network is retried automatically.\n- A platform fault is announced only once it has lasted two minutes.\n- The history records changes made elsewhere for all platforms, and what a device does on its own as automatic.\n- Ctrl+F in the device menu now finds devices.\n- NVDA no longer freezes while a VeSync, Netatmo or Meross lamp command is sent.\n- Email addresses are stored encrypted, and removing the add-on deletes the stored credentials.\n- Settings of an early version, including the Netatmo password in plain text, are removed from nvda.ini.\n- NVDA starts faster, and Netatmo is polled with far fewer requests.\n- Decimal numbers use the separator of the interface language.\n- Network and server faults no longer play NVDA's error sound.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791671593000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Smart Home Control",
+			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic, Petlibro - Cozytouch und Petlibro experimentell) direkt aus NVDA steuern",
+			"changelog": "- Neu, experimentell: Petlibro-Futterautomaten und -Trinkbrunnen (Air Smart Feeder PLAF108, Dockstream 2 Cordless PLWF116).\n- Neu: Plattform-Status (Strg+P im Geräte-Menü).\n- Neu: Die Heizzeiten der Cozytouch-Wärmepumpe lassen sich ändern.\n- NVDA+Strg+Umschalt+P sagt eine Zusammenfassung an; zweimal gedrückt zeigt es alle Geräte in einer Liste.\n- Die Plattformen melden sich gleichzeitig an, und eine am Netz gescheiterte Anmeldung wird von selbst wiederholt.\n- Eine Störung einer Plattform wird erst angesagt, wenn sie zwei Minuten anhält.\n- Der Verlauf hält Änderungen von außen für alle Plattformen fest, und was ein Gerät von sich aus tut, als automatisch.\n- Strg+F im Geräte-Menü findet jetzt Geräte.\n- NVDA friert nicht mehr ein, während ein Befehl an VeSync, Netatmo oder eine Meross-Lampe geht.\n- E-Mail-Adressen werden verschlüsselt gespeichert, und beim Entfernen der Erweiterung werden die Zugangsdaten gelöscht.\n- Einstellungen einer frühen Version, darunter das Netatmo-Passwort im Klartext, werden aus der nvda.ini entfernt.\n- NVDA startet schneller, und Netatmo wird mit deutlich weniger Anfragen abgefragt.\n- Dezimalzahlen verwenden das Trennzeichen der Oberflächensprache.\n- Netzwerk- und Serverstörungen spielen nicht mehr den NVDA-Fehlerton."
+		}
+	]
+}
