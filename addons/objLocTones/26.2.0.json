@@ -1,0 +1,51 @@
+{
+	"addonId": "objLocTones",
+	"displayName": "Object Location Tones",
+	"URL": "https://github.com/dbernaca/objLocationTones/releases/download/26.2.0/objLocTones-26.2.0.nvda-addon",
+	"description": "Announce location of objects via tones.\nThis add-on brings positional audio capabilities to NVDA screen reader.",
+	"sha256": "1f603bfd6bf26b3d2a32eb27bc24eca0c95c162d81e3d6af1438dcb9e4320545",
+	"addonVersionName": "26.2.0",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Dalen",
+	"sourceURL": "https://github.com/dbernaca/objLocationTones/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/dbernaca/objLocationTones",
+	"changelog": "* NVDA 2026.2 compatibility\n* New feature: Choose location presentation mode (Lets you choose object detection during navigation and position within the object that is announced via tone)\n* New feature: Mouse monitoring reference point that uses navigator object\n* New feature: Enable/disable the mouse monitoring stop message\n* New feature: Enable/disable reporting caret location only at tabs and spaces\n* New feature: Use a gesture to reset MIDI output\n* Added translations for Croatian, Italian and Spanish\n---\nPlease read more about each of the new features in readme to understand better how they work.\n---\n* Some more microoptimization in effectiveness\n* Some bug fixes that didn't affect the previous versions of the add-on, but would have in future versions",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791615850000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Object Location Tones",
+			"description": "Indica la ubicación de los objetos con tonos.\nEste complemento añade funciones de audio posicional al lector de pantalla NVDA.",
+			"changelog": "* Compatibilidad con NVDA 2026.2\n* Nueva función: selección del modo de presentación de la posición (permite elegir el objeto que se detecta durante la navegación y el punto dentro de él que se indica con un tono)\n* Nueva función: punto de referencia para la monitorización del ratón basado en el navegador de objetos\n* Nueva función: posibilidad de activar o desactivar el mensaje que anuncia la finalización automática de la monitorización del ratón\n* Nueva función: posibilidad de indicar la posición del cursor del sistema solo en tabulaciones y espacios\n* Nueva función: gesto para restablecer la salida MIDI\n* Se añadieron traducciones al croata, italiano y español\n---\nPara comprender mejor su funcionamiento, consulta la descripción de cada nueva función en el archivo README.\n---\n* Más microoptimizaciones de rendimiento\n* Corrección de algunos errores que no afectaban a las versiones anteriores del complemento, pero que habrían causado problemas en versiones futuras"
+		},
+		{
+			"language": "hr",
+			"displayName": "Object Location Tones",
+			"description": "Najavljuje položaj objekata pozicijskim tonovima.\nOvaj dodatak čitaču zaslona NVDA dodaje mogućnost uporabe tehnologije pozicijskog zvuka.",
+			"changelog": "* Kompatibilnost s NVDA 2026.2\n* Nova značajka: odabir načina predstavljanja položaja (omogućuje odabir detekcije objekta tijekom navigacije i položaja unutar objekta koji se najavljuje tonom)\n* Nova značajka: referentna točka praćenja miša koja koristi navigatorski objekt\n* Nova značajka: uključivanje/isključivanje poruke o zaustavljanju nadzora miša\n* Nova značajka: uključivanje/isključivanje izvještavanja lokacije kursora samo za tabulatore i razmake\n* Nova značajka: resetiranje MIDI izlaza pomoću geste\n* Dodani prijevodi za hrvatski, talijanski i španjolski\n---\nViše o svakoj novoj značajci pročitajte u datoteci readme kako biste bolje razumjeli način njihovog djelovanja.\n---\n* Dodatne mikrooptimizacije učinkovitosti\n* Ispravci nekih pogrešaka koje nisu utjecale na prethodne verzije dodatka, ali bi utjecale na buduće verzije"
+		},
+		{
+			"language": "it",
+			"displayName": "Object Location Tones",
+			"description": "Segnala la posizione degli oggetti mediante toni.\nQuesto componente aggiuntivo introduce funzionalità di audio posizionale nel lettore di schermo NVDA.",
+			"changelog": "* Compatibilità con NVDA 2026.2\n* Nuova funzionalità: scelta della modalità di presentazione della posizione (consente di scegliere l'oggetto da rilevare durante la navigazione e il punto al suo interno da segnalare mediante un tono)\n* Nuova funzionalità: punto di riferimento per il monitoraggio del mouse basato sull'oggetto del navigatore\n* Nuova funzionalità: attivazione o disattivazione dell’annuncio della fine automatica del monitoraggio del mouse\n* Nuova funzionalità: attivazione o disattivazione della segnalazione della posizione del cursore di sistema solo in corrispondenza di tabulazioni e spazi\n* Nuova funzionalità: ripristino dell'output MIDI mediante un gesto\n* Aggiunte le traduzioni in croato, italiano e spagnolo\n---\nPer comprendere meglio il funzionamento delle nuove funzionalità, consultare la relativa descrizione nel file README.\n---\n* Ulteriori micro-ottimizzazioni delle prestazioni\n* Correzione di alcuni errori che non incidevano sulle versioni precedenti del componente aggiuntivo, ma che avrebbero causato problemi nelle versioni future"
+		}
+	]
+}
