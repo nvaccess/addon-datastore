@@ -1,0 +1,32 @@
+{
+	"addonId": "quickUISearch",
+	"displayName": "Quick UI Search",
+	"URL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon/releases/download/v1.0/quickUISearch.nvda-addon",
+	"description": "TalkBack-style screen search: press NVDA+Alt+Q, type part of a control's name, and jump straight to it. Searches only what is visible in the current window, or only the open dialog or menu.",
+	"sha256": "7ada97e6d11440341a5d8b2159fca4fc85317696c3d362291d7a042664dea085",
+	"addonVersionName": "1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "Mohd Farhan Hussain",
+	"sourceURL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon",
+	"changelog": "* Searches the whole visible window, or only the open dialog or menu.\n* Scans in small steps on NVDA's main thread, so NVDA keeps speaking and never freezes, even with very long lists.\n* In browse mode the cursor moves to the chosen control; controls that cannot take focus are read with the review cursor.\n* Finds all controls in long lists, such as Discord's voice panel, channel list and chat.\n* The dialog closes by itself if you switch to another window.\n* Cleaner results: no repeated text, no link addresses, names on one line.",
+	"licenseURL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon/blob/v1.0/LICENSE",
+	"submissionTime": 1791717430000,
+	"translations": []
+}
