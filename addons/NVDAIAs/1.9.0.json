@@ -1,0 +1,39 @@
+{
+	"addonId": "NVDAIAs",
+	"displayName": "NVDAIAs - Chat with ChatGPT, Gemini and Claude",
+	"URL": "https://github.com/weliveiracruz/NVDAIAs/releases/download/v1.9.0/NVDAIAs-1.9.0.nvda-addon",
+	"description": "Chat with ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic) or Groq (free open models) from an accessible NVDA window. Press NVDA+Alt+I, type the question and press Enter; Shift+Tab goes to the conversation list. ChatGPT can use your ChatGPT plan with Continue with ChatGPT (no API key); each AI can also be connected with an access token (API key) generated on the provider's site. Credentials are stored encrypted on the computer. It can also describe the navigator object or the screen with NVDA+Alt+D and NVDA+Shift+Alt+D.",
+	"sha256": "a6178d01772f3a7c3c7bf25a4dd2f63ed4da79318c37e3320a9810916f51bcb2",
+	"addonVersionName": "1.9.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 9,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Wellington Cruz",
+	"sourceURL": "https://github.com/weliveiracruz/NVDAIAs",
+	"license": "GPL v2",
+	"homepage": "https://github.com/weliveiracruz/NVDAIAs",
+	"changelog": "New AI: Groq (free open models, no credit card, daily limit). In the settings, a combo box chooses which AI to connect or configure, and the token field, buttons and model change with it.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791836809000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "NVDAIAs - Converse com o ChatGPT, o Gemini e o Claude",
+			"description": "Converse com o ChatGPT (OpenAI), o Gemini (Google), o Claude (Anthropic) ou o Groq (modelos abertos, gratuito) em uma janela acessível do NVDA. Pressione NVDA+Alt+I, digite a pergunta e pressione Enter; com Shift+Tab você chega à lista da conversa. O ChatGPT pode usar o seu plano do ChatGPT com Continuar com o ChatGPT (sem chave de API); cada IA também pode ser conectada com um token de acesso (chave de API) gerado no site do provedor. As credenciais ficam guardadas de forma criptografada no computador. Também descreve o objeto de navegação ou a tela com NVDA+Alt+D e NVDA+Shift+Alt+D.",
+			"changelog": "Nova IA: Groq (modelos abertos, gratuito, sem cartão de crédito, com limite diário). Nas configurações, uma caixa de combinação escolhe qual IA conectar ou configurar, e o campo do token, os botões e o modelo mudam conforme a escolha."
+		}
+	]
+}
