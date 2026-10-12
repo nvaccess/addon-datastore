@@ -35,5 +35,47 @@
 			"description": "Converse com o ChatGPT (OpenAI), o Gemini (Google), o Claude (Anthropic) ou o Groq (modelos abertos, gratuito) em uma janela acessível do NVDA. Pressione NVDA+Alt+I, digite a pergunta e pressione Enter; com Shift+Tab você chega à lista da conversa. O ChatGPT pode usar o seu plano do ChatGPT com Continuar com o ChatGPT (sem chave de API); cada IA também pode ser conectada com um token de acesso (chave de API) gerado no site do provedor. As credenciais ficam guardadas de forma criptografada no computador. Também descreve o objeto de navegação ou a tela com NVDA+Alt+D e NVDA+Shift+Alt+D.",
 			"changelog": "Nova IA: Groq (modelos abertos, gratuito, sem cartão de crédito, com limite diário). Nas configurações, uma caixa de combinação escolhe qual IA conectar ou configurar, e o campo do token, os botões e o modelo mudam conforme a escolha."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a6178d01772f3a7c3c7bf25a4dd2f63ed4da79318c37e3320a9810916f51bcb2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a6178d01772f3a7c3c7bf25a4dd2f63ed4da79318c37e3320a9810916f51bcb2",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000081c1d0c0000",
+					"raw_md5": "a0e8d395ccd68ccdf1b974103a6505b4"
+				},
+				"first_submission_date": 1791836813,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791836814,
+				"last_submission_date": 1791836813,
+				"md5": "fa84aea182ca6b39293bf1340c1c847e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "ecb15c0be88c78f809557db720bde3c072ee5f85",
+				"sha256": "a6178d01772f3a7c3c7bf25a4dd2f63ed4da79318c37e3320a9810916f51bcb2",
+				"size": 97640,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
