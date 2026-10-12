@@ -1,0 +1,32 @@
+{
+	"addonId": "googleTtsForNvda",
+	"displayName": "Google TTS For NVDA",
+	"URL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/releases/download/v1.0/googleTtsForNvda-1.0.nvda-addon",
+	"description": "Use Google's WASM text-to-speech voices locally through a supported Chromium browser runtime such as Google Chrome, Microsoft Edge, or Brave as an NVDA synthesizer. Google TTS For NVDA is an independent, open-source accessibility project. It is not affiliated with, sponsored by, or endorsed by Google LLC. Google is a trademark of Google LLC.",
+	"sha256": "1050c593bc23cfe6dd36f5a6c208b2351e2ff2cc106f90621b71b1810c60e7d6",
+	"addonVersionName": "1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Nguyen Anh Duc <ducna1803@gmail.com>, Dao Duc Trung <trung@ddt.one> and Pham Hung Vuong <hungvuong106206@gmail.com>",
+	"sourceURL": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/nguyenanhduc09/Google-TTS-For-NVDA",
+	"changelog": "Version 1.0:\n- Improved reading responsiveness for medium and long text with faster starts, smoother audio buffering, and reuse of completed audio held temporarily in RAM.\n- Improved multilingual sentence and phrase breaks and the Use automatic language profiles feature using official Unicode 17.0 and CLDR 48.2 data.\n- Increased default speech loudness and kept volume steadier without abnormal rises and falls. The Volume setting remains proportional. Distortion in some male voices comes from the original WASM TTS engine and is not addressed by this change.\n- Improved recovery from failures in the Chromium browser runtime, WASM TTS engine, and NVDA audio output; prevented Keep Google TTS browser runtime ready in the background from retaining unhealthy runtimes; and reduced conflicts with other add-ons.\n- Updated the bundled WASM TTS engine to version 20260917.1.\n- Added Spanish and Brazilian Portuguese translations, and rewrote the Simplified Chinese translation using official NVDA terminology.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791811423000,
+	"translations": []
+}
