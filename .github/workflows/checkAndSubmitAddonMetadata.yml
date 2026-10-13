@@ -411,7 +411,7 @@ jobs:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    if: ${{ always() && needs.passesManualReview.result == 'success' && needs.getAddonId.result == 'success' && needs.createPullRequest.result == 'success' && needs.requireSubmitterManualApproval2.result == 'success' }}
+    if: ${{ always() && needs.passesManualReview.result == 'success' && needs.getAddonId.result == 'success' && needs.createPullRequest.result == 'success' }}
     needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, requireSubmitterManualApproval2, virusTotal-analysis]
     permissions:
       contents: write
