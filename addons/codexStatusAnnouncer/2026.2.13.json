@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.13/chatGPTDesktopAccess-2026.2.13.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "32b2c11a3ac307d0283328c5068ee80e8e94bef5111464866757745fa3c03291",
+	"addonVersionName": "2026.2.13",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 13
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Add files and more now opens a list of every option: files and folders, Goal, Plan mode, Sketch, plugins, apps, sites, and recent chats. Arrow to one and press Enter to choose it.\n* Plug-in installation progress is announced again, and the unarchive fallback message is spoken again.\n* The conversation message list closes properly and refreshes in long conversations.\n* Short messages such as Stop or Retry are kept for Control+1 through Control+0 and the message list.\n* Permission dialogs focus Deny or Reject first, so an accidental Enter does not approve a request.\n* More accurate activity: zero-error results no longer sound like failures, labels such as \"Built-in tools\" are not mistaken for finished work, and times such as 1m 30s are counted in full.\n* Fixes usage-limit retry times, archived Codex titles, chat history Refresh, and command error reporting, and makes more wording translatable.\n* Removes the unused embedded browser navigator. Embedded browser loading announcements are unchanged.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791906162000,
+	"translations": []
+}
