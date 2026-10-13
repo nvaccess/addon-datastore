@@ -1,0 +1,45 @@
+{
+	"addonId": "nvdaClipboard",
+	"displayName": "NVDA Clipboard",
+	"URL": "https://github.com/cary-rowen/NVDAClipboard/releases/download/v0.4.7/nvdaClipboard-0.4.7.nvda-addon",
+	"description": "NVDA Clipboard adds accessible navigation and bounded SQLite history for the Windows clipboard.\nHistory supports Unicode text with optional HTML or RTF, PNG or DIB images, mixed text and images, and real file groups, with user categories and a type-aware manager.\nCommands can append or temporarily paste NVDA's last spoken text.\nOptional Tiantan Clipboard synchronization uploads only permitted Unicode text.",
+	"sha256": "75dfb64e50b8186008b6e96236d58c8f509228e8f88894b145239b06e803c475",
+	"addonVersionName": "0.4.7",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 4,
+		"patch": 7
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/NVDAClipboard",
+	"license": "GPL v2",
+	"homepage": "https://www.nvdacn.com/",
+	"changelog": "### 0.4.7\n\n- Updated the Tiantan Cloud Clipboard SDK.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791864237000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "剪贴板",
+			"description": "剪贴板为 Windows 剪贴板提供无障碍浏览和容量受限的 SQLite 历史记录。\n历史记录支持 Unicode 文本及可选的 HTML 或 RTF 格式、PNG 或 DIB 图片、文本与图片混合内容和原生文件组，并提供用户类别及可识别内容类型的管理器。\n相关命令可以追加或临时粘贴 NVDA 最后朗读的文本。\n可选的天坦剪贴板同步仅上传符合要求的 Unicode 文本。",
+			"changelog": "### 0.4.7\n\n- 更新天坦云剪贴板 SDK。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Буфер обміну NVDA",
+			"description": "Буфер обміну NVDA додає доступну навігацію та обмежену історію SQLite для буфера обміну Windows.\nІсторія підтримує текст у форматі Unicode з додатковими зображеннями HTML або RTF, PNG або DIB, змішаний текст і зображення, а також реальні групи файлів, з категоріями користувачів і менеджером з урахуванням типів.\nКоманди можуть додавати або тимчасово вставляти останній промовлений текст NVDA.\nДодаткова синхронізація буфера обміну Tiantan дозволяє завантажувати лише текст у форматі Unicode.",
+			"changelog": "### 0.4.7\n\n- Updated the Tiantan Cloud Clipboard SDK."
+		}
+	]
+}
