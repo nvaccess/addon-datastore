@@ -1,0 +1,118 @@
+{
+	"addonId": "LangDetectSpeech",
+	"displayName": "LangDetectSpeech",
+	"URL": "https://github.com/slohmaier/LangDetectSpeech/releases/download/v1.0.3/LangDetectSpeech-1.0.3.nvda-addon",
+	"description": "A lightweight NVDA addon that automatically detects the language of spoken text and switches to the appropriate synthesizer voice. Uses fast-langdetect (FastText-based) for efficient offline language detection across 176 languages.",
+	"sha256": "7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+	"addonVersionName": "1.0.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Stefan Lohmaier",
+	"sourceURL": "https://github.com/slohmaier/LangDetectSpeech",
+	"license": "GPL v2",
+	"homepage": "https://github.com/slohmaier/LangDetectSpeech",
+	"changelog": "1.0.3: Fixed minimum NVDA version (2024.2, required for the speech sequence filter API), aligned translations with NVDA terminology and added Crowdin support.\n1.0.2: Prepared for the NVDA Add-on Store.\n1.0.0: First release on the add-on store.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792033068000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "LangDetectSpeech",
+			"description": "Um complemento leve para NVDA que detecta automaticamente o idioma do texto falado e alterna para a voz do sintetizador apropriada. Usa fast-langdetect (baseado em FastText) para detecção de idioma offline eficiente em 176 idiomas.",
+			"changelog": "1.0.3: Versão mínima do NVDA corrigida (2024.2, necessária para a API do filtro de sequências de fala), traduções alinhadas com a terminologia do NVDA e suporte ao Crowdin adicionado.\n1.0.2: Preparado para a Loja de Complementos do NVDA.\n1.0.0: Primeira versão na Loja de Complementos."
+		},
+		{
+			"language": "es",
+			"displayName": "LangDetectSpeech",
+			"description": "Un complemento ligero para NVDA que detecta automáticamente el idioma del texto hablado y cambia a la voz del sintetizador correspondiente. Utiliza fast-langdetect (basado en FastText) para una detección de idiomas eficiente sin conexión en 176 idiomas.",
+			"changelog": "1.0.3: Se ha corregido la versión mínima de NVDA (2024.2, necesaria para la API del filtro de secuencias de voz), se han alineado las traducciones con la terminología de NVDA y se ha añadido compatibilidad con Crowdin.\n1.0.2: Preparado para la tienda de complementos de NVDA.\n1.0.0: Primera versión en la tienda de complementos."
+		},
+		{
+			"language": "ru",
+			"displayName": "LangDetectSpeech",
+			"description": "Лёгкое дополнение для NVDA, которое автоматически определяет язык произносимого текста и переключается на соответствующий голос синтезатора. Использует fast-langdetect (на основе FastText) для эффективного автономного определения языка среди 176 языков.",
+			"changelog": "1.0.3: Исправлена минимальная версия NVDA (2024.2, требуется для API фильтра речевых последовательностей), переводы приведены в соответствие с терминологией NVDA и добавлена поддержка Crowdin.\n1.0.2: Подготовлено для магазина дополнений NVDA.\n1.0.0: Первый выпуск в магазине дополнений."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "LangDetectSpeech",
+			"description": "一个轻量级的 NVDA 插件，可自动检测语音文本的语言并切换到相应的合成器语音。使用 fast-langdetect（基于 FastText）在 176 种语言中进行高效的离线语言检测。",
+			"changelog": "1.0.3：修正了最低 NVDA 版本（2024.2，语音序列过滤器 API 所需），使翻译与 NVDA 术语保持一致，并添加了对 Crowdin 的支持。\n1.0.2：为 NVDA 插件商店做好准备。\n1.0.0：插件商店首个版本。"
+		},
+		{
+			"language": "de",
+			"displayName": "LangDetectSpeech",
+			"description": "Eine leichtgewichtige NVDA-Erweiterung, die automatisch die Sprache des gesprochenen Textes erkennt und zur passenden Synthesizer-Stimme wechselt. Verwendet fast-langdetect (FastText-basiert) für effiziente Offline-Sprachbestimmung in 176 Sprachen.",
+			"changelog": "1.0.3: Mindestversion von NVDA korrigiert (2024.2, erforderlich für die API des Sprachsequenz-Filters), Übersetzungen an die NVDA-Terminologie angeglichen und Crowdin-Unterstützung hinzugefügt.\n1.0.2: Für den NVDA-Add-on-Store vorbereitet.\n1.0.0: Erste Veröffentlichung im Add-on-Store."
+		},
+		{
+			"language": "fr",
+			"displayName": "LangDetectSpeech",
+			"description": "Une extension NVDA légère qui détecte automatiquement la langue du texte parlé et bascule vers la voix de synthèse appropriée. Utilise fast-langdetect (basé sur FastText) pour une détection linguistique hors ligne efficace dans 176 langues.",
+			"changelog": "1.0.3 : Version minimale de NVDA corrigée (2024.2, requise pour l'API du filtre de séquences de parole), traductions alignées sur la terminologie de NVDA et prise en charge de Crowdin ajoutée.\n1.0.2 : Préparé pour le magasin de modules complémentaires de NVDA.\n1.0.0 : Première version dans le magasin."
+		},
+		{
+			"language": "it",
+			"displayName": "LangDetectSpeech",
+			"description": "Un componente aggiuntivo leggero per NVDA che rileva automaticamente la lingua del testo parlato e passa alla voce del sintetizzatore appropriata. Utilizza fast-langdetect (basato su FastText) per un rilevamento linguistico offline efficiente in 176 lingue.",
+			"changelog": "1.0.3: Correzione della versione minima di NVDA (2024.2, necessaria per l'API del filtro delle sequenze vocali), traduzioni allineate alla terminologia di NVDA e aggiunto il supporto per Crowdin.\n1.0.2: Preparato per l'Add-on Store di NVDA.\n1.0.0: Prima versione nell'Add-on Store."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "7426587dcf3f92f3525d54db9b254f67"
+				},
+				"first_submission_date": 1792033072,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792033074,
+				"last_submission_date": 1792033072,
+				"md5": "ff2abddb82d0a6238f9900e14b988380",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e82327b98e8e377e10a3b1414ca52fb8fea92367",
+				"sha256": "7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+				"size": 1003469,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12204"
+}
