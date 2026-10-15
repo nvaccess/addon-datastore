@@ -71,5 +71,47 @@
 			"description": "Un componente aggiuntivo leggero per NVDA che rileva automaticamente la lingua del testo parlato e passa alla voce del sintetizzatore appropriata. Utilizza fast-langdetect (basato su FastText) per un rilevamento linguistico offline efficiente in 176 lingue.",
 			"changelog": "1.0.3: Correzione della versione minima di NVDA (2024.2, necessaria per l'API del filtro delle sequenze vocali), traduzioni allineate alla terminologia di NVDA e aggiunto il supporto per Crowdin.\n1.0.2: Preparato per l'Add-on Store di NVDA.\n1.0.0: Prima versione nell'Add-on Store."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "7426587dcf3f92f3525d54db9b254f67"
+				},
+				"first_submission_date": 1792033072,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792033074,
+				"last_submission_date": 1792033072,
+				"md5": "ff2abddb82d0a6238f9900e14b988380",
+				"names": [],
+				"reputation": 0,
+				"sha1": "e82327b98e8e377e10a3b1414ca52fb8fea92367",
+				"sha256": "7d45db6c8ac90266b1e570e08d7b73943a95ff76d6f67bcb65d7bd6874d836c3",
+				"size": 1003469,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
