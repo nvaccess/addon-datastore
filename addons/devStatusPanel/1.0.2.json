@@ -1,0 +1,78 @@
+{
+	"addonId": "devStatusPanel",
+	"displayName": "Developer Status Panel",
+	"URL": "https://github.com/securecat/nvda-dev-status-panel/releases/download/v1.0.2/devStatusPanel-1.0.2.nvda-addon",
+	"description": "A verification panel for developers that always shows NVDA's mode, virtual buffer state, the focused object and the active NVDA modifier keys.",
+	"sha256": "6405e4d9cb2caaa3d4f233f75815a251a5d2ae4c40a7459f78fb7ac617c67894",
+	"addonVersionName": "1.0.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "securecat",
+	"sourceURL": "https://github.com/securecat/nvda-dev-status-panel/tree/v1.0.2",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791829845000,
+	"translations": [
+		{
+			"language": "ja",
+			"displayName": "開発者ステータスパネル",
+			"description": "NVDAのモード・仮想バッファ・フォーカス中のオブジェクト・有効なNVDA制御キーを常時表示する、開発者の検証用パネルです。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6405e4d9cb2caaa3d4f233f75815a251a5d2ae4c40a7459f78fb7ac617c67894",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6405e4d9cb2caaa3d4f233f75815a251a5d2ae4c40a7459f78fb7ac617c67894",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "38383c3978200000",
+					"raw_md5": "ee15bc002186754a0d230d76aa492991"
+				},
+				"first_submission_date": 1791829849,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791829851,
+				"last_submission_date": 1791829849,
+				"md5": "509bb93fd7fe831789f30b201d5e3112",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2a18ab933aa8b0f47fb25c41903ef9d3dd88ff4f",
+				"sha256": "6405e4d9cb2caaa3d4f233f75815a251a5d2ae4c40a7459f78fb7ac617c67894",
+				"size": 12009,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
+}
