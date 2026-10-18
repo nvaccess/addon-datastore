@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.17/chatGPTDesktopAccess-2026.2.17.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "2bff7043e522ebdf3857417a4be21c0f7a0f8a5edc02acea7c08c5f42d6d88a9",
+	"addonVersionName": "2026.2.17",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 17
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Add files and more works when ChatGPT's composer is set to Chat, not only Work. In Chat its menu has different options and the add-on did not find it.\n* Add files and more opens its list right away when NVDA reads ChatGPT through UI Automation, in chat and Codex. It used to take about six seconds, and pressing another key in that time cancelled it.\n* NVDA no longer freezes for seconds at a time while ChatGPT works in that mode.\n* Add files and more recognizes the prompt and button when ChatGPT labels them differently, and the NVDA log explains any remaining problem.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792325279000,
+	"translations": []
+}
