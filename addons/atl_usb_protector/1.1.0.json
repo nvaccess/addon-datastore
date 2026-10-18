@@ -1,0 +1,74 @@
+{
+	"addonId": "atl_usb_protector",
+	"displayName": "ATL USB Protector",
+	"URL": "https://github.com/accessibletechlabsindia/atl-usb-protector/releases/download/v1.1/atl_usb_protector.nvda-addon",
+	"description": "An enterprise-grade, accessibility-first security plugin engineered by Accessible Tech Labs India. Designed for visually impaired professionals, students, and power users, this add-on acts as a silent, high-performance security guard for your system. It actively monitors your computer for newly connected USB drives and automatically neutralizes potential threats by safely ejecting or locking unauthorized drives in Read-Only mode. Featuring a smart 10-second auditory grace period (press Alt+A to whitelist), native NVDA settings integration, and one-click global unlock. The ATL USB Protector ensures your data and privacy remain 100% secure against malware and data theft directly through your screen reader environment.",
+	"sha256": "4b464924de0ec2892e84e76ca5afac5e62c306ba87ccf0d3ed2258fe159d5504",
+	"addonVersionName": "1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2021,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Accessible tech labs India",
+	"sourceURL": "https://github.com/accessibletechlabsindia/atl-usb-protector",
+	"license": "GPL v2",
+	"homepage": "https://accessibletechlabsindia.github.io/",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1791853206000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/4b464924de0ec2892e84e76ca5afac5e62c306ba87ccf0d3ed2258fe159d5504",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "4b464924de0ec2892e84e76ca5afac5e62c306ba87ccf0d3ed2258fe159d5504",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070702",
+					"raw_md5": "3c135790f1e0e9999c07cfc070d42c1b"
+				},
+				"first_submission_date": 1791853210,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1791853211,
+				"last_submission_date": 1791853210,
+				"md5": "2ac7f2e8e01f5fa191c3b30ac021d0fa",
+				"names": [],
+				"reputation": 0,
+				"sha1": "5e91b4dc674da44e59d7b412bd194c318dc71502",
+				"sha256": "4b464924de0ec2892e84e76ca5afac5e62c306ba87ccf0d3ed2258fe159d5504",
+				"size": 962755,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12274"
+}
