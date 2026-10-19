@@ -1,0 +1,32 @@
+{
+	"addonId": "quickUISearch",
+	"displayName": "Quick UI Search",
+	"URL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon/releases/download/v1.0.1/quickUISearch.nvda-addon",
+	"description": "TalkBack-style screen search: press NVDA+Alt+Q, type part of a control's name, and jump straight to it. Searches only what is visible in the current window, or only the open dialog or menu.",
+	"sha256": "7c3bb95b6e48a3c2b299eca66153ef3960a9e837f48bac3d7f354ebb2da717f6",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mohd Farhan Hussain",
+	"sourceURL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon",
+	"changelog": "* Works with NVDA 2026.1 and 2026.2, including 64-bit NVDA.\n* Fixed: results could include controls from other windows behind the current one, because the add-on could not read the current window's position. It now searches only the window you are in (or only the open dialog or menu).",
+	"licenseURL": "https://github.com/mohd-farhan-developer/quickUISearch.nvda-addon/blob/v1.0.1/LICENSE",
+	"submissionTime": 1792425980000,
+	"translations": []
+}
