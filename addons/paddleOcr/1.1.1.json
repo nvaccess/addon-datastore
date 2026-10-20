@@ -1,0 +1,39 @@
+{
+	"addonId": "paddleOcr",
+	"displayName": "Paddle OCR",
+	"URL": "https://github.com/fdrv161/nvda-paddle-ocr/releases/download/v1.1.1/paddleOcr-1.1.1.nvda-addon",
+	"description": "Recognizes text on the screen with PaddleOCR models, like Windows OCR (NVDA+R) but with a different engine.",
+	"sha256": "f28272d2e0f2f19ff52f572a9ffc3dfdca4b5ce7a68494687dde23df951a23d8",
+	"addonVersionName": "1.1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "fdrv161",
+	"sourceURL": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"changelog": "* New setting \"Letters of all Cyrillic alphabets in the Cyrillic mode\" for Kazakh, Tatar, Bashkir and other languages. Before, these letters were on only with NVDA in Macedonian, Kyrgyz, Mongolian or Serbian.\n* The help has been clarified.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792457803000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Paddle OCR",
+			"description": "Распознаёт текст на экране моделями PaddleOCR — так же, как Windows OCR (NVDA+R), но другим движком.",
+			"changelog": "* Новая настройка «Буквы всех кириллических алфавитов в режиме «Кириллица»» — для казахского, татарского, башкирского и других языков. Раньше эти буквы были включены, только если NVDA на македонском, киргизском, монгольском или сербском.\n* Уточнена справка."
+		}
+	]
+}
