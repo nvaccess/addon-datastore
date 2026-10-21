@@ -95,5 +95,47 @@
 			"description": "Tracks events and displays information about them (for developers and power users)",
 			"changelog": "* NVDA 2026.1 (64-bit) or later is required."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/8f3f5066ccfb28ef2f99a37d782eae663ae7d897b666479948cc3624353e0a60",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "8f3f5066ccfb28ef2f99a37d782eae663ae7d897b666479948cc3624353e0a60",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c1d2c0000",
+					"raw_md5": "77c583bf05fe5865f263387ca548ef19"
+				},
+				"first_submission_date": 1792551362,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792551382,
+				"last_submission_date": 1792551362,
+				"md5": "6d0e011f5c6bad900d9ae2e996c7cdc0",
+				"names": [],
+				"reputation": 0,
+				"sha1": "74afaddd7e4ab73594db6b2c9dd95806c7711cdc",
+				"sha256": "8f3f5066ccfb28ef2f99a37d782eae663ae7d897b666479948cc3624353e0a60",
+				"size": 63144,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
