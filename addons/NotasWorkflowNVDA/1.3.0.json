@@ -1,0 +1,39 @@
+{
+	"addonId": "NotasWorkflowNVDA",
+	"displayName": "Notas Workflow NVDA - Notes in status lanes",
+	"URL": "https://github.com/weliveiracruz/NotasWorkflowNVDA/releases/download/v1.3.0/NotasWorkflowNVDA-1.3.0.nvda-addon",
+	"description": "Notes and tasks in status lanes (To do, In progress, Blocked, Done), notebooks and folders, tags, formatted content, automatic saving and search, all from the keyboard with spoken feedback and fast with tens of thousands of notes. Shortcuts: NVDA+Alt+N opens the window, NVDA+Alt+F creates a note and NVDA+Alt+B searches the notes. Notes stay on this computer and can be imported and exported.",
+	"sha256": "ac0e12adced5f29b60090b209f53b33a803f9bcabf20d17912321c53f0e6b0d1",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Wellington Cruz",
+	"sourceURL": "https://github.com/weliveiracruz/NotasWorkflowNVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/weliveiracruz/NotasWorkflowNVDA",
+	"changelog": "Lanes start closed (Right Arrow opens one) and stay as you leave them. After changing the status or the location of a note in its window, closing the window puts the focus on the next note of the same lane.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792626557000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Notas Workflow NVDA - Folhas em raias de status",
+			"description": "Folhas e tarefas em raias de status (A fazer, Em andamento, Bloqueada, Concluída), cadernos e pastas, tags, conteúdo com formatação, salvamento automático e busca, tudo pelo teclado, com respostas faladas e rápido com dezenas de milhares de folhas. Atalhos: NVDA+Alt+N abre a janela, NVDA+Alt+F cria uma folha e NVDA+Alt+B busca nas folhas. As folhas ficam neste computador e podem ser importadas e exportadas.",
+			"changelog": "As raias começam fechadas (Seta para a direita abre) e ficam como você as deixou. Depois de mudar o status ou o local de uma folha na janela dela, ao fechar a janela o foco vai para a próxima folha da mesma raia."
+		}
+	]
+}
