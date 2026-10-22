@@ -137,5 +137,47 @@
 			"description": "یک دستیارِ هوشِ مصنوعیِ پیشرفته برای NVDA با استفاده از مدل‌های جمینای.\nلایه‌ی فرمان: NVDA+Shift+V را فشار دهید، سپس:\n- مترجمِ هوشمند (T) / کلیپ‌بورد (Shift+T)\n- بازنویسی و پیرایشِ متن (R)\n- توصیفِ شیء (V) / تمام‌صفحه (O)\n- تحلیلِ ویدیو (Shift+V)\n- ضبطِ ویدیوییِ محلی (Control+V)\n- سندخوان (D)\n- عملیاتِ هوشمندِ فایل (F)\n- حل‌کننده‌ی کپچا (C)\n- گفتگوی مستقیم (Shift+C)\n- پیاده‌سازی و دوبله‌ی رسانه (M)\n- تایپِ صوتیِ هوشمند (S)\n- ترجمه‌ی صوتی (Control+T)\n- اعلامِ وضعیت (I)\n- برچسب‌گذاریِ شیء (L)\n- مدیریت/اسکنِ برچسب‌ها (Shift+L)\n- کاوشگرِ رابطِ کاربری (E)\n- اپراتورِ هوشِ مصنوعی (Shift+A)\n- دستیارِ زنده (Control+L) / اپراتورِ زنده (Control+A)\n- مدیرِ کلیدِ APIِ جمینای (G)\n- بررسیِ بروزرسانی (U)\n- بازخوانیِ آخرین نتیجه (Space)\n- راهنمای فرمان‌ها (H)\n- باز کردنِ تنظیمات (Alt+S)\n- گزارشِ کلیدهای پایان‌یافته (Alt+Q)\n- گزارشِ مسیریابیِ پیشرفته (Alt+M)\n- تنظیماتِ سریع (جهت‌نماهای بالا/پایین/چپ/راست)",
 			"changelog": "## Changes for 2026.10.22\n\n*   **Instagram Video Downloader Fix**: Restored video analysis and audio transcription for Instagram Reels and posts by switching to direct embed media parsing, bypassing third-party scraper failures.\n*   **TikTok Video Downloader Fix**: Enhanced API request handling and fallback parsing for more reliable TikTok video link retrieval.\n*   **Service Cleanup**: Removed Twitter/X video download support due to upstream platform access restrictions."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/dfc0f421b883cfa59a74be41607bb50de37656be6b09c23ac196fca2e6205eb3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "dfc0f421b883cfa59a74be41607bb50de37656be6b09c23ac196fca2e6205eb3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e070600",
+					"raw_md5": "2d18d8e8854e65f03b4a98654269d0d4"
+				},
+				"first_submission_date": 1792688803,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792688818,
+				"last_submission_date": 1792688803,
+				"md5": "3dc2ff6dc7d85142ed96064ce7ab58ce",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c3b8e724b7d2361dc881ebb7c00bc32c19802529",
+				"sha256": "dfc0f421b883cfa59a74be41607bb50de37656be6b09c23ac196fca2e6205eb3",
+				"size": 40795849,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
