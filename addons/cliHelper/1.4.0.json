@@ -1,0 +1,32 @@
+{
+	"addonId": "cliHelper",
+	"displayName": "CLI Helper",
+	"URL": "https://github.com/Naeem-hashmi/Nvidia-c-l-i-helper-/releases/download/v1.4.0/cliHelper-1.4.0.nvda-addon",
+	"description": "Makes Command Prompt, PowerShell, Windows Terminal, WSL and other consoles easier to use.\nSpeaks interactive prompts (selection lists, checkboxes and yes/no toggles such as create-next-app),\nreads the last command's output, announces when long commands finish, and adds a\nCLI mode with word-processor style reading, selection and copying. Press NVDA+Alt+C, then H for help.",
+	"sha256": "d24f585b3fd2403f7d1b4c4066615afce0501c3d95a4dcbd07aa2ac18454b297",
+	"addonVersionName": "1.4.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Naeem-hashmi",
+	"sourceURL": "https://github.com/Naeem-hashmi/Nvidia-c-l-i-helper-/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/naeem-hashmi/Nvidia-c-l-i-helper-",
+	"changelog": "New: NVDA+Alt+I (or I in CLI mode) says what the terminal is doing: the running command, how long it has run, its last output, or that it waits for an answer.\nNew: while a command runs without output, its status is announced every 30 seconds (configurable).\nNew: when a menu or question appears, CLI Helper says which keys answer it. Typing y or n in a yes/no question announces the answer.\nChanged: moving through a menu says only the new choice; the question is no longer repeated.\nFixed: in Word and Excel, NVDA+Alt+C reports comments again.\nShorter, simpler documentation.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792685291000,
+	"translations": []
+}
