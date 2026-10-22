@@ -1,0 +1,45 @@
+{
+	"addonId": "AccessifyPlay",
+	"displayName": "Accessify Play",
+	"URL": "https://github.com/InfiArtt/accessify-play/releases/download/v1.12.2/AccessifyPlay-1.12.2.nvda-addon",
+	"description": "Accessify Play provides comprehensive NVDA control for Spotify playback on any Connect-enabled device. A Spotify Premium subscription is required for full functionality.",
+	"sha256": "6e999f4454bbc3716e5fd1e799bb4a14731f115bdffc6e6032348e58350f5fdd",
+	"addonVersionName": "1.12.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 12,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "InfiArtt",
+	"sourceURL": "https://github.com/InfiArtt/accessify-play",
+	"license": "GPL v2",
+	"homepage": "https://github.com/InfiArtt/accessify-play",
+	"changelog": "\n- Far fewer \"Spotify is limiting requests\" errors: Accessify Play now sends much fewer requests to Spotify.\n- When Spotify does ask it to wait, it says how long at once instead of going silent.\n- Keep Alive Interval is now off by default.\n- Optional: sign in with a Spotify Client ID of your own, with a Spotify Developer Dashboard button in settings.\n- Track changes are no longer announced again after a connection or rate-limit error.\n\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792635677000,
+	"translations": [
+		{
+			"language": "id",
+			"displayName": "Accessify Play",
+			"description": "Accessify Play memberikan kontrol NVDA komprehensif untuk pemutaran Spotify di perangkat apa pun yang mendukung Spotify Connect. Langganan Spotify Premium diperlukan untuk fungsionalitas penuh.",
+			"changelog": "\n- Jauh lebih jarang muncul \"Spotify sedang membatasi permintaan\": Accessify Play kini mengirim jauh lebih sedikit permintaan ke Spotify.\n- Saat Spotify meminta menunggu, langsung disebutkan berapa lama, tidak lagi diam.\n- Keep Alive Interval kini nonaktif secara bawaan.\n- Opsional: masuk dengan Client ID Spotify milik sendiri, dengan tombol Spotify Developer Dashboard di pengaturan.\n- Pergantian trek tidak lagi diumumkan ulang setelah gangguan koneksi atau pembatasan permintaan.\n\t"
+		},
+		{
+			"language": "en",
+			"displayName": "Accessify Play",
+			"description": "Accessify Play provides comprehensive NVDA control for Spotify playback on any Connect-enabled device. A Spotify Premium subscription is required for full functionality.",
+			"changelog": "\n- Far fewer \"Spotify is limiting requests\" errors: Accessify Play now sends much fewer requests to Spotify.\n- When Spotify does ask it to wait, it says how long at once instead of going silent.\n- Keep Alive Interval is now off by default.\n- Optional: sign in with a Spotify Client ID of your own, with a Spotify Developer Dashboard button in settings.\n- Track changes are no longer announced again after a connection or rate-limit error.\n\t"
+		}
+	]
+}
