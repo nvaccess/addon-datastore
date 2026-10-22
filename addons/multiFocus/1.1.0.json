@@ -1,0 +1,32 @@
+{
+	"addonId": "multiFocus",
+	"displayName": "MultiFocus - Multiple Cursors & Focus Manager for NVDA",
+	"URL": "https://github.com/Blindtechagent/multiFocus/releases/download/v1.1.0/multiFocus-1.1.0.nvda-addon",
+	"description": "MultiFocus gives NVDA users multiple independent cursors\nand virtual focuses across applications, web pages, and documents.\nCreate multiple focus markers, cycle between them, toggle between\nrecent locations, or peek at other cursor positions without losing\nyour active work.",
+	"sha256": "d3f125958bece0af0765916f14c21147fcb632739885c7ce969d599886538a47",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Pawan Kumar",
+	"sourceURL": "https://github.com/Blindtechagent/multiFocus",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Blindtechagent/multiFocus",
+	"changelog": "1.1.0:\n- MultiFocus is now ON by default when NVDA starts.\n- Added settings panel in NVDA Settings to configure start-up state.\n- Dynamic session toggle via NVDA+Windows+M.\n- When OFF, gestures are dynamically released to NVDA and applications.\n- Updated gestures: NVDA+Alt+F to toggle recent cursors, NVDA+Ctrl+1..9 to jump.\n- Scoped gesture unbinding on toggle and plugin termination.\n\n1.0.0:\n- Initial release of MultiFocus featuring multiple cursors, quick toggle, interactive cursor manager dialog, audio peeking, and automatic window switching.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792662594000,
+	"translations": []
+}
