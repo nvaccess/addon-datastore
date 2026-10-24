@@ -185,5 +185,47 @@
 			"description": "Poboljšava pristupačnost eMule programa sa NVDA.\neMule je P2P program za pretragu i deljenje datoteka.\nViše informacija o eMule možete naći na\nhttp://www.emule-project.net",
 			"changelog": "* Updates to translations."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d8cc4260efc81bb6650bc5bc2ccd7eb0dad4a3bbfac988d522a9aa9b60521622",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "d8cc4260efc81bb6650bc5bc2ccd7eb0dad4a3bbfac988d522a9aa9b60521622",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001c1e1d0400",
+					"raw_md5": "2d88c8be2d8a0a0dbe3739deb81201ac"
+				},
+				"first_submission_date": 1792878717,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792878718,
+				"last_submission_date": 1792878717,
+				"md5": "ce005e8ae6953da7e822d8cecfafa69e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "8aa168727fff61b7ba284c6810c17d67af66a4f6",
+				"sha256": "d8cc4260efc81bb6650bc5bc2ccd7eb0dad4a3bbfac988d522a9aa9b60521622",
+				"size": 225490,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
