@@ -161,5 +161,47 @@
 			"description": "Dozvoljava daljinski pristup i kontrolu drugog računara. Ovaj dodatak je zasnovan na NVDA Remote dodatku.",
 			"changelog": "Now, url_handler.exe is delivered as a separate component. You can install it from a new option available from the add-on menu."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1dfe71e9a88f6c96aaca97d919ce4d03cb0cf05a16e8863c5f0ee00daabe24f1",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1dfe71e9a88f6c96aaca97d919ce4d03cb0cf05a16e8863c5f0ee00daabe24f1",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0e00",
+					"raw_md5": "1bbc829c01350df5f3269d8703c32498"
+				},
+				"first_submission_date": 1792872108,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792872116,
+				"last_submission_date": 1792872108,
+				"md5": "58d4e8efd3230b2741641b2fcfe19655",
+				"names": [],
+				"reputation": 0,
+				"sha1": "30a089fb78566ffb77e7d11cab84651b681f8143",
+				"sha256": "1dfe71e9a88f6c96aaca97d919ce4d03cb0cf05a16e8863c5f0ee00daabe24f1",
+				"size": 5527472,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
