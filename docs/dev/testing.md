@@ -18,6 +18,7 @@ To test the submission process from end-to-end, you need to fork the repository 
    Ensure they both block on your review.
       * `securityReview`
       * `submitterReview`
+      * `submitterReview2`
    * (Optional) For testing VirusTotal scanning, set the following environment keys:
       * Secret: `VT_API_KEY`.
       Generate your own using VirusTotal.
