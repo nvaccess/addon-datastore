@@ -1,0 +1,39 @@
+{
+	"addonId": "NotasWorkflowNVDA",
+	"displayName": "Notas Workflow NVDA - Notes in status lanes",
+	"URL": "https://github.com/weliveiracruz/NotasWorkflowNVDA/releases/download/v1.8.0/NotasWorkflowNVDA-1.8.0.nvda-addon",
+	"description": "Notes and tasks in status lanes (To do, In progress, Blocked, Done), notebooks and folders, formatted content, automatic saving and search, all from the keyboard with spoken feedback and fast with tens of thousands of notes. Shortcuts: NVDA+Alt+N opens the window, NVDA+Alt+F creates a note and NVDA+Alt+B searches the notes. Notes stay on this computer, can be imported and exported, and can be saved as Word, Markdown or HTML documents.",
+	"sha256": "d699df0a330954406de4c744ca367b888f5654b94e77b225af7f585b6376bfd8",
+	"addonVersionName": "1.8.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 8,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Wellington Cruz",
+	"sourceURL": "https://github.com/weliveiracruz/NotasWorkflowNVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/weliveiracruz/NotasWorkflowNVDA",
+	"changelog": "New Create > Note from document…: a Word (.docx), PowerPoint (.pptx), text (.txt), HTML or e-mail (.eml) document becomes a new note, with its title and its text in the content (headings, lists, bold and italic kept; tables as lines). New Insert document… button (Alt+D) in the note window puts the text of a document at the cursor. Documents are read in the background. Creating a notebook now opens the New notebook window, which also asks the folder.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792969256000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Notas Workflow NVDA - Folhas em raias de status",
+			"description": "Folhas e tarefas em raias de status (A fazer, Em andamento, Bloqueada, Concluída), cadernos e pastas, conteúdo com formatação, salvamento automático e busca, tudo pelo teclado, com respostas faladas e rápido com dezenas de milhares de folhas. Atalhos: NVDA+Alt+N abre a janela, NVDA+Alt+F cria uma folha e NVDA+Alt+B busca nas folhas. As folhas ficam neste computador, podem ser importadas e exportadas e podem ser salvas como documentos do Word, Markdown ou HTML.",
+			"changelog": "Novo Criar > Folha a partir de documento…: um documento do Word (.docx), do PowerPoint (.pptx), de texto (.txt), HTML ou de e-mail (.eml) vira uma folha nova, com o título e o texto no conteúdo (títulos, listas, negrito e itálico mantidos; tabelas em linhas). Novo botão Inserir documento… (Alt+D) na janela da folha coloca o texto de um documento no cursor. Os documentos são lidos em segundo plano. Criar um caderno agora abre a janela Novo caderno, que também pergunta a pasta."
+		}
+	]
+}
