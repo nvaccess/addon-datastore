@@ -1,0 +1,113 @@
+{
+	"addonId": "addonStoreLite",
+	"displayName": "addon Store Lite",
+	"URL": "https://github.com/chaichaimee/addonStoreLite/releases/download/2026.11.0/addonStoreLite-v2026.11.0.nvda-addon",
+	"description": "Makes the NVDA Add-on Store quicker to use with a screen reader. Add-on list items are read in a short form (name, version, author, date) with four display formats to choose from, the opening announcement is shortened, and the store remembers your last tab, sort order and filters for each tab.",
+	"sha256": "b91c5dd146fdd2424313339b895c16fd8c8a9dd535948027d3ae0b3c656330c8",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/addonStoreLite",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/addonStoreLite",
+	"changelog": "Add-on Store remembers the last tab, sort order, channel filter and enabled/disabled filter per tab. Settings panel to turn abbreviations on or off and pick one of four item display formats. Shorter opening announcement. Optimized UIA pipeline: foreground watchdog and O(1) early exit in event_gainFocus prevent NVDA freezing. Fixed tab switching errors when the sort field is hidden (NVDA 2026.2+).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792922911000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "متجر الإضافات الخفيف",
+			"description": "يجعل متجر إضافات NVDA أسرع في الاستخدام بواسطة قارئ الشاشة. تُقرأ عناصر قائمة الإضافات بشكل مختصر (الاسم، الإصدار، المؤلف، التاريخ) مع أربعة تنسيقات عرض للاختيار من بينها، ويتم اختصار إعلان الفتح، كما يتذكر المتجر علامة التبويب الأخيرة، وترتيب الفرز، والواملات لكل علامة تبويب."
+		},
+		{
+			"language": "hi",
+			"displayName": "ऐड-आन स्टोर लाइट",
+			"description": "स्क्रीन रीडर के साथ एनवीडीए ऐड-आन स्टोर का उपयोग करना तेज़ बनाता है। ऐड-आन सूची के आइटम छोटे रूप में (नाम, संस्करण, लेखक, दिनांक) पढ़े जाते हैं जिसमें चुनने के लिए चार प्रदर्शन प्रारूप हैं, शुरुआती घोषणा छोटी कर दी जाती है, और स्टोर प्रत्येक टैब के लिए आपके अंतिम टैब, छँटाई क्रम और फ़िल्टर को याद रखता है।"
+		},
+		{
+			"language": "th",
+			"displayName": "ร้านค้าส่วนเสริมอย่างย่อ",
+			"description": "ทำให้หน้าต่างร้านค้าส่วนเสริมของ NVDA ใช้งานได้รวดเร็วยิ่งขึ้นด้วยโปรแกรมอ่านจอภาพ รายการส่วนเสริมจะถูกอ่านแบบย่อ (ชื่อ, เวอร์ชัน, ผู้พัฒนา, วันที่) พร้อมรูปแบบการแสดงผล 4 แบบให้เลือก, ตัดทอนประกาศเปิดร้านค้าให้สั้นลง และร้านค้าจะจดจำแท็บล่าสุด, ลำดับการเรียง และตัวกรองสำหรับแต่ละแท็บ"
+		},
+		{
+			"language": "ja",
+			"displayName": "アドオンストア ライト",
+			"description": "スクリーンリーダーでNVDAアドオンストアをよりすばやく利用できるようにします。アドオンリストの項目は簡潔な形式（名前、バージョン、作者、日付）で読み上げられ、4つの表示形式から選択できます。また、起動時のアナウンスが短縮され、ストアが各タブの最後のタブ、並べ替え順、フィルターを記憶します。"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Loja de Complementos Lite",
+			"description": "Torna a Loja de Complementos do NVDA mais rápida de usar com um leitor de tela. Os itens da lista de complementos são lidos de forma concisa (nome, versão, autor, data) com quatro formatos de exibição à escolha, o anúncio de abertura é encurtado e a loja lembra sua última aba, ordem de classificação e filtros para cada aba."
+		},
+		{
+			"language": "es",
+			"displayName": "Tienda de complementos ligera",
+			"description": "Hace que la Tienda de complementos de NVDA sea más rápida de usar con un lector de pantalla. Los elementos de la lista de complementos se leen de forma abreviada (nombre, versión, autor, fecha) con cuatro formatos de visualización para elegir, el anuncio de apertura se acorta y la tienda recuerda su última pestaña, orden y filtros para cada pestaña."
+		},
+		{
+			"language": "ru",
+			"displayName": "Магазин дополнений Lite",
+			"description": "Ускоряет работу с Магазином дополнений NVDA при использовании программы чтения с экрана. Элементы списка дополнений зачитываются в краткой форме (название, версия, автор, дата) с возможностью выбора из четырех форматов отображения, приветственное объявление сокращено, а магазин запоминает последнюю вкладку, порядок сортировки и фильтры для каждой вкладки."
+		},
+		{
+			"language": "en",
+			"displayName": "addon Store Lite",
+			"description": "Makes the NVDA Add-on Store quicker to use with a screen reader. Add-on list items are read in a short form (name, version, author, date) with four display formats to choose from, the opening announcement is shortened, and the store remembers your last tab, sort order and filters for each tab."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "插件商店轻量版",
+			"description": "让 NVDA 插件商店的屏幕阅读器使用体验更加快捷。插件列表项采用简短形式朗读（名称、版本、作者、日期），并提供四种显示格式供选择；缩短了打开时的播报，并且商店会记住每个标签页上您最后使用的标签、排序方式和筛选条件。"
+		},
+		{
+			"language": "id",
+			"displayName": "Toko Add-on Lite",
+			"description": "Membuat Toko Add-on NVDA lebih cepat digunakan dengan pembaca layar. Item daftar add-on dibaca secara singkat (nama, versi, penulis, tanggal) dengan empat format tampilan yang dapat dipilih, pengumuman pembuka dipersingkat, dan toko mengingat tab terakhir, urutan pengurutan, dan filter untuk setiap tab."
+		},
+		{
+			"language": "de",
+			"displayName": "Add-on Store Lite",
+			"description": "Macht die NVDA Add-on-Verwaltung für die Nutzung mit einem Screenreader schneller. Add-on-Listenelemente werden in einer Kurzform (Name, Version, Autor, Datum) mit vier anpassbaren Anzeigeformaten vorgelesen, die Begrüßungsansage wird verkürzt und der Store merkt sich für jeden Reiter den zuletzt verwendeten Reiter, die Sortierung und die Filter."
+		},
+		{
+			"language": "ko",
+			"displayName": "애드온 스토어 라이트",
+			"description": "스크린 리더로 NVDA 애드온 스토어를 더 빠르게 사용할 수 있습니다. 애드온 목록 항목은 4가지 표시 형식 중 선택하여 간략한 형식(이름, 버전, 작성자, 날짜)으로 읽어주고, 열림 안내 음성이 단축되며, 각 탭별로 마지막 탭, 정렬 순서, 필터를 기억합니다."
+		},
+		{
+			"language": "uk",
+			"displayName": "Додаток Store Lite",
+			"description": "Робить магазин доповнень NVDA зручнішим і швидшим у використанні з екранним читачем. Елементи списку доповнень озвучуються в скороченій формі (назва, версія, автор, дата) з чотирма форматами відображення на вибір, вітальне повідомлення скорочено, а магазин запам'ятовує останню вкладку, порядок сортування та фільтри для кожної вкладки."
+		},
+		{
+			"language": "fr",
+			"displayName": "Magasin d'extensions Lite",
+			"description": "Rend l'utilisation du magasin d'extensions NVDA plus rapide avec un lecteur d'écran. Les éléments de la liste des extensions sont lus sous une forme courte (nom, version, auteur, date) avec quatre formats d'affichage au choix, l'annonce d'ouverture est raccourcie et le magasin mémorise votre dernier onglet, ordre de tri et filtres pour chaque onglet."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "附加元件商店精簡版",
+			"description": "讓 NVDA 附加元件商店搭配螢幕報讀軟體時使用起來更快速。附加元件清單項目會以簡短形式（名稱、版本、作者、日期）讀出，並有四種顯示格式可供選擇，開啟時的語音提示也會縮短，且商店會記住您在每個分頁上最後使用的分頁、排序方式和篩選條件。"
+		},
+		{
+			"language": "it",
+			"displayName": "Add-on Store Lite",
+			"description": "Makes the NVDA Add-on Store quicker to use with a screen reader. Add-on list items are read in a short form (name, version, author, date) with four display formats to choose from, the opening announcement is shortened, and the store remembers your last tab, sort order and filters for each tab."
+		}
+	]
+}
