@@ -1,0 +1,57 @@
+{
+	"addonId": "screenWrapping",
+	"displayName": "screen wrapping for nvda",
+	"URL": "https://github.com/hamadatrichine/nvda-screen-wrapping/releases/download/v26.2.0/screenWrapping-26.2.nvda-addon",
+	"description": "This addon brings the screen wrapping feature to nvda.\n\tWhen you press quick navigation keys such as h, b, f and others, you will be placed on the next element regardless of your current position on a webpage.\n\tIf elements are not found below your position, you will be placed at the first element of the requested type available from the beginning of the page and vice versa when you are searching upwards. this also extends to the find dialog of nvda.",
+	"sha256": "ecbfd2e7cc21800e04328573c8a24c54d63d8f94887871addd183774082d0b7f",
+	"addonVersionName": "26.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Hamada Trichine",
+	"sourceURL": "https://github.com/hamadatrichine/nvda-screen-wrapping",
+	"license": "GPL v2",
+	"homepage": "https://github.com/hamadatrichine/nvda-screen-wrapping",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793018643000,
+	"translations": [
+		{
+			"language": "pt_PT",
+			"displayName": "loop de ecrã para NVDA",
+			"description": "Este extra traz o loop de ecrã para o NVDA.\n\tQuando pressiona as teclas de navegação rápida, tais como h, b, f e outras, será posicionado no próximo elemento independentemente da sua posição actual numa página Web.\n\tSe não forem encontrados elementos abaixo da sua posição, será posicionado no primeiro elemento do tipo solicitado a partir do início da página, e vice-versa quando pesquisa para cima. Isto também se aplica ao diálogo de pesquisa do NVDA."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Loop de tela para NVDA",
+			"description": "Este complemento traz o loop de tela para o NVDA.\n\tQuando você pressiona as teclas de navegação rápida, como h, b, f e outras, é posicionado no próximo elemento independentemente da sua posição atual em uma página da web.\n\tSe não houver elementos abaixo da sua posição, você será posicionado no primeiro elemento do tipo solicitado a partir do início da página, e vice-versa ao pesquisar para cima. Isso também se aplica à caixa de diálogo de pesquisa do NVDA."
+		},
+		{
+			"language": "ru",
+			"displayName": "Перемещение по экрану для NVDA",
+			"description": "Это дополнение добавляет в NVDA функцию циклической навигации.\n\tПри нажатии клавиш быстрой навигации, таких как h, b, f и других, вы перейдёте к следующему элементу независимо от текущего положения на веб-странице.\n\tЕсли ниже текущего положения нет элементов нужного типа, вы перейдёте к первому такому элементу в начале страницы, и наоборот при поиске вверх. Эта функция также работает в диалоге поиска NVDA."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "循环浏览模式",
+			"description": "这个插件为 nvda 增加了循环浏览功能。\n在您使用单键导航如 h、b、f 过程中，会向下跳转相应的元素。\n如果往下找不到元素，则会从头开始继续按相应元素类型跳转，反之亦然，向上跳转也是如此。\n当然，该功能对于 NVDA 的查找功能也适用。"
+		},
+		{
+			"language": "de",
+			"displayName": "Navigationsschleife für den Lesemodus",
+			"description": "Diese Erweiterung bringt die Navigationsschleife-Funktion zum Lesemodus.\n\tWenn Sie Schnellnavigationstasten wie h, b, f und andere drücken, werden Sie unabhängig von Ihrer aktuellen Position auf einer Webseite zum nächsten Element weitergeleitet.\n\tWenn unter Ihrer Position keine neuen Elemente gefunden werden, werden Sie zum ersten verfügbaren Element des gewünschten Typs am Anfang der Seite weitergeleitet und umgekehrt, wenn Sie nach oben suchen. Dies gilt auch für den Suchdialog von NVDA.\nÜbersetzt von \"NVDA Nachhaltig\" - BFW Würzburg."
+		}
+	]
+}
