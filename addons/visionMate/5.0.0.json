@@ -28,5 +28,47 @@
 	"changelog": "* Photos in chats: NVDA+Alt+A on a photo message describes the photo itself, not the name and time around it.\n* WinZapp (WhatsApp): photos are described without opening them for you. VisionMate gets each photo by itself, closes the viewer at once and deletes the copy WinZapp writes. A described message says what its photo shows when you reach it again.\n* Unigram (Telegram): the full-size photo Unigram keeps is described, so small text is read clearly.\n* Image viewers such as Photos: NVDA+Alt+W describes the photo file at full quality.\n* File Explorer and the desktop: NVDA+Alt+A on an image file describes it without opening it.\n* Automatic descriptions (NVDA+Alt+G) now also cover photo messages, image files in File Explorer and photos opened in an image viewer.\n* Descriptions no longer get stuck repeating the same sentence.\n* A What's new window appears when you install or update VisionMate.",
 	"licenseURL": "https://github.com/athee06/VisionMate/blob/main/LICENSE",
 	"submissionTime": 1793008996000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/aa37ec30fe2a180a28922fcc4a6ebf82e8d272e74f2295e02af8c8f735e6c6eb",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "aa37ec30fe2a180a28922fcc4a6ebf82e8d272e74f2295e02af8c8f735e6c6eb",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070200",
+					"raw_md5": "3dfb7b1330d717ab3e82520b664addd3"
+				},
+				"first_submission_date": 1793009002,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793009036,
+				"last_submission_date": 1793009002,
+				"md5": "61612039edb6055377f3b9c86aa6e0fd",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a4d51c0a46e53bfcef45c2b11be9eef91b11032b",
+				"sha256": "aa37ec30fe2a180a28922fcc4a6ebf82e8d272e74f2295e02af8c8f735e6c6eb",
+				"size": 32706772,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
