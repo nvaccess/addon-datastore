@@ -28,5 +28,47 @@
 	"changelog": "Pages that open with a real introduction land on it again, and the add-on is tested with NVDA 2026.3.\n\nA \"Features\" or \"Overview\" heading no longer jumps you past the introduction. On a shopping page, the description usually sits under a heading such as \"About this item\", \"Description\" or \"Features\", with clutter above it, so the add-on gives those headings priority. It gave them priority even on pages that had already opened with several paragraphs of real writing. NVDA's own What's New page put you on the second bullet under \"New Features\" instead of the summary of the release, and a getting-started guide landed more than sixty lines down on a feature list. Those headings now only take over when the page has not already started with its own introduction.\nRemote Incident Manager stops beeping at you. Its home screen shows up to NVDA as a web page with nothing on it, so every time it came up, the add-on went looking, found nothing, and played the two low beeps. It now leaves that screen alone. Z still works there if you ever want it.\nTested with NVDA 2026.3. Nothing needed changing for it. The add-on still runs on NVDA 2024.1 and newer, on both the 32-bit builds up to 2025.3 and the 64-bit builds from 2026.1 on.\n\nKnown gaps, unchanged from 1.0.17: a video row that also carries a written description under each video can still trip the headline wall, so some search results pages land on a video. Consent banners that never say what they store, the \"We value your privacy\" wording, are still not caught, and that costs you one press of Down Arrow. On some articles the cursor lands on the author's biography instead of the story; recipe sites can still land on a marketing line or a reader's review; the Verge and TechCrunch home pages lead with a large featured story and land on a headline further down the list; single-field sign-in pages that ask for your email first still get no landing (the two low beeps); and script-drawn result widgets like the fast.com speed test are still not detected.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1793034786000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/78bd7fea235bc24f133a6c94617337798ca0b3a6a1a1f84648ee06cf83230f82",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "78bd7fea235bc24f133a6c94617337798ca0b3a6a1a1f84648ee06cf83230f82",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0c0d0000",
+					"raw_md5": "67c0a8424b01b0558051103668dfd38e"
+				},
+				"first_submission_date": 1793034790,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793034793,
+				"last_submission_date": 1793034790,
+				"md5": "a00e085341d8543648a1ed99beabc8af",
+				"names": [],
+				"reputation": 0,
+				"sha1": "97e7ca4e474fb23197cc714ea1091304ca445164",
+				"sha256": "78bd7fea235bc24f133a6c94617337798ca0b3a6a1a1f84648ee06cf83230f82",
+				"size": 149132,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
