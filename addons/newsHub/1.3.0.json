@@ -1,0 +1,39 @@
+{
+	"addonId": "newsHub",
+	"displayName": "NewsHub for NVDA",
+	"URL": "https://github.com/aris9952/newsHub/releases/download/v1.3.0/newsHub-1.3.0.nvda-addon",
+	"description": "Reading news from various national and international news portals such as kompas.com, detik.com, and others is truly enjoyable. Aside from providing reliable information, it also broadens our knowledge as readers.\nHowever, as we know, the web pages of these news portals are not friendly to screen readers.\nThere are many advertisements and complex navigation elements that make reading difficult.\nThat is why \"NewsHub For NVDA\" is here!\n\nWith this add-on, you can read news from trusted news portals easily and comfortably. In this version, the add-on supports Kompas.com (23 rubrics), Detik.com (27 rubrics), CNN Indonesia (8 rubrics), CNBC Indonesia (7 rubrics), and Tempo.co (11 rubrics), complete with cross-portal keyword search, an accessible HTML reading view with NVDA Browse Mode navigation, and inline HTML5 photo and video playback (<video> and <img>) directly inside the article view.\nHappy reading!\n\nKeyboard Shortcuts:\n- NVDA+Shift+K: Open the NewsHub for NVDA dashboard from anywhere.\n- Ctrl+F: Jump to the cross-portal keyword search box.\n- Tab / Shift+Tab: Navigate between controls in the dashboard.\n- Up / Down Arrow: Select a news site, rubric, or article title, or read article content in the HTML viewer.\n- H / K / T / G / L: Navigate headings, links, tables, graphics, and lists in the HTML article reading area (NVDA Browse Mode).\n- Alt+[: Navigate to the previous article in the active list.\n- Alt+]: Navigate to the next article in the active list.\n- F5: Refresh the article list for the active rubric or search.\n- Ctrl+R: Reload the full content of the currently selected article.\n- Alt+R: Return focus to the rubric selection control.\n- Alt+S: Return focus to the news site selection control.\n- Escape: Clear active search results and restore the default view, or contextually return to the previous stage / close the dashboard.",
+	"sha256": "83c7bb3459c48db300ad412c22386a5721cc62ad5b3d351b9a48b36fca1ab188",
+	"addonVersionName": "1.3.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2022,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Aris Yohanes Elean",
+	"sourceURL": "https://github.com/aris9952/newshub",
+	"license": "GPL v2",
+	"homepage": "https://github.com/aris9952/newsHub",
+	"changelog": "Version 1.3.0:\n- Added cross-portal news search by keyword across all 5 supported portals (Kompas.com, Detik.com, CNN Indonesia, CNBC Indonesia, and Tempo.co) with automatic hiding of site/rubric selectors during active search and Escape to restore the default view.\n- Replaced the plain text reading area with a standard HTML article viewer supporting full NVDA Browse Mode navigation (headings, paragraphs, lists, tables, links, and media).\n- Embedded article photos (<img> / <figure>) and videos (HTML5 <video controls> and embedded players) directly inline inside the HTML article reading view just like a web browser, without requiring a separate standalone video player.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792993227000,
+	"translations": [
+		{
+			"language": "id",
+			"displayName": "NewsHub for NVDA",
+			"description": "Membaca berita dari berbagai portal berita nasional maupun internasional seperti kompas.com, detik.com, dan lainnya memang sangat menyenangkan. Selain memberikan informasi yang akurat, hal tersebut juga menambah wawasan kita sebagai pembaca.\nNamun seperti yang kita ketahui, halaman web dari portal-portal berita tersebut tidak ramah bagi pembaca layar.\nBanyak iklan serta navigasi yang rumit sehingga menyulitkan saat membaca.\nOleh karena itu, \"NewsHub For NVDA\" hadir!\n\nDengan add-on ini, kamu dapat membaca berita dari portal-portal berita tepercaya dengan mudah dan nyaman. Pada versi ini, add-on mendukung Kompas.com (23 rubrik), Detik.com (27 rubrik), CNN Indonesia (8 rubrik), CNBC Indonesia (7 rubrik), dan Tempo.co (11 rubrik), lengkap dengan fitur pencarian berita lintas situs, tampilan baca HTML standar dengan dukungan navigasi Browse Mode NVDA layaknya peramban web, serta penampil foto (<img>) dan pemutar video HTML5 (<video>) langsung di dalam area baca artikel.\nSelamat membaca!\n\nPintasan Keyboard:\n- NVDA+Shift+K: Membuka dashboard NewsHub for NVDA dari mana saja.\n- Ctrl+F: Berpindah cepat ke kotak pencarian berita lintas situs.\n- Tab / Shift+Tab: Berpindah antar-kontrol di dalam dashboard.\n- Panah Atas / Bawah: Memilih situs berita, rubrik, atau judul artikel, serta membaca isi artikel pada penampil HTML.\n- H / K / T / G / L: Navigasi heading, tautan, tabel, grafik/foto, dan daftar pada area baca artikel HTML (Mode Jelajah / Browse Mode NVDA).\n- Alt+[: Berpindah ke artikel sebelumnya pada daftar aktif.\n- Alt+]: Berpindah ke artikel berikutnya pada daftar aktif.\n- F5: Memperbarui daftar berita pada rubrik atau pencarian yang sedang aktif.\n- Ctrl+R: Memuat ulang isi lengkap artikel yang sedang dipilih.\n- Alt+R: Mengembalikan fokus ke kontrol pemilihan rubrik.\n- Alt+S: Mengembalikan fokus ke kontrol pemilihan situs berita.\n- Escape: Membersihkan hasil pencarian dan mengembalikan tampilan ke default, atau kembali ke tahap sebelumnya / menutup dashboard.",
+			"changelog": "Versi 1.3.0:\n- Menambahkan fitur pencarian berita berdasarkan kata kunci pada seluruh 5 situs berita (Kompas.com, Detik.com, CNN Indonesia, CNBC Indonesia, dan Tempo.co) dengan penyembunyian otomatis pilihan situs/rubrik saat hasil ditampilkan serta tombol Escape untuk kembali ke tampilan awal.\n- Mengganti area baca teks biasa dengan penampil artikel HTML standar yang mendukung navigasi Browse Mode NVDA secara penuh (heading, paragraf, daftar, tabel, tautan, dan media) seperti membaca di peramban web.\n- Menampilkan foto (<img> / <figure>) dan memutar video (HTML5 <video controls> serta pemutar tersemat) secara langsung di dalam tampilan baca HTML tanpa jendela pemutar video terpisah."
+		}
+	]
+}
