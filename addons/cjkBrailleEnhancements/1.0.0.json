@@ -35,5 +35,47 @@
 			"description": "針對中文等連續書寫文字的點字增強功能：\n在中日韓字元邊界換行，或使用 GMouse 模式的重疊捲動，\n以及可選擇在中文字、拉丁字母與數字之間插入空格。",
 			"changelog": "首次發布。\n\n* 中日韓字元的文字換行：關閉、在字元邊界換行，或重複被拆開的字元 (GMouse 模式) (NVDA issue #18295)。\n* 可選擇在中文點字中於中文字、拉丁字母與數字之間插入空格 (NVDA issue #20726)。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/d87eaf83ab0589768e7f8b7212e6d30bb6b8095e56899b47aed01f2d78e77e60",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "d87eaf83ab0589768e7f8b7212e6d30bb6b8095e56899b47aed01f2d78e77e60",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "30383c3c3d040000",
+					"raw_md5": "0e926e4d1e0ee02330891a559d051af5"
+				},
+				"first_submission_date": 1793111071,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793111073,
+				"last_submission_date": 1793111071,
+				"md5": "e1217d7cc8f72abd6638077994c26323",
+				"names": [],
+				"reputation": 0,
+				"sha1": "6750b612912d74156d7b48221f54bab685920514",
+				"sha256": "d87eaf83ab0589768e7f8b7212e6d30bb6b8095e56899b47aed01f2d78e77e60",
+				"size": 26612,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
