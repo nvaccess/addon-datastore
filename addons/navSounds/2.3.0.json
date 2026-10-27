@@ -1,0 +1,48 @@
+{
+	"addonId": "navSounds",
+	"displayName": "Navigation Sound Effects",
+	"URL": "https://github.com/ahmedthebest31/navsounds/releases/download/v2.3.0/navSounds_2.3.0.nvda-addon",
+	"description": "NVDA add-on providing navigation and typing sound effects with customizable sound packs, browse mode support, and mouse hover feedback.",
+	"sha256": "961900f1015393229cf50cf9fa5bb59f607ccb4f19ad2249bf9143d6a502406c",
+	"addonVersionName": "2.3.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 3,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ahmed Samy",
+	"sourceURL": "https://github.com/ahmedthebest31/navsounds",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ahmedthebest31/navsounds/",
+	"changelog": "### 2.3.0\n\n#### New Features\n* **Sound Theme Importer**: Import any sound theme from a local .zip via the settings panel. Zip-slip safe, atomic install, junk stripping, zip-bomb caps.\n* **Sound Store**: Curated static store at https://ahmedthebest31.github.io/navsounds/store/ with previews and downloads. Imported packs live in the NVDA config directory and survive add-on updates.\n* **Donation Reminder**: Optional startup reminder with PayPal and InstaPay options. Disable permanently from the dialog.\n* **Open Folders Buttons**: Open the bundled sounds folder and the imported themes folder directly from settings.\n* **Themes Folder**: Imported themes live in <configPath>/navsounds_themes/ and are never touched by updates.\n\n#### Audio and Performance\n* **Duplicate Sound Suppression**: Object-aware dedup (IA2UniqueID equality plus a 250ms window) fixes double sounds in Electron and Chromium apps.\n* **Canonical Audio Format**: All sounds converted to stereo/16-bit/48kHz at load; single shared WavePlayer; no audio ducking.\n* **Leak-Free Worker**: SoundWorker with stop event and join; tolerant wav preloading.\n* **Async Loading**: Background preload avoids startup and save freezes.\n* **Monotonic Clock**: All throttles use time.monotonic.\n* **Mouse Hover Default**: Reduced from 270ms to 50ms.\n\n#### Speech and Browse Mode\n* **Reason-Gated Suppression**: Role and state announcements silenced only for FOCUS, CARET and QUICKNAV reasons.\n* **Single Dispatch**: Browse-mode moves use the official post_browseModeMove extension point; monkey-patches are fallback-only.\n* **Quick-Nav Normalization**: itemType normalized for cache lookup.\n* **Arrow Nav Checkbox**: Gates all browse-mode move sounds.\n\n#### Fixes\n* **Config Path**: Fixed invented config.conf.appArgs API; resolver uses NVDAState/WritePaths/configDir with fallbacks.\n* **Settings Panel Crash**: Fixed frozen panel (overlap) caused by AttributeError.\n* **Donate Dialog**: Fixed ButtonHelper.sizer TypeError.\n* **Simplified Chinese**: Resources made discoverable.\n* **Audio Ducking**: Navigation sounds no longer hold ducking.\n\n#### Repository\n* **Contributing Guide**: Added with sound pack format documentation.\n* **CI/CD**: GitHub Actions build, lint, test and release with SHA256 checksums.\n* **Store Page**: Accessible, self-contained, no external dependencies.\n\n### Stability and Hardening (2.2.0)\n* **Speech Crash Prevention**: Wrapped monkey-patching of getPropertiesSpeech in try/except to prevent addon conflicts from crashing NVDA.\n* **Safe Property Speech**: Fixed get_property2_speech to copy states instead of mutating in-place, with try/except guard.\n* **Graceful Failure**: All monkey-patch calls (browser interceptor, speech) now fail gracefully without disrupting NVDA.\n\n### Project Cleanup\n* **Dead Files Removed**: Deleted stale localizations.json and localizations.txt.\n* **Translation Fix**: Fixed hardcoded absolute paths in messages.pot to relative paths.\n* **Documentation**: Fixed broken markdown links in README and docs.\n* **Build Pipeline**: Added GitHub Actions workflow for automated builds and releases.\n* **Gitignore**: Added comprehensive .gitignore for build artifacts and cache files.\n\n### Settings & UI\n* **Conditional Visibility**: Typing sub-options now show/hide dynamically based on the keyboard typing sound toggle.\n* **Arrow Key Navigation**: Added play navigation sounds during arrow key navigation checkbox (enabled by default). When unchecked, sounds are suppressed during arrow key navigation.\n* **Clearer Labels**: Renamed say roles to say element roles and say states to say element states.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793082042000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "أصوات التنقل",
+			"description": "تشغيل أصوات عند الحركة"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "导航音效",
+			"description": "一款为 NVDA 屏幕阅读器提供导航与键盘打字声效的插件。支持自定义声音包、浏览模式声效以及鼠标悬停音效反馈。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Звуки навігації",
+			"description": "Додаток для NVDA, що забезпечує звукові ефекти навігації та набору тексту з можливістю налаштування звукових пакетів, підтримки режиму огляду та звукові сигнали при наведенні курсору миші."
+		}
+	]
+}
