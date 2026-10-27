@@ -1,0 +1,39 @@
+{
+	"addonId": "cjkBrailleEnhancements",
+	"displayName": "CJK Braille Enhancements",
+	"URL": "https://github.com/keyang556/CJKBrailleEnhancements/releases/download/1.0.0/cjkBrailleEnhancements-1.0.0.nvda-addon",
+	"description": "Braille enhancements for continuous CJK text such as Chinese:\ntext wrap at CJK character boundaries or with GMouse style overlapping panning,\nand optional spaces between Chinese characters, Latin letters and numbers.",
+	"sha256": "d87eaf83ab0589768e7f8b7212e6d30bb6b8095e56899b47aed01f2d78e77e60",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Ken Chang",
+	"sourceURL": "https://github.com/keyang556/CJKBrailleEnhancements",
+	"license": "GPL v2",
+	"homepage": "https://github.com/keyang556/CJKBrailleEnhancements/",
+	"changelog": "Initial release.\n\n* Text wrap for CJK characters: off, at character boundaries, or repeating split characters (GMouse style) (NVDA issue #18295).\n* Optional spaces between Chinese characters, Latin letters and numbers in Chinese braille (NVDA issue #20726).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793111066000,
+	"translations": [
+		{
+			"language": "zh_TW",
+			"displayName": "中日韓點字增強",
+			"description": "針對中文等連續書寫文字的點字增強功能：\n在中日韓字元邊界換行，或使用 GMouse 模式的重疊捲動，\n以及可選擇在中文字、拉丁字母與數字之間插入空格。",
+			"changelog": "首次發布。\n\n* 中日韓字元的文字換行：關閉、在字元邊界換行，或重複被拆開的字元 (GMouse 模式) (NVDA issue #18295)。\n* 可選擇在中文點字中於中文字、拉丁字母與數字之間插入空格 (NVDA issue #20726)。"
+		}
+	]
+}
