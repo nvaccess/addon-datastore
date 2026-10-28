@@ -1,0 +1,87 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v1.0.0/visAware-1.0.0.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "2a68c1303c42e09278c960fe7c7f98068f17ccb195babffecc2f409f28c5f235",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 1.0.0\n\n* Added fully offline text and table recognition with RapidOCR.\n* Added Be My AI image descriptions and follow-up questions.\n* Added OpenAI-compatible OCR, image description, and AI Agent engines.\n* Added model fetching for Gemini and Gemma, and improved Kimi endpoint and model detection.\n* Simplified engine names and settings.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792590139000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 1.0.0\n\n* 新增 RapidOCR 离线文字及表格识别。\n* 新增 Be My AI 图像描述和追问功能。\n* 新增兼容 OpenAI 接口的 OCR、图像描述和 AI Agent。\n* 支持获取 Gemini 和 Gemma 模型，并改进 Kimi 接口和模型识别。\n* 简化引擎名称和设置。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 1.0.0\n\n* Added fully offline text and table recognition with RapidOCR.\n* Added Be My AI image descriptions and follow-up questions.\n* Added OpenAI-compatible OCR, image description, and AI Agent engines.\n* Added model fetching for Gemini and Gemma, and improved Kimi endpoint and model detection.\n* Simplified engine names and settings."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2a68c1303c42e09278c960fe7c7f98068f17ccb195babffecc2f409f28c5f235",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "2a68c1303c42e09278c960fe7c7f98068f17ccb195babffecc2f409f28c5f235",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "f07a6526a2c6043945e74d16f6571daf"
+				},
+				"first_submission_date": 1792590147,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792590157,
+				"last_submission_date": 1792590147,
+				"md5": "867a9b72324fad8cfc5c3a46b3318843",
+				"names": [],
+				"reputation": 0,
+				"sha1": "0ad2c10b566cf0b1d80000a88e91d8af77c4ff2f",
+				"sha256": "2a68c1303c42e09278c960fe7c7f98068f17ccb195babffecc2f409f28c5f235",
+				"size": 50618695,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10351"
+}

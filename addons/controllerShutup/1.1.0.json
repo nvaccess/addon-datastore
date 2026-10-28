@@ -1,0 +1,75 @@
+{
+	"addonId": "controllerShutup",
+	"displayName": "Controller Shutup",
+	"URL": "https://github.com/patricus3/controller-shutup/releases/download/v1.1.0/controllerShutup-1.1.0.nvda-addon",
+	"description": "Stops NVDA speech whenever a button, trigger, d-pad direction or analog stick on a game controller is pressed. Supports XInput (Xbox and compatible) controllers as well as other joysticks and gamepads visible to Windows.",
+	"sha256": "c746af3b1365e394817a019b19c43af1279347ad82e4f3dfaed87ac1a8f5840c",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "patricus",
+	"sourceURL": "https://github.com/patricus3/controller-shutup/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/patricus3/controller-shutup",
+	"changelog": "* Analog sticks now stop speech too: pushing a stick at least halfway in any direction counts as a press. Triggers need a half pull as well.\n* Fixed speech caused by a controller press sometimes being cut off. If the game or NVDA starts speaking in response to the press before the add-on gets to it, that new speech is now kept and only the speech that was already playing is stopped.\n* Fixed one press sometimes being detected twice, which could cut off the response a moment later.\n* Each d-pad / POV hat direction on non-Xbox controllers now counts separately, so going from one direction straight to another stops speech.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792917042000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c746af3b1365e394817a019b19c43af1279347ad82e4f3dfaed87ac1a8f5840c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c746af3b1365e394817a019b19c43af1279347ad82e4f3dfaed87ac1a8f5840c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "7870783030000000",
+					"raw_md5": "0b0af26aceeb6cee92cdc5084006de86"
+				},
+				"first_submission_date": 1792917046,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792917049,
+				"last_submission_date": 1792917046,
+				"md5": "6a34c37a5ff811656eb29633c2ff4efb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "341ac88c28c9196671ac200a5e67e509b45d81c7",
+				"sha256": "c746af3b1365e394817a019b19c43af1279347ad82e4f3dfaed87ac1a8f5840c",
+				"size": 5354,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12481"
+}

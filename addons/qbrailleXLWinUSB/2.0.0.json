@@ -1,0 +1,74 @@
+{
+	"addonId": "qbrailleXLWinUSB",
+	"displayName": "QBraille XL / Braille EDGE 點字顯示器驅動程式",
+	"URL": "https://github.com/maydayrag/qbrailleXLWinUSB/releases/download/v2.0/qbrailleXLWinUSB-2.0.nvda-addon",
+	"description": "支援 NVDA 2026.1 至 2026.2，透過 USB WinUSB 或藍牙 SPP 自動連接 QBraille XL / Braille EDGE。NVDA 2026.3 已內建點字顯示器驅動程式，不需安裝本附加元件。",
+	"sha256": "1c8c13ec3da0ac5d3461c1058e80799902959a19d26ff78fa351b2b5367ef1f3",
+	"addonVersionName": "2.0",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "roundface",
+	"sourceURL": "https://github.com/maydayrag/qbrailleXLWinUSB",
+	"license": "GPL v2",
+	"homepage": "https://github.com/maydayrag/qbrailleXLWinUSB",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792516988000,
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1c8c13ec3da0ac5d3461c1058e80799902959a19d26ff78fa351b2b5367ef1f3",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1c8c13ec3da0ac5d3461c1058e80799902959a19d26ff78fa351b2b5367ef1f3",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "7078783829000000",
+					"raw_md5": "b1febd4d2f292948d854492d73f39a5e"
+				},
+				"first_submission_date": 1792516993,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792516999,
+				"last_submission_date": 1792516993,
+				"md5": "1e18db211a48d8690dd5b6a5d2a73881",
+				"names": [],
+				"reputation": 0,
+				"sha1": "d9ab3dbd790b38417d117a0e39065be3cd04a0a4",
+				"sha256": "1c8c13ec3da0ac5d3461c1058e80799902959a19d26ff78fa351b2b5367ef1f3",
+				"size": 10647,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11810"
+}
