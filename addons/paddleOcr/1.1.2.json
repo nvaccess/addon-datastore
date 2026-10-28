@@ -1,0 +1,39 @@
+{
+	"addonId": "paddleOcr",
+	"displayName": "Paddle OCR",
+	"URL": "https://github.com/fdrv161/nvda-paddle-ocr/releases/download/v1.1.2/paddleOcr-1.1.2.nvda-addon",
+	"description": "Recognizes text on the screen with PaddleOCR models, like Windows OCR (NVDA+R) but with a different engine.",
+	"sha256": "013ce0f3954a8391bf2793f8e259a359faee8af3e276207bba21fbaca01886ed",
+	"addonVersionName": "1.1.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "fdrv161",
+	"sourceURL": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"changelog": "* Enter in the result window clicks the middle of the word instead of its top left corner, so clicks on small buttons and in dense lists land where expected.\n* In the result window, Shift+Enter double-clicks the word and the Applications key or Shift+F10 right-clicks it.\n* In the result window, NVDA+numpad slash (move mouse to navigator object) puts the mouse on the middle of the character at the cursor, not on the top left corner of the word; other add-ons that use the cursor position get the character too.\n* New commands: recognize the foreground window and recognize the whole screen. Not assigned by default.\n* New command: recognize the image on the clipboard (a copied picture or picture file). Not assigned by default. Long pictures, such as a screenshot of a whole scrolled page, keep their small text.\n* Text placed one line under another is no longer joined into one line in the wrong order (for example, a setting and its description in Windows Settings).\n* An object entirely off the screen (scrolled out of view) is reported as such, instead of \"Recognition failed\" with Screen Curtain on or an empty result without it.\n* Periodic refresh of the result reads again only what changed on the screen: a still screen hardly loads the processor, and lines that did not change are no longer spoken again as new text.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793165888000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Paddle OCR",
+			"description": "Распознаёт текст на экране моделями PaddleOCR — так же, как Windows OCR (NVDA+R), но другим движком.",
+			"changelog": "* Enter в окне результата щёлкает в середину слова, а не в его левый верхний угол: щелчки по маленьким кнопкам и в плотных списках попадают куда нужно.\n* В окне результата Shift+Enter делает двойной щелчок по слову, а клавиша контекстного меню или Shift+F10 — правый щелчок.\n* Новые команды: распознать активное окно и распознать весь экран, без перемещения навигатора. Клавиши по умолчанию не назначены.\n* Новая команда: распознать картинку из буфера обмена (скопированную картинку или файл с картинкой). Клавиша по умолчанию не назначена. В длинных картинках, например в скриншоте всей прокрученной страницы, мелкий текст не теряется.\n* Текст, стоящий строкой ниже, больше не склеивается с верхней строкой в обратном порядке (например, параметр и его описание в Параметрах Windows).\n* Если объект целиком за пределами экрана (например, прокручен из виду), дополнение так и говорит, вместо «Распознавание не удалось» со шторкой экрана или пустого результата без неё.\n* Периодическое обновление результата заново читает только то, что изменилось на экране: неподвижный экран почти не нагружает процессор, а неизменившиеся строки больше не озвучиваются повторно как новый текст."
+		}
+	]
+}
