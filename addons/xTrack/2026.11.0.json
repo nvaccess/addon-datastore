@@ -1,0 +1,81 @@
+{
+	"addonId": "xTrack",
+	"displayName": "xTrack",
+	"URL": "https://github.com/chaichaimee/xTrack/releases/download/2026.11.0/xTrack-v2026.11.0.nvda-addon",
+	"description": "xTrack adds a File Explorer menu Alt+Windows+X to convert, trim, merge, split, normalize, enhance and resize audio, video and images. Its recorder captures system audio and microphone with optional noise reduction.\n\n\nHot Keys:\nALT+Windows+X : Open xTrack Menu\nCTRL+Shift+SpaceBar : Start and pause Recording\nCTRL+Windows+SpaceBar : Stop Record",
+	"sha256": "b19ffd4886870caa1b9cf98748d34ea3bdb6dfc12be148a92c39c56eb6685c5d",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee and Malee Yamazaki",
+	"sourceURL": "https://github.com/chaichaimee/xTrack",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/xTrack",
+	"changelog": "Added a once-a-day automatic update check with a download-and-install prompt. Improved audio editing and mixdown tools, faster background video conversion, and more reliable recording of microphone and system sound together.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792987186000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "xTrack",
+			"description": "xTrack adds a File Explorer menu Alt+Windows+X to convert, trim, merge, split, normalize, enhance and resize audio, video and images. Its recorder captures system audio and microphone with optional noise reduction.\n\n\nHot Keys:\nALT+Windows+X : Open xTrack Menu\nCTRL+Shift+SpaceBar : Start and pause Recording\nCTRL+Windows+SpaceBar : Stop Record"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b19ffd4886870caa1b9cf98748d34ea3bdb6dfc12be148a92c39c56eb6685c5d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b19ffd4886870caa1b9cf98748d34ea3bdb6dfc12be148a92c39c56eb6685c5d",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000050000",
+					"raw_md5": "8e0eb9e99498620314d1862cfa02e241"
+				},
+				"first_submission_date": 1792987192,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792987203,
+				"last_submission_date": 1792987192,
+				"md5": "837e0f79050a0607ff2039eb8d5f4a50",
+				"names": [],
+				"reputation": 0,
+				"sha1": "cceb03147bb3c3f76c703b197af6bace60876fef",
+				"sha256": "b19ffd4886870caa1b9cf98748d34ea3bdb6dfc12be148a92c39c56eb6685c5d",
+				"size": 78006221,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6701"
+}

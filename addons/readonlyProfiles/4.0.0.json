@@ -1,0 +1,112 @@
+{
+	"addonId": "readonlyProfiles",
+	"displayName": "Readonly Profiles",
+	"URL": "https://github.com/nvdaes/readonlyProfiles/releases/download/4.0.0/readonlyProfiles-4.0.0.nvda-addon",
+	"description": "Don't save profiles automatically. Press NVDA+shift+p to save the most recent profile.",
+	"sha256": "6fa8607f24da21f1a2b24b3276c3b69c1d20823ec9769467abc4a92954eb021b",
+	"addonVersionName": "4.0.0",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "nvdaes",
+	"sourceURL": "https://github.com/nvdaes/readonlyProfiles/releases/tag/4.0.0",
+	"license": "GPL v2",
+	"homepage": "https://github.com/nvdaes/readonlyProfiles",
+	"changelog": "* Updates to translations.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1792879289000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Salt Okunur Profiller",
+			"description": "Profiller otomatik olarak kaydedilmedi. En son profili kaydetmek için NVDA+shift+p tuşlarına basın.",
+			"changelog": "* Updates to translations."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Perfis só de leitura",
+			"description": "Não guardar perfis automaticamente. Prima NVDA+shift+p para guardar o perfil mais recente.",
+			"changelog": "* Updates to translations."
+		},
+		{
+			"language": "es",
+			"displayName": "Perfiles de sólo lectura",
+			"description": "No guardes los perfiles automáticamente. Pulsa NVDA+shift+p para guardar el perfil más reciente.",
+			"changelog": "* Updates to translations."
+		},
+		{
+			"language": "ru",
+			"displayName": "Профили только для чтения",
+			"description": "Не сохранять профили автоматически. Нажмите NVDA+shift+p для сохранения самого последнего профиля.",
+			"changelog": "* Updates to translations."
+		},
+		{
+			"language": "fi",
+			"displayName": "Ei-muokattavat profiilit",
+			"description": "Älä tallenna profiileja automaattisesti. Tallenna viimeksi käytetty profiili painamalla NVDA+Vaihto+P.",
+			"changelog": "* Updates to translations."
+		},
+		{
+			"language": "fr",
+			"displayName": "Readonly Profiles",
+			"description": "Les profils ne seront pas sauvegardés automatiquement. Appuyer sur NVDA+maj+p pour sauvegarder dans le profil le plus récent.",
+			"changelog": "* Updates to translations."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6fa8607f24da21f1a2b24b3276c3b69c1d20823ec9769467abc4a92954eb021b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6fa8607f24da21f1a2b24b3276c3b69c1d20823ec9769467abc4a92954eb021b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "6c7c7c746d580000",
+					"raw_md5": "89c5a2a59fcdb38c2694bc65afa5486e"
+				},
+				"first_submission_date": 1792879293,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1792879299,
+				"last_submission_date": 1792879293,
+				"md5": "880f7688c1e4637035a51e7fe3cb8841",
+				"names": [],
+				"reputation": 0,
+				"sha1": "bd23be4c4fa85cec5a9e90e2a7860ad633d7f25c",
+				"sha256": "6fa8607f24da21f1a2b24b3276c3b69c1d20823ec9769467abc4a92954eb021b",
+				"size": 20031,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/5934"
+}

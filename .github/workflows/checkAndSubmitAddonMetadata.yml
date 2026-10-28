@@ -130,7 +130,7 @@ jobs:
             Welcome to the Add-on Store submission process.
             As this is your first submission for ${{ needs.getAddonId.outputs.addonId }}, you will need manual approval as a submitter.
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
-            Please wait until an NV Access team member can review the submission.
+            Please wait until the review team can review the submission.
             It may take up to 2 weeks for a team member to respond, depending on their availability.
             ${{ env.jobFooter }}
 
@@ -249,7 +249,7 @@ jobs:
           You can open this link and [see the results of the analysis](${{ steps.setVirusTotalAnalysisStatus.outputs.vtScanUrl }}).
           NV Access will review the results of the analysis and consider if it is likely a false positive or higher risk.
           It is encouraged to contact the flagged security vendors to get them to review and unflag the false positive.
-          Please ask here or email <info@nvaccess.org> if you need assistance with this process.
+          Please ask here or email <addon-reviews@nvaccess.org> if you need assistance with this process.
           ${{ env.jobFooter }}
           EOF
           gh -R "${{ github.repository }}" issue comment "${{ inputs.issueNumber }}" --body-file vt-analysis-failed.md
@@ -318,19 +318,30 @@ jobs:
       name: submitterReview
     steps:
       - name: Confirm approval
-        run: echo "Manual approval performed"
+        run: echo "Manual approval performed from senior review group"
+
+  requireSubmitterManualApproval2:
+    needs: [verifySubmitter, createPullRequest]
+    if: ${{ always() && (needs.verifySubmitter.result == 'failure') && (needs.createPullRequest.result == 'success') }}
+    runs-on: ubuntu-latest
+    environment:
+      # Require a manual deployment approval if manual approval is required for the submitter
+      name: submitterReview2
+    steps:
+      - name: Confirm approval
+        run: echo "Manual approval performed from junior review group"
 
   passesManualReview:
-    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, commitScanResults, createPullRequest]
-    if: ${{ always() && (needs.createPullRequest.result == 'success') && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') }}
+    needs: [requireSecurityManualApproval, requireSubmitterManualApproval, requireSubmitterManualApproval2, commitScanResults, createPullRequest]
+    if: ${{ always() && (needs.createPullRequest.result == 'success') && (needs.commitScanResults.result == 'success' || needs.commitScanResults.result == 'skipped') && (needs.requireSecurityManualApproval.result == 'success' || needs.requireSecurityManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval.result == 'success' || needs.requireSubmitterManualApproval.result == 'skipped') && (needs.requireSubmitterManualApproval2.result == 'success' || needs.requireSubmitterManualApproval2.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
       - name: Confirm manual review passed
         run: echo "Passed manual review"
 
   failsManualReview:
-    needs: [createPullRequest, requireSecurityManualApproval, requireSubmitterManualApproval]
-    if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure') }}
+    needs: [createPullRequest, requireSecurityManualApproval, requireSubmitterManualApproval, requireSubmitterManualApproval2]
+    if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure' || needs.requireSubmitterManualApproval2.result == 'failure') }}
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -401,7 +412,7 @@ jobs:
     # use linux instead.
     runs-on: ubuntu-latest
     if: ${{ always() && needs.passesManualReview.result == 'success' && needs.getAddonId.result == 'success' && needs.createPullRequest.result == 'success' }}
-    needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, virusTotal-analysis]
+    needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, requireSubmitterManualApproval2, virusTotal-analysis]
     permissions:
       contents: write
       discussions: write
@@ -430,7 +441,7 @@ jobs:
           const addonFilename = "${{ needs.getAddonId.outputs.addonFileName }}"
           setAddonNameAndVersion({core}, addonFilename)
     - name: Add add-on ID and submitter to JSON file
-      if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
+      if: ${{ needs.requireSubmitterManualApproval.result == 'success' && needs.requireSubmitterManualApproval2.result == 'success' }}
       run: |
         jqCode="
         .[\"${{ inputs.issueAuthorId }}\"].addons |= (
@@ -448,7 +459,7 @@ jobs:
         rm submitters.old.json
         exit $jqExitCode
     - name: Commit submitters.json changes
-      if: ${{ needs.requireSubmitterManualApproval.result == 'success' }}
+      if: ${{ needs.requireSubmitterManualApproval.result == 'success' && needs.requireSubmitterManualApproval2.result == 'success' }}
       run: |
         git add submitters.json
         if git diff --staged --quiet; then
