@@ -28,5 +28,47 @@
 	"changelog": "1.1.3: copied files and images are recognised as such instead of being reported as a busy clipboard. Links, ordinary text, files and other clipboard formats are told apart before anything is sent. 1.1.2: text that is not a link is recognised and reported instead of being sent to Gemini. File names and dotted words are no longer mistaken for web addresses. 1.1.1: the Test the key button now opens a dialog with the result and a Close button, and the explanation window has a Close button and closes with Escape. 1.1.0: the explanation comes from Google Gemini and is shown in a read-only text window. You add your own free Gemini API key once. Checks use one short request per address, remember recent answers, and never open the link.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1793270674000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/71768199d44eeb9661209bba19c4bb1d264b9d61867be9232776f2bfbfa1d05f",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "71768199d44eeb9661209bba19c4bb1d264b9d61867be9232776f2bfbfa1d05f",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000e0e0d0c00",
+					"raw_md5": "a2ae68da5ce0b18f8d05f712e688aef9"
+				},
+				"first_submission_date": 1793270677,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793270680,
+				"last_submission_date": 1793270677,
+				"md5": "ca98fb62603f04a618001afc1f771a5e",
+				"names": [],
+				"reputation": 0,
+				"sha1": "a72b8d36231d4f66af368d8c8aad2fd814b3157d",
+				"sha256": "71768199d44eeb9661209bba19c4bb1d264b9d61867be9232776f2bfbfa1d05f",
+				"size": 135342,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
