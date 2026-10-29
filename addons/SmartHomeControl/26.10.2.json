@@ -1,0 +1,39 @@
+{
+	"addonId": "SmartHomeControl",
+	"displayName": "Smart Home Control",
+	"URL": "https://github.com/BlindByte06/SmartHomeControl/releases/download/v26.10.2/SmartHomeControl-26.10.2.nvda-addon",
+	"description": "Control smart home devices (Meross, Netatmo, VeSync, Cozytouch/Atlantic, Petlibro - Cozytouch and Petlibro experimental) directly from NVDA",
+	"sha256": "639e434a231b41788ce71c312b28234a53fd4e68705fd2e95bba31c8c8fc7a3b",
+	"addonVersionName": "26.10.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 10,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Philipp Hasel",
+	"sourceURL": "https://github.com/BlindByte06/SmartHomeControl",
+	"license": "GPL v2",
+	"homepage": "https://github.com/BlindByte06/SmartHomeControl",
+	"changelog": "- New: the heating of a Netatmo thermostat is recorded in the history, every switching as an event and as a series with the share of time it was active.\n- NVDA no longer crashes when the device menu is closed after a device was switched from the favourites tab.\n- Enter or Space on a VeSync or Cozytouch device no longer freezes NVDA.\n- Meross leak sensors are read correctly, and several sensors on one hub each keep their own values.\n- Meross messages are counted as the cloud counts them, so a device stays below its hourly limit with the device menu open.\n- Meross garage door openers and roller shutters are shown but not switched.\n- The Netatmo device menu offers \"Add to favorites\" again, and the relay shows its heating state, Wi-Fi and radio signal.\n- A Cozytouch command the appliance takes over late is announced as sent and confirmed once it arrives.\n- The history no longer records a change made here a second time as made elsewhere, and it records maintenance falling due, a low battery and the end of an air fryer programme.\n- A temperature set in the Netatmo app is one history entry with its end time; an open window is recorded too.\n- A Meross account with two-factor authentication is named as the reason the sign-in fails, and a Cozytouch server fault at sign-in is retried.\n- The settings of the add-on are stored in the base configuration, not in the active profile. With \"Save configuration when exiting NVDA\" switched off, they are saved with NVDA+Ctrl+C like all other settings.\n- The CSV export of the history uses the separators of the Windows region.\n- NVDA exits faster on a slow network.\n- Credentials are no longer sent along when a cloud redirects to another host, and a foreign call of the Netatmo callback address no longer ends the sign-in.\n- Certificates are checked against the add-on's own, current root certificates, and the bundled aiohttp is updated to 3.14.5.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793268502000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Smart Home Control",
+			"description": "Smart-Home-Geräte (Meross, Netatmo, VeSync, Cozytouch/Atlantic, Petlibro - Cozytouch und Petlibro experimentell) direkt aus NVDA steuern",
+			"changelog": "- Neu: Die Heizung eines Netatmo-Thermostats wird im Verlauf festgehalten, jedes Schalten als Ereignis und als Messreihe mit dem Anteil der Zeit, in der sie aktiv war.\n- NVDA stürzt nicht mehr ab, wenn das Geräte-Menü geschlossen wird, nachdem ein Gerät im Favoriten-Tab geschaltet wurde.\n- Enter oder Leertaste auf einem VeSync- oder Cozytouch-Gerät lässt NVDA nicht mehr einfrieren.\n- Meross-Wassermelder werden richtig gelesen, und mehrere Sensoren an einem Hub behalten jeder ihre eigenen Werte.\n- Meross-Nachrichten werden so gezählt wie von der Cloud, damit ein Gerät auch bei offenem Geräte-Menü unter seinem Stundenlimit bleibt.\n- Meross-Garagentoröffner und -Rollläden werden angezeigt, aber nicht geschaltet.\n- Das Geräte-Menü von Netatmo bietet wieder \"Zu Favoriten hinzufügen\" an, und das Relay zeigt Heizzustand, WLAN- und Funksignal.\n- Ein Cozytouch-Befehl, den das Gerät erst verzögert übernimmt, wird als gesendet angesagt und bestätigt, sobald er ankommt.\n- Der Verlauf verbucht eine hier vorgenommene Änderung nicht mehr zusätzlich als Änderung von außen und hält fällige Wartung, einen schwachen Akku und das Ende eines Programms der Heißluftfritteuse fest.\n- Eine in der Netatmo-App gesetzte Temperatur ist ein Verlaufseintrag mit ihrer Endzeit; ein offenes Fenster wird ebenfalls festgehalten.\n- Bei einem Meross-Konto mit Zwei-Faktor-Anmeldung wird das als Grund genannt, und eine Serverstörung bei der Cozytouch-Anmeldung wird wiederholt.\n- Die Einstellungen des Add-ons stehen in der Grundkonfiguration, nicht im aktiven Profil. Ist \"Einstellungen beim Beenden speichern\" ausgeschaltet, werden sie wie alle anderen Einstellungen mit NVDA+Strg+C gespeichert.\n- Der CSV-Export des Verlaufs verwendet die Trennzeichen der Windows-Region.\n- NVDA beendet sich bei langsamem Netz schneller.\n- Zugangsdaten werden nicht mehr mitgeschickt, wenn eine Cloud auf einen anderen Host umleitet, und ein fremder Aufruf der Netatmo-Rückrufadresse bricht die Anmeldung nicht mehr ab.\n- Zertifikate werden gegen die eigenen, aktuellen Stammzertifikate des Add-ons geprüft, und das mitgelieferte aiohttp ist auf 3.14.5 aktualisiert."
+		}
+	]
+}
