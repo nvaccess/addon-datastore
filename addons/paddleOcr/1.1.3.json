@@ -35,5 +35,47 @@
 			"description": "Распознаёт текст на экране моделями PaddleOCR — так же, как Windows OCR (NVDA+R), но другим движком.",
 			"changelog": "* Дополнение стало меньше примерно на 30 МБ: в нём больше нет библиотеки OpenCV. Результат распознавания, скорость и расход памяти те же.\n* Обновлены библиотеки: ONNX Runtime 1.31.1, NumPy 2.5.4."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/bacf1924c9870dee1ee9122cba906cc9662a1fc6bde5bdb95646849df0229c13",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "bacf1924c9870dee1ee9122cba906cc9662a1fc6bde5bdb95646849df0229c13",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "bd4fce40346d66c770703f167483487d"
+				},
+				"first_submission_date": 1793269115,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793269123,
+				"last_submission_date": 1793269115,
+				"md5": "e61af21801b7c2b5a05cef2605b5c40c",
+				"names": [],
+				"reputation": 0,
+				"sha1": "c1e58244cacbd46742be034ec969bbcfa826dc32",
+				"sha256": "bacf1924c9870dee1ee9122cba906cc9662a1fc6bde5bdb95646849df0229c13",
+				"size": 51836007,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
