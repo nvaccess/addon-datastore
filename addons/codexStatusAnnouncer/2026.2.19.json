@@ -1,0 +1,32 @@
+{
+	"addonId": "codexStatusAnnouncer",
+	"displayName": "ChatGPT Desktop Access for NVDA",
+	"URL": "https://github.com/jcoffin1/chatgpt-desktop-access/releases/download/v2026.2.19/chatGPTDesktopAccess-2026.2.19.nvda-addon",
+	"description": "Makes the ChatGPT Windows app easier to use with NVDA. It announces activity, supports speech, Braille, and sounds, and adds chat navigation, voice controls, and better focus handling in both ChatGPT and Codex.",
+	"sha256": "5c3734e946b5a05a08e9a884de26ce6a628c97073aeb28ebee4d7d0d6ad71229",
+	"addonVersionName": "2026.2.19",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 19
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Justin Coffin",
+	"sourceURL": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"license": "GPL v2",
+	"homepage": "https://github.com/jcoffin1/chatgpt-desktop-access",
+	"changelog": "* Typing / or @ in the message field announces the suggestion menu and each highlighted suggestion.\n* NVDA+Alt+W reports whether ChatGPT's message field is set to Chat or Work; press it twice quickly to switch.\n* NVDA+Alt+A says which files and tools, such as Web search, are attached to the message.\n* The Working sound no longer plays when ChatGPT is idle because a chat title in the sidebar or a menu reads like Codex progress.\n* Naming a new Codex project no longer moves focus to the Change marker button while you type (issue 4).\n* After each ChatGPT update, the add-on checks that it can still find the controls it relies on, and the support report names the ChatGPT version.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793285613000,
+	"translations": []
+}
