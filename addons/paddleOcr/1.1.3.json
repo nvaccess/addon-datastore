@@ -1,0 +1,39 @@
+{
+	"addonId": "paddleOcr",
+	"displayName": "Paddle OCR",
+	"URL": "https://github.com/fdrv161/nvda-paddle-ocr/releases/download/v1.1.3/paddleOcr-1.1.3.nvda-addon",
+	"description": "Recognizes text on the screen with PaddleOCR models, like Windows OCR (NVDA+R) but with a different engine.",
+	"sha256": "bacf1924c9870dee1ee9122cba906cc9662a1fc6bde5bdb95646849df0229c13",
+	"addonVersionName": "1.1.3",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "fdrv161",
+	"sourceURL": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/fdrv161/nvda-paddle-ocr",
+	"changelog": "* The add-on is about 30 MB smaller: it no longer includes the OpenCV library. Recognition results, speed and memory use are the same.\n* Updated libraries: ONNX Runtime 1.31.1, NumPy 2.5.4.",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+	"submissionTime": 1793269108000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Paddle OCR",
+			"description": "Распознаёт текст на экране моделями PaddleOCR — так же, как Windows OCR (NVDA+R), но другим движком.",
+			"changelog": "* Дополнение стало меньше примерно на 30 МБ: в нём больше нет библиотеки OpenCV. Результат распознавания, скорость и расход памяти те же.\n* Обновлены библиотеки: ONNX Runtime 1.31.1, NumPy 2.5.4."
+		}
+	]
+}
