@@ -35,5 +35,47 @@
 			"description": "Pressione NVDA+Alt+K para abrir uma janela acessível com o que as Configurações do Windows oferecem para o Wi-Fi e o Bluetooth. Wi-Fi: ligar e desligar, buscar e conectar redes (com senha, redes ocultas), desconectar, ver os detalhes da conexão, esquecer redes salvas, conexão limitada, endereços de hardware aleatórios e a senha de uma rede salva. Bluetooth: ligar e desligar, ver os dispositivos pareados com a bateria, adicionar e parear dispositivos (todos os tipos de código), conectar, desconectar, renomear e remover, enviar e receber arquivos. Conexões, sinal fraco, falta de internet, bateria fraca e dispositivos prontos para parear são anunciados mesmo com a janela fechada. As listas só mudam quando você busca de novo.",
 			"changelog": "Primeira versão."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/901d881806fe457994ec061f92df1bdd94d154149bb3b51b16ae33549bb4452a",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "901d881806fe457994ec061f92df1bdd94d154149bb3b51b16ae33549bb4452a",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181e1d140400",
+					"raw_md5": "c008916be0987c969da17e914699225c"
+				},
+				"first_submission_date": 1793329424,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793329431,
+				"last_submission_date": 1793329424,
+				"md5": "884064fe998b2cc39123549ab1056344",
+				"names": [],
+				"reputation": 0,
+				"sha1": "13e2a8c277204c1d806be15f40a0a8d269a37cad",
+				"sha256": "901d881806fe457994ec061f92df1bdd94d154149bb3b51b16ae33549bb4452a",
+				"size": 87646,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
