@@ -109,5 +109,47 @@
 			"displayName": "站点标记",
 			"description": "SiteMarker 通过为特定的网页元素添加书签以便即时访问，从而简化了 NVDA 用户的网页导航。核心功能包括站点和标记管理器、可自定义的搜索范围，以及针对难以点击的按钮的自动元素点击功能，从而在复杂页面上节省时间。\n\n热键：\nWindows+F12\n单击：添加或编辑标记\n双击：打开站点管理器\n三击：打开标记管理器"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/549af32b26b01d56c705a3e55212e45abe7b6c72f9049c4cc891fc8232f83337",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "549af32b26b01d56c705a3e55212e45abe7b6c72f9049c4cc891fc8232f83337",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000101d1c180000",
+					"raw_md5": "e4dfa0d6dfc8129b594c9afcfaffe788"
+				},
+				"first_submission_date": 1793347550,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793347558,
+				"last_submission_date": 1793347550,
+				"md5": "0d5b7088df65c17a31868117abcf76ba",
+				"names": [],
+				"reputation": 0,
+				"sha1": "4dfcaf3d2179ea197f3d0f8596d1276efba60d36",
+				"sha256": "549af32b26b01d56c705a3e55212e45abe7b6c72f9049c4cc891fc8232f83337",
+				"size": 199565,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
