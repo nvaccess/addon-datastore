@@ -34,5 +34,47 @@
 			"displayName": "xPlorer",
 			"description": "xPlorer makes File Explorer faster with NVDA. Multi-tap hotkeys copy names, text or paths, select by extension or search, invert and multi-select, compress and extract archives, run Robocopy and batch rename. Also: File Basket, Workspaces, Recent Locations, Flat View, folder compare, Duplicate Finder, Folder to ISO and folder size lists, with item sizes spoken as you browse\n\nHot Keys:\nNVDA+Shift+C\nSingle Tap: Copy the selected file and folder names to the clipboard\nDouble Tap: Copy the text content of the selected file(s)\nTriple Tap: Copy the current folder's address bar path \n\nNVDA+Shift+V\nSingle Tap: Select all other items that share the focused item's file extension\nDouble Tap: Invert the current selection\nTriple Tap: Toggle Multi-select mode on or off (non-contiguous selection with the keyboard) \n\nNVDA+Shift+A\nSingle Tap: Open the Select by Search dialog\nDouble Tap: Open Flat View\nTriple Tap: Open the Batch Rename Tool \n\nNVDA+Shift+Z\nSingle Tap: Announce the total size of the current selection\nDouble Tap: Compress the selection into a zip file\nTriple Tap: Extract (unzip) the selected archive \n\nNVDA+Shift+R\nSingle Tap: Robocopy - mark the selection to copy\nDouble Tap: Robocopy - paste into the current folder\nTriple Tap: Robocopy - mark the selection to move \n\nNVDA+Shift+X\nSingle Tap: Open the main xPlorer context menu\nDouble Tap: Open the Recent Locations menu \nTriple Tap : Current folder size list\n\nNVDA+Shift+F2\nSingle Tap: Rename the selected file\nDouble Tap: Rename the selected file or folder using the current clipboard text\nTriple Tap: Undo the last batch rename operation \n\nNVDA+Shift+N\nSingle Tap: Add the selected item(s) to the File Basket\nDouble Tap: Open the File Basket window\nTriple Tap: Clear the File Basket \n\nNVDA+Shift+M\nSingle Tap: Open the Workspace menu\nDouble Tap: Add the selected folder to a new workspace, or save the current folder as a workspace\nTriple Tap: Open the Workspace editor (rename, pin, reorder, or delete saved workspaces) \n\nControl+Shift+N : Automatically paste clipboard content into rename field\nALT+Enter : Properties"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/17401211430965626e6f1d68f532b66d9f10fc8c300661850585c4cc7124e1c9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "17401211430965626e6f1d68f532b66d9f10fc8c300661850585c4cc7124e1c9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0c0000",
+					"raw_md5": "3a208e30f60474a1d9d0a2ea680bfa68"
+				},
+				"first_submission_date": 1793328423,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793328424,
+				"last_submission_date": 1793328423,
+				"md5": "698e8fb70639e68bae0ed41652819633",
+				"names": [],
+				"reputation": 0,
+				"sha1": "ced8a4cb30340bbb9d98afe370f0cc35f8228444",
+				"sha256": "17401211430965626e6f1d68f532b66d9f10fc8c300661850585c4cc7124e1c9",
+				"size": 268556,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
