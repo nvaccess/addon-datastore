@@ -109,5 +109,47 @@
 			"displayName": "绝对文件与文件夹",
 			"description": "绝对文件与文件夹通过集成 Windows 资源管理器简化了文件和目录的访问，从而提升 NVDA 的工作效率。它允许用户捕获路径、管理书签、按扩展名过滤文件、通过音频提示搜索历史记录、以管理员身份运行脚本以及在重启后恢复活动文件夹。\n热键：\nWindows+退格键\n单击打开绝对文件夹\n双击打开绝对文件"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/6b2c6426fc1a417de12b13905aa1ed0de460f39145fb96f91b56d5065c98806b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "6b2c6426fc1a417de12b13905aa1ed0de460f39145fb96f91b56d5065c98806b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181d1c180000",
+					"raw_md5": "6a280d234e4efb743318582135b88c7e"
+				},
+				"first_submission_date": 1793326592,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793326593,
+				"last_submission_date": 1793326592,
+				"md5": "18cfcf50e4d9fb967e1412869feb6ceb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "82016640f3a7aebdcf255152346c0148e5010123",
+				"sha256": "6b2c6426fc1a417de12b13905aa1ed0de460f39145fb96f91b56d5065c98806b",
+				"size": 141661,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
