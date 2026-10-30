@@ -1,0 +1,32 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.11/stationPlaylist-26.11.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "229ac24d778a817d7f908a989ab701d274d366d8f21ab7d9ccac44ac6b924008",
+	"addonVersionName": "26.11",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* NVDA 2026.3 or later is required.\n* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793319267000,
+	"translations": []
+}
