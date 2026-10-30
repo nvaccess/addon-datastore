@@ -1,0 +1,99 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.11/stationPlaylist-26.07.10.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "44e4ed7039333913dd762335df3bac3bbac32acf8e0e3fa74ed7f5e6cd5fe2e8",
+	"addonVersionName": "26.07.10",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 7,
+		"patch": 10
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 3,
+		"patch": 3
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793319215000,
+	"translations": [
+		{
+			"language": "hr",
+			"displayName": "StationPlaylist",
+			"description": "Poboljšava podršku za StationPlaylist programe. Dodatno tome, dodaje globalne naredbe za program Studio s bilo kojeg mjesta.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "fr",
+			"displayName": "StationPlaylist",
+			"description": "Améliore la prise en charge des applications StationPlaylist. En outre, ajoute des commandes globales pour studio où que vous soyez.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "de",
+			"displayName": "StationPlaylist",
+			"description": "Verbessert die Unterstützung für StationPlaylist-Anwendungen. Darüber hinaus werden globale Befehle für die Studio-Anwendung von überall aus hinzugefügt.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "StationPlaylist",
+			"description": "Aprimora o suporte aos aplicativos StationPlaylist. Além disso, adiciona comandos globais para o aplicativo Studio de qualquer lugar.Melhora o suporte para aplicativos StationPlaylist.\nAlém disso, adiciona comandos globais para o Studio em qualquer lugar.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "es",
+			"displayName": "StationPlaylist",
+			"description": "Mejora el soporte para las aplicaciones de StationPlaylist. Además, agrega órdenes globales para la aplicación de Studio desde cualquier parte.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "pl",
+			"displayName": "StationPlaylist",
+			"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "tr",
+			"displayName": "Station Playlist",
+			"description": "StationPlaylist uygulamalarına yönelik desteği geliştirir. Ayrıca Studio uygulamasına her yerden global komutlar ekler.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "ru",
+			"displayName": "StationPlaylist",
+			"description": "Улучшает поддержку приложений StationPlaylist. Кроме того, добавлены глобальные команды для приложения Studio.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "sk",
+			"displayName": "Station Playlist",
+			"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "gl",
+			"displayName": "StationPlaylist",
+			"description": "Mellora o soporte para as aplicacións de StationPlaylist. Ademáis, engade ordes globais para o estudio dende calquera parte.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "StationPlaylist",
+			"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+			"changelog": "* Initial support for StationPlaylist suite 6.21.\n* Improved reliability of restoring Studio window from system tray (notification area; applicable to Studio 6.21, contributed by MooSteinebach).\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach)."
+		}
+	]
+}
