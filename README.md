@@ -27,7 +27,7 @@ The Add-on Store includes the following security measures:
 
 If malicious content is detected, the add-on will not be automatically included in the store.
 Please contact the flagged security vendors to get them to review and unflag the false positive.
-Please email <info@nvaccess.org> if you need assistance with this process.
+Please email <addon-reviews@nvaccess.org> if you need assistance with this process.
 
 ## Human review process / code audit
 
@@ -38,8 +38,8 @@ Please email <info@nvaccess.org> if you need assistance with this process.
 * The SHA256 checksum of the `.nvda-addon` prevents undetected changes.
 * Add-ons should comply with the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
 Add-ons which are malicious or otherwise break the code of conduct can be removed by:
-  * Opening a pull request to remove the submitted add-on metadata
-  * Sending an email to <info@nvaccess.org>
+  * Opening an issue or pull request to remove the submitted add-on metadata
+  * Sending an email to <addon-reviews@nvaccess.org>
 
 ## Non-exclusivity
 
