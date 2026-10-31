@@ -1,7 +1,7 @@
 # Submission review processes
 
 Guide for processing [pending add-ons](https://github.com/nvaccess/addon-datastore/actions/workflows/sendJsonFile.yml?query=is%3Awaiting).
-If add-on needs manual review before processing happens, the submission process will be held, pending approval from NV Access.
+If add-on needs manual review before processing happens, the submission process will be held, pending approval from NV Access or the community review team.
 This is done using a [deployment environment](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments).
 
 Overall process:
@@ -14,7 +14,7 @@ Overall process:
 
 ## Approving an author to submit to a particular add-on ID for the first time
 
-When a GitHub user submits a particular add-on for the first time, the submission is blocked pending initial review from NV Access.
+When a GitHub user submits a particular add-on for the first time, the submission is blocked pending initial review from the review team.
 This is to confirm that the GitHub user has authorisation to submit the add-on from the add-on maintainers.
 In some cases, 2 separate add-on maintainers may want to lay claim to a single "add-on ID".
 It is important for users to expect consistent authorship for a single add-on ID for trust and security reasons.
@@ -34,7 +34,7 @@ The process for reviewing pending first submissions is as follows:
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
     * If you are unsure, leave a comment outlining why the add-on is being left open and what's needed to decide how to process it.
-    Tag another member of NV Access for a second opinion if needed.
+    Tag a member of NV Access for a second opinion if needed.
     * When rejecting, the rejection message(s) are provided to the user as the closing reason(s).
     The issue and PR will be closed.
     Make sure to clarify any further information on the issue.

@@ -1,0 +1,95 @@
+{
+	"addonId": "lineMR",
+	"displayName": "LINE MR (Line Mai Roo) - LINE for Windows accessibility",
+	"URL": "https://github.com/Peetchy/line-mr-for-win/releases/download/v0.5.4/lineMR-0.5.4.nvda-addon",
+	"description": "Makes LINE for Windows usable with NVDA: names LINE's unlabeled buttons, text fields and checkboxes, reads chat lists and messages (including what a photo, video, sticker, voice message, file, location or call is), makes every control reachable with Tab, and announces incoming calls. Adds a small accessibility bridge to LINE's folder (LINE's own files are not modified). Recommended: LINE from the Microsoft Store (https://apps.microsoft.com/detail/XPFCC4CD725961).\n\nCommands in LINE: Alt+1 / Alt+2 / Alt+3 friends / chats / add friends tab; Alt+C chat list; Alt+L chat or friend list; Alt+F search field; Alt+M messages of the open chat; Alt+I message input; NVDA+Alt+1 to 9 read a recent message (1 = newest); NVDA+Shift+Control+L bridge status.\nCalls: in LINE, Alt+A answers an incoming call and Alt+D declines it or ends the current call; from any application, NVDA+Shift+Control+A answers and NVDA+Shift+Control+D declines or ends the call.\nKeys in lists: chat list - arrows, Page Up/Down, Home/End browse without opening, Enter opens the chat; messages - Up/Down one message, Page Up/Down a screen, Home oldest loaded (again: older), End newest, Applications key the message's menu.",
+	"sha256": "3ea3c7bc8e9fef481c0410c42d29f517c698e82c1038fc07c1e12f78dc6fc8c9",
+	"addonVersionName": "0.5.4",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 5,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Peet Itsawat",
+	"sourceURL": "https://github.com/Peetchy/line-mr-for-win",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Peetchy/line-mr-for-win",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793188524000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "LINE MR (ไลน์ไม่รู้) - ช่วยให้ใช้ LINE บน Windows ได้",
+			"description": "ทำให้ผู้ใช้ NVDA ใช้ LINE บน Windows ได้ เช่น อ่านชื่อปุ่ม ช่องข้อความ และกล่องกาเครื่องหมายที่ไม่มีชื่อ อ่านรายการแชทและข้อความ (บอกประเภทของรูปภาพ วิดีโอ สติกเกอร์ ข้อความเสียง ไฟล์ ตำแหน่งที่ตั้ง และการโทร) กด Tab ไปถึงทุกปุ่ม และแจ้งสายเรียกเข้า โดยเพิ่มตัวเชื่อมการเข้าถึงขนาดเล็กไว้ในโฟลเดอร์ของ LINE (ไม่แก้ไขไฟล์ของ LINE) แนะนำให้ใช้ LINE จาก Microsoft Store (https://apps.microsoft.com/detail/XPFCC4CD725961)\n\nคำสั่งใน LINE: Alt+1 / Alt+2 / Alt+3 แท็บเพื่อน / แชท / เพิ่มเพื่อน; Alt+C รายการแชท; Alt+L รายการแชทหรือรายชื่อเพื่อน; Alt+F ช่องค้นหา; Alt+M ข้อความของแชทที่เปิดอยู่; Alt+I ช่องพิมพ์ข้อความ; NVDA+Alt+1 ถึง 9 อ่านข้อความล่าสุด (1 = ใหม่สุด); NVDA+Shift+Control+L สถานะตัวเชื่อม\nการโทร: ใน LINE กด Alt+A รับสายเรียกเข้า, Alt+D ปฏิเสธสายหรือวางสายที่กำลังคุยอยู่; จากทุกโปรแกรม กด NVDA+Shift+Control+A รับสาย, NVDA+Shift+Control+D ปฏิเสธหรือวางสาย\nปุ่มในรายการ: รายการแชท - ลูกศร Page Up/Down Home/End เลื่อนดูโดยไม่เปิดแชท Enter เปิดแชท; ข้อความ - ลูกศรขึ้น/ลง ทีละข้อความ Page Up/Down ทีละหน้าจอ Home ข้อความเก่าสุดที่โหลดแล้ว (กดอีกครั้งโหลดเก่าเพิ่ม) End ข้อความล่าสุด ปุ่ม Applications เมนูของข้อความ"
+		},
+		{
+			"language": "ja",
+			"displayName": "LINE MR (Line Mai Roo) - LINE for Windows のアクセシビリティ",
+			"description": "LINE for Windows を NVDA で使えるようにします: LINE の名前のないボタン、テキスト入力欄、チェックボックスに名前を付け、トーク リストとメッセージを読み上げ(写真、動画、スタンプ、ボイスメッセージ、ファイル、位置情報、通話の種類も伝えます)、Tab ですべてのコントロールに移動できるようにし、着信を通知します。LINE のフォルダーに小さなアクセシビリティ ブリッジを追加します(LINE のファイルは変更しません)。推奨: Microsoft Store 版の LINE (https://apps.microsoft.com/detail/XPFCC4CD725961)。\n\nLINE 内のコマンド: Alt+1 / Alt+2 / Alt+3 友だち / トーク / 友だち追加 タブ; Alt+C トーク リスト; Alt+L トーク リストまたは友だちリスト; Alt+F 検索欄; Alt+M 開いているトークのメッセージ; Alt+I メッセージ入力欄; NVDA+Alt+1~9 最近のメッセージを読み上げ (1 = 最新); NVDA+Shift+Control+L ブリッジの状態。\n通話: LINE 内では Alt+A で着信に応答、Alt+D で拒否または通話を終了。どのアプリケーションからでも NVDA+Shift+Control+A で応答、NVDA+Shift+Control+D で拒否または通話を終了。\nリスト内のキー: トーク リスト - 矢印、Page Up/Down、Home/End でトークを開かずに移動、Enter でトークを開く; メッセージ - 上下矢印で 1 件ずつ、Page Up/Down で 1 画面、Home で読み込み済みの最も古いメッセージ (もう一度で さらに古いメッセージ)、End で最新、アプリケーション キーでメッセージのメニュー。"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "LINE MR (Line Mai Roo) - LINE for Windows 无障碍",
+			"description": "让 LINE for Windows 可以配合 NVDA 使用:为 LINE 没有名称的按钮、文本框和复选框提供名称,朗读聊天列表和消息(包括照片、视频、贴图、语音消息、文件、位置和通话的类型),让 Tab 能到达每个控件,并播报来电。在 LINE 的文件夹中加入一个小型无障碍桥接组件(不修改 LINE 的文件)。推荐使用 Microsoft Store 版 LINE (https://apps.microsoft.com/detail/XPFCC4CD725961)。\n\nLINE 中的命令: Alt+1 / Alt+2 / Alt+3 好友 / 聊天 / 添加好友 标签; Alt+C 聊天列表; Alt+L 聊天列表或好友列表; Alt+F 搜索框; Alt+M 已打开聊天的消息; Alt+I 消息输入框; NVDA+Alt+1 到 9 朗读最近的消息 (1 = 最新); NVDA+Shift+Control+L 桥接组件状态。\n通话: 在 LINE 中按 Alt+A 接听来电,Alt+D 拒绝或结束通话;在任何应用程序中按 NVDA+Shift+Control+A 接听,NVDA+Shift+Control+D 拒绝或结束通话。\n列表中的按键: 聊天列表 - 方向键、Page Up/Down、Home/End 浏览而不打开聊天,回车打开聊天; 消息 - 上下方向键逐条移动,Page Up/Down 一屏,Home 已加载的最早消息 (再按加载更早的),End 最新消息,应用程序键打开消息菜单。"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "LINE MR (Line Mai Roo) - LINE for Windows 無障礙",
+			"description": "讓 LINE for Windows 可以搭配 NVDA 使用:為 LINE 沒有名稱的按鈕、文字欄位和核取方塊提供名稱,朗讀聊天列表和訊息(包括照片、影片、貼圖、語音訊息、檔案、位置資訊和通話的類型),讓 Tab 能到達每個控制項,並播報來電。在 LINE 的資料夾中加入一個小型無障礙橋接元件(不修改 LINE 的檔案)。建議使用 Microsoft Store 版 LINE (https://apps.microsoft.com/detail/XPFCC4CD725961)。\n\nLINE 中的命令: Alt+1 / Alt+2 / Alt+3 好友 / 聊天 / 加入好友 分頁; Alt+C 聊天列表; Alt+L 聊天列表或好友列表; Alt+F 搜尋欄位; Alt+M 已開啟聊天的訊息; Alt+I 訊息輸入框; NVDA+Alt+1 到 9 朗讀最近的訊息 (1 = 最新); NVDA+Shift+Control+L 橋接元件狀態。\n通話: 在 LINE 中按 Alt+A 接聽來電,Alt+D 拒絕或結束通話;在任何應用程式中按 NVDA+Shift+Control+A 接聽,NVDA+Shift+Control+D 拒絕或結束通話。\n列表中的按鍵: 聊天列表 - 方向鍵、Page Up/Down、Home/End 瀏覽而不開啟聊天,Enter 開啟聊天; 訊息 - 上下方向鍵逐則移動,Page Up/Down 一頁,Home 已載入的最早訊息 (再按載入更早的),End 最新訊息,應用程式鍵開啟訊息選單。"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/3ea3c7bc8e9fef481c0410c42d29f517c698e82c1038fc07c1e12f78dc6fc8c9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "3ea3c7bc8e9fef481c0410c42d29f517c698e82c1038fc07c1e12f78dc6fc8c9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000060700",
+					"raw_md5": "def66adad30278a09315d1d982c250f8"
+				},
+				"first_submission_date": 1793188529,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793188531,
+				"last_submission_date": 1793188529,
+				"md5": "99dcce467a3a72d82d0bdd6fc9ec4cfb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "de8054966a0d08eb2c0ebd1ecb1d171fe937e73c",
+				"sha256": "3ea3c7bc8e9fef481c0410c42d29f517c698e82c1038fc07c1e12f78dc6fc8c9",
+				"size": 541209,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12561"
+}
