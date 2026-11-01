@@ -1,0 +1,39 @@
+{
+	"addonId": "voiceCommands",
+	"displayName": "Voice Commands",
+	"URL": "https://github.com/Surveyor123/voiceCommands/releases/download/v1.0.1/voiceCommands-1.0.1.nvda-addon",
+	"description": "Runs NVDA commands and common Windows actions by voice, using the offline Vosk speech recognition engine; your voice never leaves your computer. You can say any command from the Input Gestures dialog, built-in Windows commands such as \"show desktop\", \"show taskbar\" or \"paste\", and your own commands that open a program, file, folder or web address, or press a key combination. A speech model for your NVDA language is downloaded on first use. Assign keys in the Input Gestures dialog, under the Voice Commands category.",
+	"sha256": "81c7c07ab062e9c4163cb75cc7b6a8e3d30f8c1974af1e4cb54abe7345969ed9",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan",
+	"sourceURL": "https://github.com/Surveyor123/voiceCommands",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/voiceCommands",
+	"changelog": "\n- Added a Voice Commands submenu under NVDA's Tools menu with the add-on's commands.\n- Fixed Windows commands that use a letter, such as Windows+I, not working on keyboard layouts like Turkish Q.\n- Added \"Teach the last spoken phrase\" (Tools menu or an assignable gesture) to save what the recognizer heard as a phrase of a command, for names the speech model cannot recognize.\n- Added import and export of phrases in the phrase editor, with shortcuts Ctrl+I, Ctrl+E and Ctrl+S. Importing only adds; nothing you already have is changed or removed.\n- Phrase files can now name a command by its text (\"description - category\") instead of its id. Entries for commands that are not available yet are kept until they appear.\n- The heard-phrases list in the teach dialog now reports its checked state in every NVDA version.\n- Messages are no longer cut off by NVDA's focus speech after a dialog, file chooser or menu closes.\n- Added a Turkish set of short phrases that can be imported from the phrase editor.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793561027000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Sesli Komut",
+			"description": "NVDA komutlarını ve sık kullanılan Windows eylemlerini, çevrimdışı çalışan Vosk ses tanıma motoruyla sesle çalıştırır; sesin bilgisayarından dışarı çıkmaz. Girdi Hareketleri iletişim kutusundaki herhangi bir komutu, \"masaüstünü göster\", \"görev çubuğunu göster\" ya da \"yapıştır\" gibi yerleşik Windows komutlarını ve bir program, dosya, klasör ya da web adresi açan veya bir tuş kombinasyonuna basan kendi komutlarını söyleyebilirsin. NVDA dilin için bir ses tanıma modeli ilk kullanımda indirilir. Tuşları Girdi Hareketleri iletişim kutusunda Sesli Komut kategorisinden ata.",
+			"changelog": "\n- NVDA Araçlar menüsüne, eklentinin komutlarını içeren Sesli Komut alt menüsü eklendi.\n- Windows+I gibi harfli kısayolların Türkçe Q gibi klavye düzenlerinde çalışmaması düzeltildi.\n- Konuşma modelinin tanıyamadığı isimler için, tanıyıcının duyduğu metni bir komutun ifadesi olarak kaydeden \"Son söylenen ifadeyi öğret\" eklendi (Araçlar menüsü veya atanabilir kısayol).\n- Komut ifadesi düzenleyicisine içe ve dışa aktarma eklendi; kısayollar Ctrl+I, Ctrl+E ve Ctrl+S. İçe aktarma yalnızca ekler, mevcut hiçbir şeyi değiştirmez veya silmez.\n- İfade dosyalarında komut, kimlik yerine metniyle (\"açıklama - kategori\") belirtilebiliyor. Henüz kullanılamayan komutların girdileri komut görününceye kadar saklanıyor.\n- Öğretme penceresindeki duyulan ifadeler listesi, işaretli durumunu her NVDA sürümünde bildiriyor.\n- Pencere, dosya seçici veya menü kapanınca gelen mesajlar artık NVDA'nın odak konuşması tarafından ezilmiyor.\n- İfade düzenleyicisinden içe aktarılabilen, 2-3 kelimelik kısa ifadelerden oluşan Türkçe bir set eklendi.\n"
+		}
+	]
+}
