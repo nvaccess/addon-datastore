@@ -41,5 +41,47 @@
 			"description": "剪贴板为 Windows 剪贴板提供无障碍浏览和容量受限的 SQLite 历史记录。\n历史记录支持 Unicode 文本及可选的 HTML 或 RTF 格式、PNG 或 DIB 图片、文本与图片混合内容和原生文件组，并提供用户类别及可识别内容类型的管理器。\n相关命令可以追加或临时粘贴 NVDA 最后朗读的文本。\n可选的天坦剪贴板同步仅上传符合要求的 Unicode 文本。",
 			"changelog": "### 0.5.3\n\n- 剪贴板摘要现支持统计网络共享和映射网络驱动器中的文件及文件夹大小；统计长时间无进展时，会保留已有结果并提示统计未完成。\n- 文件和图片大小统一采用 Windows 的显示格式及默认单位语言；单个文件夹的内容统计不再将文件夹自身计入数量。"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/df5ccc6e805e218a666319230c88d7b43ecd1abc6ec43b7c79bda7bd3bedba77",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "df5ccc6e805e218a666319230c88d7b43ecd1abc6ec43b7c79bda7bd3bedba77",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "565de7b97617726e48f4c7da5ceddaf1"
+				},
+				"first_submission_date": 1793552425,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793552427,
+				"last_submission_date": 1793552425,
+				"md5": "d2ddb21557b7add8f0ea86e2704867d4",
+				"names": [],
+				"reputation": 0,
+				"sha1": "9375f0091fdd30aaff44e12092f395623d1fc488",
+				"sha256": "df5ccc6e805e218a666319230c88d7b43ecd1abc6ec43b7c79bda7bd3bedba77",
+				"size": 8283781,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
