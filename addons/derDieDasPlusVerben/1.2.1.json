@@ -1,0 +1,776 @@
+{
+	"addonId": "derDieDasPlusVerben",
+	"displayName": "Der Die Das Plus Deutsche Verben",
+	"URL": "https://github.com/danijel-baricevic/DerDieDasPlusVerben/releases/download/v1.2.1/derDieDasPlusVerben-1.2.1.nvda-addon",
+	"description": "Would you like to look up German articles (der, die, das) and verb forms easily offline?\nThis add-on gives you several ways to do so:\n- Directly in your text editor: place the cursor within a word or select it, then press NVDA + Shift + Enter. The appropriate article for a noun is announced; for a verb, a new window opens with all its forms. You can perform the same action by left-clicking while holding NVDA + Ctrl. When using the mouse with a noun, a popup displays its article in a large font.\n- You can also look up nouns and verbs directly in the database: open the search window with NVDA + Ctrl + F5.",
+	"sha256": "542bd0ba5558cf4d01dea4aaf7cb0e8cb1df8dddfd5855c1ef9fa61b36c9dab4",
+	"addonVersionName": "1.2.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 2,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Danijel Baricevic",
+	"sourceURL": "https://github.com/danijel-baricevic/DerDieDasPlusVerben",
+	"license": "GPL v2",
+	"homepage": "https://github.com/danijel-baricevic/DerDieDasPlusVerben",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793566946000,
+	"translations": [
+		{
+			"language": "hr",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Želite lako offline pronaći njemačke članove (der, die, das) i glagolske oblike?\nOvaj dodatak omogućuje da sve to dobijete na više načina:\n- Izravno u uređivaču teksta: postavite kursor unutar riječi ili je označite i pritisnite NVDA + Shift + Enter. Pripadajući član imenice se izgovara, a za glagol se otvara novi prozor sa svim glagolskim oblicima. Ista radnja može se izvesti lijevim klikom miša uz držanje tipki NVDA + Ctrl. Pri korištenju miša za imenice se pojavljuje skočni prozor s članom ispisanim velikim fontom.\n- Imenice i glagole možete pretraživati i izravno u bazi: otvorite prozor za pretragu kombinacijom NVDA + Ctrl + F5."
+		},
+		{
+			"language": "fr",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Vous souhaitez retrouver facilement les articles allemands (der, die, das) et les formes verbales hors ligne ?\nCette extension vous propose plusieurs possibilités :\n- Directement dans votre éditeur de texte : placez le curseur à l’intérieur d’un mot ou sélectionnez-le, puis appuyez sur NVDA + Maj + Entrée. L’article correspondant au nom est annoncé ; pour un verbe, une nouvelle fenêtre s’ouvre avec toutes ses formes. Vous pouvez effectuer la même action par un clic gauche tout en maintenant NVDA + Ctrl. Avec la souris, une fenêtre contextuelle affiche l’article du nom en gros caractères.\n- Vous pouvez aussi rechercher des noms et des verbes directement dans la base : ouvrez la fenêtre de recherche avec NVDA + Ctrl + F5."
+		},
+		{
+			"language": "de",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Möchten Sie deutsche Artikel (der, die, das) und Verbformen ganz einfach offline nachschlagen?\nMit dieser Erweiterung stehen Ihnen dafür mehrere Möglichkeiten zur Verfügung:\n- Direkt in Ihrem Texteditor: Setzen Sie den Cursor in das gewünschte Wort oder markieren Sie es wie gewohnt und drücken Sie NVDA + Umschalt + Eingabe. Der passende Artikel eines Substantivs wird angesagt. Bei einem Verb öffnet sich ein neues Fenster mit allen Verbformen. Dieselbe Aktion können Sie mit NVDA + Strg + linke Maustaste ausführen. Bei der Mausbedienung erscheint für Substantive ein Popup-Fenster, das den Artikel in großer Schrift anzeigt.\n- Substantive und Verben lassen sich auch direkt in der Datenbank nachschlagen. Öffnen Sie dazu mit NVDA + Strg + F5 das Suchfenster."
+		},
+		{
+			"language": "pl",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Chcesz łatwo sprawdzać niemieckie rodzajniki (der, die, das) i formy czasowników bez połączenia z Internetem?\nTen dodatek umożliwia to na kilka sposobów:\n- Bezpośrednio w edytorze tekstu: umieść kursor wewnątrz słowa lub zaznacz je, a następnie naciśnij NVDA + Shift + Enter. Rodzajnik rzeczownika zostanie wypowiedziany, a w przypadku czasownika otworzy się nowe okno ze wszystkimi jego formami. Tę samą czynność można wykonać kliknięciem lewym przyciskiem myszy przy wciśniętych klawiszach NVDA + Ctrl. Przy użyciu myszy do rzeczownika pojawia się okno z rodzajnikiem zapisanym dużą czcionką.\n- Rzeczowniki i czasowniki możesz również wyszukiwać bezpośrednio w bazie: otwórz okno wyszukiwania skrótem NVDA + Ctrl + F5."
+		},
+		{
+			"language": "ru",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Хотите легко находить немецкие артикли (der, die, das) и формы глаголов без подключения к Интернету?\nЭто дополнение предлагает несколько способов:\n- Прямо в текстовом редакторе: установите курсор внутри слова или выделите его и нажмите NVDA + Shift + Enter. Артикль существительного будет произнесён, а для глагола откроется новое окно со всеми его формами. То же действие можно выполнить щелчком левой кнопкой мыши при удержании NVDA + Ctrl. При использовании мыши для существительных появляется всплывающее окно с артиклем, написанным крупным шрифтом.\n- Существительные и глаголы также можно искать непосредственно в базе: откройте окно поиска сочетанием NVDA + Ctrl + F5."
+		},
+		{
+			"language": "uk",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Хочете легко знаходити німецькі артиклі (der, die, das) і форми дієслів без підключення до Інтернету?\nЦей додаток пропонує кілька способів:\n- Безпосередньо в текстовому редакторі: установіть курсор усередині слова або виділіть його й натисніть NVDA + Shift + Enter. Артикль іменника буде промовлено, а для дієслова відкриється нове вікно з усіма його формами. Ту саму дію можна виконати клацанням лівою кнопкою миші з утриманням NVDA + Ctrl. Якщо скористатися мишею для іменника, з’явиться спливне вікно з артиклем, написаним великим шрифтом.\n- Іменники й дієслова також можна шукати безпосередньо в базі: відкрийте вікно пошуку комбінацією NVDA + Ctrl + F5."
+		},
+		{
+			"language": "en",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Would you like to look up German articles (der, die, das) and verb forms easily offline?\nThis add-on gives you several ways to do so:\n- Directly in your text editor: place the cursor within a word or select it, then press NVDA + Shift + Enter. The appropriate article for a noun is announced; for a verb, a new window opens with all its forms. You can perform the same action by left-clicking while holding NVDA + Ctrl. When using the mouse with a noun, a popup displays its article in a large font.\n- You can also look up nouns and verbs directly in the database: open the search window with NVDA + Ctrl + F5."
+		},
+		{
+			"language": "ar",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "هل ترغب في العثور بسهولة على أدوات التعريف الألمانية (der, die, das) وصيغ الأفعال دون اتصال بالإنترنت؟\nتتيح لك هذه الإضافة القيام بذلك بعدة طرق:\n- مباشرةً في محرر النصوص: ضع المؤشر داخل الكلمة أو حددها، ثم اضغط NVDA + Shift + Enter. تُنطق أداة التعريف المناسبة للاسم، أما إذا كانت الكلمة فعلًا فتُفتح نافذة جديدة تحتوي على جميع صيغه. ويمكن تنفيذ الإجراء نفسه بالنقر بزر الفأرة الأيسر مع الاستمرار في الضغط على NVDA + Ctrl. وعند استخدام الفأرة مع اسم، تظهر نافذة منبثقة تعرض أداة تعريفه بخط كبير.\n- يمكنك أيضًا البحث عن الأسماء والأفعال مباشرةً في قاعدة البيانات: افتح نافذة البحث باستخدام NVDA + Ctrl + F5."
+		},
+		{
+			"language": "it",
+			"displayName": "Der Die Das Plus Deutsche Verben",
+			"description": "Vuoi trovare facilmente gli articoli tedeschi (der, die, das) e le forme verbali anche offline?\nQuesto componente aggiuntivo offre diverse possibilità:\n- Direttamente nell’editor di testo: posiziona il cursore all’interno di una parola oppure selezionala, quindi premi NVDA + Maiusc + Invio. Viene pronunciato l’articolo corretto del sostantivo; per un verbo si apre una nuova finestra con tutte le forme. Puoi eseguire la stessa operazione con un clic sinistro mentre tieni premuti NVDA + Ctrl. Utilizzando il mouse su un sostantivo, compare una finestra popup con l’articolo a caratteri grandi.\n- Puoi cercare sostantivi e verbi anche direttamente nella banca dati: apri la finestra di ricerca con NVDA + Ctrl + F5."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/542bd0ba5558cf4d01dea4aaf7cb0e8cb1df8dddfd5855c1ef9fa61b36c9dab4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "542bd0ba5558cf4d01dea4aaf7cb0e8cb1df8dddfd5855c1ef9fa61b36c9dab4",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 18,
+						"ini": 10,
+						"json": 1,
+						"md": 19,
+						"py": 5,
+						"txt": 12,
+						"zip": 1
+					},
+					"file_types": {
+						"HTML": 18,
+						"ZIP": 1,
+						"unknown": 47
+					},
+					"highest_datetime": "2026-10-25 00:00:00",
+					"lowest_datetime": "2026-10-25 00:00:00",
+					"num_children": 66,
+					"type": "ZIP",
+					"uncompressed_size": 13090239
+				},
+				"contenthash": "76fd43fac4dfdb3373ed0b2808461214",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "d78cb3e6fb7636cb8525fd703f4e5653"
+				},
+				"first_submission_date": 1792958793,
+				"last_analysis_date": 1793566952,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261101",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261101",
+						"engine_version": "6.837",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261101",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261101",
+						"engine_version": "3.30.2.10713",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261101",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261101",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261101",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20261101",
+						"engine_version": "261101-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261101",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261101",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261031",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261031",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261025",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261101",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261101",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261022",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261101",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261101",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261101",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20261029",
+						"engine_version": "4.0.296",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261101",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261101",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261101",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261101",
+						"engine_version": "GD:27.46562AVA:64.32164",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261101",
+						"engine_version": "1793563289",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261101",
+						"engine_version": "1.0.258.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261101",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261031",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261101",
+						"engine_version": "14.89.61328",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261101",
+						"engine_version": "14.89.61328",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261101",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "timeout",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261101",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261101",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261101",
+						"engine_version": "3.1.0.296",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261030",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261101",
+						"engine_version": "1.2.0.16534",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261101",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261101",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261101",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261101",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261101",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261101",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261030",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261030",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261101",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261101",
+						"engine_version": "3.6.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261101",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261101",
+						"engine_version": "2026-11-01.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261101",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261101",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261101",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261101",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261101",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261101",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261101",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261101",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261101",
+						"engine_version": "2026-11-01.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261030",
+						"engine_version": "9.5.1329",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261101",
+						"engine_version": "39081",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261028",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261030",
+						"engine_version": "2.0.0.5721",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261101",
+						"engine_version": "6.28-119762236",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261101",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261101",
+						"engine_version": "c5b85d5:c5b85d5:5ecaf71:5ecaf71",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261101",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 1,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1793567049,
+				"last_submission_date": 1793566952,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "d6a1ebd41bea91e32d924fa8426642bf",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sandbox_verdicts": {
+					"Zenbox Linux": {
+						"category": "harmless",
+						"confidence": 98,
+						"malware_classification": [
+							"CLEAN"
+						],
+						"sandbox_name": "Zenbox Linux"
+					}
+				},
+				"sha1": "d17480eb6e376a1e8ac9aaa4ad8be486a0f3addf",
+				"sha256": "542bd0ba5558cf4d01dea4aaf7cb0e8cb1df8dddfd5855c1ef9fa61b36c9dab4",
+				"size": 12917242,
+				"ssdeep": "196608:XmjUqnsA9gxJA33gfFG2Jv2dk1zAQ6R9NezPd5X2+C34oR3tZ6mSBnTqHB98+r:WjtzYA33m9JvPzyszPrGPtZ6mKnW8Y",
+				"tags": [
+					"zip",
+					"sets-process-name",
+					"detect-debug-environment"
+				],
+				"times_submitted": 2,
+				"tlsh": "T1DBD633AAFBC0AB11D4187AEB27287B0857765477C700DDD15E18232E7A365C2DB7B2C8",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "5f4b85d51426232cdbafd6c53fe4179c"
+			}
+		]
+	}
+}
