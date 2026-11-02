@@ -1,0 +1,32 @@
+{
+	"addonId": "visionMate",
+	"displayName": "VisionMate",
+	"URL": "https://github.com/athee06/VisionMate/releases/download/v5.0.1/VisionMate-5.0.1.nvda-addon",
+	"description": "Fast, fully offline image description and an accessible overlay for windows NVDA cannot read. Everything runs on your own computer. Images are never sent to the internet.\nNVDA+Alt+A: describe the current element\nNVDA+Alt+W: describe the current window\nNVDA+Alt+F: describe the whole screen\nNVDA+Alt+D: describe the clipboard image\nOn a photo message in a chat app, or an image file in File Explorer, NVDA+Alt+A describes the photo itself.\nPress twice for a detailed description in a window, where you can ask questions about the image.\nNVDA+Alt+O: the overlay, a list of a window's texts and icons; Enter clicks an item\nNVDA+Alt+G: automatic descriptions of images without a label, on or off\nNVDA+Alt+B: names for buttons without a name, on or off\nNVDA+Alt+N: give your own name to a button or overlay item",
+	"sha256": "3f9bd33c2aa7dde4d2a467065e97d988c78e748f74d264a51f97a3d9f63244cf",
+	"addonVersionName": "5.0.1",
+	"addonVersionNumber": {
+		"major": 5,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Athiban Vijay",
+	"sourceURL": "https://github.com/athee06/VisionMate",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/athee06/VisionMate",
+	"changelog": "* Fixed: the vision data download could fail with a certificate error (CERTIFICATE_VERIFY_FAILED) on some PCs. VisionMate now asks Windows to fetch the missing security certificate and tries again by itself.\n* If the secure connection still can't be confirmed, VisionMate explains what to check instead of asking you to check your internet connection.",
+	"licenseURL": "https://github.com/athee06/VisionMate/blob/main/LICENSE",
+	"submissionTime": 1793627234000,
+	"translations": []
+}
