@@ -6,20 +6,22 @@ import glob
 import json
 import logging
 import os
-from pathlib import Path
 from collections.abc import Iterable
+from pathlib import Path
 from typing import Any
+
+from src.validate.validate import (
+	JSONSchemaPaths,
+	ValidationError,
+	validateJson,
+)
+
 from .datastructures import (
 	Addon,
-	generateAddonChannelDict,
 	MajorMinorPatch,
 	VersionCompatibility,
 	WriteableAddons,
-)
-from src.validate.validate import (
-	ValidationError,
-	validateJson,
-	JSONSchemaPaths,
+	generateAddonChannelDict,
 )
 
 log = logging.getLogger()
@@ -136,8 +138,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 				addon = addons[nvdaAPIVersion][channel][addonName]
 				with open(addon.pathToData, "r", encoding="utf-8") as oldAddonFile:
 					addonData: dict[str, Any] = json.load(oldAddonFile)
-					if "translations" in addonData:
-						del addonData["translations"]
+					addonData.pop("translations", None)
 
 				addonVersion = str(addon.addonVersion)
 				translatedAddonDirPath = os.path.join(addonDir, "addons", addonName, addonVersion)

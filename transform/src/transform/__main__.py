@@ -9,6 +9,7 @@ Usage: python -m transform {nvdaAPIVersionsPath} {inputPath} {outputPath} [logLe
 import argparse
 import logging
 import sys
+
 from .transform import runTransformation
 
 log = logging.getLogger()
