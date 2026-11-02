@@ -28,5 +28,47 @@
 	"changelog": "\n2026.11.02: รองรับ NVDA 2026.3 / Confirmed compatibility with NVDA 2026.3.\n2026.10.10: ค้นหาได้สูงสุด 500 รายการเรียงใหม่ไปเก่า, ดาวน์โหลดเพลย์ลิสต์ใหญ่เป็นรอบละ 100 ลิงก์ / Up to 500 search results newest first; large playlist downloads in batches of 100.\n2026.09.18: เพิ่มโหมดคาราโอเกะ ตัดเสียงร้องขณะเล่นเพลง (Shift+F8) และดาวน์โหลดเป็นคาราโอเกะ MP3 ตัดเสียงร้อง (Shift+F1) / Added Karaoke mode: vocal cut during playback (Shift+F8) and Karaoke MP3 download (Shift+F1).\n2026.09.11: เพิ่มประสิทธิภาพการเล่นเพลย์ลิสต์, ย้ายปุ่ม Export/Import, รองรับ Shorts / Improved playlist playback, moved Export/Import buttons, supported Shorts.\n2026.09.02: รองรับ NVDA 2026.2 / Confirmed compatibility with NVDA 2026.2.\n2026.08.25: แก้ไขการดาวน์โหลด MP4 / Fixed MP4 downloads.\n2026.08.20: ปรับปรุงการตรวจสอบอัปเดต yt-dlp / Improved yt-dlp update checks.\n2026.08.18: เปิดคลิปถ่ายทอดสดในเบราว์เซอร์ และเพิ่มการค้นหา Live / Open live streams in browser and added Live search.\n2026.07.19: เวอร์ชันแรกสำหรับการค้นหา เล่น และดาวน์โหลด YouTube / Initial release.\n",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1793606985000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/b697879722481e003a52a36251a108c75048c7aec852c77583fe8c30ce900a2d",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "b697879722481e003a52a36251a108c75048c7aec852c77583fe8c30ce900a2d",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0e00",
+					"raw_md5": "0782146550f83298387f2eaa3074959f"
+				},
+				"first_submission_date": 1793607003,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793607056,
+				"last_submission_date": 1793607003,
+				"md5": "06ce0a7ca2a367dae3b53ebf0443bf56",
+				"names": [],
+				"reputation": 0,
+				"sha1": "610faef32ed0318946556e764174906114b09ba8",
+				"sha256": "b697879722481e003a52a36251a108c75048c7aec852c77583fe8c30ce900a2d",
+				"size": 382188596,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
