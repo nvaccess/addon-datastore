@@ -28,5 +28,47 @@
 	"changelog": "\n    Version 3.1.0:\n    - Fixed: nothing was being generated because the Gemini models used\n      before (gemini-2.0-flash, gemini-1.5-flash, gemini-1.5-pro) have been\n      retired by Google. The add-on now asks Google which Gemini models are\n      currently available, so renamed or retired models no longer break it\n    - Added: free Pollinations AI backend that needs NO API key and is on\n      by default, so the add-on works right after installing\n    - Added: Gemini model box in settings (leave as \"auto\")\n    - Changed: the free g4f backend (no key needed) is now on by default;\n      it is used only if the g4f library is in the add-on's lib folder\n    - Changed: backends are tried in this order: Gemini (if you add a free\n      key), Pollinations, Hugging Face (optional token), g4f\n    - Changed: Hugging Face now uses its current router address\n    - Changed: Gemini key is sent in a request header instead of the web\n      address, and replies can be much longer than before\n    - Changed: error messages now reflect what the AI services actually\n      reported (busy, bad key, no connection, and so on)\n    - Changed: \"Test AI Service Connection\" now checks every backend\n\n    Version 3.0:\n    - Gemini and Hugging Face are now tried first for higher-quality, more\n      reliable results\n    - Fixed: generated text no longer permanently overwrites your clipboard -\n      your previous clipboard contents are restored after every paste\n    - Fixed: all shortcuts are now guarded against being triggered twice at\n      once (e.g. pressing NVDA+Shift+H repeatedly while busy)\n    - Fixed: language auto-detection now matches whole words only, so\n      instructions like \"German engineering\" no longer force German output\n    - Fixed: error messages are now short and screen-reader friendly instead\n      of raw technical text\n    - Added: NVDA+Shift+X to cancel a generation in progress\n    - Added: NVDA+Shift+R to regenerate the last action\n    - Added: NVDA+Shift+Y to browse recent generation history\n    - Added: spoken preview of generated text (toggle in settings)\n    - Added: periodic progress tone during slow requests so NVDA doesn't\n      feel frozen\n    - Added: provider indicator shown with translation/refine/history results\n    - Added: tone and length can now be set inline in your instructions\n      (e.g. \"a short, friendly email about...\") in addition to language\n    - Added: editable per-content-type prompt templates in settings\n    - Added: settings now disclose that API keys are stored locally in\n      plain text\n\n    Version 2.1.0:\n    - Added Content Type selection (Email, Story, Blog, Message, Social, Poem, Essay, Report)\n    - NVDA+Shift+G: Generate title for any topic\n    - NVDA+Shift+H: Generate full content (stories, blogs, emails, etc.)\n    - Auto language detection (write \"in Marathi\" for Marathi output)\n    - Your Name field in settings (used for email signatures)\n    - Uses g4f (free AI) with provider rotation\n    - Works on any platform (WhatsApp, Telegram, Notepad, etc.)\n    ",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1793693628000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a50571f7ef1f79a8d051a91fbe64d70f126c2a5708d6831e2796fd47a5967ee6",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a50571f7ef1f79a8d051a91fbe64d70f126c2a5708d6831e2796fd47a5967ee6",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0f0600",
+					"raw_md5": "bc737e8a19e648cafe7b93fdb1a4545c"
+				},
+				"first_submission_date": 1793693635,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793693640,
+				"last_submission_date": 1793693635,
+				"md5": "113383d02af9a82fd603661f9cb0d549",
+				"names": [],
+				"reputation": 0,
+				"sha1": "b286cb6d52c756c0f90bdefdc9e4f61f051a37aa",
+				"sha256": "a50571f7ef1f79a8d051a91fbe64d70f126c2a5708d6831e2796fd47a5967ee6",
+				"size": 12050406,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
