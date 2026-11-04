@@ -1,0 +1,39 @@
+{
+	"addonId": "audioSwitcher",
+	"displayName": "Audio Switcher",
+	"URL": "https://github.com/kamalyaser31/nvda-audio-switcher/releases/download/v2026.5/audioSwitcher-2026.5.nvda-addon",
+	"description": "Sets configured or directly selected speakers and microphones as default and announces current defaults.",
+	"sha256": "24cef361934dd26dcc2c522c2c3c5fafb93a0f8e78c56750ae9b174706b274d7",
+	"addonVersionName": "2026.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 5,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/nvda-audio-switcher/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/nvda-audio-switcher",
+	"changelog": "Added three profiles. A profile switches the speaker, the microphone and NVDA's own output together with one key, and says only its name. Set up profiles in the settings, where a button fills a profile with the devices you use now. Choosing an NVDA device in the quick dialog now moves NVDA speech to it right away.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793794740000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "مبدل أجهزة الصوت",
+			"description": "تعيين السماعات والميكروفونات المهيأة أو المختارة مباشرة أجهزة افتراضية، ونطق الأجهزة الافتراضية الحالية.",
+			"changelog": "أُضيفت ثلاثة أوضاع، يبدّل الوضع منها السماعة والميكروفون ومخرج NVDA معاً بضغطة واحدة، ولا ينطق إلا اسمه. وتُهيّأ الأوضاع في الإعدادات، وفيها زر يملأ الوضع بالأجهزة العاملة الآن. واختيار جهاز NVDA في حوار الاختيار السريع ينقل كلام NVDA إليه في الحال."
+		}
+	]
+}
