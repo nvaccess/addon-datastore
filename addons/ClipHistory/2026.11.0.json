@@ -1,0 +1,113 @@
+{
+	"addonId": "ClipHistory",
+	"displayName": "ClipboardHistory",
+	"URL": "https://github.com/chaichaimee/ClipHistory/releases/download/2026.11.0/ClipHistory-v2026.11.0.nvda-addon",
+	"description": "ClipHistory tracks clipboard activity, automatically saving text and HTML entries to persistent storage. Features include an accessible history dialog, pinning, custom item names, editing, reordering, item deletion, and pasting support for NVDA.\n\nHot Keys:\nWindows+V\nSingle : open ClipHistory Dialog\nDouble : Clear All ClipBoardHistory",
+	"sha256": "7a5f6cfaf4b2fc6568c9ebc07b2e1956a7b246499899a763afbd15c72b7f2576",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/ClipHistory",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/ClipHistory",
+	"changelog": "Fixed rich text paste: the HTML clipboard header had wrong fragment offsets, so pasting from Word or Thunderbird inserted the raw header text. Offsets now use UTF-8 bytes, which also fixes non-ASCII text. The history list now shows plain text without HTML tags. html_to_text also drops comments, style and script blocks. Moved plugin logic from __init__.py into clipCore.py.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793937534000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Historique du presse-papiers",
+			"description": "ClipHistory suit l'activité du presse-papiers, en enregistrant automatiquement les entrées de texte et HTML dans un stockage persistant. Les fonctionnalités incluent une boîte de dialogue d'historique accessible, l'épinglage, des noms d'éléments personnalisés, l'édition, la réorganisation, la suppression d'éléments et la prise en charge du collage pour NVDA.\n\nRaccourcis clavier :\nWindows+V\nSimple : ouvrir la boîte de dialogue ClipHistory\nDouble : Effacer tout l'historique du presse-papiers"
+		},
+		{
+			"language": "de",
+			"displayName": "Zwischenablageverlauf",
+			"description": "ClipHistory zeichnet die Aktivitäten der Zwischenablage auf und speichert Text- und HTML-Einträge automatisch in einem dauerhaften Speicher. Zu den Funktionen gehören ein barrierefreier Verlaufsdialog, das Anheften, benutzerdefinierte Elementnamen, Bearbeiten, Umsortieren, Löschen von Elementen und Unterstützung zum Einfügen für NVDA.\n\nTastenkombinationen:\nWindows+V\nEinfach: ClipHistory-Dialog öffnen\nDoppelt: Gesamten Zwischenablageverlauf löschen"
+		},
+		{
+			"language": "hi",
+			"displayName": "क्लिपबोर्ड इतिहास",
+			"description": "क्लिपबोर्ड इतिहास (क्लिपहिस्ट्री) क्लिपबोर्ड गतिविधियों को ट्रैक करता है, और टेक्स्ट और एचटीएमएल प्रविष्टियों को स्वचालित रूप से स्थायी स्टोरेज में सहेजता है। इसमें एक सुलभ इतिहास संवाद, पिन करना, कस्टम आइटम नाम, संपादन, पुनः क्रमित करना, आइटम हटाना और NVDA के लिए पेस्ट करने का समर्थन जैसी सुविधाएँ शामिल हैं।\n\nहॉट कीज़:\nWindows+V\nसिंगल: क्लिपहिस्ट्री संवाद खोलें\nडबल: सभी क्लिपबोर्ड इतिहास साफ़ करें"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Histórico da área de transferência",
+			"description": "O ClipHistory monitora a atividade da área de transferência, salvando automaticamente entradas de texto e HTML em armazenamento persistente. Os recursos incluem uma caixa de diálogo de histórico acessível, fixação, nomes de itens personalizados, edição, reordenação, exclusão de itens e suporte a colagem para o NVDA.\n\nTeclas de atalho:\nWindows+V\nSimples: abrir a caixa de diálogo do ClipHistory\nDuplo: limpar todo o histórico da área de transferência"
+		},
+		{
+			"language": "es",
+			"displayName": "Historial del portapapeles",
+			"description": "ClipHistory rastrea la actividad del portapapeles, guardando automáticamente entradas de texto y HTML en un almacenamiento persistente. Las características incluyen un diálogo de historial accesible, fijar elementos, nombres personalizados, edición, reordenamiento, eliminación de elementos y compatibilidad con NVDA para pegar.\n\nTeclas rápidas:\nWindows+V\nPulsación simple: abrir el diálogo de ClipHistory\nPulsación doble: borrar todo el historial del portapapeles"
+		},
+		{
+			"language": "ru",
+			"displayName": "История буфера обмена",
+			"description": "ClipHistory отслеживает активность буфера обмена, автоматически сохраняя текстовые и HTML-записи в постоянное хранилище. Функции включают доступный диалог истории, закрепление, пользовательские имена элементов, редактирование, изменение порядка, удаление элементов и поддержку вставки для NVDA.\n\nГорячие клавиши:\nWindows+V\nОдиночное нажатие: открыть диалог ClipHistory\nДвойное нажатие: очистить всю историю буфера обмена"
+		},
+		{
+			"language": "ko",
+			"displayName": "클립보드 기록",
+			"description": "ClipHistory는 클립보드 활동을 추적하며, 텍스트 및 HTML 항목을 영구 저장소에 자동으로 저장합니다. 접근 가능한 기록 대화상자, 고정, 사용자 지정 항목 이름, 편집, 순서 변경, 항목 삭제, 그리고 NVDA용 붙여넣기 지원 등의 기능을 제공합니다.\n\n단축키:\nWindows+V\n한 번 누르기: ClipHistory 대화상자 열기\n두 번 누르기: 모든 클립보드 기록 지우기"
+		},
+		{
+			"language": "uk",
+			"displayName": "Історія буфера обміну",
+			"description": "ClipHistory відстежує активність буфера обміну, автоматично зберігаючи текстові та HTML-записи у постійне сховище. Серед функцій: доступне вікно історії, закріплення, власні назви елементів, редагування, зміна порядку, видалення елементів та підтримка вставки для NVDA.\n\nГарячі клавіші:\nWindows+V\nОдиночне: відкрити діалогове вікно ClipHistory\nПодвійне: очистити всю історію буфера обміну"
+		},
+		{
+			"language": "id",
+			"displayName": "Riwayat Klipboard",
+			"description": "ClipHistory melacak aktivitas klipboard, secara otomatis menyimpan teks dan entri HTML ke penyimpanan permanen. Fitur mencakup dialog riwayat yang dapat diakses, penyematan, nama item kustom, pengeditan, penyusunan ulang, penghapusan item, dan dukungan penempelan untuk NVDA.\n\nTombol Pintas:\nWindows+V\nTunggal: buka Dialog ClipHistory\nGanda: Hapus Semua Riwayat Klipboard"
+		},
+		{
+			"language": "en",
+			"displayName": "ClipboardHistory",
+			"description": "ClipHistory tracks clipboard activity, automatically saving text and HTML entries to persistent storage. Features include an accessible history dialog, pinning, custom item names, editing, reordering, item deletion, and pasting support for NVDA.\n\nHot Keys:\nWindows+V\nSingle : open ClipHistory Dialog\nDouble : Clear All ClipBoardHistory"
+		},
+		{
+			"language": "ar",
+			"displayName": "سجل الحافظة",
+			"description": "يتعقب ClipHistory نشاط الحافظة، حيث يحفظ نصوص HTML وإدخالاته تلقائياً في تخزين دائم. تشمل الميزات حوار سجل سهل الوصول، التثبيت، أسماء مخصصة للعناصر، التحرير، إعادة الترتيب، حذف العناصر، ودعم اللصق في NVDA.\n\nمفاتيح الاختصار:\nWindows+V\nضغطة واحدة: فتح مربع حوار سجل الحافظة\nضغطتان: مسح كل سجل الحافظة"
+		},
+		{
+			"language": "it",
+			"displayName": "Geçmiş Panosu",
+			"description": "ClipHistory, pano etkinliğini takip ederek metin ve HTML girdilerini kalıcı olarak kaydeder. Özellikler arasında erişilebilir bir geçmiş iletişim kutusu, sabitleme, özel öğe adları, düzenleme, yeniden sıralama, öğe silme ve NVDA için yapıştırma desteği yer alır.\n\nKısayol Tuşları:\nWindows+V\nTek : ClipHistory İletişim Kutusunu aç\nÇift : Tüm Pano Geçmişini Temizle"
+		},
+		{
+			"language": "th",
+			"displayName": "ประวัติคลิปบอร์ด",
+			"description": "ClipHistory ติดตามกิจกรรมของคลิปบอร์ด โดยบันทึกข้อความและรายการ HTML ลงในที่จัดเก็บข้อมูลถาวรโดยอัตโนมัติ คุณสมบัติต่างๆ รวมถึงกล่องโต้ตอบประวัติที่เข้าถึงได้, การปักหมุด, ชื่อรายการกำหนดเอง, การแก้ไข, การจัดเรียงใหม่, การลบรายการ และการรองรับการวางสำหรับ NVDA\n\nปุ่มลัด:\nWindows+V\nกดครั้งเดียว: เปิดกล่องโต้ตอบ ClipHistory\nดับเบิลคลิก: ล้างประวัติคลิปบอร์ดทั้งหมด"
+		},
+		{
+			"language": "ja",
+			"displayName": "クリップボード履歴",
+			"description": "ClipHistoryはクリップボードの活動を追跡し、テキストやHTMLのエントリを永続ストレージに自動的に保存します。機能には、アクセシブルな履歴ダイアログ、ピン留め、カスタムアイテム名、編集、並べ替え、アイテムの削除、およびNVDAでの貼り付けサポートが含まれます。\n\nホットキー：\nWindows+V\n1回：ClipHistoryダイアログを開く\n2回：すべてのクリップボード履歴をクリアする"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "剪貼簿歷史記錄",
+			"description": "ClipHistory 會追蹤剪貼簿活動，自動將文字和 HTML 項目儲存至永久儲存空間。功能包括無障礙歷史記錄對話方塊、固定、自訂項目名稱、編輯、重新排序、刪除項目以及 NVDA 的貼上支援。\n\n熱鍵：\nWindows+V\n單擊：開啟 ClipHistory 對話方塊\n雙擊：清除所有剪貼簿歷史記錄"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "剪贴板历史记录",
+			"description": "ClipHistory 用于跟踪剪贴板活动，自动将文本和 HTML 条目保存到持久存储中。功能包括无障碍历史记录对话框、固定、自定义项目名称、编辑、重新排序、删除项目以及为 NVDA 提供粘贴支持。\n\n快捷键：\nWindows+V\n单击：打开 ClipHistory 对话框\n双击：清除所有剪贴板历史记录"
+		}
+	]
+}
