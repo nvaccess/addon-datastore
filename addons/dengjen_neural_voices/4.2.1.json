@@ -1,0 +1,69 @@
+{
+	"addonId": "dengjen_neural_voices",
+	"displayName": "Dengjen Neural Voices",
+	"URL": "https://github.com/ZirekHQ/dengjen-nvda/releases/download/v4.2.1/dengjen_neural_voices-4.2.1.nvda-addon",
+	"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+	"sha256": "3eefc0275cda5d7d64ee3518fb2a72165e74fb54bde6e296df4bfef355c6a2ce",
+	"addonVersionName": "4.2.1",
+	"addonVersionNumber": {
+		"major": 4,
+		"minor": 2,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Ali Ustek",
+	"sourceURL": "https://github.com/zirekhq/dengjen-nvda",
+	"license": "GPL v2",
+	"homepage": "https://github.com/zirekhq/dengjen-nvda",
+	"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794003700000,
+	"translations": [
+		{
+			"language": "fr",
+			"displayName": "Voix neuronales de Dengjen",
+			"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+			"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191)."
+		},
+		{
+			"language": "es",
+			"displayName": "Voces Neuronales Dengjen",
+			"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+			"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191)."
+		},
+		{
+			"language": "tr",
+			"displayName": "Dengjen Sinir Ağı Sesleri",
+			"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+			"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191)."
+		},
+		{
+			"language": "ru",
+			"displayName": "Нейронные голоса Dengjen",
+			"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+			"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191)."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Dengên Neuronî yên Dengjen",
+			"description": "Adds fast, local neural text-to-speech voices to NVDA. Provides a synthesizer driver for Piper voice models via the dengjen engine, together with a voice manager for downloading and installing voices.",
+			"changelog": "Deferred the NVDA restart triggered after installing a downloaded voice by 200ms, instead of calling core.restart() immediately when the confirmation dialog closes. This is a best-effort mitigation for a suspected NVDA-core race between that dialog closing and NVDA's own foreground-window handoff, which can cause the restart to be silently refused (issue #191)."
+		},
+		{
+			"language": "ja",
+			"displayName": "Dengjen Neural Voices",
+			"description": "高速でローカル動作するニューラル音声合成を NVDA に追加します。Dengjen エンジンを介した Piper 音声モデルの音声合成ドライバと、音声のダウンロード・管理用ツールを提供します。",
+			"changelog": "ダウンロードした音声のインストール後にトリガーされる NVDA の再起動を、確認ダイアログが閉じた直後に core.restart() を呼び出すのではなく 200 ミリ秒遅延させました。これはダイアログのクローズと NVDA のフォアグラウンドウィンドウ引き渡しとの間の競合により再起動が拒否される問題を緩和するための対策です (issue #191)。"
+		}
+	]
+}
