@@ -1,0 +1,39 @@
+{
+	"addonId": "wordDocAssistant",
+	"displayName": "Word Document Assistant",
+	"URL": "https://github.com/9Peera/word-document-assistant/releases/download/v1.0.1/wordDocAssistant-1.0.1.nvda-addon",
+	"description": "Read, manage and format Microsoft Word documents from the keyboard with NVDA. Works with Microsoft 365, Office 2021 and Office 2019.\nMain features:\n- Document navigation mode (NVDA+Shift+F8): move to spelling errors (S), grammar issues (G), comments (C), footnotes (F), endnotes (E), tracked changes (R), headings (O), tables (U), pictures (M), links (K), cross-references (X), citations (I), bookmarks (B), fields (D), language problems (L) and accessibility problems (A); Shift with the letter moves back, arrow keys move and change the type, Home and End go to the first and last item.\n- When you leave the mode the caret stays at the last item, ready to edit; Enter leaves and lets you type straight away, Backspace returns to where you started.\n- Item lists (Space) with each detail in its own field: author, date, status, commented text, comment and replies; copy the text or all details.\n- Actions (Applications key): replace misspelled words, reply to, edit, resolve and delete comments, insert, edit, delete and convert footnotes and endnotes, accept and reject tracked changes one by one, by author or all.\n- Track Changes status and toggle (T, Shift+T), note at the caret (N), page, section and heading (P), document summary (Q).\n- Accessibility checker (A): pictures without alternative text, tables without header rows, skipped heading levels, empty paragraphs used for spacing, unclear link text, missing title and wrong language, each with a fix. AI writes alternative text for pictures and tables in Thai or English for you to check.\n- Structure: promote and demote headings, header rows and alternative text of tables, edit and check links, add bookmarks, update fields, insert cross-references, citations and the bibliography.\n- Optional AI suggestions: proofread a paragraph or the selection (W), suggestions for a misspelled word, drafts of comment replies. AI tools (V): summaries, rewriting in official, polite, concise or easy-to-read style, Thai and English translation, comment summary and consistency check, always shown next to the original before anything changes.\n- Thai tools (Y): Thai and Arabic digits, Buddhist and Christian era years.\n- Offline Thai word check (Z): commonly misspelled words with the right form, and words not in open word lists (PyThaiNLP CC0, optional LibreOffice NECTEC dictionary), with suggestions, my words, an organization list, and an optional weekly check for new word lists.\n- Format the document with AI (J): Thai official letter, memo, announcement or order, meeting minutes, business and general letters, report, article, academic paper and an accessible easy-to-read format. AI only decides the role of each paragraph; the words are not changed, you check a preview and Control+Z undoes it.\n- AI services: Google Gemini (free tier), Anthropic Claude and OpenAI (paid), OpenAI compatible services, or Ollama on this computer for confidential documents. Guided API key setup (NVDA+Control+Shift+F8) with automatic model choice.\n- Every change is one Word undo step. API keys are encrypted for the Windows user. Keys work with Thai and English keyboard layouts. Thai and English interface.",
+	"sha256": "5f7f0c8a421fad53ded0fcd33f5d6b5a8c6c58634d0a00b52c346461a1b51b2b",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Peera Pilarit",
+	"sourceURL": "https://github.com/9Peera/word-document-assistant/tree/v1.0.1",
+	"license": "GPL v2",
+	"homepage": "https://github.com/9Peera/word-document-assistant",
+	"changelog": "Collecting headings is much faster in long documents, and Word no longer stops responding. First public release: the weekly check for new Thai word lists is off until you allow it.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794060807000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "ผู้ช่วยเอกสาร Word",
+			"description": "อ่าน จัดการ และจัดรูปแบบเอกสาร Microsoft Word ด้วยแป้นพิมพ์ร่วมกับ NVDA ใช้ได้กับ Microsoft 365, Office 2021 และ Office 2019\nความสามารถหลัก:\n- โหมดนำทางเอกสาร (NVDA+Shift+F8): ไปยังคำสะกดผิด (S) ปัญหาไวยากรณ์ (G) ข้อคิดเห็น (C) เชิงอรรถ (F) endnote (E) การแก้ไขที่ติดตาม (R) หัวเรื่อง (O) ตาราง (U) รูปภาพ (M) ลิงก์ (K) การอ้างอิงโยง (X) การอ้างอิง (I) บุ๊กมาร์ก (B) ฟิลด์ (D) ปัญหาการกำหนดภาษา (L) และปัญหาการเข้าถึงได้ (A) กด Shift พร้อมตัวอักษรเพื่อย้อนกลับ ใช้ลูกศรเพื่อเลื่อนและเปลี่ยนชนิด Home และ End ไปยังรายการแรกและรายการสุดท้าย\n- เมื่อออกจากโหมด เคอร์เซอร์อยู่ที่รายการล่าสุด พร้อมแก้ไขได้ทันที Enter ออกจากโหมดแล้วพิมพ์ได้เลย Backspace กลับไปตำแหน่งเดิม\n- หน้าต่างรายการ (Space) แยกรายละเอียดแต่ละส่วนเป็นช่อง ได้แก่ ผู้เขียน วันที่ สถานะ ข้อความที่แสดงความคิดเห็น ข้อคิดเห็น และการตอบกลับ คัดลอกข้อความหรือรายละเอียดทั้งหมดได้\n- เมนูคำสั่ง (ปุ่ม Applications): แทนที่คำสะกดผิด ตอบกลับ แก้ไข ทำเครื่องหมายว่าแก้ไขแล้ว และลบข้อคิดเห็น แทรก แก้ไข ลบ และแปลงเชิงอรรถกับ endnote ยอมรับและปฏิเสธการแก้ไขทีละรายการ ตามผู้เขียน หรือทั้งหมด\n- สถานะและการเปิดปิด Track Changes (T, Shift+T) อ่านเชิงอรรถที่เคอร์เซอร์ (N) หน้า ส่วน และหัวเรื่อง (P) สรุปเอกสาร (Q)\n- ตัวตรวจการเข้าถึงได้ (A): รูปภาพที่ไม่มีข้อความแสดงแทน ตารางที่ไม่มีแถวหัวตาราง หัวเรื่องข้ามระดับ ย่อหน้าว่างที่ใช้เว้นระยะ ข้อความลิงก์ที่ไม่ชัดเจน เอกสารไม่มีชื่อเรื่อง และการกำหนดภาษาผิด พร้อมคำสั่งแก้ไขแต่ละรายการ AI ช่วยเขียนข้อความแสดงแทนของรูปภาพและตารางเป็นภาษาไทยหรืออังกฤษให้ตรวจก่อนบันทึก\n- โครงสร้างเอกสาร: เลื่อนระดับหัวเรื่อง กำหนดแถวหัวตารางและข้อความแสดงแทนของตาราง แก้ไขและตรวจลิงก์ เพิ่มบุ๊กมาร์ก อัปเดตฟิลด์ แทรกการอ้างอิงโยง การอ้างอิง และบรรณานุกรม\n- คำแนะนำจาก AI (เลือกเปิดใช้ได้): ตรวจย่อหน้าหรือข้อความที่เลือก (W) แนะนำคำที่ถูกต้องสำหรับคำสะกดผิด ร่างคำตอบข้อคิดเห็น เครื่องมือ AI (V): สรุป เรียบเรียงใหม่เป็นภาษาราชการ สุภาพ กระชับ หรือภาษาง่าย แปลไทยและอังกฤษ สรุปข้อคิดเห็น และตรวจความสอดคล้อง โดยแสดงเทียบกับข้อความเดิมก่อนเปลี่ยนทุกครั้ง\n- เครื่องมือภาษาไทย (Y): เลขไทยและเลขอารบิก ปี พ.ศ. และ ค.ศ.\n- ตรวจคำภาษาไทยแบบออฟไลน์ (Z): คำที่มักเขียนผิดพร้อมคำที่ถูกต้อง และคำที่ไม่มีในรายการคำแบบเปิด (PyThaiNLP CC0 และพจนานุกรม NECTEC ของ LibreOffice ที่เลือกเพิ่มได้) พร้อมคำแนะนำ รายการคำของฉัน รายการขององค์กร และเลือกให้ตรวจหารายการคำรุ่นใหม่ทุกสัปดาห์ได้\n- จัดรูปแบบเอกสารด้วย AI (J): หนังสือราชการภายนอก บันทึกข้อความ ประกาศ / คำสั่ง รายงานการประชุม จดหมายทางการและจดหมายทั่วไป รายงาน บทความ บทความวิชาการ และเอกสารอ่านง่ายเข้าถึงได้ AI ระบุเพียงหน้าที่ของแต่ละย่อหน้า ถ้อยคำไม่ถูกเปลี่ยน ตรวจตัวอย่างได้ก่อน และกด Control+Z เพื่อย้อนกลับ\n- บริการ AI: Google Gemini (ใช้ฟรีได้) Anthropic Claude และ OpenAI (เสียเงิน) บริการที่รองรับรูปแบบ OpenAI หรือ Ollama ในเครื่องสำหรับเอกสารลับ มีหน้าตั้งค่า API key แบบนำทีละขั้น (NVDA+Control+Shift+F8) และเลือกโมเดลอัตโนมัติ\n- การเปลี่ยนแปลงแต่ละครั้งเป็นการเลิกทำหนึ่งขั้นของ Word API key เข้ารหัสไว้สำหรับผู้ใช้ Windows คีย์ใช้ได้ทั้งแป้นพิมพ์ไทยและอังกฤษ หน้าจอภาษาไทยและอังกฤษ",
+			"changelog": "การรวบรวมหัวเรื่องเร็วขึ้นมากในเอกสารยาว และ Word ไม่ค้างไม่ตอบสนองอีก รุ่นแรกที่เผยแพร่สู่สาธารณะ: การตรวจหารายการคำภาษาไทยรุ่นใหม่รายสัปดาห์จะปิดไว้จนกว่าผู้ใช้จะอนุญาต"
+		}
+	]
+}
