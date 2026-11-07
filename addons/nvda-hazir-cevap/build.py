@@ -1,4 +1,5 @@
 """Eklentiyi hazirCevap.nvda-addon olarak paketler: python build.py"""
+
 import os
 import zipfile
 

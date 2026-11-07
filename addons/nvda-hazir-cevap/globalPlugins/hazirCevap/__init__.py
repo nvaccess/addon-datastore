@@ -46,7 +46,8 @@ class Store:
 					"text": str(e.get("text", "")),
 					"gesture": str(e.get("gesture", "")),
 				}
-				for e in data if isinstance(e, dict)
+				for e in data
+				if isinstance(e, dict)
 			]
 		except FileNotFoundError:
 			self.entries = []
@@ -73,12 +74,16 @@ class EntryDialog(wx.Dialog):
 		helper = guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		self.name = helper.addLabeledControl(_("&Name:"), wx.TextCtrl, value=entry["name"])
 		self.text = helper.addLabeledControl(
-			_("&Text:"), wx.TextCtrl, value=entry["text"],
-			style=wx.TE_MULTILINE, size=(450, 200),
+			_("&Text:"),
+			wx.TextCtrl,
+			value=entry["text"],
+			style=wx.TE_MULTILINE,
+			size=(450, 200),
 		)
 		self.gesture = helper.addLabeledControl(
 			_("&Shortcut (e.g. kb:NVDA+control+1, can be left blank):"),
-			wx.TextCtrl, value=entry["gesture"],
+			wx.TextCtrl,
+			value=entry["gesture"],
 		)
 		helper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK | wx.CANCEL))
 		main.Add(helper.sizer, border=guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -111,7 +116,10 @@ class ManagerDialog(wx.Dialog):
 		main = wx.BoxSizer(wx.VERTICAL)
 		helper = guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		self.list = helper.addLabeledControl(
-			_("&Saved responses:"), wx.ListBox, choices=[], size=(450, 250),
+			_("&Saved responses:"),
+			wx.ListBox,
+			choices=[],
+			size=(450, 250),
 		)
 		btns = guiHelper.ButtonHelper(wx.HORIZONTAL)
 		self.addBtn = btns.addButton(self, label=_("&Add..."))
@@ -134,10 +142,7 @@ class ManagerDialog(wx.Dialog):
 
 	def refresh(self, select=0):
 		entries = self.plugin.store.entries
-		labels = [
-			e["name"] + (" (%s)" % e["gesture"][3:] if e["gesture"] else "")
-			for e in entries
-		]
+		labels = [e["name"] + (" (%s)" % e["gesture"][3:] if e["gesture"] else "") for e in entries]
 		self.list.Set(labels)
 		if labels:
 			self.list.SetSelection(max(0, min(select, len(labels) - 1)))
@@ -169,9 +174,15 @@ class ManagerDialog(wx.Dialog):
 		i = self.list.GetSelection()
 		if i == wx.NOT_FOUND:
 			return
-		if gui.messageBox(
-			_("Delete selected response?"), _("Confirmation"), wx.YES_NO | wx.ICON_QUESTION, self,
-		) == wx.YES:
+		if (
+			gui.messageBox(
+				_("Delete selected response?"),
+				_("Confirmation"),
+				wx.YES_NO | wx.ICON_QUESTION,
+				self,
+			)
+			== wx.YES
+		):
 			del self.plugin.store.entries[i]
 			self.plugin.changed()
 			self.refresh(i)
@@ -279,7 +290,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def _choose(self):
 		gui.mainFrame.prePopup()
 		dlg = wx.SingleChoiceDialog(
-			gui.mainFrame, _("Select response to paste"), _("Quick Response"),
+			gui.mainFrame,
+			_("Select response to paste"),
+			_("Quick Response"),
 			[e["name"] for e in self.store.entries],
 		)
 		ok = dlg.ShowModal() == wx.ID_OK
