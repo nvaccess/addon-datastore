@@ -1,0 +1,80 @@
+{
+	"addonId": "bookAudio",
+	"displayName": "Book Audio",
+	"URL": "https://github.com/denis-skripnik/nvda-book-audio/releases/download/v0.1.9/bookAudio-0.1.9.nvda-addon",
+	"description": "Create chapter MP3 audiobooks from TXT, FB2, FB2.ZIP and text-based PDF using NVDA synthesizers, voices and rate settings. Russian and English interface follows NVDA's language. Default shortcut: NVDA+Windows+A, reassignable in Input Gestures. Built for NVDA 2026.2 and 2026.3, Python 3.13 x64.",
+	"sha256": "995d361f62fc9f0356af8c825713519a0f63fc90a7aef2f96d91cfa0a9fe9f9c",
+	"addonVersionName": "0.1.9",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 9
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "beta",
+	"publisher": "Denis Skripnik",
+	"sourceURL": "https://github.com/denis-skripnik/nvda-book-audio/tree/v0.1.9",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/denis-skripnik/nvda-book-audio",
+	"licenseURL": "https://github.com/denis-skripnik/nvda-book-audio/blob/v0.1.9/LICENSE",
+	"submissionTime": 1794038928000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Book Audio",
+			"description": "Создаёт аудиокниги MP3 по главам из TXT, FB2, FB2.ZIP и PDF с текстовым слоем. Выбор синтезатора NVDA, голоса и скорости. Русский или английский интерфейс по языку NVDA. Горячая клавиша NVDA+Windows+A переназначается в жестах ввода. Сборка для NVDA 2026.2 и 2026.3, Python 3.13 x64."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/995d361f62fc9f0356af8c825713519a0f63fc90a7aef2f96d91cfa0a9fe9f9c",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "995d361f62fc9f0356af8c825713519a0f63fc90a7aef2f96d91cfa0a9fe9f9c",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000070600",
+					"raw_md5": "20937af6e10d37fdda517c531c1bfd6d"
+				},
+				"first_submission_date": 1794038934,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794038936,
+				"last_submission_date": 1794038934,
+				"md5": "0f319bd1b5de28bb9708a801bb08c255",
+				"names": [],
+				"reputation": 0,
+				"sha1": "8e1b073b982279573d02fc4fbb596ad8c8910a4c",
+				"sha256": "995d361f62fc9f0356af8c825713519a0f63fc90a7aef2f96d91cfa0a9fe9f9c",
+				"size": 13169167,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/12792"
+}
