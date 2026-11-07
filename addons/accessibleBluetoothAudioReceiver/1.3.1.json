@@ -1,0 +1,39 @@
+{
+	"addonId": "accessibleBluetoothAudioReceiver",
+	"displayName": "Accessible Bluetooth Audio Receiver",
+	"URL": "https://github.com/muhammadGagah/nvda-bluetooth-receiver/releases/download/v1.3.1/accessibleBluetoothAudioReceiver-1.3.1.nvda-addon",
+	"description": "Effortlessly stream audio from your phone to your PC!\n\tThis add-on supercharges the Bluetooth Audio Receiver app with global hotkeys and smart connection toggling.\n\tNo more menu diving, just press one key to connect or disconnect.\n\tExperience seamless audio control like never before. Check the readme for more details!",
+	"sha256": "b10460b7f47735b4b846751abc69a3ac377c856e41f3a5052f8a8d3d5ee4e3ad",
+	"addonVersionName": "1.3.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 3,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/nvda-bluetooth-receiver",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/nvda-bluetooth-receiver",
+	"changelog": "Tested with NVDA 2026.3.\nFixed device rows becoming unreadable when the app refreshes its list while NVDA reads it.\nConnection monitoring now keeps waiting and reports a timeout instead of stopping silently.\nFocus now returns to the device row after every timeout.\nThe launch command now restores the app window when it is minimized.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794035254000,
+	"translations": [
+		{
+			"language": "id",
+			"displayName": "Aksesibel Bluetooth Audio Receiver",
+			"description": "Streaming audio dengan mudah dari ponsel Anda ke PC Anda!\n\tAdd-on ini meningkatkan kemampuan aplikasi Bluetooth Audio Receiver dengan hotkey global dan pengalihan koneksi cerdas.\n\tTidak perlu lagi menjelajahi menu, cukup tekan satu tombol untuk menyambungkan atau memutuskan sambungan.\n\tRasakan kontrol audio yang mulus yang belum pernah ada sebelumnya. Periksa readme untuk detail lebih lanjut!",
+			"changelog": "Diuji dengan NVDA 2026.3.\nMemperbaiki baris perangkat yang tidak terbaca saat aplikasi memperbarui daftarnya ketika NVDA sedang membacanya.\nPemantauan koneksi kini terus menunggu dan melaporkan batas waktu, alih-alih berhenti tanpa pemberitahuan.\nFokus kini kembali ke baris perangkat setiap kali batas waktu tercapai.\nPerintah peluncuran kini memulihkan jendela aplikasi saat sedang diminimalkan."
+		}
+	]
+}
