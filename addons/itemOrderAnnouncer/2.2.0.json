@@ -1,0 +1,82 @@
+{
+	"addonId": "itemOrderAnnouncer",
+	"displayName": "Item Order Announcer",
+	"URL": "https://github.com/balaraz/nvda-item-order-announcer/releases/download/v2.2/itemOrderAnnouncer-2.2.nvda-addon",
+	"description": "Quickly announces the order, total count, and nesting level of the current navigator object.",
+	"sha256": "f4b83e6d007980bb89aa047e0bc14e96a44c7b0013eba3a39e7e804005d61d14",
+	"addonVersionName": "2.2",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 2,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "balaraz",
+	"sourceURL": "https://github.com/balaraz/nvda-item-order-announcer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/balaraz/nvda-item-order-announcer",
+	"changelog": "- Actions are performed on the navigator object instead of the object in focus",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1793691958000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Оголошення порядку елемента",
+			"description": "Швидко оголошує порядок, загальну кількість та рівень вкладеності поточного об'єкта навігатора.",
+			"changelog": "- Дії виконуються над об’єктом навігатора замість об’єкта у фокусі"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/f4b83e6d007980bb89aa047e0bc14e96a44c7b0013eba3a39e7e804005d61d14",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "f4b83e6d007980bb89aa047e0bc14e96a44c7b0013eba3a39e7e804005d61d14",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "303c3c3c2c580000",
+					"raw_md5": "e503726cc321f5a4fb1dcfca0e447a4b"
+				},
+				"first_submission_date": 1793691962,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1793691964,
+				"last_submission_date": 1793691962,
+				"md5": "2f1dde49c723455c9f399a3d40df3693",
+				"names": [],
+				"reputation": 0,
+				"sha1": "08e5e1a94756afe180385d9288efafe82a924bc6",
+				"sha256": "f4b83e6d007980bb89aa047e0bc14e96a44c7b0013eba3a39e7e804005d61d14",
+				"size": 18977,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/11209"
+}
