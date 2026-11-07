@@ -1,0 +1,32 @@
+{
+	"addonId": "accessibleKBBI",
+	"displayName": "Accessible KBBI - Indonesian Dictionary Search",
+	"URL": "https://github.com/muhammadGagah/nvda-accessibleKBBI/releases/download/v1.4.0/accessibleKBBI-1.4.0.nvda-addon",
+	"description": "Seamlessly search definitions in the Kamus Besar Bahasa Indonesia (KBBI), the official standard dictionary of the Indonesian language.\nFeatures include looking up selected text effectively, Word of the Day, and favorite entries, all accessible directly from NVDA.",
+	"sha256": "5efe0a79ccc6d4833a83ac1a43429a79e75afc4e914b375f209e55d0df8cca63",
+	"addonVersionName": "1.4.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Muhammad",
+	"sourceURL": "https://github.com/muhammadGagah/nvda-accessibleKBBI",
+	"license": "GPL v2",
+	"homepage": "https://github.com/muhammadGagah/nvda-accessibleKBBI/",
+	"changelog": "Tested with NVDA 2026.3.\nNew Suggestions button lists KBBI words that start with the typed text.\nWhen a word is not found, similar words are suggested.\nNew Related words button opens base, derived, compound, and variant words directly.\nResults now show non-standard forms, variants, and precategorical entries.\nNew option to show full label names, such as Nomina instead of n.\nResults now include metaphors (kiasan), which were previously hidden.\nHistory and favorites lists no longer hide their Close button on scaled displays.\nSearching for text that contains a slash now looks up the right entry.\nResults no longer fail when the KBBI service adds new label information.\nHistory and favorites are saved safely, so an interrupted save cannot erase them.\nThe add-on now uses its own translation catalog.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794035527000,
+	"translations": []
+}
