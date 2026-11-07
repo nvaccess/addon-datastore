@@ -1,0 +1,45 @@
+{
+	"addonId": "AccessifyPlay",
+	"displayName": "Accessify Play",
+	"URL": "https://github.com/InfiArtt/accessify-play/releases/download/v1.13.0/AccessifyPlay-1.13.0.nvda-addon",
+	"description": "Accessify Play provides comprehensive NVDA control for Spotify playback on any Connect-enabled device. A Spotify Premium subscription is required for full functionality.",
+	"sha256": "93971fa16345a4cad4b02da5f2a34dd297f2f4e8c80f3a49193374bac8e000b7",
+	"addonVersionName": "1.13.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 13,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "InfiArtt",
+	"sourceURL": "https://github.com/InfiArtt/accessify-play",
+	"license": "GPL v2",
+	"homepage": "https://github.com/InfiArtt/accessify-play",
+	"changelog": "\n- Fixed: signing in failed with \"redirect_uri: Not matching configuration\", and had to be finished within 10 seconds.\n- New: a Sign-in port setting, and the Redirect URI for your own Client ID shown in the settings.\n- Search: Ctrl+1 to Ctrl+6 and Ctrl+Tab switch the type and search again; Ctrl+F returns to the search field.\n- Artist window: opens on Top Tracks, with a new Playlists found by name tab.\n- Every list has the same context menu, Enter and row format; long lists load a page at a time.\n- Every shortcut inside the windows can be changed (Window Shortcuts... in the settings), and there are new settings.\n- Many bug fixes; see the changelog for the full list.\n\t",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794086519000,
+	"translations": [
+		{
+			"language": "id",
+			"displayName": "Accessify Play",
+			"description": "Accessify Play memberikan kontrol NVDA komprehensif untuk pemutaran Spotify di perangkat apa pun yang mendukung Spotify Connect. Langganan Spotify Premium diperlukan untuk fungsionalitas penuh.",
+			"changelog": "\n- Diperbaiki: proses masuk gagal dengan \"redirect_uri: Not matching configuration\", dan harus selesai dalam 10 detik.\n- Baru: pengaturan port masuk, dan Redirect URI untuk Client ID sendiri ditampilkan di pengaturan.\n- Pencarian: Ctrl+1 sampai Ctrl+6 dan Ctrl+Tab mengganti jenis dan langsung mencari lagi; Ctrl+F kembali ke kolom pencarian.\n- Jendela artis: terbuka di Top Tracks, dengan tab baru Daftar Putar berdasarkan nama.\n- Setiap daftar punya menu konteks, Enter, dan format baris yang sama; daftar panjang dimuat per halaman.\n- Setiap pintasan di dalam jendela bisa diubah (Window Shortcuts... di pengaturan), dan ada pengaturan baru.\n- Banyak perbaikan bug; lihat changelog untuk daftar lengkapnya.\n\t"
+		},
+		{
+			"language": "en",
+			"displayName": "Accessify Play",
+			"description": "Accessify Play provides comprehensive NVDA control for Spotify playback on any Connect-enabled device. A Spotify Premium subscription is required for full functionality.",
+			"changelog": "\n- Fixed: signing in failed with \"redirect_uri: Not matching configuration\", and had to be finished within 10 seconds.\n- New: a Sign-in port setting, and the Redirect URI for your own Client ID shown in the settings.\n- Search: Ctrl+1 to Ctrl+6 and Ctrl+Tab switch the type and search again; Ctrl+F returns to the search field.\n- Artist window: opens on Top Tracks, with a new Playlists found by name tab.\n- Every list has the same context menu, Enter and row format; long lists load a page at a time.\n- Every shortcut inside the windows can be changed (Window Shortcuts... in the settings), and there are new settings.\n- Many bug fixes; see the changelog for the full list.\n\t"
+		}
+	]
+}
