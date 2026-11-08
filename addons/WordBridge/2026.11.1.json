@@ -47,5 +47,47 @@
 			"description": "帮助用户识别并修正中文同音错别字。",
 			"changelog": "更新至 GPT-6.1 和 Claude 5.5；模型列表可从自定义网址加载；Coseeing 校正失败时说明原因"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/2fd9511520dc8efa16cbb93cc6db84ab50e0218f279b22a1867b756810e8812a",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "2fd9511520dc8efa16cbb93cc6db84ab50e0218f279b22a1867b756810e8812a",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000e0b0304",
+					"raw_md5": "2307f6ff9c27f33ce6167b5beb321366"
+				},
+				"first_submission_date": 1794100520,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794100522,
+				"last_submission_date": 1794100520,
+				"md5": "ee6024d91002f65e1c907e942f8c6b59",
+				"names": [],
+				"reputation": 0,
+				"sha1": "bcc3209f51a1e5c5144a74b86b3be668f33d151f",
+				"sha256": "2fd9511520dc8efa16cbb93cc6db84ab50e0218f279b22a1867b756810e8812a",
+				"size": 4249140,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
