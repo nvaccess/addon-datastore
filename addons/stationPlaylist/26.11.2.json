@@ -1,0 +1,32 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.11.2/stationPlaylist-26.11.2.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "05d351f6221705cd3024bf3bf19c50067ab0cdd1507ab6d3c3dff4013394a7da",
+	"addonVersionName": "26.11.2",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 11,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* NVDA 2026.3 or later is required.\n* Initial support for StationPlaylist suite 6.21. Changes include:\n\t* Improved reliability of restoring local Studio window from system tray (notification area; contributed by MooSteinebach).\n\t* In local Studio, pressing Control+Alt+T and Alt+Shift+T to obtain track remaining and elapsed time will report live assist elapsed time if live assist elapsed timer is enabled from Studio options.\n\t* In Remote Studio, NVDA will no longer present wrong track column information for features such as playlist transcripts.\n\t* Reviewing cart assignments via Cart Explorer in Remote Studio will also announce cart name if defined.\n* NVDA will no longer do nothing or play error tones when announcing screen changes right after launching local and Remote Studio.\n* Listener count message from SPL Controller layer (I) will now resemble local Studio's listener count display (count Listeners).\n* Break notes dialog/interface (local Studio and Creator):\n\t* Improved break note insertion dialog user interface presentation.\n\t* Break note code modifications will not be saved to disk if NVDA is running in secure mode.\n\t* Break notes dialog will be closed when closing local Studio and Creator.\n\t* In break notes dialog, codes unavailable for the Studio version in use will not be shown (contributed by MooSteinebach).\n\t* Added voice tracker volume adjustment break note code (Studio 6.21, contributed by MooSteinebach).\n\t* Added a warning when using break notes insertion interface to define record to file path (this changes local Studio behavior; contributed by MooSteinebach).\n\t* Break notes data including favorite codes can be reinitialized from add-on settings/reset settings panel as well as when pressing Control+NVDA+R three times to reset NVDA settings to defaults (contributed by MooSteinebach).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794122309000,
+	"translations": []
+}
