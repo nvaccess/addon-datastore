@@ -1,0 +1,30 @@
+{
+	"addonId": "festival",
+	"displayName": "Festival Speech Synthesis System",
+	"URL": "https://github.com/jiriholzinger-crypto/Festival-NVDA/releases/download/2026.11.5/festival-2026.11.5.nvda-addon",
+	"description": "Festival speech synthesizer for NVDA with English and Czech voices (kal, ked, czech_ph, czech_dita, czech_krb, czech_machac). Festival runs in a 64-bit helper process (festhost64.exe), so a crash in Festival cannot close NVDA; speech is played by NVDA with pitch, audio ducking and exact index reporting. More voices can be downloaded from festvox.org (NVDA menu, Tools, Festival voices). NVDA 2026.1 and later.",
+	"sha256": "dd7d2a1ab210e5b97a7a1422ba6e3d22e202a823318681d3b77e16fa2bbf52c1",
+	"addonVersionName": "2026.11.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Jiri Holzinger",
+	"sourceURL": "https://github.com/jiriholzinger-crypto/Festival-NVDA",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794166729000,
+	"translations": []
+}
