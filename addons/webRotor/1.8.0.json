@@ -1,0 +1,39 @@
+{
+	"addonId": "webRotor",
+	"displayName": "Web Rotor",
+	"URL": "https://github.com/9Peera/web-rotor/releases/download/v1.8.0/webRotor-1.8.0.nvda-addon",
+	"description": "Adds a VoiceOver-style rotor for quickly exploring the elements of a web page in browse mode. Supports 23 categories (headings, links, landmarks, buttons, form fields, tables, lists, graphics, paragraphs and more). Press Control+Windows+U to open it: focus starts in the list, type a letter to jump to an item starting with it, use Up/Down arrow to move through items, Left/Right arrow to change category, or Shift+Tab to reach the category tabs. Alt+letter jumps straight to a category and works with both English and Thai keyboard layouts. Enter or Space moves to the chosen element. A settings dialog (Control+Windows+Shift+U or the NVDA Preferences menu) lets you choose the interface language (English or Thai), choose and reorder categories, optionally open Web Rotor with NVDA+F7 instead of the Elements List, and optionally block other NVDA commands while the rotor is open (experimental).",
+	"sha256": "556a360ec4a950dcadc543f6090c70eb346229e19c184fb7a7f69a85a512324d",
+	"addonVersionName": "1.8.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 8,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Peera Pilarit",
+	"sourceURL": "https://github.com/9Peera/web-rotor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/9Peera/web-rotor",
+	"changelog": "Version 1.8.0: the filter box has been removed. Focus now starts in the list; type a letter to jump to an item. Each category is now a tab (Shift+Tab from the list). Alt+letter category shortcuts now work with both English and Thai keyboard layouts at the same time.",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+	"submissionTime": 1794150792000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "Web Rotor (เว็บโรเตอร์)",
+			"description": "เพิ่มเมนูหมุน (Rotor) แบบ VoiceOver สำหรับสำรวจองค์ประกอบของหน้าเว็บในโหมดเรียกดูอย่างรวดเร็ว รองรับ 23 หมวด (หัวเรื่อง ลิงก์ จุดสังเกต ปุ่ม ช่องแบบฟอร์ม ตาราง รายการ กราฟิก ย่อหน้า ฯลฯ) เรียกใช้ด้วย Control+Windows+U เปิดขึ้นมาโฟกัสอยู่ที่รายการทันที พิมพ์ตัวอักษรเพื่อกระโดดไปยังรายการที่ขึ้นต้นด้วยตัวนั้น ลูกศรขึ้น/ลงเพื่อเลื่อนดูรายการ ลูกศรซ้าย/ขวาเพื่อเปลี่ยนหมวดหมู่ หรือ Shift+Tab ไปยังแท็บหมวดหมู่ กด Alt+ตัวอักษรเพื่อกระโดดตรงไปยังหมวดหมู่ (ใช้ได้ทั้งแป้นอังกฤษและแป้นไทย) และ Enter หรือ Space เพื่อไปยังตำแหน่งนั้น มีหน้าตั้งค่า (Control+Windows+Shift+U หรือเมนู Preferences) ให้เลือกภาษา (อังกฤษ/ไทย) เลือกและจัดลำดับหมวดหมู่ ตัวเลือกให้ NVDA+F7 เปิดเว็บโรเตอร์แทน Elements List และตัวเลือกทดลองบล็อกปุ่มลัดอื่นของ NVDA ชั่วคราว",
+			"changelog": "เวอร์ชัน 1.8.0: เอาช่องกรองออก เปิดขึ้นมาโฟกัสอยู่ที่รายการทันที พิมพ์ตัวอักษรเพื่อกระโดดไปยังรายการ แต่ละหมวดหมู่เป็นแท็บ (กด Shift+Tab จากรายการ) และคีย์ลัด Alt+ตัวอักษรใช้ได้ทั้งแป้นอังกฤษและแป้นไทยพร้อมกัน"
+		}
+	]
+}
