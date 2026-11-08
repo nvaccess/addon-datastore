@@ -1,0 +1,51 @@
+{
+	"addonId": "WordBridge",
+	"displayName": "WordBridge",
+	"URL": "https://github.com/coseeing/WordBridge/releases/download/2026.11.1/WordBridge-2026.11.1.nvda-addon",
+	"description": "helps users identify and correct homophone-based typos in Chinese.",
+	"sha256": "2fd9511520dc8efa16cbb93cc6db84ab50e0218f279b22a1867b756810e8812a",
+	"addonVersionName": "2026.11.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Coseeing Community Contributors, Woody Tseng",
+	"sourceURL": "https://github.com/coseeing/WordBridge",
+	"license": "GPL v2",
+	"homepage": "https://github.com/coseeing/WordBridge",
+	"changelog": "Update models to GPT-6.1 and Claude 5.5; load the model list from a configurable URL; explain why a Coseeing correction failed",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794100516000,
+	"translations": [
+		{
+			"language": "zh_HK",
+			"displayName": "WordBridge",
+			"description": "協助使用者識別並修正中文同音錯別字。",
+			"changelog": "更新至 GPT-6.1 與 Claude 5.5；模型清單可從自訂網址載入；Coseeing 校正失敗時說明原因"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "WordBridge",
+			"description": "協助使用者辨識並修正中文同音錯字。",
+			"changelog": "更新至 GPT-6.1 與 Claude 5.5；模型清單可從自訂網址載入；Coseeing 校正失敗時說明原因"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "WordBridge",
+			"description": "帮助用户识别并修正中文同音错别字。",
+			"changelog": "更新至 GPT-6.1 和 Claude 5.5；模型列表可从自定义网址加载；Coseeing 校正失败时说明原因"
+		}
+	]
+}
