@@ -1,0 +1,39 @@
+{
+	"addonId": "webRotor",
+	"displayName": "Web Rotor",
+	"URL": "https://github.com/9Peera/web-rotor/releases/download/v1.8.1/webRotor-1.8.1.nvda-addon",
+	"description": "Adds a VoiceOver-style rotor for quickly exploring the elements of a web page in browse mode. Supports 23 categories (headings, links, landmarks, buttons, form fields, tables, lists, graphics, paragraphs and more). Press Control+Windows+U to open it: focus starts in the list, type a letter to jump to an item starting with it, use Up/Down arrow to move through items, Left/Right arrow to change category, or Shift+Tab to reach the category tabs. Alt+letter jumps straight to a category and works with both English and Thai keyboard layouts. Enter or Space moves to the chosen element. A settings dialog (Control+Windows+Shift+U or the NVDA Preferences menu) lets you choose the interface language (English or Thai), choose and reorder categories, optionally open Web Rotor with NVDA+F7 instead of the Elements List, and optionally block other NVDA commands while the rotor is open.",
+	"sha256": "c19c8cb517e99812fa4743fc43b117c9201d224de52cf855f9e5e34ca34b867a",
+	"addonVersionName": "1.8.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 8,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Peera Pilarit",
+	"sourceURL": "https://github.com/9Peera/web-rotor",
+	"license": "GPL v2",
+	"homepage": "https://github.com/9Peera/web-rotor",
+	"changelog": "Version 1.8.1: fixed NVDA going silent and the rotor not responding to any key when the option to block other NVDA commands was enabled; that option now blocks only NVDA commands and lets the keys used in Web Rotor through, and it no longer applies to the settings dialog, which also froze. The category list in the settings dialog now reports whether each category is checked. Pressing Control+Windows+U or NVDA+F7 while the rotor is already open now returns focus to it. Version 1.8.0: the filter box has been removed, focus starts in the list, each category is a tab, and Alt+letter shortcuts work with both English and Thai keyboard layouts.",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+	"submissionTime": 1794199530000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "Web Rotor (เว็บโรเตอร์)",
+			"description": "เพิ่มเมนูหมุน (Rotor) แบบ VoiceOver สำหรับสำรวจองค์ประกอบของหน้าเว็บในโหมดเรียกดูอย่างรวดเร็ว รองรับ 23 หมวด (หัวเรื่อง ลิงก์ จุดสังเกต ปุ่ม ช่องแบบฟอร์ม ตาราง รายการ กราฟิก ย่อหน้า ฯลฯ) เรียกใช้ด้วย Control+Windows+U เปิดขึ้นมาโฟกัสอยู่ที่รายการทันที พิมพ์ตัวอักษรเพื่อกระโดดไปยังรายการที่ขึ้นต้นด้วยตัวนั้น ลูกศรขึ้น/ลงเพื่อเลื่อนดูรายการ ลูกศรซ้าย/ขวาเพื่อเปลี่ยนหมวดหมู่ หรือ Shift+Tab ไปยังแท็บหมวดหมู่ กด Alt+ตัวอักษรเพื่อกระโดดตรงไปยังหมวดหมู่ (ใช้ได้ทั้งแป้นอังกฤษและแป้นไทย) และ Enter หรือ Space เพื่อไปยังตำแหน่งนั้น มีหน้าตั้งค่า (Control+Windows+Shift+U หรือเมนู Preferences) ให้เลือกภาษา (อังกฤษ/ไทย) เลือกและจัดลำดับหมวดหมู่ ตัวเลือกให้ NVDA+F7 เปิดเว็บโรเตอร์แทน Elements List และตัวเลือกบล็อกคำสั่งอื่นของ NVDA ชั่วคราว",
+			"changelog": "เวอร์ชัน 1.8.1: แก้ปัญหา NVDA เงียบและหน้าต่างโรเตอร์ไม่ตอบสนองทุกปุ่ม เมื่อเปิดตัวเลือกบล็อกคำสั่งอื่นของ NVDA ตอนนี้ตัวเลือกนี้บล็อกเฉพาะคำสั่งของ NVDA และปล่อยปุ่มที่ใช้ในเว็บโรเตอร์ผ่าน และไม่มีผลกับหน้าตั้งค่าแล้ว (เดิมหน้าตั้งค่าค้างด้วย) รายการหมวดหมู่ในหน้าตั้งค่าอ่านสถานะเลือก/ไม่เลือกได้แล้ว กด Control+Windows+U หรือ NVDA+F7 ขณะโรเตอร์เปิดอยู่จะย้ายโฟกัสกลับไปที่โรเตอร์ เวอร์ชัน 1.8.0: เอาช่องกรองออก โฟกัสเริ่มที่รายการ แต่ละหมวดหมู่เป็นแท็บ และคีย์ลัด Alt+ตัวอักษรใช้ได้ทั้งแป้นอังกฤษและไทย"
+		}
+	]
+}
