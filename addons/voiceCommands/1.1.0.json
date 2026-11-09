@@ -47,5 +47,47 @@
 			"description": "Ejecuta comandos NVDA y acciones comunes de Windows mediante la voz, utilizando el motor de reconocimiento de voz sin conexión(Vosk o sherpa-onnx); tu voz nunca sale de tu ordenador. Puedes decir cualquier comando desde el cuadro de diálogo Gestos de Entrada, comandos integrados de Windows como \"mostrar el escritorio\", \"mostrar la barra de tareas \" o \"pegar\", y tus propios comandos para abrir un programa, archivo, carpeta o dirección web, o pulsar una combinación de teclas. Se descarga un modelo de voz para tu idioma NVDA la primera vez que lo uses. Asigna teclas en el cuadro de diálogo Gestos de Entrada, en la categoría Comandos de Voz.",
 			"changelog": "\n- Ahora la escucha se detiene sola cuando te quedas en silencio durante aproximadamente un segundo después de hablar, como si hubieras pulsado de nuevo la tecla. Se puede desactivar con un nuevo comando de alternancia (Gestos de Entrada o menú Herramientas); la duración del silencio es el ajuste silence_seconds.\n- Se añadió un submenú de Comandos de Voz en el menú Herramientas de NVDA con los comandos del complemento.\n- Se corrigió un error que impedía que los comandos de Windows que usan una letra, como Windows+I, funcionaran en distribuciones de teclado como la Q turca.\n- Se añadió la opción \"Enseñar la última frase hablada\" (menú Herramientas o gesto asignable) para guardar lo que el reconocedor escuchó como una frase de un comando, para nombres que el modelo de voz no reconoce.\n- Se añadió la importación y exportación de frases en el editor de frases, con los atajos Ctrl+I, Ctrl+E y Ctrl+S. La importación solo agrega; no se modifica ni se elimina nada de lo que ya tengas.\n- Ahora, los archivos de frases pueden nombrar un comando por su texto (\"descripción - categoría\") en lugar de por su ID. Las entradas de los comandos que aún no están disponibles se conservan hasta que aparezcan.\n- La lista de frases escuchadas en el diálogo enseñar ahora informa su estado marcado en todas las versiones de NVDA.\n- Los mensajes ya no se interrumpen por la función de voz de enfoque de NVDA después de que se cierra un cuadro de diálogo, el selector de archivos o un menú.\n- Se añadió un conjunto de frases cortas en turco que se pueden importar desde el editor de frases.\n- Se añadió un segundo motor de voz, sherpa-onnx, con un modelo turco (turkish-stt) y modelos para inglés, francés, alemán, español y ruso. Es el predeterminado para NVDA turco que no tiene instalado el modelo Vosk.\n- Se añadió el diálogo del modelo de voz al menú Herramientas para seleccionar, descargar y gestionar el modelo de voz. Sustituye a las entradas independientes de descarga y de carpeta del modelo.\n- El texto de los modelos sherpa se ajusta con mayor precisión a los comandos, por lo que una frase inventada ya no ejecuta un comando incorrecto; NVDA reproduce lo que ha oído. Una o dos palabras que coinciden exactamente con un comando lo ejecutan igualmente, y se abre una lista cuando coinciden con varios.\n"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/51e3a596032a561e81cd5f885e1ec4bec54a5d6646a74c6c11e825aea5dee63e",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "51e3a596032a561e81cd5f885e1ec4bec54a5d6646a74c6c11e825aea5dee63e",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000000020300",
+					"raw_md5": "db222179a49fb2cdc2ac77c69777b0f6"
+				},
+				"first_submission_date": 1794190621,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794190623,
+				"last_submission_date": 1794190621,
+				"md5": "589caa4f47ffed0630d41a33ee8242eb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "97c6a9a30b2e57b2a73750630464d7e48f8a87b0",
+				"sha256": "51e3a596032a561e81cd5f885e1ec4bec54a5d6646a74c6c11e825aea5dee63e",
+				"size": 8448538,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
