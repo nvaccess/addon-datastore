@@ -239,5 +239,47 @@
 			"description": "A handy resource monitor to report CPU load, memory usage, disk usage status and more.",
 			"changelog": "* Added memory and disk size notation setting to configure how NVDA announces RAM and disk usage/size unit (default is alternative (kb/mb/...).\n* Improved reliability of add-on settings upgrade process.\n* The default value for wi-fi notification setting is now 'both' instead of 'off'."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/c7a37c27b083a4178c912dd855d607057805234cf18273a1e1f8bdf336d77ea4",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "c7a37c27b083a4178c912dd855d607057805234cf18273a1e1f8bdf336d77ea4",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0e0d0400",
+					"raw_md5": "004c384037bd0159b24e1af39b27767f"
+				},
+				"first_submission_date": 1794206059,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794206060,
+				"last_submission_date": 1794206059,
+				"md5": "d7b537b20b0e5cec9d75878e587e83dd",
+				"names": [],
+				"reputation": 0,
+				"sha1": "1c7745516e8f208f7c397a68805790452778dcbc",
+				"sha256": "c7a37c27b083a4178c912dd855d607057805234cf18273a1e1f8bdf336d77ea4",
+				"size": 354260,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
