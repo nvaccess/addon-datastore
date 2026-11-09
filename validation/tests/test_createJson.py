@@ -2,12 +2,13 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-import unittest
+import json
 import os
 import shutil
-import json
+import unittest
 from unittest.mock import NonCallableMock, patch
-from _validate import createJson, addonManifest, manifestLoader
+
+from _validate import addonManifest, createJson, manifestLoader
 
 TOP_DIR = os.path.abspath(os.path.dirname(__file__))
 SOURCE_DIR = os.path.dirname(TOP_DIR)
@@ -158,13 +159,13 @@ class Test_main(unittest.TestCase):
 
 	def test_downloadValidationFailure(self):
 		with (
+			self.assertRaisesRegex(ValueError, "Unable to download and validate the add-on"),
 			patch("sys.argv", self._buildArgv()),
 			patch("_validate.createJson.downloadAndValidateAddon", return_value=["download error"]),
 			patch("_validate.createJson.outputErrors") as mock_outputErrors,
 			patch("_validate.createJson.getAddonManifest") as mock_getManifest,
 		):
-			with self.assertRaisesRegex(ValueError, "Unable to download and validate the add-on"):
-				createJson.main()
+			createJson.main()
 
 		mock_outputErrors.assert_called_once_with(["download error"], None)
 		mock_getManifest.assert_not_called()
