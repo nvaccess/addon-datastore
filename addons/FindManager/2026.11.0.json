@@ -1,0 +1,113 @@
+{
+	"addonId": "FindManager",
+	"displayName": "FindManager",
+	"URL": "https://github.com/chaichaimee/FindManager/releases/download/2026.11.0/FindManager-v2026.11.0.nvda-addon",
+	"description": "Replaces Ctrl+F in web pages and editable documents with a dialog that lists every matching line with its line number, for normal and regular expression searches, and announces the match count. Enter moves to the chosen match. NVDA+Ctrl+F searches the navigator object and moves the review cursor. F3 and Shift+F3 jump to the next and previous match. Search terms can be remembered, pinned, deleted or cleared. Everything runs locally; no network requests.\n\nHot Keys:\nCtrl+F : Open the Find dialog\nNVDA+Ctrl+F : Find in the navigator object and move the review cursor\nF3 : Jump to the next match of the last search\nShift+F3 : Jump to the previous match of the last search",
+	"sha256": "1fea08f10e06e7e13f900aaf65f6f11a12f36320784906df760fc3fd7490e992",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/FindManager",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/FindManager",
+	"changelog": "Renamed to FindManager. Added F3 and Shift+F3 to jump to the next and previous match of the last search. Added a context menu in the search field to pin, delete and clear saved search terms. Includes the Ctrl+F find dialog with a match list, line numbers, normal and regex search, and remembered search terms.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794290951000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "FindManager",
+			"description": "Ersetzt Strg+F in Webseiten und bearbeitbaren Dokumenten durch einen Dialog, der jede übereinstimmende Zeile mit ihrer Zeilennummer für normale und reguläre Ausdrücke auflistet und die Anzahl der Treffer ansagt. Die Eingabetaste springt zum ausgewählten Treffer. NVDA+Strg+F durchsucht das Navigator-Objekt und bewegt den Betrachtungscursor. F3 und Umschalt+F3 springen zum nächsten bzw. vorherigen Treffer. Suchbegriffe können gespeichert, angeheftet, gelöscht oder zurückgesetzt werden. Alles läuft lokal ab; keine Netzwerkanfragen.\n\nTastenkombinationen:\nStrg+F : Suchen-Dialog öffnen\nNVDA+Strg+F : Im Navigator-Objekt suchen und den Betrachtungscursor bewegen\nF3 : Zum nächsten Treffer der letzten Suche springen\nUmschalt+F3 : Zum vorherigen Treffer der letzten Suche springen"
+		},
+		{
+			"language": "it",
+			"displayName": "FindManager",
+			"description": "Web sayfalarında ve düzenlenebilir belgelerde Ctrl+F kısayolunun yerini, normal ve düzenli ifade aramaları için eşleşen her satırı satır numarasıyla birlikte listeleyen ve eşleşme sayısını seslendiren bir diyalog penceresi alır. Enter tuşu seçilen eşleşmeye gider. NVDA+Ctrl+F, gezgin nesnesinde arama yapar ve inceleme imlecini taşır. F3 ve Shift+F3 sonraki ve önceki eşleşmeye atlar. Arama terimleri hatırlanabilir, sabitlenebilir, silinebilir veya temizlenebilir. Her şey yerel olarak çalışır; ağ isteği yapılmaz.\n\nKısayol Tuşları:\nCtrl+F : Bul diyalog penceresini açar\nNVDA+Ctrl+F : Gezgin nesnesinde bulur ve inceleme imlecini taşır\nF3 : Son aramanın sonraki eşleşmesine gider\nShift+F3 : Son aramanın önceki eşleşmesine gider"
+		},
+		{
+			"language": "hi",
+			"displayName": "फाइंड मैनेजर",
+			"description": "वेब पेजों और संपादन योग्य दस्तावेजों में Ctrl+F को एक संवाद बॉक्स से बदलता है जो सामान्य और रेगुलर एक्सप्रेशन खोजों के लिए प्रत्येक मिलान करने वाली पंक्ति को उसकी पंक्ति संख्या के साथ सूचीबद्ध करता है, और मिलान संख्या की घोषणा करता है। एंटर दबाने से चुने गए मिलान पर पहुंचा जाता है। NVDA+Ctrl+F नेविगेटर ऑब्जेक्ट में खोजता है और समीक्षा कर्सर को ले जाता है। F3 और Shift+F3 अगले और पिछले मिलान पर जाते हैं। खोज शब्दों को याद रखा जा सकता है, पिन किया जा सकता है, हटाया जा सकता है या साफ किया जा सकता है। सब कुछ स्थानीय रूप से चलता है; कोई नेटवर्क अनुरोध नहीं।\n\nहॉट कीज़:\nCtrl+F : फाइंड संवाद खोलें\nNVDA+Ctrl+F : नेविगेटर ऑब्जेक्ट में खोजें और समीक्षा कर्सर को ले जाएं\nF3 : पिछली खोज के अगले मिलान पर जाएं\nShift+F3 : पिछली खोज के पिछले मिलान पर जाएं"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Gerenciador de Localização",
+			"description": "Substitui Ctrl+F em páginas da web e documentos editáveis por um diálogo que lista cada linha correspondente com seu número de linha, para pesquisas normais e com expressões regulares, e anuncia a contagem de correspondências. Enter vai para a correspondência escolhida. NVDA+Ctrl+F pesquisa o objeto navegador e move o cursor de revisão. F3 e Shift+F3 saltam para a próxima e anterior correspondência. Os termos de pesquisa podem ser lembrados, fixados, excluídos ou limpos. Tudo é executado localmente; sem solicitações de rede.\n\nTeclas de Atalho:\nCtrl+F : Abrir o diálogo de localização\nNVDA+Ctrl+F : Localizar no objeto navegador e mover o cursor de revisão\nF3 : Saltar para a próxima correspondência da última pesquisa\nShift+F3 : Saltar para a correspondência anterior da última pesquisa"
+		},
+		{
+			"language": "ru",
+			"displayName": "Менеджер поиска",
+			"description": "Заменяет Ctrl+F на веб-страницах и в редактируемых документах диалоговым окном, которое отображает каждую совпадающую строку с ее номером для обычного поиска и поиска по регулярным выражениям, а также объявляет количество совпадений. Клавиша Enter перемещает к выбранному совпадению. NVDA+Ctrl+F выполняет поиск в объекте навигатора и перемещает курсор просмотра. F3 и Shift+F3 переходят к следующему и предыдущему совпадению. Поисковые запросы можно запоминать, закреплять, удалять или очищать. Все работает локально; сетевые запросы не используются.\n\nГорячие клавиши:\nCtrl+F: Открыть диалог поиска\nNVDA+Ctrl+F: Поиск в объекте навигатора и перемещение курсора просмотра\nF3: Перейти к следующему совпадению последнего поиска\nShift+F3: Перейти к предыдущему совпадению последнего поиска"
+		},
+		{
+			"language": "fr",
+			"displayName": "Gestionnaire de recherche",
+			"description": "Remplace Ctrl+F dans les pages web et les documents éditables par une boîte de dialogue qui liste chaque ligne correspondante avec son numéro de ligne, pour les recherches normales et par expressions régulières, et annonce le nombre de correspondances. Entrée déplace vers la correspondance choisie. NVDA+Ctrl+F recherche dans l'objet navigateur et déplace le curseur de révision. F3 et Maj+F3 sautent à la correspondance suivante et précédente. Les termes de recherche peuvent être mémorisés, épinglés, supprimés ou effacés. Tout s'exécute localement ; aucune requête réseau.\n\nRaccourcis clavier :\nCtrl+F : Ouvrir la boîte de dialogue de recherche\nNVDA+Ctrl+F : Rechercher dans l'objet navigateur et déplacer le curseur de révision\nF3 : Aller à la correspondance suivante de la dernière recherche\nMaj+F3 : Aller à la correspondance précédente de la dernière recherche"
+		},
+		{
+			"language": "ja",
+			"displayName": "検索マネージャー",
+			"description": "ウェブページや編集可能な文書でのCtrl+Fキーを、通常検索および正規表現検索に対応し、一致する行をその行番号とともに一覧表示するダイアログに置き換え、一致数を読み上げます。Enterキーで選択した一致箇所に移動します。NVDA+Ctrl+Fキーは、オブジェクトナビゲーター内を検索し、レビューカーソルを移動します。F3キーとShift+F3キーで、次および前の一致箇所にジャンプします。検索語は記憶、ピン留め、削除、クリアが可能です。すべての処理はローカルで実行され、ネットワーク通信は行われません。\n\nホットキー:\nCtrl+F : 検索ダイアログを開く\nNVDA+Ctrl+F : オブジェクトナビゲーター内を検索してレビューカーソルを移動する\nF3 : 前回の検索の次の一致箇所にジャンプする\nShift+F3 : 前回の検索の前の一致箇所にジャンプする"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "尋找管理員",
+			"description": "取代網頁與可編輯文件中的 Ctrl+F，改用對話框列出每個符合的行及其行號（支援一般與正規表示式搜尋），並會朗讀符合的數量。按下 Enter 鍵可移動至所選的符合項目。NVDA+Ctrl+F 可搜尋導覽物件並移動檢閱游標。F3 與 Shift+F3 可跳至下一個或上一個符合項目。搜尋詞可被記憶、釘選、刪除或清除。所有功能皆在本機執行，不會發送網路請求。\n\n熱鍵：\nCtrl+F：開啟「尋找」對話框\nNVDA+Ctrl+F：在導覽物件中尋找並移動檢閱游標\nF3：跳至上一次搜尋的下一個符合項目\nShift+F3：跳至上一次搜尋的前一個符合項目"
+		},
+		{
+			"language": "id",
+			"displayName": "Pengelola Cari",
+			"description": "Mengganti Ctrl+F di halaman web dan dokumen yang dapat diedit dengan sebuah dialog yang mencantumkan setiap baris yang cocok beserta nomor barisnya, untuk pencarian normal dan ekspresi reguler, serta mengumumkan jumlah kecocokan. Enter berpindah ke kecocokan yang dipilih. NVDA+Ctrl+F mencari objek navigator dan memindahkan kursor peninjauan. F3 dan Shift+F3 melompat ke kecocokan berikutnya dan sebelumnya. Istilah pencarian dapat diingat, disematkan, dihapus, atau dibersihkan. Semuanya berjalan secara lokal; tidak ada permintaan jaringan.\n\nTombol Pintas:\nCtrl+F : Buka dialog Cari\nNVDA+Ctrl+F : Cari di objek navigator dan pindahkan kursor peninjauan\nF3 : Lompat ke kecocokan berikutnya dari pencarian terakhir\nShift+F3 : Lompat ke kecocokan sebelumnya dari pencarian terakhir"
+		},
+		{
+			"language": "th",
+			"displayName": "FindManager",
+			"description": "แทนที่ Ctrl+F ในหน้าเว็บและเอกสารที่แก้ไขได้ด้วยกล่องโต้ตอบที่แสดงรายการบรรทัดที่ตรงกันทั้งหมดพร้อมหมายเลขบรรทัด สำหรับการค้นหาแบบปกติและแบบนิพจน์ Regular Expression พร้อมทั้งประกาศจำนวนที่พบ กด Enter เพื่อไปยังตำแหน่งที่ตรงกัน NVDA+Ctrl+F ค้นหาในวัตถุตัวนำทางและย้ายเคอร์เซอร์ทบทวน F3 และ Shift+F3 ข้ามไปยังผลลัพธ์ถัดไปและก่อนหน้า สามารถบันทึก ตรึง ลบ หรือล้างคำค้นหาได้ ทุกอย่างทำงานในเครื่องโดยไม่มีการร้องขอผ่านเครือข่าย\n\nคีย์ลัด:\nCtrl+F : เปิดกล่องโต้ตอบค้นหา\nNVDA+Ctrl+F : ค้นหาในวัตถุตัวนำทางและย้ายเคอร์เซอร์ทบทวน\nF3 : ข้ามไปยังผลลัพธ์ที่ตรงกันถัดไปของการค้นหาล่าสุด\nShift+F3 : ข้ามไปยังผลลัพธ์ที่ตรงกันก่อนหน้าของการค้นหาล่าสุด"
+		},
+		{
+			"language": "ko",
+			"displayName": "찾기 관리자",
+			"description": "웹페이지 및 편집 가능한 문서에서 Ctrl+F를 일반 및 정규식 검색을 지원하고 일치하는 모든 행을 행 번호와 함께 목록으로 표시하며 일치 항목 수를 음성으로 안내하는 대화상자로 대체합니다. Enter를 누르면 선택한 일치 항목으로 이동합니다. NVDA+Ctrl+F는 네비게이터 객체를 검색하고 리뷰 커서를 이동합니다. F3과 Shift+F3은 다음 및 이전 일치 항목으로 이동합니다. 검색어는 기억, 고정, 삭제 또는 지울 수 있습니다. 모든 작업은 로컬에서 실행되며 네트워크 요청이 없습니다.\n\n단축키:\nCtrl+F : 찾기 대화상자 열기\nNVDA+Ctrl+F : 네비게이터 객체에서 찾기 및 리뷰 커서 이동\nF3 : 마지막 검색의 다음 일치 항목으로 이동\nShift+F3 : 마지막 검색의 이전 일치 항목으로 이동"
+		},
+		{
+			"language": "uk",
+			"displayName": "Менеджер пошуку",
+			"description": "Замінює Ctrl+F на вебсторінках і в редагованих документах на діалогове вікно, яке показує список усіх рядків, що збігаються, разом із їхніми номерами для звичайного пошуку та пошуку за регулярними виразами, а також оголошує кількість збігів. Клавіша Enter переміщує до вибраного збігу. NVDA+Ctrl+F шукає в об'єкті навігатора та переміщує курсор огляду. F3 та Shift+F3 переходять до наступного та попереднього збігу. Пошукові терміни можна запам'ятовувати, закріплювати, видаляти або очищати. Усе працює локально; жодних мережевих запитів.\n\nГарячі клавіші:\nCtrl+F: Відкрити діалогове вікно пошуку\nNVDA+Ctrl+F: Шукати в об'єкті навігатора та перемістити курсор огляду\nF3: Пере перейти до наступного збігу за останнім пошуком\nShift+F3: Пере перейти до попереднього збігу за останнім пошуком"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "查找管理器",
+			"description": "替换网页和可编辑文档中的 Ctrl+F，弹出一个对话框，列出所有匹配行及其行号，支持普通搜索和正则表达式搜索，并播报匹配项数量。按回车键可移动到所选的匹配项。按 NVDA+Ctrl+F 可搜索导航对象并移动查看光标。按 F3 和 Shift+F3 可跳转到下一个和上一个匹配项。搜索词可以被记住、固定、删除或清除。所有操作均在本地运行，无网络请求。\n\n热键：\nCtrl+F：打开查找对话框\nNVDA+Ctrl+F：在导航对象中查找并移动查看光标\nF3：跳转到上一次搜索的下一个匹配项\nShift+F3：跳转到上一次搜索的上一个匹配项"
+		},
+		{
+			"language": "ar",
+			"displayName": "مدير البحث",
+			"description": "يحل محل Ctrl+F في صفحات الويب والمستندات القابلة للتحرير بوارديس يعرض كل سطر متطابق مع رقم السطر الخاص به، لعمليات البحث العادية وتعبيرات البحث النمطية، ويعلن عن عدد المطابقات. مفتاح الإدخال Enter ينتقل إلى المطابقة المحددة. NVDA+Ctrl+F يبحث في كائن المستكشف وينقل مؤشر الاستعراض. المفتاحان F3 وShift+F3 للانتقال إلى المطابقة التالية والسابقة. يمكن تذكر مصطلحات البحث أو تثبيتها أو حذفها أو مسحها. كل شيء يعمل محلياً؛ بدون أي طلبات شبكة.\n\nاختصارات لوحة المفاتيح:\nCtrl+F : فتح مربع حوار البحث\nNVDA+Ctrl+F : البحث في كائن المستكشف وتحريك مؤشر الاستعراض\nF3 : الانتقال إلى المطابقة التالية لآخر بحث\nShift+F3 : الانتقال إلى المطابقة السابقة لآخر بحث"
+		},
+		{
+			"language": "es",
+			"displayName": "Administrador de búsqueda",
+			"description": "Sustituye Ctrl+F en páginas web y documentos editables por un diálogo que lista cada línea coincidente con su número de línea, para búsquedas normales y con expresiones regulares, y anuncia el número de coincidencias. Intro se desplaza a la coincidencia elegida. NVDA+Ctrl+F busca en el objeto navegador y mueve el cursor de revisión. F3 y Mayús+F3 saltan a la coincidencia siguiente y anterior. Los términos de búsqueda se pueden recordar, fijar, eliminar o borrar. Todo se ejecuta localmente; sin peticiones de red.\n\nTeclas rápidas:\nCtrl+F : Abrir el diálogo de búsqueda\nNVDA+Ctrl+F : Buscar en el objeto navegador y mover el cursor de revisión\nF3 : Saltar a la coincidencia siguiente de la última búsqueda\nMayús+F3 : Saltar a la coincidencia anterior de la última búsqueda"
+		},
+		{
+			"language": "en",
+			"displayName": "FindManager",
+			"description": "Replaces Ctrl+F in web pages and editable documents with a dialog that lists every matching line with its line number, for normal and regular expression searches, and announces the match count. Enter moves to the chosen match. NVDA+Ctrl+F searches the navigator object and moves the review cursor. F3 and Shift+F3 jump to the next and previous match. Search terms can be remembered, pinned, deleted or cleared. Everything runs locally; no network requests.\n\nHot Keys:\nCtrl+F : Open the Find dialog\nNVDA+Ctrl+F : Find in the navigator object and move the review cursor\nF3 : Jump to the next match of the last search\nShift+F3 : Jump to the previous match of the last search"
+		}
+	]
+}
