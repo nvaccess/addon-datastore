@@ -47,5 +47,47 @@
 			"description": "A powerful productivity tool to launch websites, files, folders, and programs quickly using a dedicated layer.\n\tFeatures include background execution, verbosity levels, command line arguments, and settings import/export.",
 			"changelog": "\n- Version 2026.7:\n  - Find and run items: The list that F1 or H opens, with browsing turned on, now has a filter. Press Enter to run the selected item.\n  - Stop a running item: Press NVDA+E while an item or a test is running.\n  - Variables: Use the date, the time, the clipboard, the selected text, or the file or folder from File Explorer in snippets, website addresses and program arguments. If your existing text has a variable name in braces, it is now replaced, so check such items after updating.\n  - Several apps for one item, and the app name is filled in for you.\n  - Reorder items with Ctrl+Up and Ctrl+Down, filter the settings list, and turn items off without deleting them.\n  - Choose whether items speak their name when they run.\n  - Run programs as administrator, and record keystrokes with a button.\n  - Importing can merge new items into your own, and pasting a snippet keeps what you had copied.\n  - Fixed: Keystrokes such as Shift+End now select text, editing keeps an item in its place, and shortcuts with the Windows key work after NVDA restarts. Programs such as notepad work again when another add-on changes how NVDA finds programs, and Move down uses Alt+W.\n- Version 2026.6:\n  - Browse your items: In Instant Access mode, use the arrow keys or Tab to hear your items and Enter to run one; F1 or H lists them all. Turn it on in the add-on settings.\n  - Safer settings: A damaged or missing settings file can be restored from the backup, and your items are no longer lost when something goes wrong.\n  - One item at a time: Items now run one after another, so text and keystrokes no longer get mixed up.\n  - NVDA commands finish before the next action starts, and \"Stop on error\" now works correctly.\n  - Keys like Shift or Ctrl are no longer left pressed if typing fails.\n  - Batch files in folders with spaces in their names now run correctly.\n  - What you typed in a dialog is kept if saving fails.\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0e0800",
+					"raw_md5": "62a64580f674153c4c4a1f07287abaec"
+				},
+				"first_submission_date": 1794300240,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794300242,
+				"last_submission_date": 1794300240,
+				"md5": "cdff0ce0076e854c7ad9943b19fcadbb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3cbb3ca3a7c0a82a9f59f32cf1cce82effbb8ab4",
+				"sha256": "eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+				"size": 161807,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
