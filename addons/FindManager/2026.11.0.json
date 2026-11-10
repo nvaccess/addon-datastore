@@ -1,0 +1,800 @@
+{
+	"addonId": "FindManager",
+	"displayName": "FindManager",
+	"URL": "https://github.com/chaichaimee/FindManager/releases/download/2026.11.0/FindManager-v2026.11.0.nvda-addon",
+	"description": "Replaces Ctrl+F in web pages and editable documents with a dialog that lists every matching line with its line number, for normal and regular expression searches, and announces the match count. Enter moves to the chosen match. NVDA+Ctrl+F searches the navigator object and moves the review cursor. F3 and Shift+F3 jump to the next and previous match. Search terms can be remembered, pinned, deleted or cleared. Everything runs locally; no network requests.\n\nHot Keys:\nCtrl+F : Open the Find dialog\nNVDA+Ctrl+F : Find in the navigator object and move the review cursor\nF3 : Jump to the next match of the last search\nShift+F3 : Jump to the previous match of the last search",
+	"sha256": "1fea08f10e06e7e13f900aaf65f6f11a12f36320784906df760fc3fd7490e992",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/FindManager",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/FindManager",
+	"changelog": "Renamed to FindManager. Added F3 and Shift+F3 to jump to the next and previous match of the last search. Added a context menu in the search field to pin, delete and clear saved search terms. Includes the Ctrl+F find dialog with a match list, line numbers, normal and regex search, and remembered search terms.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794290951000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "FindManager",
+			"description": "Ersetzt Strg+F in Webseiten und bearbeitbaren Dokumenten durch einen Dialog, der jede übereinstimmende Zeile mit ihrer Zeilennummer für normale und reguläre Ausdrücke auflistet und die Anzahl der Treffer ansagt. Die Eingabetaste springt zum ausgewählten Treffer. NVDA+Strg+F durchsucht das Navigator-Objekt und bewegt den Betrachtungscursor. F3 und Umschalt+F3 springen zum nächsten bzw. vorherigen Treffer. Suchbegriffe können gespeichert, angeheftet, gelöscht oder zurückgesetzt werden. Alles läuft lokal ab; keine Netzwerkanfragen.\n\nTastenkombinationen:\nStrg+F : Suchen-Dialog öffnen\nNVDA+Strg+F : Im Navigator-Objekt suchen und den Betrachtungscursor bewegen\nF3 : Zum nächsten Treffer der letzten Suche springen\nUmschalt+F3 : Zum vorherigen Treffer der letzten Suche springen"
+		},
+		{
+			"language": "it",
+			"displayName": "FindManager",
+			"description": "Web sayfalarında ve düzenlenebilir belgelerde Ctrl+F kısayolunun yerini, normal ve düzenli ifade aramaları için eşleşen her satırı satır numarasıyla birlikte listeleyen ve eşleşme sayısını seslendiren bir diyalog penceresi alır. Enter tuşu seçilen eşleşmeye gider. NVDA+Ctrl+F, gezgin nesnesinde arama yapar ve inceleme imlecini taşır. F3 ve Shift+F3 sonraki ve önceki eşleşmeye atlar. Arama terimleri hatırlanabilir, sabitlenebilir, silinebilir veya temizlenebilir. Her şey yerel olarak çalışır; ağ isteği yapılmaz.\n\nKısayol Tuşları:\nCtrl+F : Bul diyalog penceresini açar\nNVDA+Ctrl+F : Gezgin nesnesinde bulur ve inceleme imlecini taşır\nF3 : Son aramanın sonraki eşleşmesine gider\nShift+F3 : Son aramanın önceki eşleşmesine gider"
+		},
+		{
+			"language": "hi",
+			"displayName": "फाइंड मैनेजर",
+			"description": "वेब पेजों और संपादन योग्य दस्तावेजों में Ctrl+F को एक संवाद बॉक्स से बदलता है जो सामान्य और रेगुलर एक्सप्रेशन खोजों के लिए प्रत्येक मिलान करने वाली पंक्ति को उसकी पंक्ति संख्या के साथ सूचीबद्ध करता है, और मिलान संख्या की घोषणा करता है। एंटर दबाने से चुने गए मिलान पर पहुंचा जाता है। NVDA+Ctrl+F नेविगेटर ऑब्जेक्ट में खोजता है और समीक्षा कर्सर को ले जाता है। F3 और Shift+F3 अगले और पिछले मिलान पर जाते हैं। खोज शब्दों को याद रखा जा सकता है, पिन किया जा सकता है, हटाया जा सकता है या साफ किया जा सकता है। सब कुछ स्थानीय रूप से चलता है; कोई नेटवर्क अनुरोध नहीं।\n\nहॉट कीज़:\nCtrl+F : फाइंड संवाद खोलें\nNVDA+Ctrl+F : नेविगेटर ऑब्जेक्ट में खोजें और समीक्षा कर्सर को ले जाएं\nF3 : पिछली खोज के अगले मिलान पर जाएं\nShift+F3 : पिछली खोज के पिछले मिलान पर जाएं"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Gerenciador de Localização",
+			"description": "Substitui Ctrl+F em páginas da web e documentos editáveis por um diálogo que lista cada linha correspondente com seu número de linha, para pesquisas normais e com expressões regulares, e anuncia a contagem de correspondências. Enter vai para a correspondência escolhida. NVDA+Ctrl+F pesquisa o objeto navegador e move o cursor de revisão. F3 e Shift+F3 saltam para a próxima e anterior correspondência. Os termos de pesquisa podem ser lembrados, fixados, excluídos ou limpos. Tudo é executado localmente; sem solicitações de rede.\n\nTeclas de Atalho:\nCtrl+F : Abrir o diálogo de localização\nNVDA+Ctrl+F : Localizar no objeto navegador e mover o cursor de revisão\nF3 : Saltar para a próxima correspondência da última pesquisa\nShift+F3 : Saltar para a correspondência anterior da última pesquisa"
+		},
+		{
+			"language": "ru",
+			"displayName": "Менеджер поиска",
+			"description": "Заменяет Ctrl+F на веб-страницах и в редактируемых документах диалоговым окном, которое отображает каждую совпадающую строку с ее номером для обычного поиска и поиска по регулярным выражениям, а также объявляет количество совпадений. Клавиша Enter перемещает к выбранному совпадению. NVDA+Ctrl+F выполняет поиск в объекте навигатора и перемещает курсор просмотра. F3 и Shift+F3 переходят к следующему и предыдущему совпадению. Поисковые запросы можно запоминать, закреплять, удалять или очищать. Все работает локально; сетевые запросы не используются.\n\nГорячие клавиши:\nCtrl+F: Открыть диалог поиска\nNVDA+Ctrl+F: Поиск в объекте навигатора и перемещение курсора просмотра\nF3: Перейти к следующему совпадению последнего поиска\nShift+F3: Перейти к предыдущему совпадению последнего поиска"
+		},
+		{
+			"language": "fr",
+			"displayName": "Gestionnaire de recherche",
+			"description": "Remplace Ctrl+F dans les pages web et les documents éditables par une boîte de dialogue qui liste chaque ligne correspondante avec son numéro de ligne, pour les recherches normales et par expressions régulières, et annonce le nombre de correspondances. Entrée déplace vers la correspondance choisie. NVDA+Ctrl+F recherche dans l'objet navigateur et déplace le curseur de révision. F3 et Maj+F3 sautent à la correspondance suivante et précédente. Les termes de recherche peuvent être mémorisés, épinglés, supprimés ou effacés. Tout s'exécute localement ; aucune requête réseau.\n\nRaccourcis clavier :\nCtrl+F : Ouvrir la boîte de dialogue de recherche\nNVDA+Ctrl+F : Rechercher dans l'objet navigateur et déplacer le curseur de révision\nF3 : Aller à la correspondance suivante de la dernière recherche\nMaj+F3 : Aller à la correspondance précédente de la dernière recherche"
+		},
+		{
+			"language": "ja",
+			"displayName": "検索マネージャー",
+			"description": "ウェブページや編集可能な文書でのCtrl+Fキーを、通常検索および正規表現検索に対応し、一致する行をその行番号とともに一覧表示するダイアログに置き換え、一致数を読み上げます。Enterキーで選択した一致箇所に移動します。NVDA+Ctrl+Fキーは、オブジェクトナビゲーター内を検索し、レビューカーソルを移動します。F3キーとShift+F3キーで、次および前の一致箇所にジャンプします。検索語は記憶、ピン留め、削除、クリアが可能です。すべての処理はローカルで実行され、ネットワーク通信は行われません。\n\nホットキー:\nCtrl+F : 検索ダイアログを開く\nNVDA+Ctrl+F : オブジェクトナビゲーター内を検索してレビューカーソルを移動する\nF3 : 前回の検索の次の一致箇所にジャンプする\nShift+F3 : 前回の検索の前の一致箇所にジャンプする"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "尋找管理員",
+			"description": "取代網頁與可編輯文件中的 Ctrl+F，改用對話框列出每個符合的行及其行號（支援一般與正規表示式搜尋），並會朗讀符合的數量。按下 Enter 鍵可移動至所選的符合項目。NVDA+Ctrl+F 可搜尋導覽物件並移動檢閱游標。F3 與 Shift+F3 可跳至下一個或上一個符合項目。搜尋詞可被記憶、釘選、刪除或清除。所有功能皆在本機執行，不會發送網路請求。\n\n熱鍵：\nCtrl+F：開啟「尋找」對話框\nNVDA+Ctrl+F：在導覽物件中尋找並移動檢閱游標\nF3：跳至上一次搜尋的下一個符合項目\nShift+F3：跳至上一次搜尋的前一個符合項目"
+		},
+		{
+			"language": "id",
+			"displayName": "Pengelola Cari",
+			"description": "Mengganti Ctrl+F di halaman web dan dokumen yang dapat diedit dengan sebuah dialog yang mencantumkan setiap baris yang cocok beserta nomor barisnya, untuk pencarian normal dan ekspresi reguler, serta mengumumkan jumlah kecocokan. Enter berpindah ke kecocokan yang dipilih. NVDA+Ctrl+F mencari objek navigator dan memindahkan kursor peninjauan. F3 dan Shift+F3 melompat ke kecocokan berikutnya dan sebelumnya. Istilah pencarian dapat diingat, disematkan, dihapus, atau dibersihkan. Semuanya berjalan secara lokal; tidak ada permintaan jaringan.\n\nTombol Pintas:\nCtrl+F : Buka dialog Cari\nNVDA+Ctrl+F : Cari di objek navigator dan pindahkan kursor peninjauan\nF3 : Lompat ke kecocokan berikutnya dari pencarian terakhir\nShift+F3 : Lompat ke kecocokan sebelumnya dari pencarian terakhir"
+		},
+		{
+			"language": "th",
+			"displayName": "FindManager",
+			"description": "แทนที่ Ctrl+F ในหน้าเว็บและเอกสารที่แก้ไขได้ด้วยกล่องโต้ตอบที่แสดงรายการบรรทัดที่ตรงกันทั้งหมดพร้อมหมายเลขบรรทัด สำหรับการค้นหาแบบปกติและแบบนิพจน์ Regular Expression พร้อมทั้งประกาศจำนวนที่พบ กด Enter เพื่อไปยังตำแหน่งที่ตรงกัน NVDA+Ctrl+F ค้นหาในวัตถุตัวนำทางและย้ายเคอร์เซอร์ทบทวน F3 และ Shift+F3 ข้ามไปยังผลลัพธ์ถัดไปและก่อนหน้า สามารถบันทึก ตรึง ลบ หรือล้างคำค้นหาได้ ทุกอย่างทำงานในเครื่องโดยไม่มีการร้องขอผ่านเครือข่าย\n\nคีย์ลัด:\nCtrl+F : เปิดกล่องโต้ตอบค้นหา\nNVDA+Ctrl+F : ค้นหาในวัตถุตัวนำทางและย้ายเคอร์เซอร์ทบทวน\nF3 : ข้ามไปยังผลลัพธ์ที่ตรงกันถัดไปของการค้นหาล่าสุด\nShift+F3 : ข้ามไปยังผลลัพธ์ที่ตรงกันก่อนหน้าของการค้นหาล่าสุด"
+		},
+		{
+			"language": "ko",
+			"displayName": "찾기 관리자",
+			"description": "웹페이지 및 편집 가능한 문서에서 Ctrl+F를 일반 및 정규식 검색을 지원하고 일치하는 모든 행을 행 번호와 함께 목록으로 표시하며 일치 항목 수를 음성으로 안내하는 대화상자로 대체합니다. Enter를 누르면 선택한 일치 항목으로 이동합니다. NVDA+Ctrl+F는 네비게이터 객체를 검색하고 리뷰 커서를 이동합니다. F3과 Shift+F3은 다음 및 이전 일치 항목으로 이동합니다. 검색어는 기억, 고정, 삭제 또는 지울 수 있습니다. 모든 작업은 로컬에서 실행되며 네트워크 요청이 없습니다.\n\n단축키:\nCtrl+F : 찾기 대화상자 열기\nNVDA+Ctrl+F : 네비게이터 객체에서 찾기 및 리뷰 커서 이동\nF3 : 마지막 검색의 다음 일치 항목으로 이동\nShift+F3 : 마지막 검색의 이전 일치 항목으로 이동"
+		},
+		{
+			"language": "uk",
+			"displayName": "Менеджер пошуку",
+			"description": "Замінює Ctrl+F на вебсторінках і в редагованих документах на діалогове вікно, яке показує список усіх рядків, що збігаються, разом із їхніми номерами для звичайного пошуку та пошуку за регулярними виразами, а також оголошує кількість збігів. Клавіша Enter переміщує до вибраного збігу. NVDA+Ctrl+F шукає в об'єкті навігатора та переміщує курсор огляду. F3 та Shift+F3 переходять до наступного та попереднього збігу. Пошукові терміни можна запам'ятовувати, закріплювати, видаляти або очищати. Усе працює локально; жодних мережевих запитів.\n\nГарячі клавіші:\nCtrl+F: Відкрити діалогове вікно пошуку\nNVDA+Ctrl+F: Шукати в об'єкті навігатора та перемістити курсор огляду\nF3: Пере перейти до наступного збігу за останнім пошуком\nShift+F3: Пере перейти до попереднього збігу за останнім пошуком"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "查找管理器",
+			"description": "替换网页和可编辑文档中的 Ctrl+F，弹出一个对话框，列出所有匹配行及其行号，支持普通搜索和正则表达式搜索，并播报匹配项数量。按回车键可移动到所选的匹配项。按 NVDA+Ctrl+F 可搜索导航对象并移动查看光标。按 F3 和 Shift+F3 可跳转到下一个和上一个匹配项。搜索词可以被记住、固定、删除或清除。所有操作均在本地运行，无网络请求。\n\n热键：\nCtrl+F：打开查找对话框\nNVDA+Ctrl+F：在导航对象中查找并移动查看光标\nF3：跳转到上一次搜索的下一个匹配项\nShift+F3：跳转到上一次搜索的上一个匹配项"
+		},
+		{
+			"language": "ar",
+			"displayName": "مدير البحث",
+			"description": "يحل محل Ctrl+F في صفحات الويب والمستندات القابلة للتحرير بوارديس يعرض كل سطر متطابق مع رقم السطر الخاص به، لعمليات البحث العادية وتعبيرات البحث النمطية، ويعلن عن عدد المطابقات. مفتاح الإدخال Enter ينتقل إلى المطابقة المحددة. NVDA+Ctrl+F يبحث في كائن المستكشف وينقل مؤشر الاستعراض. المفتاحان F3 وShift+F3 للانتقال إلى المطابقة التالية والسابقة. يمكن تذكر مصطلحات البحث أو تثبيتها أو حذفها أو مسحها. كل شيء يعمل محلياً؛ بدون أي طلبات شبكة.\n\nاختصارات لوحة المفاتيح:\nCtrl+F : فتح مربع حوار البحث\nNVDA+Ctrl+F : البحث في كائن المستكشف وتحريك مؤشر الاستعراض\nF3 : الانتقال إلى المطابقة التالية لآخر بحث\nShift+F3 : الانتقال إلى المطابقة السابقة لآخر بحث"
+		},
+		{
+			"language": "es",
+			"displayName": "Administrador de búsqueda",
+			"description": "Sustituye Ctrl+F en páginas web y documentos editables por un diálogo que lista cada línea coincidente con su número de línea, para búsquedas normales y con expresiones regulares, y anuncia el número de coincidencias. Intro se desplaza a la coincidencia elegida. NVDA+Ctrl+F busca en el objeto navegador y mueve el cursor de revisión. F3 y Mayús+F3 saltan a la coincidencia siguiente y anterior. Los términos de búsqueda se pueden recordar, fijar, eliminar o borrar. Todo se ejecuta localmente; sin peticiones de red.\n\nTeclas rápidas:\nCtrl+F : Abrir el diálogo de búsqueda\nNVDA+Ctrl+F : Buscar en el objeto navegador y mover el cursor de revisión\nF3 : Saltar a la coincidencia siguiente de la última búsqueda\nMayús+F3 : Saltar a la coincidencia anterior de la última búsqueda"
+		},
+		{
+			"language": "en",
+			"displayName": "FindManager",
+			"description": "Replaces Ctrl+F in web pages and editable documents with a dialog that lists every matching line with its line number, for normal and regular expression searches, and announces the match count. Enter moves to the chosen match. NVDA+Ctrl+F searches the navigator object and moves the review cursor. F3 and Shift+F3 jump to the next and previous match. Search terms can be remembered, pinned, deleted or cleared. Everything runs locally; no network requests.\n\nHot Keys:\nCtrl+F : Open the Find dialog\nNVDA+Ctrl+F : Find in the navigator object and move the review cursor\nF3 : Jump to the next match of the last search\nShift+F3 : Jump to the previous match of the last search"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1fea08f10e06e7e13f900aaf65f6f11a12f36320784906df760fc3fd7490e992",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1fea08f10e06e7e13f900aaf65f6f11a12f36320784906df760fc3fd7490e992",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"html": 6,
+						"ini": 17,
+						"md": 1,
+						"mo": 16,
+						"po": 16,
+						"py": 6,
+						"txt": 1
+					},
+					"file_types": {
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 57
+					},
+					"highest_datetime": "2026-11-08 17:15:42",
+					"lowest_datetime": "2026-11-07 13:58:30",
+					"num_children": 105,
+					"type": "ZIP",
+					"uncompressed_size": 367416
+				},
+				"contenthash": "ce67d7f49a61dc6073c0f40ff2dfc9d7",
+				"filecondis": {
+					"dhash": "00001c1c1d180000",
+					"raw_md5": "8f50a12498ff88116e9ae9e5858fe785"
+				},
+				"first_submission_date": 1794134151,
+				"last_analysis_date": 1794134151,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261108",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261107",
+						"engine_version": "6.839",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261107",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261108",
+						"engine_version": "3.30.3.10716",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261108",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261108",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261107",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20261108",
+						"engine_version": "261108-02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261108",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261108",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261107",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261107",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261107",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261108",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261108",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261103",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261108",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261108",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261108",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20261104",
+						"engine_version": "4.0.297",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261108",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261108",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261108",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261108",
+						"engine_version": "GD:27.46640AVA:64.32195",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261108",
+						"engine_version": "1794124852",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261108",
+						"engine_version": "1.0.261.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261108",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261107",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261108",
+						"engine_version": "14.91.61400",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261108",
+						"engine_version": "14.91.61400",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261108",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261107",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261108",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261108",
+						"engine_version": "3.1.0.296",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261106",
+						"engine_version": "4.0.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261108",
+						"engine_version": "1.2.0.16534",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261108",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261108",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261108",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261108",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261107",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261108",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261107",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261107",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261107",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261108",
+						"engine_version": "3.7.2.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261107",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261108",
+						"engine_version": "2026-11-08.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261108",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261107",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261108",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261108",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261108",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261108",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261107",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261108",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261108",
+						"engine_version": "2026-11-08.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261106",
+						"engine_version": "9.5.1334",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261107",
+						"engine_version": "39097",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261106",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261106",
+						"engine_version": "2.0.0.5725",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261107",
+						"engine_version": "6.28-119762362",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261108",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261107",
+						"engine_version": "9d10c90:9d10c90:5022543:5022543",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261108",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 66
+				},
+				"last_modification_date": 1794290959,
+				"last_submission_date": 1794290954,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "9dc5a5c0fb4fb465503b294cdd252793",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "32ce4c7d48d2b68a24ed7b550a6bc551851e6082",
+				"sha256": "1fea08f10e06e7e13f900aaf65f6f11a12f36320784906df760fc3fd7490e992",
+				"size": 138508,
+				"ssdeep": "3072:YyvfhWswp0OqPM1JYyPh6X3u1tyBRBSOrutaF:Y+Ax0xPsey4O1oRwOn",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 2,
+				"tlsh": "T1C1D3E026823F1447F0E792BF7BDA1016F268400DD26FAA470B9994D54C8E7BD0FDD686",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6d46ed82154f3f11a42cf9f552a389cb"
+			}
+		]
+	}
+}
