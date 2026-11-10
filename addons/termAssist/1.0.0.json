@@ -1,0 +1,39 @@
+{
+	"addonId": "termAssist",
+	"displayName": "TermAssist — terminal assistant",
+	"URL": "https://github.com/9Peera/termAssist/releases/download/v1.0.0/termAssist-1.0.0.nvda-addon",
+	"description": "Makes PuTTY, KiTTY, Windows Terminal and the Windows console easier to use with NVDA when working on Linux servers: sounds when a command finishes or shows an error, output viewer and line review, editing the command line in a normal edit field, writing multi-line text and files, muting typed characters at password prompts, nano/vim/pager announcements, and a searchable Thai/English Ubuntu command library with 13 service packs (Docker, Nginx, MySQL, PostgreSQL and more) that can pick values from the server. Press NVDA+Control+Shift+P in a terminal, then H for help.",
+	"sha256": "e11d3678d3b2abdb8475efe0f922c41fd87707e3176bd75e399df4c59c704da7",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Peera Pilarit",
+	"sourceURL": "https://github.com/9Peera/termAssist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/9Peera/termAssist",
+	"changelog": "First public release: terminal reading, command tracking, input and editing tools, bilingual command library, 13 service packs, full-screen program announcements, Thai and English interface.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794277636000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "TermAssist — ผู้ช่วยเทอร์มินัล",
+			"description": "ช่วยให้ใช้ PuTTY, KiTTY, Windows Terminal และคอนโซลของ Windows กับ NVDA ได้สะดวกขึ้นเมื่อทำงานกับเซิร์ฟเวอร์ Linux: มีเสียงเมื่อคำสั่งเสร็จหรือมีข้อผิดพลาด หน้าต่างดูผลลัพธ์และอ่านบรรทัดย้อนหลัง แก้ไขคำสั่งในช่องแก้ไขปกติ เขียนข้อความหลายบรรทัดและเขียนไฟล์ ปิดเสียงตัวอักษรที่พิมพ์เมื่อป้อนรหัสผ่าน บอกสถานะ nano/vim/โหมดอ่านทีละหน้า และคลังคำสั่ง Ubuntu สองภาษาที่ค้นหาได้ พร้อมชุดบริการ 13 ชุด (Docker, Nginx, MySQL, PostgreSQL และอื่น ๆ) ที่เลือกค่าจากเซิร์ฟเวอร์ได้ กด NVDA+Control+Shift+P ในเทอร์มินัล แล้วกด H เพื่อดูความช่วยเหลือ",
+			"changelog": "รุ่นเผยแพร่แรก: อ่านเทอร์มินัล ติดตามคำสั่ง เครื่องมือกรอกและแก้ไข คลังคำสั่งสองภาษา ชุดบริการ 13 ชุด บอกสถานะโปรแกรมเต็มจอ หน้าจอภาษาไทยและอังกฤษ"
+		}
+	]
+}
