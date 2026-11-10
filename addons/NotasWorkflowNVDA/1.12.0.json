@@ -1,0 +1,39 @@
+{
+	"addonId": "NotasWorkflowNVDA",
+	"displayName": "Notas Workflow NVDA - Notes in status lanes",
+	"URL": "https://github.com/weliveiracruz/NotasWorkflowNVDA/releases/download/v1.12.0/NotasWorkflowNVDA-1.12.0.nvda-addon",
+	"description": "Notes and tasks in status lanes (To do, In progress, Blocked, Done), notebooks and folders, formatted content, automatic saving and search, all from the keyboard with spoken feedback and fast with tens of thousands of notes. Shortcuts: NVDA+Alt+N opens the window, NVDA+Alt+F creates a note and NVDA+Alt+B searches the notes. Notes stay on this computer, can be imported and exported, and can be saved as Word, Markdown or HTML documents.",
+	"sha256": "9782aae48770d19afaaf2845afb61e0fff46c53ea8044c79cced79719d0b6587",
+	"addonVersionName": "1.12.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 12,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Wellington Cruz",
+	"sourceURL": "https://github.com/weliveiracruz/NotasWorkflowNVDA/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/weliveiracruz/NotasWorkflowNVDA",
+	"changelog": "Deleting a folder or a notebook now deletes everything in it: a notebook takes its notes with it; a folder takes its notebooks, their notes and the notes put directly in it. The question says how much will be deleted. The main window no longer has the buttons Update the task status, Move to and Delete: Alt+Shift+Arrows, Delete and the note window do it.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794271990000,
+	"translations": [
+		{
+			"language": "pt_BR",
+			"displayName": "Notas Workflow NVDA - Folhas em raias de status",
+			"description": "Folhas e tarefas em raias de status (A fazer, Em andamento, Bloqueada, Concluída), cadernos e pastas, conteúdo com formatação, salvamento automático e busca, tudo pelo teclado, com respostas faladas e rápido com dezenas de milhares de folhas. Atalhos: NVDA+Alt+N abre a janela, NVDA+Alt+F cria uma folha e NVDA+Alt+B busca nas folhas. As folhas ficam neste computador, podem ser importadas e exportadas e podem ser salvas como documentos do Word, Markdown ou HTML.",
+			"changelog": "Excluir uma pasta ou um caderno agora exclui tudo o que está dentro: o caderno leva as folhas dele; a pasta leva os cadernos dela, as folhas desses cadernos e as folhas guardadas direto nela. A pergunta diz quanto será excluído. A janela principal não tem mais os botões Atualizar o status da tarefa, Mover para e Excluir: Alt+Shift+Setas, Delete e a janela da folha fazem isso."
+		}
+	]
+}
