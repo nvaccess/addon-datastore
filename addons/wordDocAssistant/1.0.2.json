@@ -1,0 +1,728 @@
+{
+	"addonId": "wordDocAssistant",
+	"displayName": "Word Document Assistant",
+	"URL": "https://github.com/9Peera/word-document-assistant/releases/download/v1.0.2/wordDocAssistant-1.0.2.nvda-addon",
+	"description": "Read, manage and format Microsoft Word documents from the keyboard with NVDA. Works with Microsoft 365, Office 2021 and Office 2019.\nMain features:\n- Document navigation mode (NVDA+Shift+F8): move to spelling errors (S), grammar issues (G), comments (C), footnotes (F), endnotes (E), tracked changes (R), headings (O), tables (U), pictures (M), links (K), cross-references (X), citations (I), bookmarks (B), fields (D), language problems (L) and accessibility problems (A); Shift with the letter moves back, arrow keys move and change the type, Home and End go to the first and last item.\n- When you leave the mode the caret stays at the last item, ready to edit; Enter leaves and lets you type straight away, Backspace returns to where you started.\n- Item lists (Space) with each detail in its own field: author, date, status, commented text, comment and replies; copy the text or all details.\n- Actions (Applications key): replace misspelled words, reply to, edit, resolve and delete comments, insert, edit, delete and convert footnotes and endnotes, accept and reject tracked changes one by one, by author or all.\n- Track Changes status and toggle (T, Shift+T), note at the caret (N), page, section and heading (P), document summary (Q).\n- Accessibility checker (A): pictures without alternative text, tables without header rows, skipped heading levels, empty paragraphs used for spacing, unclear link text, missing title and wrong language, each with a fix. AI writes alternative text for pictures and tables in Thai or English for you to check.\n- Structure: promote and demote headings, header rows and alternative text of tables, edit and check links, add bookmarks, update fields, insert cross-references, citations and the bibliography.\n- Optional AI suggestions: proofread a paragraph or the selection (W), suggestions for a misspelled word, drafts of comment replies. AI tools (V): summaries, rewriting in official, polite, concise or easy-to-read style, Thai and English translation, comment summary and consistency check, always shown next to the original before anything changes.\n- Thai tools (Y): Thai and Arabic digits, Buddhist and Christian era years.\n- Offline Thai word check (Z): commonly misspelled words with the right form, and words not in open word lists (PyThaiNLP CC0, optional LibreOffice NECTEC dictionary), with suggestions, my words, an organization list, and an optional weekly check for new word lists.\n- Format the document with AI (J): Thai official letter, memo, announcement or order, meeting minutes, business and general letters, report, article, academic paper and an accessible easy-to-read format. AI only decides the role of each paragraph; the words are not changed, you check a preview and Control+Z undoes it.\n- AI services: Google Gemini (free tier), Anthropic Claude and OpenAI (paid), OpenAI compatible services, or Ollama on this computer for confidential documents. Guided API key setup (NVDA+Control+Shift+F8) with automatic model choice.\n- Every change is one Word undo step. API keys are encrypted for the Windows user. Keys work with Thai and English keyboard layouts. Thai and English interface.",
+	"sha256": "812822f28a73e6b7244a46305fc31d9d4da9f9f9ef828a391d479f9259b275fd",
+	"addonVersionName": "1.0.2",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Peera Pilarit",
+	"sourceURL": "https://github.com/9Peera/word-document-assistant/tree/v1.0.2",
+	"license": "GPL v2",
+	"homepage": "https://github.com/9Peera/word-document-assistant",
+	"changelog": "Much faster in long documents, and NVDA no longer freezes: spelling, grammar and the Thai word check read the document in large parts, language problems, empty paragraphs and headings are found with Word's own search, and every search stops at a time limit (10 seconds by default, in the settings) with what it found so far. Moving between types with the arrow keys no longer searches the whole document.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794289700000,
+	"translations": [
+		{
+			"language": "th",
+			"displayName": "ผู้ช่วยเอกสาร Word",
+			"description": "อ่าน จัดการ และจัดรูปแบบเอกสาร Microsoft Word ด้วยแป้นพิมพ์ร่วมกับ NVDA ใช้ได้กับ Microsoft 365, Office 2021 และ Office 2019\nความสามารถหลัก:\n- โหมดนำทางเอกสาร (NVDA+Shift+F8): ไปยังคำสะกดผิด (S) ปัญหาไวยากรณ์ (G) ข้อคิดเห็น (C) เชิงอรรถ (F) endnote (E) การแก้ไขที่ติดตาม (R) หัวเรื่อง (O) ตาราง (U) รูปภาพ (M) ลิงก์ (K) การอ้างอิงโยง (X) การอ้างอิง (I) บุ๊กมาร์ก (B) ฟิลด์ (D) ปัญหาการกำหนดภาษา (L) และปัญหาการเข้าถึงได้ (A) กด Shift พร้อมตัวอักษรเพื่อย้อนกลับ ใช้ลูกศรเพื่อเลื่อนและเปลี่ยนชนิด Home และ End ไปยังรายการแรกและรายการสุดท้าย\n- เมื่อออกจากโหมด เคอร์เซอร์อยู่ที่รายการล่าสุด พร้อมแก้ไขได้ทันที Enter ออกจากโหมดแล้วพิมพ์ได้เลย Backspace กลับไปตำแหน่งเดิม\n- หน้าต่างรายการ (Space) แยกรายละเอียดแต่ละส่วนเป็นช่อง ได้แก่ ผู้เขียน วันที่ สถานะ ข้อความที่แสดงความคิดเห็น ข้อคิดเห็น และการตอบกลับ คัดลอกข้อความหรือรายละเอียดทั้งหมดได้\n- เมนูคำสั่ง (ปุ่ม Applications): แทนที่คำสะกดผิด ตอบกลับ แก้ไข ทำเครื่องหมายว่าแก้ไขแล้ว และลบข้อคิดเห็น แทรก แก้ไข ลบ และแปลงเชิงอรรถกับ endnote ยอมรับและปฏิเสธการแก้ไขทีละรายการ ตามผู้เขียน หรือทั้งหมด\n- สถานะและการเปิดปิด Track Changes (T, Shift+T) อ่านเชิงอรรถที่เคอร์เซอร์ (N) หน้า ส่วน และหัวเรื่อง (P) สรุปเอกสาร (Q)\n- ตัวตรวจการเข้าถึงได้ (A): รูปภาพที่ไม่มีข้อความแสดงแทน ตารางที่ไม่มีแถวหัวตาราง หัวเรื่องข้ามระดับ ย่อหน้าว่างที่ใช้เว้นระยะ ข้อความลิงก์ที่ไม่ชัดเจน เอกสารไม่มีชื่อเรื่อง และการกำหนดภาษาผิด พร้อมคำสั่งแก้ไขแต่ละรายการ AI ช่วยเขียนข้อความแสดงแทนของรูปภาพและตารางเป็นภาษาไทยหรืออังกฤษให้ตรวจก่อนบันทึก\n- โครงสร้างเอกสาร: เลื่อนระดับหัวเรื่อง กำหนดแถวหัวตารางและข้อความแสดงแทนของตาราง แก้ไขและตรวจลิงก์ เพิ่มบุ๊กมาร์ก อัปเดตฟิลด์ แทรกการอ้างอิงโยง การอ้างอิง และบรรณานุกรม\n- คำแนะนำจาก AI (เลือกเปิดใช้ได้): ตรวจย่อหน้าหรือข้อความที่เลือก (W) แนะนำคำที่ถูกต้องสำหรับคำสะกดผิด ร่างคำตอบข้อคิดเห็น เครื่องมือ AI (V): สรุป เรียบเรียงใหม่เป็นภาษาราชการ สุภาพ กระชับ หรือภาษาง่าย แปลไทยและอังกฤษ สรุปข้อคิดเห็น และตรวจความสอดคล้อง โดยแสดงเทียบกับข้อความเดิมก่อนเปลี่ยนทุกครั้ง\n- เครื่องมือภาษาไทย (Y): เลขไทยและเลขอารบิก ปี พ.ศ. และ ค.ศ.\n- ตรวจคำภาษาไทยแบบออฟไลน์ (Z): คำที่มักเขียนผิดพร้อมคำที่ถูกต้อง และคำที่ไม่มีในรายการคำแบบเปิด (PyThaiNLP CC0 และพจนานุกรม NECTEC ของ LibreOffice ที่เลือกเพิ่มได้) พร้อมคำแนะนำ รายการคำของฉัน รายการขององค์กร และเลือกให้ตรวจหารายการคำรุ่นใหม่ทุกสัปดาห์ได้\n- จัดรูปแบบเอกสารด้วย AI (J): หนังสือราชการภายนอก บันทึกข้อความ ประกาศ / คำสั่ง รายงานการประชุม จดหมายทางการและจดหมายทั่วไป รายงาน บทความ บทความวิชาการ และเอกสารอ่านง่ายเข้าถึงได้ AI ระบุเพียงหน้าที่ของแต่ละย่อหน้า ถ้อยคำไม่ถูกเปลี่ยน ตรวจตัวอย่างได้ก่อน และกด Control+Z เพื่อย้อนกลับ\n- บริการ AI: Google Gemini (ใช้ฟรีได้) Anthropic Claude และ OpenAI (เสียเงิน) บริการที่รองรับรูปแบบ OpenAI หรือ Ollama ในเครื่องสำหรับเอกสารลับ มีหน้าตั้งค่า API key แบบนำทีละขั้น (NVDA+Control+Shift+F8) และเลือกโมเดลอัตโนมัติ\n- การเปลี่ยนแปลงแต่ละครั้งเป็นการเลิกทำหนึ่งขั้นของ Word API key เข้ารหัสไว้สำหรับผู้ใช้ Windows คีย์ใช้ได้ทั้งแป้นพิมพ์ไทยและอังกฤษ หน้าจอภาษาไทยและอังกฤษ",
+			"changelog": "เร็วขึ้นมากในเอกสารยาว และ NVDA ไม่ค้างอีก: คำสะกดผิด ไวยากรณ์ และการตรวจคำภาษาไทยอ่านเอกสารเป็นส่วนใหญ่ ๆ ปัญหาการกำหนดภาษา ย่อหน้าว่าง และหัวเรื่องใช้การค้นหาของ Word เอง และทุกการค้นหาหยุดเมื่อครบเวลาที่กำหนด (ค่าเริ่มต้น 10 วินาที ปรับได้ในการตั้งค่า) พร้อมรายการที่พบแล้ว การเปลี่ยนชนิดด้วยลูกศรไม่ค้นทั้งเอกสารอีกต่อไป"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/812822f28a73e6b7244a46305fc31d9d4da9f9f9ef828a391d479f9259b275fd",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "812822f28a73e6b7244a46305fc31d9d4da9f9f9ef828a391d479f9259b275fd",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 2,
+						"ini": 2,
+						"md": 3,
+						"mo": 1,
+						"po": 1,
+						"py": 18,
+						"tsv": 1,
+						"txt": 1,
+						"wav": 4
+					},
+					"file_types": {
+						"HTML": 2,
+						"unknown": 32
+					},
+					"highest_datetime": "2026-11-10 05:38:40",
+					"lowest_datetime": "2026-11-10 05:37:12",
+					"num_children": 34,
+					"type": "ZIP",
+					"uncompressed_size": 2255313
+				},
+				"contenthash": "3b05ab2e94afb98b71296ba72c70084a",
+				"filecondis": {
+					"dhash": "0000000004070600",
+					"raw_md5": "5cd0b90e8512f9c4dbe24b79a3cfabb9"
+				},
+				"first_submission_date": 1794289704,
+				"last_analysis_date": 1794289704,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261110",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261107",
+						"engine_version": "6.839",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261109",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261110",
+						"engine_version": "3.30.3.10716",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261110",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261110",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261109",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast-Mobile": {
+						"category": "undetected",
+						"engine_name": "Avast-Mobile",
+						"engine_update": "20261109",
+						"engine_version": "261109-00",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261110",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261109",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261109",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261109",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261109",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261110",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261109",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20251219",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261103",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261110",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261110",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261110",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20261109",
+						"engine_version": "4.0.297",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261110",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261110",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261110",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261110",
+						"engine_version": "GD:27.46663AVA:64.32206",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261110",
+						"engine_version": "1794286849",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261110",
+						"engine_version": "1.0.262.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261109",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261109",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261110",
+						"engine_version": "14.91.61418",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261110",
+						"engine_version": "14.91.61418",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261110",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261109",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261110",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261110",
+						"engine_version": "3.1.0.301",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261109",
+						"engine_version": "4.0.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261110",
+						"engine_version": "1.2.0.16534",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261110",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261110",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261110",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261110",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261109",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261110",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261110",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261109",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261109",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261110",
+						"engine_version": "3.7.2.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261110",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261110",
+						"engine_version": "2026-11-10.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261110",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261109",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261110",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261110",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261110",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261109",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261109",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261110",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261110",
+						"engine_version": "2026-11-10.01",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261109",
+						"engine_version": "9.5.1335",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261109",
+						"engine_version": "39100",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261109",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261109",
+						"engine_version": "2.0.0.5726",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261110",
+						"engine_version": "6.28-119762370",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261110",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261109",
+						"engine_version": "c1c2a8f:c1c2a8f:0b37565:0b37565",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261110",
+						"engine_version": "v0.1.4",
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 66
+				},
+				"last_modification_date": 1794289784,
+				"last_submission_date": 1794289704,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "be110de5d91b84d962e2a9889a5fb627",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "53ddcf42a1364dc62a6fb4ac14c20807ee8c2c4e",
+				"sha256": "812822f28a73e6b7244a46305fc31d9d4da9f9f9ef828a391d479f9259b275fd",
+				"size": 517887,
+				"ssdeep": "12288:7bC8BWbpWBy3k5b28cONOwtqKRkj4XWIbZGQZiX0:7e8lb28fOeo4XRe0",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T188B423B278158D67EA9B147CAC1D5E40B6D716C1A7B468CB3BBC287C8C6BB74720DC84",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "6836748e41236040f3d6789ef0cc2df2"
+			}
+		]
+	}
+}
