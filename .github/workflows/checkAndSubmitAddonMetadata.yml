@@ -87,11 +87,66 @@ jobs:
           name: addonMetadata
           path: ${{ steps.getAddonFileName.outputs.result }}
 
+  ensureDiscussionExists:
+    runs-on: ubuntu-latest
+    needs: [getAddonId]
+    permissions:
+      contents: write
+      discussions: write
+    outputs:
+      discussionExists: ${{ steps.checkDiscussion.outputs.jqStatus }}
+      discussionId: ${{ steps.createDiscussion.outputs.discussion-id }}
+      reviewUrl: ${{ steps.getReviewUrl.outputs.reviewUrl }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v7
+      with:
+        ref: ${{ env.branchName }}
+    - name: Check if discussion for this add-on exists
+      id: checkDiscussion
+      run: |
+        jqStatus=$(jq 'has("${{ needs.getAddonId.outputs.addonId }}")' discussions.json)
+        echo "jqStatus=$jqStatus" >> "$GITHUB_OUTPUT"
+        echo "$jqStatus"
+    - name: Get add-on name and version
+      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
+      id: getAddonNameAndVersion
+      uses: actions/github-script@v9
+      with:
+        script: |
+          const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
+          const addonFilename = "${{ needs.getAddonId.outputs.addonFileName }}"
+          setAddonNameAndVersion({core}, addonFilename)
+    - name: Create discussion for add-on id
+      id: createDiscussion
+      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
+      uses: nvdaes/build-discussion@v2
+      with:
+        category-position: 1
+        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
+        body: |
+          Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
+          Please use threaded replies and avoid email responses.
+          You can specify the add-on version and other info that you consider relevant in your comment.
+          Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
+    - name: Get review URL and add it to job footer
+      id: getReviewUrl
+      run: |
+        if [ "${{ steps.checkDiscussion.outputs.jqStatus }}" = "true" ]; then
+          reviewUrl=$(
+            jq --raw-output ".\"${{ needs.getAddonId.outputs.addonId }}\".discussionUrl" discussions.json
+          )
+        else
+          reviewUrl=${{ steps.createDiscussion.outputs.discussion-url }}
+        fi
+        echo "reviewUrl=$reviewUrl" >> "$GITHUB_OUTPUT"
+        echo "$reviewUrl"
+
   verifySubmitter:
     # jq for windows has issues parsing multiline strings (e.g. CRLF),
     # use linux instead.
     runs-on: ubuntu-latest
-    needs: [getAddonId]
+    needs: [getAddonId, ensureDiscussionExists]
     permissions:
       contents: write
       pull-requests: write
@@ -132,6 +187,9 @@ jobs:
             If you are not the owner of the main repository for this add-on, please provide evidence that you have permission to submit this add-on.
             Please wait until the review team can review the submission.
             It may take up to 2 weeks for a team member to respond, depending on their availability.
+
+            This issue will be used to discuss metadata related to the add-on submission. Feedback about user experience should be provided through the discussion link below.
+            [provide feedback about bugs or user experience](${{ needs.ensureDiscussionExists.outputs.reviewUrl }})
             ${{ env.jobFooter }}
 
   createPullRequest:
@@ -412,7 +470,7 @@ jobs:
     # use linux instead.
     runs-on: ubuntu-latest
     if: ${{ always() && needs.passesManualReview.result == 'success' && needs.getAddonId.result == 'success' && needs.createPullRequest.result == 'success' }}
-    needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, requireSubmitterManualApproval2, virusTotal-analysis]
+    needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, requireSubmitterManualApproval2, virusTotal-analysis, ensureDiscussionExists]
     permissions:
       contents: write
       discussions: write
@@ -432,14 +490,6 @@ jobs:
         git pull --rebase origin ${{ env.branchName }}
         git fetch origin master
         git merge origin/master --no-edit
-    - name: Get add-on name and version
-      id: getAddonNameAndVersion
-      uses: actions/github-script@v9
-      with:
-        script: |
-          const setAddonNameAndVersion = require('./.github/workflows/getAddonNameAndVersion.js')
-          const addonFilename = "${{ needs.getAddonId.outputs.addonFileName }}"
-          setAddonNameAndVersion({core}, addonFilename)
     - name: Add add-on ID and submitter to JSON file
       if: ${{ needs.requireSubmitterManualApproval.result == 'success' && needs.requireSubmitterManualApproval2.result == 'success' }}
       run: |
@@ -468,35 +518,17 @@ jobs:
           git commit -m "Add ${{ inputs.issueAuthorName }} as an approved submitter for ${{ needs.getAddonId.outputs.addonId }}"
           git push --set-upstream origin ${{ env.branchName }}
         fi
-    - name: Check if discussion for this add-on exists
-      id: checkDiscussion
-      run: |
-        jqStatus=$(jq 'has("${{ needs.getAddonId.outputs.addonId }}")' discussions.json)
-        echo "jqStatus=$jqStatus" >> "$GITHUB_OUTPUT"
-        echo "$jqStatus"
-    - name: Create discussion for add-on id
-      id: createDiscussion
-      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
-      uses: nvdaes/build-discussion@v2
-      with:
-        category-position: 1
-        title: Reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }} (${{ needs.getAddonId.outputs.addonId }})
-        body: |
-          Community add-on reviews for ${{ steps.getAddonNameAndVersion.outputs.addonName }}.
-          Please use threaded replies and avoid email responses.
-          You can specify the add-on version and other info that you consider relevant in your comment.
-          Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
     - name: Add add-on ID and discussion data to json file
-      if: ${{ ! fromJSON(steps.checkDiscussion.outputs.jqStatus) }}
+      if: ${{ ! fromJSON(needs.ensureDiscussionExists.outputs.discussionExists) }}
       run: |
         addonId=$(
           echo ${{ needs.getAddonId.outputs.addonId }}
-         )
+        )
         discussionId=$(
-          echo ${{ steps.createDiscussion.outputs.discussion-id }}
+          echo ${{ needs.ensureDiscussionExists.outputs.discussionId }}
         )
         discussionUrl=$(
-          echo ${{ steps.createDiscussion.outputs.discussion-url }}
+          echo ${{ needs.ensureDiscussionExists.outputs.reviewUrl }}
         )
         jqCode="
         .[\"$addonId\"].discussionId = \"$discussionId\"
