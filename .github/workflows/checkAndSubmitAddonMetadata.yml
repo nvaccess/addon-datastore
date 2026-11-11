@@ -95,7 +95,8 @@ jobs:
       discussions: write
     outputs:
       discussionExists: ${{ steps.checkDiscussion.outputs.jqStatus }}
-      discussionId: ${{ steps.createDiscussion.outputs.discussion-id }}
+      discussionNumber: ${{ steps.createDiscussion.outputs.discussion-number }}
+      discussionId: ${{ steps.getDiscussionId.outputs.discussionId }}
       reviewUrl: ${{ steps.getReviewUrl.outputs.reviewUrl }}
     steps:
     - name: Checkout code
@@ -129,6 +130,18 @@ jobs:
           Please use threaded replies and avoid email responses.
           You can specify the add-on version and other info that you consider relevant in your comment.
           Reviews should abide by the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
+    - name: Get discussion ID
+      id: getDiscussionId
+      env:
+        ADDON_ID: ${{ needs.getAddonId.outputs.addonId }}
+        DISCUSSION_ID: ${{ steps.createDiscussion.outputs.discussion-id }}
+      run: |
+        if [ "${{ steps.checkDiscussion.outputs.jqStatus }}" = "true" ]; then
+          discussionId=$(jq --raw-output --arg addonId "$ADDON_ID" '.[$addonId].discussionId' discussions.json)
+        else
+          discussionId="$DISCUSSION_ID"
+        fi
+        echo "discussionId=$discussionId" >> "$GITHUB_OUTPUT"
     - name: Get review URL and add it to job footer
       id: getReviewUrl
       run: |
@@ -398,12 +411,13 @@ jobs:
         run: echo "Passed manual review"
 
   failsManualReview:
-    needs: [createPullRequest, requireSecurityManualApproval, requireSubmitterManualApproval, requireSubmitterManualApproval2]
+    needs: [createPullRequest, requireSecurityManualApproval, requireSubmitterManualApproval, requireSubmitterManualApproval2, ensureDiscussionExists]
     if: ${{ always() && (needs.requireSecurityManualApproval.result == 'failure' || needs.requireSubmitterManualApproval.result == 'failure' || needs.requireSubmitterManualApproval2.result == 'failure') }}
     runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: write
+      discussions: write
       issues: write
       pull-requests: write
     steps:
@@ -454,11 +468,23 @@ jobs:
           body: |
             The submission did not pass the manual review process.
             Reason for the rejection:
-
             ${{ steps.fetchRejectionComment.outputs.rejectionReasons }}
 
             Reviewers: ${{ steps.fetchRejectionComment.outputs.reviewers }}
             ${{ env.jobFooter }}
+      - name: Close discussion
+        if: ${{ always() && needs.ensureDiscussionExists.result == 'success' && needs.ensureDiscussionExists.outputs.discussionExists == 'false' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCUSSION_ID: ${{ needs.ensureDiscussionExists.outputs.discussionId }}
+        run: |
+          if [ -z "$DISCUSSION_ID" ]; then
+            echo "No discussion ID found; cannot close discussion." >&2
+            exit 1
+          fi
+          gh api graphql \
+            -f query='mutation($discussionId: ID!) { closeDiscussion(input: {discussionId: $discussionId}) { discussion { id } } }' \
+            -F discussionId="$DISCUSSION_ID"
 
   pushFurtherChangesAndMerge:
     concurrency:
@@ -473,7 +499,6 @@ jobs:
     needs: [getAddonId, passesManualReview, createPullRequest, requireSubmitterManualApproval, requireSubmitterManualApproval2, virusTotal-analysis, ensureDiscussionExists]
     permissions:
       contents: write
-      discussions: write
       pull-requests: write
       issues: write
     steps:
