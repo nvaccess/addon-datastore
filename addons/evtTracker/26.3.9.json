@@ -95,5 +95,47 @@
 			"description": "Tracks events and displays information about them (for developers and power users)",
 			"changelog": "* Improved visual presentation of events list by adjusting the size of event description content (contributed by hwf1324).\n* Pressing Escape from events list will close it (contributed by hwf1324)."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/df71547c7a4b11f04c07c5b35c1e4afdf77cbf4c7a2095b452709ab982109404",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "df71547c7a4b11f04c07c5b35c1e4afdf77cbf4c7a2095b452709ab982109404",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "00303c3c1d1c0000",
+					"raw_md5": "6b6e0c5af5c9dec7ff6a5cc76369f0be"
+				},
+				"first_submission_date": 1794355324,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794355326,
+				"last_submission_date": 1794355324,
+				"md5": "44183146040340d0dbfdf6fa56c22ee5",
+				"names": [],
+				"reputation": 0,
+				"sha1": "dd94d26cf4b3617969fa3b46784a7377fb0a10ef",
+				"sha256": "df71547c7a4b11f04c07c5b35c1e4afdf77cbf4c7a2095b452709ab982109404",
+				"size": 64804,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
