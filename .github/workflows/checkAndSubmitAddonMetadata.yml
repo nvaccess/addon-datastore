@@ -88,6 +88,9 @@ jobs:
           path: ${{ steps.getAddonFileName.outputs.result }}
 
   ensureDiscussionExists:
+    concurrency:
+      group: discussion-${{ needs.getAddonId.outputs.addonId }}
+      queue: max
     runs-on: ubuntu-latest
     needs: [getAddonId]
     permissions:
@@ -142,7 +145,7 @@ jobs:
           discussionId="$DISCUSSION_ID"
         fi
         echo "discussionId=$discussionId" >> "$GITHUB_OUTPUT"
-    - name: Get review URL and add it to job footer
+    - name: Get review URL
       id: getReviewUrl
       run: |
         if [ "${{ steps.checkDiscussion.outputs.jqStatus }}" = "true" ]; then
