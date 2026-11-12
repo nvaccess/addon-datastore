@@ -1,0 +1,31 @@
+{
+	"addonId": "bluetoothKeepAwake",
+	"displayName": "Bluetooth Keep Awake",
+	"URL": "https://github.com/sightless-coders/bluetoothKeepAwake/releases/download/v1.0.4/bluetoothKeepAwake-1.0.4.nvda-addon",
+	"description": "Keeps Bluetooth speakers and headphones awake by continuously playing a near-silent sound. Press NVDA+Windows+B to toggle, NVDA+Shift+Alt+B to change the sound (quiet low tone, quiet high tone or true silence) and NVDA+Control+Shift+B to change the tone volume.",
+	"sha256": "8d90378dabf0b096805b94c059a5972d475a3daa04b025abf00bf9453d4edf0b",
+	"addonVersionName": "1.0.4",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 4
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "arvin",
+	"sourceURL": "https://github.com/sightless-coders/bluetoothKeepAwake/",
+	"license": "GPL v2",
+	"changelog": "Changed the default toggle gesture from NVDA+Shift+B to NVDA+Windows+B to avoid a conflict with NVDA's Report battery status command.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794485271000,
+	"translations": []
+}
