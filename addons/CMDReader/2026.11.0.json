@@ -1,0 +1,113 @@
+{
+	"addonId": "CMDReader",
+	"displayName": "CMDReader",
+	"URL": "https://github.com/chaichaimee/CMDReader/releases/download/2026.11.0/CMDReader-v2026.11.0.nvda-addon",
+	"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real time, with sound alerts for ready, finished, and error states. Line review lets you read console output one line at a time with the Up and Down arrows. A settings panel offers custom error keywords and Strict Privacy Mode.\n\nHot Keys:\nCTRL+ALT+L\nsingle tap : Toggle line review (Up and Down arrows read the console output one line at a time)\n double tap : Open CMDReader file\n triple tap : Open CMDReader settings",
+	"sha256": "1ab6a893160a2fe119a252a7e2de1088e7fd26df5b93a30dd1f8933dd58f2477",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/CMDReader",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/CMDReader",
+	"changelog": "Added line review: Up and Down arrows read console output one line at a time, started automatically on console focus (configurable). Control+Alt+L is now multi-tap: single tap toggles line review, double tap opens the log file, triple tap opens settings. Removed Control+Alt+Up and Control+Alt+Down. Fixed the log file being saved empty after a command ran. Opening the log file no longer blocks NVDA.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794451121000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "CMDReader",
+			"description": "Liest neue Ausgaben in Eingabeaufforderung, PowerShell und Windows Terminal in Echtzeit automatisch vor, mit akustischen Signalen für Bereit-, Fertig- und Fehlerzustände. Die Zeilenprüfung ermöglicht das zeilenweise Lesen der Konsolenausgabe mit den Pfeiltasten Oben und Unten. Ein Einstellungsdialog bietet benutzerdefinierte Fehler-Schlüsselwörter und den strengen Datenschutzmodus.\n\nTastenkombinationen:\nSTRG+ALT+L\nEinfach tippen: Zeilenprüfung umschalten (Pfeiltasten Oben und Unten lesen die Konsolenausgabe zeilenweise vor)\nDoppelt tippen: CMDReader-Datei öffnen\nDreifach tippen: CMDReader-Einstellungen öffnen"
+		},
+		{
+			"language": "it",
+			"displayName": "CMDReader",
+			"description": "读取命令提示符、PowerShell 和 Windows Terminal 中的实时新输出，并在就绪、完成和错误状态时发出声音警报。行检查功能允许您使用向上和向下方向键逐行读取控制台输出。设置面板提供自定义错误关键字和严格隐私模式。\n\n热键：\nCTRL+ALT+L\n单击：切换行检查（向上和向下方向键逐行读取控制台输出）\n双击：打开 CMDReader 文件\n三击：打开 CMDReader 设置"
+		},
+		{
+			"language": "hi",
+			"displayName": "CMDReader",
+			"description": "कमांड प्रॉम्प्ट, पॉवरशेल और विंडोज टर्मिनल में नए आउटपुट को वास्तविक समय में स्वचालित रूप से पढ़ता है, जिसमें तैयार, पूर्ण और त्रुटि स्थितियों के लिए ध्वनि अलर्ट होते हैं। लाइन रिव्यू आपको अप और डाउन तीर कुंजियों के साथ कंसोल आउटपुट को एक समय में एक लाइन पढ़ने की अनुमति देता है। सेटिंग्स पैनल कस्टम त्रुटि कीवर्ड और सख्त गोपनीयता मोड प्रदान करता है।\n\nहॉटकी:\nCTRL+ALT+L\nसिंगल टैप : लाइन रिव्यू टॉगल करें (अप और डाउन तीर कुंजियाँ कंसोल आउटपुट को एक समय में एक लाइन पढ़ती हैं)\nडबल टैप : CMDReader फ़ाइल खोलें\nट्रिपल टैप : CMDReader सेटिंग्स खोलें"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "CMDReader",
+			"description": "Lê automaticamente novas saídas no Prompt de Comando, PowerShell e Windows Terminal em tempo real, com alertas sonoros para estados de pronto, concluído e erro. A revisão por linha permite ler a saída do console linha por linha com as setas para cima e para baixo. Um painel de configurações oferece palavras-chave de erro personalizadas e Modo de Privacidade Rigorosa.\n\nTeclas de Atalho:\nCTRL+ALT+L\num toque : Alternar revisão por linha (as setas para cima e para baixo leem a saída do console linha por linha)\ndois toques : Abrir arquivo do CMDReader\ntrês toques : Abrir configurações do CMDReader"
+		},
+		{
+			"language": "ru",
+			"displayName": "CMDReader",
+			"description": "Автоматически озвучивает новый вывод в Командной строке, PowerShell и Windows Terminal в реальном времени, со звуковыми оповещениями о готовности, завершении и ошибках. Построчный просмотр позволяет читать вывод консоли по одной строке с помощью стрелок Вверх и Вниз. Панель настроек предлагает пользовательские ключевые слова ошибок и Режим строгой конфиденциальности.\n\nГорячие клавиши:\nCTRL+ALT+L\nодинарное нажатие : Переключить построчный просмотр (стрелки Вверх и Вниз читают вывод консоли по одной строке)\nдвойное нажатие : Открыть файл CMDReader\nтройное нажатие : Открыть настройки CMDReader"
+		},
+		{
+			"language": "fr",
+			"displayName": "CMDReader",
+			"description": "Lit automatiquement la nouvelle sortie dans l'Invite de commandes, PowerShell et Windows Terminal en temps réel, avec des alertes sonores pour les états prêt, terminé et erreur. La relecture par ligne vous permet de lire la sortie de la console ligne par ligne avec les flèches Haut et Bas. Un panneau de configuration propose des mots-clés d'erreur personnalisés et un mode de confidentialité stricte.\n\nRaccourcis clavier :\nCTRL+ALT+L\nappui simple : Basculer la relecture par ligne (les flèches Haut et Bas lisent la sortie de la console ligne par ligne)\ndouble appui : Ouvrir le fichier CMDReader\ntriple appui : Ouvrir les paramètres de CMDReader"
+		},
+		{
+			"language": "ja",
+			"displayName": "CMDReader",
+			"description": "コマンドプロンプト、PowerShell、Windows Terminalの新しい出力をリアルタイムで自動読み上げし、準備完了、完了、エラー状態を効果音で通知します。ラインレビュー機能を使用すると、上下矢印キーでコンソール出力を1行ずつ確認できます。設定パネルでは、カスタムエラーキーワードや厳格なプライバシーモードを設定できます。\n\nホットキー:\nCTRL+ALT+L\n1回タップ: ラインレビューの切り替え（上下矢印キーでコンソール出力を1行ずつ読み上げます）\n2回タップ: CMDReaderファイルを開く\n3回タップ: CMDReader設定を開く"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "CMDReader",
+			"description": "即時自動讀取命令提示字元 (Command Prompt)、PowerShell 與 Windows Terminal 中的新輸出，並以音效提示就緒、完成與錯誤狀態。行檢視功能可讓您使用「向上」與「向下」箭頭逐行讀取主控台輸出。設定面板提供自訂錯誤關鍵字與嚴格隱私模式。\n\n熱鍵：\nCTRL+ALT+L\n按一下：切換行檢視（使用「向上」與「向下」箭頭逐行讀取主控台輸出）\n按兩下：開啟 CMDReader 檔案\n按三下：開啟 CMDReader 設定"
+		},
+		{
+			"language": "id",
+			"displayName": "CMDReader",
+			"description": "Secara otomatis membaca output baru di Command Prompt, PowerShell, dan Windows Terminal secara real-time, dengan peringatan suara untuk status siap, selesai, dan galeri. Peninjauan baris memungkinkan Anda membaca output konsol baris demi baris menggunakan tombol Panah Atas dan Panah Bawah. Panel pengaturan menawarkan kata kunci galeri kustom dan Mode Privasi Ketat.\n\nTombol Pintas:\nCTRL+ALT+L\nketuk sekali : Alihkan peninjauan baris (Panah Atas dan Bawah membaca output konsol baris demi baris)\nketuk dua kali : Buka file CMDReader\nketuk tiga kali : Buka pengaturan CMDReader"
+		},
+		{
+			"language": "th",
+			"displayName": "ซีเอ็มดีรีดเดอร์ (CMDReader)",
+			"description": "อ่านข้อความใหม่ในคอมมานด์พรอมต์ เพาเวอร์เชลล์ และวินโดวส์เทอร์มินัลแบบเรียลไทม์โดยอัตโนมัติ พร้อมเสียงแจ้งเตือนสถานะพร้อมทำงาน ทำงานเสร็จ และเกิดข้อผิดพลาด การทบทวนบรรทัดช่วยให้คุณอ่านข้อความเอาต์พุตของคอนโซลทีละบรรทัดได้ด้วยลูกศรขึ้นและลง แผงการตั้งค่ามีคำสำคัญสำหรับข้อผิดพลาดที่กำหนดเองและโหมดความเป็นส่วนตัวเข้มงวด\n\nปุ่มลัด:\nCTRL+ALT+L\nแตะครั้งเดียว : สลับการทบทวนบรรทัด (ลูกศรขึ้นและลงจะอ่านข้อความเอาต์พุตของคอนโซลทีละบรรทัด)\nแตะสองครั้ง : เปิดไฟล์ CMDReader\nแตะสามครั้ง : เปิดการตั้งค่า CMDReader"
+		},
+		{
+			"language": "ko",
+			"displayName": "CMDReader",
+			"description": "명령 Prompt, PowerShell, Windows Terminal의 새로운 출력을 실시간으로 자동 읽어주며, 준비, 완료, 오류 상태에 대한 사운드 알림을 제공합니다. 줄 검토 기능을 사용하면 위/아래 화살표를 눌러 콘솔 출력을 한 줄씩 읽을 수 있습니다. 설정 패널에서는 사용자 정의 오류 키워드와 엄격한 개인정보 보호 모드를 제공합니다.\n\n단축키:\nCTRL+ALT+L\n한 번 탭: 줄 검토 토글 (위/아래 화살표로 콘솔 출력을 한 줄씩 읽기)\n두 번 탭: CMDReader 파일 열기\n세 번 탭: CMDReader 설정 열기"
+		},
+		{
+			"language": "uk",
+			"displayName": "CMDReader",
+			"description": "Автоматично озвучує новий вивід у командному рядку, PowerShell та Windows Terminal у реальному часі з різними звуковими сигналами для станів готовності, завершення та помилки. Режим перегляду рядків дозволяє читати вивід консолі по одному рядку за допомогою стрілок вгору та вниз. Панель налаштувань пропонує власні ключові слова помилок і суворий режим конфіденційності.\n\nГарячі клавіші:\nCTRL+ALT+L\nодинарне натискання : Увімкнути/вимкнути перегляд рядків (стрілки вгору та вниз читають вивід консолі по одному рядку)\nподвійне натискання : Відкрити файл CMDReader\nпотрійне натискання : Відкрити налаштування CMDReader"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "CMDReader",
+			"description": "实时自动朗读命令提示符、PowerShell 和 Windows Terminal 中的新输出，并在就绪、完成和错误状态时提供声音提醒。行审阅功能允许使用上下箭头逐行读取控制台输出。设置面板提供自定义错误关键字和严格隐私模式。\n\n热键：\nCTRL+ALT+L\n单击：切换行审阅（使用上下箭头逐行读取控制台输出）\n双击：打开 CMDReader 文件\n三击：打开 CMDReader 设置"
+		},
+		{
+			"language": "ar",
+			"displayName": "قارئ الأوامر",
+			"description": "يقرأ تلقائياً المخرجات الجديدة في موجه الأوامر، وباورشل، وويندوز ترمينال في الوقت الفعلي، مع تنبيهات صوتية لحالات الاستعداد، والانتهاء، والخطأ. يتيح لك استعراض الأسطر قراءة مخرجات وحدة التحكم سطراً بسطر باستخدام سهمي الأعلى والأسفل. توفر لوحة الإعدادات كلمات مفتاحية مخصصة للأخطاء وضع الخصوصية الصارمة.\n\nمفاتيح الاختصار:\nCTRL+ALT+L\nنقرة واحدة: تبديل استعراض الأسطر (سهما الأعلى والأسفل يقرءان مخرجات وحدة التحكم سطراً بسطر)\nنقرة مزدوجة: فتح ملف قارئ الأوامر\nثلاث نقرات: فتح إعدادات قارئ الأوامر"
+		},
+		{
+			"language": "es",
+			"displayName": "CMDReader",
+			"description": "Lee automáticamente las nuevas salidas en Símbolo del sistema, PowerShell y Windows Terminal en tiempo real, con alertas sonoras para los estados de listo, finalizado y error. La revisión por líneas permite leer la salida de la consola línea por línea con las flechas Arriba y Abajo. Un panel de configuración ofrece palabras clave de error personalizadas y el Modo de Privacidad Estricta.\n\nTeclas rápidas:\nCTRL+ALT+L\nuna sola pulsación : Alternar revisión por líneas (las flechas Arriba y Abajo leen la salida de la consola línea por línea)\ndoble pulsación : Abrir archivo de CMDReader\ntriple pulsación : Abrir configuración de CMDReader"
+		},
+		{
+			"language": "en",
+			"displayName": "CMDReader",
+			"description": "Automatically reads new output in Command Prompt, PowerShell, and Windows Terminal in real time, with sound alerts for ready, finished, and error states. Line review lets you read console output one line at a time with the Up and Down arrows. A settings panel offers custom error keywords and Strict Privacy Mode.\n\nHot Keys:\nCTRL+ALT+L\nsingle tap : Toggle line review (Up and Down arrows read the console output one line at a time)\n double tap : Open CMDReader file\n triple tap : Open CMDReader settings"
+		}
+	]
+}
