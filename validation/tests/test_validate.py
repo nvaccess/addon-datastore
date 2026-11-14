@@ -2,16 +2,16 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
+import json
+import os
+import tempfile
+import unittest
 from collections.abc import Callable
 from dataclasses import dataclass
-import unittest
 from unittest.mock import NonCallableMock, patch
-import os
-import json
-import tempfile
-from jsonschema import exceptions
-from _validate import validate, addonManifest
 
+from _validate import addonManifest, validate
+from jsonschema import exceptions
 
 VALID_ADDON_ID = "fake"
 
@@ -189,8 +189,10 @@ class Validate_checkSummaryMatchesDisplayName(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				f"Submission 'displayName' must be set to '{self.manifest['summary']}' in json file."
-				f" Instead got: '{badDisplayName}'",
+				(
+					f"Submission 'displayName' must be set to '{self.manifest['summary']}' in json file."
+					f" Instead got: '{badDisplayName}'"
+				),
 			],
 		)
 
@@ -211,8 +213,10 @@ class Validate_checkDescriptionMatches(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				f"Submission 'description' must be set to '{self.manifest['description']}' in json file."
-				f" Instead got: '{badDesc}'",
+				(
+					f"Submission 'description' must be set to '{self.manifest['description']}' in json file."
+					f" Instead got: '{badDesc}'"
+				),
 			],
 		)
 
@@ -237,8 +241,10 @@ class Validate_checkChangelogMatches(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				f"Submission 'changelog' must be set to '{self.manifest['changelog']}' in json file."
-				f" Instead got: '{badChangelog}'",
+				(
+					f"Submission 'changelog' must be set to '{self.manifest['changelog']}' in json file."
+					f" Instead got: '{badChangelog}'"
+				),
 			],
 		)
 
@@ -335,10 +341,12 @@ class Validate_checkAddonId(unittest.TestCase):
 
 		self.assertEqual(
 			[  # expected errors
-				"Submission data 'addonId' field does not match the expected format:"
-				" must start and end with a letter, and contain only letters,"
-				" numbers, underscores, and hyphens. "
-				"ID: invalid addon id",
+				(
+					"Submission data 'addonId' field does not match the expected format:"
+					" must start and end with a letter, and contain only letters,"
+					" numbers, underscores, and hyphens. "
+					"ID: invalid addon id"
+				),
 			],
 			errors,
 		)
@@ -352,10 +360,12 @@ class Validate_checkAddonId(unittest.TestCase):
 
 		self.assertEqual(
 			[  # expected errors
-				"Submission data 'addonId' field does not match the expected format:"
-				" must start and end with a letter, and contain only letters,"
-				" numbers, underscores, and hyphens. "
-				"ID: 1invalid-addon-id",
+				(
+					"Submission data 'addonId' field does not match the expected format:"
+					" must start and end with a letter, and contain only letters,"
+					" numbers, underscores, and hyphens. "
+					"ID: 1invalid-addon-id"
+				),
 			],
 			errors,
 		)
@@ -414,9 +424,11 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Last tested version error: 2018.3.0 doesn't exist. "
-				"Please update the last tested NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Last tested version error: 2018.3.0 doesn't exist. "
+					"Please update the last tested NVDA version to a valid version. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -427,9 +439,11 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Last tested version error: 9999.3.0 doesn't exist. "
-				"Please update the last tested NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Last tested version error: 9999.3.0 doesn't exist. "
+					"Please update the last tested NVDA version to a valid version. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -451,9 +465,11 @@ class validate_checkLastTestedVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkLastTestedVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Last tested version error: 2024.1.0 is not stable yet. "
-				"Please submit add-on using the beta or dev channel until the RC version is released. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Last tested version error: 2024.1.0 is not stable yet. "
+					"Please submit add-on using the beta or dev channel until the RC version is released. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -490,9 +506,11 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Minimum required version error: 2018.3.0 doesn't exist. "
-				"Please update the minimum required NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Minimum required version error: 2018.3.0 doesn't exist. "
+					"Please update the minimum required NVDA version to a valid version. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -503,9 +521,11 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Minimum required version error: 9999.3.0 doesn't exist. "
-				"Please update the minimum required NVDA version to a valid version. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Minimum required version error: 9999.3.0 doesn't exist. "
+					"Please update the minimum required NVDA version to a valid version. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -527,9 +547,11 @@ class validate_checkMinRequiredVersionExists(unittest.TestCase):
 		self.assertEqual(
 			list(validate.checkMinRequiredVersionExist(self.submissionData, self.verFilename)),
 			[
-				"Minimum required version error: 2024.1.0 is not stable yet, it is either in beta or alpha. "
-				"Please submit add-on using the beta or dev channel until the RC version is released. "
-				"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). ",
+				(
+					"Minimum required version error: 2024.1.0 is not stable yet, it is either in beta or alpha. "
+					"Please submit add-on using the beta or dev channel until the RC version is released. "
+					"You can find valid NVDA versions in [nvdaAPIVersions.json](https://github.com/nvaccess/nvda/blob/master/transform/nvdaAPIVersions.json). "
+				),
 			],
 		)
 
@@ -551,8 +573,10 @@ class Validate_checkMinNVDAVersionMatches(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				"Submission data 'minNVDAVersion' field does not match 'minNVDAVersion' field "
-				"in addon manifest: 1999.1.0 vs minNVDAVersion: 2022.1.0",
+				(
+					"Submission data 'minNVDAVersion' field does not match 'minNVDAVersion' field "
+					"in addon manifest: 1999.1.0 vs minNVDAVersion: 2022.1.0"
+				),
 			],
 		)
 
@@ -574,9 +598,11 @@ class Validate_checkLastTestedNVDAVersionMatches(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				"Submission data 'lastTestedVersion' field does not match "
-				"'lastTestedNVDAVersion' field in addon manifest: 9999.1.0 vs "
-				"lastTestedVersion: 2023.1.0",
+				(
+					"Submission data 'lastTestedVersion' field does not match "
+					"'lastTestedNVDAVersion' field in addon manifest: 9999.1.0 vs "
+					"lastTestedVersion: 2023.1.0"
+				),
 			],
 		)
 
@@ -648,10 +674,12 @@ class Validate_checkVersions(unittest.TestCase):
 		errors = list(validate.checkVersions(self.manifest, self.fileName, self.submissionData))
 		self.assertEqual(
 			[  # expected errors
-				"Submission filename and versionNumber mismatch error:"
-				" addonVersionNumber: 13.6.0"
-				" version from submission filename: 13.06"
-				" expected submission filename: 13.6.0.json",
+				(
+					"Submission filename and versionNumber mismatch error:"
+					" addonVersionNumber: 13.6.0"
+					" version from submission filename: 13.06"
+					" expected submission filename: 13.6.0.json"
+				),
 			],
 			errors,
 		)
@@ -670,10 +698,12 @@ class Validate_checkVersions(unittest.TestCase):
 		errors = list(validate.checkVersions(self.manifest, self.fileName, self.submissionData))
 		self.assertEqual(
 			[  # expected errors
-				"Submission filename and versionNumber mismatch error:"
-				" addonVersionNumber: 13.6.0"
-				" version from submission filename: 13.6"
-				" expected submission filename: 13.6.0.json",
+				(
+					"Submission filename and versionNumber mismatch error:"
+					" addonVersionNumber: 13.6.0"
+					" version from submission filename: 13.6"
+					" expected submission filename: 13.6.0.json"
+				),
 			],
 			errors,
 		)
@@ -776,7 +806,7 @@ class Validate_End2End(unittest.TestCase):
 			self.headers = {"content-length": os.path.getsize(ADDON_PACKAGE)}
 
 	def setUp(self) -> None:
-		self.addonReader = open(ADDON_PACKAGE, "rb")
+		self.addonReader = open(ADDON_PACKAGE, "rb")  # noqa: SIM115
 		self.urlOpenResult = self.OpenUrlResult(self.addonReader.read)
 
 	def tearDown(self) -> None:
@@ -798,9 +828,11 @@ class Validate_End2End(unittest.TestCase):
 		self.assertEqual(
 			errors,
 			[
-				"Fatal error, unable to continue: Errors found when downloading and validating "
-				"the add-on: Unable to download from https://github.com/nvaccess/dont/use/this/address/"
-				"fake.nvda-addon, HTTP response status code: 404",
+				(
+					"Fatal error, unable to continue: Errors found when downloading and validating "
+					"the add-on: Unable to download from https://github.com/nvaccess/dont/use/this/address/"
+					"fake.nvda-addon, HTTP response status code: 404"
+				),
 			],
 		)
 
@@ -843,7 +875,7 @@ class VersionRegex(unittest.TestCase):
 		matches = validate.VERSION_PARSE.match(ver)
 		self.assertTrue(matches)
 		assert matches
-		groups = list(x for x in matches.groups() if x)
+		groups = [x for x in matches.groups() if x]
 		self.assertEqual(["23", "5", "1"], groups)
 
 	def test_versionMajorMinor_valid(self):
@@ -851,7 +883,7 @@ class VersionRegex(unittest.TestCase):
 		matches = validate.VERSION_PARSE.match(ver)
 		self.assertTrue(matches)
 		assert matches
-		groups = list(x for x in matches.groups() if x)
+		groups = [x for x in matches.groups() if x]
 		self.assertEqual(["6", "0"], groups)
 
 	def test_versionMajor_valid(self):
@@ -859,7 +891,7 @@ class VersionRegex(unittest.TestCase):
 		matches = validate.VERSION_PARSE.match(ver)
 		self.assertTrue(matches)
 		assert matches
-		groups = list(x for x in matches.groups() if x)
+		groups = [x for x in matches.groups() if x]
 		self.assertEqual(["1"], groups)
 
 	def test_NonDotSep_invalid(self):
