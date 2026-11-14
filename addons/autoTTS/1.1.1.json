@@ -1,0 +1,32 @@
+{
+	"addonId": "autoTTS",
+	"displayName": "Auto TTS for NVDA",
+	"URL": "https://github.com/hamid7780/Auto-TTS-for-NVDA/releases/download/v1.1.1/autoTTS-1.1.1.nvda-addon",
+	"description": "Automatically detect text language and switch between selected voices while NVDA reads multilingual content. Configure a synthesizer, voice, speech rate, pitch and volume for each language in NVDA Settings > Auto TTS for NVDA.",
+	"sha256": "e71323d6e24cd5c0360d43c259f9bbcd8c98ea46a0a215dafee31cf69ed4098c",
+	"addonVersionName": "1.1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Raja Hamid",
+	"sourceURL": "https://github.com/hamid7780/Auto-TTS-for-NVDA/tree/v1.1.1",
+	"license": "GPL 2.0",
+	"homepage": "https://github.com/hamid7780/Auto-TTS-for-NVDA",
+	"changelog": "Bug fix release: fixed NVDA Add-on Store crash by migrating configuration out of the addons folder, resolved mixed-language speech deadlock where secondary language was dropped after English, and optimized activity log file size.",
+	"licenseURL": "https://github.com/hamid7780/Auto-TTS-for-NVDA/blob/main/LICENSE.txt",
+	"submissionTime": 1794639271000,
+	"translations": []
+}
