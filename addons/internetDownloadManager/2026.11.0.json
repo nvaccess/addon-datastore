@@ -53,5 +53,47 @@
 			"displayName": "Internet Download Manager",
 			"description": "Mejoras de accesibilidad para Internet Download Manager (IDM). Su función principal hace utilizable con el teclado el panel de descarga que IDM muestra sobre el navegador: anuncia las descargas capturadas, enfoca el panel con un comando y permite recorrer su menú con las flechas. También facilita el uso de la barra de herramientas con las flechas y da nombre a los campos que IDM deja sin nombre."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/46e4585e41908c8dcc5fcb29fddf94bee5218080ebda05c16b521f7de878dacb",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "46e4585e41908c8dcc5fcb29fddf94bee5218080ebda05c16b521f7de878dacb",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "20383c3c1d180000",
+					"raw_md5": "41b95e4a962a2643e635f9fe85d86abb"
+				},
+				"first_submission_date": 1794619223,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794619225,
+				"last_submission_date": 1794619223,
+				"md5": "62eccd183b2ffc723d85a5f31bbfca31",
+				"names": [],
+				"reputation": 0,
+				"sha1": "652521b07f229706d44984f8fa61196fa9c11580",
+				"sha256": "46e4585e41908c8dcc5fcb29fddf94bee5218080ebda05c16b521f7de878dacb",
+				"size": 41410,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
