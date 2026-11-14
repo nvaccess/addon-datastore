@@ -1,0 +1,38 @@
+{
+	"addonId": "PPAWakeUp",
+	"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+	"URL": "https://github.com/chaichaimee/PPAWakeUp/releases/download/2026.11.1/PPAWakeUp-v2026.11.1.nvda-addon",
+	"description": "PPAWakeUp ensures PPA Tatip runs smoothly with NVDA by automatically recovering from crashes and offering quick engine management. It features auto-reboot upon failure, CJK character speech filtering to prevent freezes, dialog button crash protection, and built-in dictionary backup and a dictionary editor.\n\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Edit the PPA Tatip dictionary (userdict.txt)\nTripple Tap Open Tatip Menu (backup and restore of the Tatip dictionary and of the Tatip voice option setting, standard default tatip voice settings, Open Tatip options, Open Tatip folder)",
+	"sha256": "4d4c1a0717c4887661f785732ea1f6a6d86f9d3ae484f60558c65d4d23338f0d",
+	"addonVersionName": "2026.11.1",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/PPAWakeUp",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/PPAWakeUp",
+	"changelog": "Rearranged the triple-tap menu and added PPA Tatip Dictionary Editor to it. Added a Sort a-z button to the dictionary editor (a-z first, then the Thai alphabet) and moved Move to line above the word list; the word list always has focus when the editor opens. Added silent automatic wake up of PPA Tatip (no speech or beep) a few seconds after NVDA starts when the Tatip voice is active but Tatip is not running (can be turned off in Tatip Reader Setting). Added backup and restore of the Tatip voice option setting (SAPI5, IBMTTS and eSpeak entries of the NVDA voice settings) to the triple-tap menu; a default settings file is created automatically the first time the add-on runs, and standard default tatip voice settings restores those defaults. Added a Tatip dictionary editor (Windows+P double tap) with search, add, edit, remove, preview and apply; Open Tatip options moved to the triple-tap menu. Fixed crash on CJK characters via speech filtering; triple-tap now opens a backup/restore menu; added robust process kill & portable config support; distinct beep feedback.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794627099000,
+	"translations": [
+		{
+			"language": "en",
+			"displayName": "PPA Tatip WakeUp ตาทิพย์จงตื่น!",
+			"description": "PPAWakeUp ensures PPA Tatip runs smoothly with NVDA by automatically recovering from crashes and offering quick engine management. It features auto-reboot upon failure, CJK character speech filtering to prevent freezes, dialog button crash protection, and built-in dictionary backup and a dictionary editor.\n\nHot Keys:\nWindows+P\nSingle Tap wake up  PPA Tatip\nDouble Tap Edit the PPA Tatip dictionary (userdict.txt)\nTripple Tap Open Tatip Menu (backup and restore of the Tatip dictionary and of the Tatip voice option setting, standard default tatip voice settings, Open Tatip options, Open Tatip folder)"
+		}
+	]
+}
