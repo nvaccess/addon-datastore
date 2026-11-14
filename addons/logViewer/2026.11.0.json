@@ -1,0 +1,156 @@
+{
+	"addonId": "logViewer",
+	"displayName": "logViewer",
+	"URL": "https://github.com/chaichaimee/logViewer/releases/download/2026.11.0/logViewer-v2026.11.0.nvda-addon",
+	"description": "LogViewer supercharges NVDA log analysis for developers and power users. It converts the Log Viewer and external text editors into an interactive workspace with advanced regex search, custom bookmarks, and quick navigation. Feature highlights include background thread scanning, automatic crash bookmarks in previous session logs, intelligent multi-line error block extraction to the clipboard, segmented log segment copying, and flexible configuration options with automatic app conflict passthrough.\n\nHot Keys:\nCTRL+F : Open search Dialog\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\n\nCTRL+Shift+F2\nSingle  Tap : Copy log since the latest bookmark\nDouble Tap : step back through older bookmarks copying each one's segment\nTriple Tap : or switch between the current and old log\n\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\n\nShift+F3 : Find previous occurrence\nNVDA+CTRL+L : open OldLog File",
+	"sha256": "09a71f29310c6fb319773fd0674204b2c11ee05192f8d92d7e8d0a1bd97f4bc9",
+	"addonVersionName": "2026.11.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee and Pierre-Louis Renaud",
+	"sourceURL": "https://github.com/chaichaimee/logViewer",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/logViewer",
+	"changelog": "Fixed potential NVDA freeze when opening the log viewer by adding safety checks to log viewer object access.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794539635000,
+	"translations": [
+		{
+			"language": "de",
+			"displayName": "Protokollbetrachter",
+			"description": "LogViewer erweitert die NVDA-Protokollanalyse für Entwickler und fortgeschrittene Benutzer erheblich. Es verwandelt den Protokollbetrachter und externe Texteditoren in einen interaktiven Arbeitsbereich mit erweiterter Regex-Suche, benutzerdefinierten Lesezeichen und schneller Navigation. Zu den Highlights gehören Hintergrund-Thread-Scans, automatische Absturz-Lesezeichen in Protokollen vorheriger Sitzungen, intelligente Extrahierung mehrzeiliger Fehlerblöcke in die Zwischenablage, segmentiertes Kopieren von Protokollabschnitten und flexible Konfigurationsoptionen mit automatischer Weiterleitung bei App-Konflikten.\n\nTasten:\nSTRG+F: Suchdialog öffnen\nSTRG+F2: Lesezeichen hinzufügen\nF2: Zum nächsten Lesezeichen im Protokoll springen\nUmschalt+F2: Zum vorherigen Lesezeichen im Protokoll wechseln\n\nSTRG+Umschalt+F2\nEinzelnes Tippen: Protokoll seit dem letzten Lesezeichen kopieren\nDoppelter Tipp: Durch ältere Lesezeichen zurückgehen und jeweils das Segment kopieren\nDreimaliges Tippen: Zwischen aktuellem und altem Protokoll umschalten\n\nF3\nEinfachtippen: Nächstes Vorkommen finden\nDoppelter Tipp: Fehlerprotokollstufe kopieren\n\nUmschalt+F3: Vorheriges Vorkommen finden\nNVDA+CTRL+L: Alte Protokolldatei öffnen"
+		},
+		{
+			"language": "it",
+			"displayName": "logViewer",
+			"description": "LogViewer supercharges NVDA log analysis for developers and power users. It converts the Log Viewer and external text editors into an interactive workspace with advanced regex search, custom bookmarks, and quick navigation. Feature highlights include background thread scanning, automatic crash bookmarks in previous session logs, intelligent multi-line error block extraction to the clipboard, segmented log segment copying, and flexible configuration options with automatic app conflict passthrough.\n\nHot Keys:\nCTRL+F : Open search Dialog\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\n\nCTRL+Shift+F2\nSingle  Tap : Copy log since the latest bookmark\nDouble Tap : step back through older bookmarks copying each one's segment\nTriple Tap : or switch between the current and old log\n\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\n\nShift+F3 : Find previous occurrence\nNVDA+CTRL+L : open OldLog File"
+		},
+		{
+			"language": "hi",
+			"displayName": "लॉग व्यूअर",
+			"description": "लॉगव्यूअर डेवलपर्स और पावर यूज़र के लिए एनवीडीए लॉग विश्लेषण को और बेहतर बनाता है। यह लॉग व्यूअर और बाहरी टेक्स्ट संपादकों को उन्नत रेगुलर एक्सप्रेसन खोज, कस्टम बुकमार्क और त्वरित नेविगेशन के साथ एक इंटरैक्टिव कार्यक्षेत्र में बदल देता है। इसकी मुख्य विशेषताओं में बैकग्राउंड थ्रेड स्कैनिंग, पिछले सत्र के लॉग में स्वचालित क्रैश बुकमार्क, क्लिपबोर्ड पर इंटेलिजेंट मल्टी-लाइन एरर ब्लॉक निष्कर्षण, खंडित लॉग सेगमेंट कॉपी करना, और स्वचालित ऐप कॉन्फ्लिक्ट पासथ्रू के साथ लचीले कॉन्फ़िगरेशन विकल्प शामिल हैं।\n\nहॉट कीज़:\nCTRL+F : खोज संवाद खोलें\nCTRL+F2 : बुकमार्क जोड़ें\nF2 : लॉग में अगले बुकमार्क पर जाएं\nShift+F2 : पिछले बुकमार्क पर जाएं\n\nCTRL+Shift+F2\nसिंगल टैप : नवीनतम बुकमार्क के बाद का लॉग कॉपी करें\nडबल टैप : प्रत्येक सेगमेंट को कॉपी करते हुए पुराने बुकमार्क पर वापस जाएं\nट्रिपल टैप : या वर्तमान और पुराने लॉग के बीच स्विच करें\n\nF3\nसिंगल टैप : अगला मिलान खोजें\nडबल टैप : एरर लॉग लेवल कॉपी करें\n\nShift+F3 : पिछला मिलान खोजें\nNVDA+CTRL+L : पुराना लॉग फ़ाइल खोलें"
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Visualizador de Log",
+			"description": "O LogViewer potencializa a análise de logs do NVDA para desenvolvedores e usuários avançados. Ele converte o Visualizador de Log e editores de texto externos em um espaço de trabalho interativo com busca avançada por expressão regular, marcadores personalizados e navegação rápida. Os principais recursos incluem varredura em segundo plano, marcadores automáticos de falha em logs de sessões anteriores, extração inteligente de blocos de erro multilinha para a área de transferência, cópia de segmentos de log particionados e opções de configuração flexíveis com passagem automática de conflitos entre aplicativos.\n\nTeclas de Atalho:\nCTRL+F : Abrir caixa de diálogo de pesquisa\nCTRL+F2 : Adicionar marcador\nF2 : Ir para o próximo marcador no log\nShift+F2 : Ir para o marcador anterior no log\n\nCTRL+Shift+F2\nToque único : Copiar log desde o último marcador\nToque duplo : retroceder pelos marcadores mais antigos copiando o segmento de cada um\nToque triplo : ou alternar entre o log atual e o antigo\n\nF3\nToque único : Localizar próxima ocorrência\nToque duplo : copiar nível de log de erro\n\nShift+F3 : Localizar ocorrência anterior\nNVDA+CTRL+L : abrir arquivo de log antigo"
+		},
+		{
+			"language": "ru",
+			"displayName": "Просмотр журнала",
+			"description": "LogViewer расширяет возможности анализа журналов NVDA для разработчиков и опытных пользователей. Он превращает стандартное окно просмотра журнала и внешние текстовые редакторы в интерактивную рабочую среду с расширенным поиском по регулярным выражениям, пользовательскими закладками и быстрой навигацией. Основные функции включают сканирование в фоновом потоке, автоматическое создание закладок сбоев в журналах предыдущих сеансов, интеллектуальное извлечение многострочных блоков ошибок в буфер обмена, по сегментное копирование журналов и гибкие параметры настройки с автоматическим пропуском конфликтов приложений.\n\nГорячие клавиши:\nCTRL+F : Открыть диалог поиска\nCTRL+F2 : Добавить закладку\nF2 : Перейти к следующей закладке в журнале\nShift+F2 : Перейти к предыдущей закладке в журнале\n\nCTRL+Shift+F2\nОдинарное нажатие : Копировать журнал с момента последней закладки\nДвойное нажатие : пошаговый переход по старым закладкам с копированием сегмента каждой из них\nТройное нажатие : или переключение между текущим и старым журналом\n\nF3\nОдинарное нажатие : Найти следующее совпадение\nДвойное нажатие : скопировать уровень журнала ошибок\n\nShift+F3 : Найти предыдущее совпадение\nNVDA+CTRL+L : открыть файл старого журнала"
+		},
+		{
+			"language": "fr",
+			"displayName": "Visionneure de journal",
+			"description": "LogViewer décuple l'analyse des journaux NVDA pour les développeurs et les utilisateurs avancés. Il transforme la visionneuse de journal et les éditeurs de texte externes en un espace de travail interactif doté d'une recherche par expressions régulières avancée, de signets personnalisés et d'une navigation rapide. Parmi les points forts figurent l'analyse en arrière-plan, les signets de plantage automatiques dans les journaux de la session précédente, l'extraction intelligente de blocs d'erreurs multilignes vers le presse-papiers, la copie de segments de journal segmentés et des options de configuration flexibles avec transmission automatique des conflits d'applications.\n\nRaccourcis clavier :\nCTRL+F : Ouvrir la boîte de dialogue de recherche\nCTRL+F2 : Ajouter un signet\nF2 : Aller au signet suivant dans le journal\nMaj+F2 : Aller au signet précédent dans le journal\n\nCTRL+Maj+F2\nSimple appui : Copier le journal depuis le dernier signet\nDouble appui : Reculer parmi les anciens signets en copiant le segment de chacun\nTriple appui : ou basculer entre le journal actuel et l'ancien journal\n\nF3\nSimple appui : Rechercher la occurrence suivante\nDouble appui : Copier le niveau du journal des erreurs\n\nMaj+F3 : Rechercher la occurrence précédente\nNVDA+CTRL+L : Ouvrir l'ancien fichier journal"
+		},
+		{
+			"language": "ja",
+			"displayName": "ログビューア",
+			"description": "LogViewerは、開発者やパワーユーザー向けのNVDAログ分析を大幅に強化します。ログビューアや外部テキストエディターを、高度な正規表現検索、カスタムブックマーク、クイックナビゲーションを備えたインタラクティブな作業スペースへと変換します。主な機能には、バックグラウンドスレッドスキャン、前回のセッションログにおける自動クラッシュブックマーク、クリップボードへの高度な複数行エラーブロック抽出、セグメント化されたログセグメントのコピー、および自動アプリ競合パススルーを備えた柔軟な設定オプションが含まれます。\n\nホットキー：\nCTRL+F : 検索ダイアログを開く\nCTRL+F2 : ブックマークを追加\nF2 : ログ内の次のブックマークに移動\nShift+F2 : ログ内の前のブックマークに移動\n\nCTRL+Shift+F2\nシングルタップ : 最新のブックマーク以降のログをコピー\nダブルタップ : 古いブックマークを順にさかのぼりながら各セグメントをコピー\nトリプルタップ : または現在と過去のログを切り替え\n\nF3\nシングルタップ : 次を検索\nダブルタップ : エラーログレベルをコピー\n\nShift+F3 : 前を検索\nNVDA+CTRL+L : 古いログファイルを開く"
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "記錄檢視器",
+			"description": "記錄檢視器（LogViewer）為開發人員和進階使用者強化了 NVDA 記錄分析功能。它將記錄檢視器和外部文字編輯器轉換為互動式工作區，具備進階正規表示式搜尋、自訂書籤和快速導覽功能。功能亮點包括背景執行緒掃描、先前工作階段記錄中的自動當機書籤、智慧型多行錯誤區塊擷取至剪貼簿、分段記錄區段複製，以及具備自動應用程式衝突略過功能的彈性設定選項。\n\n熱鍵：\nCTRL+F：開啟搜尋對話方塊\nCTRL+F2：新增書籤\nF2：移至記錄中的下一個書籤\nShift+F2：移至記錄中的上一個書籤\n\nCTRL+Shift+F2\n單擊：複製自最新書籤以來的記錄\n雙擊：逐步往回瀏覽較舊的書籤並複製每個區段\n三擊：或在目前記錄與舊記錄之間切換\n\nF3\n單擊：尋找下一個符合項目\n雙擊：複製錯誤記錄層級\n\nShift+F3：尋找上一個符合項目\nNVDA+CTRL+L：開啟舊記錄檔"
+		},
+		{
+			"language": "id",
+			"displayName": "Penampil Log",
+			"description": "LogViewer meningkatkan analisis log NVDA untuk pengembang dan pengguna mahir. Ini mengubah Penampil Log dan editor teks eksternal menjadi ruang kerja interaktif dengan pencarian regex tingkat lanjut, penanda khusus, dan navigasi cepat. Sorotan fitur meliputi pemindaian utas latar belakang, penanda kram otomatis pada log sesi sebelumnya, ekstraksi blok kesalahan multi-baris yang cerdas ke papan klip, penyalinan segmen log tersegmentasi, dan opsi konfigurasi yang fleksibel dengan penerusan konflik aplikasi otomatis.\n\nTombol Cepat:\nCTRL+F : Buka dialog pencarian\nCTRL+F2 : Tambah penanda\nF2 : Pindah ke penanda berikutnya dalam log\nShift+F2 : Pindah ke penanda sebelumnya dalam log\n\nCTRL+Shift+F2\nKetukan Tunggal : Salin log sejak penanda terakhir\nKetukan Ganda : Mundur melalui penanda yang lebih lama, menyalin segmen masing-masing\nKetukan Tiga Kali : atau beralih antara log saat ini dan log lama\n\nF3\nKetukan Tunggal : Cari kemunculan berikutnya\nKetukan Ganda : Salin tingkat log kesalahan\n\nShift+F3 : Cari kemunculan sebelumnya\nNVDA+CTRL+L : Buka berkas log lama"
+		},
+		{
+			"language": "th",
+			"displayName": "ตัวแสดงบันทึก",
+			"description": "LogViewer ช่วยเพิ่มประสิทธิภาพในการวิเคราะห์บันทึกของ NVDA สำหรับนักพัฒนาและผู้ใช้ขั้นสูง โดยจะแปลงตัวแสดงบันทึกและโปรแกรมแก้ไขข้อความภายนอกให้เป็นพื้นที่ทำงานแบบอินเทอร์แอกทีฟ พร้อมการค้นหาด้วยregexขั้นสูง บุ๊กมาร์กกำหนดเอง และการนำทางอย่างรวดเร็ว จุดเด่นของฟีเจอร์ประกอบด้วย การสแกนด้วยเธรดเบื้องหลัง, บุ๊กมาร์กการขัดข้องอัตโนมัติในบันทึกเซสชันก่อนหน้า, การดึงข้อมูลบล็อกข้อผิดพลาดหลายบรรทัดอัจฉริยะไปยังคลิปบอร์ด, การคัดลอกส่วนของบันทึกแบบแบ่งส่วน และตัวเลือกการกำหนดค่าที่ยืดหยุ่นพร้อมการส่งผ่านข้อขัดแย้งของแอปอัตโนมัติ\n\nปุ่มลัด:\nCTRL+F : เปิดกล่องโต้ตอบค้นหา\nCTRL+F2 : เพิ่มบุ๊กมาร์ก\nF2 : ไปยังบุ๊กมาร์กถัดไปในบันทึก\nShift+F2 : ไปยังบุ๊กมาร์กก่อนหน้าในบันทึก\n\nCTRL+Shift+F2\nแตะครั้งเดียว : คัดลอกบันทึกตั้งแต่บุ๊กมาร์กล่าสุด\nแตะสองครั้ง : ย้อนกลับทีละขั้นตอนผ่านบุ๊กมาร์กเก่าๆ พร้อมคัดลอกส่วนของแต่ละบุ๊กมาร์ก\nแตะสามครั้ง : หรือสลับระหว่างบันทึกปัจจุบันและบันทึกเก่า\n\nF3\nแตะครั้งเดียว : หาตำแหน่งถัดไป\nแตะสองครั้ง : คัดลอกระดับบันทึกข้อผิดพลาด\n\nShift+F3 : หาตำแหน่งก่อนหน้า\nNVDA+CTRL+L : เปิดไฟล์บันทึกเก่า"
+		},
+		{
+			"language": "ko",
+			"displayName": "로그 뷰어",
+			"description": "로그 뷰어는 개발자와 파워 유저를 위해 NVDA 로그 분석 기능을 대폭 강화합니다. 로그 뷰어와 외부 텍스트 편집기를 고급 정규식 검색, 사용자 지정 책갈피, 빠른 탐색 기능을 갖춘 대화형 작업 공간으로 전환합니다. 주요 기능으로는 백그라운드 스레드 스캔, 이전 세션 로그의 자동 충돌 책갈피, 클립보드로의 지능형 여러 줄 오류 블록 추출, 분할된 로그 세그먼트 복사, 자동 앱 충돌 패스스루를 지원하는 유연한 구성 옵션이 있습니다.\n\n단축키:\nCTRL+F : 검색 대화상자 열기\nCTRL+F2 : 책갈피 추가\nF2 : 로그 내 다음 책갈피로 이동\nShift+F2 : 로그 내 이전 책갈피로 이동\n\nCTRL+Shift+F2\n한 번 탭 : 최신 책갈피 이후의 로그 복사\n두 번 탭 : 각 책갈피의 세그먼트를 복사하며 이전 책갈피로 거슬러 올라감\n세 번 탭 : 또는 현재 로그와 이전 로그 간 전환\n\nF3\n한 번 탭 : 다음 항목 찾기\n두 번 탭 : 오류 로그 수준 복사\n\nShift+F3 : 이전 항목 찾기\nNVDA+CTRL+L : 이전 로그 파일 열기"
+		},
+		{
+			"language": "uk",
+			"displayName": "Переглядач журналу",
+			"description": "LogViewer значно покращує аналіз журналу NVDA для розробників та досвідчених користувачів. Він перетворює Переглядач журналу та зовнішні текстові редактори на інтерактивний робочий простір із розширеним пошуком за регулярними виразами, власними закладками та швидкою навігацією. Основні функції включають сканування у фоновому потоці, автоматичні закладки збоїв у логах попередньої сесії, інтелектуальне вилучення багаторядкових блоків помилок до буфера обміну, копіювання сегментів журналу та гнучкі параметри конфігурації з автоматичним пропуском конфліктів додатків.\n\nГарячі клавіші:\nCTRL+F : Відкрити діалог пошуку\nCTRL+F2 : Додати закладку\nF2 : Пере перейти до наступної закладки в журналі\nShift+F2 : Перейти до попередньої закладки в журналі\n\nCTRL+Shift+F2\nОдинарне торкання : Скопіювати журнал з моменту останньої закладки\nПодвійне торкання : Крок за кроком переглядати старі закладки, копіюючи сегмент кожної з них\nПотрійне торкання : або перемикатися між поточним і старим журналом\n\nF3\nОдинарне торкання : Знайти наступне входження\nПодвійне торкання : Скопіювати рівень журналу помилок\n\nShift+F3 : Знайти попереднє входження\nNVDA+CTRL+L : Відкрити файл старого журналу"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "日志查看器",
+			"description": "LogViewer 增强了 NVDA 的日志分析功能，专为开发者和高级用户打造。它将日志查看器和外部文本编辑器转变为一个交互式工作区，提供高级正则表达式搜索、自定义书签和快速导航。核心功能包括：后台线程扫描、自动标记前一次会话日志中的崩溃点、智能提取多行错误块到剪贴板、分段复制日志段，以及带有自动应用冲突透传功能的灵活配置选项。\n\n快捷键：\nCTRL+F：打开搜索对话框\nCTRL+F2：添加书签\nF2：跳转到日志中的下一个书签\nShift+F2：跳转到日志中的上一个书签\n\nCTRL+Shift+F2\n单击：复制自最新书签以来的日志\n双击：按时间顺序向后遍历较旧的书签并复制每个书签的日志段\n三击：或在当前日志与旧日志之间切换\n\nF3\n单击：查找下一个匹配项\n双击：复制错误日志级别\n\nShift+F3：查找上一个匹配项\nNVDA+CTRL+L：打开旧日志文件"
+		},
+		{
+			"language": "ar",
+			"displayName": "عارض السجل",
+			"description": "يعزز LogViewer تحليل سجل NVDA للمطورين والمستخدمين المحترفين. فهو يحول عارض السجل ومحررات النصوص الخارجية إلى مساحة عمل تفاعلية تتميز بالبحث المتقدم بتعابير البحث النمطية (regex)، والعلامات المرجعية المخصصة، والتنقل السريع. تشمل أبرز الميزات مسح خيط الخلفية (background thread)، والعلامات المرجعية التلقائية للأعطال في سجلات الجلسة السابقة، واستخراج كتل الأخطاء الذكية متعددة الأسطر إلى الحافظة، ونسخ أقسام السجل المقسمة، وخيارات التكوين المرنة مع التمرير التلقائي لتضارب التطبيقات.\n\nمفاتيح الاختصار:\nCTRL+F : فتح مربع حوار البحث\nCTRL+F2 : إضافة علامة مرجعية\nF2 : الانتقال إلى العلامة المرجعية التالية في السجل\nShift+F2 : الانتقال إلى العلامة المرجعية السابقة في السجل\n\nCTRL+Shift+F2\nنقرة واحدة : نسخ السجل منذ أحدث علامة مرجعية\nنقرة مزدوجة : التراجع عبر العلامات المرجعية الأقدم مع نسخ قسم كل منها\nثلاث نقرات : أو التبديل بين السجل الحالي والقديم\n\nF3\nنقرة واحدة : العثور على التكرار التالي\nنقرة مزدوجة : نسخ مستوى سجل الأخطاء\n\nShift+F3 : العثور على التكرار السابق\nNVDA+CTRL+L : فتح ملف السجل القديم"
+		},
+		{
+			"language": "es",
+			"displayName": "Visor de registro",
+			"description": "LogViewer potencia el análisis de registros de NVDA para desarrolladores y usuarios avanzados. Convierte el Visor de registro y los editores de texto externos en un espacio de trabajo interactivo con búsqueda avanzada por expresiones regulares, marcadores personalizados y navegación rápida. Entre sus características principales se incluyen el análisis en segundo plano, marcadores automáticos de fallos en registros de sesiones anteriores, extracción inteligente de bloques de errores multilínea al portapapeles, copia de segmentos de registro y opciones de configuración flexibles con transferencia automática en conflictos de aplicaciones.\n\nTeclas de acceso rápido:\nCTRL+F : Abrir diálogo de búsqueda\nCTRL+F2 : Añadir marcador\nF2 : Ir al siguiente marcador en el registro\nShift+F2 : Ir al marcador anterior en el registro\n\nCTRL+Shift+F2\nPulsación simple : Copiar registro desde el último marcador\nDoble pulsación : Retroceder por marcadores anteriores copiando el segmento de cada uno\nTriple pulsación : o cambiar entre el registro actual y el antiguo\n\nF3\nPulsación simple : Buscar siguiente coincidencia\nDoble pulsación : Copiar nivel de registro de error\n\nShift+F3 : Buscar coincidencia anterior\nNVDA+CTRL+L : Abrir archivo de registro anterior"
+		},
+		{
+			"language": "en",
+			"displayName": "logViewer",
+			"description": "LogViewer supercharges NVDA log analysis for developers and power users. It converts the Log Viewer and external text editors into an interactive workspace with advanced regex search, custom bookmarks, and quick navigation. Feature highlights include background thread scanning, automatic crash bookmarks in previous session logs, intelligent multi-line error block extraction to the clipboard, segmented log segment copying, and flexible configuration options with automatic app conflict passthrough.\n\nHot Keys:\nCTRL+F : Open search Dialog\nCTRL+F2 : Add Bookmark\nF2 : Move to next bookmark in log\nShift+F2 : Move to previous bookmark in log\n\nCTRL+Shift+F2\nSingle  Tap : Copy log since the latest bookmark\nDouble Tap : step back through older bookmarks copying each one's segment\nTriple Tap : or switch between the current and old log\n\nF3\nSingle Tap : Find next occurrence\nDouble Tap : copy Error Log Level\n\nShift+F3 : Find previous occurrence\nNVDA+CTRL+L : open OldLog File"
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/09a71f29310c6fb319773fd0674204b2c11ee05192f8d92d7e8d0a1bd97f4bc9",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "09a71f29310c6fb319773fd0674204b2c11ee05192f8d92d7e8d0a1bd97f4bc9",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000181c1d080000",
+					"raw_md5": "f5c08cb46fcce355536213b7e9a2fea5"
+				},
+				"first_submission_date": 1794539640,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794539641,
+				"last_submission_date": 1794539640,
+				"md5": "75bc1a531d9f6227b80f203d3b64d146",
+				"names": [],
+				"reputation": 0,
+				"sha1": "2d7676b1086f2d6fe7f5ad39372df74abedf22a9",
+				"sha256": "09a71f29310c6fb319773fd0674204b2c11ee05192f8d92d7e8d0a1bd97f4bc9",
+				"size": 164374,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/6291"
+}
