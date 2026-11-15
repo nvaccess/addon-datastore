@@ -40,6 +40,17 @@ The process for reviewing pending first submissions is as follows:
     Make sure to clarify any further information on the issue.
     * If the deployment review request has expired, close the PR and re-run the job.
 
+#### Tips
+
+1. To ensure the ownership of an add-on, read their username in the issue description, and check the download and source URLs. You don't need to download the add-on, nor cloning the repository.
+2. If the submitter doesn't match the add-on or source URL, investigate if they are members of the organization submitting the add-on, or if they are authorized to submit it.
+3. Check the linked pull request, under the development heading of the submission issue, to find out the exact add-on ID.
+4. Have an updated copy of the add-on-datastore repo to check that this or a similar add-on ID is not included in submitters.json, or that the submitter should be authorized.
+5. If this submission contains an add-on ID corresponding or similar to a known add-on owned by a different autor, tag the original autor to investigate if this submission should be accepted or not, or if the submitter should use a different add-on ID.
+6. If you have license concerns about an add-on, leave the submission or tag NV Access developers to request a second opinion.
+7. If an author is unresponsive, reject the submission and request for submitting a new issue.
+8. If you have any questions and you are a registered metadata reviewer, request for help on the add-on metadata reviews mailing list.
+
 ## Approving an add-on which was flagged as malicious
 
 An add-on may be flagged as malicious by VirusTotal.
