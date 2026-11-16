@@ -6,20 +6,23 @@ import glob
 import json
 import logging
 import os
-from pathlib import Path
 from collections.abc import Iterable
+from pathlib import Path
 from typing import Any
+
+from jsonschema.exceptions import ValidationError
+
+from src.validate.validate import (
+	JSONSchemaPaths,
+	validateJson,
+)
+
 from .datastructures import (
 	Addon,
-	generateAddonChannelDict,
 	MajorMinorPatch,
 	VersionCompatibility,
 	WriteableAddons,
-)
-from src.validate.validate import (
-	ValidationError,
-	validateJson,
-	JSONSchemaPaths,
+	generateAddonChannelDict,
 )
 
 log = logging.getLogger()
@@ -71,10 +74,10 @@ def getLatestAddons(
 	Given a set of addons and NVDA versions, create a dictionary mapping each nvdaAPIVersion and channel
 	to the newest compatible addon.
 	"""
-	uniqueApiVersions = set(nvdaAPIVersion.apiVer for nvdaAPIVersion in nvdaAPIVersions)
-	latestAddons: WriteableAddons = dict(
-		(nvdaAPIVersion, generateAddonChannelDict()) for nvdaAPIVersion in uniqueApiVersions
-	)
+	uniqueApiVersions = {nvdaAPIVersion.apiVer for nvdaAPIVersion in nvdaAPIVersions}
+	latestAddons: WriteableAddons = {
+		nvdaAPIVersion: generateAddonChannelDict() for nvdaAPIVersion in uniqueApiVersions
+	}
 	for addon in addons:
 		for nvdaAPIVersion in nvdaAPIVersions:
 			addonsForVersionChannel = latestAddons[nvdaAPIVersion.apiVer][addon.channel]
@@ -136,8 +139,7 @@ def writeAddons(addonDir: str, addons: WriteableAddons, supportedLanguages: set[
 				addon = addons[nvdaAPIVersion][channel][addonName]
 				with open(addon.pathToData, "r", encoding="utf-8") as oldAddonFile:
 					addonData: dict[str, Any] = json.load(oldAddonFile)
-					if "translations" in addonData:
-						del addonData["translations"]
+					addonData.pop("translations", None)
 
 				addonVersion = str(addon.addonVersion)
 				translatedAddonDirPath = os.path.join(addonDir, "addons", addonName, addonVersion)
