@@ -1,0 +1,32 @@
+{
+	"addonId": "freeAudio",
+	"displayName": "freeAudio: Radio and more",
+	"URL": "https://github.com/Surveyor123/freeAudio/releases/download/v2026.25.5/freeAudio-2026.25.5.nvda-addon",
+	"description": "freeAudio is an internet radio, podcast, audio-book, and local music add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, the libriVox + GETEM digital library for the visually impaired, and your own local audio files and folders through its built-in jukebox. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, per-audio-book, and per-jukebox-track audio profiles. Podcast episodes, audio book chapters, and jukebox tracks resume automatically from where you left off - jukebox folders even pick up on the last track you were playing - with adjustable pitch-preserving playback speed and independent pitch-shift (semitone transpose). Playback is handled by BASS, with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "f66adc07925fb384dc9ac33ec739b838f1fbe5fb9fcdd2cc440208ce3669c37a",
+	"addonVersionName": "2026.25.5",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 25,
+		"patch": 5
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeAudio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeAudio",
+	"changelog": "\n## Changelog for 2026.25.5\n\n### New: Internet Archive as an audio book source\n\n- A fourth audio book source, **Internet Archive**, covers audio books uploaded to archive.org (items tagged \"audiobook\") that LibriVox and Project Gutenberg do not already offer. This brings in audio books in other languages, including Turkish ones. No account is needed.\n- It works like the other sources: search, preview, add to your library, play with automatic resume, download, direct keyboard shortcuts and F3/F4 navigation. Pasting an archive.org details page resolves that single book.\n- It has its own library file and is enabled by default. It can be switched off in Settings > Audio book sources. The Clean up dialog's audio book libraries item now includes it.\n\n### Improved: audio book search\n\n- LibriVox, Project Gutenberg and Internet Archive searches try your exact words first and, only if nothing is found, fall back to more tolerant matching. \"Moonstone, The\" is also tried as \"The Moonstone\", \"Doyle, Arthur Conan\" as \"Arthur Conan Doyle\", honorifics and punctuation are ignored, and finally each word is matched separately across title and author.\n\n### Fixed\n\n- Playback no longer breaks after changing stations or tracks very quickly. Previously this could end in a \"could not play ... Unknown reason\" error that kept happening until NVDA was restarted.\n- Pressing next or previous several times in quick succession, or repeating the command by voice or macro, now moves one step per press. Previously some steps were lost, and only the newest request now starts playing.\n- Saved Project Gutenberg books are now found when syncing the playing book and when downloading the current book.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794923260000,
+	"translations": []
+}
