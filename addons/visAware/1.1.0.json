@@ -1,0 +1,44 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v1.1.0/visAware-1.1.0.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "6aad6aa948042c5de6427a50c771a9adff3872942cf9b559da82545da4354df7",
+	"addonVersionName": "1.1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 1.1.0\n\n* Added a command to ask a question before image description, for engines that support custom prompts. Assign a shortcut in NVDA's Input Gestures dialog.\n* Fixed the conversation history caret jumping to the end when new replies arrive, so you can keep your reading position.\n* Automatic recognition now remembers your engine choice for OCR and image description when switching modes or turning automatic recognition off and on.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794941293000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 1.1.0\n\n* Added a command to ask a question before image description, for engines that support custom prompts. Assign a shortcut in NVDA's Input Gestures dialog.\n* Fixed the conversation history caret jumping to the end when new replies arrive, so you can keep your reading position.\n* Automatic recognition now remembers your engine choice for OCR and image description when switching modes or turning automatic recognition off and on."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 1.1.0\n\n* 新增“在图像描述前提问”命令，适用于支持自定义提示词的引擎。可在 NVDA 的“按键与手势”对话框中为其分配快捷键。\n* 修复收到新回复时对话记录中的光标跳到末尾的问题，保留当前阅读位置。\n* 自动识别会分别记住 OCR 和图像描述所选的引擎，切换模式或关闭后重新开启时不再重置。"
+		}
+	]
+}
