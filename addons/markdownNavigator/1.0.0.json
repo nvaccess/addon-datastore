@@ -1,0 +1,51 @@
+{
+	"addonId": "markdownNavigator",
+	"displayName": "Markdown Navigator",
+	"URL": "https://github.com/cary-rowen/markdownNavigator/releases/download/v1.0.0/markdownNavigator-1.0.0.nvda-addon",
+	"description": "An NVDA add-on that provides structured navigation (headings, lists, tables, etc.) in editable text areas for Markdown files.",
+	"sha256": "83afa5e1d3cd98ddb853fed08dad46010a89dad7f3addeca2926eea81472fb7d",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/markdownNavigator",
+	"license": "GPL v2",
+	"homepage": "https://addonstore.nvaccess.org/?addonId=markdownNavigator",
+	"changelog": "### 1.0.0\n\n- Added extended Markdown table navigation for the first and last rows and columns.\n- Added row and column reading commands, including reading from the current cell to the end of an axis.\n- Reused NVDA text navigation APIs so native table and editor behavior remains available.\n- Added a public integration hook for Easy Table Navigator in Markdown tables. (Once Easy Table Navigator PR #23 is merged, its arrow-key and edge-navigation commands will work with Markdown Navigator tables.)\n- Fixed list navigation across continuation paragraphs, nested lists, list boundaries, and documents without a trailing newline.\n- Added Markdown link activation with Space, Enter, and Numpad Enter, including internal anchor jumps and external URL opening.\n- Added NVDA+K support for reporting the destination of the Markdown link at the caret.\n- Added support for opening existing absolute local Markdown link targets.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795037492000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Markdown 导航",
+			"description": "一个 NVDA 插件，为 Markdown 文件提供结构化导航（标题、列表、表格等）。",
+			"changelog": "### 1.0.0\n\n- 新增 Markdown 表格首行、末行、首列和末列导航。\n- 新增表格行列朗读功能，包括从当前单元格朗读至所在行列末尾。\n- 复用 NVDA 文本导航 API，保留原生表格和编辑器行为。\n- 增加供 Easy Table Navigator 在 Markdown 表格中使用的公开集成接口。\n（待 Easy Table Navigator PR #23 合并后，可在 Markdown Navigator 表格中使用其方向键和边界导航命令。）\n- 修复跨连续段落、嵌套列表、列表边界以及无末尾换行文档中的列表导航。\n- 支持使用空格、回车和数字键盘回车激活 Markdown 链接，包括内部锚点跳转和外部网址打开。\n- 支持使用 NVDA+K 读出光标所在 Markdown 链接的目标地址。\n- 支持打开已存在的本地绝对路径 Markdown 链接。\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Навігатор Markdown",
+			"description": "Додаток NVDA, що забезпечує структуровану навігацію (заголовки, списки, таблиці тощо) у редагованих текстових областях для файлів Markdown.",
+			"changelog": "### 1.0.0\n\n- Added extended Markdown table navigation for the first and last rows and columns.\n- Added row and column reading commands, including reading from the current cell to the end of an axis.\n- Reused NVDA text navigation APIs so native table and editor behavior remains available.\n- Added a public integration hook for Easy Table Navigator in Markdown tables. (Once Easy Table Navigator PR #23 is merged, its arrow-key and edge-navigation commands will work with Markdown Navigator tables.)\n- Fixed list navigation across continuation paragraphs, nested lists, list boundaries, and documents without a trailing newline.\n- Added Markdown link activation with Space, Enter, and Numpad Enter, including internal anchor jumps and external URL opening.\n- Added NVDA+K support for reporting the destination of the Markdown link at the caret.\n- Added support for opening existing absolute local Markdown link targets.\n"
+		},
+		{
+			"language": "ru",
+			"displayName": "Markdown-навигатор",
+			"description": "Дополнение для NVDA, обеспечивающее структурную навигацию (заголовки, списки, таблицы и т.д.) в редактируемых текстовых областях для Markdown-файлов.",
+			"changelog": "### 1.0.0\n\n- Added extended Markdown table navigation for the first and last rows and columns.\n- Added row and column reading commands, including reading from the current cell to the end of an axis.\n- Reused NVDA text navigation APIs so native table and editor behavior remains available.\n- Added a public integration hook for Easy Table Navigator in Markdown tables. (Once Easy Table Navigator PR #23 is merged, its arrow-key and edge-navigation commands will work with Markdown Navigator tables.)\n- Fixed list navigation across continuation paragraphs, nested lists, list boundaries, and documents without a trailing newline.\n- Added Markdown link activation with Space, Enter, and Numpad Enter, including internal anchor jumps and external URL opening.\n- Added NVDA+K support for reporting the destination of the Markdown link at the caret.\n- Added support for opening existing absolute local Markdown link targets.\n"
+		}
+	]
+}
