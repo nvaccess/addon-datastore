@@ -2,13 +2,12 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from enum import Enum
 import json
-from jsonschema import validate
-from jsonschema.exceptions import ValidationError
 import os
+from enum import Enum
 from typing import Any
 
+from jsonschema import validate
 
 JsonObjT = dict[str, Any]
 
@@ -24,7 +23,4 @@ def validateJson(data: JsonObjT, schemaPath: str) -> None:
 	"""
 	with open(schemaPath) as f:
 		schema = json.load(f)
-	try:
-		validate(instance=data, schema=schema)
-	except ValidationError as err:
-		raise err
+	validate(instance=data, schema=schema)

@@ -3,27 +3,26 @@
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
 import argparse
-from collections.abc import Generator
-from glob import glob
 import json
 import os
 import re
-from typing import Any, cast
 import urllib.request
+from collections.abc import Generator
+from glob import glob
+from typing import Any, cast
 
-from jsonschema import validate, exceptions
+from jsonschema import validate
 
 from .addonManifest import AddonManifest, ApiVersionT
-from .manifestLoader import getAddonManifest, TEMP_DIR
 from .majorMinorPatch import MajorMinorPatch
+from .manifestLoader import TEMP_DIR, getAddonManifest
 from .sha256 import sha256_checksum
-
 
 JSON_SCHEMA = os.path.join(os.path.dirname(__file__), "addonVersion_schema.json")
 JsonObjT = dict[str, Any]
 
 
-ValidationErrorGenerator = Generator[str, None, None]
+ValidationErrorGenerator = Generator[str]
 
 
 def getAddonMetadata(filename: str) -> JsonObjT:
@@ -60,10 +59,7 @@ def validateJson(data: JsonObjT) -> None:
 	"""
 	with open(JSON_SCHEMA, encoding="utf-8") as f:
 		schema = json.load(f)
-	try:
-		validate(instance=data, schema=schema)
-	except exceptions.ValidationError as err:
-		raise err
+	validate(instance=data, schema=schema)
 
 
 def checkDownloadUrlFormat(url: str) -> ValidationErrorGenerator:
@@ -84,7 +80,7 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 	DOWNLOAD_BLOCK_SIZE = 8192  # 8 kb
 	try:
 		remote = urllib.request.urlopen(url)
-	except Exception as e:
+	except Exception as e:  # noqa: BLE001
 		yield f"Unable to download from {url}, error: {e}"
 		return
 	if remote.code != 200:
@@ -96,8 +92,7 @@ def downloadAddon(url: str, destPath: str) -> ValidationErrorGenerator:
 		chunk = DOWNLOAD_BLOCK_SIZE
 		while True:
 			remainingSize = size - read
-			if remainingSize < chunk:
-				chunk = remainingSize
+			chunk = min(chunk, remainingSize)
 			block = remote.read(chunk)
 			if not block:
 				break
@@ -209,7 +204,7 @@ def parseVersionStr(ver: str) -> dict[str, int]:
 			"patch": 0,
 		}
 
-	groups = list(x for x in matches.groups() if x)
+	groups = [x for x in matches.groups() if x]
 	groups.extend([0, 0])  # ensure there are enough elements (smallest match is a single value)
 	version = {
 		"major": int(groups[0]),
@@ -395,7 +390,7 @@ def validateSubmission(submissionFilePath: str, verFilename: str) -> ValidationE
 		yield from checkLastTestedNVDAVersionMatches(manifest, submissionData)
 		yield from checkVersions(manifest, submissionFilePath, submissionData)
 
-	except Exception as e:
+	except Exception as e:  # noqa: BLE001
 		yield f"Fatal error, unable to continue: {e}"
 
 

@@ -27,12 +27,12 @@ def sha256_checksum(binaryReadModeFile: typing.BinaryIO, blockSize: int = BLOCK_
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument(
-		type=argparse.FileType("rb"),
 		dest="file",
 		help="The NVDA addon (*.nvda-addon) to use when computing the sha256.",
 	)
 	args = parser.parse_args()
-	checksum = sha256_checksum(args.file)
+	with open(args.file, "rb") as file:
+		checksum = sha256_checksum(file)
 	print(f"Sha256:\t {checksum}")
 
 

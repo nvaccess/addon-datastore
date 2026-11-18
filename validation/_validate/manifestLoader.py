@@ -2,13 +2,13 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from collections.abc import Generator
-from glob import glob
 import os
 import pathlib
 import shutil
 import tempfile
 import zipfile
+from collections.abc import Generator
+from glob import glob
 
 from .addonManifest import AddonManifest
 
@@ -27,16 +27,13 @@ def getAddonManifest(addonPath: str) -> AddonManifest:
 		for info in z.infolist():
 			z.extract(info, extractDir)
 	filePath = os.path.join(extractDir, "manifest.ini")
-	try:
-		manifest = AddonManifest(filePath)
-		return manifest
-	except Exception as err:
-		raise err
+	manifest = AddonManifest(filePath)
+	return manifest
 
 
 def getAddonManifestLocalizations(
 	manifest: AddonManifest,
-) -> Generator[tuple[str, AddonManifest], None, None]:
+) -> Generator[tuple[str, AddonManifest]]:
 	"""Extract data from translated manifest.ini from *.nvda-addon and parse.
 	Raise on error.
 	"""
@@ -50,7 +47,7 @@ def getAddonManifestLocalizations(
 		try:
 			translatedManifest = AddonManifest(translationFile)
 			yield normalizeLanguage(languageCode), translatedManifest
-		except Exception:
+		except Exception:  # noqa: BLE001
 			print(f"Error in {translationFile}")
 
 
