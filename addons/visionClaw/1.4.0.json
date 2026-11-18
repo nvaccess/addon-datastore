@@ -28,5 +28,708 @@
 	"changelog": "VisionClaw, forked from VisionMate 5.0.1.\nNew in 1.4.0:\n* Everything VisionClaw keeps is now inside its own add-on folder, in the folder data: the models, guides, training material, notes, memories, skills, your library and logs, whatever their size. The first time 1.4.0 starts, what an older VisionClaw kept in NVDA's configuration folder is moved in; on the same drive that takes a moment, however many gigabytes the models are. When VisionClaw is updated, the folder moves into the newer version by itself. When VisionClaw is removed, it is kept in NVDA's configuration folder, and a later install takes it in again.\n* A portable copy of VisionClaw with everything in it. In VisionClaw's settings, press \"Make a portable copy of VisionClaw with everything in it\" (Alt+X). Make one file that installs VisionClaw with all its models and data on any computer, which NVDA asks about before it installs it, or put VisionClaw with everything straight into a portable NVDA, as on a flash drive. Nothing in the data folder is left out, and your VisionClaw settings come along. The window says what goes in and how big it is, warns before a drive formatted as FAT32 or a drive with too little room, shows a progress bar and can be stopped. A button opens NVDA's own window for making a portable NVDA, which now carries VisionClaw with everything too.\n* Stated plainly: this was tested with plain Python, with the real wxPython for the window, and with a real file of 1.1 GB written and read back. It has not been run inside NVDA yet: not the move at start, not an update carrying the data, and not a copy installed on another computer or started from a flash drive.\nWhat was new in 1.3.0:\n* The NVDA Developer Guide now comes with VisionClaw, as text, so questions about writing for NVDA are answered from it without a download. Its code examples are kept whole now; an older VisionClaw cut them up and lost their indentation. If you downloaded the guides before, ask \"get the latest NVDA developer guides\" once more. \"Which developer guides do I have\" tells you which are on your computer and from which day, and \"delete the developer guides\" removes the downloaded ones after asking.\n* When VisionClaw writes or corrects an add-on for you, it is given the single lines of the guides that fit your request and that its own notes do not already cover. A line whose function your NVDA no longer has is left out.\n* Free lessons that teach NVDA, on request. \"Get the free NVDA training material\" says which sites it is from, asks, and then downloads 18 pages as text: from the NVDA wiki, pages for people who come from JAWS or Window-Eyes and about the ribbon of Office, more voices and NVDA's log; the eight \"Learn NVDA\" lessons of the American Foundation for the Blind, from 2016; and Hadley's four NVDA workshops. They are used when you ask to learn or be taught something, always after NVDA's own user guide, and an answer says where it is from. Say once \"I come from JAWS\" and VisionClaw remembers it. \"Which training material do I have\" and \"delete the training material\" work as you would expect.\n* VisionClaw tells you what it can download. Ask \"what can you download for me\", or press the new button \"What VisionClaw can download for you\" in the settings. After a fitting answer it also tells you by itself, in one sentence that begins \"This is said once\" and is never repeated. Nothing is downloaded until you ask and say yes.\n* The add-ons you have installed. \"Is there an add-on that reads math\" or \"which of my add-ons can tell me the date\" names the add-on that says it does this, with its key, and says when that add-on is turned off. VisionClaw never installs, removes, turns on or turns off an add-on.\n* NVDA Coach, the free add-on with lessons by Tony Gebhard, only when you ask and with as much help as you ask for: \"give me a hint about browse mode\" gives one hint, \"coach me on reading the current line\" one step, \"teach me object navigation step by step\" the lesson, \"which lessons does NVDA Coach have\" and \"how far am I in NVDA Coach\" the list and your progress, and \"open NVDA Coach\" its own window. Without NVDA Coach, \"teach me how to\" is answered from NVDA's own user guide.\n* How much help you want is remembered. Say \"from now on, give me only a hint\" or \"always explain things step by step\", and VisionClaw keeps to it in its answers until you say \"forget that\".\n* \"What is new in NVDA\" is answered from NVDA's own list of what is new, for its newest three versions.\n* In the description window, a question about a key is now given the NVDA command it is about, so that the key is NVDA's real one. Before, the model that looks at the picture made keys up.\n* A hand on the mouse. At the times you work a real mouse or a trackpad yourself, say so, as in \"I am using my real mouse\", and VisionClaw helps with that instead of leading you back to the keyboard: with NVDA's own mouse tracking, NVDA+M, and with directions in words.\n* Everything VisionClaw reads up in is a Markdown file you can open, in its data folder: guides, training, notes, memories, skills, and the new folder help, where NVDA's own user guide, its list of what is new and the help of each of your add-ons are kept as text and made again when NVDA or an add-on is updated.\n* Seven new skills, 49 in all: answering from the developer guides, add-ons written the way the guides say, working with your add-ons, as much help as was asked for, the training material, coming from another screen reader, and a hand on the mouse.\n* Stated plainly: none of this has been run inside NVDA yet. It was tested with a stand-in for NVDA, with the real guides, the real pages of the three sites and NVDA Coach's real English lessons fetched once by hand, and with the real models on 120 requests in words. NVDA Coach was not installed on the test computer. The add-on's own download code has not fetched the 18 training pages yet. Measured with the small coder model, the lines of the guides made everyday add-ons neither better nor worse. The NVDA Add-on Development Guide, the NVDA wiki and the lessons of AFB and Hadley do not come with VisionClaw, because their owners have not said that they may be passed on; each is downloaded when you ask. AFB's lessons are from 2016 and may describe an older NVDA.\nWhat was new in 1.2.0:\n* Fingers, without a touch screen. \"Pinch the map\", \"spread two fingers on the photo\", \"swipe left with three fingers\", \"turn the picture 90 degrees clockwise with two fingers\", \"double tap the Start icon\", \"touch and hold the Record button for 2 seconds\": VisionClaw touches the screen as one to five fingers would, and tells you whether anything changed. Where a program takes no touch, it uses the mouse wheel instead for a pinch, a spread and a swipe with two fingers, tells you which of the two worked, and keeps that for the program.\n* Pressure, without a pen. \"Press hard on the drum pad\", \"press the pad at 70 percent pressure for 2 seconds\", \"draw a line to the right with the pressure rising\", \"erase a zigzag with the pen, firmly\": VisionClaw presses as a pen would, as lightly or as hard as you say.\n* Games that read the mouse directly. Tell VisionClaw once that \"the mouse turns the view in this game\", or that \"this game has its own mouse pointer\"; it keeps that for the game. Then \"turn left\", \"look up a little\" and \"turn around\" move the mouse itself and say whether the view changed, and in a game that draws its own pointer, clicking, holding and dragging things by name work again. \"Direct mouse movement is too fast\" or \"too slow\" is kept for the game too. In pointer mode, NVDA+Alt+K, the new key M changes between the three ways the mouse can be moved.\n* A game controller. VisionClaw notices a connected controller and says so. In controller mode (hold the controller's View and Menu buttons together for a second, or press NVDA+Alt+J) the left stick moves the mouse pointer, slowly or fast by how far you push it, and you hear what is under the pointer when it comes to rest; A clicks, B right-clicks, X double-clicks, Y says what is under the pointer; the right trigger is the mouse button for as long as you pull it, for dragging and holding; the left trigger presses like a pen, as hard as you pull it; the right stick turns the mouse wheel or, pressed in, moves the mouse itself for games; with the right shoulder button held, the direction pad jumps from one thing found in the window to the next and says its name. The Menu button says all of it, and the View button turns the mode off. Out of controller mode the controller is left alone.\n* A button of the controller as a hotkey of a program: \"make the X button on my controller click Play\", \"let the left shoulder button of my controller read the score\".\n* A new setting, Game controller: tell me when one is connected, listen for it without a word, or do not look for one.\n* The inspection of a window now says when a program hides Windows' mouse pointer and keeps it inside its window, as games do that read the mouse directly, and what to tell VisionClaw then; and that a controller is connected. Three more ways of working a control are known to plain code and to the models: touched with fingers, pressed with pressure, and worked by moving the mouse itself.\n* Three new skills: \"Work a control that needs fingers or pressure\", \"Play a game that reads the mouse directly\" and \"Work the computer with a game controller\". Questions such as \"is a controller connected?\" and \"what do the buttons on my controller do?\" are answered by plain code and from VisionClaw's own notes.\n* Stated plainly: all of this was tested with stand-ins for Windows, the mouse and the controller, with a game drawn by the test, and with the real models on drawn pictures and on requests in words. No real touch was made, no real pen was pressed, no real game was turned, and no real controller was held. A game that refuses movements made by a program cannot be worked. A program that reads a drawing tablet through the tablet's own driver feels no pressure. VisionClaw cannot press a controller's buttons for you. The controller's buzz may not come, because Windows gives the motors to the program in front; every buzz has a sound or a word beside it.\nWhat was new in 1.1.0:\n* Controls that need more than a click. Hover: \"hover over the Help icon\" rests the mouse pointer on it, on a web page too, and reads out what appeared, such as a tip or a menu that opens by itself. Hold: \"press and hold the Record button for 3 seconds\", or a hotkey that holds a button down until you press it again or press Escape. Gestures: \"swipe left on the card\", \"draw a circle\", a tick, a zigzag, a square, a triangle, a cross, a line in several directions, or a letter, with the left or the right button. Timing: \"click the Go button as soon as it changes\", or \"click it 20 times\", in a steady rhythm.\n* More ways to click: the middle button, a triple click, a click with Control, Shift or Alt held down, and a click at a place on a thing, such as \"click the seek bar 30 percent across\". \"Zoom in\" and \"zoom out\" turn the mouse wheel with Control held down.\n* Pointer mode, NVDA+Alt+K, has three new keys: T rests the pointer and says what appears, C clicks the moment what is under the pointer changes, Shift+C only sounds a tone then.\n* The inspection of a window or page now finds controls that are hovered over, held down, swiped, drawn on, clicked at the right moment, or dragged in any direction. Where a control's own name says so, as in \"Hold to record\" or \"Swipe to unlock\", plain code knows it; otherwise the models look at its picture. For a control that is hovered over or held down, \"fix it\" makes a hotkey; for the others the report says what to ask for.\n* Every kind of control NVDA has, all 156, is now known to VisionClaw: how it is worked, that it only holds or shows something, or that it must be looked at. It also uses more of what Windows, a web page and NVDA report: that a control can be dragged, moved, scrolled or selected, that it opens a menu, that it is checkable or editable.\n* A new skill, \"Work a control that needs more than a click\", and the questions put to the models name every way of working a control.\n* Every model can now be chosen as Q4_K_M (smaller and faster) or Q6_K (larger and more exact) in the models window, in a second list under each model, with its size. The 7B and 9B models are included. VisionClaw suggests a model and a quant, and the user decides. A model you already have keeps working unchanged. The vision projector is shared by both quants and downloaded once, and the quant you no longer use is offered for removal.\n* Measured with Qwen2.5 Coder 1.5B writing four add-ons and debugging one: Q4_K_M passed 12 of 12 and Q6_K 9 of 12, with more repair rounds, so Q4_K_M stays the suggestion. Q6_K is there for anyone who wants it.\n* Stated plainly: VisionClaw looks at a watched place about 25 times a second, so a click \"at the right moment\" comes a moment after the change. Gestures with two fingers, pressure, and games that read the mouse directly are not covered. The new mouse actions were tested with a stand-in for the mouse and with the real models on drawn pictures, not yet in real programs inside NVDA.\nWhat was new in 1.0.0:\n* The first full release. It is exactly what was 0.12.0, now called 1.0.0: skills, memories and your library, and instructions for blind users in every answer, on top of everything from the versions before it.\n* Honest note: the whole test plan has not been run inside NVDA yet. Please report what does not work.\nWhat was new in 0.12.0, and is in 1.0.0:\n* Skills. A skill tells VisionClaw how a kind of job is done well for a blind person. 38 come with VisionClaw: describing a photo, text NVDA cannot read, a window's layout, unlabelled buttons, web forms, shopping, pop-ups and banners, error messages, NVDA for a beginner, comfortable speech, braille, NVDA gone silent, games, stubborn programs, naming a control, announcing changes, keys, long web pages, web searches, video calls, email, how a document looks, charts, colours, screen privacy, installers, PDF, tables, music software, the mouse from the keyboard with NVDA's own mouse keys, six for the add-ons VisionClaw writes, and two that run steps: \"get my bearings\" and \"quick status\" (the time, the date and the battery).\n* VisionClaw chooses skills from the words of your request, by plain code, at most two at a time; an everyday word alone does not start one. A skill never holds code, and every change is still asked about.\n* Make your own skills in words: \"make a new skill: when I ask about recipes, read the ingredients first\". What the skill says is your own words. Ask \"which skills do you have\", \"what does the email skill say\", \"turn off the game skill\", or \"delete my recipes skill\".\n* The skills window, NVDA+Alt+I, or the Skills button in VisionClaw's settings: every skill and what it says; New skill, Change, Turn off or on, Delete, Import a skill file, Open the skills folder, and Read the skills again. A skill that comes with VisionClaw is never deleted, only turned off; a changed one is kept as your copy, and deleting your copy brings back the original. The settings also have a button that opens the skills folder.\n* Memories. Say \"remember that I use a braille display with 40 cells\". VisionClaw keeps your own words as a small Markdown file, one for each memory, and uses them with later requests. It also keeps something lasting you say about how you work the computer when nothing else kept it, and says so and how to undo it; the setting \"Remember things\" decides this. \"What do you remember\", \"forget that\", \"forget all\"; or the memories window, with check boxes, Forget checked, and Forget all and start over.\n* Your library: put Markdown, text, saved web pages or Word documents in VisionClaw's library folder, and questions are answered from them too, after NVDA, the program, its window and Windows.\n* New notes VisionClaw looks things up in: UI Automation, MSAA and IAccessible2, ARIA, the Java Access Bridge, Windows' own accessibility, web browsers, Microsoft Office and File Explorer. Notes on an interface or a program are used only when your question or the program in front names it.\n* Every answer, every description of a picture and every add-on written on the fly is now told who the user is: blind, listening to speech or reading braille. Answers start with the answer, use no Markdown, copy names, numbers and keys exactly, say places in words, and say what cannot be read instead of guessing.\n* New in the settings: \"How VisionClaw answers, and your own instructions\". Read and rewrite every instruction, add your own, and restore the original of one or all of them. The instructions apply to whatever model you use.\n* Add-ons written on the fly get code-writing rules chosen by your words: for an add-on started with a key, one that works by itself, or one for a single program or game. They also get the skills that fit.\n* Add-ons VisionClaw writes now use what you asked it to remember, your library and the notes on accessibility interfaces.\n* A model that thought until no room was left for its answer is now asked again without thinking, so add-ons no longer fail with an empty file.\n* The notes for the add-on writer now say how to read the status bar of the window in front, and the right name of the event a program sends when it wants something announced.\nTested with stand-ins for NVDA, the real wxPython for the skills and memories windows, and the real Qwen3.5 9B in the engine. Not yet tried inside NVDA.\nNew in 0.11.0:\n* VisionClaw can learn about the program or game you are in. Ask \"learn about this program\" or \"learn about this game\". It works out which program is in front, a model says what it is called and whether it is a game, a program or a utility, and you are asked before anything goes online. Then it reads what Wikipedia says about it, asks Wikidata for the address of the program's own website and manual, and reads a few help pages straight from that website. You can also name a program: \"learn about Audacity\".\n* What it learns is kept as short notes in a Markdown file on your computer, one file for each program. The model writes the notes, one section of a page at a time, and plain code keeps only notes whose keys and words really are in the page; a key the model made up is dropped. Each note says which website it is from. The notes are yours: \"open the notes on this program\", change them, or \"delete the notes on this program\". \"Which notes do you have\" lists them.\n* Then ask your questions in the program, such as \"how do I duplicate a line\" or \"what is this program\". The notes are asked together with NVDA, the program, its window and Windows, and an answer from them says so.\n* A page you have open in your own browser can be added: \"add this page to the notes on Notepad++\". The page is read as your browser shows it; nothing is fetched.\n* No search engine is used by VisionClaw itself. Search engines turn programs away, and VisionClaw does not work around that. A program that Wikipedia does not know is not found; then open a page about it in your browser and add that page.\n* The models are used for more. For a question that only points, like \"what does this do\", a model says whether you mean the program, the window or the control that has the focus, and the answer is about that. A model that is not one of the very smallest now reads what was looked up and says which line answers your question, or that none does; then VisionClaw says that nothing answers it and marks the nearest thing as only the nearest.\n* A question whose telling word is found nowhere no longer gets a loosely related answer.\nTested with stand-ins for NVDA and for the internet, with the real internet for three programs, and with the real Qwen3.5 9B in the engine. Not yet tried inside NVDA.\nNew in 0.10.0:\n* Fixed: asked \"How can I use the keyboard to navigate my desktop?\", VisionClaw answered with the NVDA command that switches the keyboard layout, because it shares the words keyboard and desktop. A question was only ever put to NVDA's commands, and nothing checked that the answer was about the question.\n* A question is now asked of four places, every time, in this order: NVDA (its commands where you are, its whole user guide, the help of your add-ons), then the program in front, then its window and the control that has the focus, then Windows itself. Plain code then keeps only what is about your question, and the answer says where it is from. The desktop question is now answered with: press Windows+D to go to the desktop, the arrow keys move from icon to icon, typing the first letters of a name jumps to it, and Enter opens it.\n* VisionClaw now knows the keys of Windows: the desktop, the Start menu, the taskbar, the notification area, switching and closing windows, File Explorer, menus, dialogs, moving in and selecting text, copy and paste, locking and shutting down, and more. These notes were written from Microsoft's own page on Windows keyboard shortcuts and are part of the add-on; nothing is looked up online.\n* VisionClaw is more aware of where you are. Ask \"what can I do here\", \"what is this program\" or \"which key is for the Save button\": it tells you the program and its version, the window, the control that has the focus with its state, its place in its list and what it is inside of, and the controls in the window that have keys of their own. \"Which windows are open\" lists them.\n* Ask what a key does: \"what does NVDA+T do\", \"what does Windows+D do\".\n* \"What is browse mode\" and other \"what is\" questions are answered from where NVDA's user guide explains the thing, not with a command that happens to have the same words.\n* When nothing that was found is about your question, VisionClaw says so in a plain sentence and names what it asked. It no longer gives the nearest thing.\n* When a newer version of VisionClaw is offered, what is new is now in a read-only edit box, one point to a line, so you can read it line by line and word by word, go back, and copy it. The window has two buttons, Download and install, and Not now; Escape means not now.\nTested with stand-ins for NVDA, including a replay of the question that went wrong, and with the real Qwen3.5 9B in the engine. Not yet tried inside NVDA.\nNew in 0.9.0:\n* Fixed: \"ask NVDA to give me the current time and then the date\" ended with \"VisionClaw ran into a problem: AttributeError: 'NoneType' object has no attribute 'wasInSayAll'\". Three things were wrong, and all three are fixed. VisionClaw picked the status bar command instead of the clock, because both share the word \"current\". It could not make a key press for that command's key, because NVDA shows the key as \"ctrl\" and knows it as \"control\". And it then ran the command with no key press at all, which NVDA cannot do.\n* The right command is found among all of NVDA's: the word that tells a command apart now counts for more than a word many commands share. When no command fits, VisionClaw says so and does not run the nearest thing.\n* Commands that do something else on a second or third press: one press of NVDA+F12 says the time, two say the date. VisionClaw reads this from NVDA's own description of the command and presses as often as your words ask for. \"What is the date\" gives the date; \"the time and the date\" gives both. It tells you the keys and how often to press.\n* Commands that NVDA lists nowhere, because they have no description, are found and run too. A command without a key runs as well.\n* A fault inside VisionClaw no longer ends your whole request. The step that failed says so, and the rest of the request is still done.\n* VisionClaw's own log, for finding out why something went wrong. It does not depend on NVDA's logging level. It records every request, step, question to a model and its answer, every tool and its result, and every error with the place in the code. Ask \"open the VisionClaw log\", or use the button in VisionClaw's settings, where you also choose Detailed, Brief or Off. The log stays on your computer and is sent nowhere; it holds what you asked and what was read from your screen.\n* Questions in the description window (NVDA+Alt+W or NVDA+Alt+F twice) are all answered. The reply \"I can only answer questions about this image\" is gone. Ask what is highlighted, where something is, what a thing is for, or what to do next. What the picture does not show, the model is told to say is not shown.\n* Everything inside NVDA can be asked about. \"What does the function api.getFocusObject do?\" searches every loaded module of NVDA and your add-ons and says what the thing is, how it is called, and what it holds or gives back now. \"Tell me everything NVDA knows about this control\" reads every fact of the focused control, the navigator object, the window or what is under the mouse; ask for one fact and only that is said.\n* \"Do a full audit of NVDA\" counts and lists every command, module, class, function and value in your running NVDA, and how it drives your speech synthesizer and braille display, and saves the list as a file. Nothing is changed by it.\n* The models can read how NVDA is built inside: commands, objects, how text reaches the speech synthesizer, and how it reaches the braille display. These notes were written from the source of NVDA 2026.3.1.\nTested with stand-ins for NVDA, including a replay of the request that failed, and with the real Qwen3.5 9B in the engine: 60 requests, all carried out. Not yet tried inside NVDA.\nNew in 0.8.2:\n* Fixed: asked \"what model is installed\", VisionClaw answered with a list of add-ons. It had no way to answer questions about its own models, so the model picked the nearest thing. Now you can ask \"what model is installed\", \"which model are you using\" or \"how big is the model\". The answer is read from your settings and your disk by plain code, not made up by a model: which model does which job, what is stored and how big it is, and where a loaded model runs.\n* With one model for both jobs, its choice is now checked against your own words. If your words point to something else, the model looks again; if it still disagrees, you are asked which you meant, instead of getting a wrong answer. With the real Qwen3.5 9B this happened in 1 of 49 test requests.\n* \"Which add-ons do I have\" could be taken for the add-ons VisionClaw wrote. The two are now told apart, and add-on, add on and addon count as the same word.\n* Faster first answer with one model for both jobs: the model was loaded twice for the first request, and is now loaded once.\n* A request with two parts that get the same answer says it once.\nTested with Qwen3.5 9B in the engine, 49 requests, all carried out; not yet tried inside NVDA.\nNew in 0.8.1:\n* Fixed: with one model chosen for both jobs, vision and code, VisionClaw said that \"the two models are agreeing\" and that \"both models agree on the plan\". There was only one model, asked the same question twice. Now VisionClaw says what is true: the model chooses what to do, and checks its own work. It is asked once instead of twice, so a request starts sooner.\n* The same holds everywhere else: a hint when a step is stuck, the check of a plan and of a result, the second reading of code it wrote, and the inspection of controls now say \"the model\" when there is one model. With two different models nothing has changed: they must still agree, and you choose when they do not.\nTested with scripted models and against the models stored on the owner's computer; not yet tried inside NVDA.\nNew in 0.8.0:\n* VisionClaw can look for a newer version of itself on its page on GitHub and get it for you. Press NVDA+Alt+U, use the button in VisionClaw's settings, or ask \"check for a new version of VisionClaw\". You are asked before anything is downloaded; the file is checked against the size and SHA-256 GitHub reports; then NVDA itself asks whether to install it, and restarts.\n* A new setting, \"Look for a newer version of VisionClaw\": only when you ask (the default), or when NVDA starts, at most once a day. Found by itself, a newer version is announced in one sentence and nothing is downloaded until you ask.\n* Nothing about you or your computer is sent. GitHub sees your internet address, as any website does.\nThe update check has read the real list of versions from GitHub, but the download and install have not been tried inside NVDA yet.\nNew in 0.7.0:\n* More accuracy from small models. Wherever a step has found the possible answers, a model can now only pick one of them: an id that was found, a name that was listed, on or off, one of a setting's options, or a number. What your own words already say, such as \"to all\", \"turn off\" or \"a little faster\", is filled in without asking a model.\n* The two very small models, Qwen3.5 0.8B and Qwen2.5 Coder 0.5B, are asked one small question at a time, and they answer a question about something that was looked up with a line of it, word for word, or say that it is not mentioned. In a test of 43 requests they went from about 31 handled rightly to 41.\n* A new setting, \"Ask the models one small question at a time\": Automatic (only for the very small models), Always, or Never.\n* The models window says of the two smallest models that they are very small, fast and less accurate. They have now been run in the engine.\nNot yet tried inside NVDA.\nNew in 0.6.0:\n* Arrow keys for dials, knobs and sliders that are only worked by dragging. Ask \"let the arrow keys work the volume dial\". VisionClaw finds out by itself how the control is worked: through Windows itself, with the mouse wheel, or by dragging up and down, sideways or around. Then Up and Down turn it, with Shift in small steps and with Control in large ones, Home and End go to its ends, and after every press you hear what changed. K keeps the control under a hotkey for that program. In pointer mode, D does the same for what is under the pointer, for games and controls with nothing to name.\n* An inspection now says how a sighted person works what is there. Controls whose kind NVDA cannot tell are put to both models: the vision model looks at the picture and the coder model reads a deep query of NVDA, Windows and NVDA's off-screen model. From that VisionClaw chooses the fix: a key that presses, arrow keys, or a name.\n* \"Do a deep query of this control\" tells you everything reported about the focused control, how it is worked, and what to ask for.\n* \"Get the latest NVDA developer guides\" downloads the NVDA Developer Guide and the NVDA Add-on Development Guide, after asking, and keeps them on your computer for the models to read. It never happens by itself.\nNone of this has been tried in real programs inside NVDA yet.\nNew in 0.5.0:\n* Ask VisionClaw to scroll: down, up, left or right, a little, a page or to the end. It turns the mouse wheel, compares the window's picture before and after, and tells you whether anything moved and, where a scrollbar shows it, how far along the view stands.\n* In pointer mode, Page Down and Page Up turn the wheel and S puts the pointer on a scrollbar.\n* Pointer steps and the overlay's icon sizes now follow your screen's size and scaling.\n* A deep inspection of a window also reports scrollbars and other things made for the mouse.\nScrolling has not been tried in real programs yet.\nNew in 0.4.0:\n* The mouse from the keyboard. Ask VisionClaw to right-click, double-click, point at or drag an item. In the overlay, G picks an item up and G on another item drops it there. Pointer mode (NVDA+Alt+K) is for controls where nothing can be listed: the arrow keys move the mouse pointer in the window, Enter clicks, Shift+Enter double-clicks, the Applications key right-clicks, G holds and lets go for dragging, W says what is at the pointer, Escape leaves.\n* Ask VisionClaw to inspect the website, program window or control you are in. It tells you in plain numbered sentences what stands in the way and what can be fixed. Fixes are kept in one add-on per website or program that stays until you remove it: keys that move between posts or results, keys that press or read a control by name, names for controls that have none, and being told when a part changes. They work the same in Chromium browsers and Firefox, and no model writes their code.\n* VisionClaw answers questions about the add-ons installed in your NVDA: what one does, its keys, and what its help says.\n* Two more small models, Qwen3.5 0.8B for vision and Qwen2.5 Coder 0.5B, for computers with little memory.\n* A Look for newer models button in the models window. Only when you press it and say yes, VisionClaw reads the list of offered Qwen models from its own page on GitHub, so newer small models can be offered without a new version of the add-on; every model on the list is checked and its download verified as before.\n* When you name the things yourself, as in \"drag the file onto the trash\", your own words decide which items are meant.\nThe mouse features have not moved a real mouse yet, the inspection and fixes have not run on real websites inside NVDA, and the two new models have not been run in the engine.\nNew in 0.3.3:\n* Fixed: asking to restore one setting could change another one. VisionClaw now changes only the setting your request is about, and refuses anything else.\n* Every setting VisionClaw changes is written down. \"What did you change?\" lists the changes, and \"undo that\" or \"put the speech rate back\" puts a setting back to what it was.\n* Settings are found from long sentences too.\nNew in 0.3.2:\n* VisionClaw's settings list the models on this computer, with their sizes and what each is in use for.\n* A new window (NVDA+Alt+M) lets you remove some or all models and choose others. After you choose other models, VisionClaw offers to remove the ones you no longer use.\nNew in 0.3.1:\n* Typing text into a program or a web field now goes through Windows itself, because NVDA 2026.3 moved the function used before.\nNew in 0.3.0:\n* When an add-on VisionClaw wrote fails, NVDA keeps working, the add-on is paused, and the models debug and correct it by themselves from the exact error. \"Fix the add-on ...\" lets you say what it does wrong.\n* Before a new add-on is turned on you are told in plain words what checking its code shows; you never have to read code. Code is compared with what you asked for, and plain code corrects the common mistakes of small models.\n* The web: hear how a page is laid out with its headings, move to a heading, link or field, and go back, forward or reload.\nNew in 0.2.0:\n* The web, through your own browser and NVDA's browse mode: open an address, search the web, ask about the page you are on, follow links, press buttons and type into fields by name.\n* Ask which speech synthesizer, voices, braille display, tables, drivers and add-ons NVDA has and uses. Every setting of the synthesizer in use can be changed.\n* Switch the speech synthesizer or braille display safely: refused when it would leave you with neither speech nor braille, always asked first, switched back by itself if you do not confirm that it works, and drivers that gave trouble are remembered.\n* Add-ons VisionClaw writes can be saved as normal add-on files to install for good or share, and the vision model now helps the coder model by describing the window the fix is for.\nNew in 0.1.1:\n* Two large models that do not fit on one graphics chip together now run side by side, the second on another graphics chip or on the processor, instead of taking turns. There is a setting to turn this off.\n* The Last task box says where each model ran.\nIn 0.1.0:\n* Ask VisionClaw (NVDA+Alt+C): requests in plain language, carried out in small steps by two local models that must agree first.\n* Choose your models: Qwen3.5 2B, 4B or 9B for vision; Qwen2.5 Coder 1.5B or 7B, or Qwen3.5 4B or 9B, for coding. VisionMate's vision data is reused if it is already on the computer.\n* Choose where the models run: dedicated graphics card, Vulkan, or the processor, with automatic fallback.\n* App helpers and generated add-ons for programs NVDA cannot read.\nThis version has been tested outside NVDA only. Please report what does not work.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1795025834000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/450c514a5736ca308affdc497309fb8a8edc5697d126cc9bdd0e70b8a5f4b565",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "450c514a5736ca308affdc497309fb8a8edc5697d126cc9bdd0e70b8a5f4b565",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"cpp": 1,
+						"dll": 23,
+						"exe": 1,
+						"html": 1,
+						"ini": 1,
+						"json": 1,
+						"md": 65,
+						"py": 89,
+						"txt": 1,
+						"wav": 10
+					},
+					"file_types": {
+						"HTML": 1,
+						"Portable Executable": 24,
+						"unknown": 170
+					},
+					"highest_datetime": "2026-11-18 12:24:58",
+					"lowest_datetime": "2026-11-17 07:04:34",
+					"num_children": 195,
+					"type": "ZIP",
+					"uncompressed_size": 91489498
+				},
+				"contenthash": "befecdd21eddc721c0b10985dd08d015",
+				"filecondis": {
+					"dhash": "0000000005060600",
+					"raw_md5": "9c55454fbe9eae384a50409d38d62867"
+				},
+				"first_submission_date": 1795023188,
+				"last_analysis_date": 1795023188,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261118",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261116",
+						"engine_version": "6.842",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261118",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261118",
+						"engine_version": "3.30.3.10716",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261118",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261118",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261118",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261118",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261118",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261118",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261117",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261110",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261118",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261118",
+						"engine_version": "1.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261112",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261118",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "undetected",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261118",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261118",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "undetected",
+						"engine_name": "Elastic",
+						"engine_update": "20261111",
+						"engine_version": "4.0.299",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261118",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261118",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261118",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261118",
+						"engine_version": "GD:27.46764AVA:64.32238",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261118",
+						"engine_version": "1795012271",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261118",
+						"engine_version": "1.0.262.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261118",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261117",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261118",
+						"engine_version": "14.94.61519",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261118",
+						"engine_version": "14.94.61521",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261118",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261118",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261118",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261118",
+						"engine_version": "3.1.0.301",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261118",
+						"engine_version": "4.0.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261118",
+						"engine_version": "1.2.0.17082",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261118",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261118",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261118",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261118",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261118",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261118",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261118",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261116",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261118",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261118",
+						"engine_version": "3.7.2.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261118",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261118",
+						"engine_version": "2026-11-18.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261118",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261118",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261118",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261118",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261118",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261118",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261118",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261118",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261118",
+						"engine_version": "2026-11-18.04",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261118",
+						"engine_version": "9.5.1342",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261118",
+						"engine_version": "39123",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261116",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261118",
+						"engine_version": "2.0.0.5732",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261117",
+						"engine_version": "6.28-119762532",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261118",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261118",
+						"engine_version": "1abee3f:1abee3f:f4abf26:f4abf26",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261118",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 7,
+					"undetected": 67
+				},
+				"last_modification_date": 1795025845,
+				"last_submission_date": 1795025839,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "ZIP",
+				"md5": "4146a5f68594be9caabeffe390d15c7a",
+				"meaningful_name": "839469a3-6d70-4a72-aa4e-8cd255fcf585",
+				"names": [
+					"839469a3-6d70-4a72-aa4e-8cd255fcf585"
+				],
+				"reputation": 0,
+				"sandbox_verdicts": {
+					"Zenbox": {
+						"category": "harmless",
+						"confidence": 96,
+						"malware_classification": [
+							"CLEAN"
+						],
+						"sandbox_name": "Zenbox"
+					}
+				},
+				"sha1": "ad40e467165cb485411d5f56ff90a176b5a8d94f",
+				"sha256": "450c514a5736ca308affdc497309fb8a8edc5697d126cc9bdd0e70b8a5f4b565",
+				"size": 32651720,
+				"ssdeep": "786432:E+/r4oZERf/05MWz7/i1DE3O/Mrz1icmgbPez+ho75:95EJ+5vi1I3O8iCmF5",
+				"tags": [
+					"contains-pe",
+					"zip",
+					"detect-debug-environment",
+					"long-sleeps"
+				],
+				"times_submitted": 2,
+				"tlsh": "T1B66733AAE5BC4306E27E823272C55C5F14EA0C80F6F1E9E790759DDD8AC76B35A084F4",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "OpenClaw skill package",
+						"probability": 47.3
+					},
+					{
+						"file_type": "Google Earth saved working session",
+						"probability": 31.5
+					},
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 21
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 2,
+				"vhash": "6d7bd6ba94439d2f67c7345193ed5dd9"
+			}
+		]
+	}
 }
