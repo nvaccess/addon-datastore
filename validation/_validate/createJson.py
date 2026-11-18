@@ -2,17 +2,17 @@
 # This file may be used under the terms of the GNU General Public License, version 2 or later.
 # For more details see: https://www.gnu.org/licenses/gpl-2.0.html
 
-from time import gmtime, mktime
+import argparse
 import dataclasses
 import json
-import argparse
 import os
-from typing import cast
 import zipfile
+from time import gmtime, mktime
+from typing import cast
 
 from .addonManifest import AddonManifest, ApiVersionT
-from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
 from .majorMinorPatch import MajorMinorPatch
+from .manifestLoader import getAddonManifest, getAddonManifestLocalizations
 from .sha256 import sha256_checksum
 from .validate import downloadAndValidateAddon, outputErrors, parseConfigValue
 
@@ -92,7 +92,7 @@ def generateJsonFile(
 def buildOutputFilePath(data: AddonData, parentDir: str) -> os.PathLike[str]:
 	addonDir = os.path.join(parentDir, data.addonId)
 	versionNumber = MajorMinorPatch(**data.addonVersionNumber)
-	canonicalVersionString = ".".join((str(i) for i in dataclasses.astuple(versionNumber)))
+	canonicalVersionString = ".".join(str(i) for i in dataclasses.astuple(versionNumber))
 	if not os.path.isdir(addonDir):
 		os.makedirs(addonDir)
 	filePath = os.path.join(addonDir, f"{canonicalVersionString}.json")

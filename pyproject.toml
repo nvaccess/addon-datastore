@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=82.0", "wheel"]
+requires = ["setuptools>=84.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -20,9 +20,9 @@ classifiers = [
 readme = "readme.md"
 license = {file = "LICENSE"}
 dependencies = [
-	"configobj==5.0.6",
+	"configobj==5.0.9",
 	"jsonschema==4.26.0",
-	"requests==2.33.0",
+	"requests==2.34.2",
 ]
 
 [project.urls]
@@ -68,7 +68,7 @@ reportMissingTypeStubs = false
 
 [tool.uv]
 default-groups = "all"
-required-version = ">=0.8"
+required-version = ">=0.13"
 
 [tool.setuptools]
 
@@ -81,9 +81,9 @@ configobj = { git = "https://github.com/DiffSK/configobj", rev = "8be54629ee7c26
 
 [dependency-groups]
 lint = [
-	"ruff==0.13.3",
-	"pre-commit==4.3.0",
-	"pyright==1.1.408",
+	"ruff==0.17.4",
+	"pre-commit==4.7.0",
+	"pyright==1.1.414",
 ]
 
 unit-tests = [
@@ -117,4 +117,6 @@ max-complexity = 15
 ignore = [
 	# indentation contains tabs
 	"W191",
+	# camelcase module names
+	"N999",
 ]
