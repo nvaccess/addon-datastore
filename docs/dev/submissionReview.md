@@ -30,7 +30,7 @@ The process for reviewing pending first submissions is as follows:
 1. Check the source code link in the referenced issue.
    * Ensure the submitter matches the repository ownership, or the submitter is a core maintainer for the project.
    If this is not the case, tag the core maintainer in the submission to confirm they give permission for the submission.
-   * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
+   * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on (for example, the repo doesn't include directories tipically found in add-ons like addon/globalPlugins, addon/appModules etc), inappropriate content in the readme, author and code only been around for a few days... If you find some of these, you may investigate further, or request a second opinion to decide if the submission should be rejected.
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
     * If you are unsure, leave a comment outlining why the add-on is being left open and what's needed to decide how to process it.
