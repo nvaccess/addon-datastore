@@ -1,0 +1,38 @@
+{
+	"addonId": "prayerTimes",
+	"displayName": "prayer times",
+	"URL": "https://github.com/mesteranas/prayerTimes_nvda-addon/releases/download/v3.0/prayerTimes-3.0.nvda-addon",
+	"description": "An NVDA screen reader add-on that allows you to quickly get the current prayer times for Muslims anywhere on Earth.",
+	"sha256": "d02b6138b5fa8cbedc49bb978f7775e0f97ca398e061472a712989bbe25486b0",
+	"addonVersionName": "3.0",
+	"addonVersionNumber": {
+		"major": 3,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 2,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Mister Anas",
+	"sourceURL": "https://github.com/mesteranas/prayerTimes_nvda-addon/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mesteranas/prayerTimes_nvda-addon",
+	"changelog": "\n* Correct date, time zone, next-day Fajr and Isha after midnight\n* Select calculation method, Asr school, high latitude adjustment and 12/24-hour display\n* Use HTTPS and timeouts; validate coordinates and discard outdated requests\n* Cache daily data by location and calculation settings\n* Complete Turkish translation and add Turkish help\n* Include portable time zone data and focused regression tests\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795113076000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "Namaz Vakitleri",
+			"description": "Konuma ve seçilen hesaplama yöntemine göre namaz vakitlerini gösterir. NVDA+Alt+P tüm vakitleri, NVDA+Shift+P sıradaki namazı bildirir."
+		}
+	]
+}
