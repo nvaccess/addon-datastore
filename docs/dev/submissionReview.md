@@ -42,6 +42,7 @@ The process for reviewing pending first submissions is as follows:
 
 #### Tips
 
+1. Consult the [queue of pending add-ons](https://github.com/nvaccess/addon-datastore/actions?query=is%3Awaiting).
 1. To ensure the ownership of an add-on, read their username in the issue description, and check the download and source URLs.
 You don't need to download the add-on, nor clone the repository.
 1. If the submitter doesn't match the add-on or source URL, investigate if they are members of the organization submitting the add-on, or if they are authorized to submit it.
