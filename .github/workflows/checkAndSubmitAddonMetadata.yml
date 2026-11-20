@@ -204,8 +204,8 @@ jobs:
             Please wait until the review team can review the submission.
             It may take up to 2 weeks for a team member to respond, depending on their availability.
 
-            This issue will be used to discuss metadata related to the add-on submission. Feedback about user experience should be provided through the discussion link below.
-            [provide feedback about bugs or user experience](${{ needs.ensureDiscussionExists.outputs.reviewUrl }})
+            You will received feedback on this issue by the submission review team.
+            Feedback from the community about code quality or user experience may be provided through [the GitHub Discussion for this add-on](${{ needs.ensureDiscussionExists.outputs.reviewUrl }}).
             ${{ env.jobFooter }}
 
   createPullRequest:
