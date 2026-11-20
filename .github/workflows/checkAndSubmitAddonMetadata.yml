@@ -97,7 +97,7 @@ jobs:
       contents: write
       discussions: write
     outputs:
-      discussionExists: ${{ steps.checkDiscussion.outputs.jqStatus }}
+      discussionExistedPreviously: ${{ steps.checkDiscussion.outputs.jqStatus }}
       discussionNumber: ${{ steps.createDiscussion.outputs.discussion-number }}
       discussionId: ${{ steps.getDiscussionId.outputs.discussionId }}
       reviewUrl: ${{ steps.getReviewUrl.outputs.reviewUrl }}
@@ -477,7 +477,7 @@ jobs:
             Reviewers: ${{ steps.fetchRejectionComment.outputs.reviewers }}
             ${{ env.jobFooter }}
       - name: Close discussion
-        if: ${{ always() && needs.ensureDiscussionExists.result == 'success' && needs.ensureDiscussionExists.outputs.discussionExists == 'false' }}
+        if: ${{ always() && needs.ensureDiscussionExists.result == 'success' && needs.ensureDiscussionExists.outputs.discussionExistedPreviously == 'false' }}
         env:
           GH_TOKEN: ${{ github.token }}
           DISCUSSION_ID: ${{ needs.ensureDiscussionExists.outputs.discussionId }}
@@ -548,7 +548,7 @@ jobs:
           git push --set-upstream origin ${{ env.branchName }}
         fi
     - name: Add add-on ID and discussion data to json file
-      if: ${{ ! fromJSON(needs.ensureDiscussionExists.outputs.discussionExists) }}
+      if: ${{ ! fromJSON(needs.ensureDiscussionExists.outputs.discussionExistedPreviously) }}
       run: |
         addonId=$(
           echo ${{ needs.getAddonId.outputs.addonId }}
