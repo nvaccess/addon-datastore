@@ -471,6 +471,7 @@ jobs:
           body: |
             The submission did not pass the manual review process.
             Reason for the rejection:
+            
             ${{ steps.fetchRejectionComment.outputs.rejectionReasons }}
 
             Reviewers: ${{ steps.fetchRejectionComment.outputs.reviewers }}
