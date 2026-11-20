@@ -1,0 +1,51 @@
+{
+	"addonId": "markdownNavigator",
+	"displayName": "Markdown Navigator",
+	"URL": "https://github.com/cary-rowen/markdownNavigator/releases/download/v1.0.1/markdownNavigator-1.0.1.nvda-addon",
+	"description": "An NVDA add-on that provides structured navigation (headings, lists, tables, etc.) in editable text areas for Markdown files.",
+	"sha256": "c715ee6d9f69b52740d5dc889394853e422e34cfbe473c0d798aa9dd58a0d30c",
+	"addonVersionName": "1.0.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <manchen_0528@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/markdownNavigator",
+	"license": "GPL v2",
+	"homepage": "https://addonstore.nvaccess.org/?addonId=markdownNavigator",
+	"changelog": "### 1.0.1\n\n- Improved Markdown list navigation (L / Shift+L) to include nested lists, and ignored list-like content inside fenced code blocks (``` / ~~~) during list and block-boundary navigation.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795193397000,
+	"translations": [
+		{
+			"language": "ru",
+			"displayName": "Markdown-навигатор",
+			"description": "Дополнение для NVDA, обеспечивающее структурную навигацию (заголовки, списки, таблицы и т.д.) в редактируемых текстовых областях для Markdown-файлов.",
+			"changelog": "### 1.0.1\n\n- Improved Markdown list navigation (L / Shift+L) to include nested lists, and ignored list-like content inside fenced code blocks (``` / ~~~) during list and block-boundary navigation.\n"
+		},
+		{
+			"language": "uk",
+			"displayName": "Навігатор Markdown",
+			"description": "Додаток NVDA, що забезпечує структуровану навігацію (заголовки, списки, таблиці тощо) у редагованих текстових областях для файлів Markdown.",
+			"changelog": "### 1.0.1\n\n- Improved Markdown list navigation (L / Shift+L) to include nested lists, and ignored list-like content inside fenced code blocks (``` / ~~~) during list and block-boundary navigation.\n"
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Markdown 导航",
+			"description": "一个 NVDA 插件，为 Markdown 文件提供结构化导航（标题、列表、表格等）。",
+			"changelog": "### 1.0.1\n\n- 改进 Markdown 列表导航（L / Shift+L），支持跳转到嵌套列表，并在列表与块边界导航时忽略代码块（``` / ~~~）内类似列表的内容。\n"
+		}
+	]
+}
