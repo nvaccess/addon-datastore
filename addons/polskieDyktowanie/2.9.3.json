@@ -1,0 +1,81 @@
+{
+	"addonId": "polskieDyktowanie",
+	"displayName": "Polish Dictation",
+	"URL": "https://github.com/luki373737/Polskie-Dyktowanie-NVDA/releases/download/v2.9.3/Polskie_Dyktowanie_NVDA_2.9.3.nvda-addon",
+	"description": "Speech dictation, translation, text-to-speech, and AI descriptions of images, screens and video, with visual results saved as text files.",
+	"sha256": "03ef5e247f6612fdce7db7e0a82e29e300bc41b0713f88cc9dc76e2a5c8b70c2",
+	"addonVersionName": "2.9.3",
+	"addonVersionNumber": {
+		"major": 2,
+		"minor": 9,
+		"patch": 3
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Madridista/Realista",
+	"sourceURL": "https://github.com/luki373737/Polskie-Dyktowanie-NVDA",
+	"license": "GPL v2",
+	"homepage": "https://github.com/luki373737/Polskie-Dyktowanie-NVDA",
+	"changelog": "Visual descriptions can now be saved as UTF-8 text files through a Save As dialog. Added author attribution in settings and English store metadata with Polish localization.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794014317000,
+	"translations": [
+		{
+			"language": "pl",
+			"displayName": "Polskie Dyktowanie",
+			"description": "Dyktowanie, tłumaczenie, synteza mowy oraz opisy AI obrazów, ekranu i wideo. Opisy można zapisać jako pliki tekstowe."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/03ef5e247f6612fdce7db7e0a82e29e300bc41b0713f88cc9dc76e2a5c8b70c2",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "03ef5e247f6612fdce7db7e0a82e29e300bc41b0713f88cc9dc76e2a5c8b70c2",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "1018181d1c180000",
+					"raw_md5": "590562fb794a93f78260fcd88a01bdbf"
+				},
+				"first_submission_date": 1794014322,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794014323,
+				"last_submission_date": 1794014322,
+				"md5": "17252de23019105503b01f55c4b9fcb3",
+				"names": [],
+				"reputation": 0,
+				"sha1": "1cd3be9aa1afd97ed0005892a1797130c73c4daa",
+				"sha256": "03ef5e247f6612fdce7db7e0a82e29e300bc41b0713f88cc9dc76e2a5c8b70c2",
+				"size": 38564,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/13015"
+}
