@@ -30,7 +30,7 @@ The process for reviewing pending first submissions is as follows:
 1. Check the source code link in the referenced issue.
    * Ensure the submitter matches the repository ownership, or the submitter is a core maintainer for the project.
    If this is not the case, tag the core maintainer in the submission to confirm they give permission for the submission.
-   * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on, inappropriate content in the readme, author and code only been around for a few days
+   * Check for any obvious red flags with the repository i.e. it doesn't look structured as an add-on (for example, the repo doesn't include directories tipically found in add-ons like addon/globalPlugins, addon/appModules etc), inappropriate content in the readme, author and code only been around for a few days... If you find some of these, you may investigate further, or request a second opinion to decide if the submission should be rejected.
    * Ensure there is not a clash of add-on IDs by checking [submitters.json](../../submitters.json) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
     * If you are unsure, leave a comment outlining why the add-on is being left open and what's needed to decide how to process it.
@@ -39,6 +39,21 @@ The process for reviewing pending first submissions is as follows:
     The issue and PR will be closed.
     Make sure to clarify any further information on the issue.
     * If the deployment review request has expired, close the PR and re-run the job.
+
+#### Tips
+
+1. Consult the [queue of pending add-ons](https://github.com/nvaccess/addon-datastore/actions?query=is%3Awaiting).
+1. To ensure the ownership of an add-on, read their username in the issue description, and check the download and source URLs.
+You don't need to download the add-on, nor clone the repository.
+1. If the submitter doesn't match the add-on or source URL, investigate if they are members of the organization submitting the add-on, or if they are authorized to submit it.
+1. Check the linked pull request, under the development heading of the submission issue, to find out the exact add-on ID.
+1. Have an updated copy of the add-on-datastore repo to check that this or a similar add-on ID is not included in submitters.json, or that the submitter should be authorized.
+1. If this submission contains an add-on ID corresponding or similar to a known add-on owned by a different author, tag the original author to investigate if this submission should be accepted or not, or if the submitter should use a different add-on ID.
+1. Open the source URL to get a general overview of the structure of the source code.
+For more details about common components included in add-ons, read the [Packaging Code as NVDA Add-ons section of the developer guide](https://download.nvaccess.org/documentation/developerGuide.html#Addons).
+1. If you have license concerns or other questions about an add-on, leave the submission or tag NV Access developers to request a second opinion.
+1. If an author is unresponsive, after at least 1 week of no response, reject the submission and request for submitting a new issue.
+1. If you have any questions and you are a registered metadata reviewer, request for help on the add-on metadata reviews mailing list.
 
 ## Approving an add-on which was flagged as malicious
 
