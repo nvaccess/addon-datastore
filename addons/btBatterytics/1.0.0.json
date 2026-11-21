@@ -65,5 +65,685 @@
 			"description": "O BT-Batterytics informa o nível da bateria dos seus dispositivos Bluetooth, lembra quanto tempo cada um dura entre duas recargas e exibe estatísticas. É uma versão modificada do BlueToothBatteryReport, de haitun001 e cary-rowen.\n\nRelatório da bateria\nPressione NVDA+Alt+B (NVDA+Shift+B em computadores sem bateria, como desktops) para ouvir o nível de bateria de todos os dispositivos Bluetooth dos quais o Windows consegue lê-lo. Pressione duas vezes para copiar o relatório para a área de transferência e três vezes para abrir as configurações. A ordem é: conectados, desconhecidos, desconectados. Você escolhe quais grupos informar e se deseja incluir o tipo de conexão (Classic ou LE) e o tempo conectado. Só podem ser listados dispositivos que informam sua bateria ao Windows.\n\nTempo conectado e estatísticas\nO complemento mede quanto tempo cada dispositivo fica conectado entre duas recargas, mostrando a autonomia real por carga. Para dispositivos frequentemente desconectados, como teclados que também usam receptor, pode contar o tempo decorrido. A janela de estatísticas mostra, para cada dispositivo e ciclo, tempo conectado, bateria usada, taxa de consumo, autonomia estimada com carga completa, tendência dos últimos ciclos e estimativa do tempo restante. Você pode atribuir nomes, ordenar listas, escolher colunas e exportar para a área de transferência ou arquivo como texto simples, Markdown, CSV, valores separados por tabulação, JSON ou HTML, ou abrir um relatório no navegador. Abra a janela pelas configurações ou atribua uma tecla ao comando Abrir as estatísticas da bateria Bluetooth no diálogo Gestos de entrada. Se a bateria de um dispositivo diminui irregularmente, defina o nível em que costuma recarregá-lo para manter estimativas realistas.\n\nAlertas\nCada dispositivo pode ter seus próprios alertas: bateria fraca, quedas do nível, conexão e desconexão. Para fones totalmente sem fio, o complemento também estima quantas recargas restam no estojo e avisa quando carregá-lo. Um alerta pode ser falado, reproduzido como dois bipes ou como arquivo de som, que pode ser substituído pelo seu próprio. O alerta de bateria fraca também mostra um diálogo de aviso. A verificação em segundo plano ocorre a cada cinco minutos, com maior frequência enquanto houver alerta de conexão ou desconexão ativo.\n\nTudo é definido nas configurações do NVDA, na categoria BT-Batterytics. Os registros ficam no seu computador, na pasta de configuração do NVDA.\n\nCréditos: as ideias e os testes com NVDA são de NVDATH. Todas as modificações no código do complemento original foram escritas por Claude, assistente de IA da Anthropic, seguindo as instruções de NVDATH.",
 			"changelog": "Primeira versão como BT-Batterytics, uma modificação do BlueToothBatteryReport 0.4 de haitun001 e cary-rowen. Mantém seu próprio código em arquivo único, sem incluir a refatoração da versão 0.4.\n\nAs ideias e os testes com NVDA são de NVDATH. Todas as modificações no código foram escritas por Claude, assistente de IA da Anthropic, seguindo as instruções de NVDATH.\n\nRelatórios\n\n• O relatório é executado em uma thread em segundo plano, para que o NVDA não congele durante a busca de dispositivos.\n• Pressione o atalho uma vez para ouvir o relatório, duas vezes para copiá-lo e três vezes para abrir as configurações.\n• O atalho padrão é NVDA+Shift+B em computadores sem bateria (desktops) e NVDA+Alt+B em computadores com bateria (notebooks ou tablets), preservando o comando de bateria do NVDA. A escolha ocorre ao iniciar o NVDA. Se o Windows não conseguir determinar, presume-se que há bateria.\n• Painel nas configurações do NVDA. É possível escolher dispositivos por status: conectados, desconhecidos ou desconectados.\n• Tipo de conexão opcional (Classic ou LE) após o nome.\n• Duração opcional da conexão informada pelo Windows (apenas Bluetooth Classic).\n• Tempo total conectado desde a última recarga opcional, preservado entre desconexões e reinícios do NVDA, também para LE.\n• Estimativa opcional das recargas restantes no estojo de fones totalmente sem fio.\n• Os nomes atribuídos aos dispositivos são usados no relatório e nos alertas.\n• Corrigido: o identificador do rádio Bluetooth podia ser fechado duas vezes ao ler os estados das conexões.\n\nAcompanhamento do tempo conectado\n\n• O tempo conectado de cada dispositivo é contado entre duas recargas. Uma recarga é detectada quando a bateria sobe pelo menos 15 pontos acima do menor nível do ciclo; funciona também em dispositivos que nunca chegam a 100%.\n• Não conta tempo desconectado, durante a subida da bateria, nem lacunas superiores a 15 minutos (por exemplo, durante a suspensão do computador).\n• Para Bluetooth Classic, o total nunca é menor que o tempo informado pelo Windows.\n• Ciclos concluídos são salvos em btBatterytics_usage.json na pasta de configuração do NVDA. Podem ser definidos limites de quantidade por dispositivo e de idade.\n• Os dispositivos são identificados pelo endereço Bluetooth: nomes iguais não compartilham dados e renomear não apaga dados.\n• A medição pode ser interrompida sem perder dados.\n• Dispositivos nem sempre conectados, como teclados de três modos que também usam receptor, podem contar o tempo decorrido desde a recarga em vez do tempo conectado. A escolha é por dispositivo no menu Medição. O ciclo termina no último momento em que a bateria foi vista caindo; a recarga é posicionada no meio de duas leituras; cada ciclo lembra como contou o tempo.\n• Durações de dois dias ou mais são mostradas em dias.\n• Nível habitual de recarga por dispositivo para baterias que não diminuem uniformemente (por exemplo, um teclado que para em 55 a 60% e é recarregado perto de 70%). As estimativas de carga completa e tempo restante passam a considerar esse nível em vez de 0%.\n\nJanela de estatísticas\n\n• Aberta pelas configurações ou pelo comando no diálogo Gestos de entrada (sem atalho padrão).\n• Lista de resumo com uma linha por dispositivo e lista de ciclos. Ambas são listas virtuais, mantendo a rapidez com muitos ciclos.\n• Colunas de resumo: status, medição, alertas, ciclos, média, mais curto, mais longo, estimativa de carga completa, taxa de consumo, intervalo de recarga, última recarga, tendência, estimativa restante. Colunas de ciclos: ciclo, estado, duração, bateria, taxa de consumo, estimativa de carga completa, término.\n• A lista de ciclos mostra inicialmente apenas o ciclo em andamento de cada dispositivo. Space, clique duplo ou menu de contexto expande ou recolhe os concluídos.\n• Os dispositivos seguem a ordem do relatório falado. F5 busca novamente e atualiza a janela.\n• As colunas de ambas as listas podem ser mostradas, ocultadas e movidas (Control+Shift+Seta para cima ou para baixo em Escolher colunas). A ordem é usada na exibição, cópia e exportação.\n• Ordenação manual de dispositivos e ciclos concluídos: Control+Shift+Seta para cima ou para baixo move um dispositivo ou um ciclo concluído de um dispositivo expandido. Novos dispositivos ficam primeiro.\n• Control+Shift+Seta para a esquerda e para a direita movem as listas; a janela abre na primeira.\n• Menu de contexto e teclas (comandos sem tecla vêm primeiro): selecionar (várias linhas, Control+Space, Control+A), copiar linha ou dispositivo (Control+C, Control+Shift+C), excluir linha ou dispositivo após confirmação (Control+Delete, Control+Shift+Delete), renomear (F2), medir ou não, escolher colunas, ordenar dispositivos e ciclos (opções lembradas), alertas do dispositivo.\n• Exportar (Control+E) linhas selecionadas, dispositivo atual ou todas as linhas para a área de transferência ou arquivo, como texto simples, Markdown, CSV, valores separados por tabulação, JSON ou HTML, ou abrir relatório HTML no navegador. Valores detalhados (segundos exatos, porcentagens, datas ISO, identificação do dispositivo) incluídos por padrão. Usa apenas a biblioteca padrão do Python.\n\nAlertas\n\n• Alerta de bateria fraca. A configuração é o padrão para todos os dispositivos, com nível padrão. Cada dispositivo pode segui-la, usar nível próprio (alerta mesmo com o padrão desativado) ou nunca alertar. Escolha no diálogo do menu Alertas do dispositivo.\n• Alerta de queda de nível por dispositivo: alerta a cada queda de determinado número de pontos (10 por padrão).\n• Alertas de conexão e desconexão por dispositivo. Verificação a cada poucos segundos enquanto um deles estiver ativo.\n• Métodos escolhidos uma vez para todos os alertas e combináveis: fala (ativada por padrão), dois bipes e som do alerta, arquivo .wav da pasta sounds (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav). Um bipe substitui arquivo ausente.\n• O alerta de bateria fraca também mostra um diálogo de aviso.\n• Não há alerta de queda de nível junto com o de bateria fraca do mesmo dispositivo; os sons de vários alertas tocam em sequência.\n• O botão Abrir pasta de sons nas configurações permite substituir os arquivos. Os sons incluídos são do Pixabay; créditos no README.\n• Estimativa do estojo de fones totalmente sem fio, desativada por padrão e definida por dispositivo. Conta as recargas fornecidas pelo estojo a partir das recargas observadas e alerta quando os fones estão fracos e o estojo quase vazio, para carregar ambos. Após o alerta, ao detectar nova recarga dos fones, pergunta se você carregou o estojo; Sim reinicia a contagem (Marcar estojo como carregado, Control+Shift+R, faz o mesmo a qualquer momento). A capacidade típica é aprendida com suas rodadas. É uma estimativa e funciona melhor com os fones usados principalmente neste computador.\n\nAlterações\n\n• Renomeado para BT-Batterytics (ID btBatterytics). Dados e configurações do nome anterior são incorporados na primeira execução.\n• O modo de som (bipe ou arquivo) de versões anteriores é substituído pelos métodos de alerta.\n• A opção “Informar apenas dispositivos conectados” da versão 0.4 é substituída por uma opção para cada status."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 7,
+						"ini": 7,
+						"md": 7,
+						"mo": 6,
+						"po": 6,
+						"py": 9,
+						"txt": 1,
+						"wav": 5
+					},
+					"file_types": {
+						"HTML": 7,
+						"unknown": 42
+					},
+					"highest_datetime": "2026-11-21 23:29:58",
+					"lowest_datetime": "2026-11-21 23:29:38",
+					"num_children": 49,
+					"type": "ZIP",
+					"uncompressed_size": 2369450
+				},
+				"contenthash": "55aad257bd92b48c3c049fa5e23d003b",
+				"filecondis": {
+					"dhash": "0000000000070200",
+					"raw_md5": "ef7aa50a323c9a883696d4a294b6244d"
+				},
+				"first_submission_date": 1795304485,
+				"last_analysis_date": 1795304485,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261121",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261119",
+						"engine_version": "6.843",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261121",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261121",
+						"engine_version": "3.30.3.10716",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261121",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261121",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261121",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261121",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261121",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261121",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261121",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261121",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261121",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261121",
+						"engine_version": "1.5.5.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261119",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261121",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261121",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261121",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20261120",
+						"engine_version": "4.0.300",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261121",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261121",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261121",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261121",
+						"engine_version": "GD:27.46797AVA:64.32247",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261121",
+						"engine_version": "1795293090",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261121",
+						"engine_version": "1.0.262.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261121",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261120",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261121",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261121",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261121",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261121",
+						"engine_version": "3.1.0.301",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261120",
+						"engine_version": "4.0.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261121",
+						"engine_version": "1.2.0.17082",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261121",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261121",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261121",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261121",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261121",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261121",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261121",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261120",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261121",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261121",
+						"engine_version": "3.7.2.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261121",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-21.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261121",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261121",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261121",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261121",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261121",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261121",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261121",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261121",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261120",
+						"engine_version": "9.5.1344",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261121",
+						"engine_version": "39131",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261119",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261121",
+						"engine_version": "2.0.0.5734",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261121",
+						"engine_version": "6.29-121127099",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261121",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261121",
+						"engine_version": "41e0299:41e0299:8e7bee6:8e7bee6",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261121",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1795304533,
+				"last_submission_date": 1795304485,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "58f24d726e07830de92bcb157291d932",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "b5eb884b2124d703076c001b890f88fcfc1c4fc8",
+				"sha256": "1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+				"size": 864014,
+				"ssdeep": "24576:IRFjyRYRMtHDsEiN3zyTnU4Z4PYe2l8eOEYUdBNc:IzWRYyBDsEi1yTUqvL3/Nc",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1340523187554C09AD56382B81E2B6892C60B6F13B01FD93775BD20DE59F2BCB89F504C",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "3a66aa85323c3fbd7a87bc779a7c1eef"
+			}
+		]
+	}
 }
