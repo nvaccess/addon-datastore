@@ -52,7 +52,7 @@ You don't need to download the add-on, nor clone the repository.
 1. Open the source URL to get a general overview of the structure of the source code.
 For more details about common components included in add-ons, read the [Packaging Code as NVDA Add-ons section of the developer guide](https://download.nvaccess.org/documentation/developerGuide.html#Addons).
 1. If you have license concerns or other questions about an add-on, leave the submission or tag NV Access developers to request a second opinion.
-1. If an author is unresponsive, reject the submission and request for submitting a new issue.
+1. If an author is unresponsive, after at least 1 week of no response, reject the submission and request for submitting a new issue.
 1. If you have any questions and you are a registered metadata reviewer, request for help on the add-on metadata reviews mailing list.
 
 ## Approving an add-on which was flagged as malicious
