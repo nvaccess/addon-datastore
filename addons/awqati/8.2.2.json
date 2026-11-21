@@ -1,0 +1,39 @@
+{
+	"addonId": "awqati",
+	"displayName": "Awqati: prayer times, calendars, weather, astronomical information and time tools.",
+	"URL": "https://github.com/alialomari-coder/Awqati/releases/download/v8.2.2/awqati-8.2.2.nvda-addon",
+	"description": "Awqati is a comprehensive add-on for the NVDA screen reader, combining prayer times, calendars, astronomical information and time management tools. It also provides access to weather services and historical events through an accessible interface that supports Arabic and English.\n\nThe add-on provides the times of the five daily prayers, sunrise, midnight and the start of the last third of the night. It allows users to configure alerts for the start of prayer times and Iqama, and to set alerts before and after prayers. It also provides Zawali and Ghurubi time, as well as the Qibla direction.\n\nIt supports five calendars: Gregorian, Lunar Hijri, Saudi Solar Hijri, Persian Solar Hijri and Afghan Solar Hijri, along with tools for converting dates between the different calendars.\n\nThe add-on provides daily astronomical information, as well as information from the traditional Arabian calendar.\n\nIts features include reminders for adhkar and daily Wird, configurable quiet hours, and a range of time management tools, including personal alarms, countdown timers, a stopwatch and a world clock.\n\nIt also offers an optional weather service for checking current weather conditions and forecasts for the coming hours and days, with accessible text reports.\n\nThe add-on also includes an \"On This Day\" service that draws its information from Wikipedia and presents notable historical events, births, deaths, holidays and observances, either through direct narration or on web pages designed for browsing with a screen reader, with links to the original articles.",
+	"sha256": "afc2336a92a69670332f2189bbc0d24201c7177440d407d03f1db6903f0bf4ec",
+	"addonVersionName": "8.2.2",
+	"addonVersionNumber": {
+		"major": 8,
+		"minor": 2,
+		"patch": 2
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "ali alomari",
+	"sourceURL": "https://github.com/alialomari-coder/Awqati/tree/v8.2.2",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/alialomari-coder/Awqati",
+	"changelog": "Version 8.2.2\n\n- Restores Arabic Wikipedia events, including November 21, while preserving the original text and article links.\n- Allows another attempt for an unreadable Wikipedia section when requested after at least 15 minutes. The wait survives a restart, respects the source's request limits and preserves readable sections.\n- Updates the add-on summary and description to include weather and date converters, and provides Arabic release notes.\n\nEarlier release history is available in the add-on help.",
+	"licenseURL": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+	"submissionTime": 1795293272000,
+	"translations": [
+		{
+			"language": "ar",
+			"displayName": "أوقاتي: مواقيت الصلاة والتقاويم والطقس والمعلومات الفلكية وأدوات الوقت.",
+			"description": "أوقاتي إضافة متكاملة لقارئ الشاشة NVDA، تجمع بين مواقيت الصلاة والتقاويم والمعلومات الفلكية وأدوات إدارة الوقت، وتتيح الوصول إلى خدمات الطقس والأحداث التاريخية، من خلال واجهة ميسّرة تدعم العربية والإنجليزية.\n\nتتيح الإضافة معرفة مواقيت الصلوات الخمس، وأوقات الشروق ومنتصف الليل وبداية الثلث الأخير منه، مع إمكانية ضبط التنبيهات المرتبطة بدخول أوقات الصلاة والإقامة، وتحديد مواعيد التنبيه قبل الصلاة وبعدها. كما توفر التوقيت الزوالي والتوقيت الغروبي، وتتيح كذلك معرفة اتجاه القبلة.\n\nوتدعم خمسة تقاويم: الميلادي، والهجري القمري، والهجري الشمسي السعودي، والفارسي، والأفغاني، إلى جانب أدوات لتحويل التواريخ بين التقاويم المختلفة.\n\nوتقدم الإضافة معلومات فلكية يومية، بالإضافة إلى معلومات التقويم العربي التراثي.\n\nومن وظائفها تذكيرات الأذكار والأوراد، وتحديد ساعات الهدوء، فضلًا عن مجموعة من أدوات إدارة الوقت، تشمل المنبهات الشخصية، والمؤقتات التنازلية، وساعة الإيقاف، والساعة العالمية.\n\nكما توفر خدمة اختيارية للطقس، تتيح الاطلاع على الأحوال الجوية الحالية وتوقعات الساعات والأيام القادمة، والحصول على تقارير نصية ميسّرة.\n\nوتتضمن الإضافة أيضًا خدمة «حدث في مثل هذا اليوم»، التي تستقي معلوماتها من ويكيبيديا، وتعرض أبرز الأحداث التاريخية والمواليد والوفيات والأعياد والمناسبات، إما بالسرد المباشر أو في صفحات ويب مهيأة للتصفح باستخدام قارئ الشاشة، مع روابط إلى المقالات الأصلية.",
+			"changelog": "الإصدار 8.2.2\n\n- إصلاح عرض أحداث ويكيبيديا العربية، ومنها أحداث 21 نوفمبر، مع حفظ النصوص الأصلية وروابط المقالات.\n- إتاحة إعادة محاولة قراءة قسم ويكيبيديا المتعذر عند طلبه بعد 15 دقيقة على الأقل. تستمر مهلة الانتظار بعد إعادة التشغيل، مع احترام قيود طلبات المصدر وحفظ الأقسام المقروءة.\n- تحديث نبذة الإضافة ووصفها لتشمل الطقس ومحوّلات التاريخ، وتوفير مستجدات عربية.\n\nيتوفر سجل الإصدارات السابقة في مساعدة الإضافة."
+		}
+	]
+}
