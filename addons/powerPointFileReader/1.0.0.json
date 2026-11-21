@@ -1,0 +1,30 @@
+{
+	"addonId": "powerPointFileReader",
+	"displayName": "PowerPoint file reader",
+	"URL": "https://github.com/aaser-web/powerPointFileReader/releases/download/v1.0/powerPointFileReader-1.0.nvda-addon",
+	"description": "PowerPoint file reader is a free NVDA add-on that reads the PowerPoint presentation selected in File Explorer and shows its complete content as accessible text, without an API key. It extracts the file name, creation date, slide count, slide titles, body text, notes, tables, chart data, SmartArt, embedded objects and media, and it describes pictures, charts, diagrams and other visual elements in detail and in the context of the whole presentation. Slide text is reflowed into a coherent block with evenly filled lines, so line breaks created inside narrow text boxes do not leave one word per line. Descriptions follow the language of the text on each slide and are based on the overall topic whenever possible. The add-on uses several free online AI platforms and switches to another free platform automatically when the current one reaches its free limit, so processing continues without interruption. The result appears in a read-only text view with a Save to text file button and a Close button. Press NVDA+Shift+P to start; processing begins immediately when a supported PowerPoint file is selected, and a message is announced when no supported file is selected or when there is no internet connection. Supported formats: .ppt, .pptx, .pps, .ppsx, .pptm, .ppsm, .pot, .potx, .potm and .odp. Requires NVDA 2023.1 or later, Microsoft PowerPoint and an internet connection.",
+	"sha256": "57b769a9f8997441d8dcdc65feb9e1fe4209db9a69d9e4a74d7b61378d9541ca",
+	"addonVersionName": "1.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2023,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "dr. ahmad abdel-zaher",
+	"sourceURL": "https://github.com/aaser-web/powerPointFileReader",
+	"license": "GPL v2",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795236067000,
+	"translations": []
+}
