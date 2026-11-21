@@ -1,0 +1,38 @@
+{
+	"addonId": "typix",
+	"displayName": "Typix",
+	"URL": "https://github.com/OlegTheSnowman/typix/releases/download/v1.0.6/typix-1.0.6.nvda-addon",
+	"description": "Typix plays typing sounds in text fields, with separate sounds for letters, capitals, space, Enter, Tab, Backspace, Delete and punctuation. Each character can have its own stereo position and pitch. Comes with mechanical keyboard packs and an editor to make your own. It can also beep on misspelled words and suggest corrections, turn shortcuts into longer text, speak the whole word after a correction, and show typing statistics.",
+	"sha256": "15235983e2789b2abbfbdd9fbca6ebbbf60ab3eacab4103a1e45c6e2ebc565e5",
+	"addonVersionName": "1.0.6",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "OlegTheSnowman",
+	"sourceURL": "https://github.com/OlegTheSnowman/typix",
+	"license": "GPL v2",
+	"homepage": "https://github.com/OlegTheSnowman/typix",
+	"changelog": "### 1.0.6\n* Text replacements happen about a third of a second after you stop typing. Before, after using Ctrl shortcuts they could wait a full second.\n* A replacement is spoken once it is in the field, and several replacements are spoken in the order you typed them.\n* Unchecking the Misspelled word sound only silences it. Misspellings are still counted and offered by the spelling command.\n* With Letters unchecked, capitals play only the caps sound.\n* Packs with 32 or 64 bit float WAV files now play instead of staying silent.\n* Saving a pack in the editor keeps sound entries from newer versions of Typix, and their files.\n* Cancelling New pack no longer leaves an empty folder that blocks the name.\n* In terminals, Typix no longer changes NVDA's word echo at an apostrophe.\n* Tested with NVDA 2026.3.\n* The help covers every setting's range and default, and the store description lists every feature.\n\n### 1.0.5\n* Removed the automatic capitals for the first word of a sentence and for a lone i. In browser editors such as the one on claude.ai, they could change the wrong word or lose text you were typing.\n* Text replacements now happen when you pause typing. Keys you press while Typix swaps the text are held and typed right after it, so nothing you type gets lost.\n* Spelling now follows the keyboard layout you are typing with in WhatsApp and other WebView2 apps.\n\n### 1.0.4\n* The spelling command now finds a misspelled word that automatic capitals have just capitalised, instead of opening statistics.\n* Choosing a suggestion after typing on past the word now replaces it in Chrome instead of saying it could not be selected.\n\n### 1.0.3\n* Typix no longer mutes NVDA while it replaces a word, so a line from a game or a chat message arriving at that moment is still spoken. Only the selection stays unspoken.\n* After Add to dictionary or Skip, the spelling command no longer offers the same word again.\n* Automatic capitals, text replacements and spelling fixes now work in Chrome, which takes a moment to apply a selection.\n\n### 1.0.2\n* Fixed NVDA missing what an app says right after you press Enter, as in a MUD, when the command was the first word of a sentence or a shortcut. Words you end with Enter are now left alone without muting speech.\n\n### 1.0.1\n* Typing statistics now open in a read-only field with a Close button: a short summary on the first line, then details for today, the last 7 days, all time and each recent day.\n* Words you finish with Enter now count in the statistics.\n\n### 1.0.0\n* First public release.\n* Typing sounds in text fields, with stereo position and pitch for each character, bundled mechanical keyboard packs, and a pack editor.\n* Beep on misspelled words, spelling suggestions, and a custom dictionary.\n* Text replacements and automatic capitals.\n* Whole word echo after a correction, and typing statistics.\n* English and Ukrainian interface and help.\n* Needs NVDA 2026.1 or later.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795283755000,
+	"translations": [
+		{
+			"language": "uk",
+			"displayName": "Typix",
+			"description": "Typix відтворює звуки набору в текстових полях, з окремими звуками для літер, великих літер, пробілу, Enter, Tab, Backspace, Delete і розділових знаків. Кожен символ може мати власне положення в стереопанорамі та власну висоту. У комплекті є пакети звуків механічних клавіатур і редактор для створення власних, а ще Typix може подавати сигнал про слова з помилками й пропонувати виправлення, замінювати скорочення на довший текст, промовляти ціле слово після виправлення та показувати статистику набору."
+		}
+	]
+}
