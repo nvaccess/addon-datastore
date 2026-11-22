@@ -1,0 +1,113 @@
+{
+	"addonId": "addonStoreLite",
+	"displayName": "addon Store Lite",
+	"URL": "https://github.com/chaichaimee/addonStoreLite/releases/download/2026.12.0/addonStoreLite-v2026.12.0.nvda-addon",
+	"description": "Makes the NVDA Add-on Store quicker to use with a screen reader. Add-on list items are read in a short form (name, version, author, date) with five display formats to choose from, the opening announcement is shortened, and the store remembers your last tab, sort order and filters for each tab. A Download item in the context menu of the Available and Updatable lists saves the selected add-on file to the download destination set in the settings panel, and a Copy download URL item copies its address; opening that menu makes one small request to the add-on's download address to read the file size (once per add-on version, then it is remembered in a file), and Download fetches the file only when you choose it.",
+	"sha256": "e205e58ba4be7701d4077d9214833d8221a1d77a0da14b0eea6a0a3cd7385696",
+	"addonVersionName": "2026.12.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 12,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/addonStoreLite",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/addonStoreLite",
+	"changelog": "Added Download and Copy download URL to the context menu of the Available and Updatable lists, with the file size shown and a checksum check. Added a download destination setting and a fifth item display format. The store remembers the last tab, sort order, channel filter and enabled filter per tab. Fixed tab switching errors when the sort field is hidden.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795340295000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Tienda de complementos ligera",
+			"description": "Hace que la Tienda de complementos de NVDA sea más rápida de usar con un lector de pantalla. Los elementos de la lista de complementos se leen de forma abreviada (nombre, versión, autor, fecha) con cinco formatos de visualización a elegir, el anuncio de apertura se acorta y la tienda recuerda tu última pestaña, orden y filtros para cada pestaña. Un elemento Descargar en el menú contextual de las listas de disponibles y actualizables guarda el archivo del complemento seleccionado en la carpeta de descargas establecida en el panel de configuración, y un elemento Copiar URL de descarga copia su dirección; abrir ese menú realiza una pequeña solicitud a la dirección de descarga del complemento para leer el tamaño del archivo (una vez por versión del complemento, luego se recuerda en un archivo), y Descargar obtiene el archivo solo cuando lo eliges."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "插件商店极速版",
+			"description": "使 NVDA 插件商店在屏幕阅读器下使用起来更快。插件列表项以简短形式（名称、版本、作者、日期）读取，有五种显示格式可供选择，打开时的提示音被缩短，并且商店会记住每个标签页的上次标签页、排序方式和筛选条件。可用和可更新列表的上下文菜单中的“下载”项可将选定的插件文件保存到设置面板中设置的下载目标位置，“复制下载 URL”项可复制其地址；打开该菜单会对插件的下载地址发出一次小请求以读取文件大小（每个插件版本一次，然后会记录在文件中），并且“浦”仅在您选择它时才获取文件。\"\"\""
+		},
+		{
+			"language": "ja",
+			"displayName": "アドオンストア ライト",
+			"description": "NVDAアドオンストアをスクリーンリーダーでより快適に利用できるようにします。アドオンリストの項目は短縮形式（名前、バージョン、作者、日付）で読み上げられ、5つの表示形式から選択できます。また、起動時のアナウンスが短縮され、各タブの最後のタブ、並べ替え順、フィルターが記憶されます。「利用可能」および「アップデート可能」リストのコンテキストメニューにある「ダウンロード」項目は、設定パネルで指定したダウンロード先に選択したアドオンファイルを保存し、「ダウンロードURLをコピー」項目はそのアドレスをコピーします。このメニューを開くと、アドオンのダウンロードアドレスへファイルサイズを取得するための小さなリクエストが1回送信され（アドオンのバージョンごとに1回、以降はファイルに記憶されます）、「ダウンロード」を実行したときのみファイルが取得されます。"
+		},
+		{
+			"language": "id",
+			"displayName": "Toko Add-on Lite",
+			"description": "Membuat Toko Add-on NVDA lebih cepat digunakan dengan pembaca layar. Item daftar add-on dibaca dalam bentuk singkat (nama, versi, penulis, tanggal) dengan lima format tampilan yang dapat dipilih, pengumuman pembukaan dipersingkat, dan toko mengingat tab terakhir, urutan penyortiran, dan filter untuk setiap tab. Item Unduh di menu konteks dari daftar Tersedia dan Dapat Diperbarui menyimpan file add-on yang dipilih ke tujuan unduhan yang diatur di panel pengaturan, dan item Salin URL unduhan menyalin alamatnya; membuka menu tersebut membuat satu permintaan kecil ke alamat unduh add-on untuk membaca ukuran file (sekali per versi add-on, kemudian diingat dalam file), dan Unduh mengambil file hanya saat Anda memilihnya."
+		},
+		{
+			"language": "it",
+			"displayName": "mağaza eklentisi Lite",
+			"description": "Ekran okuyucu ile NVDA Eklenti Mağazası'nın kullanımını hızlandırır. Eklenti listesi öğeleri, aralarından seçim yapabileceğiniz beş görünüm biçimiyle kısa biçimde (ad, sürüm, yazar, tarih) okunur, açılış duyurusu kısaltılır ve mağaza her sekme için son sekmənizi, sıralama düzeninizi ve filtrelerinizi hatırlar. Mevcut ve Güncellenebilir listelerinin içerik menüsündeki İndir öğesi, seçilen eklenti dosyasını ayarlar panelinde belirlenen indirme hedefine kaydeder ve İndirme URL'sini Kopyala öğesi adresini kopyalar; bu menünün açılması, dosya boyutunu okumak için eklentinin indirme adresine küçük bir istek gönderir (eklenti sürümü başına bir kez, ardından bir dosyada hatırlanır) ve İndir, dosyayı yalnızca siz seçtiğinizde getirir."
+		},
+		{
+			"language": "th",
+			"displayName": "แอดออนสโตร์ไลต์",
+			"description": "ทำให้ใช้งานร้านค้าแอดออน NVDA ได้รวดเร็วยิ่งขึ้นด้วยโปรแกรมอ่านหน้าจอ รายการแอดออนจะถูกอ่านแบบย่อ (ชื่อ,เวอร์ชัน,ผู้พัฒนา,วันที่) พร้อมรูปแบบการแสดงผล 5 แบบให้เลือก, เสียงประกาศเปิดใช้งานจะสั้นลง และร้านค้าจะจดจำแท็บล่าสุด, ลำดับการเรียง และตัวกรองสำหรับแต่ละแท็บ เมนูบริบทของรายการแอดออนที่มีและอัปเดตได้จะมีรายการ \"ดาวน์โหลด\" เพื่อบันทึกไฟล์แอดออนที่เลือกไปยังปลายทางการดาวน์โหลดที่ตั้งค่าไว้ในแผงตั้งค่า และมีรายการ \"คัดลอก URL ดาวน์โหลด\" สำหรับคัดลอกที่อยู่ การเปิดเมนูนั้นจะส่งคำขอขนาดเล็กไปยังที่อยู่ดาวน์โหลดของแอดออนเพื่ออ่านขนาดไฟล์ (หนึ่งครั้งต่อเวอร์ชัน จากนั้นจะบันทึกไว้ในไฟล์) และคำสั่งดาวน์โหลดจะดึงไฟล์มาเฉพาะเมื่อคุณเลือกเท่านั้น"
+		},
+		{
+			"language": "ar",
+			"displayName": "متجر الإضافات الخفيف",
+			"description": "يجعل متجر إضافات NVDA أسرع في الاستخدام مع قارئ الشاشة. تُقرأ عناصر قائمة الإضافات بشكل مختصر (الاسم، الإصدار، المؤلف، التاريخ) مع خمسة تنسيقا للعرض للاختيار من بينها، ويتم تقصير إعلان الفتح، ويتذكر المتجر علامة التبويب الأخيرة، وترتيب الفرز، والتصفيات لكل علامة تبويب. عنصر التنزيل في قائمة السياق لقائمتي المتاحة والقابلة للتحديث يحفظ ملف الإضافات المحدد في وجهة التنزيل المعينة في لوحة الإعدادات، وعنصر نسخ عنوان URL للتنزيل ينسخ عنوانه؛ يؤدي فتح هذه القائمة إلى إرسال طلب صغير واحد إلى عنوان تنزيل الإضافة لقراءة حجم الملف (مرة واحدة لكل إصدار من الإضافة، ثم يتم تذكره في ملف)، ولا يجلب التنزيل الملف إلا عند اختياره."
+		},
+		{
+			"language": "fr",
+			"displayName": "Magasin d'extensions allégé",
+			"description": "Accélère l'utilisation du magasin d'extensions d'NVDA avec un lecteur d'écran. Les éléments de la liste des extensions sont lus de manière abrégée (nom, version, auteur, date) avec cinq formats d'affichage au choix, l'annonce d'ouverture est raccourcie et le magasin mémorise votre dernier onglet, l'ordre de tri et les filtres pour chaque onglet. Un élément Télécharger dans le menu contextuel des listes Disponible et Mutable enregistre le fichier de l'extension sélectionnée dans la destination de téléchargement définie dans le panneau des paramètres, et un élément Copier l'URL de téléchargement copie son adresse ; l'ouverture de ce menu effectue une petite requête à l'adresse de téléchargement de l'extension pour lire la taille du fichier (une fois par version d'extension, puis elle est mémorisée dans un fichier), et Télécharger ne récupère le fichier que lorsque vous le choisissez."
+		},
+		{
+			"language": "uk",
+			"displayName": "Магазин додатків Lite",
+			"description": "Робить магазин додатків NVDA зручнішим і швидшим у використанні з екрана. Елементи списку додатків озвучуються в скороченій формі (назва, версія, автор, дата) з п'ятьма форматами відображення на вибір, оголошення про відкриття скорочено, а магазин запам'ятовує останню вкладку, порядок сортування та фільтри для кожної вкладки. Елемент Завантажити в контекстному списку доступних та оновлюваних додатків зберігає вибраний файл додатка до папки завантаження, заданої в панелі налаштувань, а елемент Скопіювати URL завантаження копіює його адресу; відкриття цього меню робить один невеликий запит на адресу завантаження додатка для читання розміру файлу (один раз для кожної версії додатка, після чого це запам'ятовується у файлі), а Завантажити отримує файл лише тоді, коли ви це виберете."
+		},
+		{
+			"language": "ru",
+			"displayName": "Магазин дополнений Lite",
+			"description": "Ускоряет работу с Магазином дополнений NVDA с помощью программы чтения с экрана. Элементы списка дополнений зачитываются в краткой форме (название, версия, автор, дата) с возможностью выбора из пяти форматов отображения, приветственное объявление сокращено, а магазин запоминает последнюю вкладку, порядок сортировки и фильтры для каждой вкладки. Пункт «Скачать» в контекстном списке доступных и обновляемых дополнений сохраняет выбранный файл дополнения в папку загрузок, указанную в панели настроек, а пункт «Копировать ссылку для скачивания» копирует его адрес; открытие этого меню делает один небольшой запрос по адресу скачивания дополнения для чтения размера файла (один раз для каждой версии дополнения, после чего он сохраняется в файле), а загрузка файла происходит только при выборе этого действия."
+		},
+		{
+			"language": "hi",
+			"displayName": "ऐडऑन स्टोर लाइट",
+			"description": "स्क्रीन रीडर के साथ एनवीडीए ऐड-ऑन स्टोर का उपयोग करना तेज़ बनाता है। ऐड-ऑन सूची आइटमों को छोटे रूप में (नाम, संस्करण, लेखक, तिथि) पढ़ा जाता है, जिसमें से चुनने के लिए पाँच प्रदर्शन प्रारूप हैं, खुलने की घोषणा को छोटा कर दिया जाता है, और स्टोर प्रत्येक टैब के लिए आपके अंतिम टैब, क्रमबद्ध करने के क्रम और फ़िल्टर को याद रखता है। उपलब्ध और अद्यतन करने योग्य सूचियों के संदर्भ मेनू में एक डाउनलोड आइटम चयनित ऐड-ऑन फ़ाइल को सेटिंग पैनल में निर्धारित डाउनलोड गंतव्य पर सहेजता है, और एक कॉपी डाउनलोड यूआरएल आइटम इसका पता कॉपी करता है; उस मेनू को खोलने से फ़ाइल का आकार पढ़ने के लिए ऐड-ऑन के डाउनलोड पते पर एक छोटा अनुरोध किया जाता है (प्रति ऐड-ऑन संस्करण एक बार, फिर इसे एक फ़ाइल में याद रखा जाता है), और डाउनलोड आपके चुने जाने पर ही फ़ाइल प्राप्त करता है।"
+		},
+		{
+			"language": "de",
+			"displayName": "Add-on Store Lite",
+			"description": "Macht den NVDA Add-on Store für die Verwendung mit einem Bildschirmleseprogramm schneller. Add-on-Listenelemente werden in einer Kurzform vorgelesen (Name, Version, Autor, Datum), wobei fünf Anzeigeformate zur Auswahl stehen, die Begrüßungsansage wird verkürzt und der Store merkt sich für jeden Reiter den zuletzt verwendeten Reiter, die Sortierreihenfolge sowie die Filter. Ein Herunterladen-Eintrag im Kontextmenü der Listen für verfügbare und aktualisierbare Add-ons speichert die ausgewählte Add-on-Datei im in den Einstellungen festgelegten Download-Ziel, und ein Eintrag zum Kopieren der Download-URL kopiert deren Adresse; das Öffnen dieses Menüs sendet eine kleine Anfrage an die Download-Adresse des Add-ons, um die Dateigröße zu ermitteln (einmal pro Add-on-Version, danach wird sie in einer Datei gespeichert), und Herunterladen ruft die Datei erst ab, wenn Sie dies auswählen."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Loja de Complementos Lite",
+			"description": "Torna a Loja de Complementos do NVDA mais rápida de usar com um leitor de tela. Os itens da lista de complementos são lidos de forma resumida (nome, versão, autor, data) com cinco formatos de exibição à escolha, o anúncio de abertura é encurtado e a loja lembra sua última aba, ordem de classificação e filtros para cada aba. Um item Baixar no menu de contexto das listas Disponíveis e Atualizáveis salva o arquivo do complemento selecionado no destino de download definido no painel de configurações, e um item Copiar URL de download copia seu endereço; abrir esse menu faz uma pequena solicitação ao endereço de download do complemento para ler o tamanho do arquivo (uma vez por versão do complemento, depois é lembrado em um arquivo), e Baixar busca o arquivo apenas quando você o escolhe."
+		},
+		{
+			"language": "en",
+			"displayName": "addon Store Lite",
+			"description": "Makes the NVDA Add-on Store quicker to use with a screen reader. Add-on list items are read in a short form (name, version, author, date) with five display formats to choose from, the opening announcement is shortened, and the store remembers your last tab, sort order and filters for each tab. A Download item in the context menu of the Available and Updatable lists saves the selected add-on file to the download destination set in the settings panel, and a Copy download URL item copies its address; opening that menu makes one small request to the add-on's download address to read the file size (once per add-on version, then it is remembered in a file), and Download fetches the file only when you choose it."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "附加元件商店精簡版",
+			"description": "讓 NVDA 附加元件商店搭配螢幕閱讀器時更快、更好用。附加元件列表項目會以簡短形式讀出（名稱、版本、作者、日期），並提供五種顯示格式供選擇；開啟時的語音宣告已簡化；商店會記住每個分頁您上次使用的分頁、排序順序與篩選條件。「可用」與「可更新」列表的內容選單中新增了「下載」項目，可將所選的附加元件檔案儲存至設定面板中指定的下載目的地，而「複製下載網址」項目則可複製其網址；開啟該選單時會對附加元件的下載網址發送一次小型請求以讀取檔案大小（每個附加元件版本一次，之後會記錄在檔案中），並且只有在您選擇時才會下載檔案。"
+		},
+		{
+			"language": "ko",
+			"displayName": "애드온 스토어 라이트",
+			"description": "스크린 리더로 NVDA 애드온 스토어를 더 빠르게 사용할 수 있습니다. 애드온 목록 항목이 간소화된 형식(이름, 버전, 작성자, 날짜)으로 읽히며 5가지 표시 형식 중 선택할 수 있습니다. 시작 안내 음성이 단축되며, 스토어는 각 탭의 마지막 탭, 정렬 순서 및 필터를 기억합니다. 사용 가능 및 업데이트 가능 목록의 맥락 메뉴에 있는 '다운로드' 항목은 선택한 애드온 파일을 설정 패널에 지정된 다운로드 폴더에 저장하고, '다운로드 URL 복사' 항목은 주소를 복사합니다. 해당 메뉴를 열면 파일 크기를 읽기 위해 애드온 다운로드 주소로 한 번 가벼운 요청을 보냅니다(애드온 버전당 한 번이며 이후 파일에 저장됨). '다운로드'는 사용자가 선택할 때만 파일을 가져옵니다."
+		}
+	]
+}
