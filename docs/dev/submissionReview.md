@@ -35,7 +35,8 @@ The process for reviewing pending first submissions is as follows:
       * Inappropriate content in the readme.
       It's not expected that reviewers read the readme file.
       However, add-ons should be rejected or removed later if they violate the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
-      * Author and code only been around for a few days.
+      * Author and code only been around for less than 7 days.
+   If some of the above red flags are detected, you can investigate and approve or reject the add-on according to the results of your investigation or author clarifications.
    * Ensure there is not a clash of add-on IDs by checking the [addons folder](https://github.com/nvaccess/addon-datastore/tree/master/addons) for similar IDs.
 1. Approve or deny the `submitterReview` deploy environment.
     * If you are unsure, leave a comment outlining why the add-on is being left open and what's needed to decide how to process it.
@@ -55,7 +56,7 @@ You don't need to download the add-on, nor clone any repositories.
 1. Open the source URL to get a general overview of the structure of the source code.
 For more details about common components included in add-ons, read the [Packaging Code as NVDA Add-ons section of the developer guide](https://download.nvaccess.org/documentation/developerGuide.html#Addons).
 1. If you have license concerns or other questions about an add-on, leave the submission or tag NV Access developers to request a second opinion.
-1. If an author is unresponsive, after at least 1 week of no response, reject the submission and request for submitting a new issue.
+1. If an author is unresponsive, after at least 1 week of no response after you asked for a clarification regarding metadata, reject the submission and request submit a new issue.
 1. If you have any questions and you are a registered metadata reviewer, request for help on the add-on metadata reviews mailing list.
 
 ## Approving an add-on which was flagged as malicious
