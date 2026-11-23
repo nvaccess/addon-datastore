@@ -31,7 +31,7 @@ The process for reviewing pending first submissions is as follows:
    * Ensure the submitter matches the repository ownership, or the submitter is a core maintainer for the project.
    If this is not the case, tag the core maintainer in the submission to confirm they give permission for the submission.
    * Check for any obvious red flags with the repository i.e.
-      it doesn't look structured as an add-on (for example, the repo doesn't include directories tipically found in add-ons like addon/globalPlugins, addon/appModules etc).
+      it doesn't look structured as an add-on (for example, the repo doesn't include directories typically found in add-ons like addon/globalPlugins, addon/appModules etc).
       * Inappropriate content in the readme.
       It's not expected that reviewers read the readme file.
       However, add-ons should be rejected or removed later if they violate the [NVDA code of conduct](https://github.com/nvaccess/nvda/blob/master/CODE_OF_CONDUCT.md).
