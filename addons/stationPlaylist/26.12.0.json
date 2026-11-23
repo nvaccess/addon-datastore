@@ -1,0 +1,32 @@
+{
+	"addonId": "stationPlaylist",
+	"displayName": "StationPlaylist",
+	"URL": "https://github.com/ChrisDuffley/stationPlaylist/releases/download/26.12/stationPlaylist-26.12.nvda-addon",
+	"description": "Enhances support for StationPlaylist apps. In addition, adds global commands for the Studio application from everywhere.",
+	"sha256": "76c22cbe7a218626ac67b3f17ca639b217632ec05ef78c78d758483cd7512439",
+	"addonVersionName": "26.12",
+	"addonVersionNumber": {
+		"major": 26,
+		"minor": 12,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "josephsl",
+	"sourceURL": "https://github.com/ChrisDuffley/stationPlaylist",
+	"license": "GPL v2",
+	"homepage": "https://github.com/ChrisDuffley/stationPlaylist",
+	"changelog": "* Add-on configuration files such as settings data are now located in 'stationPlaylist' subfolder of the user configuration folder.\n* VT (voice track) Recorder (local Studio):\n\t* Added commands to announce outgoing and incoming tracks. Control+NVDA+1 announces both outgoing and incoming tracks, Control+NVDA+2 announces outgoing track title, and Control+NVDA+3 reports incoming track name (contributed by MooSteinebach).\n\t* Most of the unlabeled controls now report accessible labels (contributed by MooSteinebach).\n\t* NVDA will announce names of radio button groupings such as VT overlap.\n\t* NVDA will display track time abbreviations when reporting outgoing and/or incoming track in braille with messages staying on the display until dismissed or moving to a different control (contributed vy MooSteinebach).",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795435972000,
+	"translations": []
+}
