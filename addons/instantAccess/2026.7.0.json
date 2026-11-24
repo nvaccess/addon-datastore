@@ -1,0 +1,94 @@
+{
+	"addonId": "instantAccess",
+	"displayName": "instant Access",
+	"URL": "https://github.com/kamalyaser31/instantAccess/releases/download/v2026.7/instantAccess-2026.7.nvda-addon",
+	"description": "A powerful productivity tool to launch websites, files, folders, and programs quickly using a dedicated layer.\n\tFeatures include background execution, verbosity levels, command line arguments, and settings import/export.",
+	"sha256": "eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+	"addonVersionName": "2026.7",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 7,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "kamal yaser",
+	"sourceURL": "https://github.com/kamalyaser31/instantAccess",
+	"license": "GPL v2",
+	"homepage": "https://github.com/kamalyaser31/instantAccess",
+	"changelog": "\n- Version 2026.7:\n  - Find and run items: The list that F1 or H opens, with browsing turned on, now has a filter. Press Enter to run the selected item.\n  - Stop a running item: Press NVDA+E while an item or a test is running.\n  - Variables: Use the date, the time, the clipboard, the selected text, or the file or folder from File Explorer in snippets, website addresses and program arguments. If your existing text has a variable name in braces, it is now replaced, so check such items after updating.\n  - Several apps for one item, and the app name is filled in for you.\n  - Reorder items with Ctrl+Up and Ctrl+Down, filter the settings list, and turn items off without deleting them.\n  - Choose whether items speak their name when they run.\n  - Run programs as administrator, and record keystrokes with a button.\n  - Importing can merge new items into your own, and pasting a snippet keeps what you had copied.\n  - Fixed: Keystrokes such as Shift+End now select text, editing keeps an item in its place, and shortcuts with the Windows key work after NVDA restarts. Programs such as notepad work again when another add-on changes how NVDA finds programs, and Move down uses Alt+W.\n- Version 2026.6:\n  - Browse your items: In Instant Access mode, use the arrow keys or Tab to hear your items and Enter to run one; F1 or H lists them all. Turn it on in the add-on settings.\n  - Safer settings: A damaged or missing settings file can be restored from the backup, and your items are no longer lost when something goes wrong.\n  - One item at a time: Items now run one after another, so text and keystrokes no longer get mixed up.\n  - NVDA commands finish before the next action starts, and \"Stop on error\" now works correctly.\n  - Keys like Shift or Ctrl are no longer left pressed if typing fails.\n  - Batch files in folders with spaces in their names now run correctly.\n  - What you typed in a dialog is kept if saving fails.\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1794300237000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "instantAccess",
+			"description": "一款高效的快捷启动工具，可通过专用快捷键层快速打开网站、文件和文件夹，或启动程序。\n\t支持后台执行和命令行参数，可调整反馈详细程度，并可导入或导出设置。",
+			"changelog": "\n- Version 2026.7:\n  - Find and run items: The list that F1 or H opens, with browsing turned on, now has a filter. Press Enter to run the selected item.\n  - Stop a running item: Press NVDA+E while an item or a test is running.\n  - Variables: Use the date, the time, the clipboard, the selected text, or the file or folder from File Explorer in snippets, website addresses and program arguments. If your existing text has a variable name in braces, it is now replaced, so check such items after updating.\n  - Several apps for one item, and the app name is filled in for you.\n  - Reorder items with Ctrl+Up and Ctrl+Down, filter the settings list, and turn items off without deleting them.\n  - Choose whether items speak their name when they run.\n  - Run programs as administrator, and record keystrokes with a button.\n  - Importing can merge new items into your own, and pasting a snippet keeps what you had copied.\n  - Fixed: Keystrokes such as Shift+End now select text, editing keeps an item in its place, and shortcuts with the Windows key work after NVDA restarts. Programs such as notepad work again when another add-on changes how NVDA finds programs, and Move down uses Alt+W.\n- Version 2026.6:\n  - Browse your items: In Instant Access mode, use the arrow keys or Tab to hear your items and Enter to run one; F1 or H lists them all. Turn it on in the add-on settings.\n  - Safer settings: A damaged or missing settings file can be restored from the backup, and your items are no longer lost when something goes wrong.\n  - One item at a time: Items now run one after another, so text and keystrokes no longer get mixed up.\n  - NVDA commands finish before the next action starts, and \"Stop on error\" now works correctly.\n  - Keys like Shift or Ctrl are no longer left pressed if typing fails.\n  - Batch files in folders with spaces in their names now run correctly.\n  - What you typed in a dialog is kept if saving fails.\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
+		},
+		{
+			"language": "ar",
+			"displayName": "الوصول الفوري",
+			"description": "أداة إنتاجية قوية لتشغيل مواقع الويب، والملفات، والمجلدات، والبرامج بسرعة باستخدام طبقة مخصصة.\nتتضمن الميزات: التنفيذ في الخلفية، ومستويات الإسهاب، ووسائط سطر الأوامر، واستيراد وتصدير الإعدادات.",
+			"changelog": "\n- الإصدار 2026.7:\n  - البحث عن العناصر وتشغيلها: القائمة التي يفتحها F1 أو H، مع تفعيل التصفح، صارت تقبل التصفية، ويشغّل Enter العنصر المحدد.\n  - إيقاف العنصر الجاري: اضغط NVDA+E أثناء تشغيل عنصر أو اختبار.\n  - المتغيرات: استعمل التاريخ والوقت والحافظة والنص المحدد والملف أو المجلد من مستكشف الملفات في النصوص الجاهزة وعناوين المواقع ووسائط البرامج. وإن كان في نصوصك القديمة اسم متغير بين قوسين معقوفين فإنه يُستبدل الآن، فراجع هذه العناصر بعد التحديث.\n  - عدة تطبيقات للعنصر الواحد، ويُملأ اسم التطبيق تلقائياً.\n  - إعادة ترتيب العناصر بـ Ctrl+Up وCtrl+Down، وتصفية قائمة الإعدادات، وتعطيل العناصر دون حذفها.\n  - اختيار نطق اسم العنصر عند تشغيله أو عدمه.\n  - تشغيل البرامج بصلاحيات المسؤول، وتسجيل ضغطات المفاتيح بزر.\n  - يمكن دمج العناصر الجديدة عند الاستيراد، ويبقى ما نسخته بعد لصق النص الجاهز.\n  - إصلاحات: ضغطات مثل Shift+End تحدد النص الآن، والتحرير يبقي العنصر في مكانه، والاختصارات التي فيها مفتاح Windows تعمل بعد إعادة تشغيل NVDA. وعادت البرامج مثل notepad تعمل حين تغيّر إضافة أخرى طريقة NVDA في العثور على البرامج، وصار النقل للأسفل بـ Alt+W.\n- الإصدار 2026.6:\n  - تصفح العناصر: في وضع الوصول الفوري، استخدم الأسهم أو Tab لسماع عناصرك وEnter لتشغيل أحدها، وF1 أو H لعرضها جميعاً. فعّل الميزة من إعدادات الإضافة.\n  - إعدادات أكثر أماناً: يمكن استعادة ملف الإعدادات التالف أو المفقود من النسخة الاحتياطية، ولم تعد عناصرك تضيع عند حدوث خطأ.\n  - عنصر واحد في كل مرة: تُنفَّذ العناصر الآن واحداً تلو الآخر، فلا تختلط النصوص وضغطات المفاتيح.\n  - تكتمل أوامر NVDA قبل بدء الإجراء التالي، ويعمل خيار «الإيقاف عند الخطأ» بشكل صحيح.\n  - لم تعد مفاتيح مثل Shift أو Ctrl تبقى مضغوطة عند تعثر الكتابة.\n  - تعمل ملفات الدفعات الموجودة في مجلدات تحتوي أسماؤها على مسافات بشكل صحيح.\n  - يُحتفظ بما كتبته في مربع الحوار إذا تعذر الحفظ.\n- الإصدار 2026.5:\n  - تكرار العناصر: استنساخ العناصر بكافة إجراءاتها وإعداداتها بسهولة عبر زر تكرار جديد.\n  - اختبار الإجراءات: تجربة الإجراءات منفردة مع مهلة إعداد تلقائية مدتها 3 ثوانٍ لإجراءات الكتابة وضغط المفاتيح.\n  - إيقاف التنفيذ عند الخطأ: خيار لإيقاف بقية الإجراءات في السلسلة فور تعثر أحدها.\n  - تكامل النظام: دعم أوامر PATH وسكربتات الدفعات (.bat/.cmd) وبروتوكولات الروابط المخصصة (مثل mailto: و ms-settings:).\n  - سهولة التنقل بلوحة المفاتيح: Enter للتحرير، Delete للحذف مع التأكيد، و Ctrl+Up/Down لإعادة ترتيب الإجراءات.\n  - الأمان والتعافي: حفظ ذري للتهيئة، نسخ احتياطي تلقائي (config.json.bak)، ومطالبة باستعادة النسخة عند تلف الملف.\n  - تحديث أدوات البناء: التوافق التام مع معايير قالب addonTemplate الرسمي (PEP 735، uv، prek.toml).\n- الإصدار 2026.4:\n  - ميزة جديدة: محاكاة ضغطات مفاتيح متسلسلة (ماكرو) تتيح للمستخدمين المحترفين تنفيذ اختصارات لوحة المفاتيح بمهل زمنية مخصصة.\n  - جودة الكود: إعادة هيكلة الكود الأساسي لتحسين جودته ومنع التكرار.\n  - التوثيق: تحديث دليل المستخدم باللغتين العربية والإنجليزية لتوثيق الميزة الجديدة.\n- الإصدار 2026.3: إصدار رسمي محدث.\n  - إصلاح التحميل: حل مشكلة حرجة منعت تحميل الإضافة في بعض بيئات NVDA.\n  - التوثيق: تحديث دليل المستخدم العربي بالكامل لتوفير توجيهات أوضح.\n  - الاستقرار العام: تحسينات داخلية لتوفير أداء أكثر سلاسة."
+		},
+		{
+			"language": "en",
+			"displayName": "instant Access",
+			"description": "A powerful productivity tool to launch websites, files, folders, and programs quickly using a dedicated layer.\n\tFeatures include background execution, verbosity levels, command line arguments, and settings import/export.",
+			"changelog": "\n- Version 2026.7:\n  - Find and run items: The list that F1 or H opens, with browsing turned on, now has a filter. Press Enter to run the selected item.\n  - Stop a running item: Press NVDA+E while an item or a test is running.\n  - Variables: Use the date, the time, the clipboard, the selected text, or the file or folder from File Explorer in snippets, website addresses and program arguments. If your existing text has a variable name in braces, it is now replaced, so check such items after updating.\n  - Several apps for one item, and the app name is filled in for you.\n  - Reorder items with Ctrl+Up and Ctrl+Down, filter the settings list, and turn items off without deleting them.\n  - Choose whether items speak their name when they run.\n  - Run programs as administrator, and record keystrokes with a button.\n  - Importing can merge new items into your own, and pasting a snippet keeps what you had copied.\n  - Fixed: Keystrokes such as Shift+End now select text, editing keeps an item in its place, and shortcuts with the Windows key work after NVDA restarts. Programs such as notepad work again when another add-on changes how NVDA finds programs, and Move down uses Alt+W.\n- Version 2026.6:\n  - Browse your items: In Instant Access mode, use the arrow keys or Tab to hear your items and Enter to run one; F1 or H lists them all. Turn it on in the add-on settings.\n  - Safer settings: A damaged or missing settings file can be restored from the backup, and your items are no longer lost when something goes wrong.\n  - One item at a time: Items now run one after another, so text and keystrokes no longer get mixed up.\n  - NVDA commands finish before the next action starts, and \"Stop on error\" now works correctly.\n  - Keys like Shift or Ctrl are no longer left pressed if typing fails.\n  - Batch files in folders with spaces in their names now run correctly.\n  - What you typed in a dialog is kept if saving fails.\n- Version 2026.5:\n  - Item Duplication: Easily clone items with all actions and settings via a new Duplicate button.\n  - Action Testing: Test actions in isolation with automatic 3-second preparation countdown for typing and keystrokes.\n  - Multi-Action Stop on Error: Optional setting to abort remaining actions if an error occurs.\n  - System Integration: Support for PATH commands, batch scripts (.bat/.cmd), and custom URI protocols (e.g. mailto:, ms-settings:).\n  - Keyboard Ergonomics: Enter to edit item, Delete to delete item/action with confirmation, Ctrl+Up/Down to reorder actions.\n  - Safety & Disaster Recovery: Atomic configuration saves, automatic backups (config.json.bak), and corruption recovery prompts.\n  - Modernized Tooling: Built with official NVDA addonTemplate standards (PEP 735, uv, prek.toml).\n- Version 2026.4:\n  - New Feature: Keystrokes macro simulation (allows advanced screen reader users to execute keyboard shortcut sequences with custom delays).\n  - Code Quality: Refactored core modules to improve maintainability and clean up code duplication.\n  - Documentation: Updated the documentation to detail the new Keystrokes feature and format.\n- Version 2026.3: Official release update.\n  - Add-on Loading Fix: Resolved a critical issue that prevented the add-on from loading correctly in certain NVDA environments.\n  - Documentation Updates: Fully updated the Arabic user guide to provide clearer instructions and information.\n  - General Stability: Internal refinements and cleanup to ensure smoother performance."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0d0e0800",
+					"raw_md5": "62a64580f674153c4c4a1f07287abaec"
+				},
+				"first_submission_date": 1794300240,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1794300242,
+				"last_submission_date": 1794300240,
+				"md5": "cdff0ce0076e854c7ad9943b19fcadbb",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3cbb3ca3a7c0a82a9f59f32cf1cce82effbb8ab4",
+				"sha256": "eca02669d9c8eb0037e6976f4a5dd3ec2821fbc76c32901a5f8eaf6b51705f11",
+				"size": 161807,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/7637"
+}
