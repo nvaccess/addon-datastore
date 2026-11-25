@@ -22,7 +22,7 @@ jobs:
       - name: Commit changes and create pull request
         env:
           GH_TOKEN: ${{ github.token }}
-          baseBranch: ${{ github.event.repository.default_branch }}
+          baseBranch: ${{ github.ref_name }}
         shell: bash
         run: |
           git add addons discussions.json submitters.json
