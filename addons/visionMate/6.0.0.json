@@ -1,0 +1,32 @@
+{
+	"addonId": "visionMate",
+	"displayName": "VisionMate",
+	"URL": "https://github.com/athee06/VisionMate/releases/download/v6.0.0/VisionMate-6.0.0.nvda-addon",
+	"description": "Fast, fully offline image description and an accessible overlay for windows NVDA cannot read. Everything runs on your own computer. Images are never sent to the internet.\nNVDA+Alt+A: describe the current element\nNVDA+Alt+W: describe the current window\nNVDA+Alt+F: describe the whole screen\nNVDA+Alt+D: describe the clipboard image\nNVDA+Alt+E: find something on screen, like the Save button, and click it\nOn a photo message in a chat app, or an image file in File Explorer, NVDA+Alt+A describes the photo itself.\nPress twice for a detailed description in a window, where you can ask questions about the image.\nNVDA+Alt+O: the overlay, a list of a window's texts and icons; Enter clicks an item\nNVDA+Alt+G: automatic descriptions of images without a label, on or off\nNVDA+Alt+B: names for buttons without a name, on or off\nNVDA+Alt+N: give your own name to a button or overlay item\nNVDA+Alt+Shift+A: describe the newest picture in a chat\nNVDA+Alt+P: how far a description is; NVDA+Alt+X: stop it\nNVDA+Alt+U: pointer mode, the mouse from the keyboard; NVDA+Alt+Q: controller mode\nNVDA+Alt+Y: take the help offered where a window tells NVDA little",
+	"sha256": "be0ccd153ca09944717ed02a41bc5f130e3059e9b5d2802525504f433efc26ac",
+	"addonVersionName": "6.0.0",
+	"addonVersionNumber": {
+		"major": 6,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Athiban Vijay",
+	"sourceURL": "https://github.com/athee06/VisionMate",
+	"license": "GPL v2 or later",
+	"homepage": "https://github.com/athee06/VisionMate",
+	"changelog": "* New: pointer mode (NVDA+Alt+U) works the mouse from the keyboard and says what is under the pointer. Space holds the button for dragging, H hovers and reads what appears, T gives touch and pen gestures, G is a game mouse for games that turn the view with the mouse.\n* New: controller mode (NVDA+Alt+Q, or View and Menu held together): a game controller works the mouse pointer.\n* New: NVDA+Alt+E finds something on screen, like the Save button, says roughly where it is, and can click it or move the mouse there.\n* New: NVDA+Alt+Shift+A describes the newest picture in a chat, leaving out emoji and profile pictures.\n* New: NVDA+Alt+X stops a description or an answer; NVDA+Alt+P says how far it is.\n* New: actions in the overlay (A) and in find on screen (More): hover, drag and drop, press and hold, set a drawn knob or slider to a number, work it with the arrow keys, write on a scanned form, touch and pen.\n* Overlay: fields and errors marked in red (R), colour choices named by measured colour, picture puzzles of human checks numbered and described, the most useful item (U), tables (T, Control+Alt+arrows) and \"more below\" for areas that scroll.\n* Overlay: an icon or thumbnail beside a label is no longer a separate item, and NVDA's mouse tracking no longer talks over the overlay.\n* Detailed window: Read all text, Describe people, Describe colours, Where is..., and Save (Control+S). Questions in several parts are answered part by part; colours are measured from the pixels.\n* New: help offered where a window, dialog or control tells NVDA little (NVDA+Alt+Y).\n* New: memories (\"remember that ...\"), your own instructions, VisionMate's own voice, and a portable copy for a flash drive or another computer.\n* Faster: pressing again on a screen that barely changed starts speaking in under a second; background work gets out of the way sooner.\n* More reliable: the engine restarts by itself if it stops; a dropped download resumes; low disk space is reported first.\n* Settings are in groups, with Reset to defaults.",
+	"licenseURL": "https://github.com/athee06/VisionMate/blob/main/LICENSE",
+	"submissionTime": 1795585671000,
+	"translations": []
+}
