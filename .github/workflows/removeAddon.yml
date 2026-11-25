@@ -31,7 +31,7 @@ jobs:
             exit 0
           fi
 
-          headBranch="remove-addon-$addonId"
+          headBranch="remove-addon-$addonId-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git switch -c "$headBranch"
