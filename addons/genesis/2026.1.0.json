@@ -1,0 +1,39 @@
+{
+	"addonId": "genesis",
+	"displayName": "Genesis - Add-on Project Generator for NVDA",
+	"URL": "https://github.com/EdilbertoFonseca/genesis/releases/download/v2026.1.0/genesis-2026.1.0.nvda-addon",
+	"description": "This NVDA add-on provides a practical and accessible tool for developers to efficiently create new add-ons.\n\nIt features an intuitive interface for configuring key project information - such as name, description, author, version, and minimum NVDA requirements - and automatically generates the initial project structure based on a customizable template.\n\nShortcut: NVDA+Shift+G.",
+	"sha256": "9b289cd645e589c6cc11a0e8ebb2e67fae955980b45b6f285adc1b1e26207dbd",
+	"addonVersionName": "2026.1.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Edilberto Fonseca",
+	"sourceURL": "https://github.com/EdilbertoFonseca/genesis/releases/tag/v2026.1.0",
+	"license": "GPL v2",
+	"homepage": "https://github.com/EdilbertoFonseca/genesis",
+	"changelog": "# Changelog\n\n## New Features\n\n- **Data Persistence:** Creator name and email are now saved in Genesis settings.\n- **Auto-fill:** The \"author\" field is now automatically prefilled with saved creator details.\n- **Metadata:** Creator details are now automatically applied to generated project metadata.\n\n## Changes and Maintenance\n\n- **Compatibility:** Raised the minimum supported NVDA version to 2026.1.\n- **Documentation:** Added comprehensive documentation for the add-on settings.\n- **Localization:** Updated Portuguese (PT-BR) translations.\n- **Cleanup:** Removed obsolete checkout lint output.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795607904000,
+	"translations": [
+		{
+			"language": "pt",
+			"displayName": "Gênesis - Gerador de Projetos de Complementos para o NVDA",
+			"description": "Este complemento para o NVDA oferece uma ferramenta prática e acessível para que desenvolvedores criem novos complementos de forma eficiente.\n\nEle conta com uma interface intuitiva para configurar as principais informações do projeto — como nome, descrição, autor, versão e requisitos mínimos do NVDA — e gera automaticamente a estrutura inicial do projeto com base em um modelo personalizável.\n\nAtalho: NVDA+Shift+G.",
+			"changelog": "# Registro de alterações\n\n## Novos recursos\n\n- **Persistência de dados:** O nome e o e-mail do criador agora são salvos nas configurações do Genesis.\n- **Preenchimento automático:** O campo \"autor\" agora é preenchido automaticamente com os detalhes do criador salvos.\n- **Metadados:** Os detalhes do criador agora são aplicados automaticamente aos metadados do projeto gerados.\n\n## Alterações e Manutenção\n\n- **Compatibilidade:** A versão mínima suportada do NVDA foi aumentada para 2026.1.\n- **Documentação:** Adicionada documentação completa para as configurações do complemento.\n- **Localização:** Traduções atualizadas para português (PT-BR).\n- **Limpeza:** Remoção de informações obsoletas geradas pelo comando lint no checkout."
+		}
+	]
+}
