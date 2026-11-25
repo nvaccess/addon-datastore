@@ -104,5 +104,47 @@
 			"displayName": "xPlorer",
 			"description": "xPlorer는 NVDA로 파일 탐색기를 더 빠르게 만듭니다. 멀티탭 단축키를 통해 이름, 텍스트 또는 경로 복사, 확장자별 선택 또는 검색, 반전 및 다중 선택, 압축 및 압축 해제, Robocopy 및 일괄 이름 바꾸기를 실행할 수 있습니다. 또한 파일 바구니, 작업 공간, 최근 위치, 평면 보기, 폴더 비교, 중복 찾기, 폴더를 ISO로 변환, 프리저(삭제, 이름 바꾸기, 잘라내기 방지) 및 탐색할 때 항목 크기가 음성으로 안내되는 폴더 크기 목록 기능을 제공합니다.\n\n단축키:\nNVDA+Shift+C\n한 번 탭: 선택한 파일 및 폴더 이름을 클립보드에 복사\n두 번 탭: 선택한 파일의 텍스트 내용 복사\n세 번 탭: 현재 폴더의 주소 표시줄 경로 복사\n\nNVDA+Shift+V\n한 번 탭: 포커스된 항목의 파일 확장자가 같은 다른 모든 항목 선택\n두 번 탭: 현재 선택 영역 반전\n세 번 탭: 다중 선택 모드 켜기/끄기(키보드를 이용한 비연속 선택)\n\nNVDA+Shift+A\n한 번 탭: 검색으로 선택 대화 상자 열기\n두 번 탭: 평면 보기 열기\n세 번 탭: 일괄 이름 바꾸기 도구 열기\n\nNVDA+Shift+Z\n한 번 탭: 현재 선택 영역의 전체 크기 안내\n두 번 탭: 선택 영역을 zip 파일로 압축\n세 번 탭: 선택한 압축 파일 풀기\n\nNVDA+Shift+R\n한 번 탭: Robocopy - 복사할 항목 선택\n두 번 탭: Robocopy - 현재 폴더에 붙여넣기\n세 번 탭: Robocopy - 이동할 항목 선택\n\nNVDA+Shift+X\n한 번 탭: 주요 xPlorer 컨텍스트 메뉴 열기\n두 번 탭: 최근 위치 메뉴 열기\n세 번 탭: 현재 폴더 크기 목록\n\nNVDA+Shift+F2\n한 번 탭: 선택한 파일 이름 바꾸기\n두 번 탭: 현재 클립보드 텍스트를 사용하여 선택한 파일 또는 폴더 이름 바꾸기\n세 번 탭: 마지막 일괄 이름 바꾸기 작업 실행 취소\n\nNVDA+Shift+N\n한 번 탭: 선택한 항목을 파일 바구니에 추가\n두 번 탭: 파일 바구니 창 열기\n세 번 탭: 파일 바구니 비우기\n\nNVDA+Shift+M\n한 번 탭: 작업 영역 메뉴 열기\n두 번 탭: 선택한 폴더를 새 작업 영역에 추가하거나 현재 폴더를 작업 영역으로 저장\n세 번 탭: 작업 영역 편집기 열기 (저장된 작업 영역 이름 변경, 고정, 순서 변경 또는 삭제)\n\nNVDA+Shift+K\n한 번 탭: 선택한 파일 및 폴더 동결 (삭제, 이름 변경 또는 잘라내기 불가)\n두 번 탭: 선택한 파일 및 폴더 동결 해제\n세 번 탭: 동결 목록 열기 (선택 항목 동결 해제 또는 모두 동결 해제)\n\nControl+Shift+N: 클립보드 내용을 이름 변경 필드에 자동으로 붙여넣기\nALT+Enter: 속성"
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/e239a75bf18de5ed56970d7a703df7866a62b704087bc4faf25d769f2fbcd7e8",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "e239a75bf18de5ed56970d7a703df7866a62b704087bc4faf25d769f2fbcd7e8",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "000000000c0d0000",
+					"raw_md5": "478b6fe7a7ab835d6039e0191582068c"
+				},
+				"first_submission_date": 1795589417,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1795589418,
+				"last_submission_date": 1795589417,
+				"md5": "7634750e499a6f4aff2a4fecce38358d",
+				"names": [],
+				"reputation": 0,
+				"sha1": "551473778e9523b6ebdac21edf3383d6ae811302",
+				"sha256": "e239a75bf18de5ed56970d7a703df7866a62b704087bc4faf25d769f2fbcd7e8",
+				"size": 746965,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
