@@ -1,0 +1,32 @@
+{
+	"addonId": "freeAudio",
+	"displayName": "freeAudio: Radio and more",
+	"URL": "https://github.com/Surveyor123/freeAudio/releases/download/v2026.25.6/freeAudio-2026.25.6.nvda-addon",
+	"description": "freeAudio is an internet radio, podcast, audio-book, and local music add-on for NVDA that provides seamless access to thousands of internet radio stations via the Radio Browser open directory, RSS/Atom podcast feeds, the libriVox + GETEM digital library for the visually impaired, and your own local audio files and folders through its built-in jukebox. It features a fully accessible station browser with search, country filter, favourites management, and per-station, per-podcast, per-audio-book, and per-jukebox-track audio profiles. Podcast episodes, audio book chapters, and jukebox tracks resume automatically from where you left off - jukebox folders even pick up on the last track you were playing - with adjustable pitch-preserving playback speed and independent pitch-shift (semitone transpose). Playback is handled by BASS, with support for volume control, audio effects, output device selection, and simultaneous audio mirroring to a second device. Additional features include instant and scheduled recording, time-shift rewind of live radio, sleep and alarm timers, automatic ICY metadata announcements, Shazam-based music recognition, and a liked-songs log with lyrics lookup. All controls and shortcuts are designed for NVDA accessibility.",
+	"sha256": "7976509a697925560f4af7c3f0466b744f8bd3bd292d96a3466595dfc250f940",
+	"addonVersionName": "2026.25.6",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 25,
+		"patch": 6
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Çağrı Doğan <cagrid@hotmail.com>",
+	"sourceURL": "https://github.com/Surveyor123/freeAudio",
+	"license": "GPL v2",
+	"homepage": "https://github.com/Surveyor123/freeAudio",
+	"changelog": "\n## Changelog for 2026.25.6\n\n* Music recognition now samples the audio you are actually hearing: the rewound point when you have gone back in a live station, and the current position in podcasts, audio books and jukebox tracks.\n* Fixed time-shift failing on some HTTPS stations (for example Radio Navahang): if switching to the buffer fails, the live stream now resumes instead of leaving silence, and redirect or error pages are no longer captured into the buffer.\n* Station details now include a \"Now playing\" row with the track being broadcast. It is also filled in for stations that are not playing.\n* The Station Details button was removed. Press Alt+Enter on a station in All Stations or Favourites to open its details (the context menu item remains).\n* Shift+Enter on a station in All Stations or Favourites announces the track it is broadcasting, without starting playback.\n* Shift+Enter on the audio book library and on the jukebox entries and tracks lists announces where playback would resume, with elapsed and remaining time.\n* Internet Archive audio book search now also finds audio items tagged with audiobook or podcast-style subjects, or in the Podcasts collection (LibriVox and Project Gutenberg are still excluded).\n* Audio book search results now offer \"Download Book\" and \"Copy the URL\" in their context menu.\n",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795589867000,
+	"translations": []
+}
