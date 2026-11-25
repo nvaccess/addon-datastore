@@ -1,0 +1,39 @@
+{
+	"addonId": "rustyBraille",
+	"displayName": "Rusty Braille",
+	"URL": "https://github.com/LeonarddeR/rustyBraille/releases/download/0.1.1/rustyBraille-0.1.1.nvda-addon",
+	"description": "Braille translation powered by louis-rs, a Rust re-implementation of liblouis. Experimental.",
+	"sha256": "cf13624e540a4b4452de6b6d0b8ac2ce4dd46cfe222e0b315daf3b427e6c58ec",
+	"addonVersionName": "0.1.1",
+	"addonVersionNumber": {
+		"major": 0,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2027,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "dev",
+	"publisher": "Leonard de Ruijter",
+	"sourceURL": "https://github.com/LeonarddeR/rustyBraille",
+	"license": "GPL v2+",
+	"homepage": "https://github.com/LeonarddeR/rustyBraille",
+	"changelog": "Built on louis-rs 0.4.1. Contracted English braille (UEB) handles capitals, emphasis and numbers more like liblouis. Translation is faster with tables that have many match, context or multipass rules. The NVDA log names the louis-rs version in use.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795633135000,
+	"translations": [
+		{
+			"language": "nl",
+			"displayName": "Rusty Braille",
+			"description": "Braillevertaling met louis-rs, een herimplementatie van liblouis in Rust. Experimenteel.",
+			"changelog": "Built on louis-rs 0.4.1. Contracted English braille (UEB) handles capitals, emphasis and numbers more like liblouis. Translation is faster with tables that have many match, context or multipass rules. The NVDA log names the louis-rs version in use."
+		}
+	]
+}
