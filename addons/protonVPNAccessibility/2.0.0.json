@@ -1,86 +1,76 @@
 {
-	"addonId": "python_tutor",
-	"displayName": "Aprendizaje de Python con NVDA",
-	"URL": "https://github.com/KevinVelasquezVargas/python_tutor/releases/download/v3.0.0/python_tutor-3.0.0.nvda-addon",
-	"description": "Desbloquea el poder de la programación: aprende Python desde cero con lecciones guiadas por voz y desarrolla tus propios proyectos en un editor diseñado exclusivamente para la accesibilidad con NVDA.",
-	"sha256": "a4c73cb97a2b829ccc67f545263b4949be6ee7a49ef34a5019b84f8d8e3e96e9",
-	"addonVersionName": "3.0.0",
+	"addonId": "protonVPNAccessibility",
+	"displayName": "ProtonVPN Accessibility",
+	"URL": "https://github.com/mamasene/add-on_protonvpn-o/releases/download/v2.0.0/protonVPNAccessibility-2.0.0.nvda-addon",
+	"description": "Improves accessibility of the ProtonVPN Windows application for NVDA users.\n\nMain features:\n- Proper labeling of buttons and controls\n- A searchable list of every country and city on display\n- Dynamic announcements for VPN status information\n- Announcements for IP address, country, provider and traffic\n- Keyboard shortcuts for quick actions\n- French and English documentation\n\nThis is a community add-on and is not affiliated with Proton AG.",
+	"sha256": "de1798a61a3ba83a2be9863fcaa692088539d1b4958e1ae8ea10906fb72a0ca7",
+	"addonVersionName": "2.0.0",
 	"addonVersionNumber": {
-		"major": 3,
+		"major": 2,
 		"minor": 0,
 		"patch": 0
 	},
 	"minNVDAVersion": {
-		"major": 2022,
+		"major": 2025,
 		"minor": 1,
 		"patch": 0
 	},
 	"lastTestedVersion": {
 		"major": 2026,
-		"minor": 2,
-		"patch": 0
+		"minor": 3,
+		"patch": 1
 	},
 	"channel": "stable",
-	"publisher": "Kevin Andrés Velasquez Vargas",
-	"sourceURL": "https://github.com/KevinVelasquezVargas/python_tutor",
-	"license": "GPL v3",
-	"homepage": "https://github.com/KevinVelasquezVargas/python_tutor",
-	"changelog": "Registro de cambios versión 3.0.0:\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
-	"submissionTime": 1791059064000,
+	"publisher": "Mama Sene",
+	"sourceURL": "https://github.com/mamasene/add-on_protonvpn-o",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mamasene/add-on_protonvpn-o",
+	"changelog": "Version 2.0.0:\n\nProtonVPN can now be used from end to end with NVDA: the cities are covered, every control says what it is, and the Kill Switch really switches.\n\nNew features:\n- The cities are there. Control+Shift+O opens a searchable list of every country and city on display, and each city is announced with the country it belongs to.\n- Two shortcuts help with a bug report: Control+Shift+F9 writes a diagnostic to the NVDA log, and Control+Shift+F10 describes the control you are on.\n\nChanges:\n- Control+Shift+K turns the Kill Switch on and off. It used to stop at its settings page, without even placing the cursor on the switch. In the right-hand column it announces its name alone: ProtonVPN does not publish its state there.\n- Control+Shift+T announces the whole connection panel, traffic, server load, VPN address and protocol, instead of two values chosen in advance.\n- The Control+Shift+C shortcut is gone. To reach a country, use Control+Shift+L for the ProtonVPN search field, or Control+Shift+O for the list of countries and cities.\n\nFixes:\n- NVDA no longer crashes when you open the cities of a country.\n- Each city is announced under its own country, and the list follows the order on screen.\n- The country you are connected to is in the list, and says that it is connected.\n- Buttons, check boxes and radio buttons that announced nothing now have a name, in the main window as well as in the settings.\n- Internal names are no longer read out loud, neither as a name nor as the value of a drop-down list.\n- Nothing that identifies you reaches the NVDA log, the file you attach to a bug report: your account address is masked, as your IP address already was.\n- The Kill Switch can no longer be mistaken for another protection.\n\nImprovements:\n- Moving through the interface answers straight away. Going down the country list no longer makes NVDA lag, and the shortcuts answer without waiting.\n\nVersion 1.1.0:\n\nNew features:\n- Search for a country with Control+Shift+L: the add-on takes you straight to the ProtonVPN search field. Type a few letters to reach any country.\n- The country list is now readable: each country is announced by its name.\n- The country list tabs (All countries, Secure Core, P2P, Tor) are announced by their name.\n- NetShield, Kill Switch, Split tunneling and Port forwarding are announced by name, together with whether each one is on or off.\n\nFixes:\n- The add-on now speaks French.\n- The Kill Switch, traffic and country shortcuts work again, including while the VPN is connected.\n- Connection and disconnection are announced only once they have actually happened, and the add-on tells you if nothing changed.\n\nImprovements:\n- Keyboard shortcuts respond much faster.\n- NVDA no longer freezes while ProtonVPN is establishing a connection.\n- Your IP address is no longer recorded in the NVDA log.\n- The add-on summary, description and version history are available in French.\n\nVersion 1.0.1:\n- Updated add-on display name for international users\n- Fixed project repository URL\n- Improved manifest metadata\n- Updated French translation metadata\n\nVersion 1.0.0:\n- Initial stable release\n- Improved ProtonVPN interface accessibility\n- Added keyboard shortcuts\n- Added dynamic announcements for VPN status\n- Added French and English documentation",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795304791000,
 	"translations": [
 		{
-			"language": "es",
-			"displayName": "Aprendizaje de Python con NVDA",
-			"description": "Desbloquea el poder de la programación: aprende Python desde cero con lecciones guiadas por voz y desarrolla tus propios proyectos en un editor diseñado exclusivamente para la accesibilidad con NVDA.",
-			"changelog": "Registro de cambios versión 3.0.0:\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0."
-		},
-		{
-			"language": "en",
-			"displayName": "Learning Python with NVDA",
-			"description": "Unlock the power of programming: learn Python from scratch with voice-guided lessons and build your own projects in an editor designed exclusively for accessibility with NVDA.",
-			"changelog": "Registro de cambios versión 3.0.0:\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0."
+			"language": "fr",
+			"displayName": "Accessibilité ProtonVPN",
+			"description": "Améliore l'accessibilité de l'application ProtonVPN pour Windows avec NVDA.\n\nFonctionnalités principales :\n- Étiquetage correct des boutons et des contrôles\n- Une liste cherchable de tous les pays et de toutes les villes affichés\n- Annonces dynamiques de l'état du VPN\n- Annonces de l'adresse IP, du pays, du fournisseur et du trafic\n- Raccourcis clavier pour les actions courantes\n- Documentation en français et en anglais\n\nIl s'agit d'une extension communautaire non affiliée à Proton AG.",
+			"changelog": "Version 2.0.0 :\n\nProtonVPN s'utilise maintenant de bout en bout avec NVDA : les villes sont couvertes, chaque contrôle dit ce qu'il est, et l'arrêt d'urgence s'active vraiment.\n\nNouveautés :\n- Les villes sont là. Contrôle+Maj+O ouvre la liste de tous les pays et de toutes les villes affichés, avec une recherche, et chaque ville est annoncée avec son pays.\n- Deux raccourcis aident à signaler un problème : Contrôle+Maj+F9 écrit un diagnostic dans le journal de NVDA, et Contrôle+Maj+F10 décrit le contrôle sur lequel vous êtes.\n\nChangements :\n- Contrôle+Maj+K active et désactive l'arrêt d'urgence. Il s'arrêtait jusqu'ici à sa page de réglage, sans même placer le curseur sur l'interrupteur. Dans la colonne de droite, il annonce son nom seul : ProtonVPN n'y publie pas son état.\n- Contrôle+Maj+T annonce tout le panneau de connexion, trafic, charge du serveur, adresse du VPN et protocole, au lieu de deux valeurs choisies d'avance.\n- Le raccourci Contrôle+Maj+C a été retiré. Pour atteindre un pays, utilisez Contrôle+Maj+L pour le champ de recherche de ProtonVPN, ou Contrôle+Maj+O pour la liste des pays et des villes.\n\nCorrections :\n- NVDA ne plante plus quand vous ouvrez les villes d'un pays.\n- Chaque ville est annoncée sous son propre pays, et la liste suit l'ordre de l'écran.\n- Le pays auquel vous êtes connecté figure dans la liste, et dit qu'il est connecté.\n- Les boutons, les cases à cocher et les boutons radio qui n'annonçaient rien ont un nom, dans la fenêtre principale comme dans les paramètres.\n- Les noms internes ne sont plus lus à voix haute, ni comme nom ni comme valeur d'une liste déroulante.\n- Plus rien qui vous identifie n'arrive dans le journal de NVDA, celui que l'on joint à un signalement : l'adresse de votre compte est masquée, comme l'était déjà votre adresse IP.\n- L'arrêt d'urgence ne peut plus être confondu avec une autre protection.\n\nAméliorations :\n- Le parcours de l'interface répond tout de suite. Descendre la liste des pays ne fait plus ralentir NVDA, et les raccourcis répondent sans attendre.\n\nVersion 1.1.0 :\n\nNouveautés :\n- Recherche d'un pays par Contrôle+Maj+L : l'extension vous place directement dans le champ de recherche de ProtonVPN. Tapez quelques lettres pour atteindre n'importe quel pays.\n- La liste des pays est enfin lisible : chaque pays est annoncé par son nom.\n- Les onglets de la liste des pays (Tous les pays, Secure Core, P2P, Tor) sont annoncés par leur nom.\n- NetShield, Arrêt d'urgence, Split tunneling et Redirection de port sont annoncés par leur nom, avec leur état activé ou désactivé.\n\nCorrections :\n- L'extension parle désormais français.\n- Les raccourcis Arrêt d'urgence, trafic et pays fonctionnent à nouveau, y compris lorsque le VPN est connecté.\n- La connexion et la déconnexion ne sont annoncées qu'une fois réellement effectuées, et l'extension vous prévient si rien n'a changé.\n\nAméliorations :\n- Les raccourcis clavier répondent beaucoup plus vite.\n- NVDA ne se fige plus pendant que ProtonVPN établit la connexion.\n- Votre adresse IP n'est plus enregistrée dans le journal de NVDA.\n- Le résumé, la description et l'historique des versions sont disponibles en français.\n\nVersion 1.0.1 :\n- Mise à jour du nom affiché de l'extension pour les utilisateurs internationaux\n- Correction de l'adresse du dépôt du projet\n- Amélioration des métadonnées du manifeste\n- Mise à jour des métadonnées de la traduction française\n\nVersion 1.0.0 :\n- Première version stable\n- Accessibilité améliorée de l'interface ProtonVPN\n- Ajout des raccourcis clavier\n- Annonces dynamiques de l'état du VPN\n- Documentation en français et en anglais"
 		}
 	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/a4c73cb97a2b829ccc67f545263b4949be6ee7a49ef34a5019b84f8d8e3e96e9",
+	"vtScanUrl": "https://www.virustotal.com/gui/file/de1798a61a3ba83a2be9863fcaa692088539d1b4958e1ae8ea10906fb72a0ca7",
 	"scanResults": {
 		"virusTotal": [
 			{
-				"_id": "a4c73cb97a2b829ccc67f545263b4949be6ee7a49ef34a5019b84f8d8e3e96e9",
+				"_id": "de1798a61a3ba83a2be9863fcaa692088539d1b4958e1ae8ea10906fb72a0ca7",
 				"_type": "file",
 				"bundle_info": {
 					"extensions": {
-						"css": 1,
-						"html": 3,
-						"ini": 3,
-						"md": 2,
-						"mo": 2,
-						"po": 2,
-						"py": 16,
-						"wav": 13
+						"html": 2,
+						"ini": 2,
+						"mo": 1,
+						"py": 2
 					},
 					"file_types": {
-						"HTML": 3,
-						"unknown": 39
+						"HTML": 2,
+						"unknown": 6
 					},
-					"highest_datetime": "2026-10-03 14:19:34",
-					"lowest_datetime": "2026-09-25 10:22:26",
-					"num_children": 42,
+					"highest_datetime": "2026-11-21 21:51:04",
+					"lowest_datetime": "2025-12-10 19:00:38",
+					"num_children": 8,
 					"type": "ZIP",
-					"uncompressed_size": 1438979
+					"uncompressed_size": 191665
 				},
-				"contenthash": "d780af1dffe99456c447a5a5db4424ce",
+				"contenthash": "985d08a7feea457645025e46bbc25056",
 				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "ae697a1112f62d10293a1068643ae46d"
+					"dhash": "0010080c0c0d0000",
+					"raw_md5": "50cdaa3a66e99b600eb9f68acda2529a"
 				},
-				"first_submission_date": 1791059068,
-				"last_analysis_date": 1791059068,
+				"first_submission_date": 1795299806,
+				"last_analysis_date": 1795304794,
 				"last_analysis_results": {
 					"ALYac": {
 						"category": "undetected",
 						"engine_name": "ALYac",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "2.0.0.10",
 						"method": "blacklist",
 						"result": null
@@ -88,15 +78,15 @@
 					"APEX": {
 						"category": "type-unsupported",
 						"engine_name": "APEX",
-						"engine_update": "20261001",
-						"engine_version": "6.826",
+						"engine_update": "20261119",
+						"engine_version": "6.843",
 						"method": "blacklist",
 						"result": null
 					},
 					"AVG": {
 						"category": "undetected",
 						"engine_name": "AVG",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -112,8 +102,8 @@
 					"AhnLab-V3": {
 						"category": "undetected",
 						"engine_name": "AhnLab-V3",
-						"engine_update": "20261003",
-						"engine_version": "3.30.2.10713",
+						"engine_update": "20261121",
+						"engine_version": "3.30.3.10716",
 						"method": "blacklist",
 						"result": null
 					},
@@ -128,7 +118,7 @@
 					"Antiy-AVL": {
 						"category": "undetected",
 						"engine_name": "Antiy-AVL",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "3.0",
 						"method": "blacklist",
 						"result": null
@@ -136,7 +126,7 @@
 					"Arcabit": {
 						"category": "undetected",
 						"engine_name": "Arcabit",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "2025.0.0.23",
 						"method": "blacklist",
 						"result": null
@@ -144,23 +134,15 @@
 					"Avast": {
 						"category": "undetected",
 						"engine_name": "Avast",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "23.9.8494.0",
-						"method": "blacklist",
-						"result": null
-					},
-					"Avast-Mobile": {
-						"category": "undetected",
-						"engine_name": "Avast-Mobile",
-						"engine_update": "20261003",
-						"engine_version": "261003-00",
 						"method": "blacklist",
 						"result": null
 					},
 					"Avira": {
 						"category": "undetected",
 						"engine_name": "Avira",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "8.3.3.24",
 						"method": "blacklist",
 						"result": null
@@ -168,7 +150,7 @@
 					"BitDefender": {
 						"category": "undetected",
 						"engine_name": "BitDefender",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "7.2",
 						"method": "blacklist",
 						"result": null
@@ -176,7 +158,7 @@
 					"BitDefenderFalx": {
 						"category": "type-unsupported",
 						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260903",
+						"engine_update": "20261022",
 						"engine_version": "2.0.936",
 						"method": "blacklist",
 						"result": null
@@ -184,7 +166,7 @@
 					"Bkav": {
 						"category": "undetected",
 						"engine_name": "Bkav",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "8.2.40(8338)",
 						"method": "blacklist",
 						"result": null
@@ -192,7 +174,7 @@
 					"CAT-QuickHeal": {
 						"category": "undetected",
 						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20261002",
+						"engine_update": "20261121",
 						"engine_version": "22.00",
 						"method": "blacklist",
 						"result": null
@@ -200,7 +182,7 @@
 					"CMC": {
 						"category": "undetected",
 						"engine_name": "CMC",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "2.4.2022.1",
 						"method": "blacklist",
 						"result": null
@@ -208,16 +190,16 @@
 					"CTX": {
 						"category": "undetected",
 						"engine_name": "CTX",
-						"engine_update": "20261003",
-						"engine_version": "2024.8.29.1",
+						"engine_update": "20261121",
+						"engine_version": "2026.10.27.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"ClamAV": {
 						"category": "undetected",
 						"engine_name": "ClamAV",
-						"engine_update": "20261003",
-						"engine_version": "1.5.4.0",
+						"engine_update": "20261121",
+						"engine_version": "1.5.5.0",
 						"method": "blacklist",
 						"result": null
 					},
@@ -232,7 +214,7 @@
 					"Cylance": {
 						"category": "type-unsupported",
 						"engine_name": "Cylance",
-						"engine_update": "20260924",
+						"engine_update": "20261119",
 						"engine_version": "3.0.0.0",
 						"method": "blacklist",
 						"result": null
@@ -240,7 +222,7 @@
 					"Cynet": {
 						"category": "undetected",
 						"engine_name": "Cynet",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "4.0.3.4",
 						"method": "blacklist",
 						"result": null
@@ -256,7 +238,7 @@
 					"DrWeb": {
 						"category": "undetected",
 						"engine_name": "DrWeb",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "7.0.76.8280",
 						"method": "blacklist",
 						"result": null
@@ -264,7 +246,7 @@
 					"ESET-NOD32": {
 						"category": "undetected",
 						"engine_name": "ESET-NOD32",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "18.2.18.0",
 						"method": "blacklist",
 						"result": null
@@ -272,15 +254,15 @@
 					"Elastic": {
 						"category": "type-unsupported",
 						"engine_name": "Elastic",
-						"engine_update": "20261001",
-						"engine_version": "4.0.292",
+						"engine_update": "20261120",
+						"engine_version": "4.0.300",
 						"method": "blacklist",
 						"result": null
 					},
 					"Emsisoft": {
 						"category": "undetected",
 						"engine_name": "Emsisoft",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "2024.8.0.61147",
 						"method": "blacklist",
 						"result": null
@@ -288,7 +270,7 @@
 					"F-Secure": {
 						"category": "undetected",
 						"engine_name": "F-Secure",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "18.10.1547.307",
 						"method": "blacklist",
 						"result": null
@@ -296,7 +278,7 @@
 					"Fortinet": {
 						"category": "undetected",
 						"engine_name": "Fortinet",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "7.0.48.0",
 						"method": "blacklist",
 						"result": null
@@ -304,31 +286,31 @@
 					"GData": {
 						"category": "undetected",
 						"engine_name": "GData",
-						"engine_update": "20261003",
-						"engine_version": "GD:27.46221AVA:64.32012",
+						"engine_update": "20261121",
+						"engine_version": "GD:27.46797AVA:64.32247",
 						"method": "blacklist",
 						"result": null
 					},
 					"Google": {
 						"category": "undetected",
 						"engine_name": "Google",
-						"engine_update": "20261003",
-						"engine_version": "1791054046",
+						"engine_update": "20261121",
+						"engine_version": "1795302048",
 						"method": "blacklist",
 						"result": null
 					},
 					"Gridinsoft": {
 						"category": "undetected",
 						"engine_name": "Gridinsoft",
-						"engine_update": "20261003",
-						"engine_version": "1.0.256.174",
+						"engine_update": "20261121",
+						"engine_version": "1.0.262.174",
 						"method": "blacklist",
 						"result": null
 					},
 					"Ikarus": {
 						"category": "undetected",
 						"engine_name": "Ikarus",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "6.5.4.0",
 						"method": "blacklist",
 						"result": null
@@ -336,7 +318,7 @@
 					"Jiangmin": {
 						"category": "undetected",
 						"engine_name": "Jiangmin",
-						"engine_update": "20261003",
+						"engine_update": "20261120",
 						"engine_version": "16.0.100",
 						"method": "blacklist",
 						"result": null
@@ -344,23 +326,23 @@
 					"K7AntiVirus": {
 						"category": "undetected",
 						"engine_name": "K7AntiVirus",
-						"engine_update": "20261003",
-						"engine_version": "14.82.61004",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
 						"method": "blacklist",
 						"result": null
 					},
 					"K7GW": {
 						"category": "undetected",
 						"engine_name": "K7GW",
-						"engine_update": "20261003",
-						"engine_version": "14.82.61004",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
 						"method": "blacklist",
 						"result": null
 					},
 					"Kaspersky": {
 						"category": "undetected",
 						"engine_name": "Kaspersky",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "22.0.1.28",
 						"method": "blacklist",
 						"result": null
@@ -368,7 +350,7 @@
 					"Kingsoft": {
 						"category": "undetected",
 						"engine_name": "Kingsoft",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "None",
 						"method": "blacklist",
 						"result": null
@@ -376,7 +358,7 @@
 					"Lionic": {
 						"category": "undetected",
 						"engine_name": "Lionic",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "8.16",
 						"method": "blacklist",
 						"result": null
@@ -384,31 +366,31 @@
 					"Malwarebytes": {
 						"category": "undetected",
 						"engine_name": "Malwarebytes",
-						"engine_update": "20261003",
-						"engine_version": "3.1.0.291",
+						"engine_update": "20261121",
+						"engine_version": "3.1.0.301",
 						"method": "blacklist",
 						"result": null
 					},
 					"MaxSecure": {
 						"category": "undetected",
 						"engine_name": "MaxSecure",
-						"engine_update": "20261001",
-						"engine_version": "1.0.0.1",
+						"engine_update": "20261120",
+						"engine_version": "4.0.3.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"McAfeeD": {
 						"category": "undetected",
 						"engine_name": "McAfeeD",
-						"engine_update": "20261003",
-						"engine_version": "1.2.0.16505",
+						"engine_update": "20261121",
+						"engine_version": "1.2.0.17082",
 						"method": "blacklist",
 						"result": null
 					},
 					"MicroWorld-eScan": {
 						"category": "undetected",
 						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "14.0.409.0",
 						"method": "blacklist",
 						"result": null
@@ -416,15 +398,15 @@
 					"Microsoft": {
 						"category": "undetected",
 						"engine_name": "Microsoft",
-						"engine_update": "20261003",
-						"engine_version": "1.26080",
+						"engine_update": "20261121",
+						"engine_version": "1.26100",
 						"method": "blacklist",
 						"result": null
 					},
 					"NANO-Antivirus": {
 						"category": "undetected",
 						"engine_name": "NANO-Antivirus",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "1.0.170.26895",
 						"method": "blacklist",
 						"result": null
@@ -432,7 +414,7 @@
 					"Paloalto": {
 						"category": "type-unsupported",
 						"engine_name": "Paloalto",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "0.9.0.1003",
 						"method": "blacklist",
 						"result": null
@@ -440,7 +422,7 @@
 					"Panda": {
 						"category": "undetected",
 						"engine_name": "Panda",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "4.6.4.2",
 						"method": "blacklist",
 						"result": null
@@ -448,7 +430,7 @@
 					"Rising": {
 						"category": "undetected",
 						"engine_name": "Rising",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "25.0.0.28",
 						"method": "blacklist",
 						"result": null
@@ -456,7 +438,7 @@
 					"SUPERAntiSpyware": {
 						"category": "undetected",
 						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20261002",
+						"engine_update": "20261121",
 						"engine_version": "5.6.0.1032",
 						"method": "blacklist",
 						"result": null
@@ -464,7 +446,7 @@
 					"Sangfor": {
 						"category": "undetected",
 						"engine_name": "Sangfor",
-						"engine_update": "20261002",
+						"engine_update": "20261120",
 						"engine_version": "2.22.3.0",
 						"method": "blacklist",
 						"result": null
@@ -480,7 +462,7 @@
 					"Skyhigh": {
 						"category": "undetected",
 						"engine_name": "Skyhigh",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "v2021.2.0+4045",
 						"method": "blacklist",
 						"result": null
@@ -488,15 +470,15 @@
 					"Sophos": {
 						"category": "undetected",
 						"engine_name": "Sophos",
-						"engine_update": "20261003",
-						"engine_version": "3.6.2.0",
+						"engine_update": "20261121",
+						"engine_version": "3.7.2.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"Symantec": {
 						"category": "undetected",
 						"engine_name": "Symantec",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "1.22.0.0",
 						"method": "blacklist",
 						"result": null
@@ -512,15 +494,15 @@
 					"TACHYON": {
 						"category": "undetected",
 						"engine_name": "TACHYON",
-						"engine_update": "20261003",
-						"engine_version": "2026-10-03.02",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-21.02",
 						"method": "blacklist",
 						"result": null
 					},
 					"Tencent": {
 						"category": "undetected",
 						"engine_name": "Tencent",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -528,15 +510,15 @@
 					"Trapmine": {
 						"category": "type-unsupported",
 						"engine_name": "Trapmine",
-						"engine_update": "20260921",
-						"engine_version": "4.0.16.0",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"TrellixENS": {
 						"category": "undetected",
 						"engine_name": "TrellixENS",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "6.0.6.653",
 						"method": "blacklist",
 						"result": null
@@ -544,7 +526,7 @@
 					"TrendMicro": {
 						"category": "undetected",
 						"engine_name": "TrendMicro",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -552,7 +534,7 @@
 					"TrendMicro-HouseCall": {
 						"category": "undetected",
 						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -560,7 +542,7 @@
 					"Trustlook": {
 						"category": "undetected",
 						"engine_name": "Trustlook",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -568,15 +550,15 @@
 					"VBA32": {
 						"category": "undetected",
 						"engine_name": "VBA32",
-						"engine_update": "20261003",
-						"engine_version": "5.7.0",
+						"engine_update": "20261121",
+						"engine_version": "5.7.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"VIPRE": {
 						"category": "undetected",
 						"engine_name": "VIPRE",
-						"engine_update": "20261002",
+						"engine_update": "20261121",
 						"engine_version": "6.0.0.35",
 						"method": "blacklist",
 						"result": null
@@ -584,7 +566,7 @@
 					"Varist": {
 						"category": "undetected",
 						"engine_name": "Varist",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "6.6.1.3",
 						"method": "blacklist",
 						"result": null
@@ -592,16 +574,16 @@
 					"ViRobot": {
 						"category": "undetected",
 						"engine_name": "ViRobot",
-						"engine_update": "20261003",
-						"engine_version": "2026-10-03.01",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-22.00",
 						"method": "blacklist",
 						"result": null
 					},
 					"VirIT": {
 						"category": "undetected",
 						"engine_name": "VirIT",
-						"engine_update": "20261002",
-						"engine_version": "9.5.1308",
+						"engine_update": "20261120",
+						"engine_version": "9.5.1344",
 						"method": "blacklist",
 						"result": null
 					},
@@ -616,15 +598,15 @@
 					"Xcitium": {
 						"category": "undetected",
 						"engine_name": "Xcitium",
-						"engine_update": "20261003",
-						"engine_version": "39004",
+						"engine_update": "20261121",
+						"engine_version": "39131",
 						"method": "blacklist",
 						"result": null
 					},
 					"Yandex": {
 						"category": "undetected",
 						"engine_name": "Yandex",
-						"engine_update": "20261003",
+						"engine_update": "20261119",
 						"engine_version": "5.5.2.24",
 						"method": "blacklist",
 						"result": null
@@ -632,23 +614,23 @@
 					"Zillya": {
 						"category": "undetected",
 						"engine_name": "Zillya",
-						"engine_update": "20261002",
-						"engine_version": "2.0.0.5702",
+						"engine_update": "20261121",
+						"engine_version": "2.0.0.5734",
 						"method": "blacklist",
 						"result": null
 					},
 					"ZoneAlarm": {
 						"category": "undetected",
 						"engine_name": "ZoneAlarm",
-						"engine_update": "20261003",
-						"engine_version": "6.27-118569086",
+						"engine_update": "20261121",
+						"engine_version": "6.29-121127099",
 						"method": "blacklist",
 						"result": null
 					},
 					"Zoner": {
 						"category": "undetected",
 						"engine_name": "Zoner",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": "2.2.2.0",
 						"method": "blacklist",
 						"result": null
@@ -664,15 +646,15 @@
 					"huorong": {
 						"category": "undetected",
 						"engine_name": "huorong",
-						"engine_update": "20261003",
-						"engine_version": "5a7d076:5a7d076:aa8b88f:aa8b88f",
+						"engine_update": "20261121",
+						"engine_version": "41e0299:41e0299:8e7bee6:8e7bee6",
 						"method": "blacklist",
 						"result": null
 					},
 					"tehtris": {
 						"category": "type-unsupported",
 						"engine_name": "tehtris",
-						"engine_update": "20261003",
+						"engine_update": "20261121",
 						"engine_version": null,
 						"method": "blacklist",
 						"result": null
@@ -686,27 +668,28 @@
 					"suspicious": 0,
 					"timeout": 0,
 					"type-unsupported": 9,
-					"undetected": 66
+					"undetected": 65
 				},
-				"last_modification_date": 1791059103,
-				"last_submission_date": 1791059068,
+				"last_modification_date": 1795304825,
+				"last_submission_date": 1795304794,
 				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "ZIP",
-				"md5": "bdd760388b873f581e50b6c8afefca1c",
+				"magika": "XPI",
+				"md5": "302ce4977877dd60e39c24f033a5772c",
 				"meaningful_name": "addon.nvda-addon",
 				"names": [
-					"addon.nvda-addon"
+					"addon.nvda-addon",
+					"d8905fe4-3e29-4ce9-8152-2a0a8814516c"
 				],
 				"reputation": 0,
-				"sha1": "a6601b62e7365cc12eded33e24f5280dd0656055",
-				"sha256": "a4c73cb97a2b829ccc67f545263b4949be6ee7a49ef34a5019b84f8d8e3e96e9",
-				"size": 688617,
-				"ssdeep": "12288:4qAKEXBRj4yGQyIlhmCGFxrzNGfFynqFXoMIgPbt1t3StrMJal2EuHI7hrpYJ1ZN:oHBK/jIlhmCGFxHNkynqJnIgLt3cMJa6",
+				"sha1": "3217064714939749e0ca79b9e7b6753429946bd9",
+				"sha256": "de1798a61a3ba83a2be9863fcaa692088539d1b4958e1ae8ea10906fb72a0ca7",
+				"size": 60882,
+				"ssdeep": "1536:ATYs3Wr/ry1dcfRDh1O2vBfUj1H04/M6vHJ:+l3Wr/ryoth82pz2M4J",
 				"tags": [
 					"zip"
 				],
-				"times_submitted": 1,
-				"tlsh": "T193E423112D78AC1ADA4726FC764F988A8CE511C73326CC165DBC9BD31F0E9B9372508E",
+				"times_submitted": 3,
+				"tlsh": "T1BA5302F61ACE1259D7B491F7558F203874FCF685FC04E1F6366C4A82A9017064AD78B7",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
@@ -724,10 +707,10 @@
 					"compressed",
 					"zip"
 				],
-				"unique_sources": 1,
-				"vhash": "c83c2d30faa93a855f66933afbcb977d"
+				"unique_sources": 2,
+				"vhash": "6075816e7ee417ebf9da294a8bb3b63a"
 			}
 		]
 	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9452"
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9431"
 }
