@@ -55,9 +55,9 @@ You don't need to download the add-on, nor clone any repositories.
 1. If this submission contains an add-on ID corresponding or similar to a known add-on owned by a different author, tag the original author to investigate if this submission should be accepted or not, or if the submitter should use a different add-on ID.
 1. Open the source URL to get a general overview of the structure of the source code.
 For more details about common components included in add-ons, read the [Packaging Code as NVDA Add-ons section of the developer guide](https://download.nvaccess.org/documentation/developerGuide.html#Addons).
-1. If you have license concerns or other questions about an add-on, leave the submission or tag NV Access developers to request a second opinion.
-1. If an author is unresponsive, after at least 1 week of no response after you asked for a clarification regarding metadata, reject the submission and request submit a new issue.
-1. If you have any questions and you are a registered metadata reviewer, request for help on the add-on metadata reviews mailing list.
+1. If you have license concerns or other questions about an add-on, leave the submission open and comment on what needs clarification, or tag NV Access developers to request a second opinion.
+1. If an author is unresponsive, after at least 1 week of no response, reject the submission and ask the author to submit a new issue.
+1. If you have any questions and you are a registered metadata reviewer, request help on the add-on metadata reviews mailing list.
 
 ## Approving an add-on which was flagged as malicious
 
