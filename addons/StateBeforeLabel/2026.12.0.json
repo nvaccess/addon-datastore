@@ -1,86 +1,154 @@
 {
-	"addonId": "python_tutor",
-	"displayName": "Aprendizaje de Python con NVDA",
-	"URL": "https://github.com/KevinVelasquezVargas/python_tutor/releases/download/v3.0.1/python_tutor-3.0.1.nvda-addon",
-	"description": "Desbloquea el poder de la programación: aprende Python desde cero con lecciones guiadas por voz y desarrolla tus propios proyectos en un editor diseñado exclusivamente para la accesibilidad con NVDA.",
-	"sha256": "f814dd40f7c6f92bd9e8137691dba6ebaa194895ab524761a8f8d8332f9aa938",
-	"addonVersionName": "3.0.1",
+	"addonId": "StateBeforeLabel",
+	"displayName": "StateBeforeLabel",
+	"URL": "https://github.com/chaichaimee/StateBeforeLabel/releases/download/2026.12.0/StateBeforeLabel-v2026.12.0.nvda-addon",
+	"description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel.",
+	"sha256": "5882f2764884980e16b450116eef7d2c699194a1c8c589c8e59ca28ffe1c437d",
+	"addonVersionName": "2026.12.0",
 	"addonVersionNumber": {
-		"major": 3,
-		"minor": 0,
-		"patch": 1
+		"major": 2026,
+		"minor": 12,
+		"patch": 0
 	},
 	"minNVDAVersion": {
-		"major": 2022,
+		"major": 2025,
 		"minor": 1,
 		"patch": 0
 	},
 	"lastTestedVersion": {
 		"major": 2026,
-		"minor": 2,
+		"minor": 3,
 		"patch": 0
 	},
 	"channel": "stable",
-	"publisher": "Kevin Andrés Velasquez Vargas",
-	"sourceURL": "https://github.com/KevinVelasquezVargas/python_tutor",
-	"license": "GPL v3",
-	"homepage": "https://github.com/KevinVelasquezVargas/python_tutor",
-	"changelog": "Registro de cambios versión 3.0.1:\n- Desbloqueo total entre capítulos: navegación y acceso directo a cualquier lección del curso conservando la evaluación estructurada por fases dentro de cada capítulo.\n- Corrección crítica en el validador y ejecutor del Capítulo 17 (Paso 3) para permitir el avance fluido en retos con consola en silencio.\n- Armonización y tolerancia bilingüe en consignas y verificadores de los 40 capítulos.\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0.",
-	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
-	"submissionTime": 1791072643000,
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/StateBeforeLabel",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/StateBeforeLabel",
+	"changelog": "The state-first announcement now replaces the object announcement instead of cancelling all speech, so dialog titles and group names spoken just before it are no longer cut. A delayed announcement is dropped when focus has already moved.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795661404000,
 	"translations": [
 		{
 			"language": "es",
-			"displayName": "Aprendizaje de Python con NVDA",
-			"description": "Desbloquea el poder de la programación: aprende Python desde cero con lecciones guiadas por voz y desarrolla tus propios proyectos en un editor diseñado exclusivamente para la accesibilidad con NVDA.",
-			"changelog": "Registro de cambios versión 3.0.1:\n- Desbloqueo total entre capítulos: navegación y acceso directo a cualquier lección del curso conservando la evaluación estructurada por fases dentro de cada capítulo.\n- Corrección crítica en el validador y ejecutor del Capítulo 17 (Paso 3) para permitir el avance fluido en retos con consola en silencio.\n- Armonización y tolerancia bilingüe en consignas y verificadores de los 40 capítulos.\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0."
+			"displayName": "Estado antes de la etiqueta",
+			"description": "Anuncia los estados de control (marcado, presionado, expandido, no disponible, seleccionado, de solo lectura) antes del nombre del objeto para que los usuarios escuchen el estado primero. Cada tipo de estado puede activarse individualmente en el panel de configuración de \"Estado antes de la etiqueta\" de NVDA."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "标签前的状态",
+			"description": "在对象名称前朗读控件状态（选中、按下、展开、不可用、已选择、只读），以便用户先听到状态。每种状态类型都可以在 NVDA 的“标签前的状态”设置面板中单独切换。"
+		},
+		{
+			"language": "ja",
+			"displayName": "ラベルの前に状態",
+			"description": "コントロールの状態（チェック済み、押下済み、展開済み、利用不可、選択済み、読み取り専用）をオブジェクト名の前に読み上げるため、ユーザーは先に状態を知ることができます。各状態タイプは、NVDAの「ラベルの前に状態」設定パネルで個別に切り替え可能です。"
+		},
+		{
+			"language": "id",
+			"displayName": "Status sebelum label",
+			"description": "Mengumumkan status kontrol (dicentang, ditekan, diperluas, tidak tersedia, dipilih, hanya-baca) sebelum nama objek agar pengguna mendengar statusnya terlebih dahulu. Setiap tipe status dapat diaktifkan/dinonaktifkan secara individu di panel pengaturan \"Status sebelum label\" NVDA."
+		},
+		{
+			"language": "it",
+			"displayName": "Stato prima dell'etichetta",
+			"description": "Annuncia gli stati dei controlli (selezionato, premuto, espanso, non disponibile, selezionato, sola lettura) prima del nome dell'oggetto, in modo che gli utenti sentano prima lo stato. Ogni tipo di stato può essere attivato individualmente nel pannello delle impostazioni \"Stato prima dell'etichetta\" di NVDA."
+		},
+		{
+			"language": "th",
+			"displayName": "สถานะก่อนป้ายชื่อ",
+			"description": "ประกาศสถานะของตัวควบคุม (ทำเครื่องหมาย, กด, ขยาย, ไม่พร้อมใช้งาน, เลือก, อ่านอย่างเดียว) ก่อนชื่อวัตถุเพื่อให้ผู้ใช้ได้ยินสถานะก่อน สามารถสลับสถานะแต่ละประเภทได้ที่แผงการตั้งค่า \"สถานะก่อนป้ายชื่อ\" ของ NVDA"
+		},
+		{
+			"language": "ar",
+			"displayName": "حالة قبل التسمية",
+			"description": "يعلن عن حالات التحكم (محدد، مضغوط، موسع، غير متاح، محدد، للقراءة فقط) قبل اسم الكائن ليسمع المستخدم الحالة أولاً. يمكن تبديل كل نوع حالة بشكل فردي في لوحة إعدادات \"حالة قبل التسمية\" في NVDA."
+		},
+		{
+			"language": "fr",
+			"displayName": "État avant l'étiquette",
+			"description": "Annonce les états des contrôles (coché, appuyé, développé, indisponible, sélectionné, lecture seule) avant le nom de l'objet afin que les utilisateurs entendent l'état en premier. Chaque type d'état peut être activé individuellement dans le panneau de paramètres \"État avant l'étiquette\" de NVDA."
+		},
+		{
+			"language": "uk",
+			"displayName": "Стан перед міткою",
+			"description": "Озвучує стани елементів керування (відмічено, натиснуто, розгорнуто, недоступно, вибрано, тільки для читання) перед назвою об'єкта, щоб користувачі спочатку чули стан. Кожен тип стану можна індивідуально перемикати на панелі налаштувань \"Стан перед міткою\" в NVDA."
+		},
+		{
+			"language": "ru",
+			"displayName": "Состояние перед меткой",
+			"description": "Озвучивает состояния элементов управления (отмечено, нажато, развернуто, недоступно, выбрано, только чтение) перед именем объекта, чтобы пользователи сначала слышали состояние. Каждый тип состояния можно отдельно переключать на панели настроек \"Состояние перед меткой\" в NVDA."
+		},
+		{
+			"language": "hi",
+			"displayName": "लेबल से पहले स्थिति",
+			"description": "ऑब्जेक्ट के नाम से पहले नियंत्रण स्थितियों (चेक किया गया, दबाया गया, विस्तारित, अनुपलब्ध, चयनित, केवल पढ़ने योग्य) की घोषणा करता है ताकि उपयोगकर्ता पहले स्थिति सुन सकें। NVDA के \"लेबल से पहले स्थिति\" सेटिंग्स पैनल में प्रत्येक स्थिति प्रकार को व्यक्तिगत रूप से टॉगल किया जा सकता है।"
+		},
+		{
+			"language": "de",
+			"displayName": "Zustand vor Bezeichnung",
+			"description": "Kündigt Steuerelementzustände (markiert, gedrückt, aufgeklappt, nicht verfügbar, ausgewählt, schreibgeschützt) vor dem Objektnamen an, sodass Benutzer den Zustand zuerst hören. Jeder Zustandstyp kann im NVDA-Einstellungsbereich „Zustand vor Bezeichnung“ individuell umgeschaltet werden."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Estado antes do rótulo",
+			"description": "Anuncia os estados de controle (marcado, pressionado, expandido, indisponível, selecionado, somente leitura) antes do nome do objeto para que os usuários ouçam o estado primeiro. Cada tipo de estado pode ser alternado individualmente no painel de configurações \"Estado antes do rótulo\" do NVDA."
 		},
 		{
 			"language": "en",
-			"displayName": "Learning Python with NVDA",
-			"description": "Unlock the power of programming: learn Python from scratch with voice-guided lessons and build your own projects in an editor designed exclusively for accessibility with NVDA.",
-			"changelog": "Registro de cambios versión 3.0.1:\n- Desbloqueo total entre capítulos: navegación y acceso directo a cualquier lección del curso conservando la evaluación estructurada por fases dentro de cada capítulo.\n- Corrección crítica en el validador y ejecutor del Capítulo 17 (Paso 3) para permitir el avance fluido en retos con consola en silencio.\n- Armonización y tolerancia bilingüe en consignas y verificadores de los 40 capítulos.\n- Plan formativo integral de 40 capítulos (160 lecciones) con metodología pedagógica Conceptos Primero.\n- Dualidad operativa: alternancia fluida entre Modo Tutor guiado y Modo Editor autónomo (Control + M).\n- Interfaz adaptativa: ocultación contextual del editor en lecciones teóricas y selector accesible de quizes (wx.RadioBox).\n- Selector de capítulos con navegación flexible y desbloqueo de acceso directo.\n- Localización bilingüe oficial en español e inglés (Learning Python with NVDA).\n- Asistente explicador local offline (F1) e integración opcional con Google Gemini API (Control + Shift + I).\n- Independencia técnica total: basado 100% en la biblioteca estándar de Python (sqlite3, json, math, random).\n- Persistencia robusta del usuario en el perfil de configuración de NVDA protegida frente a actualizaciones.\n- Compatibilidad certificada desde NVDA 2022.1.0 hasta 2026.2.0."
+			"displayName": "StateBeforeLabel",
+			"description": "Announces control states (Checked, Pressed, Expanded, Unavailable, Selected, Read-only) before the object name so users hear the state first. Each state type can be toggled individually in NVDA's State Before Label settings panel."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "標籤前的狀態",
+			"description": "在物件名稱前朗讀控制項狀態（已勾選、已按下、已展開、不可用、已選取、唯讀），以便使用者先聽到狀態。每種狀態類型都可以在 NVDA 的「標籤前的狀態」設定面板中分別切換。"
+		},
+		{
+			"language": "ko",
+			"displayName": "레이블 앞에 상태",
+			"description": "사용자가 상태를 먼저 들을 수 있도록 컨트롤 상태(체크됨, 눌림, 확장됨, 사용 불가, 선택됨, 읽기 전용)를 개체 이름보다 먼저 알립니다. 각 상태 유형은 NVDA의 \"레이블 앞에 상태\" 설정 패널에서 개별적으로 전환할 수 있습니다."
 		}
 	],
-	"vtScanUrl": "https://www.virustotal.com/gui/file/f814dd40f7c6f92bd9e8137691dba6ebaa194895ab524761a8f8d8332f9aa938",
+	"vtScanUrl": "https://www.virustotal.com/gui/file/5882f2764884980e16b450116eef7d2c699194a1c8c589c8e59ca28ffe1c437d",
 	"scanResults": {
 		"virusTotal": [
 			{
-				"_id": "f814dd40f7c6f92bd9e8137691dba6ebaa194895ab524761a8f8d8332f9aa938",
+				"_id": "5882f2764884980e16b450116eef7d2c699194a1c8c589c8e59ca28ffe1c437d",
 				"_type": "file",
 				"bundle_info": {
 					"extensions": {
-						"css": 1,
-						"html": 3,
-						"ini": 3,
-						"md": 2,
-						"mo": 2,
-						"po": 2,
-						"py": 16,
-						"wav": 13
+						"html": 6,
+						"ini": 17,
+						"md": 6,
+						"mo": 16,
+						"po": 16,
+						"py": 1,
+						"txt": 1
 					},
 					"file_types": {
-						"HTML": 3,
-						"unknown": 39
+						"HTML": 6,
+						"directory": 42,
+						"unknown": 57
 					},
-					"highest_datetime": "2026-10-03 18:56:14",
-					"lowest_datetime": "2026-09-25 10:22:26",
-					"num_children": 42,
+					"highest_datetime": "2026-11-21 17:58:02",
+					"lowest_datetime": "2026-06-28 15:51:32",
+					"num_children": 105,
 					"type": "ZIP",
-					"uncompressed_size": 1439774
+					"uncompressed_size": 169638
 				},
-				"contenthash": "4168a91ceab5f3a41e68130a63c5fdee",
+				"contenthash": "6c706c9674539cb6f47e4be5a971e3ac",
 				"filecondis": {
-					"dhash": "0000000000070600",
-					"raw_md5": "3f21ff397174fb5af71c0a3f5d7f03c5"
+					"dhash": "00303c3c3d280000",
+					"raw_md5": "a88ae051a5f3993773e16c9d99213cfa"
 				},
-				"first_submission_date": 1791072647,
-				"last_analysis_date": 1791072647,
+				"first_submission_date": 1795661407,
+				"last_analysis_date": 1795661407,
 				"last_analysis_results": {
 					"ALYac": {
 						"category": "undetected",
 						"engine_name": "ALYac",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "2.0.0.10",
 						"method": "blacklist",
 						"result": null
@@ -88,15 +156,15 @@
 					"APEX": {
 						"category": "type-unsupported",
 						"engine_name": "APEX",
-						"engine_update": "20261001",
-						"engine_version": "6.826",
+						"engine_update": "20261125",
+						"engine_version": "6.845",
 						"method": "blacklist",
 						"result": null
 					},
 					"AVG": {
 						"category": "undetected",
 						"engine_name": "AVG",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -112,23 +180,15 @@
 					"AhnLab-V3": {
 						"category": "undetected",
 						"engine_name": "AhnLab-V3",
-						"engine_update": "20261003",
-						"engine_version": "3.30.2.10713",
-						"method": "blacklist",
-						"result": null
-					},
-					"Alibaba": {
-						"category": "undetected",
-						"engine_name": "Alibaba",
-						"engine_update": "20190527",
-						"engine_version": "0.3.0.5",
+						"engine_update": "20261126",
+						"engine_version": "3.30.3.10716",
 						"method": "blacklist",
 						"result": null
 					},
 					"Antiy-AVL": {
 						"category": "undetected",
 						"engine_name": "Antiy-AVL",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "3.0",
 						"method": "blacklist",
 						"result": null
@@ -136,7 +196,7 @@
 					"Arcabit": {
 						"category": "undetected",
 						"engine_name": "Arcabit",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "2025.0.0.23",
 						"method": "blacklist",
 						"result": null
@@ -144,7 +204,7 @@
 					"Avast": {
 						"category": "undetected",
 						"engine_name": "Avast",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "23.9.8494.0",
 						"method": "blacklist",
 						"result": null
@@ -152,15 +212,15 @@
 					"Avast-Mobile": {
 						"category": "undetected",
 						"engine_name": "Avast-Mobile",
-						"engine_update": "20261003",
-						"engine_version": "261003-00",
+						"engine_update": "20261125",
+						"engine_version": "261125-00",
 						"method": "blacklist",
 						"result": null
 					},
 					"Avira": {
 						"category": "undetected",
 						"engine_name": "Avira",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "8.3.3.24",
 						"method": "blacklist",
 						"result": null
@@ -168,7 +228,7 @@
 					"BitDefender": {
 						"category": "undetected",
 						"engine_name": "BitDefender",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "7.2",
 						"method": "blacklist",
 						"result": null
@@ -176,7 +236,7 @@
 					"BitDefenderFalx": {
 						"category": "type-unsupported",
 						"engine_name": "BitDefenderFalx",
-						"engine_update": "20260903",
+						"engine_update": "20261022",
 						"engine_version": "2.0.936",
 						"method": "blacklist",
 						"result": null
@@ -184,7 +244,7 @@
 					"Bkav": {
 						"category": "undetected",
 						"engine_name": "Bkav",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "8.2.40(8338)",
 						"method": "blacklist",
 						"result": null
@@ -192,7 +252,7 @@
 					"CAT-QuickHeal": {
 						"category": "undetected",
 						"engine_name": "CAT-QuickHeal",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "22.00",
 						"method": "blacklist",
 						"result": null
@@ -200,7 +260,7 @@
 					"CMC": {
 						"category": "undetected",
 						"engine_name": "CMC",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "2.4.2022.1",
 						"method": "blacklist",
 						"result": null
@@ -208,23 +268,23 @@
 					"CTX": {
 						"category": "undetected",
 						"engine_name": "CTX",
-						"engine_update": "20261004",
-						"engine_version": "2024.8.29.1",
+						"engine_update": "20261126",
+						"engine_version": "2026.10.27.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"ClamAV": {
 						"category": "undetected",
 						"engine_name": "ClamAV",
-						"engine_update": "20261003",
-						"engine_version": "1.5.4.0",
+						"engine_update": "20261125",
+						"engine_version": "1.5.5.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"CrowdStrike": {
 						"category": "undetected",
 						"engine_name": "CrowdStrike",
-						"engine_update": "20230417",
+						"engine_update": "20251219",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -232,7 +292,7 @@
 					"Cylance": {
 						"category": "type-unsupported",
 						"engine_name": "Cylance",
-						"engine_update": "20260924",
+						"engine_update": "20261119",
 						"engine_version": "3.0.0.0",
 						"method": "blacklist",
 						"result": null
@@ -240,7 +300,7 @@
 					"Cynet": {
 						"category": "undetected",
 						"engine_name": "Cynet",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "4.0.3.4",
 						"method": "blacklist",
 						"result": null
@@ -256,7 +316,7 @@
 					"DrWeb": {
 						"category": "undetected",
 						"engine_name": "DrWeb",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "7.0.76.8280",
 						"method": "blacklist",
 						"result": null
@@ -264,7 +324,7 @@
 					"ESET-NOD32": {
 						"category": "undetected",
 						"engine_name": "ESET-NOD32",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "18.2.18.0",
 						"method": "blacklist",
 						"result": null
@@ -272,15 +332,15 @@
 					"Elastic": {
 						"category": "type-unsupported",
 						"engine_name": "Elastic",
-						"engine_update": "20261001",
-						"engine_version": "4.0.292",
+						"engine_update": "20261120",
+						"engine_version": "4.0.300",
 						"method": "blacklist",
 						"result": null
 					},
 					"Emsisoft": {
 						"category": "undetected",
 						"engine_name": "Emsisoft",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "2024.8.0.61147",
 						"method": "blacklist",
 						"result": null
@@ -288,7 +348,7 @@
 					"F-Secure": {
 						"category": "undetected",
 						"engine_name": "F-Secure",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "18.10.1547.307",
 						"method": "blacklist",
 						"result": null
@@ -296,7 +356,7 @@
 					"Fortinet": {
 						"category": "undetected",
 						"engine_name": "Fortinet",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "7.0.48.0",
 						"method": "blacklist",
 						"result": null
@@ -304,31 +364,31 @@
 					"GData": {
 						"category": "undetected",
 						"engine_name": "GData",
-						"engine_update": "20261004",
-						"engine_version": "GD:27.46223AVA:64.32014",
+						"engine_update": "20261126",
+						"engine_version": "GD:27.46847AVA:64.32263",
 						"method": "blacklist",
 						"result": null
 					},
 					"Google": {
 						"category": "undetected",
 						"engine_name": "Google",
-						"engine_update": "20261004",
-						"engine_version": "1791068489",
+						"engine_update": "20261126",
+						"engine_version": "1795658525",
 						"method": "blacklist",
 						"result": null
 					},
 					"Gridinsoft": {
 						"category": "undetected",
 						"engine_name": "Gridinsoft",
-						"engine_update": "20261003",
-						"engine_version": "1.0.256.174",
+						"engine_update": "20261125",
+						"engine_version": "1.0.262.174",
 						"method": "blacklist",
 						"result": null
 					},
 					"Ikarus": {
 						"category": "undetected",
 						"engine_name": "Ikarus",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "6.5.4.0",
 						"method": "blacklist",
 						"result": null
@@ -336,7 +396,7 @@
 					"Jiangmin": {
 						"category": "undetected",
 						"engine_name": "Jiangmin",
-						"engine_update": "20261003",
+						"engine_update": "20261124",
 						"engine_version": "16.0.100",
 						"method": "blacklist",
 						"result": null
@@ -344,23 +404,23 @@
 					"K7AntiVirus": {
 						"category": "undetected",
 						"engine_name": "K7AntiVirus",
-						"engine_update": "20261003",
-						"engine_version": "14.82.61004",
+						"engine_update": "20261126",
+						"engine_version": "14.97.61603",
 						"method": "blacklist",
 						"result": null
 					},
 					"K7GW": {
 						"category": "undetected",
 						"engine_name": "K7GW",
-						"engine_update": "20261003",
-						"engine_version": "14.82.61004",
+						"engine_update": "20261126",
+						"engine_version": "14.97.61603",
 						"method": "blacklist",
 						"result": null
 					},
 					"Kaspersky": {
 						"category": "undetected",
 						"engine_name": "Kaspersky",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "22.0.1.28",
 						"method": "blacklist",
 						"result": null
@@ -368,7 +428,7 @@
 					"Kingsoft": {
 						"category": "undetected",
 						"engine_name": "Kingsoft",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "None",
 						"method": "blacklist",
 						"result": null
@@ -376,7 +436,7 @@
 					"Lionic": {
 						"category": "undetected",
 						"engine_name": "Lionic",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "8.16",
 						"method": "blacklist",
 						"result": null
@@ -384,31 +444,31 @@
 					"Malwarebytes": {
 						"category": "undetected",
 						"engine_name": "Malwarebytes",
-						"engine_update": "20261003",
-						"engine_version": "3.1.0.291",
+						"engine_update": "20261125",
+						"engine_version": "3.1.0.301",
 						"method": "blacklist",
 						"result": null
 					},
 					"MaxSecure": {
 						"category": "undetected",
 						"engine_name": "MaxSecure",
-						"engine_update": "20261001",
-						"engine_version": "1.0.0.1",
+						"engine_update": "20261125",
+						"engine_version": "4.0.3.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"McAfeeD": {
 						"category": "undetected",
 						"engine_name": "McAfeeD",
-						"engine_update": "20261004",
-						"engine_version": "1.2.0.16505",
+						"engine_update": "20261126",
+						"engine_version": "1.2.0.17082",
 						"method": "blacklist",
 						"result": null
 					},
 					"MicroWorld-eScan": {
 						"category": "undetected",
 						"engine_name": "MicroWorld-eScan",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "14.0.409.0",
 						"method": "blacklist",
 						"result": null
@@ -416,15 +476,15 @@
 					"Microsoft": {
 						"category": "undetected",
 						"engine_name": "Microsoft",
-						"engine_update": "20261003",
-						"engine_version": "1.26080",
+						"engine_update": "20261125",
+						"engine_version": "1.26100",
 						"method": "blacklist",
 						"result": null
 					},
 					"NANO-Antivirus": {
 						"category": "undetected",
 						"engine_name": "NANO-Antivirus",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "1.0.170.26895",
 						"method": "blacklist",
 						"result": null
@@ -432,7 +492,7 @@
 					"Paloalto": {
 						"category": "type-unsupported",
 						"engine_name": "Paloalto",
-						"engine_update": "20261004",
+						"engine_update": "20261126",
 						"engine_version": "0.9.0.1003",
 						"method": "blacklist",
 						"result": null
@@ -440,7 +500,7 @@
 					"Panda": {
 						"category": "undetected",
 						"engine_name": "Panda",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "4.6.4.2",
 						"method": "blacklist",
 						"result": null
@@ -448,7 +508,7 @@
 					"Rising": {
 						"category": "undetected",
 						"engine_name": "Rising",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "25.0.0.28",
 						"method": "blacklist",
 						"result": null
@@ -456,7 +516,7 @@
 					"SUPERAntiSpyware": {
 						"category": "undetected",
 						"engine_name": "SUPERAntiSpyware",
-						"engine_update": "20261002",
+						"engine_update": "20261125",
 						"engine_version": "5.6.0.1032",
 						"method": "blacklist",
 						"result": null
@@ -464,7 +524,7 @@
 					"Sangfor": {
 						"category": "undetected",
 						"engine_name": "Sangfor",
-						"engine_update": "20261002",
+						"engine_update": "20261123",
 						"engine_version": "2.22.3.0",
 						"method": "blacklist",
 						"result": null
@@ -480,7 +540,7 @@
 					"Skyhigh": {
 						"category": "undetected",
 						"engine_name": "Skyhigh",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "v2021.2.0+4045",
 						"method": "blacklist",
 						"result": null
@@ -488,15 +548,15 @@
 					"Sophos": {
 						"category": "undetected",
 						"engine_name": "Sophos",
-						"engine_update": "20261003",
-						"engine_version": "3.6.2.0",
+						"engine_update": "20261126",
+						"engine_version": "3.7.2.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"Symantec": {
 						"category": "undetected",
 						"engine_name": "Symantec",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "1.22.0.0",
 						"method": "blacklist",
 						"result": null
@@ -512,15 +572,15 @@
 					"TACHYON": {
 						"category": "undetected",
 						"engine_name": "TACHYON",
-						"engine_update": "20261003",
-						"engine_version": "2026-10-03.02",
+						"engine_update": "20261126",
+						"engine_version": "2026-11-26.01",
 						"method": "blacklist",
 						"result": null
 					},
 					"Tencent": {
 						"category": "undetected",
 						"engine_name": "Tencent",
-						"engine_update": "20261004",
+						"engine_update": "20261126",
 						"engine_version": "1.0.0.1",
 						"method": "blacklist",
 						"result": null
@@ -528,15 +588,15 @@
 					"Trapmine": {
 						"category": "type-unsupported",
 						"engine_name": "Trapmine",
-						"engine_update": "20260921",
-						"engine_version": "4.0.16.0",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
 						"method": "blacklist",
 						"result": null
 					},
 					"TrellixENS": {
 						"category": "undetected",
 						"engine_name": "TrellixENS",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "6.0.6.653",
 						"method": "blacklist",
 						"result": null
@@ -544,7 +604,7 @@
 					"TrendMicro": {
 						"category": "undetected",
 						"engine_name": "TrendMicro",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
@@ -552,15 +612,15 @@
 					"TrendMicro-HouseCall": {
 						"category": "undetected",
 						"engine_name": "TrendMicro-HouseCall",
-						"engine_update": "20261003",
+						"engine_update": "20261125",
 						"engine_version": "24.550.0.1002",
 						"method": "blacklist",
 						"result": null
 					},
 					"Trustlook": {
-						"category": "failure",
+						"category": "undetected",
 						"engine_name": "Trustlook",
-						"engine_update": "20261004",
+						"engine_update": "20261126",
 						"engine_version": "1.0",
 						"method": "blacklist",
 						"result": null
@@ -568,15 +628,15 @@
 					"VBA32": {
 						"category": "undetected",
 						"engine_name": "VBA32",
-						"engine_update": "20261003",
-						"engine_version": "5.7.0",
+						"engine_update": "20261125",
+						"engine_version": "5.7.1",
 						"method": "blacklist",
 						"result": null
 					},
 					"VIPRE": {
 						"category": "undetected",
 						"engine_name": "VIPRE",
-						"engine_update": "20261002",
+						"engine_update": "20261125",
 						"engine_version": "6.0.0.35",
 						"method": "blacklist",
 						"result": null
@@ -584,7 +644,7 @@
 					"Varist": {
 						"category": "undetected",
 						"engine_name": "Varist",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "6.6.1.3",
 						"method": "blacklist",
 						"result": null
@@ -592,16 +652,16 @@
 					"ViRobot": {
 						"category": "undetected",
 						"engine_name": "ViRobot",
-						"engine_update": "20261003",
-						"engine_version": "2026-10-04.00",
+						"engine_update": "20261125",
+						"engine_version": "2026-11-26.00",
 						"method": "blacklist",
 						"result": null
 					},
 					"VirIT": {
 						"category": "undetected",
 						"engine_name": "VirIT",
-						"engine_update": "20261002",
-						"engine_version": "9.5.1308",
+						"engine_update": "20261125",
+						"engine_version": "9.5.1347",
 						"method": "blacklist",
 						"result": null
 					},
@@ -616,15 +676,15 @@
 					"Xcitium": {
 						"category": "undetected",
 						"engine_name": "Xcitium",
-						"engine_update": "20261003",
-						"engine_version": "39005",
+						"engine_update": "20261125",
+						"engine_version": "39138",
 						"method": "blacklist",
 						"result": null
 					},
 					"Yandex": {
 						"category": "undetected",
 						"engine_name": "Yandex",
-						"engine_update": "20261003",
+						"engine_update": "20261124",
 						"engine_version": "5.5.2.24",
 						"method": "blacklist",
 						"result": null
@@ -632,23 +692,23 @@
 					"Zillya": {
 						"category": "undetected",
 						"engine_name": "Zillya",
-						"engine_update": "20261002",
-						"engine_version": "2.0.0.5702",
+						"engine_update": "20261125",
+						"engine_version": "2.0.0.5737",
 						"method": "blacklist",
 						"result": null
 					},
 					"ZoneAlarm": {
 						"category": "undetected",
 						"engine_name": "ZoneAlarm",
-						"engine_update": "20261003",
-						"engine_version": "6.27-118569086",
+						"engine_update": "20261125",
+						"engine_version": "6.29-121127165",
 						"method": "blacklist",
 						"result": null
 					},
 					"Zoner": {
 						"category": "undetected",
 						"engine_name": "Zoner",
-						"engine_update": "20261003",
+						"engine_update": "20261126",
 						"engine_version": "2.2.2.0",
 						"method": "blacklist",
 						"result": null
@@ -664,23 +724,23 @@
 					"huorong": {
 						"category": "undetected",
 						"engine_name": "huorong",
-						"engine_update": "20261003",
-						"engine_version": "5a7d076:5a7d076:aa8b88f:aa8b88f",
+						"engine_update": "20261125",
+						"engine_version": "2366c65:2366c65:c80502b:c80502b",
 						"method": "blacklist",
 						"result": null
 					},
 					"tehtris": {
 						"category": "type-unsupported",
 						"engine_name": "tehtris",
-						"engine_update": "20261004",
-						"engine_version": null,
+						"engine_update": "20261126",
+						"engine_version": "v0.1.4",
 						"method": "blacklist",
 						"result": null
 					}
 				},
 				"last_analysis_stats": {
 					"confirmed-timeout": 0,
-					"failure": 1,
+					"failure": 0,
 					"harmless": 0,
 					"malicious": 0,
 					"suspicious": 0,
@@ -688,25 +748,25 @@
 					"type-unsupported": 9,
 					"undetected": 65
 				},
-				"last_modification_date": 1791072690,
-				"last_submission_date": 1791072647,
+				"last_modification_date": 1795661463,
+				"last_submission_date": 1795661407,
 				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
-				"magika": "ZIP",
-				"md5": "1b65834bdcbdc57a01b047fda00888d3",
+				"magika": "XPI",
+				"md5": "3487854f6132a24c79d4b8af198d9f3d",
 				"meaningful_name": "addon.nvda-addon",
 				"names": [
 					"addon.nvda-addon"
 				],
 				"reputation": 0,
-				"sha1": "efa003f8302ae481bc5ed016212bc4d4c3fb5d97",
-				"sha256": "f814dd40f7c6f92bd9e8137691dba6ebaa194895ab524761a8f8d8332f9aa938",
-				"size": 689061,
-				"ssdeep": "12288:Zfg7o1Q4VJY0pFxrzNGfFynqFXoMIgPbt1t3StrMJal2EuHI7hrpYJ1ZwX5Zn:ZI7o1QCJRpFxHNkynqJnIgLt3cMJal2S",
+				"sha1": "a124c7469df3283de11507383b84c6c020e433d0",
+				"sha256": "5882f2764884980e16b450116eef7d2c699194a1c8c589c8e59ca28ffe1c437d",
+				"size": 79401,
+				"ssdeep": "1536:3y3UZEQ4tTZtsM9oAtaLiXKeSQ5o5D+e0JjvK+RauiS8LsZJ:ikZStTcM9PtEEvSwo5D+XkuQLsZJ",
 				"tags": [
 					"zip"
 				],
 				"times_submitted": 1,
-				"tlsh": "T1C9E423102EB9F857DFEB36FC674F548AECD411866212C8264DBC47C26D0AAF63B650C9",
+				"tlsh": "T13573AE54D22F2187F46B8BFE76870126E669824DE03E56070F5EE5D18C8E39E0FCE258",
 				"total_votes": {
 					"harmless": 0,
 					"malicious": 0
@@ -725,9 +785,9 @@
 					"zip"
 				],
 				"unique_sources": 1,
-				"vhash": "c83c2d30faa93a855f66933afbcb977d"
+				"vhash": "da36212a8a1c3853387d6fe5e2478422"
 			}
 		]
 	},
-	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/9452"
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10098"
 }
