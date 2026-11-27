@@ -1,0 +1,44 @@
+name: Remove Addon
+on:
+  workflow_dispatch:
+    inputs:
+      addonId:
+        description: 'Addon ID of the addon to remove'
+        required: true
+jobs:
+  remove-addon:
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    env:
+      addonId: ${{ inputs.addonId }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Remove addon
+        shell: bash
+        run: ./.github/workflows/remove-addon.sh "$addonId"
+      - name: Commit changes and create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          baseBranch: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          git add addons discussions.json submitters.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          headBranch="remove-addon-$addonId-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git switch -c "$headBranch"
+          git commit -m "Remove addon $addonId"
+          git push --set-upstream origin "$headBranch"
+          gh pr create \
+            --base "$baseBranch" \
+            --head "$headBranch" \
+            --title "Remove addon $addonId" \
+            --body "This PR removes the addon $addonId"
