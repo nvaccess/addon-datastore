@@ -8,22 +8,6 @@ addons_dir="$here/addons"
 discussions_file="$here/discussions.json"
 submitters_file="$here/submitters.json"
 
-if ! command -v jq >/dev/null 2>&1; then
-	echo "Error: jq is required but was not found in PATH." >&2
-	exit 1
-fi
-
-if [[ ! -d "$addons_dir" || ! -f "$discussions_file" || ! -f "$submitters_file" ]]; then
-	echo "Error: addons directory, discussions.json, and submitters.json must exist in '$here'." >&2
-	exit 1
-fi
-
-tmp_discussions="$here/discussions.old.json"
-tmp_submitters="$here/submitters.old.json"
-if [[ -e "$tmp_discussions" || -L "$tmp_discussions" || -e "$tmp_submitters" || -L "$tmp_submitters" ]]; then
-	echo "Error: temporary discussions.old.json or submitters.old.json already exists in '$here'." >&2
-	exit 1
-fi
 trap 'rm -f -- "$tmp_discussions" "$tmp_submitters"' EXIT
 cp -p -- "$discussions_file" "$tmp_discussions"
 cp -p -- "$submitters_file" "$tmp_submitters"
