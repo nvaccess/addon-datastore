@@ -1,0 +1,51 @@
+{
+	"addonId": "polyglot",
+	"displayName": "Polyglot",
+	"URL": "https://github.com/cary-rowen/polyglot/releases/download/v1.4.0/polyglot-1.4.0.nvda-addon",
+	"description": "A translation add-on for NVDA with support for multiple engines.",
+	"sha256": "b6365fa99d8461870a2a20e635ed785bccfe3f443ce9b33698662a9fa0ef3cf9",
+	"addonVersionName": "1.4.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2024,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/polyglot",
+	"license": "GNU General Public License version 3 or later",
+	"homepage": "https://github.com/cary-rowen/polyglot",
+	"changelog": "### 1.4.0\n\n- Default the target language to NVDA’s interface language for new installations, while preserving existing users’ language settings.\n- Automatically exit the command layer after translation, copying results, clearing the cache, or toggling auto-translation. Language and engine switching remain available for consecutive commands.\n- Update VIVO Translate to use its current API.\n- Improve Ukrainian translations.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-3.0.html",
+	"submissionTime": 1795821091000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Polyglot",
+			"description": "支持多种引擎的 NVDA 翻译插件。",
+			"changelog": "### 1.4.0\n\n- 全新安装时，默认目标语言与 NVDA 界面语言保持一致；升级用户保留原有语言设置。\n- 执行翻译、复制结果、清除缓存或切换自动翻译后，自动退出命令层。切换语言和引擎时仍可连续操作。\n- 更新 VIVO 翻译，适配当前接口。\n- 完善乌克兰语翻译。"
+		},
+		{
+			"language": "vi",
+			"displayName": "Polyglot",
+			"description": "Một add-on dịch thuật dành cho NVDA hỗ trợ nhiều bộ dịch khác nhau.",
+			"changelog": "### 1.4.0\n\n- Default the target language to NVDA’s interface language for new installations, while preserving existing users’ language settings.\n- Automatically exit the command layer after translation, copying results, clearing the cache, or toggling auto-translation. Language and engine switching remain available for consecutive commands.\n- Update VIVO Translate to use its current API.\n- Improve Ukrainian translations."
+		},
+		{
+			"language": "uk",
+			"displayName": "Поліглот",
+			"description": "Додаток для перекладу з підтримкою декількох сервісів перекладу.",
+			"changelog": "### 1.4.0\n\n- Default the target language to NVDA’s interface language for new installations, while preserving existing users’ language settings.\n- Automatically exit the command layer after translation, copying results, clearing the cache, or toggling auto-translation. Language and engine switching remain available for consecutive commands.\n- Update VIVO Translate to use its current API.\n- Improve Ukrainian translations."
+		}
+	]
+}
