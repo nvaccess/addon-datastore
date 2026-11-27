@@ -1,0 +1,749 @@
+{
+	"addonId": "btBatterytics",
+	"displayName": "BT-Batterytics",
+	"URL": "https://github.com/NVDATH/BT-Batterytics/releases/download/v1.0.0/btBatterytics-1.0.0.nvda-addon",
+	"description": "BT-Batterytics reports the battery level of your Bluetooth devices, remembers how long each device lasts between two recharges, and shows statistics about it. It is a modified version of BlueToothBatteryReport by haitun001 and cary-rowen.\n\nBattery report\nPress NVDA+Alt+B (NVDA+Shift+B on a computer that has no battery, such as a desktop PC) to hear the battery level of every Bluetooth device that Windows can read it from. Press twice to copy the report to the clipboard, three times to open the settings. Devices are announced in this order: connected, unknown, disconnected. You choose which of these groups are announced, and whether the connection type (Classic or LE) and the connection time are included. Only devices that report their battery level to Windows can be listed.\n\nConnection time and statistics\nThe add-on measures how long each device is connected between two recharges, so you can see how long it really lasts on one charge. For a device that is often not connected, such as a keyboard that also uses a dongle, it can count the elapsed time instead. The statistics window shows, for every device and every recharge cycle, the connected time, the battery used, the drain rate, the estimated runtime on a full charge, the trend over the latest cycles and the estimated time left now. You can give devices names of your own, sort the lists and choose their columns, and export the statistics to the clipboard or to a file as plain text, Markdown, CSV, tab-separated values, JSON or HTML, or open them as a report in your web browser. Open the window from the settings, or assign a key to the command Open the Bluetooth battery statistics in the Input Gestures dialog. For a device whose battery level does not go down evenly, you can set the level at which you usually recharge it, so that the estimates stay realistic.\n\nAlerts\nEach device can have its own alerts: low battery, battery level drops, device connects and device disconnects. For true wireless earbuds, the add-on can also estimate how many charges are left in the charging case and warn you when to charge it. An alert can be spoken, played as a double beep, or played as a sound file, and the sound files can be replaced with your own. A low battery alert also shows a warning dialog. A background check runs every five minutes, and more often while a device has a connect or disconnect alert.\n\nEverything is set in NVDA settings, in the BT-Batterytics category. The records stay on your computer, in the NVDA configuration folder.\n\nCredits: the ideas and the testing with NVDA are by NVDATH. All the modifications to the code of the original add-on were written by Claude, an AI assistant made by Anthropic, following the instructions of NVDATH.",
+	"sha256": "1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "NVDA_TH",
+	"sourceURL": "https://github.com/NVDATH/BT-Batterytics/",
+	"license": "GPL v2",
+	"homepage": "https://github.com/NVDATH/BT-Batterytics",
+	"changelog": "First release as BT-Batterytics, a modified version of BlueToothBatteryReport 0.4 by haitun001 and cary-rowen. It keeps its own single-file code: it does not include the refactoring of version 0.4.\n\nThe ideas and the testing with NVDA are by NVDATH. All the modifications to the code were written by Claude, an AI assistant made by Anthropic, following the instructions of NVDATH.\n\n### Reporting\n\n- The report runs in a background thread, so NVDA does not freeze while the devices are scanned.\n- Press the hotkey once to read the report, twice to copy it to the clipboard, three times to open the settings.\n- The default hotkey is NVDA+Shift+B on a computer without a battery (a desktop PC) and NVDA+Alt+B on a computer with a battery (a laptop or tablet), so that NVDA's own battery command is left alone. The choice is made when NVDA starts. If Windows cannot tell, a battery is assumed.\n- A settings panel in NVDA settings. Devices to report can be chosen by status: connected, unknown, disconnected.\n- Optional connection type (Classic or LE) after the device name.\n- Optional connection duration, as reported by Windows (Bluetooth Classic devices only).\n- Optional total connection time since the last recharge, remembered across disconnections and NVDA restarts, which also works for LE devices.\n- Optional estimate of the charges left in the charging case of true wireless earbuds.\n- Names that you give to devices are used in the report and in the alerts.\n- Fixed: the Bluetooth radio handle could be closed twice while reading the connection states.\n\n### Connection time tracking\n\n- The connected time of each device is counted between two recharges. A recharge is detected when the battery rises at least 15 points above the lowest level of the cycle, so devices that never reach 100% work too.\n- Time is not counted while the device is disconnected, while the battery level rises, or over gaps longer than 15 minutes (for example while the computer sleeps).\n- For Bluetooth Classic devices the total is never smaller than the connection time reported by Windows.\n- Finished cycles are saved in `btBatterytics_usage.json` in the NVDA configuration folder. Limits can be set for the number of cycles kept per device and for their age.\n- Devices are identified by their Bluetooth address: devices with the same name do not share data, and a renamed device keeps its data.\n- The measurement of a device can be stopped without losing its data.\n- Devices that are not always connected, such as a tri-mode keyboard that also uses a dongle, can count the elapsed time since the last recharge instead of the connected time. It is chosen for each device in the Measuring menu. The time of a cycle runs until the battery level was last seen dropping, a recharge is placed halfway between two readings, and each cycle remembers how its time was counted.\n- Durations of two days or more are shown in days.\n- A usual recharge level for each device, for devices whose reported battery level does not go down evenly (for example a keyboard that stops working at 55 to 60% and is recharged at about 70%). The estimates of the full charge and of the time left are then calculated down to that level instead of down to 0%.\n\n### Statistics window\n\n- Opened from the settings or by a command of the Input Gestures dialog (no gesture by default).\n- A summary list with one row per device and a cycle list. Both are virtual lists, so they stay fast with many cycles.\n- Summary columns: status, measuring, alerts, cycles, average, shortest, longest, full charge estimate, drain rate, recharge interval, last recharge, trend, time left estimate. Cycle columns: cycle, state, duration, battery, drain rate, full charge estimate, end.\n- In the cycle list only the cycle in progress of each device is shown. Space, double-click or the context menu expands or collapses its finished cycles.\n- Devices are listed in the order of the spoken report. F5 scans again and updates the window.\n- The columns of both lists can be shown, hidden and moved (Control+Shift+Up and Control+Shift+Down in the Choose columns dialog). The order is used to show, copy and export them.\n- Manual sort of the devices and of the finished cycles: Control+Shift+Up and Control+Shift+Down move a device, or a finished cycle of an expanded device. A new device is put first.\n- Control+Shift+Left and Control+Shift+Right move the two lists, and the window opens on the first one.\n- Context menu and keys (in the menu, the commands without a key come first): select (several rows, Control+Space, Control+A), copy a row or a device (Control+C, Control+Shift+C), delete a row or a device after a question (Control+Delete, Control+Shift+Delete), rename a device (F2), measure or not, choose the columns, sort the devices and the cycles (the choices are remembered), alerts of the device.\n- Export (Control+E) of the selected rows, the current device or all rows, copied to the clipboard or saved to a file, as plain text, Markdown, CSV, tab-separated values, JSON or HTML, or opened as an HTML report in the browser. Detailed values (exact seconds, percentages, ISO dates, device identity) are included by default. Only the standard library of Python is used.\n\n### Alerts\n\n- Low battery alert. The setting is the default for all devices, with a default level. Each device can follow it, have a level of its own (it alerts even if the default is off), or never alert. The choice is made in a dialog of the Alerts menu of the device.\n- Level drop alert for each device: alerts each time the battery has dropped by a number of points (10 by default).\n- Connect and disconnect alerts for each device. The devices are checked every few seconds while one of these alerts is on.\n- The alert methods are chosen once for all alerts and can be combined: speech (on by default), a double beep, and the sound of the alert, a .wav file of the `sounds` folder of the add-on (`lowBattery.wav`, `levelDrop.wav`, `deviceConnected.wav`, `deviceDisconnected.wav`, `chargingCase.wav`). A beep replaces a missing file.\n- The low battery alert also shows a warning dialog.\n- A level drop alert is not given together with a low battery alert of the same device, and the sounds of several alerts play one after another.\n- A Browse sound folder button in the settings opens the folder of the sound files, to replace them. The sounds that come with the add-on are from Pixabay, see the readme for the credits.\n- Charging case estimate for true wireless earbuds, off by default and set for each device. The add-on counts how many times the case charged the earbuds from the recharges it sees, and alerts when the earbuds are low and the case is nearly empty, so that you charge both together. After the alert, the next time the earbuds are seen recharged, a question asks whether you charged the case, and Yes counts from zero again (Mark case charged, Control+Shift+R, does the same at any time). The typical size of the case is learned from your rounds. It is an estimate, and works best if the earbuds are used mainly with this computer.\n\n### Changed\n\n- Renamed to BT-Batterytics (add-on ID `btBatterytics`). The data and the settings saved under the former name are taken over the first time the add-on runs.\n- The alert sound mode (beep or sound file) of earlier versions is replaced by the alert methods.\n- The \"Only report connected devices\" option of version 0.4 is replaced by one option for each status.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795304481000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "BT-Batterytics",
+			"description": "BT-Batterytics 报告蓝牙设备的电量，记录各设备在两次充电之间的续航时间，并显示相关统计。它是 haitun001 和 cary-rowen 开发的 BlueToothBatteryReport 的修改版。\n\n电量报告\n按 NVDA+Alt+B（没有电池的电脑，如台式机，使用 NVDA+Shift+B），即可听取 Windows 能读取电量的所有蓝牙设备的电量。按两次将报告复制到剪贴板，按三次打开设置。设备按以下顺序播报：已连接、状态未知、未连接。您可以选择播报哪些分组，以及是否包含连接类型（Classic 或 LE）和连接时间。只有向 Windows 报告电量的设备才能列出。\n\n连接时间与统计\n本插件测量各设备在两次充电之间的连接时间，让您了解单次充电的实际续航。对于经常未连接的设备，例如也使用接收器的键盘，可以改为按经过时间计时。统计窗口针对每台设备及每个充电周期显示连接时间、已用电量、耗电速率、满电续航估算、最近周期的趋势和当前剩余时间估算。您可以为设备设置别名，对列表排序并选择显示的列，将统计数据以纯文本、Markdown、CSV、制表符分隔值、JSON 或 HTML 格式复制到剪贴板或保存到文件，也可以在浏览器中打开报告。可从设置打开此窗口，或在“按键与手势”对话框中为“打开蓝牙电池统计”命令分配按键。对于电量下降不均匀的设备，可以设置您通常为其充电时的电量，使估算更贴近实际。\n\n提醒\n每台设备均可单独设置提醒：低电量、电量下降、设备连接和设备断开连接。对于真无线耳机，插件还能估算充电盒剩余可充电次数，并提醒您何时充电。提醒可以通过语音、两声蜂鸣或音效文件播放，音效文件也可替换为您自己的文件。低电量提醒还会显示警告对话框。后台每五分钟检查一次；有设备启用连接或断开连接提醒时，检查会更频繁。\n\n所有选项均在 NVDA 设置的 BT-Batterytics 类别中设置。记录保存在您电脑上的 NVDA 配置文件夹内。\n\n致谢：创意及 NVDA 测试由 NVDATH 完成。对原插件代码的全部修改均由 Anthropic 的 AI 助手 Claude 根据 NVDATH 的指示编写。",
+			"changelog": "首次以 BT-Batterytics 名称发布，基于 haitun001 和 cary-rowen 的 BlueToothBatteryReport 0.4 修改。保留自身的单文件代码结构，未包含 0.4 版本的代码重构。\n\n创意及 NVDA 测试由 NVDATH 完成。全部代码修改均由 Anthropic 的 AI 助手 Claude 根据 NVDATH 的指示编写。\n\n报告\n\n• 报告在后台线程中运行，扫描设备时不会导致 NVDA 卡住。\n• 按快捷键一次朗读报告，两次复制到剪贴板，三次打开设置。\n• 没有电池的电脑（台式机）默认使用 NVDA+Shift+B，有电池的电脑（笔记本或平板）使用 NVDA+Alt+B，以保留 NVDA 自身的电池命令。启动 NVDA 时进行选择；若 Windows 无法确定，则按有电池处理。\n• 在 NVDA 设置中提供设置面板，可按状态选择要报告的设备：已连接、未知、未连接。\n• 可在设备名称后显示连接类型（Classic 或 LE）。\n• 可显示 Windows 报告的连接时长（仅限 Bluetooth Classic 设备）。\n• 可显示自上次充电以来的总连接时间，断开连接或重启 NVDA 后仍保留，也适用于 LE 设备。\n• 可显示真无线耳机充电盒剩余可充电次数的估算值。\n• 报告和提醒使用您为设备设置的名称。\n• 修复：读取连接状态时，蓝牙无线电句柄可能被关闭两次。\n\n连接时间跟踪\n\n• 统计每台设备在两次充电之间的连接时间。当电量比本周期最低电量上升至少 15 个百分点时，判定为已充电，因此电量从不达到 100% 的设备也可使用。\n• 设备未连接、电量上升时，以及超过 15 分钟的观测间隔（如电脑睡眠期间）均不计时。\n• 对于 Bluetooth Classic 设备，总时间不会小于 Windows 报告的连接时间。\n• 已完成周期保存在 NVDA 配置文件夹中的 btBatterytics_usage.json 内。可限制每台设备保留的周期数及记录保留天数。\n• 通过蓝牙地址识别设备：同名设备不共享数据，设备改名后仍保留数据。\n• 可停止某台设备的计时，而不丢失其数据。\n• 对于并非始终连接的设备，如同时使用接收器的三模键盘，可以改为计算自上次充电以来的经过时间，而非连接时间。在每台设备的“计时”菜单中设置。周期计时截止于最后一次观察到电量下降的时刻，充电时刻取两次读数的中点，且每个周期都会记录其计时方式。\n• 两天或更长的时长以天为单位显示。\n• 可为电量下降不均匀的设备设置通常充电电量阈值（如某键盘在 55% 至 60% 时停止工作，而您通常在约 70% 时充电）。满电续航和剩余时间的估算将计算到该电量，而非 0%。\n\n统计窗口\n\n• 可从设置打开，或通过“按键与手势”对话框中的命令打开（默认未分配快捷键）。\n• 提供每台设备一行的汇总列表及周期列表。两者均为虚拟列表，即使周期很多也能保持快速响应。\n• 汇总列：状态、计时、提醒、周期、平均、最短、最长、满电续航估算、耗电速率、充电间隔、上次充电、趋势、剩余时间估算。周期列：周期、展开状态、时长、电量、耗电速率、满电续航估算、结束时间。\n• 周期列表仅显示每台设备的当前周期。按 Space、双击或使用上下文菜单可展开或折叠其已完成周期。\n• 设备按语音报告顺序排列。按 F5 重新扫描并更新窗口。\n• 两个列表的列均可显示、隐藏和移动（在“选择列”对话框中按 Control+Shift+上箭头或 Control+Shift+下箭头）。该顺序用于显示、复制和导出。\n• 可手动排列设备及已完成周期：Control+Shift+上箭头和 Control+Shift+下箭头移动设备，或移动已展开设备中的某个已完成周期。新设备置于首位。\n• Control+Shift+左箭头和 Control+Shift+右箭头可移动两个列表，窗口打开时聚焦第一个列表。\n• 上下文菜单及快捷键（菜单中无快捷键的命令排在前面）：选择（多行，Control+Space、Control+A），复制行或设备（Control+C、Control+Shift+C），确认后删除行或设备（Control+Delete、Control+Shift+Delete），重命名设备（F2），开启或关闭计时，选择列，对设备和周期排序（记住选择），以及设备提醒。\n• 导出（Control+E）所选行、当前设备或全部行，可将纯文本、Markdown、CSV、制表符分隔值、JSON 或 HTML 复制到剪贴板或保存到文件，也可在浏览器中打开 HTML 报告。默认包含详细数值（精确秒数、百分比、ISO 日期、设备身份信息）。仅使用 Python 标准库。\n\n提醒\n\n• 低电量提醒。设置中的开关和默认阈值适用于所有设备。每台设备可沿用默认设置、指定自己的阈值（即使默认关闭也会提醒），或永不提醒。在设备“提醒”菜单的对话框中选择。\n• 每台设备的电量下降提醒：电量每下降指定的百分点数时提醒（默认 10）。\n• 每台设备的连接与断开连接提醒。启用其中任一提醒时，每隔数秒检查设备。\n• 提醒方式统一设置，可组合使用：语音（默认开启）、两声蜂鸣，以及插件 sounds 文件夹中的 .wav 提醒音效（lowBattery.wav、levelDrop.wav、deviceConnected.wav、deviceDisconnected.wav、chargingCase.wav）。文件缺失时改用蜂鸣。\n• 低电量提醒还会显示警告对话框。\n• 同一设备的电量下降提醒不会与低电量提醒同时发出；多个提醒的音效会依次播放。\n• 设置中的“浏览声音文件夹”按钮可打开音效文件夹，以便替换文件。插件附带的声音来自 Pixabay，致谢见 README。\n• 真无线耳机充电盒估算默认关闭，可按设备设置。插件根据观察到的耳机充电情况累计充电盒已供电的次数，并在耳机电量低且充电盒接近耗尽时提醒，以便您一起充电。提醒后，下一次观察到耳机已充电时，会询问是否也给充电盒充电；选择“是”将从零重新计算（“标记充电盒已充电”，Control+Shift+R，可随时执行同样操作）。根据您的使用轮次学习充电盒的典型容量。这是估算值，耳机主要用于这台电脑时效果最佳。\n\n更改\n\n• 更名为 BT-Batterytics（插件 ID 为 btBatterytics）。首次运行时接管旧名称下保存的数据和设置。\n• 旧版本的提醒声音模式（蜂鸣或音效文件）已被提醒方式选项替代。\n• 0.4 版本的“仅报告已连接设备”选项已被每种状态各自的选项替代。"
+		},
+		{
+			"language": "th",
+			"displayName": "BT-Batterytics",
+			"description": "BT-Batterytics รายงานระดับแบตเตอรี่ของอุปกรณ์ Bluetooth จดจำระยะเวลาใช้งานของแต่ละอุปกรณ์ระหว่างการชาร์จสองครั้ง และแสดงสถิติที่เกี่ยวข้อง เป็นรุ่นดัดแปลงจาก BlueToothBatteryReport ของ haitun001 และ cary-rowen\n\nรายงานแบตเตอรี่\nกด NVDA+Alt+B (หรือ NVDA+Shift+B บนคอมพิวเตอร์ที่ไม่มีแบตเตอรี่ เช่น คอมพิวเตอร์ตั้งโต๊ะ) เพื่อฟังระดับแบตเตอรี่ของอุปกรณ์ Bluetooth ทุกเครื่องที่ Windows อ่านค่าได้ กดสองครั้งเพื่อคัดลอกรายงานไปยังคลิปบอร์ด และสามครั้งเพื่อเปิดการตั้งค่า อุปกรณ์จะถูกรายงานตามลำดับ: เชื่อมต่ออยู่ ไม่ทราบสถานะ และไม่ได้เชื่อมต่อ คุณเลือกได้ว่าจะรายงานกลุ่มใด รวมถึงจะระบุประเภทการเชื่อมต่อ (Classic หรือ LE) และเวลาที่เชื่อมต่อหรือไม่ จะแสดงได้เฉพาะอุปกรณ์ที่รายงานระดับแบตเตอรี่ให้ Windows เท่านั้น\n\nเวลาที่เชื่อมต่อและสถิติ\nส่วนเสริมวัดระยะเวลาที่แต่ละอุปกรณ์เชื่อมต่อระหว่างการชาร์จสองครั้ง เพื่อให้ทราบระยะเวลาใช้งานจริงต่อการชาร์จหนึ่งครั้ง สำหรับอุปกรณ์ที่มักไม่ได้เชื่อมต่อ เช่น คีย์บอร์ดที่ใช้ดองเกิลด้วย สามารถนับเวลาที่ผ่านไปแทนได้ หน้าต่างสถิติแสดงเวลาที่เชื่อมต่อ แบตเตอรี่ที่ใช้ไป อัตราการใช้แบตเตอรี่ ประมาณเวลาใช้งานเมื่อชาร์จเต็ม แนวโน้มของรอบล่าสุด และประมาณเวลาที่เหลือขณะนี้ สำหรับแต่ละอุปกรณ์และแต่ละรอบการชาร์จ คุณตั้งชื่ออุปกรณ์เอง เรียงรายการ เลือกคอลัมน์ และส่งออกสถิติไปยังคลิปบอร์ดหรือไฟล์ในรูปแบบข้อความธรรมดา Markdown, CSV, ค่าที่คั่นด้วยแท็บ JSON หรือ HTML หรือเปิดเป็นรายงานในเว็บเบราว์เซอร์ได้ เปิดหน้าต่างจากการตั้งค่า หรือกำหนดปุ่มให้คำสั่ง เปิดสถิติแบตเตอรี่ Bluetooth ในกล่องโต้ตอบ กำหนดท่าทางการป้อนข้อมูล สำหรับอุปกรณ์ที่ระดับแบตเตอรี่ลดลงไม่สม่ำเสมอ คุณกำหนดระดับที่ชาร์จใหม่ตามปกติได้ เพื่อให้ค่าประมาณใกล้เคียงความเป็นจริง\n\nการแจ้งเตือน\nแต่ละอุปกรณ์มีการแจ้งเตือนของตนเองได้ ได้แก่ แบตเตอรี่ต่ำ ระดับแบตเตอรี่ลดลง อุปกรณ์เชื่อมต่อ และอุปกรณ์ตัดการเชื่อมต่อ สำหรับหูฟังไร้สายแบบแยกข้าง ส่วนเสริมยังประมาณจำนวนครั้งที่เคสชาร์จได้อีก และเตือนเมื่อควรชาร์จเคสได้ การแจ้งเตือนทำได้ด้วยเสียงพูด เสียงบี๊บสองครั้ง หรือไฟล์เสียง และคุณเปลี่ยนไฟล์เสียงเป็นของตนเองได้ การแจ้งเตือนแบตเตอรี่ต่ำจะแสดงกล่องคำเตือนด้วย ระบบตรวจสอบเบื้องหลังทุกห้านาที และถี่ขึ้นเมื่อมีอุปกรณ์เปิดแจ้งเตือนการเชื่อมต่อหรือตัดการเชื่อมต่อ\n\nตั้งค่าทั้งหมดได้ในการตั้งค่า NVDA หมวด BT-Batterytics ข้อมูลบันทึกเก็บอยู่ในคอมพิวเตอร์ของคุณ ในโฟลเดอร์การตั้งค่าของ NVDA\n\nเครดิต: แนวคิดและการทดสอบกับ NVDA เป็นผลงานของ NVDATH การแก้ไขโค้ดทั้งหมดของส่วนเสริมต้นฉบับเขียนโดย Claude ผู้ช่วย AI ของ Anthropic ตามคำสั่งของ NVDATH",
+			"changelog": "เผยแพร่ครั้งแรกในชื่อ BT-Batterytics ซึ่งดัดแปลงจาก BlueToothBatteryReport 0.4 ของ haitun001 และ cary-rowen ยังคงใช้โค้ดแบบไฟล์เดียวของตนเอง โดยไม่ได้รวมการปรับโครงสร้างโค้ดของรุ่น 0.4\n\nแนวคิดและการทดสอบกับ NVDA เป็นผลงานของ NVDATH การแก้ไขโค้ดทั้งหมดเขียนโดย Claude ผู้ช่วย AI ของ Anthropic ตามคำสั่งของ NVDATH\n\nการรายงาน\n\n• รายงานทำงานในเธรดเบื้องหลัง จึงไม่ทำให้ NVDA ค้างขณะสแกนอุปกรณ์\n• กดคีย์ลัดหนึ่งครั้งเพื่อฟังรายงาน สองครั้งเพื่อคัดลอกไปยังคลิปบอร์ด และสามครั้งเพื่อเปิดการตั้งค่า\n• คีย์ลัดเริ่มต้นคือ NVDA+Shift+B บนคอมพิวเตอร์ที่ไม่มีแบตเตอรี่ (คอมพิวเตอร์ตั้งโต๊ะ) และ NVDA+Alt+B บนคอมพิวเตอร์ที่มีแบตเตอรี่ (แล็ปท็อปหรือแท็บเล็ต) เพื่อคงคำสั่งแบตเตอรี่ของ NVDA ไว้ ระบบเลือกเมื่อ NVDA เริ่มทำงาน หาก Windows ระบุไม่ได้ จะถือว่ามีแบตเตอรี่\n• มีแผงตั้งค่าในการตั้งค่า NVDA เลือกอุปกรณ์ที่จะรายงานตามสถานะได้: เชื่อมต่ออยู่ ไม่ทราบสถานะ และไม่ได้เชื่อมต่อ\n• เลือกแสดงประเภทการเชื่อมต่อ (Classic หรือ LE) หลังชื่ออุปกรณ์ได้\n• เลือกแสดงระยะเวลาที่เชื่อมต่อตามที่ Windows รายงานได้ (เฉพาะอุปกรณ์ Bluetooth Classic)\n• เลือกแสดงเวลาที่เชื่อมต่อรวมตั้งแต่ชาร์จครั้งล่าสุดได้ โดยจดจำแม้ตัดการเชื่อมต่อหรือเริ่ม NVDA ใหม่ และใช้ได้กับอุปกรณ์ LE ด้วย\n• เลือกแสดงค่าประมาณจำนวนครั้งที่เคสของหูฟังไร้สายแบบแยกข้างชาร์จได้อีกได้\n• ชื่อที่คุณตั้งให้อุปกรณ์จะใช้ในรายงานและการแจ้งเตือน\n• แก้ไข: แฮนเดิลวิทยุ Bluetooth อาจถูกปิดซ้ำสองครั้งขณะอ่านสถานะการเชื่อมต่อ\n\nการติดตามเวลาที่เชื่อมต่อ\n\n• นับเวลาที่แต่ละอุปกรณ์เชื่อมต่อระหว่างการชาร์จสองครั้ง ตรวจพบการชาร์จใหม่เมื่อแบตเตอรี่เพิ่มขึ้นอย่างน้อย 15 จุดเปอร์เซ็นต์จากระดับต่ำสุดของรอบ จึงใช้ได้กับอุปกรณ์ที่ไม่เคยถึง 100% ด้วย\n• ไม่นับเวลาขณะอุปกรณ์ไม่ได้เชื่อมต่อ ขณะระดับแบตเตอรี่เพิ่มขึ้น หรือช่วงว่างที่นานกว่า 15 นาที (เช่น ขณะคอมพิวเตอร์อยู่ในโหมดสลีป)\n• สำหรับอุปกรณ์ Bluetooth Classic เวลารวมจะไม่น้อยกว่าเวลาที่เชื่อมต่อซึ่ง Windows รายงาน\n• บันทึกรอบที่สิ้นสุดแล้วไว้ใน btBatterytics_usage.json ในโฟลเดอร์การตั้งค่า NVDA กำหนดจำนวนรอบที่จะเก็บต่ออุปกรณ์และอายุข้อมูลได้\n• ระบุอุปกรณ์ด้วยที่อยู่ Bluetooth: อุปกรณ์ชื่อเดียวกันจะไม่ใช้ข้อมูลร่วมกัน และอุปกรณ์ที่เปลี่ยนชื่อยังเก็บข้อมูลเดิมไว้\n• หยุดวัดเวลาของอุปกรณ์ได้โดยไม่สูญเสียข้อมูล\n• อุปกรณ์ที่ไม่ได้เชื่อมต่อตลอดเวลา เช่น คีย์บอร์ดสามโหมดที่ใช้ดองเกิลด้วย สามารถนับเวลาที่ผ่านไปตั้งแต่ชาร์จครั้งล่าสุดแทนเวลาที่เชื่อมต่อได้ โดยเลือกแยกแต่ละอุปกรณ์ในเมนู การวัด เวลาของรอบนับถึงครั้งล่าสุดที่พบว่าระดับแบตเตอรี่ลดลง เวลาชาร์จใหม่ถือเป็นจุดกึ่งกลางระหว่างการอ่านค่าสองครั้ง และแต่ละรอบจดจำวิธีนับเวลาของตนเอง\n• ระยะเวลาตั้งแต่สองวันขึ้นไปแสดงเป็นวัน\n• กำหนดระดับที่ชาร์จใหม่ตามปกติแยกแต่ละอุปกรณ์ได้ สำหรับอุปกรณ์ที่รายงานระดับแบตเตอรี่ลดลงไม่สม่ำเสมอ (เช่น คีย์บอร์ดที่หยุดทำงานเมื่อเหลือ 55 ถึง 60% และชาร์จเมื่อเหลือประมาณ 70%) ค่าประมาณเวลาเมื่อชาร์จเต็มและเวลาที่เหลือจะคำนวณถึงระดับนั้นแทน 0%\n\nหน้าต่างสถิติ\n\n• เปิดได้จากการตั้งค่าหรือคำสั่งในกล่องโต้ตอบ กำหนดท่าทางการป้อนข้อมูล (ยังไม่มีคีย์ลัดเริ่มต้น)\n• มีรายการสรุปหนึ่งแถวต่ออุปกรณ์ และรายการรอบการใช้งาน ทั้งสองเป็นรายการเสมือน จึงยังทำงานรวดเร็วแม้มีหลายรอบ\n• คอลัมน์สรุป: สถานะ การวัด การแจ้งเตือน รอบการใช้งาน เฉลี่ย สั้นที่สุด นานที่สุด ประมาณเวลาเมื่อชาร์จเต็ม อัตราการใช้แบตเตอรี่ ช่วงห่างระหว่างการชาร์จ ชาร์จครั้งล่าสุด แนวโน้ม และประมาณเวลาที่เหลือ คอลัมน์รอบการใช้งาน: รอบการใช้งาน สถานะการแสดง ระยะเวลา แบตเตอรี่ อัตราการใช้แบตเตอรี่ ประมาณเวลาเมื่อชาร์จเต็ม และสิ้นสุดเมื่อ\n• รายการรอบการใช้งานจะแสดงเฉพาะรอบที่กำลังดำเนินอยู่ของแต่ละอุปกรณ์ กด Space ดับเบิลคลิก หรือใช้เมนูบริบทเพื่อขยายหรือยุบรอบที่สิ้นสุดแล้ว\n• เรียงอุปกรณ์ตามลำดับรายงานเสียง กด F5 เพื่อสแกนใหม่และอัปเดตหน้าต่าง\n• แสดง ซ่อน และย้ายคอลัมน์ของทั้งสองรายการได้ (Control+Shift+ลูกศรขึ้น และ Control+Shift+ลูกศรลง ในกล่องโต้ตอบ เลือกคอลัมน์) ใช้ลำดับนี้ในการแสดง คัดลอก และส่งออก\n• เรียงอุปกรณ์และรอบที่สิ้นสุดแล้วด้วยตนเองได้: Control+Shift+ลูกศรขึ้น และ Control+Shift+ลูกศรลง ย้ายอุปกรณ์ หรือรอบที่สิ้นสุดแล้วของอุปกรณ์ที่ขยายอยู่ อุปกรณ์ใหม่จะอยู่ลำดับแรก\n• Control+Shift+ลูกศรซ้าย และ Control+Shift+ลูกศรขวา ย้ายลำดับของสองรายการ และหน้าต่างจะเปิดโดยโฟกัสรายการแรก\n• เมนูบริบทและคีย์ลัด (คำสั่งที่ไม่มีคีย์ลัดอยู่ก่อนในเมนู): เลือก (หลายแถว Control+Space, Control+A) คัดลอกแถวหรืออุปกรณ์ (Control+C, Control+Shift+C) ลบแถวหรืออุปกรณ์หลังตอบคำถามยืนยัน (Control+Delete, Control+Shift+Delete) เปลี่ยนชื่ออุปกรณ์ (F2) เปิดหรือปิดการวัด เลือกคอลัมน์ เรียงอุปกรณ์และรอบการใช้งาน (จดจำตัวเลือกไว้) และการแจ้งเตือนของอุปกรณ์\n• ส่งออก (Control+E) แถวที่เลือก อุปกรณ์ปัจจุบัน หรือทุกแถว โดยคัดลอกไปยังคลิปบอร์ดหรือบันทึกลงไฟล์เป็นข้อความธรรมดา Markdown, CSV, ค่าที่คั่นด้วยแท็บ JSON หรือ HTML หรือเปิดเป็นรายงาน HTML ในเบราว์เซอร์ รวมค่าโดยละเอียด (วินาทีที่แน่นอน เปอร์เซ็นต์ วันที่แบบ ISO และข้อมูลระบุอุปกรณ์) ตามค่าเริ่มต้น ใช้เฉพาะไลบรารีมาตรฐานของ Python\n\nการแจ้งเตือน\n\n• แจ้งเตือนแบตเตอรี่ต่ำ ใช้การตั้งค่าเป็นค่าเริ่มต้นของทุกอุปกรณ์ พร้อมระดับเริ่มต้น แต่ละอุปกรณ์เลือกใช้ตามนั้น กำหนดระดับเอง (แจ้งแม้ปิดค่าเริ่มต้นอยู่) หรือไม่แจ้งเลยได้ โดยเลือกในกล่องโต้ตอบของเมนู การแจ้งเตือน ของอุปกรณ์\n• แจ้งเตือนระดับแบตเตอรี่ลดลงแยกแต่ละอุปกรณ์: แจ้งทุกครั้งที่แบตเตอรี่ลดลงตามจำนวนจุดเปอร์เซ็นต์ที่กำหนด (ค่าเริ่มต้น 10)\n• แจ้งเตือนการเชื่อมต่อและตัดการเชื่อมต่อแยกแต่ละอุปกรณ์ ตรวจสอบอุปกรณ์ทุกไม่กี่วินาทีขณะเปิดการแจ้งเตือนชนิดใดชนิดหนึ่งนี้\n• เลือกวิธีแจ้งเตือนครั้งเดียวสำหรับทั้งหมด และใช้ร่วมกันได้: เสียงพูด (เปิดเป็นค่าเริ่มต้น) เสียงบี๊บสองครั้ง และเสียงการแจ้งเตือนซึ่งเป็นไฟล์ .wav ในโฟลเดอร์ sounds ของส่วนเสริม (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav) หากไฟล์หายไป จะใช้เสียงบี๊บแทน\n• การแจ้งเตือนแบตเตอรี่ต่ำแสดงกล่องคำเตือนด้วย\n• ไม่แจ้งระดับแบตเตอรี่ลดลงพร้อมกับแจ้งแบตเตอรี่ต่ำของอุปกรณ์เดียวกัน และเสียงของหลายการแจ้งเตือนจะเล่นตามลำดับทีละเสียง\n• ปุ่ม เปิดโฟลเดอร์เสียง ในการตั้งค่าเปิดโฟลเดอร์ไฟล์เสียงเพื่อเปลี่ยนไฟล์ เสียงที่มาพร้อมส่วนเสริมมาจาก Pixabay ดูเครดิตใน README\n• ประมาณค่าเคสชาร์จสำหรับหูฟังไร้สายแบบแยกข้าง ปิดเป็นค่าเริ่มต้นและตั้งแยกแต่ละอุปกรณ์ ส่วนเสริมนับจำนวนครั้งที่เคสชาร์จหูฟังจากการชาร์จใหม่ที่ตรวจพบ และแจ้งเมื่อหูฟังแบตเตอรี่ต่ำพร้อมกับเคสใกล้หมด เพื่อให้ชาร์จทั้งคู่ด้วยกัน หลังแจ้งเตือน ครั้งถัดไปที่ตรวจพบว่าหูฟังชาร์จใหม่ จะถามว่าคุณได้ชาร์จเคสด้วยหรือไม่ ตอบ ใช่ เพื่อเริ่มนับจากศูนย์อีกครั้ง (คำสั่ง ทำเครื่องหมายว่าเคสชาร์จแล้ว หรือ Control+Shift+R ทำเช่นเดียวกันได้ทุกเมื่อ) ระบบเรียนรู้ความจุโดยทั่วไปของเคสจากรอบการใช้งานของคุณ ค่านี้เป็นค่าประมาณและได้ผลดีที่สุดเมื่อใช้หูฟังกับคอมพิวเตอร์เครื่องนี้เป็นหลัก\n\nการเปลี่ยนแปลง\n\n• เปลี่ยนชื่อเป็น BT-Batterytics (รหัสส่วนเสริม btBatterytics) นำข้อมูลและการตั้งค่าที่บันทึกภายใต้ชื่อเดิมมาใช้เมื่อส่วนเสริมทำงานครั้งแรก\n• แทนโหมดเสียงแจ้งเตือน (บี๊บหรือไฟล์เสียง) ของรุ่นก่อนด้วยวิธีแจ้งเตือน\n• แทนตัวเลือก \"รายงานเฉพาะอุปกรณ์ที่เชื่อมต่อ\" ของรุ่น 0.4 ด้วยตัวเลือกแยกสำหรับแต่ละสถานะ"
+		},
+		{
+			"language": "vi",
+			"displayName": "BT-Batterytics",
+			"description": "BT-Batterytics báo mức pin của thiết bị Bluetooth, ghi nhớ thời lượng mỗi thiết bị dùng giữa hai lần sạc và hiển thị thống kê. Đây là bản sửa đổi của BlueToothBatteryReport do haitun001 và cary-rowen phát triển.\n\nBáo cáo pin\nNhấn NVDA+Alt+B (NVDA+Shift+B trên máy tính không có pin, như máy để bàn) để nghe mức pin của mọi thiết bị Bluetooth mà Windows đọc được. Nhấn hai lần để sao chép báo cáo vào bộ nhớ tạm, ba lần để mở thiết lập. Thứ tự đọc: đã kết nối, không rõ, chưa kết nối. Bạn chọn nhóm cần đọc và có kèm loại kết nối (Classic hoặc LE), thời gian kết nối hay không. Chỉ liệt kê được thiết bị báo mức pin cho Windows.\n\nThời gian kết nối và thống kê\nTiện ích đo thời gian mỗi thiết bị kết nối giữa hai lần sạc, giúp bạn biết thời lượng thực tế mỗi lần sạc. Với thiết bị thường không kết nối, chẳng hạn bàn phím cũng dùng đầu thu, có thể tính thời gian đã trôi qua thay thế. Cửa sổ thống kê hiển thị thời gian kết nối, pin đã dùng, tốc độ hao pin, ước tính dùng khi sạc đầy, xu hướng các chu kỳ gần nhất và thời gian còn lại cho từng thiết bị, từng chu kỳ sạc. Bạn có thể đặt tên riêng, sắp xếp danh sách, chọn cột và xuất thống kê vào bộ nhớ tạm hoặc tệp dạng văn bản thuần, Markdown, CSV, giá trị phân cách bằng tab, JSON hoặc HTML, hay mở báo cáo trong trình duyệt. Mở cửa sổ từ thiết lập hoặc gán phím cho lệnh Mở thống kê pin Bluetooth trong hộp thoại Cử chỉ đầu vào. Với thiết bị có mức pin giảm không đều, bạn có thể đặt mức pin thường sạc lại để ước tính sát thực tế.\n\nCảnh báo\nMỗi thiết bị có thể có cảnh báo riêng: pin yếu, mức pin giảm, kết nối và ngắt kết nối. Với tai nghe không dây hoàn toàn, tiện ích còn ước tính số lần sạc còn lại trong hộp và báo khi cần sạc hộp. Có thể đọc cảnh báo, phát hai tiếng bíp hoặc phát tệp âm thanh; bạn có thể thay tệp bằng âm thanh riêng. Cảnh báo pin yếu còn hiện hộp thoại cảnh báo. Kiểm tra nền chạy mỗi năm phút và thường xuyên hơn khi có thiết bị bật cảnh báo kết nối hoặc ngắt kết nối.\n\nMọi thiết lập nằm trong danh mục BT-Batterytics của thiết lập NVDA. Bản ghi ở trên máy bạn, trong thư mục cấu hình NVDA.\n\nGhi công: ý tưởng và thử nghiệm với NVDA do NVDATH thực hiện. Mọi sửa đổi mã nguồn tiện ích gốc do Claude, trợ lý AI của Anthropic, viết theo chỉ dẫn của NVDATH.",
+			"changelog": "Bản phát hành đầu tiên mang tên BT-Batterytics, sửa đổi từ BlueToothBatteryReport 0.4 của haitun001 và cary-rowen. Giữ mã nguồn riêng trong một tệp, không bao gồm việc tái cấu trúc của bản 0.4.\n\nÝ tưởng và thử nghiệm với NVDA do NVDATH thực hiện. Mọi sửa đổi mã nguồn do Claude, trợ lý AI của Anthropic, viết theo chỉ dẫn của NVDATH.\n\nBáo cáo\n\n• Báo cáo chạy trong luồng nền nên NVDA không bị treo khi quét thiết bị.\n• Nhấn phím tắt một lần để đọc báo cáo, hai lần để sao chép vào bộ nhớ tạm, ba lần để mở thiết lập.\n• Phím tắt mặc định là NVDA+Shift+B trên máy không có pin (máy để bàn) và NVDA+Alt+B trên máy có pin (máy xách tay hoặc máy tính bảng), để giữ nguyên lệnh pin của NVDA. Lựa chọn được thực hiện khi NVDA khởi động. Nếu Windows không xác định được, coi như có pin.\n• Có bảng thiết lập trong thiết lập NVDA. Chọn thiết bị cần báo cáo theo trạng thái: đã kết nối, không rõ, chưa kết nối.\n• Tùy chọn hiện loại kết nối (Classic hoặc LE) sau tên thiết bị.\n• Tùy chọn hiện thời lượng kết nối do Windows báo (chỉ Bluetooth Classic).\n• Tùy chọn tổng thời gian kết nối từ lần sạc gần nhất, được nhớ qua ngắt kết nối và khởi động lại NVDA, cũng dùng được cho LE.\n• Tùy chọn ước tính số lần sạc còn lại trong hộp tai nghe không dây hoàn toàn.\n• Tên bạn đặt cho thiết bị được dùng trong báo cáo và cảnh báo.\n• Sửa lỗi: handle bộ thu phát Bluetooth có thể bị đóng hai lần khi đọc trạng thái kết nối.\n\nTheo dõi thời gian kết nối\n\n• Tính thời gian mỗi thiết bị kết nối giữa hai lần sạc. Phát hiện sạc lại khi pin tăng ít nhất 15 điểm phần trăm so với mức thấp nhất của chu kỳ, nên thiết bị không bao giờ đạt 100% vẫn dùng được.\n• Không tính thời gian thiết bị ngắt kết nối, khi mức pin tăng hoặc khoảng quan sát gián đoạn trên 15 phút (ví dụ máy ngủ).\n• Với Bluetooth Classic, tổng thời gian không bao giờ nhỏ hơn thời gian kết nối Windows báo.\n• Lưu chu kỳ đã hoàn thành trong btBatterytics_usage.json ở thư mục cấu hình NVDA. Có thể giới hạn số chu kỳ giữ lại cho mỗi thiết bị và tuổi bản ghi.\n• Nhận diện theo địa chỉ Bluetooth: thiết bị trùng tên không dùng chung dữ liệu; đổi tên vẫn giữ dữ liệu.\n• Có thể dừng đo một thiết bị mà không mất dữ liệu.\n• Thiết bị không luôn kết nối, như bàn phím ba chế độ cũng dùng đầu thu, có thể tính thời gian đã trôi qua từ lần sạc gần nhất thay cho thời gian kết nối. Chọn riêng từng thiết bị trong trình đơn Đo thời gian. Chu kỳ tính đến lần cuối thấy mức pin giảm; thời điểm sạc đặt ở giữa hai lần đọc; mỗi chu kỳ nhớ cách tính của mình.\n• Thời lượng từ hai ngày được hiển thị bằng ngày.\n• Đặt mức pin thường sạc lại riêng cho thiết bị báo pin giảm không đều (như bàn phím dừng ở 55–60% và được sạc ở khoảng 70%). Ước tính dùng khi sạc đầy và thời gian còn lại tính đến mức đó thay vì 0%.\n\nCửa sổ thống kê\n\n• Mở từ thiết lập hoặc lệnh trong hộp thoại Cử chỉ đầu vào (mặc định chưa gán phím).\n• Danh sách tóm tắt có một hàng mỗi thiết bị và danh sách chu kỳ. Cả hai là danh sách ảo nên vẫn nhanh khi có nhiều chu kỳ.\n• Cột tóm tắt: trạng thái, đo thời gian, cảnh báo, chu kỳ, trung bình, ngắn nhất, dài nhất, ước tính dùng khi sạc đầy, tốc độ hao pin, khoảng cách giữa các lần sạc, lần sạc gần nhất, xu hướng, ước tính thời gian còn lại. Cột chu kỳ: chu kỳ, trạng thái hiển thị, thời lượng, pin, tốc độ hao pin, ước tính dùng khi sạc đầy, kết thúc.\n• Danh sách chu kỳ chỉ hiện chu kỳ đang diễn ra của mỗi thiết bị. Nhấn Space, nhấp đúp hoặc dùng trình đơn ngữ cảnh để mở rộng hay thu gọn các chu kỳ đã hoàn thành.\n• Thiết bị được xếp theo thứ tự báo cáo đọc. F5 quét lại và cập nhật cửa sổ.\n• Có thể hiện, ẩn và di chuyển cột của cả hai danh sách (Control+Shift+Mũi tên lên hoặc xuống trong hộp thoại Chọn cột). Thứ tự được dùng khi hiển thị, sao chép và xuất.\n• Sắp xếp thủ công thiết bị và chu kỳ đã hoàn thành: Control+Shift+Mũi tên lên hoặc xuống di chuyển thiết bị, hoặc chu kỳ đã hoàn thành của thiết bị đã mở rộng. Thiết bị mới được đặt đầu.\n• Control+Shift+Mũi tên trái và phải di chuyển hai danh sách, cửa sổ mở tại danh sách đầu tiên.\n• Trình đơn ngữ cảnh và phím (lệnh không có phím đứng trước): chọn (nhiều hàng, Control+Space, Control+A), sao chép hàng hoặc thiết bị (Control+C, Control+Shift+C), xóa hàng hoặc thiết bị sau xác nhận (Control+Delete, Control+Shift+Delete), đổi tên (F2), bật/tắt đo, chọn cột, sắp xếp thiết bị và chu kỳ (ghi nhớ lựa chọn), cảnh báo của thiết bị.\n• Xuất (Control+E) hàng được chọn, thiết bị hiện tại hoặc mọi hàng vào bộ nhớ tạm hay tệp dạng văn bản thuần, Markdown, CSV, giá trị phân cách bằng tab, JSON hoặc HTML, hoặc mở báo cáo HTML trong trình duyệt. Mặc định kèm giá trị chi tiết (giây chính xác, phần trăm, ngày ISO, định danh thiết bị). Chỉ dùng thư viện chuẩn Python.\n\nCảnh báo\n\n• Cảnh báo pin yếu. Thiết lập là mặc định cho mọi thiết bị, kèm ngưỡng mặc định. Mỗi thiết bị có thể dùng mặc định, đặt ngưỡng riêng (vẫn báo dù mặc định tắt) hoặc không bao giờ báo. Chọn trong hộp thoại thuộc trình đơn Cảnh báo của thiết bị.\n• Cảnh báo mức pin giảm riêng từng thiết bị: báo mỗi lần pin giảm một số điểm phần trăm (mặc định 10).\n• Cảnh báo kết nối và ngắt kết nối riêng từng thiết bị. Kiểm tra mỗi vài giây khi bật một trong hai cảnh báo.\n• Phương thức cảnh báo chọn chung và kết hợp được: giọng nói (mặc định bật), hai tiếng bíp và âm thanh cảnh báo, tệp .wav trong thư mục sounds của tiện ích (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav). Tệp thiếu được thay bằng tiếng bíp.\n• Cảnh báo pin yếu còn hiện hộp thoại cảnh báo.\n• Không phát cảnh báo mức pin giảm cùng cảnh báo pin yếu của cùng thiết bị; các âm thanh cảnh báo phát lần lượt.\n• Nút Mở thư mục âm thanh trong thiết lập mở thư mục để thay tệp. Âm thanh đi kèm từ Pixabay; xem ghi công trong README.\n• Ước tính hộp sạc cho tai nghe không dây hoàn toàn, mặc định tắt và đặt riêng từng thiết bị. Tiện ích đếm số lần hộp sạc tai nghe từ các lần sạc quan sát được, cảnh báo khi tai nghe pin yếu và hộp gần cạn để sạc cả hai. Sau cảnh báo, lần tiếp theo thấy tai nghe sạc lại sẽ hỏi bạn có sạc hộp không; Có bắt đầu tính lại từ không (Đánh dấu hộp đã sạc, Control+Shift+R, làm tương tự bất cứ lúc nào). Dung lượng điển hình được học từ các vòng dùng hộp của bạn. Đây là ước tính, tốt nhất khi tai nghe chủ yếu dùng với máy này.\n\nThay đổi\n\n• Đổi tên thành BT-Batterytics (ID tiện ích btBatterytics). Dữ liệu và thiết lập dưới tên cũ được tiếp nhận khi chạy lần đầu.\n• Chế độ âm cảnh báo (bíp hoặc tệp âm thanh) của bản trước được thay bằng các phương thức cảnh báo.\n• Tùy chọn “Chỉ báo cáo thiết bị đã kết nối” của bản 0.4 được thay bằng tùy chọn riêng cho mỗi trạng thái."
+		},
+		{
+			"language": "uk",
+			"displayName": "BT-Batterytics",
+			"description": "BT-Batterytics повідомляє рівень заряду ваших пристроїв Bluetooth, запам'ятовує час роботи кожного між двома заряджаннями й показує статистику. Це змінена версія BlueToothBatteryReport від haitun001 та cary-rowen.\n\nЗвіт про батареї\nНатисніть NVDA+Alt+B (NVDA+Shift+B на комп'ютері без батареї, наприклад настільному), щоб почути заряд усіх пристроїв Bluetooth, для яких Windows може його прочитати. Подвійне натискання копіює звіт до буфера обміну, потрійне відкриває налаштування. Порядок: підключені, невідомі, відключені. Ви обираєте групи й додавання типу підключення (Classic або LE) та часу підключення. Можна показати лише пристрої, які повідомляють заряд Windows.\n\nЧас підключення та статистика\nДодаток вимірює час підключення кожного пристрою між двома заряджаннями, щоб ви знали реальний час роботи від одного заряду. Для часто відключених пристроїв, наприклад клавіатури, яка також використовує приймач, можна враховувати минулий час. Вікно статистики показує для кожного пристрою й циклу час підключення, використаний заряд, витрату, оцінку роботи від повного заряду, тенденцію останніх циклів та оцінку залишку часу. Можна задавати власні назви, сортувати списки, вибирати стовпці та експортувати статистику до буфера обміну чи файла як звичайний текст, Markdown, CSV, значення з табуляцією, JSON або HTML, або відкрити звіт у браузері. Відкрийте вікно з налаштувань або призначте клавішу команді «Відкрити статистику батарей Bluetooth» у діалозі «Жести вводу». Для пристрою з нерівномірним зниженням заряду можна задати звичний рівень підзаряджання, щоб оцінки були реалістичнішими.\n\nСповіщення\nКожен пристрій може мати власні сповіщення: низький заряд, зниження заряду, підключення та відключення. Для повністю бездротових навушників додаток також оцінює залишок заряджань у футлярі й попереджає, коли його зарядити. Сповіщення можна промовляти, відтворювати подвійним сигналом або звуковим файлом, який можна замінити власним. Низький заряд також викликає діалог попередження. Фонова перевірка відбувається кожні п'ять хвилин, а за ввімкнених сповіщень про підключення чи відключення — частіше.\n\nУсе налаштовується в категорії BT-Batterytics налаштувань NVDA. Записи залишаються на вашому комп'ютері, у папці конфігурації NVDA.\n\nПодяки: ідеї й тестування з NVDA належать NVDATH. Усі зміни коду початкового додатка написав Claude, ШІ-помічник Anthropic, за вказівками NVDATH.",
+			"changelog": "Перший випуск під назвою BT-Batterytics, змінена версія BlueToothBatteryReport 0.4 від haitun001 та cary-rowen. Збережено власний однофайловий код; рефакторинг версії 0.4 не включено.\n\nІдеї й тестування з NVDA належать NVDATH. Усі зміни коду написав Claude, ШІ-помічник Anthropic, за вказівками NVDATH.\n\nЗвіти\n\n• Звіт працює у фоновому потоці, тому NVDA не зависає під час сканування пристроїв.\n• Одне натискання комбінації читає звіт, подвійне копіює до буфера обміну, потрійне відкриває налаштування.\n• Типово використовується NVDA+Shift+B на комп'ютері без батареї (настільному) та NVDA+Alt+B на комп'ютері з батареєю (ноутбуці чи планшеті), зберігаючи власну команду NVDA. Вибір робиться під час запуску NVDA. Якщо Windows не може визначити наявність батареї, припускається, що вона є.\n• Панель у налаштуваннях NVDA. Пристрої для звіту обираються за станом: підключені, невідомі, відключені.\n• Необов'язковий тип підключення (Classic або LE) після назви.\n• Необов'язкова тривалість підключення за даними Windows (лише Bluetooth Classic).\n• Необов'язковий загальний час підключення від останнього заряджання, який зберігається після відключень і перезапусків NVDA та працює й для LE.\n• Необов'язкова оцінка залишку заряджань футляра повністю бездротових навушників.\n• Задані вами назви використовуються у звіті та сповіщеннях.\n• Виправлено: дескриптор радіомодуля Bluetooth міг закриватися двічі під час читання станів підключення.\n\nОблік часу підключення\n\n• Час підключення кожного пристрою рахується між двома заряджаннями. Заряджання визначається за зростанням заряду щонайменше на 15 пунктів від мінімуму циклу; працюють і пристрої, які ніколи не досягають 100%.\n• Не враховуються відключення, зростання заряду та проміжки між спостереженнями понад 15 хвилин, наприклад під час сну комп'ютера.\n• Для Bluetooth Classic загальний час не менший за час підключення, який повідомляє Windows.\n• Завершені цикли зберігаються в btBatterytics_usage.json у папці конфігурації NVDA. Можна обмежити кількість циклів на пристрій і термін зберігання.\n• Пристрої визначаються за адресою Bluetooth: однакові назви не об'єднують дані, перейменування зберігає їх.\n• Вимірювання пристрою можна зупинити без втрати даних.\n• Для непостійно підключених пристроїв, наприклад трирежимної клавіатури з приймачем, можна враховувати минулий час від останнього заряджання замість часу підключення. Вибір окремий для кожного пристрою в меню «Вимірювання». Цикл враховується до останнього спостереженого зниження заряду; момент заряджання ставиться посередині між читаннями; кожен цикл запам'ятовує спосіб обліку.\n• Тривалості від двох днів показуються у днях.\n• Звичний рівень підзаряджання для кожного пристрою з нерівномірним зниженням заряду (наприклад клавіатури, що перестає працювати при 55–60%, яку заряджають при 70%). Оцінки повного заряду й залишку часу рахуються до цього рівня замість 0%.\n\nВікно статистики\n\n• Відкривається з налаштувань або командою діалогу «Жести вводу» (типово без жесту).\n• Зведення з одним рядком на пристрій і список циклів. Обидва списки віртуальні й залишаються швидкими за великої кількості циклів.\n• Стовпці зведення: стан, вимірювання, сповіщення, цикли, середнє, найкоротший, найдовший, оцінка повного заряду, витрата, інтервал заряджання, останнє заряджання, тенденція, оцінка залишку часу. Стовпці циклів: цикл, стан розгортання, тривалість, батарея, витрата, оцінка повного заряду, завершення.\n• У списку циклів спочатку видно лише поточний цикл кожного пристрою. Space, подвійний клік або контекстне меню розгортають чи згортають завершені цикли.\n• Пристрої відповідають порядку голосового звіту. F5 повторює сканування й оновлює вікно.\n• Стовпці обох списків можна показувати, приховувати й переміщувати (Control+Shift+стрілка вгору або вниз у діалозі «Вибрати стовпці»). Порядок використовується для показу, копіювання й експорту.\n• Ручне сортування пристроїв і завершених циклів: Control+Shift+стрілка вгору або вниз переміщує пристрій або завершений цикл розгорнутого пристрою. Новий пристрій ставиться першим.\n• Control+Shift+стрілка вліво та вправо переміщують списки; вікно відкривається на першому.\n• Контекстне меню й клавіші (команди без клавіш ідуть першими): вибір кількох рядків (Control+Space, Control+A), копіювання рядка чи пристрою (Control+C, Control+Shift+C), видалення після підтвердження (Control+Delete, Control+Shift+Delete), перейменування (F2), увімкнення вимірювання, вибір стовпців, сортування пристроїв і циклів із запам'ятовуванням вибору, сповіщення.\n• Експорт (Control+E) вибраних рядків, поточного пристрою або всіх рядків до буфера обміну чи файла як звичайний текст, Markdown, CSV, значення з табуляцією, JSON або HTML; або відкриття HTML-звіту у браузері. Типово включено точні значення: секунди, відсотки, дати ISO, відомості про пристрій. Використовується лише стандартна бібліотека Python.\n\nСповіщення\n\n• Низький заряд. Налаштування й поріг є типовими для всіх. Кожен пристрій може дотримуватися їх, мати власний поріг (працює навіть за вимкненого типового сповіщення) або ніколи не сповіщати. Вибір у діалозі меню «Сповіщення» пристрою.\n• Зниження заряду для кожного пристрою: сповіщення за кожного падіння на задану кількість пунктів (типово 10).\n• Підключення й відключення для кожного пристрою. За ввімкнення будь-якого з них перевірка відбувається кожні кілька секунд.\n• Спільні способи сповіщення можна поєднувати: мовлення (типово ввімкнено), подвійний сигнал і звуковий файл .wav із папки sounds додатка (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav). Відсутній файл замінюється сигналом.\n• Низький заряд також викликає діалог попередження.\n• Зниження заряду не сповіщається одночасно з низьким зарядом того самого пристрою; звуки кількох сповіщень відтворюються послідовно.\n• Кнопка відкриття папки звуків дає змогу замінити файли. Вбудовані звуки взято з Pixabay; подяки в README.\n• Оцінка футляра повністю бездротових навушників типово вимкнена й налаштовується окремо. За спостереженими заряджаннями навушників додаток рахує заряджання від футляра й попереджає, коли навушники розряджені, а футляр майже порожній, щоб зарядити обидва. Після сповіщення за наступного поміченого заряджання навушників запитує про заряджання футляра. Відповідь «Так» починає відлік з нуля («Позначити футляр як заряджений», Control+Shift+R, робить те саме будь-коли). Типова місткість вивчається за вашими раундами використання. Це оцінка; найкраще працює, якщо навушники переважно використовуються з цим комп'ютером.\n\nЗміни\n\n• Нова назва BT-Batterytics (ID додатка btBatterytics). Дані й налаштування під попередньою назвою переносяться під час першого запуску.\n• Колишній режим звуку сповіщень (сигнал або файл) замінено способами сповіщення.\n• Параметр «Повідомляти лише про підключені пристрої» версії 0.4 замінено окремим параметром для кожного стану."
+		},
+		{
+			"language": "ru",
+			"displayName": "BT-Batterytics",
+			"description": "BT-Batterytics сообщает уровень заряда ваших устройств Bluetooth, запоминает время работы каждого между двумя зарядками и показывает статистику. Это изменённая версия BlueToothBatteryReport от haitun001 и cary-rowen.\n\nОтчёт о батареях\nНажмите NVDA+Alt+B (NVDA+Shift+B на компьютере без батареи, например настольном), чтобы услышать заряд всех устройств Bluetooth, для которых Windows может его прочитать. Двойное нажатие копирует отчёт в буфер обмена, тройное открывает настройки. Порядок: подключённые, неизвестные, отключённые. Вы выбираете группы и включение типа подключения (Classic или LE) и времени подключения. Можно перечислить только устройства, передающие заряд в Windows.\n\nВремя подключения и статистика\nДополнение измеряет время подключения каждого устройства между двумя зарядками, позволяя узнать реальное время работы от одного заряда. Для часто отключённых устройств, например клавиатуры, также использующей приёмник, можно учитывать прошедшее время. Окно статистики показывает для каждого устройства и цикла время подключения, расход заряда, скорость расхода, оценку работы от полного заряда, тенденцию последних циклов и оценку оставшегося времени. Можно задавать свои имена, сортировать списки, выбирать столбцы и экспортировать статистику в буфер обмена или файл как обычный текст, Markdown, CSV, значения с разделителями табуляции, JSON или HTML, либо открывать отчёт в браузере. Откройте окно из настроек или назначьте клавишу команде «Открыть статистику батарей Bluetooth» в диалоге «Жесты ввода». Для устройства с неравномерным снижением заряда можно задать обычный уровень подзарядки, чтобы оценки были реалистичнее.\n\nОповещения\nУ каждого устройства могут быть свои оповещения: низкий заряд, снижение заряда, подключение и отключение. Для полностью беспроводных наушников дополнение также оценивает оставшееся число зарядок в футляре и предупреждает, когда его зарядить. Оповещение может произноситься, звучать двойным сигналом или звуковым файлом, который можно заменить своим. Низкий заряд также вызывает диалог предупреждения. Фоновая проверка выполняется каждые пять минут, а при включённых оповещениях о подключении или отключении — чаще.\n\nВсё настраивается в категории BT-Batterytics настроек NVDA. Записи остаются на вашем компьютере, в папке конфигурации NVDA.\n\nБлагодарности: идеи и тестирование с NVDA принадлежат NVDATH. Все изменения кода исходного дополнения написал Claude, ИИ-помощник Anthropic, по указаниям NVDATH.",
+			"changelog": "Первый выпуск под названием BT-Batterytics, изменённая версия BlueToothBatteryReport 0.4 от haitun001 и cary-rowen. Сохранён собственный однофайловый код; рефакторинг версии 0.4 не включён.\n\nИдеи и тестирование с NVDA принадлежат NVDATH. Все изменения кода написал Claude, ИИ-помощник Anthropic, по указаниям NVDATH.\n\nОтчёты\n\n• Отчёт работает в фоновом потоке, поэтому NVDA не зависает при сканировании устройств.\n• Одно нажатие сочетания читает отчёт, двойное копирует в буфер обмена, тройное открывает настройки.\n• По умолчанию используется NVDA+Shift+B на компьютере без батареи (настольном) и NVDA+Alt+B на компьютере с батареей (ноутбуке или планшете), сохраняя собственную команду NVDA. Выбор делается при запуске NVDA. Если Windows не может определить наличие батареи, предполагается, что она есть.\n• Панель в настройках NVDA. Устройства для отчёта выбираются по состоянию: подключённые, неизвестные, отключённые.\n• Необязательный тип подключения (Classic или LE) после имени.\n• Необязательная длительность подключения по данным Windows (только Bluetooth Classic).\n• Необязательное общее время подключения с последней зарядки, сохраняемое при отключениях и перезапусках NVDA; работает и для LE.\n• Необязательная оценка оставшихся зарядок футляра полностью беспроводных наушников.\n• Заданные вами имена используются в отчётах и оповещениях.\n• Исправлено: дескриптор радиомодуля Bluetooth мог закрываться дважды при чтении состояния подключений.\n\nУчёт времени подключения\n\n• Время подключения каждого устройства считается между двумя зарядками. Зарядка определяется при росте заряда минимум на 15 пунктов относительно минимума цикла; работают и устройства, никогда не достигающие 100%.\n• Не учитываются отключения, рост заряда и промежутки между наблюдениями дольше 15 минут, например во время сна компьютера.\n• Для Bluetooth Classic общее время не меньше времени подключения, сообщаемого Windows.\n• Завершённые циклы сохраняются в btBatterytics_usage.json в папке конфигурации NVDA. Можно ограничить число циклов на устройство и срок хранения.\n• Устройства определяются по адресу Bluetooth: одинаковые имена не объединяют данные; переименование сохраняет их.\n• Измерение устройства можно остановить без потери данных.\n• Для непостоянно подключённых устройств, например трёхрежимной клавиатуры с приёмником, можно учитывать прошедшее время с последней зарядки вместо времени подключения. Выбор делается для каждого устройства в меню «Измерение». Цикл учитывается до последнего наблюдаемого снижения заряда, момент зарядки ставится посередине между чтениями, каждый цикл запоминает способ учёта.\n• Длительности от двух дней показываются в днях.\n• Обычный уровень подзарядки для каждого устройства с неравномерно снижающимся зарядом (например клавиатуры, отключающейся при 55–60%, которую заряжают при 70%). Оценки полного заряда и оставшегося времени считаются до этого уровня вместо 0%.\n\nОкно статистики\n\n• Открывается из настроек или командой диалога «Жесты ввода» (по умолчанию без жеста).\n• Сводка с одной строкой на устройство и список циклов. Оба списка виртуальные и остаются быстрыми при большом числе циклов.\n• Столбцы сводки: состояние, измерение, оповещения, циклы, среднее, самый короткий, самый долгий, оценка полного заряда, расход, интервал зарядки, последняя зарядка, тенденция, оценка оставшегося времени. Столбцы циклов: цикл, состояние раскрытия, длительность, батарея, расход, оценка полного заряда, завершение.\n• В списке циклов сначала виден только текущий цикл каждого устройства. Space, двойной щелчок или контекстное меню разворачивают или сворачивают завершённые циклы.\n• Устройства следуют порядку голосового отчёта. F5 повторяет сканирование и обновляет окно.\n• Столбцы обоих списков можно показывать, скрывать и перемещать (Control+Shift+стрелка вверх или вниз в диалоге «Выбрать столбцы»). Порядок используется для показа, копирования и экспорта.\n• Ручная сортировка устройств и завершённых циклов: Control+Shift+стрелка вверх или вниз перемещает устройство либо завершённый цикл развёрнутого устройства. Новое устройство помещается первым.\n• Control+Shift+стрелка влево и вправо перемещают списки; окно открывается на первом.\n• Контекстное меню и клавиши (команды без клавиш идут первыми): выбор нескольких строк (Control+Space, Control+A), копирование строки или устройства (Control+C, Control+Shift+C), удаление после подтверждения (Control+Delete, Control+Shift+Delete), переименование (F2), включение измерения, выбор столбцов, сортировка устройств и циклов с запоминанием выбора, оповещения.\n• Экспорт (Control+E) выбранных строк, текущего устройства или всех строк в буфер обмена или файл как обычный текст, Markdown, CSV, значения с табуляцией, JSON или HTML; либо открытие HTML-отчёта в браузере. По умолчанию включены точные значения: секунды, проценты, даты ISO, сведения об устройстве. Используется только стандартная библиотека Python.\n\nОповещения\n\n• Низкий заряд. Настройка и порог являются общими по умолчанию. Каждое устройство может следовать им, иметь свой порог (работает даже при выключенном общем оповещении) или никогда не оповещать. Выбор в диалоге меню «Оповещения» устройства.\n• Снижение заряда для каждого устройства: оповещение при каждом падении на заданное число пунктов (по умолчанию 10).\n• Подключение и отключение для каждого устройства. При включении любого из них проверка выполняется каждые несколько секунд.\n• Общие способы оповещения можно сочетать: речь (по умолчанию включена), двойной сигнал и звуковой файл .wav из папки sounds дополнения (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav). Отсутствующий файл заменяется сигналом.\n• Низкий заряд также вызывает диалог предупреждения.\n• Снижение заряда не оповещается одновременно с низким зарядом того же устройства; звуки нескольких оповещений воспроизводятся последовательно.\n• Кнопка открытия папки звуков позволяет заменить файлы. Встроенные звуки взяты с Pixabay; благодарности в README.\n• Оценка футляра полностью беспроводных наушников выключена по умолчанию и настраивается отдельно. По наблюдаемым зарядкам наушников дополнение считает зарядки от футляра и предупреждает, когда наушники разряжены, а футляр почти пуст, чтобы зарядить оба. После оповещения при следующей замеченной зарядке наушников задаётся вопрос о зарядке футляра. Ответ «Да» начинает счёт с нуля («Отметить футляр как заряженный», Control+Shift+R, делает то же в любой момент). Типичная ёмкость изучается по вашим раундам использования. Это оценка; лучше всего работает, если наушники используются преимущественно с этим компьютером.\n\nИзменения\n\n• Новое имя BT-Batterytics (ID дополнения btBatterytics). Данные и настройки под прежним именем переносятся при первом запуске.\n• Прежний режим звука оповещений (сигнал или файл) заменён способами оповещения.\n• Параметр «Сообщать только о подключённых устройствах» версии 0.4 заменён отдельным параметром для каждого состояния."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "BT-Batterytics",
+			"description": "O BT-Batterytics informa o nível da bateria dos seus dispositivos Bluetooth, lembra quanto tempo cada um dura entre duas recargas e exibe estatísticas. É uma versão modificada do BlueToothBatteryReport, de haitun001 e cary-rowen.\n\nRelatório da bateria\nPressione NVDA+Alt+B (NVDA+Shift+B em computadores sem bateria, como desktops) para ouvir o nível de bateria de todos os dispositivos Bluetooth dos quais o Windows consegue lê-lo. Pressione duas vezes para copiar o relatório para a área de transferência e três vezes para abrir as configurações. A ordem é: conectados, desconhecidos, desconectados. Você escolhe quais grupos informar e se deseja incluir o tipo de conexão (Classic ou LE) e o tempo conectado. Só podem ser listados dispositivos que informam sua bateria ao Windows.\n\nTempo conectado e estatísticas\nO complemento mede quanto tempo cada dispositivo fica conectado entre duas recargas, mostrando a autonomia real por carga. Para dispositivos frequentemente desconectados, como teclados que também usam receptor, pode contar o tempo decorrido. A janela de estatísticas mostra, para cada dispositivo e ciclo, tempo conectado, bateria usada, taxa de consumo, autonomia estimada com carga completa, tendência dos últimos ciclos e estimativa do tempo restante. Você pode atribuir nomes, ordenar listas, escolher colunas e exportar para a área de transferência ou arquivo como texto simples, Markdown, CSV, valores separados por tabulação, JSON ou HTML, ou abrir um relatório no navegador. Abra a janela pelas configurações ou atribua uma tecla ao comando Abrir as estatísticas da bateria Bluetooth no diálogo Gestos de entrada. Se a bateria de um dispositivo diminui irregularmente, defina o nível em que costuma recarregá-lo para manter estimativas realistas.\n\nAlertas\nCada dispositivo pode ter seus próprios alertas: bateria fraca, quedas do nível, conexão e desconexão. Para fones totalmente sem fio, o complemento também estima quantas recargas restam no estojo e avisa quando carregá-lo. Um alerta pode ser falado, reproduzido como dois bipes ou como arquivo de som, que pode ser substituído pelo seu próprio. O alerta de bateria fraca também mostra um diálogo de aviso. A verificação em segundo plano ocorre a cada cinco minutos, com maior frequência enquanto houver alerta de conexão ou desconexão ativo.\n\nTudo é definido nas configurações do NVDA, na categoria BT-Batterytics. Os registros ficam no seu computador, na pasta de configuração do NVDA.\n\nCréditos: as ideias e os testes com NVDA são de NVDATH. Todas as modificações no código do complemento original foram escritas por Claude, assistente de IA da Anthropic, seguindo as instruções de NVDATH.",
+			"changelog": "Primeira versão como BT-Batterytics, uma modificação do BlueToothBatteryReport 0.4 de haitun001 e cary-rowen. Mantém seu próprio código em arquivo único, sem incluir a refatoração da versão 0.4.\n\nAs ideias e os testes com NVDA são de NVDATH. Todas as modificações no código foram escritas por Claude, assistente de IA da Anthropic, seguindo as instruções de NVDATH.\n\nRelatórios\n\n• O relatório é executado em uma thread em segundo plano, para que o NVDA não congele durante a busca de dispositivos.\n• Pressione o atalho uma vez para ouvir o relatório, duas vezes para copiá-lo e três vezes para abrir as configurações.\n• O atalho padrão é NVDA+Shift+B em computadores sem bateria (desktops) e NVDA+Alt+B em computadores com bateria (notebooks ou tablets), preservando o comando de bateria do NVDA. A escolha ocorre ao iniciar o NVDA. Se o Windows não conseguir determinar, presume-se que há bateria.\n• Painel nas configurações do NVDA. É possível escolher dispositivos por status: conectados, desconhecidos ou desconectados.\n• Tipo de conexão opcional (Classic ou LE) após o nome.\n• Duração opcional da conexão informada pelo Windows (apenas Bluetooth Classic).\n• Tempo total conectado desde a última recarga opcional, preservado entre desconexões e reinícios do NVDA, também para LE.\n• Estimativa opcional das recargas restantes no estojo de fones totalmente sem fio.\n• Os nomes atribuídos aos dispositivos são usados no relatório e nos alertas.\n• Corrigido: o identificador do rádio Bluetooth podia ser fechado duas vezes ao ler os estados das conexões.\n\nAcompanhamento do tempo conectado\n\n• O tempo conectado de cada dispositivo é contado entre duas recargas. Uma recarga é detectada quando a bateria sobe pelo menos 15 pontos acima do menor nível do ciclo; funciona também em dispositivos que nunca chegam a 100%.\n• Não conta tempo desconectado, durante a subida da bateria, nem lacunas superiores a 15 minutos (por exemplo, durante a suspensão do computador).\n• Para Bluetooth Classic, o total nunca é menor que o tempo informado pelo Windows.\n• Ciclos concluídos são salvos em btBatterytics_usage.json na pasta de configuração do NVDA. Podem ser definidos limites de quantidade por dispositivo e de idade.\n• Os dispositivos são identificados pelo endereço Bluetooth: nomes iguais não compartilham dados e renomear não apaga dados.\n• A medição pode ser interrompida sem perder dados.\n• Dispositivos nem sempre conectados, como teclados de três modos que também usam receptor, podem contar o tempo decorrido desde a recarga em vez do tempo conectado. A escolha é por dispositivo no menu Medição. O ciclo termina no último momento em que a bateria foi vista caindo; a recarga é posicionada no meio de duas leituras; cada ciclo lembra como contou o tempo.\n• Durações de dois dias ou mais são mostradas em dias.\n• Nível habitual de recarga por dispositivo para baterias que não diminuem uniformemente (por exemplo, um teclado que para em 55 a 60% e é recarregado perto de 70%). As estimativas de carga completa e tempo restante passam a considerar esse nível em vez de 0%.\n\nJanela de estatísticas\n\n• Aberta pelas configurações ou pelo comando no diálogo Gestos de entrada (sem atalho padrão).\n• Lista de resumo com uma linha por dispositivo e lista de ciclos. Ambas são listas virtuais, mantendo a rapidez com muitos ciclos.\n• Colunas de resumo: status, medição, alertas, ciclos, média, mais curto, mais longo, estimativa de carga completa, taxa de consumo, intervalo de recarga, última recarga, tendência, estimativa restante. Colunas de ciclos: ciclo, estado, duração, bateria, taxa de consumo, estimativa de carga completa, término.\n• A lista de ciclos mostra inicialmente apenas o ciclo em andamento de cada dispositivo. Space, clique duplo ou menu de contexto expande ou recolhe os concluídos.\n• Os dispositivos seguem a ordem do relatório falado. F5 busca novamente e atualiza a janela.\n• As colunas de ambas as listas podem ser mostradas, ocultadas e movidas (Control+Shift+Seta para cima ou para baixo em Escolher colunas). A ordem é usada na exibição, cópia e exportação.\n• Ordenação manual de dispositivos e ciclos concluídos: Control+Shift+Seta para cima ou para baixo move um dispositivo ou um ciclo concluído de um dispositivo expandido. Novos dispositivos ficam primeiro.\n• Control+Shift+Seta para a esquerda e para a direita movem as listas; a janela abre na primeira.\n• Menu de contexto e teclas (comandos sem tecla vêm primeiro): selecionar (várias linhas, Control+Space, Control+A), copiar linha ou dispositivo (Control+C, Control+Shift+C), excluir linha ou dispositivo após confirmação (Control+Delete, Control+Shift+Delete), renomear (F2), medir ou não, escolher colunas, ordenar dispositivos e ciclos (opções lembradas), alertas do dispositivo.\n• Exportar (Control+E) linhas selecionadas, dispositivo atual ou todas as linhas para a área de transferência ou arquivo, como texto simples, Markdown, CSV, valores separados por tabulação, JSON ou HTML, ou abrir relatório HTML no navegador. Valores detalhados (segundos exatos, porcentagens, datas ISO, identificação do dispositivo) incluídos por padrão. Usa apenas a biblioteca padrão do Python.\n\nAlertas\n\n• Alerta de bateria fraca. A configuração é o padrão para todos os dispositivos, com nível padrão. Cada dispositivo pode segui-la, usar nível próprio (alerta mesmo com o padrão desativado) ou nunca alertar. Escolha no diálogo do menu Alertas do dispositivo.\n• Alerta de queda de nível por dispositivo: alerta a cada queda de determinado número de pontos (10 por padrão).\n• Alertas de conexão e desconexão por dispositivo. Verificação a cada poucos segundos enquanto um deles estiver ativo.\n• Métodos escolhidos uma vez para todos os alertas e combináveis: fala (ativada por padrão), dois bipes e som do alerta, arquivo .wav da pasta sounds (lowBattery.wav, levelDrop.wav, deviceConnected.wav, deviceDisconnected.wav, chargingCase.wav). Um bipe substitui arquivo ausente.\n• O alerta de bateria fraca também mostra um diálogo de aviso.\n• Não há alerta de queda de nível junto com o de bateria fraca do mesmo dispositivo; os sons de vários alertas tocam em sequência.\n• O botão Abrir pasta de sons nas configurações permite substituir os arquivos. Os sons incluídos são do Pixabay; créditos no README.\n• Estimativa do estojo de fones totalmente sem fio, desativada por padrão e definida por dispositivo. Conta as recargas fornecidas pelo estojo a partir das recargas observadas e alerta quando os fones estão fracos e o estojo quase vazio, para carregar ambos. Após o alerta, ao detectar nova recarga dos fones, pergunta se você carregou o estojo; Sim reinicia a contagem (Marcar estojo como carregado, Control+Shift+R, faz o mesmo a qualquer momento). A capacidade típica é aprendida com suas rodadas. É uma estimativa e funciona melhor com os fones usados principalmente neste computador.\n\nAlterações\n\n• Renomeado para BT-Batterytics (ID btBatterytics). Dados e configurações do nome anterior são incorporados na primeira execução.\n• O modo de som (bipe ou arquivo) de versões anteriores é substituído pelos métodos de alerta.\n• A opção “Informar apenas dispositivos conectados” da versão 0.4 é substituída por uma opção para cada status."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+				"_type": "file",
+				"bundle_info": {
+					"extensions": {
+						"css": 1,
+						"html": 7,
+						"ini": 7,
+						"md": 7,
+						"mo": 6,
+						"po": 6,
+						"py": 9,
+						"txt": 1,
+						"wav": 5
+					},
+					"file_types": {
+						"HTML": 7,
+						"unknown": 42
+					},
+					"highest_datetime": "2026-11-21 23:29:58",
+					"lowest_datetime": "2026-11-21 23:29:38",
+					"num_children": 49,
+					"type": "ZIP",
+					"uncompressed_size": 2369450
+				},
+				"contenthash": "55aad257bd92b48c3c049fa5e23d003b",
+				"filecondis": {
+					"dhash": "0000000000070200",
+					"raw_md5": "ef7aa50a323c9a883696d4a294b6244d"
+				},
+				"first_submission_date": 1795304485,
+				"last_analysis_date": 1795304485,
+				"last_analysis_results": {
+					"ALYac": {
+						"category": "undetected",
+						"engine_name": "ALYac",
+						"engine_update": "20261121",
+						"engine_version": "2.0.0.10",
+						"method": "blacklist",
+						"result": null
+					},
+					"APEX": {
+						"category": "type-unsupported",
+						"engine_name": "APEX",
+						"engine_update": "20261119",
+						"engine_version": "6.843",
+						"method": "blacklist",
+						"result": null
+					},
+					"AVG": {
+						"category": "undetected",
+						"engine_name": "AVG",
+						"engine_update": "20261121",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Acronis": {
+						"category": "undetected",
+						"engine_name": "Acronis",
+						"engine_update": "20240328",
+						"engine_version": "1.2.0.121",
+						"method": "blacklist",
+						"result": null
+					},
+					"AhnLab-V3": {
+						"category": "undetected",
+						"engine_name": "AhnLab-V3",
+						"engine_update": "20261121",
+						"engine_version": "3.30.3.10716",
+						"method": "blacklist",
+						"result": null
+					},
+					"Alibaba": {
+						"category": "undetected",
+						"engine_name": "Alibaba",
+						"engine_update": "20190527",
+						"engine_version": "0.3.0.5",
+						"method": "blacklist",
+						"result": null
+					},
+					"Antiy-AVL": {
+						"category": "undetected",
+						"engine_name": "Antiy-AVL",
+						"engine_update": "20261121",
+						"engine_version": "3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Arcabit": {
+						"category": "undetected",
+						"engine_name": "Arcabit",
+						"engine_update": "20261121",
+						"engine_version": "2025.0.0.23",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avast": {
+						"category": "undetected",
+						"engine_name": "Avast",
+						"engine_update": "20261121",
+						"engine_version": "23.9.8494.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Avira": {
+						"category": "undetected",
+						"engine_name": "Avira",
+						"engine_update": "20261121",
+						"engine_version": "8.3.3.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefender": {
+						"category": "undetected",
+						"engine_name": "BitDefender",
+						"engine_update": "20261121",
+						"engine_version": "7.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"BitDefenderFalx": {
+						"category": "type-unsupported",
+						"engine_name": "BitDefenderFalx",
+						"engine_update": "20261022",
+						"engine_version": "2.0.936",
+						"method": "blacklist",
+						"result": null
+					},
+					"Bkav": {
+						"category": "undetected",
+						"engine_name": "Bkav",
+						"engine_update": "20261121",
+						"engine_version": "8.2.40(8338)",
+						"method": "blacklist",
+						"result": null
+					},
+					"CAT-QuickHeal": {
+						"category": "undetected",
+						"engine_name": "CAT-QuickHeal",
+						"engine_update": "20261121",
+						"engine_version": "22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"CMC": {
+						"category": "undetected",
+						"engine_name": "CMC",
+						"engine_update": "20261121",
+						"engine_version": "2.4.2022.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"CTX": {
+						"category": "undetected",
+						"engine_name": "CTX",
+						"engine_update": "20261121",
+						"engine_version": "2026.10.27.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"ClamAV": {
+						"category": "undetected",
+						"engine_name": "ClamAV",
+						"engine_update": "20261121",
+						"engine_version": "1.5.5.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"CrowdStrike": {
+						"category": "undetected",
+						"engine_name": "CrowdStrike",
+						"engine_update": "20230417",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cylance": {
+						"category": "type-unsupported",
+						"engine_name": "Cylance",
+						"engine_update": "20261119",
+						"engine_version": "3.0.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Cynet": {
+						"category": "undetected",
+						"engine_name": "Cynet",
+						"engine_update": "20261121",
+						"engine_version": "4.0.3.4",
+						"method": "blacklist",
+						"result": null
+					},
+					"DeepInstinct": {
+						"category": "type-unsupported",
+						"engine_name": "DeepInstinct",
+						"engine_update": "20260614",
+						"engine_version": "5.0.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"DrWeb": {
+						"category": "undetected",
+						"engine_name": "DrWeb",
+						"engine_update": "20261121",
+						"engine_version": "7.0.76.8280",
+						"method": "blacklist",
+						"result": null
+					},
+					"ESET-NOD32": {
+						"category": "undetected",
+						"engine_name": "ESET-NOD32",
+						"engine_update": "20261121",
+						"engine_version": "18.2.18.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Elastic": {
+						"category": "type-unsupported",
+						"engine_name": "Elastic",
+						"engine_update": "20261120",
+						"engine_version": "4.0.300",
+						"method": "blacklist",
+						"result": null
+					},
+					"Emsisoft": {
+						"category": "undetected",
+						"engine_name": "Emsisoft",
+						"engine_update": "20261121",
+						"engine_version": "2024.8.0.61147",
+						"method": "blacklist",
+						"result": null
+					},
+					"F-Secure": {
+						"category": "undetected",
+						"engine_name": "F-Secure",
+						"engine_update": "20261121",
+						"engine_version": "18.10.1547.307",
+						"method": "blacklist",
+						"result": null
+					},
+					"Fortinet": {
+						"category": "undetected",
+						"engine_name": "Fortinet",
+						"engine_update": "20261121",
+						"engine_version": "7.0.48.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"GData": {
+						"category": "undetected",
+						"engine_name": "GData",
+						"engine_update": "20261121",
+						"engine_version": "GD:27.46797AVA:64.32247",
+						"method": "blacklist",
+						"result": null
+					},
+					"Google": {
+						"category": "undetected",
+						"engine_name": "Google",
+						"engine_update": "20261121",
+						"engine_version": "1795293090",
+						"method": "blacklist",
+						"result": null
+					},
+					"Gridinsoft": {
+						"category": "undetected",
+						"engine_name": "Gridinsoft",
+						"engine_update": "20261121",
+						"engine_version": "1.0.262.174",
+						"method": "blacklist",
+						"result": null
+					},
+					"Ikarus": {
+						"category": "undetected",
+						"engine_name": "Ikarus",
+						"engine_update": "20261121",
+						"engine_version": "6.5.4.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Jiangmin": {
+						"category": "undetected",
+						"engine_name": "Jiangmin",
+						"engine_update": "20261120",
+						"engine_version": "16.0.100",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7AntiVirus": {
+						"category": "undetected",
+						"engine_name": "K7AntiVirus",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
+						"method": "blacklist",
+						"result": null
+					},
+					"K7GW": {
+						"category": "undetected",
+						"engine_name": "K7GW",
+						"engine_update": "20261121",
+						"engine_version": "14.95.61559",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kaspersky": {
+						"category": "undetected",
+						"engine_name": "Kaspersky",
+						"engine_update": "20261121",
+						"engine_version": "22.0.1.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"Kingsoft": {
+						"category": "undetected",
+						"engine_name": "Kingsoft",
+						"engine_update": "20261121",
+						"engine_version": "None",
+						"method": "blacklist",
+						"result": null
+					},
+					"Lionic": {
+						"category": "undetected",
+						"engine_name": "Lionic",
+						"engine_update": "20261121",
+						"engine_version": "8.16",
+						"method": "blacklist",
+						"result": null
+					},
+					"Malwarebytes": {
+						"category": "undetected",
+						"engine_name": "Malwarebytes",
+						"engine_update": "20261121",
+						"engine_version": "3.1.0.301",
+						"method": "blacklist",
+						"result": null
+					},
+					"MaxSecure": {
+						"category": "undetected",
+						"engine_name": "MaxSecure",
+						"engine_update": "20261120",
+						"engine_version": "4.0.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"McAfeeD": {
+						"category": "undetected",
+						"engine_name": "McAfeeD",
+						"engine_update": "20261121",
+						"engine_version": "1.2.0.17082",
+						"method": "blacklist",
+						"result": null
+					},
+					"MicroWorld-eScan": {
+						"category": "undetected",
+						"engine_name": "MicroWorld-eScan",
+						"engine_update": "20261121",
+						"engine_version": "14.0.409.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"Microsoft": {
+						"category": "undetected",
+						"engine_name": "Microsoft",
+						"engine_update": "20261121",
+						"engine_version": "1.26100",
+						"method": "blacklist",
+						"result": null
+					},
+					"NANO-Antivirus": {
+						"category": "undetected",
+						"engine_name": "NANO-Antivirus",
+						"engine_update": "20261121",
+						"engine_version": "1.0.170.26895",
+						"method": "blacklist",
+						"result": null
+					},
+					"Paloalto": {
+						"category": "type-unsupported",
+						"engine_name": "Paloalto",
+						"engine_update": "20261121",
+						"engine_version": "0.9.0.1003",
+						"method": "blacklist",
+						"result": null
+					},
+					"Panda": {
+						"category": "undetected",
+						"engine_name": "Panda",
+						"engine_update": "20261121",
+						"engine_version": "4.6.4.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Rising": {
+						"category": "undetected",
+						"engine_name": "Rising",
+						"engine_update": "20261121",
+						"engine_version": "25.0.0.28",
+						"method": "blacklist",
+						"result": null
+					},
+					"SUPERAntiSpyware": {
+						"category": "undetected",
+						"engine_name": "SUPERAntiSpyware",
+						"engine_update": "20261121",
+						"engine_version": "5.6.0.1032",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sangfor": {
+						"category": "undetected",
+						"engine_name": "Sangfor",
+						"engine_update": "20261120",
+						"engine_version": "2.22.3.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SentinelOne": {
+						"category": "undetected",
+						"engine_name": "SentinelOne",
+						"engine_update": "20260924",
+						"engine_version": "7.8.0.2",
+						"method": "blacklist",
+						"result": null
+					},
+					"Skyhigh": {
+						"category": "undetected",
+						"engine_name": "Skyhigh",
+						"engine_update": "20261121",
+						"engine_version": "v2021.2.0+4045",
+						"method": "blacklist",
+						"result": null
+					},
+					"Sophos": {
+						"category": "undetected",
+						"engine_name": "Sophos",
+						"engine_update": "20261121",
+						"engine_version": "3.7.2.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Symantec": {
+						"category": "undetected",
+						"engine_name": "Symantec",
+						"engine_update": "20261121",
+						"engine_version": "1.22.0.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"SymantecMobileInsight": {
+						"category": "type-unsupported",
+						"engine_name": "SymantecMobileInsight",
+						"engine_update": "20260123",
+						"engine_version": "2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TACHYON": {
+						"category": "undetected",
+						"engine_name": "TACHYON",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-21.02",
+						"method": "blacklist",
+						"result": null
+					},
+					"Tencent": {
+						"category": "undetected",
+						"engine_name": "Tencent",
+						"engine_update": "20261121",
+						"engine_version": "1.0.0.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trapmine": {
+						"category": "type-unsupported",
+						"engine_name": "Trapmine",
+						"engine_update": "20261026",
+						"engine_version": "4.0.17.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrellixENS": {
+						"category": "undetected",
+						"engine_name": "TrellixENS",
+						"engine_update": "20261121",
+						"engine_version": "6.0.6.653",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro": {
+						"category": "undetected",
+						"engine_name": "TrendMicro",
+						"engine_update": "20261121",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"TrendMicro-HouseCall": {
+						"category": "undetected",
+						"engine_name": "TrendMicro-HouseCall",
+						"engine_update": "20261121",
+						"engine_version": "24.550.0.1002",
+						"method": "blacklist",
+						"result": null
+					},
+					"Trustlook": {
+						"category": "undetected",
+						"engine_name": "Trustlook",
+						"engine_update": "20261121",
+						"engine_version": "1.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"VBA32": {
+						"category": "undetected",
+						"engine_name": "VBA32",
+						"engine_update": "20261121",
+						"engine_version": "5.7.1",
+						"method": "blacklist",
+						"result": null
+					},
+					"VIPRE": {
+						"category": "undetected",
+						"engine_name": "VIPRE",
+						"engine_update": "20261121",
+						"engine_version": "6.0.0.35",
+						"method": "blacklist",
+						"result": null
+					},
+					"Varist": {
+						"category": "undetected",
+						"engine_name": "Varist",
+						"engine_update": "20261121",
+						"engine_version": "6.6.1.3",
+						"method": "blacklist",
+						"result": null
+					},
+					"ViRobot": {
+						"category": "undetected",
+						"engine_name": "ViRobot",
+						"engine_update": "20261121",
+						"engine_version": "2026-11-22.00",
+						"method": "blacklist",
+						"result": null
+					},
+					"VirIT": {
+						"category": "undetected",
+						"engine_name": "VirIT",
+						"engine_update": "20261120",
+						"engine_version": "9.5.1344",
+						"method": "blacklist",
+						"result": null
+					},
+					"Webroot": {
+						"category": "undetected",
+						"engine_name": "Webroot",
+						"engine_update": "20250227",
+						"engine_version": "1.9.0.8",
+						"method": "blacklist",
+						"result": null
+					},
+					"Xcitium": {
+						"category": "undetected",
+						"engine_name": "Xcitium",
+						"engine_update": "20261121",
+						"engine_version": "39131",
+						"method": "blacklist",
+						"result": null
+					},
+					"Yandex": {
+						"category": "undetected",
+						"engine_name": "Yandex",
+						"engine_update": "20261119",
+						"engine_version": "5.5.2.24",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zillya": {
+						"category": "undetected",
+						"engine_name": "Zillya",
+						"engine_update": "20261121",
+						"engine_version": "2.0.0.5734",
+						"method": "blacklist",
+						"result": null
+					},
+					"ZoneAlarm": {
+						"category": "undetected",
+						"engine_name": "ZoneAlarm",
+						"engine_update": "20261121",
+						"engine_version": "6.29-121127099",
+						"method": "blacklist",
+						"result": null
+					},
+					"Zoner": {
+						"category": "undetected",
+						"engine_name": "Zoner",
+						"engine_update": "20261121",
+						"engine_version": "2.2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"alibabacloud": {
+						"category": "undetected",
+						"engine_name": "alibabacloud",
+						"engine_update": "20250321",
+						"engine_version": "2.2.0",
+						"method": "blacklist",
+						"result": null
+					},
+					"huorong": {
+						"category": "undetected",
+						"engine_name": "huorong",
+						"engine_update": "20261121",
+						"engine_version": "41e0299:41e0299:8e7bee6:8e7bee6",
+						"method": "blacklist",
+						"result": null
+					},
+					"tehtris": {
+						"category": "type-unsupported",
+						"engine_name": "tehtris",
+						"engine_update": "20261121",
+						"engine_version": null,
+						"method": "blacklist",
+						"result": null
+					}
+				},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 9,
+					"undetected": 65
+				},
+				"last_modification_date": 1795304533,
+				"last_submission_date": 1795304485,
+				"magic": "Zip archive data, at least v2.0 to extract, compression method=deflate",
+				"magika": "XPI",
+				"md5": "58f24d726e07830de92bcb157291d932",
+				"meaningful_name": "addon.nvda-addon",
+				"names": [
+					"addon.nvda-addon"
+				],
+				"reputation": 0,
+				"sha1": "b5eb884b2124d703076c001b890f88fcfc1c4fc8",
+				"sha256": "1073959d6da445f0916551f2a2ffd7eef4906ec41658ca0f7509a551cc830def",
+				"size": 864014,
+				"ssdeep": "24576:IRFjyRYRMtHDsEiN3zyTnU4Z4PYe2l8eOEYUdBNc:IzWRYyBDsEi1yTUqvL3/Nc",
+				"tags": [
+					"zip"
+				],
+				"times_submitted": 1,
+				"tlsh": "T1340523187554C09AD56382B81E2B6892C60B6F13B01FD93775BD20DE59F2BCB89F504C",
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"trid": [
+					{
+						"file_type": "ZIP compressed archive",
+						"probability": 100
+					}
+				],
+				"type_description": "ZIP",
+				"type_extension": "zip",
+				"type_tag": "zip",
+				"type_tags": [
+					"compressed",
+					"zip"
+				],
+				"unique_sources": 1,
+				"vhash": "3a66aa85323c3fbd7a87bc779a7c1eef"
+			}
+		]
+	}
+}
