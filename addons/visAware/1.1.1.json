@@ -1,0 +1,44 @@
+{
+	"addonId": "visAware",
+	"displayName": "Vis Aware",
+	"URL": "https://github.com/cary-rowen/visAware/releases/download/v1.1.1/visAware-1.1.1.nvda-addon",
+	"description": "NVDA add-on for OCR, AI-powered image description, automatic recognition, and AI-assisted computer control.",
+	"sha256": "ca84868644952bd71dd8a327af3ef5c4373bdd4d2bc45685b27943d981770d62",
+	"addonVersionName": "1.1.1",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 1,
+		"patch": 1
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 2,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "cary-rowen <cary-rowen@outlook.com>",
+	"sourceURL": "https://github.com/cary-rowen/visAware",
+	"license": "GPL v2",
+	"changelog": "### 1.1.1\n\n* Fixed OCR results stacking when recognition was triggered again while reading a result. visAware now announces that you are already in a recognition result instead of opening another.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795776773000,
+	"translations": [
+		{
+			"language": "zh_CN",
+			"displayName": "Vis Aware",
+			"description": "为 NVDA 提供 OCR、AI 图像描述、自动识别和 AI 辅助计算机控制的插件。",
+			"changelog": "### 1.1.1\n\n* 修复阅读识别结果时再次触发 OCR 导致结果文档叠加的问题。现在 visAware 会提示“已处于内容识别结果区域”，不再打开新的结果文档。"
+		},
+		{
+			"language": "uk",
+			"displayName": "Vis Aware",
+			"description": "Додаток для NVDA для розпізнавання тексту (OCR), опису зображень на основі ШІ, автоматичного розпізнавання та керування комп’ютером за допомогою ШІ помічника.",
+			"changelog": "### 1.1.1\n\n* Fixed OCR results stacking when recognition was triggered again while reading a result. visAware now announces that you are already in a recognition result instead of opening another."
+		}
+	]
+}
