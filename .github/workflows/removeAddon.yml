@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       addonId:
-        description: 'Name of the addon to remove'
+        description: 'Addon ID of the addon to remove'
         required: true
 jobs:
   remove-addon:
