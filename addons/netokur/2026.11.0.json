@@ -1,0 +1,39 @@
+{
+	"addonId": "netokur",
+	"displayName": "NetOkur speech synthesizer",
+	"URL": "https://github.com/ersalih51/netokur-nvda-addon/releases/download/v2026.11/netokur-2026.11.nvda-addon",
+	"description": "The NetOkur synthesizer for NVDA. It speaks with the NetOkur Turkish voices Gül, Gül HD Premium, Sinan, Levent and Ersin, each installed as an add-on of its own; this add-on holds no voice. It also reads documents into MP3 files (Dosya Okur), reads them aloud sentence by sentence (Dinle) and has a pronunciation dictionary. Its windows are in Turkish. After installing a voice, choose NetOkur as the synthesizer in NVDA's speech settings.",
+	"sha256": "42b4d105fe6b14ef470f59c1df500fe6e29c1517c9dc3a2d417c20b17036b3e2",
+	"addonVersionName": "2026.11",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 11,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Salih Eroğul",
+	"sourceURL": "https://github.com/ersalih51/netokur-nvda-addon",
+	"license": "GPL v2 (add-on code); Sestek engine and voices under their own terms, see THIRD-PARTY.txt",
+	"homepage": "https://github.com/ersalih51/netokur-nvda-addon",
+	"changelog": "First release.\n* The NetOkur synthesizer, running inside NVDA (64-bit) from the add-on's own folder.\n* Settings: voices, speech (silences, extra rate, tone, presets, limiter, the wait before a character's description) and backup.\n* Dosya Okur: documents (TXT, DOC, DOCX, RTF, EPUB, PDF, scanned PDFs and images) into MP3 files.\n* Dinle: listening to a document sentence by sentence, with bookmarks and a sleep timer.\n* Sözlük: an own pronunciation dictionary and the engine's own lists.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795791516000,
+	"translations": [
+		{
+			"language": "tr",
+			"displayName": "NetOkur ses sürücüsü",
+			"description": "NetOkur ses sürücüsü, NetOkur seslerini NVDA'da kullanmanızı sağlar. Ses içermez; Gül, Gül HD Premium, Sinan, Levent ve Ersin seslerini ayrı eklentiler olarak kurun. Belgeleri MP3 dosyasına okur (Dosya Okur), cümle cümle dinletir (Dinle) ve telaffuz sözlüğü vardır. Bir ses kurduktan sonra NVDA'nın konuşma ayarlarında sentezleyici olarak NetOkur'u seçin.",
+			"changelog": "İlk sürüm.\n* NetOkur ses sürücüsü: NVDA'nın içinde (64 bit), eklentinin kendi klasöründen çalışır.\n* Ayarlar: sesler, konuşma (sessizlikler, ek hız, ton, hazır ayarlar, sınırlayıcı, karakter açıklaması bekleme süresi) ve yedek.\n* Dosya Okur: belgeleri (TXT, DOC, DOCX, RTF, EPUB, PDF, taranmış PDF'ler ve resimler) MP3 dosyasına okur.\n* Dinle: belgeyi cümle cümle, yer imleri ve uyku zamanlayıcısıyla dinletir.\n* Sözlük: kendi telaffuz sözlüğünüz ve ses motorunun kendi listeleri."
+		}
+	]
+}
