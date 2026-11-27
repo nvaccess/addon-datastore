@@ -1,0 +1,113 @@
+{
+	"addonId": "uTalk",
+	"displayName": "uTalk",
+	"URL": "https://github.com/chaichaimee/uTalk/releases/download/2026.12.0/uTalk-v2026.12.0.nvda-addon",
+	"description": "uTalk enhances your NVDA workflow by providing instant spoken confirmations for essential editing commands like Copy, Paste, Cut, Undo, Redo, Select All, Save, and File Operations. It features smart copy handling in browse mode, dual language profiles with quick switching, per-application rules, a choice of speech, braille or beep output, and fully customizable announcement phrases.\n\nHot Key:\nNVDA+ALT+T\nSingle Tap : Swap languages\nDouble Tap : Open uTalk settings\nTriple Tap : Turn uTalk off or on for the current application\nFour Taps : Mute or unmute uTalk announcements\n\nThe mute and current application commands can also be assigned their own keys in Input Gestures, under the uTalk category.",
+	"sha256": "cc710fc35c749194868e32e196adca10b579919e2e1e212a138721224b13bdf5",
+	"addonVersionName": "2026.12.0",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 12,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2025,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 0
+	},
+	"channel": "stable",
+	"publisher": "Chai Chaimee",
+	"sourceURL": "https://github.com/chaichaimee/uTalk",
+	"license": "GPL v2",
+	"homepage": "https://github.com/chaichaimee/uTalk",
+	"changelog": "- The clipboard system has been improved to patch vulnerabilities that failed after the announcement.\n- The settings file uTalk.json now lives in userConfig\\ChaiChaimee\\uTalk\\. If an old copy exists in userConfig or userConfig\\ChaiChaimee, it is moved there at startup and the old file is deleted once the new one is checked.\n- NVDA+Alt+T now takes up to four taps: swap languages, open settings, turn uTalk off or on for the current application, mute or unmute. It is listed again in Input Gestures as \"uTalk multi tap\". The mute and current application commands are also listed there with no key assigned.\n- Copy and Cut are announced only when the clipboard really changed. Otherwise uTalk says \"Nothing to copy\" or \"Nothing to cut\". Paste is not announced in browse mode or in read-only fields. This can be turned off in settings.\n- Holding or repeating a shortcut now gives one announcement instead of a queue of them.\n- uTalk is silent in Command Prompt, PowerShell and Windows Terminal by default. Per-application rules (name=off, name=main or name=alt) can be edited in settings.\n- New output choices: speech and braille, speech only, braille only, or beep only.\n- New detail level: copy, cut and paste report the number of characters and lines, for example \"copy 2 lines 50 characters\". A line break at the end of the text is not counted as an extra line. The comma between the parts was removed. In editable fields, undo and redo also say what was removed or added.\n- If no alternate language is set, the language toggle says so instead of going silent. A command with an empty alternate phrase now uses its English phrase.\n- The settings dialog refuses text longer than 200 characters and application rules that are not valid, and tells you which field to fix.\n- Wrong value types in uTalk.json are replaced by the defaults. The file is only written when something changed.\n- Fixed an error when saving settings if the temporary file could not be created. The settings dump in the log moved to debug level.\n- Code names were changed to one style. Script names and keys in uTalk.json were left as they were, so existing key assignments and settings keep working.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795770511000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "uTalk",
+			"description": "uTalk mejora tu flujo de trabajo en NVDA proporcionando confirmaciones habladas instantáneas para comandos de edición esenciales como Copiar, Pegar, Cortar, Deshacer, Rehacer, Seleccionar todo, Guardar y Operaciones de archivos. Incluye gestión inteligente de copias en el modo exploración, perfiles de doble idioma con cambio rápido, reglas por aplicación, opciones de salida de voz, braille o tonos, y frases de anuncio totalmente personalizables.\n\nTecla rápida:\nNVDA+ALT+T\nUn toque: Cambiar idiomas\nDoble toque: Abrir configuración de uTalk\nTriple toque: Activar o desactivar uTalk para la aplicación actual\nCuatro toques: Silenciar o activar los anuncios de uTalk\n\nLos comandos para silenciar y para la aplicación actual también se pueden asignar a sus propias teclas en Gestos de entrada, dentro de la categoría uTalk."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "uTalk",
+			"description": "uTalk 通过为复制、粘贴、剪切、撤销、重做、全选、保存和文件操作等常用编辑命令提供即时的语音提示，来增强您的 NVDA 工作流程。它具有浏览模式下的智能复制处理、支持快速切换的双语言配置文件、针对特定应用程序的规则、语音、盲文或蜂鸣音输出选项以及完全可自定义的提示短语。\n\n热键：\nNVDA+ALT+T\n单击：切换语言\n双击：打开 uTalk 设置\n三击：为当前应用程序开启或关闭 uTalk\n四击：将 uTalk 提示静音或取消静音\n\n静音和当前应用程序命令也可以在“输入手势”的 uTalk 类别下分配它们自己的按键。"
+		},
+		{
+			"language": "ja",
+			"displayName": "uTalk",
+			"description": "uTalkは、コピー、貼り付け、切り取り、元に戻す、やり直し、すべて選択、保存、ファイル操作などの基本的な編集コマンドに対して、即座に音声確認を提供することで、NVDAの作業効率を向上させます。ブラウズモードでのスマートなコピー処理、素早い切り替えが可能なデュアル言語プロファイル、アプリケーションごとのルール、音声、点字、ビープ音の選択、完全にカスタマイズ可能なアナウンスフレーズを備えています。\n\nホットキー:\nNVDA+ALT+T\n1回タップ: 言語を切り替える\n2回タップ: uTalkの設定を開く\n3回タップ: 現在のアプリケーションでのuTalkの有効/無効を切り替える\n4回タップ: uTalkのアナウンスのミュートを切り替える\n\nミュートおよび現在のアプリケーションのコマンドは、「入力ジェスチャ」の「uTalk」カテゴリで独自のキーに割り当てることもできます。"
+		},
+		{
+			"language": "id",
+			"displayName": "uTalk",
+			"description": "uTalk meningkatkan alur kerja NVDA Anda dengan memberikan konfirmasi suara instan untuk perintah pengeditan penting seperti Salin, Tempel, Potong, Urungkan, Ulangi, Pilih Semua, Simpan, dan Operasi Berkas. Ini dilengkapi penanganan salin cerdas dalam mode telusur, profil bahasa ganda dengan peralihan cepat, aturan per aplikasi, pilihan keluaran ucapan, braille, atau bunyi bip, serta frasa pengumuman yang dapat disesuaikan sepenuhnya.\n\nTombol Pintas:\nNVDA+ALT+T\nKetuk Sekali: Tukar bahasa\nKetuk Dua Kali: Buka pengaturan uTalk\nKetuk Tiga Kali: Matikan atau nyalakan uTalk untuk aplikasi saat ini\nKetuk Empat Kali: Bisukan atau batalkan bisu pengumuman uTalk\n\nPerintah bisu dan aplikasi saat ini juga dapat ditetapkan ke tombolnya sendiri di Gestur Masukan, di bawah kategori uTalk."
+		},
+		{
+			"language": "it",
+			"displayName": "uTalk",
+			"description": "uTalk förbättrar ditt NVDA-arbetsflöde genom att ge omedelbara upplästa bekräftelser för viktiga redigeringskommandon som Kopiera, Klistra in, Klipp ut, Ångra, Gör om, Markera alla, Spara och filåtgärder. Det har smart kopieringshantering i läsläge, profiler för dubbla språk med snabbt byte, per-program-regler, val mellan tal-, punktskrifts- eller bip-utmatning, och fullt anpassningsbara meddelandefraser.\n\nSnabbkommando:\nNVDA+ALT+T\nEnkeltryck: Byt språk\nDubbeltryck: Öppna uTalk-inställningar\nTrippelklick: Slå av eller på uTalk för det aktuella programmet\nFyra tryck: Tysta eller slå på ljudet för uTalk-meddelanden\n\nKommandona för tyst läge och aktuellt program kan också tilldelas egna tangenter i Inmatningsgester, under uTalk-kategorin."
+		},
+		{
+			"language": "th",
+			"displayName": "ยูทอล์ค",
+			"description": "ยูทอล์คช่วยเสริมประสิทธิภาพการทำงานของคุณด้วย NVDA โดยให้การยืนยันเสียงพูดทันทีสำหรับคำสั่งแก้ไขที่จำเป็น เช่น คัดลอก วาง ตัด เลิกทำ ทำซ้ำ เลือกทั้งหมด บันทึก และการจัดการไฟล์ มีการจัดการการคัดลอกอัจฉริยะในโหมดเรียกดู โปรไฟล์สองภาษาพร้อมการสลับอย่างรวดเร็ว กฎเฉพาะแอปพลิเคชัน ตัวเลือกเอาต์พุตเสียงพูด อักษรเบรลล์ หรือเสียงบี๊บ และวลีประกาศที่ปรับแต่งได้เต็มรูปแบบ\n\nปุ่มลัด:\nNVDA+ALT+T\nแตะครั้งเดียว: สลับภาษา\nแตะสองครั้ง: เปิดการตั้งค่า uTalk\nแตะสามครั้ง: เปิดหรือปิด uTalk สำหรับแอปพลิเคชันปัจจุบัน\nแตะสี่ครั้ง: ปิดหรือเปิดเสียงประกาศของ uTalk\n\nคำสั่งปิดเสียงและแอปพลิเคชันปัจจุบันยังสามารถกำหนดปุ่มของตนเองได้ในท่าทางอินพุต ใต้หมวดหมู่ uTalk"
+		},
+		{
+			"language": "ar",
+			"displayName": "يوتوك",
+			"description": "يحسن يوتوك سير عملك في إن في دي إيه من خلال توفير تأكيدات منطوقة فورية لأوامر التحرير الأساسية مثل النسخ، واللصق، والقص، والتراجع، والإعادة، وتحديد الكل، والحفظ، وعمليات الملفات. يتميز بمعالجة ذكية للنسخ في وضع التصفح، وملفات تعريف ثنائية اللغة مع التبديل السريع، وقواعد لكل تطبيق، وخيار إخراج الصوت، أو برايل، أو الإشارات الصوتية، وعبارات إعلانية قابلة للتخصيص بالكامل.\n\nمفتاح الاختصار:\nNVDA+ALT+T\nنقرة واحدة: تبديل اللغات\nنقران: فتح إعدادات يوتوك\nثلاث نقرات: إيقاف تشغيل يوتوك أو تشغيله للتطبيق الحالي\nأربع نقرات: كتم أو إلغاء كتم إعلانات يوتوك\n\nيمكن أيضًا تعيين مفاتيح خاصة بأوامر الكتم والتطبيق الحالي في إيماءات الإدخال، تحت فئة يوتوك."
+		},
+		{
+			"language": "fr",
+			"displayName": "uTalk",
+			"description": "uTalk améliore votre flux de travail NVDA en fournissant des confirmations vocales instantanées pour les commandes d'édition essentielles telles que Copier, Coller, Couper, Annuler, Rétablir, Tout sélectionner, Enregistrer et Opérations sur les fichiers. Il propose une gestion intelligente de la copie en mode navigation, des profils bilingues avec commutation rapide, des règles par application, un choix de sortie vocale, braille ou par bip, ainsi que des phrases d'annonce entièrement personnalisables.\n\nTouche de raccourci :\nNVDA+ALT+T\nUn simple appui : Inverser les langues\nDouble appui : Ouvrir les paramètres de uTalk\nTriple appui : Activer ou désactiver uTalk pour l'application active\nQuatre appuis : Activer ou désactiver la mise en sourdine des annonces uTalk\n\nLes commandes de mise en sourdine et pour l'application active peuvent également se voir assigner leurs propres touches dans Gestes de commandes, sous la catégorie uTalk."
+		},
+		{
+			"language": "uk",
+			"displayName": "uTalk",
+			"description": "uTalk покращує ваш робочий процес NVDA, забезпечуючи миттєві озвучені підтвердження для основних команд редагування, таких як Копіювати, Вставити, Вирізати, Скасувати, Повторити, Вибрати все, Зберегти та Операції з файлами. Він містить інтелектуальну обробку копіювання в режимі огляду, двомовні профілі з швидким перемиканням, правила для окремих програм, вибір виведення голосом, шрифтом Брайля або звуковим сигналом, а також повністю настроювані фрази оголошень.\n\nГаряча клавіша:\nNVDA+ALT+T\nОдне торкання: Змінити мови\nПодвійне торкання: Відкрити налаштування uTalk\nПотрійне торкання: Вимкнути або увімкнути uTalk для поточної програми\nЧотири торкання: Вимкнути або увімкнути звук оголошень uTalk\n\nКоманди вимкнення звуку та поточної програми також можна призначити на власні клавіші в Жестах введення в категорії uTalk."
+		},
+		{
+			"language": "ru",
+			"displayName": "uTalk",
+			"description": "uTalk улучшает работу с NVDA, обеспечивая мгновенное голосовое подтверждение основных команд редактирования, таких как Копировать, Вставить, Вырезать, Отменить, Повторить, Выделить все, Сохранить и операции с файлами. Дополнение включает интеллектуальную обработку копирования в режиме просмотра, профили двух языков с быстрым переключением, правила для отдельных приложений, выбор вывода с помощью речи, брайля или звуковых сигналов, а также полностью настраиваемые фразы объявлений.\n\nГорячая клавиша:\nNVDA+ALT+T\nОдиночное касание: переключить языки\nДвойное касание: открыть настройки uTalk\nТройное касание: включить или выключить uTalk для текущего приложения\nЧетыре касания: выключить или включить звук объявлений uTalk\n\nКомандам отключения звука и управления текущим приложением также можно назначить собственные клавиши в диалоговом окне «Жесты ввода» в категории uTalk."
+		},
+		{
+			"language": "hi",
+			"displayName": "यू टॉक",
+			"description": "यू टॉक कॉपी, पेस्ट, कट, अंडो, रीडो, सिलेक्ट ऑल, सेव और फ़ाइल ऑपरेशन्स जैसे ज़रूरी एडिटिंग कमांड्स के लिए तुरंत बोले जाने वाले कन्फर्मेशन देकर आपके एनवीडीए वर्कफ़्लो को बेहतर बनाता है। इसमें ब्राउज़ मोड में स्मार्ट कॉपी हैंडलिंग, तुरंत स्विच करने की सुविधा के साथ दो भाषा वाले प्रोफाइल्स, प्रति-एप्लीकेशन नियम, स्पीच, ब्रेल या बीप आउटपुट का विकल्प, और पूरी तरह से कस्टमाइज़ किए जाने वाले अनाउंसमेंट फ्रेज़ शामिल हैं।\n\nहॉट की:\nएनवीडीए+ऑल्ट+टी\nसिंगल टैप: भाषाएं बदलें\nडबल टैप: यू टॉक सेटिंग्स खोलें\nट्रिपल टैप: वर्तमान एप्लीकेशन के लिए यू टॉक बंद या चालू करें\nचार टैप: यू टॉक अनाउंसमेंट म्यूट या अनम्यूट करें\n\nम्यूट और वर्तमान एप्लीकेशन कमांड्स को इनपुट जेस्चर्स में यू टॉक श्रेणी के अंतर्गत उनकी अपनी कुंजियाँ भी असाइन की जा सकती हैं।"
+		},
+		{
+			"language": "de",
+			"displayName": "uTalk",
+			"description": "uTalk verbessert Ihren NVDA-Arbeitsablauf durch sofortige gesprochene Bestätigungen für wichtige Bearbeitungsbefehle wie Kopieren, Einfügen, Ausschneiden, Rückgängig, Wiederholen, Alles auswählen, Speichern und Dateivorgänge. Es bietet eine intelligente Kopierbehandlung im Browsermodus, zweisprachige Profile mit schnellem Umschalten, anwendungsbezogene Regeln, eine Auswahl an Sprach-, Braille- oder Piepton-Ausgaben und vollständig anpassbare Ansagephrasen.\n\nTastenkombination:\nNVDA+ALT+T\nEinfach tippen: Sprachen wechseln\nDoppelt tippen: uTalk-Einstellungen öffnen\nDreifach tippen: uTalk für die aktuelle Anwendung ein- oder ausschalten\nViermal tippen: uTalk-Ansagen stummschalten oder Stummschaltung aufheben\n\nDie Befehle für Stummschaltung und aktuelle Anwendung können auch in den Tastenbefehlen unter der Kategorie uTalk eigene Tasten zugewiesen werden."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "uTalk",
+			"description": "O uTalk aprimora seu fluxo de trabalho no NVDA fornecendo confirmações faladas instantâneas para comandos essenciais de edição, como Copiar, Colar, Recortar, Desfazer, Refazer, Selecionar Tudo, Salvar e Operações de Arquivo. Ele possui tratamento inteligente de cópia no modo de navegação, perfis de dois idiomas com troca rápida, regras por aplicativo, opção de saída por voz, Braille ou bipe, e frases de anúncio totalmente personalizáveis.\n\nTecla de Atalho:\nNVDA+ALT+T\nUm toque: Alternar idiomas\nDois toques: Abrir configurações do uTalk\nTrês toques: Ativar ou desativar o uTalk para o aplicativo atual\nQuatro toques: Silenciar ou reativar os anúncios do uTalk\n\nOs comandos de silenciar e de aplicativo atual também podem ter suas próprias teclas atribuídas em Gestos de Entrada, na categoria uTalk."
+		},
+		{
+			"language": "en",
+			"displayName": "uTalk",
+			"description": "uTalk enhances your NVDA workflow by providing instant spoken confirmations for essential editing commands like Copy, Paste, Cut, Undo, Redo, Select All, Save, and File Operations. It features smart copy handling in browse mode, dual language profiles with quick switching, per-application rules, a choice of speech, braille or beep output, and fully customizable announcement phrases.\n\nHot Key:\nNVDA+ALT+T\nSingle Tap : Swap languages\nDouble Tap : Open uTalk settings\nTriple Tap : Turn uTalk off or on for the current application\nFour Taps : Mute or unmute uTalk announcements\n\nThe mute and current application commands can also be assigned their own keys in Input Gestures, under the uTalk category."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "uTalk",
+			"description": "uTalk透過提供複製、貼上、剪下、復原、重做、全選、儲存與檔案操作等常用編輯指令的即時語音確認，來增強您的NVDA工作流程。它具備瀏覽模式中的智慧複製處理、支援快速切換的雙語言設定檔、應用程式專屬規則、語音、點字或嗶聲輸出選項，以及完全可自訂的宣告短語。\n\n熱鍵：\nNVDA+ALT+T\n單擊：切換語言\n雙擊：開啟uTalk設定\n三擊：為目前應用程式關閉或開啟uTalk\n四擊：將uTalk宣告設為靜音或取消靜音\n\n靜音與目前應用程式指令也可以在「輸入手勢」的uTalk類別中指定其專屬按鍵。"
+		},
+		{
+			"language": "ko",
+			"displayName": "uTalk",
+			"description": "uTalk은 복사, 붙여넣기, 잘라내기, 실행 취소, 다시 실행, 모두 선택, 저장, 파일 작업과 같은 필수 편집 명령에 대해 즉각적인 음성 확인을 제공하여 NVDA 작업 흐름을 향상시킵니다. 탐색 모드에서의 스마트 복사 처리, 빠른 전환이 가능한 이중 언어 프로필, 응용 프로그램별 규칙, 음성, 점자 또는 신호음 출력 선택, 그리고 완전히 사용자 지정 가능한 알림 구문을 제공합니다.\n\n단축키:\nNVDA+ALT+T\n한 번 탭하기: 언어 전환\n두 번 탭하기: uTalk 설정 열기\n세 번 탭하기: 현재 응용 프로그램에 대해 uTalk 켜기 또는 끄기\n네 번 탭하기: uTalk 알림 음소거 또는 음소거 해제\n\n음소거 및 현재 응용 프로그램 명령은 입력 제어의 uTalk 범주에서 자신만의 키를 지정할 수도 있습니다."
+		}
+	]
+}
