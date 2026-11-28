@@ -1,0 +1,32 @@
+{
+	"addonId": "IPInfo",
+	"displayName": "IP Info",
+	"URL": "https://github.com/mohammadhoseinGhezelsofla/IPInfo/releases/download/v1.0.0/IPInfo-1.0.0.nvda-addon",
+	"description": "This add-on allows you to get information about your public IP address (such as country, city, ISP, and more) by pressing NVDA+Shift+I.",
+	"sha256": "4507467f5101d9f74a1e0c3cd922172ba5f3a0e75db727831212fbedf09e3327",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2019,
+		"minor": 3,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mohammadhosein Ghezelsofla",
+	"sourceURL": "https://github.com/mohammadhoseinGhezelsofla/IPInfo",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mohammadhoseinGhezelsofla/IPInfo",
+	"changelog": "Initial release:\n- Fetch and announce public IP information with NVDA+Shift+I (press again to cancel).\n- Configurable fields (IP address, country, country code, region, city, ZIP, ISP, organization, AS, latitude, longitude, timezone) in NVDA Settings.\n- Option to display results in a browsable message window.\n- Respects system proxy settings and plays progress beeps while fetching.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795859894000,
+	"translations": []
+}
