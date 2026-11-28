@@ -1,0 +1,32 @@
+{
+	"addonId": "espeakSilenceRawEmoji",
+	"displayName": "eSpeak NG: Silence Raw Emoji",
+	"URL": "https://github.com/mohammadhoseinGhezelsofla/espeakSilenceRawEmoji/releases/download/v1.0.0/espeakSilenceRawEmoji-1.0.0.nvda-addon",
+	"description": "Prevents eSpeak NG in NVDA 2026.3+ from reading unhandled raw emoji and symbols as \"letter XXXX\" during normal reading, while preserving character-by-character navigation and speaking CLDR names in the Windows Emoji Panel and for standalone-emoji controls.",
+	"sha256": "58afed95478492ce481a17934ba73d272f42a7cb1477bca085386526873003cf",
+	"addonVersionName": "1.0.0",
+	"addonVersionNumber": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 1
+	},
+	"channel": "stable",
+	"publisher": "Mohammadhosein Ghezelsofla",
+	"sourceURL": "https://github.com/mohammadhoseinGhezelsofla/espeakSilenceRawEmoji",
+	"license": "GPL v2",
+	"homepage": "https://github.com/mohammadhoseinGhezelsofla/espeakSilenceRawEmoji",
+	"changelog": "Initial release:\n- Silences unhandled raw characters in eSpeak NG's emoji/symbol ranges during normal reading in NVDA 2026.3+.\n- Speaks CLDR names for standalone emoji controls (such as the Windows Win+. Emoji Panel) even when Unicode Consortium data is disabled.\n- Preserves character-by-character navigation and Persian/Arabic ZWNJ/ZWJ characters.",
+	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
+	"submissionTime": 1795859956000,
+	"translations": []
+}
