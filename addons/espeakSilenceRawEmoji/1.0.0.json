@@ -28,5 +28,47 @@
 	"changelog": "Initial release:\n- Silences unhandled raw characters in eSpeak NG's emoji/symbol ranges during normal reading in NVDA 2026.3+.\n- Speaks CLDR names for standalone emoji controls (such as the Windows Win+. Emoji Panel) even when Unicode Consortium data is disabled.\n- Preserves character-by-character navigation and Persian/Arabic ZWNJ/ZWJ characters.",
 	"licenseURL": "https://www.gnu.org/licenses/gpl-2.0.html",
 	"submissionTime": 1795859956000,
-	"translations": []
+	"translations": [],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/58afed95478492ce481a17934ba73d272f42a7cb1477bca085386526873003cf",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "58afed95478492ce481a17934ba73d272f42a7cb1477bca085386526873003cf",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "7878787c59200000",
+					"raw_md5": "f7db57ee92c46ace72a5e895adbeb5af"
+				},
+				"first_submission_date": 1795859960,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1795859961,
+				"last_submission_date": 1795859960,
+				"md5": "2e41470d8163ebe2e94ce27981bb8476",
+				"names": [],
+				"reputation": 0,
+				"sha1": "3cc1ddeadb55e0fff58fc7e6082bbf35c53d65f9",
+				"sha256": "58afed95478492ce481a17934ba73d272f42a7cb1477bca085386526873003cf",
+				"size": 6785,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
