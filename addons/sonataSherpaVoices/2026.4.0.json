@@ -1,0 +1,441 @@
+{
+	"addonId": "sonataSherpaVoices",
+	"displayName": "Sonata Sherpa Voices",
+	"URL": "https://github.com/jbgrimsby/sonata-sherpa-voices/releases/download/v2026.4/sonata_sherpa_voices-2026.4.nvda-addon",
+	"description": "Sonata-based NVDA synthesizer using sherpa-onnx models with an accessible voice manager.",
+	"sha256": "f6e50081d24afe36a1511753235ac1a135a84edd015893182b804d46c9204e95",
+	"addonVersionName": "2026.4",
+	"addonVersionNumber": {
+		"major": 2026,
+		"minor": 4,
+		"patch": 0
+	},
+	"minNVDAVersion": {
+		"major": 2026,
+		"minor": 1,
+		"patch": 0
+	},
+	"lastTestedVersion": {
+		"major": 2026,
+		"minor": 3,
+		"patch": 2
+	},
+	"channel": "stable",
+	"publisher": "Jim Grimsby Jr. (jbgrimsby)",
+	"sourceURL": "https://github.com/jbgrimsby/sonata-sherpa-voices/tree/v2026.4",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://github.com/jbgrimsby/sonata-sherpa-voices",
+	"changelog": "2026.4:\nNew models and voices:\n* Added Inflect v3 English with Atom, Micro and Mini variants, each with Hope, Sophia, Cassidy, James, Jasper and Mark. No PyTorch is required. The lower-memory Nano v2 and Micro v2 remain available.\n* Added KittenTTS 2 Pico and Nano for eight languages and Mini for sixteen, with fixed speakers and separately installed size/language choices. Mini shares its model between languages; the Japanese tokenizer and dictionary are downloaded only when needed.\n* Added 22 Ninada mobile voices: male and female for Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Sanskrit, Tamil and Telugu.\n* Added Africa TTS Big Fast with African-language variants, matching starter voices and language-specific cloning libraries sharing one model.\n* Added ViFastTts Vietnamese Small and BASE, EMA Lightning Turkish, Leokani English, Ghana Nano Twi, and Arbo MCU English and Indonesian.\n* Leokani adds the Pono male voice and the smaller 4.5M Dala female model as separate downloads; the existing 7M Dala remains available.\n* Updated Paradee to 1.3: English, Hindi, French and Spanish are language variants under one voice group, with eight speakers in total. Existing English selections are preserved and installations receive a model update.\n* Added Junco v0.1, a fixed US English reading voice using CPU ONNX without PyTorch.\n* Added Kitsune TTS V1 with five Brazilian Portuguese speakers, downloaded directly from the publisher.\n* Added Klein Flash with English, French and Italian language variants and five fixed speakers, plus Apptor Tiny TTS with two German speakers. Both use CPU ONNX without PyTorch and download directly from their publishers.\n* Junco now reads voice-ring announcements and parenthesized text without rejecting the whole utterance; punctuation-only input no longer causes a synthesis error.\n* Updated 47 Piper voices to the publisher's retrained models with matching licence and training-source notices, including British English VCTK and ARU, US English Sam, Vietnamese VAIS1000, Persian Amir, Basque Antton and Maider, Polish Gosia and Japanese Hi-Fi-CAPTAIN. Existing installations are offered updates. Added German Kerstin medium, English Hi-Fi TTS reader 92 and Kathleen, and Belgian Dutch Flemishguy; Chinese Chaowen includes its matching on-demand ONNX pronunciation frontend.\n\nPocket improvements:\n* Extended advance speech preparation to the next already-queued segment using the same voice, for ordinary speech as well as Say All. Same-voice preparation does not require keeping inactive models loaded; cancellation and playback index markers are preserved.\n* Get voices adds sourced speakers and alternate recordings for more supported languages, with original licensing and attribution in Details. Distinct recordings stay grouped under their speaker.\n* Africa TTS recognizes supported English words and phrases in mixed-language passages using its selected African voice, without loading an English model.\n* African Pocket cloning trims dead edge silence before encoding. The supplied Dangme starter is repaired locally to prevent repeating its reference phrase on short requests, without redownloading models or replacing user-created voices.\n* Africa TTS supplies shared starter-voice digit audio for 89 language variants, including 51 with partial digit coverage. Unreliable unsigned numbers are read digit by digit without dropping values or leading zeroes; an unavailable digit keeps the whole-number fallback. Ordinary speech keeps your selected voice. Eight variants also have bounded native counting-word preparation. Hausa and Yoruba gain selected native character names, not complete alphabets.\n* Missing African letter and number readings use NVDA's interface language where supported, then English as the final fallback. Native readings, saved speakers and ordinary language switching are preserved.\n* Model-specific reference limits apply consistently to recording, imported audio, catalog previews and existing banks without changing the originals.\n* Pocket English adds Big Very Fast: the optimized April model with FastDec. Big Fast keeps its original decoder, and Big keeps the original standard conversion. Small and Very small use FastDec, with native Q8 only for Small. Existing installations update locally without downloading unchanged models or recloning voices.\n* Avoids unnecessary helper recovery attempts and warning tones while Windows or NVDA is shutting down.\n* Installing or cloning a Pocket voice keeps the active speaker selected even when the new recording changes the speaker-list order.\n* Deleting an installed Pocket voice keeps your place in the list instead of returning to the first entry.\n* Get voices suggests known speaker names and uses the normal confirmation to replace an installed voice, preserving catalog licensing and attribution.\n* Preview a recording with one button: hear the source, then Pocket automatically. Pocket prepares while the source plays, with spoken source/preview announcements and Alt+P to start or stop. Get voices raises quiet source recordings to a safe audible level for preview and cloning. Install stops a running preview and opens the voice-name and optional AI restoration dialog. Available for recording, imported audio and Get voices; imports also support MP3, M4A and supported WebM clips.\n* Added more language-specific Pocket models with cloning, matching starter voices, separate voice libraries and Big/Big Fast choices where available, including Korean and Wolof. Wolof includes its checkpoint-specific number preparation. Mandarin has its own model and cloning workflow.\n* Pocket English offers Big, Big Fast, Big Very Fast, Small and Very small with one shared bank library. English remains on April. Existing Big Fast selections retain that identity and its original decoder; each variant remembers its own bank. Smaller variants remain optional and can omit or repeat words with some banks.\n* Get voices uses the Pocket Manager's selected language and groups alternate recordings under each speaker. Published LibriVox reader credits organize additional recordings; uncertain readers remain unidentified. Single recordings are directly selectable, with separate Back/Next buttons for long lists. Source and licence information stays in Details. The matching cloning encoder is selected automatically. Updates preserve existing banks and deliberate deletions; incompatible checkpoints keep separate libraries.\n\nImportant fixes:\n* Keeps letters separate from expanded digits in identifiers such as F1, preserving existing number readings.\n* Expanded character echo and review coverage with localized descriptions, accented-letter and standalone vowel-sign identifications, and selected native teaching sounds. Corrected Brazilian Portuguese letter lookup without changing regional number handling; ordinary words and existing native syllable reading are preserved.\n* Thai character echo and character review use sourced consonant, vowel-sign and tone-mark names instead of the unsupported-character beep. Ordinary Thai word and line reading is preserved.\n* Warm Model Retention opens on its checkbox rather than the OK button.\n* Speeds up sanoTTS Heart and Heart Nano speech generation and English unknown-word preparation without changing models or adding eager startup work.\n* Pocket recording import and voice preview can recover safely when an audio decoder stops responding, including cancellation and preparation timeouts. Existing audio preparation and internet download safeguards are preserved.\n* Stopping and restarting a Pocket recording preview retains the selected source and safely honors a quick restart while preparation finishes. Replaying the same Get voices recording reuses its prepared preview.\n* Fixed Pocket Small/Very small text splitting around addresses, common abbreviated titles and closing quotes or brackets, in both compatible and optimized runtimes.\n* Phonon and Pocket Small/Very small automatically select a compatible x64 runtime before loading, while retaining the optimized runtimes on capable processors. Existing models and voicebanks need not be downloaded or cloned again.\n* Fixed lost signs, fractional zeros and precision in number processing, including Italian, Bengali and Vietnamese. Unsupported provider precision uses the existing fallback without changing the number's value.\n* Galician number processing now reads ordinary decimals using its existing language rules, including comma decimals and negative values. Failed decimal conversions retain the sign and fractional digits through fallback. Corrected spoken minus signs for explicitly configured comma decimals.\n* The Persian formatter now falls back safely instead of dropping upper digits from oversized numbers.\n* Local Pocket audio imports prepare a short excerpt without a whole-file size limit, trim leading near-silence and safely raise quiet excerpts for preview and cloning. Internet download safeguards remain unchanged.\n* Included the helper's required Microsoft C++ runtime libraries and improved startup failure diagnostics, without installing a system-wide runtime.\n* Fixed shared eSpeak frontend ownership so retained models and temporary fallback speech do not interfere with one another.\n* Corrected non-English Pocket text handling, starter selection, quiet Estonian starter audio, catalog focus and voice-installation announcements.\n* ViFastTts recovers unsupported text and uses a suitable installed English voice where possible, preserving Say All, language switching and lookahead.\n* Expanded sourced character descriptions, corrected clear live/lived pronunciations in sanoTTS English voices, and fixed SupraTTS compatibility with the shared pronunciation dictionary.\n\n2026.3 release:\nNew model families and voices:\n* Added Silero, Phonon, Vaniq-Edge, Paradis French, STEER, Ito, SupraTTS and AuroraTTS support.\n* Added Kokoro 7M English, Nabra Arabic, Noa Hebrew and more sanoTTS voices. The existing Hebrew voice remains available.\n* Added officially hosted Hindi and Indonesian Pocket models.\n\nNew features:\n* Pocket English offers Big, Small and Very small with one shared voice-bank library. Each variant remembers its own bank choice; voices need not be cloned again for each size. Smaller variants can omit or repeat words or change accents with some banks; try another bank or use Big.\n* Optional warm-model retention keeps inactive models ready. Preparing upcoming language models and speech can reduce pauses during language switching.\n* AI recording restoration uses ONNX without installing PyTorch or a separate Python runtime. Existing restoration installations upgrade on next use; recordings and voice banks are preserved.\n* New Pocket voices appear in the voice ring without restarting NVDA. Pocket previews and cloning use the native backend, and short typing/navigation speech starts sooner.\n* Expanded number and character handling, mixed-language fallback and downloadable model choices. Check each model's Details for its licence and use restrictions.\n* Updated user guides and translations, retaining Dutch and Turkish contributor corrections alongside assisted additions.\n\nImportant fixes:\n* Restored the full Pocket English starter-voice selection for all three sizes and corrected missing starter banks in fresh Pocket installations. Existing user banks are preserved.\n* Fixed silent speech when unset speech settings reach the helper, including first activation. Explicit mute and saved settings are preserved.\n* Repaired missing model downloads, model installation/update reporting and matching language frontends.\n* Corrected Pocket speaker switching, first-use variant selection and voice/model removal, including long generated-cache paths.\n* Improved text boundaries for languages written without spaces and handling of invisible formatting characters, preserving genuine language switching.\n* Improved speech cancellation/recovery and Say All position reporting while retaining advance speech generation. Positions inside a combined speech block remain grouped at its end.\n* Model downloads use Windows certificate and hostname verification without weakening system security.",
+	"licenseURL": "https://github.com/jbgrimsby/sonata-sherpa-voices/blob/v2026.4/LICENSE.txt",
+	"submissionTime": 1795855678000,
+	"translations": [
+		{
+			"language": "es",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "sintetizador NVDA basado en Sonata que utiliza modelos sherpa-onnx con un administrador de voz accesible."
+		},
+		{
+			"language": "zh_CN",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "基于 Sonata 的 NVDA 合成器，使用带有可访问语音管理器的 sherpa-onnx 模型。"
+		},
+		{
+			"language": "kok",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "सोनाटा आदारीत NVDA सिंथेसायझर sherpa-onnx मॉडेल वापरून सुलभ आवाज वेवस्थापक."
+		},
+		{
+			"language": "ml",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ആക്‌സസ് ചെയ്യാവുന്ന വോയ്‌സ് മാനേജറുള്ള sherpa-onnx മോഡലുകൾ ഉപയോഗിക്കുന്ന സോണാറ്റ അടിസ്ഥാനമാക്കിയുള്ള NVDA സിന്തസൈസർ."
+		},
+		{
+			"language": "be",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "сінтэзатар NVDA на аснове санаты з выкарыстаннем мадэляў sherpa-onnx з даступным галасавым менеджэрам."
+		},
+		{
+			"language": "de_CH",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonata-basierter NVDA-Synthesizer unter Verwendung von sherpa-onnx-Modellen mit einem zugänglichen Sprachmanager."
+		},
+		{
+			"language": "is",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sónötu-undirstaða NVDA hljóðgervl sem notar sherpa-onnx gerðir með aðgengilegum raddstjóra."
+		},
+		{
+			"language": "ja",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "アクセス可能な音声マネージャーを備えた sherpa-onnx モデルを使用したソナタベースの NVDA シンセサイザー。"
+		},
+		{
+			"language": "ro",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizator NVDA bazat pe Sonata folosind modele sherpa-onnx cu un manager de voce accesibil."
+		},
+		{
+			"language": "lb",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonata-baséiert NVDA Synthesizer benotzt sherpa-onnx Modeller mat engem zougänglech Stëmm Manager."
+		},
+		{
+			"language": "pt_PT",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizador NVDA baseado em Sonata utilizando modelos sherpa-onnx com um gestor de voz acessível."
+		},
+		{
+			"language": "nb",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonatabasert NVDA-synthesizer som bruker sherpa-onnx-modeller med en tilgjengelig stemmebehandling."
+		},
+		{
+			"language": "ca",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "sintetitzador NVDA basat en Sonata que utilitza models sherpa-onnx amb un gestor de veu accessible."
+		},
+		{
+			"language": "id",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Synthesizer NVDA berbasis Sonata menggunakan model sherpa-onnx dengan pengelola suara yang dapat diakses."
+		},
+		{
+			"language": "sq",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizuesi NVDA i bazuar në Sonata duke përdorur modelet sherpa-onnx me një menaxher zëri të aksesueshëm."
+		},
+		{
+			"language": "as",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "এটা অভিগম্য ভয়েচ মেনেজাৰৰ সৈতে sherpa-onnx মডেল ব্যৱহাৰ কৰি ছ'নাটা-ভিত্তিক NVDA চিন্থেচাইজাৰ।"
+		},
+		{
+			"language": "zh_HK",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "基於 Sonata 的 NVDA 合成器，使用具有可存取語音管理器的 sherpa-onnx 模型。"
+		},
+		{
+			"language": "ur",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "سونٹا پر مبنی NVDA سنتھیسائزر ایک قابل رسائی وائس مینیجر کے ساتھ sherpa-onnx ماڈل استعمال کرتا ہے۔"
+		},
+		{
+			"language": "it",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "sintetizzatore NVDA basato su Sonata che utilizza modelli sherpa-onnx con un gestore vocale accessibile."
+		},
+		{
+			"language": "th",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ซินธิไซเซอร์ NVDA ที่ใช้ Sonata โดยใช้รุ่น sherpa-onnx พร้อมด้วยโปรแกรมจัดการเสียงที่สามารถเข้าถึงได้"
+		},
+		{
+			"language": "da",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonata-baseret NVDA-synthesizer, der bruger sherpa-onnx-modeller med en tilgængelig stemmestyring."
+		},
+		{
+			"language": "te",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "సోనాటా-ఆధారిత NVDA సింథసైజర్ sherpa-onnx మోడల్‌లను యాక్సెస్ చేయగల వాయిస్ మేనేజర్‌తో ఉపయోగిస్తుంది."
+		},
+		{
+			"language": "ar",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "مركب NVDA قائم على Sonata يستخدم نماذج sherpa-onnx مع مدير صوت يمكن الوصول إليه."
+		},
+		{
+			"language": "bg",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "базиран на соната NVDA синтезатор, използващ sherpa-onnx модели с достъпен гласов мениджър."
+		},
+		{
+			"language": "hr",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "NVDA sintesajzer zasnovan na sonati koji koristi sherpa-onnx modele s pristupačnim glasovnim upraviteljem."
+		},
+		{
+			"language": "kn",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ಸೋನಾಟಾ-ಆಧಾರಿತ NVDA ಸಿಂಥಸೈಜರ್ sherpa-onnx ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಪ್ರವೇಶಿಸಬಹುದಾದ ಧ್ವನಿ ನಿರ್ವಾಹಕ."
+		},
+		{
+			"language": "nb_NO",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonatabasert NVDA-synthesizer som bruker sherpa-onnx-modeller med en tilgjengelig stemmebehandling."
+		},
+		{
+			"language": "vi",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Bộ tổng hợp NVDA dựa trên Sonata sử dụng các mẫu sherpa-onnx có trình quản lý giọng nói có thể truy cập."
+		},
+		{
+			"language": "mn",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Сонатад суурилсан NVDA синтезатор нь sherpa-onnx загваруудыг ашиглах боломжтой дуу хоолойн менежертэй."
+		},
+		{
+			"language": "nl",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Op Sonata gebaseerde NVDA-synthesizer die gebruik maakt van sherpa-onnx-modellen met een toegankelijke stemmanager."
+		},
+		{
+			"language": "fr",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Synthétiseur NVDA basé sur Sonate utilisant des modèles sherpa-onnx avec un gestionnaire de voix accessible."
+		},
+		{
+			"language": "ga",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintéiseoir NVDA Sonáid-bhunaithe ag baint úsáide as samhlacha sherpa-onnx le bainisteoir guth inrochtana."
+		},
+		{
+			"language": "uk",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "синтезатор NVDA на основі сонати, що використовує моделі sherpa-onnx із доступним голосовим менеджером."
+		},
+		{
+			"language": "ru",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Синтезатор NVDA на базе Sonata, использующий модели sherpa-onnx с доступным голосовым менеджером."
+		},
+		{
+			"language": "hi",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "सोनाटा-आधारित NVDA सिंथेसाइज़र एक सुलभ वॉयस मैनेजर के साथ sherpa-onnx मॉडल का उपयोग करता है।"
+		},
+		{
+			"language": "mk",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "NVDA синтисајзер базиран на Соната и користи модели sherpa-onnx со пристапен менаџер за глас."
+		},
+		{
+			"language": "my",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "အသုံးပြုနိုင်သော အသံမန်နေဂျာနှင့်အတူ sherpa-onnx မော်ဒယ်များကို အသုံးပြု၍ Sonata-based NVDA ပေါင်းစပ်မှု။"
+		},
+		{
+			"language": "pl",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Syntezator NVDA oparty na sonatach, wykorzystujący modele sherpa-onnx z dostępnym menedżerem głosu."
+		},
+		{
+			"language": "sk",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Syntezátor NVDA na báze Sonata využívajúci modely sherpa-onnx s prístupným hlasovým manažérom."
+		},
+		{
+			"language": "fi",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonaattipohjainen NVDA-syntetisaattori, joka käyttää sherpa-onnx-malleja ja käytettävissä olevaa äänenhallintaa."
+		},
+		{
+			"language": "gl",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "sintetizador NVDA baseado en Sonata que utiliza modelos sherpa-onnx cun xestor de voz accesible."
+		},
+		{
+			"language": "fa",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "سینت سایزر NVDA مبتنی بر سوناتا با استفاده از مدل‌های sherpa-onnx با یک مدیر صدای قابل دسترسی."
+		},
+		{
+			"language": "de",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonata-basierter NVDA-Synthesizer unter Verwendung von sherpa-onnx-Modellen mit einem zugänglichen Sprachmanager."
+		},
+		{
+			"language": "pt_BR",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizador NVDA baseado em Sonata usando modelos sherpa-onnx com um gerenciador de voz acessível."
+		},
+		{
+			"language": "kmr",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sentezkerê NVDA-ya Sonata-yê ku modelên sherpa-onnx bi rêveberek dengek gihîştî re bikar tîne bikar tîne."
+		},
+		{
+			"language": "sv",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonatabaserad NVDA-synthesizer som använder sherpa-onnx-modeller med en tillgänglig rösthanterare."
+		},
+		{
+			"language": "tr",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Erişilebilir bir ses yöneticisine sahip sherpa-onnx modellerini kullanan Sonata tabanlı NVDA sentezleyici."
+		},
+		{
+			"language": "bn",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "সোনাটা-ভিত্তিক NVDA সিনথেসাইজার একটি অ্যাক্সেসযোগ্য ভয়েস ম্যানেজার সহ sherpa-onnx মডেল ব্যবহার করে।"
+		},
+		{
+			"language": "af",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonate-gebaseerde NVDA-sintetiseerder wat sherpa-onnx-modelle gebruik met 'n toeganklike stembestuurder."
+		},
+		{
+			"language": "nn_NO",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonatabasert NVDA-synthesizer som bruker sherpa-onnx-modeller med en tilgjengelig stemmebehandling."
+		},
+		{
+			"language": "pt",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizador NVDA baseado em Sonata utilizando modelos sherpa-onnx com um gestor de voz acessível."
+		},
+		{
+			"language": "km",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ឧបករណ៍សំយោគ NVDA ដែលមានមូលដ្ឋានលើ Sonata ដោយប្រើម៉ូដែល sherpa-onnx ជាមួយនឹងកម្មវិធីគ្រប់គ្រងសំឡេងដែលអាចចូលប្រើបាន។"
+		},
+		{
+			"language": "gu",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "સુલભ વૉઇસ મેનેજર સાથે sherpa-onnx મોડલનો ઉપયોગ કરીને સોનાટા-આધારિત NVDA સિન્થેસાઇઝર."
+		},
+		{
+			"language": "ckb",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "سەنتەسایزەری NVDA لەسەر بنەمای سۆناتا کە مۆدێلەکانی sherpa-onnx بەکاردەهێنێت لەگەڵ بەڕێوەبەرێکی دەنگی دەستڕاگەیشتن."
+		},
+		{
+			"language": "hu",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Szonáta alapú NVDA szintetizátor sherpa-onnx modellekkel, elérhető hangkezelővel."
+		},
+		{
+			"language": "cs",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Syntezátor NVDA na bázi Sonata využívající modely sherpa-onnx s přístupným hlasovým manažerem."
+		},
+		{
+			"language": "ne",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "सोनाटा-आधारित NVDA सिन्थेसाइजर sherpa-onnx मोडेलहरू पहुँचयोग्य आवाज प्रबन्धकको साथ प्रयोग गर्दै।"
+		},
+		{
+			"language": "lt",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonatos pagrindu sukurtas NVDA sintezatorius, naudojant sherpa-onnx modelius su pasiekiama balso tvarkykle."
+		},
+		{
+			"language": "es_CO",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "sintetizador NVDA basado en Sonata que utiliza modelos sherpa-onnx con un administrador de voz accesible."
+		},
+		{
+			"language": "bs",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "NVDA sintisajzer baziran na sonati koji koristi modele sherpa-onnx sa dostupnim glasovnim menadžerom."
+		},
+		{
+			"language": "am",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ሶናታ ላይ የተመሰረተ NVDA አቀናባሪ sherpa-onnx ሞዴሎችን ከተደራሽ የድምጽ አስተዳዳሪ ጋር።"
+		},
+		{
+			"language": "ta",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "அணுகக்கூடிய குரல் மேலாளருடன் sherpa-onnx மாதிரிகளைப் பயன்படுத்தும் சொனாட்டா அடிப்படையிலான NVDA சின்தசைசர்."
+		},
+		{
+			"language": "he",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "סינתיסייזר NVDA מבוסס סונטה המשתמש בדגמי sherpa-onnx עם מנהל קול נגיש."
+		},
+		{
+			"language": "el",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Συνθεσάιζερ NVDA με βάση τη Sonata που χρησιμοποιεί μοντέλα sherpa-onnx με προσβάσιμο διαχειριστή φωνής."
+		},
+		{
+			"language": "ka",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "სონატაზე დაფუძნებული NVDA სინთეზატორი sherpa-onnx მოდელების გამოყენებით ხელმისაწვდომი ხმის მენეჯერით."
+		},
+		{
+			"language": "sl",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sintetizator NVDA na osnovi sonate, ki uporablja modele sherpa-onnx z dostopnim glasovnim upraviteljem."
+		},
+		{
+			"language": "af_ZA",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Sonate-gebaseerde NVDA-sintetiseerder wat sherpa-onnx-modelle gebruik met 'n toeganklike stembestuurder."
+		},
+		{
+			"language": "zh_TW",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "基於 Sonata 的 NVDA 合成器，使用具有可存取語音管理器的 sherpa-onnx 模型。"
+		},
+		{
+			"language": "ky",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Жеткиликтүү үн башкаруучусу бар sherpa-onnx моделдерин колдонгон Sonata негизиндеги NVDA синтезатору."
+		},
+		{
+			"language": "so",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "Soosaariyaha NVDA ee Sonata ku salaysan iyadoo la adeegsanayo moodooyinka sherpa-onnx oo leh maareeyaha codka la heli karo."
+		},
+		{
+			"language": "ko",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "액세스 가능한 음성 관리자가 있는 sherpa-onnx 모델을 사용하는 Sonata 기반 NVDA 신디사이저."
+		},
+		{
+			"language": "pa",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "ਇੱਕ ਪਹੁੰਚਯੋਗ ਵੌਇਸ ਮੈਨੇਜਰ ਦੇ ਨਾਲ sherpa-onnx ਮਾਡਲਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਸੋਨਾਟਾ-ਅਧਾਰਿਤ NVDA ਸਿੰਥੇਸਾਈਜ਼ਰ।"
+		},
+		{
+			"language": "sr",
+			"displayName": "Sonata Sherpa Voices",
+			"description": "NVDA синтисајзер заснован на сонати који користи моделе sherpa-onnx са приступачним гласовним менаџером."
+		}
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/f6e50081d24afe36a1511753235ac1a135a84edd015893182b804d46c9204e95",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "f6e50081d24afe36a1511753235ac1a135a84edd015893182b804d46c9204e95",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001e1e161700",
+					"raw_md5": "45e3c3dd57addf196509685836626b4c"
+				},
+				"first_submission_date": 1795855701,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1795855780,
+				"last_submission_date": 1795855701,
+				"md5": "26c7985a3b38fdc632013eb477e4c957",
+				"names": [],
+				"reputation": 0,
+				"sha1": "397e28499a8bcde8926c8ca98dd2a59f609fa7d7",
+				"sha256": "f6e50081d24afe36a1511753235ac1a135a84edd015893182b804d46c9204e95",
+				"size": 579505320,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	},
+	"reviewUrl": "https://github.com/nvaccess/addon-datastore/discussions/10881"
+}
