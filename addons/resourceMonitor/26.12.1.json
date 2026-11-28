@@ -239,5 +239,47 @@
 			"description": "A handy resource monitor to report CPU load, memory usage, disk usage status and more.",
 			"changelog": "* NVDA 2026.3 or later is required."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/205ddb609b1fb4f96013b49315646b29a3695c75bf027dc7ea85859eec5a177b",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "205ddb609b1fb4f96013b49315646b29a3695c75bf027dc7ea85859eec5a177b",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000000c0e0d0400",
+					"raw_md5": "e1778ef18d6300be714509c4f7185492"
+				},
+				"first_submission_date": 1795864161,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1795864163,
+				"last_submission_date": 1795864161,
+				"md5": "c3276495049c921be5e3c19f75d99bbf",
+				"names": [],
+				"reputation": 0,
+				"sha1": "705757752ea0dcbf91829e9b938ef312ab7b56c1",
+				"sha256": "205ddb609b1fb4f96013b49315646b29a3695c75bf027dc7ea85859eec5a177b",
+				"size": 354192,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
