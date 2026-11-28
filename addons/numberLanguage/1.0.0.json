@@ -35,5 +35,47 @@
 			"description": "Announces numbers in any script using your chosen language by converting numbers to words and/or switching synthesizer language, with smart handling for decimals, thousands separators, IPs, versions, dates, times, ordinals, and phone numbers.",
 			"changelog": "Initial release:\n- Supports digits from any Unicode script (Latin, Persian, Arabic-Indic, Devanagari, Thai, Fullwidth, etc.).\n- Three announcement modes: Hybrid (words + LangChangeCommand), words only, or LangChangeCommand only.\n- Smart handling of thousands separators, decimals, IPv4 addresses, versions, dates, times, ordinals, phone numbers, and leading zeros.\n- Optional natural/colloquial phrasing and automatic sync with NVDA's symbol level and Punctuation/symbol pronunciation settings.\n- NVDA settings panel and quick keyboard shortcuts."
 		}
-	]
+	],
+	"vtScanUrl": "https://www.virustotal.com/gui/file/a4d7a48dfeedf0c9cdeda78e764db37f376e28aadf09128188bab8062067ab82",
+	"scanResults": {
+		"virusTotal": [
+			{
+				"_id": "a4d7a48dfeedf0c9cdeda78e764db37f376e28aadf09128188bab8062067ab82",
+				"_type": "file",
+				"filecondis": {
+					"dhash": "0000001e0e0f0c00",
+					"raw_md5": "9aae0cf037816ca9e4e7c8dd3127ecda"
+				},
+				"first_submission_date": 1795859771,
+				"last_analysis_results": {},
+				"last_analysis_stats": {
+					"confirmed-timeout": 0,
+					"failure": 0,
+					"harmless": 0,
+					"malicious": 0,
+					"suspicious": 0,
+					"timeout": 0,
+					"type-unsupported": 0,
+					"undetected": 0
+				},
+				"last_modification_date": 1795859772,
+				"last_submission_date": 1795859771,
+				"md5": "2f5d338aa9962caae7c0008a60150376",
+				"names": [],
+				"reputation": 0,
+				"sha1": "44e3750416c54bb9523b8b8bf453735814fb269e",
+				"sha256": "a4d7a48dfeedf0c9cdeda78e764db37f376e28aadf09128188bab8062067ab82",
+				"size": 185855,
+				"tags": [],
+				"times_submitted": 1,
+				"total_votes": {
+					"harmless": 0,
+					"malicious": 0
+				},
+				"type_description": "unknown",
+				"type_tags": [],
+				"unique_sources": 1
+			}
+		]
+	}
 }
